@@ -1,0 +1,126 @@
+{
+  "generator": "OpenAI image generation",
+  "assets": [
+    {
+      "id": "player_awakened_male_01",
+      "file": "assets/characters/player_awakened_male_01.png",
+      "source": "C:\\Users\\geniu\\.codex\\generated_images\\01a07bcf-7f98-7021-bf14-e9c913993db8\\exec-6fea5e81-ed07-42a8-a6d3-d7a31dcb890c.png",
+      "prompt": "Use case: stylized-concept. Asset type: single transparent PNG game sprite for a polished 2D top-down survival game set in modern Seoul. Subject: ordinary Korean man age 28, short black hair, teal lightweight street jacket over charcoal shirt, dark trousers, white sneakers, a small mint magical glow on one hand, no armor, no weapon props. Camera: elevated 3/4 top-down orthographic view looking down about 55 degrees, facing down toward viewer. Full body, compact readable silhouette, feet visible, centered with padding. Style: crisp hand-painted mobile game icon, bold clean dark outlines, broad cel shaded surfaces, only 2-3 values per material, subtle top-left light, no tiny texture/no photorealism/no pixel art. Palette teal/mint hero accents, warm natural skin, dark navy. Genuinely transparent RGBA background, no backdrop, no floor tile, no text, no UI, no framing, no cast shadow outside silhouette. One character only. Intended render height 52 pixels; prioritize readable head/hair/jacket silhouette. Square image, preferably 512x512. Keep entire character within middle 80%."
+    },
+    {
+      "id": "enemy_brute_01",
+      "file": "assets/enemies/enemy_brute_01.png",
+      "source": "C:\\Users\\geniu\\.codex\\generated_images\\01a07bcf-7f98-7021-bf14-e9c913993db8\\exec-c36bf743-a0d0-4544-8efc-f56c0c5f7f60.png",
+      "prompt": "Use case: stylized-concept. One production game sprite for Project Seoul Gate, modern Seoul top-down 2D survival game. Crisp hand-painted mobile game art, clean bold dark contours, restrained cel shading 2-3 values, clear broad shapes, top-left light, elevated 55 degree 3/4 top-down orthographic camera. NOT photorealistic, NOT pixel art, no noisy textures. Genuinely transparent RGBA background, no canvas background or tile, no border, no watermark. Whole subject fully visible, centered occupying middle 80% with padding. One subject only. Square canvas preferably512x512. A slow tough fantasy melee monster, broad squat hunched stone-skinned ogre with huge forearms, small head, two short shoulder spikes, dusty crimson skin and dark plum crevices, pale coral fists, angry tiny glowing eyes. No weapon, no modern clothes. Face down toward viewer. Compact near-square silhouette legible at48 pixels tall. No text."
+    },
+    {
+      "id": "enemy_hound_01",
+      "file": "assets/enemies/enemy_hound_01.png",
+      "source": "C:\\Users\\geniu\\.codex\\generated_images\\01a07bcf-7f98-7021-bf14-e9c913993db8\\exec-fa305f6f-a274-4220-a60b-61512d7e1b3d.png",
+      "prompt": "Use case: stylized-concept. One production game sprite for Project Seoul Gate, modern Seoul top-down 2D survival game. Crisp hand-painted mobile game art, clean bold dark contours, restrained cel shading 2-3 values, clear broad shapes, top-left light, elevated 55 degree 3/4 top-down orthographic camera. NOT photorealistic, NOT pixel art, no noisy textures. Genuinely transparent RGBA background, no canvas background or tile, no border, no watermark. Whole subject fully visible, centered occupying middle 80% with padding. One subject only. Square canvas preferably512x512. A fast weak fantasy demon hound, lean low quadruped with pointed ears and angular back, ochre orange hide with dark brown underside, pale amber claws, one simple orange glowing eye. Three-quarter facing lower left, all four paws and thin tail within frame. Strong triangular silhouette legible at40 pixels. No text."
+    },
+    {
+      "id": "boss_gate_keeper_01",
+      "file": "assets/bosses/boss_gate_keeper_01.png",
+      "source": "C:\\Users\\geniu\\.codex\\generated_images\\01a07bcf-7f98-7021-bf14-e9c913993db8\\exec-d2bf12f8-7ada-46ff-825a-e70a61521b3b.png",
+      "prompt": "Use case: stylized-concept. One production game sprite for Project Seoul Gate, modern Seoul top-down 2D survival game. Crisp hand-painted mobile game art, clean bold dark contours, restrained cel shading 2-3 values, clear broad shapes, top-left light, elevated 55 degree 3/4 top-down orthographic camera. NOT photorealistic, NOT pixel art, no noisy textures. Genuinely transparent RGBA background, no canvas background or tile, no border, no watermark. Whole subject fully visible, centered occupying middle 80% with padding. One subject only. Square canvas preferably512x512. A formidable gate keeper demon boss, hulking broad torso of dark slate violet stone, two strong swept horns, enormous hands and thick feet, one large luminous lavender crystal core in chest, angular shoulder ridges. Full body facing downward toward viewer, broad memorable near-square silhouette, clearly larger and more commanding than an ogre. No weapons, no busy ornament, no text. Legible at120pixels."
+    },
+    {
+      "id": "projectile_mana_bolt_01",
+      "file": "assets/projectiles/projectile_mana_bolt_01.png",
+      "source": "C:\\Users\\geniu\\.codex\\generated_images\\01a07bcf-7f98-7021-bf14-e9c913993db8\\exec-211c44e1-72e4-4b71-b36b-12c46b7075a5.png",
+      "prompt": "Use case: stylized-concept. One production game sprite for Project Seoul Gate, modern Seoul top-down 2D survival game. Crisp hand-painted mobile game art, clean bold dark contours, restrained cel shading 2-3 values, clear broad shapes, top-left light, elevated 55 degree 3/4 top-down orthographic camera. NOT photorealistic, NOT pixel art, no noisy textures. Genuinely transparent RGBA background, no canvas background or tile, no border, no watermark. Whole subject fully visible, centered occupying middle 80% with padding. One subject only. Square canvas preferably512x512. A single horizontal magical projectile moving RIGHT. Bright pale gold-white compact pointed teardrop head, short warm amber tapered tail to its left, thin mint highlight. Crisp layered painted flame shape, very limited glow inside silhouette, legible at20pixels. No explosion, no particles detached from main sprite, no text."
+    },
+    {
+      "id": "pickup_exp_crystal_01",
+      "file": "assets/pickups/pickup_exp_crystal_01.png",
+      "source": "C:\\Users\\geniu\\.codex\\generated_images\\01a07bcf-7f98-7021-bf14-e9c913993db8\\exec-b5a77b53-3ddb-409e-9653-b5873dc5f881.png",
+      "prompt": "Use case: stylized-concept. One production game sprite for Project Seoul Gate, modern Seoul top-down 2D survival game. Crisp hand-painted mobile game art, clean bold dark contours, restrained cel shading 2-3 values, clear broad shapes, top-left light, elevated 55 degree 3/4 top-down orthographic camera. NOT photorealistic, NOT pixel art, no noisy textures. Genuinely transparent RGBA background, no canvas background or tile, no border, no watermark. Whole subject fully visible, centered occupying middle 80% with padding. One subject only. Square canvas preferably512x512. A single small collectible faceted crystal, upright cyan diamond with a brilliant pale turquoise center and darker teal edges, clean 5 broad polygon faces, modest white highlight, symmetrical and extremely readable at16pixels. No pedestal, no particles, no text."
+    },
+    {
+      "id": "environment_gate_01",
+      "file": "assets/environment/environment_gate_01.png",
+      "source": "C:\\Users\\geniu\\.codex\\generated_images\\01a07bcf-7f98-7021-bf14-e9c913993db8\\exec-f8e2eedf-a717-43c2-a129-39b4c85cd68d.png",
+      "prompt": "Use case: stylized-concept. One production game sprite for Project Seoul Gate, modern Seoul top-down 2D survival game. Crisp hand-painted mobile game art, clean bold dark contours, restrained cel shading 2-3 values, clear broad shapes, top-left light, elevated 55 degree 3/4 top-down orthographic camera. NOT photorealistic, NOT pixel art, no noisy textures. Genuinely transparent RGBA background, no canvas background or tile, no border, no watermark. Whole subject fully visible, centered occupying middle 80% with padding. One subject only. Square canvas preferably512x512. An oval portal gate viewed from elevated top-down, standing slightly tilted in space. Dark broken stone arch rim with six large purple rune-like insets without text, violet swirling center with luminous lavender slit, compact painted magical halo and small stone feet. One portal only, wide grounded silhouette, no surrounding scenery or floor. Readable at180pixels."
+    },
+    {
+      "id": "environment_convenience_store_01",
+      "file": "assets/environment/environment_convenience_store_01.png",
+      "source": "C:\\Users\\geniu\\.codex\\generated_images\\01a07bcf-7f98-7021-bf14-e9c913993db8\\exec-ecbab5a0-21fa-4f9f-bb4d-33a1bc0af3a0.png",
+      "prompt": "Use case: stylized-concept. One production game sprite for Project Seoul Gate, modern Seoul top-down 2D survival game. Crisp hand-painted mobile game art, clean bold dark contours, restrained cel shading 2-3 values, clear broad shapes, top-left light, elevated 55 degree 3/4 top-down orthographic camera. NOT photorealistic, NOT pixel art, no noisy textures. Genuinely transparent RGBA background, no canvas background or tile, no border, no watermark. Whole subject fully visible, centered occupying middle 80% with padding. One subject only. Square canvas preferably512x512. A small modern Korean neighborhood convenience store as an isolated building sprite. Low flat grey-blue roof visible from above, small AC unit, front glass entrance and two broad display windows, teal fascia with exact clean Korean sign text '편의점' and small '24'. Generic fictional store, no real brands. Short front facade, roof occupies upperhalf; clean muted grey teal green palette, yellow warm light accents. No surrounding road, no cars, no people, no ground tile. Whole building, 3/4 elevated orthographic, readable at230pixelswide."
+    },
+    {
+      "id": "environment_subway_entrance_01",
+      "file": "assets/environment/environment_subway_entrance_01.png",
+      "source": "C:\\Users\\geniu\\.codex\\generated_images\\01a07bcf-7f98-7021-bf14-e9c913993db8\\exec-e7838934-bb71-4aea-876f-a865a83db915.png",
+      "prompt": "Use case: stylized-concept. One production game sprite for Project Seoul Gate, modern Seoul top-down 2D survival game. Crisp hand-painted mobile game art, clean bold dark contours, restrained cel shading 2-3 values, clear broad shapes, top-left light, elevated 55 degree 3/4 top-down orthographic camera. NOT photorealistic, NOT pixel art, no noisy textures. Genuinely transparent RGBA background, no canvas background or tile, no border, no watermark. Whole subject fully visible, centered occupying middle 80% with padding. One subject only. Square canvas preferably512x512. An isolated Seoul neighborhood subway entrance sprite: descending rectangular dark stairwell, pale concrete sides, simple green handrails, a short signpost with yellow circle '3' and exact Korean text '지하철'. Elevated orthographic 55-degree top-down view, stairs clearly visible descending inward. Muted bluegrey concrete, desaturated green signage, no surrounding street or ground tile, no people. Clean silhouette readable at170pixelswide."
+    },
+    {
+      "id": "environment_bus_stop_01",
+      "file": "assets/environment/environment_bus_stop_01.png",
+      "source": "C:\\Users\\geniu\\.codex\\generated_images\\01a07bcf-7f98-7021-bf14-e9c913993db8\\exec-8bbab092-2488-4101-b18e-b4a507db1a73.png",
+      "prompt": "Use case: stylized-concept. One production game sprite for Project Seoul Gate, modern Seoul top-down 2D survival game. Crisp hand-painted mobile game art, clean bold dark contours, restrained cel shading 2-3 values, clear broad shapes, top-left light, elevated 55 degree 3/4 top-down orthographic camera. NOT photorealistic, NOT pixel art, no noisy textures. Genuinely transparent RGBA background, no canvas background or tile, no border, no watermark. Whole subject fully visible, centered occupying middle 80% with padding. One subject only. Square canvas preferably512x512. An isolated Korean city bus stop shelter sprite, flat dark teal roof, two glass side panels, simple bench, vertical route information post with a blue bus pictogram and exact Korean text '버스'. Elevated orthographic topdown55degree, roof upper side, front bench visible. Muted slate blue grey and subdued cyan, no real brands, no people, no ground tile or street. Compact readable at170pixelswide."
+    },
+    {
+      "id": "environment_street_lamp_01",
+      "file": "assets/environment/environment_street_lamp_01.png",
+      "source": "C:\\Users\\geniu\\.codex\\generated_images\\01a07bcf-7f98-7021-bf14-e9c913993db8\\exec-7d92633f-3de2-49d0-98bd-cece2a2c908a.png",
+      "prompt": "Use case: stylized-concept. One production game sprite for Project Seoul Gate, modern Seoul top-down 2D survival game. Crisp hand-painted mobile game art, clean bold dark contours, restrained cel shading 2-3 values, clear broad shapes, top-left light, elevated 55 degree 3/4 top-down orthographic camera. NOT photorealistic, NOT pixel art, no noisy textures. Genuinely transparent RGBA background, no canvas background or tile, no border, no watermark. Whole subject fully visible, centered occupying middle 80% with padding. One subject only. Square canvas preferably512x512. One modern Seoul residential street lamp sprite: slender dark bluegrey pole on small concrete foot, short curved upper arm and broad warm ivory lamp head. Elevated orthographic topdown55degree, entire pole visible, simple bold silhouette readable at90pixelstall. Restrained pool of warm light immediately near lamphead only, no large cast shadow, no floor tile, no other objects or text."
+    },
+    {
+      "id": "environment_tree_planter_01",
+      "file": "assets/environment/environment_tree_planter_01.png",
+      "source": "C:\\Users\\geniu\\.codex\\generated_images\\01a07bcf-7f98-7021-bf14-e9c913993db8\\exec-272c9114-5fec-46aa-916a-b422c2f9b33d.png",
+      "prompt": "Use case: stylized-concept. One production game sprite for Project Seoul Gate, modern Seoul top-down 2D survival game. Crisp hand-painted mobile game art, clean bold dark contours, restrained cel shading 2-3 values, clear broad shapes, top-left light, elevated 55 degree 3/4 top-down orthographic camera. NOT photorealistic, NOT pixel art, no noisy textures. Genuinely transparent RGBA background, no canvas background or tile, no border, no watermark. Whole subject fully visible, centered occupying middle 80% with padding. One subject only. Square canvas preferably512x512. One Korean neighborhood roadside square concrete planter with a rounded compact tree growing from it, elevated orthographic55degree view. Three large rounded leaf clusters in muted sage and dark forest green, short visible trunk, grey rectangular planter with tiny simple cream flowers at base. Restrained clean cel shading, cohesive broad silhouette, no floor tile, no text or other scenery. Readable at100pixels."
+    },
+    {
+      "id": "player_awakened_kickboard_01",
+      "file": "assets/characters/player_awakened_kickboard_01.png",
+      "source": "C:\\Users\\geniu\\.codex\\generated_images\\01a07bcf-7f98-7021-bf14-e9c913993db8\\exec-63b5b451-8b80-4b34-8bd5-bf3ad8cc2c88.png",
+      "prompt": "Reuse the supplied modern Korean awakened fighter as one static right-down riding sprite and combine it with a compact dark teal magical kickboard; transparent background, no animation frames.",
+      "processing": "The image generation edit was unavailable because its usage limit was reached. The original character pixels were preserved, the magenta background was converted to alpha, and a perspective kickboard with dark body, wheels, handle and restrained teal magic accents was composited locally."
+    },
+    {
+      "id": "player_awakened_kickboard_02",
+      "file": "assets/characters/player_awakened_kickboard_02.png",
+      "source": "C:\\Users\\geniu\\Downloads\\ChatGPT Image 2026년 9월 13일 오후 10_13_41.png",
+      "prompt": "User-supplied finished magic kickboard character sprite.",
+      "processing": "Copied without visual modification. The supplied PNG already contains a transparent alpha background."
+    },
+    {
+      "id": "pickup_coin_01",
+      "file": "assets/pickups/pickup_coin_01.png",
+      "source": "C:\\Users\\geniu\\Downloads\\ChatGPT Image 2026년 9월 13일 오후 10_25_13 (1).png",
+      "prompt": "User-supplied gold coin pickup sprite.",
+      "processing": "Copied without visual modification."
+    },
+    {
+      "id": "pickup_experience_crystal_02",
+      "file": "assets/pickups/pickup_experience_crystal_02.png",
+      "source": "C:\\Users\\geniu\\Downloads\\ChatGPT Image 2026년 9월 13일 오후 10_25_22.png",
+      "prompt": "User-supplied blue experience crystal pickup sprite.",
+      "processing": "Copied without visual modification."
+    },
+    {
+      "id": "background_seoul_intersection_01",
+      "file": "assets/backgrounds/background_seoul_intersection_01.png",
+      "source": "C:\\Users\\geniu\\Downloads\\ChatGPT Image 2026년 9월 13일 오후 10_40_33.png",
+      "prompt": "User-supplied Seoul intersection arena floor background.",
+      "processing": "Copied without visual modification and stretched to the current 16:9 arena bounds."
+    },
+    {
+      "id": "background_seoul_intersection_02",
+      "file": "assets/backgrounds/background_seoul_intersection_02.png",
+      "source": "C:\\Users\\geniu\\Downloads\\ChatGPT Image 2026년 9월 13일 오후 10_52_43.png",
+      "prompt": "User-supplied ruined Seoul gate intersection arena floor background.",
+      "processing": "Copied without visual modification and stretched to the current 16:9 arena bounds."
+    },
+    {
+      "id": "player_awakened_kickboard_03",
+      "file": "assets/characters/player_awakened_kickboard_03.png",
+      "source": "C:\\Users\\geniu\\Downloads\\ChatGPT Image 2026년 9월 13일 오후 10_56_07.png",
+      "prompt": "User-supplied revised magic kickboard awakened character sprite.",
+      "processing": "Copied without visual modification."
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+# Project Seoul Gate
+
+현대 서울의 각성자가 게이트 몬스터와 싸우는 개인용 2D 자동 전투 게임입니다. 메인 로비에서 맵·심도·각성자·시작 무기·축복을 정해 출동하고, 유한 아레나의 20 Wave와 게이트24 상점을 진행합니다. 게이트 공략으로 얻은 협회 코인은 협회 메뉴에서 사용합니다.
+
+## 처음 설치
+Node.js 22.12 이상을 설치한 뒤 PowerShell에서 아래 명령을 한 줄씩 입력하세요.
+
+```powershell
+cd C:\Users\geniu\Documents\GitHub\Seoul-Hero
+npm install
+npm run dev
+```
+
+브라우저에서 http://127.0.0.1:5174/ 를 여세요. PowerShell의 서버가 실행 중이어야 접속됩니다. 다시 켤 때는 폴더 이동과 npm run dev만 하면 됩니다. 기존 대시보드의 5173은 변경하지 않습니다.
+
+## 조작
+WASD/방향키 이동, 자동 공격, ESC 일시정지입니다. 모바일은 가로 화면과 왼쪽 아래 가상 조이스틱을 사용합니다. 상점의 무기·아이템·분기는 버튼으로 선택합니다. 설정에서 음량과 음소거를 변경하며 첫 클릭 후 음악이 시작됩니다.
+
+F3는 개발자 도구입니다. 설정에서 개발자 모드를 켠 뒤 Wave 이동·보스·무적·배속·무기/분기·아이템·돈·적 500개 생성·효과음을 시험할 수 있습니다. 개발자 지급은 진행에 영향을 줄 수 있으므로 설정에서 저장 JSON을 먼저 백업할 수 있습니다.
+
+## 확인 명령
+```powershell
+npm run typecheck
+npm run lint
+npm test
+npm run build
+npm run preview
+```
+마지막 미리보기 주소는 http://127.0.0.1:4174/ 입니다. build는 배포용 파일을 dist에 만듭니다.
+
+## 저장
+브라우저에 협회 코인·해금·메타 진행·주간 상태·설정을 저장합니다. 현재 버전은 v11이며 구버전은 순서대로 검증·이관합니다. 새 판에서는 Run 마력석/무기/아이템이 초기화됩니다. 중간 전투 저장은 없습니다. 설정에 내보내기/가져오기/초기화가 있습니다. 주소나 브라우저를 바꾸면 저장 공간이 달라집니다.
+
+로비의 Google 로그인은 선택 사항입니다. 로그인하면 영구 진행만 Supabase 계정 저장소와 동기화합니다. 첫 연결이나 두 기기 기록이 충돌할 때는 어느 기록을 사용할지 선택합니다. 선택하지 않은 기록은 JSON 파일과 이 기기의 별도 사본으로 남깁니다. 로그아웃하면 기존 게스트 저장으로 돌아갑니다. 전투 중에는 계정을 바꿀 수 없습니다.
+
+## 모바일 웹 배포
+
+`main` 브랜치를 GitHub의 `Link-Code-ASH/Seoul-Hero` 저장소에 올리면 `.github/workflows/deploy.yml`이 GitHub Pages용 빌드를 만듭니다. 저장소 Settings → Pages의 Source는 **GitHub Actions**로 설정합니다. 배포가 완료된 후 해당 HTTPS 주소를 안드로이드 Chrome으로 열어 가로 화면에서 플레이합니다. 현재 배포 완료 여부는 GitHub Pages에서 직접 확인해야 합니다.
+
+Supabase 프로젝트 `DASHBOARD`의 Authentication → URL Configuration에 배포 주소와 `http://127.0.0.1:5174/`를 Redirect URLs로 등록합니다. Google Provider도 활성화해야 합니다. 게임 데이터는 별도 `seoul_gate_saves` 테이블에 저장하고 대시보드 데이터는 건드리지 않습니다. 주소를 처음 바꾸기 전에는 설정에서 JSON 백업을 보관하세요.
+
+## 폴더
+- src/data: 맵·적·무기·아이템·Wave·스탯·가격 등 콘텐츠와 밸런스
+- src/systems, src/core: 게임 규칙과 실행 연결
+- src/state, src/meta, src/save: 한 판/영구 상태와 저장
+- src/input, src/rendering, src/ui, src/styles: 조작·화면·메뉴
+- assets: 이미지·오디오, scripts: 재생성 도구
+- docs: 구조·콘텐츠 가이드·검증 기록
+
+현재 콘텐츠는 일반 적 12종, 엘리트 6종, 보스 2종 데이터, 전투 무기 6종, 설치물 3종, 아이템 30개입니다. 적 12종과 보스 2종, 설치물 3종 및 주요 무기 효과가 실제 이미지로 표시됩니다. 기본 Stage는 보스 1종을 사용합니다. 상세 상태는 docs/IMPLEMENTATION_STATUS.md, 최종 검증과 한계는 docs/FINAL_QA.md, 다음 작업은 docs/TODO.md를 참고하세요.
+

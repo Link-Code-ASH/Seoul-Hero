@@ -1,0 +1,17 @@
+{
+  "generatedAt": "2026-09-21",
+  "generator": "OpenAI image generation",
+  "style": "high-resolution semi-realistic modern Seoul urban-fantasy hunter equipment on transparent backgrounds",
+  "assets": {
+    "weapon_mana_sword_01.png": "cyan-edged modern hunter mana sword",
+    "weapon_guardian_daggers_01.png": "archived matched guardian orbit daggers; current guardian shuriken art is assets/weapons/weapon_guardian_shuriken_01.png",
+    "weapon_mana_bolt_01.png": "compact mana-bolt focus emitter",
+    "weapon_piercing_shot_01.png": "long-range piercing rail launcher",
+    "weapon_chain_lightning_01.png": "chain-lightning conductor",
+    "weapon_mana_bombard_01.png": "heavy magical bombard launcher",
+    "weapon_auto_turret_01.png": "archived directional-barrel automatic hunter turret",
+    "weapon_auto_turret_02.png": "raised omnidirectional sentry tower with a six-emitter rotating crown",
+    "weapon_mine_layer_01.png": "purple-core mine deployment device",
+    "weapon_mana_field_01.png": "crystalline mana-field generator"
+  }
+}

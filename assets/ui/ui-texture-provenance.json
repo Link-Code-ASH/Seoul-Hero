@@ -1,0 +1,17 @@
+{
+  "createdAt": "2026-09-13",
+  "tool": "OpenAI built-in image generation",
+  "assets": [
+    {
+      "file": "assets/ui/ui_texture_worn_metal_01.png",
+      "source": "C:/Users/geniu/.codex/generated_images/01a07bcf-7f98-7021-bf14-e9c913993db8/exec-a26fecb9-17ee-4b75-8d1a-c61c1bc7d9ca.png",
+      "prompt": "Tileable square texture for a gritty top-down survival game interface; hand-painted worn charcoal and faded olive steel, chipped paint, dents, scratches and grime; flat front-facing surface, quiet center, no text, symbols, frame, logo or watermark."
+    },
+    {
+      "file": "assets/ui/ui_texture_field_paper_01.png",
+      "source": "C:/Users/geniu/.codex/generated_images/01a07bcf-7f98-7021-bf14-e9c913993db8/exec-a3d989ce-7e5b-4bfa-9c08-28a4ce8f898f.png",
+      "prompt": "Tileable game UI dossier texture; hand-painted dirty parchment and canvas fibers with creases, pencil scuffs, worn ink stains and rust marks; warm dim bunker mood, quiet center, no text, symbols, frame, logo or watermark."
+    }
+  ],
+  "processing": "Project copies were resized to 512x512 PNG for browser use; original generated files remain unchanged."
+}

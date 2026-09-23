@@ -1,0 +1,15 @@
+{
+  "generator": "OpenAI image generation (built-in imagegen)",
+  "created": "2026-09-22",
+  "purpose": "Integrated penalty-and-benefit emblems with a distinct palette for every weekly gate rule",
+  "sharedPrompt": "Transparent square semi-realistic painted game emblem, one coherent symbol combining the weekly danger and fixed benefit, tactile metal/crystal/energy materials, no text, letters, plate, frame or watermark.",
+  "assets": {
+    "weekly_trait_hardened_01.png": "gunmetal carapace and amber hunter blade",
+    "weekly_trait_violent_01.png": "coral impact wave colliding with cyan ward",
+    "weekly_trait_crowded_01.png": "ochre rift claws around turquoise collection core",
+    "weekly_trait_pursuit_01.png": "midnight predator trail and cyan hunter movement",
+    "weekly_trait_elite_01.png": "violet elite crystal and antique gold luck talisman",
+    "weekly_trait_attrition_01.png": "ash veil, thorned heart and muted jade life seal",
+    "weekly_trait_surge_01.png": "indigo dimensional tide around silver attack core"
+  }
+}

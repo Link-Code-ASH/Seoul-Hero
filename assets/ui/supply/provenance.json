@@ -1,0 +1,10 @@
+{
+  "generator": "OpenAI built-in image generation",
+  "createdAt": "2026-09-21",
+  "style": "semi-realistic blue-gray modern Seoul fantasy supply interface, transparent raster PNG",
+  "assets": {
+    "supply_opening_platform_01.png": "physical gunmetal supply activation platform with restrained cyan channels",
+    "supply_opening_burst_01.png": "textured cyan-white vapor, energy and glass-fragment reward burst",
+    "supply_result_backplate_01.png": "wide dark brushed-metal and smoked-glass reward result chassis without text"
+  }
+}

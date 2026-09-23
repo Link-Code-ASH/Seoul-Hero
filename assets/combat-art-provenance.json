@@ -1,0 +1,206 @@
+{
+  "date": "2026-09-13",
+  "tool": "built-in image_gen",
+  "generated": [
+    {
+      "id": "bulwark",
+      "file": "enemies/enemy_bulwark_01",
+      "path": "C:\\Users\\geniu\\.codex\\generated_images\\01a07bcf-7f98-7021-bf14-e9c913993db8\\exec-2aaca2ca-da57-4e7c-95e0-06bdbbf51c2b.png",
+      "prompt": "Ironback ogre tank monster; transparent alpha; overhead 3/4 cel-shaded red stone and iron armor."
+    },
+    {
+      "id": "spitter",
+      "file": "enemies/enemy_spitter_01",
+      "prompt": "Create ONE production game sprite, genuinely transparent alpha background. Use case stylized-concept. Project Seoul Gate modern Seoul fantasy 2D top-down survival game. Clean cel-shaded painted illustration with controlled dark outlines and simple large shapes readable at 64px. Overhead 3/4 view, top-left lighting, centered complete subject, 10% transparent margin. No scene, ground, text, labels, UI, border, checkerboard or extra subjects. No baked black or white background. Square 512x512 if possible. Subject: A ranged demon spitter: thin hunched magenta reptilian monster with a huge single glowing orange throat sac and small claws, unmistakable ranged shooter silhouette.",
+      "path": "C:\\Users\\geniu\\.codex\\generated_images\\01a07bcf-7f98-7021-bf14-e9c913993db8\\exec-7c2d7b4d-17a9-4edb-b408-dad3f4162de0.png"
+    },
+    {
+      "id": "swarm",
+      "file": "enemies/enemy_swarm_01",
+      "prompt": "Create ONE production game sprite, genuinely transparent alpha background. Use case stylized-concept. Project Seoul Gate modern Seoul fantasy 2D top-down survival game. Clean cel-shaded painted illustration with controlled dark outlines and simple large shapes readable at 64px. Overhead 3/4 view, top-left lighting, centered complete subject, 10% transparent margin. No scene, ground, text, labels, UI, border, checkerboard or extra subjects. No baked black or white background. Square 512x512 if possible. Subject: A single tiny alien swarm beetle: amber chitin oval shell, six widely spread hooked legs, two short mandibles, overhead squat silhouette.",
+      "path": "C:\\Users\\geniu\\.codex\\generated_images\\01a07bcf-7f98-7021-bf14-e9c913993db8\\exec-0cf6ff31-8a4c-49b3-9c8c-ec587ed599ee.png"
+    },
+    {
+      "id": "charger",
+      "file": "enemies/enemy_charger_01",
+      "prompt": "Create ONE production game sprite, genuinely transparent alpha background. Use case stylized-concept. Project Seoul Gate modern Seoul fantasy 2D top-down survival game. Clean cel-shaded painted illustration with controlled dark outlines and simple large shapes readable at 64px. Overhead 3/4 view, top-left lighting, centered complete subject, 10% transparent margin. No scene, ground, text, labels, UI, border, checkerboard or extra subjects. No baked black or white background. Square 512x512 if possible. Subject: A charging horn beast: muscular crimson boar-rhino quadruped with enormous forward ivory horns, low head and raised armored shoulders, dynamic ready-to-charge stance.",
+      "path": "C:\\Users\\geniu\\.codex\\generated_images\\01a07bcf-7f98-7021-bf14-e9c913993db8\\exec-29be115b-7b46-4aa8-a14d-bad3b91fb16b.png"
+    },
+    {
+      "id": "bomber",
+      "file": "enemies/enemy_bomber_01",
+      "prompt": "Create ONE production game sprite, genuinely transparent alpha background. Use case stylized-concept. Project Seoul Gate modern Seoul fantasy 2D top-down survival game. Clean cel-shaded painted illustration with controlled dark outlines and simple large shapes readable at 64px. Overhead 3/4 view, top-left lighting, centered complete subject, 10% transparent margin. No scene, ground, text, labels, UI, border, checkerboard or extra subjects. No baked black or white background. Square 512x512 if possible. Subject: An explosive spore monster: round orange pumpkin-like fungal body on three stubby legs, large glowing yellow cracks and a cluster of bulbous explosive sacs, no face smile.",
+      "path": "C:\\Users\\geniu\\.codex\\generated_images\\01a07bcf-7f98-7021-bf14-e9c913993db8\\exec-9e23b599-1d20-42b3-bfc7-cf9b3dc83f08.png"
+    },
+    {
+      "id": "splitter",
+      "file": "enemies/enemy_splitter_01",
+      "prompt": "Create ONE production game sprite, genuinely transparent alpha background. Use case stylized-concept. Project Seoul Gate modern Seoul fantasy 2D top-down survival game. Clean cel-shaded painted illustration with controlled dark outlines and simple large shapes readable at 64px. Overhead 3/4 view, top-left lighting, centered complete subject, 10% transparent margin. No scene, ground, text, labels, UI, border, checkerboard or extra subjects. No baked black or white background. Square 512x512 if possible. Subject: A splitting slime monster: lime green translucent irregular puddle creature with three connected lobes, dark nucleus eyes and small bubbles, squat asymmetric silhouette.",
+      "path": "C:\\Users\\geniu\\.codex\\generated_images\\01a07bcf-7f98-7021-bf14-e9c913993db8\\exec-e0b34711-a880-4c99-b1fa-611b9dcaa7b2.png"
+    },
+    {
+      "id": "mender",
+      "file": "enemies/enemy_mender_01",
+      "prompt": "Create ONE production game sprite, genuinely transparent alpha background. Use case stylized-concept. Project Seoul Gate modern Seoul fantasy 2D top-down survival game. Clean cel-shaded painted illustration with controlled dark outlines and simple large shapes readable at 64px. Overhead 3/4 view, top-left lighting, centered complete subject, 10% transparent margin. No scene, ground, text, labels, UI, border, checkerboard or extra subjects. No baked black or white background. Square 512x512 if possible. Subject: A monster healing priest: thin pale undead creature in torn dark crimson hooded robes, bent staff ending in a mint green crystal cross-shaped star, large hood and hunched posture, full body.",
+      "path": "C:\\Users\\geniu\\.codex\\generated_images\\01a07bcf-7f98-7021-bf14-e9c913993db8\\exec-0fc86256-8a38-41b1-a9a8-560201adf25e.png"
+    },
+    {
+      "id": "summoner",
+      "file": "enemies/enemy_summoner_01",
+      "prompt": "Create ONE production game sprite, genuinely transparent alpha background. Use case stylized-concept. Project Seoul Gate modern Seoul fantasy 2D top-down survival game. Clean cel-shaded painted illustration with controlled dark outlines and simple large shapes readable at 64px. Overhead 3/4 view, top-left lighting, centered complete subject, 10% transparent margin. No scene, ground, text, labels, UI, border, checkerboard or extra subjects. No baked black or white background. Square 512x512 if possible. Subject: A rift summoner monster: floating violet cloaked squid-like demon with four tentacles and a large hexagonal broken rune ring held behind its head, bright magenta eyes, compact readable silhouette.",
+      "path": "C:\\Users\\geniu\\.codex\\generated_images\\01a07bcf-7f98-7021-bf14-e9c913993db8\\exec-0e04ec69-9b6c-4594-8c34-9c8fd128b3a7.png"
+    },
+    {
+      "id": "sentinel",
+      "file": "enemies/enemy_sentinel_01",
+      "prompt": "Create ONE production game sprite, genuinely transparent alpha background. Use case stylized-concept. Project Seoul Gate modern Seoul fantasy 2D top-down survival game. Clean cel-shaded painted illustration with controlled dark outlines and simple large shapes readable at 64px. Overhead 3/4 view, top-left lighting, centered complete subject, 10% transparent margin. No scene, ground, text, labels, UI, border, checkerboard or extra subjects. No baked black or white background. Square 512x512 if possible. Subject: A gate shield sentinel monster: squat indigo stone humanoid mostly covered by one enormous angular steel-blue tower shield, horned helmet and small orange eyes above shield, both feet visible.",
+      "path": "C:\\Users\\geniu\\.codex\\generated_images\\01a07bcf-7f98-7021-bf14-e9c913993db8\\exec-91c47da1-e884-42f0-8aba-14fdefb03e42.png"
+    },
+    {
+      "id": "lurker",
+      "file": "enemies/enemy_lurker_01",
+      "prompt": "Create ONE production game sprite, genuinely transparent alpha background. Use case stylized-concept. Project Seoul Gate modern Seoul fantasy 2D top-down survival game. Clean cel-shaded painted illustration with controlled dark outlines and simple large shapes readable at 64px. Overhead 3/4 view, top-left lighting, centered complete subject, 10% transparent margin. No scene, ground, text, labels, UI, border, checkerboard or extra subjects. No baked black or white background. Square 512x512 if possible. Subject: A shadow ambusher monster: narrow dark burgundy bat-like demon, pointed ears, two large folded blade wings, hooked feet, glowing pink eyes, readable triangular silhouette.",
+      "path": "C:\\Users\\geniu\\.codex\\generated_images\\01a07bcf-7f98-7021-bf14-e9c913993db8\\exec-e6c46ac2-db01-4ecd-a929-9390d6e76bf6.png"
+    },
+    {
+      "id": "riftQueen",
+      "file": "bosses/boss_rift_queen_01",
+      "prompt": "Create ONE production game sprite, genuinely transparent alpha background. Use case stylized-concept. Project Seoul Gate modern Seoul fantasy 2D top-down survival game. Clean cel-shaded painted illustration with controlled dark outlines and simple large shapes readable at 64px. Overhead 3/4 view, top-left lighting, centered complete subject, 10% transparent margin. No scene, ground, text, labels, UI, border, checkerboard or extra subjects. No baked black or white background. Square 512x512 if possible. Subject: The rift queen boss: regal violet insect demon queen with enormous jagged crown, four long curved chitin arms, sweeping magenta wing mantle, glowing pale core, threatening large silhouette, full body not a human woman.",
+      "path": "C:\\Users\\geniu\\.codex\\generated_images\\01a07bcf-7f98-7021-bf14-e9c913993db8\\exec-b93592d5-b5ec-4278-b220-2e04953e1bac.png"
+    },
+    {
+      "id": "turret",
+      "file": "structures/structure_auto_turret_01",
+      "prompt": "Create ONE production game sprite, genuinely transparent alpha background. Use case stylized-concept. Project Seoul Gate modern Seoul fantasy 2D top-down survival game. Clean cel-shaded painted illustration with controlled dark outlines and simple large shapes readable at 64px. Overhead 3/4 view, top-left lighting, centered complete subject, 10% transparent margin. No scene, ground, text, labels, UI, border, checkerboard or extra subjects. No baked black or white background. Square 512x512 if possible. Subject: A friendly automated mana turret: compact modern Korean hunter deployable tripod with dark graphite armor, cyan energy core, short thick barrel pointing directly RIGHT, mint white accent plates. No operator. Full equipment isolated.",
+      "path": "C:\\Users\\geniu\\.codex\\generated_images\\01a07bcf-7f98-7021-bf14-e9c913993db8\\exec-6e79d085-f867-4139-af8e-530a1d01ecf7.png"
+    },
+    {
+      "id": "mine",
+      "file": "structures/structure_mana_mine_02",
+      "prompt": "Production-ready transparent 2D sprite: compact hexagonal arcane proximity mine, matte dark gunmetal, pale violet crystal core, top-down three-quarter view, modern Seoul hunter technology, no explosion or ground circle.",
+      "path": "C:\\Users\\geniu\\.codex\\generated_images\\01a07bcf-7f98-7021-bf14-e9c913993db8\\exec-f996e214-c107-4a53-82cf-425828a4d4fa.png"
+    },
+    {
+      "id": "field",
+      "file": "structures/structure_mana_field_02",
+      "prompt": "Production-ready transparent 2D sprite: stationary mana-field generator with dark metal stabilizers, pale teal-violet crystal reactor and cyan light strips, top-down three-quarter view, no active field circle.",
+      "path": "C:\\Users\\geniu\\.codex\\generated_images\\01a07bcf-7f98-7021-bf14-e9c913993db8\\exec-f1028081-6014-4365-aa61-539e9d9db3f3.png"
+    },
+    {
+      "id": "explosionCoreFx",
+      "file": "effects/effect_explosion_core_01",
+      "prompt": "Replacement 2D game VFX: compact cyan-white magical impact core, deep blue and muted violet energy petals, angular shards, restrained glow, semi-realistic cel-shaded modern urban fantasy art; no realistic flames or photographic smoke.",
+      "path": "C:\\Users\\geniu\\.codex\\generated_images\\01a07bcf-7f98-7021-bf14-e9c913993db8\\exec-0504a146-3b1c-4aed-8660-a4f64437f9b2.png"
+    },
+    {
+      "id": "explosionSmokeFx",
+      "file": "effects/effect_explosion_smoke_01",
+      "prompt": "Replacement 2D game VFX: clustered rising charcoal navy-gray smoke masses with broad cel-shaded planes, muted violet rim light and tiny cyan embers; serious, weighty and non-photorealistic.",
+      "path": "C:\\Users\\geniu\\.codex\\generated_images\\01a07bcf-7f98-7021-bf14-e9c913993db8\\exec-1877552f-00b3-4019-99e5-bf622d5bd4f2.png"
+    },
+    {
+      "id": "bombardFx",
+      "file": "effects/effect_mana_bombard_02",
+      "prompt": "Replacement transparent mana bombard VFX: cyan-white impact column, navy and desaturated blue energy wedges, restrained shock flare and readable dark fragments in polished semi-realistic cel-shaded game art.",
+      "path": "C:\\Users\\geniu\\.codex\\generated_images\\01a07bcf-7f98-7021-bf14-e9c913993db8\\exec-6790c0fa-303a-4a2d-b7d3-59df4d8e3f13.png"
+    },
+    {
+      "id": "mineBlastFx",
+      "file": "effects/effect_mine_explosion_02",
+      "prompt": "Replacement transparent mana mine VFX: compact low violet detonation, lavender-white core, broad graphic pressure petals, dark mana fragments and short teal-violet sparks in polished cel-shaded game art.",
+      "path": "C:\\Users\\geniu\\.codex\\generated_images\\01a07bcf-7f98-7021-bf14-e9c913993db8\\exec-392917c2-731a-4f77-b2df-69b247edd3c8.png"
+    },
+    {
+      "id": "explosionFx",
+      "file": "effects/effect_combined_explosion_01",
+      "prompt": "Simplified circular explosion VFX with six broad blue-gray smoke lobes, a pale violet impact center, one thin pressure ring and few fragments, using broad cel-shaded shapes and a softly transparent outer perimeter whose diameter represents the damage area.",
+      "path": "C:\\Users\\geniu\\.codex\\generated_images\\01a07bcf-7f98-7021-bf14-e9c913993db8\\exec-af61d70d-76a0-4ca4-a9ee-d8fcf74a0523.png"
+    },
+    {
+      "id": "chainFx",
+      "file": "effects/effect_chain_lightning_02",
+      "prompt": "A horizontal pale blue-white chain-lightning segment with angular bends, deep blue body, restrained violet branches and soft cyan glow, transparent background, readable at small gameplay size.",
+      "path": "C:\\Users\\geniu\\.codex\\generated_images\\01a07bcf-7f98-7021-bf14-e9c913993db8\\exec-59e6e58b-c14c-4bd5-8cfd-d50a5a4e2af3.png"
+    },
+    {
+      "id": "daggerFx",
+      "file": "effects/effect_guardian_dagger_02",
+      "prompt": "A substantial horizontal guardian dagger pointing right, dark gunmetal spine, pale steel edge, cyan-violet mana seam and practical black grip, semi-realistic cel-shaded modern hunter equipment on transparent background.",
+      "path": "C:\\Users\\geniu\\.codex\\generated_images\\01a07bcf-7f98-7021-bf14-e9c913993db8\\exec-04c406b3-802b-46d4-8692-1fc39f3efd78.png"
+    },
+    {
+      "id": "wallet",
+      "file": "ui/ui_wallet_01",
+      "prompt": "Modern hunter utility wallet pouch, dark graphite technical fabric and matte metal clasp with a pale lavender mana crystal emblem, serious urban fantasy UI icon on transparent background.",
+      "path": "C:\\Users\\geniu\\.codex\\generated_images\\01a07bcf-7f98-7021-bf14-e9c913993db8\\exec-80e0fdae-b3a3-4a92-a235-eaabbd1d7003.png"
+    },
+    {
+      "id": "slashFx",
+      "file": "effects/effect_mana_slash_02",
+      "prompt": "Broad pale blue-violet magical sword crescent for a top-down sector attack, transparent game VFX with a restrained modern fantasy finish.",
+      "path": "C:\\Users\\geniu\\.codex\\generated_images\\01a07bcf-7f98-7021-bf14-e9c913993db8\\exec-b7f5a490-62ae-4def-9642-bff9a3e36f99.png"
+    },
+    {
+      "id": "bombardExplosionFx",
+      "file": "effects/effect_combined_explosion_orange_01",
+      "prompt": "Circular orange and amber magical bombard explosion with broad charcoal smoke lobes, soft pressure ring and fading perimeter, transparent modern urban fantasy game VFX.",
+      "path": "C:\\Users\\geniu\\.codex\\generated_images\\01a07bcf-7f98-7021-bf14-e9c913993db8\\exec-d907ae40-398b-4c64-8dc6-20cea5c8289b.png"
+    },
+    {
+      "id": "mineExplosionFx",
+      "file": "effects/effect_combined_explosion_mine_02",
+      "prompt": "Exact orange bombard explosion composition recolored only to magical violet and lavender for the mana mine, preserving smoke, footprint, fragments and transparency.",
+      "path": "C:\\Users\\geniu\\.codex\\generated_images\\01a07bcf-7f98-7021-bf14-e9c913993db8\\exec-8f4109e2-dc8f-4f9a-89dd-86031a6aa912.png"
+    }
+  ],
+  "vectorFallback": [
+    {
+      "id": "mine",
+      "file": "structures/structure_mana_mine_01",
+      "prompt": "Create ONE production game sprite, genuinely transparent alpha background. Use case stylized-concept. Project Seoul Gate modern Seoul fantasy 2D top-down survival game. Clean cel-shaded painted illustration with controlled dark outlines and simple large shapes readable at 64px. Overhead 3/4 view, top-left lighting, centered complete subject, 10% transparent margin. No scene, ground, text, labels, UI, border, checkerboard or extra subjects. No baked black or white background. Square 512x512 if possible. Subject: A friendly deployable magical proximity mine: squat flat hexagonal graphite metal puck with three folded support feet and a bright amber triangular core, orange safety marks, slightly overhead view. No explosion.",
+      "status": "archived_svg_fallback_replaced_by_structure_mana_mine_02_png"
+    },
+    {
+      "id": "field",
+      "file": "structures/structure_mana_field_01",
+      "prompt": "Create ONE production game sprite, genuinely transparent alpha background. Use case stylized-concept. Project Seoul Gate modern Seoul fantasy 2D top-down survival game. Clean cel-shaded painted illustration with controlled dark outlines and simple large shapes readable at 64px. Overhead 3/4 view, top-left lighting, centered complete subject, 10% transparent margin. No scene, ground, text, labels, UI, border, checkerboard or extra subjects. No baked black or white background. Square 512x512 if possible. Subject: A friendly mana field generator: short futuristic graphite tripod pedestal supporting a suspended cyan crystal between two curved metal prongs, mint rune ring around the base, compact modern hunter equipment. No large surrounding aura.",
+      "status": "archived_svg_fallback_replaced_by_structure_mana_field_02_png"
+    },
+    {
+      "id": "slashFx",
+      "file": "effects/effect_mana_slash_01",
+      "prompt": "Create ONE production game sprite, genuinely transparent alpha background. Use case stylized-concept. Project Seoul Gate modern Seoul fantasy 2D top-down survival game. Clean cel-shaded painted illustration with controlled dark outlines and simple large shapes readable at 64px. Overhead 3/4 view, top-left lighting, centered complete subject, 10% transparent margin. No scene, ground, text, labels, UI, border, checkerboard or extra subjects. No baked black or white background. Square 512x512 if possible. Subject: A single clean luminous magical sword slash effect: wide crescent ribbon with pointed ends, ivory-hot center and mint-gold outer streaks. Crescent opens LEFT and bulges RIGHT. Flat overhead effect, no weapon or character. Centered with generous margin.",
+      "status": "completed_as_lightweight_svg_after_image_generation_limit"
+    },
+    {
+      "id": "daggerFx",
+      "file": "effects/effect_guardian_dagger_01",
+      "prompt": "Create ONE production game sprite, genuinely transparent alpha background. Use case stylized-concept. Project Seoul Gate modern Seoul fantasy 2D top-down survival game. Clean cel-shaded painted illustration with controlled dark outlines and simple large shapes readable at 64px. Overhead 3/4 view, top-left lighting, centered complete subject, 10% transparent margin. No scene, ground, text, labels, UI, border, checkerboard or extra subjects. No baked black or white background. Square 512x512 if possible. Subject: A single floating guardian dagger weapon sprite: slim elegant steel blade with pale cyan magical edge, dark graphite hilt and tiny golden guard, tip pointing directly RIGHT, overhead view, clean readable silhouette. No character.",
+      "status": "completed_as_lightweight_svg_after_image_generation_limit"
+    },
+    {
+      "id": "chainFx",
+      "file": "effects/effect_chain_lightning_01",
+      "prompt": "Create ONE production game sprite, genuinely transparent alpha background. Use case stylized-concept. Project Seoul Gate modern Seoul fantasy 2D top-down survival game. Clean cel-shaded painted illustration with controlled dark outlines and simple large shapes readable at 64px. Overhead 3/4 view, top-left lighting, centered complete subject, 10% transparent margin. No scene, ground, text, labels, UI, border, checkerboard or extra subjects. No baked black or white background. Square 512x512 if possible. Subject: A single lightning beam effect: one narrow jagged cyan-white lightning bolt running HORIZONTALLY LEFT TO RIGHT across the middle, tapered at both ends, a few thin small branches, tight translucent glow. No scene.",
+      "status": "completed_as_lightweight_svg_after_image_generation_limit"
+    },
+    {
+      "id": "blastFx",
+      "file": "effects/effect_mana_explosion_01",
+      "prompt": "Create ONE production game sprite, genuinely transparent alpha background. Use case stylized-concept. Project Seoul Gate modern Seoul fantasy 2D top-down survival game. Clean cel-shaded painted illustration with controlled dark outlines and simple large shapes readable at 64px. Overhead 3/4 view, top-left lighting, centered complete subject, 10% transparent margin. No scene, ground, text, labels, UI, border, checkerboard or extra subjects. No baked black or white background. Square 512x512 if possible. Subject: A single overhead magical explosion effect: circular golden-white burst core with separated orange-gold radial flame petals and sharp energy shards, soft transparent gaps, symmetrical footprint, no smoke clouds, no ground.",
+      "status": "completed_as_lightweight_svg_after_image_generation_limit"
+    },
+    {
+      "id": "piercingFx",
+      "file": "projectiles/projectile_piercing_round_01",
+      "prompt": "Create ONE production game sprite, genuinely transparent alpha background. Use case stylized-concept. Project Seoul Gate modern Seoul fantasy 2D top-down survival game. Clean cel-shaded painted illustration with controlled dark outlines and simple large shapes readable at 64px. Overhead 3/4 view, top-left lighting, centered complete subject, 10% transparent margin. No scene, ground, text, labels, UI, border, checkerboard or extra subjects. No baked black or white background. Square 512x512 if possible. Subject: A single piercing magical projectile effect: narrow bright ivory-gold spear-shaped bolt flying RIGHT with a long amber comet tail trailing LEFT, crisp pointed nose and restrained glow. Flat overhead.",
+      "status": "completed_as_lightweight_svg_after_image_generation_limit"
+    },
+    {
+      "id": "turretBolt",
+      "file": "projectiles/projectile_turret_bolt_01",
+      "prompt": "Create ONE production game sprite, genuinely transparent alpha background. Use case stylized-concept. Project Seoul Gate modern Seoul fantasy 2D top-down survival game. Clean cel-shaded painted illustration with controlled dark outlines and simple large shapes readable at 64px. Overhead 3/4 view, top-left lighting, centered complete subject, 10% transparent margin. No scene, ground, text, labels, UI, border, checkerboard or extra subjects. No baked black or white background. Square 512x512 if possible. Subject: A single friendly turret projectile effect: compact cyan-white energy dart flying RIGHT with a short forked blue tail trailing LEFT, distinct technological triangular silhouette, crisp edge and restrained glow. Flat overhead.",
+      "status": "completed_as_lightweight_svg_after_image_generation_limit"
+    }
+  ]
+}

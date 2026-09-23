@@ -1,0 +1,22 @@
+{
+  "generator": "OpenAI image generation (built-in imagegen)",
+  "created": "2026-09-22",
+  "purpose": "Semi-realistic horror redesign of all current Project Seoul Gate enemies and bosses",
+  "sharedPrompt": "Transparent full-body 2D top-down action game sprite, three-quarter view facing lower-right, semi-realistic painterly modern Seoul fantasy horror, cool urban lighting, restrained internal rift glow, one creature only, no base, ring, text, frame, watermark or baked shadow.",
+  "assets": {
+    "enemy_brute_01.png": "균열체: hunched charcoal crawler with crimson fissures",
+    "enemy_hound_01.png": "질주체: lean obsidian-plated orange rift predator",
+    "enemy_bulwark_01.png": "철각 거인: massive horned brute with cracked iron chitin",
+    "enemy_spitter_01.png": "마탄 사수: gaunt aberration with fused magenta forearm cannon",
+    "enemy_swarm_01.png": "군집 벌레: compact six-legged ochre rift insect",
+    "enemy_charger_01.png": "돌진 뿔짐승: quadruped battering-ram beast",
+    "enemy_bomber_01.png": "폭렬 포자: unstable charcoal fungus with amber spore sacs",
+    "enemy_splitter_01.png": "분열 점액: smoky-green tissue around black mineral fragments",
+    "enemy_mender_01.png": "치유 사제: faceless membrane priest with jade healing organ",
+    "enemy_summoner_01.png": "틈새 소환사: levitating four-armed body with violet aperture",
+    "enemy_sentinel_01.png": "수문 방패병: squat creature with fused mineral shield arm",
+    "enemy_lurker_01.png": "그림자 잠복자: charcoal mantis humanoid with blade arms",
+    "../bosses/boss_gate_keeper_01.png": "게이트 파수꾼: huge stone-and-flesh rift sentinel",
+    "../bosses/boss_rift_queen_01.png": "균열 여왕: six-limbed insectoid commanding queen"
+  }
+}

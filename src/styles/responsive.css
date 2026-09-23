@@ -1,0 +1,386 @@
+@media(max-width:1000px) {
+
+  .menu-layout {
+    gap: 5vw;
+    padding: 4vh 6vw;
+  }
+
+  .operation-card {
+    min-height: 460px;
+  }
+
+  .gate-emblem {
+    height: 210px;
+  }
+
+  .upgrade-grid {
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  .game-title {
+    font-size: 57px;
+  }
+
+  .key-hint {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .hero-korean {
+    font-size: 20px;
+  }
+
+  .content-screen {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+}
+
+@media(max-width:680px) {
+
+  .site-header {
+    height: 66px;
+    padding: 0 6vw;
+  }
+
+  .header-note {
+    display: none;
+  }
+
+  .screen {
+    inset: 66px 0 0;
+  }
+
+  .menu-layout {
+    grid-template-columns: 1fr;
+    gap: 35px;
+    padding: 40px 7vw;
+  }
+
+  .hero-copy {
+    max-width: 470px;
+  }
+
+  .game-title {
+    font-size: 60px;
+  }
+
+  .hero-korean {
+    font-size: 20px;
+  }
+
+  .menu-actions {
+    max-width: none;
+  }
+
+  .operation-card {
+    min-height: 0;
+  }
+
+  .gate-emblem {
+    height: 180px;
+  }
+
+  .operation-bottom {
+    padding: 20px;
+  }
+
+  .card-top {
+    padding: 20px;
+  }
+
+  .select-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .section-heading h1 {
+    font-size: 28px;
+  }
+
+  .upgrade-grid {
+    gap: 10px;
+  }
+
+  .upgrade-card {
+    padding: 20px 15px;
+  }
+
+  .upgrade-card h2 {
+    font-size: 19px;
+  }
+
+  .upgrade-card button {
+    padding: 10px;
+    font-size: 12px;
+  }
+
+  .overlay-screen {
+    inset: 0;
+    padding: 20px;
+  }
+
+  .choice-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin: 20px 0;
+  }
+
+  .choice-card {
+    min-height: 0;
+    padding: 17px;
+    display: block;
+    position: relative;
+  }
+
+  .choice-number {
+    position: absolute;
+    right: 18px;
+    top: 18px;
+    font-size: 27px;
+  }
+
+  .choice-card h2 {
+    font-size: 18px;
+    margin: 6px 0;
+  }
+
+  .choice-card p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+  }
+
+  .choice-footer {
+    padding-top: 8px;
+  }
+
+  .level-modal .section-heading {
+    margin-bottom: 10px;
+  }
+
+  .level-modal .section-heading h1 {
+    font-size: 25px;
+    margin: 10px 0;
+  }
+
+  .level-modal .section-heading p {
+    font-size: 12px;
+    margin: 0;
+  }
+
+  .hud-top {
+    padding: 16px;
+  }
+
+  .player-status {
+    width: 185px;
+  }
+
+  .player-status>.eyebrow,.player-status .eyebrow>span {
+    font-size: 8px;
+  }
+
+  .timer {
+    top: 70px;
+  }
+
+  .timer strong {
+    font-size: 25px;
+  }
+
+  .hud-bottom {
+    left: 18px;
+    right: 18px;
+    bottom: 18px;
+  }
+
+  .hud-bottom>span:last-child {
+    display: none;
+  }
+
+  .boss-status {
+    top: 130px;
+    width: max-content;
+    max-width: 90vw;
+    font-size: 10px;
+  }
+
+  .danger-zone {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .dev-panel {
+    top: 120px;
+    right: 10px;
+    width: 245px;
+    max-height: calc(100dvh - 140px);
+  }
+
+  .modal {
+    padding: 27px;
+  }
+
+  .settings-card {
+    padding: 20px;
+  }
+
+  .setting-row {
+    font-size: 12px;
+  }
+}
+
+@media(pointer:coarse) {
+
+  .joystick:not([hidden]) {
+    display: block;
+  }
+
+  .hud-bottom>span:last-child {
+    display: none;
+  }
+}
+
+@media(max-height:600px) and (min-width:681px) {
+
+  .site-header {
+    height: 62px;
+  }
+
+  .screen {
+    inset: 62px 0 0;
+  }
+
+  .menu-layout {
+    min-height: calc(100dvh - 62px);
+    padding: 25px 6vw;
+    gap: 8vw;
+  }
+
+  .game-title {
+    font-size: 48px;
+    margin: 15px 0;
+  }
+
+  .hero-korean {
+    font-size: 16px;
+  }
+
+  .hero-detail {
+    display: none;
+  }
+
+  .menu-actions {
+    margin: 20px 0 14px;
+  }
+
+  .large {
+    min-height: 47px;
+  }
+
+  .operation-card {
+    min-height: 330px;
+  }
+
+  .gate-emblem {
+    height: 120px;
+  }
+
+  .gate-ring {
+    width: 110px;
+    height: 110px;
+  }
+
+  .gate-emblem>span {
+    font-size: 30px;
+  }
+
+  .operation-bottom {
+    padding: 18px 25px;
+  }
+
+  .operation-bottom h2 {
+    font-size: 23px;
+  }
+
+  .operation-stats {
+    padding-top: 14px;
+    margin-top: 15px;
+  }
+
+  .card-top {
+    padding: 15px 25px;
+  }
+
+  .overlay-screen {
+    inset: 0;
+    padding: 16px;
+  }
+
+  .choice-grid {
+    margin: 15px 0;
+  }
+
+  .choice-card {
+    min-height: 215px;
+    padding: 18px;
+  }
+
+  .choice-number {
+    font-size: 26px;
+    margin-bottom: 12px;
+  }
+
+  .section-heading {
+    margin-bottom: 15px;
+  }
+
+  .section-heading h1 {
+    font-size: 26px;
+    margin-bottom: 8px;
+  }
+
+  .level-modal>.muted {
+    margin: 5px;
+  }
+
+  .modal {
+    padding: 20px;
+  }
+
+  .result-mark {
+    display: none;
+  }
+
+  .result-grid {
+    margin: 15px 0;
+  }
+
+  .result-grid>div {
+    padding: 10px;
+  }
+
+  .stack {
+    margin: 15px 0;
+    gap: 8px;
+  }
+
+  .dev-panel {
+    top: 75px;
+    max-height: calc(100dvh - 90px);
+  }
+}
+
+@media(prefers-reduced-motion:reduce) {
+
+  * {
+    transition: none!important;
+    scroll-behavior: auto!important;
+  }
+}
+
+@media(max-height:500px){.overlay-screen{align-items:flex-start;overflow-y:auto}.level-modal{margin:auto;max-width:100%}.shop-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.shop-card{padding:14px}.choice-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.timer{top:12px}.hud-bottom{bottom:8px}.dev-panel{max-height:calc(100dvh - 85px)}}
+@media(max-width:450px){.shop-grid,.choice-grid{grid-template-columns:minmax(0,1fr)}.shop-screen{padding:14px}.shop-card h2{font-size:20px}}
+
+/* Small landscape windows also expose touch controls for hybrid devices. */
+@media(max-width:900px) and (max-height:500px){.joystick:not([hidden]){display:block}.hud-bottom>span:last-child{display:none}}

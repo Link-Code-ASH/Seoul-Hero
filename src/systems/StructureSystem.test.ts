@@ -1,0 +1,21 @@
+import { describe, it, expect } from 'vitest';
+import { Simulation } from '../core/Simulation';
+import { createDefaultMeta } from '../state/MetaState';
+import { weapons } from '../data/weapons';
+import { DEFAULT_STATS } from '../data/stats';
+import { resolveWeaponStats } from '../stats/WeaponStats';
+import { createEnemy } from './EnemyFactory';
+import { structureLimit } from './StructureSystem';
+const ids=['autoTurret','mineLayer','manaField'];
+const make=(id:string)=>{const sim=new Simulation('awakener','seoul',createDefaultMeta(),()=>0.5); sim.state.invincible=true; sim.state.ownedWeapons=[{id,level:1,cooldownRemaining:0}]; return sim;};
+const step=(sim:Simulation,n=1)=>{for(let i=0;i<n;i++)sim.update(0.02,{x:0,y:0},{width:1280,height:720});};
+describe('structure weapons',()=>{
+ it.each(ids)('%s occupies a regular slot and cannot duplicate',id=>{const meta=createDefaultMeta();meta.sharedWeapons.autoTurret={unlocked:true,fragments:0,level:0};const sim=new Simulation('awakener','seoul',meta);expect(sim.debugWeapon(id,false)).toBe(true);expect(sim.state.ownedWeapons).toHaveLength(2);expect(sim.debugWeapon(id,false)).toBe(false);});
+ it.each(ids)('%s attacks from fixed placement and never heals by default',id=>{const sim=make(id);sim.state.player.hp=50;sim.state.calculatedStats.lifesteal=0.5;step(sim);const s=sim.state.structures[0]!;expect(s).toBeDefined();const e=createEnemy(999,'crawler',{x:s.x+10,y:s.y})!;e.hp=e.maxHp=10000;e.moveSpeed=0;sim.state.enemies.push(e);step(sim,60);expect(e.hp).toBeLessThan(10000);expect(sim.state.player.hp).toBe(50);if(id==='mineLayer')expect(sim.state.structures).toHaveLength(0);else{expect(sim.state.structures[0]!.x).toBe(s.x);expect(sim.state.structures[0]!.y).toBe(s.y);}});
+ it('mine waits for contact rather than exploding remotely',()=>{const sim=make('mineLayer');step(sim);const s=sim.state.structures[0]!;const e=createEnemy(999,'crawler',{x:s.x+300,y:s.y})!;e.moveSpeed=0;sim.state.enemies.push(e);step(sim,30);expect(e.hp).toBe(e.maxHp);expect(sim.state.structures).toHaveLength(1);});
+ it('caps placements and relocates them between waves while staying fixed in combat',()=>{const sim=make('mineLayer');sim.state.structureEffects=[{sourceId:'test-item',tag:'MINE',type:'maxCount',value:1}];expect(structureLimit(sim.state,weapons.mineLayer!)).toBe(7);expect(structureLimit(sim.state,weapons.autoTurret!)).toBe(2);step(sim,1200);expect(sim.state.structures.length).toBeLessThanOrEqual(7);const positions=sim.state.structures.map(({x,y})=>({x,y}));sim.completeWave();sim.continuePostWave();sim.nextWave();expect(sim.state.structures.map(({x,y})=>({x,y}))).not.toEqual(positions);});
+ it.each(ids)('%s ignores movement, armor, dodge, regen and pickup stats',id=>{const w=weapons[id]!;const baseline=resolveWeaponStats(w,1,DEFAULT_STATS);expect(resolveWeaponStats(w,1,{...DEFAULT_STATS,moveSpeed:999,armor:999,dodge:0.7,hpRegeneration:99,pickupRange:999})).toEqual(baseline);});
+ it.each(ids)('%s applies damage and meaningful attack speed',id=>{const w=weapons[id]!,base=resolveWeaponStats(w,1,DEFAULT_STATS),s=resolveWeaponStats(w,1,{...DEFAULT_STATS,damage:2,attackSpeed:2});expect(s.damage).toBeGreaterThanOrEqual(base.damage*2-1);expect(s.cooldown).toBe(base.cooldown/2);});
+ it('turret gates range, ranged, projectile speed and crit; mine/aura gate area and duration',()=>{const p={...DEFAULT_STATS,range:2,rangedDamage:2,area:2,duration:2,projectileSpeed:2,criticalChance:0.5,criticalDamage:3};for(const id of ids){const w=weapons[id]!,b=resolveWeaponStats(w,1,DEFAULT_STATS),s=resolveWeaponStats(w,1,p);if(id==='autoTurret'){expect(s.range).toBe(b.range*2);expect(s.damage).toBeGreaterThanOrEqual(b.damage*2-1);expect(s.projectileSpeed).toBe(b.projectileSpeed*2);expect(s.criticalChance).toBe(0.5);expect(s.criticalDamage).toBe(3);expect(s.duration).toBe(b.duration);}else{expect(s.blastRadius).toBe(b.blastRadius*2);expect(s.projectileSpeed).toBe(b.projectileSpeed);expect(s.criticalChance).toBe(0);expect(s.duration).toBe(b.duration*(id==='manaField'?2:1));}}});
+ it('indirect lifesteal is an explicit permission only',()=>{expect(resolveWeaponStats(weapons.autoTurret!,1,{...DEFAULT_STATS,lifesteal:0.4}).lifesteal).toBe(0);expect(resolveWeaponStats(weapons.autoTurret!,1,{...DEFAULT_STATS,lifesteal:0.4},true).lifesteal).toBe(0.4);});
+});

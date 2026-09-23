@@ -1,0 +1,22 @@
+{
+  "generator": "OpenAI built-in image generation",
+  "createdAt": "2026-09-21",
+  "style": "semi-realistic modern Seoul urban-fantasy lobby objects, transparent PNG, blue-gray gunmetal with restrained cyan light",
+  "assets": {
+    "lobby_gate_terminal_01.png": "portable gate detection and tactical deployment terminal with dimensional-rift hologram",
+    "lobby_awakener_id_01.png": "modern Korean awakener identification dossier with anonymous hunter silhouette",
+    "lobby_weapon_case_01.png": "open hunter weapon case with magical weapon components and energy cells",
+    "lobby_association_01.png": "awakened association metal seal resting on dark operation documents",
+    "lobby_supply_crate_01.png": "sealed reinforced urban hunter supply crate",
+    "lobby_archive_01.png": "field operations archive binder with files and sealed evidence envelope",
+    "lobby_settings_01.png": "precision mechanical control dial assembly",
+    "lobby_supply_ticket_01.png": "durable supply requisition ticket with cyan metallic chip",
+    "lobby_supply_crate_ajar_01.png": "reference-preserving supply crate with latch released and lid slightly raised for the opening animation",
+    "lobby_supply_crate_open_01.png": "reference-preserving supply crate with lid fully opened on rear hinges and dark cyan-lit interior",
+    "lobby_supply_crate_mid_01.png": "reference-preserving intermediate supply crate frame with the attached lid opened midway",
+    "lobby_supply_crate_wide_01.png": "reference-preserving final supply crate frame with the lid folded far backward and a restrained warm reward glow",
+    "lobby_future_strategy_01.png": "strategy analysis desk combining awakener dossier, weapon module and Dangun blessing relic",
+    "lobby_recovery_unit_01.png": "armored field recovery drone, sealed case and receipt scanner",
+    "lobby_supply_vault_02.png": "magnetic-lock association supply vault holding a sealed crate"
+  }
+}

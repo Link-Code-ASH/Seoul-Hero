@@ -1,0 +1,254 @@
+.hud {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  pointer-events: none;
+}
+
+.hud-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 24px 28px;
+  background: linear-gradient(#09151ae0,transparent);
+}
+
+.player-status {
+  width: 260px;
+}
+
+.player-status>.eyebrow {
+  font-size: 10px;
+  letter-spacing: .5px;
+  margin-bottom: 8px;
+}
+
+.player-status .eyebrow>span {
+  float: right;
+  color: #d4e8df;
+  font-size: 10px;
+}
+
+.hp-track {
+  height: 17px;
+  background: #091516;
+  border: 1px solid #8ee5c647;
+  border-radius: 3px;
+  overflow: hidden;
+  position: relative;
+}
+
+.hp-track>div {
+  height: 100%;
+  background: #65bba2;
+  transition: width .1s;
+}
+
+.hp-track>span {
+  position: absolute;
+  inset: 0;
+  text-align: center;
+  font-size: 10px;
+  line-height: 15px;
+  color: white;
+  text-shadow: 0 1px 2px #000;
+}
+
+.timer {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.timer strong {
+  display: block;
+  font-family: Arial,sans-serif;
+  font-size: 34px;
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 1px;
+}
+
+.timer span {
+  color: #a8c3bb;
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+
+.pause-button {
+  font-size: 20px;
+  padding: 5px 14px;
+  background: #13252bde;
+  pointer-events: auto;
+}
+
+.hud-bottom {
+  position: absolute;
+  bottom: 25px;
+  left: 28px;
+  right: 28px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+  color: #829d97;
+  text-shadow: 0 1px 3px #000;
+}
+
+.xp-track {
+  position: absolute;
+  inset: auto 0 0;
+  height: 6px;
+  background: #14272d;
+}
+
+.xp-track>div {
+  height: 100%;
+  background: #97dfda;
+  transition: width .1s;
+}
+
+.boss-status {
+  position: absolute;
+  top: 105px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 1px solid #be96f688;
+  color: #dbbffa;
+  background: #261e35d9;
+  padding: 9px 35px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+.dev-panel {
+  position: absolute;
+  z-index: 20;
+  right: 18px;
+  top: 105px;
+  width: 266px;
+  max-height: calc(100dvh - 125px);
+  overflow: auto;
+  pointer-events: auto;
+  border: 1px solid #deb76e66;
+  background: #10202aef;
+  border-radius: 7px;
+  padding: 12px;
+  color: #c8d6d5;
+  box-shadow: 0 8px 25px #0005;
+}
+
+.dev-panel summary {
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #e3c899;
+}
+
+.dev-panel summary span {
+  float: right;
+  color: #809794;
+  font-size: 10px;
+}
+
+.dev-panel pre {
+  font-family: monospace;
+  font-size: 11px;
+  line-height: 1.55;
+  white-space: pre-wrap;
+}
+
+.dev-controls {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+}
+
+.dev-controls button,.dev-controls select,.dev-controls input {
+  padding: 6px;
+  min-height: 36px;
+  font-size: 10px;
+  min-width: 0;
+  border: 1px solid #ffffff1f;
+  border-radius: 4px;
+  background: #24343e;
+  color: #c6d7d5;
+}
+
+.dev-controls label {
+  font-size: 10px;
+  display: grid;
+  gap: 4px;
+  color: #96aaa9;
+}
+
+.dev-controls input {
+  width: 100%;
+}
+
+.dev-panel small {
+  display: block;
+  font-size: 9px;
+  line-height: 1.6;
+  margin-top: 10px;
+}
+
+.toast {
+  position: absolute;
+  z-index: 40;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 90vw;
+  padding: 14px 23px;
+  background: #224138f5;
+  border: 1px solid #8ee5c651;
+  color: #dceee4;
+  border-radius: 6px;
+  font-size: 12px;
+  box-shadow: 0 4px 30px #0005;
+  pointer-events: none;
+}
+
+.joystick {
+  display: none;
+  position: absolute;
+  z-index: 4;
+  left: 30px;
+  bottom: 48px;
+  width: 124px;
+  height: 124px;
+  border: 1px solid #8ee5c644;
+  border-radius: 50%;
+  background: #112e3066;
+  touch-action: none;
+  pointer-events: auto;
+}
+
+.joystick span {
+  position: absolute;
+  left: calc(50% - 20px);
+  top: calc(50% - 20px);
+  width: 40px;
+  height: 40px;
+  background: #8ee5c666;
+  border: 1px solid #8ee5c699;
+  border-radius: 50%;
+  transform: translate(var(--stick-x,0px),var(--stick-y,0px));
+}
+
+#ui[data-screen=waveActive] .site-header,#ui[data-screen=paused] .site-header,#ui[data-screen=result] .site-header {
+  display: none;
+}
+
+.startup-error {
+  padding: 20vh 15vw;
+  color: #d6e8e3;
+  font-size: 20px;
+  line-height: 1.8;
+  background: #14232b;
+}
+
+[data-screen="postWave"] .site-header { display: none; }
+
+[data-screen="shop"] .site-header { display: none; }

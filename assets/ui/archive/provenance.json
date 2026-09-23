@@ -1,0 +1,15 @@
+{
+  "generator": "OpenAI image generation",
+  "created": "2026-09-21",
+  "purpose": "Fragment-owned Dangun blessing icons for archive, growth facility, and gate deployment",
+  "style": "transparent background, semi-realistic Korean mythic relic, cool blue-gray Seoul fantasy UI lighting",
+  "files": [
+    "blessing_cheonbu_oath_01.png",
+    "blessing_unyielding_jangseung_01.png",
+    "blessing_samjogo_wing_01.png",
+    "blessing_white_tiger_eye_01.png",
+    "blessing_goblin_forge_01.png",
+    "blessing_harvest_knot_01.png",
+    "blessing_reverse_scale_01.png"
+  ]
+}

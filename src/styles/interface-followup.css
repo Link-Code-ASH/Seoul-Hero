@@ -1,0 +1,214 @@
+/* Facility and briefing finishing pass: keep texture visible on every interaction. */
+.lobby-command .lobby-module:hover {
+  background-image: linear-gradient(145deg,#354f5be8,#101f27e9 68%),url('../../assets/ui/ui_texture_worn_metal_01.png');
+  background-size:auto,500px 500px;
+  background-blend-mode:normal,luminosity;
+}
+.lobby-command .gate-command-card:hover {
+  background-image:linear-gradient(90deg,#071219c2,#14252c60),url('../../assets/ui/ui_texture_worn_metal_01.png');
+  background-size:auto,500px 500px;
+  background-blend-mode:normal,luminosity;
+}
+
+/* A plain engraved return tab replaces the miniature gate picture. */
+:is(.gate-flow-screen,.meta-facility,.settings-facility,.archive-screen) .lobby-return {
+  width:fit-content;min-width:112px;min-height:48px;justify-content:center;gap:11px;
+  padding:7px 15px 7px 11px;color:#d9e8e9;
+  background-image:linear-gradient(160deg,#516e77e8,#172c35eb 40%,#0b1720f5),url('../../assets/ui/ui_texture_worn_metal_01.png');
+  background-size:auto,380px;background-blend-mode:normal,luminosity;
+  border:1px solid #b7ced16b;border-left:3px solid #b8d8df;
+  box-shadow:inset 0 1px #e9ffff63,inset 0 -2px #030c12,0 9px 18px #0009;
+}
+.lobby-return .lobby-return-arrow {font-size:27px;line-height:1;color:#e5cf9c;font-weight:400;transform:translateY(-1px)}
+.lobby-return span:last-child {font-size:17px;letter-spacing:.04em;font-weight:750}
+:is(.gate-flow-screen,.meta-facility,.settings-facility,.archive-screen) .lobby-return:hover {
+  background-image:linear-gradient(160deg,#65848eea,#28424de8 45%,#11242df2),url('../../assets/ui/ui_texture_worn_metal_01.png');
+  background-size:auto,380px;background-blend-mode:normal,luminosity;
+}
+
+/* A selected depth should be visible before its numerals are read. */
+.gate-flow-screen .gate-context>img {object-position:center 8%;filter:saturate(.48) brightness(.43) contrast(1.16)}
+.gate-flow-screen .depth-tile {position:relative;overflow:hidden}
+.gate-flow-screen .depth-tile.selected {
+  border:2px solid #f2d9a1;
+  background-image:linear-gradient(152deg,#547786f0,#1c3c49ec 61%,#182931f5),url('../../assets/ui/ui_texture_worn_metal_01.png');
+  background-size:auto,400px;background-blend-mode:normal,luminosity;
+  box-shadow:inset 0 0 0 2px #d2e8e64a,inset 0 1px #fff8,0 0 0 3px #e8d2a338,0 15px 32px #0009;
+}
+.gate-flow-screen .depth-tile.selected::before {content:'';position:absolute;inset:0 0 auto;height:5px;background:linear-gradient(90deg,#f7e6b5,#a9e9f2,#f7e6b5)}
+.gate-flow-screen .depth-tile.selected>b {color:#fff7dc;text-shadow:0 3px 10px #000,0 0 18px #a4dce970}
+.depth-selected-flag {position:absolute;right:8px;top:8px;padding:3px 7px;font-size:12px;color:#172934;background:#f0d9a5;box-shadow:0 3px 9px #0008;transform:rotate(2deg)}
+.depth-dossier>small {display:block;color:#d8c693;letter-spacing:.12em;text-transform:uppercase}
+.depth-dossier>span {display:block;margin:5px 0;color:#e9f3f4;font-size:clamp(28px,2.7vw,44px);font-weight:900;line-height:1.1}
+
+/* Portrait dossier: art owns the space and selection reads as a stamped choice. */
+.gate-flow-screen .character-meta-grid {grid-template-columns:repeat(2,minmax(300px,1fr));align-content:start;min-height:0;max-height:none}
+.gate-flow-screen .character-meta-grid:has(>.character-meta-card:only-child) {grid-template-columns:1fr;overflow-y:hidden}
+.gate-flow-screen .character-meta-grid:has(>.character-meta-card:only-child) .character-meta-card {min-height:clamp(350px,48vh,580px)}
+.gate-flow-screen .character-meta-card {
+  position:relative;min-height:clamp(280px,39vh,480px);padding:0;overflow:hidden;align-items:stretch;
+  background-image:linear-gradient(125deg,#152b34f0,#0b1922e8),url('../../assets/ui/ui_texture_field_paper_01.png');
+  background-size:auto,500px;background-blend-mode:normal,luminosity;
+}
+.character-card-art {position:relative;display:block!important;width:54%;align-self:stretch;overflow:hidden;background:radial-gradient(ellipse at 50% 46%,#6c9dab52,transparent 62%)}
+.character-card-art::after {content:'';position:absolute;inset:auto 0 0;height:30%;background:linear-gradient(transparent,#09151c)}
+.gate-flow-screen .character-card-art>img {width:100%;max-width:none;height:100%;object-fit:contain;object-position:center;filter:saturate(.75) contrast(1.06) drop-shadow(0 18px 18px #000c);transform:scale(.9)}
+.character-card-info {display:flex!important;flex:1;flex-direction:column;justify-content:center;align-items:flex-start;gap:9px!important;padding:25px 20px 25px 8px}
+.character-card-info small {color:#d8c795!important;font-size:15px!important}
+.character-card-info b {font-size:clamp(28px,3vw,48px)!important;line-height:1.05;color:#f3f5f0}
+.character-card-info em {font-size:18px!important;color:#b9cbd1!important}
+.selection-seal {display:inline-block;margin-top:18px;padding:8px 14px;border:1px solid #9fb9c060;color:#afcbd1;font-size:15px;font-weight:800;letter-spacing:.06em;background-image:var(--surface-inset);background-size:auto,320px}
+.gate-select-card.selected .selection-seal {border-color:#efdda5;background-image:linear-gradient(130deg,#e7d19b,#b89d69),url('../../assets/ui/ui_texture_field_paper_01.png');color:#1a2e35;box-shadow:0 6px 14px #0009}
+
+/* Arsenal cards: framed object art and a bright physical selected rail. */
+.gate-flow-screen .weapon-meta-grid {grid-template-columns:repeat(3,minmax(0,1fr));align-content:start;max-height:none}
+.gate-flow-screen .weapon-meta-card {
+  position:relative;min-height:clamp(155px,20vh,240px);display:grid;grid-template-columns:minmax(105px,46%) 1fr;gap:8px;padding:10px;
+  background-image:linear-gradient(130deg,#28414bdf,#0c1a22f1),url('../../assets/ui/ui_texture_worn_metal_01.png');
+  background-size:auto,500px;background-blend-mode:normal,luminosity;
+}
+.weapon-card-art {position:relative;display:grid!important;place-items:center;overflow:hidden;height:100%;min-height:130px;background:radial-gradient(ellipse,#779aa33b,transparent 68%);border-right:1px solid #aacbd132}
+.gate-flow-screen .weapon-card-art>.weapon-detail-art {width:100%;max-width:none;height:100%;object-fit:contain;filter:drop-shadow(0 13px 11px #000d) saturate(.9)}
+.weapon-card-info {display:flex!important;flex-direction:column;justify-content:center;align-items:flex-start;gap:6px!important;padding:12px 4px}
+.weapon-card-info small {font-size:14px!important;color:#cbbd98!important}
+.weapon-card-info b {font-size:clamp(20px,1.6vw,28px)!important;line-height:1.2}
+.weapon-card-info .selection-seal {margin-top:12px}
+.gate-flow-screen .gate-select-card.selected {border:2px solid #dfc88d;box-shadow:inset 0 0 0 2px #d4e4df51,0 0 0 2px #d7bd8154,0 18px 34px #0009}
+.gate-flow-screen .gate-select-card.selected {animation:choice-lock-in .36s cubic-bezier(.18,.8,.3,1) both}
+@keyframes choice-lock-in {0%{filter:brightness(1.45);transform:translateY(5px) scale(.985)}60%{filter:brightness(1.12);transform:translateY(-3px) scale(1.01)}100%{filter:brightness(1);transform:none}}
+.gate-flow-screen .gate-select-card.selected::after {content:'';position:absolute;inset:0 0 0 auto;width:5px;background:linear-gradient(#f6dfaa,#9dd5df,#f6dfaa);pointer-events:none}
+.gate-flow-screen .gate-select-card:not(.map-card):hover {background-image:linear-gradient(130deg,#3e5a64e8,#172b34e9),url('../../assets/ui/ui_texture_worn_metal_01.png');background-size:auto,500px;background-blend-mode:normal,luminosity}
+
+/* Final deployment is a visual loadout board, not a table. */
+.gate-flow-screen .deploy-summary {display:grid;grid-template-columns:minmax(0,1.15fr) minmax(315px,.85fr);gap:0;min-height:clamp(290px,40vh,500px);height:auto;overflow:hidden}
+.deploy-visual {position:relative;min-height:280px;overflow:hidden}
+.gate-flow-screen .deploy-visual .deploy-map {position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:saturate(.55) brightness(.48)}
+.deploy-visual::after {content:'';position:absolute;inset:0;background:linear-gradient(90deg,#07131c0a,#07131bd2),linear-gradient(0deg,#051016bb,transparent 55%);pointer-events:none}
+.deploy-visual .deploy-character {position:absolute;z-index:2;left:37%;bottom:-10%;width:auto;height:112%;max-width:60%;object-fit:contain;filter:drop-shadow(0 25px 20px #000c) saturate(.8)}
+.deploy-region {position:absolute;z-index:3;left:22px;bottom:20px;display:grid;gap:4px;text-shadow:0 2px 7px #000}
+.deploy-region small {font-size:13px;color:#d8c492;letter-spacing:.17em}
+.deploy-region b {font-size:clamp(25px,2.5vw,40px);color:#fff}
+.deploy-loadout {display:grid;grid-template-rows:auto 1fr;min-width:0;padding:20px;background-image:var(--surface-document);background-size:auto,520px;background-blend-mode:normal,luminosity}
+.deploy-depth {display:grid;grid-template-columns:1fr auto;align-items:center;padding:8px 14px 12px;border-bottom:2px solid #b4d0cf88}
+.deploy-depth small {grid-column:1;color:#e1ce9c;font-size:14px;letter-spacing:.12em}
+.deploy-depth>b {grid-column:2;grid-row:1/3;font-size:clamp(52px,5vw,82px);line-height:1;color:#f1e0b3;text-shadow:0 4px 13px #0009}
+.deploy-depth span {color:#d6e4e7;font-size:17px;font-weight:800}
+.deploy-equipped {display:grid;grid-template-rows:repeat(3,minmax(0,1fr));gap:7px;min-height:0;padding-top:12px}
+.deploy-equipped>div {display:grid;grid-template-columns:74px 1fr;align-items:center;gap:15px;padding:5px 10px;background-image:var(--surface-inset);background-size:auto,300px;border:1px solid #b4d0d34a;box-shadow:inset 0 1px #efffff26}
+.deploy-equipped img,.deploy-equipped .weapon-detail-art {width:72px;height:72px;object-fit:contain;filter:drop-shadow(0 6px 6px #000c)}
+.deploy-equipped span {display:grid;gap:2px}.deploy-equipped small {font-size:13px;color:#c4b68e}.deploy-equipped b {font-size:clamp(18px,1.6vw,25px);color:#f3f5ed}
+.gate-flow-screen .gate-deploy {min-width:260px;min-height:60px;font-size:21px;letter-spacing:.08em;border-color:#e3d3a2;box-shadow:inset 0 1px #fff9,inset 0 -3px #203038,0 0 0 3px #d6b77438,0 16px 28px #000a}
+
+/* Recovery: the drone lands beside an actual illustrated manifest. */
+.offline-facility .offline-console {grid-template-columns:minmax(0,1.15fr) minmax(320px,.85fr);gap:18px;align-items:stretch}
+.offline-facility .offline-recovery {
+  min-height:360px;
+  background-color:#10232d;
+  background-image:radial-gradient(ellipse at 50% 40%,#456f8040,transparent 55%),linear-gradient(135deg,#203743ef,#0b1c27f5),url('../../assets/ui/ui_texture_worn_metal_01.png');
+  background-size:auto,auto,520px;
+  background-blend-mode:screen,normal,luminosity;
+}
+.offline-facility .offline-recovery>img {inset:0 3% 10%;width:94%;height:90%;filter:drop-shadow(0 25px 20px #000e) saturate(.82)}
+.offline-facility .offline-recovery.ready>img {filter:drop-shadow(0 25px 20px #000e) drop-shadow(0 0 18px #a5d6d057) saturate(.9)}
+.recovery-caption {position:relative;z-index:4;display:grid;gap:2px;justify-items:center;margin-bottom:6px;padding:9px 26px;background-image:var(--surface-metal);background-size:auto,360px;border:1px solid #b6d2d165;box-shadow:var(--edge-raised)}
+.offline-recovery .recovery-caption small,.offline-recovery .recovery-caption b {background:none;padding:0}
+.offline-recovery .recovery-caption small {font-size:12px;color:#c6d3d7;letter-spacing:.13em}
+.offline-recovery .recovery-caption b {font-size:23px;color:#eff6f1}
+.offline-facility .offline-manifest {display:flex;flex-direction:column;min-width:0;padding:18px 20px;background-image:var(--surface-document);background-size:auto,480px}
+.offline-manifest>header {display:grid;grid-template-columns:64px 1fr auto;align-items:center;gap:10px;border-bottom:1px solid #c3d7d864;padding-bottom:10px}
+.offline-manifest>header>img {width:60px;height:62px;object-fit:contain;filter:drop-shadow(0 5px 6px #0008)}
+.offline-manifest>header small {font-size:12px;color:#ddc99d;letter-spacing:.1em}
+.offline-manifest>header h2 {margin:0;color:#eff2e9;font-size:25px}
+.manifest-status {color:#a6b9bd;font-size:14px;white-space:nowrap}.manifest-status.ready {color:#e7d39a}
+.offline-manifest ul {flex:1;min-height:0;overflow:auto;margin:10px 0;padding:0;list-style:none}
+.offline-manifest li {display:grid;grid-template-columns:52px minmax(0,1fr) auto;align-items:center;gap:10px;min-height:62px;padding:5px 10px;margin:4px 0;border:1px solid #b3c9cc36;background-image:var(--surface-inset);background-size:auto,350px;color:#e7eef0;font-size:16px}
+.offline-manifest li>img {width:48px;height:48px;object-fit:contain;filter:drop-shadow(0 5px 5px #000b)}
+.offline-manifest li>b {font-size:23px;color:#f3dea7}
+.offline-manifest li.empty {grid-template-columns:55px 1fr;color:#b4c8cd}
+.offline-manifest {position:relative}
+.offline-manifest .manifest-empty-art {position:absolute;left:50%;top:56%;width:58%;height:47%;object-fit:contain;opacity:.16;filter:grayscale(1) drop-shadow(0 10px 8px #0008);transform:translate(-50%,-50%);pointer-events:none}
+.offline-manifest .primary {width:100%;min-height:58px;margin-top:auto;font-size:18px}
+
+/* Result plate with large reward images, a stable heading and clear quantities. */
+.supply-reveal {gap:20px;padding:5%}
+.supply-reveal .supply-result-backplate {width:min(1250px,98vw);height:min(680px,82vh);object-fit:fill}
+.supply-result-heading {z-index:2!important;display:grid!important;grid-template-columns:120px 1fr auto;align-items:center;gap:16px;width:min(1020px,88vw)!important;padding:4px 15px 10px;border-bottom:2px solid #d3e5de8c}
+.supply-result-heading>img {width:108px;height:100px;object-fit:contain;filter:drop-shadow(0 10px 9px #000c)}
+.supply-result-heading>span {display:grid;gap:2px;text-align:left}
+.supply-result-heading em {font-style:normal;color:#d4c297;font-size:13px;font-weight:800;letter-spacing:.14em}
+.supply-result-heading strong {color:#f3f4eb;font-size:clamp(30px,3vw,48px);text-shadow:0 4px 14px #000}
+.supply-result-heading>b {font-size:17px;color:#d4e3e3;white-space:nowrap}
+.supply-reveal .supply-reward-grid {z-index:2;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px;width:min(1020px,88vw)}
+.supply-reveal .supply-reward-grid:has(>i:only-child) {grid-template-columns:minmax(220px,280px);justify-content:center}
+.supply-reward-grid>i {position:relative;min-height:195px;display:grid;grid-template-rows:minmax(100px,1fr) auto auto;place-items:center;gap:4px;padding:12px 9px;border:1px solid #d1ded086;border-top:3px solid #e3d4a9;background-image:linear-gradient(145deg,#354f58dc,#11232bee),url('../../assets/ui/ui_texture_field_paper_01.png');background-size:auto,390px;background-blend-mode:normal,luminosity;box-shadow:inset 0 1px #faffff73,inset 0 -3px #071016,0 14px 20px #000b;font-style:normal;animation:reward-card-in .32s calc(2s + var(--p,0)*.03s) ease-out both}
+.supply-reward-grid>i::after {content:'';position:absolute;left:11px;right:11px;bottom:48px;height:1px;background:#c3d9da4d}
+.supply-reward-grid .supply-reward-art {width:100%;height:100px;filter:drop-shadow(0 12px 8px #000b)}
+.supply-reward-grid .supply-reward-art>img,.supply-reward-grid .supply-reward-art>.inventory-art {width:100px;height:100px;object-fit:contain}
+.supply-reward-grid>i b {font-size:16px;text-align:center;color:#e9f0ed;line-height:1.25}
+.supply-reward-grid>i strong {font-size:27px;color:#f3db9d}
+.supply-reward-grid>i.associationCoins {border-top-color:#f0d58f}.supply-reward-grid>i.weaponFragment {border-top-color:#a9d5ec}.supply-reward-grid>i.blessingFragment {border-top-color:#d3b6e6}
+
+@media(max-width:1200px) {
+  .gate-flow-screen .weapon-meta-grid {grid-template-columns:repeat(2,minmax(0,1fr))}
+  .gate-flow-screen .weapon-meta-card {min-height:155px}
+  .gate-flow-screen .character-meta-card {min-height:290px}
+}
+@media(max-width:800px),(max-height:720px) {
+  .gate-flow-screen .character-meta-grid {grid-template-columns:1fr}
+  .gate-flow-screen .character-meta-card {min-height:250px}
+  .gate-flow-screen .character-meta-grid:has(>.character-meta-card:only-child) .character-meta-card {min-height:250px}
+  .gate-flow-screen .deploy-summary {grid-template-columns:1fr}
+  .deploy-visual {min-height:220px}.deploy-visual .deploy-character {height:115%}
+  .deploy-loadout {padding:12px}.deploy-equipped {grid-template-columns:repeat(3,minmax(0,1fr));grid-template-rows:1fr}
+  .deploy-equipped>div {grid-template-columns:48px 1fr;gap:5px;padding:4px}.deploy-equipped img,.deploy-equipped .weapon-detail-art {width:46px;height:55px}.deploy-equipped b {font-size:16px}
+  .offline-facility .offline-console {grid-template-columns:1fr}
+  .offline-facility .offline-recovery {min-height:250px}
+  .offline-facility .offline-manifest {min-height:280px}
+  .supply-reveal .supply-reward-grid {grid-template-columns:repeat(3,minmax(0,1fr));max-height:55vh;overflow-y:auto}
+  .supply-result-heading {grid-template-columns:80px 1fr auto}.supply-result-heading>img {width:75px;height:75px}
+}
+@media(max-width:580px) {
+  .gate-flow-screen .weapon-meta-grid {grid-template-columns:1fr}
+  .gate-flow-screen .weapon-meta-card {min-height:130px}
+  .gate-flow-screen .weapon-card-art {min-height:110px}
+  .character-card-art {width:46%}.character-card-info {padding:12px}
+  .deploy-equipped {grid-template-columns:1fr;grid-template-rows:repeat(3,1fr)}
+  .supply-reveal .supply-reward-grid {grid-template-columns:repeat(2,minmax(0,1fr))}
+  .supply-result-heading>b {display:none}
+}
+/* The single-portrait dossier must fit below the briefing on short desktop screens. */
+@media(min-width:1180px) and (max-height:760px) {
+  .gate-flow-screen:has(.character-meta-card:only-child) {
+    height:calc(100dvh - 76px);min-height:0;
+    grid-template-rows:64px 70px 58px minmax(0,1fr);
+    gap:8px;padding:12px 22px;
+  }
+  .gate-flow-screen:has(.character-meta-card:only-child) .gate-flow-head {
+    height:64px;min-height:0;grid-template-columns:140px 170px minmax(0,1fr);gap:10px;margin:0;
+  }
+  .gate-flow-screen:has(.character-meta-card:only-child) .gate-flow-head>ol {
+    grid-column:auto;height:64px;grid-template-columns:repeat(6,minmax(0,1fr));
+  }
+  .gate-flow-screen:has(.character-meta-card:only-child) .gate-flow-head li {
+    min-height:0;grid-template-columns:32px minmax(0,1fr);gap:3px;padding:5px;
+  }
+  .gate-flow-screen:has(.character-meta-card:only-child) .gate-flow-head li img {width:32px;height:39px}
+  .gate-flow-screen:has(.character-meta-card:only-child) .gate-flow-head li b {font-size:13px}
+  .gate-flow-screen:has(.character-meta-card:only-child) .weekly-operation-card {height:70px;margin:0}
+  .gate-flow-screen:has(.character-meta-card:only-child) .gate-context {height:58px;margin:0}
+  .gate-flow-screen:has(.character-meta-card:only-child) .gate-context>img {height:56px}
+  .gate-flow-screen:has(.character-meta-card:only-child) main {min-height:0;gap:10px}
+  .gate-flow-screen .character-meta-grid:has(>.character-meta-card:only-child) {
+    min-height:0;grid-template-rows:minmax(0,1fr);
+  }
+  .gate-flow-screen .character-meta-grid:has(>.character-meta-card:only-child) .character-meta-card {
+    height:100%;min-height:0;
+  }
+  .gate-flow-screen .character-meta-grid:has(>.character-meta-card:only-child) .character-card-art>img {
+    position:absolute;inset:0;
+  }
+  .gate-flow-screen:has(.character-meta-card:only-child) .gate-next {min-height:48px;margin:0}
+}
+@media(prefers-reduced-motion:reduce) {
+  .gate-flow-screen .gate-select-card.selected {animation:none}
+}

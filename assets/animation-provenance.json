@@ -1,0 +1,46 @@
+{
+  "generator": "OpenAI built-in image generation",
+  "usage": "Historical comparison only. Traditional walk sheets are not loaded by the game; procedural locomotion uses the static player image.",
+  "assets": [
+    {
+      "id": "player_awakened_male_walk_01",
+      "file": "assets/characters/player_awakened_male_walk_01.png",
+      "source": "C:\\Users\\geniu\\.codex\\generated_images\\01a07bcf-7f98-7021-bf14-e9c913993db8\\exec-de50e14e-4454-4e4b-8497-cbb80da828a1.png",
+      "prompt": "A transparent-background 2D game sprite sheet, PNG with genuine ALPHA transparency. Isolated full-body Korean young adult male awakened hero, short tousled black hair, teal zip hoodie open over charcoal T-shirt, navy slim cargo trousers, white sneakers, a tiny turquoise magical flame around his left hand. Clean polished cel-shaded dark outlines, same hero repeated consistently as animation frames. Elevated 3/4 top-down view, facing towards screen RIGHT at all times. No scenery. NO background, NO checkerboard pattern, NO white canvas. Pure transparent pixels outside figures.\nA four-step SIDEWAYS WALKING cycle in FOUR equal-width cells, ONE horizontal row. Each figure centered in its own cell, same size, head and foot baseline aligned. Wide 2:1 overall canvas, each cell taller than wide. Entire figure contained inside cell without overlaps. Each pose occupies 75% of canvas height. This is NOT four identical standing poses:\nFrame ONE: left thigh angles forward to screen RIGHT, left sneaker far screen RIGHT; right thigh angles backward to screen LEFT, right sneaker far LEFT. Left arm swings backward, right arm forward.\nFrame TWO: both knees near torso center, rear leg lifts and passes under pelvis, both feet close together, body slightly lower.\nFrame THREE: reverse legs relative to frame one. Right thigh angles forward to screen RIGHT and its right white sneaker far screen RIGHT, left thigh backward towards screen LEFT with left white sneaker far LEFT. Opposite arm swing; glow remains on left hand. Both arms noticeably differ from frame ONE.\nFrame FOUR: other leg now passes under pelvis, left knee raised slightly forward, feet near center, body slightly lower.\nNatural walk IN PLACE in 4 frames. Consistent elevated camera and head identity. No labels, no borders, no text, no ground plane. Actual transparent RGBA output, not a picture of transparency. Crisp readable mobile game art.",
+      "notes": "Selected genuine RGBA sheet after rejecting two opaque checkerboard variants. Rendering uses explicit texture regions and hip pivots; source pixels preserved."
+    },
+    {
+      "id": "player_awakened_male_02",
+      "file": "assets/characters/player_awakened_male_02.png",
+      "source": "C:\\Users\\geniu\\.codex\\generated_images\\01a07bcf-7f98-7021-bf14-e9c913993db8\\exec-c6092e1f-2f82-4ed9-9b62-793feaf19ecf.png",
+      "prompt": "Redesign the same modern Korean male awakened fighter as a compact, dimensional three-quarter top-down game sprite with sculpted volume, teal jacket, cargo pants, white sneakers, green hand magic, transparent background, crisp high-resolution edges, and a small contact shadow; no circle, aura ring, platform, UI, text, or watermark.",
+      "notes": "High-resolution replacement used for the idle pose and character selection card."
+    },
+    {
+      "id": "player_awakened_male_walk_02",
+      "file": "assets/characters/player_awakened_male_walk_02.png",
+      "source": "C:\\Users\\geniu\\.codex\\generated_images\\01a07bcf-7f98-7021-bf14-e9c913993db8\\exec-8dbc5b26-129c-4f14-abbb-fb5775de44f9.png",
+      "prompt": "Eight-frame right-facing natural walk cycle for the same character, fixed three-quarter top-down camera, identical scale and baseline, ordered in a 4x2 grid with contact/down/passing/up poses for both legs; no circles, platforms, labels or cropped feet.",
+      "notes": "A flat magenta production background was removed to true alpha locally. Eight fixed cells are loaded directly without rescaling source pixels. Left movement reuses the same frames with horizontal reflection."
+    },
+    {
+      "id": "player_awakened_male_walk_03",
+      "file": "assets/characters/player_awakened_male_walk_03.png",
+      "source": "C:\\Users\\geniu\\.codex\\generated_images\\01a07bcf-7f98-7021-bf14-e9c913993db8\\exec-806439f4-76e9-40c6-ab37-e707f0927ce6.png",
+      "prompt": "Eight-frame right-facing anatomical walk cycle for the same modern Korean awakened fighter. Fixed three-quarter top-down camera and 4x2 grid. Frames explicitly alternate right-leg contact, down, left-leg passing, left-leg contact, down, right-leg passing, right-leg contact and left-leg contact. Arms counter-swing, all feet remain visible, pure magenta removal background.",
+      "notes": "Replaces walk_02 because its leading leg was visually ambiguous. This sheet makes the cargo-pocket leg and opposite leg visibly exchange the forward contact position. The flat magenta background was converted to true alpha locally."
+    },
+    {
+      "id": "player_awakened_male_walk_05",
+      "file": "assets/characters/player_awakened_male_walk_05.png",
+      "sources": [
+        "C:\\Users\\geniu\\.codex\\generated_images\\01a07bcf-7f98-7021-bf14-e9c913993db8\\exec-63b5b451-8b80-4b34-8bd5-bf3ad8cc2c88.png",
+        "C:\\Users\\geniu\\.codex\\generated_images\\01a07bcf-7f98-7021-bf14-e9c913993db8\\exec-724c4299-b120-468a-93c7-ed3fb3189003.png",
+        "C:\\Users\\geniu\\.codex\\generated_images\\01a07bcf-7f98-7021-bf14-e9c913993db8\\exec-18d99049-46e9-43b9-9820-9fb7d1325f4a.png",
+        "C:\\Users\\geniu\\.codex\\generated_images\\01a07bcf-7f98-7021-bf14-e9c913993db8\\exec-c1efbd7f-107f-4517-9210-5eb621b15569.png"
+      ],
+      "prompt": "Four individually generated right-facing frames with an identity marker on the left ankle: left-foot contact, unmarked right-foot passing, right-foot contact, and teal-banded left-foot passing. Fixed character, camera, canvas, scale and baseline.",
+      "notes": "Accepted only after side-by-side inspection showed the teal-banded left foot moving from forward contact to support, rear contact and raised passing positions. Sources were combined in that order and their magenta backgrounds converted to true alpha."
+    }
+  ]
+}

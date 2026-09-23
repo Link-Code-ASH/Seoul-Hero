@@ -1,0 +1,11 @@
+{
+  "generatedAt": "2026-09-21",
+  "generator": "OpenAI image generation",
+  "style": "semi-realistic blue-gray modern Seoul urban fantasy facility backgrounds",
+  "assets": {
+    "meta_growth_lab_01.png": "Awakener growth laboratory with training platform and weapon racks",
+    "meta_association_office_01.png": "Awakeners Association office and permanent training permit desk",
+    "meta_offline_terminal_01.png": "Offline field recovery settlement terminal and secure logistics counter",
+    "meta_supply_vault_01.png": "Secure supply capsule opening facility"
+  }
+}

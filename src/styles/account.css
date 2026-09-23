@@ -1,0 +1,11 @@
+.account-panel{position:absolute;z-index:80;top:10px;right:clamp(180px,18vw,300px);color:#e8f0ee;font-size:14px}
+.account-panel[hidden]{display:none}
+.account-strip{display:flex;align-items:center;gap:12px;padding:7px 9px 7px 14px;border:1px solid #9ab6be70;background:linear-gradient(130deg,#273e48f0,#0b1820f0),url('../../assets/ui/ui_texture_worn_metal_01.png');background-size:auto,420px;box-shadow:0 8px 20px #0008}
+.account-strip span{display:grid;gap:2px;min-width:0}.account-strip b{max-width:190px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.account-strip small{color:#a7c4c7;font-size:12px}
+.account-strip button,.account-choice button{min-height:42px;padding:8px 13px;border:1px solid #b6cccf8a;color:#f2f4ee;background:linear-gradient(145deg,#36535e,#1a3039);font:inherit;cursor:pointer}
+.account-choice-backdrop{position:fixed;z-index:110;inset:0;display:grid;place-items:center;padding:18px;background:#061017dc}
+.account-choice{width:min(660px,100%);padding:24px;border:1px solid #bdcfcb;background:linear-gradient(135deg,#243c47,#0c1b24),url('../../assets/ui/ui_texture_worn_metal_01.png');background-blend-mode:normal,luminosity;box-shadow:0 22px 70px #000c}
+.account-choice h2{margin:0 0 8px;font-size:25px}.account-choice p{margin:0 0 18px;color:#adc1c5;line-height:1.4}
+.account-choice>div{display:grid;grid-template-columns:1fr 1fr;gap:12px}.account-choice>div button{display:grid;gap:9px;min-height:105px;text-align:left}.account-choice button small{color:#cadbdc;font-size:13px}.account-choice button:disabled{opacity:.5;cursor:default}
+.account-choice-export{margin-top:15px}
+@media(max-width:720px){.account-panel{top:8px;right:8px}.account-strip{padding:5px;gap:5px}.account-strip b{max-width:100px;font-size:12px}.account-strip small{font-size:10px}.account-strip button{padding:6px;font-size:11px}.account-choice>div{grid-template-columns:1fr}}

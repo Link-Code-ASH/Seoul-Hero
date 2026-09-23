@@ -1,0 +1,111 @@
+/* Final interface layer: readable at play distance, icon-led, and intentionally spacious. */
+:root { --ui-panel: #101925e8; --ui-line: #9db6cc38; --ui-text: #eef6fb; --ui-muted: #a9bac8; --ui-cyan: #62e0d0; }
+
+button, .button { min-height: 46px; padding: 11px 18px; font-size: 16px; line-height: 1.2; letter-spacing: 0; text-transform: none; }
+button::before, .button::before { display: none; }
+.screen p, .modal p, .overlay-screen p { font-size: 16px; line-height: 1.65; }
+.screen h2, .modal h2 { font-size: 24px; }
+
+.hud-top { display: grid; grid-template-columns: minmax(330px, 1fr) auto 56px; align-items: start; gap: 20px; padding: 22px 26px; background: linear-gradient(#07101bd9, transparent); }
+.player-status { width: max-content; min-width: 360px; padding: 13px 16px; border: 1px solid var(--ui-line); border-left: 4px solid var(--ui-cyan); clip-path: none; background: var(--ui-panel); box-shadow: 0 12px 28px #0005; }
+.hp-line { display: grid; grid-template-columns: 34px minmax(270px, 360px); align-items: center; gap: 12px; }
+.hp-line>.inventory-art { width: 32px; height: 32px; margin: 0; filter: drop-shadow(0 3px 5px #0008); }
+.hp-track { height: 24px; border: 1px solid #d6e8ef45; border-radius: 7px; overflow: hidden; background: #050b11; box-shadow: inset 0 2px 8px #000b; }
+.hp-track>div { background: linear-gradient(90deg, #b44343, #f06c59); }
+.hp-track span { font-size: 14px; font-weight: 800; line-height: 22px; text-shadow: 0 1px 3px #000; }
+.hud-readout { display: flex; align-items: center; gap: 10px; margin-top: 11px; font: inherit; white-space: normal; }
+.hud-chip { min-width: 68px; height: 38px; display: flex; align-items: center; justify-content: center; gap: 8px; padding: 4px 12px; border: 1px solid var(--ui-line); border-radius: 10px; color: var(--ui-text); background: #18283ad9; }
+.hud-chip>.inventory-art { width: 28px; height: 28px; margin: 0; filter: drop-shadow(0 2px 3px #0008); }
+.hud-chip b { font-size: 17px; }
+.hud-chip i { color: #ee7f6d; font-size: 18px; font-style: normal; }
+.hud-chip.reward-ready { border-color: #e5c75b88; color: #ffe987; animation: hud-reward-pulse 1.4s ease-in-out infinite; }
+@keyframes hud-reward-pulse { 50% { box-shadow: 0 0 14px #e5c75b44; } }
+
+.timer { min-width: 190px; padding: 9px 24px 12px; border: 1px solid var(--ui-line); border-bottom: 3px solid var(--ui-cyan); clip-path: none; border-radius: 0 0 14px 14px; background: var(--ui-panel); text-align: center; }
+.timer strong { display: block; color: var(--ui-text); font-family: Pretendard, 'Malgun Gothic', sans-serif; font-size: 38px; line-height: 1; letter-spacing: .02em; text-shadow: none; }
+.timer span { display: block; margin-bottom: 6px; color: var(--ui-cyan); font-size: 15px; font-weight: 800; letter-spacing: .04em; }
+.pause-button { min-width: 52px; width: 52px; height: 52px; padding: 0; border: 1px solid var(--ui-line); border-radius: 12px; background: var(--ui-panel); color: var(--ui-text); font-size: 22px; box-shadow: 0 8px 20px #0004; }
+
+.weapon-strip { top: 150px; left: 26px; max-width: calc(100vw - 52px); display: flex; flex-wrap: wrap; gap: 10px; padding: 0; border: 0; background: transparent; }
+.weapon-slot { width: 78px; min-height: 70px; padding: 7px 7px 6px; display: grid; grid-template-columns: 1fr auto; align-items: center; border: 1px solid var(--ui-line); border-bottom: 2px solid #6ed9ca; border-radius: 12px; overflow: visible; background: #101b28df; box-shadow: 0 8px 18px #0005; }
+.weapon-slot i { inset: -6px auto auto -6px; width: 22px; height: 22px; border-radius: 50%; color: #0d1721; background: #8ce3d7; font-size: 11px; }
+.weapon-slot>.inventory-art { grid-column: 1 / span 2; width: 38px; height: 38px; margin: 0 auto 2px; }
+.weapon-slot b { display: none; }
+.weapon-slot small { grid-column: 1 / span 2; color: #cfe2ec; font-size: 12px; font-weight: 800; text-align: center; }
+
+.xp-console { inset: auto 24px 22px auto; width: min(440px, calc(100vw - 48px)); height: 58px; display: grid; grid-template-columns: 42px 66px 1fr; align-items: center; gap: 12px; padding: 8px 14px; border: 1px solid var(--ui-line); border-radius: 15px; background: var(--ui-panel); color: var(--ui-text); font: inherit; letter-spacing: 0; box-shadow: 0 10px 26px #0005; }
+.xp-console>.inventory-art { width: 40px; height: 40px; margin: 0; filter: drop-shadow(0 0 8px #4aeaff66); }
+.xp-copy { display: grid; line-height: 1.1; }
+.xp-copy b { font-size: 17px; }
+.xp-copy small { color: var(--ui-muted); font-size: 12px; }
+.xp-console .xp-track { position: relative; inset: auto; height: 18px; border: 1px solid #afc4d344; border-radius: 9px; overflow: hidden; background: #071018; }
+.xp-console .xp-track>div { height: 100%; opacity: 1; background: linear-gradient(90deg, #24aeca, #6de8ed); }
+.hud-bottom { display: none; }
+.boss-status { min-width: 420px; padding: 13px 24px; border-radius: 12px; font-size: 17px; text-align: center; }
+
+.level-modal.reward-board, .level-modal.shop-screen { width: min(1180px, 95vw); max-height: 94dvh; padding: 32px; overflow: auto; border: 1px solid var(--ui-line); border-top: 4px solid var(--ui-cyan); border-radius: 18px; background-image: linear-gradient(#101b29f4, #101722f8), url('../../assets/ui/ui_texture_worn_metal_01.png'); box-shadow: 0 24px 70px #000a; }
+.reward-board>h1 { margin: 0 0 28px; color: var(--ui-text); font-family: Pretendard, 'Malgun Gothic', sans-serif; font-size: 34px; letter-spacing: -.04em; }
+.choice-grid { grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 24px; }
+.reward-board .choice-card, .branch-board .choice-card { min-height: 330px; padding: 26px!important; display: flex; flex-direction: column; align-items: center; border: 1px solid #8ca9bf42; border-top: 3px solid #6ddccd; border-radius: 16px; clip-path: none; color: var(--ui-text); background: linear-gradient(155deg, #24384b, #142131)!important; box-shadow: 0 14px 30px #0005; text-align: center; transform: none; }
+.reward-board .choice-card:hover { transform: translateY(-5px); border-color: #87eadb; color: white; background: linear-gradient(155deg, #2c4860, #192b3e)!important; }
+.reward-board .choice-card>.inventory-art { width: 106px; height: 106px; margin: 24px auto 16px; }
+.reward-board .choice-card h2 { margin: 4px 0 10px; color: white; font-size: 25px; }
+.reward-board .choice-card p { margin: 0; color: #bbcad6; font-size: 16px; line-height: 1.6; }
+.reward-badge { align-self: flex-start; padding: 7px 12px; border: 1px solid #8bb4c766; border-radius: 999px; color: #bfe9ed; background: #102331; font-size: 15px; font-weight: 800; }
+.reward-badge.new { color: #171e22; background: #75e1d2; }
+.reward-level { margin-top: auto; padding-top: 18px; color: #e9d77d; font-size: 17px; font-weight: 800; }
+
+.shop-header { margin: -32px -32px 26px; padding: 22px 32px; border-bottom: 1px solid var(--ui-line); background: #132235; }
+.shop-header h1 { color: white; font-family: Pretendard, 'Malgun Gothic', sans-serif; font-size: 34px; }
+.shop-header h1 span { color: #69e0cf; }
+.shop-wallet { min-width: 120px; padding: 9px 16px; display: flex; align-items: center; justify-content: center; gap: 10px; border: 1px solid #e9c95c55; border-radius: 12px; background: #1a2430; font-size: 22px; }
+.shop-grid { grid-template-columns: repeat(4, minmax(200px, 1fr)); gap: 22px; margin: 0; }
+.shop-card { min-height: 340px; padding: 20px; border: 1px solid #819bb141; border-top: 3px solid var(--rarity); border-radius: 16px; color: var(--ui-text); background: #182638!important; box-shadow: 0 12px 28px #0004; transform: none!important; }
+.shop-card>.inventory-art { width: 68px; height: 68px; margin: 14px auto 12px; }
+.product-rarity { font-size: 14px; }
+.shop-card h2 { margin: 0 0 12px; color: white; font-size: 21px; }
+.shop-card>p.item-effect { min-height: 84px; margin: 0 0 18px; color: #bac9d5!important; font-size: 16px; line-height: 1.55; }
+.product-footer small { color: #9fb0bd; font-size: 14px; }
+.purchase-price { min-width: 84px; min-height: 44px; font-size: 18px; }
+.shop-footer { margin-top: 26px; padding-top: 20px; }
+.refresh-stock, .next-combat { min-height: 50px; font-size: 17px; }
+.bag-summary { font-size: 15px; }
+
+@media (max-width: 900px) {
+  .hud-top { grid-template-columns: minmax(250px, 1fr) auto 48px; gap: 10px; padding: 12px; }
+  .player-status { min-width: 250px; padding: 9px; }
+  .hp-line { grid-template-columns: 30px minmax(190px, 1fr); gap: 7px; }
+  .hud-chip { min-width: 54px; height: 33px; padding: 3px 8px; }
+  .timer { min-width: 138px; padding: 7px 12px; }
+  .timer strong { font-size: 30px; }
+  .pause-button { width: 46px; min-width: 46px; height: 46px; }
+  .weapon-strip { top: 118px; left: 12px; }
+  .weapon-slot { width: 62px; min-height: 58px; }
+  .shop-grid { grid-template-columns: repeat(2, minmax(210px, 1fr)); }
+}
+
+@media (max-width: 620px) {
+  .hud-top { grid-template-columns: 1fr auto; }
+  .player-status { min-width: 0; }
+  .timer { grid-column: 1; grid-row: 2; justify-self: start; }
+  .pause-button { grid-column: 2; grid-row: 1; }
+  .weapon-strip { top: 148px; }
+  .xp-console { right: 10px; bottom: 10px; width: calc(100vw - 20px); }
+  .choice-grid, .shop-grid { grid-template-columns: 1fr; }
+  .level-modal.reward-board, .level-modal.shop-screen { padding: 20px; }
+  .shop-header { margin: -20px -20px 20px; padding: 18px 20px; }
+}
+
+@media (max-height: 520px) and (min-width: 681px) {
+  .hud-top { padding: 8px 12px; }
+  .player-status { min-width: 270px; padding: 7px 10px; }
+  .hud-readout { margin-top: 6px; }
+  .weapon-strip { top: 98px; left: 12px; }
+  .xp-console { bottom: 8px; height: 50px; }
+  .level-modal.reward-board, .level-modal.shop-screen { padding: 18px 24px; }
+  .reward-board .choice-card, .branch-board .choice-card { min-height: 220px; padding: 16px!important; }
+  .reward-board .choice-card>.inventory-art { width: 70px; height: 70px; margin: 8px auto; }
+  .shop-card { min-height: 270px; padding: 14px; }
+  .shop-card>.inventory-art { width: 48px; height: 48px; margin: 6px auto; }
+  .shop-card>p.item-effect { min-height: 52px; font-size: 14px; }
+}
