@@ -11,7 +11,6 @@ import { associationScreen, growthScreen, offlineScreen, supplyScreen, type Grow
 import type { MetaReward } from '../meta/SupplySystem';
 import type { GateEntryDraft, GateEntryStep } from '../systems/GateEntrySystem';
 import { accountPanel, type AccountView } from './AccountPanel';
-import { images } from '../data/images';
 export class GameUI {
   readonly hud = new Hud();
   readonly dev = new DevPanel();
@@ -21,17 +20,16 @@ export class GameUI {
   readonly soundButton = document.createElement('button');
   readonly account = document.createElement('aside');
   private toastTimeout = 0;
+  private accountChoiceVisible = false;
   constructor(readonly root: HTMLElement, onAction: (action: string) => void, onChange: (target: HTMLInputElement | HTMLSelectElement) => void) {
-    const header = document.createElement('header');
-    header.className = 'site-header';
-    header.innerHTML = `<a href="#" data-action="lobby" class="wordmark" aria-label="서울 히어로 로비"><img class="brand-mark" src="${images.brandPortrait.url}" alt=""><b>SEOUL HERO</b></a><span class="header-note">각성자 협회 · 서울 지부</span>`;
     this.overlay.className = 'screen';
     this.toast.className = 'toast'; this.toast.setAttribute('role', 'status'); this.toast.hidden = true;
     this.joystick.className = 'joystick'; this.joystick.innerHTML = '<span></span>'; this.joystick.setAttribute('aria-label', '가상 이동 조이스틱');
     this.soundButton.className = 'sound-button'; this.soundButton.dataset.action = 'sound';
-    this.soundButton.textContent = '♪ 소리 켜기';
+    this.soundButton.innerHTML = '<span aria-hidden="true">♫</span><b>OFF</b>';
+    this.soundButton.setAttribute('aria-label', '소리 꺼짐');
     this.account.className = 'account-panel';
-    root.append(header, this.hud.element, this.overlay, this.dev.element, this.joystick, this.toast, this.soundButton, this.account);
+    root.append(this.hud.element, this.overlay, this.dev.element, this.joystick, this.toast, this.soundButton, this.account);
     root.addEventListener('click', event => {
       const action = event.target instanceof Element ? event.target.closest<HTMLElement>('[data-action]')?.dataset.action : undefined;
       if (action) { event.preventDefault(); onAction(action); }
@@ -45,10 +43,11 @@ export class GameUI {
     });
   }
   show(screen: Screen, meta: MetaState, run: RunState | null, archive: ArchiveViewState, gateDraft: GateEntryDraft, growth:GrowthViewState, supplyResults:readonly MetaReward[], offlineClaimed = false): void {
+    if (this.account.parentElement !== this.root) this.root.append(this.account);
     this.hud.hideWaveEndNotice();
     const inRun = ['waveActive', 'paused', 'shop', 'postWave'].includes(screen);
     this.root.dataset.screen = screen;
-    this.account.hidden = screen !== 'lobby' && screen !== 'settings';
+    this.account.hidden = screen !== 'settings' && !this.accountChoiceVisible;
     this.hud.element.hidden = !inRun;
     if (!inRun) this.hud.clearWalletSweep();
     if (run && inRun) this.hud.update(run);
@@ -64,6 +63,7 @@ export class GameUI {
       result: () => run ? resultScreen(run) : '', waveActive: () => '',
     };
     this.overlay.innerHTML = renderers[screen]?.() ?? '';
+    if (screen === 'settings') this.overlay.querySelector('.settings-account-slot')?.append(this.account);
     this.overlay.scrollTop = 0;
     this.overlay.scrollLeft = 0;
     const depthList=this.overlay.querySelector<HTMLElement>('.gate-depth-scroll');
@@ -74,6 +74,8 @@ export class GameUI {
   }
   updateAccount(view: AccountView): void {
     this.account.innerHTML = accountPanel(view);
+    this.accountChoiceVisible = Boolean(view.choice);
+    this.account.hidden = this.root.dataset.screen !== 'settings' && !this.accountChoiceVisible;
   }
   notify(message: string): void {
     window.clearTimeout(this.toastTimeout);
@@ -81,9 +83,11 @@ export class GameUI {
     this.toastTimeout = window.setTimeout(() => { this.toast.hidden = true; }, 6000);
   }
   updateAudio(unlocked: boolean, muted: boolean, status: string): void {
-    const label = !unlocked ? '♪ 소리 켜기' : muted ? '♪ 음소거 해제' : '♪ 소리 켜짐';
-    if (this.soundButton.textContent !== label) this.soundButton.textContent = label;
+    const on = unlocked && !muted;
+    const label = on ? '소리 켜짐' : '소리 꺼짐';
+    this.soundButton.querySelector('b')!.textContent = on ? 'ON' : 'OFF';
+    this.soundButton.setAttribute('aria-label', label);
     this.soundButton.title = status;
-    this.soundButton.setAttribute('aria-pressed', String(unlocked && !muted));
+    this.soundButton.setAttribute('aria-pressed', String(on));
   }
 }

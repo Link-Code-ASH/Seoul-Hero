@@ -101,8 +101,9 @@ export class AppController {
     if (metaChanged) this.persist();
     this.gateDraft = createGateEntryDraft(this.meta);
     this.show('lobby');
+    void this.audio.prepare();
     this.refreshAccount();
-    // Audio downloads start with the first user gesture, not during lobby render.
+    // Files preload in the lobby; the first gesture starts browser audio output.
     const { data: { subscription } } = cloudClient.auth.onAuthStateChange((event) => {
       if (event === 'SIGNED_IN' || event === 'SIGNED_OUT') window.setTimeout(() => { void this.restoreAccount(); }, 0);
     });
@@ -141,6 +142,7 @@ export class AppController {
     this.ui.show(screen, this.meta, this.simulation?.state ?? null, { category:this.archiveCategory,selectedId:this.archiveSelectionId,page:this.archivePage }, this.gateDraft,this.growthView,this.supplyResults,this.offlineClaimed);
     this.ui.dev.element.hidden = !this.meta.settings.developerMode;
     this.audio.setScene(musicForScene(screen, this.simulation?.state ?? null), screen === 'paused' || screen === 'postWave');
+    this.syncAudioButton();
     if (screen === 'lobby' && this.deferredAuthChange) {
       this.deferredAuthChange = false;
       window.setTimeout(() => { void this.restoreAccount(); }, 0);
@@ -409,7 +411,7 @@ export class AppController {
     else if(accrueOfflineRewards(this.meta,new Date())){this.persist();if(this.screen==='offline'||this.screen==='lobby')this.show(this.screen);}
   };
   private keydown = (event: KeyboardEvent): void => {
-    if (!event.repeat) this.unlockAudio(event);
+    if (!event.repeat) this.unlockAudio();
     if (event.code === 'F3') {
       event.preventDefault();
       if (event.repeat) return;
@@ -427,7 +429,7 @@ export class AppController {
     }
   };
   private action = (action: string): void => {
-    if (!this.audio.play('buttonClick')) void this.audio.unlock().then(() => { this.audio.play('buttonClick'); });
+    if (!this.audio.play('buttonClick')) void this.audio.unlock().then(() => { this.audio.play('buttonClick'); this.syncAudioButton(); });
     const [command = '', id = ''] = action.split(':');
     if (command === 'account-signin') { void this.signIn(); return; }
     if (command === 'account-signout') { void this.signOut(); return; }
@@ -443,6 +445,7 @@ export class AppController {
       if (this.audio.unlocked) this.meta.settings.muted = !this.meta.settings.muted;
       else this.meta.settings.muted = false;
       this.audio.applySettings(this.meta.settings); this.persist();
+      this.syncAudioButton();
       if (this.screen === 'settings') this.show('settings');
       return;
     }
@@ -634,7 +637,7 @@ export class AppController {
       if (this.meta.settings.developerMode && [0.5, 1, 2, 5, 10].includes(value)) this.loop.timeScale = value;
       return;
     } else if (target.id === 'save-file' && target instanceof HTMLInputElement) { void this.importSave(target); return; }
-    if (setting) { this.audio.applySettings(this.meta.settings); this.persist(); }
+    if (setting) { this.audio.applySettings(this.meta.settings); this.syncAudioButton(); this.persist(); }
   };
   private exportSave(): void {
     const blob = new Blob([this.save.export(this.meta)], { type: 'application/json' });
@@ -681,10 +684,12 @@ export class AppController {
     window.removeEventListener('keydown', this.keydown); window.removeEventListener('blur', this.pause);
     document.removeEventListener('visibilitychange', this.visibility); window.removeEventListener('pagehide', this.markOfflineExit);
   }
-  private unlockAudio = (event?: Event): void => {
-    // The explicit sound button owns its first-click enable action.
-    if (event?.target instanceof Element && event.target.closest('[data-action="sound"]')) return;
-    if (!this.audio.unlocked) void this.audio.unlock();
+  private unlockAudio = (): void => {
+    if (this.meta.settings.muted || this.audio.unlocked) return;
+    void this.audio.unlock().then(this.syncAudioButton);
+  };
+  private syncAudioButton = (): void => {
+    this.ui.updateAudio(this.audio.unlocked, this.meta.settings.muted, this.audio.status);
   };
   private testSound(id: string): void {
     if (!Object.hasOwn(sfx, id)) return;
