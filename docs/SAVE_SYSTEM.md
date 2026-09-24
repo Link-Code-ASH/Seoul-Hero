@@ -2,7 +2,7 @@
 
 ## 무엇을 저장하나요?
 
-현재 버전은 `saveVersion: 11`입니다. `savedAt`은 저장한 시각이며, `meta`에는 협회 코인, 영구 진행, 해금과 통계, 주간 상태, 설정을 저장합니다. 전투 중인 적·투사체·HP 등 `RunState`는 저장하지 않습니다.
+현재 버전은 `saveVersion: 12`입니다. `savedAt`은 저장한 시각이며, `meta`에는 협회 코인, 생환석 보유량, 영구 진행, 해금과 통계, 주간 상태, 설정을 저장합니다. 전투 중인 적·투사체·HP 등 `RunState`는 저장하지 않습니다.
 
 Google 로그인은 선택 사항입니다. 게스트는 기존 `seoul-gate.save`를 사용하고, 로그인 계정은 사용자 ID가 붙은 별도 브라우저 저장을 사용합니다. 영구 진행만 `seoul_gate_saves` 테이블에 저장하며 전투 중 상태와 한 판용 마력석은 올리지 않습니다. 테이블은 사용자 ID별 한 행이고, RLS가 자신의 행에 대한 읽기·추가·수정만 허용합니다. 이 내부 저장 키와 테이블명은 게임 이름을 서울 히어로로 바꾼 뒤에도 이전 기록을 유지하기 위해 그대로 둡니다.
 
@@ -100,7 +100,7 @@ v7→v8에서 `associationCoins`를 추가해 현장 마력석과 게이트 성�
 
 v8→v9에서 MetaState를 `account`, `gateProgression`, `characters`, `sharedWeapons`, `blessings`, `wallet`, `association`, `weeklyGate`, `supply`, `offlineReward`, `statistics`, `settings`로 분리했습니다. 협회 코인·구매 단계·해금·심도·주간 상태·설정·통계는 새 위치로 보존합니다. 레거시 영구 마력석 `currency`와 `deferredMagicStone`은 환산하지 않고 제거합니다.
 
-캐릭터·무기·축복 조각은 각 콘텐츠 ID의 진행 레코드 한 곳에서만 관리합니다. 보급 상자와 오프라인 보상은 이번 버전에서 저장 골격만 가지며 실제 지급은 하지 않습니다. RunState의 현장 마력석·무기·아이템·Wave 지갑은 계속 저장하지 않습니다. 맵은 `account.unlockedMapIds`, 심도는 맵과 무관한 `gateProgression.highestUnlockedDepth`에서 관리합니다.
+캐릭터·무기·축복 조각은 각 콘텐츠 ID의 진행 레코드 한 곳에서만 관리합니다. 보급 상자와 오프라인 보상은 협회 코인 등 메타 재화를 지급합니다. RunState의 현장 마력석·무기·아이템·Wave 지갑은 계속 저장하지 않습니다. 맵은 `account.unlockedMapIds`, 심도는 맵과 무관한 `gateProgression.highestUnlockedDepth`에서 관리합니다.
 
 # Save v10
 
@@ -109,3 +109,7 @@ v10은 오프라인 미수령 보상을 협회 코인, 보급권, 캐릭터 조�
 # Save v11
 
 v11은 주간 후보 축복과 선택값을 제거하고 `weekKey / ruleId / remainingRuleIds`만 저장한다. v10의 기존 축복 7종 진행과 미수령 조각은 새 조각형 축복 7종에 일대일로 이관한다. 다른 재화·게이트 진행·설정은 그대로 보존한다.
+
+# Save v12
+
+`wallet.revivalStones`에 생환석 하급·중급·상급 보유 수량을 저장합니다. `offlineReward.pendingRewards.revivalStones`에는 아직 수령하지 않은 생환석을 따로 보관합니다. v11 기록은 두 수량을 0으로 시작하며 기존 코인·성장·통계는 그대로 유지합니다. 부활을 선택하면 수량을 즉시 1개 소모해 저장하고, 선택하기 전의 전투 상태는 저장하지 않습니다.

@@ -2,7 +2,7 @@ import type { Weapon, WeaponStats } from '../types';
 
 const CONTINUOUS_KEYS = [
   'damage', 'cooldown', 'projectileSpeed', 'range', 'duration', 'projectileRadius',
-  'areaMultiplier', 'attackAngle', 'blastRadius', 'repeatInterval', 'explosionDelay',
+  'areaMultiplier', 'attackAngle', 'blastRadius', 'repeatInterval', 'explosionDelay', 'spreadAngle',
 ] as const satisfies readonly (keyof WeaponStats)[];
 
 function midpoint(from: Partial<WeaponStats>, to: Partial<WeaponStats>): Partial<WeaponStats> {

@@ -1,0 +1,154 @@
+/* Archive: the list scrolls within the dossier; the fixed footer changes maps. */
+.archive-index {
+  display: grid;
+  grid-template-rows: 58px minmax(0, 1fr) 48px;
+  min-height: 0;
+  overflow: hidden;
+}
+.archive-entry-grid {
+  height: auto;
+  max-height: none;
+  min-height: 0;
+  grid-template-rows: none;
+  grid-auto-rows: max-content;
+  overflow-x: hidden;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+.archive-entry {
+  min-height: 112px;
+  grid-template-rows: 75px auto;
+  align-content: center;
+}
+.archive-entry>span:not(.inventory-art) { align-self: start; }
+.archive-rarity-heading {
+  grid-column: 1 / -1;
+  align-self: end;
+  margin: 6px 0 0;
+  padding: 5px 2px 7px;
+  border-bottom: 1px solid #9fb4bb51;
+  color: #bfcdd1;
+  font-size: 15px;
+  letter-spacing: .04em;
+}
+.archive-rarity-heading small { margin-left: 7px; color: #869aa4; font-size: 10px; letter-spacing: .12em; }
+.archive-rarity-heading.rarity-uncommon { color: #a4d4c6; }
+.archive-rarity-heading.rarity-rare { color: #a5c9e8; }
+.archive-rarity-heading.rarity-legendary { color: #e3cca0; }
+.archive-map-switcher {
+  display: grid;
+  grid-template-columns: 40px minmax(0,1fr) 40px;
+  align-items: center;
+  gap: 7px;
+  min-width: 0;
+  padding: 5px 11px;
+  border-top: 1px solid #99b5bd57;
+  background: linear-gradient(100deg,#1b2b32,#0f1a20 55%,#17272e),url('../../assets/ui/ui_texture_worn_metal_01.png');
+  background-blend-mode: normal,soft-light;
+  box-shadow: inset 0 1px #dce8e523;
+}
+.archive-map-switcher button { height: 35px; min-width: 0; padding: 0; border: 1px solid #8aa7af78; border-radius: 3px; color: #e6f3f1; background: linear-gradient(#38515a,#1b3039); font-size: 23px; line-height: 1; }
+.archive-map-switcher button:disabled { opacity: .32; }
+.archive-map-switcher>span { min-width: 0; overflow: hidden; text-align: center; text-overflow: ellipsis; white-space: nowrap; color: #e2eae7; font-size: 15px; font-weight: 750; }
+.archive-map-switcher small { margin-left: 5px; color: #91a6ab; font-size: 11px; }
+.archive-entry-grid::-webkit-scrollbar { width: 7px; }
+.archive-entry-grid::-webkit-scrollbar-track { background: #0c1820; }
+.archive-entry-grid::-webkit-scrollbar-thumb { border: 1px solid #0c1820; border-radius: 5px; background: linear-gradient(#7397a4,#3b5b68); }
+
+/* One bounded equipment tray replaces the oversized paper reward cards. */
+.supply-reveal {
+  inset: 50% auto auto 50%;
+  width: min(950px, calc(100% - 34px));
+  max-height: min(610px, calc(100% - 28px));
+  display: grid;
+  grid-template-rows: auto minmax(0,1fr);
+  align-content: stretch;
+  place-items: stretch;
+  gap: 10px;
+  padding: 17px 20px 20px;
+  overflow: hidden;
+  border: 1px solid #93aeb59c;
+  border-radius: 9px;
+  background: linear-gradient(145deg,#344b55f2,#172931f7 43%,#0d1b23f9),url('../../assets/ui/ui_texture_worn_metal_01.png');
+  background-blend-mode: normal,soft-light;
+  box-shadow: inset 0 1px #e9f8f365,inset 0 0 0 4px #09131b99,0 26px 60px #000d;
+  transform: translate(-50%,-47%);
+  animation: supply-tray-in .34s 1.9s ease-out forwards;
+}
+@keyframes supply-tray-in { to { opacity: 1; transform: translate(-50%,-50%); } }
+.supply-reveal .supply-result-backplate { display: none; }
+.supply-reveal .supply-result-heading {
+  width: 100% !important;
+  min-width: 0;
+  display: grid !important;
+  grid-template-columns: 58px minmax(0,1fr) auto;
+  gap: 10px;
+  padding: 0 2px 10px;
+  border-bottom: 1px solid #b9cbd178;
+}
+.supply-result-heading>img { width: 58px; height: 55px; }
+.supply-result-heading em { font-size: 10px; }
+.supply-result-heading strong { font-size: clamp(21px,2.8vw,32px); }
+.supply-result-heading>b { font-size: 13px; }
+.supply-reveal .supply-reward-grid,
+.supply-reveal .supply-reward-grid:has(>i:only-child) {
+  width: 100%;
+  max-height: none;
+  min-height: 0;
+  display: grid;
+  grid-template-columns: repeat(5,minmax(0,1fr));
+  grid-auto-rows: 155px;
+  align-content: start;
+  gap: 8px 14px;
+  padding: 5px 3px 3px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+.supply-reward-grid:has(>i:nth-child(2):last-child) { max-width: 440px; grid-template-columns: repeat(2,minmax(0,1fr)) !important; justify-self: center; }
+.supply-reward-grid:has(>i:nth-child(3):last-child) { max-width: 610px; grid-template-columns: repeat(3,minmax(0,1fr)) !important; justify-self: center; }
+.supply-reward-grid>i,
+.supply-reveal>span>i {
+  min-width: 0;
+  min-height: 0;
+  display: grid;
+  grid-template-rows: 91px auto auto;
+  gap: 2px;
+  padding: 2px 3px 7px;
+  border: 0;
+  border-radius: 0;
+  background: none;
+  box-shadow: none;
+  color: #e5eeee;
+}
+.supply-reward-grid>i::after { display: none; }
+.supply-reward-grid .supply-reward-art { width: 100%; height: 91px; filter: drop-shadow(0 12px 7px #000a); }
+.supply-reward-grid .supply-reward-art>img,
+.supply-reward-grid .supply-reward-art>.inventory-art { width: min(90px,100%); height: 88px; object-fit: contain; }
+.supply-reward-grid>i b { font-size: 14px; line-height: 1.15; }
+.supply-reward-grid>i strong { font-size: 21px; color: #e8d5a6; }
+.supply-reward-grid::-webkit-scrollbar { width: 7px; }
+.supply-reward-grid::-webkit-scrollbar-track { background: #0c1820; }
+.supply-reward-grid::-webkit-scrollbar-thumb { border: 1px solid #0c1820; border-radius: 5px; background: #648491; }
+
+@media (orientation:landscape) and (max-height:500px) {
+  .archive-index { grid-template-rows: 37px minmax(0,1fr) 39px; overflow: hidden; }
+  .archive-index>header { height: 37px; padding: 0 9px; }
+  .archive-entry-grid { grid-template-rows: none; grid-auto-rows: max-content; gap: 5px; padding: 5px; }
+  .archive-entry { min-height: 94px; grid-template-rows: 62px auto; padding: 2px; }
+  .archive-entry>img,.archive-entry .weapon-detail-art,.archive-entry>.inventory-art { width: 61px; height: 61px; }
+  .archive-entry .archive-symbol { width: 61px !important; height: 61px !important; }
+  .archive-map-switcher { padding: 2px 7px; }
+  .archive-map-switcher button { height: 32px; }
+  .supply-reveal { width: min(790px,calc(100% - 24px)); max-height: calc(100% - 20px); padding: 10px 13px 11px; gap: 6px; }
+  .supply-reveal .supply-result-heading { grid-template-columns: 42px minmax(0,1fr) auto; padding-bottom: 5px; }
+  .supply-result-heading>img { width: 42px; height: 42px; }
+  .supply-result-heading em { font-size: 8px; }
+  .supply-result-heading strong { font-size: 23px; }
+  .supply-reveal .supply-reward-grid,.supply-reveal .supply-reward-grid:has(>i:only-child) { grid-template-columns: repeat(5,minmax(0,1fr)); grid-auto-rows: 125px; gap: 4px 7px; }
+  .supply-reward-grid>i,.supply-reveal>span>i { grid-template-rows: 73px auto auto; }
+  .supply-reward-grid .supply-reward-art { height: 73px; }
+  .supply-reward-grid .supply-reward-art>img,.supply-reward-grid .supply-reward-art>.inventory-art { width: 73px; height: 73px; }
+  .supply-reward-grid>i b { font-size: 12px; }
+  .supply-reward-grid>i strong { font-size: 17px; }
+}

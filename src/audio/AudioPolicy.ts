@@ -5,7 +5,7 @@ import type { Screen } from '../ui/screens';
 
 export function musicForScene(screen: Screen, run: RunState | null): BgmId | null {
   if (screen === 'result') return null;
-  if (run && ['waveActive', 'paused', 'shop', 'postWave'].includes(screen)) return run.bossSpawned ? 'boss' : 'combat';
+  if (run && ['waveActive', 'paused', 'revivalChoice', 'shop', 'postWave'].includes(screen)) return run.bossSpawned ? 'boss' : 'combat';
   return 'menu';
 }
 /** Wall-clock throttle, independent of simulation speed and frame rate. */

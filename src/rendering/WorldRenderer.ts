@@ -220,11 +220,12 @@ export class WorldRenderer {
         pickup.radius * 0.82 * tier.scale, pickup.radius * 0.28 * tier.scale)
         .fill({ color: 0x080611, alpha: 0.3 });
     }
+    const truck = player.visual.motionStyle === 'truck';
     this.shadows.ellipse(
       player.x,
       player.y + player.radius * 1.35,
-      player.radius * 1.65 * motion.shadowScale,
-      player.radius * 0.46 * motion.shadowScale,
+      player.radius * (truck ? 2.05 : 1.65) * motion.shadowScale,
+      player.radius * (truck ? 0.55 : 0.46) * motion.shadowScale,
     ).fill({ color: 0x050705, alpha: motion.shadowAlpha });
     drawWeaponEffects(this.markings, state);
     for (const structure of state.structures) {
@@ -316,7 +317,7 @@ export class WorldRenderer {
       drawAreaIndicator(this.markings,h.x,h.y,h.radius,0xff846c,state.stageCombatTime,h.triggered);
       if(h.triggered) this.combatVfx.hazardBlast(h.x, h.y, h.radius, h.remaining, sprites);
     }
-    if (motion.magicLag > 0) {
+    if (motion.magicLag > 0 && !truck) {
       const railY = player.y + player.radius * 1.22;
       this.markings.moveTo(player.x - motion.facing * player.radius * 0.15, railY)
         .lineTo(player.x - motion.facing * player.radius * (1.25 + motion.magicLag * 0.55), railY + motion.dragY)
@@ -332,12 +333,12 @@ export class WorldRenderer {
       }
     }
     const blink = player.invulnerability > 0 ? 0.55 + Math.sin(this.displayTime * 45) * 0.3 : 1;
-    sprites.draw(player.x, player.y, player.radius, player.visual, 'player', blink, motion.lean, false, undefined, motion.facing, undefined, {
-      offsetX: motion.swayX + motion.dragX,
-      offsetY: motion.bobY + motion.dragY,
-      scaleX: motion.scaleX,
-      scaleY: motion.scaleY,
-      skewX: motion.dragSkew,
+    sprites.draw(player.x, player.y, player.radius, player.visual, 'player', blink, motion.lean * (truck ? 0.42 : 1), false, undefined, motion.facing, undefined, {
+      offsetX: (motion.swayX + motion.dragX) * (truck ? 0.45 : 1),
+      offsetY: (motion.bobY + motion.dragY) * (truck ? 0.4 : 1),
+      scaleX: 1 + (motion.scaleX - 1) * (truck ? 0.35 : 1),
+      scaleY: 1 + (motion.scaleY - 1) * (truck ? 0.35 : 1),
+      skewX: motion.dragSkew * (truck ? 0.3 : 1),
     });
   }
 

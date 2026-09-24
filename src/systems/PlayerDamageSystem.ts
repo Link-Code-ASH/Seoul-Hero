@@ -10,6 +10,6 @@ export function damagePlayer(state: RunState, damage: number, random: () => numb
   if (dodges(state.calculatedStats.dodge, random)) return false;
   player.hp = Math.max(0, player.hp - armorDamage(damage, state.calculatedStats.armor));
   emit('playerHit');
-  if (player.hp === 0) { transitionRun(state, 'gameOver'); emit('gameOver'); }
+  if (player.hp === 0) transitionRun(state, 'revivalChoice');
   return true;
 }

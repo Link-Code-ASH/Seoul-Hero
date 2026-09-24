@@ -1,6 +1,16 @@
 import type { WeaponBranch } from '../types';
 /** Legacy milestones are expanded to the Lv.5-10 cadence by progression.ts. */
 export const weaponBranches: Record<string, WeaponBranch[]> = {
+  manaShotgun: [
+    { id: 'A', name: '확산 제압', description: '더 넓은 부채꼴에 많은 산탄을 퍼뜨려 다수의 적을 제압한다.', levels: [
+      { projectileCount: 7, spreadAngle: 0.98, damage: 10 }, { damage: 11 },
+      { projectileCount: 8 }, { damage: 12 }, { spreadAngle: 1.08 }, { projectileCount: 9, damage: 12 },
+    ] },
+    { id: 'B', name: '집중 산탄', description: '좁은 각도의 강한 산탄이 적을 뚫고 뒤의 적에게도 닿는다.', levels: [
+      { projectileCount: 5, spreadAngle: 0.32, penetration: 1, damage: 15 }, { damage: 16 },
+      { spreadAngle: 0.26 }, { damage: 18 }, { cooldown: 1.24 }, { damage: 20, penetration: 2 },
+    ] },
+  ],
   manaBolt: [
     { id: 'A', name: '다중 마력 난사', description: '넓게 퍼지는 여러 마력탄. 최종 3발.', levels: [{ projectileCount: 2, penetration: 0, damage: 32 }, { damage: 36 }, { projectileCount: 3, cooldown: 0.6 }, { damage: 40, cooldown: 0.56 }] },
     { id: 'B', name: '초관통 마력탄', description: '한 발로 긴 적 대열을 관통. 최종 8회 관통.', levels: [{ projectileCount: 1, penetration: 3, damage: 42 }, { damage: 50, projectileSpeed: 720 }, { penetration: 6 }, { penetration: 8, damage: 72, cooldown: 0.58, projectileRadius: 9 }] },

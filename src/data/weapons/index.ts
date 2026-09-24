@@ -219,6 +219,18 @@ const definitions: Record<string, Omit<Weapon, "branches">> = {
     base: { damage: 22, cooldown: 0.65, projectileCount: 1, projectileSpeed: 560, range: 420, duration: 1.5, penetration: 0, projectileRadius: 6 },
     levels: [{ damage: 28, projectileSpeed: 620 }, { damage: 35, penetration: 1 }, { damage: 44, projectileCount: 2 }, { damage: 56, cooldown: 0.5 }, { damage: 72, penetration: 2 }],
     visual: { sprite: 'manaBolt', color: 0xf6dfa0, shape: 'circle' } },
+  manaShotgun: {
+    id: 'manaShotgun', name: '마력 샷건', description: '짧은 거리에서 마력 산탄을 넓게 퍼뜨린다. 가까울수록 여러 탄이 적중한다.',
+    maxLevel: 10, branchAtLevel: 5, targeting: 'nearest', behavior: 'projectile',
+    capabilities: ['RANGED', 'PROJECTILE', 'AREA', 'HAS_RANGE', 'CAN_CRIT'],
+    base: { damage: 11, cooldown: 1.5, projectileCount: 5, projectileSpeed: 650, range: 205, duration: 0.36, penetration: 0, projectileRadius: 4.5, spreadAngle: 0.72 },
+    levels: [
+      { damage: 12 }, { cooldown: 1.43 }, { range: 220, projectileSpeed: 680 },
+      { damage: 13 }, { damage: 14 }, { cooldown: 1.3 }, { damage: 15 },
+      { range: 230 }, { damage: 16, cooldown: 1.2 },
+    ],
+    visual: { sprite: 'manaShotgunPellet', color: 0x9cdef1, shape: 'circle' },
+  },
 };
 
 

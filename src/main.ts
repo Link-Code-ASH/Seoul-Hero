@@ -16,6 +16,8 @@ import './styles/mobile-viewport.css';
 import './styles/typography.css';
 import './styles/combat-hud.css';
 import './styles/facility-scroll.css';
+import './styles/archive-supply-refinement.css';
+import './styles/revival.css';
 
 const world = document.querySelector<HTMLElement>('#world');
 const ui = document.querySelector<HTMLElement>('#ui');

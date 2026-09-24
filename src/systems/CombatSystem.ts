@@ -147,7 +147,9 @@ export class CombatSystem {
       color: definition.visual.color,
     });
     for (let i = 0; i < stats.projectileCount && state.projectiles.length < GAME_CONFIG.combat.maxProjectiles; i++) {
-      const angle = direction + (i - (stats.projectileCount - 1) / 2) * GAME_CONFIG.combat.projectileSpread;
+      const spread = stats.spreadAngle === undefined ? GAME_CONFIG.combat.projectileSpread
+        : Math.min(Math.PI, stats.spreadAngle * stats.areaScale) / Math.max(1, stats.projectileCount - 1);
+      const angle = direction + (i - (stats.projectileCount - 1) / 2) * spread;
       const projectile = this.projectilePool.acquire();
       projectile.id = this.nextId();
       projectile.x = origin.x;

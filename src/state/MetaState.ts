@@ -1,3 +1,8 @@
+import type { RevivalStoneGrade } from '../data/revivalStones';
+
+export type RevivalStoneInventory = Record<RevivalStoneGrade, number>;
+export const emptyRevivalStones = (): RevivalStoneInventory => ({ low: 0, mid: 0, high: 0 });
+
 export interface Settings {
   masterVolume: number; soundVolume: number; combatVolume: number; uiVolume: number; musicVolume: number;
   muted: boolean; highResolution: boolean; developerMode: boolean;
@@ -11,6 +16,7 @@ export interface BlessingProgress { unlocked: boolean; fragments: number; level:
 export interface PendingOfflineRewards {
   associationCoins: number; supplyTickets: number;
   characterFragments: Record<string, number>; weaponFragments: Record<string, number>; blessingFragments: Record<string, number>;
+  revivalStones: RevivalStoneInventory;
 }
 export interface RunResultSummary {
   recordedAt: string; outcome: 'stageClear' | 'gameOver'; mapId: string; characterId: string;
@@ -22,7 +28,7 @@ export interface MetaStatistics extends AggregateStats { byCharacter: Record<str
 /** Persists between runs. Active combat and Run currency never belong here. */
 export interface MetaState {
   account: { unlockedMapIds: string[]; unlockedItemIds: string[]; unlockedFeatureIds: string[] };
-  wallet: { associationCoins: number; supplyTickets: number };
+  wallet: { associationCoins: number; supplyTickets: number; revivalStones: RevivalStoneInventory };
   association: { upgrades: Record<string, number> };
   gateProgression: GateProgressionState;
   characters: Record<string, CharacterProgress>;
@@ -39,10 +45,10 @@ const emptyStats = (): AggregateStats => ({ runs: 0, clears: 0, kills: 0, bestWa
 export function createDefaultMeta(): MetaState {
   return {
     account: { unlockedMapIds: ['seoul'], unlockedItemIds: [], unlockedFeatureIds: [] },
-    wallet: { associationCoins: 0, supplyTickets: 0 }, association: { upgrades: {} },
+    wallet: { associationCoins: 0, supplyTickets: 0, revivalStones: emptyRevivalStones() }, association: { upgrades: {} },
     gateProgression: { highestUnlockedDepth: 1, characters: {} },
-    characters: { awakener: { unlocked: true, fragments: 0, breakthrough: 0 } },
-    sharedWeapons: { manaBolt: { unlocked: true, fragments: 0, level: 0 } }, blessings: {},
+    characters: { awakener: { unlocked: true, fragments: 0, breakthrough: 0 }, kangTaehoon: { unlocked: true, fragments: 0, breakthrough: 0 } },
+    sharedWeapons: { manaBolt: { unlocked: true, fragments: 0, level: 0 }, manaShotgun: { unlocked: true, fragments: 0, level: 0 } }, blessings: {},
     weeklyGate: { weekKey: '', ruleId: '', remainingRuleIds: [] },
     supply: { boxes: {} }, offlineReward: { lastExitAt: '', lastClaimedAt: '', pendingRewards: emptyOfflineRewards() },
     statistics: { ...emptyStats(), byCharacter: {}, byMap: {} },
@@ -52,7 +58,7 @@ export function createDefaultMeta(): MetaState {
 }
 
 export const emptyOfflineRewards = (): PendingOfflineRewards => ({ associationCoins: 0, supplyTickets: 0,
-  characterFragments: {}, weaponFragments: {}, blessingFragments: {} });
+  characterFragments: {}, weaponFragments: {}, blessingFragments: {}, revivalStones: emptyRevivalStones() });
 
 export const isCharacterUnlocked = (meta: MetaState, id: string): boolean => meta.characters[id]?.unlocked === true;
 export const isWeaponUnlocked = (meta: MetaState, id: string): boolean => meta.sharedWeapons[id]?.unlocked === true;

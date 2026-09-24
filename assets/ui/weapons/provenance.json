@@ -12,6 +12,7 @@
     "weapon_auto_turret_01.png": "archived directional-barrel automatic hunter turret",
     "weapon_auto_turret_02.png": "raised omnidirectional sentry tower with a six-emitter rotating crown",
     "weapon_mine_layer_01.png": "purple-core mine deployment device",
-    "weapon_mana_field_01.png": "crystalline mana-field generator"
+    "weapon_mana_field_01.png": "crystalline mana-field generator",
+    "weapon_mana_shotgun_01.png": "compact blue-silver hunter mana shotgun, cropped from OpenAI-generated transparent equipment art on 2026-09-24"
   }
 }

@@ -21,6 +21,9 @@ import { PickupSystem } from '../systems/PickupSystem';
 import { SpawnSystem, type Viewport } from '../systems/SpawnSystem';
 import { GameEvents } from './GameEvents';
 import { BalanceTelemetryCollector } from '../analytics/BalanceTelemetry';
+import { declineRevival, useRevivalStone } from '../systems/RevivalSystem';
+import { damagePlayer } from '../systems/PlayerDamageSystem';
+import type { RevivalStoneGrade } from '../data/revivalStones';
 
 /** Pure simulation boundary: no browser, renderer, storage, or platform input dependencies. */
 export class Simulation {
@@ -94,6 +97,9 @@ export class Simulation {
 
   pause(): void { if (this.state.phase === 'waveActive') transitionRun(this.state, 'paused'); }
   resume(): void { if (this.state.phase === 'paused') transitionRun(this.state, 'waveActive'); }
+  revive(meta: MetaState, grade: RevivalStoneGrade): boolean { return useRevivalStone(this.state, meta, grade); }
+  declineRevival(): boolean { const declined = declineRevival(this.state); if (declined) this.events.emit('gameOver'); return declined; }
+  debugDown(): void { if (this.state.phase === 'waveActive') { this.state.player.hp = 1; this.state.player.invulnerability = 0; this.state.invincible = false; damagePlayer(this.state, 1_000_000, () => 0.99, this.events.emit); } }
   endRun(): void { if (this.active()) { transitionRun(this.state, 'gameOver'); this.events.emit('gameOver'); } }
 
   chooseBranch(id: string): boolean {

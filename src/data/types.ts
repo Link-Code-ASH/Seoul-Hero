@@ -1,9 +1,10 @@
 import type { PlayerStats, StatKey, WeaponCapability } from './stats';
 export interface Vec2 { x: number; y: number }
 export interface Visual {
-  motif?: 'tank'|'ranged'|'swarm'|'charge'|'bomber'|'splitter'|'support'|'summoner'|'defender'|'ambush'|'queen'; color: number; shape: 'circle' | 'diamond' | 'triangle' | 'hexagon'; sprite?: import('./images').ImageId }
+  motif?: 'tank'|'ranged'|'swarm'|'charge'|'bomber'|'splitter'|'support'|'summoner'|'defender'|'ambush'|'queen'; color: number; shape: 'circle' | 'diamond' | 'triangle' | 'hexagon'; sprite?: import('./images').ImageId; motionStyle?: 'scooter' | 'truck' }
 export interface Character {
-  id: string; name: string; description: string; baseStats: PlayerStats; radius: number; signatureWeaponId?: string; visual: Visual;
+  id: string; name: string; description: string; background: string; personality: string;
+  baseStats: PlayerStats; radius: number; signatureWeaponId?: string; portraitSprite?: import('./images').ImageId; visual: Visual;
 }
 export interface CharacterStatAdjustment { stat: StatKey; operation: 'add' | 'multiply'; value: number }
 export interface StageBalanceModifiers {
@@ -19,6 +20,7 @@ export interface EnemyDefinition {
 }
 export interface WeaponStats {
   areaMultiplier?: number; attackAngle?: number; blastRadius?: number; repeatCount?: number; repeatInterval?: number; explosionDelay?: number;
+  spreadAngle?: number;
   damage: number; cooldown: number; projectileCount: number; projectileSpeed: number;
   range: number; duration: number; penetration: number; projectileRadius: number;
 }
@@ -47,6 +49,8 @@ export interface MapData extends ArenaSize {
   waveDefinitions: Wave[]; clearReward: number;
   /** Relative to Song Jinwoo / Gwanghwamun / gate depth 1. Omitted values are 1.0. */
   balanceModifiers?: Partial<StageBalanceModifiers>;
+  /** Optional archive roster. Omitted lists show all currently registered content. */
+  archiveContent?: { enemyIds?: string[]; weaponIds?: string[]; itemIds?: string[] };
 }
 export type { StatKey } from './stats';
 export type UpgradeEffect = { type: 'stat'; stat: StatKey; value: number } | { type: 'weaponLevel'; weaponId: string } | { type: 'heal'; amount: number };

@@ -4,9 +4,9 @@
 
 AppController는 HTML UI·입력·렌더링·오디오·저장을 연결합니다. Simulation은 순수 게임 규칙을 실행하고 GameLoop는 제한된 delta와 배속을 적용합니다.
 
-RunPhase는 `preparing → waveActive → postWave → shop → waveActive` 전환표를 사용합니다. paused는 전투 일시정지, stageClear/gameOver는 결과 상태입니다. Lv.5 무기 구매로 `pendingBranchWeaponId`가 생기면 분기를 고르기 전 다른 구매·리롤·다음 Wave 이동을 막습니다.
+RunPhase는 `preparing → waveActive → postWave → shop → waveActive` 전환표를 사용합니다. 치명상 시 `waveActive → revivalChoice → waveActive/gameOver`로 이동하며 생환석을 소비할 때만 부활합니다. paused는 전투 일시정지, stageClear/gameOver는 결과 상태입니다. Lv.5 무기 구매로 `pendingBranchWeaponId`가 생기면 분기를 고르기 전 다른 구매·리롤·다음 Wave 이동을 막습니다.
 
-RunState에는 Wave/시간/HP/무기/아이템/계산 스탯/한 판용 마력석/복구 지갑/통합 상점과 출동 시 고정된 맵·심도·주간 규칙·축복만 둡니다. 저장 v11의 MetaState는 계정 해금, 게이트 진행, 캐릭터, 공용 무기, 축복, 지갑, 협회, 주간 상태, 보급, 오프라인 보상, 통계, 설정을 책임별 하위 상태로 보존합니다.
+RunState에는 Wave/시간/HP/무기/아이템/계산 스탯/한 판용 마력석/복구 지갑/통합 상점과 출동 시 고정된 맵·심도·주간 규칙·축복만 둡니다. 저장 v12의 MetaState는 계정 해금, 게이트 진행, 캐릭터, 공용 무기, 축복, 생환석 보유 수량, 협회, 주간 상태, 보급, 오프라인 보상, 통계, 설정을 책임별 하위 상태로 보존합니다.
 
 전투 밖에서는 `lobby`가 시작 화면입니다. `GateEntryDraft`는 저장하지 않는 임시 선택이며 `map → depth → character → weapon → blessing → confirm` 여섯 화면을 거쳐 중앙 검증을 통과해야 Simulation을 만듭니다. 맵 정의는 `data/maps`, 계정 공용 심도는 MetaState의 `gateProgression`에 있어 서로 독립적입니다.
 

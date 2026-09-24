@@ -4,6 +4,7 @@ import { maps } from '../data/maps';
 import { metaUpgrades } from '../data/meta';
 import { dangunBlessings, weeklyGateRules } from '../data/weeklyGate';
 import { weapons } from '../data/weapons';
+import { REVIVAL_STONE_GRADES } from '../data/revivalStones';
 import { createDefaultMeta, type AggregateStats, type MetaState } from '../state/MetaState';
 
 export function isRecord(value: unknown): value is Record<string, unknown> { return typeof value === 'object' && value !== null && !Array.isArray(value); }
@@ -43,6 +44,8 @@ export function validateMeta(value: unknown): MetaState {
   if (isRecord(value.wallet)) {
     result.wallet.associationCoins = bounded(value.wallet.associationCoins, 0, MAX_COUNTER);
     result.wallet.supplyTickets = bounded(value.wallet.supplyTickets, 0, MAX_COUNTER);
+    if (isRecord(value.wallet.revivalStones)) for (const grade of REVIVAL_STONE_GRADES)
+      result.wallet.revivalStones[grade] = bounded(value.wallet.revivalStones[grade], 0, MAX_COUNTER);
   }
   if (isRecord(value.association) && isRecord(value.association.upgrades)) for (const [id, level] of Object.entries(value.association.upgrades)) {
     if (!safeId(id)) continue; const definition = Object.hasOwn(metaUpgrades, id) ? metaUpgrades[id] : undefined;
@@ -91,6 +94,8 @@ export function validateMeta(value: unknown): MetaState {
       const pending=value.offlineReward.pendingRewards;
       result.offlineReward.pendingRewards.associationCoins=bounded(pending.associationCoins,0,MAX_COUNTER);
       result.offlineReward.pendingRewards.supplyTickets=bounded(pending.supplyTickets,0,MAX_COUNTER);
+      if(isRecord(pending.revivalStones))for(const grade of REVIVAL_STONE_GRADES)
+        result.offlineReward.pendingRewards.revivalStones[grade]=bounded(pending.revivalStones[grade],0,MAX_COUNTER);
       const groups=[['characterFragments',characters],['weaponFragments',weapons],['blessingFragments',dangunBlessings]] as const;
       for(const [key,registry] of groups)if(isRecord(pending[key]))for(const [id,amount] of Object.entries(pending[key]))if(safeId(id)&&Object.hasOwn(registry,id))result.offlineReward.pendingRewards[key][id]=bounded(amount,0,MAX_COUNTER);
     }

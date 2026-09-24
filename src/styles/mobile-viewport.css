@@ -179,6 +179,21 @@ html:root, body {
   .gate-flow-screen .depth-dossier dt, .gate-flow-screen .depth-dossier dd { font-size: 11px; }
   .gate-flow-screen .gate-next, .gate-flow-screen .gate-deploy { min-height: 38px; margin: 0; padding: 5px 16px; }
   .gate-flow-screen .gate-card-grid:not(.map-grid) { min-height: 0; overflow-y: auto; overscroll-behavior: contain; }
+  .gate-flow-screen .character-meta-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: minmax(0, 1fr);
+    align-content: stretch;
+    overflow: hidden !important;
+    gap: 6px;
+  }
+  .gate-flow-screen .character-meta-card { height: 100%; min-height: 0; }
+  .gate-flow-screen .character-card-art { width: 54%; }
+  .gate-flow-screen .character-card-art>img { transform: scale(.96); }
+  .gate-flow-screen .character-card-info { gap: 4px !important; padding: 8px 7px 8px 2px; }
+  .gate-flow-screen .character-card-info small { font-size: 11px !important; }
+  .gate-flow-screen .character-card-info b { font-size: 22px !important; }
+  .gate-flow-screen .character-card-info em { font-size: 12px !important; }
+  .gate-flow-screen .character-card-info .selection-seal { margin-top: 5px; padding: 5px 7px; font-size: 11px; }
   .gate-flow-screen .weapon-meta-grid { grid-template-columns: repeat(3,minmax(0,1fr)); grid-template-rows: repeat(2,minmax(0,1fr)); gap: 6px; overflow: hidden !important; }
   .gate-flow-screen .weapon-meta-card { height: 100%; min-height: 0; padding: 4px; }
   .gate-flow-screen .weapon-card-art { height: 100%; min-height: 0; }

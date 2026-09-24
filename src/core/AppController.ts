@@ -4,7 +4,6 @@ import { metaUpgrades } from '../data/meta';
 import { characters } from '../data/characters';
 import { weapons } from '../data/weapons';
 import { items } from '../data/items';
-import { enemies } from '../data/enemies';
 import { images } from '../data/images';
 import { maps } from '../data/maps';
 import { eliteModifiers, type EliteModifierId } from '../data/eliteModifiers';
@@ -32,7 +31,7 @@ import { isCharacterUnlocked, isMapUnlocked, type MetaState } from '../state/Met
 import type { Screen } from '../ui/screens';
 import { GameUI } from '../ui/GameUI';
 import { requestMobileFullscreen } from '../ui/MobileFullscreen';
-import { archivePageSize, firstArchiveId, type ArchiveCategory } from '../ui/ArchiveScreen';
+import { firstArchiveId, type ArchiveCategory } from '../ui/ArchiveScreen';
 import { AudioManager } from '../audio/AudioManager';
 import { musicForScene } from '../audio/AudioPolicy';
 import { allAudioUrls, sfx } from '../data/audio';
@@ -43,7 +42,9 @@ import { availableStartingWeapons, createGateEntryDraft, gateEntrySteps, validat
 import { upgradeGrowth, type GrowthKind } from '../meta/GrowthSystem';
 import { accrueOfflineRewards, advanceOfflineForDebug, claimOfflineRewards } from '../meta/OfflineRewardSystem';
 import { openSupplyBox, type MetaReward } from '../meta/SupplySystem';
-import { dangunBlessings, weeklyGateRules } from '../data/weeklyGate';
+import { dangunBlessings } from '../data/weeklyGate';
+import { REVIVAL_STONES, type RevivalStoneGrade } from '../data/revivalStones';
+import { hasRevivalStone } from '../systems/RevivalSystem';
 import type { GrowthViewState } from '../ui/MetaScreens';
 
 /** Owns browser-side wiring. Simulation remains independent of screens and storage. */
@@ -72,7 +73,7 @@ export class AppController {
   private screen: Screen = 'lobby';
   private archiveCategory: ArchiveCategory = 'characters';
   private archiveSelectionId = firstArchiveId('characters');
-  private archivePage = 0;
+  private archiveMapId = 'seoul';
   private gateDraft: GateEntryDraft = createGateEntryDraft(this.meta);
   private growthView:GrowthViewState={tab:'character',selectedId:Object.keys(characters)[0]??''};
   private supplyResults:MetaReward[]=[];
@@ -138,7 +139,7 @@ export class AppController {
     this.loop.paused = screen !== 'waveActive';
     this.keyboard.enabled = screen === 'waveActive';
     this.input.clear();
-    this.ui.show(screen, this.meta, this.simulation?.state ?? null, { category:this.archiveCategory,selectedId:this.archiveSelectionId,page:this.archivePage }, this.gateDraft,this.growthView,this.supplyResults);
+    this.ui.show(screen, this.meta, this.simulation?.state ?? null, { category:this.archiveCategory,selectedId:this.archiveSelectionId,mapId:this.archiveMapId }, this.gateDraft,this.growthView,this.supplyResults);
     this.ui.dev.element.hidden = !this.meta.settings.developerMode;
     this.audio.setScene(musicForScene(screen, this.simulation?.state ?? null), screen === 'paused' || screen === 'postWave');
     this.syncAudioButton();
@@ -180,7 +181,10 @@ export class AppController {
   };
   private syncPhase(dt = 0): void {
     const phase = this.simulation?.state.phase;
-    if (phase === 'gameOver' || phase === 'stageClear') {
+    if (phase === 'revivalChoice') {
+      if (!hasRevivalStone(this.meta)) { this.simulation?.declineRevival(); this.syncPhase(dt); return; }
+      if (this.screen !== 'revivalChoice') this.show('revivalChoice');
+    } else if (phase === 'gameOver' || phase === 'stageClear') {
       const run = this.simulation!.state;
       if (this.terminalRevealRun !== run) {
         this.terminalRevealRun = run;
@@ -472,16 +476,17 @@ export class AppController {
       const target=id as GateEntryStep;
       const hasBlessing=Object.keys(dangunBlessings).some(key=>this.meta.blessings[key]?.unlocked&&this.meta.blessings[key]!.level>0);
       this.show(target==='gateBlessing'&&!hasBlessing?(this.screen==='gateConfirm'?'gateWeapon':'gateConfirm'):target);
-    } else if (command === 'archive-category' && (id === 'characters' || id === 'weapons' || id === 'enemies' || id === 'weeklyTraits' || id === 'blessings')) {
+    } else if (command === 'archive-category' && (id === 'characters' || id === 'weapons' || id === 'items' || id === 'enemies' || id === 'weeklyTraits' || id === 'blessings')) {
       this.archiveCategory = id;
-      this.archiveSelectionId = firstArchiveId(id);
-      this.archivePage=0;
+      this.archiveSelectionId = firstArchiveId(id,this.archiveMapId);
       this.show('archive');
-    } else if(command==='archive-page'){
-      const page=Number(id);if(Number.isInteger(page)&&page>=0){this.archivePage=page;const ids=this.archiveCategory==='characters'?Object.keys(characters):this.archiveCategory==='weapons'?Object.keys(weapons):this.archiveCategory==='enemies'?Object.keys(enemies):this.archiveCategory==='weeklyTraits'?Object.keys(weeklyGateRules):Object.keys(dangunBlessings);this.archiveSelectionId=ids[page*archivePageSize()]??this.archiveSelectionId;this.show('archive');}
+    } else if(command==='archive-map'&&maps[id]){
+      this.archiveMapId=id;
+      this.archiveSelectionId=firstArchiveId(this.archiveCategory,id);
+      this.show('archive');
     } else if (command === 'archive-entry') {
       const [category, entryId] = id.split(',');
-      if (category !== 'characters' && category !== 'weapons' && category !== 'enemies' && category !== 'weeklyTraits' && category !== 'blessings') return;
+      if (category !== 'characters' && category !== 'weapons' && category !== 'items' && category !== 'enemies' && category !== 'weeklyTraits' && category !== 'blessings') return;
       this.archiveCategory = category;
       this.archiveSelectionId = entryId ?? firstArchiveId(category);
       this.show('archive');
@@ -498,6 +503,12 @@ export class AppController {
       if(command==='supply')this.supplyResults=[];this.show(command as Screen);
     } else if (command === 'pause') this.pause();
     else if (command === 'resume') { this.simulation?.resume(); this.syncPhase(); }
+    else if (command === 'revival-use') {
+      if (Object.hasOwn(REVIVAL_STONES, id) && this.simulation?.revive(this.meta, id as RevivalStoneGrade)) {
+        this.persist(); this.syncPhase();
+      }
+    }
+    else if (command === 'revival-decline') { if (this.simulation?.declineRevival()) this.syncPhase(); }
     else if (command === 'shop-buy') { this.simulation?.buyShopItem(Number(id)); this.show('shop'); }
     else if (command === 'shop-lock') { this.simulation?.lockShopItem(Number(id)); this.show('shop'); }
     else if (command === 'shop-reroll') { this.simulation?.rerollShopItems(); this.show('shop'); }
@@ -544,13 +555,23 @@ export class AppController {
     if(command==='balance-export'){this.exportBalanceLogs();return;}
     if(command==='balance-clear'){this.balanceLogs.clear();this.ui.notify('밸런스 분석 기록을 초기화했습니다.');return;}
     if(command==='offline-1h'||command==='offline-12h'||command==='offline-generate'){
-      advanceOfflineForDebug(this.meta,command==='offline-1h'?1:12,command==='offline-generate');
+      advanceOfflineForDebug(this.meta,command==='offline-1h'?1:12);
       this.persist();this.show('offline');this.ui.notify(command==='offline-generate'?'미수령 보상을 생성했습니다.':'오프라인 시간을 진행했습니다.');return;
     }
     if(command==='supply-tickets'){
       this.meta.wallet.supplyTickets+=10;this.persist();
       if(this.screen==='supply')this.show('supply');
       this.ui.notify('보급권 10장을 추가했습니다.');return;
+    }
+    if(command==='revival-add'){
+      const grade=this.ui.dev.element.querySelector<HTMLSelectElement>('#dev-revival-grade')?.value??'';
+      if(Object.hasOwn(REVIVAL_STONES,grade)){
+        this.meta.wallet.revivalStones[grade as RevivalStoneGrade]++;
+        this.persist();
+        if(this.screen==='shop'||this.screen==='revivalChoice')this.show(this.screen);
+        this.ui.notify(`${REVIVAL_STONES[grade as RevivalStoneGrade].name} +1`);
+      }
+      return;
     }
     if (command === 'sound') { this.testSound(this.ui.dev.element.querySelector<HTMLSelectElement>('#dev-sound')?.value ?? ''); return; }
     if (command === 'currency') {
@@ -599,6 +620,7 @@ export class AppController {
       }
       case 'force-clear': simulation.spawnBoss(); simulation.clearEnemies(); break;
       case 'force-over': simulation.endRun(); break;
+      case 'revival-down': simulation.debugDown(); break;
       case 'shop-open': simulation.debugShop(); break;
       case 'item-add': simulation.debugItem(this.ui.dev.element.querySelector<HTMLSelectElement>('#dev-item')?.value??''); break;
       case 'item-clear': simulation.debugClearItems(); break;

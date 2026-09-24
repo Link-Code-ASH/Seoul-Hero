@@ -11,6 +11,7 @@ import { associationScreen, growthScreen, offlineScreen, offlineClaimVisual, off
 import type { MetaReward } from '../meta/SupplySystem';
 import type { GateEntryDraft, GateEntryStep } from '../systems/GateEntrySystem';
 import { accountPanel, type AccountView } from './AccountPanel';
+import { revivalScreen } from './RevivalScreen';
 export class GameUI {
   readonly hud = new Hud();
   readonly dev = new DevPanel();
@@ -43,6 +44,9 @@ export class GameUI {
   show(screen: Screen, meta: MetaState, run: RunState | null, archive: ArchiveViewState, gateDraft: GateEntryDraft, growth:GrowthViewState, supplyResults:readonly MetaReward[]): void {
     const growthScroll = screen === 'growth' && this.root.dataset.screen === 'growth' && this.overlay.querySelector('.facility-tabs .active')?.getAttribute('data-action') === `growth-tab:${growth.tab}`
       ? this.overlay.querySelector<HTMLElement>('.facility-list-grid')?.scrollTop ?? 0 : 0;
+    const previousArchive = this.overlay.querySelector<HTMLElement>('.archive-screen');
+    const archiveScroll = screen === 'archive' && this.root.dataset.screen === 'archive' && previousArchive?.dataset.mapId === archive.mapId && previousArchive.dataset.category === archive.category
+      ? this.overlay.querySelector<HTMLElement>('.archive-entry-grid')?.scrollTop ?? 0 : 0;
     if (this.account.parentElement !== this.root) this.root.append(this.account);
     this.hud.hideWaveEndNotice();
     const inRun = ['waveActive', 'paused', 'shop', 'postWave'].includes(screen);
@@ -53,10 +57,11 @@ export class GameUI {
     if (run && inRun) this.hud.update(run);
     this.soundButton.hidden = screen !== 'lobby';
     this.overlay.hidden = screen === 'waveActive';
-    this.overlay.classList.toggle('overlay-screen', inRun || screen === 'result');
+    this.overlay.classList.toggle('overlay-screen', inRun || screen === 'result' || screen === 'revivalChoice');
     const renderers: Partial<Record<Screen, () => string>> = {
       postWave: () => run ? postWaveScreen(run) : '',
-      shop: () => run ? shopScreen(run) : '', lobby: () => lobbyScreen(meta),
+      shop: () => run ? shopScreen(run, meta) : '', lobby: () => lobbyScreen(meta),
+      revivalChoice: () => revivalScreen(meta),
       gateMap: () => gateFlowScreen(screen as GateEntryStep,meta,gateDraft), gateDepth: () => gateFlowScreen(screen as GateEntryStep,meta,gateDraft), gateCharacter: () => gateFlowScreen(screen as GateEntryStep,meta,gateDraft), gateWeapon: () => gateFlowScreen(screen as GateEntryStep,meta,gateDraft), gateBlessing: () => gateFlowScreen(screen as GateEntryStep,meta,gateDraft), gateConfirm: () => gateFlowScreen(screen as GateEntryStep,meta,gateDraft),
       growth:()=>growthScreen(meta,growth),association:()=>associationScreen(meta),offline:()=>offlineScreen(meta),supply:()=>supplyScreen(meta,supplyResults),
       archive: () => archiveScreen(archive), settings: () => settingsScreen(meta), paused: pauseScreen,
@@ -64,6 +69,7 @@ export class GameUI {
     };
     this.overlay.innerHTML = renderers[screen]?.() ?? '';
     if (screen === 'growth') this.overlay.querySelector<HTMLElement>('.facility-list-grid')!.scrollTop = growthScroll;
+    if (screen === 'archive') this.overlay.querySelector<HTMLElement>('.archive-entry-grid')!.scrollTop = archiveScroll;
     if (screen === 'settings') this.overlay.querySelector('.settings-account-slot')?.append(this.account);
     this.overlay.scrollTop = 0;
     this.overlay.scrollLeft = 0;

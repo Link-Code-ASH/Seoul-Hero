@@ -5,6 +5,7 @@ const itemIds = ['energyDrink','riceBall','runningShoes','scope','luckyCharm','v
 const weaponIds = ['manaSword','guardianDaggers','manaBolt','piercingShot','chainLightning','manaBombard','autoTurret','mineLayer','manaField'];
 const weaponDetailImages: Record<string,ImageId> = {
   manaSword:'weaponManaSword', guardianDaggers:'weaponGuardianShuriken', manaBolt:'weaponManaBolt',
+  manaShotgun:'weaponManaShotgun',
   piercingShot:'weaponPiercingShot', chainLightning:'weaponChainLightning', manaBombard:'weaponManaBombard',
   autoTurret:'weaponAutoTurret', mineLayer:'weaponMineLayer', manaField:'weaponManaField',
 };
@@ -14,5 +15,6 @@ export function inventoryArt(index: number): string {
 export const itemArt = (id: string): string => inventoryArt(Math.max(0, itemIds.indexOf(id)));
 export const weaponArt = (id: string): string => id === 'guardianDaggers'
   ? `<span class="inventory-art" aria-hidden="true" style="background-image:url('${images.guardianShuriken.url}');background-position:center;background-size:contain;background-repeat:no-repeat"></span>`
+  : id === 'manaShotgun' ? `<span class="inventory-art" aria-hidden="true" style="background-image:url('${images.weaponManaShotgun.url}');background-position:center;background-size:contain;background-repeat:no-repeat"></span>`
   : inventoryArt(31 + Math.max(0, weaponIds.indexOf(id)));
 export const weaponDetailArt = (id:string):string => `<img class="weapon-detail-art" src="${images[weaponDetailImages[id]??'weaponManaBolt'].url}" alt="">`;

@@ -1,0 +1,5 @@
+{
+  "method": "OpenAI image generation, three separate transparent PNG assets",
+  "prompt": "A single polished semi-realistic modern Korean fantasy game inventory sprite: elongated diagonally oriented faceted amethyst revival crystal held in a compact gunmetal retaining ring, cool blue-gray studio light, isolated transparent background, no text, consistent device silhouette. Low grade has cloudy inclusions and weak glow; mid grade has cleaner lavender clarity; high grade has transparent luminous violet core and brighter restrained glow.",
+  "files": ["revival_stone_low_01.png", "revival_stone_mid_01.png", "revival_stone_high_01.png"]
+}

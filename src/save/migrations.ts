@@ -106,6 +106,16 @@ const migrations: Record<number, Migration> = {
       offlineReward:{...offline,pendingRewards:{...pending,blessingFragments:remapRecords(pending.blessingFragments)}},
     }};
   },
+  11: (save) => {
+    const meta=isRecord(save.meta)?save.meta:{};
+    const wallet=isRecord(meta.wallet)?meta.wallet:{};
+    const offline=isRecord(meta.offlineReward)?meta.offlineReward:{};
+    const pending=isRecord(offline.pendingRewards)?offline.pendingRewards:{};
+    return {...save,saveVersion:12,meta:{...meta,
+      wallet:{...wallet,revivalStones:{low:0,mid:0,high:0}},
+      offlineReward:{...offline,pendingRewards:{...pending,revivalStones:{low:0,mid:0,high:0}}},
+    }};
+  },
   2: (save) => {
     const meta = isRecord(save.meta) ? save.meta : {};
     return { ...save, saveVersion: 3, meta: { ...meta, unlockedItems: meta.unlockedItems ?? [], unlockedStages: meta.unlockedStages ?? ['seoul'] } };

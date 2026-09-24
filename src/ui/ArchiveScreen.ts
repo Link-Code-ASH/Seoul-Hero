@@ -1,20 +1,23 @@
 import { characters } from '../data/characters';
 import { enemies } from '../data/enemies';
 import { images } from '../data/images';
+import { items, type Rarity } from '../data/items';
+import { maps } from '../data/maps';
+import { SHOP_CONFIG } from '../data/shopConfig';
 import { DEFAULT_STATS, type PlayerStats, type WeaponCapability } from '../data/stats';
 import type { EnemyDefinition, Weapon } from '../data/types';
 import { weapons } from '../data/weapons';
 import { resolveWeaponStats, type ResolvedWeaponStats } from '../stats/WeaponStats';
 import { escapeHtml } from './helpers';
-import { weaponDetailArt } from './InventoryArt';
+import { itemArt, weaponDetailArt } from './InventoryArt';
 import { lobbyReturnButton } from './LobbyNavigation';
-import { dangunBlessings, weeklyGateRules, type DangunBlessing, type WeeklyGateRule } from '../data/weeklyGate';
+import { dangunBlessings, weeklyGateRules, type WeeklyGateRule } from '../data/weeklyGate';
 
-export type ArchiveCategory = 'characters' | 'weapons' | 'enemies' | 'weeklyTraits' | 'blessings';
-export interface ArchiveViewState { category: ArchiveCategory; selectedId: string; page?: number }
+export type ArchiveCategory = 'characters' | 'weapons' | 'items' | 'enemies' | 'weeklyTraits' | 'blessings';
+export interface ArchiveViewState { category: ArchiveCategory; selectedId: string; mapId: string }
 
 const categoryNames: Record<ArchiveCategory, string> = {
-  characters: '캐릭터', weapons: '무기', enemies: '몬스터', weeklyTraits: '주간 특성', blessings: '단군의 축복',
+  characters: '캐릭터', weapons: '무기', items: '아이템', enemies: '몬스터', weeklyTraits: '주간 특성', blessings: '단군의 축복',
 };
 const behaviorNames: Record<EnemyDefinition['behavior'], string> = {
   chase: '추적형', skirmish: '견제형', tank: '중장형', ranged: '원거리형', swarm: '군집형', charge: '돌진형',
@@ -59,32 +62,16 @@ const statGroups: { title: string; rows: { key: keyof PlayerStats; label: string
   ] },
 ];
 
-export function firstArchiveId(category: ArchiveCategory): string {
-  return archiveIds(category)[0] ?? '';
+export function firstArchiveId(category: ArchiveCategory, mapId = 'seoul'): string {
+  return archiveIds(category,mapId)[0] ?? '';
 }
 
-/** Returns the number of archive cards that actually fit above the fixed pager. */
-export function archivePageSize(
-  viewportWidth = typeof window === 'undefined' ? 1440 : window.innerWidth,
-  viewportHeight = typeof window === 'undefined' ? 900 : window.innerHeight,
-): number {
-  if (viewportWidth <= 430) return 4;
-  if (viewportWidth <= 760) return 6;
-  if (viewportWidth <= 1100 && viewportHeight <= 500) return 4;
-
-  const columns = viewportWidth <= 1050 ? 1 : 2;
-  const headerOffset = viewportWidth <= 1050 ? 175 : 205;
-  const bookHeight = Math.max(560, viewportHeight - headerOffset);
-  const gridHeight = bookHeight - 104;
-  const usableHeight = gridHeight - 36;
-  const rows = Math.max(1, Math.floor((usableHeight + 10) / 152));
-  return rows * columns;
-}
-
-function archiveIds(category: ArchiveCategory): string[] {
+function archiveIds(category: ArchiveCategory, mapId: string): string[] {
+  const roster=maps[mapId]?.archiveContent;
   if (category === 'characters') return Object.keys(characters);
-  if (category === 'weapons') return Object.keys(weapons);
-  if (category === 'enemies') return Object.keys(enemies);
+  if (category === 'weapons') return Object.keys(weapons).filter(id=>!roster?.weaponIds||roster.weaponIds.includes(id));
+  if (category === 'items') return Object.keys(items).filter(id=>!roster?.itemIds||roster.itemIds.includes(id));
+  if (category === 'enemies') return Object.keys(enemies).filter(id=>!roster?.enemyIds||roster.enemyIds.includes(id));
   if (category === 'weeklyTraits') return Object.keys(weeklyGateRules);
   return Object.keys(dangunBlessings);
 }
@@ -98,7 +85,7 @@ function characterDetail(id: string): string {
   if (!character) return '';
   const signature = character.signatureWeaponId ? weapons[character.signatureWeaponId] : undefined;
   const groups = statGroups.map(group => `<section class="archive-stat-group"><h3>${group.title}</h3><dl>${group.rows.map(row => `<div><dt>${row.label}</dt><dd>${row.format?.(character.baseStats[row.key]) ?? number(character.baseStats[row.key])}</dd></div>`).join('')}</dl></section>`).join('');
-  return `<article class="archive-detail"><header class="archive-detail-hero">${portrait(character.visual.sprite ?? 'player', character.name, 'archive-character-image')}<div><span class="archive-record-type">AWAKENER · SEOUL</span><h1>${escapeHtml(character.name)}</h1><p>${escapeHtml(character.description)}</p><div class="archive-signature"><small>${signature ? '고유 무기' : '시작 무기'}</small><b>${escapeHtml(signature?.name ?? '출동 전 전투 무기 선택')}</b></div></div></header><div class="archive-stat-groups">${groups}</div></article>`;
+  return `<article class="archive-detail"><header class="archive-detail-hero">${portrait(character.portraitSprite ?? character.visual.sprite ?? 'player', character.name, 'archive-character-image')}<div><span class="archive-record-type">AWAKENER · SEOUL</span><h1>${escapeHtml(character.name)}</h1><p>${escapeHtml(character.description)}</p><div class="archive-signature"><small>${signature ? '고유 무기' : '시작 무기'}</small><b>${escapeHtml(signature?.name ?? '출동 전 전투 무기 선택')}</b></div></div></header><section class="archive-character-story"><div><h2>배경</h2><p>${escapeHtml(character.background)}</p></div><div><h2>성격</h2><p>${escapeHtml(character.personality)}</p></div></section><div class="archive-stat-groups">${groups}</div></article>`;
 }
 
 type WeaponMetric = { label: string; visible: (weapon: Weapon, stats: ResolvedWeaponStats) => boolean; value: (stats: ResolvedWeaponStats) => number; format?: (value: number) => string };
@@ -107,6 +94,7 @@ const weaponMetrics: WeaponMetric[] = [
   { label: '공격 주기', visible: () => true, value: stats => stats.cooldown, format: value => `${number(value)}초` },
   { label: '사거리', visible: weapon => weapon.capabilities.includes('HAS_RANGE'), value: stats => stats.range },
   { label: '투사체 수', visible: (weapon, stats) => weapon.capabilities.includes('PROJECTILE') || stats.projectileCount > 1, value: stats => stats.projectileCount },
+  { label: '산탄 각도', visible: weapon => weapon.base.spreadAngle !== undefined, value: stats => stats.spreadAngle ?? 0, format: value => `${Math.round(value * 180 / Math.PI)}°` },
   { label: '투사체 속도', visible: weapon => weapon.capabilities.includes('PROJECTILE'), value: stats => stats.projectileSpeed },
   { label: '관통', visible: (weapon, stats) => weapon.capabilities.includes('PIERCING') || stats.penetration > 0, value: stats => stats.penetration },
   { label: '타격 각도', visible: weapon => weapon.behavior === 'slash', value: stats => stats.attackAngle, format: value => `${Math.round(value * 180 / Math.PI)}°` },
@@ -149,6 +137,20 @@ function enemyDetail(id: string): string {
   return `<article class="archive-detail"><header class="archive-detail-hero archive-enemy-hero">${portrait(enemy.visual.sprite ?? 'brute', enemy.name, 'archive-enemy-image')}<div><span class="archive-record-type ${boss ? 'boss' : ''}">${boss ? 'BOSS ENTITY' : 'HOSTILE ENTITY'} · ${behaviorNames[enemy.behavior]}</span><h1>${escapeHtml(enemy.name)}</h1><p>${escapeHtml(enemy.description)}</p></div></header><section class="archive-specs"><h2>기본 전투 수치</h2><dl><div><dt>최대 체력</dt><dd>${number(enemy.maxHp)}</dd></div><div><dt>이동 속도</dt><dd>${number(enemy.moveSpeed)}</dd></div><div><dt>접촉 피해</dt><dd>${number(enemy.contactDamage)}</dd></div><div><dt>개체 크기</dt><dd>${number(enemy.radius)}</dd></div><div><dt>마력석 보상</dt><dd>${number(enemy.magicStoneDrop)}</dd></div></dl></section><section class="archive-behavior"><h2>행동 특성</h2><p>${behaviorNotes[enemy.behavior]}</p>${enemy.childId ? `<p>생성 개체: <b>${escapeHtml(enemies[enemy.childId]?.name ?? enemy.childId)}</b></p>` : ''}${enemy.charge ? `<dl><div><dt>돌진 감지 거리</dt><dd>${number(enemy.charge.triggerRange)}</dd></div><div><dt>돌진 속도</dt><dd>${number(enemy.charge.speed)}</dd></div><div><dt>예고 시간</dt><dd>${number(enemy.charge.warning)}초</dd></div></dl>` : ''}${patterns ? `<ul class="archive-patterns">${patterns}</ul>` : ''}</section></article>`;
 }
 
+const rarityNames:Record<Rarity,string>={COMMON:'일반',UNCOMMON:'고급',RARE:'희귀',LEGENDARY:'전설'};
+const rarityOrder:Rarity[]=['COMMON','UNCOMMON','RARE','LEGENDARY'];
+const itemPercentStats=new Set<keyof PlayerStats>(['damage','attackSpeed','meleeDamage','rangedDamage','criticalChance','criticalDamage','range','area','duration','projectileSpeed','dodge','lifesteal','currencyGain']);
+function itemModifierValue(stat:keyof PlayerStats,operation:'add'|'multiply',value:number):string {
+  const change=operation==='multiply'?value-1:value;
+  return `${change>=0?'+':''}${number((operation==='multiply'||itemPercentStats.has(stat))?change*100:change)}${operation==='multiply'||itemPercentStats.has(stat)?'%':''}`;
+}
+function itemDetail(id:string):string {
+  const item=items[id]??Object.values(items)[0];if(!item)return '';
+  const modifiers=item.statModifiers.map(mod=>`<div><dt>${statNames[mod.stat]}</dt><dd>${itemModifierValue(mod.stat,mod.operation,mod.value)}</dd></div>`).join('');
+  const effects=item.specialEffects.map(effect=>effect.type==='structureLimit'?`${capabilityNames[effect.tag]} 설치 한도 +${effect.value}`:effect.type==='projectileCount'?`${capabilityNames[effect.tag]} 공격 수 +${effect.value}`:'설치물 공격 흡혈 허용');
+  return `<article class="archive-detail archive-item-detail"><header class="archive-detail-hero"><div class="archive-large-icon">${itemArt(item.id)}</div><div><span class="archive-record-type rarity-${item.rarity.toLowerCase()}">${rarityNames[item.rarity]} · ${item.rarity}</span><h1>${escapeHtml(item.name)}</h1><p>${escapeHtml(item.description)}</p></div></header><section class="archive-specs"><h2>상점 정보</h2><dl><div><dt>기본 가격</dt><dd>${item.basePrice} 마력석</dd></div><div><dt>판매 시작</dt><dd>Wave ${Math.max(SHOP_CONFIG.rarities[item.rarity].wave,item.unlockCondition?.wave??1)}</dd></div><div><dt>최대 보유</dt><dd>${item.maxStacks??'제한 없음'}</dd></div><div><dt>해금</dt><dd>${item.unlockCondition?.metaItemId?'협회 해금 필요':'기본'}</dd></div></dl></section><section class="archive-specs"><h2>능력치 변화</h2><dl>${modifiers}</dl></section>${effects.length?`<section class="archive-behavior"><h2>특수 효과</h2><p>${effects.map(escapeHtml).join(' · ')}</p></section>`:''}</article>`;
+}
+
 const statNames: Record<keyof PlayerStats, string> = {
   damage:'모든 피해',attackSpeed:'공격 속도',meleeDamage:'근접 피해',rangedDamage:'원거리 피해',criticalChance:'치명타 확률',criticalDamage:'치명타 피해',
   range:'사거리',area:'범위',duration:'지속시간',projectileSpeed:'투사체 속도',maxHp:'최대 체력',armor:'방어력',dodge:'회피',lifesteal:'흡혈',
@@ -168,31 +170,33 @@ function weeklyTraitDetail(id: string): string {
   const style=`--rule-accent:${trait.palette.accent};--rule-glow:${trait.palette.glow};--rule-surface:${trait.palette.surface}`;
   return `<article class="archive-detail archive-rule-detail" style="${style}"><header class="archive-rule-hero"><img src="${images[trait.image].url}" alt=""><div><span class="archive-record-type">WEEKLY GATE RULE</span><h1>${escapeHtml(trait.name)}</h1><p>${escapeHtml(trait.description)}</p></div></header><section class="archive-specs rule-pair"><h2>위험과 가호</h2><dl>${weeklyRows(trait)}<div class="benefit"><dt>고정 베네핏</dt><dd>${escapeHtml(trait.benefitLabel)}</dd></div></dl></section><section class="archive-behavior"><h2>운영 규칙</h2><p>한국 시간 일요일 오전 5시에 자동 교체되며, 패널티와 베네핏은 항상 한 쌍으로 적용됩니다.</p><p>모든 규칙이 한 번씩 등장하기 전에는 같은 규칙이 반복되지 않습니다.</p></section></article>`;
 }
-function blessingValue(blessing:DangunBlessing):string{
-  return blessing.modifiers.map(mod=>`${statNames[mod.stat]} ${mod.operation==='multiply'?`+${Math.round((mod.value-1)*100)}%`:`+${number(mod.value)}`}`).join(' · ');
-}
 function blessingDetail(id:string):string{
   const blessing=dangunBlessings[id]??Object.values(dangunBlessings)[0];if(!blessing)return '';
   return `<article class="archive-detail archive-rule-detail"><header class="archive-rule-hero blessing"><img src="${images[blessing.image].url}" alt=""><div><span class="archive-record-type">DANGUN'S BLESSING · 5 LEVELS</span><h1>${escapeHtml(blessing.name)}</h1><p>${escapeHtml(blessing.description)}</p></div></header><section class="archive-specs"><h2>레벨당 적용 수치</h2><dl>${blessing.modifiers.map(mod=>`<div><dt>${statNames[mod.stat]}</dt><dd>${mod.operation==='multiply'?`+${Math.round((mod.value-1)*100)}%`:`+${number(mod.value)}`}</dd></div>`).join('')}<div><dt>해금</dt><dd>조각 18</dd></div><div><dt>성장</dt><dd>30 / 45 / 65 / 90</dd></div></dl></section><section class="archive-behavior"><h2>출동 규칙</h2><p>미래전략지원실에서 조각으로 해금하고 성장시킵니다. 출동 전 보유 축복 중 하나를 선택하며, 게이트 안에서는 바꿀 수 없습니다.</p><p>보유 축복이 없으면 축복 없이 출동합니다.</p></section></article>`;
 }
 
 function entryList(category: ArchiveCategory, selectedId: string, ids:string[]): string {
+  if(category==='items')return rarityOrder.map(rarity=>{
+    const listed=ids.filter(id=>items[id]?.rarity===rarity);
+    return listed.length?`<h3 class="archive-rarity-heading rarity-${rarity.toLowerCase()}">${rarityNames[rarity]} <small>${rarity}</small></h3>${listed.map(id=>`<button type="button" class="archive-entry archive-item-entry ${id===selectedId?'selected':''}" data-action="archive-entry:items,${id}">${itemArt(id)}<span>${escapeHtml(items[id]!.name)}</span></button>`).join('')}`:'';
+  }).join('');
   return ids.map(id=>{
-    if(category==='characters'){const value=characters[id]!;return `<button type="button" class="archive-entry ${id===selectedId?'selected':''}" data-action="archive-entry:${category},${id}">${portrait(value.visual.sprite??'player','')}<span>${escapeHtml(value.name)}</span></button>`;}
-    if(category==='weapons'){const value=weapons[id]!;return `<button type="button" class="archive-entry ${id===selectedId?'selected':''}" data-action="archive-entry:${category},${id}">${weaponDetailArt(id)}<span>${escapeHtml(value.name)}</span><small>${value.structure?'설치물':'무기'}</small></button>`;}
-    if(category==='enemies'){const value=enemies[id]!;return `<button type="button" class="archive-entry ${id===selectedId?'selected':''}" data-action="archive-entry:${category},${id}">${portrait(value.visual.sprite??'brute','')}<span>${escapeHtml(value.name)}</span><small>${value.tags.includes('BOSS')?'보스':behaviorNames[value.behavior]}</small></button>`;}
-    if(category==='weeklyTraits'){const value=weeklyGateRules[id]!,style=`--rule-accent:${value.palette.accent};--rule-glow:${value.palette.glow};--rule-surface:${value.palette.surface}`;return `<button type="button" style="${style}" class="archive-entry archive-rule-entry weekly ${id===selectedId?'selected':''}" data-action="archive-entry:${category},${id}"><img class="archive-symbol" src="${images[value.image].url}" alt=""><span>${escapeHtml(value.name)}</span><small>${escapeHtml(value.penaltyLabel)} · ${escapeHtml(value.benefitLabel)}</small></button>`;}
-    const value=dangunBlessings[id]!;return `<button type="button" class="archive-entry archive-rule-entry ${id===selectedId?'selected':''}" data-action="archive-entry:${category},${id}"><img class="archive-symbol blessing" src="${images[value.image].url}" alt=""><span>${escapeHtml(value.name)}</span><small>${escapeHtml(blessingValue(value))}</small></button>`;
+    if(category==='characters'){const value=characters[id]!;return `<button type="button" class="archive-entry ${id===selectedId?'selected':''}" data-action="archive-entry:${category},${id}">${portrait(value.portraitSprite??value.visual.sprite??'player','')}<span>${escapeHtml(value.name)}</span></button>`;}
+    if(category==='weapons'){const value=weapons[id]!;return `<button type="button" class="archive-entry ${id===selectedId?'selected':''}" data-action="archive-entry:${category},${id}">${weaponDetailArt(id)}<span>${escapeHtml(value.name)}</span></button>`;}
+    if(category==='enemies'){const value=enemies[id]!;return `<button type="button" class="archive-entry ${id===selectedId?'selected':''}" data-action="archive-entry:${category},${id}">${portrait(value.visual.sprite??'brute','')}<span>${escapeHtml(value.name)}</span></button>`;}
+    if(category==='weeklyTraits'){const value=weeklyGateRules[id]!,style=`--rule-accent:${value.palette.accent};--rule-glow:${value.palette.glow};--rule-surface:${value.palette.surface}`;return `<button type="button" style="${style}" class="archive-entry archive-rule-entry weekly ${id===selectedId?'selected':''}" data-action="archive-entry:${category},${id}"><img class="archive-symbol" src="${images[value.image].url}" alt=""><span>${escapeHtml(value.name)}</span></button>`;}
+    const value=dangunBlessings[id]!;return `<button type="button" class="archive-entry archive-rule-entry ${id===selectedId?'selected':''}" data-action="archive-entry:${category},${id}"><img class="archive-symbol blessing" src="${images[value.image].url}" alt=""><span>${escapeHtml(value.name)}</span></button>`;
   }).join('');
 }
 
 export function archiveScreen(view: ArchiveViewState): string {
-  const validIds = archiveIds(view.category);
+  const mapIds=Object.keys(maps),mapId=mapIds.includes(view.mapId)?view.mapId:mapIds[0]??'seoul';
+  const mapIndex=mapIds.indexOf(mapId);
+  const validIds = archiveIds(view.category,mapId);
   const selectedId = validIds.includes(view.selectedId) ? view.selectedId : validIds[0] ?? '';
-  const pageSize=archivePageSize(),pageCount=Math.max(1,Math.ceil(validIds.length/pageSize)),page=Math.max(0,Math.min(pageCount-1,view.page??0)),pageIds=validIds.slice(page*pageSize,page*pageSize+pageSize);
-  const pager=`<div class="archive-pager"><button data-action="archive-page:${Math.max(0,page-1)}" ${page===0?'disabled':''}>‹</button><span>${page+1} / ${pageCount}</span><button data-action="archive-page:${Math.min(pageCount-1,page+1)}" ${page===pageCount-1?'disabled':''}>›</button></div>`;
-  const detail = view.category === 'characters' ? characterDetail(selectedId) : view.category === 'weapons' ? weaponDetail(selectedId) : view.category === 'enemies' ? enemyDetail(selectedId) : view.category === 'weeklyTraits' ? weeklyTraitDetail(selectedId) : blessingDetail(selectedId);
-  const tabs = (Object.keys(categoryNames) as ArchiveCategory[]).map(category => `<button type="button" class="archive-tab ${category === view.category ? 'selected' : ''}" data-action="archive-category:${category}" aria-pressed="${category === view.category}"><span>${categoryNames[category]}</span><small>${archiveIds(category).length}</small></button>`).join('');
-  return `<section class="archive-screen"><header class="archive-header">${lobbyReturnButton()}<div><span>SEOUL HERO ARCHIVE</span><h1>게이트 대응 자료집</h1></div></header><div class="archive-book"><nav class="archive-tabs" aria-label="자료 분류">${tabs}</nav><section class="archive-index"><header><span>${categoryNames[view.category]}</span><b>${String(validIds.length).padStart(2,'0')} FILES</b></header><div class="archive-entry-grid">${entryList(view.category,selectedId,pageIds)}</div>${pager}</section>${detail}</div></section>`;
+  const mapSwitcher=`<div class="archive-map-switcher"><button data-action="archive-map:${mapIds[mapIndex-1]??''}" ${mapIndex<=0?'disabled':''} aria-label="이전 맵">‹</button><span>${escapeHtml(maps[mapId]?.name??mapId)} <small>${mapIndex+1}/${mapIds.length}</small></span><button data-action="archive-map:${mapIds[mapIndex+1]??''}" ${mapIndex>=mapIds.length-1?'disabled':''} aria-label="다음 맵">›</button></div>`;
+  const detail = !selectedId ? '<article class="archive-detail archive-empty">이 구역에 등록된 자료가 없습니다.</article>' : view.category === 'characters' ? characterDetail(selectedId) : view.category === 'weapons' ? weaponDetail(selectedId) : view.category === 'items' ? itemDetail(selectedId) : view.category === 'enemies' ? enemyDetail(selectedId) : view.category === 'weeklyTraits' ? weeklyTraitDetail(selectedId) : blessingDetail(selectedId);
+  const tabs = (Object.keys(categoryNames) as ArchiveCategory[]).map(category => `<button type="button" class="archive-tab ${category === view.category ? 'selected' : ''}" data-action="archive-category:${category}" aria-pressed="${category === view.category}"><span>${categoryNames[category]}</span><small>${archiveIds(category,mapId).length}</small></button>`).join('');
+  return `<section class="archive-screen" data-map-id="${escapeHtml(mapId)}" data-category="${view.category}"><header class="archive-header">${lobbyReturnButton()}<div><span>SEOUL HERO ARCHIVE</span><h1>게이트 대응 자료집</h1></div></header><div class="archive-book"><nav class="archive-tabs" aria-label="자료 분류">${tabs}</nav><section class="archive-index"><header><span>${categoryNames[view.category]}</span><b>${String(validIds.length).padStart(2,'0')} FILES</b></header><div class="archive-entry-grid">${entryList(view.category,selectedId,validIds)}</div>${mapSwitcher}</section>${detail}</div></section>`;
 }
 
