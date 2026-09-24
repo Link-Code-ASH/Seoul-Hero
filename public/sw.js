@@ -1,4 +1,4 @@
-const CACHE_NAME = 'seoul-hero-pwa-v2';
+const CACHE_NAME = 'seoul-hero-pwa-v3';
 const OFFLINE_PAGE = new URL('offline.html', self.registration.scope).href;
 
 self.addEventListener('install', event => {
@@ -20,5 +20,5 @@ self.addEventListener('fetch', event => {
   if (event.request.mode !== 'navigate') return;
   const url = new URL(event.request.url);
   if (url.origin !== self.location.origin || !url.pathname.startsWith(new URL(self.registration.scope).pathname)) return;
-  event.respondWith(fetch(event.request).catch(async () => (await caches.open(CACHE_NAME)).match(OFFLINE_PAGE)));
+  event.respondWith(fetch(new Request(event.request, { cache: 'no-store' })).catch(async () => (await caches.open(CACHE_NAME)).match(OFFLINE_PAGE)));
 });

@@ -31,6 +31,7 @@ import { getUpgradeCost, purchaseUpgrade } from '../meta/progression';
 import { isCharacterUnlocked, isMapUnlocked, type MetaState } from '../state/MetaState';
 import type { Screen } from '../ui/screens';
 import { GameUI } from '../ui/GameUI';
+import { requestMobileFullscreen } from '../ui/MobileFullscreen';
 import { archivePageSize, firstArchiveId, type ArchiveCategory } from '../ui/ArchiveScreen';
 import { AudioManager } from '../audio/AudioManager';
 import { musicForScene } from '../audio/AudioPolicy';
@@ -432,6 +433,12 @@ export class AppController {
     if (command === 'account-signout') { void this.signOut(); return; }
     if (command === 'account-use-cloud') { this.chooseAccount(true); return; }
     if (command === 'account-upload-local') { this.chooseAccount(false); return; }
+    if (command === 'fullscreen') {
+      void requestMobileFullscreen().then(success => {
+        if (!success) this.ui.notify('Chrome에서 전체 화면 전환을 허용하지 않았습니다.');
+      });
+      return;
+    }
     if (command === 'sound') {
       if (this.audio.unlocked) this.meta.settings.muted = !this.meta.settings.muted;
       else this.meta.settings.muted = false;
