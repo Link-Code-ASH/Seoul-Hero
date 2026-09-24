@@ -270,8 +270,13 @@ export class AppController {
         const validGuestRaw = valid(guestRaw);
         this.accountUserId = user.id;
         this.accountEmail = user.email ?? 'Google 계정';
-        if (dirty && validAccountRaw) {
-          this.showAccountChoice(validAccountRaw, remote, 'conflict');
+        if (dirty && validAccountRaw && remote) {
+          const localMeta = parseSave(validAccountRaw).meta;
+          const remoteMeta = parseSave(remote.raw).meta;
+          if (this.cloudFingerprint(localMeta) === this.cloudFingerprint(remoteMeta)) {
+            localStorage.removeItem(this.dirtyKey(user.id));
+            this.activateAccount(remote.raw, remote.revision, false);
+          } else this.showAccountChoice(validAccountRaw, remote, 'conflict');
         } else if (!linked && remote && validGuestRaw) {
           this.showAccountChoice(validGuestRaw, remote, 'first');
         } else {
@@ -327,6 +332,7 @@ export class AppController {
     this.accountChoice = null;
     this.remoteChoice = null;
     localStorage.setItem(this.linkedKey(id), '1');
+    if (!upload) localStorage.removeItem(this.dirtyKey(id));
     this.accountStatus = upload ? '클라우드에 저장 중' : '클라우드 기록 사용 중';
     this.audio.applySettings(this.meta.settings);
     this.renderer.setHighResolution(this.meta.settings.highResolution);
@@ -390,7 +396,7 @@ export class AppController {
       }
     }
   };
-  private markOfflineExit=():void=>{this.meta.offlineReward.lastExitAt=new Date().toISOString();this.persist(true);};
+  private markOfflineExit=():void=>{this.meta.offlineReward.lastExitAt=new Date().toISOString();this.persist();};
   private pause = (): void => {
     if (this.screen === 'waveActive') { this.simulation?.pause(); this.syncPhase(); }
     this.input.clear();
