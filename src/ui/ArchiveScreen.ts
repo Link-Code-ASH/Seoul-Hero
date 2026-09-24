@@ -70,6 +70,7 @@ export function archivePageSize(
 ): number {
   if (viewportWidth <= 430) return 4;
   if (viewportWidth <= 760) return 6;
+  if (viewportWidth <= 1100 && viewportHeight <= 500) return 4;
 
   const columns = viewportWidth <= 1050 ? 1 : 2;
   const headerOffset = viewportWidth <= 1050 ? 175 : 205;

@@ -14,6 +14,8 @@ import './styles/interface-followup.css';
 import './styles/account.css';
 import './styles/mobile-viewport.css';
 import './styles/typography.css';
+import './styles/combat-hud.css';
+import './styles/facility-scroll.css';
 
 const world = document.querySelector<HTMLElement>('#world');
 const ui = document.querySelector<HTMLElement>('#ui');

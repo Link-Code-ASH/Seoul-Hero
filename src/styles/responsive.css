@@ -231,11 +231,6 @@
 }
 
 @media(pointer:coarse) {
-
-  .joystick:not([hidden]) {
-    display: block;
-  }
-
   .hud-bottom>span:last-child {
     display: none;
   }
@@ -382,5 +377,4 @@
 @media(max-height:500px){.overlay-screen{align-items:flex-start;overflow-y:auto}.level-modal{margin:auto;max-width:100%}.shop-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.shop-card{padding:14px}.choice-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.timer{top:12px}.hud-bottom{bottom:8px}.dev-panel{max-height:calc(100dvh - 85px)}}
 @media(max-width:450px){.shop-grid,.choice-grid{grid-template-columns:minmax(0,1fr)}.shop-screen{padding:14px}.shop-card h2{font-size:20px}}
 
-/* Small landscape windows also expose touch controls for hybrid devices. */
-@media(max-width:900px) and (max-height:500px){.joystick:not([hidden]){display:block}.hud-bottom>span:last-child{display:none}}
+@media(max-width:900px) and (max-height:500px){.hud-bottom>span:last-child{display:none}}

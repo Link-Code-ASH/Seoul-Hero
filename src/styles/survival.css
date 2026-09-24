@@ -255,8 +255,6 @@ button.quiet { box-shadow: none; border-bottom: 1px solid #8e907b55; }
 .hud-icon,.xp-icon { filter: saturate(.65) contrast(1.2) drop-shadow(2px 2px #000); }
 .sound-button { border-radius: 1px; border-color: #88836b; background: #11140feb; color: #c9c5a9; }
 .toast { border-radius: 1px; border-left: 6px solid var(--hazard); background: #1b1e18f5; color: #e2dec4; box-shadow: 6px 7px 0 #0009; }
-.joystick { border: 2px dashed #c2b86b99; background: #171a1266; }
-.joystick span { border-radius: 3px; background: #c7b75b88; border-color: #e6d77c; }
 
 .result-grid { background: #77725c; border-color: #77725c; }
 .result-grid>div { background: #191c18; }

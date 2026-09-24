@@ -33,10 +33,7 @@ html:root, body {
   padding-right: max(12px, env(safe-area-inset-right, 0px));
 }
 
-.joystick {
-  left: max(22px, env(safe-area-inset-left, 0px));
-  bottom: max(24px, env(safe-area-inset-bottom, 0px));
-}
+#world, #world canvas { touch-action: none; }
 
 .mobile-fullscreen-button { display: none; }
 .screen { inset: 0; }
@@ -65,10 +62,7 @@ html:root, body {
 .sound-button b { font: 700 15px/1 'Barlow Condensed', GateSans, sans-serif; letter-spacing: .07em; }
 .sound-button[aria-pressed="true"] { color: #8fd5c8; }
 .sound-button:focus-visible { outline-offset: 0; }
-[data-screen="waveActive"] .sound-button, [data-screen="paused"] .sound-button,
-[data-screen="postWave"] .sound-button, [data-screen="shop"] .sound-button {
-  right: max(74px, calc(env(safe-area-inset-right, 0px) + 74px));
-}
+.sound-button[hidden] { display: none; }
 .settings-account-slot { margin-top: auto; padding-top: 9px; border-top: 1px solid #a8c9cc3b; }
 .settings-account-slot h3 { margin: 0 0 6px; color: #c5dee1; font-size: 16px; }
 .settings-account-slot .account-panel { position: static; width: 100%; }
@@ -139,7 +133,7 @@ html:root, body {
   .screen>.gate-flow-screen {
     grid-template-rows: 48px 44px minmax(0,1fr);
     gap: 6px;
-    padding: 6px max(80px, calc(env(safe-area-inset-right, 0px) + 80px)) 7px max(12px, env(safe-area-inset-left, 0px));
+    padding: 6px max(12px, env(safe-area-inset-right, 0px)) 10px max(12px, env(safe-area-inset-left, 0px));
   }
   .gate-flow-screen .gate-flow-head {
     display: grid; grid-template-columns: 116px 142px minmax(0,1fr);
@@ -199,12 +193,13 @@ html:root, body {
   .gate-flow-screen .deploy-equipped { min-height: 0; gap: 4px; padding-top: 5px; }
   .gate-flow-screen .deploy-equipped>div { min-width: 0; padding: 2px 4px; }
   .gate-flow-screen .map-grid { min-height: 0; overflow-y: auto; overscroll-behavior: contain; }
+  .gate-flow-screen .map-card { min-height: 0; }
   .meta-facility { display: flex; flex-direction: column; }
   .meta-facility { padding: 6px 12px 8px; }
-  .meta-facility>header { flex: 0 0 44px; height: 44px; min-height: 0; margin: 0 70px 6px 0; }
+  .meta-facility>header { flex: 0 0 44px; height: 44px; min-height: 0; margin: 0 0 6px; }
   .meta-facility>header h1 { font-size: 22px; white-space: nowrap; }
   .meta-facility .lobby-return { min-height: 38px; padding: 4px 10px; }
-  .growth-facility .facility-tabs { top: 6px; right: 78px; height: 44px; }
+  .growth-facility .facility-tabs { top: 6px; right: 12px; height: 44px; }
   .growth-facility .facility-tabs button { min-height: 40px; padding: 4px 12px; font-size: 14px; }
   .facility-workspace, .association-layout, .offline-console, .supply-console { flex: 1; height: auto; min-height: 0; overflow: hidden; }
   .growth-facility .facility-workspace { grid-template-columns: 180px minmax(0,1fr) 230px; gap: 7px; }
@@ -245,7 +240,7 @@ html:root, body {
   .offline-facility .offline-manifest li { min-height: 43px; grid-template-columns: 36px minmax(0,1fr) auto; padding: 2px 4px; font-size: 13px; }
   .offline-facility .offline-manifest li>img { width: 35px; height: 35px; }
   .offline-facility .offline-manifest .primary { min-height: 39px; padding: 4px; font-size: 15px; }
-  .supply-facility .facility-balance { top: 7px; right: 78px; padding: 2px 6px; grid-template-columns: 28px auto auto; gap: 4px; }
+  .supply-facility .facility-balance { top: 7px; right: 12px; padding: 2px 6px; grid-template-columns: 28px auto auto; gap: 4px; }
   .supply-facility .facility-balance img { width: 28px; height: 28px; }
   .supply-facility .facility-balance b { font-size: 18px; }
   .supply-facility .supply-controls p { display: none; }
@@ -253,7 +248,7 @@ html:root, body {
   .facility-list, .facility-control, .association-counter, .supply-controls { min-height: 0; overflow-y: auto; overscroll-behavior: contain; }
   .archive-screen { display: flex; flex-direction: column; }
   .archive-screen { padding: 6px 12px 8px; }
-  .archive-header { flex: 0 0 44px; min-height: 0; height: 44px; gap: 9px; align-items: center; margin: 0 70px 6px 0; }
+  .archive-header { flex: 0 0 44px; min-height: 0; height: 44px; gap: 9px; align-items: center; margin: 0 0 6px; }
   .archive-header .quiet { margin: 0; }
   .archive-header>div>span { display: none; }
   .archive-header h1 { margin: 0; font-size: 22px; }
@@ -261,6 +256,13 @@ html:root, body {
   .archive-tabs { min-height: 0; height: 100%; gap: 4px; padding: 5px; overflow-x: hidden; overflow-y: auto; overscroll-behavior: contain; }
   .archive-tab, .archive-tab.selected, .archive-tab:hover { width: 100%; min-height: 55px; margin-right: 0; padding: 4px 8px; transform: none; }
   .archive-index, .archive-detail { height: 100%; max-height: 100%; min-height: 0; overflow-y: auto; overscroll-behavior: contain; }
+  .archive-entry-grid { grid-template-columns: repeat(2,minmax(0,1fr)); grid-template-rows: repeat(2,minmax(0,1fr)); gap: 5px; padding: 5px; }
+  .archive-entry { min-height: 0; grid-template-rows: 52px minmax(18px,auto) 14px; gap: 1px; padding: 3px; }
+  .archive-entry>img, .archive-entry .weapon-detail-art { width: 54px; height: 52px; }
+  .archive-entry>.inventory-art { width: 52px; height: 52px; margin: 0; }
+  .archive-entry>span:not(.inventory-art) { font-size: 13px; line-height: 1.1; white-space: normal; overflow-wrap: anywhere; }
+  .archive-entry>small { max-width: 100%; overflow: hidden; font-size: 10px; line-height: 14px; text-overflow: ellipsis; white-space: nowrap; }
+  .archive-entry .archive-symbol { width: 50px !important; height: 50px !important; }
   [data-screen="shop"] .screen.overlay-screen { overflow: hidden !important; }
   .level-modal.shop-screen { max-height: calc(100dvh - 16px); overflow: hidden; }
   .shop-screen .shop-catalog, .shop-screen .shop-stat-list { overflow-y: auto; overscroll-behavior: contain; }

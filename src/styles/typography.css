@@ -67,7 +67,7 @@ html, body, button, input, select { font-family: Paperlogy, GateSans, 'Apple SD 
 }
 .wordmark b { font-size: 1.12em; letter-spacing: .09em; }
 .screen :is(h1, h2), .modal :is(h1, h2) { font-family: Paperlogy, GateSans, 'Apple SD Gothic Neo', sans-serif; font-weight: 800; }
-.gate-command-copy b { font-family: 'Gumi Romance', Paperlogy, GateSans, sans-serif; font-weight: 400; letter-spacing: -.035em; }
+.gate-command-copy b { font-family: Paperlogy, GateSans, sans-serif; font-weight: 800; letter-spacing: -.035em; }
 .gate-flow-head h1, .meta-facility>header h1, .settings-facility h1 { font-family: 'Haeong Sans', Paperlogy, GateSans, sans-serif; font-weight: 400; }
 .archive-header h1, .archive-detail h1, .association-desk>h2, .offline-manifest h2, .result-modal h1 {
   font-family: 'Sungkok Serif', Paperlogy, GateSans, serif;

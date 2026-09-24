@@ -1,0 +1,50 @@
+/* Keep facility controls fixed; only the roster itself scrolls. */
+.growth-facility .facility-workspace { min-height: 0; overflow: hidden; }
+.growth-facility .facility-list { min-height: 0; display: block; overflow: hidden; padding: 7px; }
+.growth-facility .facility-list-grid {
+  height: 100%; max-height: 100%; min-height: 0;
+  display: flex; flex-direction: column; align-content: initial;
+  gap: 6px; padding: 5px 7px 5px 5px;
+  overflow-x: hidden; overflow-y: auto; overscroll-behavior: contain;
+  touch-action: pan-y;
+}
+.growth-facility .facility-list-item { flex: 0 0 auto; min-height: 72px; }
+.growth-facility .facility-control { overflow: hidden; }
+
+/* A single briefing rail remains above the selected gate content. */
+.gate-flow-screen { grid-template-rows: auto auto minmax(0, 1fr); }
+@media (min-width: 1180px) and (max-height: 760px) {
+  .gate-flow-screen:has(.character-meta-card:only-child) {
+    grid-template-rows: 64px 70px minmax(0, 1fr);
+  }
+}
+
+/* Scrollable lists and panels share one restrained, metallic game scrollbar. */
+@supports not selector(::-webkit-scrollbar) {
+  #ui, #ui * { scrollbar-width: thin; scrollbar-color: #7eacb8 #0a1720; }
+}
+@supports selector(::-webkit-scrollbar) {
+  #ui, #ui * { scrollbar-width: auto; scrollbar-color: auto; }
+}
+#ui::-webkit-scrollbar, #ui *::-webkit-scrollbar { width: 9px; height: 9px; }
+#ui::-webkit-scrollbar-track, #ui *::-webkit-scrollbar-track {
+  border: 1px solid #29424c;
+  border-radius: 9px;
+  background: linear-gradient(90deg, #081118, #172832 48%, #081118);
+  box-shadow: inset 0 0 5px #000b;
+}
+#ui::-webkit-scrollbar-thumb, #ui *::-webkit-scrollbar-thumb {
+  border: 2px solid #142731;
+  border-radius: 9px;
+  background: linear-gradient(90deg, #3d6573, #a3c5c8 48%, #446b79);
+  box-shadow: inset 0 1px 1px #e4ffff73, 0 0 5px #6bb7c268;
+}
+#ui::-webkit-scrollbar-thumb:hover, #ui *::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(90deg, #6193a0, #d4e5df 48%, #6699a4);
+}
+#ui::-webkit-scrollbar-corner, #ui *::-webkit-scrollbar-corner { background: #0a1720; }
+
+@media (max-height: 500px) and (min-width: 721px) {
+  .growth-facility .facility-list-item { min-height: 45px; }
+  #ui::-webkit-scrollbar, #ui *::-webkit-scrollbar { width: 7px; height: 7px; }
+}

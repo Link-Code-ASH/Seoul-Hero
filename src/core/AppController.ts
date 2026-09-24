@@ -74,10 +74,9 @@ export class AppController {
   private archiveSelectionId = firstArchiveId('characters');
   private archivePage = 0;
   private gateDraft: GateEntryDraft = createGateEntryDraft(this.meta);
-  private growthView:GrowthViewState={tab:'character',selectedId:Object.keys(characters)[0]??'',page:0};
+  private growthView:GrowthViewState={tab:'character',selectedId:Object.keys(characters)[0]??''};
   private supplyResults:MetaReward[]=[];
   private supplyFanfareTimer=0;
-  private offlineClaimed=false;
   private offlineClaimTimer=0;
   private readonly settlement = new RunSettlement();
   private readonly balanceLogs = new BalanceTelemetryStore();
@@ -92,7 +91,7 @@ export class AppController {
 
   constructor(private readonly worldHost: HTMLElement, uiHost: HTMLElement) {
     this.ui = new GameUI(uiHost, this.action, this.change);
-    this.input = new InputManager([this.keyboard, new TouchInput(this.ui.joystick)]);
+    this.input = new InputManager([this.keyboard, new TouchInput(this.worldHost, () => this.screen === 'waveActive')]);
     this.loop = new GameLoop(this.update, this.render);
   }
   async start(): Promise<void> {
@@ -139,7 +138,7 @@ export class AppController {
     this.loop.paused = screen !== 'waveActive';
     this.keyboard.enabled = screen === 'waveActive';
     this.input.clear();
-    this.ui.show(screen, this.meta, this.simulation?.state ?? null, { category:this.archiveCategory,selectedId:this.archiveSelectionId,page:this.archivePage }, this.gateDraft,this.growthView,this.supplyResults,this.offlineClaimed);
+    this.ui.show(screen, this.meta, this.simulation?.state ?? null, { category:this.archiveCategory,selectedId:this.archiveSelectionId,page:this.archivePage }, this.gateDraft,this.growthView,this.supplyResults);
     this.ui.dev.element.hidden = !this.meta.settings.developerMode;
     this.audio.setScene(musicForScene(screen, this.simulation?.state ?? null), screen === 'paused' || screen === 'postWave');
     this.syncAudioButton();
@@ -429,8 +428,8 @@ export class AppController {
     }
   };
   private action = (action: string): void => {
-    if (!this.audio.play('buttonClick')) void this.audio.unlock().then(() => { this.audio.play('buttonClick'); this.syncAudioButton(); });
     const [command = '', id = ''] = action.split(':');
+    if (command !== 'sound' && !this.meta.settings.muted && !this.audio.play('buttonClick')) void this.audio.unlock().then(() => { this.audio.play('buttonClick'); this.syncAudioButton(); });
     if (command === 'account-signin') { void this.signIn(); return; }
     if (command === 'account-signout') { void this.signOut(); return; }
     if (command === 'account-use-cloud') { this.chooseAccount(true); return; }
@@ -442,11 +441,10 @@ export class AppController {
       return;
     }
     if (command === 'sound') {
-      if (this.audio.unlocked) this.meta.settings.muted = !this.meta.settings.muted;
-      else this.meta.settings.muted = false;
+      this.meta.settings.muted = this.audio.unlocked ? !this.meta.settings.muted : false;
       this.audio.applySettings(this.meta.settings); this.persist();
       this.syncAudioButton();
-      if (this.screen === 'settings') this.show('settings');
+      if (!this.meta.settings.muted && !this.audio.unlocked) void this.audio.unlock().then(this.syncAudioButton);
       return;
     }
     if (command === 'sound-test') { this.testSound(id); return; }
@@ -487,11 +485,10 @@ export class AppController {
       this.archiveCategory = category;
       this.archiveSelectionId = entryId ?? firstArchiveId(category);
       this.show('archive');
-    } else if(command==='growth-tab'&&(id==='character'||id==='weapon'||id==='blessing')){this.growthView={tab:id,selectedId:id==='character'?Object.keys(characters)[0]??'':id==='weapon'?Object.keys(weapons)[0]??'':Object.keys(dangunBlessings)[0]??'',page:0};this.show('growth');
-    } else if(command==='growth-page'){const page=Number(id);if(Number.isInteger(page)&&page>=0){const ids=this.growthView.tab==='character'?Object.keys(characters):this.growthView.tab==='weapon'?Object.keys(weapons):Object.keys(dangunBlessings);this.growthView={...this.growthView,page,selectedId:ids[page*6]??this.growthView.selectedId};this.show('growth');}
+    } else if(command==='growth-tab'&&(id==='character'||id==='weapon'||id==='blessing')){this.growthView={tab:id,selectedId:id==='character'?Object.keys(characters)[0]??'':id==='weapon'?Object.keys(weapons)[0]??'':Object.keys(dangunBlessings)[0]??''};this.show('growth');
     } else if(command==='growth-select') {const [kind,contentId]=id.split(',');if((kind==='character'&&characters[contentId??''])||(kind==='weapon'&&weapons[contentId??''])||(kind==='blessing'&&dangunBlessings[contentId??''])){this.growthView={...this.growthView,tab:kind as GrowthKind,selectedId:contentId??''};this.show('growth');}
     } else if(command==='growth-upgrade'){const [kind,contentId]=id.split(',');if((kind==='character'||kind==='weapon'||kind==='blessing')&&upgradeGrowth(this.meta,kind,contentId??'')){this.persist();this.show('growth');this.ui.notify('성장 단계가 올랐습니다.');}
-    } else if(command==='offline-claim'){if(claimOfflineRewards(this.meta)){this.offlineClaimed=true;window.clearTimeout(this.offlineClaimTimer);this.persist();this.show('offline');this.offlineClaimTimer=window.setTimeout(()=>{this.offlineClaimed=false;if(this.screen==='offline')this.show('offline');},1250);this.ui.notify('도착 물자를 수령했습니다.');}
+    } else if(command==='offline-claim'){if(claimOfflineRewards(this.meta)){window.clearTimeout(this.offlineClaimTimer);this.persist();this.ui.playOfflineClaim();this.offlineClaimTimer=window.setTimeout(()=>{if(this.screen==='offline')this.ui.finishOfflineClaim();},1250);}
     } else if(command==='supply-open'){const count=Number(id)===10?10:1;const results=openSupplyBox(this.meta,count);if(results){this.supplyResults=results;window.clearTimeout(this.supplyFanfareTimer);this.audio.play('supplyLatch');this.supplyFanfareTimer=window.setTimeout(()=>this.audio.play('supplyFanfare'),1050);this.persist();this.show('supply');}}
     else if(command==='supply-dismiss'){this.supplyResults=[];this.show('supply');
     } else if (['lobby','gateMap','growth','association','offline','supply','archive','settings'].includes(command)) {
@@ -637,7 +634,7 @@ export class AppController {
       if (this.meta.settings.developerMode && [0.5, 1, 2, 5, 10].includes(value)) this.loop.timeScale = value;
       return;
     } else if (target.id === 'save-file' && target instanceof HTMLInputElement) { void this.importSave(target); return; }
-    if (setting) { this.audio.applySettings(this.meta.settings); this.syncAudioButton(); this.persist(); }
+    if (setting) { this.audio.applySettings(this.meta.settings); this.syncAudioButton(); this.persist(); if (setting === 'muted' && !this.meta.settings.muted && !this.audio.unlocked) void this.audio.unlock().then(this.syncAudioButton); }
   };
   private exportSave(): void {
     const blob = new Blob([this.save.export(this.meta)], { type: 'application/json' });
@@ -684,7 +681,8 @@ export class AppController {
     window.removeEventListener('keydown', this.keydown); window.removeEventListener('blur', this.pause);
     document.removeEventListener('visibilitychange', this.visibility); window.removeEventListener('pagehide', this.markOfflineExit);
   }
-  private unlockAudio = (): void => {
+  private unlockAudio = (event?: Event): void => {
+    if (event?.target instanceof Element && event.target.closest('[data-action="sound"]')) return;
     if (this.meta.settings.muted || this.audio.unlocked) return;
     void this.audio.unlock().then(this.syncAudioButton);
   };
