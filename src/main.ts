@@ -11,6 +11,7 @@ import './styles/interface-overhaul.css';
 import './styles/interface-materials.css';
 import './styles/interface-followup.css';
 import './styles/account.css';
+import './styles/mobile-viewport.css';
 
 const world = document.querySelector<HTMLElement>('#world');
 const ui = document.querySelector<HTMLElement>('#ui');
