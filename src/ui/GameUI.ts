@@ -37,6 +37,12 @@ export class GameUI {
       if (action) { event.preventDefault(); onAction(action); }
     });
     root.addEventListener('change', event => { if (event.target instanceof HTMLInputElement || event.target instanceof HTMLSelectElement) onChange(event.target); });
+    root.addEventListener('input', event => {
+      const slider = event.target;
+      if (!(slider instanceof HTMLInputElement) || slider.type !== 'range' || !slider.dataset.setting) return;
+      const value = slider.closest('.setting-row')?.querySelector<HTMLOutputElement>('output');
+      if (value) value.value = `${Math.round(Number(slider.value) * 100)}%`;
+    });
   }
   show(screen: Screen, meta: MetaState, run: RunState | null, archive: ArchiveViewState, gateDraft: GateEntryDraft, growth:GrowthViewState, supplyResults:readonly MetaReward[], offlineClaimed = false): void {
     this.hud.hideWaveEndNotice();

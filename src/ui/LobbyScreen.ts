@@ -21,7 +21,7 @@ export function lobbyScreen(meta: MetaState): string {
   const lastMap = last ? maps[last.mapId] : undefined;
   const recent = last
     ? `${escapeHtml(lastMap?.name ?? last.mapId)} · 심도 ${last.gateDepth} · WAVE ${last.reachedWave}`
-    : '아직 등록된 작전 기록이 없습니다.';
+    : '기록 없음';
   const support = tiles.map(tile => `<button class="lobby-module" data-action="${tile.action}">
     <img src="${images[tile.image].url}" alt="">
     <span><b>${tile.title}</b><em aria-hidden="true">↗</em></span>
@@ -30,7 +30,7 @@ export function lobbyScreen(meta: MetaState): string {
 
   return `<section class="meta-lobby lobby-command" style="--lobby-bg:url('${images.seoulIntersection.url}')">
     <header class="lobby-head command-head">
-      <div class="lobby-identity"><img src="${images.brandPortrait.url}" alt=""><div><h1>서울 히어로</h1><p>게이트 너머, 서울을 지킬 준비를.</p></div></div>
+      <div class="lobby-identity"><img src="${images.brandPortrait.url}" alt=""><div><h1>서울 히어로</h1></div></div>
       <nav aria-label="보조 메뉴">
         <button class="lobby-tool" data-action="archive"><img src="${images.lobbyArchive.url}" alt=""><span>자료집</span></button>
         <button class="lobby-tool" data-action="settings"><img src="${images.lobbySettings.url}" alt=""><span>설정</span></button>
@@ -46,7 +46,7 @@ export function lobbyScreen(meta: MetaState): string {
         <img class="gate-command-bg" src="${images.seoulIntersection.url}" alt="">
         <span class="gate-command-shade"></span>
         <img class="gate-command-device" src="${images.lobbyGate.url}" alt="">
-        <span class="gate-command-copy"><small>광화문 작전 구역</small><b>게이트 출동</b><em>심도 ${meta.gateProgression.highestUnlockedDepth}까지 진입 가능</em><strong>출동 준비 <span aria-hidden="true">↗</span></strong></span>
+        <span class="gate-command-copy"><small>광화문 작전 구역</small><b>게이트 출동</b><strong>출동 준비 <span aria-hidden="true">↗</span></strong></span>
         <span class="gate-command-record"><small>최근 작전</small><b>${recent}</b></span>
       </button>
       <div class="command-modules">${support}</div>

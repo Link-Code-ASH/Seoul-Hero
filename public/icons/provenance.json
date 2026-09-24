@@ -3,5 +3,10 @@
   "date": "2026-09-24",
   "reference": "assets/characters/player_plaza_01.png",
   "prompt": "Create a square Android mobile-game app icon with the same young Korean male awakener: black tousled hair, teal eyes, dark teal hood. Close-up face dominates; he looks up-right with an excited, confident expression. Polished 2D mobile action-game illustration, cool blue-gray and cyan palette, no text or border.",
-  "outputs": ["icon-512.png", "icon-192.png", "apple-touch-icon.png"]
+  "outputs": ["icon-512.png", "icon-192.png", "apple-touch-icon.png"],
+  "maskable": {
+    "reference": "icon-512.png",
+    "prompt": "Keep Song Jinwoo's black hair, teal eyes, excited expression and blue-gray modern-fantasy style. Recompose as a square maskable PWA icon: center the face and shoulders in the safe zone, extend the dark blue artwork edge to edge without a white frame, border or text.",
+    "outputs": ["icon-maskable-512.png", "icon-maskable-192.png"]
+  }
 }

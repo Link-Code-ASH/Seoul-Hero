@@ -13,6 +13,7 @@ import './styles/interface-materials.css';
 import './styles/interface-followup.css';
 import './styles/account.css';
 import './styles/mobile-viewport.css';
+import './styles/typography.css';
 
 const world = document.querySelector<HTMLElement>('#world');
 const ui = document.querySelector<HTMLElement>('#ui');
