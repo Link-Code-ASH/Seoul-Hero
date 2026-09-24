@@ -1,0 +1,7 @@
+{
+  "tool": "built-in image_gen",
+  "date": "2026-09-24",
+  "reference": "assets/characters/player_plaza_01.png",
+  "prompt": "Create a square Android mobile-game app icon with the same young Korean male awakener: black tousled hair, teal eyes, dark teal hood. Close-up face dominates; he looks up-right with an excited, confident expression. Polished 2D mobile action-game illustration, cool blue-gray and cyan palette, no text or border.",
+  "outputs": ["icon-512.png", "icon-192.png", "apple-touch-icon.png"]
+}

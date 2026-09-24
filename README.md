@@ -35,7 +35,7 @@ npm run preview
 
 ## 모바일 웹 배포
 
-`main` 브랜치를 GitHub의 `Link-Code-ASH/Seoul-Hero` 저장소에 올리면 `.github/workflows/deploy.yml`이 GitHub Pages용 빌드를 만듭니다. 저장소 Settings → Pages의 Source는 **GitHub Actions**로 설정합니다. 배포가 완료된 후 해당 HTTPS 주소를 안드로이드 Chrome으로 열어 가로 화면에서 플레이합니다. 현재 배포 완료 여부는 GitHub Pages에서 직접 확인해야 합니다.
+공개 주소는 <https://link-code-ash.github.io/Seoul-Hero/> 입니다. 안드로이드 Chrome에서 주소를 연 뒤 메뉴(⋮) → **앱 설치** 또는 **홈 화면에 추가**를 누르면 독립된 앱 창으로 실행됩니다. 가로 화면 플레이를 권장합니다. 설치 후에도 인터넷 연결이 필요합니다. `main` 브랜치에 올린 변경은 GitHub Actions가 자동 배포합니다.
 
 Supabase 프로젝트 `DASHBOARD`의 Authentication → URL Configuration에 배포 주소와 `http://127.0.0.1:5174/`를 Redirect URLs로 등록합니다. Google Provider도 활성화해야 합니다. 게임 데이터는 별도 `seoul_gate_saves` 테이블에 저장하고 대시보드 데이터는 건드리지 않습니다. 주소를 처음 바꾸기 전에는 설정에서 JSON 백업을 보관하세요.
 

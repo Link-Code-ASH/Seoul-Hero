@@ -9,6 +9,7 @@ const vectorFiles = import.meta.glob<string>('../../assets/**/*.svg', { eager: t
 const file = (path: string): string => imageFiles[`../../assets/${path}.webp`] ?? imageFiles[`../../assets/${path}.png`] ?? '';
 const vector = (path: string): string => vectorFiles[`../../assets/${path}.svg`] ?? '';
 export const images = {
+  brandPortrait: { url: `${import.meta.env.BASE_URL}icons/icon-512.png`, heightRatio: 1 },
   hostileBolt: { url: file('projectiles/hostile_bolt_01'), heightRatio: 4 },
   seoulIntersection: { url: file('backgrounds/gwanghwamun_plaza_01'), heightRatio: 1 },
   bulwark: { url: file('enemies/enemy_bulwark_01'), heightRatio: 2.8 },

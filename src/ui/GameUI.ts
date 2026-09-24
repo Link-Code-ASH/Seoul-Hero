@@ -11,6 +11,7 @@ import { associationScreen, growthScreen, offlineScreen, supplyScreen, type Grow
 import type { MetaReward } from '../meta/SupplySystem';
 import type { GateEntryDraft, GateEntryStep } from '../systems/GateEntrySystem';
 import { accountPanel, type AccountView } from './AccountPanel';
+import { images } from '../data/images';
 export class GameUI {
   readonly hud = new Hud();
   readonly dev = new DevPanel();
@@ -23,7 +24,7 @@ export class GameUI {
   constructor(readonly root: HTMLElement, onAction: (action: string) => void, onChange: (target: HTMLInputElement | HTMLSelectElement) => void) {
     const header = document.createElement('header');
     header.className = 'site-header';
-    header.innerHTML = '<a href="#" data-action="lobby" class="wordmark"><span class="brand-mark">SG</span><b>SEOUL GATE</b></a><span class="header-note">각성자 협회 · 서울 지부</span>';
+    header.innerHTML = `<a href="#" data-action="lobby" class="wordmark" aria-label="Project Seoul Gate 로비"><img class="brand-mark" src="${images.brandPortrait.url}" alt=""><b>SEOUL GATE</b></a><span class="header-note">각성자 협회 · 서울 지부</span>`;
     this.overlay.className = 'screen';
     this.toast.className = 'toast'; this.toast.setAttribute('role', 'status'); this.toast.hidden = true;
     this.joystick.className = 'joystick'; this.joystick.innerHTML = '<span></span>'; this.joystick.setAttribute('aria-label', '가상 이동 조이스틱');
