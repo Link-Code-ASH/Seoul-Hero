@@ -371,7 +371,7 @@ export class AppController {
     if (!selected) return;
     if (unselected) {
       new AccountStorageAdapter(this.accountUserId).setItem('seoul-gate.save.unselected', unselected);
-      this.downloadRawSave(unselected, 'seoul-gate-before-sync');
+      this.downloadRawSave(unselected, 'seoul-hero-before-sync');
     }
     this.activateAccount(selected, remote?.revision ?? null, !useCloud);
   }
@@ -632,14 +632,14 @@ export class AppController {
   private exportSave(): void {
     const blob = new Blob([this.save.export(this.meta)], { type: 'application/json' });
     const url = URL.createObjectURL(blob);
-    const link = document.createElement('a'); link.href = url; link.download = `seoul-gate-${new Date().toISOString().slice(0, 10)}.json`;
+    const link = document.createElement('a'); link.href = url; link.download = `seoul-hero-${new Date().toISOString().slice(0, 10)}.json`;
     link.click(); window.setTimeout(() => URL.revokeObjectURL(url), 1000);
     this.ui.notify('진행 기록 백업을 내보냈습니다.');
   }
   private exportBalanceLogs(): void {
     const blob = new Blob([this.balanceLogs.exportJson()], { type: 'application/json' });
     const url = URL.createObjectURL(blob);
-    const link = document.createElement('a'); link.href = url; link.download = `seoul-gate-balance-${new Date().toISOString().slice(0, 10)}.json`;
+    const link = document.createElement('a'); link.href = url; link.download = `seoul-hero-balance-${new Date().toISOString().slice(0, 10)}.json`;
     link.click(); window.setTimeout(() => URL.revokeObjectURL(url), 1000);
     this.ui.notify(`밸런스 기록 ${this.balanceLogs.load().length}판을 내보냈습니다.`);
   }

@@ -1,7 +1,7 @@
 {
-  "name": "Project Seoul Gate",
-  "short_name": "Seoul Gate",
-  "description": "현대 서울 게이트에서 싸우는 2D 아레나 액션 게임",
+  "name": "서울 히어로",
+  "short_name": "서울 히어로",
+  "description": "서울 히어로: 현대 서울의 게이트에서 싸우는 2D 아레나 액션 게임",
   "lang": "ko",
   "id": "./",
   "start_url": "./",

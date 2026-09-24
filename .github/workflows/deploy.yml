@@ -1,4 +1,4 @@
-name: Deploy Seoul Gate to GitHub Pages
+name: Deploy Seoul Hero to GitHub Pages
 
 on:
   push:

@@ -1,4 +1,4 @@
-const CACHE_NAME = 'seoul-gate-pwa-v1';
+const CACHE_NAME = 'seoul-hero-pwa-v2';
 const OFFLINE_PAGE = new URL('offline.html', self.registration.scope).href;
 
 self.addEventListener('install', event => {
@@ -11,7 +11,7 @@ self.addEventListener('install', event => {
 
 self.addEventListener('activate', event => {
   event.waitUntil(Promise.all([
-    caches.keys().then(keys => Promise.all(keys.filter(key => key.startsWith('seoul-gate-pwa-') && key !== CACHE_NAME).map(key => caches.delete(key)))),
+    caches.keys().then(keys => Promise.all(keys.filter(key => (key.startsWith('seoul-gate-pwa-') || key.startsWith('seoul-hero-pwa-')) && key !== CACHE_NAME).map(key => caches.delete(key)))),
     self.clients.claim(),
   ]));
 });

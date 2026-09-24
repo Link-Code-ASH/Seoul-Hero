@@ -30,7 +30,7 @@ export function lobbyScreen(meta: MetaState): string {
 
   return `<section class="meta-lobby lobby-command" style="--lobby-bg:url('${images.seoulIntersection.url}')">
     <header class="lobby-head command-head">
-      <div class="lobby-identity"><img src="${images.brandPortrait.url}" alt=""><div><h1>서울 게이트 대응본부</h1><p>게이트 너머, 서울을 지킬 준비를.</p></div></div>
+      <div class="lobby-identity"><img src="${images.brandPortrait.url}" alt=""><div><h1>서울 히어로</h1><p>게이트 너머, 서울을 지킬 준비를.</p></div></div>
       <nav aria-label="보조 메뉴">
         <button class="lobby-tool" data-action="archive"><img src="${images.lobbyArchive.url}" alt=""><span>자료집</span></button>
         <button class="lobby-tool" data-action="settings"><img src="${images.lobbySettings.url}" alt=""><span>설정</span></button>

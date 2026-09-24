@@ -71,7 +71,7 @@ export class WorldRenderer {
     this.app.ticker.stop();
     await this.art.load();
     host.appendChild(this.app.canvas);
-    this.app.canvas.setAttribute('aria-label', '서울 게이트 게임 월드');
+    this.app.canvas.setAttribute('aria-label', '서울 히어로 게임 월드');
     this.app.canvas.style.display = 'block';
     this.app.stage.addChild(this.world);
     this.vfxGlow.blendMode = 'add';
