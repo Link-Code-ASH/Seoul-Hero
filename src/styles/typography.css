@@ -12,19 +12,73 @@
   font-weight: 700 900;
   font-display: swap;
 }
+@font-face {
+  font-family: Paperlogy;
+  src: url('../../assets/ui/fonts/Paperlogy-4Regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: Paperlogy;
+  src: url('../../assets/ui/fonts/Paperlogy-8ExtraBold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Gumi Romance';
+  src: url('../../assets/ui/fonts/GumiRomance.otf') format('opentype');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Sungkok Serif';
+  src: url('../../assets/ui/fonts/KMU80SungkokSerif.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Haeong Sans';
+  src: url('../../assets/ui/fonts/KMU80HaeongSans.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: BMJUA;
+  src: url('../../assets/ui/fonts/BMJUA.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
 
-/* Korean copy stays readable; numbers and instrument labels use a separate display face. */
-html, body, button, input, select { font-family: GateSans, 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif; }
+/* A restrained type hierarchy: interface, equipment labels, records, then rewards. */
+html, body, button, input, select { font-family: Paperlogy, GateSans, 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif; }
 :is(.wordmark b, .gate-command-copy small, .gate-command-record small,
   .command-status b, .gate-context b, .depth-tile b, .gate-depth-option b,
   .facility-balance b, .offline-meter b, .shop-wallet b, .purchase-price,
   .timer strong, .hud-chip b, .settings-card h2, .volume-control output) {
-  font-family: 'Barlow Condensed', GateSans, sans-serif;
+  font-family: 'Barlow Condensed', Paperlogy, GateSans, sans-serif;
   font-variant-numeric: tabular-nums;
   letter-spacing: .025em;
 }
 .wordmark b { font-size: 1.12em; letter-spacing: .09em; }
-.screen :is(h1, h2), .modal :is(h1, h2) { font-family: GateSans, 'Apple SD Gothic Neo', sans-serif; }
+.screen :is(h1, h2), .modal :is(h1, h2) { font-family: Paperlogy, GateSans, 'Apple SD Gothic Neo', sans-serif; font-weight: 800; }
+.gate-command-copy b { font-family: 'Gumi Romance', Paperlogy, GateSans, sans-serif; font-weight: 400; letter-spacing: -.035em; }
+.gate-flow-head h1, .meta-facility>header h1, .settings-facility h1 { font-family: 'Haeong Sans', Paperlogy, GateSans, sans-serif; font-weight: 400; }
+.archive-header h1, .archive-detail h1, .association-desk>h2, .offline-manifest h2, .result-modal h1 {
+  font-family: 'Sungkok Serif', Paperlogy, GateSans, serif;
+  font-weight: 400;
+  letter-spacing: -.025em;
+}
+.supply-result-heading strong, .supply-reward-grid>i strong, .post-wave-modal h1 {
+  font-family: BMJUA, Paperlogy, GateSans, sans-serif;
+  font-weight: 400;
+  letter-spacing: 0;
+}
 
 .settings-card .setting-row { grid-template-columns: 1fr; gap: 6px; }
 .volume-control { display: flex; align-items: center; gap: 12px; min-width: 0; }
