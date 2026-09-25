@@ -42,6 +42,7 @@ export const sfx = {
   enemyHit: cue(['sfx/hit_light_01.wav','sfx/hit_light_02.wav','sfx/hit_light_03.wav'], '적 피격', 'combat', 0.16, 0.055, 2, 2, [0.97, 1.03], 0.05),
   enemyKilled: cue(['sfx/enemy_death_01.wav','sfx/enemy_death_02.wav','sfx/enemy_death_03.wav'], '적 처치', 'combat', 0.23, 0.085, 2, 3, [0.98, 1.025], 0.04),
   magicStoneCollected: cue(['sfx/magic_stone_chime_01.wav','sfx/magic_stone_chime_02.wav','sfx/magic_stone_chime_03.wav'], '마력석 획득', 'ui', 0.075, 0.09, 1, 1, [0.985, 1.015], 0.025),
+  walletSweep: cue(['sfx/wallet_sweep_01.wav'], '미회수 마력석 지갑 회수', 'ui', 0.16, 0.8, 1, 2, [1, 1], 0),
   buttonClick: cue(['sfx/ui_click_01.wav'], '버튼 클릭', 'ui', 0.24, 0.04, 2, 2, [1, 1], 0),
   supplyLatch: cue(['sfx/ui_supply_latch_01.wav'], '보급 상자 잠금 해제', 'ui', 0.34, 0.8, 1, 4, [0.99, 1.01], 0.01),
   supplyFanfare: cue(['sfx/ui_supply_fanfare_01.wav'], '보급 상자 보상 팡파르', 'ui', 0.38, 0.8, 1, 5, [1, 1], 0),
@@ -49,12 +50,12 @@ export const sfx = {
   bossSpawned: cue(['sfx/boss_warning_arcade_01.wav'], '보스 경고', 'combat', 0.48, 1, 1, 5, [1, 1], 0),
   stageClear: cue(['sfx/stage_clear_01.wav'], '스테이지 클리어', 'ui', 0.56, 1, 1, 5, [1, 1], 0),
   gameOver: cue(['sfx/game_over_01.wav'], '게임 오버', 'ui', 0.5, 1, 1, 5, [1, 1], 0),
-} satisfies Record<GameEvent | 'buttonClick' | 'supplyLatch' | 'supplyFanfare', SfxDefinition>;
+} satisfies Record<GameEvent | 'buttonClick' | 'supplyLatch' | 'supplyFanfare' | 'walletSweep', SfxDefinition>;
 export type SfxId = keyof typeof sfx;
 
 export const bgm = {
   menu: { url: file('bgm/seoul_after_dusk_01.wav'), label: '서울, 해가 진 뒤', gain: 0.65 },
-  combat: { url: file('bgm/gate_patrol_01.wav'), label: '경계 순찰', gain: 0.55 },
+  combat: { url: file('bgm/gate_hunt_01.wav'), label: '게이트 교전', gain: 0.5 },
   boss: { url: file('bgm/the_gate_keeper_01.wav'), label: '게이트 파수꾼', gain: 0.6 },
 };
 export type BgmId = keyof typeof bgm;

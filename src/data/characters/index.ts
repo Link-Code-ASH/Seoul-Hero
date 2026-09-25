@@ -5,9 +5,11 @@ import type { PlayerStats } from '../stats';
 /** Build future characters as explicit differences from Song Jinwoo's neutral baseline. */
 export function characterStatsFromBaseline(adjustments: readonly CharacterStatAdjustment[]): PlayerStats {
   const result = { ...DEFAULT_STATS };
-  for (const adjustment of adjustments) {
-    const current = result[adjustment.stat];
-    result[adjustment.stat] = adjustment.operation === 'add' ? current + adjustment.value : current * adjustment.value;
+  for (const stat of Object.keys(DEFAULT_STATS) as (keyof PlayerStats)[]) {
+    const matching = adjustments.filter(adjustment => adjustment.stat === stat);
+    const flat = matching.filter(adjustment => adjustment.operation === 'add').reduce((sum, adjustment) => sum + adjustment.value, 0);
+    const percent = matching.filter(adjustment => adjustment.operation === 'multiply').reduce((sum, adjustment) => sum + adjustment.value - 1, 0);
+    result[stat] = Math.max(0, DEFAULT_STATS[stat] + flat + DEFAULT_STATS[stat] * percent);
   }
   return result;
 }

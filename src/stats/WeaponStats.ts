@@ -14,7 +14,7 @@ export function resolveWeaponStats(weapon: Weapon, level: number, player: Player
     projectileCount: base.projectileCount + effects.reduce((n,e)=>n+(e.type==='projectileCount' && weapon.capabilities.includes(e.tag)?e.value:0),0),
     repeatCount: base.repeatCount ?? 1, repeatInterval: base.repeatInterval ?? 0.15, explosionDelay: base.explosionDelay ?? 0,
     attackAngle: base.attackAngle ?? weapon.attackAngle ?? Math.PI,
-    damage: Math.max(0, Math.round(base.damage * player.damage * gated('meleeDamage') * gated('rangedDamage') * WEAPON_CONFIG.playerDamageMultiplier)),
+    damage: Math.max(0, Math.round(base.damage * Math.max(0, 1 + (player.damage - 1) + (gated('meleeDamage') - 1) + (gated('rangedDamage') - 1)) * WEAPON_CONFIG.playerDamageMultiplier)),
     cooldown: Math.max(STAT_RULES.minimumAttackInterval, base.cooldown / Math.max(STAT_RULES.minimumAttackSpeed, Math.min(STAT_RULES.maximumAttackSpeed, player.attackSpeed))),
     range: base.range * gated('range'), duration: base.duration * gated('duration'),
     projectileRadius: base.projectileRadius * gated('area') * (base.areaMultiplier ?? 1),

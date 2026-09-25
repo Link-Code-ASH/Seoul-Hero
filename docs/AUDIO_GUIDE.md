@@ -31,11 +31,11 @@ Combat SFX 버스에는 9.5kHz의 완만한 low-pass filter를 적용해 거친 
 
 `assets/audio/sfx`에는 27개 게임 사건에 대응하는 효과음과 반복음을 위한 variation 파일이 있습니다. 마력석 획득음은 사용하지 않습니다. 플레이어의 마력 킥보드 이동에도 주행음·바퀴음·발걸음 같은 이동 SFX를 사용하지 않습니다.
 
-`assets/audio/bgm`에는 메뉴용 `seoul_after_dusk_01`(24초), 전투용 `gate_patrol_01`(약 17.14초), 보스용 `the_gate_keeper_01`(15초) 루프가 있습니다. Gate24에서도 별도 곡으로 바꾸지 않고 전투 BGM을 이어갑니다.
+`assets/audio/bgm`에는 메뉴용 `seoul_after_dusk_01`(24초), 전투용 `gate_hunt_01`(약 35.6초), 보스용 `the_gate_keeper_01`(15초) 루프가 있습니다. 전투 음악은 낮은 박동과 단조 코드로 긴장감을 주되 밝은 고음 반복을 줄였습니다. Gate24에서도 별도 곡으로 바꾸지 않고 전투 BGM을 이어갑니다. 기존 `gate_patrol_01`은 재생하지 않는 이전 에셋으로 보존합니다.
 
 SFX는 48,000Hz 모노 24비트 PCM WAV, BGM은 22,050Hz 모노 16비트 PCM WAV이며 Web Audio API로 재생합니다. BGM은 베이스·패드·아르페지오·타악기와 루프 경계에 이어지는 딜레이로 구성한 오리지널 곡입니다.
 
-SFX를 다시 만들려면 `node scripts/generate-clear-sfx.mjs`, BGM을 다시 만들려면 `node scripts/generate-audio.mjs`를 실행합니다. 음색 개선 시 청각적으로도 확인하고 음량 피크와 루프 연결을 검사하세요.
+새 전투 BGM과 지갑 회수음은 `node scripts/generate-gate-audio.mjs`로 재생성합니다. 지갑 회수음은 남은 마력석을 지갑으로 끌어오는 연출마다 한 번만 재생하며 개별 마력석마다 겹치지 않습니다. 음색 개선 시 청각적으로도 확인하고 음량 피크와 루프 연결을 검사하세요.
 
 ## 구조와 교체
 

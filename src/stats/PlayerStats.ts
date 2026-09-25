@@ -11,7 +11,9 @@ export function calculateStats(base: PlayerStats, modifiers: readonly StatModifi
       if (mod.operation === 'add') add += mod.value;
       else multiplierBonus += Math.max(0, mod.value) - 1;
     }
-    const value = (base[key] + add) * Math.max(0, 1 + multiplierBonus);
+    // Every percentage bonus uses the unmodified character baseline. Bonuses
+    // add together; a second +8% never compounds on the first +8%.
+    const value = base[key] + add + base[key] * multiplierBonus;
     stats[key] = Number.isFinite(value) ? Math.max(0, Math.min(STAT_RULES.maximumStat, value)) : DEFAULT_STATS[key];
   }
   stats.maxHp = Math.max(1, stats.maxHp);

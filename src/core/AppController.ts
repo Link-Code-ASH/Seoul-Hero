@@ -237,7 +237,9 @@ export class AppController {
         this.terminalRevealElapsed = 0;
         if (this.screen !== 'waveActive') this.show('waveActive');
         this.keyboard.enabled = false;
-        this.ui.hud.playWalletSweep(run.pickups.map(pickup => this.renderer.worldToClient(pickup)));
+        const origins = run.pickups.map(pickup => this.renderer.worldToClient(pickup));
+        this.ui.hud.playWalletSweep(origins);
+        if (origins.length > 0) this.audio.play('walletSweep');
       }
       if (run.pickups.length > 0) { this.terminalRevealElapsed = 0; return; }
       this.terminalRevealElapsed += dt;
@@ -261,6 +263,7 @@ export class AppController {
         this.input.clear();
         this.ui.hud.showWaveEndNotice(run.currentWave);
         this.ui.hud.playWalletSweep(origins);
+        if (origins.length > 0) this.audio.play('walletSweep');
       }
       this.terminalRevealRun = null;
       this.postWaveRevealElapsed += dt;

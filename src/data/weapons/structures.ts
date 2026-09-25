@@ -3,7 +3,7 @@ import { expandWeaponProgression } from './progression';
 export const structureWeapons: Record<string, Weapon> = {};
 const definitions = [
   { id: 'autoTurret', name: '자동 포탑', kind: 'turret' as const, capabilities: ['STRUCTURE','TURRET','RANGED','PROJECTILE','CAN_CRIT','HAS_RANGE'] as Weapon['capabilities'], damage: 16, cooldown: 0.82, range: 312, duration: 12, maxCount: 2, placementInterval: 6, radius: 0, color: 0x70dfff },
-  { id: 'mineLayer', name: '지뢰 살포기', kind: 'mine' as const, capabilities: ['STRUCTURE','TRAP','MINE','AREA','EXPLOSIVE'] as Weapon['capabilities'], damage: 68, cooldown: 2.1, range: 1, duration: 20, maxCount: 6, placementInterval: 2.1, radius: 110, color: 0xffbd65 },
+  { id: 'mineLayer', name: '마력 지뢰', kind: 'mine' as const, capabilities: ['STRUCTURE','TRAP','MINE','AREA','EXPLOSIVE'] as Weapon['capabilities'], damage: 68, cooldown: 2.1, range: 1, duration: 20, maxCount: 6, placementInterval: 2.1, radius: 110, color: 0xffbd65 },
   { id: 'manaField', name: '마력장 발생기', kind: 'aura' as const, capabilities: ['STRUCTURE','AURA','AREA','DURATION'] as Weapon['capabilities'], damage: 12, cooldown: 0.85, range: 1, duration: 7, maxCount: 2, placementInterval: 6, radius: 130, color: 0xb99bff },
 ];
 for (const d of definitions) structureWeapons[d.id] = expandWeaponProgression({

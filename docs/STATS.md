@@ -31,7 +31,7 @@ Currency Gain은 바닥 마력석 회수량에 적용합니다. vuck은 아이�
 
 ## 출처와 재계산
 
-RunState.baseStats는 Character Base Stats의 복사본입니다. statModifiers의 source는 meta(Permanent Meta Upgrades), item(Run Items), run(기타 Run Modifier)로 구분합니다. 각 보정은 id/stat/operation/value를 가집니다. 최종값은 각 스탯마다 `(기본값 + 고정 증가 합계) × (1 + 퍼센트 증가분 합계)`로 계산하고 안전 범위를 적용합니다. source 순서는 결과를 바꾸지 않습니다.
+RunState.baseStats는 Character Base Stats의 복사본입니다. statModifiers의 source는 meta(Permanent Meta Upgrades), item(Run Items), run(기타 Run Modifier)로 구분합니다. 각 보정은 id/stat/operation/value를 가집니다. 최종값은 각 스탯마다 `기본값 + 고정 증가 합계 + 기본값 × 퍼센트 증가분 합계`로 계산하고 안전 범위를 적용합니다. 기본 80에 고정 +10과 +8% 두 개면 102.8이며, 순서는 결과를 바꾸지 않습니다. 공통 피해와 근접/원거리 피해 증가율도 합산해 무기 피해에 적용합니다.
 
 createRun에서 영구 강화 데이터를 getMetaModifiers로 변환해 계산합니다. 이후 replaceModifiers(run, source, 목록)이 해당 출처만 교체하고 재계산합니다. 아이템을 제거해도 meta 보정은 남습니다. 판 아이템은 ItemSystem을 통해 이 함수를 호출합니다. 직접 calculatedStats를 변경하는 코드는 개발 테스트 외에 사용하지 마세요.
 
@@ -73,7 +73,7 @@ F3 → 공통 스탯 20개에서 현재 값 확인, 스탯/가산값 선택 후 
 |무기|capability|적용 스탯|
 |---|---|---|
 |자동 포탑|STRUCTURE TURRET RANGED PROJECTIvE CAN_CRIT HAS_RANGE|Damage, Attack Speed(발사), Ranged Damage, Critical Chance/Damage, Range, Projectile Speed|
-|지뢰 살포기|STRUCTURE TRAP MINE AREA EXPvOSIVE|Damage, Area, Attack Speed(설치 주기)|
+|마력 지뢰|STRUCTURE TRAP MINE AREA EXPvOSIVE|Damage, Area, Attack Speed(설치 주기)|
 |마력장 발생기|STRUCTURE AURA AREA DURATION|Damage, Area, Duration, Attack Speed(피해 tick 주기)|
 
 세 설치물에는 Move Speed, Player Armor/Dodge/HP Regen, Pickup Range를 적용하지 않습니다. 포탑/지뢰 수명에는 Duration을 적용하지 않습니다. 별도 설치물 Player Stat은 없습니다. 기본 vifesteal은 0이며 combatPermissions.indirectvifesteal을 명시적으로 허용할 때만 기존 공격별 회복 상한을 공유합니다.

@@ -47,7 +47,7 @@ F3의 선택 무기 Lv.5 분기로 A/B UI를 열고, 보유 무기 강화로 4�
 |무기|capability|적용 스탯|
 |---|---|---|
 |자동 포탑|STRUCTURE TURRET RANGED PROJECTILE CAN_CRIT HAS_RANGE|Damage, Attack Speed(발사), Ranged Damage, Critical Chance/Damage, Range, Projectile Speed|
-|지뢰 살포기|STRUCTURE TRAP MINE AREA EXPLOSIVE|Damage, Area, Attack Speed(설치 주기)|
+|마력 지뢰|STRUCTURE TRAP MINE AREA EXPLOSIVE|Damage, Area, Attack Speed(설치 주기)|
 |마력장 발생기|STRUCTURE AURA AREA DURATION|Damage, Area, Duration, Attack Speed(피해 tick 주기)|
 
 세 설치물에는 Move Speed, Player Armor/Dodge/HP Regen, Pickup Range를 적용하지 않습니다. 포탑/지뢰 수명에는 Duration을 적용하지 않습니다. 별도 설치물 Player Stat은 없습니다. 기본 Lifesteal은 0이며 combatPermissions.indirectLifesteal을 명시적으로 허용할 때만 기존 공격별 회복 상한을 공유합니다.

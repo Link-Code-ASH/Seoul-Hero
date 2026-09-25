@@ -1,4 +1,5 @@
 import { STAT_RULES } from '../data/stats';
+import { characters } from '../data/characters';
 import type { RunState } from '../state/RunState';
 
 type Tone = '' | ' boosted' | ' reduced';
@@ -16,8 +17,8 @@ const valueTone = (value: number, base: number): Tone => value > base ? ' booste
 export function shopStatGroups(run: RunState): StatGroup[] {
   const stats = run.calculatedStats;
   const base = run.baseStats;
-  const melee = stats.damage * stats.meleeDamage;
-  const ranged = stats.damage * stats.rangedDamage;
+  const melee = Math.max(0, stats.damage + stats.meleeDamage - 1);
+  const ranged = Math.max(0, stats.damage + stats.rangedDamage - 1);
   const armorReduction = stats.armor / (STAT_RULES.armorScale + Math.max(0, stats.armor));
   const commonStructureLimit = run.structureEffects.filter(effect => effect.tag === 'STRUCTURE')
     .reduce((total, effect) => total + effect.value, 0);
@@ -34,8 +35,8 @@ export function shopStatGroups(run: RunState): StatGroup[] {
   return [
     { title: '공격', rows: [
       { label: '공통 피해', value: percent(stats.damage - 1), tone: multiplierTone(stats.damage), hint: '모든 공격' },
-      { label: '최종 근접 보정', value: percent(melee - 1), tone: multiplierTone(melee), hint: '공통 × 근접' },
-      { label: '최종 원거리 보정', value: percent(ranged - 1), tone: multiplierTone(ranged), hint: '공통 × 원거리' },
+      { label: '최종 근접 보정', value: percent(melee - 1), tone: multiplierTone(melee), hint: '공통 + 근접' },
+      { label: '최종 원거리 보정', value: percent(ranged - 1), tone: multiplierTone(ranged), hint: '공통 + 원거리' },
       { label: '공격 속도', value: percent(stats.attackSpeed - 1), tone: multiplierTone(stats.attackSpeed) },
       { label: '치명타 확률', value: chance(stats.criticalChance), tone: valueTone(stats.criticalChance, base.criticalChance) },
       { label: '치명타 피해', value: chance(stats.criticalDamage), tone: valueTone(stats.criticalDamage, base.criticalDamage) },
@@ -59,7 +60,7 @@ export function shopStatGroups(run: RunState): StatGroup[] {
       { label: '획득 범위', value: number(stats.pickupRange), tone: valueTone(stats.pickupRange, base.pickupRange) },
       { label: '행운', value: number(stats.luck), tone: valueTone(stats.luck, base.luck) },
       { label: '저주', value: number(stats.curse), tone: valueTone(stats.curse, base.curse) },
-      { label: '포탑 피해 보정', value: percent(ranged - 1), tone: multiplierTone(ranged), hint: '공통 × 원거리' },
+      { label: '포탑 피해 보정', value: percent(ranged - 1), tone: multiplierTone(ranged), hint: '공통 + 원거리' },
       { label: '지뢰 · 마력장', value: percent(stats.damage - 1), tone: multiplierTone(stats.damage), hint: '공통 피해' },
       { label: '설치물 추가 한도', value: limitParts.join(' · ') || '+0', tone: limitParts.length ? ' boosted' : '' },
     ] },
@@ -70,5 +71,5 @@ export function shopStats(run: RunState): string {
   const groups = shopStatGroups(run).map(group => `<section class="shop-stat-group"><h3>${group.title}</h3>${group.rows.map(row =>
     `<div class="shop-stat${row.tone}"><span>${row.label}${row.hint ? `<small>${row.hint}</small>` : ''}</span><b>${row.value}</b></div>`
   ).join('')}</section>`).join('');
-  return `<aside class="shop-stats"><header><small>CURRENT LOADOUT</small><strong>송진우</strong><span>구매 즉시 반영</span></header><div class="shop-stat-list">${groups}</div></aside>`;
+  return `<aside class="shop-stats"><header><small>CURRENT LOADOUT</small><strong>${characters[run.characterId]?.name ?? '각성자'}</strong><span>구매 즉시 반영</span></header><div class="shop-stat-list">${groups}</div></aside>`;
 }

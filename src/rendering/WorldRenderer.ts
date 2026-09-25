@@ -208,11 +208,14 @@ export class WorldRenderer {
           .fill({ color: 0x020306, alpha: 0.34 });
         continue;
       }
-      const width = kind === 'mine' ? 25 : 31;
-      const height = kind === 'mine' ? 7 : 9;
-      this.shadows.ellipse(structure.x + 3, structure.y + 15, width, height)
-        .fill({ color: 0x030407, alpha: kind === 'mine' ? 0.3 : 0.4 });
-      this.shadows.ellipse(structure.x + 2, structure.y + 14, width * 0.68, height * 0.6)
+      if (kind === 'mine') {
+        this.shadows.ellipse(structure.x, structure.y + 10, 18, 4.5)
+          .fill({ color: 0x020306, alpha: 0.4 });
+        continue;
+      }
+      this.shadows.ellipse(structure.x + 3, structure.y + 15, 31, 9)
+        .fill({ color: 0x030407, alpha: 0.4 });
+      this.shadows.ellipse(structure.x + 2, structure.y + 14, 31 * 0.68, 9 * 0.6)
         .fill({ color: 0x010203, alpha: 0.3 });
     }
     for (const pickup of state.pickups) {

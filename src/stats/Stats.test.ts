@@ -21,15 +21,24 @@ describe('20 shared stats and source isolation', () => {
     expect(DEFAULT_STATS).not.toHaveProperty('cooldownMultiplier');
     expect(DEFAULT_STATS).not.toHaveProperty('projectileBonus');
   });
-  it('calculates additive values before multipliers independently of source order', () => {
+  it('adds flat and percentage bonuses from the original baseline regardless of source order', () => {
     const mods = [
       { id: 'power', source: 'meta', stat: 'damage', operation: 'add', value: 0.08 },
       { id: 'item', source: 'item', stat: 'damage', operation: 'multiply', value: 1.2 },
       { id: 'item-2', source: 'item', stat: 'damage', operation: 'multiply', value: 1.1 },
       { id: 'buff', source: 'run', stat: 'damage', operation: 'add', value: 0.1 },
     ] as const;
-    expect(calculateStats(DEFAULT_STATS, mods).damage).toBeCloseTo(1.18 * 1.3);
+    expect(calculateStats(DEFAULT_STATS, mods).damage).toBeCloseTo(1.48);
     expect(calculateStats(DEFAULT_STATS, [...mods].reverse())).toEqual(calculateStats(DEFAULT_STATS, mods));
+  });
+  it('treats two 8% bonuses as 16% of the base even when flat bonuses are present', () => {
+    const base = { ...DEFAULT_STATS, maxHp: 80 };
+    const mods = [
+      { id: 'flat', source: 'meta', stat: 'maxHp', operation: 'add', value: 10 },
+      { id: 'first', source: 'item', stat: 'maxHp', operation: 'multiply', value: 1.08 },
+      { id: 'second', source: 'item', stat: 'maxHp', operation: 'multiply', value: 1.08 },
+    ] as const;
+    expect(calculateStats(base, mods).maxHp).toBeCloseTo(102.8);
   });
   it('recalculates on source changes, updates player values and retains Meta modifiers when items are removed', () => {
     const meta = createDefaultMeta(); meta.association.upgrades.vitality = 1;
@@ -75,6 +84,9 @@ describe('capability-gated attacks', () => {
     const stats = resolve([cap], { meleeDamage: 2, rangedDamage: 3 });
     expect(stats.damage).toBe(cap === 'MELEE' ? 37 : 56);
   });
+  it('adds common and melee percentage damage instead of compounding them', () => {
+    expect(resolve(['MELEE'], { damage: 1.08, meleeDamage: 1.08 }).damage).toBe(22);
+  });
   it.each([
     ['PROJECTILE', 'projectileSpeed'], ['DURATION', 'duration'], ['HAS_RANGE', 'range'],
   ] as const)('gates %s to its supported field', (cap, stat) => {
@@ -97,7 +109,7 @@ describe('capability-gated attacks', () => {
       damage: 2, rangedDamage: 2, meleeDamage: 10, projectileSpeed: 2, area: 9,
       duration: 9, criticalChance: 1, lifesteal: 0.5, armor: 100, moveSpeed: 900,
     });
-    expect(stats.damage).toBe(75); expect(stats.projectileSpeed).toBe(1120);
+    expect(stats.damage).toBe(56); expect(stats.projectileSpeed).toBe(1120);
     expect(stats.areaScale).toBe(1); expect(stats.duration).toBe(1.5);
     expect(stats.criticalChance).toBe(0); expect(stats.lifesteal).toBe(0);
     expect(stats).not.toHaveProperty('armor'); expect(stats).not.toHaveProperty('moveSpeed');
