@@ -11,7 +11,7 @@
 :is(.lobby-command,.gate-flow-screen,.meta-facility,.settings-facility,.archive-screen,.shop-screen,.modal) {
   font-size:16px; color:#e9f0f1;
 }
-:is(.lobby-command,.gate-flow-screen,.meta-facility,.settings-facility,.archive-screen,.shop-screen,.modal) :is(button,.button,select,textarea,input:not([type=range]):not([type=checkbox])):not(.supply-results):not(.gate-command-card):not(.lobby-module):not(.map-card) {
+:where(.lobby-command,.gate-flow-screen,.meta-facility,.settings-facility,.archive-screen,.shop-screen,.modal) :where(button,.button,select,textarea,input:not([type=range]):not([type=checkbox])):where(:not(.supply-results):not(.gate-command-card):not(.lobby-module):not(.map-card)) {
   background-image:var(--surface-metal);
   background-size:auto,420px;
   background-blend-mode:normal,luminosity;
@@ -149,3 +149,7 @@
 @media(prefers-reduced-motion:reduce) {
   .lobby-module,.gate-select-card,.archive-entry { transition:none; }
 }
+
+/* Selection is persistent, independent of hover and pointer type. */
+:is(.facility-list-item,.archive-entry).selected { border: 2px solid #e0c993; box-shadow: inset 3px 0 #e0c993, inset 0 0 18px #94bbca26; background-image: var(--surface-metal); color: #fff4d6; }
+.facility-list-item.locked.selected { opacity: 1; }

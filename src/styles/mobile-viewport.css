@@ -129,8 +129,9 @@ html:root, body {
   .settings-facility .settings-account-slot .account-strip { padding: 4px 6px; }
   .settings-facility .settings-account-slot { padding-top: 6px; }
   .settings-facility .settings-account-slot h3 { margin-bottom: 3px; }
-  .gate-flow-screen main { min-height: 0; overflow: hidden; }
+  .gate-flow-screen main { display: grid; grid-template-rows: minmax(0,1fr) 40px; min-height: 0; height: 100%; overflow: hidden; }
   .screen>.gate-flow-screen {
+    display: grid;
     grid-template-rows: 48px 44px minmax(0,1fr);
     gap: 6px;
     padding: 6px max(12px, env(safe-area-inset-right, 0px)) 10px max(12px, env(safe-area-inset-left, 0px));
@@ -145,7 +146,7 @@ html:root, body {
     display: grid; grid-column: auto; grid-template-columns: repeat(6,minmax(0,1fr));
     height: 48px; min-height: 0; gap: 3px;
   }
-  .gate-flow-screen .gate-flow-head li { min-width: 0; grid-template-columns: 27px 1fr; gap: 2px; padding: 2px; }
+  .gate-flow-screen .gate-flow-head li { height: 48px; min-height: 0; min-width: 0; grid-template-columns: 27px 1fr; gap: 2px; padding: 2px; }
   .gate-flow-screen .gate-flow-head li img { width: 27px; height: 34px; }
   .gate-flow-screen .gate-flow-head li small { display: none; }
   .gate-flow-screen .gate-flow-head li b { font-size: 12px; white-space: nowrap; }
@@ -162,15 +163,15 @@ html:root, body {
   .gate-flow-screen main { gap: 6px; }
   .gate-flow-screen .depth-briefing { flex: 1; height: auto; min-height: 0; grid-template-columns: minmax(0,1fr) 195px; gap: 6px; }
   .gate-flow-screen .depth-board, .gate-flow-screen .depth-dossier { height: 100%; min-height: 0; }
-  .gate-flow-screen .depth-board { padding: 6px; grid-template-rows: minmax(0,1fr) 30px; }
+  .gate-flow-screen .depth-board { padding: 6px; grid-template-rows: minmax(0,1fr) 36px; gap: 4px; }
   .gate-flow-screen .depth-grid { gap: 4px; }
-  .gate-flow-screen .depth-tile { gap: 0; padding: 1px; }
+  .gate-flow-screen .depth-tile { min-height: 0; gap: 4px; padding: 14px 1px 3px; }
   .gate-flow-screen .depth-tile small { display: none; }
   .gate-flow-screen .depth-tile b { font-size: 24px; line-height: 1; }
-  .gate-flow-screen .depth-tile span { font-size: 10px; line-height: 1.1; }
-  .gate-flow-screen .depth-selected-flag { display: none; }
-  .gate-flow-screen .depth-pager { padding: 1px 0 0; align-items: center; }
-  .gate-flow-screen .depth-pager button { min-height: 27px; height: 27px; padding: 0; }
+  .gate-flow-screen .depth-tile span { font-size: 12px; line-height: 1.1; }
+  .gate-flow-screen .depth-selected-flag { display: block; top: 3px; right: 3px; padding: 2px 4px; font-size: 11px; transform: none; }
+  .gate-flow-screen .depth-pager { min-height: 0; height: 36px; padding: 0; align-items: center; }
+  .gate-flow-screen .depth-pager button { min-height: 34px; height: 34px; padding: 0; }
   .gate-flow-screen .depth-dossier { margin: 0; padding: 7px; overflow-y: auto; }
   .gate-flow-screen .depth-dossier>small { font-size: 10px; }
   .gate-flow-screen .depth-dossier>span { font-size: 21px; }
@@ -178,12 +179,13 @@ html:root, body {
   .gate-flow-screen .depth-dossier dl>div { padding: 4px; }
   .gate-flow-screen .depth-dossier dt, .gate-flow-screen .depth-dossier dd { font-size: 11px; }
   .gate-flow-screen .gate-next, .gate-flow-screen .gate-deploy { min-height: 38px; margin: 0; padding: 5px 16px; }
-  .gate-flow-screen .gate-card-grid:not(.map-grid) { min-height: 0; overflow-y: auto; overscroll-behavior: contain; }
+  .gate-flow-screen .gate-card-grid:not(.map-grid) { height: 100%; min-height: 0; max-height: none; overflow-y: auto; overscroll-behavior: contain; scrollbar-gutter: stable; }
   .gate-flow-screen .character-meta-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     grid-template-rows: minmax(0, 1fr);
     align-content: stretch;
-    overflow: hidden !important;
+    overflow-x: hidden; overflow-y: auto !important;
+    grid-auto-rows: minmax(190px,1fr);
     gap: 6px;
   }
   .gate-flow-screen .character-meta-card { height: 100%; min-height: 0; }
@@ -194,14 +196,19 @@ html:root, body {
   .gate-flow-screen .character-card-info b { font-size: 22px !important; }
   .gate-flow-screen .character-card-info em { font-size: 12px !important; }
   .gate-flow-screen .character-card-info .selection-seal { margin-top: 5px; padding: 5px 7px; font-size: 11px; }
-  .gate-flow-screen .weapon-meta-grid { grid-template-columns: repeat(3,minmax(0,1fr)); grid-template-rows: repeat(2,minmax(0,1fr)); gap: 6px; overflow: hidden !important; }
-  .gate-flow-screen .weapon-meta-card { height: 100%; min-height: 0; padding: 4px; }
+  .gate-flow-screen .weapon-meta-grid { grid-template-columns: repeat(4,minmax(0,1fr)); grid-template-rows: repeat(2,minmax(104px,1fr)); grid-auto-rows: minmax(104px,1fr); align-content: stretch; gap: 6px; overflow-x: hidden; overflow-y: auto !important; }
+  .gate-flow-screen .weapon-meta-card { height: 100%; min-height: 104px; grid-template-columns: minmax(0,42%) minmax(0,58%); gap: 0; padding: 5px; overflow: hidden; }
+  .gate-flow-screen .weapon-meta-card.selected { animation: none; }
   .gate-flow-screen .weapon-card-art { height: 100%; min-height: 0; }
-  .gate-flow-screen .weapon-card-info b { font-size: 15px; }
-  .gate-flow-screen .weapon-card-info small { font-size: 11px; }
-  .gate-flow-screen .weapon-meta-card .selection-seal { display: none; }
+  .gate-flow-screen .weapon-card-info { min-width: 0; padding: 3px; gap: 5px !important; }
+  .gate-flow-screen .weapon-card-info b { font-size: 16px !important; overflow-wrap: anywhere; }
+  .gate-flow-screen .weapon-card-info small { font-size: 11px !important; }
+  .gate-flow-screen .weapon-meta-card .selection-seal { display: block; margin-top: 0; padding: 3px 5px; font-size: 12px; letter-spacing: 0; }
   .gate-flow-screen .deploy-summary { flex: 1; height: auto; min-height: 0; overflow: hidden; grid-template-columns: minmax(0,43%) minmax(0,57%); }
   .gate-flow-screen .deploy-visual { height: 100%; min-height: 0; }
+  .gate-flow-screen .deploy-visual .deploy-character { height: 96%; bottom: 2%; left: 38%; max-width: 60%; }
+  .gate-flow-screen .deploy-region { left: 12px; bottom: 12px; max-width: 52%; }
+  .gate-flow-screen .deploy-region b { font-size: 20px; }
   .gate-flow-screen .deploy-loadout { min-width: 0; min-height: 0; padding: 7px; }
   .gate-flow-screen .deploy-depth { padding: 2px 7px; }
   .gate-flow-screen .deploy-depth>b { font-size: 36px; }
@@ -220,18 +227,25 @@ html:root, body {
   .growth-facility .facility-workspace { grid-template-columns: 180px minmax(0,1fr) 230px; gap: 7px; }
   .growth-facility .facility-list { padding: 3px; }
   .growth-facility .facility-list-grid { min-height: 0; padding: 3px; gap: 3px; }
-  .growth-facility .facility-list-item { min-height: 0; grid-template-columns: 39px 1fr; gap: 4px; padding: 2px 4px; }
+  .growth-facility .facility-list-item { min-height: 52px; grid-template-columns: 39px 1fr; gap: 4px; padding: 2px 4px; }
   .growth-facility .facility-list-item>img, .growth-facility .facility-list-item>.inventory-art, .growth-facility .facility-list-item>.weapon-detail-art { width: 38px; height: 38px; }
-  .growth-facility .facility-list-item b { font-size: 13px; }
+  .growth-facility .facility-list-item b { font-size: 14px; }
   .growth-facility .facility-list-item small { font-size: 10px; }
-  .growth-facility .growth-subject { min-width: 0; min-height: 0; height: 100%; }
+  .growth-facility .growth-subject { min-width: 0; min-height: 0; height: 100%; padding: 12px; }
+  .growth-facility .growth-subject>:is(img,.inventory-art,.weapon-detail-art) { inset: 3% 10% auto; width: 80%; height: calc(94% - 62px); object-fit: contain; }
+  .growth-facility .growth-subject h2 { font-size: 24px; }
+  .growth-facility .growth-subject small { font-size: 11px; }
   .growth-facility .facility-control { grid-column: auto; display: grid; grid-template-columns: 1fr; align-content: center; gap: 7px; padding: 9px; }
   .growth-facility .facility-control h2 { font-size: 19px; }
   .growth-facility .facility-control .resource-line { padding: 3px 0; }
   .growth-facility .facility-control .facility-note { display: none; }
   .association-facility .association-layout { min-height: 0; grid-template-columns: 230px minmax(0,1fr); gap: 8px; }
   .association-facility .association-desk { height: 100%; min-height: 0; overflow: hidden; padding: 8px; }
-  .association-facility .association-emblem { min-height: 0; max-height: 120px; }
+  .association-facility .association-desk { display: grid; grid-template-rows: minmax(0,1fr) auto; align-content: stretch; gap: 8px; }
+  .association-facility .association-emblem { min-height: 0; height: 100%; max-height: none; overflow: hidden; }
+  .association-facility .association-emblem img { width: 100%; height: 100%; max-height: 230px; object-fit: contain; }
+  .association-facility .association-wallet { position: relative; z-index: 1; min-height: 60px; }
+  .association-facility .association-wallet span { display: grid; gap: 4px; font-size: 13px; }
   .association-facility .association-desk>h2 { margin: 3px 0; font-size: 17px; line-height: 1.2; }
   .association-facility .association-desk>h2 { display: none; }
   .association-facility .association-wallet { grid-template-columns: 38px 1fr; gap: 5px; padding: 3px 5px; }
@@ -269,16 +283,83 @@ html:root, body {
   .archive-header h1 { margin: 0; font-size: 22px; }
   .archive-book { flex: 1; height: auto; min-height: 0; overflow: hidden; grid-template-columns: 145px 270px minmax(0,1fr); }
   .archive-tabs { min-height: 0; height: 100%; gap: 4px; padding: 5px; overflow-x: hidden; overflow-y: auto; overscroll-behavior: contain; }
-  .archive-tab, .archive-tab.selected, .archive-tab:hover { width: 100%; min-height: 55px; margin-right: 0; padding: 4px 8px; transform: none; }
-  .archive-index, .archive-detail { height: 100%; max-height: 100%; min-height: 0; overflow-y: auto; overscroll-behavior: contain; }
-  .archive-entry-grid { grid-template-columns: repeat(2,minmax(0,1fr)); grid-template-rows: repeat(2,minmax(0,1fr)); gap: 5px; padding: 5px; }
-  .archive-entry { min-height: 0; grid-template-rows: 52px minmax(18px,auto) 14px; gap: 1px; padding: 3px; }
+  .archive-tab, .archive-tab.selected, .archive-tab:hover { width: 100%; min-height: 48px; height: auto; display: flex; align-items: center; justify-content: space-between; gap: 4px; margin-right: 0; padding: 4px 8px; transform: none; }
+  .archive-index, .archive-detail { height: 100%; max-height: 100%; min-height: 0; overscroll-behavior: contain; }
+  .archive-index { grid-template-rows: 36px minmax(0,1fr) 42px; overflow: hidden; }
+  .archive-detail { overflow-y: auto; }
+  .archive-tabs { display: grid; grid-template-rows: repeat(6,minmax(48px,1fr)); align-content: stretch; }
+  .archive-tab span { font-size: 14px; white-space: nowrap; }
+  .archive-tab small { font-size: 12px; }
+  .archive-entry-grid { grid-template-columns: repeat(2,minmax(0,1fr)); grid-template-rows: none; grid-auto-rows: max-content; align-content: start; gap: 5px; padding: 5px; }
+  .archive-entry { min-height: 86px; grid-template-rows: 52px minmax(20px,auto); gap: 1px; padding: 3px; }
   .archive-entry>img, .archive-entry .weapon-detail-art { width: 54px; height: 52px; }
   .archive-entry>.inventory-art { width: 52px; height: 52px; margin: 0; }
   .archive-entry>span:not(.inventory-art) { font-size: 13px; line-height: 1.1; white-space: normal; overflow-wrap: anywhere; }
   .archive-entry>small { max-width: 100%; overflow: hidden; font-size: 10px; line-height: 14px; text-overflow: ellipsis; white-space: nowrap; }
   .archive-entry .archive-symbol { width: 50px !important; height: 50px !important; }
   [data-screen="shop"] .screen.overlay-screen { overflow: hidden !important; }
-  .level-modal.shop-screen { max-height: calc(100dvh - 16px); overflow: hidden; }
+  .level-modal.shop-screen {
+    display: grid; grid-template-rows: 38px minmax(0,1fr) 36px; gap: 5px;
+    width: min(860px,calc(100% - 36px)); height: calc(100% - 22px); max-height: none; min-height: 0;
+    padding: 6px; margin: 0; overflow: hidden;
+  }
+  .shop-screen .shop-header { min-height: 0; height: 38px; margin: 0; padding: 2px 9px; }
+  .shop-screen .shop-header h1 { font-size: 22px; }
+  .shop-screen .shop-wallet { min-height: 30px; padding: 2px 6px; font-size: 16px; }
+  .shop-screen .shop-header-resources { gap: 5px; }
+  .shop-screen .shop-body { min-height: 0; height: 100%; overflow: hidden; grid-template-columns: 168px minmax(0,1fr); gap: 7px; padding: 0; }
+  .shop-screen .shop-stats { min-height: 0; height: 100%; overflow: hidden; }
+  .shop-screen .shop-stats>header { padding: 5px 7px; }
+  .shop-screen .shop-stats>header strong { font-size: 15px; }
+  .shop-screen .shop-stat-list { padding: 3px 6px 7px; }
+  .shop-screen .shop-stat { min-height: 22px; font-size: 12px; }
+  .shop-screen .shop-stat b { font-size: 12px; }
+  .shop-screen .shop-stat-list small { display: none; }
+  .shop-screen .shop-catalog { min-height: 0; height: 100%; padding: 0 3px 0 0; }
+  .shop-screen .shop-section { padding: 0; margin-bottom: 6px; }
+  .shop-screen .shop-section>header { min-height: 32px; height: 32px; margin-bottom: 4px; padding: 1px 4px; }
+  .shop-screen .shop-section h2 { font-size: 17px; }
+  .shop-screen .shop-section-kicker { display: none; }
+  .shop-screen .refresh-stock { min-height: 30px; padding: 2px 7px; font-size: 12px; }
+  .shop-screen .shop-grid { grid-template-columns: repeat(4,minmax(0,1fr)); gap: 5px; }
+  .shop-screen .shop-card { display: grid; grid-template-columns: 28px minmax(0,1fr); grid-template-rows: 24px 27px minmax(30px,auto) 31px; align-content: start; gap: 2px; min-height: 121px; padding: 4px; }
+  .shop-screen .product-heading, .shop-screen .item-effect, .shop-screen .product-footer { grid-column: 1/-1; }
+  .shop-screen .product-heading { min-height: 0; }
+  .shop-screen .lock-button { width: 28px; height: 28px; min-height: 28px; padding: 2px; }
+  .shop-screen .shop-card>.inventory-art { width: 26px; height: 26px; margin: 0; }
+  .shop-screen .shop-card>h2 { white-space: normal; overflow: visible; align-self: center; font-size: 13px; margin: 0; overflow-wrap: anywhere; }
+  .shop-screen .shop-card>p.item-effect { min-height: 0; margin: 0; font-size: 12px; line-height: 1.3; }
+  .shop-screen .product-footer { margin: 0; padding: 0; gap: 2px; }
+  .shop-screen .product-footer small { font-size: 11px; }
+  .shop-screen .price-coin { width: 18px; height: 18px; }
+  .shop-screen .purchase-price { min-height: 31px; padding: 2px 5px; font-size: 13px; }
+  .shop-screen .shop-footer { margin: 0; padding: 0; display: flex; justify-content: flex-end; }
+  .shop-screen .next-combat { min-height: 36px; height: 36px; width: 180px; padding: 3px 9px; font-size: 13px; }
+  .shop-screen .branch-panel { max-height: 100%; overflow-y: auto; padding: 14px; }
+  .shop-screen .branch-panel>p { display: none; }
+  .shop-screen .branch-shop-card { min-height: 130px; padding: 12px; }
+
   .shop-screen .shop-catalog, .shop-screen .shop-stat-list { overflow-y: auto; overscroll-behavior: contain; }
+
+  .gate-flow-screen .blessing-meta-grid { grid-template-columns: repeat(4,minmax(0,1fr)); grid-auto-rows: minmax(108px,1fr); align-content: stretch; gap: 6px; }
+  .gate-flow-screen .blessing-meta-card { min-height: 108px; padding: 6px; gap: 5px; }
+  .gate-flow-screen .blessing-meta-card>img { width: 46px; height: 66px; }
+  .gate-flow-screen .blessing-meta-card b { font-size: 15px; }
+  .gate-flow-screen .blessing-meta-card em { font-size: 12px; line-height: 1.35; }
+  .modal.post-wave-modal, .modal.pause-modal { width: min(560px,calc(100% - 24px)); min-height: 0; max-height: calc(100% - 20px); padding: 20px; margin: 0; }
+  .post-wave-modal h1, .pause-modal h1 { font-size: 30px; margin: 10px 0 16px; }
+  .post-wave-modal .phase-pill { min-height: 0; padding: 5px 12px; }
+  .post-wave-modal .post-metrics { margin: 0 0 14px; }
+  .post-wave-modal .post-metrics>div { min-height: 0; padding: 12px; }
+  .post-wave-modal .post-metrics strong { font-size: 28px; }
+  .post-wave-modal>.primary { min-height: 44px; padding: 7px; }
+  .modal.result-modal { position: relative; display: grid; grid-template-rows: auto auto minmax(0,1fr) 44px; gap: 10px; width: min(820px,calc(100% - 24px)); height: calc(100% - 20px); max-height: none; padding: 16px; margin: 0; overflow: hidden; }
+  .result-modal .result-art { position: absolute; right: 18px; top: 8px; width: 54px; height: 54px; margin: 0; }
+  .result-modal h1 { font-size: 28px; margin: 0; }
+  .result-modal .result-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); grid-template-rows: repeat(2,minmax(0,1fr)); min-height: 0; gap: 5px; margin: 0; }
+  .result-modal .result-grid>div { min-height: 0; padding: 8px; }
+  .result-modal .result-grid small { font-size: 13px; }
+  .result-modal .result-grid strong { font-size: 24px; }
+  .result-modal .stack { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 8px; margin: 0; }
+  .result-modal .stack button { min-height: 44px; padding: 5px; }
 }

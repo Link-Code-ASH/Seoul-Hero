@@ -32,9 +32,9 @@ button,.button{min-height:48px;padding:12px 20px;border:1px solid var(--ui-line-
 /* Gate24 wide merchandising layout. The paused world remains visible around the store. */
 [data-screen="shop"] .screen.overlay-screen{background:transparent!important;background-image:none!important;backdrop-filter:none!important}
 [data-screen="shop"] .screen.overlay-screen{overflow-x:hidden!important}
-.level-modal.shop-screen{box-sizing:border-box;width:min(1720px,calc(100vw - 32px));max-width:1720px;max-height:calc(100dvh - 28px);padding:22px 26px;overflow:hidden}
+.level-modal.shop-screen{display:grid;grid-template-rows:auto minmax(0,1fr) auto;height:calc(100dvh - 56px);box-sizing:border-box;width:min(1720px,calc(100vw - 32px));max-width:1720px;max-height:calc(100dvh - 28px);padding:22px 26px;overflow:hidden}
 .shop-screen .shop-header{margin:-22px -26px 16px;padding:15px 26px}
-.shop-screen .shop-body{grid-template-columns:290px minmax(0,1fr);gap:18px;max-height:calc(100dvh - 112px);overflow:hidden}
+.shop-screen .shop-body{grid-template-columns:290px minmax(0,1fr);gap:18px;min-height:0;max-height:100%;overflow:hidden}
 .shop-screen .shop-catalog{min-width:0;max-height:100%;overflow-x:hidden;overflow-y:auto;padding-right:3px}
 .shop-screen .shop-section{margin-bottom:16px}
 .shop-screen .shop-section>header{min-height:43px;margin-bottom:9px}

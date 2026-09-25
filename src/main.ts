@@ -1,23 +1,6 @@
 import { AppController } from './core/AppController';
 import { enableMobileFullscreenOnTouch } from './ui/MobileFullscreen';
 import './styles/main.css';
-import './styles/lobby-redesign.css';
-import './styles/meta-facilities.css';
-import './styles/survival.css';
-import './styles/ui-wide.css';
-import './styles/ui-modern.css';
-import './styles/archive.css';
-import './styles/gate-lobby.css';
-import './styles/interface-overhaul.css';
-import './styles/interface-materials.css';
-import './styles/interface-followup.css';
-import './styles/account.css';
-import './styles/mobile-viewport.css';
-import './styles/typography.css';
-import './styles/combat-hud.css';
-import './styles/facility-scroll.css';
-import './styles/archive-supply-refinement.css';
-import './styles/revival.css';
 
 const world = document.querySelector<HTMLElement>('#world');
 const ui = document.querySelector<HTMLElement>('#ui');

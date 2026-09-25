@@ -27,8 +27,8 @@
   font-display: swap;
 }
 @font-face {
-  font-family: 'Gumi Romance';
-  src: url('../../assets/ui/fonts/GumiRomance.otf') format('opentype');
+  font-family: 'SF Ssaraknun';
+  src: url('../../assets/ui/fonts/SFSsaraknun.ttf') format('truetype');
   font-style: normal;
   font-weight: 400;
   font-display: swap;
@@ -78,6 +78,11 @@ html, body, button, input, select { font-family: Paperlogy, GateSans, 'Apple SD 
   font-family: BMJUA, Paperlogy, GateSans, sans-serif;
   font-weight: 400;
   letter-spacing: 0;
+}
+.supply-result-heading strong, .post-wave-modal h1, .wave-end-announcement strong {
+  font-family: 'SF Ssaraknun', Paperlogy, GateSans, sans-serif;
+  font-weight: 400;
+  letter-spacing: .015em;
 }
 
 .settings-card .setting-row { grid-template-columns: 1fr; gap: 6px; }

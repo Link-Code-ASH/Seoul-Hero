@@ -52,6 +52,7 @@ export class WorldRenderer {
   private initialized = false;
   private displayTime = 0;
   private scale = 1;
+  private currentMapId = 'seoul';
 
 
   async init(host: HTMLElement): Promise<void> {
@@ -106,11 +107,8 @@ export class WorldRenderer {
     const width = Math.max(1, this.host.clientWidth);
     const height = Math.max(1, this.host.clientHeight);
     this.app.renderer.resize(width, height, this.resolution);
-    // A fixed reference view determines scale, while the actual visible world is
-    // reported back to spawning. Portrait uses a smaller width, not tiny actors.
-    const referenceWidth = width >= height ? GAME_CONFIG.world.referenceWidth : GAME_CONFIG.world.referenceHeight;
-    const referenceHeight = width >= height ? GAME_CONFIG.world.referenceHeight : GAME_CONFIG.world.referenceWidth;
-    this.scale = Math.min(width / referenceWidth, height / referenceHeight);
+    const stage = maps[this.currentMapId] ?? maps.seoul!;
+    this.scale = Math.max(width / stage.arenaWidth, height / stage.arenaHeight) * GAME_CONFIG.world.combatZoom;
     this.viewport.width = width / this.scale;
     this.viewport.height = height / this.scale;
     this.world.scale.set(this.scale);
@@ -120,11 +118,14 @@ export class WorldRenderer {
     if (!this.initialized || !this.sprites) return;
     this.displayTime += Math.min(delta, GAME_CONFIG.time.maxFrameDelta);
     const stage = maps[state?.mapId ?? 'seoul']!;
+    this.currentMapId = stage.id;
     const width = this.app.screen.width, height = this.app.screen.height;
-    this.scale = Math.min(width / stage.arenaWidth, height / stage.arenaHeight);
+    // Fill the display and zoom into the fight. The camera follows the player,
+    // so cropping the larger arena never hides an unreachable part of the map.
+    this.scale = Math.max(width / stage.arenaWidth, height / stage.arenaHeight) * GAME_CONFIG.world.combatZoom;
     this.viewport.width = width / this.scale; this.viewport.height = height / this.scale; this.world.scale.set(this.scale);
-    this.camera.x = 0;
-    this.camera.y = 0;
+    if (state) this.camera.follow(state.player, this.viewport, stage);
+    else { this.camera.x = 0; this.camera.y = 0; }
     const sceneryKey = [stage.id, stage.arenaWidth, stage.arenaHeight, stage.seed, stage.backgroundTheme].join(':');
     if (this.sceneryKey !== sceneryKey) { this.sceneryKey = sceneryKey; this.createArena(stage); }
     this.world.position.set(

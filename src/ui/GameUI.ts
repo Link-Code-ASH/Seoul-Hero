@@ -42,6 +42,8 @@ export class GameUI {
     });
   }
   show(screen: Screen, meta: MetaState, run: RunState | null, archive: ArchiveViewState, gateDraft: GateEntryDraft, growth:GrowthViewState, supplyResults:readonly MetaReward[]): void {
+    const sameScreen = this.root.dataset.screen === screen;
+    const panelScroll = sameScreen ? [...this.overlay.querySelectorAll<HTMLElement>('.shop-catalog, .shop-stat-list, .gate-card-grid')].map(el => ({ className: el.className, top: el.scrollTop })) : [];
     const growthScroll = screen === 'growth' && this.root.dataset.screen === 'growth' && this.overlay.querySelector('.facility-tabs .active')?.getAttribute('data-action') === `growth-tab:${growth.tab}`
       ? this.overlay.querySelector<HTMLElement>('.facility-list-grid')?.scrollTop ?? 0 : 0;
     const previousArchive = this.overlay.querySelector<HTMLElement>('.archive-screen');
@@ -70,12 +72,13 @@ export class GameUI {
     this.overlay.innerHTML = renderers[screen]?.() ?? '';
     if (screen === 'growth') this.overlay.querySelector<HTMLElement>('.facility-list-grid')!.scrollTop = growthScroll;
     if (screen === 'archive') this.overlay.querySelector<HTMLElement>('.archive-entry-grid')!.scrollTop = archiveScroll;
+    for (const saved of panelScroll) {
+      const panel = [...this.overlay.querySelectorAll<HTMLElement>('.shop-catalog, .shop-stat-list, .gate-card-grid')].find(el => el.className === saved.className);
+      if (panel) panel.scrollTop = saved.top;
+    }
     if (screen === 'settings') this.overlay.querySelector('.settings-account-slot')?.append(this.account);
     this.overlay.scrollTop = 0;
     this.overlay.scrollLeft = 0;
-    const depthList=this.overlay.querySelector<HTMLElement>('.gate-depth-scroll');
-    const selectedDepth=depthList?.querySelector<HTMLElement>('.gate-depth-option.selected');
-    if(depthList&&selectedDepth)depthList.scrollTop=Math.max(0,selectedDepth.offsetTop-depthList.clientHeight/2+selectedDepth.clientHeight/2);
     if (screen === 'shop') this.overlay.querySelector<HTMLElement>('.shop-screen')?.focus({ preventScroll: true });
     else if (screen !== 'waveActive' && screen !== 'lobby') this.overlay.querySelector<HTMLElement>('button, input')?.focus({ preventScroll: true });
   }

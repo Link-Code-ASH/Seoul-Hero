@@ -23,12 +23,20 @@ export class TouchInput implements InputSource {
   };
   private move = (event: PointerEvent): void => {
     if (event.pointerId !== this.pointerId) return;
-    const dx = event.clientX - this.originX, dy = event.clientY - this.originY;
-    if (Math.hypot(dx, dy) < 5) { this.direction.x = 0; this.direction.y = 0; return; }
-    let x = dx / 56, y = dy / 56;
-    const length = Math.hypot(x, y);
-    if (length > 1) { x /= length; y /= length; }
-    this.direction.x = x; this.direction.y = y;
+    let dx = event.clientX - this.originX, dy = event.clientY - this.originY;
+    const distance = Math.hypot(dx, dy);
+    if (distance < 4) { this.direction.x = 0; this.direction.y = 0; return; }
+    // Keep the floating stick close to the finger so reversing direction never
+    // requires dragging back across a long, invisible 56px analog travel.
+    if (distance > 28) {
+      this.originX = event.clientX - dx / distance * 28;
+      this.originY = event.clientY - dy / distance * 28;
+      dx = event.clientX - this.originX;
+      dy = event.clientY - this.originY;
+    }
+    const length = Math.hypot(dx, dy);
+    this.direction.x = dx / length;
+    this.direction.y = dy / length;
   };
   private up = (event: PointerEvent): void => { if (event.pointerId === this.pointerId) this.clear(); };
   clear = (): void => {

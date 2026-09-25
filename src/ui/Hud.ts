@@ -16,7 +16,7 @@ export class Hud {
   private readonly boss: HTMLElement;
   constructor() {
     this.element.className = 'hud';
-    this.element.innerHTML = `<div class="hud-top"><div class="player-status"><div class="hp-line">${inventoryArt(40)}<div class="hp-track"><div id="hp-fill"></div><span id="hp-text"></span></div></div><div class="hud-readout" id="hud-stats"></div></div><div class="timer"><span id="hud-wave"></span><strong id="hud-clock">00:00</strong></div><button data-action="pause" class="pause-button" aria-label="일시정지">Ⅱ</button></div><div class="weapon-strip" id="hud-weapons"></div><div class="boss-status" id="boss-status"></div>`;
+    this.element.innerHTML = `<div class="hud-top"><div class="player-status"><div class="status-line"><div class="hp-readout">${inventoryArt(40)}<strong id="hp-text"></strong></div><div class="hud-readout" id="hud-stats"></div></div><div class="hp-track" role="progressbar" aria-label="체력" aria-valuemin="0"><div id="hp-fill"></div></div><div class="weapon-strip" id="hud-weapons" aria-label="보유 무기"></div></div><div class="timer"><span id="hud-wave"></span><strong id="hud-clock">00:00</strong></div><button data-action="pause" class="pause-button" aria-label="일시정지">Ⅱ</button></div><div class="boss-status" id="boss-status"></div>`;
     this.hp = this.get('#hp-fill'); this.stats = this.get('#hud-stats');
     this.clock = this.get('#hud-clock'); this.wave = this.get('#hud-wave'); this.boss = this.get('#boss-status');
     this.walletFlightLayer.className = 'wallet-flight-layer';
@@ -67,6 +67,8 @@ export class Hud {
   update(run: RunState): void {
     this.element.classList.toggle('wallet-sweeping', (run.phase === 'postWave' || isTerminal(run.phase)) && run.pickups.length > 0);
     this.hp.style.width = `${Math.max(0, run.player.hp / run.player.maxHp * 100)}%`;
+    this.hp.parentElement?.setAttribute('aria-valuenow', String(Math.ceil(run.player.hp)));
+    this.hp.parentElement?.setAttribute('aria-valuemax', String(run.player.maxHp));
     this.get('#hp-text').textContent = `${Math.ceil(run.player.hp)} / ${run.player.maxHp}`;
     this.get('#hud-weapons').innerHTML = run.ownedWeapons.map((slot,index) => `<span class="weapon-slot"><i>${index + 1}</i>${weaponArt(slot.id)}<b>${weapons[slot.id]?.name ?? slot.id}</b><small>LV.${slot.level}${slot.branchId ? `-${slot.branchId}` : ''}</small></span>`).join('');
     this.stats.innerHTML = `<span class="hud-chip" title="보유 마력석"><img class="pickup-ui-icon" src="${images.magicStone.url}" alt=""><b>${Math.floor(run.runCurrency)}</b></span><span class="hud-chip wallet-reserve" title="다음 획득에 추가되는 마력석"><img class="wallet-icon" src="${images.wallet.url}" alt="지갑"><b>${Math.floor(run.walletBonusRemaining + run.walletStoredThisRun)}</b></span>`;

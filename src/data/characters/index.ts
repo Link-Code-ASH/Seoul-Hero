@@ -16,7 +16,7 @@ export const characters: Record<string, Character> = {
     id: 'awakener', name: '송진우', description: '현장에서 얻은 장비를 빠르게 익혀 자신의 방식으로 활용하는 각성자.',
     background: '게이트 사태 전에는 서울에서 평범하게 살아가던 청년. 각성 후 엘리트 코스보다 붕괴 지대의 실전을 택했고, 수많은 현장 작전을 거쳤다.',
     personality: '겉으로는 무심하고 크게 동요하지 않는다. 치밀한 계획보다 위험 속의 즉각적인 판단과 생존에 강하며, 서울 사람다운 현실적인 생활 습관이 남아 있다.',
-    baseStats: { ...DEFAULT_STATS }, radius: 15, visual: { sprite: 'player', color: 0x6ff4dd, shape: 'diamond', motionStyle: 'scooter' },
+    baseStats: { ...DEFAULT_STATS }, radius: 15, portraitSprite: 'songJinwooPortrait', visual: { sprite: 'player', color: 0x6ff4dd, shape: 'diamond', motionStyle: 'scooter' },
   },
   kangTaehoon: {
     id: 'kangTaehoon', name: '강태훈', description: '초기 게이트 진압 작전을 거친 전직 특수임무요원. 공용 장비와 생존 전술에 능하다.',

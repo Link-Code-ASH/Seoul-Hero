@@ -12,18 +12,26 @@ import { GAME_CONFIG } from '../data/config';
 import { SIMULATION_CONFIG } from '../data/simulationConfig';
 import { maps } from '../data/maps';
 import type { Vec2 } from '../data/types';
+import type { Projectile } from '../entities/types';
 import type { MetaState } from '../state/MetaState';
 import type { RunState } from '../state/RunState';
 import { createRun } from '../state/createRun';
 import { CombatSystem, weaponStats } from '../systems/CombatSystem';
 import { EnemySystem } from '../systems/EnemySystem';
 import { PickupSystem } from '../systems/PickupSystem';
-import { SpawnSystem, type Viewport } from '../systems/SpawnSystem';
+import { SpawnSystem, type Viewport, type SpawnSnapshot } from '../systems/SpawnSystem';
 import { GameEvents } from './GameEvents';
 import { BalanceTelemetryCollector } from '../analytics/BalanceTelemetry';
 import { declineRevival, useRevivalStone } from '../systems/RevivalSystem';
 import { damagePlayer } from '../systems/PlayerDamageSystem';
 import type { RevivalStoneGrade } from '../data/revivalStones';
+
+type SavedProjectile = Omit<Projectile, 'hitIds'> & { hitIds: number[]; attackRef?: number };
+export interface SimulationSnapshot {
+  state: Omit<RunState, 'projectiles'> & { projectiles: SavedProjectile[] };
+  sequence: number;
+  spawn: SpawnSnapshot;
+}
 
 /** Pure simulation boundary: no browser, renderer, storage, or platform input dependencies. */
 export class Simulation {
@@ -49,6 +57,50 @@ export class Simulation {
     this.combat = new CombatSystem(nextId, this.pickups, stage.clearReward, this.events.emit, random, (state,enemy)=>{this.telemetry.enemyKilled(enemy.definitionId);this.enemySystem.onDeath(state,enemy);}, (weaponId,damage,critical,killed)=>this.telemetry.damage(weaponId,damage,critical,killed), enemyId=>this.telemetry.playerHit(enemyId));
     this.spawn = new SpawnSystem(stage, random, nextId, this.events.emit);
     this.beginWave(1);
+  }
+
+  /** Browser-local checkpoint. Reopening a live Wave always starts paused. */
+  snapshot(): SimulationSnapshot {
+    const attackRefs = new Map<NonNullable<Projectile['attack']>, number>();
+    return {
+      state: {
+        ...this.state,
+        phase: this.state.phase === 'waveActive' ? 'paused' : this.state.phase,
+        projectiles: this.state.projectiles.map(({ hitIds, ...projectile }) => {
+          const attack = projectile.attack;
+          if (attack && !attackRefs.has(attack)) attackRefs.set(attack, attackRefs.size);
+          return { ...projectile, hitIds: [...hitIds], attackRef: attack ? attackRefs.get(attack) : undefined };
+        }),
+      },
+      sequence: this.sequence,
+      spawn: this.spawn.snapshot(),
+    };
+  }
+
+  restore(snapshot: SimulationSnapshot): void {
+    // Only copy fields in the current RunState schema; a newer app may have
+    // added a field since this local checkpoint was written.
+    const current = this.state as unknown as Record<string, unknown>;
+    const saved = snapshot.state as unknown as Record<string, unknown>;
+    for (const key of Object.keys(current)) if (Object.hasOwn(saved, key)) current[key] = saved[key];
+    if (typeof snapshot.state.pendingBranchWeaponId === 'string')
+      this.state.pendingBranchWeaponId = snapshot.state.pendingBranchWeaponId;
+    const attacks = new Map<number, NonNullable<Projectile['attack']>>();
+    this.state.projectiles = snapshot.state.projectiles.map(({ hitIds, attackRef, ...projectile }) => {
+      const restored: Projectile = { ...projectile, hitIds: new Set(hitIds) };
+      if (attackRef !== undefined && projectile.attack) {
+        if (!attacks.has(attackRef)) attacks.set(attackRef, projectile.attack);
+        restored.attack = attacks.get(attackRef);
+      }
+      return restored;
+    });
+    this.sequence = Math.max(snapshot.sequence,
+      ...this.state.enemies.map(entity => entity.id),
+      ...this.state.projectiles.map(entity => entity.id),
+      ...this.state.pickups.map(entity => entity.id),
+      ...this.state.structures.map(entity => entity.id));
+    this.spawn.restore(snapshot.spawn);
+    this.viewport = { width: GAME_CONFIG.world.referenceWidth, height: GAME_CONFIG.world.referenceHeight };
   }
 
   update(dt: number, direction: Vec2, viewport: Viewport): void {

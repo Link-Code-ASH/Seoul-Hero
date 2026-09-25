@@ -44,6 +44,7 @@ export const images = {
   piercingFx: { url: vector('projectiles/projectile_piercing_round_01'), heightRatio: 2.5 },
   turretBolt: { url: vector('projectiles/projectile_turret_bolt_01'), heightRatio: 2.5 },
   player: { url: file('characters/player_plaza_01'), heightRatio: 4.34 },
+  songJinwooPortrait: { url: file('characters/song_jinwoo_portrait_01'), heightRatio: 1 },
   kangTaehoonTruck: { url: file('characters/kang_taehoon_truck_01'), heightRatio: 5.5 },
   kangTaehoonPortrait: { url: file('characters/kang_taehoon_portrait_01'), heightRatio: 1 },
   brute: { url: file('enemies/enemy_brute_01'), heightRatio: 3.2 },

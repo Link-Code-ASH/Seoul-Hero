@@ -19,6 +19,7 @@ import { InputManager } from '../input/InputManager';
 import { TouchInput } from '../input/TouchInput';
 import { WorldRenderer } from '../rendering/WorldRenderer';
 import { SaveManager } from '../save/SaveManager';
+import { RunSnapshotStore } from '../save/RunSnapshotStore';
 import { AccountStorageAdapter, LocalStorageAdapter } from '../save/StorageAdapter';
 import { SAVE_KEY } from '../save/SaveData';
 import { parseSave } from '../save/migrations';
@@ -50,6 +51,7 @@ import type { GrowthViewState } from '../ui/MetaScreens';
 /** Owns browser-side wiring. Simulation remains independent of screens and storage. */
 export class AppController {
   private save = new SaveManager(new LocalStorageAdapter());
+  private readonly runSnapshots = new RunSnapshotStore();
   private meta: MetaState = this.save.load();
   private accountUserId = '';
   private accountEmail = '';
@@ -62,7 +64,8 @@ export class AppController {
   private connectingAccount = false;
   private deferredAuthChange = false;
   private rendererReady = false;
-  private rendererLoading = false;
+  private rendererInitPromise: Promise<void> | null = null;
+  private deploymentPending = false;
   private readonly audio = new AudioManager(this.meta.settings);
   private readonly renderer = new WorldRenderer();
   private readonly keyboard = new KeyboardInput();
@@ -70,6 +73,8 @@ export class AppController {
   private readonly input: InputManager;
   private readonly loop: GameLoop;
   private simulation: Simulation | null = null;
+  private restoringRun = false;
+  private runSaveWarningShown = false;
   private screen: Screen = 'lobby';
   private archiveCategory: ArchiveCategory = 'characters';
   private archiveSelectionId = firstArchiveId('characters');
@@ -108,7 +113,7 @@ export class AppController {
       if (event === 'SIGNED_IN' || event === 'SIGNED_OUT') window.setTimeout(() => { void this.restoreAccount(); }, 0);
     });
     this.authSubscription = subscription;
-    void this.restoreAccount();
+    void this.restoreAccount().finally(() => { void this.restoreRun(); });
     window.addEventListener('online', this.retryCloud);
     this.ui.dev.element.hidden = !this.meta.settings.developerMode;
     window.addEventListener('keydown', this.keydown);
@@ -116,20 +121,60 @@ export class AppController {
     window.addEventListener('blur', this.pause);
     document.addEventListener('visibilitychange', this.visibility);
     window.addEventListener('pagehide', this.markOfflineExit);
-    this.autosaveTimer = window.setInterval(this.persist, 15000);
+    window.addEventListener('popstate', this.keepActiveRunOpen);
+    this.autosaveTimer = window.setInterval(this.persist, 5000);
     if (!['자동 저장 완료', '저장된 진행을 불러왔습니다.'].includes(this.save.status)) this.ui.notify(this.save.status);
   }
-  private async prepareRenderer(): Promise<void> {
-    if (this.rendererReady || this.rendererLoading) return;
-    this.rendererLoading = true;
+  private prepareRenderer(): Promise<void> {
+    if (this.rendererReady) return Promise.resolve();
+    if (this.rendererInitPromise) return this.rendererInitPromise;
+    this.rendererInitPromise = (async () => {
+      try {
+        await this.renderer.init(this.worldHost);
+        this.rendererReady = true;
+        this.renderer.setHighResolution(this.meta.settings.highResolution);
+        this.loop.start();
+      } catch (error) {
+        this.ui.notify(error instanceof Error ? `전투 화면 준비 실패: ${error.message}` : '전투 화면을 준비하지 못했습니다.');
+      }
+    })().finally(() => { this.rendererInitPromise = null; });
+    return this.rendererInitPromise;
+  }
+  private async deployRun(): Promise<void> {
+    if (this.deploymentPending || this.screen !== 'gateConfirm') return;
+    const problem = validateGateEntry(this.meta, this.gateDraft);
+    if (problem) { this.ui.notify(problem); return; }
+    this.deploymentPending = true;
+    const button = this.ui.root.querySelector<HTMLButtonElement>('[data-action="gate-deploy"]');
+    if (button) { button.disabled = true; button.textContent = '전투 준비 중…'; }
     try {
-      await this.renderer.init(this.worldHost);
-      this.rendererReady = true;
-      this.renderer.setHighResolution(this.meta.settings.highResolution);
-      this.loop.start();
+      await this.prepareRenderer();
+      if (!this.rendererReady) return;
+      if (this.screen !== 'gateConfirm') return;
+      const currentProblem = validateGateEntry(this.meta, this.gateDraft);
+      if (currentProblem) { this.ui.notify(currentProblem); return; }
+      this.simulation = new Simulation(this.gateDraft.characterId, this.gateDraft.mapId, this.meta, Math.random, {
+        gateDepth: this.gateDraft.gateDepth,
+        weeklyTraitId: this.meta.weeklyGate.ruleId,
+        blessingId: this.gateDraft.blessingId,
+        startingWeaponId: this.gateDraft.startingWeaponId,
+      });
+      this.guardRunHistory();
+      this.telemetrySavedRun = null;
+      this.loop.timeScale = 1;
+      this.loop.resetClock();
+      const speed = this.ui.dev.element.querySelector<HTMLSelectElement>('#dev-speed');
+      if (speed) speed.value = '1';
+      this.show('waveActive');
     } catch (error) {
-      this.ui.notify(error instanceof Error ? `전투 화면 준비 실패: ${error.message}` : '전투 화면을 준비하지 못했습니다.');
-    } finally { this.rendererLoading = false; }
+      this.ui.notify(error instanceof Error ? `출동 실패: ${error.message}` : '출동하지 못했습니다.');
+    } finally {
+      this.deploymentPending = false;
+      if (this.screen === 'gateConfirm' && button?.isConnected) {
+        button.disabled = false;
+        button.textContent = '작전 시작 →';
+      }
+    }
   }
   private show(screen: Screen): void {
     if(screen.startsWith('gate')&&ensureWeeklyGate(this.meta))this.persist();
@@ -143,6 +188,7 @@ export class AppController {
     this.ui.dev.element.hidden = !this.meta.settings.developerMode;
     this.audio.setScene(musicForScene(screen, this.simulation?.state ?? null), screen === 'paused' || screen === 'postWave');
     this.syncAudioButton();
+    if (this.simulation && !isTerminal(this.simulation.state.phase)) this.saveRunSnapshot();
     if (screen === 'lobby' && this.deferredAuthChange) {
       this.deferredAuthChange = false;
       window.setTimeout(() => { void this.restoreAccount(); }, 0);
@@ -240,6 +286,13 @@ export class AppController {
     if (this.cloudSync) this.cloudSync.retry();
     else void this.restoreAccount();
   };
+  private deferAccountSwitch(): boolean {
+    if (!this.screen.startsWith('gate') && (!this.simulation || isTerminal(this.simulation.state.phase))) return false;
+    this.deferredAuthChange = true;
+    this.accountStatus = '출동 종료 후 계정 변경';
+    this.refreshAccount();
+    return true;
+  }
   private async restoreAccount(): Promise<void> {
     if (this.connectingAccount) return;
     this.connectingAccount = true;
@@ -249,20 +302,14 @@ export class AppController {
         const user = data.user;
         if (!user) {
           if (this.accountUserId) {
-            if (this.simulation && !isTerminal(this.simulation.state.phase)) {
-              this.deferredAuthChange = true;
-              this.accountStatus = '전투 종료 후 계정 변경'; this.refreshAccount();
-            } else this.leaveAccount();
+            if (!this.deferAccountSwitch()) this.leaveAccount();
           }
           return;
         }
         if (user.id === this.accountUserId) return;
-        if (this.simulation && !isTerminal(this.simulation.state.phase)) {
-          this.deferredAuthChange = true;
-          this.accountStatus = '전투 종료 후 계정 변경'; this.refreshAccount();
-          return;
-        }
+        if (this.deferAccountSwitch()) return;
         const remote = await readCloudSave(user.id);
+        if (this.deferAccountSwitch()) return;
         const accountAdapter = new AccountStorageAdapter(user.id);
         const accountRaw = accountAdapter.getItem(SAVE_KEY);
         const dirty = localStorage.getItem(this.dirtyKey(user.id)) === '1';
@@ -346,6 +393,7 @@ export class AppController {
     this.simulation = null;
     this.show('lobby');
     this.refreshAccount();
+    void this.restoreRun();
     if (upload) {
       localStorage.setItem(this.dirtyKey(id), '1');
       this.cloudSync.queue(this.save.export(this.meta));
@@ -367,6 +415,7 @@ export class AppController {
     this.simulation = null;
     this.show('lobby');
     this.refreshAccount();
+    void this.restoreRun();
   }
   private chooseAccount(useCloud: boolean): void {
     const choice = this.accountChoice;
@@ -401,6 +450,50 @@ export class AppController {
         this.cloudSync.queue(this.save.export(this.meta));
       }
     }
+    if (this.simulation?.state.reward && isTerminal(this.simulation.state.phase)) this.runSnapshots.clear(this.accountUserId);
+    else this.saveRunSnapshot();
+  };
+  private saveRunSnapshot(): void {
+    if (!this.simulation || isTerminal(this.simulation.state.phase)) return;
+    if (this.runSnapshots.save(this.accountUserId, this.simulation.snapshot())) this.runSaveWarningShown = false;
+    else if (!this.runSaveWarningShown) {
+      this.runSaveWarningShown = true;
+      this.ui.notify('기기 저장 공간이 부족해 진행 중인 전투를 저장하지 못했습니다.');
+    }
+  }
+  private async restoreRun(): Promise<void> {
+    if (this.simulation || this.accountChoice || this.restoringRun) return;
+    const scope = this.accountUserId;
+    const snapshot = this.runSnapshots.load(scope);
+    if (!snapshot) return;
+    this.restoringRun = true;
+    try {
+      await this.prepareRenderer();
+      if (!this.rendererReady || this.simulation || this.accountUserId !== scope) return;
+      const run = snapshot.state;
+      const restored = new Simulation(run.characterId, run.mapId, this.meta, Math.random,
+        { gateDepth: run.gateDepth, weeklyTraitId: run.weeklyTraitId, blessingId: run.blessingId, startingWeaponId: run.startingWeaponId });
+      restored.restore(snapshot);
+      if (restored.state.phase === 'waveActive') restored.pause();
+      this.simulation = restored;
+      this.gateDraft = { ...this.gateDraft, mapId: run.mapId, gateDepth: run.gateDepth,
+        characterId: run.characterId, startingWeaponId: run.startingWeaponId, blessingId: run.blessingId };
+      this.guardRunHistory();
+      this.show(restored.state.phase as Screen);
+    } catch (error) {
+      this.runSnapshots.clear(scope);
+      this.ui.notify(error instanceof Error ? `전투 기록 복구 실패: ${error.message}` : '전투 기록을 복구하지 못했습니다.');
+    } finally { this.restoringRun = false; }
+  }
+  private guardRunHistory(): void {
+    try {
+      if (!window.history.state?.seoulHeroRun) window.history.pushState({ seoulHeroRun: true }, '', window.location.href);
+    } catch { /* Device-local checkpoint still protects the Run if history is unavailable. */ }
+  }
+  private keepActiveRunOpen = (): void => {
+    if (!this.simulation || isTerminal(this.simulation.state.phase)) return;
+    this.pause();
+    this.guardRunHistory();
   };
   private markOfflineExit=():void=>{this.meta.offlineReward.lastExitAt=new Date().toISOString();this.persist();};
   private pause = (): void => {
@@ -454,15 +547,7 @@ export class AppController {
     if (command === 'sound-test') { this.testSound(id); return; }
     if (command === 'dev') { this.developerAction(id); return; }
     if (command === 'gate-deploy') {
-      if (!this.rendererReady) { this.ui.notify('전투 이미지를 준비 중입니다. 잠시 후 다시 출동하세요.'); return; }
-      const problem=validateGateEntry(this.meta,this.gateDraft); if(problem){this.ui.notify(problem);return;}
-      this.simulation = new Simulation(this.gateDraft.characterId, this.gateDraft.mapId, this.meta, Math.random, { gateDepth: this.gateDraft.gateDepth,
-        weeklyTraitId: this.meta.weeklyGate.ruleId, blessingId: this.gateDraft.blessingId, startingWeaponId: this.gateDraft.startingWeaponId });
-      this.telemetrySavedRun = null;
-      this.loop.timeScale = 1; this.loop.resetClock();
-      const speed = this.ui.dev.element.querySelector<HTMLSelectElement>('#dev-speed');
-      if (speed) speed.value = '1';
-      this.show('waveActive');
+      void this.deployRun();
     } else if(command==='gate-map') {if(maps[id]&&isMapUnlocked(this.meta,id)){this.gateDraft.mapId=id;this.show('gateMap');}
     } else if (command === 'gate-depth-select') {
       const depth=Number(id); if(!Number.isInteger(depth)||depth<1||depth>this.meta.gateProgression.highestUnlockedDepth)return;
@@ -526,6 +611,7 @@ export class AppController {
     } else if (command === 'export') this.exportSave();
     else if (command === 'reset') {
       if (!window.confirm('협회 코인, 코인샵 구매 내역, 해금과 통계를 모두 초기화할까요? 필요한 경우 먼저 JSON 백업을 내보내세요.')) return;
+        this.runSnapshots.clear(this.accountUserId);
         this.meta = this.save.reset();
         if (this.cloudSync && this.accountUserId) {
           this.lastCloudFingerprint = this.cloudFingerprint(this.meta);
@@ -679,6 +765,7 @@ export class AppController {
       if (file.size > 1_000_000) throw new Error('백업 파일이 너무 큽니다. 1MB 이하의 JSON을 선택하세요.');
       const json = await file.text();
       if (!window.confirm('선택한 백업으로 현재 영구 진행 기록을 교체할까요?')) return;
+        this.runSnapshots.clear(this.accountUserId);
         this.meta = this.save.import(json);
         if (this.cloudSync && this.accountUserId) {
           this.lastCloudFingerprint = this.cloudFingerprint(this.meta);
@@ -702,6 +789,7 @@ export class AppController {
     window.clearInterval(this.autosaveTimer);
     window.removeEventListener('keydown', this.keydown); window.removeEventListener('blur', this.pause);
     document.removeEventListener('visibilitychange', this.visibility); window.removeEventListener('pagehide', this.markOfflineExit);
+    window.removeEventListener('popstate', this.keepActiveRunOpen);
   }
   private unlockAudio = (event?: Event): void => {
     if (event?.target instanceof Element && event.target.closest('[data-action="sound"]')) return;

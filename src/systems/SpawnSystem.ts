@@ -12,6 +12,7 @@ import type { GameEventSink } from '../core/GameEvents';
 import { resolveGateWave } from '../data/gateProgression';
 
 export interface Viewport { width: number; height: number }
+export interface SpawnSnapshot { nextSpawn: number; triggeredElites: number[] }
 
 export function currentWave(stage: MapData, number: number): Wave | undefined { return stage.waveDefinitions.find(w => w.waveNumber === number); }
 
@@ -23,6 +24,12 @@ export class SpawnSystem {
   constructor(private readonly stage: MapData, private readonly random: () => number, private readonly nextId: () => number, private readonly emit: GameEventSink = ignoreGameEvent) {}
 
   reset(): void { this.nextSpawn = 0; this.triggeredElites.clear(); }
+  snapshot(): SpawnSnapshot { return { nextSpawn: this.nextSpawn, triggeredElites: [...this.triggeredElites] }; }
+  restore(snapshot: SpawnSnapshot): void {
+    this.nextSpawn = Math.max(0, snapshot.nextSpawn);
+    this.triggeredElites.clear();
+    for (const index of snapshot.triggeredElites) this.triggeredElites.add(index);
+  }
 
   update(state: RunState, dt: number, viewport: Viewport): void {
     if (state.phase !== 'waveActive') return;

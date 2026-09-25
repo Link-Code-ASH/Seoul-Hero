@@ -28,4 +28,12 @@ describe('touch input contract',()=>{
   active=true;el.send('pointerdown',2,500,200);el.send('pointermove',2,500,256);expect(touch.read().y).toBeCloseTo(1);
   touch.destroy();
  });
+ it('moves at full speed after a short drag and reverses without a long return stroke',()=>{
+  const el=new Surface(),touch=new TouchInput(el as unknown as HTMLElement);
+  el.send('pointerdown',1,100,100);
+  el.send('pointermove',1,108,100);expect(touch.read().x).toBeCloseTo(1);
+  el.send('pointermove',1,180,100);
+  el.send('pointermove',1,133,100);expect(touch.read().x).toBeCloseTo(-1);
+  touch.destroy();
+ });
 });

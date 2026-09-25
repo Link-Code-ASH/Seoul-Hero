@@ -6,7 +6,7 @@ import type { ImageId } from '../data/images';
 // Pixi should not decode every lobby, archive and weapon-detail image at startup.
 const isUiOnly = (id: ImageId): boolean =>
   id === 'wallet' || id === 'associationCoin' || id === 'supplyTicket' ||
-  id === 'kangTaehoonPortrait' ||
+  id === 'kangTaehoonPortrait' || id === 'songJinwooPortrait' ||
   id === 'supplyOpeningBurst' || id === 'supplyResultBackplate' ||
   /^(lobby|meta|weapon|weekly|blessing)/.test(id);
 
