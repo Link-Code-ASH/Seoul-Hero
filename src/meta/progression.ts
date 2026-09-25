@@ -3,6 +3,7 @@ import { metaUpgrades } from '../data/meta';
 import type { MetaEffect } from '../data/meta';
 import { isCharacterUnlocked, isFeatureUnlocked, isItemUnlocked, isMapUnlocked, isWeaponUnlocked, type MetaState } from '../state/MetaState';
 import type { RunState } from '../state/RunState';
+import { guildFacilityLevel } from '../systems/GuildSystem';
 
 function definition(id: string) {
   return Object.hasOwn(metaUpgrades, id) ? metaUpgrades[id] : undefined;
@@ -52,6 +53,8 @@ export function applyRunResult(
 
 export function getMetaModifiers(meta: MetaState): StatModifier[] {
   const result: StatModifier[] = [];
+  const training = guildFacilityLevel(meta, 'training');
+  if (training) result.push({ id: 'guild-training', source: 'meta', stat: 'maxHp', operation: 'multiply', value: 1 + training * 0.02 });
   for (const upgrade of Object.values(metaUpgrades)) {
     if (upgrade.effect.type !== 'stat') continue;
     const level = Math.max(0, Math.min(upgrade.maxLevel, meta.association.upgrades[upgrade.id] ?? 0));

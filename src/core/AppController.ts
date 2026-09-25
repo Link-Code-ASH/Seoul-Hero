@@ -18,6 +18,7 @@ import { KeyboardInput } from '../input/KeyboardInput';
 import { InputManager } from '../input/InputManager';
 import { TouchInput } from '../input/TouchInput';
 import { WorldRenderer } from '../rendering/WorldRenderer';
+import { GuildRenderer } from '../rendering/GuildRenderer';
 import { SaveManager } from '../save/SaveManager';
 import { RunSnapshotStore } from '../save/RunSnapshotStore';
 import { AccountStorageAdapter, LocalStorageAdapter } from '../save/StorageAdapter';
@@ -47,6 +48,9 @@ import { dangunBlessings } from '../data/weeklyGate';
 import { REVIVAL_STONES, type RevivalStoneGrade } from '../data/revivalStones';
 import { hasRevivalStone } from '../systems/RevivalSystem';
 import type { GrowthViewState } from '../ui/MetaScreens';
+import type { GuildViewState } from '../ui/GuildScreen';
+import { guildFacilities, type GuildFacilityId } from '../data/guild';
+import { closestGuildPoint, guildSpawn, moveInGuild, selectGuildAvatar, upgradeGuildFacility } from '../systems/GuildSystem';
 
 /** Owns browser-side wiring. Simulation remains independent of screens and storage. */
 export class AppController {
@@ -68,6 +72,7 @@ export class AppController {
   private deploymentPending = false;
   private readonly audio = new AudioManager(this.meta.settings);
   private readonly renderer = new WorldRenderer();
+  private readonly guildRenderer = new GuildRenderer();
   private readonly keyboard = new KeyboardInput();
   private readonly ui: GameUI;
   private readonly input: InputManager;
@@ -81,6 +86,10 @@ export class AppController {
   private archiveMapId = 'seoul';
   private gateDraft: GateEntryDraft = createGateEntryDraft(this.meta);
   private growthView:GrowthViewState={tab:'character',selectedId:Object.keys(characters)[0]??''};
+  private guildView: GuildViewState = { panelId: null, nearbyId: null };
+  private guildPosition = guildSpawn();
+  private guildReady = false;
+  private guildInitPromise: Promise<void> | null = null;
   private supplyResults:MetaReward[]=[];
   private supplyFanfareTimer=0;
   private offlineClaimTimer=0;
@@ -97,7 +106,7 @@ export class AppController {
 
   constructor(private readonly worldHost: HTMLElement, uiHost: HTMLElement) {
     this.ui = new GameUI(uiHost, this.action, this.change);
-    this.input = new InputManager([this.keyboard, new TouchInput(this.worldHost, () => this.screen === 'waveActive')]);
+    this.input = new InputManager([this.keyboard, new TouchInput(this.worldHost, () => this.screen === 'waveActive' || (this.screen === 'guild' && !this.guildView.panelId))]);
     this.loop = new GameLoop(this.update, this.render);
   }
   async start(): Promise<void> {
@@ -140,6 +149,27 @@ export class AppController {
     })().finally(() => { this.rendererInitPromise = null; });
     return this.rendererInitPromise;
   }
+  private prepareGuildRenderer(): Promise<void> {
+    if (this.guildReady) return Promise.resolve();
+    if (this.guildInitPromise) return this.guildInitPromise;
+    this.guildInitPromise = (async () => {
+      try {
+        await this.guildRenderer.init(this.worldHost, this.meta);
+        this.guildReady = true;
+        this.loop.start();
+      } catch (error) {
+        this.ui.notify(error instanceof Error ? `길드 본부 준비 실패: ${error.message}` : '길드 본부를 열지 못했습니다.');
+      }
+    })().finally(() => { this.guildInitPromise = null; });
+    return this.guildInitPromise;
+  }
+  private async enterGuild(): Promise<void> {
+    if (this.screen !== 'lobby') return;
+    await this.prepareGuildRenderer();
+    if (!this.guildReady || this.screen !== 'lobby') return;
+    this.guildView = { panelId: null, nearbyId: closestGuildPoint(this.guildPosition)?.id ?? null };
+    this.show('guild');
+  }
   private async deployRun(): Promise<void> {
     if (this.deploymentPending || this.screen !== 'gateConfirm') return;
     const problem = validateGateEntry(this.meta, this.gateDraft);
@@ -181,10 +211,12 @@ export class AppController {
     this.gateDraft.gateDepth = Math.max(1, Math.min(this.meta.gateProgression.highestUnlockedDepth, this.gateDraft.gateDepth));
     this.walkTest.remaining = 0;
     this.screen = screen;
-    this.loop.paused = screen !== 'waveActive';
-    this.keyboard.enabled = screen === 'waveActive';
+    this.loop.paused = screen !== 'waveActive' && screen !== 'guild';
+    this.keyboard.enabled = screen === 'waveActive' || (screen === 'guild' && !this.guildView.panelId);
     this.input.clear();
-    this.ui.show(screen, this.meta, this.simulation?.state ?? null, { category:this.archiveCategory,selectedId:this.archiveSelectionId,mapId:this.archiveMapId }, this.gateDraft,this.growthView,this.supplyResults);
+    this.worldHost.classList.toggle('guild-active', screen === 'guild');
+    this.guildRenderer.setVisible(screen === 'guild');
+    this.ui.show(screen, this.meta, this.simulation?.state ?? null, { category:this.archiveCategory,selectedId:this.archiveSelectionId,mapId:this.archiveMapId }, this.gateDraft,this.growthView,this.supplyResults,this.guildView);
     this.ui.dev.element.hidden = !this.meta.settings.developerMode;
     this.audio.setScene(musicForScene(screen, this.simulation?.state ?? null), screen === 'paused' || screen === 'postWave');
     this.syncAudioButton();
@@ -195,6 +227,12 @@ export class AppController {
     }
   }
   private update = (dt: number): boolean => {
+    if (this.screen === 'guild') {
+      if (!this.guildView.panelId) this.guildPosition = moveInGuild(this.guildPosition, this.input.read(), dt);
+      const nearbyId = this.guildView.panelId ? null : closestGuildPoint(this.guildPosition)?.id ?? null;
+      if (nearbyId !== this.guildView.nearbyId) { this.guildView.nearbyId = nearbyId; this.ui.updateGuildPoint(nearbyId); }
+      return true;
+    }
     if (!this.simulation || this.screen !== 'waveActive') return false;
     const direction = this.input.read();
     if (direction.x !== 0 || direction.y !== 0) this.walkTest.remaining = 0;
@@ -205,6 +243,7 @@ export class AppController {
     return this.screen === 'waveActive';
   };
   private render = (dt: number): void => {
+    if (this.screen === 'guild') { this.guildRenderer.render(this.guildPosition, this.meta, dt); return; }
     const run = this.simulation?.state ?? null;
     this.simulation?.telemetry.sample(this.loop.fps);
     if (run && this.simulation && (run.phase === 'postWave' || isTerminal(run.phase))) {
@@ -522,6 +561,11 @@ export class AppController {
     }
     if (event.target instanceof HTMLInputElement || event.target instanceof HTMLSelectElement || event.repeat) return;
     if (event.code === 'Escape' || event.code === 'KeyP') {
+      if (event.code === 'Escape' && this.screen === 'guild') {
+        if (this.guildView.panelId) { this.guildView.panelId = null; this.guildView.nearbyId = closestGuildPoint(this.guildPosition)?.id ?? null; this.show('guild'); }
+        else this.show('lobby');
+        return;
+      }
       if(event.code==='Escape'&&this.screen==='supply'&&this.supplyResults.length){this.supplyResults=[];this.show('supply');return;}
       if (this.screen === 'waveActive') this.pause();
       else if (this.screen === 'paused') this.action('resume');
@@ -549,6 +593,29 @@ export class AppController {
     }
     if (command === 'sound-test') { this.testSound(id); return; }
     if (command === 'dev') { this.developerAction(id); return; }
+    if (command === 'guild') { void this.enterGuild(); return; }
+    if (this.screen === 'guild' && command === 'guild-interact') {
+      const point = closestGuildPoint(this.guildPosition);
+      if (point) { this.guildView.panelId = point.id; this.guildView.nearbyId = null; this.show('guild'); }
+      return;
+    }
+    if (this.screen === 'guild' && command === 'guild-close') {
+      this.guildView.panelId = null; this.guildView.nearbyId = closestGuildPoint(this.guildPosition)?.id ?? null; this.show('guild'); return;
+    }
+    if (this.screen === 'guild' && command === 'guild-upgrade') {
+      if (Object.hasOwn(guildFacilities, id) && this.guildView.panelId === id && upgradeGuildFacility(this.meta, id as GuildFacilityId)) {
+        this.persist(); this.show('guild');
+      }
+      return;
+    }
+    if (this.screen === 'guild' && command === 'guild-avatar') {
+      if (this.guildView.panelId === 'roster' && selectGuildAvatar(this.meta, id)) { this.persist(); this.show('guild'); }
+      return;
+    }
+    if (this.screen === 'guild' && command === 'guild-gate') {
+      if (this.guildView.panelId === 'gate') { this.guildView.panelId = null; this.gateDraft = createGateEntryDraft(this.meta); void this.prepareRenderer(); this.show('gateMap'); }
+      return;
+    }
     if (command === 'gate-deploy') {
       void this.deployRun();
     } else if(command==='gate-map') {if(maps[id]&&isMapUnlocked(this.meta,id)){this.gateDraft.mapId=id;this.show('gateMap');}
@@ -677,7 +744,8 @@ export class AppController {
     if (!simulation || isTerminal(simulation.state.phase)) { this.ui.notify('전투를 시작한 후 사용할 수 있습니다.'); return; }
     if (command === 'walk-left' || command === 'walk-right') {
       if (this.screen !== 'waveActive') { this.ui.notify('전투를 재개한 뒤 걷기를 확인하세요.'); return; }
-      this.walkTest.x = command === 'walk-left' ? -1 : 1; this.walkTest.remaining = 2;
+      this.walkTest.x = command === 'walk-left' ? -1 : 1;
+      this.walkTest.remaining = 2;
       return;
     }
     switch (command) {
@@ -788,7 +856,7 @@ export class AppController {
     window.clearTimeout(this.supplyFanfareTimer);
     this.audio.destroy();
     window.removeEventListener('pointerdown', this.unlockAudio);
-    this.markOfflineExit(); this.loop.stop(); this.input.destroy(); this.renderer.destroy();
+    this.markOfflineExit(); this.loop.stop(); this.input.destroy(); this.renderer.destroy(); this.guildRenderer.destroy();
     window.clearInterval(this.autosaveTimer);
     window.removeEventListener('keydown', this.keydown); window.removeEventListener('blur', this.pause);
     document.removeEventListener('visibilitychange', this.visibility); window.removeEventListener('pagehide', this.markOfflineExit);

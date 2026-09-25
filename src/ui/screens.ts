@@ -5,7 +5,7 @@ import type { RunState } from '../state/RunState';
 import { button, formatTime } from './helpers';
 import { lobbyReturnButton } from './LobbyNavigation';
 
-export type Screen = 'lobby' | 'gateMap' | 'gateDepth' | 'gateCharacter' | 'gateWeapon' | 'gateBlessing' | 'gateConfirm'
+export type Screen = 'lobby' | 'guild' | 'gateMap' | 'gateDepth' | 'gateCharacter' | 'gateWeapon' | 'gateBlessing' | 'gateConfirm'
   | 'growth' | 'association' | 'offline' | 'supply' | 'archive' | 'settings'
   | 'waveActive' | 'paused' | 'revivalChoice' | 'shop' | 'postWave' | 'result';
 const back=()=>lobbyReturnButton();

@@ -1,4 +1,5 @@
 import type { RevivalStoneGrade } from '../data/revivalStones';
+import type { GuildFacilityId } from '../data/guild';
 
 export type RevivalStoneInventory = Record<RevivalStoneGrade, number>;
 export const emptyRevivalStones = (): RevivalStoneInventory => ({ low: 0, mid: 0, high: 0 });
@@ -24,12 +25,14 @@ export interface RunResultSummary {
 }
 export interface AggregateStats { runs: number; clears: number; kills: number; bestWave: number; bestTime: number }
 export interface MetaStatistics extends AggregateStats { byCharacter: Record<string, AggregateStats>; byMap: Record<string, AggregateStats>; lastRun?: RunResultSummary }
+export interface GuildState { avatarCharacterId: string; facilityLevels: Record<GuildFacilityId, number> }
 
 /** Persists between runs. Active combat and Run currency never belong here. */
 export interface MetaState {
   account: { unlockedMapIds: string[]; unlockedItemIds: string[]; unlockedFeatureIds: string[] };
   wallet: { associationCoins: number; supplyTickets: number; revivalStones: RevivalStoneInventory };
   association: { upgrades: Record<string, number> };
+  guild: GuildState;
   gateProgression: GateProgressionState;
   characters: Record<string, CharacterProgress>;
   sharedWeapons: Record<string, SharedWeaponProgress>;
@@ -46,6 +49,7 @@ export function createDefaultMeta(): MetaState {
   return {
     account: { unlockedMapIds: ['seoul'], unlockedItemIds: [], unlockedFeatureIds: [] },
     wallet: { associationCoins: 0, supplyTickets: 0, revivalStones: emptyRevivalStones() }, association: { upgrades: {} },
+    guild: { avatarCharacterId: 'awakener', facilityLevels: { training: 0, recovery: 0, supply: 0 } },
     gateProgression: { highestUnlockedDepth: 1, characters: {} },
     characters: { awakener: { unlocked: true, fragments: 0, breakthrough: 0 }, kangTaehoon: { unlocked: true, fragments: 0, breakthrough: 0 } },
     sharedWeapons: { manaBolt: { unlocked: true, fragments: 0, level: 0 }, manaShotgun: { unlocked: true, fragments: 0, level: 0 } }, blessings: {},

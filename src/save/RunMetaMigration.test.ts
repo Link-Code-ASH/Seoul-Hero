@@ -2,13 +2,13 @@ import { expect, it } from 'vitest';
 import { parseSave } from './migrations';
 import { createDefaultMeta } from '../state/MetaState';
 
-it('migrates v8 through v12 meta state and removes permanent magic stones',()=>{
+it('migrates v8 through v13 meta state and removes permanent magic stones',()=>{
   const legacy={currency:999,deferredMagicStone:44,associationCoins:345,upgrades:{vitality:2},
     unlockedCharacters:['awakener'],unlockedWeapons:['manaBolt','autoTurret'],unlockedItems:['bloodCircuit'],unlockedStages:['seoul'],unlockedFeatures:['reroll'],
     gateProgression:{highestUnlockedDepth:7,characters:{}},weeklyGate:{weekKey:'',traitId:'',blessingCandidateIds:[],selectedBlessingId:'',remainingTraitIds:[]},
     stats:{runs:8,clears:2,totalKills:90,bestWave:7,bestTime:300,totalMetaEarned:999},settings:{masterVolume:.8,soundVolume:.8,combatVolume:.7,uiVolume:.7,musicVolume:.5,muted:true,highResolution:true,developerMode:false}};
   const save=parseSave(JSON.stringify({saveVersion:8,meta:legacy}));
-  expect(save.saveVersion).toBe(12); expect(save.meta.wallet.associationCoins).toBe(345);
+  expect(save.saveVersion).toBe(13); expect(save.meta.wallet.associationCoins).toBe(345);
   expect(save.meta.wallet.revivalStones).toEqual({low:0,mid:0,high:0});
   expect(save.meta.association.upgrades.vitality).toBe(2); expect(save.meta.sharedWeapons.autoTurret?.unlocked).toBe(true);
   expect(save.meta.account.unlockedItemIds).toContain('bloodCircuit'); expect(save.meta.gateProgression.highestUnlockedDepth).toBe(7);

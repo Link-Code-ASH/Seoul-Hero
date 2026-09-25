@@ -12,6 +12,9 @@ import type { MetaReward } from '../meta/SupplySystem';
 import type { GateEntryDraft, GateEntryStep } from '../systems/GateEntrySystem';
 import { accountPanel, type AccountView } from './AccountPanel';
 import { revivalScreen } from './RevivalScreen';
+import { guildScreen, type GuildViewState } from './GuildScreen';
+import type { GuildPointId } from '../data/guild';
+import { guildPoint } from '../systems/GuildSystem';
 export class GameUI {
   readonly hud = new Hud();
   readonly dev = new DevPanel();
@@ -41,7 +44,7 @@ export class GameUI {
       if (value) value.value = `${Math.round(Number(slider.value) * 100)}%`;
     });
   }
-  show(screen: Screen, meta: MetaState, run: RunState | null, archive: ArchiveViewState, gateDraft: GateEntryDraft, growth:GrowthViewState, supplyResults:readonly MetaReward[]): void {
+  show(screen: Screen, meta: MetaState, run: RunState | null, archive: ArchiveViewState, gateDraft: GateEntryDraft, growth:GrowthViewState, supplyResults:readonly MetaReward[], guild: GuildViewState): void {
     const sameScreen = this.root.dataset.screen === screen;
     const panelScroll = sameScreen ? [...this.overlay.querySelectorAll<HTMLElement>('.shop-catalog, .shop-stat-list, .gate-card-grid')].map(el => ({ className: el.className, top: el.scrollTop })) : [];
     const growthScroll = screen === 'growth' && this.root.dataset.screen === 'growth' && this.overlay.querySelector('.facility-tabs .active')?.getAttribute('data-action') === `growth-tab:${growth.tab}`
@@ -63,6 +66,7 @@ export class GameUI {
     const renderers: Partial<Record<Screen, () => string>> = {
       postWave: () => run ? postWaveScreen(run) : '',
       shop: () => run ? shopScreen(run, meta) : '', lobby: () => lobbyScreen(meta),
+      guild: () => guildScreen(meta, guild),
       revivalChoice: () => revivalScreen(meta),
       gateMap: () => gateFlowScreen(screen as GateEntryStep,meta,gateDraft), gateDepth: () => gateFlowScreen(screen as GateEntryStep,meta,gateDraft), gateCharacter: () => gateFlowScreen(screen as GateEntryStep,meta,gateDraft), gateWeapon: () => gateFlowScreen(screen as GateEntryStep,meta,gateDraft), gateBlessing: () => gateFlowScreen(screen as GateEntryStep,meta,gateDraft), gateConfirm: () => gateFlowScreen(screen as GateEntryStep,meta,gateDraft),
       growth:()=>growthScreen(meta,growth),association:()=>associationScreen(meta),offline:()=>offlineScreen(meta),supply:()=>supplyScreen(meta,supplyResults),
@@ -80,7 +84,14 @@ export class GameUI {
     this.overlay.scrollTop = 0;
     this.overlay.scrollLeft = 0;
     if (screen === 'shop') this.overlay.querySelector<HTMLElement>('.shop-screen')?.focus({ preventScroll: true });
-    else if (screen !== 'waveActive' && screen !== 'lobby') this.overlay.querySelector<HTMLElement>('button, input')?.focus({ preventScroll: true });
+    else if (screen !== 'waveActive' && screen !== 'lobby' && screen !== 'guild') this.overlay.querySelector<HTMLElement>('button, input')?.focus({ preventScroll: true });
+  }
+  updateGuildPoint(id: GuildPointId | null): void {
+    const button = this.overlay.querySelector<HTMLButtonElement>('.guild-interact');
+    if (!button) return;
+    const point = id ? guildPoint(id) : undefined;
+    button.hidden = !point;
+    if (point) button.innerHTML = `${point.name} <span>살펴보기</span>`;
   }
   updateAccount(view: AccountView): void {
     this.account.innerHTML = accountPanel(view);

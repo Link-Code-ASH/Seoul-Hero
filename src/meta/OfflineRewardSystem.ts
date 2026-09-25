@@ -2,6 +2,7 @@ import { OFFLINE_REWARD_CONFIG } from '../data/metaFacilities';
 import type { RevivalStoneGrade } from '../data/revivalStones';
 import { emptyOfflineRewards, type MetaState, type PendingOfflineRewards } from '../state/MetaState';
 import { grantMetaReward, type MetaReward } from './SupplySystem';
+import { guildFacilityLevel } from '../systems/GuildSystem';
 
 function rollCoins(rng:()=>number):number {
   const amounts=OFFLINE_REWARD_CONFIG.coinAmounts;
@@ -15,7 +16,7 @@ export function accrueOfflineRewards(meta:MetaState,now=new Date(),rng:()=>numbe
   const elapsed=Math.min(OFFLINE_REWARD_CONFIG.capHours*3600000,now.getTime()-previous);if(elapsed<OFFLINE_REWARD_CONFIG.coinIntervalMinutes*60000)return false;
   const intervals=Math.floor(elapsed/(OFFLINE_REWARD_CONFIG.coinIntervalMinutes*60000));
   for(let i=0;i<intervals;i++){
-    meta.offlineReward.pendingRewards.associationCoins+=rollCoins(rng);
+    meta.offlineReward.pendingRewards.associationCoins+=rollCoins(rng)+guildFacilityLevel(meta,'recovery');
     for(const stone of OFFLINE_REWARD_CONFIG.revivalStones)
       if(rng()<stone.baseChance+stone.chancePerInterval*i)
         meta.offlineReward.pendingRewards.revivalStones[stone.grade as RevivalStoneGrade]++;

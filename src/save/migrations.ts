@@ -116,6 +116,12 @@ const migrations: Record<number, Migration> = {
       offlineReward:{...offline,pendingRewards:{...pending,revivalStones:{low:0,mid:0,high:0}}},
     }};
   },
+  12: (save) => {
+    const meta = isRecord(save.meta) ? save.meta : {};
+    return { ...save, saveVersion: 13, meta: { ...meta,
+      guild: { avatarCharacterId: 'awakener', facilityLevels: { training: 0, recovery: 0, supply: 0 } },
+    } };
+  },
   2: (save) => {
     const meta = isRecord(save.meta) ? save.meta : {};
     return { ...save, saveVersion: 3, meta: { ...meta, unlockedItems: meta.unlockedItems ?? [], unlockedStages: meta.unlockedStages ?? ['seoul'] } };

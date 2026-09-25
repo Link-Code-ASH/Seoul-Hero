@@ -4,6 +4,7 @@ import { dangunBlessings } from '../data/weeklyGate';
 import { weapons } from '../data/weapons';
 import { REVIVAL_STONES, type RevivalStoneGrade } from '../data/revivalStones';
 import type { MetaState } from '../state/MetaState';
+import { guildFacilityLevel } from '../systems/GuildSystem';
 
 export type MetaRewardType = 'associationCoins'|'supplyTicket'|'characterFragment'|'weaponFragment'|'blessingFragment'|'revivalStone';
 export interface MetaReward { type: MetaRewardType; amount: number; contentId?: string }
@@ -41,7 +42,7 @@ export function openSupplyBox(meta:MetaState,count:1|10,rng:()=>number=Math.rand
   };
   for(let i=0;i<count;i++){
     const coin=weightedChoice(SUPPLY_BOX_CONFIG.coinAmounts,tier=>tier.weight,rng);
-    addReward({type:'associationCoins',amount:coin.amount});
+    addReward({type:'associationCoins',amount:coin.amount+guildFacilityLevel(meta,'supply')});
     let hasFragment=false;
     for(const def of SUPPLY_BOX_CONFIG.bonusRewards){
       if(rng()>=def.chance)continue;

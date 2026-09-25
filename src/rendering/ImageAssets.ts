@@ -8,6 +8,7 @@ const isUiOnly = (id: ImageId): boolean =>
   id === 'wallet' || id === 'associationCoin' || id === 'supplyTicket' ||
   id === 'kangTaehoonPortrait' || id === 'songJinwooPortrait' ||
   id === 'supplyOpeningBurst' || id === 'supplyResultBackplate' ||
+  id.startsWith('guild') ||
   /^(lobby|meta|weapon|weekly|blessing)/.test(id);
 
 /** Shared decoded textures are loaded once, not reloaded for entities or chunks. */

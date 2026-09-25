@@ -5,6 +5,7 @@ import { metaUpgrades } from '../data/meta';
 import { dangunBlessings, weeklyGateRules } from '../data/weeklyGate';
 import { weapons } from '../data/weapons';
 import { REVIVAL_STONE_GRADES } from '../data/revivalStones';
+import { guildFacilities } from '../data/guild';
 import { createDefaultMeta, type AggregateStats, type MetaState } from '../state/MetaState';
 
 export function isRecord(value: unknown): value is Record<string, unknown> { return typeof value === 'object' && value !== null && !Array.isArray(value); }
@@ -54,6 +55,12 @@ export function validateMeta(value: unknown): MetaState {
   result.characters = { ...result.characters, ...progressRecords(value.characters, characters, raw => ({
     unlocked: raw.unlocked === true, fragments: bounded(raw.fragments, 0, MAX_COUNTER), breakthrough: bounded(raw.breakthrough, 0, 1_000),
   })) };
+  if (isRecord(value.guild)) {
+    const avatar = value.guild.avatarCharacterId;
+    if (typeof avatar === 'string' && characters[avatar] && result.characters[avatar]?.unlocked) result.guild.avatarCharacterId = avatar;
+    if (isRecord(value.guild.facilityLevels)) for (const facility of Object.values(guildFacilities))
+      result.guild.facilityLevels[facility.id] = bounded(value.guild.facilityLevels[facility.id], 0, facility.maxLevel);
+  }
   result.sharedWeapons = { ...result.sharedWeapons, ...progressRecords(value.sharedWeapons, weapons, raw => ({
     unlocked: raw.unlocked === true, fragments: bounded(raw.fragments, 0, MAX_COUNTER), level: bounded(raw.level, 0, 1_000),
   })) };

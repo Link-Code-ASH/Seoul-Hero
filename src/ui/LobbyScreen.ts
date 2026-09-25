@@ -41,13 +41,15 @@ export function lobbyScreen(meta: MetaState): string {
       <div><img src="${images.supplyTicket.url}" alt=""><span>보급권</span><b>${meta.wallet.supplyTickets.toLocaleString()}</b></div>
     </div>
     <main class="command-deck">
-      <button class="gate-command-card" data-action="gateMap">
+      <div class="command-primary"><button class="gate-command-card" data-action="gateMap">
         <img class="gate-command-bg" src="${images.seoulIntersection.url}" alt="">
         <span class="gate-command-shade"></span>
         <img class="gate-command-device" src="${images.lobbyGate.url}" alt="">
         <span class="gate-command-copy"><small>광화문 작전 구역</small><b>게이트 출동</b><strong>출동 준비 <span aria-hidden="true">↗</span></strong></span>
         <span class="gate-command-record"><small>최근 작전</small><b>${recent}</b></span>
-      </button>
+      </button><button class="guild-command-card" data-action="guild" style="--guild-art:url('${images.guildHall.url}')">
+        <span><small>HUNTER GUILD</small><b>수탐자 본부</b></span><strong>본부 입장 <span aria-hidden="true">↗</span></strong>
+      </button></div>
       <div class="command-modules">${support}</div>
     </main>
   </section>`;

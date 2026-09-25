@@ -1,6 +1,6 @@
 import type { MetaState } from '../state/MetaState';
 
-export const SAVE_VERSION = 12;
+export const SAVE_VERSION = 13;
 export const SAVE_KEY = 'seoul-gate.save';
 export const BACKUP_KEY = 'seoul-gate.save.backup';
 export const RECOVERY_KEY = 'seoul-gate.save.recovery';

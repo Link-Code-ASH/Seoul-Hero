@@ -15,7 +15,7 @@ RunState에는 Wave/시간/HP/무기/아이템/계산 스탯/한 판용 마력�
 - `data`: 콘텐츠와 밸런스
 - `systems`: 전투, 스폰, 무기, 아이템, 통합 상점, 설치물
 - `state`: Run/Meta와 phase, 공통 스탯
-- `world`/`rendering`: 유한 아레나, 카메라, Pixi WebGL
+- `world`/`rendering`: 유한 아레나와 카메라, PixiJS WebGL 전투·이미지 기반 2.5D 길드 본부. 길드원은 기존 탈것 이미지를 재사용합니다.
 - `input`: 키보드·터치를 공통 이동 방향으로 변환
 - `save`/`meta`: 검증·이관·백업, 영구 성장과 종료 정산
 - `ui`/`dev`: HTML 화면과 개발 도구
