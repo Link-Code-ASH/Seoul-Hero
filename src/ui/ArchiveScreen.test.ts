@@ -39,7 +39,7 @@ describe('ArchiveScreen', () => {
     expect(html).toContain('광역 검격');
     expect(html).toContain('연속 검격');
     expect(html).toContain('90°');
-    expect(html).toContain('weapon_mana_sword_01');
+    expect(html).toContain('weapon_mana_sword_casual_01');
   });
 
   it('shows monster behavior and boss patterns', () => {

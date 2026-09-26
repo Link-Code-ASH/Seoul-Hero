@@ -38,16 +38,12 @@ button,.button {
   font-size: 14px;
   font-weight: 600;
   text-decoration: none;
-  transition: background .15s,border-color .15s,transform .15s;
+  transition: background .15s,border-color .15s;
 }
 
 button:hover,.button:hover {
   background: #ffffff14;
   border-color: #8ee5c677;
-}
-
-button:active {
-  transform: translateY(1px);
 }
 
 button:disabled {

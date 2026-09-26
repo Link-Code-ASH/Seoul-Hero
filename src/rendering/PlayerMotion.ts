@@ -72,9 +72,12 @@ export class PlayerMotion {
     this.moving = this.intensity > 0.03;
   }
 
-  get bobY(): number { return -Math.abs(Math.sin(this.phase)) * 1.7 * this.intensity; }
-  get swayX(): number { return Math.sin(this.phase) * 0.65 * this.intensity; }
-  get lean(): number { return Math.max(-0.045, Math.min(0.045, this.directionX * 0.035 * this.intensity)); }
+  get bobY(): number {
+    const vibration = Math.abs(Math.sin(this.phase * 2.4)) * (this.player?.visual.motionStyle === 'truck' ? 1.2 : 2.1);
+    return -(vibration + Math.abs(Math.sin(this.phase * 6)) * .25) * this.intensity;
+  }
+  get swayX(): number { return (Math.sin(this.phase) * .72 + Math.sin(this.phase * 5) * .18) * this.intensity; }
+  get lean(): number { return Math.max(-0.055, Math.min(0.055, (this.directionX * .039 + Math.sin(this.phase) * .011) * this.intensity)); }
   get dragSkew(): number { return -this.directionX * 0.012 * this.intensity; }
   get dragX(): number { return -this.directionX * Math.min(1.2, this.speed / 220) * this.intensity; }
   get dragY(): number { return -this.directionY * Math.min(0.8, this.speed / 300) * this.intensity; }

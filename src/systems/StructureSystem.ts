@@ -39,7 +39,7 @@ export class StructureSystem {
     };
     return best;
   }
-  place(run: RunState, weapon: Weapon, _stats: ResolvedWeaponStats): void {
+  place(run: RunState, weapon: Weapon): void {
     if (!weapon.structure) return;
     const count = run.structures.filter(s => s.weaponId === weapon.id).length;
     if (count >= structureLimit(run, weapon) || run.structures.length >= STRUCTURE_LIMIT) return;

@@ -47,6 +47,7 @@ describe('수탐자 길드 본부', () => {
   it('migrates a v12 save and validates guild state', () => {
     const meta = createDefaultMeta(); meta.wallet.associationCoins = 72;
     const { guild: _guild, ...oldMeta } = meta;
+    expect(_guild.avatarCharacterId).toBe('awakener');
     const save = parseSave(JSON.stringify({ saveVersion: 12, meta: oldMeta }));
     expect(save.saveVersion).toBe(13);
     expect(save.meta.wallet.associationCoins).toBe(72);

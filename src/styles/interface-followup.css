@@ -87,7 +87,7 @@
 .weapon-card-info .selection-seal {margin-top:12px}
 .gate-flow-screen .gate-select-card.selected {border:2px solid #dfc88d;box-shadow:inset 0 0 0 2px #d4e4df51,0 0 0 2px #d7bd8154,0 18px 34px #0009}
 .gate-flow-screen .gate-select-card.selected {animation:choice-lock-in .36s cubic-bezier(.18,.8,.3,1) both}
-@keyframes choice-lock-in {0%{filter:brightness(1.45);transform:translateY(5px) scale(.985)}60%{filter:brightness(1.12);transform:translateY(-3px) scale(1.01)}100%{filter:brightness(1);transform:none}}
+@keyframes choice-lock-in {0%{filter:brightness(1.25)}100%{filter:brightness(1)}}
 .gate-flow-screen .gate-select-card.selected::after {content:'';position:absolute;inset:0 0 0 auto;width:5px;background:linear-gradient(#f6dfaa,#9dd5df,#f6dfaa);pointer-events:none}
 .gate-flow-screen .gate-select-card:not(.map-card):hover {background-image:linear-gradient(130deg,#3e5a64e8,#172b34e9),url('../../assets/ui/ui_texture_worn_metal_01.png');background-size:auto,500px;background-blend-mode:normal,luminosity}
 

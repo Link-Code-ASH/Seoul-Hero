@@ -16,7 +16,7 @@ import type { Projectile } from '../entities/types';
 import type { MetaState } from '../state/MetaState';
 import type { RunState } from '../state/RunState';
 import { createRun } from '../state/createRun';
-import { CombatSystem, weaponStats } from '../systems/CombatSystem';
+import { CombatSystem } from '../systems/CombatSystem';
 import { EnemySystem } from '../systems/EnemySystem';
 import { PickupSystem } from '../systems/PickupSystem';
 import { SpawnSystem, type Viewport, type SpawnSnapshot } from '../systems/SpawnSystem';
@@ -177,7 +177,7 @@ export class Simulation {
   }
   debugStructures(clear = false): void {
     this.state.structures.length = 0;
-    if (!clear) for (const slot of this.state.ownedWeapons) { const w=weapons[slot.id]!; this.combat.structures.place(this.state,w,weaponStats(w,slot.level,this.state)); }
+    if (!clear) for (const slot of this.state.ownedWeapons) { const w=weapons[slot.id]!; this.combat.structures.place(this.state,w); }
   }
   debugShop(): boolean {
     if (!this.active() || this.state.pendingBranchWeaponId) return false;

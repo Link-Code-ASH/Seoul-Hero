@@ -14,6 +14,9 @@ export interface SpriteTransform {
   scaleY?: number;
   skewX?: number;
   tint?: number;
+  spriteId?: ImageId;
+  groundY?: number;
+  anchorY?: number;
 }
 
 /** Shares small generated textures and reuses display objects across entity lifetimes. */
@@ -30,7 +33,8 @@ export class EntitySprites {
 
   draw(x: number, y: number, radius: number, visual: Visual, role: SpriteRole, alpha = 1, rotation = 0, flash = false, animatedTexture?: Texture, facing = 1, heightRatio?: number, transform: SpriteTransform = {}): void {
     const key = `${visual.shape}:${role}:${visual.motif??''}`;
-    const imageTexture = animatedTexture ?? (visual.sprite ? this.art.get(visual.sprite) : undefined);
+    const spriteId = transform.spriteId ?? visual.sprite;
+    const imageTexture = animatedTexture ?? (spriteId ? this.art.get(spriteId) : undefined);
     let texture = imageTexture ?? this.textures.get(key);
     if (!texture) {
       texture = this.createTexture(visual.shape, role, visual.motif);
@@ -46,9 +50,11 @@ export class EntitySprites {
     this.used++;
     sprite.mask = null;
     sprite.texture = texture;
-    sprite.position.set(x + (transform.offsetX ?? 0), y + (transform.offsetY ?? 0));
-    if (imageTexture && visual.sprite) {
-      const height = radius * (heightRatio ?? images[visual.sprite].heightRatio);
+    sprite.anchor.set(0.5, transform.groundY === undefined ? 0.5 : (transform.anchorY ?? .87));
+    sprite.position.set(x + (transform.offsetX ?? 0), (transform.groundY ?? y) + (transform.offsetY ?? 0));
+    sprite.zIndex = transform.groundY ?? y;
+    if (imageTexture && spriteId) {
+      const height = radius * (heightRatio ?? images[spriteId].heightRatio);
       sprite.scale.set(height / imageTexture.height * facing * (transform.scaleX ?? 1), height / imageTexture.height * (transform.scaleY ?? 1));
     } else sprite.scale.set(radius / 20);
     sprite.rotation = rotation;
@@ -71,7 +77,9 @@ export class EntitySprites {
     this.used++;
     sprite.mask = null;
     sprite.texture = texture;
+    sprite.anchor.set(0.5);
     sprite.position.set(x, y);
+    sprite.zIndex = y;
     sprite.width = width;
     sprite.height = height;
     sprite.rotation = rotation;
@@ -95,7 +103,9 @@ export class EntitySprites {
     }
     this.used++;
     sprite.texture = texture;
+    sprite.anchor.set(0.5);
     sprite.position.set(x, y);
+    sprite.zIndex = y;
     sprite.width = width;
     sprite.height = height;
     sprite.rotation = rotation;

@@ -2,7 +2,7 @@ import type { MetaState } from '../state/MetaState';
 import type { RunState } from '../state/RunState';
 import { DevPanel } from '../dev/DevPanel';
 import { Hud } from './Hud';
-import { shopScreen, postWaveScreen, pauseScreen, resultScreen, settingsScreen } from './screens';
+import { shopScreen, postWaveScreen, pauseScreen, resultScreen, settingsScreen, titleScreen } from './screens';
 import type { Screen } from './screens';
 import { archiveScreen, type ArchiveViewState } from './ArchiveScreen';
 import { lobbyScreen } from './LobbyScreen';
@@ -44,7 +44,7 @@ export class GameUI {
       if (value) value.value = `${Math.round(Number(slider.value) * 100)}%`;
     });
   }
-  show(screen: Screen, meta: MetaState, run: RunState | null, archive: ArchiveViewState, gateDraft: GateEntryDraft, growth:GrowthViewState, supplyResults:readonly MetaReward[], guild: GuildViewState): void {
+  show(screen: Screen, meta: MetaState, run: RunState | null, archive: ArchiveViewState, gateDraft: GateEntryDraft, growth:GrowthViewState, supplyResults:readonly MetaReward[], guild: GuildViewState, canContinue = false): void {
     const sameScreen = this.root.dataset.screen === screen;
     const panelScroll = sameScreen ? [...this.overlay.querySelectorAll<HTMLElement>('.shop-catalog, .shop-stat-list, .gate-card-grid')].map(el => ({ className: el.className, top: el.scrollTop })) : [];
     const growthScroll = screen === 'growth' && this.root.dataset.screen === 'growth' && this.overlay.querySelector('.facility-tabs .active')?.getAttribute('data-action') === `growth-tab:${growth.tab}`
@@ -64,6 +64,7 @@ export class GameUI {
     this.overlay.hidden = screen === 'waveActive';
     this.overlay.classList.toggle('overlay-screen', inRun || screen === 'result' || screen === 'revivalChoice');
     const renderers: Partial<Record<Screen, () => string>> = {
+      title: () => titleScreen(canContinue),
       postWave: () => run ? postWaveScreen(run) : '',
       shop: () => run ? shopScreen(run, meta) : '', lobby: () => lobbyScreen(meta),
       guild: () => guildScreen(meta, guild),
@@ -84,7 +85,7 @@ export class GameUI {
     this.overlay.scrollTop = 0;
     this.overlay.scrollLeft = 0;
     if (screen === 'shop') this.overlay.querySelector<HTMLElement>('.shop-screen')?.focus({ preventScroll: true });
-    else if (screen !== 'waveActive' && screen !== 'lobby' && screen !== 'guild') this.overlay.querySelector<HTMLElement>('button, input')?.focus({ preventScroll: true });
+    else if (screen !== 'waveActive' && screen !== 'lobby' && screen !== 'guild' && screen !== 'title') this.overlay.querySelector<HTMLElement>('button, input')?.focus({ preventScroll: true });
   }
   updateGuildPoint(id: GuildPointId | null): void {
     const button = this.overlay.querySelector<HTMLButtonElement>('.guild-interact');

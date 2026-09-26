@@ -22,7 +22,7 @@ export interface GuildFacility extends GuildPoint {
 
 export const GUILD_NAME = '수탐자';
 export const GUILD_ROOM = { width: 1280, height: 720, minX: 105, maxX: 1175, minY: 290, maxY: 655,
-  spawnX: 640, spawnY: 555, speed: 205, interactionRadius: 160 } as const;
+  spawnX: 640, spawnY: 555, speed: 185, interactionRadius: 160 } as const;
 
 export const guildFacilities: Record<GuildFacilityId, GuildFacility> = {
   training: { id: 'training', name: '훈련실', x: 300, y: 357, radius: 72, art: 'guildTraining',

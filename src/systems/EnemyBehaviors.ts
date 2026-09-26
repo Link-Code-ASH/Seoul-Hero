@@ -1,4 +1,4 @@
-import { ENEMY_RULES as R } from '../data/enemyConfig';
+import { ENEMY_MOVE_SCALE, ENEMY_RULES as R } from '../data/enemyConfig';
 import type { EnemyDefinition } from '../data/types';
 import type { Enemy } from '../entities/types';
 import type { RunState } from '../state/RunState';
@@ -19,7 +19,7 @@ function charge(e: Enemy, c: EnemyContext, ambush = false): void {
   if (e.action === 'warning') {
     if (e.timer <= 0) { e.action = 'dash'; e.timer = tuning.duration; }
   } else if (e.action === 'dash') {
-    moveToward(e, e.aimX, e.aimY, c.dt, tuning.speed);
+    moveToward(e, e.aimX, e.aimY, c.dt, tuning.speed * ENEMY_MOVE_SCALE);
     if (e.timer <= 0) { e.action = 'move'; e.timer = tuning.cooldown; }
   } else if (e.timer <= 0 && distance(e, c) < tuning.triggerRange) {
     aim(e, c); e.action = 'warning'; e.timer = tuning.warning;
@@ -43,7 +43,7 @@ function boss(e: Enemy, c: EnemyContext): void {
   const patterns = c.def.bossPatterns; if (!patterns?.length) { chase(e, c); return; }
   const pattern = patterns[e.pattern % patterns.length]!;
   if (e.action === 'dash') {
-    moveToward(e, e.aimX, e.aimY, c.dt, R.chargeSpeed);
+    moveToward(e, e.aimX, e.aimY, c.dt, R.chargeSpeed * ENEMY_MOVE_SCALE);
     if (e.timer <= 0) { e.action = 'move'; e.timer = pattern.cooldown; e.pattern++; }
     return;
   }

@@ -26,3 +26,5 @@
 @import "./revival.css";
 @import "./mobile-viewport.css";
 @import "./guild.css";
+/* Final shared presentation layer. */
+@import "./game-shell.css";

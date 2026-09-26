@@ -11,6 +11,9 @@ export const ENEMY_RULES = {
   ambushCooldown: 4, ambushWarning: 0.65, ambushSpeed: 780,
   auraInterval: 3, auraRadius: 130, auraWarning: 0.8, auraDamage: 8,
 } as const;
+export const ENEMY_MOVE_SCALE = 0.86;
+export const enemyBaseMoveSpeed = (id: string, speed: number): number =>
+  speed * (id === 'swarm' ? 0.65 : ENEMY_MOVE_SCALE);
 export const CURSE_RULES = { hpPerPoint: 0.01, damagePerPoint: 0.01, speedPerPoint: 0.002,
   spawnPerPoint: 0.005, eliteChancePerPoint: 0.001, maxIntensity: 5, maxEliteChance: 0.25 } as const;
 export const DROP_RULES = { magicStoneRadius: 9, mergeDistance: 70, magicStoneLifetime: 30 } as const;

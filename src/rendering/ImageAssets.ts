@@ -34,7 +34,7 @@ export class ImageAssets {
         }
         if (!definition.url) throw new Error('Missing asset URL');
         const texture = await Assets.load<Texture>(definition.url);
-        if (id === 'player' || id === 'kangTaehoonTruck' || id === 'manaShotgunPellet' || id === 'magicStone' || id === 'guardianShuriken' || id === 'manaFieldAura' || id.startsWith('vfx') || id === 'brute' || id === 'hound' || id === 'boss' || id === 'riftQueen' || ['bulwark','spitter','swarm','charger','bomber','splitter','mender','summoner','sentinel','lurker'].includes(id)) {
+        if (id === 'player' || id === 'kangTaehoonTruck' || id === 'manaShotgunPellet' || id === 'magicStone' || id === 'guardianShuriken' || id === 'manaFieldAura' || id.startsWith('vfx') || id === 'brute' || id === 'hound' || id === 'boss' || id === 'riftQueen' || ['bulwark','spitter','swarm','charger','bomber','splitter','mender','summoner','sentinel','lurker','splitterAir','spitterFire','chargerBrace','bossAttack','riftQueenCast'].includes(id)) {
           texture.source.scaleMode = 'linear';
           texture.source.autoGenerateMipmaps = true;
           texture.source.maxAnisotropy = 4;

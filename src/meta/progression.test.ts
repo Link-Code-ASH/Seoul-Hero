@@ -29,7 +29,7 @@ describe('협회 코인샵', () => {
     expect(purchaseUpgrade(meta, 'power')).toBe(true);
     expect(purchaseUpgrade(meta, 'mobility')).toBe(true);
     expect(getMetaBonuses(meta).damage).toBeCloseTo(1.08);
-    expect(getMetaBonuses(meta).moveSpeed).toBeCloseTo(210 * 1.03);
+    expect(getMetaBonuses(meta).moveSpeed).toBeCloseTo(185 * 1.03);
     const cap = metaUpgrades.vitality!.maxLevel;
     for (let level = 1; level < cap; level += 1) expect(purchaseUpgrade(meta, 'vitality')).toBe(true);
     const before = meta.wallet.associationCoins;

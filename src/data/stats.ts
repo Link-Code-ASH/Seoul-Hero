@@ -3,7 +3,7 @@ export const DEFAULT_STATS = {
   damage: 1, attackSpeed: 1, meleeDamage: 1, rangedDamage: 1,
   criticalChance: 0, criticalDamage: 1.5, range: 1, area: 1, duration: 1, projectileSpeed: 1,
   maxHp: 100, armor: 0, dodge: 0, lifesteal: 0, hpRegeneration: 0,
-  moveSpeed: 210, currencyGain: 1, pickupRange: 100, luck: 0, curse: 0,
+  moveSpeed: 185, currencyGain: 1, pickupRange: 100, luck: 0, curse: 0,
 };
 export type StatKey = keyof typeof DEFAULT_STATS;
 export type PlayerStats = Record<StatKey, number>;

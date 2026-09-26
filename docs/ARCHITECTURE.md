@@ -8,7 +8,7 @@ RunPhase는 `preparing → waveActive → postWave → shop → waveActive` 전�
 
 RunState에는 Wave/시간/HP/무기/아이템/계산 스탯/한 판용 마력석/복구 지갑/통합 상점과 출동 시 고정된 맵·심도·주간 규칙·축복만 둡니다. 저장 v12의 MetaState는 계정 해금, 게이트 진행, 캐릭터, 공용 무기, 축복, 생환석 보유 수량, 협회, 주간 상태, 보급, 오프라인 보상, 통계, 설정을 책임별 하위 상태로 보존합니다.
 
-전투 밖에서는 `lobby`가 시작 화면입니다. `GateEntryDraft`는 저장하지 않는 임시 선택이며 `map → depth → character → weapon → blessing → confirm` 여섯 화면을 거쳐 중앙 검증을 통과해야 Simulation을 만듭니다. 맵 정의는 `data/maps`, 계정 공용 심도는 MetaState의 `gateProgression`에 있어 서로 독립적입니다.
+실행 시 `title` 화면이 열립니다. 기기 전용 Run 체크포인트가 있으면 이어하기로 복원하고, 없으면 입장으로 로비를 엽니다. 일시정지의 게임 종료는 Run을 포기 처리하고 RunSettlement·통계 기록을 한 번 수행한 뒤 로비로 이동합니다. `GateEntryDraft`는 저장하지 않는 임시 선택이며 `map → depth → character → weapon → blessing → confirm` 여섯 화면을 거쳐 중앙 검증을 통과해야 Simulation을 만듭니다. 맵 정의는 `data/maps`, 계정 공용 심도는 MetaState의 `gateProgression`에 있어 서로 독립적입니다.
 
 ## 모듈
 

@@ -120,7 +120,7 @@ export class CombatSystem {
       if (slot.cooldownRemaining > 0) continue;
       const stats = weaponStats(definition, slot.level, state);
       if (definition.structure) {
-        this.structures.place(state,definition,stats);
+        this.structures.place(state,definition);
         slot.cooldownRemaining = definition.structure.kind === 'mine' ? stats.cooldown : definition.structure.placementInterval;
         continue;
       }

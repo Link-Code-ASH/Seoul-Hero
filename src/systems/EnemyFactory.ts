@@ -1,6 +1,6 @@
 import { enemies } from '../data/enemies';
 import { eliteModifiers, type EliteModifierId } from '../data/eliteModifiers';
-import { CURSE_RULES, ENEMY_RULES } from '../data/enemyConfig';
+import { CURSE_RULES, ENEMY_RULES, enemyBaseMoveSpeed } from '../data/enemyConfig';
 import type { Enemy } from '../entities/types';
 import type { Vec2 } from '../data/types';
 import type { EnemyDifficulty } from '../data/gateProgression';
@@ -24,7 +24,7 @@ export function createEnemy(id: number, definitionId: string, position: Vec2, cu
   const elite = !boss && (unique.length > 0 || hpMultiplier > 1), c = curseBonuses(curse);
   const maxHp = def.maxHp * hp * c.hp * gate.hp;
   return { id, definitionId, ...position, hp: maxHp, maxHp, radius: def.radius * size,
-    moveSpeed: def.moveSpeed * speed * c.speed * gate.speed, contactDamage: def.contactDamage * damage * c.damage * gate.damage,
+    moveSpeed: enemyBaseMoveSpeed(def.id, def.moveSpeed) * speed * c.speed * gate.speed, contactDamage: def.contactDamage * damage * c.damage * gate.damage,
     magicStoneDrop: def.magicStoneDrop * reward * gate.reward, visual: def.visual, elite, boss, hitFlash: 0,
     armor, baseArmor: armor, regeneration, cursedAura: aura, eliteModifiers: unique,
     age: 0, timer: 0, action: 'move', aimX: 0, aimY: 0, pattern: 0, summonCount: 0, auraTimer: ENEMY_RULES.auraInterval, alpha: 1, rewardEligible: true };

@@ -5,6 +5,7 @@ import type { Screen } from '../ui/screens';
 
 export function musicForScene(screen: Screen, run: RunState | null): BgmId | null {
   if (screen === 'result') return null;
+  if (screen === 'guild') return 'guild';
   if (run && ['waveActive', 'paused', 'revivalChoice', 'shop', 'postWave'].includes(screen)) return run.bossSpawned ? 'boss' : 'combat';
   return 'menu';
 }

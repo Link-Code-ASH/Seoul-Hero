@@ -18,6 +18,7 @@ import { weaponStats } from '../systems/CombatSystem';
 import { WEAPON_CONFIG } from '../data/weaponConfig';
 import type { Enemy } from '../entities/types';
 import { CombatVfx } from './CombatVfx';
+import { enemyPose, groundProfileFor } from './CombatArt';
 import { MAGIC_STONE_TIERS } from '../data/magicStoneConfig';
 import { enemyPresentation, fallbackEnemyPresentation } from '../data/enemyPresentation';
 
@@ -53,6 +54,7 @@ export class WorldRenderer {
   private displayTime = 0;
   private scale = 1;
   private currentMapId = 'seoul';
+  private readonly enemyFacing = new Map<number, { x: number; facing: -1 | 1 }>();
 
 
   async init(host: HTMLElement): Promise<void> {
@@ -76,6 +78,7 @@ export class WorldRenderer {
     this.app.canvas.style.display = 'block';
     this.app.stage.addChild(this.world);
     this.vfxGlow.blendMode = 'add';
+    this.actors.sortableChildren = true;
     this.world.addChild(this.arenaBase, this.backgrounds, this.arenaMask, this.boundary, this.shadows, this.vfxBack, this.actors, this.markings, this.vfxGlow, this.vfxFront);
     this.arenaBase.mask = this.arenaMask;
     this.backgrounds.mask = this.arenaMask;
@@ -189,15 +192,31 @@ export class WorldRenderer {
     const player = state.player;
     const motion = this.playerMotion;
     this.shadows.clear();
-    for (const enemy of state.enemies) {
-      if (!this.camera.sees(enemy, enemy.radius * 2, this.viewport)) continue;
-      const enemyMotion = this.enemyMotion(enemy, state.stageCombatTime);
-      const shadowY = enemy.y + enemy.radius * 0.78;
-      this.shadows.ellipse(enemy.x, shadowY, enemy.radius * 1.08 * enemyMotion.shadowScale, enemy.radius * 0.34 * enemyMotion.shadowScale)
-        .fill({ color: 0x040609, alpha: enemyMotion.shadowAlpha * 0.34 * enemy.alpha });
-      this.shadows.ellipse(enemy.x, shadowY, enemy.radius * 0.76 * enemyMotion.shadowScale, enemy.radius * 0.21 * enemyMotion.shadowScale)
-        .fill({ color: 0x020304, alpha: enemyMotion.shadowAlpha * 0.72 * enemy.alpha });
-    }
+    const activeEnemyIds = new Set(state.enemies.map(enemy => enemy.id));
+    for (const id of this.enemyFacing.keys()) if (!activeEnemyIds.has(id)) this.enemyFacing.delete(id);
+    const visibleEnemies = state.enemies.filter(enemy => this.camera.sees(enemy, enemy.radius * 3, this.viewport));
+    const enemyDraw = visibleEnemies.map(enemy => {
+      const appearance = this.enemyMotion(enemy, state.stageCombatTime);
+      const ground = groundProfileFor(enemy.visual.sprite);
+      const previous = this.enemyFacing.get(enemy.id);
+      let facing: -1 | 1 = previous?.facing ?? (player.x < enemy.x ? -1 : 1);
+      const dx = enemy.x - (previous?.x ?? enemy.x);
+      if (Math.abs(dx) > .08) facing = dx < 0 ? -1 : 1;
+      if (enemy.action === 'warning' && Math.abs(enemy.aimX - enemy.x) > .5) facing = enemy.aimX < enemy.x ? -1 : 1;
+      this.enemyFacing.set(enemy.id, { x: enemy.x, facing });
+      const footY = enemy.y + enemy.radius * ground.groundOffset;
+      const lift = Math.max(0, -appearance.bobY);
+      const liftRatio = Math.min(1, lift / Math.max(1, enemy.radius * .6));
+      const dashStretch = enemy.action === 'dash' ? 1.18 : 1;
+      const width = enemy.radius * ground.shadowWidth * appearance.shadowScale * dashStretch;
+      const depth = enemy.radius * ground.shadowDepth * appearance.shadowScale / dashStretch;
+      const alpha = ground.shadowAlpha * enemy.alpha * (1 - liftRatio * .48);
+      this.shadows.ellipse(enemy.x, footY, width * 1.25, depth * 1.55)
+        .fill({ color: ground.shadowColor, alpha: alpha * .3 });
+      this.shadows.ellipse(enemy.x, footY, width, depth)
+        .fill({ color: ground.shadowColor, alpha });
+      return { enemy, appearance, ground, footY, facing };
+    });
     for (const structure of state.structures) {
       const kind = weapons[structure.weaponId]?.structure?.kind;
       if (!kind) continue;
@@ -225,12 +244,24 @@ export class WorldRenderer {
         .fill({ color: 0x080611, alpha: 0.3 });
     }
     const truck = player.visual.motionStyle === 'truck';
-    this.shadows.ellipse(
-      player.x,
-      player.y + player.radius * 1.35,
-      player.radius * (truck ? 2.05 : 1.65) * motion.shadowScale,
-      player.radius * (truck ? 0.55 : 0.46) * motion.shadowScale,
-    ).fill({ color: 0x050705, alpha: motion.shadowAlpha });
+    const playerGround = groundProfileFor(player.visual.sprite);
+    const playerFootY = player.y + player.radius * playerGround.groundOffset;
+    const playerShadowWidth = player.radius * playerGround.shadowWidth * motion.shadowScale;
+    const playerShadowDepth = player.radius * playerGround.shadowDepth * motion.shadowScale;
+    this.shadows.ellipse(player.x, playerFootY, playerShadowWidth * 1.24, playerShadowDepth * 1.55)
+      .fill({ color: playerGround.shadowColor, alpha: motion.shadowAlpha * .35 });
+    this.shadows.ellipse(player.x, playerFootY, playerShadowWidth, playerShadowDepth)
+      .fill({ color: playerGround.shadowColor, alpha: motion.shadowAlpha });
+    if (motion.magicLag > .08) {
+      const trail = Math.min(18, 6 + motion.magicLag * 12);
+      const back = player.x - motion.facing * player.radius * .55;
+      const color = truck ? 0x72969d : 0x55b9b3;
+      for (const track of truck ? [-5, 5] : [0]) {
+        this.shadows.moveTo(back, playerFootY + track)
+          .lineTo(back - motion.facing * trail, playerFootY + track + 1.5)
+          .stroke({ color, alpha: motion.magicLag * (truck ? .23 : .3), width: truck ? 1.8 : 1.3 });
+      }
+    }
     drawWeaponEffects(this.markings, state);
     for (const structure of state.structures) {
       const weapon = weapons[structure.weaponId];
@@ -273,23 +304,24 @@ export class WorldRenderer {
         });
       }
     }
-    for (const enemy of state.enemies) {
-      if (!this.camera.sees(enemy, enemy.radius * 2, this.viewport)) continue;
-      const enemyMotion = this.enemyMotion(enemy, state.stageCombatTime);
+    for (const { enemy, appearance: enemyMotion, ground, footY, facing } of enemyDraw) {
       const behavior = enemies[enemy.definitionId]?.behavior;
       const charging = behavior === 'charge' && enemy.action === 'warning';
+      const healing = enemy.definitionId === 'mender' && enemy.timer > ENEMY_RULES.supportInterval - .28;
+      const summoning = enemy.definitionId === 'summoner' && enemy.timer > ENEMY_RULES.summonInterval - .36;
       const chargePulse = 0.5 + Math.sin(this.displayTime * 18 + enemy.id) * 0.5;
-      sprites.draw(enemy.x, enemy.y, enemy.radius, enemy.visual, 'enemy', enemy.alpha, enemyMotion.rotation, enemy.hitFlash > 0, undefined, 1, undefined, {
+      const castPulse = 1 + (healing || summoning ? .045 * (1 + Math.sin(this.displayTime * 21)) : 0);
+      sprites.draw(enemy.x, enemy.y, enemy.radius, enemy.visual, 'enemy', enemy.alpha, enemyMotion.rotation, enemy.hitFlash > 0, undefined, facing, undefined, {
+        spriteId: enemyPose(enemy, -enemyMotion.bobY),
+        groundY: footY,
+        anchorY: ground.anchorY,
         offsetX: enemyMotion.swayX,
         offsetY: enemyMotion.bobY,
-        scaleX: enemyMotion.scaleX,
-        scaleY: enemyMotion.scaleY,
-        tint: charging ? (chargePulse > 0.52 ? 0xff6658 : 0xd9473f) : enemyMotion.tint,
+        scaleX: enemyMotion.scaleX * castPulse,
+        scaleY: enemyMotion.scaleY * castPulse,
+        tint: charging ? (chargePulse > 0.52 ? 0xffe0d8 : 0xffac9a)
+          : healing ? 0xc7ffe0 : summoning ? 0xe3caff : 0xffffff,
       });
-      if (charging) {
-        // The red body tint is the complete charge cue. Avoid rings and route
-        // lines that detach the monster from the painted world.
-      }
       if (enemy.action === 'warning' && behavior !== 'ranged' && behavior !== 'charge') {
         if (behavior === 'bomber') {
           const pulse = 0.5 + Math.sin(this.displayTime * 7) * 0.5;
@@ -338,6 +370,8 @@ export class WorldRenderer {
     }
     const blink = player.invulnerability > 0 ? 0.55 + Math.sin(this.displayTime * 45) * 0.3 : 1;
     sprites.draw(player.x, player.y, player.radius, player.visual, 'player', blink, motion.lean * (truck ? 0.42 : 1), false, undefined, motion.facing, undefined, {
+      groundY: playerFootY,
+      anchorY: playerGround.anchorY,
       offsetX: (motion.swayX + motion.dragX) * (truck ? 0.45 : 1),
       offsetY: (motion.bobY + motion.dragY) * (truck ? 0.4 : 1),
       scaleX: 1 + (motion.scaleX - 1) * (truck ? 0.35 : 1),
@@ -347,14 +381,14 @@ export class WorldRenderer {
   }
 
   /** A presentation-only pulse: no position, collision, or enemy AI is changed. */
-  private enemyMotion(enemy: Enemy, combatTime: number): { bobY: number; swayX: number; rotation: number; scaleX: number; scaleY: number; shadowScale: number; shadowAlpha: number; tint: number } {
+  private enemyMotion(enemy: Enemy, combatTime: number): { bobY: number; swayX: number; rotation: number; scaleX: number; scaleY: number; shadowScale: number } {
     const profile = enemyPresentation[enemy.definitionId] ?? fallbackEnemyPresentation;
     const active = enemy.action === 'move' || enemy.action === 'dash' ? 1 : 0.28;
     const dash = enemy.action === 'dash' ? 1.65 : 1;
     const phase = combatTime * (profile.frequency + Math.min(enemy.moveSpeed, 180) * 0.006) * dash + enemy.id * 1.71;
     const stride = Math.sin(phase);
     const contact = Math.max(0, Math.cos(phase * 2)) * active;
-    let lift = stride * Math.min(profile.bob, enemy.radius * 0.12) * active;
+    let lift = Math.max(0, stride) * Math.min(profile.bob, enemy.radius * 0.12) * active;
     let sway = Math.sin(phase * .5) * Math.min(profile.sway, enemy.radius * .1) * active;
     let rotation = Math.sin(phase * .5) * profile.roll * active;
     let scaleX = 1 + contact * profile.squash;
@@ -362,14 +396,14 @@ export class WorldRenderer {
     let shadowLift = Math.abs(stride) * Math.min(.16, profile.bob * .038) * active;
 
     if (profile.mode === 'crawl') { lift = Math.max(0,stride) * profile.bob * .55 * active; sway *= .65; rotation += Math.sin(phase) * .008; }
-    if (profile.mode === 'pounce') { lift = Math.max(0,stride) * profile.bob * active; scaleX += Math.max(0,-stride) * .035; scaleY -= Math.max(0,-stride) * .025; }
+    if (profile.mode === 'pounce') { lift = Math.max(0,stride) * Math.min(4, enemy.radius * .3) * active; scaleX += Math.max(0,-stride) * .035; scaleY -= Math.max(0,-stride) * .025; }
     if (profile.mode === 'stomp' || profile.mode === 'bossStomp') { lift = Math.max(0,stride) * profile.bob * active; sway = Math.sin(phase) * profile.sway * active; rotation *= .35; shadowLift *= .45; }
     if (profile.mode === 'aim') { lift *= .45; sway = Math.sin(phase * .7) * profile.sway * active; rotation += enemy.action === 'warning' ? -.025 : 0; }
     if (profile.mode === 'skitter') { lift = Math.abs(stride) * profile.bob * active; sway += Math.sin(phase * 2.3) * .55 * active; rotation += Math.sin(phase * 1.7) * .018 * active; }
-    if (profile.mode === 'charge') { rotation *= .45; scaleX += enemy.action === 'dash' ? .06 : 0; scaleY -= enemy.action === 'dash' ? .035 : 0; }
+    if (profile.mode === 'charge') { rotation *= .45; scaleX += enemy.action === 'dash' ? .075 : 0; scaleY -= enemy.action === 'dash' ? .045 : enemy.action === 'warning' ? .055 : 0; lift *= enemy.action === 'warning' ? .2 : 1; }
     if (profile.mode === 'pulse') { lift *= .55; const pulse=Math.sin(phase*.8)*profile.squash*active; scaleX+=pulse;scaleY-=pulse*.7; }
-    if (profile.mode === 'ooze') { lift *= .35; const ooze=Math.sin(phase*.72)*profile.squash*active; scaleX+=ooze;scaleY-=ooze*.8;sway+=Math.sin(phase*.31)*.65; }
-    if (profile.mode === 'float' || profile.mode === 'queenFloat') { sway=Math.sin(phase*.58)*profile.sway;rotation=Math.sin(phase*.42)*profile.roll;scaleX=1+Math.sin(phase*.6)*profile.squash;scaleY=1-Math.sin(phase*.6)*profile.squash*.5;shadowLift=Math.abs(stride)*.22; }
+    if (profile.mode === 'ooze') { lift = Math.max(0, Math.sin(phase)) * Math.min(6, enemy.radius * .3) * active; const ooze=Math.sin(phase*.72)*profile.squash*active; scaleX+=ooze;scaleY-=ooze*.8;sway+=Math.sin(phase*.31)*.65;shadowLift=Math.min(.27,lift/enemy.radius); }
+    if (profile.mode === 'float' || profile.mode === 'queenFloat') { lift=1+Math.max(0,Math.sin(phase*.6))*(profile.mode === 'queenFloat' ? 1.5 : 1);sway=Math.sin(phase*.58)*profile.sway;rotation=Math.sin(phase*.42)*profile.roll;scaleX=1+Math.sin(phase*.6)*profile.squash;scaleY=1-Math.sin(phase*.6)*profile.squash*.5;shadowLift=Math.min(.2,lift/enemy.radius); }
     if (profile.mode === 'brace') { lift=Math.max(0,stride)*profile.bob*.45*active;rotation*=.25;sway*=.3;if(enemy.action==='warning'){scaleX+=.045;scaleY-=.025;} }
     if (profile.mode === 'stalk') { lift=Math.abs(stride)*profile.bob*.55*active;sway=Math.sin(phase*.36)*profile.sway*active;rotation+=Math.sin(phase*1.25)*.016*active; }
     return {
@@ -379,8 +413,6 @@ export class WorldRenderer {
       scaleX,
       scaleY,
       shadowScale: 1 - shadowLift,
-      shadowAlpha: profile.shadowAlpha,
-      tint: profile.ambientTint,
     };
   }
 
@@ -393,4 +425,3 @@ export class WorldRenderer {
     this.host = null;
   }
 }
-

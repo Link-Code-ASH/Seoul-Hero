@@ -80,7 +80,7 @@ export class AppController {
   private simulation: Simulation | null = null;
   private restoringRun = false;
   private runSaveWarningShown = false;
-  private screen: Screen = 'lobby';
+  private screen: Screen = 'title';
   private archiveCategory: ArchiveCategory = 'characters';
   private archiveSelectionId = firstArchiveId('characters');
   private archiveMapId = 'seoul';
@@ -114,7 +114,7 @@ export class AppController {
     const metaChanged=weeklyChanged||offlineChanged;
     if (metaChanged) this.persist();
     this.gateDraft = createGateEntryDraft(this.meta);
-    this.show('lobby');
+    this.show('title');
     void this.audio.prepare();
     this.refreshAccount();
     // Files preload in the lobby; the first gesture starts browser audio output.
@@ -122,7 +122,7 @@ export class AppController {
       if (event === 'SIGNED_IN' || event === 'SIGNED_OUT') window.setTimeout(() => { void this.restoreAccount(); }, 0);
     });
     this.authSubscription = subscription;
-    void this.restoreAccount().finally(() => { void this.restoreRun(); });
+    void this.restoreAccount().finally(() => { if (this.screen === 'title') this.show('title'); });
     window.addEventListener('online', this.retryCloud);
     this.ui.dev.element.hidden = !this.meta.settings.developerMode;
     window.addEventListener('keydown', this.keydown);
@@ -216,11 +216,13 @@ export class AppController {
     this.input.clear();
     this.worldHost.classList.toggle('guild-active', screen === 'guild');
     this.guildRenderer.setVisible(screen === 'guild');
-    this.ui.show(screen, this.meta, this.simulation?.state ?? null, { category:this.archiveCategory,selectedId:this.archiveSelectionId,mapId:this.archiveMapId }, this.gateDraft,this.growthView,this.supplyResults,this.guildView);
+    this.ui.show(screen, this.meta, this.simulation?.state ?? null, { category:this.archiveCategory,selectedId:this.archiveSelectionId,mapId:this.archiveMapId }, this.gateDraft,this.growthView,this.supplyResults,this.guildView,
+      screen === 'title' && this.runSnapshots.load(this.accountUserId) !== null);
     this.ui.dev.element.hidden = !this.meta.settings.developerMode;
     this.audio.setScene(musicForScene(screen, this.simulation?.state ?? null), screen === 'paused' || screen === 'postWave');
     this.syncAudioButton();
     if (this.simulation && !isTerminal(this.simulation.state.phase)) this.saveRunSnapshot();
+    if (screen !== 'title') this.guardRunHistory();
     if (screen === 'lobby' && this.deferredAuthChange) {
       this.deferredAuthChange = false;
       window.setTimeout(() => { void this.restoreAccount(); }, 0);
@@ -283,14 +285,7 @@ export class AppController {
       if (run.pickups.length > 0) { this.terminalRevealElapsed = 0; return; }
       this.terminalRevealElapsed += dt;
       if (this.terminalRevealElapsed < 0.65) return;
-      if (this.simulation && this.settlement.settle(this.meta, this.simulation.state)) {
-        this.gateDraft.gateDepth = this.meta.gateProgression.highestUnlockedDepth;
-        this.persist();
-      }
-      if (this.simulation && this.telemetrySavedRun !== run) {
-        this.balanceLogs.append(this.simulation.telemetry.finish());
-        this.telemetrySavedRun = run;
-      }
+      this.finalizeRun();
       if (this.screen !== 'result') this.show('result');
     } else if (phase === 'postWave' && this.screen !== 'postWave') {
       const run = this.simulation!.state;
@@ -317,6 +312,18 @@ export class AppController {
       this.postWaveRevealRun = null;
       this.postWaveRevealElapsed = 0;
       this.show('waveActive');
+    }
+  }
+  private finalizeRun(): void {
+    if (!this.simulation) return;
+    const run = this.simulation.state;
+    if (this.settlement.settle(this.meta, run)) {
+      this.gateDraft.gateDepth = this.meta.gateProgression.highestUnlockedDepth;
+      this.persist();
+    }
+    if (this.telemetrySavedRun !== run) {
+      this.balanceLogs.append(this.simulation.telemetry.finish());
+      this.telemetrySavedRun = run;
     }
   }
   private readonly linkedKey = (id: string): string => `seoul-gate.linked.${id}`;
@@ -390,7 +397,7 @@ export class AppController {
       this.remoteChoice = remote;
       this.accountStatus = '저장 기록 선택 대기';
       this.refreshAccount();
-      if (this.screen !== 'lobby') this.show('lobby');
+      if (this.screen !== 'title') this.show('title');
     } catch {
       this.accountStatus = '저장 기록 확인 실패 · JSON 백업을 보관하세요';
       this.refreshAccount();
@@ -433,9 +440,8 @@ export class AppController {
     this.renderer.setHighResolution(this.meta.settings.highResolution);
     this.gateDraft = createGateEntryDraft(this.meta);
     this.simulation = null;
-    this.show('lobby');
+    this.show('title');
     this.refreshAccount();
-    void this.restoreRun();
     if (upload) {
       localStorage.setItem(this.dirtyKey(id), '1');
       this.cloudSync.queue(this.save.export(this.meta));
@@ -455,9 +461,8 @@ export class AppController {
     this.audio.applySettings(this.meta.settings);
     this.gateDraft = createGateEntryDraft(this.meta);
     this.simulation = null;
-    this.show('lobby');
+    this.show('title');
     this.refreshAccount();
-    void this.restoreRun();
   }
   private chooseAccount(useCloud: boolean): void {
     const choice = this.accountChoice;
@@ -529,13 +534,12 @@ export class AppController {
   }
   private guardRunHistory(): void {
     try {
-      if (!window.history.state?.seoulHeroRun) window.history.pushState({ seoulHeroRun: true }, '', window.location.href);
+      if (!window.history.state?.seoulHeroNavigation) window.history.pushState({ seoulHeroNavigation: true }, '', window.location.href);
     } catch { /* Device-local checkpoint still protects the Run if history is unavailable. */ }
   }
   private keepActiveRunOpen = (): void => {
-    if (!this.simulation || isTerminal(this.simulation.state.phase)) return;
-    this.pause();
-    this.guardRunHistory();
+    this.navigateBack();
+    if (this.screen !== 'title') this.guardRunHistory();
   };
   private markOfflineExit=():void=>{this.meta.offlineReward.lastExitAt=new Date().toISOString();this.persist();};
   private pause = (): void => {
@@ -560,20 +564,35 @@ export class AppController {
       return;
     }
     if (event.target instanceof HTMLInputElement || event.target instanceof HTMLSelectElement || event.repeat) return;
-    if (event.code === 'Escape' || event.code === 'KeyP') {
-      if (event.code === 'Escape' && this.screen === 'guild') {
-        if (this.guildView.panelId) { this.guildView.panelId = null; this.guildView.nearbyId = closestGuildPoint(this.guildPosition)?.id ?? null; this.show('guild'); }
-        else this.show('lobby');
-        return;
-      }
-      if(event.code==='Escape'&&this.screen==='supply'&&this.supplyResults.length){this.supplyResults=[];this.show('supply');return;}
-      if (this.screen === 'waveActive') this.pause();
-      else if (this.screen === 'paused') this.action('resume');
+    if (event.code === 'Escape' || (event.code === 'KeyP' && (this.screen === 'waveActive' || this.screen === 'paused'))) {
+      event.preventDefault();
+      this.navigateBack();
     }
   };
+  private navigateBack(): void {
+    if (this.screen === 'waveActive') { this.pause(); return; }
+    if (this.screen === 'paused') { this.action('resume'); return; }
+    if (this.screen === 'guild') {
+      if (this.guildView.panelId) { this.guildView.panelId = null; this.guildView.nearbyId = closestGuildPoint(this.guildPosition)?.id ?? null; this.show('guild'); }
+      else this.show('lobby');
+      return;
+    }
+    if (this.screen === 'supply' && this.supplyResults.length) { this.supplyResults = []; this.show('supply'); return; }
+    if (this.screen.startsWith('gate')) {
+      const index = gateEntrySteps.indexOf(this.screen as GateEntryStep);
+      if (index > 0) this.action(`gate-step:${gateEntrySteps[index - 1]}`);
+      else this.show('lobby');
+      return;
+    }
+    if (this.simulation && !isTerminal(this.simulation.state.phase)) return;
+    if (this.screen === 'lobby') this.show('title');
+    else if (this.screen !== 'title') this.show('lobby');
+  }
   private action = (action: string): void => {
     const [command = '', id = ''] = action.split(':');
     if (command !== 'sound' && !this.meta.settings.muted && !this.audio.play('buttonClick')) void this.audio.unlock().then(() => { this.audio.play('buttonClick'); this.syncAudioButton(); });
+    if (command === 'title-enter') { if (!this.accountChoice && !this.runSnapshots.load(this.accountUserId)) this.show('lobby'); return; }
+    if (command === 'title-continue') { if (!this.accountChoice) void this.restoreRun(); return; }
     if (command === 'account-signin') { void this.signIn(); return; }
     if (command === 'account-signout') { void this.signOut(); return; }
     if (command === 'account-use-cloud') { this.chooseAccount(true); return; }
@@ -594,6 +613,11 @@ export class AppController {
     if (command === 'sound-test') { this.testSound(id); return; }
     if (command === 'dev') { this.developerAction(id); return; }
     if (command === 'guild') { void this.enterGuild(); return; }
+    if (this.screen === 'guild' && command === 'lobby') {
+      this.guildView.panelId = null;
+      this.show('lobby');
+      return;
+    }
     if (this.screen === 'guild' && command === 'guild-interact') {
       const point = closestGuildPoint(this.guildPosition);
       if (point) { this.guildView.panelId = point.id; this.guildView.nearbyId = null; this.show('guild'); }
@@ -675,7 +699,10 @@ export class AppController {
     else if (command === 'branch') { if (this.simulation?.chooseBranch(id)) this.show('shop'); }
     else if (command === 'end-run' && this.simulation && this.screen === 'paused') {
       this.simulation.endRun();
-      this.syncPhase();
+      this.finalizeRun();
+      this.runSnapshots.clear(this.accountUserId);
+      this.simulation = null;
+      this.show('lobby');
     } else if (command === 'buy') {
       if (purchaseUpgrade(this.meta, id)) { this.persist(); this.show('association'); this.ui.notify('협회 구매 완료 · 다음 출동부터 적용됩니다.'); }
     } else if (command === 'export') this.exportSave();

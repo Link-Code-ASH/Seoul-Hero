@@ -74,7 +74,13 @@ export class CombatVfx {
     const current = positionAt(progress);
     const previous = positionAt(progress - 0.045);
     const older = positionAt(progress - 0.1);
-    const angle = Math.atan2(current.y - previous.y, current.x - previous.x);
+    const next = positionAt(progress + 0.045);
+    const directionX = next.x - previous.x;
+    const directionY = next.y - previous.y;
+    // The shell art points right. Rotate the whole sprite from the actual
+    // curve tangent; replacing a zero component separately can reverse it.
+    const angle = Math.hypot(directionX, directionY) > 0.001
+      ? Math.atan2(directionY, directionX) : Math.atan2(dy, dx);
     const heightRatio = Math.sin(progress * Math.PI);
     const scale = 0.86 + heightRatio * 0.3;
 

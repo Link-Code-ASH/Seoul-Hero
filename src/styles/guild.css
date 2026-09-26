@@ -12,8 +12,8 @@
 @media(max-width:800px) and (orientation:portrait){.command-primary{grid-template-rows:260px 115px}}
 
 #world.guild-active canvas:not(.guild-canvas){display:none!important}
-#world.guild-active canvas.guild-canvas{filter:saturate(.87) contrast(1.03) brightness(.99)}
-#world.guild-active::after{opacity:.18}
+#world.guild-active canvas.guild-canvas{filter:none}
+#world.guild-active::after{opacity:0}
 [data-screen="guild"] .screen{inset:0;background:transparent!important;background-image:none!important;backdrop-filter:none!important;overflow:hidden;pointer-events:none}
 [data-screen="guild"] .screen::before,[data-screen="guild"] .screen::after{display:none!important}
 .guild-screen{position:absolute;inset:0;overflow:hidden;pointer-events:none;color:#e3eef0}

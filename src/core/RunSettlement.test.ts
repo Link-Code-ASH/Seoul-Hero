@@ -41,7 +41,7 @@ describe('run settlement', () => {
     sim.endRun();
     new RunSettlement().settle(meta, sim.state);
     expect(meta.offlineReward.pendingRewards.associationCoins).toBe(2);
-    expect(meta.wallet.associationCoins).toBe(51);
+    expect(meta.wallet.associationCoins).toBe(50);
     const next = new Simulation('awakener', 'seoul', meta);
     expect(next.state.runCurrency).toBe(0);
     expect(next.state.walletBonusRemaining).toBe(0);
@@ -59,8 +59,9 @@ describe('run settlement', () => {
     expect(settlement.settle(meta, sim.state)).toBe(false);
     expect(settlement.settle(meta, sim.state)).toBe(false);
     expect(meta).toEqual(settled);
-    expect(meta.wallet.associationCoins).toBe(16);
-    expect(meta.statistics).toEqual({ bestWave:3,totalMetaEarned:16,runs: 1, clears: 0, totalKills: 9, bestTime: 120 });
+    expect(meta.wallet.associationCoins).toBe(2);
+    expect(meta.statistics).toMatchObject({ bestWave: 3, runs: 1, clears: 0, kills: 9, bestTime: 120,
+      lastRun: { associationCoins: 2, reachedWave: 3, outcome: 'gameOver' } });
   });
 
   it('does not award active or paused runs and allows later settlement', () => {
@@ -88,13 +89,13 @@ describe('run settlement', () => {
     expect(first.state.phase).toBe('stageClear');
     expect(settlement.settle(meta, first.state)).toBe(true);
     expect(settlement.settle(meta, first.state)).toBe(false);
-    expect(meta.wallet.associationCoins).toBe(320);
+    expect(meta.wallet.associationCoins).toBe(100);
     expect(meta.statistics.clears).toBe(1);
     const second = new Simulation('awakener', 'seoul', meta);
     second.state.earnedMetaCurrency = 5;
     second.endRun();
     expect(settlement.settle(meta, second.state)).toBe(true);
-    expect(meta.wallet.associationCoins).toBe(320);
+    expect(meta.wallet.associationCoins).toBe(100);
     expect(meta.statistics.runs).toBe(2);
     expect(meta.statistics.clears).toBe(1);
   });
