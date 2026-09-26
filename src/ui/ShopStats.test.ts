@@ -35,6 +35,6 @@ describe('Gate24 ability readout', () => {
     const run = createRun('kangTaehoon', 'seoul', meta);
     run.shop.weaponStock.slots = [{ weaponId: null, targetLevel: 1, locked: false }];
     expect(shopStats(run)).toContain('강태훈');
-    expect(shopScreen(run, meta)).toContain('구매 가능한<br>무기 없음');
+    expect(shopScreen(run, meta)).toContain('aria-label="무기 품절"');
   });
 });

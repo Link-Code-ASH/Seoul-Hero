@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>서울 히어로 · 사운드 라이브러리</title>
+  <link rel="stylesheet" href="catalog.css">
+</head>
+<body>
+  <header><div><span class="eyebrow">SEOUL HERO / SOUND ARCHIVE</span><h1>서울의 소리, 게이트의 잔향</h1></div><span id="total" class="badge">라이브러리</span></header>
+  <section class="toolbar" aria-label="검색과 필터">
+    <input id="search" type="search" placeholder="용도, 질감, 원본 이름 검색" aria-label="사운드 검색">
+    <select id="category" aria-label="분류"><option value="">모든 분류</option><option value="ui">UI · 보상</option><option value="weapons">무기 · 설치물</option><option value="impacts">적중 · 폭발</option><option value="magic">마법 · 게이트</option><option value="creatures">적 · 경고</option><option value="ambience">환경 루프</option></select>
+    <select id="usage" aria-label="사용 여부"><option value="">전체</option><option value="active">게임 적용</option><option value="future">미래용</option></select>
+    <span id="count" aria-live="polite"></span>
+  </section>
+  <main>
+    <section class="library" aria-label="편집된 사운드 목록"><div id="list"></div></section>
+    <aside id="detail" aria-label="사운드 정보"><p class="muted">목록에서 소리를 선택하세요.</p></aside>
+  </main>
+  <footer>
+    <div class="now"><span class="eyebrow">NOW PLAYING</span><strong id="playing" aria-live="polite">재생할 소리를 선택하세요</strong></div>
+    <audio id="player" controls preload="none"></audio>
+    <label class="loop"><input id="loop" type="checkbox"> 반복</label>
+    <button id="compare" class="secondary">비교 샘플</button>
+  </footer>
+  <dialog id="comparison-dialog">
+    <div class="dialog-head"><h2>전투와 UI 비교</h2><button id="close-dialog">닫기</button></div>
+    <p>발사·적중 시차와 여러 소리의 겹침을 확인하는 편집 샘플입니다. 실제 게임 녹음이 아니며 BGM은 포함하지 않았습니다.</p>
+    <div id="comparisons"></div>
+    <p class="muted">이 라이브러리는 파일 분석과 편집을 마쳤으며 청취 평가는 대기 중입니다. 원본 비교는 사용 구간에 재생 음량과 끝단 페이드만 적용한 소리입니다.</p>
+  </dialog>
+  <script src="catalog-data.js"></script>
+  <script src="catalog.js"></script>
+</body>
+</html>

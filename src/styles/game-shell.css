@@ -281,3 +281,59 @@ button:hover, button:active, .button:hover, .button:active {
   .title-portrait { width: 76%; opacity: .42; }
   .title-actions span,.title-index { display: none; }
 }
+
+/* Keep complete weapon art inside its frame at short landscape heights. */
+.gate-flow-screen .weapon-card-art { min-width: 0; min-height: 0; }
+.gate-flow-screen .weapon-card-art>.weapon-detail-art {
+  display: block; width: min(82%,112px); height: min(82%,112px); max-width: 112px;
+  max-height: 112px; margin: auto; object-fit: contain;
+}
+.gate-flow-screen .deploy-visual .deploy-character {
+  left: 50%; bottom: 0; width: auto; height: 88%; max-width: 70%; max-height: 100%;
+  object-fit: contain; object-position: center bottom; transform: translateX(-50%);
+}
+.gate-flow-screen .deploy-summary { min-height: 0; }
+
+/* A deliberately empty merchandise recess reads as sold out, not broken text. */
+.shop-screen .weapon-shop-card.sold {
+  position: relative; display: flex; flex-direction: column; align-items: center;
+  justify-content: center; gap: 4px; min-width: 0; overflow: hidden;
+  border: 1px solid #8c9b9d66; background-image:
+    linear-gradient(145deg,#26343ce8,#101c24f5),var(--shell-metal);
+  background-size: auto,300px; background-blend-mode: normal,soft-light;
+  box-shadow: inset 0 0 0 5px #a7b6b313,inset 0 1px #ebf4e72e;
+  opacity: 1;
+}
+.shop-screen .weapon-shop-card.sold .sold-crest {
+  display: grid; place-items: center; width: 43px; height: 43px; flex: 0 0 auto;
+  border: 1px solid #aebcba72; border-radius: 50%; color: #b4bfbd;
+  font: 300 28px/1 sans-serif; background: #121e25ad;
+}
+.shop-screen .weapon-shop-card.sold strong {
+  color: #d7ddda; font-size: 17px; letter-spacing: .12em; white-space: nowrap;
+}
+.shop-screen .weapon-shop-card.sold small {
+  color: #99aaa9; font-size: 11px; white-space: nowrap;
+}
+.shop-pause-button {
+  display: grid; place-items: center; flex: 0 0 37px; width: 37px; height: 37px;
+  margin-left: 8px; padding: 0; color: #e4e9e2; font: 700 18px/1 sans-serif;
+  border: 1px solid #b2c9c285; background-image:
+    linear-gradient(145deg,#354c55,#16232d),var(--shell-metal);
+  background-size: auto,200px; box-shadow: inset 0 1px #fff4,0 4px 8px #0006;
+}
+.shop-pause-overlay {
+  position: absolute; z-index: 40; inset: 0; display: grid; place-items: center;
+  background: #061016c9; backdrop-filter: blur(5px);
+}
+@media (orientation: landscape) and (min-width: 700px) and (max-width: 1100px) and (max-height: 500px) {
+  .gate-flow-screen .weapon-card-art>.weapon-detail-art {
+    width: min(74%,68px); height: min(74%,68px); max-width: 68px; max-height: 68px;
+  }
+  .gate-flow-screen .deploy-visual .deploy-character { height: 82%; max-width: 68%; }
+  .shop-pause-button { flex-basis: 32px; width: 32px; height: 32px; font-size: 15px; }
+  .shop-screen .weapon-shop-card.sold { gap: 1px; }
+  .shop-screen .weapon-shop-card.sold .sold-crest { width: 29px; height: 29px; font-size: 20px; }
+  .shop-screen .weapon-shop-card.sold strong { font-size: 14px; }
+  .shop-screen .weapon-shop-card.sold small { font-size: 10px; }
+}

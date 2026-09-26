@@ -36,7 +36,7 @@ import { requestMobileFullscreen } from '../ui/MobileFullscreen';
 import { firstArchiveId, type ArchiveCategory } from '../ui/ArchiveScreen';
 import { AudioManager } from '../audio/AudioManager';
 import { musicForScene } from '../audio/AudioPolicy';
-import { allAudioUrls, sfx } from '../data/audio';
+import { preloadedAudioUrls, sfx } from '../data/audio';
 import type { SfxId } from '../data/audio';
 import { ensureWeeklyGate } from '../systems/WeeklyGateSystem';
 import { BalanceTelemetryStore } from '../analytics/BalanceTelemetry';
@@ -78,6 +78,7 @@ export class AppController {
   private readonly input: InputManager;
   private readonly loop: GameLoop;
   private simulation: Simulation | null = null;
+  private shopPauseOpen = false;
   private restoringRun = false;
   private runSaveWarningShown = false;
   private screen: Screen = 'title';
@@ -207,6 +208,7 @@ export class AppController {
     }
   }
   private show(screen: Screen): void {
+    if (screen !== 'shop') this.shopPauseOpen = false;
     if(screen.startsWith('gate')&&ensureWeeklyGate(this.meta))this.persist();
     this.gateDraft.gateDepth = Math.max(1, Math.min(this.meta.gateProgression.highestUnlockedDepth, this.gateDraft.gateDepth));
     this.walkTest.remaining = 0;
@@ -218,8 +220,9 @@ export class AppController {
     this.guildRenderer.setVisible(screen === 'guild');
     this.ui.show(screen, this.meta, this.simulation?.state ?? null, { category:this.archiveCategory,selectedId:this.archiveSelectionId,mapId:this.archiveMapId }, this.gateDraft,this.growthView,this.supplyResults,this.guildView,
       screen === 'title' && this.runSnapshots.load(this.accountUserId) !== null);
+    if (screen === 'shop' && this.shopPauseOpen) this.ui.setShopPause(true);
     this.ui.dev.element.hidden = !this.meta.settings.developerMode;
-    this.audio.setScene(musicForScene(screen, this.simulation?.state ?? null), screen === 'paused' || screen === 'postWave');
+    this.audio.setScene(musicForScene(screen, this.simulation?.state ?? null), screen === 'paused' || screen === 'postWave' || (screen === 'shop' && this.shopPauseOpen));
     this.syncAudioButton();
     if (this.simulation && !isTerminal(this.simulation.state.phase)) this.saveRunSnapshot();
     if (screen !== 'title') this.guardRunHistory();
@@ -264,7 +267,7 @@ export class AppController {
     this.refreshElapsed = 0;
     this.ui.updateAudio(this.audio.unlocked, this.meta.settings.muted, this.audio.status);
     if (run) this.ui.hud.update(run);
-    this.ui.dev.update(run, { fps: this.loop.fps, frameTime: this.loop.frameTime, timeScale: this.loop.timeScale, saveStatus: this.save.status, audio: `${this.audio.contextState} · ${this.audio.loadedCount}/${allAudioUrls().length}\nBGM ${this.audio.currentBgm}\nSFX ${this.audio.lastSound} · 재생 ${this.audio.playedCount}\n음성 ${this.audio.activeVoices}/16 · 출력 ${this.audio.outputLevel.toFixed(4)}\n이미지 ${this.renderer.art.loadedCount}/${Object.keys(images).length} · 이동 procedural\n자세 ${this.renderer.playerMotion.moving ? 'move' : 'idle'} · 강도 ${this.renderer.playerMotion.intensity.toFixed(2)} · ${this.renderer.playerMotion.facing < 0 ? 'left' : 'right'}` });
+    this.ui.dev.update(run, { fps: this.loop.fps, frameTime: this.loop.frameTime, timeScale: this.loop.timeScale, saveStatus: this.save.status, audio: `${this.audio.contextState} · ${this.audio.loadedCount}/${preloadedAudioUrls().length}\nBGM ${this.audio.currentBgm}\nSFX ${this.audio.lastSound} · 재생 ${this.audio.playedCount}\n음성 ${this.audio.activeVoices}/16 · 출력 ${this.audio.outputLevel.toFixed(4)}\n이미지 ${this.renderer.art.loadedCount}/${Object.keys(images).length} · 이동 procedural\n자세 ${this.renderer.playerMotion.moving ? 'move' : 'idle'} · 강도 ${this.renderer.playerMotion.intensity.toFixed(2)} · ${this.renderer.playerMotion.facing < 0 ? 'left' : 'right'}` });
   };
   private syncPhase(dt = 0): void {
     const phase = this.simulation?.state.phase;
@@ -544,6 +547,10 @@ export class AppController {
   private markOfflineExit=():void=>{this.meta.offlineReward.lastExitAt=new Date().toISOString();this.persist();};
   private pause = (): void => {
     if (this.screen === 'waveActive') { this.simulation?.pause(); this.syncPhase(); }
+    else if (this.screen === 'shop' && !this.shopPauseOpen) {
+      this.shopPauseOpen = true; this.ui.setShopPause(true);
+      this.audio.setScene(musicForScene('shop', this.simulation?.state ?? null), true);
+    }
     this.input.clear();
   };
   private visibility = (): void => {
@@ -564,7 +571,7 @@ export class AppController {
       return;
     }
     if (event.target instanceof HTMLInputElement || event.target instanceof HTMLSelectElement || event.repeat) return;
-    if (event.code === 'Escape' || (event.code === 'KeyP' && (this.screen === 'waveActive' || this.screen === 'paused'))) {
+    if (event.code === 'Escape' || (event.code === 'KeyP' && (this.screen === 'waveActive' || this.screen === 'paused' || this.screen === 'shop'))) {
       event.preventDefault();
       this.navigateBack();
     }
@@ -572,6 +579,7 @@ export class AppController {
   private navigateBack(): void {
     if (this.screen === 'waveActive') { this.pause(); return; }
     if (this.screen === 'paused') { this.action('resume'); return; }
+    if (this.screen === 'shop') { if (this.shopPauseOpen) this.action('resume'); else this.pause(); return; }
     if (this.screen === 'guild') {
       if (this.guildView.panelId) { this.guildView.panelId = null; this.guildView.nearbyId = closestGuildPoint(this.guildPosition)?.id ?? null; this.show('guild'); }
       else this.show('lobby');
@@ -681,7 +689,12 @@ export class AppController {
         if(command==='gateMap'){this.gateDraft=createGateEntryDraft(this.meta);void this.prepareRenderer();}
       if(command==='supply')this.supplyResults=[];this.show(command as Screen);
     } else if (command === 'pause') this.pause();
-    else if (command === 'resume') { this.simulation?.resume(); this.syncPhase(); }
+    else if (command === 'resume') {
+      if (this.screen === 'shop' && this.shopPauseOpen) {
+        this.shopPauseOpen = false; this.ui.setShopPause(false);
+        this.audio.setScene(musicForScene('shop', this.simulation?.state ?? null), false);
+      } else { this.simulation?.resume(); this.syncPhase(); }
+    }
     else if (command === 'revival-use') {
       if (Object.hasOwn(REVIVAL_STONES, id) && this.simulation?.revive(this.meta, id as RevivalStoneGrade)) {
         this.persist(); this.syncPhase();
@@ -697,7 +710,7 @@ export class AppController {
     else if (command === 'next-wave') { this.simulation?.nextWave(); this.syncPhase(); }
     else if (command === 'post-continue') { this.simulation?.continuePostWave(); this.syncPhase(); }
     else if (command === 'branch') { if (this.simulation?.chooseBranch(id)) this.show('shop'); }
-    else if (command === 'end-run' && this.simulation && this.screen === 'paused') {
+    else if (command === 'end-run' && this.simulation && (this.screen === 'paused' || (this.screen === 'shop' && this.shopPauseOpen))) {
       this.simulation.endRun();
       this.finalizeRun();
       this.runSnapshots.clear(this.accountUserId);

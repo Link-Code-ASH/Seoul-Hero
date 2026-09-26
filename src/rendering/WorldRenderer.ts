@@ -1,4 +1,4 @@
-import { Application, Container, Graphics, Sprite } from 'pixi.js';
+import { Application, BlurFilter, Container, Graphics, Sprite } from 'pixi.js';
 import { ENEMY_RULES } from '../data/enemyConfig';
 import { enemies } from '../data/enemies';
 import { GAME_CONFIG } from '../data/config';
@@ -21,6 +21,8 @@ import { CombatVfx } from './CombatVfx';
 import { enemyPose, groundProfileFor } from './CombatArt';
 import { MAGIC_STONE_TIERS } from '../data/magicStoneConfig';
 import { enemyPresentation, fallbackEnemyPresentation } from '../data/enemyPresentation';
+import { images } from '../data/images';
+import { drawGroundedOvalShadow, drawImageContactShadow, drawProjectedShadow } from './ProjectedShadow';
 
 const magicStoneVisual: Visual = { color: 0xcbb8ff, shape: 'diamond', sprite: 'magicStone' };
 const hostileVisual: Visual = { color: 0xff5967, shape: 'triangle', sprite: 'hostileBolt' };
@@ -77,6 +79,8 @@ export class WorldRenderer {
     this.app.canvas.setAttribute('aria-label', '서울 히어로 게임 월드');
     this.app.canvas.style.display = 'block';
     this.app.stage.addChild(this.world);
+    this.shadows.alpha = .76;
+    this.shadows.filters = [new BlurFilter({ strength: 2.5 })];
     this.vfxGlow.blendMode = 'add';
     this.actors.sortableChildren = true;
     this.world.addChild(this.arenaBase, this.backgrounds, this.arenaMask, this.boundary, this.shadows, this.vfxBack, this.actors, this.markings, this.vfxGlow, this.vfxFront);
@@ -205,37 +209,30 @@ export class WorldRenderer {
       if (enemy.action === 'warning' && Math.abs(enemy.aimX - enemy.x) > .5) facing = enemy.aimX < enemy.x ? -1 : 1;
       this.enemyFacing.set(enemy.id, { x: enemy.x, facing });
       const footY = enemy.y + enemy.radius * ground.groundOffset;
-      const lift = Math.max(0, -appearance.bobY);
-      const liftRatio = Math.min(1, lift / Math.max(1, enemy.radius * .6));
-      const dashStretch = enemy.action === 'dash' ? 1.18 : 1;
-      const width = enemy.radius * ground.shadowWidth * appearance.shadowScale * dashStretch;
-      const depth = enemy.radius * ground.shadowDepth * appearance.shadowScale / dashStretch;
-      const alpha = ground.shadowAlpha * enemy.alpha * (1 - liftRatio * .48);
-      this.shadows.ellipse(enemy.x, footY, width * 1.25, depth * 1.55)
-        .fill({ color: ground.shadowColor, alpha: alpha * .3 });
-      this.shadows.ellipse(enemy.x, footY, width, depth)
-        .fill({ color: ground.shadowColor, alpha });
+      const poseId = enemyPose(enemy, -appearance.bobY);
+      if (poseId) {
+        const height = enemy.radius * images[poseId].heightRatio;
+        drawGroundedOvalShadow(this.shadows, poseId,
+          enemy.x + appearance.swayX, footY,
+          height * appearance.scaleX, height * appearance.scaleY,
+          ground.anchorY, ground.shadowColor, ground.shadowAlpha * enemy.alpha, facing);
+      } else {
+        drawProjectedShadow(this.shadows, enemy.x, footY,
+          enemy.radius * ground.shadowWidth, enemy.radius * ground.shadowDepth,
+          0, ground.shadowColor, ground.shadowAlpha * enemy.alpha);
+      }
       return { enemy, appearance, ground, footY, facing };
     });
     for (const structure of state.structures) {
       const kind = weapons[structure.weaponId]?.structure?.kind;
       if (!kind) continue;
-      if (kind === 'turret') {
-        // The turret sprite has a centered pedestal. One tight contact shadow keeps it
-        // grounded without the offset/doubled silhouette used by the older tripod art.
-        this.shadows.ellipse(structure.x, structure.y + 24, 23, 6.5)
-          .fill({ color: 0x020306, alpha: 0.34 });
-        continue;
-      }
-      if (kind === 'mine') {
-        this.shadows.ellipse(structure.x, structure.y + 10, 18, 4.5)
-          .fill({ color: 0x020306, alpha: 0.4 });
-        continue;
-      }
-      this.shadows.ellipse(structure.x + 3, structure.y + 15, 31, 9)
-        .fill({ color: 0x030407, alpha: 0.4 });
-      this.shadows.ellipse(structure.x + 2, structure.y + 14, 31 * 0.68, 9 * 0.6)
-        .fill({ color: 0x010203, alpha: 0.3 });
+      const sprite = weapons[structure.weaponId]?.structure?.sprite;
+      if (!sprite) continue;
+      const size = kind === 'turret' ? 70 : kind === 'aura' ? 66 : 54;
+      if (kind === 'turret') drawGroundedOvalShadow(this.shadows, sprite, structure.x, structure.y,
+        size, size, .5, 0x020306, .32);
+      else drawImageContactShadow(this.shadows, sprite, structure.x, structure.y,
+        size, size, .5, 0x020306, .38);
     }
     for (const pickup of state.pickups) {
       const tier = MAGIC_STONE_TIERS[pickup.tier ?? 1];
@@ -246,12 +243,21 @@ export class WorldRenderer {
     const truck = player.visual.motionStyle === 'truck';
     const playerGround = groundProfileFor(player.visual.sprite);
     const playerFootY = player.y + player.radius * playerGround.groundOffset;
-    const playerShadowWidth = player.radius * playerGround.shadowWidth * motion.shadowScale;
-    const playerShadowDepth = player.radius * playerGround.shadowDepth * motion.shadowScale;
-    this.shadows.ellipse(player.x, playerFootY, playerShadowWidth * 1.24, playerShadowDepth * 1.55)
-      .fill({ color: playerGround.shadowColor, alpha: motion.shadowAlpha * .35 });
-    this.shadows.ellipse(player.x, playerFootY, playerShadowWidth, playerShadowDepth)
-      .fill({ color: playerGround.shadowColor, alpha: motion.shadowAlpha });
+    const playerArt = player.visual.sprite;
+    const playerShadowAlpha = motion.shadowAlpha * playerGround.shadowAlpha / .38;
+    if (playerArt) {
+      const height = player.radius * images[playerArt].heightRatio;
+      drawGroundedOvalShadow(this.shadows, playerArt,
+        player.x + (motion.swayX + motion.dragX) * (truck ? .45 : 1),
+        playerFootY,
+        height * (1 + (motion.scaleX - 1) * (truck ? .35 : 1)),
+        height * (1 + (motion.scaleY - 1) * (truck ? .35 : 1)),
+        playerGround.anchorY, playerGround.shadowColor, playerShadowAlpha, motion.facing);
+    } else {
+      drawProjectedShadow(this.shadows, player.x, playerFootY,
+        player.radius * playerGround.shadowWidth, player.radius * playerGround.shadowDepth,
+        0, playerGround.shadowColor, playerShadowAlpha);
+    }
     if (motion.magicLag > .08) {
       const trail = Math.min(18, 6 + motion.magicLag * 12);
       const back = player.x - motion.facing * player.radius * .55;

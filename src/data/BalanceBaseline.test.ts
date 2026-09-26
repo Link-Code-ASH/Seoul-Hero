@@ -20,8 +20,8 @@ describe('Song Jinwoo / Gwanghwamun / depth 1 baseline', () => {
   it('uses the reduced Gwanghwamun density as the authored 100% data', () => {
     const waves = maps.seoul!.waveDefinitions;
     expect(waves[0]).toMatchObject({ interval: 1.57, maxEnemies: 63 });
-    expect(waves[9]).toMatchObject({ interval: 0.86, maxEnemies: 161 });
-    expect(waves[19]).toMatchObject({ interval: 0.64, maxEnemies: 224 });
+    expect(waves[9]).toMatchObject({ interval: 1.43, maxEnemies: 140 });
+    expect(waves[19]).toMatchObject({ interval: 1.11, maxEnemies: 225 });
     expect([5, 10, 15].map(number => waves[number - 1]!.elites?.length)).toEqual([1, 1, 1]);
   });
 

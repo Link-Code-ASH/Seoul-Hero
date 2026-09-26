@@ -77,10 +77,16 @@ export class CombatVfx {
     const next = positionAt(progress + 0.045);
     const directionX = next.x - previous.x;
     const directionY = next.y - previous.y;
-    // The shell art points right. Rotate the whole sprite from the actual
-    // curve tangent; replacing a zero component separately can reverse it.
-    const angle = Math.hypot(directionX, directionY) > 0.001
-      ? Math.atan2(directionY, directionX) : Math.atan2(dy, dx);
+    // The shell art points right. A target above the launch point can make the
+    // screen-space tangent point upward even while the shell falls toward ground.
+    // Orient the descent from its closing height, then turn smoothly over the apex.
+    const previousHeight = previous.groundY - previous.y;
+    const nextHeight = next.groundY - next.y;
+    const fall = Math.max(0, previousHeight - nextHeight);
+    const flightAngle = Math.atan2(directionY, directionX);
+    const descentAngle = Math.atan2(Math.max(fall, Math.abs(directionX) * 0.58, effect.radius * 0.1), directionX);
+    const turn = clamp01((progress - 0.42) / 0.16);
+    const angle = flightAngle + Math.atan2(Math.sin(descentAngle - flightAngle), Math.cos(descentAngle - flightAngle)) * turn;
     const heightRatio = Math.sin(progress * Math.PI);
     const scale = 0.86 + heightRatio * 0.3;
 

@@ -28,7 +28,7 @@ function weaponChange(run:RunState,weaponId:string,targetLevel:number):string {
 export function shopScreen(run:RunState,meta:MetaState):string {
  const itemCost=itemRerollCost(run),weaponCost=weaponRerollCost(run),blocked=!!run.pendingBranchWeaponId;
  const weaponCards=run.shop.weaponStock.slots.map((slot,index)=>{
-  const weapon=weapons[slot.weaponId??''];if(!weapon)return '<article class="shop-card weapon-shop-card sold"><h2>품절</h2><p>구매 가능한<br>무기 없음</p></article>';
+  const weapon=weapons[slot.weaponId??''];if(!weapon)return '<article class="shop-card weapon-shop-card sold" aria-label="무기 품절"><span class="sold-crest" aria-hidden="true">×</span><strong>품절</strong><small>무기 진열대</small></article>';
   const offer={weaponId:weapon.id,targetLevel:slot.targetLevel},cost=weaponPrice(offer),owned=run.ownedWeapons.find(w=>w.id===weapon.id),valid=weaponOfferAvailable(run,offer);
   const disabled=blocked||!valid||run.runCurrency<cost;
   return '<article class="shop-card weapon-shop-card'+(slot.locked?' locked':'')+'"><div class="product-heading"><span class="weapon-offer-type">'+(owned?'무기 강화':'신규 무기')+'</span>'+lock('shop-weapon-lock:'+index,slot.locked)+'</div>'+weaponArt(weapon.id)+'<h2>'+escapeHtml(weapon.name)+'</h2><p class="item-effect">'+escapeHtml(weaponChange(run,weapon.id,slot.targetLevel))+'</p><div class="product-footer"><small>'+(owned?'Lv.'+owned.level+' → Lv.'+slot.targetLevel:'Lv.1 획득')+'</small>'+button('shop-weapon-buy:'+index,price(cost),'purchase-price',`aria-label="${escapeHtml(weapon.name)} ${cost} 마력석 구매" ${disabled?'disabled':''}`)+'</div></article>';

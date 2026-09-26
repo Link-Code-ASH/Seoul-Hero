@@ -75,6 +75,13 @@ export class GameUI {
       result: () => run ? resultScreen(run) : '', waveActive: () => '',
     };
     this.overlay.innerHTML = renderers[screen]?.() ?? '';
+    if (screen === 'shop') {
+      const pause = document.createElement('button');
+      pause.type = 'button'; pause.className = 'shop-pause-button';
+      pause.dataset.action = 'pause'; pause.setAttribute('aria-label', '일시정지');
+      pause.textContent = 'Ⅱ';
+      this.overlay.querySelector('.shop-header')?.append(pause);
+    }
     if (screen === 'growth') this.overlay.querySelector<HTMLElement>('.facility-list-grid')!.scrollTop = growthScroll;
     if (screen === 'archive') this.overlay.querySelector<HTMLElement>('.archive-entry-grid')!.scrollTop = archiveScroll;
     for (const saved of panelScroll) {
@@ -86,6 +93,15 @@ export class GameUI {
     this.overlay.scrollLeft = 0;
     if (screen === 'shop') this.overlay.querySelector<HTMLElement>('.shop-screen')?.focus({ preventScroll: true });
     else if (screen !== 'waveActive' && screen !== 'lobby' && screen !== 'guild' && screen !== 'title') this.overlay.querySelector<HTMLElement>('button, input')?.focus({ preventScroll: true });
+  }
+  setShopPause(open: boolean): void {
+    this.overlay.querySelector('.shop-pause-overlay')?.remove();
+    if (!open || this.root.dataset.screen !== 'shop') return;
+    const layer = document.createElement('div');
+    layer.className = 'shop-pause-overlay';
+    layer.innerHTML = pauseScreen('편의점 계속');
+    this.overlay.append(layer);
+    layer.querySelector<HTMLElement>('button')?.focus({ preventScroll: true });
   }
   updateGuildPoint(id: GuildPointId | null): void {
     const button = this.overlay.querySelector<HTMLButtonElement>('.guild-interact');

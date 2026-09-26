@@ -1,9 +1,8 @@
-import { AUDIO_CONFIG, allAudioUrls, bgm, sfx } from '../data/audio';
-import type { BgmId, SfxId } from '../data/audio';
+import { AUDIO_CONFIG, preloadedAudioUrls, bgm, sfx } from '../data/audio';
+import type { BgmId, BgmTrack, SfxId } from '../data/audio';
 import type { Settings } from '../state/MetaState';
 import { SoundGate } from './AudioPolicy';
 
-interface MusicVoice { source: AudioBufferSourceNode; gain: GainNode; id: BgmId }
 interface EffectVoice { source: AudioBufferSourceNode; gain: GainNode; id: SfxId; priority: number }
 
 /** Browser output adapter. The simulation only emits domain events and knows no audio APIs. */
@@ -20,11 +19,18 @@ export class AudioManager {
   private readonly buffers = new Map<string, AudioBuffer>();
   private readonly voices = new Set<EffectVoice>();
   private readonly variantCursor = new Map<SfxId, number>();
-  private readonly musicVoices = new Set<MusicVoice>();
+  private readonly lastMusicUrl = new Map<BgmId, string>();
   private readonly gate = new SoundGate();
+  private musicElement: HTMLAudioElement | null = null;
+  private musicSource: MediaElementAudioSourceNode | null = null;
+  private musicGain: GainNode | null = null;
+  private nextMusicElement: HTMLAudioElement | null = null;
+  private nextTrack: BgmTrack | null = null;
+  private musicFadeTimer = 0;
   private loading: Promise<void> | null = null;
   private unlocking: Promise<void> | null = null;
-  private current: MusicVoice | null = null;
+  private currentGroup: BgmId | null = null;
+  private currentTrack: BgmTrack | null = null;
   private desired: BgmId | null = 'menu';
   private hidden = false;
   private dimmed = false;
@@ -36,7 +42,7 @@ export class AudioManager {
   constructor(private settings: Settings) {}
   get status(): string { return this.stateText; }
   get unlocked(): boolean { return this.context?.state === 'running' && this.buffers.size > 0; }
-  get currentBgm(): string { return this.current ? bgm[this.current.id].label : '없음'; }
+  get currentBgm(): string { return this.currentTrack?.label ?? '없음'; }
   get activeVoices(): number { return this.voices.size; }
   get loadedCount(): number { return this.buffers.size; }
   get contextState(): string { return this.context?.state ?? 'locked'; }
@@ -50,7 +56,7 @@ export class AudioManager {
 
   prepare(): Promise<void> {
     if (this.loading) return this.loading;
-    this.loading = Promise.all(allAudioUrls().map(async (url) => {
+    this.loading = Promise.all(preloadedAudioUrls().map(async (url) => {
       try {
         const response = await fetch(url);
         if (!response.ok) throw new Error(`HTTP ${response.status}`);
@@ -72,6 +78,17 @@ export class AudioManager {
         this.combatBus = this.context.createGain();
         this.combatTone = this.context.createBiquadFilter();
         this.uiBus = this.context.createGain();
+        this.musicElement = new Audio();
+        this.musicElement.preload = 'auto';
+        this.musicElement.loop = false;
+        this.musicElement.onended = () => {
+          if (!this.hidden && this.desired && this.currentGroup === this.desired) {
+            this.startMusic(this.desired, this.nextTrack ?? undefined);
+          }
+        };
+        this.musicSource = this.context.createMediaElementSource(this.musicElement);
+        this.musicGain = this.context.createGain();
+        this.musicSource.connect(this.musicGain); this.musicGain.connect(this.musicBus);
         this.combatTone.type = 'lowpass';
         this.combatTone.frequency.value = 9500;
         this.combatTone.Q.value = 0.35;
@@ -86,6 +103,8 @@ export class AudioManager {
       }
       const context = this.context;
       const resume = context.resume();
+      // Start the HTML media element inside the same user gesture that unlocks audio.
+      this.reconcileMusic();
       this.unlocking = (async () => {
         await resume;
         await this.prepare();
@@ -95,7 +114,7 @@ export class AudioManager {
           catch { this.stateText = '일부 사운드 형식을 읽을 수 없습니다.'; }
         }));
         if (this.disposed) return;
-        if (this.buffers.size === allAudioUrls().length) this.stateText = '오디오 준비 완료';
+        if (this.buffers.size === preloadedAudioUrls().length) this.stateText = '오디오 준비 완료';
         if (this.hidden) await context.suspend();
         else this.reconcileMusic();
       })().catch(() => { this.stateText = '소리를 켜려면 사운드 버튼을 다시 눌러주세요.'; })
@@ -123,26 +142,83 @@ export class AudioManager {
     this.reconcileMusic();
   }
   private reconcileMusic(): void {
-    const context = this.context;
-    if (!context || !this.musicBus || this.hidden || context.state !== 'running' || this.current?.id === this.desired) return;
-    const nextBuffer = this.desired ? this.buffers.get(bgm[this.desired].url) : null;
-    if (this.desired && !nextBuffer) return;
-    const now = context.currentTime;
-    if (this.current) {
-      this.current.gain.gain.cancelScheduledValues(now);
-      this.current.gain.gain.setTargetAtTime(0, now, AUDIO_CONFIG.musicFade / 4);
-      this.current.source.stop(now + AUDIO_CONFIG.musicFade);
-      this.current = null;
+    const context = this.context, element = this.musicElement, gain = this.musicGain;
+    if (!context || !element || !gain || this.hidden || this.disposed) return;
+    if (this.desired === this.currentGroup) {
+      if (this.desired && element.paused) this.playMusic();
+      return;
     }
-    if (!this.desired || !nextBuffer) return;
-    const source = context.createBufferSource(), gain = context.createGain();
-    source.buffer = nextBuffer; source.loop = true;
-    gain.gain.value = 0; gain.gain.setTargetAtTime(bgm[this.desired].gain, now, AUDIO_CONFIG.musicFade / 4);
-    source.connect(gain); gain.connect(this.musicBus);
-    const voice: MusicVoice = { source, gain, id: this.desired };
-    this.musicVoices.add(voice); this.current = voice;
-    source.onended = () => { source.disconnect(); gain.disconnect(); this.musicVoices.delete(voice); };
-    source.start();
+    window.clearTimeout(this.musicFadeTimer);
+    if (!this.currentTrack || element.paused) {
+      if (this.desired) this.startMusic(this.desired);
+      else this.stopMusic();
+      return;
+    }
+    const next = this.desired;
+    gain.gain.cancelScheduledValues(context.currentTime);
+    gain.gain.setTargetAtTime(0, context.currentTime, AUDIO_CONFIG.musicFade / 4);
+    this.musicFadeTimer = window.setTimeout(() => {
+      if (this.hidden || this.disposed) return;
+      if (this.desired !== next) { this.reconcileMusic(); return; }
+      if (next) this.startMusic(next);
+      else this.stopMusic();
+    }, AUDIO_CONFIG.musicFade * 1000);
+  }
+
+  private chooseMusic(id: BgmId): BgmTrack {
+    const tracks: readonly BgmTrack[] = bgm[id].tracks;
+    const previous = this.lastMusicUrl.get(id);
+    const choices = tracks.length > 1 ? tracks.filter(track => track.url !== previous) : tracks;
+    return choices[Math.floor(Math.random() * choices.length)]!;
+  }
+
+  private queueNextMusic(id: BgmId): void {
+    this.nextMusicElement = null;
+    this.nextTrack = null;
+    if (bgm[id].tracks.length < 2) return;
+    this.nextTrack = this.chooseMusic(id);
+    this.nextMusicElement = new Audio(this.nextTrack.url);
+    this.nextMusicElement.preload = 'auto';
+    this.nextMusicElement.load();
+  }
+
+  private playMusic(): void {
+    const expectedTrack = this.currentTrack;
+    void this.musicElement?.play().catch((error: unknown) => {
+      if (error instanceof DOMException && error.name === 'AbortError') return;
+      if (!this.hidden && !this.disposed && this.currentTrack === expectedTrack) {
+        this.stateText = 'BGM을 재생하려면 사운드 버튼을 다시 눌러주세요.';
+      }
+    });
+  }
+
+  private startMusic(id: BgmId, queued?: BgmTrack): void {
+    const context = this.context, element = this.musicElement, gain = this.musicGain;
+    if (!context || !element || !gain) return;
+    window.clearTimeout(this.musicFadeTimer);
+    const track = queued && queued.url !== this.currentTrack?.url ? queued : this.chooseMusic(id);
+    this.nextMusicElement = null;
+    element.pause();
+    element.src = track.url;
+    element.load();
+    gain.gain.cancelScheduledValues(context.currentTime);
+    gain.gain.setValueAtTime(0, context.currentTime);
+    gain.gain.setTargetAtTime(bgm[id].gain, context.currentTime, AUDIO_CONFIG.musicFade / 4);
+    this.currentGroup = id;
+    this.currentTrack = track;
+    this.lastMusicUrl.set(id, track.url);
+    this.playMusic();
+    this.queueNextMusic(id);
+  }
+
+  private stopMusic(): void {
+    this.musicElement?.pause();
+    this.musicElement?.removeAttribute('src');
+    this.musicElement?.load();
+    this.nextMusicElement = null;
+    this.nextTrack = null;
+    this.currentGroup = null;
+    this.currentTrack = null;
   }
   play = (id: SfxId): boolean => {
     const context = this.context, definition = sfx[id];
@@ -181,6 +257,8 @@ export class AudioManager {
     if (hidden) {
       for (const voice of this.voices) voice.source.stop();
       this.gate.clear();
+      window.clearTimeout(this.musicFadeTimer);
+      this.musicElement?.pause();
       void context.suspend().catch(() => {});
     } else {
       void context.resume().then(() => { if (!this.hidden) this.reconcileMusic(); }).catch(() => {});
@@ -188,9 +266,11 @@ export class AudioManager {
   }
   destroy(): void {
     this.disposed = true;
+    window.clearTimeout(this.musicFadeTimer);
     for (const voice of this.voices) voice.source.stop();
-    for (const voice of this.musicVoices) voice.source.stop();
-    this.voices.clear(); this.musicVoices.clear(); this.bytes.clear(); this.buffers.clear();
+    this.stopMusic();
+    this.musicSource?.disconnect(); this.musicGain?.disconnect();
+    this.voices.clear(); this.bytes.clear(); this.buffers.clear();
     void this.context?.close().catch(() => {});
   }
 }

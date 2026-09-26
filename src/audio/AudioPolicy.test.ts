@@ -13,22 +13,26 @@ describe('audio and visual integration contracts', () => {
   it('registers every required image, sound and music file with a real bundled URL', () => {
     expect(Object.keys(images).length).toBeGreaterThanOrEqual(60);
     expect(Object.keys(sfx).length).toBeGreaterThanOrEqual(27);
-    expect(Object.keys(bgm)).toHaveLength(4);
-    for (const asset of [...Object.values(images), ...Object.values(bgm)]) expect(asset.url.length).toBeGreaterThan(10);
+    expect(Object.keys(bgm)).toHaveLength(3);
+    for (const asset of Object.values(images)) expect(asset.url.length).toBeGreaterThan(10);
+    for (const group of Object.values(bgm)) {
+      expect(group.tracks.length).toBeGreaterThan(0);
+      for (const track of group.tracks) expect(track.url.length).toBeGreaterThan(10);
+    }
     for (const sound of Object.values(sfx)) {
       expect(sound.urls.length).toBeGreaterThan(0);
       for (const url of sound.urls) expect(url.length).toBeGreaterThan(10);
     }
   });
-  it('chooses menu, guild, combat and boss music without changing run state', () => {
+  it('chooses menu, guild and combat music through the boss fight without changing run state', () => {
     const sim = create();
     expect(musicForScene('lobby', null)).toBe('menu');
     expect(musicForScene('guild', null)).toBe('guild');
     expect(musicForScene('shop', sim.state)).toBe('combat');
     expect(musicForScene('waveActive', sim.state)).toBe('combat');
     sim.spawnBoss();
-    expect(musicForScene('shop', sim.state)).toBe('boss');
-    expect(musicForScene('paused', sim.state)).toBe('boss');
+    expect(musicForScene('shop', sim.state)).toBe('combat');
+    expect(musicForScene('paused', sim.state)).toBe('combat');
     expect(musicForScene('result', sim.state)).toBeNull();
   });
   it('throttles repeated sounds by real time and reserves voices for important cues', () => {

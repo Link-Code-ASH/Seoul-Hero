@@ -1,0 +1,159 @@
+{
+  "purchase": [
+    "ui/purchase_01",
+    "ui/purchase_02",
+    "ui/purchase_03"
+  ],
+  "reroll": [
+    "ui/reroll_01",
+    "ui/reroll_02",
+    "ui/reroll_03"
+  ],
+  "lock": [
+    "ui/lock_01",
+    "ui/lock_02",
+    "ui/lock_03"
+  ],
+  "weaponPurchase": [
+    "ui/reward_01",
+    "ui/reward_02",
+    "ui/reward_03"
+  ],
+  "branchChoice": [
+    "ui/branch_01",
+    "ui/branch_02",
+    "ui/branch_03"
+  ],
+  "critical": [
+    "impacts/critical_01",
+    "impacts/critical_02",
+    "impacts/critical_03",
+    "impacts/critical_04"
+  ],
+  "eliteSpawned": [
+    "creatures/elite_warning_01",
+    "creatures/elite_warning_02"
+  ],
+  "waveStarted": [
+    "ui/wave_start_01",
+    "ui/wave_start_02"
+  ],
+  "waveCompleted": [
+    "ui/wave_clear_01",
+    "ui/wave_clear_02"
+  ],
+  "slashAttack": [
+    "weapons/slash_01",
+    "weapons/slash_02",
+    "weapons/slash_03",
+    "weapons/slash_04",
+    "weapons/slash_05"
+  ],
+  "orbitAttack": [
+    "weapons/orbit_01",
+    "weapons/orbit_02",
+    "weapons/orbit_03",
+    "weapons/orbit_04"
+  ],
+  "chainAttack": [
+    "weapons/chain_01",
+    "weapons/chain_02",
+    "weapons/chain_03",
+    "weapons/chain_04"
+  ],
+  "bombardAttack": [
+    "impacts/arcane_blast_01",
+    "impacts/arcane_blast_02",
+    "impacts/arcane_blast_03",
+    "impacts/arcane_blast_04"
+  ],
+  "piercingAttack": [
+    "weapons/piercing_01",
+    "weapons/piercing_02",
+    "weapons/piercing_03",
+    "weapons/piercing_04"
+  ],
+  "turretFired": [
+    "weapons/turret_01",
+    "weapons/turret_02",
+    "weapons/turret_03",
+    "weapons/turret_04"
+  ],
+  "minePlaced": [
+    "weapons/mine_arm_01",
+    "weapons/mine_arm_02",
+    "weapons/mine_arm_03"
+  ],
+  "mineExploded": [
+    "impacts/mine_blast_01",
+    "impacts/mine_blast_02",
+    "impacts/mine_blast_03",
+    "impacts/mine_blast_04"
+  ],
+  "fieldActivated": [
+    "weapons/field_01",
+    "weapons/field_02",
+    "weapons/field_03"
+  ],
+  "weaponFired": [
+    "weapons/mana_bolt_01",
+    "weapons/mana_bolt_02",
+    "weapons/mana_bolt_03",
+    "weapons/mana_bolt_04",
+    "weapons/mana_bolt_05"
+  ],
+  "enemyHit": [
+    "impacts/hit_light_01",
+    "impacts/hit_light_02",
+    "impacts/hit_light_03",
+    "impacts/hit_light_04",
+    "impacts/hit_light_05"
+  ],
+  "enemyKilled": [
+    "impacts/death_01",
+    "impacts/death_02",
+    "impacts/death_03",
+    "impacts/death_04",
+    "impacts/death_05"
+  ],
+  "magicStoneCollected": [
+    "ui/stone_01",
+    "ui/stone_02",
+    "ui/stone_03"
+  ],
+  "walletSweep": [
+    "ui/confirm_01"
+  ],
+  "buttonClick": [
+    "ui/click_01"
+  ],
+  "supplyLatch": [
+    "ui/supply_01",
+    "ui/supply_02",
+    "ui/supply_03"
+  ],
+  "supplyFanfare": [
+    "ui/result_01",
+    "ui/result_02",
+    "ui/result_03"
+  ],
+  "playerHit": [
+    "creatures/player_hit_01",
+    "creatures/player_hit_02",
+    "creatures/player_hit_03",
+    "creatures/player_hit_04"
+  ],
+  "bossSpawned": [
+    "creatures/boss_warning_01",
+    "creatures/boss_warning_02"
+  ],
+  "stageClear": [
+    "ui/result_01",
+    "ui/result_02",
+    "ui/result_03"
+  ],
+  "gameOver": [
+    "creatures/defeat_01",
+    "creatures/defeat_02"
+  ]
+}

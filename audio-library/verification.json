@@ -1,0 +1,3621 @@
+{
+  "files": 450,
+  "active_files": 94,
+  "events": 30,
+  "category_counts": {
+    "ui": 60,
+    "weapons": 120,
+    "impacts": 90,
+    "magic": 70,
+    "creatures": 60,
+    "ambience": 50
+  },
+  "used_sources": 163,
+  "total_bytes": 98797192,
+  "active_bytes": 4110076,
+  "auditory_review": "NOT PERFORMED: no audio perception tool available",
+  "gameplay_qa": "NOT PERFORMED: user-owned",
+  "problems": [],
+  "measurements": [
+    {
+      "id": "ui/click_01",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -23.72,
+      "edge_step": 0.0,
+      "largest_step": 0.2359619140625,
+      "errors": []
+    },
+    {
+      "id": "ui/click_02",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -27.59,
+      "edge_step": 0.0,
+      "largest_step": 0.269012451171875,
+      "errors": []
+    },
+    {
+      "id": "ui/click_03",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -27.37,
+      "edge_step": 0.0,
+      "largest_step": 0.1605224609375,
+      "errors": []
+    },
+    {
+      "id": "ui/click_04",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -26.09,
+      "edge_step": 0.0,
+      "largest_step": 0.279266357421875,
+      "errors": []
+    },
+    {
+      "id": "ui/click_05",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -20.32,
+      "edge_step": 0.0,
+      "largest_step": 0.0966796875,
+      "errors": []
+    },
+    {
+      "id": "ui/confirm_01",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -19.85,
+      "edge_step": 0.0,
+      "largest_step": 0.199859619140625,
+      "errors": []
+    },
+    {
+      "id": "ui/confirm_02",
+      "peak_dbfs": -4.93,
+      "rms_dbfs": -19.17,
+      "edge_step": 0.0,
+      "largest_step": 0.204681396484375,
+      "errors": []
+    },
+    {
+      "id": "ui/confirm_03",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -20.59,
+      "edge_step": 0.0,
+      "largest_step": 0.30133056640625,
+      "errors": []
+    },
+    {
+      "id": "ui/confirm_04",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -25.92,
+      "edge_step": 0.0,
+      "largest_step": 0.278564453125,
+      "errors": []
+    },
+    {
+      "id": "ui/confirm_05",
+      "peak_dbfs": -4.6,
+      "rms_dbfs": -19.17,
+      "edge_step": 0.0,
+      "largest_step": 0.222503662109375,
+      "errors": []
+    },
+    {
+      "id": "ui/purchase_01",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -28.37,
+      "edge_step": 0.0,
+      "largest_step": 0.2646484375,
+      "errors": []
+    },
+    {
+      "id": "ui/purchase_02",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -20.72,
+      "edge_step": 0.0,
+      "largest_step": 0.178436279296875,
+      "errors": []
+    },
+    {
+      "id": "ui/purchase_03",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -21.02,
+      "edge_step": 0.0,
+      "largest_step": 0.274322509765625,
+      "errors": []
+    },
+    {
+      "id": "ui/purchase_04",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -26.48,
+      "edge_step": 0.0,
+      "largest_step": 0.454803466796875,
+      "errors": []
+    },
+    {
+      "id": "ui/purchase_05",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -20.87,
+      "edge_step": 0.0,
+      "largest_step": 0.305816650390625,
+      "errors": []
+    },
+    {
+      "id": "ui/reroll_01",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -27.2,
+      "edge_step": 0.0,
+      "largest_step": 0.214019775390625,
+      "errors": []
+    },
+    {
+      "id": "ui/reroll_02",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -20.25,
+      "edge_step": 0.0,
+      "largest_step": 0.280303955078125,
+      "errors": []
+    },
+    {
+      "id": "ui/reroll_03",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -23.17,
+      "edge_step": 0.0,
+      "largest_step": 0.364227294921875,
+      "errors": []
+    },
+    {
+      "id": "ui/reroll_04",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -28.32,
+      "edge_step": 0.0,
+      "largest_step": 0.1365966796875,
+      "errors": []
+    },
+    {
+      "id": "ui/reroll_05",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -26.14,
+      "edge_step": 0.0,
+      "largest_step": 0.355072021484375,
+      "errors": []
+    },
+    {
+      "id": "ui/lock_01",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -31.03,
+      "edge_step": 0.0,
+      "largest_step": 0.20758056640625,
+      "errors": []
+    },
+    {
+      "id": "ui/lock_02",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -26.41,
+      "edge_step": 0.0,
+      "largest_step": 0.20086669921875,
+      "errors": []
+    },
+    {
+      "id": "ui/lock_03",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -24.61,
+      "edge_step": 0.0,
+      "largest_step": 0.17608642578125,
+      "errors": []
+    },
+    {
+      "id": "ui/lock_04",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -25.89,
+      "edge_step": 0.0,
+      "largest_step": 0.2772216796875,
+      "errors": []
+    },
+    {
+      "id": "ui/lock_05",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -31.84,
+      "edge_step": 0.0,
+      "largest_step": 0.443511962890625,
+      "errors": []
+    },
+    {
+      "id": "ui/reward_01",
+      "peak_dbfs": -4.89,
+      "rms_dbfs": -19.17,
+      "edge_step": 0.0,
+      "largest_step": 0.14678955078125,
+      "errors": []
+    },
+    {
+      "id": "ui/reward_02",
+      "peak_dbfs": -4.57,
+      "rms_dbfs": -19.17,
+      "edge_step": 0.0,
+      "largest_step": 0.2159423828125,
+      "errors": []
+    },
+    {
+      "id": "ui/reward_03",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -20.75,
+      "edge_step": 0.0,
+      "largest_step": 0.320587158203125,
+      "errors": []
+    },
+    {
+      "id": "ui/reward_04",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -22.31,
+      "edge_step": 0.0,
+      "largest_step": 0.248077392578125,
+      "errors": []
+    },
+    {
+      "id": "ui/reward_05",
+      "peak_dbfs": -5.19,
+      "rms_dbfs": -19.17,
+      "edge_step": 0.0,
+      "largest_step": 0.139495849609375,
+      "errors": []
+    },
+    {
+      "id": "ui/branch_01",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -23.29,
+      "edge_step": 0.0,
+      "largest_step": 0.24700927734375,
+      "errors": []
+    },
+    {
+      "id": "ui/branch_02",
+      "peak_dbfs": -4.42,
+      "rms_dbfs": -19.17,
+      "edge_step": 0.0,
+      "largest_step": 0.266815185546875,
+      "errors": []
+    },
+    {
+      "id": "ui/branch_03",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -19.18,
+      "edge_step": 0.0,
+      "largest_step": 0.192535400390625,
+      "errors": []
+    },
+    {
+      "id": "ui/branch_04",
+      "peak_dbfs": -5.63,
+      "rms_dbfs": -19.17,
+      "edge_step": 0.0,
+      "largest_step": 0.190338134765625,
+      "errors": []
+    },
+    {
+      "id": "ui/branch_05",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -25.9,
+      "edge_step": 0.0,
+      "largest_step": 0.250762939453125,
+      "errors": []
+    },
+    {
+      "id": "ui/wave_start_01",
+      "peak_dbfs": -5.66,
+      "rms_dbfs": -19.17,
+      "edge_step": 0.0,
+      "largest_step": 0.129730224609375,
+      "errors": []
+    },
+    {
+      "id": "ui/wave_start_02",
+      "peak_dbfs": -5.28,
+      "rms_dbfs": -19.17,
+      "edge_step": 0.0,
+      "largest_step": 0.35986328125,
+      "errors": []
+    },
+    {
+      "id": "ui/wave_start_03",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -19.61,
+      "edge_step": 0.0,
+      "largest_step": 0.11492919921875,
+      "errors": []
+    },
+    {
+      "id": "ui/wave_start_04",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -22.53,
+      "edge_step": 0.0,
+      "largest_step": 0.22412109375,
+      "errors": []
+    },
+    {
+      "id": "ui/wave_start_05",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -24.74,
+      "edge_step": 0.0,
+      "largest_step": 0.222503662109375,
+      "errors": []
+    },
+    {
+      "id": "ui/wave_clear_01",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -22.08,
+      "edge_step": 0.0,
+      "largest_step": 0.1622314453125,
+      "errors": []
+    },
+    {
+      "id": "ui/wave_clear_02",
+      "peak_dbfs": -4.26,
+      "rms_dbfs": -19.17,
+      "edge_step": 0.0,
+      "largest_step": 0.208648681640625,
+      "errors": []
+    },
+    {
+      "id": "ui/wave_clear_03",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -22.96,
+      "edge_step": 0.0,
+      "largest_step": 0.314727783203125,
+      "errors": []
+    },
+    {
+      "id": "ui/wave_clear_04",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -21.8,
+      "edge_step": 0.0,
+      "largest_step": 0.1563720703125,
+      "errors": []
+    },
+    {
+      "id": "ui/wave_clear_05",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -20.39,
+      "edge_step": 0.0,
+      "largest_step": 0.30352783203125,
+      "errors": []
+    },
+    {
+      "id": "ui/stone_01",
+      "peak_dbfs": -5.55,
+      "rms_dbfs": -19.17,
+      "edge_step": 0.0,
+      "largest_step": 0.134490966796875,
+      "errors": []
+    },
+    {
+      "id": "ui/stone_02",
+      "peak_dbfs": -4.62,
+      "rms_dbfs": -19.17,
+      "edge_step": 0.0,
+      "largest_step": 0.252044677734375,
+      "errors": []
+    },
+    {
+      "id": "ui/stone_03",
+      "peak_dbfs": -5.23,
+      "rms_dbfs": -19.17,
+      "edge_step": 0.0,
+      "largest_step": 0.14251708984375,
+      "errors": []
+    },
+    {
+      "id": "ui/stone_04",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -26.71,
+      "edge_step": 0.0,
+      "largest_step": 0.456329345703125,
+      "errors": []
+    },
+    {
+      "id": "ui/stone_05",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -23.42,
+      "edge_step": 0.0,
+      "largest_step": 0.228485107421875,
+      "errors": []
+    },
+    {
+      "id": "ui/supply_01",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -26.19,
+      "edge_step": 0.0,
+      "largest_step": 0.16790771484375,
+      "errors": []
+    },
+    {
+      "id": "ui/supply_02",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -22.5,
+      "edge_step": 0.0,
+      "largest_step": 0.230560302734375,
+      "errors": []
+    },
+    {
+      "id": "ui/supply_03",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -28.39,
+      "edge_step": 0.0,
+      "largest_step": 0.21636962890625,
+      "errors": []
+    },
+    {
+      "id": "ui/supply_04",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -24.56,
+      "edge_step": 0.0,
+      "largest_step": 0.29541015625,
+      "errors": []
+    },
+    {
+      "id": "ui/supply_05",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -25.95,
+      "edge_step": 0.0,
+      "largest_step": 0.17840576171875,
+      "errors": []
+    },
+    {
+      "id": "ui/result_01",
+      "peak_dbfs": -4.68,
+      "rms_dbfs": -19.17,
+      "edge_step": 0.0,
+      "largest_step": 0.144256591796875,
+      "errors": []
+    },
+    {
+      "id": "ui/result_02",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -25.44,
+      "edge_step": 0.0,
+      "largest_step": 0.23931884765625,
+      "errors": []
+    },
+    {
+      "id": "ui/result_03",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -24.8,
+      "edge_step": 0.0,
+      "largest_step": 0.297119140625,
+      "errors": []
+    },
+    {
+      "id": "ui/result_04",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -25.69,
+      "edge_step": 0.0,
+      "largest_step": 0.2393798828125,
+      "errors": []
+    },
+    {
+      "id": "ui/result_05",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -23.74,
+      "edge_step": 0.0,
+      "largest_step": 0.16033935546875,
+      "errors": []
+    },
+    {
+      "id": "weapons/mana_bolt_01",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -21.99,
+      "edge_step": 0.0,
+      "largest_step": 0.3260498046875,
+      "errors": []
+    },
+    {
+      "id": "weapons/mana_bolt_02",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -18.5,
+      "edge_step": 0.0,
+      "largest_step": 0.081207275390625,
+      "errors": []
+    },
+    {
+      "id": "weapons/mana_bolt_03",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -21.54,
+      "edge_step": 0.0,
+      "largest_step": 0.1851806640625,
+      "errors": []
+    },
+    {
+      "id": "weapons/mana_bolt_04",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -22.18,
+      "edge_step": 0.0,
+      "largest_step": 0.2962646484375,
+      "errors": []
+    },
+    {
+      "id": "weapons/mana_bolt_05",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -18.44,
+      "edge_step": 0.0,
+      "largest_step": 0.094818115234375,
+      "errors": []
+    },
+    {
+      "id": "weapons/piercing_01",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -18.44,
+      "edge_step": 0.0,
+      "largest_step": 0.118255615234375,
+      "errors": []
+    },
+    {
+      "id": "weapons/piercing_02",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -21.89,
+      "edge_step": 0.0,
+      "largest_step": 0.337646484375,
+      "errors": []
+    },
+    {
+      "id": "weapons/piercing_03",
+      "peak_dbfs": -4.13,
+      "rms_dbfs": -17.72,
+      "edge_step": 0.0,
+      "largest_step": 0.09771728515625,
+      "errors": []
+    },
+    {
+      "id": "weapons/piercing_04",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -17.83,
+      "edge_step": 0.0,
+      "largest_step": 0.2779541015625,
+      "errors": []
+    },
+    {
+      "id": "weapons/piercing_05",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -22.94,
+      "edge_step": 0.0,
+      "largest_step": 0.3204345703125,
+      "errors": []
+    },
+    {
+      "id": "weapons/turret_01",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -25.16,
+      "edge_step": 0.0,
+      "largest_step": 0.225250244140625,
+      "errors": []
+    },
+    {
+      "id": "weapons/turret_02",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -22.06,
+      "edge_step": 0.0,
+      "largest_step": 0.16583251953125,
+      "errors": []
+    },
+    {
+      "id": "weapons/turret_03",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -23.53,
+      "edge_step": 0.0,
+      "largest_step": 0.374908447265625,
+      "errors": []
+    },
+    {
+      "id": "weapons/turret_04",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -25.83,
+      "edge_step": 0.0,
+      "largest_step": 0.260284423828125,
+      "errors": []
+    },
+    {
+      "id": "weapons/turret_05",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -24.89,
+      "edge_step": 0.0,
+      "largest_step": 0.2138671875,
+      "errors": []
+    },
+    {
+      "id": "weapons/slash_01",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -30.73,
+      "edge_step": 0.0,
+      "largest_step": 0.22088623046875,
+      "errors": []
+    },
+    {
+      "id": "weapons/slash_02",
+      "peak_dbfs": -4.84,
+      "rms_dbfs": -17.72,
+      "edge_step": 0.0,
+      "largest_step": 0.32659912109375,
+      "errors": []
+    },
+    {
+      "id": "weapons/slash_03",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -19.65,
+      "edge_step": 0.0,
+      "largest_step": 0.336456298828125,
+      "errors": []
+    },
+    {
+      "id": "weapons/slash_04",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -19.56,
+      "edge_step": 0.0,
+      "largest_step": 0.164581298828125,
+      "errors": []
+    },
+    {
+      "id": "weapons/slash_05",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -21.6,
+      "edge_step": 0.0,
+      "largest_step": 0.418487548828125,
+      "errors": []
+    },
+    {
+      "id": "weapons/orbit_01",
+      "peak_dbfs": -5.49,
+      "rms_dbfs": -17.72,
+      "edge_step": 0.0,
+      "largest_step": 0.22552490234375,
+      "errors": []
+    },
+    {
+      "id": "weapons/orbit_02",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -26.47,
+      "edge_step": 0.0,
+      "largest_step": 0.204376220703125,
+      "errors": []
+    },
+    {
+      "id": "weapons/orbit_03",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -23.43,
+      "edge_step": 0.0,
+      "largest_step": 0.398773193359375,
+      "errors": []
+    },
+    {
+      "id": "weapons/orbit_04",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -19.6,
+      "edge_step": 0.0,
+      "largest_step": 0.108856201171875,
+      "errors": []
+    },
+    {
+      "id": "weapons/orbit_05",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -18.73,
+      "edge_step": 0.0,
+      "largest_step": 0.3824462890625,
+      "errors": []
+    },
+    {
+      "id": "weapons/mine_arm_01",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -26.29,
+      "edge_step": 0.0,
+      "largest_step": 0.2083740234375,
+      "errors": []
+    },
+    {
+      "id": "weapons/mine_arm_02",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -24.38,
+      "edge_step": 0.0,
+      "largest_step": 0.238555908203125,
+      "errors": []
+    },
+    {
+      "id": "weapons/mine_arm_03",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -34.66,
+      "edge_step": 0.0,
+      "largest_step": 0.357879638671875,
+      "errors": []
+    },
+    {
+      "id": "weapons/mine_arm_04",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -19.03,
+      "edge_step": 0.0,
+      "largest_step": 0.255950927734375,
+      "errors": []
+    },
+    {
+      "id": "weapons/mine_arm_05",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -27.68,
+      "edge_step": 0.0,
+      "largest_step": 0.202850341796875,
+      "errors": []
+    },
+    {
+      "id": "weapons/chain_01",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -23.25,
+      "edge_step": 0.0,
+      "largest_step": 0.223968505859375,
+      "errors": []
+    },
+    {
+      "id": "weapons/chain_02",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -20.61,
+      "edge_step": 0.0,
+      "largest_step": 0.176483154296875,
+      "errors": []
+    },
+    {
+      "id": "weapons/chain_03",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -19.49,
+      "edge_step": 0.0,
+      "largest_step": 0.247528076171875,
+      "errors": []
+    },
+    {
+      "id": "weapons/chain_04",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -24.51,
+      "edge_step": 0.0,
+      "largest_step": 0.24365234375,
+      "errors": []
+    },
+    {
+      "id": "weapons/chain_05",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -19.19,
+      "edge_step": 0.0,
+      "largest_step": 0.25372314453125,
+      "errors": []
+    },
+    {
+      "id": "weapons/field_01",
+      "peak_dbfs": -4.31,
+      "rms_dbfs": -17.72,
+      "edge_step": 0.0,
+      "largest_step": 0.2452392578125,
+      "errors": []
+    },
+    {
+      "id": "weapons/field_02",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -18.79,
+      "edge_step": 0.0,
+      "largest_step": 0.2520751953125,
+      "errors": []
+    },
+    {
+      "id": "weapons/field_03",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -21.19,
+      "edge_step": 0.0,
+      "largest_step": 0.226470947265625,
+      "errors": []
+    },
+    {
+      "id": "weapons/field_04",
+      "peak_dbfs": -4.5,
+      "rms_dbfs": -17.72,
+      "edge_step": 0.0,
+      "largest_step": 0.177764892578125,
+      "errors": []
+    },
+    {
+      "id": "weapons/field_05",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -21.65,
+      "edge_step": 0.0,
+      "largest_step": 0.186920166015625,
+      "errors": []
+    },
+    {
+      "id": "weapons/heavy_shot_01",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -21.13,
+      "edge_step": 0.0,
+      "largest_step": 0.30810546875,
+      "errors": []
+    },
+    {
+      "id": "weapons/heavy_shot_02",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -25.19,
+      "edge_step": 0.0,
+      "largest_step": 0.149566650390625,
+      "errors": []
+    },
+    {
+      "id": "weapons/heavy_shot_03",
+      "peak_dbfs": -5.26,
+      "rms_dbfs": -17.72,
+      "edge_step": 0.0,
+      "largest_step": 0.057037353515625,
+      "errors": []
+    },
+    {
+      "id": "weapons/heavy_shot_04",
+      "peak_dbfs": -6.1,
+      "rms_dbfs": -17.72,
+      "edge_step": 0.0,
+      "largest_step": 0.067626953125,
+      "errors": []
+    },
+    {
+      "id": "weapons/heavy_shot_05",
+      "peak_dbfs": -6.18,
+      "rms_dbfs": -17.72,
+      "edge_step": 0.0,
+      "largest_step": 0.0501708984375,
+      "errors": []
+    },
+    {
+      "id": "weapons/scatter_01",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -22.68,
+      "edge_step": 0.0,
+      "largest_step": 0.324615478515625,
+      "errors": []
+    },
+    {
+      "id": "weapons/scatter_02",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -19.83,
+      "edge_step": 0.0,
+      "largest_step": 0.121368408203125,
+      "errors": []
+    },
+    {
+      "id": "weapons/scatter_03",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -22.45,
+      "edge_step": 0.0,
+      "largest_step": 0.186676025390625,
+      "errors": []
+    },
+    {
+      "id": "weapons/scatter_04",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -23.65,
+      "edge_step": 0.0,
+      "largest_step": 0.302886962890625,
+      "errors": []
+    },
+    {
+      "id": "weapons/scatter_05",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -19.17,
+      "edge_step": 0.0,
+      "largest_step": 0.16046142578125,
+      "errors": []
+    },
+    {
+      "id": "weapons/burst_01",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -20.83,
+      "edge_step": 0.0,
+      "largest_step": 0.311248779296875,
+      "errors": []
+    },
+    {
+      "id": "weapons/burst_02",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -23.4,
+      "edge_step": 0.0,
+      "largest_step": 0.37017822265625,
+      "errors": []
+    },
+    {
+      "id": "weapons/burst_03",
+      "peak_dbfs": -4.9,
+      "rms_dbfs": -17.72,
+      "edge_step": 0.0,
+      "largest_step": 0.185302734375,
+      "errors": []
+    },
+    {
+      "id": "weapons/burst_04",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -23.27,
+      "edge_step": 0.0,
+      "largest_step": 0.361175537109375,
+      "errors": []
+    },
+    {
+      "id": "weapons/burst_05",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -17.99,
+      "edge_step": 0.0,
+      "largest_step": 0.06805419921875,
+      "errors": []
+    },
+    {
+      "id": "weapons/rail_01",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -25.27,
+      "edge_step": 0.0,
+      "largest_step": 0.23004150390625,
+      "errors": []
+    },
+    {
+      "id": "weapons/rail_02",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -20.66,
+      "edge_step": 0.0,
+      "largest_step": 0.203460693359375,
+      "errors": []
+    },
+    {
+      "id": "weapons/rail_03",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -20.11,
+      "edge_step": 0.0,
+      "largest_step": 0.297393798828125,
+      "errors": []
+    },
+    {
+      "id": "weapons/rail_04",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -23.37,
+      "edge_step": 0.0,
+      "largest_step": 0.266937255859375,
+      "errors": []
+    },
+    {
+      "id": "weapons/rail_05",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -18.16,
+      "edge_step": 0.0,
+      "largest_step": 0.0838623046875,
+      "errors": []
+    },
+    {
+      "id": "weapons/bow_01",
+      "peak_dbfs": -5.48,
+      "rms_dbfs": -17.72,
+      "edge_step": 0.0,
+      "largest_step": 0.33001708984375,
+      "errors": []
+    },
+    {
+      "id": "weapons/bow_02",
+      "peak_dbfs": -4.4,
+      "rms_dbfs": -17.72,
+      "edge_step": 0.0,
+      "largest_step": 0.05194091796875,
+      "errors": []
+    },
+    {
+      "id": "weapons/bow_03",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -18.51,
+      "edge_step": 0.0,
+      "largest_step": 0.289520263671875,
+      "errors": []
+    },
+    {
+      "id": "weapons/bow_04",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -20.57,
+      "edge_step": 0.0,
+      "largest_step": 0.078948974609375,
+      "errors": []
+    },
+    {
+      "id": "weapons/bow_05",
+      "peak_dbfs": -6.81,
+      "rms_dbfs": -17.72,
+      "edge_step": 0.0,
+      "largest_step": 0.05633544921875,
+      "errors": []
+    },
+    {
+      "id": "weapons/dagger_01",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -29.45,
+      "edge_step": 0.0,
+      "largest_step": 0.220428466796875,
+      "errors": []
+    },
+    {
+      "id": "weapons/dagger_02",
+      "peak_dbfs": -5.81,
+      "rms_dbfs": -17.72,
+      "edge_step": 0.0,
+      "largest_step": 0.28509521484375,
+      "errors": []
+    },
+    {
+      "id": "weapons/dagger_03",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -29.52,
+      "edge_step": 0.0,
+      "largest_step": 0.515472412109375,
+      "errors": []
+    },
+    {
+      "id": "weapons/dagger_04",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -25.51,
+      "edge_step": 0.0,
+      "largest_step": 0.367919921875,
+      "errors": []
+    },
+    {
+      "id": "weapons/dagger_05",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -27.14,
+      "edge_step": 0.0,
+      "largest_step": 0.807159423828125,
+      "errors": []
+    },
+    {
+      "id": "weapons/hammer_01",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -19.96,
+      "edge_step": 0.0,
+      "largest_step": 0.1556396484375,
+      "errors": []
+    },
+    {
+      "id": "weapons/hammer_02",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -26.39,
+      "edge_step": 0.0,
+      "largest_step": 0.243621826171875,
+      "errors": []
+    },
+    {
+      "id": "weapons/hammer_03",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -18.26,
+      "edge_step": 0.0,
+      "largest_step": 0.09771728515625,
+      "errors": []
+    },
+    {
+      "id": "weapons/hammer_04",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -20.63,
+      "edge_step": 0.0,
+      "largest_step": 0.13507080078125,
+      "errors": []
+    },
+    {
+      "id": "weapons/hammer_05",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -26.4,
+      "edge_step": 0.0,
+      "largest_step": 0.143341064453125,
+      "errors": []
+    },
+    {
+      "id": "weapons/whip_01",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -20.82,
+      "edge_step": 0.0,
+      "largest_step": 0.15435791015625,
+      "errors": []
+    },
+    {
+      "id": "weapons/whip_02",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -24.84,
+      "edge_step": 0.0,
+      "largest_step": 0.410736083984375,
+      "errors": []
+    },
+    {
+      "id": "weapons/whip_03",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -22.37,
+      "edge_step": 0.0,
+      "largest_step": 0.192108154296875,
+      "errors": []
+    },
+    {
+      "id": "weapons/whip_04",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -19.26,
+      "edge_step": 0.0,
+      "largest_step": 0.289520263671875,
+      "errors": []
+    },
+    {
+      "id": "weapons/whip_05",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -26.06,
+      "edge_step": 0.0,
+      "largest_step": 0.417327880859375,
+      "errors": []
+    },
+    {
+      "id": "weapons/reload_01",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -31.85,
+      "edge_step": 0.0,
+      "largest_step": 0.417236328125,
+      "errors": []
+    },
+    {
+      "id": "weapons/reload_02",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -29.22,
+      "edge_step": 0.0,
+      "largest_step": 0.201751708984375,
+      "errors": []
+    },
+    {
+      "id": "weapons/reload_03",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -35.34,
+      "edge_step": 0.0,
+      "largest_step": 0.362548828125,
+      "errors": []
+    },
+    {
+      "id": "weapons/reload_04",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -26.16,
+      "edge_step": 0.0,
+      "largest_step": 0.282470703125,
+      "errors": []
+    },
+    {
+      "id": "weapons/reload_05",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -19.21,
+      "edge_step": 0.0,
+      "largest_step": 0.3946533203125,
+      "errors": []
+    },
+    {
+      "id": "weapons/deploy_01",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -18.18,
+      "edge_step": 0.0,
+      "largest_step": 0.432830810546875,
+      "errors": []
+    },
+    {
+      "id": "weapons/deploy_02",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -28.03,
+      "edge_step": 0.0,
+      "largest_step": 0.211639404296875,
+      "errors": []
+    },
+    {
+      "id": "weapons/deploy_03",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -24.47,
+      "edge_step": 0.0,
+      "largest_step": 0.1424560546875,
+      "errors": []
+    },
+    {
+      "id": "weapons/deploy_04",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -22.68,
+      "edge_step": 0.0,
+      "largest_step": 0.234893798828125,
+      "errors": []
+    },
+    {
+      "id": "weapons/deploy_05",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -25.93,
+      "edge_step": 0.0,
+      "largest_step": 0.241241455078125,
+      "errors": []
+    },
+    {
+      "id": "weapons/drone_01",
+      "peak_dbfs": -5.54,
+      "rms_dbfs": -17.72,
+      "edge_step": 0.0,
+      "largest_step": 0.2117919921875,
+      "errors": []
+    },
+    {
+      "id": "weapons/drone_02",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -19.15,
+      "edge_step": 0.0,
+      "largest_step": 0.256103515625,
+      "errors": []
+    },
+    {
+      "id": "weapons/drone_03",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -18.95,
+      "edge_step": 0.0,
+      "largest_step": 0.140899658203125,
+      "errors": []
+    },
+    {
+      "id": "weapons/drone_04",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -20.63,
+      "edge_step": 0.0,
+      "largest_step": 0.25213623046875,
+      "errors": []
+    },
+    {
+      "id": "weapons/drone_05",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -21.08,
+      "edge_step": 0.0,
+      "largest_step": 0.230438232421875,
+      "errors": []
+    },
+    {
+      "id": "weapons/shield_01",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -25.56,
+      "edge_step": 0.0,
+      "largest_step": 0.11187744140625,
+      "errors": []
+    },
+    {
+      "id": "weapons/shield_02",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -18.43,
+      "edge_step": 0.0,
+      "largest_step": 0.1492919921875,
+      "errors": []
+    },
+    {
+      "id": "weapons/shield_03",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -20.4,
+      "edge_step": 0.0,
+      "largest_step": 0.25982666015625,
+      "errors": []
+    },
+    {
+      "id": "weapons/shield_04",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -19.64,
+      "edge_step": 0.0,
+      "largest_step": 0.1031494140625,
+      "errors": []
+    },
+    {
+      "id": "weapons/shield_05",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -18.44,
+      "edge_step": 0.0,
+      "largest_step": 0.13763427734375,
+      "errors": []
+    },
+    {
+      "id": "weapons/dash_01",
+      "peak_dbfs": -4.35,
+      "rms_dbfs": -17.72,
+      "edge_step": 0.0,
+      "largest_step": 0.27154541015625,
+      "errors": []
+    },
+    {
+      "id": "weapons/dash_02",
+      "peak_dbfs": -5.77,
+      "rms_dbfs": -17.72,
+      "edge_step": 0.0,
+      "largest_step": 0.289825439453125,
+      "errors": []
+    },
+    {
+      "id": "weapons/dash_03",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -20.82,
+      "edge_step": 0.0,
+      "largest_step": 0.138031005859375,
+      "errors": []
+    },
+    {
+      "id": "weapons/dash_04",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -25.14,
+      "edge_step": 0.0,
+      "largest_step": 0.14398193359375,
+      "errors": []
+    },
+    {
+      "id": "weapons/dash_05",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -20.81,
+      "edge_step": 0.0,
+      "largest_step": 0.33306884765625,
+      "errors": []
+    },
+    {
+      "id": "weapons/charge_01",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -19.95,
+      "edge_step": 0.0,
+      "largest_step": 0.294219970703125,
+      "errors": []
+    },
+    {
+      "id": "weapons/charge_02",
+      "peak_dbfs": -6.8,
+      "rms_dbfs": -17.72,
+      "edge_step": 0.0,
+      "largest_step": 0.099853515625,
+      "errors": []
+    },
+    {
+      "id": "weapons/charge_03",
+      "peak_dbfs": -5.47,
+      "rms_dbfs": -17.72,
+      "edge_step": 0.0,
+      "largest_step": 0.0916748046875,
+      "errors": []
+    },
+    {
+      "id": "weapons/charge_04",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -20.78,
+      "edge_step": 0.0,
+      "largest_step": 0.296356201171875,
+      "errors": []
+    },
+    {
+      "id": "weapons/charge_05",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -19.95,
+      "edge_step": 0.0,
+      "largest_step": 0.136199951171875,
+      "errors": []
+    },
+    {
+      "id": "weapons/throw_01",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -20.61,
+      "edge_step": 0.0,
+      "largest_step": 0.418914794921875,
+      "errors": []
+    },
+    {
+      "id": "weapons/throw_02",
+      "peak_dbfs": -5.25,
+      "rms_dbfs": -17.72,
+      "edge_step": 0.0,
+      "largest_step": 0.27130126953125,
+      "errors": []
+    },
+    {
+      "id": "weapons/throw_03",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -19.28,
+      "edge_step": 0.0,
+      "largest_step": 0.3734130859375,
+      "errors": []
+    },
+    {
+      "id": "weapons/throw_04",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -20.67,
+      "edge_step": 0.0,
+      "largest_step": 0.40130615234375,
+      "errors": []
+    },
+    {
+      "id": "weapons/throw_05",
+      "peak_dbfs": -4.73,
+      "rms_dbfs": -17.72,
+      "edge_step": 0.0,
+      "largest_step": 0.271240234375,
+      "errors": []
+    },
+    {
+      "id": "weapons/device_stop_01",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -24.28,
+      "edge_step": 0.0,
+      "largest_step": 0.216766357421875,
+      "errors": []
+    },
+    {
+      "id": "weapons/device_stop_02",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -25.68,
+      "edge_step": 0.0,
+      "largest_step": 0.190643310546875,
+      "errors": []
+    },
+    {
+      "id": "weapons/device_stop_03",
+      "peak_dbfs": -4.77,
+      "rms_dbfs": -17.72,
+      "edge_step": 0.0,
+      "largest_step": 0.02374267578125,
+      "errors": []
+    },
+    {
+      "id": "weapons/device_stop_04",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -27.36,
+      "edge_step": 0.0,
+      "largest_step": 0.10589599609375,
+      "errors": []
+    },
+    {
+      "id": "weapons/device_stop_05",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -26.82,
+      "edge_step": 0.0,
+      "largest_step": 0.202728271484375,
+      "errors": []
+    },
+    {
+      "id": "impacts/hit_light_01",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -19.25,
+      "edge_step": 0.0,
+      "largest_step": 0.219573974609375,
+      "errors": []
+    },
+    {
+      "id": "impacts/hit_light_02",
+      "peak_dbfs": -5.12,
+      "rms_dbfs": -17.08,
+      "edge_step": 0.0,
+      "largest_step": 0.296630859375,
+      "errors": []
+    },
+    {
+      "id": "impacts/hit_light_03",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -30.32,
+      "edge_step": 0.0,
+      "largest_step": 0.383148193359375,
+      "errors": []
+    },
+    {
+      "id": "impacts/hit_light_04",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -19.98,
+      "edge_step": 0.0,
+      "largest_step": 0.181488037109375,
+      "errors": []
+    },
+    {
+      "id": "impacts/hit_light_05",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -18.85,
+      "edge_step": 0.0,
+      "largest_step": 0.139312744140625,
+      "errors": []
+    },
+    {
+      "id": "impacts/critical_01",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -24.27,
+      "edge_step": 0.0,
+      "largest_step": 0.277008056640625,
+      "errors": []
+    },
+    {
+      "id": "impacts/critical_02",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -19.38,
+      "edge_step": 0.0,
+      "largest_step": 0.236328125,
+      "errors": []
+    },
+    {
+      "id": "impacts/critical_03",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -19.93,
+      "edge_step": 0.0,
+      "largest_step": 0.19915771484375,
+      "errors": []
+    },
+    {
+      "id": "impacts/critical_04",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -23.35,
+      "edge_step": 0.0,
+      "largest_step": 0.25433349609375,
+      "errors": []
+    },
+    {
+      "id": "impacts/critical_05",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -18.81,
+      "edge_step": 0.0,
+      "largest_step": 0.173004150390625,
+      "errors": []
+    },
+    {
+      "id": "impacts/death_01",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -23.95,
+      "edge_step": 0.0,
+      "largest_step": 0.267425537109375,
+      "errors": []
+    },
+    {
+      "id": "impacts/death_02",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -21.16,
+      "edge_step": 0.0,
+      "largest_step": 0.281036376953125,
+      "errors": []
+    },
+    {
+      "id": "impacts/death_03",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -25.53,
+      "edge_step": 0.0,
+      "largest_step": 0.43914794921875,
+      "errors": []
+    },
+    {
+      "id": "impacts/death_04",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -25.05,
+      "edge_step": 0.0,
+      "largest_step": 0.22119140625,
+      "errors": []
+    },
+    {
+      "id": "impacts/death_05",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -20.9,
+      "edge_step": 0.0,
+      "largest_step": 0.302093505859375,
+      "errors": []
+    },
+    {
+      "id": "impacts/arcane_blast_01",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -21.95,
+      "edge_step": 0.0,
+      "largest_step": 0.084747314453125,
+      "errors": []
+    },
+    {
+      "id": "impacts/arcane_blast_02",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -21.08,
+      "edge_step": 0.0,
+      "largest_step": 0.065185546875,
+      "errors": []
+    },
+    {
+      "id": "impacts/arcane_blast_03",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -17.14,
+      "edge_step": 0.0,
+      "largest_step": 0.120086669921875,
+      "errors": []
+    },
+    {
+      "id": "impacts/arcane_blast_04",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -21.34,
+      "edge_step": 0.0,
+      "largest_step": 0.160430908203125,
+      "errors": []
+    },
+    {
+      "id": "impacts/arcane_blast_05",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -25.85,
+      "edge_step": 0.0,
+      "largest_step": 0.235595703125,
+      "errors": []
+    },
+    {
+      "id": "impacts/mine_blast_01",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -22.82,
+      "edge_step": 0.0,
+      "largest_step": 0.25677490234375,
+      "errors": []
+    },
+    {
+      "id": "impacts/mine_blast_02",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -22.06,
+      "edge_step": 0.0,
+      "largest_step": 0.07220458984375,
+      "errors": []
+    },
+    {
+      "id": "impacts/mine_blast_03",
+      "peak_dbfs": -5.55,
+      "rms_dbfs": -17.08,
+      "edge_step": 0.0,
+      "largest_step": 0.115814208984375,
+      "errors": []
+    },
+    {
+      "id": "impacts/mine_blast_04",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -17.78,
+      "edge_step": 0.0,
+      "largest_step": 0.013824462890625,
+      "errors": []
+    },
+    {
+      "id": "impacts/mine_blast_05",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -25.61,
+      "edge_step": 0.0,
+      "largest_step": 0.221649169921875,
+      "errors": []
+    },
+    {
+      "id": "impacts/metal_01",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -23.13,
+      "edge_step": 0.0,
+      "largest_step": 0.390289306640625,
+      "errors": []
+    },
+    {
+      "id": "impacts/metal_02",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -17.72,
+      "edge_step": 0.0,
+      "largest_step": 0.193145751953125,
+      "errors": []
+    },
+    {
+      "id": "impacts/metal_03",
+      "peak_dbfs": -4.53,
+      "rms_dbfs": -17.08,
+      "edge_step": 0.0,
+      "largest_step": 0.021453857421875,
+      "errors": []
+    },
+    {
+      "id": "impacts/metal_04",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -23.09,
+      "edge_step": 0.0,
+      "largest_step": 0.367218017578125,
+      "errors": []
+    },
+    {
+      "id": "impacts/metal_05",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -18.8,
+      "edge_step": 0.0,
+      "largest_step": 0.13787841796875,
+      "errors": []
+    },
+    {
+      "id": "impacts/armor_01",
+      "peak_dbfs": -4.22,
+      "rms_dbfs": -17.08,
+      "edge_step": 0.0,
+      "largest_step": 0.203094482421875,
+      "errors": []
+    },
+    {
+      "id": "impacts/armor_02",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -23.59,
+      "edge_step": 0.0,
+      "largest_step": 0.100616455078125,
+      "errors": []
+    },
+    {
+      "id": "impacts/armor_03",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -17.85,
+      "edge_step": 0.0,
+      "largest_step": 0.0692138671875,
+      "errors": []
+    },
+    {
+      "id": "impacts/armor_04",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -19.32,
+      "edge_step": 0.0,
+      "largest_step": 0.29669189453125,
+      "errors": []
+    },
+    {
+      "id": "impacts/armor_05",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -21.18,
+      "edge_step": 0.0,
+      "largest_step": 0.095977783203125,
+      "errors": []
+    },
+    {
+      "id": "impacts/wood_01",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -26.02,
+      "edge_step": 0.0,
+      "largest_step": 0.299224853515625,
+      "errors": []
+    },
+    {
+      "id": "impacts/wood_02",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -20.39,
+      "edge_step": 0.0,
+      "largest_step": 0.137420654296875,
+      "errors": []
+    },
+    {
+      "id": "impacts/wood_03",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -24.24,
+      "edge_step": 0.0,
+      "largest_step": 0.4368896484375,
+      "errors": []
+    },
+    {
+      "id": "impacts/wood_04",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -25.19,
+      "edge_step": 0.0,
+      "largest_step": 0.24163818359375,
+      "errors": []
+    },
+    {
+      "id": "impacts/wood_05",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -20.06,
+      "edge_step": 0.0,
+      "largest_step": 0.13232421875,
+      "errors": []
+    },
+    {
+      "id": "impacts/glass_01",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -17.32,
+      "edge_step": 0.0,
+      "largest_step": 0.515289306640625,
+      "errors": []
+    },
+    {
+      "id": "impacts/glass_02",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -19.23,
+      "edge_step": 0.0,
+      "largest_step": 0.336944580078125,
+      "errors": []
+    },
+    {
+      "id": "impacts/glass_03",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -18.38,
+      "edge_step": 0.0,
+      "largest_step": 0.274749755859375,
+      "errors": []
+    },
+    {
+      "id": "impacts/glass_04",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -19.12,
+      "edge_step": 0.0,
+      "largest_step": 0.461578369140625,
+      "errors": []
+    },
+    {
+      "id": "impacts/glass_05",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -18.17,
+      "edge_step": 0.0,
+      "largest_step": 0.36285400390625,
+      "errors": []
+    },
+    {
+      "id": "impacts/stone_01",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -21.76,
+      "edge_step": 0.0,
+      "largest_step": 0.24822998046875,
+      "errors": []
+    },
+    {
+      "id": "impacts/stone_02",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -24.82,
+      "edge_step": 0.0,
+      "largest_step": 0.23565673828125,
+      "errors": []
+    },
+    {
+      "id": "impacts/stone_03",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -23.89,
+      "edge_step": 0.0,
+      "largest_step": 0.352569580078125,
+      "errors": []
+    },
+    {
+      "id": "impacts/stone_04",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -21.3,
+      "edge_step": 0.0,
+      "largest_step": 0.319488525390625,
+      "errors": []
+    },
+    {
+      "id": "impacts/stone_05",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -25.42,
+      "edge_step": 0.0,
+      "largest_step": 0.21624755859375,
+      "errors": []
+    },
+    {
+      "id": "impacts/wet_01",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -20.82,
+      "edge_step": 0.0,
+      "largest_step": 0.28973388671875,
+      "errors": []
+    },
+    {
+      "id": "impacts/wet_02",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -18.08,
+      "edge_step": 0.0,
+      "largest_step": 0.11553955078125,
+      "errors": []
+    },
+    {
+      "id": "impacts/wet_03",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -23.0,
+      "edge_step": 0.0,
+      "largest_step": 0.09039306640625,
+      "errors": []
+    },
+    {
+      "id": "impacts/wet_04",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -29.01,
+      "edge_step": 0.0,
+      "largest_step": 0.3592529296875,
+      "errors": []
+    },
+    {
+      "id": "impacts/wet_05",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -22.0,
+      "edge_step": 0.0,
+      "largest_step": 0.207275390625,
+      "errors": []
+    },
+    {
+      "id": "impacts/heavy_body_01",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -18.88,
+      "edge_step": 0.0,
+      "largest_step": 0.26220703125,
+      "errors": []
+    },
+    {
+      "id": "impacts/heavy_body_02",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -23.36,
+      "edge_step": 0.0,
+      "largest_step": 0.288238525390625,
+      "errors": []
+    },
+    {
+      "id": "impacts/heavy_body_03",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -19.73,
+      "edge_step": 0.0,
+      "largest_step": 0.121673583984375,
+      "errors": []
+    },
+    {
+      "id": "impacts/heavy_body_04",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -20.7,
+      "edge_step": 0.0,
+      "largest_step": 0.147979736328125,
+      "errors": []
+    },
+    {
+      "id": "impacts/heavy_body_05",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -28.04,
+      "edge_step": 0.0,
+      "largest_step": 0.454437255859375,
+      "errors": []
+    },
+    {
+      "id": "impacts/electric_01",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -24.6,
+      "edge_step": 0.0,
+      "largest_step": 0.229217529296875,
+      "errors": []
+    },
+    {
+      "id": "impacts/electric_02",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -19.99,
+      "edge_step": 0.0,
+      "largest_step": 0.144927978515625,
+      "errors": []
+    },
+    {
+      "id": "impacts/electric_03",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -28.08,
+      "edge_step": 0.0,
+      "largest_step": 0.29241943359375,
+      "errors": []
+    },
+    {
+      "id": "impacts/electric_04",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -24.02,
+      "edge_step": 0.0,
+      "largest_step": 0.242431640625,
+      "errors": []
+    },
+    {
+      "id": "impacts/electric_05",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -18.48,
+      "edge_step": 0.0,
+      "largest_step": 0.273162841796875,
+      "errors": []
+    },
+    {
+      "id": "impacts/freeze_01",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -19.51,
+      "edge_step": 0.0,
+      "largest_step": 0.35009765625,
+      "errors": []
+    },
+    {
+      "id": "impacts/freeze_02",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -19.89,
+      "edge_step": 0.0,
+      "largest_step": 0.1859130859375,
+      "errors": []
+    },
+    {
+      "id": "impacts/freeze_03",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -17.64,
+      "edge_step": 0.0,
+      "largest_step": 0.253204345703125,
+      "errors": []
+    },
+    {
+      "id": "impacts/freeze_04",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -19.71,
+      "edge_step": 0.0,
+      "largest_step": 0.271820068359375,
+      "errors": []
+    },
+    {
+      "id": "impacts/freeze_05",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -20.36,
+      "edge_step": 0.0,
+      "largest_step": 0.17669677734375,
+      "errors": []
+    },
+    {
+      "id": "impacts/fire_01",
+      "peak_dbfs": -6.46,
+      "rms_dbfs": -17.08,
+      "edge_step": 0.0,
+      "largest_step": 0.061492919921875,
+      "errors": []
+    },
+    {
+      "id": "impacts/fire_02",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -21.78,
+      "edge_step": 0.0,
+      "largest_step": 0.244354248046875,
+      "errors": []
+    },
+    {
+      "id": "impacts/fire_03",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -21.17,
+      "edge_step": 0.0,
+      "largest_step": 0.08734130859375,
+      "errors": []
+    },
+    {
+      "id": "impacts/fire_04",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -19.05,
+      "edge_step": 0.0,
+      "largest_step": 0.02490234375,
+      "errors": []
+    },
+    {
+      "id": "impacts/fire_05",
+      "peak_dbfs": -4.82,
+      "rms_dbfs": -17.08,
+      "edge_step": 0.0,
+      "largest_step": 0.068878173828125,
+      "errors": []
+    },
+    {
+      "id": "impacts/ricochet_01",
+      "peak_dbfs": -4.93,
+      "rms_dbfs": -17.08,
+      "edge_step": 0.0,
+      "largest_step": 0.1239013671875,
+      "errors": []
+    },
+    {
+      "id": "impacts/ricochet_02",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -24.45,
+      "edge_step": 0.0,
+      "largest_step": 0.359588623046875,
+      "errors": []
+    },
+    {
+      "id": "impacts/ricochet_03",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -17.87,
+      "edge_step": 0.0,
+      "largest_step": 0.186981201171875,
+      "errors": []
+    },
+    {
+      "id": "impacts/ricochet_04",
+      "peak_dbfs": -4.84,
+      "rms_dbfs": -17.08,
+      "edge_step": 0.0,
+      "largest_step": 0.165008544921875,
+      "errors": []
+    },
+    {
+      "id": "impacts/ricochet_05",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -23.26,
+      "edge_step": 0.0,
+      "largest_step": 0.401031494140625,
+      "errors": []
+    },
+    {
+      "id": "impacts/debris_01",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -22.66,
+      "edge_step": 0.0,
+      "largest_step": 0.21051025390625,
+      "errors": []
+    },
+    {
+      "id": "impacts/debris_02",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -22.79,
+      "edge_step": 0.0,
+      "largest_step": 0.41949462890625,
+      "errors": []
+    },
+    {
+      "id": "impacts/debris_03",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -25.79,
+      "edge_step": 0.0,
+      "largest_step": 0.112823486328125,
+      "errors": []
+    },
+    {
+      "id": "impacts/debris_04",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -22.18,
+      "edge_step": 0.0,
+      "largest_step": 0.340240478515625,
+      "errors": []
+    },
+    {
+      "id": "impacts/debris_05",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -27.37,
+      "edge_step": 0.0,
+      "largest_step": 0.1563720703125,
+      "errors": []
+    },
+    {
+      "id": "impacts/collapse_01",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -22.04,
+      "edge_step": 0.0,
+      "largest_step": 0.06219482421875,
+      "errors": []
+    },
+    {
+      "id": "impacts/collapse_02",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -21.38,
+      "edge_step": 0.0,
+      "largest_step": 0.066619873046875,
+      "errors": []
+    },
+    {
+      "id": "impacts/collapse_03",
+      "peak_dbfs": -4.73,
+      "rms_dbfs": -17.08,
+      "edge_step": 0.0,
+      "largest_step": 0.02020263671875,
+      "errors": []
+    },
+    {
+      "id": "impacts/collapse_04",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -24.82,
+      "edge_step": 0.0,
+      "largest_step": 0.021820068359375,
+      "errors": []
+    },
+    {
+      "id": "impacts/collapse_05",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -23.86,
+      "edge_step": 0.0,
+      "largest_step": 0.055206298828125,
+      "errors": []
+    },
+    {
+      "id": "magic/electric_cast_01",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -23.99,
+      "edge_step": 0.0,
+      "largest_step": 0.234832763671875,
+      "errors": []
+    },
+    {
+      "id": "magic/electric_cast_02",
+      "peak_dbfs": -5.56,
+      "rms_dbfs": -20.0,
+      "edge_step": 0.0,
+      "largest_step": 0.299072265625,
+      "errors": []
+    },
+    {
+      "id": "magic/electric_cast_03",
+      "peak_dbfs": -6.0,
+      "rms_dbfs": -20.0,
+      "edge_step": 0.0,
+      "largest_step": 0.20159912109375,
+      "errors": []
+    },
+    {
+      "id": "magic/electric_cast_04",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -23.64,
+      "edge_step": 0.0,
+      "largest_step": 0.235198974609375,
+      "errors": []
+    },
+    {
+      "id": "magic/electric_cast_05",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -22.16,
+      "edge_step": 0.0,
+      "largest_step": 0.238311767578125,
+      "errors": []
+    },
+    {
+      "id": "magic/ice_cast_01",
+      "peak_dbfs": -6.87,
+      "rms_dbfs": -20.0,
+      "edge_step": 0.0,
+      "largest_step": 0.147705078125,
+      "errors": []
+    },
+    {
+      "id": "magic/ice_cast_02",
+      "peak_dbfs": -5.68,
+      "rms_dbfs": -20.0,
+      "edge_step": 0.0,
+      "largest_step": 0.051513671875,
+      "errors": []
+    },
+    {
+      "id": "magic/ice_cast_03",
+      "peak_dbfs": -5.2,
+      "rms_dbfs": -20.0,
+      "edge_step": 0.0,
+      "largest_step": 0.217132568359375,
+      "errors": []
+    },
+    {
+      "id": "magic/ice_cast_04",
+      "peak_dbfs": -5.27,
+      "rms_dbfs": -20.0,
+      "edge_step": 0.0,
+      "largest_step": 0.228729248046875,
+      "errors": []
+    },
+    {
+      "id": "magic/ice_cast_05",
+      "peak_dbfs": -5.27,
+      "rms_dbfs": -20.0,
+      "edge_step": 0.0,
+      "largest_step": 0.0648193359375,
+      "errors": []
+    },
+    {
+      "id": "magic/fire_cast_01",
+      "peak_dbfs": -8.92,
+      "rms_dbfs": -20.0,
+      "edge_step": 0.0,
+      "largest_step": 0.029754638671875,
+      "errors": []
+    },
+    {
+      "id": "magic/fire_cast_02",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -22.48,
+      "edge_step": 0.0,
+      "largest_step": 0.4849853515625,
+      "errors": []
+    },
+    {
+      "id": "magic/fire_cast_03",
+      "peak_dbfs": -4.11,
+      "rms_dbfs": -20.0,
+      "edge_step": 0.0,
+      "largest_step": 0.0294189453125,
+      "errors": []
+    },
+    {
+      "id": "magic/fire_cast_04",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -31.26,
+      "edge_step": 0.0,
+      "largest_step": 0.454559326171875,
+      "errors": []
+    },
+    {
+      "id": "magic/fire_cast_05",
+      "peak_dbfs": -6.41,
+      "rms_dbfs": -20.0,
+      "edge_step": 0.0,
+      "largest_step": 0.0482177734375,
+      "errors": []
+    },
+    {
+      "id": "magic/water_cast_01",
+      "peak_dbfs": -4.73,
+      "rms_dbfs": -20.0,
+      "edge_step": 0.0,
+      "largest_step": 0.123931884765625,
+      "errors": []
+    },
+    {
+      "id": "magic/water_cast_02",
+      "peak_dbfs": -5.1,
+      "rms_dbfs": -20.0,
+      "edge_step": 0.0,
+      "largest_step": 0.144317626953125,
+      "errors": []
+    },
+    {
+      "id": "magic/water_cast_03",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -25.48,
+      "edge_step": 0.0,
+      "largest_step": 0.14239501953125,
+      "errors": []
+    },
+    {
+      "id": "magic/water_cast_04",
+      "peak_dbfs": -4.26,
+      "rms_dbfs": -20.0,
+      "edge_step": 0.0,
+      "largest_step": 0.261322021484375,
+      "errors": []
+    },
+    {
+      "id": "magic/water_cast_05",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -21.83,
+      "edge_step": 0.0,
+      "largest_step": 0.069122314453125,
+      "errors": []
+    },
+    {
+      "id": "magic/wind_cast_01",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -22.66,
+      "edge_step": 0.0,
+      "largest_step": 0.147979736328125,
+      "errors": []
+    },
+    {
+      "id": "magic/wind_cast_02",
+      "peak_dbfs": -5.9,
+      "rms_dbfs": -20.0,
+      "edge_step": 0.0,
+      "largest_step": 0.10638427734375,
+      "errors": []
+    },
+    {
+      "id": "magic/wind_cast_03",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -20.75,
+      "edge_step": 0.0,
+      "largest_step": 0.100341796875,
+      "errors": []
+    },
+    {
+      "id": "magic/wind_cast_04",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -21.58,
+      "edge_step": 0.0,
+      "largest_step": 0.2913818359375,
+      "errors": []
+    },
+    {
+      "id": "magic/wind_cast_05",
+      "peak_dbfs": -5.66,
+      "rms_dbfs": -20.0,
+      "edge_step": 0.0,
+      "largest_step": 0.067352294921875,
+      "errors": []
+    },
+    {
+      "id": "magic/shadow_cast_01",
+      "peak_dbfs": -8.77,
+      "rms_dbfs": -20.0,
+      "edge_step": 0.0,
+      "largest_step": 0.03515625,
+      "errors": []
+    },
+    {
+      "id": "magic/shadow_cast_02",
+      "peak_dbfs": -5.64,
+      "rms_dbfs": -20.0,
+      "edge_step": 0.0,
+      "largest_step": 0.105194091796875,
+      "errors": []
+    },
+    {
+      "id": "magic/shadow_cast_03",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -20.2,
+      "edge_step": 0.0,
+      "largest_step": 0.056640625,
+      "errors": []
+    },
+    {
+      "id": "magic/shadow_cast_04",
+      "peak_dbfs": -4.15,
+      "rms_dbfs": -20.0,
+      "edge_step": 0.0,
+      "largest_step": 0.044464111328125,
+      "errors": []
+    },
+    {
+      "id": "magic/shadow_cast_05",
+      "peak_dbfs": -4.26,
+      "rms_dbfs": -20.0,
+      "edge_step": 0.0,
+      "largest_step": 0.167755126953125,
+      "errors": []
+    },
+    {
+      "id": "magic/holy_cast_01",
+      "peak_dbfs": -5.65,
+      "rms_dbfs": -20.0,
+      "edge_step": 0.0,
+      "largest_step": 0.305206298828125,
+      "errors": []
+    },
+    {
+      "id": "magic/holy_cast_02",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -22.37,
+      "edge_step": 0.0,
+      "largest_step": 0.263671875,
+      "errors": []
+    },
+    {
+      "id": "magic/holy_cast_03",
+      "peak_dbfs": -5.31,
+      "rms_dbfs": -20.0,
+      "edge_step": 0.0,
+      "largest_step": 0.169036865234375,
+      "errors": []
+    },
+    {
+      "id": "magic/holy_cast_04",
+      "peak_dbfs": -6.02,
+      "rms_dbfs": -20.0,
+      "edge_step": 0.0,
+      "largest_step": 0.147216796875,
+      "errors": []
+    },
+    {
+      "id": "magic/holy_cast_05",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -25.3,
+      "edge_step": 0.0,
+      "largest_step": 0.296417236328125,
+      "errors": []
+    },
+    {
+      "id": "magic/poison_01",
+      "peak_dbfs": -4.61,
+      "rms_dbfs": -20.0,
+      "edge_step": 0.0,
+      "largest_step": 0.14923095703125,
+      "errors": []
+    },
+    {
+      "id": "magic/poison_02",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -22.64,
+      "edge_step": 0.0,
+      "largest_step": 0.185516357421875,
+      "errors": []
+    },
+    {
+      "id": "magic/poison_03",
+      "peak_dbfs": -6.51,
+      "rms_dbfs": -20.0,
+      "edge_step": 0.0,
+      "largest_step": 0.10418701171875,
+      "errors": []
+    },
+    {
+      "id": "magic/poison_04",
+      "peak_dbfs": -4.35,
+      "rms_dbfs": -20.0,
+      "edge_step": 0.0,
+      "largest_step": 0.25177001953125,
+      "errors": []
+    },
+    {
+      "id": "magic/poison_05",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -23.51,
+      "edge_step": 0.0,
+      "largest_step": 0.185028076171875,
+      "errors": []
+    },
+    {
+      "id": "magic/gate_open_01",
+      "peak_dbfs": -6.98,
+      "rms_dbfs": -20.0,
+      "edge_step": 0.0,
+      "largest_step": 0.1082763671875,
+      "errors": []
+    },
+    {
+      "id": "magic/gate_open_02",
+      "peak_dbfs": -4.26,
+      "rms_dbfs": -20.0,
+      "edge_step": 0.0,
+      "largest_step": 0.022491455078125,
+      "errors": []
+    },
+    {
+      "id": "magic/gate_open_03",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -21.48,
+      "edge_step": 0.0,
+      "largest_step": 0.053466796875,
+      "errors": []
+    },
+    {
+      "id": "magic/gate_open_04",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -21.47,
+      "edge_step": 0.0,
+      "largest_step": 0.072174072265625,
+      "errors": []
+    },
+    {
+      "id": "magic/gate_open_05",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -20.43,
+      "edge_step": 0.0,
+      "largest_step": 0.03253173828125,
+      "errors": []
+    },
+    {
+      "id": "magic/gate_close_01",
+      "peak_dbfs": -6.58,
+      "rms_dbfs": -20.0,
+      "edge_step": 0.0,
+      "largest_step": 0.048126220703125,
+      "errors": []
+    },
+    {
+      "id": "magic/gate_close_02",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -22.44,
+      "edge_step": 0.0,
+      "largest_step": 0.06634521484375,
+      "errors": []
+    },
+    {
+      "id": "magic/gate_close_03",
+      "peak_dbfs": -7.4,
+      "rms_dbfs": -20.0,
+      "edge_step": 0.0,
+      "largest_step": 0.055694580078125,
+      "errors": []
+    },
+    {
+      "id": "magic/gate_close_04",
+      "peak_dbfs": -6.84,
+      "rms_dbfs": -20.0,
+      "edge_step": 0.0,
+      "largest_step": 0.02569580078125,
+      "errors": []
+    },
+    {
+      "id": "magic/gate_close_05",
+      "peak_dbfs": -6.04,
+      "rms_dbfs": -20.0,
+      "edge_step": 0.0,
+      "largest_step": 0.049835205078125,
+      "errors": []
+    },
+    {
+      "id": "magic/teleport_01",
+      "peak_dbfs": -6.32,
+      "rms_dbfs": -20.0,
+      "edge_step": 0.0,
+      "largest_step": 0.2353515625,
+      "errors": []
+    },
+    {
+      "id": "magic/teleport_02",
+      "peak_dbfs": -5.85,
+      "rms_dbfs": -20.0,
+      "edge_step": 0.0,
+      "largest_step": 0.0887451171875,
+      "errors": []
+    },
+    {
+      "id": "magic/teleport_03",
+      "peak_dbfs": -4.77,
+      "rms_dbfs": -20.0,
+      "edge_step": 0.0,
+      "largest_step": 0.066680908203125,
+      "errors": []
+    },
+    {
+      "id": "magic/teleport_04",
+      "peak_dbfs": -7.01,
+      "rms_dbfs": -20.0,
+      "edge_step": 0.0,
+      "largest_step": 0.150604248046875,
+      "errors": []
+    },
+    {
+      "id": "magic/teleport_05",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -20.06,
+      "edge_step": 0.0,
+      "largest_step": 0.147979736328125,
+      "errors": []
+    },
+    {
+      "id": "magic/heal_01",
+      "peak_dbfs": -4.99,
+      "rms_dbfs": -20.0,
+      "edge_step": 0.0,
+      "largest_step": 0.2620849609375,
+      "errors": []
+    },
+    {
+      "id": "magic/heal_02",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -21.23,
+      "edge_step": 0.0,
+      "largest_step": 0.302154541015625,
+      "errors": []
+    },
+    {
+      "id": "magic/heal_03",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -22.91,
+      "edge_step": 0.0,
+      "largest_step": 0.23822021484375,
+      "errors": []
+    },
+    {
+      "id": "magic/heal_04",
+      "peak_dbfs": -6.33,
+      "rms_dbfs": -20.0,
+      "edge_step": 0.0,
+      "largest_step": 0.150238037109375,
+      "errors": []
+    },
+    {
+      "id": "magic/heal_05",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -24.79,
+      "edge_step": 0.0,
+      "largest_step": 0.263275146484375,
+      "errors": []
+    },
+    {
+      "id": "magic/curse_01",
+      "peak_dbfs": -8.79,
+      "rms_dbfs": -20.0,
+      "edge_step": 0.0,
+      "largest_step": 0.035003662109375,
+      "errors": []
+    },
+    {
+      "id": "magic/curse_02",
+      "peak_dbfs": -5.41,
+      "rms_dbfs": -20.0,
+      "edge_step": 0.0,
+      "largest_step": 0.094818115234375,
+      "errors": []
+    },
+    {
+      "id": "magic/curse_03",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -23.72,
+      "edge_step": 0.0,
+      "largest_step": 0.1678466796875,
+      "errors": []
+    },
+    {
+      "id": "magic/curse_04",
+      "peak_dbfs": -6.04,
+      "rms_dbfs": -20.0,
+      "edge_step": 0.0,
+      "largest_step": 0.05255126953125,
+      "errors": []
+    },
+    {
+      "id": "magic/curse_05",
+      "peak_dbfs": -4.58,
+      "rms_dbfs": -20.0,
+      "edge_step": 0.0,
+      "largest_step": 0.078033447265625,
+      "errors": []
+    },
+    {
+      "id": "magic/barrier_break_01",
+      "peak_dbfs": -7.33,
+      "rms_dbfs": -20.0,
+      "edge_step": 0.0,
+      "largest_step": 0.135833740234375,
+      "errors": []
+    },
+    {
+      "id": "magic/barrier_break_02",
+      "peak_dbfs": -5.72,
+      "rms_dbfs": -20.0,
+      "edge_step": 0.0,
+      "largest_step": 0.34832763671875,
+      "errors": []
+    },
+    {
+      "id": "magic/barrier_break_03",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -22.1,
+      "edge_step": 0.0,
+      "largest_step": 0.369476318359375,
+      "errors": []
+    },
+    {
+      "id": "magic/barrier_break_04",
+      "peak_dbfs": -4.28,
+      "rms_dbfs": -20.0,
+      "edge_step": 0.0,
+      "largest_step": 0.22589111328125,
+      "errors": []
+    },
+    {
+      "id": "magic/barrier_break_05",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -22.1,
+      "edge_step": 0.0,
+      "largest_step": 0.402008056640625,
+      "errors": []
+    },
+    {
+      "id": "creatures/player_hit_01",
+      "peak_dbfs": -4.05,
+      "rms_dbfs": -17.72,
+      "edge_step": 0.0,
+      "largest_step": 0.302337646484375,
+      "errors": []
+    },
+    {
+      "id": "creatures/player_hit_02",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -19.59,
+      "edge_step": 0.0,
+      "largest_step": 0.22430419921875,
+      "errors": []
+    },
+    {
+      "id": "creatures/player_hit_03",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -18.31,
+      "edge_step": 0.0,
+      "largest_step": 0.134765625,
+      "errors": []
+    },
+    {
+      "id": "creatures/player_hit_04",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -19.7,
+      "edge_step": 0.0,
+      "largest_step": 0.17010498046875,
+      "errors": []
+    },
+    {
+      "id": "creatures/player_hit_05",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -20.12,
+      "edge_step": 0.0,
+      "largest_step": 0.142547607421875,
+      "errors": []
+    },
+    {
+      "id": "creatures/small_attack_01",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -18.16,
+      "edge_step": 0.0,
+      "largest_step": 0.145904541015625,
+      "errors": []
+    },
+    {
+      "id": "creatures/small_attack_02",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -19.26,
+      "edge_step": 0.0,
+      "largest_step": 0.1739501953125,
+      "errors": []
+    },
+    {
+      "id": "creatures/small_attack_03",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -20.53,
+      "edge_step": 0.0,
+      "largest_step": 0.143524169921875,
+      "errors": []
+    },
+    {
+      "id": "creatures/small_attack_04",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -19.46,
+      "edge_step": 0.0,
+      "largest_step": 0.151763916015625,
+      "errors": []
+    },
+    {
+      "id": "creatures/small_attack_05",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -24.59,
+      "edge_step": 0.0,
+      "largest_step": 0.24053955078125,
+      "errors": []
+    },
+    {
+      "id": "creatures/small_hurt_01",
+      "peak_dbfs": -6.3,
+      "rms_dbfs": -17.72,
+      "edge_step": 0.0,
+      "largest_step": 0.043121337890625,
+      "errors": []
+    },
+    {
+      "id": "creatures/small_hurt_02",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -18.76,
+      "edge_step": 0.0,
+      "largest_step": 0.120452880859375,
+      "errors": []
+    },
+    {
+      "id": "creatures/small_hurt_03",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -23.39,
+      "edge_step": 0.0,
+      "largest_step": 0.199188232421875,
+      "errors": []
+    },
+    {
+      "id": "creatures/small_hurt_04",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -20.33,
+      "edge_step": 0.0,
+      "largest_step": 0.069061279296875,
+      "errors": []
+    },
+    {
+      "id": "creatures/small_hurt_05",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -21.64,
+      "edge_step": 0.0,
+      "largest_step": 0.142059326171875,
+      "errors": []
+    },
+    {
+      "id": "creatures/brute_attack_01",
+      "peak_dbfs": -4.93,
+      "rms_dbfs": -17.72,
+      "edge_step": 0.0,
+      "largest_step": 0.155059814453125,
+      "errors": []
+    },
+    {
+      "id": "creatures/brute_attack_02",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -17.77,
+      "edge_step": 0.0,
+      "largest_step": 0.035430908203125,
+      "errors": []
+    },
+    {
+      "id": "creatures/brute_attack_03",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -18.02,
+      "edge_step": 0.0,
+      "largest_step": 0.0322265625,
+      "errors": []
+    },
+    {
+      "id": "creatures/brute_attack_04",
+      "peak_dbfs": -4.35,
+      "rms_dbfs": -17.72,
+      "edge_step": 0.0,
+      "largest_step": 0.13446044921875,
+      "errors": []
+    },
+    {
+      "id": "creatures/brute_attack_05",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -21.2,
+      "edge_step": 0.0,
+      "largest_step": 0.032745361328125,
+      "errors": []
+    },
+    {
+      "id": "creatures/brute_hurt_01",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -19.11,
+      "edge_step": 0.0,
+      "largest_step": 0.2186279296875,
+      "errors": []
+    },
+    {
+      "id": "creatures/brute_hurt_02",
+      "peak_dbfs": -5.8,
+      "rms_dbfs": -17.72,
+      "edge_step": 0.0,
+      "largest_step": 0.059661865234375,
+      "errors": []
+    },
+    {
+      "id": "creatures/brute_hurt_03",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -17.92,
+      "edge_step": 0.0,
+      "largest_step": 0.161956787109375,
+      "errors": []
+    },
+    {
+      "id": "creatures/brute_hurt_04",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -20.45,
+      "edge_step": 0.0,
+      "largest_step": 0.208160400390625,
+      "errors": []
+    },
+    {
+      "id": "creatures/brute_hurt_05",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -18.06,
+      "edge_step": 0.0,
+      "largest_step": 0.06292724609375,
+      "errors": []
+    },
+    {
+      "id": "creatures/beast_01",
+      "peak_dbfs": -4.54,
+      "rms_dbfs": -17.72,
+      "edge_step": 0.0,
+      "largest_step": 0.29364013671875,
+      "errors": []
+    },
+    {
+      "id": "creatures/beast_02",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -17.83,
+      "edge_step": 0.0,
+      "largest_step": 0.08123779296875,
+      "errors": []
+    },
+    {
+      "id": "creatures/beast_03",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -22.29,
+      "edge_step": 0.0,
+      "largest_step": 0.13287353515625,
+      "errors": []
+    },
+    {
+      "id": "creatures/beast_04",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -18.73,
+      "edge_step": 0.0,
+      "largest_step": 0.131439208984375,
+      "errors": []
+    },
+    {
+      "id": "creatures/beast_05",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -17.82,
+      "edge_step": 0.0,
+      "largest_step": 0.07452392578125,
+      "errors": []
+    },
+    {
+      "id": "creatures/insect_01",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -20.63,
+      "edge_step": 0.0,
+      "largest_step": 0.193511962890625,
+      "errors": []
+    },
+    {
+      "id": "creatures/insect_02",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -22.83,
+      "edge_step": 0.0,
+      "largest_step": 0.496551513671875,
+      "errors": []
+    },
+    {
+      "id": "creatures/insect_03",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -27.01,
+      "edge_step": 0.0,
+      "largest_step": 0.3515625,
+      "errors": []
+    },
+    {
+      "id": "creatures/insect_04",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -20.03,
+      "edge_step": 0.0,
+      "largest_step": 0.262542724609375,
+      "errors": []
+    },
+    {
+      "id": "creatures/insect_05",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -22.58,
+      "edge_step": 0.0,
+      "largest_step": 0.465057373046875,
+      "errors": []
+    },
+    {
+      "id": "creatures/aquatic_01",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -22.7,
+      "edge_step": 0.0,
+      "largest_step": 0.223663330078125,
+      "errors": []
+    },
+    {
+      "id": "creatures/aquatic_02",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -19.5,
+      "edge_step": 0.0,
+      "largest_step": 0.203704833984375,
+      "errors": []
+    },
+    {
+      "id": "creatures/aquatic_03",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -28.19,
+      "edge_step": 0.0,
+      "largest_step": 0.075775146484375,
+      "errors": []
+    },
+    {
+      "id": "creatures/aquatic_04",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -23.49,
+      "edge_step": 0.0,
+      "largest_step": 0.22979736328125,
+      "errors": []
+    },
+    {
+      "id": "creatures/aquatic_05",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -23.88,
+      "edge_step": 0.0,
+      "largest_step": 0.215728759765625,
+      "errors": []
+    },
+    {
+      "id": "creatures/elite_warning_01",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -19.65,
+      "edge_step": 0.0,
+      "largest_step": 0.151611328125,
+      "errors": []
+    },
+    {
+      "id": "creatures/elite_warning_02",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -21.06,
+      "edge_step": 0.0,
+      "largest_step": 0.1578369140625,
+      "errors": []
+    },
+    {
+      "id": "creatures/elite_warning_03",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -20.32,
+      "edge_step": 0.0,
+      "largest_step": 0.025390625,
+      "errors": []
+    },
+    {
+      "id": "creatures/elite_warning_04",
+      "peak_dbfs": -4.5,
+      "rms_dbfs": -17.72,
+      "edge_step": 0.0,
+      "largest_step": 0.06536865234375,
+      "errors": []
+    },
+    {
+      "id": "creatures/elite_warning_05",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -18.21,
+      "edge_step": 0.0,
+      "largest_step": 0.227630615234375,
+      "errors": []
+    },
+    {
+      "id": "creatures/boss_warning_01",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -20.43,
+      "edge_step": 0.0,
+      "largest_step": 0.02496337890625,
+      "errors": []
+    },
+    {
+      "id": "creatures/boss_warning_02",
+      "peak_dbfs": -4.42,
+      "rms_dbfs": -17.72,
+      "edge_step": 0.0,
+      "largest_step": 0.031341552734375,
+      "errors": []
+    },
+    {
+      "id": "creatures/boss_warning_03",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -22.54,
+      "edge_step": 0.0,
+      "largest_step": 0.229827880859375,
+      "errors": []
+    },
+    {
+      "id": "creatures/boss_warning_04",
+      "peak_dbfs": -4.82,
+      "rms_dbfs": -17.72,
+      "edge_step": 0.0,
+      "largest_step": 0.038238525390625,
+      "errors": []
+    },
+    {
+      "id": "creatures/boss_warning_05",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -21.08,
+      "edge_step": 0.0,
+      "largest_step": 0.020172119140625,
+      "errors": []
+    },
+    {
+      "id": "creatures/boss_roar_01",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -18.2,
+      "edge_step": 0.0,
+      "largest_step": 0.03656005859375,
+      "errors": []
+    },
+    {
+      "id": "creatures/boss_roar_02",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -18.15,
+      "edge_step": 0.0,
+      "largest_step": 0.02618408203125,
+      "errors": []
+    },
+    {
+      "id": "creatures/boss_roar_03",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -18.6,
+      "edge_step": 0.0,
+      "largest_step": 0.13250732421875,
+      "errors": []
+    },
+    {
+      "id": "creatures/boss_roar_04",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -22.45,
+      "edge_step": 0.0,
+      "largest_step": 0.188507080078125,
+      "errors": []
+    },
+    {
+      "id": "creatures/boss_roar_05",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -20.57,
+      "edge_step": 0.0,
+      "largest_step": 0.046295166015625,
+      "errors": []
+    },
+    {
+      "id": "creatures/defeat_01",
+      "peak_dbfs": -5.25,
+      "rms_dbfs": -17.72,
+      "edge_step": 0.0,
+      "largest_step": 0.03045654296875,
+      "errors": []
+    },
+    {
+      "id": "creatures/defeat_02",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -22.56,
+      "edge_step": 0.0,
+      "largest_step": 0.065277099609375,
+      "errors": []
+    },
+    {
+      "id": "creatures/defeat_03",
+      "peak_dbfs": -8.15,
+      "rms_dbfs": -17.72,
+      "edge_step": 0.0,
+      "largest_step": 0.008544921875,
+      "errors": []
+    },
+    {
+      "id": "creatures/defeat_04",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -25.72,
+      "edge_step": 0.0,
+      "largest_step": 0.0821533203125,
+      "errors": []
+    },
+    {
+      "id": "creatures/defeat_05",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -18.42,
+      "edge_step": 0.0,
+      "largest_step": 0.06610107421875,
+      "errors": []
+    },
+    {
+      "id": "ambience/city_rain_01",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -25.68,
+      "edge_step": 0.00555419921875,
+      "largest_step": 0.578155517578125,
+      "errors": []
+    },
+    {
+      "id": "ambience/city_rain_02",
+      "peak_dbfs": -6.28,
+      "rms_dbfs": -23.1,
+      "edge_step": 0.012908935546875,
+      "largest_step": 0.417388916015625,
+      "errors": []
+    },
+    {
+      "id": "ambience/city_rain_03",
+      "peak_dbfs": -7.32,
+      "rms_dbfs": -23.1,
+      "edge_step": 0.010284423828125,
+      "largest_step": 0.161865234375,
+      "errors": []
+    },
+    {
+      "id": "ambience/city_rain_04",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -29.76,
+      "edge_step": 0.003021240234375,
+      "largest_step": 0.546173095703125,
+      "errors": []
+    },
+    {
+      "id": "ambience/city_rain_05",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -23.25,
+      "edge_step": 0.016845703125,
+      "largest_step": 0.346923828125,
+      "errors": []
+    },
+    {
+      "id": "ambience/storm_01",
+      "peak_dbfs": -7.56,
+      "rms_dbfs": -23.1,
+      "edge_step": 0.012054443359375,
+      "largest_step": 0.119659423828125,
+      "errors": []
+    },
+    {
+      "id": "ambience/storm_02",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -28.52,
+      "edge_step": 0.0052490234375,
+      "largest_step": 0.287261962890625,
+      "errors": []
+    },
+    {
+      "id": "ambience/storm_03",
+      "peak_dbfs": -9.13,
+      "rms_dbfs": -23.1,
+      "edge_step": 0.03173828125,
+      "largest_step": 0.170196533203125,
+      "errors": []
+    },
+    {
+      "id": "ambience/storm_04",
+      "peak_dbfs": -6.46,
+      "rms_dbfs": -23.1,
+      "edge_step": 0.010223388671875,
+      "largest_step": 0.34307861328125,
+      "errors": []
+    },
+    {
+      "id": "ambience/storm_05",
+      "peak_dbfs": -9.59,
+      "rms_dbfs": -23.1,
+      "edge_step": 0.016021728515625,
+      "largest_step": 0.07562255859375,
+      "errors": []
+    },
+    {
+      "id": "ambience/vent_01",
+      "peak_dbfs": -6.18,
+      "rms_dbfs": -23.1,
+      "edge_step": 0.003265380859375,
+      "largest_step": 0.009979248046875,
+      "errors": []
+    },
+    {
+      "id": "ambience/vent_02",
+      "peak_dbfs": -8.63,
+      "rms_dbfs": -23.1,
+      "edge_step": 0.0003662109375,
+      "largest_step": 0.037933349609375,
+      "errors": []
+    },
+    {
+      "id": "ambience/vent_03",
+      "peak_dbfs": -10.64,
+      "rms_dbfs": -23.1,
+      "edge_step": 0.000396728515625,
+      "largest_step": 0.027862548828125,
+      "errors": []
+    },
+    {
+      "id": "ambience/vent_04",
+      "peak_dbfs": -6.15,
+      "rms_dbfs": -23.1,
+      "edge_step": 0.002410888671875,
+      "largest_step": 0.009613037109375,
+      "errors": []
+    },
+    {
+      "id": "ambience/vent_05",
+      "peak_dbfs": -8.31,
+      "rms_dbfs": -23.1,
+      "edge_step": 0.001068115234375,
+      "largest_step": 0.038238525390625,
+      "errors": []
+    },
+    {
+      "id": "ambience/reactor_01",
+      "peak_dbfs": -10.74,
+      "rms_dbfs": -23.1,
+      "edge_step": 0.004425048828125,
+      "largest_step": 0.028045654296875,
+      "errors": []
+    },
+    {
+      "id": "ambience/reactor_02",
+      "peak_dbfs": -8.91,
+      "rms_dbfs": -23.1,
+      "edge_step": 0.001678466796875,
+      "largest_step": 0.028900146484375,
+      "errors": []
+    },
+    {
+      "id": "ambience/reactor_03",
+      "peak_dbfs": -11.25,
+      "rms_dbfs": -23.1,
+      "edge_step": 0.002838134765625,
+      "largest_step": 0.04473876953125,
+      "errors": []
+    },
+    {
+      "id": "ambience/reactor_04",
+      "peak_dbfs": -10.8,
+      "rms_dbfs": -23.1,
+      "edge_step": 0.0032958984375,
+      "largest_step": 0.027496337890625,
+      "errors": []
+    },
+    {
+      "id": "ambience/reactor_05",
+      "peak_dbfs": -9.26,
+      "rms_dbfs": -23.1,
+      "edge_step": 0.00152587890625,
+      "largest_step": 0.02410888671875,
+      "errors": []
+    },
+    {
+      "id": "ambience/gate_hum_01",
+      "peak_dbfs": -5.02,
+      "rms_dbfs": -23.1,
+      "edge_step": 0.01300048828125,
+      "largest_step": 0.090423583984375,
+      "errors": []
+    },
+    {
+      "id": "ambience/gate_hum_02",
+      "peak_dbfs": -7.13,
+      "rms_dbfs": -23.1,
+      "edge_step": 0.0101318359375,
+      "largest_step": 0.06842041015625,
+      "errors": []
+    },
+    {
+      "id": "ambience/gate_hum_03",
+      "peak_dbfs": -9.84,
+      "rms_dbfs": -23.1,
+      "edge_step": 0.001129150390625,
+      "largest_step": 0.00994873046875,
+      "errors": []
+    },
+    {
+      "id": "ambience/gate_hum_04",
+      "peak_dbfs": -6.98,
+      "rms_dbfs": -23.1,
+      "edge_step": 0.021209716796875,
+      "largest_step": 0.038482666015625,
+      "errors": []
+    },
+    {
+      "id": "ambience/gate_hum_05",
+      "peak_dbfs": -4.29,
+      "rms_dbfs": -23.1,
+      "edge_step": 0.0003662109375,
+      "largest_step": 0.063446044921875,
+      "errors": []
+    },
+    {
+      "id": "ambience/fire_bed_01",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -29.69,
+      "edge_step": 0.002899169921875,
+      "largest_step": 0.304168701171875,
+      "errors": []
+    },
+    {
+      "id": "ambience/fire_bed_02",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -23.4,
+      "edge_step": 0.001861572265625,
+      "largest_step": 0.372100830078125,
+      "errors": []
+    },
+    {
+      "id": "ambience/fire_bed_03",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -26.68,
+      "edge_step": 0.002227783203125,
+      "largest_step": 0.606414794921875,
+      "errors": []
+    },
+    {
+      "id": "ambience/fire_bed_04",
+      "peak_dbfs": -4.61,
+      "rms_dbfs": -23.1,
+      "edge_step": 0.003509521484375,
+      "largest_step": 0.50054931640625,
+      "errors": []
+    },
+    {
+      "id": "ambience/fire_bed_05",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -23.45,
+      "edge_step": 0.001953125,
+      "largest_step": 0.345733642578125,
+      "errors": []
+    },
+    {
+      "id": "ambience/riverside_01",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -29.26,
+      "edge_step": 0.013641357421875,
+      "largest_step": 0.56646728515625,
+      "errors": []
+    },
+    {
+      "id": "ambience/riverside_02",
+      "peak_dbfs": -7.94,
+      "rms_dbfs": -23.1,
+      "edge_step": 0.00634765625,
+      "largest_step": 0.07373046875,
+      "errors": []
+    },
+    {
+      "id": "ambience/riverside_03",
+      "peak_dbfs": -6.83,
+      "rms_dbfs": -23.1,
+      "edge_step": 0.00823974609375,
+      "largest_step": 0.0860595703125,
+      "errors": []
+    },
+    {
+      "id": "ambience/riverside_04",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -27.47,
+      "edge_step": 0.014984130859375,
+      "largest_step": 0.294464111328125,
+      "errors": []
+    },
+    {
+      "id": "ambience/riverside_05",
+      "peak_dbfs": -6.19,
+      "rms_dbfs": -23.1,
+      "edge_step": 0.0050048828125,
+      "largest_step": 0.075714111328125,
+      "errors": []
+    },
+    {
+      "id": "ambience/machine_01",
+      "peak_dbfs": -10.98,
+      "rms_dbfs": -23.1,
+      "edge_step": 0.00372314453125,
+      "largest_step": 0.03155517578125,
+      "errors": []
+    },
+    {
+      "id": "ambience/machine_02",
+      "peak_dbfs": -9.63,
+      "rms_dbfs": -23.1,
+      "edge_step": 0.004913330078125,
+      "largest_step": 0.0430908203125,
+      "errors": []
+    },
+    {
+      "id": "ambience/machine_03",
+      "peak_dbfs": -12.66,
+      "rms_dbfs": -23.1,
+      "edge_step": 0.008544921875,
+      "largest_step": 0.0546875,
+      "errors": []
+    },
+    {
+      "id": "ambience/machine_04",
+      "peak_dbfs": -13.59,
+      "rms_dbfs": -23.1,
+      "edge_step": 0.0003662109375,
+      "largest_step": 0.025146484375,
+      "errors": []
+    },
+    {
+      "id": "ambience/machine_05",
+      "peak_dbfs": -9.88,
+      "rms_dbfs": -23.1,
+      "edge_step": 0.005828857421875,
+      "largest_step": 0.04901123046875,
+      "errors": []
+    },
+    {
+      "id": "ambience/traffic_01",
+      "peak_dbfs": -7.37,
+      "rms_dbfs": -23.1,
+      "edge_step": 0.022735595703125,
+      "largest_step": 0.085662841796875,
+      "errors": []
+    },
+    {
+      "id": "ambience/traffic_02",
+      "peak_dbfs": -7.77,
+      "rms_dbfs": -23.1,
+      "edge_step": 0.00335693359375,
+      "largest_step": 0.04193115234375,
+      "errors": []
+    },
+    {
+      "id": "ambience/traffic_03",
+      "peak_dbfs": -9.98,
+      "rms_dbfs": -23.1,
+      "edge_step": 0.002227783203125,
+      "largest_step": 0.03466796875,
+      "errors": []
+    },
+    {
+      "id": "ambience/traffic_04",
+      "peak_dbfs": -7.13,
+      "rms_dbfs": -23.1,
+      "edge_step": 0.036773681640625,
+      "largest_step": 0.080963134765625,
+      "errors": []
+    },
+    {
+      "id": "ambience/traffic_05",
+      "peak_dbfs": -5.17,
+      "rms_dbfs": -23.1,
+      "edge_step": 0.001373291015625,
+      "largest_step": 0.10992431640625,
+      "errors": []
+    },
+    {
+      "id": "ambience/metal_room_01",
+      "peak_dbfs": -7.54,
+      "rms_dbfs": -23.1,
+      "edge_step": 0.003173828125,
+      "largest_step": 0.010345458984375,
+      "errors": []
+    },
+    {
+      "id": "ambience/metal_room_02",
+      "peak_dbfs": -8.98,
+      "rms_dbfs": -23.1,
+      "edge_step": 0.000335693359375,
+      "largest_step": 0.006591796875,
+      "errors": []
+    },
+    {
+      "id": "ambience/metal_room_03",
+      "peak_dbfs": -11.13,
+      "rms_dbfs": -23.1,
+      "edge_step": 0.002593994140625,
+      "largest_step": 0.027099609375,
+      "errors": []
+    },
+    {
+      "id": "ambience/metal_room_04",
+      "peak_dbfs": -7.56,
+      "rms_dbfs": -23.1,
+      "edge_step": 0.001983642578125,
+      "largest_step": 0.009490966796875,
+      "errors": []
+    },
+    {
+      "id": "ambience/metal_room_05",
+      "peak_dbfs": -6.11,
+      "rms_dbfs": -23.1,
+      "edge_step": 9.1552734375e-05,
+      "largest_step": 0.006927490234375,
+      "errors": []
+    }
+  ]
+}

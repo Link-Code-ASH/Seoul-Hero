@@ -58,7 +58,7 @@ button,.button{min-height:48px;padding:12px 20px;border:1px solid var(--ui-line-
 .shop-screen .shop-stat-list{flex:1;min-height:0;max-height:none;overflow-y:auto;overscroll-behavior:contain}
 .shop-screen .shop-card.sold{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:7px;text-align:center}
 .shop-screen .shop-card.sold h2{margin:0;font-size:16px;white-space:normal}
-.shop-screen .shop-card.sold p{margin:0;color:#a9b6bd;font-size:12px;line-height:1.35;white-space:nowrap}
+.shop-screen .shop-card.sold p{max-width:100%;margin:0;color:#a9b6bd;font-size:12px;line-height:1.35;white-space:normal;overflow-wrap:anywhere}
 .shop-stat-group{padding:5px 0 3px}.shop-stat-group+.shop-stat-group{border-top:1px solid #ffffff13}
 .shop-stat-group h3{margin:0 0 3px;color:#8299a7;font-size:10px;font-weight:800;letter-spacing:.09em}
 .shop-screen .shop-stat{min-height:23px;font-size:11px}.shop-screen .shop-stat b{font-size:11px;white-space:nowrap}

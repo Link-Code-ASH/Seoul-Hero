@@ -1,0 +1,38 @@
+[
+  {
+    "original": "BGM 1.mp3",
+    "deployed": "menu_01.mp3",
+    "bytes": 2885221,
+    "sha256": "00875eed9e5562be7ec64ca4095c4ba6d20347ee1035f36a664009335d26b1ea"
+  },
+  {
+    "original": "BGM 2.mp3",
+    "deployed": "menu_02.mp3",
+    "bytes": 4238179,
+    "sha256": "c4d4804020659e00b3b8ed90918b54f75429e92b26a88358c6913b350dcbb7c0"
+  },
+  {
+    "original": "BGM 3.mp3",
+    "deployed": "menu_03.mp3",
+    "bytes": 2941306,
+    "sha256": "b302b4a0d8b53fcdc5594239b7ab51257feab41cc7c5ec7604fb447d814d09ab"
+  },
+  {
+    "original": "Guild 1.mp3",
+    "deployed": "guild_01.mp3",
+    "bytes": 4856512,
+    "sha256": "444d24862ee734c7dcd232048d97f59e63251369b9ef73c91b006e1b448568fc"
+  },
+  {
+    "original": "Ingame 1.mp3",
+    "deployed": "combat_01.mp3",
+    "bytes": 3435098,
+    "sha256": "c8ec2f17f6d97aafb20c8e9cdcba4ba1b967fef6cc6ce8808f3251530fb17d2d"
+  },
+  {
+    "original": "Ingame 2.mp3",
+    "deployed": "combat_02.mp3",
+    "bytes": 4457485,
+    "sha256": "e4e07276db401dbfc1eb3932633bbad558400abc3ca5a241f8215c41adef5d5e"
+  }
+]
