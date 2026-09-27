@@ -45,6 +45,10 @@ export class GameUI {
     });
   }
   show(screen: Screen, meta: MetaState, run: RunState | null, archive: ArchiveViewState, gateDraft: GateEntryDraft, growth:GrowthViewState, supplyResults:readonly MetaReward[], guild: GuildViewState, canContinue = false): void {
+    // Keep the original controls alive when their temporary screen is rebuilt.
+    const pauseButton = this.hud.element.querySelector<HTMLElement>('.pause-button') ?? this.overlay.querySelector<HTMLElement>('.pause-button');
+    if (pauseButton) this.hud.element.querySelector('.hud-top')?.append(pauseButton);
+    if (this.soundButton.parentElement !== this.root) this.root.append(this.soundButton);
     const sameScreen = this.root.dataset.screen === screen;
     const panelScroll = sameScreen ? [...this.overlay.querySelectorAll<HTMLElement>('.shop-catalog, .shop-stat-list, .gate-card-grid')].map(el => ({ className: el.className, top: el.scrollTop })) : [];
     const growthScroll = screen === 'growth' && this.root.dataset.screen === 'growth' && this.overlay.querySelector('.facility-tabs .active')?.getAttribute('data-action') === `growth-tab:${growth.tab}`
@@ -75,13 +79,8 @@ export class GameUI {
       result: () => run ? resultScreen(run) : '', waveActive: () => '',
     };
     this.overlay.innerHTML = renderers[screen]?.() ?? '';
-    if (screen === 'shop') {
-      const pause = document.createElement('button');
-      pause.type = 'button'; pause.className = 'shop-pause-button';
-      pause.dataset.action = 'pause'; pause.setAttribute('aria-label', '일시정지');
-      pause.textContent = 'Ⅱ';
-      this.overlay.querySelector('.shop-header')?.append(pause);
-    }
+    if (screen === 'shop' && pauseButton) this.overlay.append(pauseButton);
+    if (screen === 'title') this.overlay.querySelector('.title-actions')?.append(this.soundButton);
     if (screen === 'growth') this.overlay.querySelector<HTMLElement>('.facility-list-grid')!.scrollTop = growthScroll;
     if (screen === 'archive') this.overlay.querySelector<HTMLElement>('.archive-entry-grid')!.scrollTop = archiveScroll;
     for (const saved of panelScroll) {

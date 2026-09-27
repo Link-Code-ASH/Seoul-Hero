@@ -28,6 +28,8 @@ Matching WebP files for the new room, roster kiosk and three facility cutouts ar
 
 `guild_cafe_topdown_02.png` was generated with the built-in image tool on 2026-09-27 (`exec-3a6862ee-5fbc-4ea9-9052-e11cecde4b0c.png`). References: `guild_cafe_topdown_01.webp` for the overhead room geometry and `guild_operator_han_seoa_illustration_01.webp` for the crisp illustrated material style. Prompt: preserve the café counter, training corner, recovery corner, left gate terminal and broad central floor; render sharp modern Seoul guild materials, grounded equipment and subtle gold/teal floor borders distinguishing facilities, no characters or baked text. `guild_cafe_topdown_02.webp` is a 3344×1882 Lanczos/UnsharpMask runtime export (WebP quality 90); the PNG is kept as the image-generation master.
 
+`guild_operator_han_seoa_lobby_face_01.png` was generated with the built-in image tool on 2026-09-27 (`exec-66ba2aeb-2298-46c5-bac3-f6a63029cc17.png`) from `guild_operator_han_seoa_illustration_01.webp`. Prompt: same adult operator, brown bob, amber clip and headset, blue-gray jacket; transparent polished head-and-shoulders portrait with the entire face and hair in frame, suitable for the small landscape lobby card. The optimized WebP is loaded at runtime.
+
 `guild_hall_casual_01.png` is the newer generated casual guild room master from the interrupted redesign. It bakes each facility and its appropriately sized floor shadow into one grounded room image. `guild_hall_casual_01.webp` is the optimized runtime copy produced by `scripts/optimize-casual-art.py`. The separate facility cutouts and old background remain as source assets but are not rendered in this version.
 
 | Asset | Intended use | Source generation |

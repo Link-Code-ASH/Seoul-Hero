@@ -2,14 +2,14 @@
 .command-primary .gate-command-card{min-height:0;height:100%}
 .guild-command-card{position:relative;min-width:0;min-height:0;overflow:hidden;display:flex;align-items:end;justify-content:space-between;gap:12px;padding:16px 20px;border:1px solid #b7a57e91;border-radius:4px;color:#fff3df;text-align:left;background:linear-gradient(90deg,#091219f0 2%,#10202bc0 48%,#0b151b4c),var(--guild-art) center 18%/cover;box-shadow:0 14px 30px #0008,inset 0 1px #ffebc72b}
 .guild-command-card::before{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(0deg,#061016bd,transparent 65%),repeating-linear-gradient(90deg,#c4e3e407 0 1px,transparent 1px 68px)}
-.guild-command-operator{position:absolute;z-index:1;right:29%;bottom:0;height:98%;width:auto;max-width:24%;object-fit:contain;object-position:bottom;filter:drop-shadow(0 6px 10px #000b);pointer-events:none}
+.guild-command-operator{position:absolute;z-index:1;right:29%;bottom:0;height:96%;width:30%;object-fit:contain;object-position:center bottom;filter:drop-shadow(0 6px 10px #000b);pointer-events:none}
 .guild-command-card span,.guild-command-card strong{position:relative;z-index:1}
 .guild-command-card span{display:grid;gap:4px}.guild-command-card small{color:#a2c4cc;font-size:10px;font-weight:800;letter-spacing:.16em}.guild-command-card b{font-size:clamp(21px,2.3vw,34px);letter-spacing:-.045em}.guild-command-card strong{flex:none;padding:8px 11px;border:1px solid #9bbac469;color:#d4e7ec;background:linear-gradient(#365666a8,#152c36cd);font-size:12px}
 .guild-command-card:hover{border-color:#c2e2eb;background-color:#11242e}.guild-command-card:hover strong{color:#fff}
 @media (orientation:landscape) and (min-width:700px) and (max-width:1100px) and (max-height:500px){
   .command-primary{gap:7px;grid-template-rows:minmax(0,1.75fr) minmax(0,.8fr)}
   .guild-command-card{padding:8px 12px}.guild-command-card b{font-size:18px}.guild-command-card small{font-size:8px}.guild-command-card strong{padding:5px 8px;font-size:11px}
-  .guild-command-operator{right:27%;bottom:0;height:98%;max-width:21%}
+  .guild-command-operator{right:26%;bottom:0;height:94%;width:26%}
 }
 @media(max-width:800px) and (orientation:portrait){.command-primary{grid-template-rows:260px 115px}}
 

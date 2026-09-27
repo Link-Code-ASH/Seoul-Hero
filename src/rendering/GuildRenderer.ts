@@ -114,7 +114,7 @@ export class GuildRenderer {
     if (this.ready) return;
     this.host = host;
     await this.app.init({ preference: 'webgl', antialias: true, autoStart: false,
-      autoDensity: true, resolution: Math.min(window.devicePixelRatio || 1, 1.75),
+      autoDensity: true, resolution: Math.min(window.devicePixelRatio || 1, 2.25),
       width: Math.max(1, host.clientWidth), height: Math.max(1, host.clientHeight),
       background: 0x8795a7 });
     this.app.ticker.stop();
@@ -155,7 +155,7 @@ export class GuildRenderer {
     const width = Math.max(1, this.host.clientWidth), height = Math.max(1, this.host.clientHeight);
     this.app.renderer.resize(width, height);
     // Show part of the room at a time so the headquarters has navigable space.
-    const roomFraction = width <= 1100 && height <= 500 ? .9 : .82;
+    const roomFraction = width <= 1100 && height <= 500 ? .98 : 1;
     this.scale = Math.max(width / (GUILD_ROOM.width * roomFraction), height / (GUILD_ROOM.height * roomFraction));
     this.room.scale.set(this.scale);
   }
