@@ -6,6 +6,7 @@ export const emptyRevivalStones = (): RevivalStoneInventory => ({ low: 0, mid: 0
 
 export interface Settings {
   masterVolume: number; soundVolume: number; combatVolume: number; uiVolume: number; musicVolume: number;
+  /** Lobby/title ON-OFF controls background music only; SFX use their own buses. */
   muted: boolean; highResolution: boolean; developerMode: boolean;
 }
 export interface CharacterGateProgress { highestClearedDepth: number; rewardedThroughDepth: number; bestWaveByDepth: Record<string, number> }

@@ -1,9 +1,11 @@
-# 현행 UI 디자인 규칙 — 2026-09-27
+# 현행 UI 디자인 규칙 — 2026-09-28
 
 - Galaxy S24 Ultra 가로 915×412와 safe-area가 기준이다. 상위 화면은 고정 높이, 목록과 상세 정보만 내부 스크롤한다.
 - 청회색·차콜 소재, 보상 금색, 위험 적색, 마력 청록/보라색. 종이/카키/네온 위주의 과거 UI 규칙은 적용하지 않는다.
-- 공통 9-slice 패널: assets/ui/materials/steel_panel_01.png, 5% slice. 원본과 생성 출처는 같은 폴더에 보존한다. master PNG는 배포 manifest에서 제외한다.
-- 본문 Paperlogy 14~16px, 보조 최소 13px, 제목 Haeong Sans, 숫자 Barlow Condensed. 선택은 색+체크+프레임으로 구분한다. hover/active에 scale/translate를 넣지 않는다.
+- 현대 서울 전시 작전본부: 차콜 복합소재, 정밀 금속, 도시 전술지도 질감을 사용한다. 단일 steel_panel 반복 적용은 폐기한다. `assets/ui/materials/frame_*_01.webp` 10종을 역할별로 적용하며 공통 `--frame-*` 변수는 game-shell.css가 소유한다.
+- 프레임 역할: command=출동 확인·일시정지·결과·길드 상호작용, map=맵·심도, instrument=수치·주간 규칙·설정, personnel=각성자, weapon=무기, arcane=축복, supply=상점 진열, reward=회수·보급·결과 보상, association=협회·일반 자료집, control=조작 버튼. 화면 하나에는 주 프레임 하나와 보조 정보·조작 프레임만 조합한다. 로비는 시설별 모서리만 사용하고 목록 내부에는 구분선을 우선한다.
+- 소재는 12% 9-slice로 모서리를 보존한다. 주 패널 3~4px, 조작·슬롯 2px 테두리이며 44px 터치 영역과 분리한다. 생성 원본 PNG는 보존하고 배포에서 제외한다. WebP 10종 총 약 264KiB. 프롬프트·출처는 `assets/ui/materials/frames-provenance.json`에 있다.
+- 본문 Paperlogy 14~16px, 보조 최소 13px, 제목 Haeong Sans, 숫자 Barlow Condensed. 선택은 청록 조명+밝은 가장자리+짧은 상태 문구로 구분하고 체크 표시는 사용하지 않는다. hover/active에 scale/translate를 넣지 않는다.
 - main.css는 공통 game-shell과 화면 소유 파일을 불러온다. 새 final/override 스타일 파일을 쌓지 않는다. effects.css는 보급·회수 등의 단발성 연출만 소유한다.
 - 상점은 무기/아이템 탭, 각 4칸. 탭 상태는 GameUI에만 존재한다. 재고·잠금·리롤 비용은 기존 규칙을 그대로 사용한다.
 - SettingsScreen과 ResultScreen은 독립 화면 모듈이다. 결과는 AppController가 한 번 마감한 BalanceRunSummary를 표시하며 렌더링 중 재정산하지 않는다. 피해 기여도는 기록된 피해 기준이다.

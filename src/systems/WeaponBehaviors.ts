@@ -118,7 +118,9 @@ export class WeaponBehaviors {
           endY: p.y,
           radius: Math.max(12, p.radius * 0.17),
           color: p.color,
-          duration: Math.max(0.12, p.flightDuration),
+          // Match the remaining flight time exactly so the blast cannot be
+          // visible while the shell is still approaching its destination.
+          duration: Math.max(0.12, p.delay),
         });
       }
       if (p.delay > 0) { this.pending[kept++] = p; continue; }

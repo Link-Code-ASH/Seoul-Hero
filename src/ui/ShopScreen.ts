@@ -1,4 +1,5 @@
 import {resolveWeaponStats} from '../stats/WeaponStats';
+import {characterWeaponDamageBonus} from '../stats/CharacterTrait';
 import {itemArt,inventoryArt,weaponArt} from './InventoryArt';
 import {items} from '../data/items';
 import {weapons} from '../data/weapons';
@@ -12,6 +13,7 @@ import {button,escapeHtml} from './helpers';
 import {shopStats} from './ShopStats';
 const rarityNames={COMMON:'일반',UNCOMMON:'고급',RARE:'희귀',LEGENDARY:'전설'};
 const price=(amount:number)=>'<img class="price-coin" src="'+images.magicStone.url+'" alt=""><b>'+amount+'</b>';
+const productDetail=(description:string)=>'<details class="product-detail"><summary aria-label="상품 효과 상세">상세</summary><p class="item-effect">'+escapeHtml(description)+'</p></details>';
 const lock=(action:string,locked:boolean)=>button(action,inventoryArt(locked?43:44),'lock-button',`aria-label="${locked?'잠금 해제':'상품 잠금'}" aria-pressed="${locked}"`);
 
 function branchPicker(run:RunState):string {
@@ -29,9 +31,9 @@ function weaponChange(run:RunState,weaponId:string,targetLevel:number):string {
 function weaponHighlight(run:RunState,id:string,level:number):string {
  const weapon=weapons[id]!,owned=run.ownedWeapons.find(w=>w.id===id);
  if(owned&&level===weapon.branchAtLevel&&!owned.branchId)return 'A / B 분기 선택';
- const next=resolveWeaponStats(weapon,level,run.calculatedStats,false,owned?.branchId);
+ const next=resolveWeaponStats(weapon,level,run.calculatedStats,false,owned?.branchId,run.itemEffects,characterWeaponDamageBonus(run.characterId,weapon));
  if(!owned)return `피해 ${next.damage} · ${next.cooldown.toFixed(1)}초`;
- const current=resolveWeaponStats(weapon,owned.level,run.calculatedStats,false,owned.branchId);
+ const current=resolveWeaponStats(weapon,owned.level,run.calculatedStats,false,owned.branchId,run.itemEffects,characterWeaponDamageBonus(run.characterId,weapon));
  if(next.damage!==current.damage)return `피해 ${current.damage} → ${next.damage}`;
  if(next.cooldown!==current.cooldown)return `주기 ${current.cooldown.toFixed(1)} → ${next.cooldown.toFixed(1)}초`;
  if(next.projectileCount!==current.projectileCount)return `공격 수 ${current.projectileCount} → ${next.projectileCount}`;
@@ -45,12 +47,12 @@ export function shopScreen(run:RunState,meta:MetaState,tab:ShopTab='weapons'):st
   const weapon=weapons[slot.weaponId??''];if(!weapon)return '<article class="shop-card weapon-shop-card sold" aria-label="무기 품절"><span class="sold-crest" aria-hidden="true">×</span><strong>품절</strong><small>무기 진열대</small></article>';
   const offer={weaponId:weapon.id,targetLevel:slot.targetLevel},cost=weaponPrice(offer),owned=run.ownedWeapons.find(w=>w.id===weapon.id),valid=weaponOfferAvailable(run,offer);
   const disabled=blocked||!valid||run.runCurrency<cost;
-  return '<article class="shop-card weapon-shop-card'+(slot.locked?' locked':'')+'"><div class="product-heading"><span class="weapon-offer-type">'+(owned?'무기 강화':'신규 무기')+'</span>'+lock('shop-weapon-lock:'+index,slot.locked)+'</div>'+weaponArt(weapon.id)+'<h2>'+escapeHtml(weapon.name)+'</h2><span class="product-highlight">'+weaponHighlight(run,weapon.id,slot.targetLevel)+'</span><details class="product-detail"><summary>효과 보기</summary><p class="item-effect">'+escapeHtml(weaponChange(run,weapon.id,slot.targetLevel))+'</p></details><div class="product-footer"><small>'+(owned?'Lv.'+owned.level+' → Lv.'+slot.targetLevel:'Lv.1 획득')+'</small>'+button('shop-weapon-buy:'+index,price(cost),'purchase-price',`aria-label="${escapeHtml(weapon.name)} ${cost} 마력석 구매" ${disabled?'disabled':''}`)+'</div></article>';
+  return '<article class="shop-card weapon-shop-card'+(slot.locked?' locked':'')+'"><div class="product-heading"><span class="weapon-offer-type">'+(owned?'무기 강화':'신규 무기')+'</span>'+productDetail(weaponChange(run,weapon.id,slot.targetLevel))+lock('shop-weapon-lock:'+index,slot.locked)+'</div>'+weaponArt(weapon.id)+'<h2>'+escapeHtml(weapon.name)+'</h2><span class="product-highlight">'+weaponHighlight(run,weapon.id,slot.targetLevel)+'</span><div class="product-footer"><small>'+(owned?'Lv.'+owned.level+' → Lv.'+slot.targetLevel:'Lv.1 획득')+'</small>'+button('shop-weapon-buy:'+index,price(cost),'purchase-price',`aria-label="${escapeHtml(weapon.name)} ${cost} 마력석 구매" ${disabled?'disabled':''}`)+'</div></article>';
  }).join('');
  const itemCards=run.shop.itemStock.slots.map((slot,index)=>{
   const item=items[slot.itemId??''];if(!item)return '<article class="shop-card sold"><span class="sold-crest">—</span><strong>품절</strong></article>';
   const count=itemCount(run,item.id),maxed=!canAddItem(run,item.id),disabled=blocked||maxed||!itemAvailable(run,item)||run.runCurrency<item.basePrice;
-  return '<article class="shop-card rarity-'+item.rarity+(slot.locked?' locked':'')+'"><div class="product-heading"><span class="product-rarity">'+rarityNames[item.rarity]+'</span>'+lock('shop-lock:'+index,slot.locked)+'</div>'+itemArt(item.id)+'<h2>'+escapeHtml(item.name)+'</h2><span class="product-highlight">'+escapeHtml(item.description.split(' · ')[0]??'')+'</span><details class="product-detail"><summary>효과 보기</summary><p class="item-effect">'+escapeHtml(item.description)+'</p></details><div class="product-footer"><small>'+(count?'보유 '+count:'')+(maxed?' · 최대':'')+'</small>'+button('shop-buy:'+index,maxed?'완료':price(item.basePrice),'purchase-price',`aria-label="${escapeHtml(item.name)} ${item.basePrice} 마력석 구매" ${disabled?'disabled':''}`)+'</div></article>';
+  return '<article class="shop-card rarity-'+item.rarity+(slot.locked?' locked':'')+'"><div class="product-heading"><span class="product-rarity">'+rarityNames[item.rarity]+'</span>'+productDetail(item.description)+lock('shop-lock:'+index,slot.locked)+'</div>'+itemArt(item.id)+'<h2>'+escapeHtml(item.name)+'</h2><span class="product-highlight">'+escapeHtml(item.description.split(' · ')[0]??'')+'</span><div class="product-footer"><small>'+(count?'보유 '+count:'')+(maxed?' · 최대':'')+'</small>'+button('shop-buy:'+index,maxed?'완료':price(item.basePrice),'purchase-price',`aria-label="${escapeHtml(item.name)} ${item.basePrice} 마력석 구매" ${disabled?'disabled':''}`)+'</div></article>';
  }).join('');
  const weaponRerollDisabled=blocked||run.runCurrency<weaponCost||run.shop.weaponStock.slots.every(slot=>slot.locked);
  const itemRerollDisabled=blocked||run.runCurrency<itemCost||run.shop.itemStock.slots.every(slot=>slot.locked);

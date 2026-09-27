@@ -5,6 +5,7 @@ export interface Visual {
 export interface Character {
   id: string; name: string; description: string; background: string; personality: string;
   baseStats: PlayerStats; radius: number; signatureWeaponId?: string; portraitSprite?: import('./images').ImageId; visual: Visual;
+  trait?: { name: string; description: string; weaponDamageBonus: number; weaponFamily?: 'firearm' };
 }
 export interface CharacterStatAdjustment { stat: StatKey; operation: 'add' | 'multiply'; value: number }
 export interface StageBalanceModifiers {
@@ -29,6 +30,7 @@ export interface Weapon {
   maxLevel: number; branchAtLevel: number; branches: WeaponBranch[];
   id: string; name: string; description: string; targeting: 'nearest';
   signatureOwnerId?: string;
+  family?: 'firearm';
   capabilities: WeaponCapability[];
   structure?: { kind: 'turret' | 'mine' | 'aura'; maxCount: number; placementInterval: number; triggerRadius: number; sprite?: import('./images').ImageId };
   behavior: 'structure' | 'projectile' | 'slash' | 'orbit' | 'chain' | 'bombard'; base: WeaponStats; levels: Partial<WeaponStats>[]; visual: Visual;

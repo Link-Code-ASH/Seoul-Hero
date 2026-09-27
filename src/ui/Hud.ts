@@ -1,4 +1,4 @@
-import { inventoryArt, weaponArt } from './InventoryArt';
+import { weaponArt } from './InventoryArt';
 import { enemies } from '../data/enemies';
 import { weapons } from '../data/weapons';
 import { images } from '../data/images';
@@ -12,13 +12,14 @@ export class Hud {
   private readonly hp: HTMLElement;
   private readonly stats: HTMLElement;
   private readonly clock: HTMLElement;
+  private readonly timer: HTMLElement;
   private readonly wave: HTMLElement;
   private readonly boss: HTMLElement;
   constructor() {
     this.element.className = 'hud';
-    this.element.innerHTML = `<div class="hud-top"><div class="player-status"><div class="status-line"><div class="hp-readout">${inventoryArt(40)}<strong id="hp-text"></strong></div><div class="hud-readout" id="hud-stats"></div></div><div class="hp-track" role="progressbar" aria-label="체력" aria-valuemin="0"><div id="hp-fill"></div></div><div class="weapon-strip" id="hud-weapons" aria-label="보유 무기"></div></div><div class="timer"><span id="hud-wave"></span><strong id="hud-clock">00:00</strong></div><button data-action="pause" class="pause-button" aria-label="일시정지">Ⅱ</button></div><div class="boss-status" id="boss-status"></div>`;
+    this.element.innerHTML = `<div class="hud-top"><div class="player-status"><div class="status-line"><div class="hp-readout"><span class="hp-label">HP</span><strong id="hp-text"></strong></div><div class="hud-readout" id="hud-stats"></div></div><div class="hp-track" role="progressbar" aria-label="체력" aria-valuemin="0"><div id="hp-fill"></div></div><div class="weapon-strip" id="hud-weapons" aria-label="보유 무기"></div></div><div class="timer"><span id="hud-wave"></span><strong id="hud-clock">00:00</strong></div><button data-action="pause" class="pause-button" aria-label="일시정지">Ⅱ</button></div><div class="boss-status" id="boss-status"></div>`;
     this.hp = this.get('#hp-fill'); this.stats = this.get('#hud-stats');
-    this.clock = this.get('#hud-clock'); this.wave = this.get('#hud-wave'); this.boss = this.get('#boss-status');
+    this.clock = this.get('#hud-clock'); this.timer = this.get('.timer'); this.wave = this.get('#hud-wave'); this.boss = this.get('#boss-status');
     this.walletFlightLayer.className = 'wallet-flight-layer';
     this.waveEndNotice.className = 'wave-end-announcement';
     this.waveEndNotice.hidden = true;
@@ -40,10 +41,17 @@ export class Hud {
     const limit = 48;
     const step = Math.max(1, Math.ceil(origins.length / limit));
     const visibleOrigins = origins.filter((_, index) => index % step === 0).slice(0, limit);
+    const flightBounds = this.walletFlightLayer.getBoundingClientRect();
+    const toLocal = (point: { x: number; y: number }): { x: number; y: number } => ({
+      x: (point.x - flightBounds.left) * this.walletFlightLayer.clientWidth / flightBounds.width,
+      y: (point.y - flightBounds.top) * this.walletFlightLayer.clientHeight / flightBounds.height,
+    });
+    const localTarget = toLocal(target);
     visibleOrigins.forEach((origin, index) => {
-      const startX = Math.max(18, Math.min(window.innerWidth - 18, origin.x));
-      const startY = Math.max(18, Math.min(window.innerHeight - 18, origin.y));
-      const dx = target.x - startX, dy = target.y - startY;
+      const localOrigin = toLocal(origin);
+      const startX = Math.max(18, Math.min(this.walletFlightLayer.clientWidth - 18, localOrigin.x));
+      const startY = Math.max(18, Math.min(this.walletFlightLayer.clientHeight - 18, localOrigin.y));
+      const dx = localTarget.x - startX, dy = localTarget.y - startY;
       const bend = (index % 2 === 0 ? 1 : -1) * Math.min(72, 18 + Math.abs(dx) * 0.08);
       const stone = document.createElement('img');
       stone.className = 'wallet-flight-stone';
@@ -72,8 +80,9 @@ export class Hud {
     this.hp.parentElement?.setAttribute('aria-valuemax', String(run.player.maxHp));
     this.get('#hp-text').textContent = `${Math.ceil(run.player.hp)} / ${run.player.maxHp}`;
     this.get('#hud-weapons').innerHTML = run.ownedWeapons.map((slot,index) => `<span class="weapon-slot"><i>${index + 1}</i>${weaponArt(slot.id)}<b>${weapons[slot.id]?.name ?? slot.id}</b><small>${slot.level}${slot.branchId ? `-${slot.branchId}` : ''}</small></span>`).join('');
-    this.stats.innerHTML = `<span class="hud-chip" title="보유 마력석"><img class="pickup-ui-icon" src="${images.magicStone.url}" alt=""><b>${Math.floor(run.runCurrency)}</b></span><span class="hud-chip wallet-reserve ${(run.walletBonusRemaining + run.walletStoredThisRun) <= 0 ? 'is-empty' : ''}" title="다음 획득에 추가되는 마력석"><img class="wallet-icon" src="${images.wallet.url}" alt="지갑"><b>${Math.floor(run.walletBonusRemaining + run.walletStoredThisRun)}</b></span>`;
+    this.stats.innerHTML = `<span class="hud-chip" title="보유 마력석"><img class="pickup-ui-icon" src="${images.magicStone.url}" alt=""><b>${Math.floor(run.runCurrency)}</b></span><span class="hud-chip wallet-reserve" title="다음 획득에 추가되는 마력석"><img class="wallet-icon" src="${images.wallet.url}" alt="지갑"><b>${Math.floor(run.walletBonusRemaining + run.walletStoredThisRun)}</b></span>`;
     this.clock.textContent = formatTime(Math.ceil(run.waveRemainingTime));
+    this.timer.classList.toggle('is-critical', run.phase === 'waveActive' && !run.bossSpawned && run.currentWave < run.totalWaves && run.waveRemainingTime > 0 && run.waveRemainingTime <= 5);
     this.wave.textContent = `${run.bossSpawned ? 'BOSS WAVE' : 'WAVE'} ${run.currentWave} / ${run.totalWaves}`;
     const boss = run.enemies.find(enemy => enemy.boss);
     this.boss.hidden = !boss;

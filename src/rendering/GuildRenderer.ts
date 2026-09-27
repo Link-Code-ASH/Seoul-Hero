@@ -2,6 +2,7 @@ import { Application, Assets, BlurFilter, Container, Graphics, Sprite, Texture }
 import { GUILD_ROOM } from '../data/guild';
 import { images } from '../data/images';
 import type { GuildPosition } from '../systems/GuildSystem';
+import { getGameViewportScale } from '../ui/GameViewport';
 
 type PogoDirection = 'down' | 'up' | 'left' | 'right';
 
@@ -114,7 +115,7 @@ export class GuildRenderer {
     if (this.ready) return;
     this.host = host;
     await this.app.init({ preference: 'webgl', antialias: true, autoStart: false,
-      autoDensity: true, resolution: Math.min(window.devicePixelRatio || 1, 2.25),
+      autoDensity: true, resolution: Math.min((window.devicePixelRatio || 1) * Math.max(1, getGameViewportScale()), 2.25),
       width: Math.max(1, host.clientWidth), height: Math.max(1, host.clientHeight),
       background: 0x8795a7 });
     this.app.ticker.stop();
@@ -140,6 +141,7 @@ export class GuildRenderer {
     this.ready = true;
     this.observer = new ResizeObserver(() => this.resize());
     this.observer.observe(host);
+    window.addEventListener('resize', this.onViewportResize);
     this.resize();
   }
 
@@ -153,12 +155,14 @@ export class GuildRenderer {
   private resize(): void {
     if (!this.ready || !this.host) return;
     const width = Math.max(1, this.host.clientWidth), height = Math.max(1, this.host.clientHeight);
-    this.app.renderer.resize(width, height);
+    this.app.renderer.resize(width, height, Math.min((window.devicePixelRatio || 1) * Math.max(1, getGameViewportScale()), 2.25));
     // Show part of the room at a time so the headquarters has navigable space.
     const roomFraction = width <= 1100 && height <= 500 ? .98 : 1;
     this.scale = Math.max(width / (GUILD_ROOM.width * roomFraction), height / (GUILD_ROOM.height * roomFraction));
     this.room.scale.set(this.scale);
   }
+
+  private readonly onViewportResize = (): void => { if (this.ready) this.resize(); };
 
   private pointerDown = (event: PointerEvent): void => {
     if (!this.ready || !this.host || !this.onFloorTap) return;
@@ -199,6 +203,7 @@ export class GuildRenderer {
   setVisible(visible: boolean): void { if (this.ready) this.app.canvas.style.display = visible ? 'block' : 'none'; }
   destroy(): void {
     this.observer?.disconnect();
+    window.removeEventListener('resize', this.onViewportResize);
     if (this.ready) this.app.canvas.removeEventListener('pointerdown', this.pointerDown);
     if (this.ready) this.app.destroy({ removeView: true }, { children: true, context: true, style: true });
     this.ready = false;

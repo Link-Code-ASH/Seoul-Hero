@@ -8,7 +8,7 @@ import { shopScreen, postWaveScreen, pauseScreen, resultScreen, settingsScreen, 
 import type { Screen } from './screens';
 import { archiveScreen, type ArchiveViewState } from './ArchiveScreen';
 import { lobbyScreen } from './LobbyScreen';
-import { gateFlowScreen } from './GateFlowScreen';
+import { gateDepthDossier, gateFlowScreen } from './GateFlowScreen';
 import { associationScreen, growthScreen, offlineScreen, offlineClaimVisual, offlineEmptyArt, offlineEmptyRows, supplyScreen, type GrowthViewState } from './MetaScreens';
 import type { MetaReward } from '../meta/SupplySystem';
 import type { GateEntryDraft, GateEntryStep } from '../systems/GateEntrySystem';
@@ -35,7 +35,7 @@ export class GameUI {
     this.toast.className = 'toast'; this.toast.setAttribute('role', 'status'); this.toast.hidden = true;
     this.soundButton.className = 'sound-button'; this.soundButton.dataset.action = 'sound';
     this.soundButton.innerHTML = '<span aria-hidden="true">♫</span><b>OFF</b>';
-    this.soundButton.setAttribute('aria-label', '소리 꺼짐');
+    this.soundButton.setAttribute('aria-label', '배경음악 꺼짐');
     this.account.className = 'account-panel';
     root.append(this.hud.element, this.overlay, this.dev.element, this.toast, this.soundButton, this.account);
     root.addEventListener('click', event => {
@@ -93,8 +93,9 @@ export class GameUI {
       result: () => run ? resultScreen(run, this.resultSummary) : '', waveActive: () => '',
     };
     this.overlay.innerHTML = renderers[screen]?.() ?? '';
-    if (screen === 'shop' && pauseButton) this.overlay.append(pauseButton);
+    if (screen === 'shop' && pauseButton) this.overlay.querySelector('.shop-header')?.append(pauseButton);
     if (screen === 'title') this.overlay.querySelector('.title-actions')?.append(this.soundButton);
+    if (screen === 'lobby') this.overlay.querySelector('.hq-header nav')?.append(this.soundButton);
     if (screen === 'growth') this.overlay.querySelector<HTMLElement>('.facility-list-grid')!.scrollTop = growthScroll;
     if (screen === 'archive') this.overlay.querySelector<HTMLElement>('.archive-entry-grid')!.scrollTop = archiveScroll;
     for (const saved of panelScroll) {
@@ -109,6 +110,55 @@ export class GameUI {
       const heading = this.overlay.querySelector<HTMLElement>('h1');
       if (heading) { heading.tabIndex = -1; heading.focus({ preventScroll: true }); }
     }
+  }
+  updateGateSelection(screen: GateEntryStep, meta: MetaState, draft: GateEntryDraft): boolean {
+    if (this.root.dataset.screen !== screen) return false;
+    const selectedAction: Partial<Record<GateEntryStep,string>> = {
+      gateMap: `gate-map:${draft.mapId}`, gateDepth: `gate-depth-select:${draft.gateDepth}`,
+      gateCharacter: `gate-character:${draft.characterId}`, gateWeapon: `gate-weapon:${draft.startingWeaponId}`,
+      gateBlessing: `gate-blessing:${draft.blessingId}`,
+    };
+    const action = selectedAction[screen];
+    const cards = [...this.overlay.querySelectorAll<HTMLButtonElement>(screen === 'gateDepth' ? '.depth-tile' : '.gate-select-card')];
+    if (!action || !cards.some(card => card.dataset.action === action)) return false;
+    for (const card of cards) {
+      const selected = card.dataset.action === action;
+      card.classList.toggle('selected', selected);
+      card.setAttribute('aria-pressed', String(selected));
+      const label = card.querySelector<HTMLElement>('.selection-seal');
+      if (label) label.textContent = screen === 'gateCharacter' ? selected ? '작전 편성 완료' : '각성자 선택' : selected ? '선택됨' : '선택';
+      if (screen === 'gateDepth') {
+        card.querySelector('.depth-selected-flag')?.remove();
+        if (selected) {
+          const flag = document.createElement('strong');
+          flag.className = 'depth-selected-flag';
+          flag.textContent = '선택됨';
+          card.append(flag);
+        }
+      }
+    }
+    if (screen === 'gateDepth') {
+      const dossier = this.overlay.querySelector('.depth-dossier');
+      if (dossier) dossier.outerHTML = gateDepthDossier(meta,draft);
+    } else if (screen === 'gateMap') {
+      const image = cards.find(card => card.dataset.action === action)?.querySelector('img')?.getAttribute('src');
+      if (image) this.overlay.querySelector<HTMLElement>('.gate-flow-screen')?.style.setProperty('--gate-bg',`url("${image}")`);
+    }
+    this.overlay.querySelector<HTMLButtonElement>('.gate-next')?.removeAttribute('disabled');
+    return true;
+  }
+  updateGateDepthPage(meta: MetaState, draft: GateEntryDraft): boolean {
+    if (this.root.dataset.screen !== 'gateDepth') return false;
+    const template = document.createElement('template');
+    template.innerHTML = gateFlowScreen('gateDepth',meta,draft);
+    const grid = template.content.querySelector('.depth-grid');
+    const pager = template.content.querySelector('.depth-pager');
+    const oldGrid = this.overlay.querySelector('.depth-grid');
+    const oldPager = this.overlay.querySelector('.depth-pager');
+    if (!grid || !pager || !oldGrid || !oldPager) return false;
+    oldGrid.replaceWith(grid);
+    oldPager.replaceWith(pager);
+    return true;
   }
   private applyShopTab(): void {
     for (const section of this.overlay.querySelectorAll<HTMLElement>('.shop-section')) section.hidden = section.id !== `shop-${this.shopTab}`;
@@ -146,7 +196,7 @@ export class GameUI {
   }
   updateAudio(audible: boolean, muted: boolean, status: string): void {
     const on = audible && !muted;
-    const label = on ? '소리 켜짐' : '소리 꺼짐';
+    const label = on ? '배경음악 켜짐' : '배경음악 꺼짐';
     this.soundButton.querySelector('b')!.textContent = on ? 'ON' : 'OFF';
     this.soundButton.setAttribute('aria-label', label);
     this.soundButton.title = status;

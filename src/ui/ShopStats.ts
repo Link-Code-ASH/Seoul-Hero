@@ -17,6 +17,7 @@ const valueTone = (value: number, base: number): Tone => value > base ? ' booste
 export function shopStatGroups(run: RunState): StatGroup[] {
   const stats = run.calculatedStats;
   const base = run.baseStats;
+  const trait = characters[run.characterId]?.trait;
   const melee = Math.max(0, stats.damage + stats.meleeDamage - 1);
   const ranged = Math.max(0, stats.damage + stats.rangedDamage - 1);
   const armorReduction = stats.armor / (STAT_RULES.armorScale + Math.max(0, stats.armor));
@@ -34,6 +35,7 @@ export function shopStatGroups(run: RunState): StatGroup[] {
 
   return [
     { title: '공격', rows: [
+      ...(trait ? [{ label: trait.name, value: trait.description, tone: ' boosted' as Tone }] : []),
       { label: '공통 피해', value: percent(stats.damage - 1), tone: multiplierTone(stats.damage), hint: '모든 공격' },
       { label: '최종 근접 보정', value: percent(melee - 1), tone: multiplierTone(melee), hint: '공통 + 근접' },
       { label: '최종 원거리 보정', value: percent(ranged - 1), tone: multiplierTone(ranged), hint: '공통 + 원거리' },

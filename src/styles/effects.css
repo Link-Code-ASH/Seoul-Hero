@@ -43,7 +43,7 @@
   z-index: 4;
   left: 50%;
   top: 49%;
-  width: min(610px,76vw);
+  width: min(610px,76cqw);
   height: auto;
   mix-blend-mode: screen;
   pointer-events: none;
@@ -52,14 +52,14 @@
   animation: supply-image-burst 1.08s .62s ease-out both;
 }
 .supply-burst-image.burst-b {
-  width: min(470px,61vw);
+  width: min(470px,61cqw);
   filter: hue-rotate(-9deg) saturate(.72);
   animation: supply-image-burst-secondary .92s .83s ease-out both;
 }
 .supply-crate {
   position: relative;
   z-index: 3;
-  width: min(430px,62vw);
+  width: min(430px,62cqw);
   aspect-ratio: 1;
   filter: drop-shadow(0 35px 28px #000d);
   animation: supply-crate-arrive .38s cubic-bezier(.16,.8,.25,1) both;
@@ -349,9 +349,9 @@
     transform: translate(-50%,-50%) scale(2.25);
   }
 }
-@media(max-width:680px) {
+@container game (max-width:680px) {
   .supply-crate {
-    width: min(340px,82vw);
+    width: min(340px,82cqw);
   }
 }
 .offline-recovery .recovery-scan {
@@ -467,7 +467,7 @@
   left: 50%;
   top: 18%;
   z-index: 225;
-  min-width: min(440px,72vw);
+  min-width: min(440px,72cqw);
   padding: 13px 42px 15px;
   transform: translateX(-50%);
   border-block: 1px solid #a9c4d05c;
@@ -490,7 +490,7 @@
   letter-spacing: .16em;
 }
 .wave-end-announcement strong {
-  font-size: clamp(25px,3vw,38px);
+  font-size: clamp(25px,3cqw,38px);
   font-weight: 760;
   letter-spacing: .025em;
   text-shadow: 0 0 18px #b8d9e655;

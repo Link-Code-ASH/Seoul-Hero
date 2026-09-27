@@ -30,7 +30,7 @@ const spawnFor = (wave: number) => {
 export const maps: Record<string, MapData> = {
   seoul: {
     id: "seoul",
-    name: "서울 · 광화문 광장",
+    name: "광화문 광장",
     description: "광화문 광장의 고정 화면 아레나",
     thumbnail: "seoulIntersection",
     arenaWidth: 1280,

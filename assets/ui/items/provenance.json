@@ -1,0 +1,19 @@
+{
+  "generatedAt": "2026-09-28",
+  "generator": "OpenAI image generation",
+  "commonPrompt": "Use case: stylized Seoul urban fantasy game shop inventory icon. One standalone {subject}. Centered 3/4 view, full object visible with transparent margin, clear silhouette at 64 pixels, crisp hand-painted casual action-game art, blue-gray studio light, material depth, restrained glow. Exactly one item, no lettering, no text, no emblem, no border, no scene, no background. True transparent PNG.",
+  "recoilBracerPrompt": "Use case: stylized Seoul urban fantasy game shop inventory icon. One compact recoil-control wrist bracer: matte graphite clamp with teal magical stabilizer coils and a small brass locking ring. Centered standalone object, 3/4 view, appealing painted-game-art texture, clear silhouette at 64 pixels, moderately detailed but not photorealistic, cool blue-gray lighting matching modern fantasy hunter equipment. Exactly one object, no letters, no text, no frame, no scene. True transparent PNG background.",
+  "assets": {
+    "item_recoil_bracer_01.png": "Graphite recoil-control wrist bracer with teal stabilizer coils.",
+    "item_vital_ampoule_01.png": "a palm-sized transparent emergency recovery ampoule with rose-coral liquid, graphite cap and a thin teal energy seal",
+    "item_ankle_guard_01.png": "a pair of compact tactical ankle guards with charcoal polymer plating and small cyan magic stitch lines",
+    "item_magnetic_collector_01.png": "a foldable coin-sized magical pickup collector, graphite circular clamp surrounding one pale violet crystal and tiny teal field arcs",
+    "item_reinforced_harness_01.png": "a folded reinforced hunter harness, graphite woven straps, dark teal buckles and small amber impact pads",
+    "item_harmonic_capacitor_01.png": "a small handheld magical frequency capacitor, concentric bronze-cyan rings around a pearl-blue crystal, compact equipment module",
+    "item_ion_conductor_01.png": "a short modular ion conductor rod with dark insulated body, copper winding and a contained cyan electrical filament",
+    "item_shield_emitter_01.png": "a compact portable shield emitter puck with layered graphite plates and one soft blue translucent hexagonal energy lens",
+    "item_resonance_prism_01.png": "a small violet-blue arcane resonance prism held in dark titanium brackets, subtle luminous refractions, not a loose gem",
+    "item_tuned_core_01.png": "a rare tuned mana core artifact, dense spherical pale violet crystal in elegant silver mechanical gimbal, subtle warm gold accents"
+  },
+  "delivery": "Original transparent PNG masters are preserved beside optimized 320px WebP game assets."
+}

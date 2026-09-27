@@ -85,8 +85,8 @@
   min-height: 0;
   overflow: auto;
   padding: 18px 14px;
-  border: 7px solid transparent;
-  border-image: var(--ui-frame) 5% fill / 7px;
+  border: 3px solid transparent;
+  border-image: var(--frame-instrument) 12% fill / 3px;
   box-shadow: inset 0 2px var(--rule-accent,#8ca6ba);
 }
 .weekly-operation-card>img {
@@ -129,26 +129,27 @@
   min-height: 0;
   overflow: hidden;
   text-align: left;
-  border: 6px solid transparent;
-  border-image: var(--ui-frame) 5% fill / 6px;
+  border: 2px solid transparent;
+  border-image: var(--frame-map) 12% fill / 2px;
   padding: 10px;
 }
-.gate-select-card.selected {
-  box-shadow: inset 0 0 0 2px var(--gold);
-  background: #344750;
+.gate-select-card:hover,
+.gate-select-card:active,
+.depth-tile:hover,
+.depth-tile:active {
+  filter: none;
 }
-.gate-select-card.selected:after {
-  content: '✓';
-  position: absolute;
-  right: 9px;
-  top: 9px;
-  display: grid;
-  place-items: center;
-  width: 25px;
-  height: 25px;
-  background: #e4c68d;
-  color: #17202a;
-  font-size: 17px;
+.gate-select-card.selected {
+  box-shadow: inset 0 0 0 2px #a4ecf1, inset 0 0 24px #57d4df4a, 0 0 0 1px #7ddde8, 0 0 22px #3bc6d176;
+  background: linear-gradient(135deg,#244252,#182c3b);
+}
+.gate-select-card.selected.map-card>img {
+  filter: brightness(1.08) saturate(1.08);
+}
+.gate-select-card.selected .character-card-art img,
+.gate-select-card.selected .weapon-card-art img,
+.gate-select-card.selected.blessing-meta-card>img {
+  filter: drop-shadow(0 0 11px #7bdce080);
 }
 .map-grid {
   grid-template-columns: repeat(3,minmax(0,1fr));
@@ -187,6 +188,7 @@
   grid-template-columns: repeat(3,minmax(0,1fr));
 }
 .character-meta-card {
+  border-image-source: var(--frame-personnel);
   display: flex;
   flex-direction: column;
   padding: 6px;
@@ -225,7 +227,7 @@
   font-weight: 400;
 }
 .selected .selection-seal {
-  color: var(--gold);
+  color: #adf4f1;
   font-weight: 800;
 }
 .weapon-meta-grid {
@@ -233,6 +235,7 @@
   grid-auto-rows: minmax(112px,1fr);
 }
 .weapon-meta-card {
+  border-image-source: var(--frame-weapon);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -276,6 +279,7 @@
   grid-auto-rows: minmax(180px,1fr);
 }
 .blessing-meta-card {
+  border-image-source: var(--frame-arcane);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -321,6 +325,7 @@
   min-height: 0;
 }
 .depth-tile {
+  border-image-source: var(--frame-map);
   position: relative;
   display: flex;
   flex-direction: column;
@@ -344,16 +349,10 @@
   color: #b6e4d0;
   box-shadow: inset 0 -3px #78bbaa;
 }
-.depth-clear-mark {
-  position: absolute;
-  left: 5px;
-  top: 3px;
-  font-style: normal;
-}
 .depth-tile.selected {
-  outline: 2px solid var(--gold);
-  outline-offset: -3px;
-  color: var(--gold);
+  color: #d0fbf8;
+  background: linear-gradient(155deg,#315768d9,#182d3be8);
+  box-shadow: inset 0 0 0 2px #8de6e9, inset 0 0 22px #4bcdd35c, 0 0 17px #4ad6db6b;
 }
 .depth-selected-flag {
   font-size: 13px;
@@ -370,36 +369,49 @@
   padding: 0;
 }
 .depth-dossier {
-  padding: 14px;
-  border: 6px solid transparent;
-  border-image: var(--ui-frame) 5% fill / 6px;
-  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 0;
+  padding: 12px;
+  border: 3px solid transparent;
+  border-image: var(--frame-instrument) 12% fill / 3px;
+  overflow: hidden;
 }
 .depth-dossier>span {
   display: block;
   font: 700 30px 'Barlow Condensed';
   color: var(--gold);
-  margin: 8px 0;
+  margin: 3px 0;
 }
 .depth-dossier>b {
   font-size: 14px;
 }
 .depth-dossier dl {
-  margin-top: 20px;
+  margin-top: 8px;
 }
 .depth-dossier dl>div {
   display: grid;
-  gap: 3px;
-  margin: 12px 0;
+  grid-template-columns: minmax(0,1fr) auto;
+  align-items: baseline;
+  gap: 5px;
+  padding: 5px 0;
+  border-bottom: 1px solid #8baab626;
 }
 .depth-dossier dt {
   font-size: 13px;
   color: var(--muted);
+  white-space: nowrap;
 }
 .depth-dossier dd {
-  font-size: 15px;
+  font-size: 13px;
+  text-align: right;
+  white-space: nowrap;
 }
 .deploy-summary {
+  border: 4px solid transparent;
+  border-image: var(--frame-command) 12% fill / 4px;
+  padding: 8px;
   flex: 1;
   min-height: 0;
   display: grid;
@@ -479,7 +491,7 @@
 .deploy-equipped b {
   font-size: 16px;
 }
-@media(max-height:500px) {
+@container game (max-height:500px) {
   .gate-flow-screen {
     grid-template-columns: minmax(0,1fr) 165px;
     grid-template-rows: 46px minmax(0,1fr);
@@ -542,7 +554,7 @@
     padding: 5px;
   }
   .depth-briefing {
-    grid-template-columns: minmax(0,1fr) 152px;
+    grid-template-columns: minmax(0,1fr) 188px;
     gap: 8px;
   }
   .depth-tile {
@@ -552,13 +564,13 @@
     font-size: 28px;
   }
   .depth-dossier {
-    padding: 8px;
+    padding: 7px 9px;
   }
   .depth-dossier dl {
-    margin-top: 8px;
+    margin-top: 5px;
   }
   .depth-dossier dl>div {
-    margin: 8px 0;
+    padding: 3px 0;
   }
   .depth-dossier>span {
     font-size: 24px;
@@ -577,7 +589,7 @@
     gap: 3px;
   }
 }
-@media(max-width:650px) {
+@container game (max-width:650px) {
   .gate-flow-screen {
     grid-template-columns: 1fr;
   }

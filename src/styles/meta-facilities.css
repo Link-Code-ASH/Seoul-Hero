@@ -69,6 +69,11 @@
   padding-right: 5px;
 }
 .facility-list-item {
+  border: 0;
+  border-image: none;
+  border-bottom: 1px solid #8099ac38;
+  background: linear-gradient(100deg,#182e3be0,#101c26b0);
+  box-shadow: none;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -92,13 +97,16 @@
   font-size: 13px;
 }
 .facility-list-item.selected {
-  color: var(--gold);
-  box-shadow: inset 3px 0 var(--gold);
+  color: #bbf1f2;
+  background: linear-gradient(100deg,#254752eb,#132a34dd);
+  box-shadow: inset 2px 0 #8bd9df,inset 0 0 18px #6ccecf23;
 }
 .facility-list-item.locked {
   color: #93a5b1;
 }
 .growth-subject {
+  border: 3px solid transparent;
+  border-image: var(--growth-frame,var(--frame-personnel)) 12% fill / 3px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -107,6 +115,8 @@
   gap: 5px;
   background: radial-gradient(ellipse,#7896a525,transparent 65%);
 }
+.growth-weapon { --growth-frame: var(--frame-weapon); }
+.growth-blessing { --growth-frame: var(--frame-arcane); }
 .growth-subject>img {
   width: 100%;
   height: calc(100% - 65px);
@@ -124,11 +134,11 @@
   align-self: center;
   display: flex;
   flex-direction: column;
-  gap: 18px;
+  gap: 12px;
   width: 100%;
   padding: 22px 18px;
-  border: 7px solid transparent;
-  border-image: var(--ui-frame) 5% fill / 7px;
+  border: 3px solid transparent;
+  border-image: var(--frame-instrument) 12% fill / 3px;
   max-height: 100%;
   overflow: auto;
 }
@@ -228,8 +238,8 @@
   display: flex;
   flex-direction: column;
   gap: 12px;
-  border: 6px solid transparent;
-  border-image: var(--ui-frame) 5% fill / 6px;
+  border: 3px solid transparent;
+  border-image: var(--frame-association) 12% fill / 3px;
   min-width: 0;
 }
 .association-offer-head {
@@ -315,8 +325,8 @@
   min-height: 0;
   gap: 14px;
   padding: 22px;
-  border: 7px solid transparent;
-  border-image: var(--ui-frame) 5% fill / 7px;
+  border: 4px solid transparent;
+  border-image: var(--frame-reward) 12% fill / 4px;
 }
 .offline-manifest header {
   display: flex;
@@ -424,8 +434,8 @@
 .supply-controls {
   align-self: center;
   padding: 22px;
-  border: 7px solid transparent;
-  border-image: var(--ui-frame) 5% fill / 7px;
+  border: 3px solid transparent;
+  border-image: var(--frame-instrument) 12% fill / 3px;
 }
 .supply-controls h2 {
   font-size: 26px;
@@ -467,8 +477,8 @@
   max-height: 86%;
   min-height: 0;
   padding: 24px;
-  border: 8px solid transparent;
-  border-image: var(--ui-frame) 5% fill / 8px;
+  border: 4px solid transparent;
+  border-image: var(--frame-reward) 12% fill / 4px;
   background: #152230;
   animation: reward-board-in .25s 1.6s both;
 }
@@ -503,7 +513,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit,minmax(130px,1fr));
   grid-auto-rows: 150px;
-  max-height: 52vh;
+  max-height: 52cqh;
   gap: 12px;
   padding-top: 16px;
   min-height: 0;
@@ -590,8 +600,8 @@
   height: 100%;
   overflow: auto;
   padding: 24px;
-  border: 7px solid transparent;
-  border-image: var(--ui-frame) 5% fill / 7px;
+  border: 3px solid transparent;
+  border-image: var(--frame-instrument) 12% fill / 3px;
 }
 .settings-card h2 {
   margin-bottom: 16px;
@@ -631,7 +641,7 @@
 .settings-card .button-row {
   flex-wrap: wrap;
 }
-@media(max-height:500px) {
+@container game (max-height:500px) {
   .meta-facility,.settings-facility {
     gap: 9px;
     padding: max(8px,env(safe-area-inset-top)) max(14px,env(safe-area-inset-right)) max(10px,env(safe-area-inset-bottom)) max(14px,env(safe-area-inset-left));
@@ -757,10 +767,10 @@
     height: 25%;
   }
   .settings-hero nav button {
-    min-height: 40px;
+    min-height: 44px;
   }
 }
-@media(max-width:650px) {
+@container game (max-width:650px) {
   .facility-workspace {
     grid-template-columns: 130px minmax(0,1fr);
   }

@@ -1,0 +1,77 @@
+{
+  "generatedAt": "2026-09-28",
+  "generator": "Built-in image_gen",
+  "processing": "Original PNG preserved as *_master.png; runtime WebP downsampled to 768px width, quality 88. CSS border-image uses fixed corner slices.",
+  "entries": [
+    {
+      "id": "command",
+      "source": "C:\\Users\\geniu\\.codex\\generated_images\\01a07bcf-7f98-7021-bf14-e9c913993db8\\exec-c6af8924-9783-47b5-ad74-8631ea53e8a8.png",
+      "prompt": "Use case: ui-mockup. Production raster UI material for Seoul Hero, modern Seoul wartime operations headquarters. Single empty rectangular interface panel, orthographic front view, exact straight outer rectangular silhouette reaching image edges, NO perspective, no surrounding scene, no text, no numbers, no icons, no objects. Wide 3:2 composition. Designed for CSS nine-slice: all unique details contained in outer 10% corners, straight continuous edges, quiet dark center for readable HTML content. Refined blue-gray charcoal industrial game art, tactile realistic but clean materials, subtle shallow relief, top-left light, no rust, no grunge, no thick bulky frame, no neon strips. Asymmetric chamfered graphite composite console, brushed gunmetal corner clamps, subtle diagonal composite grain. Strong upper-left stepped corner and restrained lower-right bracket.",
+      "master": "frame_command_01_master.png",
+      "runtime": "frame_command_01.webp"
+    },
+    {
+      "id": "map",
+      "source": "C:\\Users\\geniu\\.codex\\generated_images\\01a07bcf-7f98-7021-bf14-e9c913993db8\\exec-e443172f-5f5f-4f2b-bca6-22f81058d5ca.png",
+      "prompt": "Use case: ui-mockup. Production raster UI material for Seoul Hero, modern Seoul wartime operations headquarters. Single empty rectangular interface panel, orthographic front view, exact straight outer rectangular silhouette reaching image edges, NO perspective, no surrounding scene, no text, no numbers, no icons, no objects. Wide 3:2 composition. Designed for CSS nine-slice: all unique details contained in outer 10% corners, straight continuous edges, quiet dark center for readable HTML content. Refined blue-gray charcoal industrial game art, tactile realistic but clean materials, subtle shallow relief, top-left light, no rust, no grunge, no thick bulky frame, no neon strips. Thin blue-gray transparent tactical glass over a very faint abstract street-grid substrate, map-table corner registration notches, delicate steel edges. No labels.",
+      "master": "frame_map_01_master.png",
+      "runtime": "frame_map_01.webp"
+    },
+    {
+      "id": "instrument",
+      "source": "C:\\Users\\geniu\\.codex\\generated_images\\01a07bcf-7f98-7021-bf14-e9c913993db8\\exec-f86aec11-c775-4b57-bfab-811f4bc7098d.png",
+      "prompt": "Use case: ui-mockup. Production raster UI material for Seoul Hero, modern Seoul wartime operations headquarters. Single empty rectangular interface panel, orthographic front view, exact straight outer rectangular silhouette reaching image edges, NO perspective, no surrounding scene, no text, no numbers, no icons, no objects. Wide 3:2 composition. Designed for CSS nine-slice: all unique details contained in outer 10% corners, straight continuous edges, quiet dark center for readable HTML content. Refined blue-gray charcoal industrial game art, tactile realistic but clean materials, subtle shallow relief, top-left light, no rust, no grunge, no thick bulky frame, no neon strips. Low-profile precision instrument panel, narrow silver edge, a fine recessed horizontal groove along upper edge, dark finely etched anodized aluminum center.",
+      "master": "frame_instrument_01_master.png",
+      "runtime": "frame_instrument_01.webp"
+    },
+    {
+      "id": "personnel",
+      "source": "C:\\Users\\geniu\\.codex\\generated_images\\01a07bcf-7f98-7021-bf14-e9c913993db8\\exec-97eefa27-974d-476f-8157-3948b11b2b3c.png",
+      "prompt": "Use case: ui-mockup. Production raster UI material for Seoul Hero, modern Seoul wartime operations headquarters. Single empty rectangular interface panel, orthographic front view, exact straight outer rectangular silhouette reaching image edges, NO perspective, no surrounding scene, no text, no numbers, no icons, no objects. Wide 3:2 composition. Designed for CSS nine-slice: all unique details contained in outer 10% corners, straight continuous edges, quiet dark center for readable HTML content. Refined blue-gray charcoal industrial game art, tactile realistic but clean materials, subtle shallow relief, top-left light, no rust, no grunge, no thick bulky frame, no neon strips. Portrait dossier display frame, slim raised side rails, silver lower nameplate WITHOUT TEXT, lightly woven dark technical fabric center. Empty.",
+      "master": "frame_personnel_01_master.png",
+      "runtime": "frame_personnel_01.webp"
+    },
+    {
+      "id": "weapon",
+      "source": "C:\\Users\\geniu\\.codex\\generated_images\\01a07bcf-7f98-7021-bf14-e9c913993db8\\exec-e33d0367-8e1b-46b7-8ca5-36f4c5d267e0.png",
+      "prompt": "Use case: ui-mockup. Production raster UI material for Seoul Hero, modern Seoul wartime operations headquarters. Single empty rectangular interface panel, orthographic front view, exact straight outer rectangular silhouette reaching image edges, NO perspective, no surrounding scene, no text, no numbers, no icons, no objects. Wide 3:2 composition. Designed for CSS nine-slice: all unique details contained in outer 10% corners, straight continuous edges, quiet dark center for readable HTML content. Refined blue-gray charcoal industrial game art, tactile realistic but clean materials, subtle shallow relief, top-left light, no rust, no grunge, no thick bulky frame, no neon strips. Weapon storage cradle, recessed charcoal foam surface, low horizontal bottom shelf, small reinforced upper corners, robust lower angular corners. Empty.",
+      "master": "frame_weapon_01_master.png",
+      "runtime": "frame_weapon_01.webp"
+    },
+    {
+      "id": "arcane",
+      "source": "C:\\Users\\geniu\\.codex\\generated_images\\01a07bcf-7f98-7021-bf14-e9c913993db8\\exec-d84ca167-9ccf-465e-b85f-be91c62a4ef3.png",
+      "prompt": "Use case: ui-mockup. Production raster UI material for Seoul Hero, modern Seoul wartime operations headquarters. Single empty rectangular interface panel, orthographic front view, exact straight outer rectangular silhouette reaching image edges, NO perspective, no surrounding scene, no text, no numbers, no icons, no objects. Wide 3:2 composition. Designed for CSS nine-slice: all unique details contained in outer 10% corners, straight continuous edges, quiet dark center for readable HTML content. Refined blue-gray charcoal industrial game art, tactile realistic but clean materials, subtle shallow relief, top-left light, no rust, no grunge, no thick bulky frame, no neon strips. Sealed magical specimen display, smooth graphite ceramic corners with translucent smoked purple edging and a tiny teal light embedded in each top corner, quiet dark smooth center.",
+      "master": "frame_arcane_01_master.png",
+      "runtime": "frame_arcane_01.webp"
+    },
+    {
+      "id": "supply",
+      "source": "C:\\Users\\geniu\\.codex\\generated_images\\01a07bcf-7f98-7021-bf14-e9c913993db8\\exec-3b9c4f58-edf4-4bb5-84de-d47dd1734fb7.png",
+      "prompt": "Use case: ui-mockup. Production raster UI material for Seoul Hero, modern Seoul wartime operations headquarters. Single empty rectangular interface panel, orthographic front view, exact straight outer rectangular silhouette reaching image edges, NO perspective, no surrounding scene, no text, no numbers, no icons, no objects. Wide 3:2 composition. Designed for CSS nine-slice: all unique details contained in outer 10% corners, straight continuous edges, quiet dark center for readable HTML content. Refined blue-gray charcoal industrial game art, tactile realistic but clean materials, subtle shallow relief, top-left light, no rust, no grunge, no thick bulky frame, no neon strips. Open-front supply display shelf seen straight on: extremely thin almost absent top/side rails, substantial but slim lower gunmetal ledge with blank small price-plate recess. Dark subdued interior.",
+      "master": "frame_supply_01_master.png",
+      "runtime": "frame_supply_01.webp"
+    },
+    {
+      "id": "reward",
+      "source": "C:\\Users\\geniu\\.codex\\generated_images\\01a07bcf-7f98-7021-bf14-e9c913993db8\\exec-b09831cb-59f6-42c4-b38d-4c55131862c3.png",
+      "prompt": "Use case: ui-mockup. Production raster UI material for Seoul Hero, modern Seoul wartime operations headquarters. Single empty rectangular interface panel, orthographic front view, exact straight outer rectangular silhouette reaching image edges, NO perspective, no surrounding scene, no text, no numbers, no icons, no objects. Wide 3:2 composition. Designed for CSS nine-slice: all unique details contained in outer 10% corners, straight continuous edges, quiet dark center for readable HTML content. Refined blue-gray charcoal industrial game art, tactile realistic but clean materials, subtle shallow relief, top-left light, no rust, no grunge, no thick bulky frame, no neon strips. Shallow precious supply tray, deep soft dark blue velvet/foam surface, satin brass latch accents at bottom corners, thin warm gunmetal raised rim. Empty reward presentation.",
+      "master": "frame_reward_01_master.png",
+      "runtime": "frame_reward_01.webp"
+    },
+    {
+      "id": "association",
+      "source": "C:\\Users\\geniu\\.codex\\generated_images\\01a07bcf-7f98-7021-bf14-e9c913993db8\\exec-218d3f9a-5c9b-49c5-8ceb-a3b5c0a75724.png",
+      "prompt": "Use case: ui-mockup. Production raster UI material for Seoul Hero, modern Seoul wartime operations headquarters. Single empty rectangular interface panel, orthographic front view, exact straight outer rectangular silhouette reaching image edges, NO perspective, no surrounding scene, no text, no numbers, no icons, no objects. Wide 3:2 composition. Designed for CSS nine-slice: all unique details contained in outer 10% corners, straight continuous edges, quiet dark center for readable HTML content. Refined blue-gray charcoal industrial game art, tactile realistic but clean materials, subtle shallow relief, top-left light, no rust, no grunge, no thick bulky frame, no neon strips. Association certification document panel, precise satin silver corner fasteners, dark blue fine bonded-paper center, subtle debossed circular seal impression near bottom right WITHOUT emblem or lettering.",
+      "master": "frame_association_01_master.png",
+      "runtime": "frame_association_01.webp"
+    },
+    {
+      "id": "control",
+      "source": "C:\\Users\\geniu\\.codex\\generated_images\\01a07bcf-7f98-7021-bf14-e9c913993db8\\exec-da11f818-06d4-4f2b-94c3-c1ae30737d73.png",
+      "prompt": "Use case: ui-mockup. Production raster UI material for Seoul Hero, modern Seoul wartime operations headquarters. Single empty rectangular interface panel, orthographic front view, exact straight outer rectangular silhouette reaching image edges, NO perspective, no surrounding scene, no text, no numbers, no icons, no objects. Wide 3:2 composition. Designed for CSS nine-slice: all unique details contained in outer 10% corners, straight continuous edges, quiet dark center for readable HTML content. Refined blue-gray charcoal industrial game art, tactile realistic but clean materials, subtle shallow relief, top-left light, no rust, no grunge, no thick bulky frame, no neon strips. Compact recessed rectangular control button material. Smooth dark anodized steel, fine tactile horizontal micrograin, narrow beveled edges, rounded chamfer corners, subtle lighter upper lip. Empty clean center.",
+      "master": "frame_control_01_master.png",
+      "runtime": "frame_control_01.webp"
+    }
+  ]
+}

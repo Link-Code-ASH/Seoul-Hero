@@ -2,6 +2,7 @@
   "generatedAt": "2026-09-24",
   "generator": "OpenAI image generation",
   "assets": {
-    "projectile_mana_shotgun_01.png": "cropped and rotated blue-white mana shotgun pellet, transparent background, facing right at zero rotation"
+    "projectile_mana_shotgun_01.png": "cropped and rotated blue-white mana shotgun pellet, transparent background, facing right at zero rotation",
+    "projectile_mana_bombard_orb_02.png": "Use case: 2D action-game projectile sprite. Asset type: transparent PNG. A single compact spherical magical artillery orb for Seoul Hero, centered and fully contained with generous transparent margins. Perfectly rotationally symmetric silhouette with no nose, fins, tail, arrow, or directional streak: a dark violet-blue dense core, soft cyan and lavender arcane aura tightly wrapped around it, restrained hand-painted stylized game art matching modern fantasy combat, clear at 40px size, sharp shape, not photorealistic, no ground, no shadow, no text, no border, no extra objects. True transparent background."
   }
 }

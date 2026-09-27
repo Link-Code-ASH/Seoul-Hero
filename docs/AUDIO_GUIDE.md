@@ -1,5 +1,7 @@
 # 오디오 가이드
 
+Wave 종료 5초 경고음은 Sonniss `344 Audio - Antique Clocks`의 `CLOCKTick_You're Running Late`에서 짧은 틱을 잘라 사용한다. 원본은 `C:\Users\geniu\Music`에 그대로 두며, 재생 파일과 구간·처리 기록은 `assets/audio/sfx/sourced/ui/countdown_tick_01.*`, 재현 스크립트는 `scripts/extract-countdown-tick.py`에 있다. 한 초에 한 번만 재생하고 소리 크기를 낮게 유지한다.
+
 ## 현재 사운드 · 2026-09-26
 
 Sonniss GDC 2026 번들 5개의 녹음·디자인 소스를 편집한 SFX를 사용한다. 현실적인 금속·충격·파열의 질감에 절제된 마력을 더한다. 발사와 적중은 구별하고, 반복음은 짧게, 보상과 경고는 분명하게 만든다. 합성 발진음이나 특정한 좁은 주파수 범위를 모든 소리에 강제하지 않는다.

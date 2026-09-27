@@ -6,6 +6,7 @@ import type { Weapon } from '../data/types';
 import type { Enemy } from '../entities/types';
 import type { RunState } from '../state/RunState';
 import { resolveWeaponStats, type ResolvedWeaponStats } from '../stats/WeaponStats';
+import { characterWeaponDamageBonus } from '../stats/CharacterTrait';
 import { attackContext } from '../stats/Damage';
 import type { CollisionSystem } from './CollisionSystem';
 import { spawnRunEffect } from './RunEffectSystem';
@@ -63,7 +64,7 @@ export class StructureSystem {
       const slot=run.ownedWeapons.find(s=>s.id===entity.weaponId), w=weapons[entity.weaponId];
       entity.remaining-=dt;
       if (!slot || !w?.structure || entity.remaining<=0) continue;
-      const stats=resolveWeaponStats(w,slot.level,run.calculatedStats,run.combatPermissions.indirectLifesteal,slot.branchId,run.itemEffects);
+      const stats=resolveWeaponStats(w,slot.level,run.calculatedStats,run.combatPermissions.indirectLifesteal,slot.branchId,run.itemEffects,characterWeaponDamageBonus(run.characterId,w));
       entity.cooldown-=dt;
       if (entity.cooldown<=0) {
         const kind=w.structure.kind;

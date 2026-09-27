@@ -31,6 +31,7 @@ export const sfx = {
   eliteSpawned: cue('eliteSpawned', '엘리트 출현', 'combat', 0.48, 0.6, 1, 4, [1, 1], 0),
   waveStarted: cue('waveStarted', 'Wave 시작', 'ui', 0.4, 0.3, 1, 4, [1, 1], 0),
   waveCompleted: cue('waveCompleted', 'Wave 완료', 'ui', 0.4, 0.3, 1, 4, [1, 1], 0),
+  waveCountdownTick: cue('waveCountdownTick', 'Wave 종료 5초 경고', 'ui', 0.28, 0.72, 1, 3, [1, 1], 0),
   slashAttack: cue('slashAttack', '검격', 'combat', 0.28, 0.095, 2, 2, [0.97, 1.03], 0.04),
   orbitAttack: cue('orbitAttack', '회전 표창', 'combat', 0.07, 0.34, 1, 1, [0.97, 1.02], 0.04),
   chainAttack: cue('chainAttack', '연쇄 번개', 'combat', 0.23, 0.25, 1, 2, [0.98, 1.02], 0.035),
@@ -52,7 +53,7 @@ export const sfx = {
   bossSpawned: cue('bossSpawned', '보스 경고', 'combat', 0.55, 1, 1, 5, [1, 1], 0),
   stageClear: cue('stageClear', '스테이지 클리어', 'ui', 0.56, 1, 1, 5, [1, 1], 0),
   gameOver: cue('gameOver', '게임 오버', 'ui', 0.5, 1, 1, 5, [1, 1], 0),
-} satisfies Record<GameEvent | 'buttonClick' | 'supplyLatch' | 'supplyFanfare' | 'walletSweep', SfxDefinition>;
+} satisfies Record<GameEvent | 'buttonClick' | 'supplyLatch' | 'supplyFanfare' | 'walletSweep' | 'waveCountdownTick', SfxDefinition>;
 export type SfxId = keyof typeof sfx;
 
 export interface BgmTrack { readonly url: string; readonly label: string }

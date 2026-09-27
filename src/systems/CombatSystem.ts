@@ -1,5 +1,6 @@
 import { StructureSystem } from './StructureSystem';
 import { resolveWeaponStats, type ResolvedWeaponStats } from '../stats/WeaponStats';
+import { characterWeaponDamageBonus } from '../stats/CharacterTrait';
 import { attackContext } from '../stats/Damage';
 import { maps } from '../data/maps';
 import { ARENA_RULES } from '../world/Arena';
@@ -22,7 +23,7 @@ export function calculateDamage(base: number, multiplier: number): number {
 }
 
 export function weaponStats(definition: Weapon, level: number, state: RunState): ResolvedWeaponStats {
-  return resolveWeaponStats(definition, level, state.calculatedStats, state.combatPermissions.indirectLifesteal, state.ownedWeapons.find(w => w.id === definition.id)?.branchId, state.itemEffects);
+  return resolveWeaponStats(definition, level, state.calculatedStats, state.combatPermissions.indirectLifesteal, state.ownedWeapons.find(w => w.id === definition.id)?.branchId, state.itemEffects, characterWeaponDamageBonus(state.characterId, definition));
 }
 
 export class CombatSystem {

@@ -1,0 +1,7 @@
+{
+  "source": "Sonniss.com-GDC2026-GameAudioBundle1of5/344 Audio - Antique Clocks/CLOCKTick_You're Running Late _344 Audio_Antique Clocks.wav",
+  "sourceRangeSeconds": [0.747, 0.937],
+  "processing": "mono 48 kHz, gentle 5-sample low-pass, edge fades, peak normalized to 0.55",
+  "script": "scripts/extract-countdown-tick.py",
+  "licenseRecords": "audio-library/provenance"
+}

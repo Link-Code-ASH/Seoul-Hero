@@ -90,6 +90,7 @@ const definitions: Record<string, Omit<Weapon, "branches">> = {
   },
   piercingShot: {
     "id": "piercingShot",
+    family: 'firearm',
     maxLevel: 6, branchAtLevel: 3,
     "name": "관통 사격",
     "description": "여러 적을 관통하는 고속 장거리 탄",
@@ -221,6 +222,7 @@ const definitions: Record<string, Omit<Weapon, "branches">> = {
     visual: { sprite: 'manaBolt', color: 0xf6dfa0, shape: 'circle' } },
   manaShotgun: {
     id: 'manaShotgun', name: '마력 샷건', description: '짧은 거리에서 마력 산탄을 넓게 퍼뜨린다. 가까울수록 여러 탄이 적중한다.',
+    family: 'firearm',
     maxLevel: 10, branchAtLevel: 5, targeting: 'nearest', behavior: 'projectile',
     capabilities: ['RANGED', 'PROJECTILE', 'AREA', 'HAS_RANGE', 'CAN_CRIT'],
     base: { damage: 11, cooldown: 1.5, projectileCount: 5, projectileSpeed: 650, range: 205, duration: 0.36, penetration: 0, projectileRadius: 4.5, spreadAngle: 0.72 },

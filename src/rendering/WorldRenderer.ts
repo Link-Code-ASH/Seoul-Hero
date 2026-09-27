@@ -23,6 +23,7 @@ import { MAGIC_STONE_TIERS } from '../data/magicStoneConfig';
 import { enemyPresentation, fallbackEnemyPresentation } from '../data/enemyPresentation';
 import { images } from '../data/images';
 import { drawGroundedOvalShadow, drawImageContactShadow, drawProjectedShadow } from './ProjectedShadow';
+import { getGameViewportScale } from '../ui/GameViewport';
 
 const magicStoneVisual: Visual = { color: 0xcbb8ff, shape: 'diamond', sprite: 'magicStone' };
 const hostileVisual: Visual = { color: 0xff5967, shape: 'triangle', sprite: 'hostileBolt' };
@@ -96,13 +97,16 @@ export class WorldRenderer {
     this.initialized = true;
     this.resizeObserver = new ResizeObserver(() => this.resize());
     this.resizeObserver.observe(host);
+    window.addEventListener('resize', this.onViewportResize);
     this.resize();
     this.render(null, 0);
   }
 
   private get resolution(): number {
-    return this.highResolution ? Math.min(window.devicePixelRatio || 1, theme.maxDpr) : 1;
+    return Math.min((this.highResolution ? window.devicePixelRatio || 1 : 1) * Math.max(1, getGameViewportScale()), theme.maxDpr);
   }
+
+  private readonly onViewportResize = (): void => { if (this.initialized) this.resize(); };
 
   setHighResolution(enabled: boolean): void {
     this.highResolution = enabled;
@@ -156,17 +160,21 @@ export class WorldRenderer {
 
   clientToWorld(point: { x: number; y: number }): { x: number; y: number } {
     const bounds = this.app.canvas.getBoundingClientRect();
+    const displayScaleX = bounds.width / this.app.screen.width;
+    const displayScaleY = bounds.height / this.app.screen.height;
     return {
-      x: (point.x - bounds.left - this.world.position.x) / Math.max(this.scale, 0.001),
-      y: (point.y - bounds.top - this.world.position.y) / Math.max(this.scale, 0.001),
+      x: ((point.x - bounds.left) / displayScaleX - this.world.position.x) / Math.max(this.scale, 0.001),
+      y: ((point.y - bounds.top) / displayScaleY - this.world.position.y) / Math.max(this.scale, 0.001),
     };
   }
 
   worldToClient(point: { x: number; y: number }): { x: number; y: number } {
     const bounds = this.app.canvas.getBoundingClientRect();
+    const displayScaleX = bounds.width / this.app.screen.width;
+    const displayScaleY = bounds.height / this.app.screen.height;
     return {
-      x: bounds.left + this.world.position.x + point.x * this.scale,
-      y: bounds.top + this.world.position.y + point.y * this.scale,
+      x: bounds.left + (this.world.position.x + point.x * this.scale) * displayScaleX,
+      y: bounds.top + (this.world.position.y + point.y * this.scale) * displayScaleY,
     };
   }
 
@@ -228,7 +236,7 @@ export class WorldRenderer {
       if (!kind) continue;
       const sprite = weapons[structure.weaponId]?.structure?.sprite;
       if (!sprite) continue;
-      const size = kind === 'turret' ? 70 : kind === 'aura' ? 66 : 54;
+      const size = kind === 'turret' ? 70 : kind === 'aura' ? 66 : 37.8;
       if (kind === 'turret') drawGroundedOvalShadow(this.shadows, sprite, structure.x, structure.y,
         size, size, .5, 0x020306, .32);
       else drawImageContactShadow(this.shadows, sprite, structure.x, structure.y,
@@ -280,7 +288,7 @@ export class WorldRenderer {
           sprites.drawImage(structure.x, structure.y, radius * 2.08, radius * 2.08, 'manaFieldAura', 0.23 + pulse * 0.08, state.stageCombatTime * 0.165);
           sprites.drawImage(structure.x, structure.y, radius * 1.62, radius * 1.62, 'manaFieldAura', 0.12 + (1 - pulse) * 0.06, -state.stageCombatTime * 0.27);
         }
-        const size = weapon?.structure?.kind === 'turret' ? 70 : weapon?.structure?.kind === 'aura' ? 66 : 54;
+        const size = weapon?.structure?.kind === 'turret' ? 70 : weapon?.structure?.kind === 'aura' ? 66 : 37.8;
         sprites.drawImage(structure.x, structure.y, size, size, sprite, 0.92);
       }
     }
@@ -424,6 +432,7 @@ export class WorldRenderer {
 
   destroy(): void {
     this.resizeObserver?.disconnect();
+    window.removeEventListener('resize', this.onViewportResize);
     this.sprites?.destroy();
     this.art.destroy();
     if (this.initialized) this.app.destroy({ removeView: true }, { children: true, context: true, style: true });

@@ -4,8 +4,8 @@
   background: linear-gradient(180deg, #071016c9, #0b1721e3);
 }
 .revival-screen {
-  width: min(910px, calc(100vw - 32px));
-  max-height: calc(100dvh - 20px);
+  width: min(910px, calc(100cqw - 32px));
+  max-height: calc(100cqh - 20px);
   display: grid;
   grid-template-rows: auto minmax(0,1fr) auto;
   gap: 10px;
@@ -13,7 +13,7 @@
   padding: 16px 20px;
   border: 1px solid #b0c2ce7a;
   border-top: 3px solid #a8b8d4;
-  background-image: linear-gradient(130deg,#243745f2,#0b171ff4),var(--ui-frame);
+  background-image: linear-gradient(130deg,#243745f2,#0b171ff4),var(--frame-arcane);
   background-size: auto, 470px;
   box-shadow: 0 24px 65px #000d, inset 0 1px #eefaff35;
   color: #e7edf1;
@@ -29,7 +29,7 @@
 }
 .revival-screen h1 {
   margin: 2px 0;
-  font-size: clamp(22px,3vw,34px);
+  font-size: clamp(22px,3cqw,34px);
   color: #f0eff5;
 }
 .revival-screen header p {
@@ -69,14 +69,14 @@
   cursor: default;
 }
 .revival-choice img {
-  height: min(18vh,125px);
+  height: min(18cqh,125px);
   max-width: 100%;
   min-height: 48px;
   object-fit: contain;
   filter: drop-shadow(0 7px 8px #0009);
 }
 .revival-choice strong {
-  font-size: clamp(15px,1.8vw,20px);
+  font-size: clamp(15px,1.8cqw,20px);
   white-space: nowrap;
 }
 .revival-choice small,.revival-grade {
@@ -96,7 +96,7 @@
   justify-content: center;
 }
 .revival-screen .revival-decline {
-  min-height: 35px;
+  min-height: 44px;
   padding: 5px 20px;
   border: 1px solid #a9bac267;
   background: #111b23d9;
@@ -111,18 +111,22 @@
 .shop-revival-stock {
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 7px;
+  height: 34px;
+  padding: 2px 8px;
+  border: 2px solid transparent;
+  border-image: var(--frame-arcane) 12% / 5px;
+  background: linear-gradient(110deg,#795c9ca6,#3d617b80),var(--frame-arcane) center/150% 150%;
+  background-blend-mode: screen;
 }
 .shop-revival-stock>span {
-  min-width: 46px;
-  height: 38px;
   display: inline-flex;
   align-items: center;
-  gap: 1px;
-  padding: 2px 5px;
-  border: 1px solid #c6b6d65a;
-  background-image: linear-gradient(120deg,#293948dd,#101a24e9),url('../../assets/ui/ui_texture_field_paper_01.png');
-  background-size: auto,230px;
+  gap: 2px;
+  padding: 0;
+  border: 0;
+  background: none;
+  box-shadow: none;
   color: #e8dcef;
   font-size: 15px;
 }
@@ -131,10 +135,10 @@
   height: 29px;
   object-fit: contain;
 }
-@media (max-height: 500px) and (orientation: landscape) {
+@container game (max-height: 500px) {
   .revival-screen {
-    width: min(790px,calc(100vw - 24px));
-    height: calc(100dvh - 12px);
+    width: min(790px,calc(100cqw - 24px));
+    height: calc(100cqh - 12px);
     gap: 5px;
     padding: 8px 12px;
   }
@@ -142,7 +146,7 @@
     display: none;
   }
   .revival-choice img {
-    height: min(24vh,95px);
+    height: min(24cqh,95px);
   }
   .revival-choice {
     padding: 4px;
@@ -151,16 +155,18 @@
     font-size: 15px;
   }
   .revival-screen .revival-decline {
-    min-height: 31px;
+    min-height: 44px;
   }
   .shop-header-resources {
     gap: 7px;
   }
   .shop-revival-stock>span {
-    min-width: 36px;
-    height: 30px;
     font-size: 13px;
-    padding: 1px 3px;
+  }
+  .shop-revival-stock {
+    height: 30px;
+    padding: 1px 5px;
+    gap: 4px;
   }
   .shop-revival-stock img {
     width: 19px;

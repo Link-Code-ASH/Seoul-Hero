@@ -1,5 +1,5 @@
 export const BALANCE_CONFIG = {
-  version: '2026.09-gwanghwamun-depth1-v2',
+  version: '2026.09-gwanghwamun-depth1-v4',
   /** Every authored value is measured from this neutral 100% reference. */
   baseline: {
     characterId: 'awakener',

@@ -4,7 +4,7 @@
   right: 18px;
   top: 105px;
   width: 266px;
-  max-height: calc(100dvh - 125px);
+  max-height: calc(100cqh - 125px);
   overflow: auto;
   pointer-events: auto;
   border: 1px solid #deb76e66;
@@ -43,7 +43,7 @@
   bottom: 25px;
   left: 50%;
   transform: translateX(-50%);
-  max-width: 90vw;
+  max-width: 90cqw;
   padding: 14px 23px;
   background: #224138f5;
   border: 1px solid #8ee5c651;
@@ -53,23 +53,23 @@
   box-shadow: 0 4px 30px #0005;
   pointer-events: none;
 }
-@media(max-width:680px) {
+@container game (max-width:680px) {
   .dev-panel {
     top: 120px;
     right: 10px;
     width: 245px;
-    max-height: calc(100dvh - 140px);
+    max-height: calc(100cqh - 140px);
   }
 }
-@media(max-height:600px) and (min-width:681px) {
+@container game (max-height:600px) and (min-width:681px) {
   .dev-panel {
     top: 75px;
-    max-height: calc(100dvh - 90px);
+    max-height: calc(100cqh - 90px);
   }
 }
-@media(max-height:500px) {
+@container game (max-height:500px) {
   .dev-panel {
-    max-height: calc(100dvh - 85px);
+    max-height: calc(100cqh - 85px);
   }
 }
 .dev-panel pre {
@@ -129,7 +129,7 @@
   width: 100%;
 }
 .startup-error {
-  padding: 12vh 10vw;
+  padding: 12cqh 10cqw;
   background: #142330;
   color: #e3edf2;
   font-size: 18px;

@@ -2,7 +2,7 @@ import { CAPABILITY_STATS, STAT_RULES, type PlayerStats } from '../data/stats';
 import { WEAPON_CONFIG } from '../data/weaponConfig';
 import type { Weapon, WeaponStats } from '../data/types';
 export interface ResolvedWeaponStats extends WeaponStats { repeatCount: number; repeatInterval: number; explosionDelay: number; attackAngle: number; areaScale: number; chainRange: number; blastRadius: number; criticalChance: number; criticalDamage: number; lifesteal: number }
-export function resolveWeaponStats(weapon: Weapon, level: number, player: PlayerStats, allowIndirectLifesteal = false, branchId?: string, effects: readonly import('../data/items').ItemEffect[] = []): ResolvedWeaponStats {
+export function resolveWeaponStats(weapon: Weapon, level: number, player: PlayerStats, allowIndirectLifesteal = false, branchId?: string, effects: readonly import('../data/items').ItemEffect[] = [], characterDamageBonus = 0): ResolvedWeaponStats {
   const base = { ...weapon.base };
   for (let i = 0; i < Math.min(level, weapon.maxLevel) - 1 && i < weapon.levels.length; i++) Object.assign(base, weapon.levels[i]);
   const branch = weapon.branches.find(b => b.id === branchId);
@@ -14,7 +14,7 @@ export function resolveWeaponStats(weapon: Weapon, level: number, player: Player
     projectileCount: base.projectileCount + effects.reduce((n,e)=>n+(e.type==='projectileCount' && weapon.capabilities.includes(e.tag)?e.value:0),0),
     repeatCount: base.repeatCount ?? 1, repeatInterval: base.repeatInterval ?? 0.15, explosionDelay: base.explosionDelay ?? 0,
     attackAngle: base.attackAngle ?? weapon.attackAngle ?? Math.PI,
-    damage: Math.max(0, Math.round(base.damage * Math.max(0, 1 + (player.damage - 1) + (gated('meleeDamage') - 1) + (gated('rangedDamage') - 1)) * WEAPON_CONFIG.playerDamageMultiplier)),
+    damage: Math.max(0, Math.round(base.damage * Math.max(0, 1 + (player.damage - 1) + (gated('meleeDamage') - 1) + (gated('rangedDamage') - 1) + characterDamageBonus) * WEAPON_CONFIG.playerDamageMultiplier)),
     cooldown: Math.max(STAT_RULES.minimumAttackInterval, base.cooldown / Math.max(STAT_RULES.minimumAttackSpeed, Math.min(STAT_RULES.maximumAttackSpeed, player.attackSpeed))),
     range: base.range * gated('range'), duration: base.duration * gated('duration'),
     projectileRadius: base.projectileRadius * gated('area') * (base.areaMultiplier ?? 1),

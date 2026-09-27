@@ -10,8 +10,16 @@
   --mint: #95d2cf;
   --line: #90a6b542;
   --panel: #15212d;
-  --ui-frame: url('../../assets/ui/materials/steel_panel_01.png');
-  --shell-metal: var(--ui-frame);
+  --frame-command: url('../../assets/ui/materials/frame_command_01.webp');
+  --frame-map: url('../../assets/ui/materials/frame_map_01.webp');
+  --frame-instrument: url('../../assets/ui/materials/frame_instrument_01.webp');
+  --frame-personnel: url('../../assets/ui/materials/frame_personnel_01.webp');
+  --frame-weapon: url('../../assets/ui/materials/frame_weapon_01.webp');
+  --frame-arcane: url('../../assets/ui/materials/frame_arcane_01.webp');
+  --frame-supply: url('../../assets/ui/materials/frame_supply_01.webp');
+  --frame-reward: url('../../assets/ui/materials/frame_reward_01.webp');
+  --frame-association: url('../../assets/ui/materials/frame_association_01.webp');
+  --frame-control: url('../../assets/ui/materials/frame_control_01.webp');
   --pad: clamp(12px,2vw,28px);
 }
 * {
@@ -24,11 +32,23 @@ html,body {
   overflow: hidden;
   overscroll-behavior: none;
 }
-#app,#world,#ui {
+#app {
   position: fixed;
+  left: 50%;
+  top: 50%;
+  width: 915px;
+  height: 412px;
+  overflow: hidden;
+  transform: translate(-50%,-50%) scale(var(--game-scale,1));
+  transform-origin: center;
+  container: game / size;
+  --pad: clamp(12px,2cqw,28px);
+}
+#world,#ui {
+  position: absolute;
   inset: 0;
   width: 100%;
-  height: 100dvh;
+  height: 100%;
 }
 #world canvas {
   display: block;
@@ -49,8 +69,8 @@ button,input,select {
 button,.button {
   min-height: 44px;
   padding: 8px 16px;
-  border: 5px solid transparent;
-  border-image: var(--ui-frame) 5% fill / 5px;
+  border: 2px solid transparent;
+  border-image: var(--frame-control) 12% fill / 2px;
   border-radius: 0;
   color: #e6edf2;
   background: #162432;
@@ -110,7 +130,7 @@ h1,h2 {
   letter-spacing: -.035em;
 }
 h1 {
-  font-size: clamp(26px,3vw,40px);
+  font-size: clamp(26px,3cqw,40px);
   line-height: 1.1;
 }
 h2 {
@@ -279,37 +299,60 @@ button img {
 }
 .title-content {
   position: absolute;
-  left: max(5vw,env(safe-area-inset-left));
-  bottom: max(10vh,env(safe-area-inset-bottom));
+  left: max(5cqw,env(safe-area-inset-left));
+  bottom: max(10cqh,env(safe-area-inset-bottom));
   width: 50%;
 }
 .title-content h1 {
-  font-size: clamp(68px,10vw,150px);
-  line-height: .92;
-  color: #f2ecda;
-  text-shadow: 0 4px 14px #000;
+  font: 400 clamp(56px,8.2cqw,116px)/.98 Paperlogy,'Malgun Gothic',sans-serif;
+  letter-spacing: -.075em;
+  color: #eef2f1;
+  text-shadow: 0 3px 18px #02101cba;
 }
 .title-content h1 span,.title-content h1 strong {
   display: block;
+  font-weight: 400;
 }
 .title-content h1 span {
-  font-size: .6em;
-  color: #b6ccd8;
+  font-size: .56em;
+  color: #cbd9de;
 }
 .title-actions {
   display: flex;
   align-items: center;
-  gap: 12px;
-  margin-top: 24px;
+  gap: 14px;
+  margin-top: 19px;
 }
 .title-actions .primary {
-  min-width: 190px;
-  font-size: 22px;
-  height: 58px;
+  min-width: 176px;
+  height: 48px;
+  padding: 6px 22px;
+  border: 3px solid transparent;
+  border-image: var(--frame-reward) 12% / 8px;
+  background: linear-gradient(115deg,#957345b8,#55402b99),var(--frame-reward) center/150% 150%;
+  background-blend-mode: screen;
+  box-shadow: 0 6px 18px #0006;
+  color: #f0f6f4;
+  font: 400 17px Paperlogy,'Malgun Gothic',sans-serif;
+  letter-spacing: .02em;
 }
 .title-actions .sound-button {
   position: static;
-  height: 58px;
+  height: 48px;
+  min-width: 84px;
+  justify-content: center;
+  padding: 4px 8px;
+  border: 2px solid transparent;
+  border-image: var(--frame-arcane) 12% / 6px;
+  background: linear-gradient(120deg,#315d6599,#31395580),var(--frame-arcane) center/150% 150%;
+  background-blend-mode: screen;
+  box-shadow: 0 3px 10px #0005;
+  color: #d1dfe1;
+  font-weight: 400;
+}
+.title-actions .sound-button[aria-pressed=true] {
+  color: #d0fff0;
+  background-image: linear-gradient(120deg,#438f89bd,#36586d99),var(--frame-arcane);
 }
 .title-atmosphere {
   position: absolute;
@@ -320,8 +363,8 @@ button img {
 /* Modal flow and recorded run results. */
 .modal {
   max-width: calc(100% - 28px);
-  border: 9px solid transparent;
-  border-image: var(--ui-frame) 5% fill / 9px;
+  border: 4px solid transparent;
+  border-image: var(--frame-command) 12% fill / 4px;
   background: #152431;
   padding: 22px;
   box-shadow: 0 18px 60px #0009;
@@ -330,15 +373,48 @@ button img {
   width: 440px;
   text-align: center;
 }
-.pause-modal .phase-symbol {
-  font-size: 30px;
-  color: var(--gold);
+.pause-modal {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  margin: 0;
+  width: min(282px,calc(100% - 24px));
+  padding: 12px 14px 14px;
+  border: 3px solid transparent;
+  border-image: var(--frame-association) 12% / 8px;
+  background: var(--frame-association) center/125% 125%;
+  box-shadow: 0 14px 38px #0009;
 }
-.pause-modal h1,.post-wave-modal h1 {
+.pause-modal h1 {
+  margin: 0 0 12px;
+  font: 400 21px/1.3 Paperlogy,sans-serif;
+  color: #e7f0f1;
+}
+.post-wave-modal h1 {
   margin: 10px 0 20px;
 }
 .pause-modal .stack {
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(2,minmax(0,1fr));
+  gap: 8px;
+}
+.pause-modal .stack button {
+  min-width: 0;
+  min-height: 44px;
+  padding: 6px 8px;
+  font-size: 14px;
+  border-image: var(--frame-control) 12% / 6px;
+  background: var(--frame-control) center/125% 125%;
+  box-shadow: 0 3px 8px #0005;
+}
+.pause-modal .stack .primary {
+  border-image-source: var(--frame-reward);
+  background-image: var(--frame-reward);
+  color: #f2dfb7;
+}
+.pause-modal .stack .secondary {
+  color: #efd9d3;
 }
 .post-metrics {
   display: flex;
@@ -361,8 +437,8 @@ button img {
   grid-template-columns: 35% 1fr;
   width: min(1000px,calc(100% - 28px));
   height: min(650px,calc(100% - 24px));
-  border: 8px solid transparent;
-  border-image: var(--ui-frame) 5% fill / 8px;
+  border: 4px solid transparent;
+  border-image: var(--frame-command) 12% fill / 4px;
   background: #111e29;
   box-shadow: 0 18px 80px #0009;
   overflow: hidden;
@@ -402,6 +478,9 @@ button img {
   margin-top: 5px;
 }
 .result-award {
+  border: 3px solid transparent;
+  border-image: var(--frame-reward) 12% fill / 3px;
+  padding: 4px 8px;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -473,7 +552,7 @@ button img {
 .victory .result-portrait {
   background: radial-gradient(ellipse,#ae95584a,transparent 75%);
 }
-@media(max-height:500px) {
+@container game (max-height:500px) {
   .result-report {
     padding: 12px;
     gap: 7px;

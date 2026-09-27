@@ -60,52 +60,31 @@ export class CombatVfx {
     const dy = effect.endY - effect.y;
     const distance = Math.hypot(dx, dy);
     const arcHeight = Math.min(150, Math.max(58, distance * 0.23));
-    const positionAt = (value: number): { x: number; y: number; groundY: number } => {
+    const positionAt = (value: number): { x: number; y: number } => {
       const time = clamp01(value);
       const travel = easeInOut(time);
       const groundY = effect.y + dy * travel;
       return {
         x: effect.x + dx * travel,
         y: groundY - Math.sin(time * Math.PI) * arcHeight,
-        groundY,
       };
     };
 
     const current = positionAt(progress);
     const previous = positionAt(progress - 0.045);
     const older = positionAt(progress - 0.1);
-    const next = positionAt(progress + 0.045);
-    const directionX = next.x - previous.x;
-    const directionY = next.y - previous.y;
-    // The shell art points right. A target above the launch point can make the
-    // screen-space tangent point upward even while the shell falls toward ground.
-    // Orient the descent from its closing height, then turn smoothly over the apex.
-    const previousHeight = previous.groundY - previous.y;
-    const nextHeight = next.groundY - next.y;
-    const fall = Math.max(0, previousHeight - nextHeight);
-    const flightAngle = Math.atan2(directionY, directionX);
-    const descentAngle = Math.atan2(Math.max(fall, Math.abs(directionX) * 0.58, effect.radius * 0.1), directionX);
-    const turn = clamp01((progress - 0.42) / 0.16);
-    const angle = flightAngle + Math.atan2(Math.sin(descentAngle - flightAngle), Math.cos(descentAngle - flightAngle)) * turn;
     const heightRatio = Math.sin(progress * Math.PI);
     const scale = 0.86 + heightRatio * 0.3;
 
-    // The shadow follows the ground route while the projectile rises above it.
-    this.back.ellipse(
-      current.x,
-      current.groundY,
-      effect.radius * (0.7 + heightRatio * 0.22),
-      effect.radius * 0.27,
-    ).fill({ color: 0x07101a, alpha: 0.12 + heightRatio * 0.13 });
-
+    // A round shell has no nose to flip when the parabolic flight changes direction.
+    sprites.drawImage(previous.x, previous.y, effect.radius * 0.95 * scale, effect.radius * 0.95 * scale, 'bombardShell', 0.15);
     sprites.drawImage(
       current.x,
       current.y,
-      effect.radius * 2.35 * scale,
-      effect.radius * 1.28 * scale,
+      effect.radius * 1.4 * scale,
+      effect.radius * 1.4 * scale,
       'bombardShell',
       0.92,
-      angle,
     );
     this.glow.moveTo(older.x, older.y).lineTo(previous.x, previous.y).lineTo(current.x, current.y)
       .stroke({ color: effect.color, width: Math.max(2, effect.radius * 0.28), alpha: 0.22, cap: 'round' });

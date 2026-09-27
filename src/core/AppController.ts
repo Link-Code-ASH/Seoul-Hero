@@ -99,6 +99,9 @@ export class AppController {
   private readonly balanceLogs = new BalanceTelemetryStore();
   private telemetrySavedRun: import('../state/RunState').RunState | null = null;
   private refreshElapsed = 0;
+  private countdownRun: import('../state/RunState').RunState | null = null;
+  private countdownWave = 0;
+  private countdownSecond = Infinity;
   private autosaveTimer = 0;
   private readonly walkTest = { x: 0, y: 0, remaining: 0 };
   private terminalRevealRun: import('../state/RunState').RunState | null = null;
@@ -108,6 +111,7 @@ export class AppController {
 
   constructor(private readonly worldHost: HTMLElement, uiHost: HTMLElement) {
     this.ui = new GameUI(uiHost, this.action, this.change);
+    this.audio.onMusicStateChange = this.syncAudioButton;
     this.input = new InputManager([this.keyboard, new TouchInput(this.worldHost, () => this.screen === 'waveActive')]);
     this.loop = new GameLoop(this.update, this.render);
   }
@@ -284,6 +288,19 @@ export class AppController {
     }
     this.audio.setScene(musicForScene(this.screen, run), this.screen === 'paused' || this.screen === 'postWave');
     this.simulation?.events.drain(this.audio.play);
+    if (run?.phase === 'waveActive' && run.currentWave < run.totalWaves) {
+      if (this.countdownRun !== run || this.countdownWave !== run.currentWave) {
+        this.countdownRun = run;
+        this.countdownWave = run.currentWave;
+        this.countdownSecond = Infinity;
+      }
+      const second = Math.ceil(run.waveRemainingTime);
+      if (second > 0 && second <= 5 && second < this.countdownSecond) this.audio.play('waveCountdownTick');
+      this.countdownSecond = second;
+    } else if (run?.phase !== 'paused') {
+      this.countdownRun = null;
+      this.countdownSecond = Infinity;
+    }
     this.renderer.render(run, dt);
     this.refreshElapsed += dt;
     if (this.refreshElapsed < GAME_CONFIG.ui.refreshInterval) return;
@@ -624,7 +641,7 @@ export class AppController {
   }
   private action = (action: string): void => {
     const [command = '', id = ''] = action.split(':');
-    if (command !== 'sound' && !this.meta.settings.muted && !this.audio.play('buttonClick')) void this.audio.unlock().then(() => { this.audio.play('buttonClick'); this.syncAudioButton(); });
+    if (!this.audio.play('buttonClick')) void this.audio.unlock().then(() => { this.audio.play('buttonClick'); this.syncAudioButton(); });
     if (command === 'title-enter') { if (!this.accountChoice && !this.runSnapshots.load(this.accountUserId)) this.show('lobby'); return; }
     if (command === 'title-continue') { if (!this.accountChoice) void this.restoreRun(); return; }
     if (command === 'account-signin') { void this.signIn(); return; }
@@ -638,7 +655,7 @@ export class AppController {
       return;
     }
     if (command === 'sound') {
-      this.meta.settings.muted = this.audio.audible && !this.meta.settings.muted;
+      this.meta.settings.muted = !this.meta.settings.muted;
       this.audio.applySettings(this.meta.settings); this.persist();
       if (!this.meta.settings.muted) this.audio.claimOutput();
       this.syncAudioButton();
@@ -675,15 +692,16 @@ export class AppController {
     }
     if (command === 'gate-deploy') {
       void this.deployRun();
-    } else if(command==='gate-map') {if(maps[id]&&isMapUnlocked(this.meta,id)){this.gateDraft.mapId=id;this.show('gateMap');}
+    } else if(command==='gate-map') {if(maps[id]&&isMapUnlocked(this.meta,id)){if(this.gateDraft.mapId===id)return;this.gateDraft.mapId=id;if(!this.ui.updateGateSelection('gateMap',this.meta,this.gateDraft))this.show('gateMap');}
     } else if (command === 'gate-depth-select') {
       const depth=Number(id); if(!Number.isInteger(depth)||depth<1||depth>this.meta.gateProgression.highestUnlockedDepth)return;
-      this.gateDraft.gateDepth=depth; this.show('gateDepth');
+      if(this.gateDraft.gateDepth===depth)return;
+      this.gateDraft.gateDepth=depth; if(!this.ui.updateGateSelection('gateDepth',this.meta,this.gateDraft))this.show('gateDepth');
     } else if(command==='gate-depth-page'){
-      const page=Number(id);if(Number.isInteger(page)&&page>=0){this.gateDraft.depthPage=page;this.show('gateDepth');}
-    } else if(command==='gate-character') {if(!characters[id]||!isCharacterUnlocked(this.meta,id))return;this.gateDraft.characterId=id;if(!availableStartingWeapons(this.meta,id).some(w=>w.id===this.gateDraft.startingWeaponId))this.gateDraft.startingWeaponId='';this.show('gateCharacter');
-    } else if(command==='gate-weapon') {if(!availableStartingWeapons(this.meta,this.gateDraft.characterId).some(w=>w.id===id))return;this.gateDraft.startingWeaponId=id;this.show('gateWeapon');
-    } else if(command==='gate-blessing') {if(!this.meta.blessings[id]?.unlocked||this.meta.blessings[id]!.level<1)return;this.gateDraft.blessingId=id;this.show('gateBlessing');
+      const page=Number(id);if(Number.isInteger(page)&&page>=0){if(this.gateDraft.depthPage===page)return;this.gateDraft.depthPage=page;if(!this.ui.updateGateDepthPage(this.meta,this.gateDraft))this.show('gateDepth');}
+    } else if(command==='gate-character') {if(!characters[id]||!isCharacterUnlocked(this.meta,id))return;if(this.gateDraft.characterId===id)return;this.gateDraft.characterId=id;if(!availableStartingWeapons(this.meta,id).some(w=>w.id===this.gateDraft.startingWeaponId))this.gateDraft.startingWeaponId='';if(!this.ui.updateGateSelection('gateCharacter',this.meta,this.gateDraft))this.show('gateCharacter');
+    } else if(command==='gate-weapon') {if(!availableStartingWeapons(this.meta,this.gateDraft.characterId).some(w=>w.id===id))return;if(this.gateDraft.startingWeaponId===id)return;this.gateDraft.startingWeaponId=id;if(!this.ui.updateGateSelection('gateWeapon',this.meta,this.gateDraft))this.show('gateWeapon');
+    } else if(command==='gate-blessing') {if(!this.meta.blessings[id]?.unlocked||this.meta.blessings[id]!.level<1)return;if(this.gateDraft.blessingId===id)return;this.gateDraft.blessingId=id;if(!this.ui.updateGateSelection('gateBlessing',this.meta,this.gateDraft))this.show('gateBlessing');
     } else if(command==='gate-step'&&gateEntrySteps.includes(id as GateEntryStep)) {
       const target=id as GateEntryStep;
       const hasBlessing=Object.keys(dangunBlessings).some(key=>this.meta.blessings[key]?.unlocked&&this.meta.blessings[key]!.level>0);
@@ -930,8 +948,7 @@ export class AppController {
   }
   private unlockAudio = (event?: Event): void => {
     if (event?.target instanceof Element && event.target.closest('[data-action="sound"]')) return;
-    if (this.meta.settings.muted) return;
-    this.audio.claimOutput();
+    if (!this.meta.settings.muted) this.audio.claimOutput();
     if (this.audio.unlocked) return;
     void this.audio.unlock().then(this.syncAudioButton);
   };

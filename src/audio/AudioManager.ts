@@ -7,6 +7,7 @@ interface EffectVoice { source: AudioBufferSourceNode; gain: GainNode; id: SfxId
 
 /** Browser output adapter. The simulation only emits domain events and knows no audio APIs. */
 export class AudioManager {
+  onMusicStateChange: (() => void) | null = null;
   private context: AudioContext | null = null;
   private master: GainNode | null = null;
   private musicBus: GainNode | null = null;
@@ -70,6 +71,7 @@ export class AudioManager {
     if (this.disposed || this.hidden || this.settings.muted || this.musicElement || this.desired !== 'menu') return Promise.resolve();
     const track = this.chooseMusic('menu');
     const element = new Audio(track.url);
+    this.watchMusicElement(element);
     element.preload = 'auto';
     element.volume = Math.max(0, Math.min(1, this.settings.masterVolume * this.settings.musicVolume * bgm.menu.gain));
     element.onended = () => {
@@ -89,6 +91,11 @@ export class AudioManager {
     this.currentTrack = track;
     this.lastMusicUrl.set('menu', track.url);
     void element.play().catch(() => {});
+  }
+
+  private watchMusicElement(element: HTMLAudioElement): void {
+    element.addEventListener('playing', () => this.onMusicStateChange?.());
+    element.addEventListener('pause', () => this.onMusicStateChange?.());
   }
 
   prepare(): Promise<void> {
@@ -115,7 +122,10 @@ export class AudioManager {
         this.combatBus = this.context.createGain();
         this.combatTone = this.context.createBiquadFilter();
         this.uiBus = this.context.createGain();
-        this.musicElement ??= new Audio();
+        if (!this.musicElement) {
+          this.musicElement = new Audio();
+          this.watchMusicElement(this.musicElement);
+        }
         this.musicElement.preload = 'auto';
         this.musicElement.loop = false;
         this.musicElement.volume = 1;
@@ -172,8 +182,8 @@ export class AudioManager {
       return;
     }
     const now = this.context.currentTime;
-    this.master.gain.setTargetAtTime(settings.muted ? 0 : settings.masterVolume, now, AUDIO_CONFIG.volumeFade);
-    this.musicBus.gain.setTargetAtTime(settings.musicVolume * (this.dimmed ? AUDIO_CONFIG.pausedMusicGain : 1), now, AUDIO_CONFIG.volumeFade);
+    this.master.gain.setTargetAtTime(settings.masterVolume, now, AUDIO_CONFIG.volumeFade);
+    this.musicBus.gain.setTargetAtTime((settings.muted ? 0 : settings.musicVolume) * (this.dimmed ? AUDIO_CONFIG.pausedMusicGain : 1), now, AUDIO_CONFIG.volumeFade);
     this.combatBus.gain.setTargetAtTime(settings.combatVolume, now, AUDIO_CONFIG.volumeFade);
     this.uiBus.gain.setTargetAtTime(settings.uiVolume, now, AUDIO_CONFIG.volumeFade);
   }
@@ -276,7 +286,7 @@ export class AudioManager {
     const context = this.context, definition = sfx[id];
     const output = definition.group === 'ui' ? this.uiBus : this.combatBus;
     const groupVolume = definition.group === 'ui' ? this.settings.uiVolume : this.settings.combatVolume;
-    if (!context || !output || this.hidden || this.settings.muted || this.settings.masterVolume <= 0 || groupVolume <= 0 || context.state !== 'running') return false;
+    if (!context || !output || this.hidden || this.settings.masterVolume <= 0 || groupVolume <= 0 || context.state !== 'running') return false;
     if ([...this.voices].filter(voice => voice.id === id).length >= definition.concurrency) return false;
     if (this.voices.size >= AUDIO_CONFIG.maxVoices && definition.priority >= 4) {
       const victim = [...this.voices].sort((a, b) => a.priority - b.priority)[0];

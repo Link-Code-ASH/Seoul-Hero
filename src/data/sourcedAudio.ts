@@ -9,6 +9,7 @@ export const sourcedSfxPaths = {
   eliteSpawned: ['sfx/sourced/creatures/elite_warning_01.wav', 'sfx/sourced/creatures/elite_warning_02.wav'],
   waveStarted: ['sfx/sourced/ui/wave_start_01.wav', 'sfx/sourced/ui/wave_start_02.wav'],
   waveCompleted: ['sfx/sourced/ui/wave_clear_01.wav', 'sfx/sourced/ui/wave_clear_02.wav'],
+  waveCountdownTick: ['sfx/sourced/ui/countdown_tick_01.wav'],
   slashAttack: ['sfx/sourced/weapons/slash_01.wav', 'sfx/sourced/weapons/slash_02.wav', 'sfx/sourced/weapons/slash_03.wav', 'sfx/sourced/weapons/slash_04.wav', 'sfx/sourced/weapons/slash_05.wav'],
   orbitAttack: ['sfx/sourced/weapons/orbit_01.wav', 'sfx/sourced/weapons/orbit_02.wav', 'sfx/sourced/weapons/orbit_03.wav', 'sfx/sourced/weapons/orbit_04.wav'],
   chainAttack: ['sfx/sourced/weapons/chain_01.wav', 'sfx/sourced/weapons/chain_02.wav', 'sfx/sourced/weapons/chain_03.wav', 'sfx/sourced/weapons/chain_04.wav'],
