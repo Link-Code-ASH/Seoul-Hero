@@ -52,6 +52,7 @@ export class AudioManager {
   }
   get status(): string { return this.stateText; }
   get unlocked(): boolean { return this.context?.state === 'running' && this.buffers.size > 0; }
+  get audible(): boolean { return !this.settings.muted && this.settings.masterVolume > 0 && this.settings.musicVolume > 0 && !this.hidden && !this.silencedByOtherTab && (!this.context || this.context.state === 'running') && !!this.musicElement && !this.musicElement.paused; }
   get currentBgm(): string { return this.currentTrack?.label ?? '없음'; }
   get activeVoices(): number { return this.voices.size; }
   get loadedCount(): number { return this.buffers.size; }
@@ -65,8 +66,8 @@ export class AudioManager {
   }
 
   /** Try audible title music immediately where the browser permits autoplay. */
-  tryAutoplayTitle(): void {
-    if (this.disposed || this.hidden || this.settings.muted || this.musicElement || this.desired !== 'menu') return;
+  tryAutoplayTitle(): Promise<void> {
+    if (this.disposed || this.hidden || this.settings.muted || this.musicElement || this.desired !== 'menu') return Promise.resolve();
     const track = this.chooseMusic('menu');
     const element = new Audio(track.url);
     element.preload = 'auto';
@@ -78,7 +79,7 @@ export class AudioManager {
     this.currentGroup = 'menu';
     this.currentTrack = track;
     this.lastMusicUrl.set('menu', track.url);
-    void element.play().then(() => { if (this.musicElement === element) this.claimOutput(); })
+    return element.play().then(() => { if (this.musicElement === element) this.claimOutput(); })
       .catch(() => { /* The first touch retries through unlock(). */ });
   }
 

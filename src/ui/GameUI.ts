@@ -60,7 +60,7 @@ export class GameUI {
     this.hud.element.hidden = !inRun;
     if (!inRun) this.hud.clearWalletSweep();
     if (run && inRun) this.hud.update(run);
-    this.soundButton.hidden = screen !== 'lobby';
+    this.soundButton.hidden = screen !== 'lobby' && screen !== 'title';
     this.overlay.hidden = screen === 'waveActive';
     this.overlay.classList.toggle('overlay-screen', inRun || screen === 'result' || screen === 'revivalChoice');
     const renderers: Partial<Record<Screen, () => string>> = {
@@ -120,8 +120,8 @@ export class GameUI {
     this.toast.textContent = message; this.toast.hidden = false;
     this.toastTimeout = window.setTimeout(() => { this.toast.hidden = true; }, 6000);
   }
-  updateAudio(unlocked: boolean, muted: boolean, status: string): void {
-    const on = unlocked && !muted;
+  updateAudio(audible: boolean, muted: boolean, status: string): void {
+    const on = audible && !muted;
     const label = on ? '소리 켜짐' : '소리 꺼짐';
     this.soundButton.querySelector('b')!.textContent = on ? 'ON' : 'OFF';
     this.soundButton.setAttribute('aria-label', label);

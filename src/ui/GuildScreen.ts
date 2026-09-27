@@ -1,5 +1,5 @@
 import { characters } from '../data/characters';
-import { GUILD_NAME, guildFacilities, guildOperator, type GuildPointId } from '../data/guild';
+import { guildFacilities, guildOperator, type GuildPointId } from '../data/guild';
 import { images } from '../data/images';
 import type { MetaState } from '../state/MetaState';
 import { guildFacilityCost, guildFacilityLevel, guildPoint, isGuildFacility } from '../systems/GuildSystem';
@@ -37,10 +37,8 @@ function panel(meta: MetaState, id: GuildPointId | null): string {
 
 export function guildScreen(meta: MetaState, view: GuildViewState): string {
   const near = view.nearbyId ? guildPoint(view.nearbyId) : null;
-  return `<section class="guild-screen" aria-label="수탐자 길드 본부">
-    <header class="guild-head"><button data-action="lobby" class="guild-back">‹ <span>이전</span></button>
-      <div class="guild-title"><small>길드 카페</small><h1>${GUILD_NAME}</h1></div>
-      <div class="guild-status"><span>${guildOperator.name}</span><img src="${images.associationCoin.url}" alt="협회 코인"><b>${meta.wallet.associationCoins.toLocaleString()}</b></div></header>
+  return `<section class="guild-screen" aria-label="길드 본부">
+    <button data-action="lobby" class="guild-back">‹ <span>이전</span></button>
     <button class="guild-interact" data-action="guild-interact" ${near && !view.panelId ? '' : 'hidden'}>${near ? `${near.name} <span>살펴보기</span>` : ''}</button>
     ${panel(meta, view.panelId)}
   </section>`;

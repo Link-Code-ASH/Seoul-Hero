@@ -122,7 +122,7 @@ export class GuildRenderer {
       'guildOperatorLeftUpper', 'guildOperatorRightUpper', 'guildOperatorPogoSpring', 'guildOperatorPogoTip'] as const;
     await Promise.all(ids.map(id => Assets.load(images[id].url)));
     this.app.canvas.className = 'guild-canvas';
-    this.app.canvas.setAttribute('aria-label', '수탐자 길드 본부');
+    this.app.canvas.setAttribute('aria-label', '길드 본부');
     this.app.canvas.style.touchAction = 'none';
     this.onFloorTap = onFloorTap;
     this.app.canvas.addEventListener('pointerdown', this.pointerDown);
@@ -190,7 +190,7 @@ export class GuildRenderer {
     const visibleWidth = this.host.clientWidth / this.scale;
     const visibleHeight = this.host.clientHeight / this.scale;
     const cameraX = Math.max(visibleWidth / 2, Math.min(GUILD_ROOM.width - visibleWidth / 2, position.x));
-    const cameraY = Math.max(visibleHeight / 2, Math.min(GUILD_ROOM.height - visibleHeight / 2, position.y - 160));
+    const cameraY = Math.max(visibleHeight / 2, Math.min(GUILD_ROOM.height - visibleHeight / 2, position.y - 80));
     this.room.position.set(Math.round(this.host.clientWidth / 2 - cameraX * this.scale),
       Math.round(this.host.clientHeight / 2 - cameraY * this.scale));
     this.app.render();

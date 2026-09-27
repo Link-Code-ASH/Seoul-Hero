@@ -117,7 +117,7 @@ export class AppController {
     if (metaChanged) this.persist();
     this.gateDraft = createGateEntryDraft(this.meta);
     this.show('title');
-    this.audio.tryAutoplayTitle();
+    void this.audio.tryAutoplayTitle().finally(this.syncAudioButton);
     void this.audio.prepare();
     this.refreshAccount();
     // Files preload in the lobby; the first gesture starts browser audio output.
@@ -288,7 +288,7 @@ export class AppController {
     this.refreshElapsed += dt;
     if (this.refreshElapsed < GAME_CONFIG.ui.refreshInterval) return;
     this.refreshElapsed = 0;
-    this.ui.updateAudio(this.audio.unlocked, this.meta.settings.muted, this.audio.status);
+    this.ui.updateAudio(this.audio.audible, this.meta.settings.muted, this.audio.status);
     if (run) this.ui.hud.update(run);
     this.ui.dev.update(run, { fps: this.loop.fps, frameTime: this.loop.frameTime, timeScale: this.loop.timeScale, saveStatus: this.save.status, audio: `${this.audio.contextState} · ${this.audio.loadedCount}/${preloadedAudioUrls().length}\nBGM ${this.audio.currentBgm}\nSFX ${this.audio.lastSound} · 재생 ${this.audio.playedCount}\n음성 ${this.audio.activeVoices}/16 · 출력 ${this.audio.outputLevel.toFixed(4)}\n이미지 ${this.renderer.art.loadedCount}/${Object.keys(images).length} · 이동 procedural\n자세 ${this.renderer.playerMotion.moving ? 'move' : 'idle'} · 강도 ${this.renderer.playerMotion.intensity.toFixed(2)} · ${this.renderer.playerMotion.facing < 0 ? 'left' : 'right'}` });
   };
@@ -636,7 +636,7 @@ export class AppController {
       return;
     }
     if (command === 'sound') {
-      this.meta.settings.muted = this.audio.unlocked ? !this.meta.settings.muted : false;
+      this.meta.settings.muted = this.audio.audible && !this.meta.settings.muted;
       this.audio.applySettings(this.meta.settings); this.persist();
       if (!this.meta.settings.muted) this.audio.claimOutput();
       this.syncAudioButton();
@@ -935,7 +935,7 @@ export class AppController {
   };
   private reclaimAudio = (): void => { if (!this.meta.settings.muted) this.audio.claimOutput(); };
   private syncAudioButton = (): void => {
-    this.ui.updateAudio(this.audio.unlocked, this.meta.settings.muted, this.audio.status);
+    this.ui.updateAudio(this.audio.audible, this.meta.settings.muted, this.audio.status);
   };
   private testSound(id: string): void {
     if (!Object.hasOwn(sfx, id)) return;

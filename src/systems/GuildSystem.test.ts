@@ -6,7 +6,7 @@ import { openSupplyBox } from '../meta/SupplySystem';
 import { parseSave } from '../save/migrations';
 import { closestGuildPoint, guildFacilityCost, guildSpawn, moveInGuild, selectGuildAvatar, upgradeGuildFacility } from './GuildSystem';
 
-describe('수탐자 길드 본부', () => {
+describe('길드 본부', () => {
   it('spends the shared coin wallet and stops at level three', () => {
     const meta = createDefaultMeta(); meta.wallet.associationCoins = 280;
     expect(guildFacilityCost(meta, 'training')).toBe(40);

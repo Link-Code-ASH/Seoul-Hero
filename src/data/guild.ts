@@ -20,17 +20,17 @@ export interface GuildFacility extends GuildPoint {
   costs: readonly number[];
 }
 
-export const GUILD_NAME = '수탐자';
+export const GUILD_NAME = '길드 본부';
 /** A guild-only operator, not an unlockable combat character or save-owned avatar. */
 export const guildOperator = {
   id: 'hanSeoa', name: '한서아', role: '길드 오퍼레이터',
-  description: '수탐자의 현장 통신과 본부 운영을 맡는다.',
+  description: '현장 통신과 길드 본부 운영을 맡는다.',
   illustration: 'guildOperatorIllustration', sprite: 'guildOperatorTopdown',
 } as const;
-export const GUILD_ROOM = { width: 1850, height: 1045, minX: 105, maxX: 1745, minY: 100, maxY: 940,
+export const GUILD_ROOM = { width: 1850, height: 1045, minX: 105, maxX: 1745, minY: 195, maxY: 940,
   spawnX: 925, spawnY: 535, speed: 285, interactionRadius: 135 } as const;
 
-/** Overhead footprints of the furniture painted into guild_cafe_topdown_01. */
+/** Overhead footprints of the furniture painted into guild_cafe_topdown_02. */
 export const guildCafeFootprints = [
   { minX: 660, maxX: 1360, minY: 70, maxY: 275 },
   { minX: 260, maxX: 435, minY: 145, maxY: 285 },
