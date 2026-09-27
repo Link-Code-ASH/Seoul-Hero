@@ -1,30 +1,14 @@
-@import url("./base.css");
-@import url("./menu.css");
-@import url("./screens.css");
-@import url("./game.css");
-@import url("./responsive.css");
-@import url("./art.css");
-@import url("./plaza.css");
-@import url("./refined.css");
-@import url("./meta-lobby.css");
-
-/* Shared materials, then screen styles, then mobile layout overrides. */
-@import "./lobby-redesign.css";
-@import "./meta-facilities.css";
-@import "./survival.css";
-@import "./ui-wide.css";
-@import "./ui-modern.css";
-@import "./archive.css";
-@import "./interface-overhaul.css";
-@import "./interface-materials.css";
-@import "./interface-followup.css";
-@import "./account.css";
-@import "./typography.css";
-@import "./combat-hud.css";
-@import "./facility-scroll.css";
-@import "./archive-supply-refinement.css";
-@import "./revival.css";
-@import "./mobile-viewport.css";
-@import "./guild.css";
-/* Final shared presentation layer. */
-@import "./game-shell.css";
+/* Each screen owns its layout. No historical presentation override stack. */
+@import './typography.css';
+@import './game-shell.css';
+@import './lobby-redesign.css';
+@import './gate-flow.css';
+@import './meta-facilities.css';
+@import './archive.css';
+@import './combat-hud.css';
+@import './shop.css';
+@import './effects.css';
+@import './revival.css';
+@import './guild.css';
+@import './account.css';
+@import './developer.css';

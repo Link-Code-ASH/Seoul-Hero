@@ -348,7 +348,9 @@ export class AppController {
       this.persist();
     }
     if (this.telemetrySavedRun !== run) {
-      this.balanceLogs.append(this.simulation.telemetry.finish());
+      const summary = this.simulation.telemetry.finish();
+      this.balanceLogs.append(summary);
+      this.ui.setResultSummary(summary);
       this.telemetrySavedRun = run;
     }
   }

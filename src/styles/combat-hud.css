@@ -1,91 +1,202 @@
-/* A single field instrument keeps health, currency and weapons off the arena. */
+/* Small field instruments. Arena interaction remains unobstructed. */
+.hud {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  pointer-events: none;
+}
 .hud-top {
   display: grid;
-  grid-template-columns: minmax(0,1fr) auto minmax(0,1fr);
+  grid-template-columns: 1fr auto 1fr;
   align-items: start;
   gap: 8px;
-  padding: max(9px,env(safe-area-inset-top,0px)) max(14px,env(safe-area-inset-right,0px)) 0 max(14px,env(safe-area-inset-left,0px));
-  background: linear-gradient(#08111754,transparent 92px);
+  padding: max(8px,env(safe-area-inset-top)) max(12px,env(safe-area-inset-right)) 0 max(12px,env(safe-area-inset-left));
+  background: linear-gradient(#05101a88,transparent);
 }
-.player-status, .timer, .pause-button {
-  border: 1px solid #a5c4c554;
-  border-top-color: #d1e2df74;
-  border-radius: 5px;
-  background: linear-gradient(155deg,#22323adf,#0b1821e8 66%),url('../../assets/ui/ui_texture_worn_metal_01.png');
-  background-size: auto,300px;
-  background-blend-mode: normal,soft-light;
-  box-shadow: inset 0 1px #edf5f229,inset 0 -2px #02090c70,0 5px 15px #0007;
+.player-status {
+  width: 255px;
+  padding: 6px 8px;
+  background: #091622b8;
+  border-left: 2px solid #739fad;
 }
-.player-status { width: 318px; min-width: 0; padding: 6px 8px 5px; border-left: 2px solid #8fc4c4; }
-.status-line { display: flex; align-items: center; justify-content: space-between; gap: 6px; min-height: 25px; }
-.hp-readout { display: flex; align-items: center; gap: 5px; min-width: 0; white-space: nowrap; }
-.hp-readout>.inventory-art { width: 20px; height: 20px; flex: 0 0 20px; margin: 0; }
-.hp-readout strong { color: #f1e8e5; font: 700 15px/1 'Barlow Condensed',Paperlogy,sans-serif; font-variant-numeric: tabular-nums; }
-.hud-readout { display: flex; align-items: center; gap: 4px; min-width: 0; margin: 0; white-space: nowrap; }
-.hud-chip, .hud-chip.wallet-reserve {
-  display: inline-flex; align-items: center; justify-content: flex-end; gap: 2px;
-  min-width: 0; height: 24px; padding: 0 2px; border: 0; border-radius: 0;
-  color: #e9e2ee; background: none; box-shadow: none;
+.status-line {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
 }
-.hud-chip.wallet-reserve { padding-left: 6px; border-left: 1px solid #9ebbc245; color: #c8d8dc; }
-.hud-chip .pickup-ui-icon, .hud-chip.wallet-reserve .wallet-icon { width: 21px; height: 21px; object-fit: contain; }
-.hud-chip b { font: 700 16px/1 'Barlow Condensed',Paperlogy,sans-serif; font-variant-numeric: tabular-nums; }
+.hp-readout {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.hp-readout>.inventory-art {
+  display: none;
+}
+.hp-readout strong {
+  font: 700 17px 'Barlow Condensed';
+  color: #ffe6e3;
+}
+.hud-readout {
+  display: flex;
+  gap: 8px;
+}
+.hud-chip {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+.hud-chip img {
+  width: 21px;
+  height: 21px;
+}
+.hud-chip b {
+  font: 700 17px 'Barlow Condensed';
+  color: #dcc6ee;
+}
+.wallet-reserve b {
+  color: #d6dfe6;
+}
 .hp-track {
-  position: relative; width: 100%; height: 5px; margin-top: 3px; overflow: hidden;
-  border: 1px solid #c8b0b059; border-radius: 2px; background: #050b0f;
-  box-shadow: inset 0 1px 3px #000b;
+  height: 6px;
+  background: #080d14;
+  margin-top: 4px;
+  overflow: hidden;
+  border-bottom: 1px solid #ffffff30;
 }
-.hp-track>div { height: 100%; background: linear-gradient(90deg,#8e444b,#df7773); box-shadow: 0 0 6px #e4847f66; }
-.player-status .weapon-strip {
-  position: static; display: grid; grid-template-columns: repeat(6,minmax(0,1fr)); gap: 3px;
-  width: 100%; max-width: none; margin-top: 4px; padding-top: 4px;
-  border-top: 1px solid #adc5c42a; background: none; text-shadow: none;
+.hp-track>div {
+  height: 100%;
+  background: linear-gradient(90deg,#ab5961,#db8589);
 }
-.player-status .weapon-slot {
-  position: relative; display: flex; align-items: center; justify-content: center;
-  width: auto; min-width: 0; min-height: 0; height: 31px; padding: 1px; overflow: hidden;
-  border: 1px solid #94afb342; border-radius: 3px;
-  background: linear-gradient(150deg,#273d48af,#0b1720ad),url('../../assets/ui/ui_texture_worn_metal_01.png');
-  background-size: auto,160px; box-shadow: inset 0 1px #d4eded1b;
+.weapon-strip {
+  display: flex;
+  gap: 4px;
+  margin-top: 6px;
 }
-.player-status .weapon-slot i, .player-status .weapon-slot b { display: none; }
-.player-status .weapon-slot>.inventory-art { width: 27px; height: 27px; margin: 0; }
-.player-status .weapon-slot small {
-  position: absolute; right: 1px; bottom: 0; padding: 0 2px;
-  color: #e0edf1; background: #071119c9;
-  font: 700 9px/1.15 'Barlow Condensed',Paperlogy,sans-serif; white-space: nowrap;
+.weapon-slot {
+  position: relative;
+  width: 35px;
+  height: 35px;
+  pointer-events: auto;
+}
+.weapon-slot>.inventory-art {
+  width: 31px;
+  height: 31px;
+}
+.weapon-slot>i,.weapon-slot>b {
+  display: none;
+}
+.weapon-slot>small {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font: 700 13px 'Barlow Condensed';
+  background: #08121bd9;
+  padding: 0 2px;
+  color: #d6e0e6;
 }
 .timer {
-  position: relative; left: auto; grid-column: 2; justify-self: center;
-  width: 126px; min-width: 0; padding: 4px 8px 5px; transform: none;
-  text-align: center; border-bottom: 2px solid #8fbfc3;
+  grid-column: 2;
+  text-align: center;
+  text-shadow: 0 2px 4px #000;
 }
-.timer span { display: block; margin: 0 0 1px; color: #b7d0d4; font-size: 10px; font-weight: 700; line-height: 1; letter-spacing: .08em; }
-.timer strong { display: block; color: #f0f4f2; font-size: 24px; line-height: 1; }
+.timer span {
+  display: block;
+  font: 700 13px 'Barlow Condensed';
+  color: #b5c6d3;
+}
+.timer strong {
+  display: block;
+  font: 700 29px/1 'Barlow Condensed';
+  color: #f4e9c9;
+}
 .pause-button {
-  grid-column: 3; justify-self: end; display: grid; place-items: center;
-  width: 40px; min-width: 40px; height: 40px; min-height: 40px; padding: 0;
-  color: #c6d8db; font-size: 0; pointer-events: auto;
+  grid-column: 3;
+  justify-self: end;
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  font-size: 0;
+  pointer-events: auto;
 }
-.pause-button::before { content: ''; display: block; width: 11px; height: 15px; background: linear-gradient(90deg,currentColor 0 4px,transparent 4px 7px,currentColor 7px 11px); }
-.boss-status { top: 56px; min-width: 0; max-width: min(360px,60vw); padding: 5px 10px; overflow: hidden; font-size: 13px; white-space: nowrap; text-overflow: ellipsis; }
-
-@media (orientation: landscape) and (min-width: 700px) and (max-width: 1100px) and (max-height: 500px) {
-  .hud-top { gap: 5px; padding: max(6px,env(safe-area-inset-top,0px)) max(10px,env(safe-area-inset-right,0px)) 0 max(10px,env(safe-area-inset-left,0px)); }
-  .player-status { width: 248px; padding: 4px 6px; }
-  .status-line { min-height: 22px; }
-  .hp-readout>.inventory-art { width: 17px; height: 17px; flex-basis: 17px; }
-  .hp-readout strong { font-size: 14px; }
-  .hud-chip, .hud-chip.wallet-reserve { height: 21px; }
-  .hud-chip .pickup-ui-icon, .hud-chip.wallet-reserve .wallet-icon { width: 18px; height: 18px; }
-  .hud-chip b { font-size: 14px; }
-  .player-status .weapon-strip { gap: 2px; margin-top: 3px; padding-top: 3px; }
-  .player-status .weapon-slot { height: 26px; }
-  .player-status .weapon-slot>.inventory-art { width: 23px; height: 23px; }
-  .player-status .weapon-slot small { font-size: 8px; }
-  .timer { width: 108px; padding: 3px 6px 4px; }
-  .timer span { font-size: 9px; }
-  .timer strong { font-size: 21px; }
-  .pause-button { width: 40px; min-width: 40px; height: 40px; }
-  .boss-status { top: max(48px,calc(env(safe-area-inset-top,0px) + 44px)); max-width: min(300px,52vw); font-size: 12px; }
+.pause-button:before {
+  content: '';
+  width: 12px;
+  height: 16px;
+  background: linear-gradient(90deg,#d3dfe4 0 4px,transparent 4px 8px,#d3dfe4 8px);
+}
+.boss-status {
+  position: absolute;
+  left: 50%;
+  top: 60px;
+  transform: translateX(-50%);
+  max-width: 60%;
+  padding: 6px 12px;
+  color: #efd0c8;
+  background: #381e26d9;
+  font-size: 14px;
+  white-space: normal;
+  text-align: center;
+}
+.wallet-reserve.is-empty {
+  display: none;
+}
+.wallet-sweeping .wallet-reserve {
+  display: flex;
+}
+.wave-end-announcement {
+  position: absolute;
+  top: 22%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  white-space: nowrap;
+  pointer-events: none;
+}
+.wave-end-announcement small {
+  display: block;
+  color: #e3ce9b;
+}
+.wave-end-announcement strong {
+  font: 400 32px 'Haeong Sans';
+  text-shadow: 0 3px 8px #000;
+}
+.wallet-flight-layer {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 10;
+}
+.wallet-flight-stone {
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  object-fit: contain;
+}
+@media(max-height:500px) {
+  .player-status {
+    width: 226px;
+    padding: 4px 6px;
+  }
+  .weapon-slot {
+    width: 30px;
+    height: 30px;
+  }
+  .weapon-slot>.inventory-art {
+    width: 28px;
+    height: 28px;
+  }
+  .weapon-strip {
+    gap: 4px;
+    margin-top: 3px;
+  }
+  .timer strong {
+    font-size: 25px;
+  }
+  .boss-status {
+    top: 50px;
+    font-size: 13px;
+  }
 }

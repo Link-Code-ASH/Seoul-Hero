@@ -1,5 +1,5 @@
 const imageFiles = import.meta.glob<string>([
-  '../../assets/**/*.png', '../../assets/**/*.webp',
+  '../../assets/**/*.png', '!../../assets/ui/materials/*_master.png', '../../assets/**/*.webp',
   // Keep editable PNG masters in the repository; ship only compact WebP copies.
   '!../../assets/combat-chibi/*.png',
   '!../../assets/ui/weapons/*_casual_01.png',
@@ -29,6 +29,7 @@ const vectorFiles = import.meta.glob<string>('../../assets/**/*.svg', { eager: t
 const file = (path: string): string => imageFiles[`../../assets/${path}.webp`] ?? imageFiles[`../../assets/${path}.png`] ?? '';
 const vector = (path: string): string => vectorFiles[`../../assets/${path}.svg`] ?? '';
 export const images = {
+  interfaceSteelPanel: { url: file('ui/materials/steel_panel_01'), heightRatio: 1 },
   brandPortrait: { url: `${import.meta.env.BASE_URL}icons/icon-512.png`, heightRatio: 1 },
   hostileBolt: { url: file('projectiles/hostile_bolt_01'), heightRatio: 4 },
   seoulIntersection: { url: file('backgrounds/gwanghwamun_plaza_01'), heightRatio: 1 },

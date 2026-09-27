@@ -34,6 +34,7 @@ export class Hud {
   }
   playWalletSweep(origins: readonly { x: number; y: number }[]): void {
     this.clearWalletSweep();
+    this.element.classList.add('wallet-sweeping');
     const target = this.getWalletScreenTarget();
     if (!target || origins.length === 0) return;
     const limit = 48;
@@ -70,8 +71,8 @@ export class Hud {
     this.hp.parentElement?.setAttribute('aria-valuenow', String(Math.ceil(run.player.hp)));
     this.hp.parentElement?.setAttribute('aria-valuemax', String(run.player.maxHp));
     this.get('#hp-text').textContent = `${Math.ceil(run.player.hp)} / ${run.player.maxHp}`;
-    this.get('#hud-weapons').innerHTML = run.ownedWeapons.map((slot,index) => `<span class="weapon-slot"><i>${index + 1}</i>${weaponArt(slot.id)}<b>${weapons[slot.id]?.name ?? slot.id}</b><small>LV.${slot.level}${slot.branchId ? `-${slot.branchId}` : ''}</small></span>`).join('');
-    this.stats.innerHTML = `<span class="hud-chip" title="보유 마력석"><img class="pickup-ui-icon" src="${images.magicStone.url}" alt=""><b>${Math.floor(run.runCurrency)}</b></span><span class="hud-chip wallet-reserve" title="다음 획득에 추가되는 마력석"><img class="wallet-icon" src="${images.wallet.url}" alt="지갑"><b>${Math.floor(run.walletBonusRemaining + run.walletStoredThisRun)}</b></span>`;
+    this.get('#hud-weapons').innerHTML = run.ownedWeapons.map((slot,index) => `<span class="weapon-slot"><i>${index + 1}</i>${weaponArt(slot.id)}<b>${weapons[slot.id]?.name ?? slot.id}</b><small>${slot.level}${slot.branchId ? `-${slot.branchId}` : ''}</small></span>`).join('');
+    this.stats.innerHTML = `<span class="hud-chip" title="보유 마력석"><img class="pickup-ui-icon" src="${images.magicStone.url}" alt=""><b>${Math.floor(run.runCurrency)}</b></span><span class="hud-chip wallet-reserve ${(run.walletBonusRemaining + run.walletStoredThisRun) <= 0 ? 'is-empty' : ''}" title="다음 획득에 추가되는 마력석"><img class="wallet-icon" src="${images.wallet.url}" alt="지갑"><b>${Math.floor(run.walletBonusRemaining + run.walletStoredThisRun)}</b></span>`;
     this.clock.textContent = formatTime(Math.ceil(run.waveRemainingTime));
     this.wave.textContent = `${run.bossSpawned ? 'BOSS WAVE' : 'WAVE'} ${run.currentWave} / ${run.totalWaves}`;
     const boss = run.enemies.find(enemy => enemy.boss);

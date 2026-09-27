@@ -1,3 +1,5 @@
+import type { BalanceRunSummary } from '../analytics/BalanceTelemetry';
+import type { ShopTab } from './ShopScreen';
 import type { MetaState } from '../state/MetaState';
 import type { RunState } from '../state/RunState';
 import { DevPanel } from '../dev/DevPanel';
@@ -22,6 +24,10 @@ export class GameUI {
   readonly toast = document.createElement('div');
   readonly soundButton = document.createElement('button');
   readonly account = document.createElement('aside');
+  private shopTab: ShopTab = 'weapons';
+  private settingsTab = 'audio';
+  private resultSummary: BalanceRunSummary | null = null;
+  setResultSummary(summary: BalanceRunSummary): void { this.resultSummary = summary; }
   private toastTimeout = 0;
   private accountChoiceVisible = false;
   constructor(readonly root: HTMLElement, onAction: (action: string) => void, onChange: (target: HTMLInputElement | HTMLSelectElement) => void) {
@@ -34,6 +40,12 @@ export class GameUI {
     root.append(this.hud.element, this.overlay, this.dev.element, this.toast, this.soundButton, this.account);
     root.addEventListener('click', event => {
       const action = event.target instanceof Element ? event.target.closest<HTMLElement>('[data-action]')?.dataset.action : undefined;
+      if (action?.startsWith('shop-tab:')) {
+        event.preventDefault(); this.shopTab = action === 'shop-tab:items' ? 'items' : 'weapons'; this.applyShopTab(); return;
+      }
+      if (action?.startsWith('settings-tab:')) {
+        event.preventDefault(); this.settingsTab = action.slice(13); this.applySettingsTab(); return;
+      }
       if (action) { event.preventDefault(); onAction(action); }
     });
     root.addEventListener('change', event => { if (event.target instanceof HTMLInputElement || event.target instanceof HTMLSelectElement) onChange(event.target); });
@@ -50,6 +62,8 @@ export class GameUI {
     if (pauseButton) this.hud.element.querySelector('.hud-top')?.append(pauseButton);
     if (this.soundButton.parentElement !== this.root) this.root.append(this.soundButton);
     const sameScreen = this.root.dataset.screen === screen;
+    this.overlay.classList.toggle('screen-update', sameScreen);
+    if (screen === 'shop' && !sameScreen) this.shopTab = 'weapons';
     const panelScroll = sameScreen ? [...this.overlay.querySelectorAll<HTMLElement>('.shop-catalog, .shop-stat-list, .gate-card-grid')].map(el => ({ className: el.className, top: el.scrollTop })) : [];
     const growthScroll = screen === 'growth' && this.root.dataset.screen === 'growth' && this.overlay.querySelector('.facility-tabs .active')?.getAttribute('data-action') === `growth-tab:${growth.tab}`
       ? this.overlay.querySelector<HTMLElement>('.facility-list-grid')?.scrollTop ?? 0 : 0;
@@ -70,13 +84,13 @@ export class GameUI {
     const renderers: Partial<Record<Screen, () => string>> = {
       title: () => titleScreen(canContinue),
       postWave: () => run ? postWaveScreen(run) : '',
-      shop: () => run ? shopScreen(run, meta) : '', lobby: () => lobbyScreen(meta),
+      shop: () => run ? shopScreen(run, meta, this.shopTab) : '', lobby: () => lobbyScreen(meta),
       guild: () => guildScreen(meta, guild),
       revivalChoice: () => revivalScreen(meta),
       gateMap: () => gateFlowScreen(screen as GateEntryStep,meta,gateDraft), gateDepth: () => gateFlowScreen(screen as GateEntryStep,meta,gateDraft), gateCharacter: () => gateFlowScreen(screen as GateEntryStep,meta,gateDraft), gateWeapon: () => gateFlowScreen(screen as GateEntryStep,meta,gateDraft), gateBlessing: () => gateFlowScreen(screen as GateEntryStep,meta,gateDraft), gateConfirm: () => gateFlowScreen(screen as GateEntryStep,meta,gateDraft),
       growth:()=>growthScreen(meta,growth),association:()=>associationScreen(meta),offline:()=>offlineScreen(meta),supply:()=>supplyScreen(meta,supplyResults),
       archive: () => archiveScreen(archive), settings: () => settingsScreen(meta), paused: pauseScreen,
-      result: () => run ? resultScreen(run) : '', waveActive: () => '',
+      result: () => run ? resultScreen(run, this.resultSummary) : '', waveActive: () => '',
     };
     this.overlay.innerHTML = renderers[screen]?.() ?? '';
     if (screen === 'shop' && pauseButton) this.overlay.append(pauseButton);
@@ -87,11 +101,22 @@ export class GameUI {
       const panel = [...this.overlay.querySelectorAll<HTMLElement>('.shop-catalog, .shop-stat-list, .gate-card-grid')].find(el => el.className === saved.className);
       if (panel) panel.scrollTop = saved.top;
     }
-    if (screen === 'settings') this.overlay.querySelector('.settings-account-slot')?.append(this.account);
+    if (screen === 'settings') { this.overlay.querySelector('.settings-account-slot')?.append(this.account); this.applySettingsTab(); }
     this.overlay.scrollTop = 0;
     this.overlay.scrollLeft = 0;
     if (screen === 'shop') this.overlay.querySelector<HTMLElement>('.shop-screen')?.focus({ preventScroll: true });
-    else if (screen !== 'waveActive' && screen !== 'lobby' && screen !== 'guild' && screen !== 'title') this.overlay.querySelector<HTMLElement>('button, input')?.focus({ preventScroll: true });
+    else if (!sameScreen && screen !== 'waveActive' && screen !== 'lobby' && screen !== 'guild' && screen !== 'title') {
+      const heading = this.overlay.querySelector<HTMLElement>('h1');
+      if (heading) { heading.tabIndex = -1; heading.focus({ preventScroll: true }); }
+    }
+  }
+  private applyShopTab(): void {
+    for (const section of this.overlay.querySelectorAll<HTMLElement>('.shop-section')) section.hidden = section.id !== `shop-${this.shopTab}`;
+    for (const button of this.overlay.querySelectorAll<HTMLElement>('.shop-tab')) button.setAttribute('aria-pressed', String(button.dataset.action === `shop-tab:${this.shopTab}`));
+  }
+  private applySettingsTab(): void {
+    for (const panel of this.overlay.querySelectorAll<HTMLElement>('[data-settings-panel]')) panel.hidden = panel.dataset.settingsPanel !== this.settingsTab;
+    for (const button of this.overlay.querySelectorAll<HTMLElement>('[data-action^="settings-tab:"]')) button.setAttribute('aria-pressed', String(button.dataset.action === `settings-tab:${this.settingsTab}`));
   }
   setShopPause(open: boolean): void {
     this.overlay.querySelector('.shop-pause-overlay')?.remove();

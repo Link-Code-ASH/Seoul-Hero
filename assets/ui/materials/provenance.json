@@ -1,0 +1,8 @@
+{
+  "asset": "steel_panel_01.png",
+  "master": "steel_panel_master.png",
+  "date": "2026-09-27",
+  "source": "OpenAI imagegen",
+  "prompt": "Single square nine-slice premium Seoul urban fantasy game UI panel. Narrow beveled blue-gray anodized titanium rim, dark charcoal ceramic composite inner surface with subtle grain. Orthographic, no text, symbols, neon, rust or objects. Fixed corners and continuous straight edges.",
+  "processing": "512px high-quality downsample; CSS border-image 5% slice."
+}

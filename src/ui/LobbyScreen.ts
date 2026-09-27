@@ -2,56 +2,20 @@ import { images, type ImageId } from '../data/images';
 import { maps } from '../data/maps';
 import type { MetaState } from '../state/MetaState';
 import { escapeHtml } from './helpers';
-
-interface LobbyTile {
-  action: 'growth' | 'association' | 'offline' | 'supply';
-  title: string;
-  image: ImageId;
-}
-
-const tiles: readonly LobbyTile[] = [
-  { action: 'growth', title: '미래전략지원실', image: 'lobbyFutureStrategy' },
-  { action: 'association', title: '협회', image: 'lobbyAssociation' },
-  { action: 'offline', title: '오프라인 보상', image: 'lobbyRecoveryUnit' },
-  { action: 'supply', title: '보급 상자', image: 'lobbySupplyVault' },
+const facilities: readonly {action:string;title:string;image:ImageId}[] = [
+  {action:'growth',title:'미래전략지원실',image:'lobbyFutureStrategy'},
+  {action:'association',title:'협회',image:'lobbyAssociation'},
+  {action:'offline',title:'오프라인 보상',image:'lobbyRecoveryUnit'},
+  {action:'supply',title:'보급 상자',image:'lobbySupplyVault'},
 ];
-
-export function lobbyScreen(meta: MetaState): string {
-  const last = meta.statistics.lastRun;
-  const lastMap = last ? maps[last.mapId] : undefined;
-  const recent = last
-    ? `${escapeHtml(lastMap?.name ?? last.mapId)} · 심도 ${last.gateDepth} · WAVE ${last.reachedWave}`
-    : '기록 없음';
-  const support = tiles.map(tile => `<button class="lobby-module" data-action="${tile.action}">
-    <img src="${images[tile.image].url}" alt="">
-    <span><b>${tile.title}</b><em aria-hidden="true">↗</em></span>
-    <i aria-hidden="true"></i>
-  </button>`).join('');
-
-  return `<section class="meta-lobby lobby-command" style="--lobby-bg:url('${images.seoulIntersection.url}')">
-    <header class="lobby-head command-head">
-      <nav aria-label="보조 메뉴">
-        <button class="lobby-tool" data-action="archive"><img src="${images.lobbyArchive.url}" alt=""><span>자료집</span></button>
-        <button class="lobby-tool" data-action="settings"><img src="${images.lobbySettings.url}" alt=""><span>설정</span></button>
-      </nav>
-    </header>
-    <div class="command-status" aria-label="작전 현황">
-      <div><img src="${images.lobbyGate.url}" alt=""><span>최고 심도</span><b>${meta.gateProgression.highestUnlockedDepth}</b></div>
-      <div><img src="${images.associationCoin.url}" alt=""><span>협회 코인</span><b>${meta.wallet.associationCoins.toLocaleString()}</b></div>
-      <div><img src="${images.supplyTicket.url}" alt=""><span>보급권</span><b>${meta.wallet.supplyTickets.toLocaleString()}</b></div>
-    </div>
-    <main class="command-deck">
-      <div class="command-primary"><button class="gate-command-card" data-action="gateMap">
-        <img class="gate-command-bg" src="${images.seoulIntersection.url}" alt="">
-        <span class="gate-command-shade"></span>
-        <img class="gate-command-device" src="${images.lobbyGate.url}" alt="">
-        <span class="gate-command-copy"><small>광화문 작전 구역</small><b>게이트 출동</b><strong>출동 준비 <span aria-hidden="true">↗</span></strong></span>
-        <span class="gate-command-record"><small>최근 작전</small><b>${recent}</b></span>
-      </button><button class="guild-command-card" data-action="guild" style="--guild-art:url('${images.guildHall.url}')">
-        <img class="guild-command-operator" src="${images.guildOperatorLobbyFace.url}" alt="">
-        <span><small>HUNTER GUILD</small><b>길드 본부</b></span><strong>본부 입장 <span aria-hidden="true">↗</span></strong>
-      </button></div>
-      <div class="command-modules">${support}</div>
-    </main>
+export function lobbyScreen(meta:MetaState):string {
+  const last=meta.statistics.lastRun;
+  const recent=last?`${escapeHtml(maps[last.mapId]?.name??last.mapId)} · 심도 ${last.gateDepth} · WAVE ${last.reachedWave}`:'';
+  return `<section class="headquarters" style="--scene:url('${images.titleGate.url}')">
+    <header class="hq-header"><div class="hq-resources"><span><img src="${images.associationCoin.url}" alt="협회 코인"><b>${meta.wallet.associationCoins.toLocaleString()}</b></span><span><img src="${images.supplyTicket.url}" alt="보급권"><b>${meta.wallet.supplyTickets.toLocaleString()}</b></span></div><nav><button data-action="archive">자료집</button><button data-action="settings">설정</button></nav></header>
+    <main class="hq-scene"><div class="hq-brief"><span class="overline">GWANGHWAMUN</span><h1>서울의 밤은<br>아직 끝나지 않았다.</h1><p>${recent?`최근 작전 · ${recent}`:'게이트 너머, 서울을 지킬 준비를.'}</p></div>
+      <button class="hq-guild" data-action="guild"><img src="${images.guildOperatorLobbyFace.url}" alt="한서아"><span>길드 본부 <b>↗</b></span></button>
+      <button class="hq-deploy" data-action="gateMap"><img src="${images.lobbyGate.url}" alt=""><span><small>심도 ${meta.gateProgression.highestUnlockedDepth}까지 개방</small><strong>게이트 출동</strong></span><b>→</b></button>
+    </main><nav class="hq-facilities" aria-label="시설">${facilities.map(f=>`<button data-action="${f.action}"><img src="${images[f.image].url}" alt=""><span>${f.title}</span><b>↗</b></button>`).join('')}</nav>
   </section>`;
 }

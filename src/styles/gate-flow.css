@@ -1,0 +1,611 @@
+/* Six-step briefing. Header and primary action never share the scrolling area. */
+.gate-flow-screen {
+  height: 100%;
+  display: grid;
+  grid-template-columns: minmax(0,1fr) 224px;
+  grid-template-rows: 62px minmax(0,1fr);
+  gap: 14px;
+  padding: max(14px,env(safe-area-inset-top)) max(20px,env(safe-area-inset-right)) max(14px,env(safe-area-inset-bottom)) max(20px,env(safe-area-inset-left));
+  background: linear-gradient(#08131ce8,#101c28ee),var(--gate-bg) center/cover;
+}
+.gate-flow-head {
+  grid-column: 1/-1;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  min-width: 0;
+}
+.gate-flow-head h1 {
+  font-size: 28px;
+  white-space: nowrap;
+}
+.gate-flow-head ol {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  justify-content: flex-end;
+  gap: 5px;
+}
+.gate-flow-head li {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 5px 8px;
+  border-bottom: 2px solid #364855;
+  color: #708490;
+  min-width: 0;
+}
+.gate-flow-head li img {
+  width: 30px;
+  height: 30px;
+  filter: grayscale(1);
+  opacity: .55;
+}
+.gate-flow-head li span {
+  display: grid;
+  gap: 2px;
+}
+.gate-flow-head li small {
+  font: 600 13px 'Barlow Condensed';
+}
+.gate-flow-head li b {
+  font-size: 13px;
+  white-space: nowrap;
+}
+.gate-flow-head li.active {
+  border-bottom-color: var(--gold);
+  color: #f4dcaa;
+}
+.gate-flow-head li.active img,.gate-flow-head li.complete img {
+  filter: none;
+  opacity: 1;
+}
+.gate-flow-head li.complete {
+  color: var(--mint);
+}
+.gate-flow-screen>main {
+  grid-row: 2;
+  grid-column: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-height: 0;
+  min-width: 0;
+}
+.gate-next,.gate-deploy {
+  align-self: flex-end;
+  flex-shrink: 0;
+  min-width: 170px;
+}
+.weekly-operation-card {
+  grid-column: 2;
+  grid-row: 2;
+  align-self: stretch;
+  min-height: 0;
+  overflow: auto;
+  padding: 18px 14px;
+  border: 7px solid transparent;
+  border-image: var(--ui-frame) 5% fill / 7px;
+  box-shadow: inset 0 2px var(--rule-accent,#8ca6ba);
+}
+.weekly-operation-card>img {
+  width: 100%;
+  height: 30%;
+  max-height: 145px;
+}
+.weekly-operation-card b {
+  display: block;
+  font-size: 18px;
+  margin: 9px 0 16px;
+  color: var(--rule-accent,#d3dfe5);
+}
+.weekly-operation-card small {
+  font-size: 13px;
+}
+.weekly-operation-card p {
+  font-size: 14px;
+  margin-top: 12px;
+}
+.weekly-operation-card em {
+  display: block;
+  color: #e0a09b;
+  font-size: 13px;
+}
+.weekly-operation-card .benefit em {
+  color: #a6d9c7;
+}
+.gate-card-grid {
+  display: grid;
+  gap: 12px;
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  align-content: stretch;
+}
+.gate-select-card {
+  position: relative;
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+  text-align: left;
+  border: 6px solid transparent;
+  border-image: var(--ui-frame) 5% fill / 6px;
+  padding: 10px;
+}
+.gate-select-card.selected {
+  box-shadow: inset 0 0 0 2px var(--gold);
+  background: #344750;
+}
+.gate-select-card.selected:after {
+  content: '✓';
+  position: absolute;
+  right: 9px;
+  top: 9px;
+  display: grid;
+  place-items: center;
+  width: 25px;
+  height: 25px;
+  background: #e4c68d;
+  color: #17202a;
+  font-size: 17px;
+}
+.map-grid {
+  grid-template-columns: repeat(3,minmax(0,1fr));
+  grid-template-rows: repeat(2,minmax(0,1fr));
+}
+.map-card {
+  padding: 0;
+}
+.map-card>img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(.78);
+}
+.map-card>span {
+  position: absolute;
+  inset: auto 0 0;
+  padding: 10px;
+  background: linear-gradient(transparent,#07131dec);
+}
+.map-card b {
+  display: block;
+  font: 400 25px 'Haeong Sans';
+}
+.map-slot-empty {
+  border: 1px dashed #68809233;
+  background: #26354218;
+  display: grid;
+  place-items: center;
+  color: #7e97a044;
+}
+.map-slot-empty span {
+  font-size: 26px;
+}
+.character-meta-grid {
+  grid-template-columns: repeat(3,minmax(0,1fr));
+}
+.character-meta-card {
+  display: flex;
+  flex-direction: column;
+  padding: 6px;
+}
+.character-card-art {
+  flex: 1;
+  min-height: 0;
+  display: block;
+}
+.character-card-art img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.character-card-info {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 4px;
+  padding: 8px;
+}
+.character-card-info b {
+  font: 400 26px 'Haeong Sans';
+}
+.character-card-info small {
+  grid-column: 1/-1;
+}
+.character-card-info em {
+  align-self: center;
+  font-size: 13px;
+  color: var(--muted);
+}
+.selection-seal {
+  grid-column: 1/-1;
+  color: #9dafb9;
+  font-size: 13px;
+  font-weight: 400;
+}
+.selected .selection-seal {
+  color: var(--gold);
+  font-weight: 800;
+}
+.weapon-meta-grid {
+  grid-template-columns: repeat(4,minmax(0,1fr));
+  grid-auto-rows: minmax(112px,1fr);
+}
+.weapon-meta-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+.weapon-card-art {
+  flex: 1;
+  min-height: 0;
+  display: grid;
+  place-items: center;
+  width: 100%;
+}
+.weapon-card-art img {
+  width: 100%;
+  height: 100%;
+  max-height: 150px;
+  min-height: 0;
+  object-fit: contain;
+}
+.weapon-card-info {
+  display: grid;
+  gap: 4px;
+  text-align: center;
+}
+.weapon-card-info b {
+  font-size: 16px;
+}
+.weapon-metrics {
+  font-size: 13px;
+  color: #a7bfcb;
+  font-weight: 400;
+}
+.weapon-card-info>small {
+  display: none;
+}
+.weapon-card-info .selection-seal {
+  font-size: 13px;
+}
+.blessing-meta-grid {
+  grid-template-columns: repeat(3,minmax(0,1fr));
+  grid-auto-rows: minmax(180px,1fr);
+}
+.blessing-meta-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.blessing-meta-card>img {
+  height: 45%;
+  width: 80%;
+}
+.blessing-meta-card span {
+  display: grid;
+  gap: 6px;
+}
+.blessing-meta-card em {
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--muted);
+}
+.no-blessing {
+  flex: 1;
+  display: grid;
+  place-content: center;
+  gap: 12px;
+}
+.depth-briefing {
+  display: grid;
+  grid-template-columns: minmax(0,1fr) 180px;
+  gap: 12px;
+  flex: 1;
+  min-height: 0;
+}
+.depth-board {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+.depth-grid {
+  display: grid;
+  grid-template-columns: repeat(5,minmax(0,1fr));
+  grid-template-rows: repeat(2,minmax(0,1fr));
+  flex: 1;
+  gap: 7px;
+  min-height: 0;
+}
+.depth-tile {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 0;
+  padding: 6px 2px;
+  gap: 4px;
+}
+.depth-tile b {
+  font: 700 34px 'Barlow Condensed';
+}
+.depth-tile span {
+  font-size: 13px;
+  white-space: nowrap;
+}
+.depth-tile small {
+  font: 600 13px 'Barlow Condensed';
+}
+.depth-tile.cleared {
+  color: #b6e4d0;
+  box-shadow: inset 0 -3px #78bbaa;
+}
+.depth-clear-mark {
+  position: absolute;
+  left: 5px;
+  top: 3px;
+  font-style: normal;
+}
+.depth-tile.selected {
+  outline: 2px solid var(--gold);
+  outline-offset: -3px;
+  color: var(--gold);
+}
+.depth-selected-flag {
+  font-size: 13px;
+}
+.depth-pager {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 7px;
+}
+.depth-pager button {
+  width: 44px;
+  padding: 0;
+}
+.depth-dossier {
+  padding: 14px;
+  border: 6px solid transparent;
+  border-image: var(--ui-frame) 5% fill / 6px;
+  overflow: auto;
+}
+.depth-dossier>span {
+  display: block;
+  font: 700 30px 'Barlow Condensed';
+  color: var(--gold);
+  margin: 8px 0;
+}
+.depth-dossier>b {
+  font-size: 14px;
+}
+.depth-dossier dl {
+  margin-top: 20px;
+}
+.depth-dossier dl>div {
+  display: grid;
+  gap: 3px;
+  margin: 12px 0;
+}
+.depth-dossier dt {
+  font-size: 13px;
+  color: var(--muted);
+}
+.depth-dossier dd {
+  font-size: 15px;
+}
+.deploy-summary {
+  flex: 1;
+  min-height: 0;
+  display: grid;
+  grid-template-columns: 52% 1fr;
+  gap: 14px;
+}
+.deploy-visual {
+  position: relative;
+  min-height: 0;
+  overflow: hidden;
+}
+.deploy-map {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: .4;
+}
+.deploy-character {
+  position: absolute;
+  bottom: 0;
+  left: 15%;
+  height: 76%;
+  width: 70%;
+  object-fit: contain;
+}
+.deploy-region {
+  position: absolute;
+  left: 14px;
+  top: 12px;
+  display: grid;
+  gap: 4px;
+  z-index: 1;
+}
+.deploy-region b {
+  font: 400 28px 'Haeong Sans';
+}
+.deploy-loadout {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-height: 0;
+  overflow: auto;
+}
+.deploy-depth {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.deploy-depth b {
+  font: 700 44px 'Barlow Condensed';
+  color: var(--gold);
+}
+.deploy-depth span {
+  font-size: 13px;
+  color: var(--muted);
+}
+.deploy-equipped {
+  display: grid;
+  gap: 7px;
+}
+.deploy-equipped>div {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-bottom: 1px solid var(--line);
+  padding: 4px 0;
+}
+.deploy-equipped img {
+  height: 58px;
+  width: 58px;
+  object-fit: contain;
+}
+.deploy-equipped span {
+  display: grid;
+  gap: 4px;
+}
+.deploy-equipped b {
+  font-size: 16px;
+}
+@media(max-height:500px) {
+  .gate-flow-screen {
+    grid-template-columns: minmax(0,1fr) 165px;
+    grid-template-rows: 46px minmax(0,1fr);
+    gap: 8px;
+    padding: max(8px,env(safe-area-inset-top)) max(12px,env(safe-area-inset-right)) max(8px,env(safe-area-inset-bottom)) max(12px,env(safe-area-inset-left));
+  }
+  .gate-flow-head {
+    gap: 10px;
+  }
+  .gate-flow-head h1 {
+    font-size: 23px;
+  }
+  .gate-flow-head li {
+    padding: 3px 5px;
+  }
+  .gate-flow-head li img {
+    width: 23px;
+    height: 23px;
+  }
+  .gate-flow-head li small {
+    display: none;
+  }
+  .weekly-operation-card {
+    padding: 9px;
+  }
+  .weekly-operation-card b {
+    font-size: 16px;
+    margin: 5px 0 7px;
+  }
+  .weekly-operation-card p {
+    margin-top: 9px;
+    font-size: 13px;
+  }
+  .weekly-operation-card small {
+    display: none;
+  }
+  .gate-card-grid {
+    gap: 6px;
+  }
+  .character-card-info {
+    padding: 4px;
+  }
+  .character-card-info b {
+    font-size: 21px;
+  }
+  .character-card-info>small {
+    display: none;
+  }
+  .weapon-meta-grid {
+    grid-auto-rows: minmax(106px,1fr);
+  }
+  .weapon-card-art img {
+    max-height: 58px;
+  }
+  .weapon-card-info b {
+    font-size: 14px;
+  }
+  .weapon-meta-card {
+    gap: 3px;
+    padding: 5px;
+  }
+  .depth-briefing {
+    grid-template-columns: minmax(0,1fr) 152px;
+    gap: 8px;
+  }
+  .depth-tile {
+    gap: 1px;
+  }
+  .depth-tile b {
+    font-size: 28px;
+  }
+  .depth-dossier {
+    padding: 8px;
+  }
+  .depth-dossier dl {
+    margin-top: 8px;
+  }
+  .depth-dossier dl>div {
+    margin: 8px 0;
+  }
+  .depth-dossier>span {
+    font-size: 24px;
+  }
+  .deploy-equipped img {
+    height: 44px;
+    width: 44px;
+  }
+  .deploy-depth b {
+    font-size: 32px;
+  }
+  .deploy-loadout {
+    gap: 4px;
+  }
+  .deploy-equipped {
+    gap: 3px;
+  }
+}
+@media(max-width:650px) {
+  .gate-flow-screen {
+    grid-template-columns: 1fr;
+  }
+  .weekly-operation-card {
+    display: none;
+  }
+  .gate-flow-head li img {
+    display: none;
+  }
+  .gate-flow-head ol {
+    gap: 0;
+  }
+  .gate-flow-head li {
+    padding: 4px;
+  }
+  .gate-flow-head h1 {
+    font-size: 20px;
+  }
+  .character-meta-grid {
+    grid-template-columns: repeat(2,minmax(0,1fr));
+  }
+  .weapon-meta-grid {
+    grid-template-columns: repeat(3,minmax(0,1fr));
+  }
+  .depth-briefing {
+    grid-template-columns: 1fr;
+  }
+  .depth-dossier {
+    display: none;
+  }
+}

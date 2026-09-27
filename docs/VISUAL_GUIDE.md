@@ -1,3 +1,17 @@
+# 현행 UI 디자인 규칙 — 2026-09-27
+
+- Galaxy S24 Ultra 가로 915×412와 safe-area가 기준이다. 상위 화면은 고정 높이, 목록과 상세 정보만 내부 스크롤한다.
+- 청회색·차콜 소재, 보상 금색, 위험 적색, 마력 청록/보라색. 종이/카키/네온 위주의 과거 UI 규칙은 적용하지 않는다.
+- 공통 9-slice 패널: assets/ui/materials/steel_panel_01.png, 5% slice. 원본과 생성 출처는 같은 폴더에 보존한다. master PNG는 배포 manifest에서 제외한다.
+- 본문 Paperlogy 14~16px, 보조 최소 13px, 제목 Haeong Sans, 숫자 Barlow Condensed. 선택은 색+체크+프레임으로 구분한다. hover/active에 scale/translate를 넣지 않는다.
+- main.css는 공통 game-shell과 화면 소유 파일을 불러온다. 새 final/override 스타일 파일을 쌓지 않는다. effects.css는 보급·회수 등의 단발성 연출만 소유한다.
+- 상점은 무기/아이템 탭, 각 4칸. 탭 상태는 GameUI에만 존재한다. 재고·잠금·리롤 비용은 기존 규칙을 그대로 사용한다.
+- SettingsScreen과 ResultScreen은 독립 화면 모듈이다. 결과는 AppController가 한 번 마감한 BalanceRunSummary를 표시하며 렌더링 중 재정산하지 않는다. 피해 기여도는 기록된 피해 기준이다.
+- 오프라인 보상 수령은 기존 부분 갱신을 유지한다. 동일 화면 재렌더 시 입장 애니메이션을 재시작하지 않는다.
+
+## 이전 아트·에셋 제작 기록
+아래 기록의 UI 색상·배치 지침보다 위 현행 규칙이 우선한다. 기존 에셋 규격과 출처는 보존한다.
+
 현재 비주얼은 모바일 가로 화면을 기준으로 합니다. 전투는 화면을 채우는 추적 카메라를 사용하며, UI 스타일 진입점은 `src/styles/main.css`, 모바일 배치는 `mobile-viewport.css`입니다. [과거 광장 비주얼 기록](./history/PLAZA_VISUAL.md)은 제작 이력이며 현행 규칙보다 우선하지 않습니다.
 
 # 비주얼 가이드
