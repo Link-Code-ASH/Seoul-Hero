@@ -50,7 +50,7 @@ import { hasRevivalStone } from '../systems/RevivalSystem';
 import type { GrowthViewState } from '../ui/MetaScreens';
 import type { GuildViewState } from '../ui/GuildScreen';
 import { guildFacilities, type GuildFacilityId } from '../data/guild';
-import { closestGuildPoint, guildSpawn, moveInGuild, selectGuildAvatar, upgradeGuildFacility } from '../systems/GuildSystem';
+import { closestGuildPoint, guildSpawn, guildWalkPath, moveInGuild, upgradeGuildFacility, type GuildPosition } from '../systems/GuildSystem';
 
 /** Owns browser-side wiring. Simulation remains independent of screens and storage. */
 export class AppController {
@@ -89,6 +89,7 @@ export class AppController {
   private growthView:GrowthViewState={tab:'character',selectedId:Object.keys(characters)[0]??''};
   private guildView: GuildViewState = { panelId: null, nearbyId: null };
   private guildPosition = guildSpawn();
+  private guildRoute: GuildPosition[] = [];
   private guildReady = false;
   private guildInitPromise: Promise<void> | null = null;
   private supplyResults:MetaReward[]=[];
@@ -107,7 +108,7 @@ export class AppController {
 
   constructor(private readonly worldHost: HTMLElement, uiHost: HTMLElement) {
     this.ui = new GameUI(uiHost, this.action, this.change);
-    this.input = new InputManager([this.keyboard, new TouchInput(this.worldHost, () => this.screen === 'waveActive' || (this.screen === 'guild' && !this.guildView.panelId))]);
+    this.input = new InputManager([this.keyboard, new TouchInput(this.worldHost, () => this.screen === 'waveActive')]);
     this.loop = new GameLoop(this.update, this.render);
   }
   async start(): Promise<void> {
@@ -116,6 +117,7 @@ export class AppController {
     if (metaChanged) this.persist();
     this.gateDraft = createGateEntryDraft(this.meta);
     this.show('title');
+    this.audio.tryAutoplayTitle();
     void this.audio.prepare();
     this.refreshAccount();
     // Files preload in the lobby; the first gesture starts browser audio output.
@@ -128,6 +130,7 @@ export class AppController {
     this.ui.dev.element.hidden = !this.meta.settings.developerMode;
     window.addEventListener('keydown', this.keydown);
     window.addEventListener('pointerdown', this.unlockAudio);
+    window.addEventListener('focus', this.reclaimAudio);
     window.addEventListener('blur', this.pause);
     document.addEventListener('visibilitychange', this.visibility);
     window.addEventListener('pagehide', this.markOfflineExit);
@@ -155,7 +158,11 @@ export class AppController {
     if (this.guildInitPromise) return this.guildInitPromise;
     this.guildInitPromise = (async () => {
       try {
-        await this.guildRenderer.init(this.worldHost, this.meta);
+        await this.guildRenderer.init(this.worldHost, target => {
+          if (this.screen !== 'guild' || this.guildView.panelId) return;
+          this.guildRoute = guildWalkPath(this.guildPosition, target);
+          this.guildRenderer.setDestination(this.guildRoute.at(-1) ?? null);
+        });
         this.guildReady = true;
         this.loop.start();
       } catch (error) {
@@ -168,6 +175,8 @@ export class AppController {
     if (this.screen !== 'lobby') return;
     await this.prepareGuildRenderer();
     if (!this.guildReady || this.screen !== 'lobby') return;
+    this.guildRoute = [];
+    this.guildRenderer.setDestination(null);
     this.guildView = { panelId: null, nearbyId: closestGuildPoint(this.guildPosition)?.id ?? null };
     this.show('guild');
   }
@@ -233,7 +242,21 @@ export class AppController {
   }
   private update = (dt: number): boolean => {
     if (this.screen === 'guild') {
-      if (!this.guildView.panelId) this.guildPosition = moveInGuild(this.guildPosition, this.input.read(), dt);
+      if (!this.guildView.panelId) {
+        const direction = this.input.read();
+        if (Math.hypot(direction.x, direction.y) > .05) {
+          this.guildRoute = [];
+          this.guildRenderer.setDestination(null);
+          this.guildPosition = moveInGuild(this.guildPosition, direction, dt);
+        } else if (this.guildRoute.length) {
+          const target = this.guildRoute[0]!;
+          const dx = target.x - this.guildPosition.x, dy = target.y - this.guildPosition.y;
+          const distance = Math.hypot(dx, dy);
+          if (distance < 5) this.guildRoute.shift();
+          else this.guildPosition = moveInGuild(this.guildPosition, { x: dx / distance, y: dy / distance }, Math.min(dt, distance / 285));
+          if (!this.guildRoute.length) this.guildRenderer.setDestination(null);
+        }
+      }
       const nearbyId = this.guildView.panelId ? null : closestGuildPoint(this.guildPosition)?.id ?? null;
       if (nearbyId !== this.guildView.nearbyId) { this.guildView.nearbyId = nearbyId; this.ui.updateGuildPoint(nearbyId); }
       return true;
@@ -248,7 +271,7 @@ export class AppController {
     return this.screen === 'waveActive';
   };
   private render = (dt: number): void => {
-    if (this.screen === 'guild') { this.guildRenderer.render(this.guildPosition, this.meta, dt); return; }
+    if (this.screen === 'guild') { this.guildRenderer.render(this.guildPosition, dt); return; }
     const run = this.simulation?.state ?? null;
     this.simulation?.telemetry.sample(this.loop.fps);
     if (run && this.simulation && (run.phase === 'postWave' || isTerminal(run.phase))) {
@@ -555,6 +578,7 @@ export class AppController {
   };
   private visibility = (): void => {
     this.audio.setHidden(document.hidden);
+    if (!document.hidden && !this.meta.settings.muted) this.audio.claimOutput();
     this.loop.resetClock();
     if (document.hidden) { this.pause(); this.markOfflineExit(); }
     else if(accrueOfflineRewards(this.meta,new Date())){this.persist();if(this.screen==='offline'||this.screen==='lobby')this.show(this.screen);}
@@ -614,6 +638,7 @@ export class AppController {
     if (command === 'sound') {
       this.meta.settings.muted = this.audio.unlocked ? !this.meta.settings.muted : false;
       this.audio.applySettings(this.meta.settings); this.persist();
+      if (!this.meta.settings.muted) this.audio.claimOutput();
       this.syncAudioButton();
       if (!this.meta.settings.muted && !this.audio.unlocked) void this.audio.unlock().then(this.syncAudioButton);
       return;
@@ -623,12 +648,14 @@ export class AppController {
     if (command === 'guild') { void this.enterGuild(); return; }
     if (this.screen === 'guild' && command === 'lobby') {
       this.guildView.panelId = null;
+      this.guildRoute = [];
+      this.guildRenderer.setDestination(null);
       this.show('lobby');
       return;
     }
     if (this.screen === 'guild' && command === 'guild-interact') {
       const point = closestGuildPoint(this.guildPosition);
-      if (point) { this.guildView.panelId = point.id; this.guildView.nearbyId = null; this.show('guild'); }
+      if (point) { this.guildRoute = []; this.guildRenderer.setDestination(null); this.guildView.panelId = point.id; this.guildView.nearbyId = null; this.show('guild'); }
       return;
     }
     if (this.screen === 'guild' && command === 'guild-close') {
@@ -638,10 +665,6 @@ export class AppController {
       if (Object.hasOwn(guildFacilities, id) && this.guildView.panelId === id && upgradeGuildFacility(this.meta, id as GuildFacilityId)) {
         this.persist(); this.show('guild');
       }
-      return;
-    }
-    if (this.screen === 'guild' && command === 'guild-avatar') {
-      if (this.guildView.panelId === 'roster' && selectGuildAvatar(this.meta, id)) { this.persist(); this.show('guild'); }
       return;
     }
     if (this.screen === 'guild' && command === 'guild-gate') {
@@ -896,6 +919,7 @@ export class AppController {
     window.clearTimeout(this.supplyFanfareTimer);
     this.audio.destroy();
     window.removeEventListener('pointerdown', this.unlockAudio);
+    window.removeEventListener('focus', this.reclaimAudio);
     this.markOfflineExit(); this.loop.stop(); this.input.destroy(); this.renderer.destroy(); this.guildRenderer.destroy();
     window.clearInterval(this.autosaveTimer);
     window.removeEventListener('keydown', this.keydown); window.removeEventListener('blur', this.pause);
@@ -904,9 +928,12 @@ export class AppController {
   }
   private unlockAudio = (event?: Event): void => {
     if (event?.target instanceof Element && event.target.closest('[data-action="sound"]')) return;
-    if (this.meta.settings.muted || this.audio.unlocked) return;
+    if (this.meta.settings.muted) return;
+    this.audio.claimOutput();
+    if (this.audio.unlocked) return;
     void this.audio.unlock().then(this.syncAudioButton);
   };
+  private reclaimAudio = (): void => { if (!this.meta.settings.muted) this.audio.claimOutput(); };
   private syncAudioButton = (): void => {
     this.ui.updateAudio(this.audio.unlocked, this.meta.settings.muted, this.audio.status);
   };

@@ -183,7 +183,8 @@ export class CombatVfx {
   }
 
   private slash(effect: RunEffect, progress: number, sprites: EntitySprites): void {
-    // Wind-up (0..0.10), clockwise sector reveal (0.10..0.62), impact, then fade.
+    // The slash artwork itself is a narrow painted blade. Move that line through
+    // the swing; a sector mask reads as a solid cone when the texture is scaled.
     const sweep = easeInOut(clamp01((progress - 0.1) / 0.52));
     const tail = fadeTail(progress, 0.58);
     // The arc and image size follow the weapon. WeaponBehaviors shifts the effect
@@ -193,14 +194,13 @@ export class CombatVfx {
     // A thin painted blade trail follows the collision arc. Its transparent center keeps
     // the effect line-like instead of revealing a filled fan around the player.
     const wide = attackArc > 1.38;
-    const referenceArc = wide ? Math.PI / 2 : Math.PI / 3;
     const textureReveal = easeOut(clamp01((progress - 0.075) / 0.16));
-    const textureScale = 0.92 + sweep * 0.08;
-    const angularScale = Math.max(0.82, Math.min(1.25, attackArc / referenceArc));
+    const textureScale = 0.96 + sweep * 0.04;
     const primaryAlpha = textureReveal * tail * 0.82;
-    sprites.drawImageSector(effect.x, effect.y, effect.radius * 2.2 * textureScale,
-      effect.radius * 2.2 * textureScale * angularScale,
-      wide ? 'vfxSlashWide' : 'vfxSlashNarrow', primaryAlpha, effect.angle, attackArc, sweep);
+    sprites.drawImage(effect.x, effect.y, effect.radius * 2.2 * textureScale,
+      effect.radius * 2.2 * textureScale,
+      wide ? 'vfxSlashWide' : 'vfxSlashNarrow', primaryAlpha,
+      effect.angle - attackArc * 0.18 + sweep * attackArc * 0.18);
 
     const impactPhase = clamp01((progress - 0.54) / 0.22);
     const impactAlpha = Math.sin(impactPhase * Math.PI) * tail;

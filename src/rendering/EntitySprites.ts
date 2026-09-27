@@ -23,13 +23,11 @@ export interface SpriteTransform {
 export class EntitySprites {
   private readonly textures = new Map<string, Texture>();
   private readonly sprites: Sprite[] = [];
-  private readonly masks: Graphics[] = [];
   private used = 0;
-  private masksUsed = 0;
 
   constructor(private readonly renderer: Renderer, private readonly container: Container, private readonly art: ImageAssets) {}
 
-  begin(): void { this.used = 0; this.masksUsed = 0; }
+  begin(): void { this.used = 0; }
 
   draw(x: number, y: number, radius: number, visual: Visual, role: SpriteRole, alpha = 1, rotation = 0, flash = false, animatedTexture?: Texture, facing = 1, heightRatio?: number, transform: SpriteTransform = {}): void {
     const key = `${visual.shape}:${role}:${visual.motif??''}`;
@@ -89,57 +87,8 @@ export class EntitySprites {
     sprite.visible = true;
   }
 
-  /** Reveals an image through an invisible clockwise sector mask. */
-  drawImageSector(x: number, y: number, width: number, height: number, imageId: ImageId,
-    alpha: number, rotation: number, arc: number, reveal: number): void {
-    const texture = this.art.get(imageId);
-    if (!texture || reveal <= 0) return;
-    let sprite = this.sprites[this.used];
-    if (!sprite) {
-      sprite = new Sprite(texture);
-      sprite.anchor.set(0.5);
-      this.sprites.push(sprite);
-      this.container.addChild(sprite);
-    }
-    this.used++;
-    sprite.texture = texture;
-    sprite.anchor.set(0.5);
-    sprite.position.set(x, y);
-    sprite.zIndex = y;
-    sprite.width = width;
-    sprite.height = height;
-    sprite.rotation = rotation;
-    sprite.skew.set(0, 0);
-    sprite.tint = 0xffffff;
-    sprite.alpha = alpha;
-    sprite.visible = true;
-
-    let mask = this.masks[this.masksUsed];
-    if (!mask) {
-      mask = new Graphics();
-      this.masks.push(mask);
-      this.container.addChild(mask);
-    }
-    this.masksUsed++;
-    mask.clear();
-    mask.visible = true;
-    const safeArc = Math.max(0.01, Math.min(Math.PI * 2, arc));
-    const shownArc = safeArc * Math.max(0, Math.min(1, reveal));
-    const start = rotation - safeArc * 0.5;
-    const radius = Math.max(width, height) * 0.72;
-    const steps = Math.max(2, Math.ceil(28 * shownArc / safeArc));
-    const points = [x, y];
-    for (let i = 0; i <= steps; i++) {
-      const angle = start + shownArc * i / steps;
-      points.push(x + Math.cos(angle) * radius, y + Math.sin(angle) * radius);
-    }
-    mask.poly(points).fill(0xffffff);
-    sprite.mask = mask;
-  }
-
   end(): void {
     for (let i = this.used; i < this.sprites.length; i++) { this.sprites[i]!.visible = false; this.sprites[i]!.mask = null; }
-    for (let i = this.masksUsed; i < this.masks.length; i++) this.masks[i]!.visible = false;
     // Retain a modest reserve, without keeping a historic worst-case population forever.
     const retained = Math.max(this.used, WORLD_THEME.neighborhood.spritePoolLimit);
     while (this.sprites.length > retained) this.sprites.pop()!.destroy();

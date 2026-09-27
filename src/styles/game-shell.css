@@ -25,7 +25,7 @@ button:hover, button:active, .button:hover, .button:active {
   --shell-depth: inset 0 1px #ffffff18, 0 8px 22px #0005;
 }
 
-/* Title: a quiet field-briefing cover rather than another menu card. */
+/* Title: one cinematic image, character art and a single clear action. */
 [data-screen="title"] .screen { overflow: hidden; background: #071117; padding: 0; }
 .title-screen {
   position: relative; isolation: isolate; width: 100%; height: 100%; min-height: 100dvh;
@@ -35,77 +35,50 @@ button:hover, button:active, .button:hover, .button:active {
 .title-screen::before {
   content: ''; position: absolute; z-index: -3; inset: 0;
   background: var(--title-city) center 52%/cover no-repeat;
-  filter: saturate(.42) brightness(.5) contrast(1.03);
+  filter: saturate(.82) brightness(.72) contrast(1.06);
   transform: scale(1.025);
 }
 .title-screen::after {
   content: ''; position: absolute; z-index: -2; inset: 0; pointer-events: none;
   background:
-    radial-gradient(ellipse at 75% 43%, #79b6c026, transparent 43%),
-    linear-gradient(90deg,#061018f7 4%,#091924ef 35%,#0a1b26a3 66%,#07111783),
-    linear-gradient(0deg,#03080de8,transparent 31%,transparent 72%,#061118af);
+    linear-gradient(90deg,#061018ef 0%,#091924a8 34%,transparent 68%),
+    linear-gradient(0deg,#03080dd9,transparent 36%,transparent 82%);
 }
 .title-atmosphere {
   position: absolute; z-index: -1; inset: 0; pointer-events: none;
-  background:
-    linear-gradient(90deg,#9ebbc613 1px,transparent 1px) 0 0/64px 64px,
-    linear-gradient(#9ebbc60c 1px,transparent 1px) 0 0/64px 64px;
-  box-shadow: inset 0 0 0 1px #d9e9e31e, inset 0 0 90px #010508ba;
+  box-shadow: inset 0 0 130px #010508b0;
 }
-.title-atmosphere::before,.title-atmosphere::after {
-  content: ''; position: absolute; left: max(24px,env(safe-area-inset-left)); right: max(24px,env(safe-area-inset-right));
-  height: 1px; background: linear-gradient(90deg,#afcbd380,transparent 63%);
+.title-heroes {
+  position: absolute; z-index: 0; right: 2%; bottom: -7%; width: min(48%,720px); height: 120%;
+  display: flex; align-items: end; justify-content: end; pointer-events: none;
+  filter: drop-shadow(0 15px 24px #020a13bd);
+  mask-image: linear-gradient(0deg,transparent 0%,#000 10%,#000 96%,transparent 100%);
 }
-.title-atmosphere::before { top: max(19px,env(safe-area-inset-top)); }
-.title-atmosphere::after { bottom: max(19px,env(safe-area-inset-bottom)); }
-.title-portrait {
-  position: absolute; top: -15%; right: 0; width: min(57vw,850px); height: 130%;
-  display: grid; place-items: center; overflow: hidden; opacity: .9;
-  mask-image: linear-gradient(90deg,transparent 1%,#000 33%,#000 80%,transparent),
-              linear-gradient(0deg,transparent,#000 23%,#000 77%,transparent);
-  mask-composite: intersect;
-}
-.title-portrait img {
-  width: min(60vw,760px); height: min(60vw,760px); object-fit: cover;
-  filter: saturate(.66) brightness(.69) contrast(1.13) drop-shadow(0 22px 28px #000d);
-}
+.title-heroes img { display: block; width: 100%; height: 100%; object-fit: contain; object-position: right bottom; }
 .title-content {
-  position: relative; z-index: 1; display: flex; flex-direction: column; justify-content: center;
-  width: min(68%,980px); height: 100%; padding: max(28px,env(safe-area-inset-top)) 4vw max(28px,env(safe-area-inset-bottom)) max(6vw,env(safe-area-inset-left));
-}
-.title-kicker {
-  width: max-content; max-width: 100%; padding: 7px 11px 7px 15px;
-  border-left: 3px solid #a9cbd5; color: #b9d7de;
-  background: linear-gradient(90deg,#6498a638,transparent);
-  font: 700 clamp(12px,1.2vw,16px)/1.2 Paperlogy,sans-serif;
-  letter-spacing: .12em;
+  position: relative; z-index: 1; display: flex; flex-direction: column; justify-content: flex-end;
+  width: min(58%,850px); height: 100%;
+  padding: max(24px,env(safe-area-inset-top)) 3vw max(54px,env(safe-area-inset-bottom),9vh) max(5vw,env(safe-area-inset-left));
 }
 .title-content h1 {
-  margin: 14px 0 4px; color: #f6f2e8;
-  font: 400 clamp(48px,7vw,112px)/1.02 'Haeong Sans',Paperlogy,sans-serif;
-  letter-spacing: -.065em; text-shadow: 0 5px 25px #000,0 1px #dcebed5c;
+  margin: 0 0 22px; color: #f6f2e8;
+  font: 400 clamp(76px,8.6vw,144px)/.88 'Haeong Sans',Paperlogy,sans-serif;
+  letter-spacing: -.075em; text-shadow: 0 7px 30px #000,0 1px #dcebed5c;
 }
-.title-content p {
-  margin: 9px 0 22px; color: #c2d1d5;
-  font: 400 clamp(15px,1.65vw,23px)/1.35 Paperlogy,sans-serif;
-  text-shadow: 0 2px 8px #000;
-}
-.title-actions { display: flex; align-items: center; gap: 22px; }
+.title-content h1 span,.title-content h1 strong { display: block; white-space: nowrap; }
+.title-content h1 span { font-size: .65em; color: #dbeaf0; }
+.title-content h1 strong { font-weight: inherit; }
+.title-actions { display: flex; align-items: center; }
 .title-actions button {
-  min-width: clamp(180px,20vw,300px); min-height: 60px;
-  padding: 12px 26px; border: 1px solid #d2e8e6a6; border-bottom-color: #396073;
+  min-width: clamp(220px,23vw,340px); min-height: 70px;
+  padding: 12px 32px; border: 1px solid #d2e8e6bd; border-bottom-color: #396073;
   border-radius: 3px; color: #eff8f4; background:
     linear-gradient(145deg,#476c7ad9,#1c3745ee 55%,#0b202eea),var(--shell-metal);
   background-size: auto,420px; background-blend-mode: normal,soft-light;
   box-shadow: inset 0 1px #fff8,inset 0 -4px #06121abb,0 14px 32px #000a;
-  font-size: clamp(19px,2vw,27px); font-weight: 800; letter-spacing: .06em;
+  font-size: clamp(22px,2.2vw,30px); font-weight: 800; letter-spacing: .06em;
 }
 .title-actions button:hover { filter: brightness(1.14); }
-.title-actions span { color: #9daeb3; font: 600 13px/1.2 'Barlow Condensed',Paperlogy,sans-serif; letter-spacing: .12em; }
-.title-index {
-  position: absolute; right: max(27px,env(safe-area-inset-right)); bottom: max(22px,env(safe-area-inset-bottom));
-  color: #c0d4d474; font: 700 12px/1 'Barlow Condensed',sans-serif; letter-spacing: .17em;
-}
 
 /* Raised steel and inset paper are reused across every meta destination. */
 :is(.lobby-command,.gate-flow-screen,.meta-facility,.settings-facility,.archive-screen) {
@@ -258,14 +231,10 @@ button:hover, button:active, .button:hover, .button:active {
 .result-modal .stack button { min-width: 0; }
 
 @media (orientation: landscape) and (min-width: 700px) and (max-width: 1100px) and (max-height: 500px) {
-  .title-content { width: 67%; padding-left: max(28px,env(safe-area-inset-left)); }
-  .title-content h1 { margin: 8px 0 0; font-size: clamp(43px,5.8vw,62px); }
-  .title-content p { margin: 4px 0 14px; font-size: 15px; }
-  .title-kicker { padding: 5px 8px; font-size: 12px; }
-  .title-actions button { min-height: 48px; min-width: 178px; padding: 6px 17px; font-size: 19px; }
-  .title-portrait { top: -27%; right: -4%; width: 54%; height: 153%; }
-  .title-portrait img { width: min(56vw,540px); height: min(56vw,540px); }
-  .title-index { font-size: 10px; }
+  .title-content { width: 58%; padding-left: max(30px,env(safe-area-inset-left)); padding-bottom: max(34px,env(safe-area-inset-bottom)); }
+  .title-content h1 { margin-bottom: 15px; font-size: clamp(68px,8.7vw,88px); }
+  .title-actions button { min-height: 56px; min-width: 220px; padding: 7px 20px; font-size: 24px; }
+  .title-heroes { right: 1%; bottom: -7%; width: 47%; height: 117%; }
   .gate-flow-screen .gate-flow-head ol li { border-bottom-width: 2px; }
   .gate-flow-screen .gate-flow-head ol li.active::after { bottom: -2px; height: 2px; }
   .gate-flow-screen .gate-select-card b,.meta-facility .facility-list-item b,.archive-screen .archive-entry span { font-size: max(13px,1.25vw); }
@@ -276,10 +245,9 @@ button:hover, button:active, .button:hover, .button:active {
   .pause-modal .stack button { min-height: 42px; font-size: 15px; }
 }
 @media (max-width: 699px) {
-  .title-content { width: 88%; padding-left: max(22px,env(safe-area-inset-left)); }
-  .title-content h1 { font-size: clamp(43px,10vw,72px); }
-  .title-portrait { width: 76%; opacity: .42; }
-  .title-actions span,.title-index { display: none; }
+  .title-content { width: 65%; padding-left: max(22px,env(safe-area-inset-left)); padding-bottom: max(30px,env(safe-area-inset-bottom)); }
+  .title-content h1 { font-size: clamp(52px,10vw,72px); }
+  .title-heroes { right: -8%; width: 65%; height: 112%; }
 }
 
 /* Keep complete weapon art inside its frame at short landscape heights. */

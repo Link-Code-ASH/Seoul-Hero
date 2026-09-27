@@ -64,7 +64,6 @@ export const bgm = {
   ], gain: 0.65 },
   guild: { tracks: [
     { url: file('bgm/provided/guild_01.mp3'), label: 'Guild 1' },
-    { url: file('bgm/provided/menu_02.mp3'), label: 'Guild 2' },
   ], gain: 0.48 },
   combat: { tracks: [
     { url: file('bgm/provided/combat_01.mp3'), label: 'Ingame 1' },

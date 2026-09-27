@@ -21,6 +21,9 @@ export class AudioManager {
   private readonly variantCursor = new Map<SfxId, number>();
   private readonly lastMusicUrl = new Map<BgmId, string>();
   private readonly gate = new SoundGate();
+  private readonly tabId = Math.random().toString(36).slice(2);
+  private readonly tabChannel = typeof window === 'undefined' || typeof BroadcastChannel === 'undefined' ? null : new BroadcastChannel('seoul-hero-bgm');
+  private silencedByOtherTab = false;
   private musicElement: HTMLAudioElement | null = null;
   private musicSource: MediaElementAudioSourceNode | null = null;
   private musicGain: GainNode | null = null;
@@ -39,7 +42,14 @@ export class AudioManager {
   playedCount = 0;
   lastSound = '—';
 
-  constructor(private settings: Settings) {}
+  constructor(private settings: Settings) {
+    if (this.tabChannel) this.tabChannel.onmessage = (event: MessageEvent<{ type: string; sender: string }>) => {
+      if (event.data?.type !== 'claim' || event.data.sender === this.tabId) return;
+      this.silencedByOtherTab = true;
+      window.clearTimeout(this.musicFadeTimer);
+      this.musicElement?.pause();
+    };
+  }
   get status(): string { return this.stateText; }
   get unlocked(): boolean { return this.context?.state === 'running' && this.buffers.size > 0; }
   get currentBgm(): string { return this.currentTrack?.label ?? '없음'; }
@@ -52,6 +62,32 @@ export class AudioManager {
     let sum = 0;
     for (const value of this.samples) sum += value * value;
     return Math.sqrt(sum / this.samples.length);
+  }
+
+  /** Try audible title music immediately where the browser permits autoplay. */
+  tryAutoplayTitle(): void {
+    if (this.disposed || this.hidden || this.settings.muted || this.musicElement || this.desired !== 'menu') return;
+    const track = this.chooseMusic('menu');
+    const element = new Audio(track.url);
+    element.preload = 'auto';
+    element.volume = Math.max(0, Math.min(1, this.settings.masterVolume * this.settings.musicVolume * bgm.menu.gain));
+    element.onended = () => {
+      if (this.desired === 'menu' && !this.hidden && !this.silencedByOtherTab) this.startUnroutedMenuTrack(element);
+    };
+    this.musicElement = element;
+    this.currentGroup = 'menu';
+    this.currentTrack = track;
+    this.lastMusicUrl.set('menu', track.url);
+    void element.play().then(() => { if (this.musicElement === element) this.claimOutput(); })
+      .catch(() => { /* The first touch retries through unlock(). */ });
+  }
+
+  private startUnroutedMenuTrack(element: HTMLAudioElement): void {
+    const track = this.chooseMusic('menu');
+    element.src = track.url;
+    this.currentTrack = track;
+    this.lastMusicUrl.set('menu', track.url);
+    void element.play().catch(() => {});
   }
 
   prepare(): Promise<void> {
@@ -78,16 +114,18 @@ export class AudioManager {
         this.combatBus = this.context.createGain();
         this.combatTone = this.context.createBiquadFilter();
         this.uiBus = this.context.createGain();
-        this.musicElement = new Audio();
+        this.musicElement ??= new Audio();
         this.musicElement.preload = 'auto';
         this.musicElement.loop = false;
+        this.musicElement.volume = 1;
         this.musicElement.onended = () => {
-          if (!this.hidden && this.desired && this.currentGroup === this.desired) {
+          if (!this.hidden && !this.silencedByOtherTab && this.desired && this.currentGroup === this.desired) {
             this.startMusic(this.desired, this.nextTrack ?? undefined);
           }
         };
         this.musicSource = this.context.createMediaElementSource(this.musicElement);
         this.musicGain = this.context.createGain();
+        this.musicGain.gain.value = this.currentGroup ? bgm[this.currentGroup].gain : 1;
         this.musicSource.connect(this.musicGain); this.musicGain.connect(this.musicBus);
         this.combatTone.type = 'lowpass';
         this.combatTone.frequency.value = 9500;
@@ -128,7 +166,10 @@ export class AudioManager {
 
   applySettings(settings: Settings): void {
     this.settings = { ...settings };
-    if (!this.context || !this.master || !this.musicBus || !this.combatBus || !this.uiBus) return;
+    if (!this.context || !this.master || !this.musicBus || !this.combatBus || !this.uiBus) {
+      if (this.musicElement) this.musicElement.volume = settings.muted ? 0 : Math.max(0, Math.min(1, settings.masterVolume * settings.musicVolume * bgm[this.currentGroup ?? 'menu'].gain));
+      return;
+    }
     const now = this.context.currentTime;
     this.master.gain.setTargetAtTime(settings.muted ? 0 : settings.masterVolume, now, AUDIO_CONFIG.volumeFade);
     this.musicBus.gain.setTargetAtTime(settings.musicVolume * (this.dimmed ? AUDIO_CONFIG.pausedMusicGain : 1), now, AUDIO_CONFIG.volumeFade);
@@ -138,12 +179,21 @@ export class AudioManager {
   setScene(id: BgmId | null, dimmed: boolean): void {
     if (this.desired === id && this.dimmed === dimmed) return;
     this.desired = id; this.dimmed = dimmed;
+    if (!this.context && this.musicElement && id !== this.currentGroup) this.stopMusic();
     this.applySettings(this.settings);
+    this.reconcileMusic();
+  }
+  /** Only the tab receiving the latest user gesture owns audible BGM. */
+  claimOutput(): void {
+    if (this.hidden || this.disposed) return;
+    this.silencedByOtherTab = false;
+    this.tabChannel?.postMessage({ type: 'claim', sender: this.tabId });
+    if (!this.context && this.musicElement && this.desired === this.currentGroup && this.musicElement.paused) this.playMusic();
     this.reconcileMusic();
   }
   private reconcileMusic(): void {
     const context = this.context, element = this.musicElement, gain = this.musicGain;
-    if (!context || !element || !gain || this.hidden || this.disposed) return;
+    if (!context || !element || !gain || this.hidden || this.disposed || this.silencedByOtherTab) return;
     if (this.desired === this.currentGroup) {
       if (this.desired && element.paused) this.playMusic();
       return;
@@ -158,7 +208,7 @@ export class AudioManager {
     gain.gain.cancelScheduledValues(context.currentTime);
     gain.gain.setTargetAtTime(0, context.currentTime, AUDIO_CONFIG.musicFade / 4);
     this.musicFadeTimer = window.setTimeout(() => {
-      if (this.hidden || this.disposed) return;
+      if (this.hidden || this.disposed || this.silencedByOtherTab) return;
       if (this.desired !== next) { this.reconcileMusic(); return; }
       if (next) this.startMusic(next);
       else this.stopMusic();
@@ -183,6 +233,7 @@ export class AudioManager {
   }
 
   private playMusic(): void {
+    if (this.silencedByOtherTab) return;
     const expectedTrack = this.currentTrack;
     void this.musicElement?.play().catch((error: unknown) => {
       if (error instanceof DOMException && error.name === 'AbortError') return;
@@ -269,6 +320,7 @@ export class AudioManager {
     window.clearTimeout(this.musicFadeTimer);
     for (const voice of this.voices) voice.source.stop();
     this.stopMusic();
+    this.tabChannel?.close();
     this.musicSource?.disconnect(); this.musicGain?.disconnect();
     this.voices.clear(); this.bytes.clear(); this.buffers.clear();
     void this.context?.close().catch(() => {});

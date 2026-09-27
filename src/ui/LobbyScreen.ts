@@ -48,6 +48,7 @@ export function lobbyScreen(meta: MetaState): string {
         <span class="gate-command-copy"><small>광화문 작전 구역</small><b>게이트 출동</b><strong>출동 준비 <span aria-hidden="true">↗</span></strong></span>
         <span class="gate-command-record"><small>최근 작전</small><b>${recent}</b></span>
       </button><button class="guild-command-card" data-action="guild" style="--guild-art:url('${images.guildHall.url}')">
+        <img class="guild-command-operator" src="${images.guildOperatorIllustration.url}" alt="">
         <span><small>HUNTER GUILD</small><b>수탐자 본부</b></span><strong>본부 입장 <span aria-hidden="true">↗</span></strong>
       </button></div>
       <div class="command-modules">${support}</div>

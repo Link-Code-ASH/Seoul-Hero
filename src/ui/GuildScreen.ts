@@ -1,5 +1,5 @@
 import { characters } from '../data/characters';
-import { GUILD_NAME, guildFacilities, type GuildPointId } from '../data/guild';
+import { GUILD_NAME, guildFacilities, guildOperator, type GuildPointId } from '../data/guild';
 import { images } from '../data/images';
 import type { MetaState } from '../state/MetaState';
 import { guildFacilityCost, guildFacilityLevel, guildPoint, isGuildFacility } from '../systems/GuildSystem';
@@ -21,10 +21,9 @@ function facilityPanel(meta: MetaState, id: keyof typeof guildFacilities): strin
 
 function rosterPanel(meta: MetaState): string {
   const members = Object.values(characters).filter(character => meta.characters[character.id]?.unlocked);
-  return `<div class="guild-roster"><small>수탐자 명부</small><h2>조작할 각성자</h2><div class="guild-roster-list">${members.map(character =>
-    `<button data-action="guild-avatar:${character.id}" class="${meta.guild.avatarCharacterId === character.id ? 'selected' : ''}" aria-pressed="${meta.guild.avatarCharacterId === character.id}">
-      <img src="${images[character.portraitSprite ?? 'player'].url}" alt=""><b>${escapeHtml(character.name)}</b><span>${meta.guild.avatarCharacterId === character.id ? '조작 중' : '선택'}</span>
-    </button>`).join('')}</div></div>`;
+  return `<div class="guild-roster guild-roster-operator"><img class="guild-operator-portrait" src="${images.guildOperatorIllustration.url}" alt="${guildOperator.name}">
+    <div><small>${guildOperator.role}</small><h2>${guildOperator.name}</h2><p>${guildOperator.description}</p>
+    <div class="guild-member-names"><small>현장 각성자</small>${members.map(character => `<span>${escapeHtml(character.name)}</span>`).join('')}</div></div></div>`;
 }
 
 function panel(meta: MetaState, id: GuildPointId | null): string {
@@ -37,12 +36,11 @@ function panel(meta: MetaState, id: GuildPointId | null): string {
 }
 
 export function guildScreen(meta: MetaState, view: GuildViewState): string {
-  const avatar = characters[meta.guild.avatarCharacterId];
   const near = view.nearbyId ? guildPoint(view.nearbyId) : null;
   return `<section class="guild-screen" aria-label="수탐자 길드 본부">
     <header class="guild-head"><button data-action="lobby" class="guild-back">‹ <span>이전</span></button>
-      <div class="guild-title"><small>HUNTER GUILD</small><h1>${GUILD_NAME}</h1></div>
-      <div class="guild-status"><span>${escapeHtml(avatar?.name ?? '각성자')}</span><img src="${images.associationCoin.url}" alt="협회 코인"><b>${meta.wallet.associationCoins.toLocaleString()}</b></div></header>
+      <div class="guild-title"><small>길드 카페</small><h1>${GUILD_NAME}</h1></div>
+      <div class="guild-status"><span>${guildOperator.name}</span><img src="${images.associationCoin.url}" alt="협회 코인"><b>${meta.wallet.associationCoins.toLocaleString()}</b></div></header>
     <button class="guild-interact" data-action="guild-interact" ${near && !view.panelId ? '' : 'hidden'}>${near ? `${near.name} <span>살펴보기</span>` : ''}</button>
     ${panel(meta, view.panelId)}
   </section>`;
