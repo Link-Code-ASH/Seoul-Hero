@@ -1,0 +1,345 @@
+{
+	"audioPlayback": false,
+	"contentSha256": "ced02f7f687d40b35ccc3ae8d8ab3c1d904b07aa3c4d0b34e79dba3d5dab6d1c",
+	"issueCount": 0,
+	"previewOnly": true,
+	"productionLoaded": false,
+	"saveAdaptersLoaded": false,
+	"screens": [
+		{
+			"controls": [
+				{
+					"caption": "일시정지",
+					"minimum44": true,
+					"rect": [
+						850,
+						7,
+						44,
+						44
+					],
+					"role": "unframed"
+				}
+			],
+			"fitIssues": [],
+			"labels": [
+				{
+					"actualSize": [
+						188.0,
+						26.0
+					],
+					"align": 0,
+					"fontHeight": 26.0,
+					"fontSize": 21,
+					"lines": 1,
+					"rect": [
+						21.0,
+						6.0,
+						188.0,
+						26.0
+					],
+					"requiredHeight": 26.0,
+					"requiredWidth": 60.0,
+					"role": "number",
+					"text": "84 / 100"
+				},
+				{
+					"actualSize": [
+						101.0,
+						28.0
+					],
+					"align": 0,
+					"fontHeight": 27.0,
+					"fontSize": 22,
+					"lines": 1,
+					"rect": [
+						47.0,
+						45.0,
+						101.0,
+						28.0
+					],
+					"requiredHeight": 27.0,
+					"requiredWidth": 29.0,
+					"role": "number",
+					"text": "240"
+				},
+				{
+					"actualSize": [
+						100.0,
+						28.0
+					],
+					"align": 0,
+					"fontHeight": 27.0,
+					"fontSize": 22,
+					"lines": 1,
+					"rect": [
+						180.0,
+						45.0,
+						100.0,
+						28.0
+					],
+					"requiredHeight": 27.0,
+					"requiredWidth": 19.0,
+					"role": "number",
+					"text": "36"
+				},
+				{
+					"actualSize": [
+						185.0,
+						26.0
+					],
+					"align": 1,
+					"fontHeight": 18.0,
+					"fontSize": 15,
+					"lines": 1,
+					"rect": [
+						365.0,
+						8.0,
+						185.0,
+						26.0
+					],
+					"requiredHeight": 18.0,
+					"requiredWidth": 85.0,
+					"role": "control",
+					"text": "웨이브 7 / 20"
+				},
+				{
+					"actualSize": [
+						115.0,
+						34.0
+					],
+					"align": 1,
+					"fontHeight": 33.0,
+					"fontSize": 27,
+					"lines": 1,
+					"rect": [
+						400.0,
+						33.0,
+						115.0,
+						34.0
+					],
+					"requiredHeight": 33.0,
+					"requiredWidth": 54.0,
+					"role": "number",
+					"text": "00:28"
+				}
+			],
+			"materials": [
+				{
+					"assetScale": 4.0,
+					"material": "console/hp_track",
+					"rect": [
+						20.0,
+						34.0,
+						190.0,
+						6.0
+					],
+					"slice": [
+						30.0,
+						0.0,
+						30.0,
+						0.0
+					],
+					"source": [
+						41.0,
+						692.0,
+						754.0,
+						65.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "console/hp_fill",
+					"rect": [
+						20.0,
+						34.0,
+						159.600006103516,
+						6.0
+					],
+					"slice": [
+						30.0,
+						0.0,
+						30.0,
+						0.0
+					],
+					"source": [
+						864.0,
+						692.0,
+						754.0,
+						62.0
+					]
+				}
+			],
+			"screen": "01-hud"
+		},
+		{
+			"controls": [
+				{
+					"caption": "일시정지",
+					"minimum44": true,
+					"rect": [
+						850,
+						7,
+						44,
+						44
+					],
+					"role": "unframed"
+				}
+			],
+			"fitIssues": [],
+			"labels": [
+				{
+					"actualSize": [
+						188.0,
+						26.0
+					],
+					"align": 0,
+					"fontHeight": 26.0,
+					"fontSize": 21,
+					"lines": 1,
+					"rect": [
+						21.0,
+						6.0,
+						188.0,
+						26.0
+					],
+					"requiredHeight": 26.0,
+					"requiredWidth": 55.0,
+					"role": "number",
+					"text": "17 / 100"
+				},
+				{
+					"actualSize": [
+						101.0,
+						28.0
+					],
+					"align": 0,
+					"fontHeight": 27.0,
+					"fontSize": 22,
+					"lines": 1,
+					"rect": [
+						47.0,
+						45.0,
+						101.0,
+						28.0
+					],
+					"requiredHeight": 27.0,
+					"requiredWidth": 60.0,
+					"role": "number",
+					"text": "987,654"
+				},
+				{
+					"actualSize": [
+						100.0,
+						28.0
+					],
+					"align": 0,
+					"fontHeight": 27.0,
+					"fontSize": 22,
+					"lines": 1,
+					"rect": [
+						180.0,
+						45.0,
+						100.0,
+						28.0
+					],
+					"requiredHeight": 27.0,
+					"requiredWidth": 49.0,
+					"role": "number",
+					"text": "12,480"
+				},
+				{
+					"actualSize": [
+						185.0,
+						26.0
+					],
+					"align": 1,
+					"fontHeight": 18.0,
+					"fontSize": 15,
+					"lines": 1,
+					"rect": [
+						365.0,
+						8.0,
+						185.0,
+						26.0
+					],
+					"requiredHeight": 18.0,
+					"requiredWidth": 85.0,
+					"role": "control",
+					"text": "웨이브 7 / 20"
+				},
+				{
+					"actualSize": [
+						115.0,
+						34.0
+					],
+					"align": 1,
+					"fontHeight": 33.0,
+					"fontSize": 27,
+					"lines": 1,
+					"rect": [
+						400.0,
+						33.0,
+						115.0,
+						34.0
+					],
+					"requiredHeight": 33.0,
+					"requiredWidth": 54.0,
+					"role": "number",
+					"text": "00:28"
+				}
+			],
+			"materials": [
+				{
+					"assetScale": 4.0,
+					"material": "console/hp_track",
+					"rect": [
+						20.0,
+						34.0,
+						190.0,
+						6.0
+					],
+					"slice": [
+						30.0,
+						0.0,
+						30.0,
+						0.0
+					],
+					"source": [
+						41.0,
+						692.0,
+						754.0,
+						65.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "console/hp_fill",
+					"rect": [
+						20.0,
+						34.0,
+						32.2999992370605,
+						6.0
+					],
+					"slice": [
+						30.0,
+						0.0,
+						30.0,
+						0.0
+					],
+					"source": [
+						864.0,
+						692.0,
+						754.0,
+						62.0
+					]
+				}
+			],
+			"screen": "13-hud-low-hp"
+		}
+	],
+	"simulation": false,
+	"size": [
+		915,
+		412
+	]
+}

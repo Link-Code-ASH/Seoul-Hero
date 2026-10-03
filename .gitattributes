@@ -1,0 +1,9 @@
+# Preserve exact artwork/provenance bytes and archived recovery hashes on checkout.
+# Runtime code and normal repository documents retain the user's Git text policy.
+/assets/** -text
+/public/** -text
+/design/** -text
+/archive/** -text
+/godot/assets/** -text
+/godot/public/** -text
+/godot/design/** -text

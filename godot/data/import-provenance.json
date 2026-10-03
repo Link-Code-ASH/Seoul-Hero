@@ -1,0 +1,1398 @@
+{
+  "tool": "scripts/export-godot-content.mjs",
+  "description": "Existing Seoul Hero artwork/audio reused unchanged. Original generation and audio license records remain alongside source assets.",
+  "media": [
+    {
+      "source": "assets/visuals/structures/ground_installations_01.png",
+      "sha256": "e5297ef6d6c47a5abb85a8ba12d9e71fe0e774d2e9d8a10fcfb91b5ee1195510"
+    },
+    {
+      "source": "assets/ui/image-skin/enamel-glass/enamel_01.png",
+      "sha256": "77bf3e99b1cd101de49a54cfb0030cffe05aafc4e8723eb7acfee66aae29ad22"
+    },
+    {
+      "source": "assets/ui/image-skin/enamel-glass/glass_01.png",
+      "sha256": "01b7e3039a2885c5847c41b6dc6f68ed9ca0674f52f03130d1cd6369fd7cf44e"
+    },
+    {
+      "source": "assets/ui/image-skin/enamel-glass/cstore_surfaces_02.png",
+      "sha256": "0a161e9da42e56583898f059a44d0c0c1c6002504df909328600c10e45accf3f"
+    },
+    {
+      "source": "assets/ui/image-skin/enamel-glass/cstore_controls_02.png",
+      "sha256": "fdb4935a3fa1ce6e07bf51aae66e213d01df558caec717445234672c2e1e7d5e"
+    },
+    {
+      "source": "assets/ui/image-skin/enamel-glass/spy_02.png",
+      "sha256": "203faa9fb03023c8b14ee69418a859475472f4f16513b1099d7b611ec7d76abe"
+    },
+    {
+      "source": "assets/ui/image-skin/enamel-glass/lobby_neumorphic_04.png",
+      "sha256": "62f4d537a8f035ed2698221f57f148c40275c35064a42e0ef967ffb5f57f91a6"
+    },
+    {
+      "source": "assets/ui/image-skin/enamel-glass/purchase_yellow_04.png",
+      "sha256": "f313f2e2b73e7e012af6a12732d5488e6239864db3986523426966ec2c591e03"
+    },
+    {
+      "source": "assets/ui/image-skin/runtime/bars_02.png",
+      "sha256": "c370dd1169e74bbf3b7bdca980c08a5c5a3bdc2d81040e299ec6f55e2542cea3"
+    },
+    {
+      "source": "assets/ui/image-skin/runtime/accents_02.png",
+      "sha256": "391b3262b9ce18c0f483e9dacfa244c83a2699183535a3b71aaec375fa5fe35c"
+    },
+    {
+      "source": "assets/ui/image-skin/runtime/navigation_01.png",
+      "sha256": "594807177e1a3b3fee449032fc06703af5f5c1f76bf70bc125704eaf372ebec2"
+    },
+    {
+      "source": "assets/ui/image-skin/runtime/personnel_01.png",
+      "sha256": "47d180bc49c69db574a6cf3f8301b7da560f854f92b3dd70d0b598d2d996d2b9"
+    },
+    {
+      "source": "assets/ui/image-skin/runtime/armory_01.png",
+      "sha256": "5661272f88e1d88020e2ccbda65548967b5e61ebe23577f626ee2f55484796bf"
+    },
+    {
+      "source": "assets/ui/image-skin/runtime/arcane_01.png",
+      "sha256": "3248b911c5779dbada0d3551124fb9610bc4457d4f80f6ce624938391dace5ea"
+    },
+    {
+      "source": "assets/ui/image-skin/runtime/codex_01.png",
+      "sha256": "ffd91928d72e0285cb48995697ab5ff0f8df67b712c61e900310ffbbab8f7517"
+    },
+    {
+      "source": "assets/ui/image-skin/runtime/console_01.png",
+      "sha256": "8476b7f313950db18ab67c2e910b655d7793f6d56aa5274f46ae7aa4285936d7"
+    },
+    {
+      "source": "assets/ui/image-skin/runtime/command_01.png",
+      "sha256": "fc314d1398204befe894d0f7df3eeb7a7d624237c5ff0318fe149ab716c745ab"
+    },
+    {
+      "source": "assets/ui/image-skin/runtime/controls_01.png",
+      "sha256": "5376f06e3ce349a608f435ea5853ef62d23368c25981b585b03f9539b16c4f73"
+    },
+    {
+      "source": "assets/ui/image-skin/runtime/cards_01.png",
+      "sha256": "741c6c6fe062c3c507f85865d5fdcdc26fa706e48a803340f0f7017ccc7d6412"
+    },
+    {
+      "source": "assets/ui/image-skin/runtime/growth_01.png",
+      "sha256": "651315bbe493db36a242ef67cf28d6acc62df58dd767a58ec1548f4c200817c9"
+    },
+    {
+      "source": "assets/ui/image-skin/runtime/sliders_01.png",
+      "sha256": "0d5c9697110e1db49f715daa40d3b534689b46b2cab339b756fcbd72cf077fa8"
+    },
+    {
+      "source": "assets/ui/image-skin/panels_01.png",
+      "sha256": "afc3a14861b3420a2143e5844427842ccfc7e2363ea8f6bb35b1d8f128387212"
+    },
+    {
+      "source": "assets/ui/image-skin/buttons_01.png",
+      "sha256": "54e521a0716b32f3731facb2f87878748edf9bfd03344767983c68a596f8a608"
+    },
+    {
+      "source": "assets/ui/image-skin/lobby_glass_01.png",
+      "sha256": "3c924c9b04e49e614e704fe7a22a35b3f3b0d7005089c2f2ed3aa6b2f20fb17b"
+    },
+    {
+      "source": "assets/ui/urban-operation/urban_icons_01.png",
+      "sha256": "24ab0fd370c44ae7529d776b655de7875fd38a872bee5e1b859e33bb8185e22b"
+    },
+    {
+      "source": "assets/environment-sd/gwanghwamun_sd_03.png",
+      "sha256": "ac3091cb64f037fa3f2a83a8012ef40be92f4b71bcdba1f4a1468f831e648630"
+    },
+    {
+      "source": "assets/ui/urban-operation/facilities_01.png",
+      "sha256": "89173fc3aaed61b8ff6e8af4d0f056eee78eb0a71b1682f58946dc27830624e7"
+    },
+    {
+      "source": "assets/ui/inventory_atlas_transparent_02.png",
+      "sha256": "9a3787b5fa8f1a6acffab93e4f6632033db774d1308434fd8fb54074f6b970e1"
+    },
+    {
+      "source": "assets/characters-sd/kang_sd_01.png",
+      "sha256": "b919874013283e71172d904e8ef12399344f6f06245e1ace917fbc3092097093"
+    },
+    {
+      "source": "assets/characters-sd/park_sd_01.png",
+      "sha256": "eb92e8533afa1872038b83b28f890d6370ae73a7f80e7a5ba2859b0edce6833c"
+    },
+    {
+      "source": "assets/characters-sd/yoon_sd_01.png",
+      "sha256": "591acb02b953b4763e01fc8c137af10146db24ed5c3ae5d5047c4f2a50ef0309"
+    },
+    {
+      "source": "assets/characters-sd/han_seoa_sd_01.png",
+      "sha256": "a0362bfdcff74e1eebdcac50836336713d9e07e7be93f7acead5c8562f4c8087"
+    },
+    {
+      "source": "assets/monsters-sd/crawler_sd_01.png",
+      "sha256": "dd6de8c9184486ff4b587a3e4738298e2792379e5a942174aac1ec990023b7f3"
+    },
+    {
+      "source": "assets/monsters-sd/bulwark_sd_01.png",
+      "sha256": "77570287b257950cf1e625d6daa676436d1de70600ef8f18b0e6f29c034da93f"
+    },
+    {
+      "source": "assets/monsters-sd/splitter_sd_01.png",
+      "sha256": "c5c78b2067302b6c24000265b42441ea9a0a6a28ca8b300507fb5c8dc03cd324"
+    },
+    {
+      "source": "assets/monsters-sd/sentinel_sd_01.png",
+      "sha256": "355aea589e95a9d65dd8ac0705ac86d7cdabaf09cd7ba676df67ef9ea963f39f"
+    },
+    {
+      "source": "assets/monsters-sd/swarm_sd_01.png",
+      "sha256": "9523bf2d4721e32dd7d19a96433a0a306c3f1ea0e520efd0a831c3ec0b1458e5"
+    },
+    {
+      "source": "assets/monsters-sd/signalMoth_sd_01.png",
+      "sha256": "a7d20b804b996dbf5f9ec6501c8b505847f235b2790e5fa0e9c977b15e9d9946"
+    },
+    {
+      "source": "assets/monsters-sd/spitter_sd_01.png",
+      "sha256": "affd462fadb19deb7b44ddefac835fe416474a42fd102f9a1da45dece340892a"
+    },
+    {
+      "source": "assets/monsters-sd/bomber_sd_01.png",
+      "sha256": "c57963dd1fd764320bb702251e34fe2d612dca139a11e498d12211650e136b1a"
+    },
+    {
+      "source": "assets/monsters-sd/mender_sd_01.png",
+      "sha256": "62f5df0f8d1592083be1d302b727202bfe6330c5185e9b58ab7d12455b02a61c"
+    },
+    {
+      "source": "assets/monsters-sd/glassJelly_sd_01.png",
+      "sha256": "69d542b8a10ce10f9887253a8cb9cfe5ddb321e3a5ce7f5e43a011d94a64902b"
+    },
+    {
+      "source": "assets/monsters-sd/summoner_sd_01.png",
+      "sha256": "182b9474c519ecb91427781f6203ea259cbaf106c1cae470a4bb4f5d20d8b1e3"
+    },
+    {
+      "source": "assets/monsters-sd/lurker_sd_01.png",
+      "sha256": "ca6b8352c4bf0942356e1977f429ffedd75b8c40e54340754f04e07f32427237"
+    },
+    {
+      "source": "assets/monsters-sd/chainWarden_sd_01.png",
+      "sha256": "0c8bfabd748cb3c82924c9d281224030fda0a642f6efac868621a92106d9b36f"
+    },
+    {
+      "source": "assets/monsters-sd/runner_sd_01.png",
+      "sha256": "01d8d42882497330c1257d42c36bac0afa2ea0b48df23e253afb72f47934ec1c"
+    },
+    {
+      "source": "assets/monsters-sd/charger_sd_01.png",
+      "sha256": "d34bb059adfb4d0818097e1a532fe573197f7e3a1ab03b845d7bb8a51b8b4304"
+    },
+    {
+      "source": "assets/monsters-sd/ironBoar_sd_01.png",
+      "sha256": "59f68467e181d891add6dc340fff8a330feb6bcdbe3a3ed4f4320806a451ca2e"
+    },
+    {
+      "source": "assets/monsters-sd/copperCrab_sd_01.png",
+      "sha256": "dea4623db6a12f56f2bab3ea013372846646cf1ee4d350f92f150d97ec7747bd"
+    },
+    {
+      "source": "assets/monsters-sd/gatekeeper_sd_01.png",
+      "sha256": "68e87fc29692ee4b3f448a9791cf9ddf40a8d976874e5338f71270f333fb372b"
+    },
+    {
+      "source": "assets/monsters-sd/riftQueen_sd_01.png",
+      "sha256": "8fb5c2cf16c4ec0d05bfeea2450e02d38a2773e17d6c6526b657834e1e6e40ad"
+    },
+    {
+      "source": "assets/characters-sd/song_sd_01.png",
+      "sha256": "d855f73c3cbeb171ea81aa855712ce49dd2cda6bcf32f4012144bb7e04a5a50c"
+    },
+    {
+      "source": "assets/content-2026/anchorBadge-01.png",
+      "sha256": "8dd9ac76c9f9c9c577db87a3a8acd209d08c321bef0b82a06714c09073a9a2f2"
+    },
+    {
+      "source": "assets/content-2026/kineticSpool-01.png",
+      "sha256": "693bdf092847d4eeb72e4798d94bd2d645034a22c625468731c94f3f9fe5522a"
+    },
+    {
+      "source": "assets/content-2026/scarSeal-01.png",
+      "sha256": "b0e63a896a09418a5527229f8c3241b708b8a646f7520d436bf47f968b5265ac"
+    },
+    {
+      "source": "assets/content-2026/openingTicket-01.png",
+      "sha256": "af2fe2090b3290a265fa29f5176cf4ea25d310d7aa55ea218153ae4ce23a3afe"
+    },
+    {
+      "source": "assets/content-2026/executionBell-01.png",
+      "sha256": "2d709d48d77a268fa95e13e9cbc9400cbb42f9a01f7debfd64bcdd7ae8365886"
+    },
+    {
+      "source": "assets/content-2026/duelCompass-01.png",
+      "sha256": "6fd7914449a348292a2d3907e322d0b317621e2992a3edfefc20963a731dedc9"
+    },
+    {
+      "source": "assets/content-2026/horizonMirror-01.png",
+      "sha256": "e3608cb8c7d7e0bd3e699bfa6e6bfa19db791f094969160a27bc9e4c5ed9208b"
+    },
+    {
+      "source": "assets/content-2026/dawnThermos-01.png",
+      "sha256": "f419529803c77a60c978bcdeabf24cf2f5352471b91938f63b41b62422f8a0ce"
+    },
+    {
+      "source": "assets/content-2026/fieldSuture-01.png",
+      "sha256": "b61f94f458ebc5dbf8308f2f77f9b78d89f2c34229828f46b7fb77e9f362e100"
+    },
+    {
+      "source": "assets/content-2026/revengeFuse-01.png",
+      "sha256": "c37af7265704de109ac3e0e93c0147b456380ff0b19083ac77cf0d0def3319d9"
+    },
+    {
+      "source": "assets/content-2026/salvageFilter-01.png",
+      "sha256": "e6fa438bc8ced30b87725ffe3e1e02f92890dbab0fd89bf303606e1116dbf26a"
+    },
+    {
+      "source": "assets/content-2026/courierWheel-01.png",
+      "sha256": "8587c176838e9297aece806afbbb57a4a726875ae2e53b1dc256ff00d6f30cd2"
+    },
+    {
+      "source": "assets/content-2026/firstShield-01.png",
+      "sha256": "b4f77aa44bb76401f88ff99a3b1679c697ec0e05748e7b9f260a6e3b1a776521"
+    },
+    {
+      "source": "assets/content-2026/vaultLedger-01.png",
+      "sha256": "ef60a2cd55a908b4b2bf5a25378a7376970985fd6f8380f170704148724cc69f"
+    },
+    {
+      "source": "assets/content-2026/phoenixMatch-01.png",
+      "sha256": "13a7c70b67882073b1850f0699fc203d25230a84942c8c716e40810de04583f9"
+    },
+    {
+      "source": "assets/content-2026/copperCrab-01.png",
+      "sha256": "4204b780dd987a62a92b234e0ac0e26cbb01752f1a6ecc6e4ffdce222647427b"
+    },
+    {
+      "source": "assets/content-2026/ironBoar-01.png",
+      "sha256": "adcae991d048dc0944db5df9a28161c1ab9ab643f26aa9cc6ee25fd286ce9ff6"
+    },
+    {
+      "source": "assets/content-2026/signalMoth-01.png",
+      "sha256": "3f699f17665b0e4371bbe7b9ab269b1fcca91661ce69256db46f9c2e0728aa30"
+    },
+    {
+      "source": "assets/content-2026/glassJelly-01.png",
+      "sha256": "6092e3dbe3700b3a8e7724a118bc01a6989cf4aad9e591e4725015461e60f614"
+    },
+    {
+      "source": "assets/content-2026/chainWarden-01.png",
+      "sha256": "7e052003e9b137bf7707b9ef9418f9287ed7c03f7c2a2945d292050d4446a120"
+    },
+    {
+      "source": "public/icons/icon-512.png",
+      "sha256": "605bf631db1ae6e35d5eea0b0988bfcc90548b30ba859831afd290111a84e3c7"
+    },
+    {
+      "source": "assets/projectiles/hostile_bolt_01.png",
+      "sha256": "50855fc20a9f99b0aeeb0d4cc2b49fa7ecf761dc4844d37ced5876fef6319393"
+    },
+    {
+      "source": "assets/backgrounds/gwanghwamun_plaza_01.webp",
+      "sha256": "aec437b20c0fa30aa1a52629cf27e234dd01352ee7434e5cea8d52db68d430cd"
+    },
+    {
+      "source": "assets/ui/urban-operation/title_battlefield_01.png",
+      "sha256": "e22960ff32d08ee6f63abf60abd3a67f8b1b0c1e27ec6a9f50555bb45b6614ee"
+    },
+    {
+      "source": "assets/guild/guild_cafe_topdown_02.webp",
+      "sha256": "c808e3adc016669fec49ebf6d2232e1fac9da48cfeb1b86108dad18d785af5b5"
+    },
+    {
+      "source": "assets/guild/guild_hall_cafe_04.webp",
+      "sha256": "843f532eec98119d777c7c35afc09a8db8ec8d01384f0545a9627ab61d39ee2f"
+    },
+    {
+      "source": "assets/guild/training_station_casual_02.webp",
+      "sha256": "2cbc5f41359305c8fad6782f2428bdf6f687b74d30a293f3fad91ceda0ce2f08"
+    },
+    {
+      "source": "assets/guild/recovery_station_casual_02.webp",
+      "sha256": "8af1371159136bda28a583ed3c7173cf9261c65cc3b951b25025ba8cb35931e0"
+    },
+    {
+      "source": "assets/guild/supply_station_casual_02.webp",
+      "sha256": "5d1bed2c33c3179c98052abbd8bd74167b16a070bb1e6b3950c4e45c11c96246"
+    },
+    {
+      "source": "assets/guild/roster_kiosk_casual_02.webp",
+      "sha256": "f5f5fcc3567f66bd87e9559b2e4e2e92b2a1594e2fa7827859e16d254601bdae"
+    },
+    {
+      "source": "assets/guild/gate_terminal_casual_02.webp",
+      "sha256": "40fa2ce033dd6e194b05ffbf13f160ceb05e27edc7ee2ee30a2ddc24c43ab58f"
+    },
+    {
+      "source": "assets/combat-chibi/bulwark.webp",
+      "sha256": "cf716fb96f3c662ea7cb9278cc16f5f9a29486b27e1473b67901aad3ce0204d2"
+    },
+    {
+      "source": "assets/combat-chibi/spitter.webp",
+      "sha256": "20693fa443a971363ae52cb193ce2a8493724b64e0fd8a35336ca4f76c9118f4"
+    },
+    {
+      "source": "assets/combat-chibi/spitter-fire.webp",
+      "sha256": "fda2361e7b73f33e2cf3f6825304e4944e2f2bd88f224b71000746e83f8448c3"
+    },
+    {
+      "source": "assets/combat-chibi/swarm.webp",
+      "sha256": "b3638584803cdc970ba498a399ab00751a00f3adb1b4c5553c7152c24e51f7e5"
+    },
+    {
+      "source": "assets/combat-chibi/charger.webp",
+      "sha256": "83328a5f872e2a4cfd2f780d709a07e992262544e29a22135edc43d94a4a21a0"
+    },
+    {
+      "source": "assets/combat-chibi/charger-brace.webp",
+      "sha256": "ae6b1f8b6e8f4cc50e16eb945bd6fc5cbcb61bbfe53bccccfadd01accd6c507b"
+    },
+    {
+      "source": "assets/combat-chibi/bomber.webp",
+      "sha256": "600069d5a58deb6a84ec1db081f000011800bf95e4aca02a7434efef6a170110"
+    },
+    {
+      "source": "assets/combat-chibi/splitter.webp",
+      "sha256": "45c75104f38c805f8f920b9c14843d3f583a61a4df55a72dc4e7ca6979438843"
+    },
+    {
+      "source": "assets/combat-chibi/splitter-air.webp",
+      "sha256": "5cd530ccc5bffcf50e3355a527adbf871d7d9170d9e39f6093a6d72de7783bce"
+    },
+    {
+      "source": "assets/combat-chibi/mender.webp",
+      "sha256": "98ec593269fd8bb8ccf31f55dada90b327eb19dbb4f974cdad9bcad585841e2e"
+    },
+    {
+      "source": "assets/combat-chibi/summoner.webp",
+      "sha256": "0fe8878f58bc6df77317167ffc6cfc3127f8ff5bd3b5dcc83406bb4039b34c3f"
+    },
+    {
+      "source": "assets/combat-chibi/sentinel.webp",
+      "sha256": "1af9433d9f08505c1d3721b4b048efd66bd509c9b786387e7d4b378a441f629f"
+    },
+    {
+      "source": "assets/combat-chibi/lurker.webp",
+      "sha256": "98a3fdbb91b430a4562715dd282c4b544bb227c470705488ea30802e20938772"
+    },
+    {
+      "source": "assets/combat-chibi/riftQueen.webp",
+      "sha256": "c18e7de47ab635dfd2f44ab329ab382cda7d9e38fe29c1744950f75a1b968ef1"
+    },
+    {
+      "source": "assets/combat-chibi/riftQueen-cast.webp",
+      "sha256": "690ca9281b646a062d4dcd7fb31acea49d0839ca3b8b8a126e9e77137cd9e816"
+    },
+    {
+      "source": "assets/ui/weapons/weapon_auto_turret_omni_02.webp",
+      "sha256": "882de7902425b17daed0181bdf5b877fb5246576ceec44a4d129dbee47180c8f"
+    },
+    {
+      "source": "assets/ui/weapons/weapon_mine_layer_casual_01.webp",
+      "sha256": "2d02cdcb71099435884122be54e753ba9d61727e74b898f6afc7afec66649883"
+    },
+    {
+      "source": "assets/ui/weapons/weapon_mana_field_casual_01.webp",
+      "sha256": "ae07e7afa515356c89a41954b20e10393df92b96d61c670615d325450f3e8a83"
+    },
+    {
+      "source": "assets/effects/effect_mana_field_aura_01.png",
+      "sha256": "5317031aaedf580cef6913bcda91ba1ddf611067f71f9ef87cd437bce5cfcf6d"
+    },
+    {
+      "source": "assets/ui/weapons/weapon_guardian_shuriken_casual_01.webp",
+      "sha256": "3f7e9d5d3e5ee69c82292db693247d768cffb73d79b1e19a6c175031be9752c0"
+    },
+    {
+      "source": "assets/effects/effect_mana_slash_narrow_03.png",
+      "sha256": "235c2b3c5166cc831e2aeb1afaeaff793805f3b6e8591614d55bb52e61144da2"
+    },
+    {
+      "source": "assets/effects/effect_mana_slash_wide_03.png",
+      "sha256": "d298264dd9519df8c91ba7d451a01394988171df27a1b6e5ee003aa23ac20128"
+    },
+    {
+      "source": "assets/effects/effect_vfx_muzzle_01.png",
+      "sha256": "0a2bf506745270dda3f88d3553431c070b08a1d7d4bef3d23dc0baf967b9c616"
+    },
+    {
+      "source": "assets/effects/effect_vfx_impact_01.png",
+      "sha256": "b471f7378f81dee055903460580c603c9fb1335925a0e15fe1244a1900d9ed7d"
+    },
+    {
+      "source": "assets/effects/effect_vfx_critical_01.png",
+      "sha256": "0b47e8f09e47e7ebea15076bae5ed95f8d27055111350d47e77d5531e310b774"
+    },
+    {
+      "source": "assets/effects/effect_vfx_explosion_orange_03.png",
+      "sha256": "3a6d582dc3ae48932a5b896d69928e4915d51035f49fdd04d4cd6d9b8225253d"
+    },
+    {
+      "source": "assets/effects/effect_vfx_explosion_mine_03.png",
+      "sha256": "03f6847cd43a5ef5a34517267548a5c8d8c80692a2b8f11d2d77e131986cc242"
+    },
+    {
+      "source": "assets/effects/effect_vfx_death_smoke_01.png",
+      "sha256": "3a736349954eab129e8ed74a665481f759118aa3d65d8639e770a69bc075d160"
+    },
+    {
+      "source": "assets/effects/effect_vfx_chain_03.png",
+      "sha256": "73eb8622d63dcb0dee61180106ff36211c1c0126f09898bc0cf329b3090065d3"
+    },
+    {
+      "source": "assets/projectiles/projectile_piercing_round_01.svg",
+      "sha256": "577ea449da68d09d8583fdb0caa88f88cf6b9b75249547baace4ef573f411d71"
+    },
+    {
+      "source": "assets/projectiles/projectile_turret_bolt_01.svg",
+      "sha256": "291f7a87d4b263d3b0841df187c0adb74d341125bfce3657f83a967a7ac4cfb3"
+    },
+    {
+      "source": "assets/combat-chibi/song.webp",
+      "sha256": "1278d6846f91753031bf6ed710f5a6bd75b677a85f7919ab768162be5d539767"
+    },
+    {
+      "source": "assets/characters/song_jinwoo_portrait_01.png",
+      "sha256": "aae08cdb836de6554fb73c8fdc2d46cd411e1dcf76487313c83f4fa691eb9b8b"
+    },
+    {
+      "source": "assets/combat-chibi/kang.webp",
+      "sha256": "2623767403162c7f5079c308bd578dcdc3a846e7d4bf7f041040b034b8b22b76"
+    },
+    {
+      "source": "assets/characters/kang_taehoon_portrait_01.png",
+      "sha256": "6108b6ad8299eefd74dbb93b4c2a29699dccbd13a4987599ae03d6e41ed4bbef"
+    },
+    {
+      "source": "assets/combat-chibi/brute.webp",
+      "sha256": "2bf9fe9b9d5a6764976a8d0e5a6f22f08d517b9e49ff9bfbae749886368e5643"
+    },
+    {
+      "source": "assets/combat-chibi/hound.webp",
+      "sha256": "c55118f2d22d21dd1f78ed02f95e8f7adc49f0d0bd2136b16d69a2fd057a69f6"
+    },
+    {
+      "source": "assets/combat-chibi/boss.webp",
+      "sha256": "3402789dad18f8cbf23aaca12968feab059d398716b008b2b218616a6fd0c6d8"
+    },
+    {
+      "source": "assets/combat-chibi/boss-attack.webp",
+      "sha256": "d9de7d9f1361fb8484f1df85d754d07dc051e726fd3ba3e4e948f94570d878be"
+    },
+    {
+      "source": "assets/projectiles/projectile_mana_bolt_01.png",
+      "sha256": "b1f3b9a935fdd060352e08022e47e0f8838a4206f72faa4461b5088c4ce7ba02"
+    },
+    {
+      "source": "assets/projectiles/projectile_mana_shotgun_01.png",
+      "sha256": "76a24a0ac496dcf7dfbeb09a5ac8902780cfdf88b1136d9934690e77690f4815"
+    },
+    {
+      "source": "assets/projectiles/projectile_mana_bombard_orb_02.webp",
+      "sha256": "83599949a07201c826480ca23741df71624381fc4827a46ea1591836e37dd37b"
+    },
+    {
+      "source": "assets/pickups/pickup_magic_stone_02.png",
+      "sha256": "498f36df222f2d37b5df28cb694cce30bd9928c9c5decb529047cf43a411fe3c"
+    },
+    {
+      "source": "assets/ui/ui_wallet_01.png",
+      "sha256": "d8af20a392fe384f027a2c989a368023d4d4121b83741ad790e936c8ce24a8ae"
+    },
+    {
+      "source": "assets/ui/ui_association_coin_01.png",
+      "sha256": "be18df6c59f14c1025095c931e9c52803f0894ba26668c458c3828e6b4a99d84"
+    },
+    {
+      "source": "assets/ui/lobby/lobby_gate_terminal_01.png",
+      "sha256": "e88f25580b71708a316e13c13f4de9d0d436e54e7684d914225bcaff6347f1bb"
+    },
+    {
+      "source": "assets/ui/lobby/lobby_awakener_id_01.png",
+      "sha256": "4628c86cb94c38349c38ede02331dc96f92d20a1db0e98524894f923f1daa6c1"
+    },
+    {
+      "source": "assets/ui/lobby/lobby_weapon_case_01.png",
+      "sha256": "9a4b0e7e623bb11728a987f9ed5753502708571134ed7d3dc4407e8bba6b91fc"
+    },
+    {
+      "source": "assets/ui/lobby/lobby_association_01.png",
+      "sha256": "34e97c42aa60d8cbdee162af5243c906085632d77875981935d67c5aafc6d17a"
+    },
+    {
+      "source": "assets/ui/lobby/lobby_supply_crate_01.png",
+      "sha256": "250e91a0fe43a409c9c363fbba6e7538716ae32f368df2513083b39881b7e80b"
+    },
+    {
+      "source": "assets/ui/lobby/lobby_future_strategy_01.png",
+      "sha256": "eac7f467abddab2e3498649ce9f8eb1da79edc13c0e06d3cc690daae292ddcba"
+    },
+    {
+      "source": "assets/ui/lobby/lobby_recovery_unit_01.png",
+      "sha256": "055ca01549e2a034242d9b6a86db570ceeb501b627a2cb78982f2c9ff05cd890"
+    },
+    {
+      "source": "assets/ui/lobby/lobby_supply_vault_02.png",
+      "sha256": "c9c061de0a4b6ac73819c357d7655699ccb330f617e59a88d9fe3828c7c4a6fc"
+    },
+    {
+      "source": "assets/ui/lobby/lobby_supply_crate_wide_01.png",
+      "sha256": "e2e268945b763de266d299a4b0313a7d63e906f067e311167169d4cc7da5da69"
+    },
+    {
+      "source": "assets/ui/lobby/lobby_archive_01.png",
+      "sha256": "06c9b4b6628ed269a408ff5aff8a55bea339c50bec848cfac1277905115c4fb3"
+    },
+    {
+      "source": "assets/ui/lobby/lobby_settings_01.png",
+      "sha256": "1fc57fe8a0dfe9461597237e62845aad751e622e34c1ac47889663de6a61b1da"
+    },
+    {
+      "source": "assets/ui/lobby/lobby_supply_ticket_01.png",
+      "sha256": "cb9cf5a8e48b9ce87a16926e804bcbc3cec10f3c67737911a152a77e00b2fdd7"
+    },
+    {
+      "source": "assets/ui/revival/revival_stone_low_01.png",
+      "sha256": "faf42fa795c61948d90bf5364af4b0498a43dfe8fc2bd913259e5adfd2f93a61"
+    },
+    {
+      "source": "assets/ui/revival/revival_stone_mid_01.png",
+      "sha256": "744cfc99df118e5deafbb8793aacb26b5ba0160894ee673ae3f825252aecb149"
+    },
+    {
+      "source": "assets/ui/revival/revival_stone_high_01.png",
+      "sha256": "e1598a1d32e06cc100b43f0dbbc4b668528cf9f4f1b00c66a8e284a1e7b3e19d"
+    },
+    {
+      "source": "assets/ui/items/item_recoil_bracer_01.webp",
+      "sha256": "7d20ecec111a8a3ebee5338f2c2fae7b6ed109b2dd531994e53cb84ae6d9d62c"
+    },
+    {
+      "source": "assets/ui/items/item_vital_ampoule_01.webp",
+      "sha256": "32bb68874a62304c1d1b15f47405bf3986a9213bfc33cd1c7c717080cc43a4ba"
+    },
+    {
+      "source": "assets/ui/items/item_ankle_guard_01.webp",
+      "sha256": "54fffad463af97193420d84f8706ddd0877b6458347acc251efa0841215de3bd"
+    },
+    {
+      "source": "assets/ui/items/item_magnetic_collector_01.webp",
+      "sha256": "381b431f9af2b4479b14d73e744db83fbdad74d08ba17f2ad91b451a243de77a"
+    },
+    {
+      "source": "assets/ui/items/item_reinforced_harness_01.webp",
+      "sha256": "a21a9585623727e24135295c335ecdada31c6ee3dc9c6f62abcb61bf1df0e320"
+    },
+    {
+      "source": "assets/ui/items/item_harmonic_capacitor_01.webp",
+      "sha256": "3b0d729dcb46e1bc5f98dd4699a170a323fa36ff0c2f2d906308a52c690fb9ed"
+    },
+    {
+      "source": "assets/ui/items/item_ion_conductor_01.webp",
+      "sha256": "9da08186e107986843f9eda8846638766638ddac798fa7b8931d141118fd3e58"
+    },
+    {
+      "source": "assets/ui/items/item_shield_emitter_01.webp",
+      "sha256": "907aa8cde9d23d562157525516e2413d2d908068052ddcef223eb36ca0851964"
+    },
+    {
+      "source": "assets/ui/items/item_resonance_prism_01.webp",
+      "sha256": "d00a1b172fa4e8ac53909758072c581932c9760972fc0e29163a0eb00f8ac3f5"
+    },
+    {
+      "source": "assets/ui/items/item_tuned_core_01.webp",
+      "sha256": "6ef85872bd99cc614b14daf1d4569f7232ed2580791b74c461da4bb0bfbbbccd"
+    },
+    {
+      "source": "assets/ui/supply/supply_opening_burst_01.png",
+      "sha256": "1b3626399f123d9ebde10e1de9ba64d2b3eeeae51bcf7574d1030a73b8a85dcb"
+    },
+    {
+      "source": "assets/ui/supply/supply_result_backplate_01.png",
+      "sha256": "777bd3db8420b8759ce4046e5b672e40acc75714e3382ea7c4aff3bd30240e55"
+    },
+    {
+      "source": "assets/ui/meta/meta_growth_lab_01.png",
+      "sha256": "c085e36c52d04ac910491bb2568821e274dc70df9e8e9d8336a9924176f6730a"
+    },
+    {
+      "source": "assets/ui/meta/meta_association_office_01.png",
+      "sha256": "3303365918cd264301a13c55ab7baec8e10edf8df8867fc593afd896265d38bf"
+    },
+    {
+      "source": "assets/ui/meta/meta_offline_terminal_01.png",
+      "sha256": "b59913e7fb8648b79427954a8c3d1cfe0d2cbb3739243f9a38161bb2994acd43"
+    },
+    {
+      "source": "assets/ui/meta/meta_supply_vault_01.png",
+      "sha256": "5b9b90f37f8f00db5759cdb3bbd83fdde6c844da940127a4bad15bfda66f3e5b"
+    },
+    {
+      "source": "assets/ui/weapons/weapon_mana_sword_casual_01.webp",
+      "sha256": "7bc8fb9d1813d03faa3b71f3f1920b8f95d12c9000485a123f6b946e71bc822e"
+    },
+    {
+      "source": "assets/ui/weapons/weapon_mana_bolt_casual_01.webp",
+      "sha256": "834d3427179c827e7e2fb105918b811446bbd4e17fbcf706c0a1b5c5cf64675a"
+    },
+    {
+      "source": "assets/ui/weapons/weapon_mana_shotgun_casual_01.webp",
+      "sha256": "886197b7e8b225595c29780dd415093221cb8caf73e13c6cd38ad6ca4909d3d8"
+    },
+    {
+      "source": "assets/ui/weapons/weapon_piercing_shot_casual_01.webp",
+      "sha256": "0a03b078aec9eefb6369ede02aca32e4fdee0ff1dddf2a28293429c6271739d0"
+    },
+    {
+      "source": "assets/ui/weapons/weapon_chain_lightning_casual_01.webp",
+      "sha256": "429e687a09355d00d2ba291693ece11d5c3fd40b84ecbbaad00a4d4364fb71d7"
+    },
+    {
+      "source": "assets/ui/weapons/weapon_mana_bombard_casual_01.webp",
+      "sha256": "44b519252029aa467de5675712a3a2002c2549fbd7866441a46d578eb834a9e5"
+    },
+    {
+      "source": "assets/ui/archive/weekly_trait_hardened_01.png",
+      "sha256": "7ee8c5561dafa17ab27add11b88d141d5735bb61d25263529a1a0969ac3907da"
+    },
+    {
+      "source": "assets/ui/archive/weekly_trait_violent_01.png",
+      "sha256": "20ad3eea7c6a8391d6d2194647eb9356d1edf49d251df4bf523ffb32f361291d"
+    },
+    {
+      "source": "assets/ui/archive/weekly_trait_crowded_01.png",
+      "sha256": "6931f422f6936fd3bf3893db28aa94651c378ad9fa0c059d59fde27cab413b66"
+    },
+    {
+      "source": "assets/ui/archive/weekly_trait_pursuit_01.png",
+      "sha256": "c96e7b082931d224b40705cb2d6204f1abdc6e2015694c806ae33744671c955e"
+    },
+    {
+      "source": "assets/ui/archive/weekly_trait_elite_01.png",
+      "sha256": "60e5fece441b2d027a37bd67ccc6ee387ea8e8cef3706cf76dc58d9a4baffce7"
+    },
+    {
+      "source": "assets/ui/archive/weekly_trait_attrition_01.png",
+      "sha256": "abd5a876c304de9817f89e3fa1e464eceeda44c34cf552a781e32e7d3e447075"
+    },
+    {
+      "source": "assets/ui/archive/weekly_trait_surge_01.png",
+      "sha256": "81e742d5dfed570b7bdaa898f83e292290fe0c2b01fc875f42982d3439ac74a1"
+    },
+    {
+      "source": "assets/ui/archive/blessing_blade_01.png",
+      "sha256": "0516ddb945f2fe75fbeb9fe6e6e038bcad2c15c228998c2b3a8797b59b9d14ff"
+    },
+    {
+      "source": "assets/ui/archive/blessing_cheonbu_oath_casual_01.webp",
+      "sha256": "01bfe5f61f3fee549124007b2d411f05c11f0171c2599d547a357f6fd0b044f8"
+    },
+    {
+      "source": "assets/ui/archive/blessing_unyielding_jangseung_casual_01.webp",
+      "sha256": "e131e4a1a7094b1e77e303461d112fb5c9ea3c5f5f9124344d858f3d553ca646"
+    },
+    {
+      "source": "assets/ui/archive/blessing_samjogo_wing_casual_01.webp",
+      "sha256": "3736925eb0ff18008420076231db437d896d305323955d44df0fbfbd47dbde84"
+    },
+    {
+      "source": "assets/ui/archive/blessing_white_tiger_eye_casual_01.webp",
+      "sha256": "2912793bac05d2b1b87aecd817ab7da6eeb1ab74d32fb6d59f302ee98e8d2225"
+    },
+    {
+      "source": "assets/ui/archive/blessing_goblin_forge_casual_01.webp",
+      "sha256": "b2fb68ab3a27a9da2a3a6b77ffda88966727304ee991814a7d6fcb29d4a88186"
+    },
+    {
+      "source": "assets/ui/archive/blessing_harvest_knot_casual_01.webp",
+      "sha256": "60f1a4db92e820608727853239c8f655a4ed960831cc9b7d33920d2cb4376cd6"
+    },
+    {
+      "source": "assets/ui/archive/blessing_reverse_scale_casual_01.webp",
+      "sha256": "fa61a1e6c782395cf7e1beba4cfe56f53ce0a6b1f5e69e928b05a4b4f6dc73f2"
+    },
+    {
+      "source": "assets/environment/environment_gate_01.png",
+      "sha256": "53cfa0403253d55aa853e7c3aefaca5b07f09b73d9ade14fb4ad693c21632596"
+    },
+    {
+      "source": "assets/environment/environment_convenience_store_01.png",
+      "sha256": "f2c4ce50c03ca51eb036e4c8117e2d7c86b936ef53cccaed86d12583dbf46b59"
+    },
+    {
+      "source": "assets/environment/environment_subway_entrance_01.png",
+      "sha256": "6e9d6241d161dc1d1221a62140e2b17a61250c16faaf89b67f02f534b532f2df"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/purchase/01.wav",
+      "sha256": "7d01dbd2b888027af82b806be5fca99a5ba63c47cdf15c301982c12e4dcd03fd"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/purchase/02.wav",
+      "sha256": "3d9653e90622a2d5bee882fa8cccf39712751cec58793fcaf0981e374042c33e"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/reroll/01.wav",
+      "sha256": "b56a030f571c3c43d6b9f81aa793a9af91ce9ecc5a671ef679302cceacef71f6"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/reroll/02.wav",
+      "sha256": "01603eaea073da935977a9f7f75bcd42ddb45a59f88efaaae537b61b0784d434"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/lock/01.wav",
+      "sha256": "8c84f7939fc7d0baf5b03699f9268bb6356007bd11b96dc8ec840c21897d76d4"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/lock/02.wav",
+      "sha256": "d67e8a27de86061167aa0b749651fecf0d573278a16f19929124e75cf9f9e5a9"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/weaponPurchase/01.wav",
+      "sha256": "5251f9cd386c3b075563f78d7d522970ce60b6fa45abca4429c64e35a7839ca7"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/weaponPurchase/02.wav",
+      "sha256": "33bf4e7e8fbc6a6899e443373416e5bc397c0c837f8a1e69bb9ce01c13b0f0b1"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/branchChoice/01.wav",
+      "sha256": "fbc7f6fa525cbdcffd87a5ecc679af3778b179feb0d77e30dfa262ecc6bad377"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/branchChoice/02.wav",
+      "sha256": "b2b947c9cfd0948a19aff286980b64ebec87aafa664db29af0d05801bc6abd49"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/critical/01.wav",
+      "sha256": "35cbce0034ffa2d0ea71e0dc125dd11520f23554e7fb1f6b6dc8523aaea8f62d"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/critical/02.wav",
+      "sha256": "6d17e5836f904bce5358f7d4c5f363d9bce91ac73c9497034ab6f72213042d07"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/critical/03.wav",
+      "sha256": "57414bd7919feb76b0027458fb16c7edd55df091e288e9955d448e14e47688e5"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/critical/04.wav",
+      "sha256": "ba335303105e159bf5ef5b621ce4f573fe286df70cca88c2dc6d55ea4ad9f63d"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/eliteSpawned/01.wav",
+      "sha256": "96eb0d5b0b089127b018b49ff833c2ea8aef01c39129db815581d9c46a6413c4"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/eliteSpawned/02.wav",
+      "sha256": "76a83f634cee6a27c2224ee3142eefc6e59990e6435bc9c89ab7c6d31091f2de"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/waveStarted/01.wav",
+      "sha256": "933b1e7a371d8c2186a8622a942d027b44393d94d0e0483de513a5e5e792c80b"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/waveStarted/02.wav",
+      "sha256": "c5fcbe2496221e8cd1d401260236afa4b81e2ad39e4c0966544ed435003d2466"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/waveCompleted/01.wav",
+      "sha256": "b0d9d87ac2e15ee0c4995e32bfaabc6d22ea53b63f63c0614dcbc05756e9a03b"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/waveCompleted/02.wav",
+      "sha256": "bd24eaee9cbfa1cabd6889259b6ab580fd0689285f879e0cb9757b425b602c26"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/waveCountdownTick/01.wav",
+      "sha256": "dc53ee6e51054814831dd6437fea816441593d2c97b1bd40b7e983970ab16c2a"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/waveCountdownTick/02.wav",
+      "sha256": "bbb67ecef42e0fec63ac82bd930fccb2a9a2543dfb9bb9b543a9cbe4dd460e32"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/slashAttack/01.wav",
+      "sha256": "0431b25f1e5ef3e1b9f7c4ad854342b2e607b968395a2ebbcbe05ce855dd861d"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/slashAttack/02.wav",
+      "sha256": "69b8755a6f14cbe0e739f1c9284d6c411e278335e4b6f0cb46b8112ec104d01b"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/slashAttack/03.wav",
+      "sha256": "a507d88d60b9a7f1e629e09f4ecb6ebbb297bb7f26b44e55e5b2e09b4bb6afd1"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/slashAttack/04.wav",
+      "sha256": "e0b7302a43adaf7ed0e4a6effd0de42f10f33a5d60ca66a682694fbd4fb9a588"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/orbitAttack/01.wav",
+      "sha256": "8124035063b0cff63e8fb2c90f0136df85df5cad90ab940b8990950874b5ff25"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/orbitAttack/02.wav",
+      "sha256": "20b798814915b11dfffae94c59593366cc6c52ce03f30e2191620cbe90b2fb41"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/orbitAttack/03.wav",
+      "sha256": "e0edc54972f2ab37d56bf31d7d365f8802a4d1d00d1f2b060cb4bf7c3152de31"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/orbitAttack/04.wav",
+      "sha256": "78c3ae7632cb0cf60dd462e1e0cfcf18ee20cf46c66ba2af7f6892e2fc1cd322"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/chainAttack/01.wav",
+      "sha256": "55cc7af8776985772580255a9bc84099166318134e98aff56ab21c5e3546833e"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/chainAttack/02.wav",
+      "sha256": "b6a969338367f6aa5768d46a615de96e3d44937b718cbd1351930c24f527341d"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/chainAttack/03.wav",
+      "sha256": "3e5930347ccbfa394743b1595eac4fc4772a69ef00a5537f28691a8d0f2d9dde"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/chainAttack/04.wav",
+      "sha256": "9ec7f1acb3ccef866cfdee8c7841fd7f57cd9089360a65861cdb4c63f665c25e"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/bombardAttack/01.wav",
+      "sha256": "34688c3a6a781e3ad83801ac8bce3ecf6f87b61a2abe0d68e2389e00aeb7b82c"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/bombardAttack/02.wav",
+      "sha256": "ea1c118415b705312446b3110829e81e1ddc47e3fbaae40877cc45309c255f5b"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/bombardAttack/03.wav",
+      "sha256": "f6096cde9812fbe216a4bb41950ab5d75c438570dda96a45001fa9762b1fb955"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/bombardAttack/04.wav",
+      "sha256": "d83ebea4c8c5eca27001757e675b50d0d343f73219fbeb801f88a1ac5b2d9f17"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/piercingAttack/01.wav",
+      "sha256": "4f1d2e4343f09ffb912a1a17077ef5201f51574c7508be6411a2d7ad28dc0cf8"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/piercingAttack/02.wav",
+      "sha256": "3685853f5aa752977d9d3026c1183abdd0152e6e7044e3fcff377fe615c8cc71"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/piercingAttack/03.wav",
+      "sha256": "e4986e3c8868c8898ef61b4ee374b7af0cfdf528bf4df920ac53a199efb59586"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/piercingAttack/04.wav",
+      "sha256": "760ab62c333a75f647cd6f5689af659300ab78c5bfe9ce895e9612ecb0978125"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/turretFired/01.wav",
+      "sha256": "ca6af20991f312eaa806bc9a9579666630088ebdb81cec80a67f3f960d9b45be"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/turretFired/02.wav",
+      "sha256": "023ccded3facfad3c0fe40675ecc0c4d791fd22c6eebf4f1dd4873c5f8c5c45e"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/turretFired/03.wav",
+      "sha256": "b9b309704524f47f982a7e1020ea231fc94243eb4fdd7bcc8a3f72b4f5cfb34c"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/turretFired/04.wav",
+      "sha256": "6423cf81b0f80d3651604a200440461b14a2bb3cdec54fc2051e5df60bd1a3fc"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/minePlaced/01.wav",
+      "sha256": "6415c3eea4a9b61774db358a59a4fe2a2f7a806cd49a91da87f49542812bcac5"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/minePlaced/02.wav",
+      "sha256": "36e8e5ae855b30d4d98b06434843ac617ecad477fe2a1833615cde4b09056439"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/minePlaced/03.wav",
+      "sha256": "1081d35057cb95447c1e03cab436024e9c1c31c754bbc7431b82e824220f094e"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/minePlaced/04.wav",
+      "sha256": "e56c832fcbd9ea9719fea43605b2a3c86889a87768914071dc6edabe8e56a6df"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/mineExploded/01.wav",
+      "sha256": "84591783674007ebe06a9b20b32d5dfd3045df2af8b215c4c13eb8f44ee4a033"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/mineExploded/02.wav",
+      "sha256": "eb4d2c89bc40ed9c66af8cdb1e57f59999a724d11a967979c8f699de6a0b5406"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/mineExploded/03.wav",
+      "sha256": "d7b570eaf00da8965f3d07fe58a21c2203b219bab5957a52dd84f082a5d47632"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/mineExploded/04.wav",
+      "sha256": "34abc81378a0dd20887daff362cd024a053a2b3bdfc929eaffeed45716a0222f"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/fieldActivated/01.wav",
+      "sha256": "471df8e358674a716b616a75906de2ce7b27d79e8c0e51dcbbd24ba8f3aa121e"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/fieldActivated/02.wav",
+      "sha256": "2f4556901bf78739c5ddb9008af280839707b3291de2dbfb6a9579fcdf4babd6"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/fieldActivated/03.wav",
+      "sha256": "1310057b284600de307fc6d1eaed0afce2276347c1ec4a68872463daf5b20f07"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/fieldActivated/04.wav",
+      "sha256": "5def48cd991f293c1964f224535319ff3f9ac093ae6beced3da309293b6ef9ec"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/weaponFired/01.wav",
+      "sha256": "eaa48a70b83e3348987656a02f8191c5b5e0e74aba0faddadfcf4333f1a5c133"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/weaponFired/02.wav",
+      "sha256": "92f20c10e421ae6a39615edc5cc4e0e458ef410cffdb8273b21f83ee2afe7aec"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/weaponFired/03.wav",
+      "sha256": "a7a1cc36d696269931f0c4ffe6ac11b131ec2b15e3c247da10705e9413abd8cb"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/weaponFired/04.wav",
+      "sha256": "920f77f4c8ee7fe1a297b6be9addefce2a35224ada269da6ae55b25c0f9a0615"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/enemyHit/01.wav",
+      "sha256": "80a18651d55660df1bade652ed24289954bcff394b5d5bc9e4834655110e045f"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/enemyHit/02.wav",
+      "sha256": "b7f4f1f6bcd031747acb430793e78d8827554367dd71a7dd42547716667440ba"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/enemyHit/03.wav",
+      "sha256": "718e61e740a8aa77a949859ce3e27506ffba7d4364f40b4ea46500227df58fb8"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/enemyHit/04.wav",
+      "sha256": "6f8976e0e83da3a0db366ca4b6f08eaf83bbed9cd3263c0d581ca03f375b4a38"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/enemyKilled/01.wav",
+      "sha256": "a4d7fb18926dd53ab5d550c2ec5cdf64739b4dbbbe203892e822452185969a90"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/enemyKilled/02.wav",
+      "sha256": "d13900c5b5fdd623449b52150663008d9e1e1cc29fde8c726019e90616e2214d"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/enemyKilled/03.wav",
+      "sha256": "50a44c1a8f860a25af5f70feee1b101f260299dfc01b5151b862aff3b88c8532"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/enemyKilled/04.wav",
+      "sha256": "a28c7aaa019260e8beabd0bd2e7014be4b4fbd08269358449d04c0c1a4aba1d4"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/magicStoneCollected/01.wav",
+      "sha256": "3f45e7fd0394ba28524075e2080c975da991256ac6b6b28a8028bdeb7079172b"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/magicStoneCollected/02.wav",
+      "sha256": "a8636d5a6cab2ba38d28387cf69a1e2254fbb5018a5e3b19906ab4adeded8729"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/magicStoneCollected/03.wav",
+      "sha256": "2420c9ad501ba68daa9a865635d2f4c555867fee70bd59d9bde8e01f03de899a"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/magicStoneCollected/04.wav",
+      "sha256": "8e5d987eb7ad3d0d3b55f10deb84f5ccd7e7cda5d730617211d20f9bcb1adb2a"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/walletSweep/01.wav",
+      "sha256": "79e9907355c1c01808161cd9c54397bbf40113adde34783b4a7c22819ff07006"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/walletSweep/02.wav",
+      "sha256": "8ac6b9596da5a9846e00cc8f7709dd97a5743c90267d36c8d816a048118c789d"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/buttonClick/01.wav",
+      "sha256": "bea273bd5650056232c4fecdd760a2a5da2feb18cd1d0bedc4ffd8e2cf54fb97"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/supplyLatch/01.wav",
+      "sha256": "878e42fdcef1d76c7dd9f5ceed92b39f739ced926eb5bdf4ed76b72ab6136912"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/supplyLatch/02.wav",
+      "sha256": "a946d89908ac70112ee2e7cabe734ff5a4f894de0f9be2179a7b579d7dea1aa1"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/supplyFanfare/01.wav",
+      "sha256": "1a9115f9708badf3ce859387abf7628230caa9337f28061d5934cf3d65b7d8f1"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/supplyFanfare/02.wav",
+      "sha256": "4ead46076feef3be7848bb034c9a8bb22e35025b681d1bc3d558083accde998b"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/playerHit/01.wav",
+      "sha256": "72bcaf70d8984eeb737cc36791cbb56275bf5568affe88a90f041e2c13c4aecb"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/playerHit/02.wav",
+      "sha256": "66af7e0d14e7056a6281322291a14bf74d07053410757ae0ca8cf8faa78e2ac1"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/playerHit/03.wav",
+      "sha256": "4913fded9396a343a5e7c6254956aa4d2ba45d10438077891c55a5e0664be0eb"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/playerHit/04.wav",
+      "sha256": "1926746365fda885d22f678ed13aca759e5a2bfdec4f9189630d49107ceb6e49"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/bossSpawned/01.wav",
+      "sha256": "158a52b66cc32c031cceb71fe68bf050a95cfb1a54f4babc82dd7615bcf6f5d9"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/bossSpawned/02.wav",
+      "sha256": "af101670175603703589d69bf69851a492143acec6d7d43bc9bf1b903a192444"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/stageClear/01.wav",
+      "sha256": "e4bc32dcf85e5c4af10d8fe4a957e48c67df5765b34cd7b0f2ddb4c79725bf73"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/stageClear/02.wav",
+      "sha256": "34ab7937ea1f81c532f042ba8a8f4528dd431ebe68dbcf41232e4693549cbb8b"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/gameOver/01.wav",
+      "sha256": "a065eeff9b721701b35216198448f06231c675f58861fd5124224a564844987f"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/gameOver/02.wav",
+      "sha256": "e630a93605c0a91715ddf39912862c88f360ebb678de2513f9a20d7389391417"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/shotgunAttack/01.wav",
+      "sha256": "7449b6195ee77d12a413cd37aa56f5095fbd479b27adfb3341ec419ffe435993"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/shotgunAttack/02.wav",
+      "sha256": "da688f34fa3cafc7f660abe64829ad7dee3520800c004dd522218123e62a28d8"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/shotgunAttack/03.wav",
+      "sha256": "669c371110bc8b0f642c96e728da013dcdebeee09da5e04ca67a83c961c33f7f"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/shotgunAttack/04.wav",
+      "sha256": "e44c2ed01abee2fb4355bb0be6282faa2b2cabd6f442fb3e5e4edfd063536b9f"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/bombardLaunch/01.wav",
+      "sha256": "f91591a4e75575273d5e70b9135c6d64b3ac2a70153c9fe9258656ce9063f724"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/bombardLaunch/02.wav",
+      "sha256": "c710c56bad5b084186b347fe57a40e06990037430d1d947025a6927ba6f5c252"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/bombardLaunch/03.wav",
+      "sha256": "51af88545e62760f97cc6e896f0e6933bab6de0067ec91708e8118b5726a78d2"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/bombardLaunch/04.wav",
+      "sha256": "f1edd731bb6cfafb3713145ca092ba6833b7c57fd3ed40fee183148d3d9f4cfd"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/chainHop/01.wav",
+      "sha256": "aed27252486357385557b3d2a86dfc52b2f448eb03b17a4aa2087a73b3d26dd3"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/chainHop/02.wav",
+      "sha256": "df9ab2541bce64383f907f68990e3573323d4ea945bfe76e3b54a4dbc534a687"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/chainHop/03.wav",
+      "sha256": "b06584453e88c803528fa22bd92e0601047b5a5d47fdff0a6305d29763dd6ec7"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/chainHop/04.wav",
+      "sha256": "08dca8a723dc31ea4d2b109812a7b806399bb391e927af35a7da5b5035205d65"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/enemyProjectile/01.wav",
+      "sha256": "6d981bc1877c94d69376a4018359e9f2d05e211c196e83ca44b4406340f57775"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/enemyProjectile/02.wav",
+      "sha256": "59da9145cc5e78444c37b721d785434b1c69300f23cb7a24371a891161cadee6"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/enemyProjectile/03.wav",
+      "sha256": "ff234233d8c7f0847c835038f21707f61e8259d7698bc079a96b8d6bb48ead74"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/enemyProjectile/04.wav",
+      "sha256": "3f4695931ec0e0a2fc6d8a1c8c63562ce83283db6d402a18aa2af6e7f60087fa"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/enemyCharge/01.wav",
+      "sha256": "b288f9ce13651489b146ab21202b037663293479dbf631ebd49a3f3a59cf458b"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/enemyCharge/02.wav",
+      "sha256": "9528bdc7803341933d95c1bcca567dac918487f4065090f3a1ad522da41414fd"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/enemyCharge/03.wav",
+      "sha256": "4dc3b85cf18e347c79c72af436301aaf81c7e6bfa2f5ebff0e1f7ccb2a47d814"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/enemyCharge/04.wav",
+      "sha256": "310e65204b7af09c391e6d42071ffa902ee0dc364a84425c73be9e2843be97ff"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/enemySupport/01.wav",
+      "sha256": "0ba00a9ebaeeb7d16e811710dba3bfe69f63ea9960e728d38e174401038253fb"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/enemySupport/02.wav",
+      "sha256": "9696ec6a00aa9da37d9f58cf25a523e6f2f0a4b179bbbfae93436104e00829b4"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/enemySupport/03.wav",
+      "sha256": "39b7edf391820f6850c3d6c19a0fa237c1061b605f5aa94205cdf5329a7ca904"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/enemySupport/04.wav",
+      "sha256": "f163886f197bca218033a78af5d53eb94265b66fd1fb804b6503d889209d661d"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/enemyDetonate/01.wav",
+      "sha256": "f3a3b8c7a603b1f90af82deda1af0b0acd1d18324a651e297d57886308125ca1"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/enemyDetonate/02.wav",
+      "sha256": "77b8cd60544db43d8e6c7ac3725df697816c6441c3aa08fa6214a6395049eb19"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/enemyDetonate/03.wav",
+      "sha256": "3e11e711d51a12372378ce3fcf8fc9cb6bae90a213e595fce7796f1d50596409"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/enemyDetonate/04.wav",
+      "sha256": "a5a92ffb69a87b948f1bc4f2a06a2b08794e9dc169a1abe56a680d729c967dce"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/bossAttack/01.wav",
+      "sha256": "4a07b534dbd548fa65efa9351b5d77d977150a4fd363fe2810df3787d0a8d737"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/bossAttack/02.wav",
+      "sha256": "c609156db002ce998b6ba6ae5f6d086a7403fb2213e089956d18c9d53792fb48"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/bossAttack/03.wav",
+      "sha256": "002d289373dd9806ca38b849f7c9f4ef9529ade393f447875155dcf62ceefec0"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/bossAttack/04.wav",
+      "sha256": "56ea89eb38198c6e029a2731cdd3c4d0b037eff7a52948cebd7424ca11f27525"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/lobbyRain/01.wav",
+      "sha256": "0669000f36b68da8d8e7426dfdb995f51f9afd30e1d26d25cfc5c91968ea3493"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/lobbyWind/01.wav",
+      "sha256": "f895e8a02769a3b98c40bc503abe1d49ffe55b4170d2dbe780eadace2db9e5aa"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/lobbyGate/01.wav",
+      "sha256": "70a66deef4505f24c61392475bc1be3cef46b4da969996dbb3207cbc86210870"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/lobbyWinter/01.wav",
+      "sha256": "39ccbe9d8c617b5fbf246eb37f044a11ab1fed097d49d116104a0bbd3ff42f0e"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/lobbyRoof/01.wav",
+      "sha256": "b778476b7e0e7da9812a8c787dca7d471dce85380ea5cf27ba560d7e5aa001a4"
+    },
+    {
+      "source": "assets/audio/bgm/provided/menu_01.mp3",
+      "sha256": "00875eed9e5562be7ec64ca4095c4ba6d20347ee1035f36a664009335d26b1ea"
+    },
+    {
+      "source": "assets/audio/bgm/provided/menu_02.mp3",
+      "sha256": "c4d4804020659e00b3b8ed90918b54f75429e92b26a88358c6913b350dcbb7c0"
+    },
+    {
+      "source": "assets/audio/bgm/provided/menu_03.mp3",
+      "sha256": "b302b4a0d8b53fcdc5594239b7ab51257feab41cc7c5ec7604fb447d814d09ab"
+    },
+    {
+      "source": "assets/audio/bgm/provided/guild_01.mp3",
+      "sha256": "444d24862ee734c7dcd232048d97f59e63251369b9ef73c91b006e1b448568fc"
+    },
+    {
+      "source": "assets/audio/bgm/provided/combat_01.mp3",
+      "sha256": "c8ec2f17f6d97aafb20c8e9cdcba4ba1b967fef6cc6ce8808f3251530fb17d2d"
+    },
+    {
+      "source": "assets/audio/bgm/provided/combat_02.mp3",
+      "sha256": "e4e07276db401dbfc1eb3932633bbad558400abc3ca5a241f8215c41adef5d5e"
+    },
+    {
+      "source": "assets/audio/sfx/reborn-01/provenance.json",
+      "sha256": "62f1e9592229be02dae2507f1476033bea4a75ccedbde5c8b2f21fb5f5b632a0"
+    },
+    {
+      "source": "assets/ui/inventory-transparent-provenance.json",
+      "sha256": "752640243239b182ed67b55ef0c3dda2b392340e091b1815fa66809a7ddef32f"
+    },
+    {
+      "source": "assets/content-2026/provenance.json",
+      "sha256": "4e247f61c4478089a98776946c682bc3bcf9b9e183627434df14dc7a888e8a37"
+    },
+    {
+      "source": "assets/characters-sd/provenance.json",
+      "sha256": "54a3cd7495f13ed373343402a7d1f5be05193509fcb1657c4ad8b210c3c469b9"
+    },
+    {
+      "source": "assets/characters-sd/provenance-02.json",
+      "sha256": "97788c844d4c64f60b464e8059a9adbd8cd473c4759749abefc131fd64e579df"
+    },
+    {
+      "source": "assets/monsters-sd/provenance.json",
+      "sha256": "4aafe278688873171ff798604e47f1899653071dde5c1d71f06b6c796b36c3df"
+    },
+    {
+      "source": "assets/lobby-sd/provenance.json",
+      "sha256": "d318229895355f668adca725ea5878f2427f3b83c91f7dc7fc9421bfcc769fc9"
+    },
+    {
+      "source": "assets/environment-sd/provenance.json",
+      "sha256": "a406e2a425eeb4955763213a2c9d2c0836d55f481338cd100b76935d17a771b0"
+    },
+    {
+      "source": "assets/environment-sd/provenance-03.json",
+      "sha256": "b9b4e6bf01a3200a09f930a69efa38b9fc362e7ba24be4c36c2014a97b1bf7fe"
+    },
+    {
+      "source": "assets/visuals/structures/provenance.json",
+      "sha256": "65fcbc21a24020244df6524380d8d8322a8e94f22c079e214b788a898bac9cbe"
+    },
+    {
+      "source": "assets/ui/urban-operation/provenance.json",
+      "sha256": "32e9dc8738141f4ea13f8e940091f9cf99870f03387ae45332b0b0a42edfbb9b"
+    },
+    {
+      "source": "assets/ui/image-skin/provenance.json",
+      "sha256": "c1025e577be6c49c1668a194a817152dfcb8131b1c4a159bd8f36e7ac7a7a3c9"
+    },
+    {
+      "source": "assets/ui/image-skin/runtime/provenance.json",
+      "sha256": "1ce41f35341f5f18e68c9a0f641372260450ea1cdd92de0accf3e861dd432d06"
+    },
+    {
+      "source": "assets/ui/fonts/BMJUA.ttf",
+      "sha256": "e8e6aa8b1b662c7bf0d7f136f29e822e0985176458a6e5d0ba08afc4a5c901a9"
+    },
+    {
+      "source": "assets/ui/fonts/Paperlogy-4Regular.ttf",
+      "sha256": "05e1021e3de620dddc97875342e2be1a94c5f8e9b9f792bd16c4c1d0085343b3"
+    },
+    {
+      "source": "assets/ui/fonts/Paperlogy-8ExtraBold.ttf",
+      "sha256": "fb0324f8ac057e50f4f4632331617e347bfe5a04184f7b0db514be682fb6b25c"
+    },
+    {
+      "source": "assets/ui/fonts/KMU80HaeongSans.ttf",
+      "sha256": "df9f536e641de9637041ce763c653b02ccd21f336246a2e30700c9d25f5e90f5"
+    },
+    {
+      "source": "assets/ui/fonts/BarlowCondensed-SemiBold.ttf",
+      "sha256": "0d6fc1596f18256209e2deeb99aed78c499e4c6393ac1e3da416c9b0b7492a64"
+    },
+    {
+      "source": "assets/ui/fonts/BarlowCondensed-Bold.ttf",
+      "sha256": "db43b7915c132d4e4ec6d7512f5d3c229f1f4440d94e3c5f8cb9912d3aec11b9"
+    },
+    {
+      "source": "assets/ui/fonts/SOURCES.md",
+      "sha256": "237049cbe2c61b952ab1a3163832c91f54f94283050985aa0fc245749a58b417"
+    },
+    {
+      "source": "assets/ui/fonts/BarlowCondensed-OFL.txt",
+      "sha256": "186d750eb496a4c17a76385f82be6aea2ac1cf2de074a811d63786cf374ea73f"
+    },
+    {
+      "source": "assets/ui/fonts/OFL.txt",
+      "sha256": "82e9c8a4b203261f10ddba1296422d64914ff3d4b7bd8a12896d03f0f088d70a"
+    },
+    {
+      "source": "assets/ui/fonts/font-import-provenance.json",
+      "sha256": "c36f70c72001522f001c7469af722b1576baabdbbcf95721478c503c5a853ce0"
+    },
+    {
+      "source": "design/ui-premium-v5/assets/lobby-rain.png",
+      "sha256": "57d9e878d19bc4c4a013556ceb22be78534635ac365e1a8c9c6bf7ca482f93c3"
+    },
+    {
+      "source": "design/ui-premium-v5/assets/lobby-wind.png",
+      "sha256": "e660da5715cd0fd0737af78fbb75ed789a388e5850c4efe65bf354b4d74c644c"
+    },
+    {
+      "source": "design/ui-premium-v5/assets/lobby-energy.png",
+      "sha256": "9671037be1e6f3be21d32de873d2f6c41a3031b33664041771557b3064c816ab"
+    },
+    {
+      "source": "design/ui-premium-v5/assets/lobby-checkpoint.png",
+      "sha256": "de9898a53183ec8d14076c100a0e23a701c667ec0feb69456ce9e3ad4b2ec177"
+    },
+    {
+      "source": "design/ui-premium-v5/assets/lobby-rooftop.png",
+      "sha256": "dd3f3f006b8d12546b587eee7ea5fdad8154b96eb9f55b8729289c221419d473"
+    },
+    {
+      "source": "design/ui-premium-v5/assets/generated-v5.json",
+      "sha256": "0c45cf68c67e79901cca4171906b669a55c43c1253b0b58ec0aab77677d8541b"
+    },
+    {
+      "source": "design/ui-premium-v5/assets/generated-v4.json",
+      "sha256": "32e00b35ded5a4300dc348d90396ba34d2b4ff70607d9ef6286ee576382e0b42"
+    },
+    {
+      "source": "design/ui-premium-v5/assets/provenance.json",
+      "sha256": "d6c7ac938afbe967e9b27efdf7260863a00ca7ce8f7095e0fb6d0e7a036030d1"
+    }
+  ]
+}

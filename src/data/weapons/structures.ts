@@ -1,3 +1,4 @@
+import { weaponShopCardText } from '../shopCardText';
 import type { Weapon } from '../types';
 import { expandWeaponProgression } from './progression';
 export const structureWeapons: Record<string, Weapon> = {};
@@ -7,7 +8,7 @@ const definitions = [
   { id: 'manaField', name: '마력장 발생기', kind: 'aura' as const, capabilities: ['STRUCTURE','AURA','AREA','DURATION'] as Weapon['capabilities'], damage: 12, cooldown: 0.85, range: 1, duration: 7, maxCount: 2, placementInterval: 6, radius: 130, color: 0xb99bff },
 ];
 for (const d of definitions) structureWeapons[d.id] = expandWeaponProgression({
-  id: d.id, name: d.name, description: d.kind === 'turret' ? '고정 위치에서 자동 조준 발사' : d.kind === 'mine' ? '적 접촉으로 폭발하는 지뢰 설치' : '고정된 마력장에서 주기적으로 범위 피해',
+  id: d.id, name: d.name, shopCardText: weaponShopCardText[d.id]!, description: d.kind === 'turret' ? '고정 위치에서 자동 조준 발사' : d.kind === 'mine' ? '적 접촉으로 폭발하는 지뢰 설치' : '고정된 마력장에서 주기적으로 범위 피해',
   targeting: 'nearest', behavior: 'structure', capabilities: d.capabilities, maxLevel: 6, branchAtLevel: 3,
   structure: { kind: d.kind, maxCount: d.maxCount, placementInterval: d.placementInterval, triggerRadius: 30, sprite: d.kind === 'turret' ? 'turret' : d.kind === 'mine' ? 'mine' : 'field' },
   base: { damage: d.damage, cooldown: d.cooldown, range: d.range, duration: d.duration, projectileCount: 1, projectileSpeed: 600, penetration: 0, projectileRadius: 6, blastRadius: d.radius },

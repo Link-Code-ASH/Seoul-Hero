@@ -1,0 +1,2508 @@
+{
+  "packs": {
+    "panels": {
+      "file": "imageSkinPanels",
+      "columns": 3,
+      "rows": 2,
+      "asset_scale": 4,
+      "roles": {
+        "cabinet": {
+          "cell": [
+            0,
+            0
+          ],
+          "rect": [
+            31,
+            29,
+            467,
+            440
+          ],
+          "slice": [
+            62,
+            62,
+            62,
+            62
+          ],
+          "padding": [
+            18,
+            18,
+            18,
+            18
+          ]
+        },
+        "info": {
+          "cell": [
+            1,
+            0
+          ],
+          "rect": [
+            542,
+            36,
+            451,
+            428
+          ],
+          "slice": [
+            56,
+            56,
+            56,
+            56
+          ],
+          "padding": [
+            16,
+            16,
+            16,
+            16
+          ]
+        },
+        "card": {
+          "cell": [
+            2,
+            0
+          ],
+          "rect": [
+            1038,
+            35,
+            467,
+            433
+          ],
+          "slice": [
+            34,
+            34,
+            34,
+            34
+          ],
+          "padding": [
+            11,
+            11,
+            11,
+            11
+          ]
+        },
+        "header": {
+          "cell": [
+            2,
+            0
+          ],
+          "rect": [
+            1038,
+            35,
+            467,
+            433
+          ],
+          "slice": [
+            34,
+            34,
+            34,
+            34
+          ],
+          "padding": [
+            12,
+            10,
+            12,
+            10
+          ],
+          "source_role": "card"
+        },
+        "footer": {
+          "cell": [
+            1,
+            1
+          ],
+          "rect": [
+            537,
+            519,
+            461,
+            434
+          ],
+          "slice": [
+            56,
+            56,
+            56,
+            56
+          ],
+          "padding": [
+            16,
+            16,
+            16,
+            16
+          ]
+        },
+        "popup": {
+          "cell": [
+            2,
+            1
+          ],
+          "rect": [
+            1040,
+            521,
+            464,
+            426
+          ],
+          "slice": [
+            48,
+            48,
+            48,
+            48
+          ],
+          "padding": [
+            14,
+            14,
+            14,
+            14
+          ]
+        }
+      },
+      "image_id": "imageSkinPanels"
+    },
+    "buttons": {
+      "file": "imageSkinButtons",
+      "columns": 3,
+      "rows": 2,
+      "asset_scale": 4,
+      "roles": {
+        "primary": {
+          "cell": [
+            0,
+            0
+          ],
+          "rect": [
+            36,
+            263,
+            471,
+            186
+          ],
+          "slice": [
+            55,
+            40,
+            55,
+            40
+          ],
+          "padding": [
+            15,
+            10,
+            15,
+            10
+          ]
+        },
+        "secondary": {
+          "cell": [
+            1,
+            0
+          ],
+          "rect": [
+            534,
+            263,
+            471,
+            186
+          ],
+          "slice": [
+            55,
+            40,
+            55,
+            40
+          ],
+          "padding": [
+            15,
+            10,
+            15,
+            10
+          ]
+        },
+        "selected": {
+          "cell": [
+            2,
+            0
+          ],
+          "rect": [
+            1032,
+            263,
+            470,
+            186
+          ],
+          "slice": [
+            55,
+            40,
+            55,
+            40
+          ],
+          "padding": [
+            15,
+            10,
+            15,
+            10
+          ]
+        },
+        "disabled": {
+          "cell": [
+            0,
+            1
+          ],
+          "rect": [
+            36,
+            579,
+            471,
+            185
+          ],
+          "slice": [
+            55,
+            40,
+            55,
+            40
+          ],
+          "padding": [
+            15,
+            10,
+            15,
+            10
+          ]
+        },
+        "locked": {
+          "cell": [
+            1,
+            1
+          ],
+          "rect": [
+            533,
+            578,
+            472,
+            186
+          ],
+          "slice": [
+            55,
+            40,
+            55,
+            40
+          ],
+          "padding": [
+            15,
+            10,
+            15,
+            10
+          ]
+        },
+        "tab": {
+          "cell": [
+            2,
+            1
+          ],
+          "rect": [
+            1032,
+            578,
+            470,
+            186
+          ],
+          "slice": [
+            55,
+            40,
+            55,
+            40
+          ],
+          "padding": [
+            15,
+            10,
+            15,
+            10
+          ]
+        }
+      },
+      "image_id": "imageSkinButtons"
+    },
+    "glass": {
+      "file": "imageSkinLobbyGlass",
+      "asset_scale": 8,
+      "opacity": 0.28,
+      "roles": {
+        "guild": {
+          "rect": [
+            132,
+            138,
+            868,
+            1172
+          ],
+          "slice": [
+            156,
+            156,
+            156,
+            156
+          ],
+          "asset_scale": 8,
+          "padding": [
+            8,
+            8,
+            8,
+            8
+          ]
+        },
+        "growth": {
+          "rect": [
+            132,
+            138,
+            868,
+            1172
+          ],
+          "slice": [
+            156,
+            156,
+            156,
+            156
+          ],
+          "asset_scale": 8,
+          "padding": [
+            8,
+            8,
+            8,
+            8
+          ]
+        },
+        "association": {
+          "rect": [
+            132,
+            138,
+            868,
+            1172
+          ],
+          "slice": [
+            156,
+            156,
+            156,
+            156
+          ],
+          "asset_scale": 8,
+          "padding": [
+            8,
+            8,
+            8,
+            8
+          ]
+        },
+        "recovery": {
+          "rect": [
+            132,
+            138,
+            868,
+            1172
+          ],
+          "slice": [
+            156,
+            156,
+            156,
+            156
+          ],
+          "asset_scale": 8,
+          "padding": [
+            8,
+            8,
+            8,
+            8
+          ]
+        },
+        "supply": {
+          "rect": [
+            132,
+            138,
+            868,
+            1172
+          ],
+          "slice": [
+            156,
+            156,
+            156,
+            156
+          ],
+          "asset_scale": 8,
+          "padding": [
+            8,
+            8,
+            8,
+            8
+          ]
+        },
+        "cell": {
+          "rect": [
+            48,
+            115,
+            695,
+            718
+          ],
+          "slice": [
+            70,
+            70,
+            70,
+            70
+          ],
+          "safe_padding": [
+            10,
+            8,
+            10,
+            8
+          ],
+          "asset_scale": 4,
+          "opacity": 0.5,
+          "file": "assets/glass-01.png"
+        },
+        "tools": {
+          "rect": [
+            802,
+            132,
+            687,
+            177
+          ],
+          "slice": [
+            60,
+            40,
+            60,
+            40
+          ],
+          "safe_padding": [
+            12,
+            6,
+            12,
+            6
+          ],
+          "asset_scale": 4,
+          "file": "assets/glass-01.png"
+        },
+        "shadow": {
+          "rect": [
+            850,
+            430,
+            520,
+            180
+          ],
+          "slice": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "safe_padding": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "asset_scale": 4,
+          "file": "assets/glass-01.png"
+        }
+      },
+      "image_id": "imageSkinLobbyGlass"
+    },
+    "navigation": {
+      "asset_scale": 4,
+      "roles": {
+        "panel": {
+          "rect": [
+            40,
+            86,
+            768,
+            306
+          ],
+          "slice": [
+            52,
+            42,
+            52,
+            42
+          ],
+          "asset_scale": 4,
+          "safe_padding": [
+            18,
+            16,
+            18,
+            16
+          ]
+        },
+        "title": {
+          "rect": [
+            863,
+            166,
+            773,
+            135
+          ],
+          "slice": [
+            72,
+            24,
+            72,
+            24
+          ],
+          "asset_scale": 4,
+          "safe_padding": [
+            16,
+            8,
+            16,
+            8
+          ]
+        },
+        "selection": {
+          "rect": [
+            41,
+            529,
+            767,
+            339
+          ],
+          "slice": [
+            48,
+            34,
+            48,
+            34
+          ],
+          "asset_scale": 4,
+          "safe_padding": [
+            16,
+            8,
+            16,
+            8
+          ]
+        },
+        "marker": {
+          "rect": [
+            1166,
+            581,
+            183,
+            235
+          ],
+          "slice": [
+            28,
+            28,
+            28,
+            34
+          ],
+          "asset_scale": 4,
+          "safe_padding": [
+            16,
+            8,
+            16,
+            8
+          ]
+        }
+      },
+      "image_id": "runtimeUiNavigation",
+      "file": "runtimeUiNavigation"
+    },
+    "personnel": {
+      "asset_scale": 4,
+      "roles": {
+        "panel": {
+          "rect": [
+            39,
+            45,
+            775,
+            385
+          ],
+          "slice": [
+            110,
+            54,
+            110,
+            54
+          ],
+          "asset_scale": 4,
+          "safe_padding": [
+            18,
+            16,
+            18,
+            16
+          ]
+        },
+        "title": {
+          "rect": [
+            868,
+            172,
+            753,
+            161
+          ],
+          "slice": [
+            84,
+            32,
+            84,
+            32
+          ],
+          "asset_scale": 4,
+          "safe_padding": [
+            16,
+            8,
+            16,
+            8
+          ]
+        },
+        "plinth": {
+          "rect": [
+            54,
+            586,
+            758,
+            288
+          ],
+          "slice": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "asset_scale": 4,
+          "safe_padding": [
+            16,
+            8,
+            16,
+            8
+          ]
+        },
+        "selection": {
+          "rect": [
+            877,
+            565,
+            732,
+            311
+          ],
+          "slice": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "asset_scale": 4,
+          "safe_padding": [
+            16,
+            8,
+            16,
+            8
+          ]
+        }
+      },
+      "image_id": "runtimeUiPersonnel",
+      "file": "runtimeUiPersonnel"
+    },
+    "armory": {
+      "asset_scale": 4,
+      "roles": {
+        "panel": {
+          "rect": [
+            24,
+            142,
+            791,
+            232
+          ],
+          "slice": [
+            84,
+            54,
+            84,
+            56
+          ],
+          "asset_scale": 4,
+          "safe_padding": [
+            18,
+            16,
+            18,
+            16
+          ]
+        },
+        "title": {
+          "rect": [
+            853,
+            200,
+            773,
+            126
+          ],
+          "slice": [
+            64,
+            24,
+            64,
+            24
+          ],
+          "asset_scale": 4,
+          "safe_padding": [
+            16,
+            8,
+            16,
+            8
+          ]
+        },
+        "tray": {
+          "rect": [
+            41,
+            504,
+            752,
+            355
+          ],
+          "slice": [
+            78,
+            42,
+            78,
+            50
+          ],
+          "asset_scale": 4,
+          "safe_padding": [
+            16,
+            8,
+            16,
+            8
+          ]
+        },
+        "selection": {
+          "rect": [
+            855,
+            513,
+            769,
+            330
+          ],
+          "slice": [
+            55,
+            36,
+            55,
+            36
+          ],
+          "asset_scale": 4,
+          "safe_padding": [
+            16,
+            8,
+            16,
+            8
+          ]
+        }
+      },
+      "image_id": "runtimeUiArmory",
+      "file": "runtimeUiArmory"
+    },
+    "arcane": {
+      "asset_scale": 4,
+      "roles": {
+        "panel": {
+          "rect": [
+            35,
+            124,
+            714,
+            268
+          ],
+          "slice": [
+            46,
+            42,
+            46,
+            42
+          ],
+          "asset_scale": 4,
+          "safe_padding": [
+            18,
+            16,
+            18,
+            16
+          ]
+        },
+        "title": {
+          "rect": [
+            789,
+            170,
+            715,
+            175
+          ],
+          "slice": [
+            100,
+            0,
+            100,
+            0
+          ],
+          "asset_scale": 4,
+          "safe_padding": [
+            16,
+            8,
+            16,
+            8
+          ]
+        },
+        "plinth": {
+          "rect": [
+            31,
+            636,
+            719,
+            281
+          ],
+          "slice": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "asset_scale": 4,
+          "safe_padding": [
+            16,
+            8,
+            16,
+            8
+          ]
+        },
+        "selection": {
+          "rect": [
+            814,
+            556,
+            674,
+            368
+          ],
+          "slice": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "asset_scale": 4,
+          "safe_padding": [
+            16,
+            8,
+            16,
+            8
+          ]
+        }
+      },
+      "image_id": "runtimeUiArcane",
+      "file": "runtimeUiArcane"
+    },
+    "codex": {
+      "asset_scale": 4,
+      "roles": {
+        "panel": {
+          "rect": [
+            25,
+            30,
+            785,
+            422
+          ],
+          "slice": [
+            106,
+            34,
+            66,
+            36
+          ],
+          "asset_scale": 4,
+          "safe_padding": [
+            48,
+            16,
+            24,
+            16
+          ]
+        },
+        "title": {
+          "rect": [
+            863,
+            177,
+            772,
+            127
+          ],
+          "slice": [
+            94,
+            24,
+            65,
+            26
+          ],
+          "asset_scale": 4,
+          "safe_padding": [
+            16,
+            8,
+            16,
+            8
+          ]
+        },
+        "tile": {
+          "rect": [
+            214,
+            500,
+            405,
+            395
+          ],
+          "slice": [
+            35,
+            35,
+            35,
+            35
+          ],
+          "asset_scale": 4,
+          "safe_padding": [
+            16,
+            8,
+            16,
+            8
+          ]
+        },
+        "selection": {
+          "rect": [
+            856,
+            626,
+            780,
+            140
+          ],
+          "slice": [
+            42,
+            25,
+            42,
+            25
+          ],
+          "asset_scale": 4,
+          "safe_padding": [
+            16,
+            8,
+            16,
+            8
+          ]
+        }
+      },
+      "image_id": "runtimeUiCodex",
+      "file": "runtimeUiCodex"
+    },
+    "console": {
+      "asset_scale": 4,
+      "roles": {
+        "panel": {
+          "rect": [
+            52,
+            177,
+            741,
+            270
+          ],
+          "slice": [
+            87,
+            40,
+            40,
+            40
+          ],
+          "asset_scale": 4,
+          "safe_padding": [
+            18,
+            16,
+            18,
+            16
+          ]
+        },
+        "title": {
+          "rect": [
+            865,
+            250,
+            745,
+            142
+          ],
+          "slice": [
+            60,
+            25,
+            60,
+            25
+          ],
+          "asset_scale": 4,
+          "safe_padding": [
+            16,
+            8,
+            16,
+            8
+          ]
+        },
+        "row": {
+          "rect": [
+            41,
+            692,
+            754,
+            65
+          ],
+          "slice": [
+            48,
+            0,
+            48,
+            0
+          ],
+          "asset_scale": 4,
+          "safe_padding": [
+            16,
+            8,
+            16,
+            8
+          ]
+        },
+        "selection": {
+          "rect": [
+            864,
+            692,
+            754,
+            62
+          ],
+          "slice": [
+            48,
+            0,
+            48,
+            0
+          ],
+          "asset_scale": 4,
+          "safe_padding": [
+            16,
+            8,
+            16,
+            8
+          ]
+        },
+        "hp_track": {
+          "rect": [
+            41,
+            692,
+            754,
+            65
+          ],
+          "slice": [
+            30,
+            0,
+            30,
+            0
+          ],
+          "asset_scale": 4,
+          "safe_padding": [
+            16,
+            8,
+            16,
+            8
+          ],
+          "logical_size": [
+            200,
+            6
+          ]
+        },
+        "hp_fill": {
+          "rect": [
+            864,
+            692,
+            754,
+            62
+          ],
+          "slice": [
+            30,
+            0,
+            30,
+            0
+          ],
+          "asset_scale": 4,
+          "safe_padding": [
+            16,
+            8,
+            16,
+            8
+          ],
+          "logical_size": [
+            200,
+            6
+          ]
+        }
+      },
+      "image_id": "runtimeUiConsole",
+      "file": "runtimeUiConsole"
+    },
+    "command": {
+      "asset_scale": 4,
+      "roles": {
+        "panel": {
+          "rect": [
+            18,
+            103,
+            788,
+            295
+          ],
+          "slice": [
+            68,
+            44,
+            45,
+            40
+          ],
+          "asset_scale": 4,
+          "safe_padding": [
+            22,
+            18,
+            22,
+            18
+          ]
+        },
+        "title": {
+          "rect": [
+            868,
+            169,
+            773,
+            164
+          ],
+          "slice": [
+            58,
+            25,
+            65,
+            25
+          ],
+          "asset_scale": 4,
+          "safe_padding": [
+            16,
+            8,
+            16,
+            8
+          ]
+        },
+        "row": {
+          "rect": [
+            26,
+            643,
+            771,
+            89
+          ],
+          "slice": [
+            55,
+            0,
+            55,
+            0
+          ],
+          "asset_scale": 4,
+          "safe_padding": [
+            16,
+            8,
+            16,
+            8
+          ]
+        },
+        "selection": {
+          "rect": [
+            869,
+            662,
+            749,
+            70
+          ],
+          "slice": [
+            55,
+            0,
+            55,
+            0
+          ],
+          "asset_scale": 4,
+          "safe_padding": [
+            16,
+            8,
+            16,
+            8
+          ]
+        }
+      },
+      "image_id": "runtimeUiCommand",
+      "file": "runtimeUiCommand"
+    },
+    "controls": {
+      "asset_scale": 4,
+      "roles": {
+        "primary": {
+          "rect": [
+            39,
+            135,
+            762,
+            245
+          ],
+          "slice": [
+            72,
+            36,
+            72,
+            48
+          ],
+          "asset_scale": 4,
+          "safe_padding": [
+            18,
+            4,
+            18,
+            8
+          ]
+        },
+        "secondary": {
+          "rect": [
+            859,
+            134,
+            762,
+            246
+          ],
+          "slice": [
+            72,
+            36,
+            72,
+            48
+          ],
+          "asset_scale": 4,
+          "safe_padding": [
+            18,
+            4,
+            18,
+            8
+          ]
+        },
+        "selected": {
+          "rect": [
+            44,
+            553,
+            761,
+            246
+          ],
+          "slice": [
+            72,
+            36,
+            72,
+            48
+          ],
+          "asset_scale": 4,
+          "safe_padding": [
+            18,
+            4,
+            18,
+            8
+          ]
+        },
+        "disabled": {
+          "rect": [
+            857,
+            553,
+            762,
+            246
+          ],
+          "slice": [
+            72,
+            36,
+            72,
+            48
+          ],
+          "asset_scale": 4,
+          "safe_padding": [
+            18,
+            4,
+            18,
+            8
+          ]
+        }
+      },
+      "image_id": "runtimeUiControls",
+      "file": "runtimeUiControls"
+    },
+    "cards": {
+      "image_id": "runtimeUiCards",
+      "asset_scale": 4,
+      "roles": {
+        "normal": {
+          "rect": [
+            60,
+            60,
+            514,
+            481
+          ],
+          "slice": [
+            35,
+            35,
+            35,
+            35
+          ],
+          "asset_scale": 4,
+          "safe_padding": [
+            6,
+            6,
+            6,
+            6
+          ]
+        },
+        "selected": {
+          "rect": [
+            656,
+            60,
+            513,
+            482
+          ],
+          "slice": [
+            35,
+            35,
+            35,
+            35
+          ],
+          "asset_scale": 4,
+          "safe_padding": [
+            6,
+            6,
+            6,
+            6
+          ]
+        },
+        "locked": {
+          "rect": [
+            60,
+            675,
+            514,
+            493
+          ],
+          "slice": [
+            35,
+            35,
+            35,
+            35
+          ],
+          "asset_scale": 4,
+          "safe_padding": [
+            6,
+            6,
+            6,
+            6
+          ]
+        },
+        "detail": {
+          "rect": [
+            681,
+            643,
+            461,
+            556
+          ],
+          "slice": [
+            30,
+            30,
+            30,
+            30
+          ],
+          "asset_scale": 4,
+          "safe_padding": [
+            6,
+            6,
+            6,
+            6
+          ]
+        }
+      },
+      "file": "runtimeUiCards"
+    },
+    "growth": {
+      "image_id": "runtimeUiGrowth",
+      "asset_scale": 4,
+      "roles": {
+        "panel": {
+          "rect": [
+            35,
+            149,
+            783,
+            381
+          ],
+          "slice": [
+            42,
+            42,
+            42,
+            42
+          ],
+          "asset_scale": 4,
+          "safe_padding": [
+            18,
+            16,
+            18,
+            16
+          ]
+        },
+        "title": {
+          "rect": [
+            866,
+            264,
+            642,
+            108
+          ],
+          "slice": [
+            100,
+            24,
+            100,
+            24
+          ],
+          "asset_scale": 4,
+          "safe_padding": [
+            18,
+            16,
+            18,
+            16
+          ]
+        },
+        "stage": {
+          "rect": [
+            94,
+            668,
+            618,
+            204
+          ],
+          "slice": [
+            44,
+            24,
+            44,
+            24
+          ],
+          "asset_scale": 4,
+          "safe_padding": [
+            18,
+            16,
+            18,
+            16
+          ]
+        },
+        "selected": {
+          "rect": [
+            852,
+            668,
+            619,
+            204
+          ],
+          "slice": [
+            44,
+            24,
+            44,
+            24
+          ],
+          "asset_scale": 4,
+          "safe_padding": [
+            18,
+            16,
+            18,
+            16
+          ]
+        }
+      },
+      "file": "runtimeUiGrowth"
+    },
+    "sliders": {
+      "image_id": "runtimeUiSliders",
+      "asset_scale": 4,
+      "roles": {
+        "track": {
+          "rect": [
+            75,
+            269,
+            661,
+            39
+          ],
+          "slice": [
+            30,
+            0,
+            30,
+            0
+          ],
+          "asset_scale": 4,
+          "safe_padding": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "logical_size": [
+            180,
+            8
+          ]
+        },
+        "fill": {
+          "rect": [
+            808,
+            270,
+            654,
+            37
+          ],
+          "slice": [
+            18,
+            0,
+            18,
+            0
+          ],
+          "asset_scale": 4,
+          "safe_padding": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "logical_size": [
+            180,
+            6
+          ]
+        },
+        "thumb": {
+          "rect": [
+            300,
+            594,
+            224,
+            225
+          ],
+          "slice": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "asset_scale": 4,
+          "safe_padding": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "logical_size": [
+            22,
+            22
+          ]
+        },
+        "thumb_active": {
+          "rect": [
+            1011,
+            592,
+            228,
+            229
+          ],
+          "slice": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "asset_scale": 4,
+          "safe_padding": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "logical_size": [
+            22,
+            22
+          ]
+        },
+        "scroll_track": {
+          "rect": [
+            75,
+            269,
+            661,
+            39
+          ],
+          "slice": [
+            0,
+            24,
+            0,
+            24
+          ],
+          "asset_scale": 4,
+          "safe_padding": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "logical_size": [
+            6,
+            120
+          ],
+          "rotation": 90
+        },
+        "scroll_thumb": {
+          "rect": [
+            808,
+            270,
+            654,
+            37
+          ],
+          "slice": [
+            0,
+            18,
+            0,
+            18
+          ],
+          "asset_scale": 4,
+          "safe_padding": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "logical_size": [
+            6,
+            120
+          ],
+          "rotation": 90
+        }
+      },
+      "file": "runtimeUiSliders"
+    },
+    "bars": {
+      "image_id": "runtimeUiBars2",
+      "asset_scale": 4,
+      "roles": {
+        "hp_track": {
+          "rect": [
+            60,
+            131,
+            1417,
+            74
+          ],
+          "logical_size": [
+            190,
+            8
+          ],
+          "slice": [
+            32,
+            0,
+            32,
+            0
+          ],
+          "asset_scale": 4,
+          "safe_padding": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "hp_fill": {
+          "rect": [
+            63,
+            283,
+            1410,
+            67
+          ],
+          "logical_size": [
+            190,
+            8
+          ],
+          "slice": [
+            32,
+            0,
+            32,
+            0
+          ],
+          "asset_scale": 4,
+          "safe_padding": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "track": {
+          "rect": [
+            60,
+            475,
+            1417,
+            75
+          ],
+          "logical_size": [
+            275,
+            8
+          ],
+          "slice": [
+            32,
+            0,
+            32,
+            0
+          ],
+          "asset_scale": 4,
+          "safe_padding": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "fill": {
+          "rect": [
+            63,
+            624,
+            1410,
+            66
+          ],
+          "logical_size": [
+            275,
+            8
+          ],
+          "slice": [
+            32,
+            0,
+            32,
+            0
+          ],
+          "asset_scale": 4,
+          "safe_padding": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "thumb": {
+          "rect": [
+            552,
+            791,
+            162,
+            162
+          ],
+          "logical_size": [
+            22,
+            22
+          ],
+          "slice": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "asset_scale": 4,
+          "safe_padding": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "thumb_active": {
+          "rect": [
+            822,
+            791,
+            162,
+            162
+          ],
+          "logical_size": [
+            22,
+            22
+          ],
+          "slice": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "asset_scale": 4,
+          "safe_padding": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "file": "runtimeUiBars2"
+    },
+    "accents": {
+      "image_id": "runtimeUiAccents2",
+      "asset_scale": 4,
+      "roles": {
+        "purchase": {
+          "rect": [
+            50,
+            130,
+            744,
+            176
+          ],
+          "slice": [
+            48,
+            24,
+            48,
+            24
+          ],
+          "asset_scale": 4,
+          "safe_padding": [
+            12,
+            4,
+            12,
+            4
+          ]
+        },
+        "purchase_disabled": {
+          "rect": [
+            50,
+            130,
+            744,
+            176
+          ],
+          "slice": [
+            48,
+            24,
+            48,
+            24
+          ],
+          "asset_scale": 4,
+          "safe_padding": [
+            12,
+            4,
+            12,
+            4
+          ],
+          "saturation": 0,
+          "disabled": true,
+          "tint": [
+            1.25,
+            1.25,
+            1.25,
+            0.75
+          ]
+        },
+        "disabled": {
+          "rect": [
+            50,
+            130,
+            744,
+            176
+          ],
+          "slice": [
+            48,
+            24,
+            48,
+            24
+          ],
+          "asset_scale": 4,
+          "safe_padding": [
+            12,
+            4,
+            12,
+            4
+          ],
+          "saturation": 0,
+          "disabled": true,
+          "tint": [
+            1.25,
+            1.25,
+            1.25,
+            0.75
+          ]
+        },
+        "selection": {
+          "rect": [
+            886,
+            97,
+            578,
+            473
+          ],
+          "slice": [
+            36,
+            36,
+            36,
+            36
+          ],
+          "asset_scale": 4,
+          "safe_padding": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "rule_h": {
+          "rect": [
+            85,
+            910,
+            1374,
+            8
+          ],
+          "slice": [
+            4,
+            0,
+            4,
+            0
+          ],
+          "asset_scale": 4,
+          "safe_padding": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "rule_v": {
+          "rect": [
+            85,
+            910,
+            1374,
+            8
+          ],
+          "rotation": 90,
+          "slice": [
+            0,
+            4,
+            0,
+            4
+          ],
+          "asset_scale": 4,
+          "safe_padding": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "file": "runtimeUiAccents2"
+    },
+    "enamel": {
+      "file": "assets/enamel-01.png",
+      "asset_scale": 4,
+      "roles": {
+        "hp_track": {
+          "rect": [
+            42,
+            66,
+            1455,
+            102
+          ],
+          "slice": [
+            145,
+            28,
+            145,
+            28
+          ],
+          "safe_padding": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "asset_scale": 4
+        },
+        "hp_fill": {
+          "rect": [
+            52,
+            218,
+            1432,
+            66
+          ],
+          "slice": [
+            55,
+            18,
+            55,
+            18
+          ],
+          "safe_padding": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "asset_scale": 4
+        },
+        "tab": {
+          "rect": [
+            53,
+            338,
+            522,
+            149
+          ],
+          "slice": [
+            82,
+            38,
+            82,
+            38
+          ],
+          "safe_padding": [
+            10,
+            5,
+            10,
+            5
+          ],
+          "asset_scale": 4
+        },
+        "reroll": {
+          "rect": [
+            617,
+            338,
+            650,
+            149
+          ],
+          "slice": [
+            82,
+            38,
+            82,
+            38
+          ],
+          "safe_padding": [
+            10,
+            5,
+            10,
+            5
+          ],
+          "asset_scale": 4
+        },
+        "purchase": {
+          "rect": [
+            54,
+            541,
+            524,
+            134
+          ],
+          "slice": [
+            78,
+            32,
+            78,
+            32
+          ],
+          "safe_padding": [
+            8,
+            4,
+            8,
+            4
+          ],
+          "asset_scale": 4
+        },
+        "purchase_disabled": {
+          "rect": [
+            54,
+            541,
+            524,
+            134
+          ],
+          "slice": [
+            78,
+            32,
+            78,
+            32
+          ],
+          "safe_padding": [
+            8,
+            4,
+            8,
+            4
+          ],
+          "asset_scale": 4,
+          "grayscale": true,
+          "tint": [
+            1.18,
+            1.18,
+            1.18,
+            1
+          ]
+        },
+        "reroll_icon": {
+          "rect": [
+            752,
+            527,
+            195,
+            204
+          ],
+          "slice": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "safe_padding": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "asset_scale": 4
+        },
+        "pause_icon": {
+          "rect": [
+            1111,
+            541,
+            133,
+            172
+          ],
+          "slice": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "safe_padding": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "asset_scale": 4
+        },
+        "header": {
+          "rect": [
+            49,
+            766,
+            1444,
+            190
+          ],
+          "slice": [
+            115,
+            48,
+            115,
+            48
+          ],
+          "safe_padding": [
+            16,
+            8,
+            16,
+            8
+          ],
+          "asset_scale": 4
+        }
+      }
+    },
+    "glassNew": {
+      "file": "assets/glass-01.png",
+      "asset_scale": 4,
+      "roles": {
+        "cell": {
+          "rect": [
+            48,
+            115,
+            695,
+            718
+          ],
+          "slice": [
+            70,
+            70,
+            70,
+            70
+          ],
+          "safe_padding": [
+            10,
+            8,
+            10,
+            8
+          ],
+          "asset_scale": 4,
+          "opacity": 0.5
+        },
+        "tools": {
+          "rect": [
+            802,
+            132,
+            687,
+            177
+          ],
+          "slice": [
+            60,
+            40,
+            60,
+            40
+          ],
+          "safe_padding": [
+            12,
+            6,
+            12,
+            6
+          ],
+          "asset_scale": 4
+        },
+        "shadow": {
+          "rect": [
+            850,
+            430,
+            520,
+            180
+          ],
+          "slice": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "safe_padding": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "asset_scale": 4
+        },
+        "selected": {
+          "rect": [
+            814,
+            805,
+            665,
+            91
+          ],
+          "slice": [
+            54,
+            26,
+            54,
+            26
+          ],
+          "safe_padding": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "asset_scale": 4
+        }
+      }
+    },
+    "cstore": {
+      "file": "assets/cstore-surfaces-02.png",
+      "asset_scale": 4,
+      "roles": {
+        "cabinet": {
+          "rect": [
+            40,
+            110,
+            1018,
+            573
+          ],
+          "slice": [
+            110,
+            118,
+            110,
+            60
+          ],
+          "safe_padding": [
+            16,
+            12,
+            16,
+            12
+          ],
+          "asset_scale": 4
+        },
+        "header": {
+          "rect": [
+            40,
+            719,
+            1016,
+            151
+          ],
+          "slice": [
+            60,
+            30,
+            60,
+            25
+          ],
+          "safe_padding": [
+            16,
+            7,
+            16,
+            7
+          ],
+          "asset_scale": 4
+        },
+        "card": {
+          "rect": [
+            1078,
+            112,
+            420,
+            581
+          ],
+          "slice": [
+            30,
+            35,
+            30,
+            30
+          ],
+          "safe_padding": [
+            20,
+            16,
+            20,
+            16
+          ],
+          "asset_scale": 4
+        },
+        "info": {
+          "rect": [
+            1078,
+            708,
+            423,
+            210
+          ],
+          "slice": [
+            30,
+            35,
+            30,
+            30
+          ],
+          "safe_padding": [
+            15,
+            15,
+            15,
+            15
+          ],
+          "asset_scale": 4
+        },
+        "tab": {
+          "rect": [
+            41,
+            92,
+            594,
+            199
+          ],
+          "slice": [
+            65,
+            30,
+            65,
+            30
+          ],
+          "safe_padding": [
+            8,
+            5,
+            8,
+            5
+          ],
+          "asset_scale": 4,
+          "file": "assets/cstore-controls-02.png"
+        },
+        "reroll": {
+          "rect": [
+            712,
+            93,
+            785,
+            198
+          ],
+          "slice": [
+            65,
+            30,
+            65,
+            30
+          ],
+          "safe_padding": [
+            8,
+            5,
+            8,
+            5
+          ],
+          "asset_scale": 4,
+          "file": "assets/cstore-controls-02.png"
+        },
+        "purchase": {
+          "rect": [
+            41,
+            439,
+            571,
+            175
+          ],
+          "slice": [
+            45,
+            30,
+            45,
+            30
+          ],
+          "safe_padding": [
+            10,
+            5,
+            10,
+            5
+          ],
+          "asset_scale": 4,
+          "file": "assets/cstore-controls-02.png"
+        },
+        "purchase_disabled": {
+          "rect": [
+            41,
+            439,
+            571,
+            175
+          ],
+          "slice": [
+            45,
+            30,
+            45,
+            30
+          ],
+          "safe_padding": [
+            10,
+            5,
+            10,
+            5
+          ],
+          "asset_scale": 4,
+          "file": "assets/cstore-controls-02.png",
+          "grayscale": true,
+          "tint": [
+            0.75,
+            0.8,
+            0.83,
+            1
+          ]
+        },
+        "next": {
+          "rect": [
+            666,
+            390,
+            836,
+            241
+          ],
+          "slice": [
+            70,
+            35,
+            70,
+            35
+          ],
+          "safe_padding": [
+            14,
+            7,
+            14,
+            7
+          ],
+          "asset_scale": 4,
+          "file": "assets/cstore-controls-02.png"
+        },
+        "secondary": {
+          "rect": [
+            38,
+            759,
+            1462,
+            187
+          ],
+          "slice": [
+            60,
+            30,
+            60,
+            30
+          ],
+          "safe_padding": [
+            12,
+            6,
+            12,
+            6
+          ],
+          "asset_scale": 4,
+          "file": "assets/cstore-controls-02.png"
+        }
+      }
+    },
+    "spy": {
+      "file": "assets/spy-02.png",
+      "asset_scale": 4,
+      "roles": {
+        "terminal": {
+          "rect": [
+            30,
+            0,
+            940,
+            770
+          ],
+          "slice": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "safe_padding": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "asset_scale": 4
+        },
+        "pulse": {
+          "rect": [
+            990,
+            10,
+            490,
+            750
+          ],
+          "slice": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "safe_padding": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "asset_scale": 4
+        },
+        "deploy": {
+          "rect": [
+            35,
+            776,
+            1468,
+            213
+          ],
+          "slice": [
+            125,
+            50,
+            125,
+            50
+          ],
+          "safe_padding": [
+            18,
+            8,
+            18,
+            8
+          ],
+          "asset_scale": 4
+        }
+      }
+    }
+  }
+}

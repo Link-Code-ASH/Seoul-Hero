@@ -6,7 +6,7 @@ import numpy as np
 ROOT = Path(__file__).resolve().parents[1]
 SOURCES = {
     'player': 'combat-chibi/song.png',
-    'kangTaehoonTruck': 'combat-chibi/kang.png',
+    'kangTaehoonBody': 'combat-chibi/kang.png',
     'brute': 'combat-chibi/brute.png',
     'hound': 'combat-chibi/hound.png',
     'bulwark': 'combat-chibi/bulwark.png',

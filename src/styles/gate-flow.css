@@ -6,7 +6,7 @@
   grid-template-rows: 62px minmax(0,1fr);
   gap: 14px;
   padding: max(14px,env(safe-area-inset-top)) max(20px,env(safe-area-inset-right)) max(14px,env(safe-area-inset-bottom)) max(20px,env(safe-area-inset-left));
-  background: linear-gradient(#08131ce8,#101c28ee),var(--gate-bg) center/cover;
+  background: linear-gradient(#08131c66,#101c2866),var(--gate-bg) center/cover;
 }
 .gate-flow-head {
   grid-column: 1/-1;
@@ -130,8 +130,11 @@
   overflow: hidden;
   text-align: left;
   border: 2px solid transparent;
-  border-image: var(--frame-map) 12% fill / 2px;
+  border-image: var(--frame-map) 12% / 7px;
   padding: 10px;
+  background: var(--glass-surface);
+  backdrop-filter: blur(12px);
+  box-shadow: var(--glass-depth);
 }
 .gate-select-card:hover,
 .gate-select-card:active,
@@ -140,8 +143,8 @@
   filter: none;
 }
 .gate-select-card.selected {
-  box-shadow: inset 0 0 0 2px #a4ecf1, inset 0 0 24px #57d4df4a, 0 0 0 1px #7ddde8, 0 0 22px #3bc6d176;
-  background: linear-gradient(135deg,#244252,#182c3b);
+  box-shadow: inset 0 0 0 1px #d2e9ffb3,inset 0 2px 12px #bbd7f42e,0 0 12px #94c7e436;
+  background: none;
 }
 .gate-select-card.selected.map-card>img {
   filter: brightness(1.08) saturate(1.08);
@@ -149,7 +152,7 @@
 .gate-select-card.selected .character-card-art img,
 .gate-select-card.selected .weapon-card-art img,
 .gate-select-card.selected.blessing-meta-card>img {
-  filter: drop-shadow(0 0 11px #7bdce080);
+  filter: drop-shadow(0 5px 6px #06101c70) drop-shadow(0 0 7px #c2e3f233);
 }
 .map-grid {
   grid-template-columns: repeat(3,minmax(0,1fr));
@@ -185,41 +188,64 @@
   font-size: 26px;
 }
 .character-meta-grid {
-  grid-template-columns: repeat(3,minmax(0,1fr));
+  grid-template-columns: repeat(2,minmax(0,1fr));
+  grid-auto-rows: minmax(0,1fr);
 }
 .character-meta-card {
   border-image-source: var(--frame-personnel);
-  display: flex;
-  flex-direction: column;
-  padding: 6px;
+  border-image-width: 9px;
+  display: grid;
+  grid-template-columns: minmax(0,1fr) minmax(0,1fr);
+  align-items: stretch;
+  padding: 10px;
+  background: #c5d5d9 var(--frame-personnel) center/150% 150%;
+  background-blend-mode: soft-light;
+  backdrop-filter: none;
+  color: #203748;
+  box-shadow: inset 0 2px #f5fcff99,inset 0 -3px #596d7855,0 6px 14px #020a154d;
+}
+.character-meta-card.selected {
+  background: #d3e2e1 var(--frame-personnel) center/150% 150%;
+  background-blend-mode: soft-light;
+  box-shadow: inset 0 0 0 2px #e3ffff,inset 0 -4px #4a797c,0 0 12px #a3d6d655;
 }
 .character-card-art {
   flex: 1;
   min-height: 0;
   display: block;
+  overflow: hidden;
 }
 .character-card-art img {
   width: 100%;
   height: 100%;
   object-fit: contain;
+  padding: 4px 10px 0;
+  filter: drop-shadow(0 5px 7px #050e2359);
 }
 .character-card-info {
   display: grid;
-  grid-template-columns: 1fr auto;
-  gap: 4px;
-  padding: 8px;
+  grid-template-columns: minmax(0,1fr);
+  align-content: center;
+  gap: 12px;
+  padding: 10px;
+  border-left: 1px solid #36546630;
+  background: none;
 }
 .character-card-info b {
-  font: 400 26px 'Haeong Sans';
+  font: 400 21px/1.2 Paperlogy,sans-serif;
 }
 .character-card-info small {
   grid-column: 1/-1;
+  color: #455d69;
 }
 .character-card-info em {
   align-self: center;
   font-size: 13px;
-  color: var(--muted);
+  color: #384f5f;
+  line-height: 1.65;
 }
+.character-card-info .selection-seal { color: #455d69; }
+.character-meta-card.selected .selection-seal { color: #15595a; }
 .selection-seal {
   grid-column: 1/-1;
   color: #9dafb9;
@@ -236,10 +262,18 @@
 }
 .weapon-meta-card {
   border-image-source: var(--frame-weapon);
+  border-image-width: 8px 8px 12px;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 5px;
+  background: var(--frame-weapon) center/140% 140%;
+  backdrop-filter: none;
+  box-shadow: inset 0 6px 14px #0009,inset 0 -2px #bdd0d12b,0 3px 7px #0005;
+}
+.weapon-meta-card.selected {
+  background: var(--frame-weapon) center/140% 140%;
+  box-shadow: inset 0 0 0 2px #bdcadf,inset 0 -5px #8196b7,0 0 10px #9cadcd40;
 }
 .weapon-card-art {
   flex: 1;
@@ -254,14 +288,21 @@
   max-height: 150px;
   min-height: 0;
   object-fit: contain;
+  padding: 4px;
+  filter: drop-shadow(0 5px 5px #070f2466);
 }
 .weapon-card-info {
   display: grid;
   gap: 4px;
   text-align: center;
+  width: 100%;
+  padding-top: 5px;
+  border-top: 1px solid #d7e9ff26;
+  padding-bottom: 3px;
 }
 .weapon-card-info b {
   font-size: 16px;
+  font-weight: 400;
 }
 .weapon-metrics {
   font-size: 13px;
@@ -351,7 +392,7 @@
 }
 .depth-tile.selected {
   color: #d0fbf8;
-  background: linear-gradient(155deg,#315768d9,#182d3be8);
+  background: none;
   box-shadow: inset 0 0 0 2px #8de6e9, inset 0 0 22px #4bcdd35c, 0 0 17px #4ad6db6b;
 }
 .depth-selected-flag {

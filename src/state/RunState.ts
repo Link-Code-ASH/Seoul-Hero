@@ -24,6 +24,7 @@ export interface RunState {
     weaponStock: { rerolls: number; slots: { weaponId: string | null; targetLevel: number; locked: boolean }[] };
   };
   unlockedItemIds: string[]; itemEffects: import('../data/items').ItemEffect[];
+  itemRuntime?: import('../systems/ItemTriggers').ItemRuntime;
   /** Stage spending money always starts at zero. Deferred stones unlock beside future field pickups. */
   runCurrency: number; startingCurrency: number; collectedMagicStone: number;
   /** Previous Stage wallet stones that can still be released beside collected stones. */

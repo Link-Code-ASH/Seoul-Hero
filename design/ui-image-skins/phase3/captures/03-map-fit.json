@@ -1,0 +1,313 @@
+{
+	"audioPlayback": false,
+	"contentSha256": "ced02f7f687d40b35ccc3ae8d8ab3c1d904b07aa3c4d0b34e79dba3d5dab6d1c",
+	"issueCount": 0,
+	"previewOnly": true,
+	"productionLoaded": false,
+	"saveAdaptersLoaded": false,
+	"screens": [
+		{
+			"controls": [
+				{
+					"caption": "이전",
+					"minimum44": true,
+					"rect": [
+						22,
+						14,
+						90,
+						44
+					],
+					"role": "unframed"
+				},
+				{
+					"caption": "심도 선택",
+					"minimum44": true,
+					"rect": [
+						726.0,
+						351.0,
+						160.0,
+						45.0
+					],
+					"role": "controls/primary"
+				}
+			],
+			"fitIssues": [],
+			"labels": [
+				{
+					"actualSize": [
+						90.0,
+						44.0
+					],
+					"align": 0,
+					"fontHeight": 18.0,
+					"fontSize": 15,
+					"lines": 1,
+					"rect": [
+						22.0,
+						14.0,
+						90.0,
+						44.0
+					],
+					"requiredHeight": 18.0,
+					"requiredWidth": 39.0,
+					"role": "control",
+					"text": "‹ 이전"
+				},
+				{
+					"actualSize": [
+						568.0,
+						41.0
+					],
+					"align": 0,
+					"fontHeight": 34.0,
+					"fontSize": 28,
+					"lines": 1,
+					"rect": [
+						127.0,
+						12.0,
+						568.0,
+						41.0
+					],
+					"requiredHeight": 34.0,
+					"requiredWidth": 149.0,
+					"role": "brand",
+					"text": "작전 구역 선택"
+				},
+				{
+					"actualSize": [
+						707.0,
+						28.0
+					],
+					"align": 0,
+					"fontHeight": 17.0,
+					"fontSize": 14,
+					"lines": 1,
+					"rect": [
+						128.0,
+						54.0,
+						707.0,
+						28.0
+					],
+					"requiredHeight": 17.0,
+					"requiredWidth": 213.0,
+					"role": "body",
+					"text": "서울에서 진행할 작전 구역을 고르세요."
+				},
+				{
+					"actualSize": [
+						150.0,
+						38.0
+					],
+					"align": 2,
+					"fontHeight": 24.0,
+					"fontSize": 20,
+					"lines": 1,
+					"rect": [
+						743.0,
+						15.0,
+						150.0,
+						38.0
+					],
+					"requiredHeight": 24.0,
+					"requiredWidth": 48.0,
+					"role": "number",
+					"text": "01 / 06"
+				},
+				{
+					"actualSize": [
+						260.0,
+						41.0
+					],
+					"align": 0,
+					"fontHeight": 35.0,
+					"fontSize": 29,
+					"lines": 1,
+					"rect": [
+						626.0,
+						100.0,
+						260.0,
+						41.0
+					],
+					"requiredHeight": 35.0,
+					"requiredWidth": 130.0,
+					"role": "brand",
+					"text": "광화문 광장"
+				},
+				{
+					"actualSize": [
+						260.0,
+						28.0
+					],
+					"align": 0,
+					"fontHeight": 18.0,
+					"fontSize": 15,
+					"lines": 1,
+					"rect": [
+						626.0,
+						149.0,
+						260.0,
+						28.0
+					],
+					"requiredHeight": 18.0,
+					"requiredWidth": 174.0,
+					"role": "control",
+					"text": "20 웨이브 · 마지막 보스 전투"
+				},
+				{
+					"actualSize": [
+						258.0,
+						278.0
+					],
+					"align": 0,
+					"fontHeight": 18.0,
+					"fontSize": 15,
+					"lines": 1,
+					"rect": [
+						626.0,
+						191.0,
+						258.0,
+						60.0
+					],
+					"requiredHeight": 18.0,
+					"requiredWidth": 258.0,
+					"role": "body",
+					"text": "광화문 광장의 고정 화면 아레나"
+				},
+				{
+					"actualSize": [
+						260.0,
+						454.0
+					],
+					"align": 0,
+					"fontHeight": 17.0,
+					"fontSize": 14,
+					"lines": 2,
+					"rect": [
+						626.0,
+						254.0,
+						260.0,
+						57.0
+					],
+					"requiredHeight": 36.0,
+					"requiredWidth": 260.0,
+					"role": "body",
+					"text": "직선 도로와 광장 사이에서\n침식체를 버티는 서울 작전"
+				},
+				{
+					"actualSize": [
+						650.0,
+						34.0
+					],
+					"align": 0,
+					"fontHeight": 17.0,
+					"fontSize": 14,
+					"lines": 1,
+					"rect": [
+						38.0,
+						355.0,
+						650.0,
+						34.0
+					],
+					"requiredHeight": 17.0,
+					"requiredWidth": 153.0,
+					"role": "control",
+					"text": "현재 구역 1개 · 광화문 광장"
+				},
+				{
+					"actualSize": [
+						136.0,
+						37.0
+					],
+					"align": 1,
+					"fontHeight": 20.0,
+					"fontSize": 16,
+					"lines": 1,
+					"rect": [
+						738.0,
+						355.0,
+						136.0,
+						37.0
+					],
+					"requiredHeight": 20.0,
+					"requiredWidth": 60.0,
+					"role": "control",
+					"text": "심도 선택"
+				}
+			],
+			"materials": [
+				{
+					"assetScale": 4.0,
+					"material": "navigation/panel",
+					"rect": [
+						56.0,
+						96.0,
+						537.0,
+						239.0
+					],
+					"slice": [
+						52.0,
+						42.0,
+						52.0,
+						42.0
+					],
+					"source": [
+						40.0,
+						86.0,
+						768.0,
+						306.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "navigation/selection",
+					"rect": [
+						58.0,
+						318.0,
+						533.0,
+						5.0
+					],
+					"slice": [
+						48.0,
+						34.0,
+						48.0,
+						34.0
+					],
+					"source": [
+						41.0,
+						529.0,
+						767.0,
+						339.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "controls/primary",
+					"rect": [
+						726.0,
+						351.0,
+						160.0,
+						45.0
+					],
+					"slice": [
+						72.0,
+						36.0,
+						72.0,
+						48.0
+					],
+					"source": [
+						39.0,
+						135.0,
+						762.0,
+						245.0
+					]
+				}
+			],
+			"screen": "03-map"
+		}
+	],
+	"simulation": false,
+	"size": [
+		915,
+		412
+	]
+}

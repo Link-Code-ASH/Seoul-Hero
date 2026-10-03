@@ -1,4 +1,4 @@
-import { weaponArt } from './InventoryArt';
+import { imageRegionArt, weaponArt } from './InventoryArt';
 import { enemies } from '../data/enemies';
 import { weapons } from '../data/weapons';
 import { images } from '../data/images';
@@ -53,9 +53,9 @@ export class Hud {
       const startY = Math.max(18, Math.min(this.walletFlightLayer.clientHeight - 18, localOrigin.y));
       const dx = localTarget.x - startX, dy = localTarget.y - startY;
       const bend = (index % 2 === 0 ? 1 : -1) * Math.min(72, 18 + Math.abs(dx) * 0.08);
-      const stone = document.createElement('img');
+      const stone = document.createElement('span');
       stone.className = 'wallet-flight-stone';
-      stone.src = images.magicStone.url; stone.alt = '';
+      stone.innerHTML = imageRegionArt('magicStone', '');
       stone.style.left = `${startX}px`; stone.style.top = `${startY}px`;
       this.walletFlightLayer.append(stone);
       const animation = stone.animate([
@@ -78,9 +78,9 @@ export class Hud {
     this.hp.style.width = `${Math.max(0, run.player.hp / run.player.maxHp * 100)}%`;
     this.hp.parentElement?.setAttribute('aria-valuenow', String(Math.ceil(run.player.hp)));
     this.hp.parentElement?.setAttribute('aria-valuemax', String(run.player.maxHp));
-    this.get('#hp-text').textContent = `${Math.ceil(run.player.hp)} / ${run.player.maxHp}`;
+    this.get('#hp-text').textContent = `${Math.ceil(run.player.hp)} / ${Math.round(run.player.maxHp)}`;
     this.get('#hud-weapons').innerHTML = run.ownedWeapons.map((slot,index) => `<span class="weapon-slot"><i>${index + 1}</i>${weaponArt(slot.id)}<b>${weapons[slot.id]?.name ?? slot.id}</b><small>${slot.level}${slot.branchId ? `-${slot.branchId}` : ''}</small></span>`).join('');
-    this.stats.innerHTML = `<span class="hud-chip" title="보유 마력석"><img class="pickup-ui-icon" src="${images.magicStone.url}" alt=""><b>${Math.floor(run.runCurrency)}</b></span><span class="hud-chip wallet-reserve" title="다음 획득에 추가되는 마력석"><img class="wallet-icon" src="${images.wallet.url}" alt="지갑"><b>${Math.floor(run.walletBonusRemaining + run.walletStoredThisRun)}</b></span>`;
+    this.stats.innerHTML = `<span class="hud-chip" title="보유 마력석">${imageRegionArt('magicStone', 'pickup-ui-icon')}<b>${Math.floor(run.runCurrency)}</b></span><span class="hud-chip wallet-reserve" title="다음 획득에 추가되는 마력석"><img class="wallet-icon" src="${images.wallet.url}" alt="지갑"><b>${Math.floor(run.walletBonusRemaining + run.walletStoredThisRun)}</b></span>`;
     this.clock.textContent = formatTime(Math.ceil(run.waveRemainingTime));
     this.timer.classList.toggle('is-critical', run.phase === 'waveActive' && !run.bossSpawned && run.currentWave < run.totalWaves && run.waveRemainingTime > 0 && run.waveRemainingTime <= 5);
     this.wave.textContent = `${run.bossSpawned ? 'BOSS WAVE' : 'WAVE'} ${run.currentWave} / ${run.totalWaves}`;

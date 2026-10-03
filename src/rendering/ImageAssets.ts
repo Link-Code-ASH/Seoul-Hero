@@ -33,8 +33,12 @@ export class ImageAssets {
           return;
         }
         if (!definition.url) throw new Error('Missing asset URL');
-        const texture = await Assets.load<Texture>(definition.url);
-        if (id === 'player' || id === 'kangTaehoonTruck' || id === 'manaShotgunPellet' || id === 'magicStone' || id === 'guardianShuriken' || id === 'manaFieldAura' || id.startsWith('vfx') || id === 'brute' || id === 'hound' || id === 'boss' || id === 'riftQueen' || ['bulwark','spitter','swarm','charger','bomber','splitter','mender','summoner','sentinel','lurker','splitterAir','spitterFire','chargerBrace','bossAttack','riftQueenCast'].includes(id)) {
+        const original = await Assets.load<Texture>(definition.url);
+        const region = 'region' in definition ? definition.region : undefined;
+        const texture = region
+          ? new Texture({ source: original.source, frame: new Rectangle(region[0], region[1], region[2], region[3]) })
+          : original;
+        if (id === 'player' || id === 'kangTaehoonBody' || id === 'manaShotgunPellet' || id === 'magicStone' || id === 'guardianShuriken' || id === 'manaFieldAura' || id.startsWith('vfx') || id === 'brute' || id === 'hound' || id === 'boss' || id === 'riftQueen' || ['bulwark','spitter','swarm','charger','bomber','splitter','mender','summoner','sentinel','lurker','splitterAir','spitterFire','chargerBrace','bossAttack','riftQueenCast'].includes(id)) {
           texture.source.scaleMode = 'linear';
           texture.source.autoGenerateMipmaps = true;
           texture.source.maxAnisotropy = 4;

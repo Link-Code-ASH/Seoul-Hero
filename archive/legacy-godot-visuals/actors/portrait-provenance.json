@@ -1,0 +1,18 @@
+[
+  {
+    "character": "awakener",
+    "asset": "song/portrait.png",
+    "reference": "song/preview.png",
+    "tool": "built-in image_gen",
+    "date": "2026-09-30",
+    "prompt": "Use case: identity-preserve. Asset type: transparent full-body character selection portrait for Seoul Hero. The attached image is the identity/clothing/style reference for Song Jinwoo; create a polished NEW one-piece full character illustration using it as reference, NOT a cutout atlas or assembled rig screenshot. Preserve tousled black hair with subtle teal edges, face, teal hooded civilian jacket, black straps, dark cargo trousers, black gloves and teal-black sneakers; no military uniform. Relaxed standing pose looking slightly lower-right in three-quarter front view, 3.5-head SD/chibi hand-painted cel style matching reference. Naturally connected neck and jacket collar, anatomically continuous arms/legs, clean convincing shoulders/knees/ankles, natural proportions and solid balanced stance. Whole body including hair and both shoes fully visible. Refine joints and remove visible cutout seams and duplicated limbs. Single character centered and filling most of a portrait canvas with small transparent margins. Real alpha-transparent background, no floor, shadow, vehicle, weapon, glow aura, lettering, border or watermark. Final usable illustration, NOT parts, grid, sheet, model turnaround, or animation frames."
+  },
+  {
+    "character": "kangTaehoon",
+    "asset": "kang/portrait.png",
+    "reference": "kang/preview.png",
+    "tool": "built-in image_gen",
+    "date": "2026-09-30",
+    "prompt": "Use case: identity-preserve. Asset type: transparent full-body character selection portrait for Seoul Hero. The attached image is the identity/clothing/style reference for Kang Taehoon; create a polished NEW one-piece full character illustration using it as reference, NOT a cutout atlas or assembled rig screenshot. Preserve short cropped dark brown military hair, warm brown eyes, firm eyebrows, calm vigilant expression, olive tactical jacket, plate carrier and pouches, charcoal cargo trousers, black gloves and black/olive combat boots. Relaxed alert standing pose looking slightly lower-right in three-quarter front view, 3.5-head SD/chibi hand-painted cel style matching reference. Naturally connected neck and collar, anatomically continuous arms/legs, clean convincing shoulders/knees/ankles, natural proportions and solid balanced stance. Whole body including hair and both boots fully visible. Refine joints and remove visible cutout seams and duplicated limbs. Single character centered and filling most of a portrait canvas with small transparent margins. Real alpha-transparent background, no floor, shadow, vehicle, weapon, glow aura, lettering, border or watermark. Final usable illustration, NOT parts, grid, sheet, model turnaround, or animation frames."
+  }
+]

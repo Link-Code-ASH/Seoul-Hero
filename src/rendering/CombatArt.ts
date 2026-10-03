@@ -12,7 +12,7 @@ export interface GroundProfile {
 
 const groundProfiles: Partial<Record<ImageId, GroundProfile>> = {
   player:           { anchorY: .89, groundOffset: 1.17, shadowWidth: 1.65, shadowDepth: .38, shadowAlpha: .38, shadowColor: 0x08242a },
-  kangTaehoonTruck: { anchorY: .88, groundOffset: 1.22, shadowWidth: 1.83, shadowDepth: .43, shadowAlpha: .44, shadowColor: 0x121b1a },
+  kangTaehoonBody: { anchorY: .88, groundOffset: 1.22, shadowWidth: 1.83, shadowDepth: .43, shadowAlpha: .44, shadowColor: 0x121b1a },
   brute:            { anchorY: .88, groundOffset: .91, shadowWidth: 1.04, shadowDepth: .34, shadowAlpha: .48, shadowColor: 0x170d14 },
   hound:            { anchorY: .88, groundOffset: .86, shadowWidth: 1.16, shadowDepth: .27, shadowAlpha: .36, shadowColor: 0x21140e },
   bulwark:          { anchorY: .89, groundOffset: .91, shadowWidth: 1.17, shadowDepth: .37, shadowAlpha: .55, shadowColor: 0x111820 },

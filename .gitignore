@@ -5,3 +5,27 @@ test-results/
 *.log
 .DS_Store
 __pycache__/
+
+# Godot editor/import cache and local exports. Source assets remain tracked.
+.godot/
+godot/exports/*
+!godot/exports/.gdignore
+export_credentials.cfg
+.worktrees/
+
+# Local credentials; templates may be versioned.
+.env
+.env.*
+!.env.example
+!.env.template
+
+# Local MP3 decoding dependency; editing metadata and provenance stay tracked.
+audio-library/reborn-01/.tools/
+audio-library/reborn-01/decoded-bgm/
+
+# Rebuildable listening outputs; deployed assets and provenance stay tracked.
+audio-library/reborn-01/source-previews/
+audio-library/reborn-01/comparisons/
+audio-library/reborn-01/mixes/
+audio-library/reborn-01/sounds/
+audio-library/reborn-01/rollback/files/

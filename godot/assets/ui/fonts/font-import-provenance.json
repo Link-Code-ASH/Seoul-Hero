@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-02",
+  "purpose": "Native TTF inputs for Godot; supplied WOFF2 files stay in source assets",
+  "fonts": [
+    {
+      "asset": "KMU80HaeongSans.ttf",
+      "original": "KMU80HaeongSans.woff2",
+      "method": "Owner-supplied matching native TTF, copied from KMU80SungkokHaeong_01/TTF/KMU80TTFHaeongSans.ttf",
+      "sourceSha256": "f20b61faf38fbb5fe6a15fadfe642b21d5f2b57c981c1bd15e92366bb65d8f76",
+      "sha256": "df9f536e641de9637041ce763c653b02ccd21f336246a2e30700c9d25f5e90f5",
+      "license": "Owner-provided KMU distribution; original copyright © 2026 KOOKMIN UNIVERSITY retained in font"
+    },
+    {
+      "asset": "BarlowCondensed-SemiBold.ttf",
+      "original": "BarlowCondensed-SemiBold.woff2",
+      "method": "Lossless WOFF2 decompression; fontTools 4.66.1, Brotli 1.2.0; TTFont.flavor=None; glyph outlines and metrics retained",
+      "sourceSha256": "5bc49d41f32810a114765314392332ce2acae2276635eee265a50319a12c1b49",
+      "sha256": "0d6fc1596f18256209e2deeb99aed78c499e4c6393ac1e3da416c9b0b7492a64",
+      "license": "SIL Open Font License 1.1; BarlowCondensed-OFL.txt"
+    },
+    {
+      "asset": "BarlowCondensed-Bold.ttf",
+      "original": "BarlowCondensed-Bold.woff2",
+      "method": "Lossless WOFF2 decompression; fontTools 4.66.1, Brotli 1.2.0; TTFont.flavor=None; glyph outlines and metrics retained",
+      "sourceSha256": "e3e520cb7468f2efd60bc2ce96694567c3312f4ef414fffbe605e3ad146b24e6",
+      "sha256": "db43b7915c132d4e4ec6d7512f5d3c229f1f4440d94e3c5f8cb9912d3aec11b9",
+      "license": "SIL Open Font License 1.1; BarlowCondensed-OFL.txt"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "file": "lobby-checkpoint.png",
+    "prompt": "Wide 2.22:1 stylized premium mobile action game background. Modern Seoul at dusk, street level civilian awakened response checkpoint, tactical vehicles and concrete barricades beside modern office buildings, distant purple anomaly above Gwanghwamun. Dim blue grey war readiness, restrained warm lights, clean readable game illustration not photoreal. Open center and bottom for interface. No UI no text no rain particles no people.",
+    "source": "C:\\Users\\geniu\\.codex\\generated_images\\01a07bcf-7f98-7021-bf14-e9c913993db8\\exec-2a8c907c-6f94-4c45-92f7-d4b5336c9612.png",
+    "method": "built-in image_gen"
+  },
+  {
+    "file": "lobby-rooftop.png",
+    "prompt": "Wide 2.22:1 premium stylized Korean modern fantasy mobile game backdrop, rooftop emergency response staging area overlooking Seoul city, blue hour with warm horizon, equipment crates and antenna along sides, distant anomalous gate glow, broad empty central deck. Serious modern urban deployment atmosphere, readable painterly dimensional game art, not medieval, no text no UI no characters no weather particles.",
+    "source": "C:\\Users\\geniu\\.codex\\generated_images\\01a07bcf-7f98-7021-bf14-e9c913993db8\\exec-8e60f2f8-65f3-4cad-aed4-afb98c4e438d.png",
+    "method": "built-in image_gen"
+  },
+  {
+    "file": "deployment.png",
+    "prompt": "Transparent isolated modern fantasy response deployment kit emblem for mobile game UI, compact composition of rugged charcoal tactical communications terminal with luminous cyan city map display, silver awakened responder insignia and small folded field map, restrained orange readiness light. Modern Seoul civilian superpowered response force, military readiness but not actual army. Premium dimensional painted game icon, sharp silhouette, complete object, no lettering no portal no wings no swords no fantasy arch, no square background.",
+    "source": "C:\\Users\\geniu\\.codex\\generated_images\\01a07bcf-7f98-7021-bf14-e9c913993db8\\exec-1a9400b2-d304-4747-80c1-a177237f5de8.png",
+    "method": "built-in image_gen"
+  },
+  {
+    "file": "control-surface.png",
+    "prompt": "Wide 3:1 rectangular premium modern Seoul tactical game UI button complete surface, front-on, subtle blue-grey smoked optical glass integrated with brushed silver thin bevel, real fine material texture, sophisticated luminous edge and gentle inset depth, dark translucent interior, alpha outside object, no text no icons no bolts no ornamental fantasy details. Entire button surface is rendered, not empty frame. Clean precise compact shape with barely chamfered corners.",
+    "source": "C:\\Users\\geniu\\.codex\\generated_images\\01a07bcf-7f98-7021-bf14-e9c913993db8\\exec-23b08c50-e052-4a36-bcfb-bf03a8f31fbb.png",
+    "method": "built-in image_gen"
+  },
+  {
+    "file": "dock-haze.png",
+    "prompt": "Transparent UI compositing asset, wide 3:1 soft frosted bluish glass light diffusion patch, no outline no frame no defined shape, softly fading irregular rounded edges merging completely into transparent surroundings. Cool white mist-like translucency and subtle optical texture, faint contact shadow beneath, suitable as understated visual separation under a row of game object icons. No icon no lettering no rectangular border.",
+    "source": "C:\\Users\\geniu\\.codex\\generated_images\\01a07bcf-7f98-7021-bf14-e9c913993db8\\exec-e81fb7f8-64f6-4bcd-86d6-c9dae5cbdcec.png",
+    "method": "built-in image_gen"
+  }
+]

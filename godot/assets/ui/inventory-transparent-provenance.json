@@ -1,0 +1,13 @@
+{
+  "tool": "built-in image_gen",
+  "date": "2026-10-01",
+  "asset": "inventory_atlas_transparent_02.png",
+  "source": "assets/ui/inventory_atlas_01.png",
+  "purpose": "Remove opaque rectangular backgrounds, preserve48icons grid",
+  "prompt": "Use case: background-extraction. Edit this existing 8-column by 6-row game inventory atlas. Remove ONLY its dark navy rectangular background between and behind all icons, replacing it with genuinely transparent alpha. Preserve ALL 48 existing objects, their exact row/column order, their original shapes, detail, colors, size, position, effects and spacing. Preserve the full 4:3 canvas aspect ratio and same 8x6 equal-cell grid. No cropping or rearrangement, no extra icons, no labels, no cell borders, no colored backdrop. In particular remove every dark rectangle outside object silhouettes so each individual atlas cell renders just its object on light UI. Preserve object's own dark outlines, dark clothing and shadows within its silhouette; preserve lightning/flame glows that belong to objects. This is background removal only, do not redesign any icon. Transparent PNG.",
+  "referenced_image_paths": [
+    "C:/Users/geniu/Documents/GitHub/Seoul-Hero/assets/ui/inventory_atlas_01.png"
+  ],
+  "transparent_background": true,
+  "generatedSource": "C:/Users/geniu/.codex/generated_images/01a0f2b0-afe6-7281-8ba3-48d0d8354159/exec-179f6437-ba49-43be-84bb-40eb8c2fe512.png"
+}

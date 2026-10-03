@@ -196,7 +196,7 @@ export class WorldRenderer {
     // later maps, but do not layer stores, trees, or subway props over this map.
     if (!baseTexture) this.arenaBase.addChild(new Graphics().rect(-stage.arenaWidth / 2, -stage.arenaHeight / 2, stage.arenaWidth, stage.arenaHeight).fill(0x84939f));
     this.arenaMask.clear().rect(-stage.arenaWidth / 2, -stage.arenaHeight / 2, stage.arenaWidth, stage.arenaHeight).fill(0xffffff);
-    this.boundary.clear().rect(-stage.arenaWidth / 2 + 5, -stage.arenaHeight / 2 + 5, stage.arenaWidth - 10, stage.arenaHeight - 10).stroke({ color: 0x75e6df, width: 10, alpha: 0.5 });
+    this.boundary.clear();
   }
 
   private drawEntities(state: RunState): void {
@@ -248,7 +248,6 @@ export class WorldRenderer {
         pickup.radius * 0.82 * tier.scale, pickup.radius * 0.28 * tier.scale)
         .fill({ color: 0x080611, alpha: 0.3 });
     }
-    const truck = player.visual.motionStyle === 'truck';
     const playerGround = groundProfileFor(player.visual.sprite);
     const playerFootY = player.y + player.radius * playerGround.groundOffset;
     const playerArt = player.visual.sprite;
@@ -256,10 +255,10 @@ export class WorldRenderer {
     if (playerArt) {
       const height = player.radius * images[playerArt].heightRatio;
       drawGroundedOvalShadow(this.shadows, playerArt,
-        player.x + (motion.swayX + motion.dragX) * (truck ? .45 : 1),
+        player.x + (motion.swayX + motion.dragX),
         playerFootY,
-        height * (1 + (motion.scaleX - 1) * (truck ? .35 : 1)),
-        height * (1 + (motion.scaleY - 1) * (truck ? .35 : 1)),
+        height * (1 + (motion.scaleX - 1)),
+        height * (1 + (motion.scaleY - 1)),
         playerGround.anchorY, playerGround.shadowColor, playerShadowAlpha, motion.facing);
     } else {
       drawProjectedShadow(this.shadows, player.x, playerFootY,
@@ -269,12 +268,9 @@ export class WorldRenderer {
     if (motion.magicLag > .08) {
       const trail = Math.min(18, 6 + motion.magicLag * 12);
       const back = player.x - motion.facing * player.radius * .55;
-      const color = truck ? 0x72969d : 0x55b9b3;
-      for (const track of truck ? [-5, 5] : [0]) {
-        this.shadows.moveTo(back, playerFootY + track)
-          .lineTo(back - motion.facing * trail, playerFootY + track + 1.5)
-          .stroke({ color, alpha: motion.magicLag * (truck ? .23 : .3), width: truck ? 1.8 : 1.3 });
-      }
+      this.shadows.moveTo(back, playerFootY)
+        .lineTo(back - motion.facing * trail, playerFootY + 1.5)
+        .stroke({ color: 0x55b9b3, alpha: motion.magicLag * .3, width: 1.3 });
     }
     drawWeaponEffects(this.markings, state);
     for (const structure of state.structures) {
@@ -367,7 +363,7 @@ export class WorldRenderer {
       drawAreaIndicator(this.markings,h.x,h.y,h.radius,0xff846c,state.stageCombatTime,h.triggered);
       if(h.triggered) this.combatVfx.hazardBlast(h.x, h.y, h.radius, h.remaining, sprites);
     }
-    if (motion.magicLag > 0 && !truck) {
+    if (motion.magicLag > 0) {
       const railY = player.y + player.radius * 1.22;
       this.markings.moveTo(player.x - motion.facing * player.radius * 0.15, railY)
         .lineTo(player.x - motion.facing * player.radius * (1.25 + motion.magicLag * 0.55), railY + motion.dragY)
@@ -383,14 +379,14 @@ export class WorldRenderer {
       }
     }
     const blink = player.invulnerability > 0 ? 0.55 + Math.sin(this.displayTime * 45) * 0.3 : 1;
-    sprites.draw(player.x, player.y, player.radius, player.visual, 'player', blink, motion.lean * (truck ? 0.42 : 1), false, undefined, motion.facing, undefined, {
+    sprites.draw(player.x, player.y, player.radius, player.visual, 'player', blink, motion.lean, false, undefined, motion.facing, undefined, {
       groundY: playerFootY,
       anchorY: playerGround.anchorY,
-      offsetX: (motion.swayX + motion.dragX) * (truck ? 0.45 : 1),
-      offsetY: (motion.bobY + motion.dragY) * (truck ? 0.4 : 1),
-      scaleX: 1 + (motion.scaleX - 1) * (truck ? 0.35 : 1),
-      scaleY: 1 + (motion.scaleY - 1) * (truck ? 0.35 : 1),
-      skewX: motion.dragSkew * (truck ? 0.3 : 1),
+      offsetX: (motion.swayX + motion.dragX),
+      offsetY: (motion.bobY + motion.dragY),
+      scaleX: 1 + (motion.scaleX - 1),
+      scaleY: 1 + (motion.scaleY - 1),
+      skewX: motion.dragSkew,
     });
   }
 

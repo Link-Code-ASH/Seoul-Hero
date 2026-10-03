@@ -1,0 +1,102 @@
+{
+  "date": "2026-10-03",
+  "mode": "built-in image_gen",
+  "approvalPending": true,
+  "runtimeConnected": false,
+  "generatedSources": {
+    "enamel": "C:/Users/geniu/.codex/generated_images/01a0f2b0-afe6-7281-8ba3-48d0d8354159/exec-9d6cb356-55d3-4b9f-839d-3e15d871f289.png",
+    "glass": "C:/Users/geniu/.codex/generated_images/01a0f2b0-afe6-7281-8ba3-48d0d8354159/exec-d09339c0-b930-4cba-9fd0-e4591b8aa1a3.png"
+  },
+  "savedAssets": [
+    "assets/enamel-01.png",
+    "assets/glass-01.png"
+  ],
+  "prompts": [
+    {
+      "key": "enamel",
+      "prompt": "Create a production-ready transparent raster PNG UI sprite sheet, landscape 1536x1024. Premium Korean mobile game UI, polished ivory enamel with extremely fine navy and blue-grey trims, tasteful cool teal accents, not cartoon plastic, not paper, restrained depth. NO text, NO numbers, NO letters, NO brands, NO panels full of information. Truly transparent outside the individual pieces. Draw only these separated assets exactly arranged on the sheet with generous empty gutters: (1) at x60 y40 width1416 height90 a long horizontal health bar track, fine ivory raised enamel rim, refined restrained metallic endcaps, deep navy quiet interior; (2) x60 y180 width1416 height50 a clean horizontal teal-green health fill with extremely subtle top reflection, straight horizontal form; (3) x60 y300 width440 height140 a compact thin ivory enamel tab/button surface, elegant navy hairline edge, very shallow bevel, quiet blank interior, no screws; (4) x560 y300 width610 height140 matching compact reroll button surface, same ivory material and clean blank face, no screws; (5) x60 y500 width480 height130 a small muted warm amber purchase-button face, thin ivory and navy edge, restrained satin enamel, no screws, no icons; (6) x680 y500 width160 height160 a sharp tasteful dark navy clockwise circular reroll arrow icon, centered, simple continuous one-turn arrow; (7) x1000 y500 width160 height160 a dark navy PAUSE symbol formed from exactly two simple parallel upright filled bars, no surrounding circle; (8) x60 y760 width1416 height200 a horizontal slim ivory enamel information header, precise small corner fittings only, thin navy trim, understated cool highlights and calm bright center. All individual sprites viewed straight-on flat UI elevation with shallow material depth, no perspective, no trays or shelves, smooth anti-aliased edges and genuine alpha. Do not connect sprites together. Highly detailed, crisp raster artwork for nine-slice UI, texture reflections mostly near edges, blank centers."
+    },
+    {
+      "key": "glass",
+      "prompt": "Create a production-ready transparent raster PNG UI material sprite sheet, landscape 1536x1024. Elegant subtle glassmorphism for a premium Korean mobile game: very thin blue-grey glass edges, faint ivory reflections, extremely restrained transparent surfaces, no cartoon toys, no opaque paper, no heavy bevels, no screws, no perspective platforms. Truly transparent outside sprites and translucent inside glass. No text, no letters, no numbers, no icons, no skyline or illustration. Only these four distinct isolated components with generous transparent gutters: (1) at x70 y60 width640 height600, a flat rectangular softly rounded transparent glass card overlay, fine transparent edge, extremely subtle diagonal reflection limited to upper corner and fine inner edge, unobstructed quiet transparent central 80 percent, no floor or plinth; (2) at x850 y80 width600 height190, a slim horizontal transparent glass toolbar background, same hairline material with subtle top reflection, quiet near-transparent center, no individual subdivisions; (3) at x850 y430 width520 height180, an extremely soft neutral blue-grey ambient oval contact shadow on transparent background, diffuse to alpha zero, no visible hard edge or solid center, intended to blend an existing character/item sprite naturally with its card without becoming a tray; (4) at x850 y760 width520 height70, a short thin transparent teal glass selected-state edge accent, soft refined teal rim, interior transparent. Exact front-facing UI sprites, no perspective tilt, no scenery, no cast backdrop. Polished raster details at 4x UI resolution, calm highlights. Do not create black opaque background."
+    }
+  ],
+  "materialMetadata": "materials.json",
+  "rasterDensity": 4,
+  "nativeFonts": [
+    "BMJUA",
+    "Haeong Sans",
+    "Paperlogy",
+    "Barlow Condensed"
+  ],
+  "revisions": [
+    {
+      "id": "revision-02",
+      "date": "2026-10-03",
+      "scope": "Approval-pending mockup UI; existing canonical gem replacement only in production.",
+      "generatedSources": [
+        {
+          "savedAsset": "assets/cstore-surfaces-02.png",
+          "source": "C:/Users/geniu/.codex/generated_images/01a0f2b0-afe6-7281-8ba3-48d0d8354159/exec-a2b7dcea-3612-42f5-a641-a79397dacd47.png"
+        },
+        {
+          "savedAsset": "assets/cstore-controls-02.png",
+          "source": "C:/Users/geniu/.codex/generated_images/01a0f2b0-afe6-7281-8ba3-48d0d8354159/exec-9fdc4d21-92c0-4e57-a24d-a5af270c873e.png"
+        },
+        {
+          "savedAsset": "assets/spy-02.png",
+          "source": "C:/Users/geniu/.codex/generated_images/01a0f2b0-afe6-7281-8ba3-48d0d8354159/exec-afce15eb-759c-436a-9508-e40890f8fd8d.png"
+        }
+      ],
+      "prompts": [
+        {
+          "key": "cstore-surfaces",
+          "prompt": "Create a genuine transparent PNG raster sprite sheet, 1536x1024 landscape, for a fictional Korean 24-hour convenience store game shop called Gate24 (but DO NOT DRAW ANY WORDS, letters, numbers, logos or actual brand marks; native text is added later). Familiar Korean convenience-store atmosphere: fresh milk-white plastic fixtures, cool white LED light strips, teal and navy sign bands with one restrained lime accent, clean refrigerated-glass display-door trim, small pleasant details. Contemporary graphic, playful and polished, not fantasy armor, not golden ornate frame, not sci-fi cockpit. No screws, no bolts, no rivets, no diagonal gold corner decorations, no paper texture, no wooden market stall, no pedestal or tray. EXACT SPRITE LAYOUT on TRANSPARENT empty background, separated with gutters: A x45 y40 width900 height490 large wide cabinet/shop outer backdrop, clean lightly shaded cool-white quiet interior, thin navy outer edge, broad simple teal-and-lime roof fascia detail only near upper outer rim, soft glass reflections near margins; B x45 y600 width900 height140 long rectangular shop sign header, bright white center for native logo and controls, thin teal band and navy edge reminiscent of a Korean convenience-store awning; C x1020 y40 width460 height640 tall product card surround, thin white refrigerated-door frame with restrained teal edge, calm nearly white interior, absolutely no graphics in its center; D x1020 y740 width460 height235 matching clean information panel surround, same cool white quiet interior, straight thin edge. Front-facing orthographic UI elements, subtle shallow depth, crisp anti-aliasing, raster material details. Keep all central text areas quiet. Alpha outside sprites; preserve generous crop room. No icons."
+        },
+        {
+          "key": "cstore-controls",
+          "prompt": "Transparent PNG sprite sheet 1536x1024 landscape, contemporary Korean convenience store mobile game buttons, fictional and unbranded. Fresh milk-white enamel/plastic, clean teal and navy colors, quiet satin finish, small lime accent only when selected. Refined slim store price-label and refrigeration-control style. Absolutely NO screws, bolts, gold corners, old metal ornament, letters, words, numbers, price symbols or store logos. All sprites front-facing, thin clean trim, gentle shallow depth, not childish, no paper, no trays. EXACT separated layout: (1) x55 y60 width520 height170 compact horizontal ivory/teal tab background, bright center, simple softly squared corners; (2) x700 y60 width740 height170 matching reroll button surface, blank center, same silhouette family; (3) x55 y370 width520 height140 small teal purchase price-label button with navy edge, soft muted teal body not orange, quiet center; (4) x700 y350 width740 height220 wide NEXT WAVE main button, dark navy face with refined teal edge/LED line, readable blank center, confident modern convenience-store checkout graphic; (5) x55 y740 width1380 height170 long secondary white information button with slim navy edge and faint teal detail. Keep backgrounds outside sprites genuinely transparent. Add no icons; existing icons are composited later. High-definition raster, no vector or flat mockup boxes."
+        },
+        {
+          "key": "spy",
+          "prompt": "Create a high-detail transparent raster PNG sprite sheet 1536x1024 landscape for the Seoul Hero espionage-operation lobby. Sophisticated modern Korean intelligence equipment, navy/gunmetal, smoked glass, fine cyan light, realistic construction with cute game illustration finish, refined and mature, not toy, not medieval, not gold fantasy frame. Genuine alpha outside each sprite. NO text, letters, numbers, logos, human characters or guns. Three separated sprites: (1) x40 y30 width860 height720 a premium open encrypted field-operation terminal / tactical briefcase seen at tasteful three-quarter view, dense convincing detail: dark navy precision hard case, small metallic latches, fold-out screen with a stylized orthogonal Seoul city grid and cyan route points (abstract map, no labels), tiny status lights, layered transparent holographic map emitted subtly above the screen, small antenna and encrypted communications module. The whole device is one coherent icon object with no huge pedestal. Large easily recognizable silhouette and rich fine detail; (2) x1040 y100 width410 height620 a separate very soft translucent cyan holographic scanning-light overlay, tapering vertical beam with a few fine horizontal scan streaks and sparse tiny particles, no solid borders, fades to zero alpha, intended as pulse above the terminal; (3) x55 y790 width1360 height220 a very elegant wide operation-deploy button, dark navy smoked glass face, fine cyan luminous rim and precise silver small endcaps, sleek spy gadget styling, quiet blank central face for native Korean text, no orange, no screws or ornate gems. Front-facing button, no perspective. The terminal may be three-quarter view but the button is a flat UI asset. Keep these sprites separate, no scenery or background."
+        }
+      ],
+      "materialMetadata": "materials.json",
+      "runtimeConnected": false
+    },
+    {
+      "id": "revision-03",
+      "date": "2026-10-03",
+      "scope": "Approval-pending mockup UI only; production unchanged this revision.",
+      "generatedSources": [
+        {
+          "savedAsset": "assets/lobby-icons-03.png",
+          "source": "C:/Users/geniu/.codex/generated_images/01a0f2b0-afe6-7281-8ba3-48d0d8354159/exec-614503d0-f157-4547-a69b-36c30a39ee48.png"
+        },
+        {
+          "savedAsset": "assets/purchase-navy-03.png",
+          "source": "C:/Users/geniu/.codex/generated_images/01a0f2b0-afe6-7281-8ba3-48d0d8354159/exec-09c1b5ca-c974-4d00-9f0d-35f7720a950f.png"
+        }
+      ],
+      "prompts": [
+        {
+          "key": "lobby-icons-03",
+          "prompt": "Create a transparent raster PNG sprite sheet, 1536x1024 landscape, four detailed illustrated UI objects for Seoul Hero intelligence-operation lobby. The supplied facility sheet is STYLE REFERENCE ONLY: match its crisp small-scale illustrated dark navy metal, ivory/silver panels and restrained cyan accents, shallow three-quarter game illustration, sophisticated mature equipment. Do not copy facility buildings or stands. These icons render at 36x36 pixels, so clear silhouettes and compact detail are essential. EXACT FOUR SEPARATED CELLS in a 2x2 grid, generous alpha gutters: upper-left x70 y55 w620 h405 a CLOSED NAVY HARDCOVER REFERENCE BOOK with silver corner protectors, visible cream page edges and one subtle cyan bookmark strip; no writing, no lettering, no magic eye, no pad or pedestal. Upper-right x850 y55 w600 h405 a METAL SETTINGS GEAR, strong readable silver teeth, dark navy inner mechanical hub, one restrained cyan inset, slightly beveled and materially detailed, no enclosing button, no pedestal. Lower-left x70 y550 w620 h405 MUSIC ON, a clearly recognizable connected pair of musical notes as a small navy/silver physical illustration with restrained cyan note-head accents and a very small speaker detail, no box around icon. Lower-right x850 y550 w600 h405 MUSIC OFF, SAME music-note object and proportions, desaturated silver/navy with a fine silver diagonal mute slash, no red badge, no changes to silhouette size. NO text, letters, numbers, labels, outer frames, trays or backgrounds. Actual transparent alpha outside all objects; cropped tight individual silhouettes inside their cells. Balanced ivory metal highlights so readable on the rainy dark lobby, no toy-like rainbow colors, no gold ornament, no flat SVG icon look. High-detail polished raster artwork.",
+          "referenced": [
+            "C:/Users/geniu/Documents/GitHub/Seoul-Hero/assets/ui/urban-operation/facilities_01.png"
+          ]
+        },
+        {
+          "key": "purchase-navy-03",
+          "prompt": "Create a transparent PNG isolated purchase-button raster sprite based on the SMALL MINT BUTTON at middle-left of the supplied UI sheet (reference/edit target component). Preserve its clean softly squared capsule silhouette, thin navy metallic edge, shallow polished refrigeration-control material and inset endcaps. Change the face color to LIGHT NAVY / desaturated powder blue-grey, approximately #9CACC5, distinctly different from mint and teal selected-card highlighting. Replace saturated cyan rim highlights with subtle silver-blue reflections. Do not use orange, gold, lime or green. Output JUST THIS SINGLE BLANK BUTTON on genuine transparent background, 1536x1024 landscape canvas: one wide horizontal button centered around x60 y370 width1416 height280, leaving ample alpha gutters; viewed front-on without perspective, no surrounding card, no other sprites. Quiet light blue-grey central face for native navy text and purple currency icon to be added later. A thin dark navy outline and restrained silver upper glint, mature Korean convenience-store game price label, no screws, bolts, rivets, text, numbers, symbols, icons or shadows beyond a small subtle button shadow. Keep high-definition antialiasing and raster enamel details. This is a button surface recolor, not a new decorative motif.",
+          "referenced": [
+            "C:/Users/geniu/Documents/GitHub/Seoul-Hero/design/ui-image-skins/enamel-glass-01/assets/cstore-controls-02.png"
+          ]
+        }
+      ],
+      "materialMetadata": "materials.json",
+      "runtimeConnected": false
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "previewOnly": true,
+  "size": [
+    915,
+    412
+  ],
+  "skin": "c",
+  "fontDirection": "b",
+  "source": {
+    "content": "godot/data/content.json",
+    "sha256": "ced02f7f687d40b35ccc3ae8d8ab3c1d904b07aa3c4d0b34e79dba3d5dab6d1c",
+    "skins": "design/ui-image-skins/skins.json",
+    "skinSha256": "fccb5fe3be0e49afe822d874caca91ab7a915b91eefa082ebc92bea182f56ef5"
+  },
+  "screens": [
+    {
+      "id": "01-deployment-depth",
+      "png": "captures/01-deployment-depth.png",
+      "sha256": "4ad296a0a1d5e7217965f14a708df5bf91b8d457e0fde786837ac1df23b4b001"
+    },
+    {
+      "id": "02-character-weapon",
+      "png": "captures/02-character-weapon.png",
+      "sha256": "6a3ceae6594e827c6bfac4ce0d007a69e056c128747c22b4e86d1bec97671653"
+    },
+    {
+      "id": "03-growth",
+      "png": "captures/03-growth.png",
+      "sha256": "369c2d0638c3647c322c6e56096046225788c3ff1e9fe3afc9c48994bf9e671e"
+    },
+    {
+      "id": "04-archive-item",
+      "png": "captures/04-archive-item.png",
+      "sha256": "108f09c22ee55f00c3548ef3b79fd6a03bc3b08bf067836416e0db394afb1baf"
+    },
+    {
+      "id": "05-settings",
+      "png": "captures/05-settings.png",
+      "sha256": "0ebfcf1c53374ee02abc29aa8a98d57ffba3eae68d1c19414f2d245070f3fdde"
+    },
+    {
+      "id": "06-hud-pause",
+      "png": "captures/06-hud-pause.png",
+      "sha256": "e4ff4168fcd480d71427013a241cbd5c3d29838051c339f9db073c496eb6d615"
+    }
+  ],
+  "productionLoaded": false,
+  "simulation": false,
+  "saveAdaptersLoaded": false,
+  "audioPlayback": false,
+  "oldNineCapturesPreserved": true,
+  "authoredImages": {
+    "source": "design/ui-image-skins/assets",
+    "newImageGeneration": false
+  },
+  "capturedAtUTC": "2026-10-02T11:07:55.428Z",
+  "fontFit": {
+    "file": "captures/font-fit.json",
+    "issueCount": 0,
+    "labelCount": 125,
+    "minimumFontSize": 14
+  },
+  "visualReview": {
+    "reviewedScreens": 6,
+    "scope": "Static screenshots at 915×412; no gameplay/touch/storage QA",
+    "adjustments": [
+      "Separated gate illustration and depth numerals",
+      "Preserved full item copy with explicit condition/penalty line breaks"
+    ]
+  }
+}

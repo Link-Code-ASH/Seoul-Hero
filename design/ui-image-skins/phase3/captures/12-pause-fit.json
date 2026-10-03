@@ -1,0 +1,235 @@
+{
+	"audioPlayback": false,
+	"contentSha256": "ced02f7f687d40b35ccc3ae8d8ab3c1d904b07aa3c4d0b34e79dba3d5dab6d1c",
+	"issueCount": 0,
+	"previewOnly": true,
+	"productionLoaded": false,
+	"saveAdaptersLoaded": false,
+	"screens": [
+		{
+			"controls": [
+				{
+					"caption": "계속하기",
+					"minimum44": true,
+					"rect": [
+						325.0,
+						233.0,
+						265.0,
+						44.0
+					],
+					"role": "controls/primary"
+				},
+				{
+					"caption": "출동 종료",
+					"minimum44": true,
+					"rect": [
+						325.0,
+						281.0,
+						265.0,
+						44.0
+					],
+					"role": "controls/secondary"
+				}
+			],
+			"fitIssues": [],
+			"labels": [
+				{
+					"actualSize": [
+						259.0,
+						36.0
+					],
+					"align": 1,
+					"fontHeight": 29.0,
+					"fontSize": 24,
+					"lines": 1,
+					"rect": [
+						328.0,
+						108.0,
+						259.0,
+						36.0
+					],
+					"requiredHeight": 29.0,
+					"requiredWidth": 82.0,
+					"role": "heading",
+					"text": "일시정지"
+				},
+				{
+					"actualSize": [
+						281.0,
+						29.0
+					],
+					"align": 1,
+					"fontHeight": 17.0,
+					"fontSize": 14,
+					"lines": 1,
+					"rect": [
+						317.0,
+						160.0,
+						281.0,
+						29.0
+					],
+					"requiredHeight": 17.0,
+					"requiredWidth": 112.0,
+					"role": "body",
+					"text": "광화문 광장 · 심도 6"
+				},
+				{
+					"actualSize": [
+						281.0,
+						29.0
+					],
+					"align": 1,
+					"fontHeight": 20.0,
+					"fontSize": 16,
+					"lines": 1,
+					"rect": [
+						317.0,
+						192.0,
+						281.0,
+						29.0
+					],
+					"requiredHeight": 20.0,
+					"requiredWidth": 91.0,
+					"role": "control",
+					"text": "7 / 20 웨이브"
+				},
+				{
+					"actualSize": [
+						241.0,
+						36.0
+					],
+					"align": 1,
+					"fontHeight": 21.0,
+					"fontSize": 17,
+					"lines": 1,
+					"rect": [
+						337.0,
+						237.0,
+						241.0,
+						36.0
+					],
+					"requiredHeight": 21.0,
+					"requiredWidth": 60.0,
+					"role": "control",
+					"text": "계속하기"
+				},
+				{
+					"actualSize": [
+						241.0,
+						36.0
+					],
+					"align": 1,
+					"fontHeight": 20.0,
+					"fontSize": 16,
+					"lines": 1,
+					"rect": [
+						337.0,
+						285.0,
+						241.0,
+						36.0
+					],
+					"requiredHeight": 20.0,
+					"requiredWidth": 60.0,
+					"role": "control",
+					"text": "출동 종료"
+				}
+			],
+			"materials": [
+				{
+					"assetScale": 4.0,
+					"material": "command/panel",
+					"rect": [
+						294.0,
+						84.0,
+						327.0,
+						250.0
+					],
+					"slice": [
+						68.0,
+						44.0,
+						45.0,
+						40.0
+					],
+					"source": [
+						18.0,
+						103.0,
+						788.0,
+						295.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "command/title",
+					"rect": [
+						317.0,
+						105.0,
+						281.0,
+						43.0
+					],
+					"slice": [
+						58.0,
+						25.0,
+						65.0,
+						25.0
+					],
+					"source": [
+						868.0,
+						169.0,
+						773.0,
+						164.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "controls/primary",
+					"rect": [
+						325.0,
+						233.0,
+						265.0,
+						44.0
+					],
+					"slice": [
+						72.0,
+						36.0,
+						72.0,
+						48.0
+					],
+					"source": [
+						39.0,
+						135.0,
+						762.0,
+						245.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "controls/secondary",
+					"rect": [
+						325.0,
+						281.0,
+						265.0,
+						44.0
+					],
+					"slice": [
+						72.0,
+						36.0,
+						72.0,
+						48.0
+					],
+					"source": [
+						859.0,
+						134.0,
+						762.0,
+						246.0
+					]
+				}
+			],
+			"screen": "12-pause"
+		}
+	],
+	"simulation": false,
+	"size": [
+		915,
+		412
+	]
+}

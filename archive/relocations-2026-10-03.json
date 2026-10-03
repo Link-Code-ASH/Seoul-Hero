@@ -1,0 +1,1890 @@
+{
+  "date": "2026-10-03",
+  "reason": "Retired pre-SD artwork and unused Godot rigs are preserved outside runtime import roots. Original provenance filenames are unchanged; resolve historical paths through this list.",
+  "entries": [
+    {
+      "original": "assets/bosses/boss_gate_keeper_01.png",
+      "archive": "archive/retired-art/assets/bosses/boss_gate_keeper_01.png",
+      "bytes": 2118140,
+      "sha256": "64f01ae2d45aa7117f400734c48ddc9c3833d482a3d8e235ec8f5d0b5c611f70"
+    },
+    {
+      "original": "assets/bosses/boss_gate_keeper_01.webp",
+      "archive": "archive/retired-art/assets/bosses/boss_gate_keeper_01.webp",
+      "bytes": 560898,
+      "sha256": "9b9d53e124a2b1209480bda303c51e3fa8583b0762118455a58d20a000905ee1"
+    },
+    {
+      "original": "assets/bosses/boss_rift_queen_01.png",
+      "archive": "archive/retired-art/assets/bosses/boss_rift_queen_01.png",
+      "bytes": 1486957,
+      "sha256": "fc7b0496dad7961a19f0d83fe39713ffaabaa565d304462147dda75cb0d42986"
+    },
+    {
+      "original": "assets/bosses/boss_rift_queen_01.webp",
+      "archive": "archive/retired-art/assets/bosses/boss_rift_queen_01.webp",
+      "bytes": 425900,
+      "sha256": "36ab837ed9ce46dfa26bde2c316b86d76d9e3ff420f889412b2e1d7b83033125"
+    },
+    {
+      "original": "assets/characters/kang_taehoon_truck_01.png",
+      "archive": "archive/retired-art/assets/characters/kang_taehoon_truck_01.png",
+      "bytes": 1263465,
+      "sha256": "40504a2cf19c8db569196edb78f5cd8db5750dd43433611d619dd5999d6f8ebd"
+    },
+    {
+      "original": "assets/characters/player_plaza_01.png",
+      "archive": "archive/retired-art/assets/characters/player_plaza_01.png",
+      "bytes": 1414622,
+      "sha256": "18a27679abf22da5b53b5c72d1dc432357f70b3ba5e2a5eb2be5fed9687f6d49"
+    },
+    {
+      "original": "assets/characters/player_plaza_01.webp",
+      "archive": "archive/retired-art/assets/characters/player_plaza_01.webp",
+      "bytes": 343188,
+      "sha256": "4770db0f721024ec72372c32636c3144ba698c80a8f58b96c2c4f2782649a893"
+    },
+    {
+      "original": "assets/enemies/enemy_bomber_01.png",
+      "archive": "archive/retired-art/assets/enemies/enemy_bomber_01.png",
+      "bytes": 1387457,
+      "sha256": "2adc2e69fc149e0ac6bb778fe7733094d2f36aa0c14f466ae79b3dfe401e6034"
+    },
+    {
+      "original": "assets/enemies/enemy_bomber_01.webp",
+      "archive": "archive/retired-art/assets/enemies/enemy_bomber_01.webp",
+      "bytes": 352538,
+      "sha256": "feb0adff790fc245ec601dab164a27914b63e74289607bc470385b0881b8af22"
+    },
+    {
+      "original": "assets/enemies/enemy_brute_01.png",
+      "archive": "archive/retired-art/assets/enemies/enemy_brute_01.png",
+      "bytes": 1029111,
+      "sha256": "d50f90bbd7d4ba7e8ce3e75b2dcbb3ac37ddf01d01bfdb3d297063cf7c765975"
+    },
+    {
+      "original": "assets/enemies/enemy_brute_01.webp",
+      "archive": "archive/retired-art/assets/enemies/enemy_brute_01.webp",
+      "bytes": 271900,
+      "sha256": "7d39ab83d5de9c3cf3eea053b9189c1530b16ffbe04e326e4ae476849cea2ff9"
+    },
+    {
+      "original": "assets/enemies/enemy_bulwark_01.png",
+      "archive": "archive/retired-art/assets/enemies/enemy_bulwark_01.png",
+      "bytes": 2226030,
+      "sha256": "682caa6f6a0a09e43c56a6d92ba0127772e42cdcba132c147e74e4f067e94b13"
+    },
+    {
+      "original": "assets/enemies/enemy_bulwark_01.webp",
+      "archive": "archive/retired-art/assets/enemies/enemy_bulwark_01.webp",
+      "bytes": 573884,
+      "sha256": "62dc9110df0418254449ccd3aa4e8db76ffa3fa4a9102932d80e162fcaa906b5"
+    },
+    {
+      "original": "assets/enemies/enemy_charger_01.png",
+      "archive": "archive/retired-art/assets/enemies/enemy_charger_01.png",
+      "bytes": 1619647,
+      "sha256": "ed7db09508695ca746a5cc82b1b2336c39703b4a0b2ca795f71b3b979693264f"
+    },
+    {
+      "original": "assets/enemies/enemy_charger_01.webp",
+      "archive": "archive/retired-art/assets/enemies/enemy_charger_01.webp",
+      "bytes": 398422,
+      "sha256": "5cf96dc9dfd90d844fa7a79163b6e22492275b7f57f1ed5b020b074034a92a7a"
+    },
+    {
+      "original": "assets/enemies/enemy_hound_01.png",
+      "archive": "archive/retired-art/assets/enemies/enemy_hound_01.png",
+      "bytes": 1899489,
+      "sha256": "c2df21c2d716be4f35e868f713b397d00e96048411a7d3b17930c8b115a89dcf"
+    },
+    {
+      "original": "assets/enemies/enemy_hound_01.webp",
+      "archive": "archive/retired-art/assets/enemies/enemy_hound_01.webp",
+      "bytes": 299018,
+      "sha256": "26ce8810559fdee6d4832d9536a35cf43717a87589a2461141f816b5d9725a52"
+    },
+    {
+      "original": "assets/enemies/enemy_lurker_01.png",
+      "archive": "archive/retired-art/assets/enemies/enemy_lurker_01.png",
+      "bytes": 912336,
+      "sha256": "5093f68a9c333423f768e6e6bdfa321ab000b24cf7f4a381631bfd6c420371eb"
+    },
+    {
+      "original": "assets/enemies/enemy_lurker_01.webp",
+      "archive": "archive/retired-art/assets/enemies/enemy_lurker_01.webp",
+      "bytes": 245156,
+      "sha256": "44bb5666de2b5064544eedb672b58c375edbd1ce0d831e19c15a61b52fdfb4e4"
+    },
+    {
+      "original": "assets/enemies/enemy_mender_01.png",
+      "archive": "archive/retired-art/assets/enemies/enemy_mender_01.png",
+      "bytes": 2274070,
+      "sha256": "30d58758588497c20f0e772b4175e812b7ec03646051492bcd23371b99326df2"
+    },
+    {
+      "original": "assets/enemies/enemy_mender_01.webp",
+      "archive": "archive/retired-art/assets/enemies/enemy_mender_01.webp",
+      "bytes": 429386,
+      "sha256": "36117439445e72a1d679ef434e824bde4acc4c3fe7a980f918c2b35876551c14"
+    },
+    {
+      "original": "assets/enemies/enemy_plaza_atlas_02.png",
+      "archive": "archive/retired-art/assets/enemies/enemy_plaza_atlas_02.png",
+      "bytes": 1413361,
+      "sha256": "4cda56b4cdf7fc966b051d2fb8c85c6ed793b2efc4a4ba866c90ef60b5f0aabd"
+    },
+    {
+      "original": "assets/enemies/enemy_sentinel_01.png",
+      "archive": "archive/retired-art/assets/enemies/enemy_sentinel_01.png",
+      "bytes": 2016153,
+      "sha256": "223da58cc48fc85facfc6fc153683cca1e309c6e9a56bc118b8ffc9bf55acac0"
+    },
+    {
+      "original": "assets/enemies/enemy_sentinel_01.webp",
+      "archive": "archive/retired-art/assets/enemies/enemy_sentinel_01.webp",
+      "bytes": 487928,
+      "sha256": "a46b1a32890970e38f3c983782bb80593c2f8b82a473da4d24dbee5988799d67"
+    },
+    {
+      "original": "assets/enemies/enemy_spitter_01.png",
+      "archive": "archive/retired-art/assets/enemies/enemy_spitter_01.png",
+      "bytes": 1499985,
+      "sha256": "f40dee98883e75d1f791befc399cc5f8ba77b0840ed36ce638ee26582bb94807"
+    },
+    {
+      "original": "assets/enemies/enemy_spitter_01.webp",
+      "archive": "archive/retired-art/assets/enemies/enemy_spitter_01.webp",
+      "bytes": 417690,
+      "sha256": "f45337daad5c542e3d56792733422c8b45473ee3f3675d3be74a02f5709a6e63"
+    },
+    {
+      "original": "assets/enemies/enemy_splitter_01.png",
+      "archive": "archive/retired-art/assets/enemies/enemy_splitter_01.png",
+      "bytes": 1639712,
+      "sha256": "35ad6bfc6963411c92854251f35774362ffa30aae26782f858a228fc8a5f82aa"
+    },
+    {
+      "original": "assets/enemies/enemy_splitter_01.webp",
+      "archive": "archive/retired-art/assets/enemies/enemy_splitter_01.webp",
+      "bytes": 386448,
+      "sha256": "940cb9124aeed136c518c8cdb2c2a03d121f1552a81a7ffc205509930e384eca"
+    },
+    {
+      "original": "assets/enemies/enemy_summoner_01.png",
+      "archive": "archive/retired-art/assets/enemies/enemy_summoner_01.png",
+      "bytes": 1312026,
+      "sha256": "539e1d6f502738146139a0e77b1636d5ed31061701122dc13b6213f1206803e7"
+    },
+    {
+      "original": "assets/enemies/enemy_summoner_01.webp",
+      "archive": "archive/retired-art/assets/enemies/enemy_summoner_01.webp",
+      "bytes": 351712,
+      "sha256": "7a2e5d28fe5ba462fc29b9360427144945881d11f47d15f66c44525260ad1a88"
+    },
+    {
+      "original": "assets/enemies/enemy_swarm_01.png",
+      "archive": "archive/retired-art/assets/enemies/enemy_swarm_01.png",
+      "bytes": 1063067,
+      "sha256": "878e02da44fa0d25c6a249da8896b92dbf436ab2b661f8501f4c4996697fbb41"
+    },
+    {
+      "original": "assets/enemies/enemy_swarm_01.webp",
+      "archive": "archive/retired-art/assets/enemies/enemy_swarm_01.webp",
+      "bytes": 292528,
+      "sha256": "74b1dd8d5a1f1e13141e12c8d83013ce622fee5e9cae3942c97a6ab1d3831d5d"
+    },
+    {
+      "original": "assets/enemies/provenance-redesign-2026-09-22.json",
+      "archive": "archive/retired-art/assets/enemies/provenance-redesign-2026-09-22.json",
+      "bytes": 1786,
+      "sha256": "f81ffb0424820656f8351cf905ac1d59376a7a5172fb0a9521b90a629b895081"
+    },
+    {
+      "original": "assets/structures/provenance.json",
+      "archive": "archive/retired-art/assets/structures/provenance.json",
+      "bytes": 497,
+      "sha256": "59987932df8eecd087ef3b06b9fbe072398d22e6a57384d3f3f451bd4401764e"
+    },
+    {
+      "original": "assets/structures/structure_auto_turret_01.png",
+      "archive": "archive/retired-art/assets/structures/structure_auto_turret_01.png",
+      "bytes": 1060662,
+      "sha256": "3ebb59048abc4d6ca94a78e916d9b1e0860c5cb9f2d90cc5a5fa55582b3e2062"
+    },
+    {
+      "original": "assets/structures/structure_auto_turret_02.png",
+      "archive": "archive/retired-art/assets/structures/structure_auto_turret_02.png",
+      "bytes": 1034056,
+      "sha256": "03c6074f5c46c38a386b74fdee0d21f5987e859434559eba5d9a702b53e25591"
+    },
+    {
+      "original": "assets/structures/structure_mana_field_01.svg",
+      "archive": "archive/retired-art/assets/structures/structure_mana_field_01.svg",
+      "bytes": 821,
+      "sha256": "f95c4853f7103ae89f0a4dc892f8777732310ef8570ae492184cbd16b7d14f02"
+    },
+    {
+      "original": "assets/structures/structure_mana_field_02.png",
+      "archive": "archive/retired-art/assets/structures/structure_mana_field_02.png",
+      "bytes": 1042053,
+      "sha256": "481c7437ed9124ce7652c80bbc647d0211a853d5ee446bd5f74ec673959a7b39"
+    },
+    {
+      "original": "assets/structures/structure_mana_mine_01.svg",
+      "archive": "archive/retired-art/assets/structures/structure_mana_mine_01.svg",
+      "bytes": 739,
+      "sha256": "35b76ccfce9f1c6453d1130a76d651e9887c7d25441caf98ceee685eb9350fca"
+    },
+    {
+      "original": "assets/structures/structure_mana_mine_02.png",
+      "archive": "archive/retired-art/assets/structures/structure_mana_mine_02.png",
+      "bytes": 908376,
+      "sha256": "b8c7fe895012185a02445fe5aa098aa5d64ca76ad213ddc72689a83e14d37478"
+    },
+    {
+      "original": "assets/weapons/provenance.json",
+      "archive": "archive/retired-art/assets/weapons/provenance.json",
+      "bytes": 518,
+      "sha256": "87d0785bb81f3604b3c78214fd86dc0aaa9041b5336b2894281c07bb4f4b4e32"
+    },
+    {
+      "original": "assets/weapons/weapon_guardian_shuriken_01.png",
+      "archive": "archive/retired-art/assets/weapons/weapon_guardian_shuriken_01.png",
+      "bytes": 947259,
+      "sha256": "c173c16bdb3fc667c10f9d788bea33c6d335a4bc3feddfa9a07e80f8cf410e25"
+    },
+    {
+      "original": "assets/content-2026/parkDojun-portrait-01.png",
+      "archive": "archive/retired-art/assets/content-2026/parkDojun-portrait-01.png",
+      "bytes": 2080677,
+      "sha256": "150c2bace66fd48b84bc225d2b08068386c35b89b3f52abdbe1405fe8b59da2b"
+    },
+    {
+      "original": "assets/content-2026/yoonHarin-portrait-01.png",
+      "archive": "archive/retired-art/assets/content-2026/yoonHarin-portrait-01.png",
+      "bytes": 1733455,
+      "sha256": "a11c132c9d8a1fbaf217f60d4f970d4ea05445ba166e37993af33fe97429592f"
+    },
+    {
+      "original": "assets/effects/effect_chain_lightning_02.png",
+      "archive": "archive/retired-art/assets/effects/effect_chain_lightning_02.png",
+      "bytes": 699439,
+      "sha256": "33677549064baa67503ee57beccfe14ff6964a4896c88f0bd7273c06f6233297"
+    },
+    {
+      "original": "assets/effects/effect_combined_explosion_mine_02.png",
+      "archive": "archive/retired-art/assets/effects/effect_combined_explosion_mine_02.png",
+      "bytes": 1697387,
+      "sha256": "bd16fd8cbf593c69007c5baa11ea7ab70ef9c47f6b5fc2527fc6d9b321210402"
+    },
+    {
+      "original": "assets/effects/effect_combined_explosion_orange_01.png",
+      "archive": "archive/retired-art/assets/effects/effect_combined_explosion_orange_01.png",
+      "bytes": 1754475,
+      "sha256": "fab174c4a783072ae40a12efed60d020cbde2bac3c9c747b92880906a27c1fff"
+    },
+    {
+      "original": "assets/effects/effect_mana_slash_02.png",
+      "archive": "archive/retired-art/assets/effects/effect_mana_slash_02.png",
+      "bytes": 1627096,
+      "sha256": "78793c45c401c4d6e62d6a70b1908acd054265bfe46927749fe7a13aacc6d26c"
+    },
+    {
+      "original": "assets/environment/environment_bus_stop_01.png",
+      "archive": "archive/retired-art/assets/environment/environment_bus_stop_01.png",
+      "bytes": 1262260,
+      "sha256": "6b75b2c43368f45001395548ff7f93f8933d29b81a75c2c8cc34f4859e1412be"
+    },
+    {
+      "original": "assets/environment/environment_street_lamp_01.png",
+      "archive": "archive/retired-art/assets/environment/environment_street_lamp_01.png",
+      "bytes": 401090,
+      "sha256": "bdf52ec1501462cd2ffeca5f8cc83922f50fc8238569eca7420a974d057b1b5d"
+    },
+    {
+      "original": "assets/environment/environment_tree_planter_01.png",
+      "archive": "archive/retired-art/assets/environment/environment_tree_planter_01.png",
+      "bytes": 1209998,
+      "sha256": "3253fb738e2ecba6f07653437fa5c598827ba5e3c62ed301e1be3f9d27a5e9a1"
+    },
+    {
+      "original": "assets/guild/guild_kang_pixel_01.png",
+      "archive": "archive/retired-art/assets/guild/guild_kang_pixel_01.png",
+      "bytes": 31135,
+      "sha256": "bbc7c0ae490bb46615eced27675c9bcf031db57434ee5483195fc97869feb1c8"
+    },
+    {
+      "original": "assets/guild/guild_rail_foreground_01.webp",
+      "archive": "archive/retired-art/assets/guild/guild_rail_foreground_01.webp",
+      "bytes": 93092,
+      "sha256": "edbb7b10b67e2171e9e2c80b71072f1882f60079958a8cc21f8cddfec8930cb6"
+    },
+    {
+      "original": "assets/guild/guild_song_pixel_01.png",
+      "archive": "archive/retired-art/assets/guild/guild_song_pixel_01.png",
+      "bytes": 26088,
+      "sha256": "2fc5d4d62609eb1aedd071ede7f0c4202b5e23440a339bf0af60d71cdbc5d912"
+    },
+    {
+      "original": "assets/ui/archive/blessing_armor_01.png",
+      "archive": "archive/retired-art/assets/ui/archive/blessing_armor_01.png",
+      "bytes": 218140,
+      "sha256": "bc3bed692a1660880caec88105a239ace09862fd4a6c0bb739d840f397bb29df"
+    },
+    {
+      "original": "assets/ui/archive/blessing_fortune_01.png",
+      "archive": "archive/retired-art/assets/ui/archive/blessing_fortune_01.png",
+      "bytes": 196487,
+      "sha256": "8c0d5fec86a8cfc34356fd4d0d214d4fdef648fdf898a3aeb477e6600818c1db"
+    },
+    {
+      "original": "assets/ui/archive/blessing_harvest_01.png",
+      "archive": "archive/retired-art/assets/ui/archive/blessing_harvest_01.png",
+      "bytes": 237301,
+      "sha256": "4abda34736da2593b0fe2c5712ea4cb9177233704f9c5d74f79d0a543c94dc36"
+    },
+    {
+      "original": "assets/ui/archive/blessing_mountain_01.png",
+      "archive": "archive/retired-art/assets/ui/archive/blessing_mountain_01.png",
+      "bytes": 252732,
+      "sha256": "18bbaddca33f475d8c0368789ecce505ccb8fdd3221e49f86677f83d87503578"
+    },
+    {
+      "original": "assets/ui/archive/blessing_tempo_01.png",
+      "archive": "archive/retired-art/assets/ui/archive/blessing_tempo_01.png",
+      "bytes": 182285,
+      "sha256": "6195e549f2a75207ee2fecb66dae397c6e9cef192bd0fd468622df159f6a56b9"
+    },
+    {
+      "original": "assets/ui/archive/blessing_wind_01.png",
+      "archive": "archive/retired-art/assets/ui/archive/blessing_wind_01.png",
+      "bytes": 228154,
+      "sha256": "c50084cc006aea75f4b1ab3026411e51220b92a7f702d291184cd4763f560354"
+    },
+    {
+      "original": "assets/ui/materials/steel_panel_01.png",
+      "archive": "archive/retired-art/assets/ui/materials/steel_panel_01.png",
+      "bytes": 394863,
+      "sha256": "0af14d76c80511fb535e2e4441bf07b7d59d98eb3500148306468590516ea552"
+    },
+    {
+      "original": "godot/assets/visuals/actors/crawler/claw_02.png",
+      "archive": "archive/legacy-godot-visuals/actors/crawler/claw_02.png",
+      "bytes": 1760359,
+      "sha256": "e1a48c8d69c0fae5fad673314415d7fc0ef1dd3308ec01b3382323f1692ea929"
+    },
+    {
+      "original": "godot/assets/visuals/actors/crawler/claw_02.png.import",
+      "archive": "archive/legacy-godot-visuals/actors/crawler/claw_02.png.import",
+      "bytes": 954,
+      "sha256": "a8ef28b9ad782148f2a41c223803f92682115965afef1013a2faca7216c6dcef"
+    },
+    {
+      "original": "godot/assets/visuals/actors/crawler/part_0.png",
+      "archive": "archive/legacy-godot-visuals/actors/crawler/part_0.png",
+      "bytes": 135834,
+      "sha256": "2534e27497eec1d23705f086e325f6b2e07084e1a10aff2eeb593db608ea9562"
+    },
+    {
+      "original": "godot/assets/visuals/actors/crawler/part_0.png.import",
+      "archive": "archive/legacy-godot-visuals/actors/crawler/part_0.png.import",
+      "bytes": 951,
+      "sha256": "9db0d11981af2cc76907953a36b136b0b1363701c431d8682811d4fb70631758"
+    },
+    {
+      "original": "godot/assets/visuals/actors/crawler/part_1.png",
+      "archive": "archive/legacy-godot-visuals/actors/crawler/part_1.png",
+      "bytes": 131824,
+      "sha256": "f8ead799c83f1b087ea966aecc4b135292a61ea433ec5b796d9413509ab1a54a"
+    },
+    {
+      "original": "godot/assets/visuals/actors/crawler/part_1.png.import",
+      "archive": "archive/legacy-godot-visuals/actors/crawler/part_1.png.import",
+      "bytes": 951,
+      "sha256": "e680b85eaac77983175358de049bf4eab15f20b812294e2499a4a59bee350157"
+    },
+    {
+      "original": "godot/assets/visuals/actors/crawler/part_2.png",
+      "archive": "archive/legacy-godot-visuals/actors/crawler/part_2.png",
+      "bytes": 132480,
+      "sha256": "ff1151e57f0e0807457029ede74d74e5d1ef1eec5afc47bc2e5183068062184f"
+    },
+    {
+      "original": "godot/assets/visuals/actors/crawler/part_2.png.import",
+      "archive": "archive/legacy-godot-visuals/actors/crawler/part_2.png.import",
+      "bytes": 950,
+      "sha256": "d86e606bbf552c5d1d332df76c49c7f207a47af8382440dc89a4b39a549f7d74"
+    },
+    {
+      "original": "godot/assets/visuals/actors/crawler/part_3.png",
+      "archive": "archive/legacy-godot-visuals/actors/crawler/part_3.png",
+      "bytes": 79643,
+      "sha256": "2a20b82feeeb3af5a267a32f76ce8ce9ee4a0646fe097b994d2c41d3de8ea869"
+    },
+    {
+      "original": "godot/assets/visuals/actors/crawler/part_3.png.import",
+      "archive": "archive/legacy-godot-visuals/actors/crawler/part_3.png.import",
+      "bytes": 951,
+      "sha256": "1887b2c2a5a08aed91760b66f048b1192a0bc175fac72a642c9580cb1c005363"
+    },
+    {
+      "original": "godot/assets/visuals/actors/crawler/part_4.png",
+      "archive": "archive/legacy-godot-visuals/actors/crawler/part_4.png",
+      "bytes": 114910,
+      "sha256": "d7d5e5d9159606a0af53e2494ca27da25ef998e18e880cad97e73c89a7b5b51a"
+    },
+    {
+      "original": "godot/assets/visuals/actors/crawler/part_4.png.import",
+      "archive": "archive/legacy-godot-visuals/actors/crawler/part_4.png.import",
+      "bytes": 951,
+      "sha256": "0bb790d39c313f7559faec5472544f6c43fc3993e50eb599cffef7a0d6382d06"
+    },
+    {
+      "original": "godot/assets/visuals/actors/crawler/part_5.png",
+      "archive": "archive/legacy-godot-visuals/actors/crawler/part_5.png",
+      "bytes": 98583,
+      "sha256": "029a42bd447e18a536491b6e0cca02b1149c4cefb2358a2df2ea8d8380f74c18"
+    },
+    {
+      "original": "godot/assets/visuals/actors/crawler/part_5.png.import",
+      "archive": "archive/legacy-godot-visuals/actors/crawler/part_5.png.import",
+      "bytes": 951,
+      "sha256": "b40005d0c23c607f09f6bca519c220ce05924117688221e1a74c9dac77472a8b"
+    },
+    {
+      "original": "godot/assets/visuals/actors/crawler/part_6.png",
+      "archive": "archive/legacy-godot-visuals/actors/crawler/part_6.png",
+      "bytes": 92432,
+      "sha256": "71dcbd5f870e3c1721fc263e456fc6fd87e347e1534af092832c14a89382aea2"
+    },
+    {
+      "original": "godot/assets/visuals/actors/crawler/part_6.png.import",
+      "archive": "archive/legacy-godot-visuals/actors/crawler/part_6.png.import",
+      "bytes": 950,
+      "sha256": "8835c7cd75b0cb58f0cf2cb06f7199dcac2c837d84e3e4159071171e1cef03a0"
+    },
+    {
+      "original": "godot/assets/visuals/actors/crawler/part_7.png",
+      "archive": "archive/legacy-godot-visuals/actors/crawler/part_7.png",
+      "bytes": 86481,
+      "sha256": "a196c5a4ccef22b87d8f6030126eec3248cd60f583a4e0f2907fc70d0e819edd"
+    },
+    {
+      "original": "godot/assets/visuals/actors/crawler/part_7.png.import",
+      "archive": "archive/legacy-godot-visuals/actors/crawler/part_7.png.import",
+      "bytes": 951,
+      "sha256": "ed1953544ba7943156a6c0dc91d23c6778e42cca4ca7a97d969dbb0d7cb2fc8d"
+    },
+    {
+      "original": "godot/assets/visuals/actors/crawler/preview.png",
+      "archive": "archive/legacy-godot-visuals/actors/crawler/preview.png",
+      "bytes": 161585,
+      "sha256": "75df33f24c05b471425047c22390abb07e561f516dad90739bd5aa4b2969d413"
+    },
+    {
+      "original": "godot/assets/visuals/actors/crawler/preview.png.import",
+      "archive": "archive/legacy-godot-visuals/actors/crawler/preview.png.import",
+      "bytes": 955,
+      "sha256": "03a7e89b734f96a37e67d67a4b412b5246d7208c9d055fc4187e6351a96a2308"
+    },
+    {
+      "original": "godot/assets/visuals/actors/kang/portrait.png",
+      "archive": "archive/legacy-godot-visuals/actors/kang/portrait.png",
+      "bytes": 1698395,
+      "sha256": "5f460c9937e38d4d0380b22433edcad52f3db3de59cde8eed4fbbbc970d30166"
+    },
+    {
+      "original": "godot/assets/visuals/actors/kang/portrait.png.import",
+      "archive": "archive/legacy-godot-visuals/actors/kang/portrait.png.import",
+      "bytes": 955,
+      "sha256": "f9d80d3163c79298ddd975933c794d0d13a7e31303f0b11700be7ce8e2f41d7e"
+    },
+    {
+      "original": "godot/assets/visuals/actors/kang/preview.png",
+      "archive": "archive/legacy-godot-visuals/actors/kang/preview.png",
+      "bytes": 57637,
+      "sha256": "4d3911ce9624b191b31353e9fd3b91b2ac8f3c35f7c56181ad018455e677249a"
+    },
+    {
+      "original": "godot/assets/visuals/actors/kang/preview.png.import",
+      "archive": "archive/legacy-godot-visuals/actors/kang/preview.png.import",
+      "bytes": 952,
+      "sha256": "1aef259df90e22d055b579fffe84a49c2402875c057eb07f66cc5347bf150ee4"
+    },
+    {
+      "original": "godot/assets/visuals/actors/kang/quarter_foot.png",
+      "archive": "archive/legacy-godot-visuals/actors/kang/quarter_foot.png",
+      "bytes": 96270,
+      "sha256": "ad55dcc62ce91b007e099a697872d6e17e170b5a39986266b4a29bc8f65450ae"
+    },
+    {
+      "original": "godot/assets/visuals/actors/kang/quarter_foot.png.import",
+      "archive": "archive/legacy-godot-visuals/actors/kang/quarter_foot.png.import",
+      "bytes": 965,
+      "sha256": "5028767c3d69d580ee6c0c67fe2938d40f97c84447abdfab57f647754accbb24"
+    },
+    {
+      "original": "godot/assets/visuals/actors/kang/quarter_forearm.png",
+      "archive": "archive/legacy-godot-visuals/actors/kang/quarter_forearm.png",
+      "bytes": 72444,
+      "sha256": "59097083ca9055ece47398d57a07bc51a08b8ed2cb2c262d728d3d904484d691"
+    },
+    {
+      "original": "godot/assets/visuals/actors/kang/quarter_forearm.png.import",
+      "archive": "archive/legacy-godot-visuals/actors/kang/quarter_forearm.png.import",
+      "bytes": 975,
+      "sha256": "d487f1e6d28a421e1603494a8981060769a02b7a620efc3034a69252f79475f9"
+    },
+    {
+      "original": "godot/assets/visuals/actors/kang/quarter_head.png",
+      "archive": "archive/legacy-godot-visuals/actors/kang/quarter_head.png",
+      "bytes": 137162,
+      "sha256": "3702b81d93d515f5c8b7c9d1c67e5acdd4adfdc233c7d67c7b6ecf8583b0d7b9"
+    },
+    {
+      "original": "godot/assets/visuals/actors/kang/quarter_head.png.import",
+      "archive": "archive/legacy-godot-visuals/actors/kang/quarter_head.png.import",
+      "bytes": 966,
+      "sha256": "456b36a48bfd5acc0f3fa9638d746390aa1edc1e74e22aee71b3bd6d981c01c9"
+    },
+    {
+      "original": "godot/assets/visuals/actors/kang/quarter_hips.png",
+      "archive": "archive/legacy-godot-visuals/actors/kang/quarter_hips.png",
+      "bytes": 118824,
+      "sha256": "8e3f519a45a0573800ae620a05734e1153b39371afb7e96aac0411e092dcc6b1"
+    },
+    {
+      "original": "godot/assets/visuals/actors/kang/quarter_hips.png.import",
+      "archive": "archive/legacy-godot-visuals/actors/kang/quarter_hips.png.import",
+      "bytes": 966,
+      "sha256": "5b2c305f4bb0b962aa8257bee086c0852690aaee5e4a29626226c161b81d907b"
+    },
+    {
+      "original": "godot/assets/visuals/actors/kang/quarter_shin.png",
+      "archive": "archive/legacy-godot-visuals/actors/kang/quarter_shin.png",
+      "bytes": 66536,
+      "sha256": "ab1bba5e6fac9b76c6e71b9c1ff38e680a2f4ee16f268ef19c6bd13b0be40928"
+    },
+    {
+      "original": "godot/assets/visuals/actors/kang/quarter_shin.png.import",
+      "archive": "archive/legacy-godot-visuals/actors/kang/quarter_shin.png.import",
+      "bytes": 966,
+      "sha256": "35d16dfcc75cb23ca90de803c9b38c0320edb134a9dd4a30c4821cafa9dc04a7"
+    },
+    {
+      "original": "godot/assets/visuals/actors/kang/quarter_thigh.png",
+      "archive": "archive/legacy-godot-visuals/actors/kang/quarter_thigh.png",
+      "bytes": 82893,
+      "sha256": "1ee563dc56ababb5930ec27a040b1e6f9e17efa542feff79523a73d39c183ec8"
+    },
+    {
+      "original": "godot/assets/visuals/actors/kang/quarter_thigh.png.import",
+      "archive": "archive/legacy-godot-visuals/actors/kang/quarter_thigh.png.import",
+      "bytes": 969,
+      "sha256": "80cef943845e5fd2a0f3a28faf4c17df3e1092cb5243fe7cc7fb5c8602c8f3dd"
+    },
+    {
+      "original": "godot/assets/visuals/actors/kang/quarter_torso.png",
+      "archive": "archive/legacy-godot-visuals/actors/kang/quarter_torso.png",
+      "bytes": 141413,
+      "sha256": "2012b53414f45f1701a067d2e82e0c9f3aa28dad602713e423c60c9266c4e3fc"
+    },
+    {
+      "original": "godot/assets/visuals/actors/kang/quarter_torso.png.import",
+      "archive": "archive/legacy-godot-visuals/actors/kang/quarter_torso.png.import",
+      "bytes": 969,
+      "sha256": "60a03ca592a05ab4c9931654ad2238326b834b86297afbd41afe540e007903c6"
+    },
+    {
+      "original": "godot/assets/visuals/actors/kang/quarter_upper_arm.png",
+      "archive": "archive/legacy-godot-visuals/actors/kang/quarter_upper_arm.png",
+      "bytes": 85829,
+      "sha256": "a2e76c9f8af479760ffd280c1b58d6d0fce7736872af514ffd084968ee25342f"
+    },
+    {
+      "original": "godot/assets/visuals/actors/kang/quarter_upper_arm.png.import",
+      "archive": "archive/legacy-godot-visuals/actors/kang/quarter_upper_arm.png.import",
+      "bytes": 981,
+      "sha256": "67099f0ffb5fa0ba14534aafa3a22cc5381fd8225a4ac2e1c300334ff8b84658"
+    },
+    {
+      "original": "godot/assets/visuals/actors/parkDojun/quarter_foot.png",
+      "archive": "archive/legacy-godot-visuals/actors/parkDojun/quarter_foot.png",
+      "bytes": 118545,
+      "sha256": "21ac8651b42e697e4db1ce11f99bb15f25ad0db720117b945fd7030834a328d1"
+    },
+    {
+      "original": "godot/assets/visuals/actors/parkDojun/quarter_foot.png.import",
+      "archive": "archive/legacy-godot-visuals/actors/parkDojun/quarter_foot.png.import",
+      "bytes": 971,
+      "sha256": "97ca801d4b66c3d44f8b6a07073bf53c887bfa811a88f757a4311a7d928a9f46"
+    },
+    {
+      "original": "godot/assets/visuals/actors/parkDojun/quarter_forearm.png",
+      "archive": "archive/legacy-godot-visuals/actors/parkDojun/quarter_forearm.png",
+      "bytes": 74129,
+      "sha256": "da5f1b98f675b98ec79d230f55bc7176d86c43a8ca2e07552833112d1fd6974a"
+    },
+    {
+      "original": "godot/assets/visuals/actors/parkDojun/quarter_forearm.png.import",
+      "archive": "archive/legacy-godot-visuals/actors/parkDojun/quarter_forearm.png.import",
+      "bytes": 979,
+      "sha256": "2d21a55ad1c20545f3cc5dd7d6d32b40c2e1fd51c603d992e68d6cb2582a6dfe"
+    },
+    {
+      "original": "godot/assets/visuals/actors/parkDojun/quarter_head.png",
+      "archive": "archive/legacy-godot-visuals/actors/parkDojun/quarter_head.png",
+      "bytes": 130171,
+      "sha256": "e25a1c2d0574157918935cd100fbcd4e6d620bc7e410124c7b17e74040e7b6d5"
+    },
+    {
+      "original": "godot/assets/visuals/actors/parkDojun/quarter_head.png.import",
+      "archive": "archive/legacy-godot-visuals/actors/parkDojun/quarter_head.png.import",
+      "bytes": 970,
+      "sha256": "1697a4d3bd502f6a7f46c0569a06d43c4a9531463224ed29783c4bca5e835d20"
+    },
+    {
+      "original": "godot/assets/visuals/actors/parkDojun/quarter_hips.png",
+      "archive": "archive/legacy-godot-visuals/actors/parkDojun/quarter_hips.png",
+      "bytes": 142164,
+      "sha256": "1767b641858925e79887774a88e97e21c84d9e1eb9861184ad59595577764804"
+    },
+    {
+      "original": "godot/assets/visuals/actors/parkDojun/quarter_hips.png.import",
+      "archive": "archive/legacy-godot-visuals/actors/parkDojun/quarter_hips.png.import",
+      "bytes": 971,
+      "sha256": "119bb2ccdda6e2737f4b846c0be387bf94dba28526d83878603685146d63c9c3"
+    },
+    {
+      "original": "godot/assets/visuals/actors/parkDojun/quarter_shin.png",
+      "archive": "archive/legacy-godot-visuals/actors/parkDojun/quarter_shin.png",
+      "bytes": 67591,
+      "sha256": "fd56e88e88369caf09a724662d002c6de16a25030b0d101b3798d3d16c295e4b"
+    },
+    {
+      "original": "godot/assets/visuals/actors/parkDojun/quarter_shin.png.import",
+      "archive": "archive/legacy-godot-visuals/actors/parkDojun/quarter_shin.png.import",
+      "bytes": 970,
+      "sha256": "d7d1c07df72e8c04800c10b4ff1b79a82c92841654961604090cd9cbc31dae74"
+    },
+    {
+      "original": "godot/assets/visuals/actors/parkDojun/quarter_thigh.png",
+      "archive": "archive/legacy-godot-visuals/actors/parkDojun/quarter_thigh.png",
+      "bytes": 80605,
+      "sha256": "ac803a2fa5b6812dcf13b85158aaaa7296bdcd9789419a2c9f53cc86e71f11a8"
+    },
+    {
+      "original": "godot/assets/visuals/actors/parkDojun/quarter_thigh.png.import",
+      "archive": "archive/legacy-godot-visuals/actors/parkDojun/quarter_thigh.png.import",
+      "bytes": 974,
+      "sha256": "eee86d3e4520226c6382395fda1b29f858a01e0b94d1af912d7a32ad83358741"
+    },
+    {
+      "original": "godot/assets/visuals/actors/parkDojun/quarter_torso.png",
+      "archive": "archive/legacy-godot-visuals/actors/parkDojun/quarter_torso.png",
+      "bytes": 140539,
+      "sha256": "71deca59741a8366829aebcb0610b7740c2c6f31cb7be8b77032cae1fcd18385"
+    },
+    {
+      "original": "godot/assets/visuals/actors/parkDojun/quarter_torso.png.import",
+      "archive": "archive/legacy-godot-visuals/actors/parkDojun/quarter_torso.png.import",
+      "bytes": 974,
+      "sha256": "67d88b5d49869f0f2bff73c277eaca45635b735b022d0bbc01176c06d6d2b293"
+    },
+    {
+      "original": "godot/assets/visuals/actors/parkDojun/quarter_upper_arm.png",
+      "archive": "archive/legacy-godot-visuals/actors/parkDojun/quarter_upper_arm.png",
+      "bytes": 83338,
+      "sha256": "c4ca35db91a26fb36e2b0e0a51fecf296b4ebe5add77d095b8ed00c8a4d05ca1"
+    },
+    {
+      "original": "godot/assets/visuals/actors/parkDojun/quarter_upper_arm.png.import",
+      "archive": "archive/legacy-godot-visuals/actors/parkDojun/quarter_upper_arm.png.import",
+      "bytes": 986,
+      "sha256": "add84aa98a94b810850d8964ef596888298e95500ac6995d56888b6c542300d0"
+    },
+    {
+      "original": "godot/assets/visuals/actors/portrait-provenance.json",
+      "archive": "archive/legacy-godot-visuals/actors/portrait-provenance.json",
+      "bytes": 2876,
+      "sha256": "54ede78a645773560f12e7bcd95a664f6f5273bf94a11f859c2cfcab9ade31ef"
+    },
+    {
+      "original": "godot/assets/visuals/actors/runner/part_0.png",
+      "archive": "archive/legacy-godot-visuals/actors/runner/part_0.png",
+      "bytes": 120376,
+      "sha256": "aa7f435043bbd2d21e273799df40d0cfcc944f31dbf97d5b7eca6a1722f7c706"
+    },
+    {
+      "original": "godot/assets/visuals/actors/runner/part_0.png.import",
+      "archive": "archive/legacy-godot-visuals/actors/runner/part_0.png.import",
+      "bytes": 949,
+      "sha256": "7cf9344e73625e4e18e498d3e277a13f82a141448f886a47a9687a40ead9a54f"
+    },
+    {
+      "original": "godot/assets/visuals/actors/runner/part_1.png",
+      "archive": "archive/legacy-godot-visuals/actors/runner/part_1.png",
+      "bytes": 99150,
+      "sha256": "dc6beb7ec4976df59c201e225b4d4d071ae2c970a709172c7b48b33ed4c79aa4"
+    },
+    {
+      "original": "godot/assets/visuals/actors/runner/part_1.png.import",
+      "archive": "archive/legacy-godot-visuals/actors/runner/part_1.png.import",
+      "bytes": 950,
+      "sha256": "85039b103154e5aa57295efbf0c20cae08b66169c5659c29802b83fc4a1eaaf3"
+    },
+    {
+      "original": "godot/assets/visuals/actors/runner/part_2.png",
+      "archive": "archive/legacy-godot-visuals/actors/runner/part_2.png",
+      "bytes": 65155,
+      "sha256": "cdcc979c1d8b0e9769fd8011fae63569e9322b2962cda50dc21279b7644772e4"
+    },
+    {
+      "original": "godot/assets/visuals/actors/runner/part_2.png.import",
+      "archive": "archive/legacy-godot-visuals/actors/runner/part_2.png.import",
+      "bytes": 950,
+      "sha256": "15436df024fd5c8f3f954daabd77222cd925a05a488c537de159deffc38815cf"
+    },
+    {
+      "original": "godot/assets/visuals/actors/runner/part_3.png",
+      "archive": "archive/legacy-godot-visuals/actors/runner/part_3.png",
+      "bytes": 66158,
+      "sha256": "e81a3f164a5d5844fe102afc0ce9bc534f3960420d05b008aced53d306cf34f9"
+    },
+    {
+      "original": "godot/assets/visuals/actors/runner/part_3.png.import",
+      "archive": "archive/legacy-godot-visuals/actors/runner/part_3.png.import",
+      "bytes": 949,
+      "sha256": "36ca16adca1c30d69248264e2a204c52d13c4e751d4320ed3d5903036dc25e5a"
+    },
+    {
+      "original": "godot/assets/visuals/actors/runner/part_4.png",
+      "archive": "archive/legacy-godot-visuals/actors/runner/part_4.png",
+      "bytes": 83775,
+      "sha256": "8a3075116c5fbb7201666ec3ab37226fb48b270bdfcd7e26e33826182f372354"
+    },
+    {
+      "original": "godot/assets/visuals/actors/runner/part_4.png.import",
+      "archive": "archive/legacy-godot-visuals/actors/runner/part_4.png.import",
+      "bytes": 950,
+      "sha256": "cecad2ffd29fce6697ddff5c7b1a672c74037f89d59559d36a823cac3b29333d"
+    },
+    {
+      "original": "godot/assets/visuals/actors/runner/part_5.png",
+      "archive": "archive/legacy-godot-visuals/actors/runner/part_5.png",
+      "bytes": 74189,
+      "sha256": "3d470a6b1ab95e1098b3d623407bd2ea5e8c1ab6a5aa78c5bcef927be977ec1c"
+    },
+    {
+      "original": "godot/assets/visuals/actors/runner/part_5.png.import",
+      "archive": "archive/legacy-godot-visuals/actors/runner/part_5.png.import",
+      "bytes": 950,
+      "sha256": "a25b8817e9f4fe517fed039214b047f3a813eca346f19bb45be7bee178d52eca"
+    },
+    {
+      "original": "godot/assets/visuals/actors/runner/preview.png",
+      "archive": "archive/legacy-godot-visuals/actors/runner/preview.png",
+      "bytes": 54587,
+      "sha256": "9dee040a5f03cad1cda37e04b4efb24461fac94c348303d502700947c846cd50"
+    },
+    {
+      "original": "godot/assets/visuals/actors/runner/preview.png.import",
+      "archive": "archive/legacy-godot-visuals/actors/runner/preview.png.import",
+      "bytes": 952,
+      "sha256": "8914673e0c8cb6f6adc832368b80e64dc6c7f12c56a28ebb99229cf078bb0977"
+    },
+    {
+      "original": "godot/assets/visuals/actors/song/portrait.png",
+      "archive": "archive/legacy-godot-visuals/actors/song/portrait.png",
+      "bytes": 1632337,
+      "sha256": "03a3fe0792fe081a919b33fb08ce9d28a24db618b4d19f247aafc396a294e050"
+    },
+    {
+      "original": "godot/assets/visuals/actors/song/portrait.png.import",
+      "archive": "archive/legacy-godot-visuals/actors/song/portrait.png.import",
+      "bytes": 954,
+      "sha256": "0fcf79ff10e96800f64f3af9cc78c5db5d7b24a70d5c173f2100a970923c898f"
+    },
+    {
+      "original": "godot/assets/visuals/actors/song/preview.png",
+      "archive": "archive/legacy-godot-visuals/actors/song/preview.png",
+      "bytes": 61897,
+      "sha256": "24f350329dd2fb5ad60ae8a4a07d6c8f4f9a5cbef6c73b650f33c7d974852553"
+    },
+    {
+      "original": "godot/assets/visuals/actors/song/preview.png.import",
+      "archive": "archive/legacy-godot-visuals/actors/song/preview.png.import",
+      "bytes": 952,
+      "sha256": "b66365f43b46bac7d3b32002b3919ef9765a4bb533bda6fe91108d0f744248cd"
+    },
+    {
+      "original": "godot/assets/visuals/actors/song/quarter_foot.png",
+      "archive": "archive/legacy-godot-visuals/actors/song/quarter_foot.png",
+      "bytes": 120065,
+      "sha256": "df10f0dfab5b39d964d2da41dcfab6af02096aa61f9994ac9cae275e3df0ad6d"
+    },
+    {
+      "original": "godot/assets/visuals/actors/song/quarter_foot.png.import",
+      "archive": "archive/legacy-godot-visuals/actors/song/quarter_foot.png.import",
+      "bytes": 965,
+      "sha256": "13f61a65e514c849666980af6d7d238d092a3dbdcb2bf0e800299996b272b312"
+    },
+    {
+      "original": "godot/assets/visuals/actors/song/quarter_forearm.png",
+      "archive": "archive/legacy-godot-visuals/actors/song/quarter_forearm.png",
+      "bytes": 59830,
+      "sha256": "593f887f04931a69d4b0eaecb60805d9652f7df710be4a63baf629ed4f16a119"
+    },
+    {
+      "original": "godot/assets/visuals/actors/song/quarter_forearm.png.import",
+      "archive": "archive/legacy-godot-visuals/actors/song/quarter_forearm.png.import",
+      "bytes": 975,
+      "sha256": "3b99a31266d9bf8d8e69144f8a1ad10fecc9a23ce4e4abbd760103661a230c23"
+    },
+    {
+      "original": "godot/assets/visuals/actors/song/quarter_head.png",
+      "archive": "archive/legacy-godot-visuals/actors/song/quarter_head.png",
+      "bytes": 133834,
+      "sha256": "d654eac4bf5a6a1141172f77af2f1d85b69b6be8fb06a30600dbf043b0566532"
+    },
+    {
+      "original": "godot/assets/visuals/actors/song/quarter_head.png.import",
+      "archive": "archive/legacy-godot-visuals/actors/song/quarter_head.png.import",
+      "bytes": 966,
+      "sha256": "ca26bbaf90e1a209c6ae7ce3dff557fc302dda94eafa3453e4b5f669f63fde05"
+    },
+    {
+      "original": "godot/assets/visuals/actors/song/quarter_hips.png",
+      "archive": "archive/legacy-godot-visuals/actors/song/quarter_hips.png",
+      "bytes": 99053,
+      "sha256": "e6aef4d2e7762c3bf90c817c6aed0afb6bb90088f96054e9e832a0c94043d3d9"
+    },
+    {
+      "original": "godot/assets/visuals/actors/song/quarter_hips.png.import",
+      "archive": "archive/legacy-godot-visuals/actors/song/quarter_hips.png.import",
+      "bytes": 966,
+      "sha256": "fd3c33ab13c9265c638f9f239309781e3ee36b5ce6fdca2a630076342e3bb9ce"
+    },
+    {
+      "original": "godot/assets/visuals/actors/song/quarter_shin.png",
+      "archive": "archive/legacy-godot-visuals/actors/song/quarter_shin.png",
+      "bytes": 57326,
+      "sha256": "f3e0c7455f29e4cb7ee0b879c31ed667bb8e8222fafa2b9377d14907c3be1cd6"
+    },
+    {
+      "original": "godot/assets/visuals/actors/song/quarter_shin.png.import",
+      "archive": "archive/legacy-godot-visuals/actors/song/quarter_shin.png.import",
+      "bytes": 966,
+      "sha256": "bb0549ba50ed768590966439951cfaae92d5e22a29514cf86e18f27b83e0e2c8"
+    },
+    {
+      "original": "godot/assets/visuals/actors/song/quarter_thigh.png",
+      "archive": "archive/legacy-godot-visuals/actors/song/quarter_thigh.png",
+      "bytes": 75383,
+      "sha256": "3616e87be4b0113f9b01cbb885040d9fff977a1d1660cfc3057397d190767f1c"
+    },
+    {
+      "original": "godot/assets/visuals/actors/song/quarter_thigh.png.import",
+      "archive": "archive/legacy-godot-visuals/actors/song/quarter_thigh.png.import",
+      "bytes": 969,
+      "sha256": "f1a70737d46a22dbdd34097c632783acd8070d08301130306b1133d8cf3b90a6"
+    },
+    {
+      "original": "godot/assets/visuals/actors/song/quarter_torso.png",
+      "archive": "archive/legacy-godot-visuals/actors/song/quarter_torso.png",
+      "bytes": 121991,
+      "sha256": "0820ef674b9b5036efba8e50b634296c05953b391a8a3d8e06a7192d100c6d1f"
+    },
+    {
+      "original": "godot/assets/visuals/actors/song/quarter_torso.png.import",
+      "archive": "archive/legacy-godot-visuals/actors/song/quarter_torso.png.import",
+      "bytes": 969,
+      "sha256": "45fde1918849f95538a8d85ca9a600e5789b3e74404424e3b4092ca262e30c62"
+    },
+    {
+      "original": "godot/assets/visuals/actors/song/quarter_upper_arm.png",
+      "archive": "archive/legacy-godot-visuals/actors/song/quarter_upper_arm.png",
+      "bytes": 73843,
+      "sha256": "7e90830054274c8b6a0eb6fa99817ce87df52ab57f143a014fd1ee138cc1236f"
+    },
+    {
+      "original": "godot/assets/visuals/actors/song/quarter_upper_arm.png.import",
+      "archive": "archive/legacy-godot-visuals/actors/song/quarter_upper_arm.png.import",
+      "bytes": 981,
+      "sha256": "360c8c5b03b3ebfe879e4be14a0e58c2e7f7516b46126feeac570ce9915c1648"
+    },
+    {
+      "original": "godot/assets/visuals/actors/swarm/part_0.png",
+      "archive": "archive/legacy-godot-visuals/actors/swarm/part_0.png",
+      "bytes": 125892,
+      "sha256": "e3f4be74a9e769118276423f605361ea56b14b403f1d6469a9cf98248776a24a"
+    },
+    {
+      "original": "godot/assets/visuals/actors/swarm/part_0.png.import",
+      "archive": "archive/legacy-godot-visuals/actors/swarm/part_0.png.import",
+      "bytes": 949,
+      "sha256": "cb85347fc534916d8973ee67fec6885d1cf0f8cd02202a221d6c698cc4963d82"
+    },
+    {
+      "original": "godot/assets/visuals/actors/swarm/part_1.png",
+      "archive": "archive/legacy-godot-visuals/actors/swarm/part_1.png",
+      "bytes": 101851,
+      "sha256": "4b6b8df8b523aa6bad15304eda8186a76c79e186de64a1873c799a012345b7fe"
+    },
+    {
+      "original": "godot/assets/visuals/actors/swarm/part_1.png.import",
+      "archive": "archive/legacy-godot-visuals/actors/swarm/part_1.png.import",
+      "bytes": 949,
+      "sha256": "c3d352c1ec918a75c445fa82af662c0b40fa899efea5bc81c958f329a7948c65"
+    },
+    {
+      "original": "godot/assets/visuals/actors/swarm/part_2.png",
+      "archive": "archive/legacy-godot-visuals/actors/swarm/part_2.png",
+      "bytes": 75687,
+      "sha256": "c1efc9fa635d7196cd0bfd9aeddad916d6fd008d6587fd383b584d4a9a4d2c4d"
+    },
+    {
+      "original": "godot/assets/visuals/actors/swarm/part_2.png.import",
+      "archive": "archive/legacy-godot-visuals/actors/swarm/part_2.png.import",
+      "bytes": 949,
+      "sha256": "20576694801481e8bd0c1cb34c0f7e6a43ae6cc23fcffa59dc5f0c4579a43bc1"
+    },
+    {
+      "original": "godot/assets/visuals/actors/swarm/part_3.png",
+      "archive": "archive/legacy-godot-visuals/actors/swarm/part_3.png",
+      "bytes": 73659,
+      "sha256": "3f2808fcbf81ee69f7a2c670d8f569b93174ba05fb055237331347fd3fe7a178"
+    },
+    {
+      "original": "godot/assets/visuals/actors/swarm/part_3.png.import",
+      "archive": "archive/legacy-godot-visuals/actors/swarm/part_3.png.import",
+      "bytes": 949,
+      "sha256": "652425604f8adfb7f1a49417098b630f0f015e1ee459fcfd096a26f00aabb968"
+    },
+    {
+      "original": "godot/assets/visuals/actors/swarm/preview.png",
+      "archive": "archive/legacy-godot-visuals/actors/swarm/preview.png",
+      "bytes": 38521,
+      "sha256": "e0fa38d3873371ee8b9fcd9b7c597229272b2d02227557b288058eea780895ac"
+    },
+    {
+      "original": "godot/assets/visuals/actors/swarm/preview.png.import",
+      "archive": "archive/legacy-godot-visuals/actors/swarm/preview.png.import",
+      "bytes": 953,
+      "sha256": "e66074bbe38b81f70b2caab91209292c7df0b84a3e44fbe94876d63eb812c447"
+    },
+    {
+      "original": "godot/assets/visuals/actors/yoonHarin/quarter_foot.png",
+      "archive": "archive/legacy-godot-visuals/actors/yoonHarin/quarter_foot.png",
+      "bytes": 118252,
+      "sha256": "f40d6e4f74cf360b6af55a416743a11febcb8fb9ddcd3936a1af5251d650006a"
+    },
+    {
+      "original": "godot/assets/visuals/actors/yoonHarin/quarter_foot.png.import",
+      "archive": "archive/legacy-godot-visuals/actors/yoonHarin/quarter_foot.png.import",
+      "bytes": 971,
+      "sha256": "2e92841da7dffec00f8b570b78a3359d306a4f6c90bd92f914fe1f047f9c3de4"
+    },
+    {
+      "original": "godot/assets/visuals/actors/yoonHarin/quarter_forearm.png",
+      "archive": "archive/legacy-godot-visuals/actors/yoonHarin/quarter_forearm.png",
+      "bytes": 63729,
+      "sha256": "b1d5a7236c7e4f6ff7876c0ffade9d3e6aae228f2d53d990c414b998e370ac79"
+    },
+    {
+      "original": "godot/assets/visuals/actors/yoonHarin/quarter_forearm.png.import",
+      "archive": "archive/legacy-godot-visuals/actors/yoonHarin/quarter_forearm.png.import",
+      "bytes": 980,
+      "sha256": "53265b71ba0ebda7cb63c07dbd009d17d2cdc1788929df4ebac7093357910d56"
+    },
+    {
+      "original": "godot/assets/visuals/actors/yoonHarin/quarter_head.png",
+      "archive": "archive/legacy-godot-visuals/actors/yoonHarin/quarter_head.png",
+      "bytes": 125417,
+      "sha256": "7ed2f12d5969ee0ed819cb109bf7bebbcc388de6ec16dfbe7af839242cb22cc8"
+    },
+    {
+      "original": "godot/assets/visuals/actors/yoonHarin/quarter_head.png.import",
+      "archive": "archive/legacy-godot-visuals/actors/yoonHarin/quarter_head.png.import",
+      "bytes": 971,
+      "sha256": "8ec956394084cf0a0bf81cb031b25d4b768a84226645e10f7231773eda66d3f7"
+    },
+    {
+      "original": "godot/assets/visuals/actors/yoonHarin/quarter_hips.png",
+      "archive": "archive/legacy-godot-visuals/actors/yoonHarin/quarter_hips.png",
+      "bytes": 99832,
+      "sha256": "e954536f51573dad215af4c5f90286e1f48eee6f35be7577725403ca9ae65180"
+    },
+    {
+      "original": "godot/assets/visuals/actors/yoonHarin/quarter_hips.png.import",
+      "archive": "archive/legacy-godot-visuals/actors/yoonHarin/quarter_hips.png.import",
+      "bytes": 971,
+      "sha256": "c0c0238d1077d4a0d6038bf810bb126f02d80bd6c8695c356284ccdd4084dd8d"
+    },
+    {
+      "original": "godot/assets/visuals/actors/yoonHarin/quarter_shin.png",
+      "archive": "archive/legacy-godot-visuals/actors/yoonHarin/quarter_shin.png",
+      "bytes": 51201,
+      "sha256": "dc074d12b0067e4ed3d29187f107ca81f204035c19a45748cefff6ffa61e8dc1"
+    },
+    {
+      "original": "godot/assets/visuals/actors/yoonHarin/quarter_shin.png.import",
+      "archive": "archive/legacy-godot-visuals/actors/yoonHarin/quarter_shin.png.import",
+      "bytes": 970,
+      "sha256": "346c2fa7e67ec7e6890dd01106549502853aa49ea7d1a050b8f9be9c6731d64a"
+    },
+    {
+      "original": "godot/assets/visuals/actors/yoonHarin/quarter_thigh.png",
+      "archive": "archive/legacy-godot-visuals/actors/yoonHarin/quarter_thigh.png",
+      "bytes": 66168,
+      "sha256": "a86137cee3825dab5eb274a3dfe92f936e108e4f0df64a92fb81023c73098be5"
+    },
+    {
+      "original": "godot/assets/visuals/actors/yoonHarin/quarter_thigh.png.import",
+      "archive": "archive/legacy-godot-visuals/actors/yoonHarin/quarter_thigh.png.import",
+      "bytes": 974,
+      "sha256": "5e747f3c5344e8752ba3eaf27ec9533cc153d67826d5617b6a4d03b7a15c48a6"
+    },
+    {
+      "original": "godot/assets/visuals/actors/yoonHarin/quarter_torso.png",
+      "archive": "archive/legacy-godot-visuals/actors/yoonHarin/quarter_torso.png",
+      "bytes": 128389,
+      "sha256": "868eac83381ae6c94f807ba52d246cddb02fc54a0d3fb5ed750dab8e1537c5e5"
+    },
+    {
+      "original": "godot/assets/visuals/actors/yoonHarin/quarter_torso.png.import",
+      "archive": "archive/legacy-godot-visuals/actors/yoonHarin/quarter_torso.png.import",
+      "bytes": 973,
+      "sha256": "eab2932cd0eef855d6b304f94c93e9c753845cecbec71472a464851940b311a0"
+    },
+    {
+      "original": "godot/assets/visuals/actors/yoonHarin/quarter_upper_arm.png",
+      "archive": "archive/legacy-godot-visuals/actors/yoonHarin/quarter_upper_arm.png",
+      "bytes": 72559,
+      "sha256": "da5376088c8f07272184949cbaa53716de7782ad7217fba9d04fbf87d1d168c8"
+    },
+    {
+      "original": "godot/assets/visuals/actors/yoonHarin/quarter_upper_arm.png.import",
+      "archive": "archive/legacy-godot-visuals/actors/yoonHarin/quarter_upper_arm.png.import",
+      "bytes": 986,
+      "sha256": "9980d368d11daf8853b503010ce11028a4b777190fcada403cdc37870347ada6"
+    },
+    {
+      "original": "godot/assets/visuals/source/.gdignore",
+      "archive": "archive/legacy-godot-visuals/source/.gdignore",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original": "godot/assets/visuals/source/crawler-source.png",
+      "archive": "archive/legacy-godot-visuals/source/crawler-source.png",
+      "bytes": 1529488,
+      "sha256": "f931636723404b2f85ddb5ab5e4508e7560e49314623dd44ac591d6ae09f4f47"
+    },
+    {
+      "original": "godot/assets/visuals/source/crawler-source.png.import",
+      "archive": "archive/legacy-godot-visuals/source/crawler-source.png.import",
+      "bytes": 968,
+      "sha256": "23a0e5d2acc9112e87fe25f4c6a3b6e7498b2abf9996974a81781557570a1073"
+    },
+    {
+      "original": "godot/assets/visuals/source/kang-quarter-source.png",
+      "archive": "archive/legacy-godot-visuals/source/kang-quarter-source.png",
+      "bytes": 1211589,
+      "sha256": "14fc3ad17dc4ff34d6d52360c897206dd6be544c332779ee8289dc2c86313bd9"
+    },
+    {
+      "original": "godot/assets/visuals/source/kang-source.png",
+      "archive": "archive/legacy-godot-visuals/source/kang-source.png",
+      "bytes": 2172086,
+      "sha256": "aa3612ea2d93f516cc5049201653416d7f2e0baef2a61f715c8238366331db7a"
+    },
+    {
+      "original": "godot/assets/visuals/source/kang-source.png.import",
+      "archive": "archive/legacy-godot-visuals/source/kang-source.png.import",
+      "bytes": 958,
+      "sha256": "a380bafb18d28e7485f791b3e0613837af52702a62341e17535bd91a16385f86"
+    },
+    {
+      "original": "godot/assets/visuals/source/map-source.png",
+      "archive": "archive/legacy-godot-visuals/source/map-source.png",
+      "bytes": 2596440,
+      "sha256": "3d4d389b10f38d0d8b020a175d69437577bef71eb6e9e42c3ce010d7ee594dd2"
+    },
+    {
+      "original": "godot/assets/visuals/source/parkDojun-quarter-source-01.png",
+      "archive": "archive/legacy-godot-visuals/source/parkDojun-quarter-source-01.png",
+      "bytes": 2258078,
+      "sha256": "1c1f028abf77f578ba2983c75ea5cf4a4c2024e7fdf7d77282d7fb6d3ef20a11"
+    },
+    {
+      "original": "godot/assets/visuals/source/plaza-creature-02-provenance.json",
+      "archive": "archive/legacy-godot-visuals/source/plaza-creature-02-provenance.json",
+      "bytes": 2536,
+      "sha256": "0b7b943e17e128623c3215484c8b79779ac8a2d2ca06038b943d1cf636555f4e"
+    },
+    {
+      "original": "godot/assets/visuals/source/previous-cutouts/kang/back_foot.png",
+      "archive": "archive/legacy-godot-visuals/source/previous-cutouts/kang/back_foot.png",
+      "bytes": 33059,
+      "sha256": "0ed4302ec8794986d309161e85e251c3a91ee8b9eea1971165e14f8676e26e44"
+    },
+    {
+      "original": "godot/assets/visuals/source/previous-cutouts/kang/back_foot.png.import",
+      "archive": "archive/legacy-godot-visuals/source/previous-cutouts/kang/back_foot.png.import",
+      "bytes": 956,
+      "sha256": "3052ef7b6b7ed4e16be19e935b2163bdf451ae1847cd4f9f0fb05c8adb8da2a2"
+    },
+    {
+      "original": "godot/assets/visuals/source/previous-cutouts/kang/back_forearm.png",
+      "archive": "archive/legacy-godot-visuals/source/previous-cutouts/kang/back_forearm.png",
+      "bytes": 46172,
+      "sha256": "f9077fefe0946cd13650c2ca208ce56263dc46b09e442f0207dab900410c66dc"
+    },
+    {
+      "original": "godot/assets/visuals/source/previous-cutouts/kang/back_forearm.png.import",
+      "archive": "archive/legacy-godot-visuals/source/previous-cutouts/kang/back_forearm.png.import",
+      "bytes": 966,
+      "sha256": "555323dd0a9805c1cac8691f6aec9b6c5298f0f38db2575bc955225d8947ddc2"
+    },
+    {
+      "original": "godot/assets/visuals/source/previous-cutouts/kang/back_head.png",
+      "archive": "archive/legacy-godot-visuals/source/previous-cutouts/kang/back_head.png",
+      "bytes": 97431,
+      "sha256": "5c3dacd7198ed46d152b9d661237045598a291d90159750fa51c8ca2b29b2c15"
+    },
+    {
+      "original": "godot/assets/visuals/source/previous-cutouts/kang/back_head.png.import",
+      "archive": "archive/legacy-godot-visuals/source/previous-cutouts/kang/back_head.png.import",
+      "bytes": 957,
+      "sha256": "ed7f0451293466dd1db8789e846c387b9d2e33cca15aacd5feb4b51c682cf5a1"
+    },
+    {
+      "original": "godot/assets/visuals/source/previous-cutouts/kang/back_hips.png",
+      "archive": "archive/legacy-godot-visuals/source/previous-cutouts/kang/back_hips.png",
+      "bytes": 62118,
+      "sha256": "594dbd05cbb897f99f2e7ce6cd72e1761ee10002a578abf9297ee6ad7991f7e5"
+    },
+    {
+      "original": "godot/assets/visuals/source/previous-cutouts/kang/back_hips.png.import",
+      "archive": "archive/legacy-godot-visuals/source/previous-cutouts/kang/back_hips.png.import",
+      "bytes": 956,
+      "sha256": "8784d132e6a8f9c5b7930750390e5dbe9d75d098711cf40608ade4ec6d1ceea6"
+    },
+    {
+      "original": "godot/assets/visuals/source/previous-cutouts/kang/back_shin.png",
+      "archive": "archive/legacy-godot-visuals/source/previous-cutouts/kang/back_shin.png",
+      "bytes": 37910,
+      "sha256": "f24e4a40833c057b3654ac3ebbdbc8b0618283efbf4e40633913e90bfe7b7cd5"
+    },
+    {
+      "original": "godot/assets/visuals/source/previous-cutouts/kang/back_shin.png.import",
+      "archive": "archive/legacy-godot-visuals/source/previous-cutouts/kang/back_shin.png.import",
+      "bytes": 957,
+      "sha256": "0e5f27c5fd2e2c9839e1dbcbfc4750808e08ca2ac31a55a4e15e9d89b296d476"
+    },
+    {
+      "original": "godot/assets/visuals/source/previous-cutouts/kang/back_thigh.png",
+      "archive": "archive/legacy-godot-visuals/source/previous-cutouts/kang/back_thigh.png",
+      "bytes": 42447,
+      "sha256": "4e58e2af137b57473ccb0664fc523fae6d8d594ab1f480b70ab9960e589ce814"
+    },
+    {
+      "original": "godot/assets/visuals/source/previous-cutouts/kang/back_thigh.png.import",
+      "archive": "archive/legacy-godot-visuals/source/previous-cutouts/kang/back_thigh.png.import",
+      "bytes": 960,
+      "sha256": "50af9cec4a3cc07c581dc6b2cdbf572003d28b8aa6c119c2195f3784c4e86bbe"
+    },
+    {
+      "original": "godot/assets/visuals/source/previous-cutouts/kang/back_torso.png",
+      "archive": "archive/legacy-godot-visuals/source/previous-cutouts/kang/back_torso.png",
+      "bytes": 117766,
+      "sha256": "884c6505c7a827307825da777e7a90c5b631d3817ac7d3139307baf155e1daad"
+    },
+    {
+      "original": "godot/assets/visuals/source/previous-cutouts/kang/back_torso.png.import",
+      "archive": "archive/legacy-godot-visuals/source/previous-cutouts/kang/back_torso.png.import",
+      "bytes": 960,
+      "sha256": "b5fa6e2df9a562458efc5b2c04f4e8c708a268052ea5141363bcd70015e89a3a"
+    },
+    {
+      "original": "godot/assets/visuals/source/previous-cutouts/kang/back_upper_arm.png",
+      "archive": "archive/legacy-godot-visuals/source/previous-cutouts/kang/back_upper_arm.png",
+      "bytes": 48242,
+      "sha256": "cee80901b023e521f6689e2a4678884f5f30d8e34832f600a18b9a160183f6eb"
+    },
+    {
+      "original": "godot/assets/visuals/source/previous-cutouts/kang/back_upper_arm.png.import",
+      "archive": "archive/legacy-godot-visuals/source/previous-cutouts/kang/back_upper_arm.png.import",
+      "bytes": 971,
+      "sha256": "c536a190f773b578f0dd791c16d4a3e41571e799a2e50bfd6f4ab071e67ed97c"
+    },
+    {
+      "original": "godot/assets/visuals/source/previous-cutouts/kang/front_foot.png",
+      "archive": "archive/legacy-godot-visuals/source/previous-cutouts/kang/front_foot.png",
+      "bytes": 39687,
+      "sha256": "0b80895e393214c42274d8f23b6ddaadf74077b7ad025e4dd14145718272d5c6"
+    },
+    {
+      "original": "godot/assets/visuals/source/previous-cutouts/kang/front_foot.png.import",
+      "archive": "archive/legacy-godot-visuals/source/previous-cutouts/kang/front_foot.png.import",
+      "bytes": 960,
+      "sha256": "de8a5d91ace15ec7d72685da3ef7825a9ba62281542b39bceb3e1d9eaf4f97ee"
+    },
+    {
+      "original": "godot/assets/visuals/source/previous-cutouts/kang/front_forearm.png",
+      "archive": "archive/legacy-godot-visuals/source/previous-cutouts/kang/front_forearm.png",
+      "bytes": 48498,
+      "sha256": "b637a9137d9a93ac165d2428db6f52f89943f3e6c29aa0337d5506d34f968b32"
+    },
+    {
+      "original": "godot/assets/visuals/source/previous-cutouts/kang/front_forearm.png.import",
+      "archive": "archive/legacy-godot-visuals/source/previous-cutouts/kang/front_forearm.png.import",
+      "bytes": 969,
+      "sha256": "2fe7398fd5e1f05c72b2a00498f2d28dd694bccc6089aa9f01eb528d60187cfe"
+    },
+    {
+      "original": "godot/assets/visuals/source/previous-cutouts/kang/front_head.png",
+      "archive": "archive/legacy-godot-visuals/source/previous-cutouts/kang/front_head.png",
+      "bytes": 123469,
+      "sha256": "33f90898d6a99f5e71acd13af02265df7e4abcdfac0eeeb3905272b69a9b8717"
+    },
+    {
+      "original": "godot/assets/visuals/source/previous-cutouts/kang/front_head.png.import",
+      "archive": "archive/legacy-godot-visuals/source/previous-cutouts/kang/front_head.png.import",
+      "bytes": 959,
+      "sha256": "231541ad27fb31801d4f447292508c064c28ac1787b68340041d13bf7617d16e"
+    },
+    {
+      "original": "godot/assets/visuals/source/previous-cutouts/kang/front_hips.png",
+      "archive": "archive/legacy-godot-visuals/source/previous-cutouts/kang/front_hips.png",
+      "bytes": 68371,
+      "sha256": "16e1314efbb514cefe1547656c47380458e1ccd9fa71ee3b3999c39db34588aa"
+    },
+    {
+      "original": "godot/assets/visuals/source/previous-cutouts/kang/front_hips.png.import",
+      "archive": "archive/legacy-godot-visuals/source/previous-cutouts/kang/front_hips.png.import",
+      "bytes": 960,
+      "sha256": "380ba3b3c6e80de90618190d22ab81d66b398611c651ccd6c86c5d99745fa4b7"
+    },
+    {
+      "original": "godot/assets/visuals/source/previous-cutouts/kang/front_shin.png",
+      "archive": "archive/legacy-godot-visuals/source/previous-cutouts/kang/front_shin.png",
+      "bytes": 42966,
+      "sha256": "c66f925916179f884ef9449a37aab24154df16e8a032070fcd862bc448911c71"
+    },
+    {
+      "original": "godot/assets/visuals/source/previous-cutouts/kang/front_shin.png.import",
+      "archive": "archive/legacy-godot-visuals/source/previous-cutouts/kang/front_shin.png.import",
+      "bytes": 959,
+      "sha256": "eb27cf0fdc73bc12767abb69bf483ff221db52b546b7e558ed42ed1e7a85a7e1"
+    },
+    {
+      "original": "godot/assets/visuals/source/previous-cutouts/kang/front_thigh.png",
+      "archive": "archive/legacy-godot-visuals/source/previous-cutouts/kang/front_thigh.png",
+      "bytes": 45114,
+      "sha256": "b8f4e7cf288b0bf9e136ed2d24315b5b47d3a3a2c831a263e7ff4c06e7306c6a"
+    },
+    {
+      "original": "godot/assets/visuals/source/previous-cutouts/kang/front_thigh.png.import",
+      "archive": "archive/legacy-godot-visuals/source/previous-cutouts/kang/front_thigh.png.import",
+      "bytes": 963,
+      "sha256": "e4c40e5c9e81f57175f2f6893031812c4e0bf90746133f301c99280ac58dcbeb"
+    },
+    {
+      "original": "godot/assets/visuals/source/previous-cutouts/kang/front_torso.png",
+      "archive": "archive/legacy-godot-visuals/source/previous-cutouts/kang/front_torso.png",
+      "bytes": 117653,
+      "sha256": "6c1345cb94546adc89fc07883cc57050d9b42472f80f3a8f1b90f90f5a302a57"
+    },
+    {
+      "original": "godot/assets/visuals/source/previous-cutouts/kang/front_torso.png.import",
+      "archive": "archive/legacy-godot-visuals/source/previous-cutouts/kang/front_torso.png.import",
+      "bytes": 963,
+      "sha256": "41f66f19092f13bd2e96a843babd7a66392b4aa9526942d3a1b1e84c7ea6586a"
+    },
+    {
+      "original": "godot/assets/visuals/source/previous-cutouts/kang/front_upper_arm.png",
+      "archive": "archive/legacy-godot-visuals/source/previous-cutouts/kang/front_upper_arm.png",
+      "bytes": 56492,
+      "sha256": "1835e7493371379a9b5774743c294990806bab48b1939922da9b1b42d1537ee0"
+    },
+    {
+      "original": "godot/assets/visuals/source/previous-cutouts/kang/front_upper_arm.png.import",
+      "archive": "archive/legacy-godot-visuals/source/previous-cutouts/kang/front_upper_arm.png.import",
+      "bytes": 975,
+      "sha256": "1a28825f39082c212a890ba30c777fdeb96681f316df1f26b50d6ae801ea1b34"
+    },
+    {
+      "original": "godot/assets/visuals/source/previous-cutouts/kang/side_foot.png",
+      "archive": "archive/legacy-godot-visuals/source/previous-cutouts/kang/side_foot.png",
+      "bytes": 48149,
+      "sha256": "6b94675d6d8be5663d34d23cca8670cda8b90a9fc71c7e96e2198b295a2deba0"
+    },
+    {
+      "original": "godot/assets/visuals/source/previous-cutouts/kang/side_foot.png.import",
+      "archive": "archive/legacy-godot-visuals/source/previous-cutouts/kang/side_foot.png.import",
+      "bytes": 957,
+      "sha256": "c291f05349073929164ee4b2d8e0e96d5c0f4d4babccda6dee85b03d0e7b0e2c"
+    },
+    {
+      "original": "godot/assets/visuals/source/previous-cutouts/kang/side_forearm.png",
+      "archive": "archive/legacy-godot-visuals/source/previous-cutouts/kang/side_forearm.png",
+      "bytes": 47682,
+      "sha256": "35b52b2d578851e8d59e6a80d163e28334e7675d130fcd3468cc181a154fdbbc"
+    },
+    {
+      "original": "godot/assets/visuals/source/previous-cutouts/kang/side_forearm.png.import",
+      "archive": "archive/legacy-godot-visuals/source/previous-cutouts/kang/side_forearm.png.import",
+      "bytes": 965,
+      "sha256": "fbdc7990c268d06e1b30d0618ef6c76ae11086b3c87350d3eafa807380b5df06"
+    },
+    {
+      "original": "godot/assets/visuals/source/previous-cutouts/kang/side_head.png",
+      "archive": "archive/legacy-godot-visuals/source/previous-cutouts/kang/side_head.png",
+      "bytes": 110937,
+      "sha256": "8ea87f02a839185b87158e125ff1c9204121de59ce2eecdadc705a3a2f577b7e"
+    },
+    {
+      "original": "godot/assets/visuals/source/previous-cutouts/kang/side_head.png.import",
+      "archive": "archive/legacy-godot-visuals/source/previous-cutouts/kang/side_head.png.import",
+      "bytes": 956,
+      "sha256": "6b89bdb25577295915734660d37b4b17cc537689623a4cd9eb3405d0b2e23957"
+    },
+    {
+      "original": "godot/assets/visuals/source/previous-cutouts/kang/side_hips.png",
+      "archive": "archive/legacy-godot-visuals/source/previous-cutouts/kang/side_hips.png",
+      "bytes": 60403,
+      "sha256": "2b2e371bba0d68563318b883b56530fc9187c2138bb4deee2a1df2149056ffff"
+    },
+    {
+      "original": "godot/assets/visuals/source/previous-cutouts/kang/side_hips.png.import",
+      "archive": "archive/legacy-godot-visuals/source/previous-cutouts/kang/side_hips.png.import",
+      "bytes": 956,
+      "sha256": "c5d8ec3a98e816039f6f4d39d4f7c0de45af3e5413a50328b30ac0e4ea6f3124"
+    },
+    {
+      "original": "godot/assets/visuals/source/previous-cutouts/kang/side_shin.png",
+      "archive": "archive/legacy-godot-visuals/source/previous-cutouts/kang/side_shin.png",
+      "bytes": 41697,
+      "sha256": "9d0acea6d95531ae2cf9ec985d8f7966b44189ec172e5bd2422be3cd6d5c9bcf"
+    },
+    {
+      "original": "godot/assets/visuals/source/previous-cutouts/kang/side_shin.png.import",
+      "archive": "archive/legacy-godot-visuals/source/previous-cutouts/kang/side_shin.png.import",
+      "bytes": 957,
+      "sha256": "9d25edb6f499629ade93e1b24653a927038701018b5ef176e87461d6e4ee9f83"
+    },
+    {
+      "original": "godot/assets/visuals/source/previous-cutouts/kang/side_thigh.png",
+      "archive": "archive/legacy-godot-visuals/source/previous-cutouts/kang/side_thigh.png",
+      "bytes": 46826,
+      "sha256": "b0a1dc21bc6a59e0d80965db54443b4aa1cf25d0cb5a362359ca17a0e6fc7c1a"
+    },
+    {
+      "original": "godot/assets/visuals/source/previous-cutouts/kang/side_thigh.png.import",
+      "archive": "archive/legacy-godot-visuals/source/previous-cutouts/kang/side_thigh.png.import",
+      "bytes": 959,
+      "sha256": "897b27a1d17e1415ca04f46b3fb89a3d8b51c9efe51fdd2aef768cd10df88b10"
+    },
+    {
+      "original": "godot/assets/visuals/source/previous-cutouts/kang/side_torso.png",
+      "archive": "archive/legacy-godot-visuals/source/previous-cutouts/kang/side_torso.png",
+      "bytes": 97840,
+      "sha256": "76e8ceb80073157be0c2949280b8c391bc59b98d09fe3979eb106f0f3bc5ba5e"
+    },
+    {
+      "original": "godot/assets/visuals/source/previous-cutouts/kang/side_torso.png.import",
+      "archive": "archive/legacy-godot-visuals/source/previous-cutouts/kang/side_torso.png.import",
+      "bytes": 959,
+      "sha256": "edc7c19efbfb0116c433d86c89985d8f6047ad48f2ef4b089e94b05a78ae16ce"
+    },
+    {
+      "original": "godot/assets/visuals/source/previous-cutouts/kang/side_upper_arm.png",
+      "archive": "archive/legacy-godot-visuals/source/previous-cutouts/kang/side_upper_arm.png",
+      "bytes": 54983,
+      "sha256": "8bbb1c88f31fc9220bc25052196315a51559f6cdbbc76696d671cb8bd25817c7"
+    },
+    {
+      "original": "godot/assets/visuals/source/previous-cutouts/kang/side_upper_arm.png.import",
+      "archive": "archive/legacy-godot-visuals/source/previous-cutouts/kang/side_upper_arm.png.import",
+      "bytes": 972,
+      "sha256": "a4f1ead2daa3174f92bd2355a9f969f271151fd53fb3727f3686292168b5f742"
+    },
+    {
+      "original": "godot/assets/visuals/source/previous-cutouts/song/back_foot.png",
+      "archive": "archive/legacy-godot-visuals/source/previous-cutouts/song/back_foot.png",
+      "bytes": 34158,
+      "sha256": "9f38ac8cce6347cc2ec495db486e5c9640fecbdc85cb393eea50a1eb26113432"
+    },
+    {
+      "original": "godot/assets/visuals/source/previous-cutouts/song/back_foot.png.import",
+      "archive": "archive/legacy-godot-visuals/source/previous-cutouts/song/back_foot.png.import",
+      "bytes": 957,
+      "sha256": "b0dbe352a6364f4c988af14f5df4785265b573d40a9a9a318b3426d6fa69d649"
+    },
+    {
+      "original": "godot/assets/visuals/source/previous-cutouts/song/back_forearm.png",
+      "archive": "archive/legacy-godot-visuals/source/previous-cutouts/song/back_forearm.png",
+      "bytes": 43075,
+      "sha256": "3980273031f2c7ebd5ba267c90cf7b5c89fd07af7bbe6b8a089f1106fabab42c"
+    },
+    {
+      "original": "godot/assets/visuals/source/previous-cutouts/song/back_forearm.png.import",
+      "archive": "archive/legacy-godot-visuals/source/previous-cutouts/song/back_forearm.png.import",
+      "bytes": 966,
+      "sha256": "4cf56d911d658e0d352332321540a28de0d5b06fa343ddb8f7598bd6aa2a6905"
+    },
+    {
+      "original": "godot/assets/visuals/source/previous-cutouts/song/back_head.png",
+      "archive": "archive/legacy-godot-visuals/source/previous-cutouts/song/back_head.png",
+      "bytes": 93170,
+      "sha256": "dca081c12c69dcba237fb000b90b4417aa63bbc6360625fd734f54328a833bef"
+    },
+    {
+      "original": "godot/assets/visuals/source/previous-cutouts/song/back_head.png.import",
+      "archive": "archive/legacy-godot-visuals/source/previous-cutouts/song/back_head.png.import",
+      "bytes": 957,
+      "sha256": "16508d8e47fc5da1797557060889a5511cc61939d28ee7016a949ca6fce81b79"
+    },
+    {
+      "original": "godot/assets/visuals/source/previous-cutouts/song/back_hips.png",
+      "archive": "archive/legacy-godot-visuals/source/previous-cutouts/song/back_hips.png",
+      "bytes": 61752,
+      "sha256": "1dac43e14ed6e3762ba448533316fdabdcd3a34a25965e149a2b09a6902775a4"
+    },
+    {
+      "original": "godot/assets/visuals/source/previous-cutouts/song/back_hips.png.import",
+      "archive": "archive/legacy-godot-visuals/source/previous-cutouts/song/back_hips.png.import",
+      "bytes": 957,
+      "sha256": "ab300c202d42788294777a7df4a3a9a0992883c2dabca97f19ea925dfe331bb1"
+    },
+    {
+      "original": "godot/assets/visuals/source/previous-cutouts/song/back_shin.png",
+      "archive": "archive/legacy-godot-visuals/source/previous-cutouts/song/back_shin.png",
+      "bytes": 37056,
+      "sha256": "b031bb5008d62575b2366955dc9209de0ef2b9b3b4cf80db685a081f59475e01"
+    },
+    {
+      "original": "godot/assets/visuals/source/previous-cutouts/song/back_shin.png.import",
+      "archive": "archive/legacy-godot-visuals/source/previous-cutouts/song/back_shin.png.import",
+      "bytes": 956,
+      "sha256": "8b56fd2bd86258376c6f765b18ca6bbb86c1d846e490c3ecedc2e75a871a54ec"
+    },
+    {
+      "original": "godot/assets/visuals/source/previous-cutouts/song/back_thigh.png",
+      "archive": "archive/legacy-godot-visuals/source/previous-cutouts/song/back_thigh.png",
+      "bytes": 44397,
+      "sha256": "18ca1c28ac29a4504f6b2e8cbe62ad6e0456152ca0478354e99086dfa452d3bd"
+    },
+    {
+      "original": "godot/assets/visuals/source/previous-cutouts/song/back_thigh.png.import",
+      "archive": "archive/legacy-godot-visuals/source/previous-cutouts/song/back_thigh.png.import",
+      "bytes": 960,
+      "sha256": "4d5563cebdda476cd506473ab10d112aef4f73a216acc15093b0806d0c24c157"
+    },
+    {
+      "original": "godot/assets/visuals/source/previous-cutouts/song/back_torso.png",
+      "archive": "archive/legacy-godot-visuals/source/previous-cutouts/song/back_torso.png",
+      "bytes": 104927,
+      "sha256": "23149c667b6c87b4af6905f28642195346247e467b4791de0843794fad6183da"
+    },
+    {
+      "original": "godot/assets/visuals/source/previous-cutouts/song/back_torso.png.import",
+      "archive": "archive/legacy-godot-visuals/source/previous-cutouts/song/back_torso.png.import",
+      "bytes": 960,
+      "sha256": "ee204b0fb72b5601fac009134f0d2aea5231b0515f663b4be631debc9538541e"
+    },
+    {
+      "original": "godot/assets/visuals/source/previous-cutouts/song/back_upper_arm.png",
+      "archive": "archive/legacy-godot-visuals/source/previous-cutouts/song/back_upper_arm.png",
+      "bytes": 41269,
+      "sha256": "746b3ee4253c5c3bc61d5c419308cf6881d50a214639be366f46f888ab1dc684"
+    },
+    {
+      "original": "godot/assets/visuals/source/previous-cutouts/song/back_upper_arm.png.import",
+      "archive": "archive/legacy-godot-visuals/source/previous-cutouts/song/back_upper_arm.png.import",
+      "bytes": 972,
+      "sha256": "ba8b1bb610f0ec9c59f7f54ad8607e6e5870ae07bb1068fa326d4c8ec4eb17b9"
+    },
+    {
+      "original": "godot/assets/visuals/source/previous-cutouts/song/front_foot.png",
+      "archive": "archive/legacy-godot-visuals/source/previous-cutouts/song/front_foot.png",
+      "bytes": 39661,
+      "sha256": "501e4eb80786b2c5bc8854426c131796a67695c057a830cf64c04bb21e9e8437"
+    },
+    {
+      "original": "godot/assets/visuals/source/previous-cutouts/song/front_foot.png.import",
+      "archive": "archive/legacy-godot-visuals/source/previous-cutouts/song/front_foot.png.import",
+      "bytes": 959,
+      "sha256": "4147c7f32e292e55815c3df4d68235ba389130262a9317a4ef1979667fbf13e2"
+    },
+    {
+      "original": "godot/assets/visuals/source/previous-cutouts/song/front_forearm.png",
+      "archive": "archive/legacy-godot-visuals/source/previous-cutouts/song/front_forearm.png",
+      "bytes": 45661,
+      "sha256": "df32f8bd1ba10fb23f834281ad35faa0e4939d7eaac210abc26f796968c5f802"
+    },
+    {
+      "original": "godot/assets/visuals/source/previous-cutouts/song/front_forearm.png.import",
+      "archive": "archive/legacy-godot-visuals/source/previous-cutouts/song/front_forearm.png.import",
+      "bytes": 969,
+      "sha256": "9dcad6da27890a563b27dff205248dad6971dd4745c5929e3a82fd60a920dc81"
+    },
+    {
+      "original": "godot/assets/visuals/source/previous-cutouts/song/front_head.png",
+      "archive": "archive/legacy-godot-visuals/source/previous-cutouts/song/front_head.png",
+      "bytes": 123317,
+      "sha256": "407f8dcfdd52e7d0253c136d3288ce8eebca036a63c96816aa09a629305a5bcf"
+    },
+    {
+      "original": "godot/assets/visuals/source/previous-cutouts/song/front_head.png.import",
+      "archive": "archive/legacy-godot-visuals/source/previous-cutouts/song/front_head.png.import",
+      "bytes": 960,
+      "sha256": "b646b8c2a0a68ac4d38dbef77f68e365c10178a2a7f628bf7ede49df148bcb56"
+    },
+    {
+      "original": "godot/assets/visuals/source/previous-cutouts/song/front_hips.png",
+      "archive": "archive/legacy-godot-visuals/source/previous-cutouts/song/front_hips.png",
+      "bytes": 65846,
+      "sha256": "be1fb5c537b8d9384ebfe768bb1b8ed49e62e0f66b3d5ee7afdf0db3de6f37f6"
+    },
+    {
+      "original": "godot/assets/visuals/source/previous-cutouts/song/front_hips.png.import",
+      "archive": "archive/legacy-godot-visuals/source/previous-cutouts/song/front_hips.png.import",
+      "bytes": 959,
+      "sha256": "e7eba4e0f4845ed58d897243d0516020f875d59f21034d581dcc0e788831a77d"
+    },
+    {
+      "original": "godot/assets/visuals/source/previous-cutouts/song/front_shin.png",
+      "archive": "archive/legacy-godot-visuals/source/previous-cutouts/song/front_shin.png",
+      "bytes": 41974,
+      "sha256": "2a84869d28ca046f292b27312b948b17bc7ab658e64d025c516fc60a0facca39"
+    },
+    {
+      "original": "godot/assets/visuals/source/previous-cutouts/song/front_shin.png.import",
+      "archive": "archive/legacy-godot-visuals/source/previous-cutouts/song/front_shin.png.import",
+      "bytes": 960,
+      "sha256": "a58c6c07d82ef60a9359b8629af33be02fb4a9b8d85113f2b2125607ae5167e3"
+    },
+    {
+      "original": "godot/assets/visuals/source/previous-cutouts/song/front_thigh.png",
+      "archive": "archive/legacy-godot-visuals/source/previous-cutouts/song/front_thigh.png",
+      "bytes": 47120,
+      "sha256": "6b7c26093b0ba58ee6ed742e46aad65919c83fcd7919a5cf9a983bc1e059743a"
+    },
+    {
+      "original": "godot/assets/visuals/source/previous-cutouts/song/front_thigh.png.import",
+      "archive": "archive/legacy-godot-visuals/source/previous-cutouts/song/front_thigh.png.import",
+      "bytes": 962,
+      "sha256": "c4f764cd516434bdc8464f7dd710a2de18408c44e1c6b3021ddba4122d110db0"
+    },
+    {
+      "original": "godot/assets/visuals/source/previous-cutouts/song/front_torso.png",
+      "archive": "archive/legacy-godot-visuals/source/previous-cutouts/song/front_torso.png",
+      "bytes": 113019,
+      "sha256": "16cd47cac2d25d4c7b408bfa984a1d464e2a08cdc0edc233bdde2224336b485d"
+    },
+    {
+      "original": "godot/assets/visuals/source/previous-cutouts/song/front_torso.png.import",
+      "archive": "archive/legacy-godot-visuals/source/previous-cutouts/song/front_torso.png.import",
+      "bytes": 963,
+      "sha256": "985e8dcde4f02c2d8bb3091e18c0482c6b8b1621da1414274dc0c45e530fb261"
+    },
+    {
+      "original": "godot/assets/visuals/source/previous-cutouts/song/front_upper_arm.png",
+      "archive": "archive/legacy-godot-visuals/source/previous-cutouts/song/front_upper_arm.png",
+      "bytes": 49651,
+      "sha256": "4738e064ad1c4aff4867435c26028fc8cf322731bfc23cd77287e9d4a70d2c32"
+    },
+    {
+      "original": "godot/assets/visuals/source/previous-cutouts/song/front_upper_arm.png.import",
+      "archive": "archive/legacy-godot-visuals/source/previous-cutouts/song/front_upper_arm.png.import",
+      "bytes": 975,
+      "sha256": "7b69714a606ab3ad31965532ee9692e5a26eb284da7ed01d921a7243f619ee0a"
+    },
+    {
+      "original": "godot/assets/visuals/source/previous-cutouts/song/side_foot.png",
+      "archive": "archive/legacy-godot-visuals/source/previous-cutouts/song/side_foot.png",
+      "bytes": 47339,
+      "sha256": "bf886f1736824600407e5d4c366ab9e68ca087a1019df35bae8715f6173d6d5e"
+    },
+    {
+      "original": "godot/assets/visuals/source/previous-cutouts/song/side_foot.png.import",
+      "archive": "archive/legacy-godot-visuals/source/previous-cutouts/song/side_foot.png.import",
+      "bytes": 957,
+      "sha256": "312c72d94d978793db87e5fdae1d0ae98a151161d0d3c215d73371bf4eae54f2"
+    },
+    {
+      "original": "godot/assets/visuals/source/previous-cutouts/song/side_forearm.png",
+      "archive": "archive/legacy-godot-visuals/source/previous-cutouts/song/side_forearm.png",
+      "bytes": 44715,
+      "sha256": "6612106ec733b937d4f9f1ef00cf593bfb6799af2b3329353ef804ceaa20c4f8"
+    },
+    {
+      "original": "godot/assets/visuals/source/previous-cutouts/song/side_forearm.png.import",
+      "archive": "archive/legacy-godot-visuals/source/previous-cutouts/song/side_forearm.png.import",
+      "bytes": 966,
+      "sha256": "b3da9c3980d86cb992e841c1429513d606cbe7369f25036ce828e59d6adc7746"
+    },
+    {
+      "original": "godot/assets/visuals/source/previous-cutouts/song/side_head.png",
+      "archive": "archive/legacy-godot-visuals/source/previous-cutouts/song/side_head.png",
+      "bytes": 107754,
+      "sha256": "a79972f81cf9b9a15da0e5bd16786033bc0689df749f46717325ae06a52d6fdc"
+    },
+    {
+      "original": "godot/assets/visuals/source/previous-cutouts/song/side_head.png.import",
+      "archive": "archive/legacy-godot-visuals/source/previous-cutouts/song/side_head.png.import",
+      "bytes": 957,
+      "sha256": "d007b228e449a315c474f1b2c55689d9f0d332c75894afbe05ac017132bf4d5a"
+    },
+    {
+      "original": "godot/assets/visuals/source/previous-cutouts/song/side_hips.png",
+      "archive": "archive/legacy-godot-visuals/source/previous-cutouts/song/side_hips.png",
+      "bytes": 63409,
+      "sha256": "837339edf192aadbebf988762df3a0c57fa30bc2022f85ef091ddda94681dffd"
+    },
+    {
+      "original": "godot/assets/visuals/source/previous-cutouts/song/side_hips.png.import",
+      "archive": "archive/legacy-godot-visuals/source/previous-cutouts/song/side_hips.png.import",
+      "bytes": 957,
+      "sha256": "6ddf18f10489caf9e44fc57b7bfa9421a623f8bb17653647c63cacbd38ddf1da"
+    },
+    {
+      "original": "godot/assets/visuals/source/previous-cutouts/song/side_shin.png",
+      "archive": "archive/legacy-godot-visuals/source/previous-cutouts/song/side_shin.png",
+      "bytes": 40884,
+      "sha256": "1741609210cd7cb552544d795c2b53975af5370bcbddb75ba4548bd5ec261016"
+    },
+    {
+      "original": "godot/assets/visuals/source/previous-cutouts/song/side_shin.png.import",
+      "archive": "archive/legacy-godot-visuals/source/previous-cutouts/song/side_shin.png.import",
+      "bytes": 957,
+      "sha256": "ac3bbf18286e00676663fc407ef1b22cad5643ace9a86ef586f734384aa2fa1d"
+    },
+    {
+      "original": "godot/assets/visuals/source/previous-cutouts/song/side_thigh.png",
+      "archive": "archive/legacy-godot-visuals/source/previous-cutouts/song/side_thigh.png",
+      "bytes": 47058,
+      "sha256": "c65e0574da604faf6a157b352b179cbf0a930fb142a1d8be70ea0969deb56d24"
+    },
+    {
+      "original": "godot/assets/visuals/source/previous-cutouts/song/side_thigh.png.import",
+      "archive": "archive/legacy-godot-visuals/source/previous-cutouts/song/side_thigh.png.import",
+      "bytes": 960,
+      "sha256": "26eebe82bab9ac4ab8b7abdb81ad523c4e5c26e7896f3e797c0e20bef44bfabb"
+    },
+    {
+      "original": "godot/assets/visuals/source/previous-cutouts/song/side_torso.png",
+      "archive": "archive/legacy-godot-visuals/source/previous-cutouts/song/side_torso.png",
+      "bytes": 91916,
+      "sha256": "32005370c23f0d11a67faf1b090887ee4806c7b317c0c575fdd2aa2f0592e22f"
+    },
+    {
+      "original": "godot/assets/visuals/source/previous-cutouts/song/side_torso.png.import",
+      "archive": "archive/legacy-godot-visuals/source/previous-cutouts/song/side_torso.png.import",
+      "bytes": 960,
+      "sha256": "2bfd83422c21e38ecaf48d7486b3e0ad9b5dc53da1fb813c61727f7f59c86e3a"
+    },
+    {
+      "original": "godot/assets/visuals/source/previous-cutouts/song/side_upper_arm.png",
+      "archive": "archive/legacy-godot-visuals/source/previous-cutouts/song/side_upper_arm.png",
+      "bytes": 47661,
+      "sha256": "28d0ca16f1b04e6cf3434407648d789dd6bddaab5c21e98ca70d766147337c95"
+    },
+    {
+      "original": "godot/assets/visuals/source/previous-cutouts/song/side_upper_arm.png.import",
+      "archive": "archive/legacy-godot-visuals/source/previous-cutouts/song/side_upper_arm.png.import",
+      "bytes": 972,
+      "sha256": "fb43d4e713b257c726b17029e00c01c41b5089f4c8de6d16ea7dbd29a9f70353"
+    },
+    {
+      "original": "godot/assets/visuals/source/provenance.json",
+      "archive": "archive/legacy-godot-visuals/source/provenance.json",
+      "bytes": 11118,
+      "sha256": "9a69a9a6b670ccda5125b48f1c720685b6644a0778fa7aff8117ba1a723718a6"
+    },
+    {
+      "original": "godot/assets/visuals/source/quarter-provenance.json",
+      "archive": "archive/legacy-godot-visuals/source/quarter-provenance.json",
+      "bytes": 5006,
+      "sha256": "5180707ddfe3322c2869650c04bfed71de4dedd2321653239c81bd18a9c8e5b6"
+    },
+    {
+      "original": "godot/assets/visuals/source/runner-source.png",
+      "archive": "archive/legacy-godot-visuals/source/runner-source.png",
+      "bytes": 1946523,
+      "sha256": "6e55797c6ee3c76eed8c55cedd5a3dd164b2655dd078944a25485a2e09229d04"
+    },
+    {
+      "original": "godot/assets/visuals/source/runner-source.png.import",
+      "archive": "archive/legacy-godot-visuals/source/runner-source.png.import",
+      "bytes": 964,
+      "sha256": "a75f76204a45ce47b76abb911b256acf8eb572ee3b0af65b5e7d295e96e32827"
+    },
+    {
+      "original": "godot/assets/visuals/source/song-alpha.png",
+      "archive": "archive/legacy-godot-visuals/source/song-alpha.png",
+      "bytes": 2071450,
+      "sha256": "bbc7a48f64ae49ab39ed058eaa998b32730d155735e17796d03ad1276bd8ad7f"
+    },
+    {
+      "original": "godot/assets/visuals/source/song-alpha.png.import",
+      "archive": "archive/legacy-godot-visuals/source/song-alpha.png.import",
+      "bytes": 955,
+      "sha256": "0533c862f7d365f0dcddd30cb64d756eeacde65ebba7fd7f66033202f6283887"
+    },
+    {
+      "original": "godot/assets/visuals/source/song-quarter-source.png",
+      "archive": "archive/legacy-godot-visuals/source/song-quarter-source.png",
+      "bytes": 1942411,
+      "sha256": "a4e5dffcb600f37dfa0365e789c95f6a5f94300515d9d177971187d1100d5981"
+    },
+    {
+      "original": "godot/assets/visuals/source/song-source.png",
+      "archive": "archive/legacy-godot-visuals/source/song-source.png",
+      "bytes": 2146105,
+      "sha256": "722d78a1f94a9c60b963339d240ffe8ee074138af6fad5e35b02d5c16f005aee"
+    },
+    {
+      "original": "godot/assets/visuals/source/song-source.png.import",
+      "archive": "archive/legacy-godot-visuals/source/song-source.png.import",
+      "bytes": 959,
+      "sha256": "1870588dbd29fff130983db8799b2742028a451a17cf26f193d6a7f9831673c2"
+    },
+    {
+      "original": "godot/assets/visuals/source/swarm-source.png",
+      "archive": "archive/legacy-godot-visuals/source/swarm-source.png",
+      "bytes": 1313188,
+      "sha256": "14b4752aa96f283c55fb17e63b699082567db2c2bf74789b8491063198f98a27"
+    },
+    {
+      "original": "godot/assets/visuals/source/swarm-source.png.import",
+      "archive": "archive/legacy-godot-visuals/source/swarm-source.png.import",
+      "bytes": 962,
+      "sha256": "5f94f93ccfb2572e7ea24d9e19fe98b35c8434319b8ca03f3222c2d02bd4706b"
+    },
+    {
+      "original": "godot/assets/visuals/source/vfx-source.png",
+      "archive": "archive/legacy-godot-visuals/source/vfx-source.png",
+      "bytes": 1695916,
+      "sha256": "62c30eac5e19266dc6025cee9de864a2582c7c7618d88e4980533a422258eb8b"
+    },
+    {
+      "original": "godot/assets/visuals/source/yoonHarin-quarter-source-01.png",
+      "archive": "archive/legacy-godot-visuals/source/yoonHarin-quarter-source-01.png",
+      "bytes": 2088277,
+      "sha256": "936750c6e35308b9f7362449f41b02ba15241026f912fe8cd44d1098451cab1b"
+    },
+    {
+      "original": "godot/assets/visuals/environment/gwanghwamun_casual_01.webp",
+      "archive": "archive/legacy-godot-visuals/environment/gwanghwamun_casual_01.webp",
+      "bytes": 458740,
+      "sha256": "c8023c254dd6b7ed56d8d7dec567eefd77441801ff778e001c912415f4bc09c1"
+    },
+    {
+      "original": "godot/assets/visuals/environment/gwanghwamun_casual_01.webp.import",
+      "archive": "archive/legacy-godot-visuals/environment/gwanghwamun_casual_01.webp.import",
+      "bytes": 997,
+      "sha256": "4763140153f5c4e18b68b7848e9c88f5ef9866e9a17ea279656fc3fa2b5eaa42"
+    },
+    {
+      "original": "godot/assets/visuals/environment/gwanghwamun_floor_02.png",
+      "archive": "archive/legacy-godot-visuals/environment/gwanghwamun_floor_02.png",
+      "bytes": 2356667,
+      "sha256": "2c14b50a4209c8d1aeee92c3a3c417ec9db3bafb7765bf1e39d38ae411cf2e59"
+    },
+    {
+      "original": "godot/assets/visuals/environment/gwanghwamun_floor_02.png.import",
+      "archive": "archive/legacy-godot-visuals/environment/gwanghwamun_floor_02.png.import",
+      "bytes": 989,
+      "sha256": "c88430012d3408a5700ffd170013fea4a2cb44e7b57be9198aa02d3434b4a7b0"
+    },
+    {
+      "original": "godot/assets/visuals/environment/gwanghwamun_floor_03.png",
+      "archive": "archive/legacy-godot-visuals/environment/gwanghwamun_floor_03.png",
+      "bytes": 2721353,
+      "sha256": "92e5025bc15c65aa2eb7acc4f0257a3b3d69918f37bbc1c1da91d655f453d248"
+    },
+    {
+      "original": "godot/assets/visuals/environment/gwanghwamun_floor_03.png.import",
+      "archive": "archive/legacy-godot-visuals/environment/gwanghwamun_floor_03.png.import",
+      "bytes": 990,
+      "sha256": "f09d8800f2b0629df9ebcc1be37eab3d4e008af68fa9be89f88e88b98b4a22bd"
+    },
+    {
+      "original": "godot/assets/visuals/environment/gwanghwamun_gate_02.png",
+      "archive": "archive/legacy-godot-visuals/environment/gwanghwamun_gate_02.png",
+      "bytes": 1822621,
+      "sha256": "80b847aa28c80c89b267b3c145fda204fd4904b99feb933c80bcd46147300d79"
+    },
+    {
+      "original": "godot/assets/visuals/environment/gwanghwamun_gate_02.png.import",
+      "archive": "archive/legacy-godot-visuals/environment/gwanghwamun_gate_02.png.import",
+      "bytes": 988,
+      "sha256": "b67077e820b3212e372503483c0258d7f7db60404c6d880d6df14bcfb8c33d60"
+    },
+    {
+      "original": "godot/assets/visuals/environment/haetae_02.png",
+      "archive": "archive/legacy-godot-visuals/environment/haetae_02.png",
+      "bytes": 1827371,
+      "sha256": "1d1fccbf773ebe595223c2c0c31b210909e9f8945d14921b73e92a5da3e63c73"
+    },
+    {
+      "original": "godot/assets/visuals/environment/haetae_02.png.import",
+      "archive": "archive/legacy-godot-visuals/environment/haetae_02.png.import",
+      "bytes": 957,
+      "sha256": "2933ca57d70957cb395cbc7ee81873fb2713ce092ae691b5be7d504eeee97be6"
+    },
+    {
+      "original": "godot/assets/visuals/environment/provenance-02.json",
+      "archive": "archive/legacy-godot-visuals/environment/provenance-02.json",
+      "bytes": 2853,
+      "sha256": "adf13550f25b1e6817c4b5ddb3dcce6c7ff817cb4b3b1697e4f3a8be438b43ea"
+    },
+    {
+      "original": "godot/assets/visuals/environment/provenance-03.json",
+      "archive": "archive/legacy-godot-visuals/environment/provenance-03.json",
+      "bytes": 1764,
+      "sha256": "bb949a81b247092e3b373e5f6a2d7e3f8e62e4e9f777773ef5f77f04c6e0ef3b"
+    },
+    {
+      "original": "godot/assets/visuals/environment/sejong_02.png",
+      "archive": "archive/legacy-godot-visuals/environment/sejong_02.png",
+      "bytes": 1582662,
+      "sha256": "ed3d4721b3bf7f58ea94a8b0fdc0a688f10701ed6f542b3b17f88643db356519"
+    },
+    {
+      "original": "godot/assets/visuals/environment/sejong_02.png.import",
+      "archive": "archive/legacy-godot-visuals/environment/sejong_02.png.import",
+      "bytes": 957,
+      "sha256": "c8c60bb3242d56cf7bc26908ffb023adde519c855f5df85d8a0c961391af2434"
+    },
+    {
+      "original": "godot/assets/visuals/vfx/flash.png",
+      "archive": "archive/legacy-godot-visuals/vfx/flash.png",
+      "bytes": 104805,
+      "sha256": "f90e778ec3a786afdc972bbcff9062aeda6071f9878e822783d4fb4c8a54c261"
+    },
+    {
+      "original": "godot/assets/visuals/vfx/flash.png.import",
+      "archive": "archive/legacy-godot-visuals/vfx/flash.png.import",
+      "bytes": 937,
+      "sha256": "bd49973d9a8077a96bfd72a72ae7d92522ad9c8c69121f2424ad202fb0e0639b"
+    },
+    {
+      "original": "godot/assets/visuals/vfx/lightning.png",
+      "archive": "archive/legacy-godot-visuals/vfx/lightning.png",
+      "bytes": 52808,
+      "sha256": "44bfa2adcfe55a76347d54e5c8d78e7ac2c599c9f3aef6d7945aba142d1f997d"
+    },
+    {
+      "original": "godot/assets/visuals/vfx/lightning.png.import",
+      "archive": "archive/legacy-godot-visuals/vfx/lightning.png.import",
+      "bytes": 950,
+      "sha256": "bdf03e30dd9a16e3433cff07e98652d781c0012fa2d920be2078e321f5bbe15e"
+    }
+  ]
+}

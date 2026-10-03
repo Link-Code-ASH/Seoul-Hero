@@ -1,0 +1,68 @@
+{
+  "created": "2026-10-02",
+  "records": [
+    {
+      "asset": "assets/ui/urban-operation/title_battlefield_01.png",
+      "prompt": "Use case: illustration-story. Asset type: finished wide 20:9 title-screen key art for SEOUL HERO, Korean SD automatic survival action game. No text anywhere because logo rendered by game. A polished striking full-bleed illustrated Seoul gate outbreak battle tableau, cute SD combat readability but sophisticated vibrant art direction, crisp ink outlines and cel painting. Wide Seoul boulevard and right-angle intersection at Gwanghwamun, hints of King Sejong and Yi Sun-sin miniature statues, everyday Korean urban skyline receding in distance, no palace. Huge magical turquoise-violet rift rising over street on right half, glowing ring with fractured shards. ONE small empty-handed SD male hero with dark hair, teal hunter jacket/scarf, big head tiny body and very short arms/legs, viewed from behind-threequarter so face silhouette partly readable, lower-right-center; his body occupies only 8% of picture height, no large portraits. Surrounding him waves of cute threatening LEGLESS monsters: red cracked slime blobs, floating eyeball spirits, jellyfish ghosts, orange snakes without legs. Swirling mana shots, broad electric arcs, crescent slash VFX automatically emitted around hero; NO guns swords or held weapons. Picture tells automatic survival against monster swarms clearly at a glance. Keep left 42% calm brighter slate-blue atmospheric empty road/facade plane suitable for native large title and buttons, moderatecontrast there; concentrate gate/action/detail right58%. Bright ivory/navy/slate city with restrained orange, mint and violet energy accents, cinematic layered depth, adult tasteful game poster rather than preschool toys. No UI boxes, no icons, no words, no letters, no logo, no watermark, no giant head closeup, no party of heroes, no realistic anatomy. Very wide landscape 20:9 aspect.",
+      "source": "Generated images are saved to C:\\Users\\geniu\\.codex\\generated_images\\01a0f2b0-afe6-7281-8ba3-48d0d8354159 as C:\\Users\\geniu\\.codex\\generated_images\\01a0f2b0-afe6-7281-8ba3-48d0d8354159\\exec-eff24ee9-56a0-44e0-92f3-de252fa1f306.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "tool": "image_gen",
+      "use": "Title key art; empty-handed SD hero and legless monster swarm"
+    },
+    {
+      "asset": "assets/ui/urban-operation/urban_icons_01.png",
+      "prompt": "Use case: stylized-concept. Asset type: one coherent transparent PNG game UI icon ATLAS sheet, EXACT 8 columns by4 rows, 32 icons. Wide 2:1 canvas, every cell identical square, ample emptytransparentgutter, onecenterediconineachcell, noiconcrossescell, no words/numerals/labels/background/frame. Entire alpha transparent. Refined Korean Seoul urban operations game icons, clearly legible at24px, simple solid pictogram silhouettes with navy outlines and ivory/slate-blue interior, one mutedcyan smallaccent, subtle shallowenameldepth, crisp antialiasededges. Mature restrained equipment/interface symbols, not childish chunky toys, no decoration/sparkles. Exact readingorder lefttoright rows:\nROW1: health heart withsmallplus; heartwithcircularregenarrow; vampireblooddrop withtinyfang; damageimpactburst; meleecrescentswordslash; rangedcrosshair; circularareaexplosionring; attackspeed lightningboltwithspeedlines.\nROW2: criticalchance targetstar; criticaldamage doubleimpactstar; armorshield; dodge evasionsilhouette/sidestep; movementspeedrunningchevrons; luckfourleafclover; durationhourglass; rangelonghorizontaldoublearrow.\nROW3: pickuprange magnet; curse crackedhexagonalomen; projectilespeed comet; currencygain gemstonewithupchevron; backleftarrow; nextrightarrow; settingsgear; detailsinformationcircle.\nROW4: musicOn musicalnotewithsoundwaves; musicOff musicalnotewithslash; pausestandingdoublebars; rerolltwochasingarrows; lockclosedpadlock; unlockopenpadlock; waves layeredwavebars; depthgate concentricportalarch.\nEnsureexact32distincticons, exact8x4grid, standardizedvisualweight andscale, all backgroundtrulytransparent no whiteplate. No SVG, raster artwork.",
+      "source": "Generated images are saved to C:\\Users\\geniu\\.codex\\generated_images\\01a0f2b0-afe6-7281-8ba3-48d0d8354159 as C:\\Users\\geniu\\.codex\\generated_images\\01a0f2b0-afe6-7281-8ba3-48d0d8354159\\exec-edad48c7-e9b0-4e98-b19f-7206dee1df1d.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "tool": "image_gen",
+      "use": "8x4 semantic UI atlas, original RGBA, 1774x887"
+    },
+    {
+      "asset": "assets/ui/urban-operation/facilities_01.png",
+      "prompt": "Use case: stylized-concept. Asset type: transparent PNG six-facility game menu icon ATLAS, exact3columns2rows, wide3:2 sheet, squareequalcells, ONEcentered isolated iconpercell, generous transparentgutter, no textorlabelsorUI. Adult refined Seoul city operations survivalgame, matchingcoherentisometric shallow3Dcelpainted vectorlikecleanedges butrasterPNG. Off-white/blue-gray enamel, navystructuraledges, smallcyan indicatoraccents only. Reduced colors; slim realistic equipment proportions stylizedintoicon, notchildrenstoys/chunkyrounded toyhouses, no candycolors/goldcoins/sparkles, no pink/mint blobs, no oversizedcute faces. Equal visualweight60-75%cellheight. Transparent background genuinely alpha. Readingorder EXACT:\nToprow LEFT: modern compact Korean guild headquarters building withslimverticalwindows/flat roof andnavymissioninsignia; CENTER: professional training terminal uprightwiththreechevrons andsmalltargetscreen, nohumans; RIGHT: blue-gray association shield/emblem onslimnavybase, cleanangularsilvercrest.\nBottomrow LEFT: compact recovery quadrotor drone withcentralcyanlensandfourthinrotors, symmetrical technical silhouette; CENTER: sophisticated emergency supply hardcasewithlatches smallcyanlabel NOwriting; RIGHT: deployment mission terminal withfoldedsmallstreetmapdisplay andsmallportalnavigationmarker, compactnavyconsole.\nKeep each objectfullyinsideitscell nojoiners/shadowsoutsidecell, soft smallcontactshadowattachedtoobject only, nobackgroundfloor orblackrectangle.",
+      "source": "Generated images are saved to C:\\Users\\geniu\\.codex\\generated_images\\01a0f2b0-afe6-7281-8ba3-48d0d8354159 as C:\\Users\\geniu\\.codex\\generated_images\\01a0f2b0-afe6-7281-8ba3-48d0d8354159\\exec-84af2a12-8bde-4b9e-a6ee-6074027acb36.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "tool": "image_gen",
+      "use": "3x2 lobby facility atlas, original RGBA, 1536x1024"
+    }
+  ],
+  "semanticOrder": [
+    "maxHp",
+    "hpRegen",
+    "lifeSteal",
+    "damage",
+    "meleeDamage",
+    "rangedDamage",
+    "area",
+    "attackSpeed",
+    "critChance",
+    "critDamage",
+    "armor",
+    "dodge",
+    "speed",
+    "luck",
+    "duration",
+    "range",
+    "pickupRange",
+    "curse",
+    "projectileSpeed",
+    "currencyGain",
+    "back",
+    "next",
+    "settings",
+    "details",
+    "musicOn",
+    "musicOff",
+    "pause",
+    "reroll",
+    "lock",
+    "unlock",
+    "wave",
+    "depth"
+  ],
+  "facilityOrder": [
+    "lobbyGuildSD",
+    "lobbyGrowthSD",
+    "lobbyAssociationSD",
+    "lobbyRecoverySD",
+    "lobbySupplySD",
+    "lobbyDeploymentSD"
+  ]
+}

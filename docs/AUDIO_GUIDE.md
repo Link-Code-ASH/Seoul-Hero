@@ -1,74 +1,40 @@
 # 오디오 가이드
 
-Wave 종료 5초 경고음은 Sonniss `344 Audio - Antique Clocks`의 `CLOCKTick_You're Running Late`에서 짧은 틱을 잘라 사용한다. 원본은 `C:\Users\geniu\Music`에 그대로 두며, 재생 파일과 구간·처리 기록은 `assets/audio/sfx/sourced/ui/countdown_tick_01.*`, 재현 스크립트는 `scripts/extract-countdown-tick.py`에 있다. 한 초에 한 번만 재생하고 소리 크기를 낮게 유지한다.
+## 현재 적용 · reborn-01 · 2026-10-03
 
-## 현재 사운드 · 2026-09-26
+사용자의 전체 채택 승인에 따라 효과음 39종과 로비 환경음 5종, 총 128개 WAV를 실제 게임에 연결한다. 짧고 탄력 있는 타격, 산뜻한 마력, 명확한 보상을 기준으로 원본마다 구간·EQ·레이어·페이드를 다르게 편집했다. Sonniss 원본 346개 전수 신호 분석에서 사용 재료 90개를 선택했으며, Music 원본과 기존 450개 편집본은 변경하지 않았다.
 
-Sonniss GDC 2026 번들 5개의 녹음·디자인 소스를 편집한 SFX를 사용한다. 현실적인 금속·충격·파열의 질감에 절제된 마력을 더한다. 발사와 적중은 구별하고, 반복음은 짧게, 보상과 경고는 분명하게 만든다. 합성 발진음이나 특정한 좁은 주파수 범위를 모든 소리에 강제하지 않는다.
-
-라이브러리는 원본 163개를 활용한 450개 편집본(단발 400, 환경 루프 50)이며 현재 30개 SFX ID에 94개 파일을 연결했다. 현재 적용 WAV는 약 4.11MB다. 전체 편집본은 약 98.80MB이며 미래용 파일은 게임 번들과 사전 로딩 대상에 포함하지 않는다.
-
-## 사용자가 제공한 BGM · 2026-09-26
-
-원본 MP3 여섯 개(합계 약 22.8MB)를 변환 없이 사용한다. 메뉴/접속은 `BGM 1~3`, 길드 본부는 `Guild 1`, 게이트 전투와 보스전은 `Ingame 1~2`다. 여러 곡이 있는 화면에서는 진입할 때와 곡이 끝날 때 무작위로 고르고, 직전 곡의 연속 재생을 피한다. 한 곡뿐인 길드 음악은 반복한다. 결과 화면에서는 음악을 멈춘다.
-
-타이틀에서는 브라우저가 허용하면 메뉴 BGM을 즉시 시작하고, 자동 재생이 차단되면 첫 터치에서 같은 곡을 재시도한다. 길드 재생 목록에는 메뉴곡을 넣지 않는다. 여러 게임 탭이 열려도 최근 조작한 탭만 BGM을 재생하도록 `BroadcastChannel`로 재생 소유권을 전달한다.
-
-MP3는 `assets/audio/bgm/provided/`에 있다. 같은 폴더의 `SOURCES.json`에 원본 파일명·크기·SHA-256을 기록했다. 음악은 HTML 오디오 요소로 필요한 곡만 재생 시점에 읽고, 다음 후보 한 곡을 미리 준비한다. SFX만 첫 터치에서 사전 로드하고 브라우저의 AudioContext를 허용받는다. 음악은 기존 BGM 버스·전체 볼륨·음소거·일시정지 감쇄·화면 숨김 정지·화면 전환 페이드를 따른다. MP3 원본의 청각적 루프 접점과 상대 음량은 사용자 청취 평가가 필요하다.
-
-**음색의 청취 평가는 미실시다.** 파일 분석·편집·디코딩·음량 및 경계 검사는 수행했지만 청각적 품질이나 실제 플레이의 타격감을 확인한 것으로 간주하지 않는다. 최종 선택과 믹스 평가는 사용자의 청취로 진행한다.
+BGM MP3 6곡은 그대로 사용한다. 메뉴 gain 0.65·길드 0.48·전투 **0.12**를 유지한다. 사용자 볼륨·음소거와 저장 형식은 바꾸지 않는다. 직접 청취는 수행하지 않았으며 파일 분석과 연결 확인을 청감 평가로 간주하지 않는다.
 
 ## 파일과 책임
 
-- `assets/audio/sfx/sourced/`: 게임에 연결된 편집본만 보관한다.
-- `src/data/sourcedAudio.ts`: 기존 이벤트 ID별 WAV 경로. 제작 스크립트가 생성한다.
-- `src/data/audio.ts`: 개별 gain, 버스, 반복 제한, 동시 재생 수, 우선순위, pitch 범위. 현재 SFX와 제공된 MP3의 URL만 glob으로 가져온다.
-- `audio-library/`: 전체 완성본, 원본 사용 구간 미리듣기, 검색·청음 페이지, 전체 소스 목록, 편집 및 출처 기록. Vite의 public/assets 밖에 두고 게임 코드에서 import하지 않는다.
-- `scripts/audio-library/recipes.py`: 용도군별 소스 선택, 길이·음역, 기존 이벤트 매핑.
-- `scripts/audio-library/build.py`: 원본 분석, 구간 추출, 편집·합성, manifest와 매핑 생성, 에셋 확인.
+- `assets/audio/sfx/reborn-01/`: 채택된 128개 WAV와 전체 구간·레이어·출처 기록. 단발은 48kHz/16bit 모노, 환경은 스테레오 루프이며 피크는 -4dBFS 이하.
+- `src/data/sourcedAudio.ts`: manifest에서 생성한 경로·gain·재생 간격·동시 수·우선순위·보호 여부·루프·정책·행동 연결표.
+- `src/data/audio.ts`: URL과 BGM 목록을 연결한다. 현재 revision만 glob에 포함하므로 이전 소리·원본·비교 믹스를 게임 번들에 넣지 않는다.
+- `scripts/export-godot-content.mjs`: 같은 데이터를 `godot/data/content.json`의 sfx/audioConfig/audioConnections와 Godot assets에 내보낸다.
+- `godot/scripts/presentation/sound.gd`, `src/audio/AudioManager.ts`: 출력 어댑터. 순수 게임 시스템은 오디오 API를 호출하지 않는다.
+- [reborn-01 기록](../audio-library/reborn-01/README.md): 원본 346개 목록·사용 구간·SHA-256·편집 설정·라이선스·비교판·복구본.
 
-기존 GameEvents → AppController → AudioManager 연결을 사용한다. 순수 게임 로직에서 오디오 API를 참조하지 않는다. 미래용 파일의 존재만으로 게임 이벤트나 기능을 추가하지 않는다.
+## 이벤트와 믹스
 
-## 제작과 재현
+기존 게임 이벤트 ID는 유지한다. 별도 표시용 사운드 이벤트가 무기 ID·공격 단계·행동·공격 ID를 전달하고, 공용 audioConnections에서 소리를 찾는다. 이 payload는 전투/영구 저장에 넣지 않는다.
 
-Python 3.12와 NumPy를 사용한다. 원본 폴더를 읽기만 하며 원본의 위치나 내용을 변경하지 않는다.
+산탄은 마력탄과 별도 발사음, 폭격은 발사와 착탄으로 분리한다. 검기는 스윙, 표창은 접점, 번개는 최초 방전과 공격당 최대 2회의 후속 연결음을 사용한다. 마력장은 설치/활성 순간만 강조한다. 적 발사·돌진 예고·지원/소환·자폭 예고·보스 주요 공격만 추가하고 이동음·상시 울음·대사는 넣지 않는다.
 
-```sh
-python scripts/audio-library/build.py inventory --source "C:\Users\geniu\Music"
-python scripts/audio-library/build.py build --source "C:\Users\geniu\Music"
-python scripts/audio-library/build.py verify
+총 16voice, 일반음 최대 12voice다. 같은 변형을 연속 재생하지 않으며 각 cue의 간격과 동시 수를 적용한다. 피격·위험 경고·결과음은 혼잡 감쇄에서 보호한다. 예약된 후속음은 전투 dt로 진행하고 일시정지 때 정지하며 웨이브 정리 때 취소한다.
+
+로비는 이미 선택된 배경의 rain/wind/gate/winter/roof 분류에 따라 환경 루프 하나를 낮게 재생한다. 음악 볼륨·음소거를 따르고 전투에서는 끈다. 음악 전환은 0.35초 페이드, 일시정지는 기존 음악의 25%, 앱 숨김은 재생 정지, 결과는 BGM 정지와 결과음 우선이다. 브라우저는 첫 입력으로 재생을 허용받으며 기존 볼륨 설정을 유지한다.
+
+## 재현과 확인
+
+`reborn_build.py`는 계속 미리듣기 전용이다. 실제 적용은 별도 명령으로 명시한다.
+
+```powershell
+python scripts/audio-library/reborn_deploy.py --deploy
+node scripts/export-godot-content.mjs
+python scripts/audio-library/reborn_deploy.py --verify
 ```
 
-원본은 346개 WAV다. 긴 Windows 경로도 지원한다. 파일명과 용도를 먼저 대조하고, 전체 파일의 에너지 변화로 동작 구간을 찾는다. 생활음·금속 장치·얼음·동물·차량도 재료로 사용한다. 소스가 없거나 변경되면 실패를 표시하며 무관한 파일로 자동 대체하지 않는다.
+배포 명령은 검증된 128개 해시·포맷을 확인하고 old 매핑과 WAV를 먼저 보존한다. `qa/deployed-data.json`은 source/Godot WAV 해시·BGM6 불변·연결 누락·전투/가격/저장 콘텐츠 불변을 확인한다. Godot 가져오기·실행 차단 오류와 오디오 연결만 확인하며 전체 테스트·빌드·성능 검사·실기기·플레이·청감 QA는 기본 절차에 추가하지 않는다.
 
-편집은 원본 구간 추출, 채널 정리, 대역 조절, 약한 속도 조절, 감쇠·페이드, 지연을 둔 레이어 합성, 음량 정리 순서다. 발사·적중의 배경 잡음과 긴 잔향을 줄인다. 8초 환경 루프는 경계 크로스페이드로 연결한다. 완성본은 48kHz/16bit PCM WAV이며 단발은 모노, 환경 루프는 스테레오다. 출력 피크는 최대 약 -4dBFS로 제한한다.
-
-`inventory.json`은 원본 경로·SHA-256·포맷·길이·peak/RMS·주파수 중심·동작 구간과 라이선스 사본 경로를 기록한다. `manifest.json`은 사용 구간·각 레이어의 처리·gain·출력 해시·적용 이벤트를 기록한다. `provenance/`에는 번들에 동봉된 라이선스와 Readme를 보존한다. 제작은 로컬 신호 처리이며 학습이나 외부 오디오 생성 모델에 소스를 제공하지 않는다.
-
-기존 합성 생성기는 `sourced/`를 사용하지 않으므로 새 파일을 덮어쓰지 않는다. 이전 합성 에셋과 생성 출처는 보존하되 현재 번들에는 가져오지 않는다. 이전 제작 문서는 `history/AUDIO_GUIDE_BEFORE_SOURCED_LIBRARY.md`에 있다.
-
-## 청음
-
-`audio-library/index.html`을 브라우저에서 열거나 다음 로컬 서버를 사용한다.
-
-```sh
-python -m http.server 4175 --bind 127.0.0.1 --directory audio-library
-```
-
-주소는 `http://127.0.0.1:4175/`다. 게임의 5174 및 미리보기 4174와 분리되어 게임 저장 주소를 바꾸지 않는다.
-
-- 용도·질감·원본 이름 검색, 분류 및 현재 적용 여부 필터.
-- 클릭한 소리만 로드하는 단일 플레이어와 반복 재생.
-- 편집본과 사용한 원본 구간 비교. 원본 미리듣기는 샘플레이트·음량·끝단 페이드만 정리한 버전이다.
-- 발사→적중, 여러 전투음과 경고, UI 순서의 비교 샘플. 실제 게임 녹음이나 BGM 포함 믹스가 아니다.
-- 915×412 CSS px 가로 화면 기준. 목록과 상세 영역만 내부 스크롤한다.
-
-## 재생 정책
-
-첫 터치/키 입력에서 브라우저가 허용한 AudioContext를 시작한다. 전체·음악·전투·UI 볼륨과 음소거는 기존 설정을 사용한다. 전투 버스의 9.5kHz 완만한 필터와 최종 compressor를 유지한다. 최대 16 voice 중 4개는 중요한 알림을 위해 남겨 둔다. 반복 제한은 실제 오디오 시간 기준이며 배속에 따라 음악 속도나 pitch를 바꾸지 않는다.
-
-자주 반복되는 전투음은 3~5개 변형을 사용한다. 버튼 클릭은 단일 파일이며 pitch/volume variation을 적용하지 않는다. 기존 마력석 획득음·지갑 회수 이벤트는 유지하고 킥보드 이동음을 새로 연결하지 않는다. 결과에서 BGM을 멈추고 결과음을 재생하며 숨겨진 탭에서는 오디오를 중지한다.
-
-## 확인 범위
-
-`audio-library/verification.json`에 450개 포맷·디코딩·peak/RMS·무음·끝단·루프 경계·출력 중복·현재 적용 파일 해시·매핑 확인 결과를 기록한다. 청취, 물리 모바일 출력, 게임 플레이, 전체 테스트·lint·typecheck·build는 이번 제작에서 수행하지 않았다. 전체 현황은 `FINAL_QA.md`에 기록한다.
+청취판: [이전/적용본 비교](http://127.0.0.1:4175/reborn-01/). 비교 믹스는 오프라인 편집이며 실제 게임 녹음이 아니다. 이전 게임 파일은 `audio-library/reborn-01/rollback/files/`에 보존한다. 과거 제작 방식은 [이전 가이드](history/AUDIO_GUIDE_BEFORE_REBORN_01.md)를 참고한다.

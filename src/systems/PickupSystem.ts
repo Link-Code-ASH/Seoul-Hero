@@ -6,6 +6,7 @@ import { ObjectPool } from '../utils/ObjectPool';
 import { distanceSquared } from '../utils/math';
 import { collectMagicStone } from './MagicStoneSystem';
 import { magicStoneTier } from '../data/magicStoneConfig';
+import { itemPickup } from './ItemTriggers';
 import { ignoreGameEvent, type GameEventSink } from '../core/GameEvents';
 export class PickupSystem {
   private readonly pool = new ObjectPool<Pickup>(() => ({ id: 0, x: 0, y: 0, radius: 7, value: 0, units: 0, age: 0, kind: 'magicStone', tier: 1 }));
@@ -44,6 +45,7 @@ export class PickupSystem {
     this.cells.set(cx + ',' + cy, pickup);
   }
   private collect(state: RunState, pickup: Pickup): void {
+    itemPickup(state,pickup.units??1);
     collectMagicStone(state, pickup.value, pickup.units ?? 1);
     this.emit('magicStoneCollected');
   }

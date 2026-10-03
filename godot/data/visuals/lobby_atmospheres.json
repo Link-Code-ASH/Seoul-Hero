@@ -1,0 +1,163 @@
+{
+  "premiumLobbyRain": {
+    "layers": [
+      {
+        "kind": "rain",
+        "count": 98,
+        "velocity": [
+          -78,
+          350
+        ],
+        "size": 18,
+        "color": "#b7dce72e"
+      },
+      {
+        "kind": "ripple",
+        "count": 24,
+        "velocity": [
+          0,
+          0
+        ],
+        "size": 15,
+        "color": "#c3e7f326",
+        "cycle_speed": 0.55
+      },
+      {
+        "kind": "mist",
+        "count": 4,
+        "velocity": [
+          8,
+          0
+        ],
+        "size": 280,
+        "color": "#c2d8e322"
+      }
+    ],
+    "environment": "rain"
+  },
+  "premiumLobbyWind": {
+    "layers": [
+      {
+        "kind": "wind",
+        "count": 24,
+        "velocity": [
+          70,
+          4
+        ],
+        "size": 35,
+        "color": "#d6e4e119"
+      },
+      {
+        "kind": "leaf",
+        "count": 30,
+        "velocity": [
+          45,
+          10
+        ],
+        "size": 4,
+        "color": "#ddc39138"
+      },
+      {
+        "kind": "dust",
+        "count": 46,
+        "velocity": [
+          25,
+          -4
+        ],
+        "size": 1.3,
+        "color": "#dfe8dc2e"
+      }
+    ],
+    "environment": "wind"
+  },
+  "premiumLobbyEnergy": {
+    "layers": [
+      {
+        "kind": "light",
+        "count": 86,
+        "velocity": [
+          4,
+          -18
+        ],
+        "size": 1.8,
+        "color": "#7fe7e347"
+      },
+      {
+        "kind": "gate_pulse",
+        "count": 2,
+        "velocity": [
+          0,
+          0
+        ],
+        "size": 140,
+        "color": "#85f4ec1f",
+        "anchor": [
+          0.51,
+          0.46
+        ],
+        "cycle_speed": 0.22
+      },
+      {
+        "kind": "mist",
+        "count": 4,
+        "velocity": [
+          -6,
+          0
+        ],
+        "size": 255,
+        "color": "#94d0d91f"
+      }
+    ],
+    "environment": "gate"
+  },
+  "premiumLobbyCheckpoint": {
+    "layers": [
+      {
+        "kind": "snow",
+        "count": 94,
+        "velocity": [
+          -8,
+          27
+        ],
+        "size": 2.3,
+        "color": "#edf5ff52"
+      },
+      {
+        "kind": "mist",
+        "count": 5,
+        "velocity": [
+          5,
+          0
+        ],
+        "size": 300,
+        "color": "#d8e4f52b"
+      }
+    ],
+    "environment": "winter"
+  },
+  "premiumLobbyRooftop": {
+    "layers": [
+      {
+        "kind": "wind",
+        "count": 36,
+        "velocity": [
+          88,
+          -3
+        ],
+        "size": 44,
+        "color": "#d8e7ee1f"
+      },
+      {
+        "kind": "mist",
+        "count": 5,
+        "velocity": [
+          15,
+          0
+        ],
+        "size": 330,
+        "color": "#c4d9ed29"
+      }
+    ],
+    "environment": "roof"
+  }
+}

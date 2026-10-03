@@ -1,16 +1,21 @@
 import type { MapData } from '../types';
 
-/** A new regular enemy joins only after the previous roster has had two Waves to breathe. */
+/** Base threats arrive every two Waves; secondary variants join on intervening Waves. */
 const enemyRoster = [
   { firstWave: 1, enemyId: 'crawler', weight: 3 },
   { firstWave: 1, enemyId: 'swarm', weight: 2 },
   { firstWave: 3, enemyId: 'runner', weight: 2 },
+  { firstWave: 4, enemyId: 'copperCrab', weight: 0.65 },
   { firstWave: 5, enemyId: 'spitter', weight: 1 },
+  { firstWave: 6, enemyId: 'signalMoth', weight: 0.65 },
   { firstWave: 7, enemyId: 'bulwark', weight: 1 },
+  { firstWave: 8, enemyId: 'ironBoar', weight: 0.65 },
   { firstWave: 9, enemyId: 'charger', weight: 1 },
   { firstWave: 11, enemyId: 'bomber', weight: 1 },
+  { firstWave: 12, enemyId: 'glassJelly', weight: 0.65 },
   { firstWave: 13, enemyId: 'splitter', weight: 1 },
   { firstWave: 15, enemyId: 'mender', weight: 1 },
+  { firstWave: 16, enemyId: 'chainWarden', weight: 0.65 },
   { firstWave: 17, enemyId: 'summoner', weight: 1 },
   { firstWave: 19, enemyId: 'sentinel', weight: 1 },
 ] as const;
@@ -22,8 +27,9 @@ const enemiesFor = (wave: number): { enemyId: string; weight: number }[] =>
 const spawnFor = (wave: number) => {
   const batch = wave < 5 ? 2 : wave < 10 ? 3 : wave < 15 ? 4 : 5;
   const enemiesPerSecond = 1.27 + (wave - 1) * 0.17;
-  return { interval: Math.round(batch / enemiesPerSecond * 100) / 100,
-    batch, maxEnemies: Math.round(63 + (wave - 1) * 8.5) };
+  const baseInterval = Math.round(batch / enemiesPerSecond * 100) / 100;
+  return { interval: Math.round(baseInterval / 0.7 * 100) / 100,
+    batch, maxEnemies: Math.round(Math.round(63 + (wave - 1) * 8.5) * 0.7) };
 };
 
 // Duration/interval are seconds. Enemy composition and elite timing remain per-Wave data.
@@ -32,9 +38,12 @@ export const maps: Record<string, MapData> = {
     id: "seoul",
     name: "광화문 광장",
     description: "광화문 광장의 고정 화면 아레나",
-    thumbnail: "seoulIntersection",
-    arenaWidth: 1280,
+    thumbnail: "gwanghwamunPlazaSD",
+    // Galaxy S24 Ultra landscape: approximately 20:9, every arena point is ground.
+    arenaWidth: 1600,
     arenaHeight: 720,
+    // Landmark sculptures are baked into the backdrop; all ground is traversable.
+    objects: [],
     totalWaves: 20,
     bossWave: 20,
     seed: 7319,

@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>서울 히어로 · 사운드 재탄생 01</title>
+  <link rel="stylesheet" href="catalog.css">
+</head>
+<body>
+  <header>
+    <div class="identity"><span class="eyebrow">SEOUL HERO / SOUND REBORN 01</span><h1>경쾌한 SD 액션, 새로운 소리</h1></div>
+    <div class="header-right"><span id="total" class="badge">적용 완료</span><a href="../index.html">기존 450개 편집본</a></div>
+  </header>
+  <section class="workspace-tools" aria-label="목록과 검색">
+    <nav aria-label="청취판 분류"><button class="tab active" data-view="cues" aria-pressed="true">효과음</button><button class="tab" data-view="mixes" aria-pressed="false">장면 믹스</button><button class="tab" data-view="sources" aria-pressed="false">원본 전수 검토</button><button class="tab" data-view="policy" aria-pressed="false">믹스 기준</button></nav>
+    <div class="filters"><input id="search" type="search" placeholder="이름 · 용도 · 원본 검색" aria-label="목록 검색"><select id="category" aria-label="효과음 분류"><option value="">모든 분류</option></select><select id="source-status" hidden aria-label="원본 검토 상태"><option value="">모든 상태</option><option value="candidate">사용 재료</option><option value="hold">보류</option><option value="excluded">이번 작업에서 제외</option></select><span id="count" aria-live="polite"></span></div>
+  </section>
+  <main>
+    <section class="library" aria-label="비교 목록"><p class="list-note">전체 채택본을 실제 게임에 적용했습니다. 이전 소리와 적용본을 비교할 수 있습니다.</p><div id="list"></div></section>
+    <aside id="detail" aria-label="선택한 소리 상세"><p class="muted">목록에서 비교할 소리를 선택하세요.</p></aside>
+  </main>
+  <footer>
+    <div class="now"><span class="eyebrow">NOW PLAYING</span><strong id="playing" aria-live="polite">재생 버튼을 누르면 소리를 불러옵니다</strong></div>
+    <audio id="player" controls preload="none"></audio>
+    <label class="loop"><input id="loop" type="checkbox"> 반복</label>
+    <button id="export" class="secondary">의견 저장파일</button>
+  </footer>
+  <script src="catalog-data.js"></script>
+  <script src="catalog.js"></script>
+</body>
+</html>

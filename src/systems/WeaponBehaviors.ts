@@ -5,26 +5,29 @@ import type { Enemy } from '../entities/types';
 import type { RunState } from '../state/RunState';
 import { WEAPON_CONFIG } from '../data/weaponConfig';
 import type { CollisionSystem } from './CollisionSystem';
-import { ignoreGameEvent, type GameEventSink } from '../core/GameEvents';
+import { ignoreGameEvent, ignoreGameAudioEvent, type GameEventSink, type GameAudioEventSink } from '../core/GameEvents';
 import { spawnRunEffect } from './RunEffectSystem';
 import { segmentCircleHit } from '../utils/math';
 
 export class WeaponBehaviors {
-  private readonly pending: { x: number; y: number; startX: number; startY: number; delay: number; flightDuration: number; projectileSpawned: boolean; radius: number; angle: number; arc: number; kind: 'slash' | 'bombard'; damage: number; context: AttackContext; color: number; duration: number }[] = [];
+  private readonly pending: { x: number; y: number; startX: number; startY: number; delay: number; flightDuration: number; projectileSpawned: boolean; radius: number; angle: number; arc: number; kind: 'slash' | 'bombard'; damage: number; context: AttackContext; color: number; duration: number; audioAttackId: string }[] = [];
   private readonly candidates: Enemy[] = [];
+  private audioSequence = 0;
   private readonly hitIds = new Set<number>();
   private readonly orbitPrevious = new Map<string, { x: number; y: number; time: number }>();
   private readonly orbitLastHit = new Map<string, number>();
-  constructor(private readonly collision: CollisionSystem, private readonly emit: GameEventSink = ignoreGameEvent) {}
+  constructor(private readonly collision: CollisionSystem, private readonly emit: GameEventSink = ignoreGameEvent, private readonly emitAudio: GameAudioEventSink = ignoreGameAudioEvent) {}
   attack(run: RunState, weapon: Weapon, stats: ResolvedWeaponStats, target?: Enemy): void {
     if (!target) return;
     const context = attackContext(stats, run.player.maxHp, weapon.id);
+    const audioAttackId = `behavior:${weapon.id}:${run.stageCombatTime}:${++this.audioSequence}`;
     const hit = (enemy: Enemy) => this.collision.hit(enemy, stats.damage, run, context, weapon.visual.color);
     const player = run.player, direction = Math.atan2((target?.y ?? player.y) - player.y, (target?.x ?? player.x) - player.x);
     const effect = (kind: RunState['effects'][number]['kind'], x: number, y: number, endX: number, endY: number, radius: number, angle = 0, arc = 0): void => {
       spawnRunEffect(run, kind, { x, y, endX, endY, radius, angle, arc, color: weapon.visual.color });
     };
     if (weapon.behavior === 'slash') {
+      this.emitAudio({ kind: 'weapon', weaponId: weapon.id, stage: 'attack', attackId: audioAttackId });
       const arc = Math.min(Math.PI * 2, stats.attackAngle * stats.areaScale);
       this.collision.nearby(player.x, player.y, stats.range, this.candidates);
       for (const enemy of this.candidates) {
@@ -38,14 +41,16 @@ export class WeaponBehaviors {
       const shift = targetDistance - stats.range;
       effect('slash', player.x + Math.cos(direction) * shift, player.y + Math.sin(direction) * shift,
         0, 0, stats.range, direction, arc);
-      for (let i = 1; i < stats.repeatCount; i++) this.schedule('slash', player.x, player.y, i * stats.repeatInterval, stats.range, direction, arc, stats, context, weapon.visual.color);
+      for (let i = 1; i < stats.repeatCount; i++) this.schedule('slash', player.x, player.y, i * stats.repeatInterval, stats.range, direction, arc, stats, context, weapon.visual.color, player.x, player.y, 0, audioAttackId);
     } else if (weapon.behavior === 'bombard') {
       const radius = stats.blastRadius;
-      for (let i = 0; i < stats.repeatCount; i++) this.schedule('bombard', target!.x, target!.y, stats.explosionDelay + i * stats.repeatInterval, radius, 0, 0, stats, context, weapon.visual.color, player.x, player.y, stats.explosionDelay);
+      for (let i = 0; i < stats.repeatCount; i++) this.schedule('bombard', target!.x, target!.y, stats.explosionDelay + i * stats.repeatInterval, radius, 0, 0, stats, context, weapon.visual.color, player.x, player.y, stats.explosionDelay, audioAttackId);
     } else if (weapon.behavior === 'chain') {
+      this.emitAudio({ kind: 'weapon', weaponId: weapon.id, stage: 'initial', attackId: audioAttackId });
       this.hitIds.clear();
       let current: Enemy | undefined = target, x = player.x, y = player.y;
       for (let i = 0; i < stats.projectileCount && current; i++) {
+        if (i > 0) this.emitAudio({ kind: 'weapon', weaponId: weapon.id, stage: 'hop', attackId: audioAttackId, hopIndex: i });
         hit(current); this.hitIds.add(current.id);
         effect('chain', x, y, current.x, current.y, 0);
         x = current.x; y = current.y;
@@ -101,9 +106,9 @@ export class WeaponBehaviors {
     this.candidates.length = 0;
     return hit;
   }
-  private schedule(kind: 'slash' | 'bombard', x: number, y: number, delay: number, radius: number, angle: number, arc: number, stats: ResolvedWeaponStats, context: AttackContext, color: number, startX = x, startY = y, flightDuration = 0): void {
+  private schedule(kind: 'slash' | 'bombard', x: number, y: number, delay: number, radius: number, angle: number, arc: number, stats: ResolvedWeaponStats, context: AttackContext, color: number, startX = x, startY = y, flightDuration = 0, audioAttackId = ''): void {
     if (this.pending.length >= WEAPON_CONFIG.maxEffects) return;
-    this.pending.push({ kind, x, y, startX, startY, delay, flightDuration, projectileSpawned: false, radius, angle, arc, damage: stats.damage, context, color, duration: stats.duration });
+    this.pending.push({ kind, x, y, startX, startY, delay, flightDuration, projectileSpawned: false, radius, angle, arc, damage: stats.damage, context, color, duration: stats.duration, audioAttackId });
   }
   update(run: RunState, dt: number): void {
     let kept = 0;
@@ -111,6 +116,7 @@ export class WeaponBehaviors {
       p.delay -= dt;
       if (p.kind === 'bombard' && !p.projectileSpawned && p.delay <= p.flightDuration) {
         p.projectileSpawned = true;
+        if (p.context.sourceWeaponId) this.emitAudio({ kind: 'weapon', weaponId: p.context.sourceWeaponId, stage: 'launch', attackId: p.audioAttackId });
         spawnRunEffect(run, 'bombardProjectile', {
           x: p.startX,
           y: p.startY,
@@ -126,10 +132,12 @@ export class WeaponBehaviors {
       if (p.delay > 0) { this.pending[kept++] = p; continue; }
       let targetDistance = p.radius;
       if (p.kind === 'bombard') {
+        if (p.context.sourceWeaponId) this.emitAudio({ kind: 'weapon', weaponId: p.context.sourceWeaponId, stage: 'impact', attackId: p.audioAttackId });
         this.area(p.x, p.y, p.radius, p.damage, run, p.context);
         this.emit('bombardAttack');
       }
       else {
+        if (p.context.sourceWeaponId) this.emitAudio({ kind: 'weapon', weaponId: p.context.sourceWeaponId, stage: 'attack', attackId: p.audioAttackId });
         this.collision.nearby(p.x, p.y, p.radius, this.candidates);
         for (const e of this.candidates) {
           const dx = e.x - p.x, dy = e.y - p.y;

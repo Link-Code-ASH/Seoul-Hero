@@ -1,0 +1,394 @@
+[
+  {
+    "file": "assets/audio/sfx/sourced/ui/purchase_01.wav",
+    "sha256": "d423a9a266a27bcf47ab2b829dab0cf41376ea6163842bef1e6f2566f2c966cc"
+  },
+  {
+    "file": "assets/audio/sfx/sourced/ui/purchase_02.wav",
+    "sha256": "58024cf20fd2785826b9bb30e68733a9d1c51c37f8daf2ed877e68640bc21889"
+  },
+  {
+    "file": "assets/audio/sfx/sourced/ui/purchase_03.wav",
+    "sha256": "1e42efb7b7a8034fdf7e792388aeb38249de7defd2644958e9e8fc077df346d3"
+  },
+  {
+    "file": "assets/audio/sfx/sourced/ui/reroll_01.wav",
+    "sha256": "ac7a0d0fe7ae2a25b92e273dc19409e02d7a4c99bfb39dc188a1664be3783288"
+  },
+  {
+    "file": "assets/audio/sfx/sourced/ui/reroll_02.wav",
+    "sha256": "340c42e11da466e9e4b6ac831776ea8ca05e8558ff95e977b64419cd978e18ad"
+  },
+  {
+    "file": "assets/audio/sfx/sourced/ui/reroll_03.wav",
+    "sha256": "9bb759274a84ce087337c08306f4f9d09e98cd7d46114bf659454c3cc0fca918"
+  },
+  {
+    "file": "assets/audio/sfx/sourced/ui/lock_01.wav",
+    "sha256": "b7a4efae831065d64534a2cdf61dc82c836ec4b8d8766a6eddc30e6dd1788c85"
+  },
+  {
+    "file": "assets/audio/sfx/sourced/ui/lock_02.wav",
+    "sha256": "bda210fb0f027bf0b018da10be50740bc74e91ac1d1302a34762d99676bdb9de"
+  },
+  {
+    "file": "assets/audio/sfx/sourced/ui/lock_03.wav",
+    "sha256": "262061fc17b6941c0d0619dd73e20e124a93c838cb396740b1307edb22929f68"
+  },
+  {
+    "file": "assets/audio/sfx/sourced/ui/reward_01.wav",
+    "sha256": "996a63b485ebe9f720e2d9853478c309ded89cd551046c3d646d4ae699c2f514"
+  },
+  {
+    "file": "assets/audio/sfx/sourced/ui/reward_02.wav",
+    "sha256": "3fbea67fbcfcbcd54f49ad4a13404039c80aeec72a8ed355f3e38d93fde3a253"
+  },
+  {
+    "file": "assets/audio/sfx/sourced/ui/reward_03.wav",
+    "sha256": "ddb609a4ad09537a893b66889fac0e916a810d64736bdf3b406091eb59f2be1e"
+  },
+  {
+    "file": "assets/audio/sfx/sourced/ui/branch_01.wav",
+    "sha256": "9c94021ed35904e7a50d49e625a9a8b779419eec0571ac8837ec4ff1584a2796"
+  },
+  {
+    "file": "assets/audio/sfx/sourced/ui/branch_02.wav",
+    "sha256": "50979f9a6858365301e81ddedda60b61502f61e492a3f71eca3bdd6e2afb96e7"
+  },
+  {
+    "file": "assets/audio/sfx/sourced/ui/branch_03.wav",
+    "sha256": "dd46ae66b2374e9a0beab3d95edf07fc8f2abd96655a7668df9af0abefcab60f"
+  },
+  {
+    "file": "assets/audio/sfx/sourced/impacts/critical_01.wav",
+    "sha256": "8dbdfd7f3fa3c4882d22c62cd48855768f124edcb79cf183f0b958821c7f23ae"
+  },
+  {
+    "file": "assets/audio/sfx/sourced/impacts/critical_02.wav",
+    "sha256": "ae5285890d487b218c0331365bb504e8713ce00066807d1f8719dab6da8c09f4"
+  },
+  {
+    "file": "assets/audio/sfx/sourced/impacts/critical_03.wav",
+    "sha256": "f55dd4c8904d7eb1776d4c6b38a0cea9a35403aee1fb28509e5050a62ae6a54e"
+  },
+  {
+    "file": "assets/audio/sfx/sourced/impacts/critical_04.wav",
+    "sha256": "56565c98cc76801e72d1172dce470f4d46d80a5b73f6ac48827302f09a21cf03"
+  },
+  {
+    "file": "assets/audio/sfx/sourced/creatures/elite_warning_01.wav",
+    "sha256": "4733057f4cf482ed1025115ae519e1f922922335762ef2b04411067b456c4283"
+  },
+  {
+    "file": "assets/audio/sfx/sourced/creatures/elite_warning_02.wav",
+    "sha256": "894d0ad5bd7b8485dea96692bf1ee4e6ac8cb8e6842bbcad919e39709fc45a91"
+  },
+  {
+    "file": "assets/audio/sfx/sourced/ui/wave_start_01.wav",
+    "sha256": "eb7cd32de457f8edcad805aaa04d16780faf9e442d47218122fe1e661319b23f"
+  },
+  {
+    "file": "assets/audio/sfx/sourced/ui/wave_start_02.wav",
+    "sha256": "eb26d40dd69178c739fe3f33cf6ef117ce6cffc262c245753e41990a9f85d33d"
+  },
+  {
+    "file": "assets/audio/sfx/sourced/ui/wave_clear_01.wav",
+    "sha256": "230f00e8e2327ed58465159a6f2bfbaafc898d9180cbd4a42ff133f7c82b5ee2"
+  },
+  {
+    "file": "assets/audio/sfx/sourced/ui/wave_clear_02.wav",
+    "sha256": "b50dc02d18175192d0be2a12bb6e8f85de4acf0bd7ce46d70603710745332790"
+  },
+  {
+    "file": "assets/audio/sfx/sourced/ui/countdown_tick_01.wav",
+    "sha256": "4f71fd5c87afd65384970cba7b189901c7da642464456bd6c44e3a006025d4b5"
+  },
+  {
+    "file": "assets/audio/sfx/sourced/weapons/slash_01.wav",
+    "sha256": "ea33ebd83ec3b9ccf9d75575cce5a1f4cc413bf953e51441b8f35a144b1c442b"
+  },
+  {
+    "file": "assets/audio/sfx/sourced/weapons/slash_02.wav",
+    "sha256": "324d3939ecc258c180ddb47a61842352f39773035713a23b94c1a85dc20146ca"
+  },
+  {
+    "file": "assets/audio/sfx/sourced/weapons/slash_03.wav",
+    "sha256": "907f2648b702f275d53e4422a719583f1b0b5968ce0a5f739555f4427c413d5e"
+  },
+  {
+    "file": "assets/audio/sfx/sourced/weapons/slash_04.wav",
+    "sha256": "4c492075ba97ac4ea26f0bc717638ff4344b50756bb2ef27ee48daea66d9ad7e"
+  },
+  {
+    "file": "assets/audio/sfx/sourced/weapons/slash_05.wav",
+    "sha256": "f253bc1aa17500066e707bcfb9c67652cb17fb3583198c8702039c97071b506b"
+  },
+  {
+    "file": "assets/audio/sfx/sourced/weapons/orbit_01.wav",
+    "sha256": "a26f8c3febcc00805841be730c3f1eb85c40d653c2c6b6727633109ccd35168f"
+  },
+  {
+    "file": "assets/audio/sfx/sourced/weapons/orbit_02.wav",
+    "sha256": "1d988133db15cdb8712bbeaf80880b6714624ee5976304c96d917f25964d9802"
+  },
+  {
+    "file": "assets/audio/sfx/sourced/weapons/orbit_03.wav",
+    "sha256": "06309ea259bb02fb4be9bfc6a1f512d2ccbe5a1d8ae9d2fafa880c9b0af7c8d4"
+  },
+  {
+    "file": "assets/audio/sfx/sourced/weapons/orbit_04.wav",
+    "sha256": "60fd033f0118ca51b76fbe9d53cb09fc12d43137cf1fb524c1f55647dae140ea"
+  },
+  {
+    "file": "assets/audio/sfx/sourced/weapons/chain_01.wav",
+    "sha256": "e6e736a7e0dd5bc16d36f19401b6a63daadbd0f6359da72f60bc83b7d60182c1"
+  },
+  {
+    "file": "assets/audio/sfx/sourced/weapons/chain_02.wav",
+    "sha256": "daed3c9b5585aa9d568c4d99709002e911fb0b7521b213339bd67935cf889772"
+  },
+  {
+    "file": "assets/audio/sfx/sourced/weapons/chain_03.wav",
+    "sha256": "a4f0a18f9ee31bc184abf18d60c7967c57c004cecc2511adbf96f398457f91df"
+  },
+  {
+    "file": "assets/audio/sfx/sourced/weapons/chain_04.wav",
+    "sha256": "5b9fa46db1ce51245a289a48c47b3494e94f2926117042a2295a2ed1da7c58f9"
+  },
+  {
+    "file": "assets/audio/sfx/sourced/impacts/arcane_blast_01.wav",
+    "sha256": "9ab0bdfe201328d0a06b9646368f2c739708c759683b59ba14be10dd547a3f67"
+  },
+  {
+    "file": "assets/audio/sfx/sourced/impacts/arcane_blast_02.wav",
+    "sha256": "01cfe28d0dde1ab8f815ebd2937fe68081da8324a67fce67301b7a6107c024ed"
+  },
+  {
+    "file": "assets/audio/sfx/sourced/impacts/arcane_blast_03.wav",
+    "sha256": "62aafb4735ad9c9d150b01c1da446cbe0b55a178515f0c0a0ad34a2a413ba125"
+  },
+  {
+    "file": "assets/audio/sfx/sourced/impacts/arcane_blast_04.wav",
+    "sha256": "bed60d1fb04f0a7acb9d117933094554aa64f48496e3148e52c9d625b65353ec"
+  },
+  {
+    "file": "assets/audio/sfx/sourced/weapons/piercing_01.wav",
+    "sha256": "2381d2a46c7d79eaed21953b8867d55b44092a5c472b5b2112cf091886638341"
+  },
+  {
+    "file": "assets/audio/sfx/sourced/weapons/piercing_02.wav",
+    "sha256": "7abc9edd43137024364116856c93684a010d18d13172f8e9db0ccc8a6f497398"
+  },
+  {
+    "file": "assets/audio/sfx/sourced/weapons/piercing_03.wav",
+    "sha256": "b01ae774a5a28ebca8f835ab43aa4e32c4a287465a7a5f44e6b69c3d20254c83"
+  },
+  {
+    "file": "assets/audio/sfx/sourced/weapons/piercing_04.wav",
+    "sha256": "5069ac4e95fa300f591f1dd65401fefb4a04f9e93cd5cbe008ddd801f21d3842"
+  },
+  {
+    "file": "assets/audio/sfx/sourced/weapons/turret_01.wav",
+    "sha256": "6b7c4ec96cccb7703527568e72424d41c5ce78543f1490fb9bc88cdd1386a11b"
+  },
+  {
+    "file": "assets/audio/sfx/sourced/weapons/turret_02.wav",
+    "sha256": "0b23e4b37a13c3a1e33cd385b306c0ced67a1df3e38f966d508007adf87f0dd3"
+  },
+  {
+    "file": "assets/audio/sfx/sourced/weapons/turret_03.wav",
+    "sha256": "26840e88d012510468beb57fc039b9caefa59a806e1f2d46cc97a3dd867df075"
+  },
+  {
+    "file": "assets/audio/sfx/sourced/weapons/turret_04.wav",
+    "sha256": "288df89a4b1d97e8c33bb474d8cb5df708b35344103a448cd044c7d4ef2f56aa"
+  },
+  {
+    "file": "assets/audio/sfx/sourced/weapons/mine_arm_01.wav",
+    "sha256": "e9c20c68e72c31985e20cb78d5fe68c14b69e3f2ae72e002febd36fbe6c97169"
+  },
+  {
+    "file": "assets/audio/sfx/sourced/weapons/mine_arm_02.wav",
+    "sha256": "5b187bd0172aeca231507692e56a13ed8ea25936d9ce43093d0db1492edb7993"
+  },
+  {
+    "file": "assets/audio/sfx/sourced/weapons/mine_arm_03.wav",
+    "sha256": "1b2871a5825b1e1d0fa070377e3e2eb8ed0b3b24e1d51f27cb7f1fb7c1ff0157"
+  },
+  {
+    "file": "assets/audio/sfx/sourced/impacts/mine_blast_01.wav",
+    "sha256": "b08bc28b66dc1aa5d3b2dd7344c2be8c2ad002dbeaa9685eb8f62c2bce6b1624"
+  },
+  {
+    "file": "assets/audio/sfx/sourced/impacts/mine_blast_02.wav",
+    "sha256": "9d4945af39375342df464367d7f15ddd110e1539d7e384c85428fe8ab3fd3119"
+  },
+  {
+    "file": "assets/audio/sfx/sourced/impacts/mine_blast_03.wav",
+    "sha256": "bdec04890e9362787c41d4153dbbfe93666f42c3f950b15334f91294f6f9c79e"
+  },
+  {
+    "file": "assets/audio/sfx/sourced/impacts/mine_blast_04.wav",
+    "sha256": "ffc3af5761408062997303dc460fcfb8f961c299b724a9bb4969e4968ec1fa4f"
+  },
+  {
+    "file": "assets/audio/sfx/sourced/weapons/field_01.wav",
+    "sha256": "4e6ba686673fe771763fa4ce5eb93169df71124ec5394a65999ebf45b80367ac"
+  },
+  {
+    "file": "assets/audio/sfx/sourced/weapons/field_02.wav",
+    "sha256": "b296cfcf792159295a96272565cf1a8f101f8ff44292c23761cdbf0f2244978a"
+  },
+  {
+    "file": "assets/audio/sfx/sourced/weapons/field_03.wav",
+    "sha256": "1a76aec9427eb224820a61a4a145c1db02aae790565aba3c8b583439ddff0ee3"
+  },
+  {
+    "file": "assets/audio/sfx/sourced/weapons/mana_bolt_01.wav",
+    "sha256": "c6945e60356741c36aa191752d7973de07881021c3a90ce753e964f5b1804621"
+  },
+  {
+    "file": "assets/audio/sfx/sourced/weapons/mana_bolt_02.wav",
+    "sha256": "072a6026328ac0498f616a3edad691912473db4cda53df2b2c067305f59c5713"
+  },
+  {
+    "file": "assets/audio/sfx/sourced/weapons/mana_bolt_03.wav",
+    "sha256": "07f2b43d2a2d6582c5fa1a8d4ac5ef7568fa61ed7b73ecb44e7ea17d670616f6"
+  },
+  {
+    "file": "assets/audio/sfx/sourced/weapons/mana_bolt_04.wav",
+    "sha256": "721adfc6cace89329dacecd4bdf6d7f375c079c4289f1804fba733ac7878f1d1"
+  },
+  {
+    "file": "assets/audio/sfx/sourced/weapons/mana_bolt_05.wav",
+    "sha256": "359945aa71cd572af90e505e9276cec442c56550e13b77b2870f78a26f5fae53"
+  },
+  {
+    "file": "assets/audio/sfx/sourced/impacts/hit_light_01.wav",
+    "sha256": "ddc567b3a9e15706fd0be4dc41a31c39c5290260cc6a3e5a626f4105ac6fcd85"
+  },
+  {
+    "file": "assets/audio/sfx/sourced/impacts/hit_light_02.wav",
+    "sha256": "40bd954bc1fe610e1eca968fd99dd876ff5301201fee72b45e876857c6bbce0c"
+  },
+  {
+    "file": "assets/audio/sfx/sourced/impacts/hit_light_03.wav",
+    "sha256": "b4e29c1880b60d0be52a11a1b3029e687e00d9abb35c18ec0674f26d1d36a2ce"
+  },
+  {
+    "file": "assets/audio/sfx/sourced/impacts/hit_light_04.wav",
+    "sha256": "9516f9bae5e792652452de14b2ec628782ce9f8145c0ab8ea5c52172cc050059"
+  },
+  {
+    "file": "assets/audio/sfx/sourced/impacts/hit_light_05.wav",
+    "sha256": "85e1c90e25a7045548eb2a8f639c109cccbf52eeaeaea2a8475d9b3873a4bc20"
+  },
+  {
+    "file": "assets/audio/sfx/sourced/impacts/death_01.wav",
+    "sha256": "22d0cebfe47b19a58090046e84a3840eafcd57c6eb5a4c7c28a49678d6dfcee5"
+  },
+  {
+    "file": "assets/audio/sfx/sourced/impacts/death_02.wav",
+    "sha256": "a85038464052f9162d402cda2ab01506b5ac9453a50e0f70a97587495ffe9546"
+  },
+  {
+    "file": "assets/audio/sfx/sourced/impacts/death_03.wav",
+    "sha256": "5477d9a1454cfb64e20755c82e0d33e97b921838f9940b8a5e58ae8727834f37"
+  },
+  {
+    "file": "assets/audio/sfx/sourced/impacts/death_04.wav",
+    "sha256": "8ab9a426b66d40e3a8853308f5ddb5170779eae69e3420a8823d81eabb437b73"
+  },
+  {
+    "file": "assets/audio/sfx/sourced/impacts/death_05.wav",
+    "sha256": "a074d52fd61b31654801bc178fde5f55205c04eae832c5ff32f4855bb82e3c98"
+  },
+  {
+    "file": "assets/audio/sfx/sourced/ui/stone_01.wav",
+    "sha256": "55a1970a17e61a769af0b666b8543602b6b93b1ef8d15d09dc877a002693916e"
+  },
+  {
+    "file": "assets/audio/sfx/sourced/ui/stone_02.wav",
+    "sha256": "a4e01353f0df25bcbd9abec3793fe63872aa333ec7fde271b248536da0a43bae"
+  },
+  {
+    "file": "assets/audio/sfx/sourced/ui/stone_03.wav",
+    "sha256": "feb2afc66690bce717f120589a3259bf94263a45ef4c6fe4c987a9f1676e2889"
+  },
+  {
+    "file": "assets/audio/sfx/sourced/ui/confirm_01.wav",
+    "sha256": "5797dc38282ea03b68b504226c89e9235b9a42a069cbe3a4b25d4f83452666ab"
+  },
+  {
+    "file": "assets/audio/sfx/sourced/ui/click_01.wav",
+    "sha256": "4aa1c105f7f4bf388b3bd54d453daacb197c2fac9d04593b8d616613f4c2a9a3"
+  },
+  {
+    "file": "assets/audio/sfx/sourced/ui/supply_01.wav",
+    "sha256": "d952dad9a1fa3f3e24e93c056edab3c3b86a87751bfc42bb3a0a39b7ab0599c2"
+  },
+  {
+    "file": "assets/audio/sfx/sourced/ui/supply_02.wav",
+    "sha256": "e6f58032cdb9cfad3fcc97727b604fdaba8ad0cdce98c9add5171c642c8c647b"
+  },
+  {
+    "file": "assets/audio/sfx/sourced/ui/supply_03.wav",
+    "sha256": "fb98d6b6f1779609d6c6853ca26c9ee60da25e639c141271f773150cf2095e48"
+  },
+  {
+    "file": "assets/audio/sfx/sourced/ui/result_01.wav",
+    "sha256": "e99cdd510fefb5545eeb86cabdd7d894e03c7bad2c1f25c20f4780c7191c5056"
+  },
+  {
+    "file": "assets/audio/sfx/sourced/ui/result_02.wav",
+    "sha256": "aa1a1616f425dfbd76688709677a7c86d75bad8b0c768a9e4e6734d8594d89c9"
+  },
+  {
+    "file": "assets/audio/sfx/sourced/ui/result_03.wav",
+    "sha256": "f28d9132c78148a1512a545deecda0106b299366a232296ccddbcf34193785d8"
+  },
+  {
+    "file": "assets/audio/sfx/sourced/creatures/player_hit_01.wav",
+    "sha256": "3183e33e15ec827366087ad6d969c56691bb7a12226d3b5c0f9aa40db33d5199"
+  },
+  {
+    "file": "assets/audio/sfx/sourced/creatures/player_hit_02.wav",
+    "sha256": "d98d75c6c1913512acc2e83468f1f0394fabdbdd0def847db9b4d3f1416a5221"
+  },
+  {
+    "file": "assets/audio/sfx/sourced/creatures/player_hit_03.wav",
+    "sha256": "dff9976f8bd9e9f656dd138c0f021957eb616792dafe9c1dade5f814aee18102"
+  },
+  {
+    "file": "assets/audio/sfx/sourced/creatures/player_hit_04.wav",
+    "sha256": "db72ffd474e9a80247756987598b25af0fba551602befc592b5b8903024113df"
+  },
+  {
+    "file": "assets/audio/sfx/sourced/creatures/boss_warning_01.wav",
+    "sha256": "a843ef957a992ee3e7ea1683108e6a31dabe2140aa0b169e8c33e06e1380032c"
+  },
+  {
+    "file": "assets/audio/sfx/sourced/creatures/boss_warning_02.wav",
+    "sha256": "75db535ec2708ac71035b0cfa000f2035b50301d72d6909b7bb77ba0f2793bfd"
+  },
+  {
+    "file": "assets/audio/sfx/sourced/ui/result_01.wav",
+    "sha256": "e99cdd510fefb5545eeb86cabdd7d894e03c7bad2c1f25c20f4780c7191c5056"
+  },
+  {
+    "file": "assets/audio/sfx/sourced/ui/result_02.wav",
+    "sha256": "aa1a1616f425dfbd76688709677a7c86d75bad8b0c768a9e4e6734d8594d89c9"
+  },
+  {
+    "file": "assets/audio/sfx/sourced/ui/result_03.wav",
+    "sha256": "f28d9132c78148a1512a545deecda0106b299366a232296ccddbcf34193785d8"
+  },
+  {
+    "file": "assets/audio/sfx/sourced/creatures/defeat_01.wav",
+    "sha256": "648ef64bbd1dcd2489cb0a004f299468e6ee6df81cbb2e71d212d155a6aa9911"
+  },
+  {
+    "file": "assets/audio/sfx/sourced/creatures/defeat_02.wav",
+    "sha256": "13b28cd4fc5d8c2e701c37639da52030c5be519e7be25bedc95440a45e63610f"
+  }
+]

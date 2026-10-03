@@ -10,6 +10,9 @@
   --mint: #95d2cf;
   --line: #90a6b542;
   --panel: #15212d;
+  --glass-surface: none;
+  --glass-control: none;
+  --glass-depth: inset 0 1px 0 #eef5ff35,inset 0 -1px 0 #050b183d,0 6px 16px #03091438;
   --frame-command: url('../../assets/ui/materials/frame_command_01.webp');
   --frame-map: url('../../assets/ui/materials/frame_map_01.webp');
   --frame-instrument: url('../../assets/ui/materials/frame_instrument_01.webp');
@@ -70,11 +73,12 @@ button,.button {
   min-height: 44px;
   padding: 8px 16px;
   border: 2px solid transparent;
-  border-image: var(--frame-control) 12% fill / 2px;
+  border-image: var(--frame-control) 12% / 5px;
   border-radius: 0;
   color: #e6edf2;
-  background: #162432;
-  box-shadow: 0 3px 6px #0005;
+  background: var(--glass-control);
+  box-shadow: var(--glass-depth);
+  backdrop-filter: blur(10px);
   font: 800 14px/1.25 Paperlogy,sans-serif;
   cursor: pointer;
   text-decoration: none;
@@ -95,7 +99,7 @@ button:disabled {
 }
 button.primary {
   color: #f8e5b9;
-  background: #40505b;
+  background: none;
   box-shadow: inset 0 -3px #b99b66,0 4px 8px #0006;
 }
 button.quiet {
@@ -233,6 +237,20 @@ button img {
   background-size: 800% 600%;
   background-repeat: no-repeat;
 }
+.image-region-art {
+  display: inline-block;
+  position: relative;
+  flex-shrink: 0;
+}
+.image-region-art>span {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+  background-repeat: no-repeat;
+}
+.wallet-flight-stone>.image-region-art { width: 100%; height: 100%; }
 .weapon-detail-art {
   object-fit: contain;
 }
@@ -329,8 +347,7 @@ button img {
   padding: 6px 22px;
   border: 3px solid transparent;
   border-image: var(--frame-reward) 12% / 8px;
-  background: linear-gradient(115deg,#957345b8,#55402b99),var(--frame-reward) center/150% 150%;
-  background-blend-mode: screen;
+  background: linear-gradient(115deg,#f3d69724,transparent 50%,#241d261c),var(--frame-reward) center/125% 125%;
   box-shadow: 0 6px 18px #0006;
   color: #f0f6f4;
   font: 400 17px Paperlogy,'Malgun Gothic',sans-serif;
@@ -344,15 +361,14 @@ button img {
   padding: 4px 8px;
   border: 2px solid transparent;
   border-image: var(--frame-arcane) 12% / 6px;
-  background: linear-gradient(120deg,#315d6599,#31395580),var(--frame-arcane) center/150% 150%;
-  background-blend-mode: screen;
+  background: linear-gradient(120deg,#aacfd323,transparent 55%),var(--frame-arcane) center/125% 125%;
   box-shadow: 0 3px 10px #0005;
   color: #d1dfe1;
   font-weight: 400;
 }
 .title-actions .sound-button[aria-pressed=true] {
   color: #d0fff0;
-  background-image: linear-gradient(120deg,#438f89bd,#36586d99),var(--frame-arcane);
+  background-image: linear-gradient(120deg,#8ce4c83b,transparent 65%),var(--frame-arcane);
 }
 .title-atmosphere {
   position: absolute;
@@ -383,8 +399,9 @@ button img {
   padding: 12px 14px 14px;
   border: 3px solid transparent;
   border-image: var(--frame-association) 12% / 8px;
-  background: var(--frame-association) center/125% 125%;
-  box-shadow: 0 14px 38px #0009;
+  background: none;
+  backdrop-filter: blur(18px);
+  box-shadow: inset 0 1px #dee3ff42,inset 0 -1px #050a174d,0 14px 38px #0007;
 }
 .pause-modal h1 {
   margin: 0 0 12px;
@@ -405,16 +422,16 @@ button img {
   padding: 6px 8px;
   font-size: 14px;
   border-image: var(--frame-control) 12% / 6px;
-  background: var(--frame-control) center/125% 125%;
-  box-shadow: 0 3px 8px #0005;
+  background: var(--glass-control);
+  box-shadow: var(--glass-depth);
 }
 .pause-modal .stack .primary {
-  border-image-source: var(--frame-reward);
-  background-image: var(--frame-reward);
-  color: #f2dfb7;
+  border-image-source: var(--frame-arcane);
+  background: none;
+  color: #f0edff;
 }
 .pause-modal .stack .secondary {
-  color: #efd9d3;
+  color: #c9d4e7;
 }
 .post-metrics {
   display: flex;

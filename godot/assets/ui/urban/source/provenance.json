@@ -1,0 +1,14 @@
+{
+  "tool": "built-in image_gen",
+  "date": "2026-09-30",
+  "prompt": "Production UI MATERIAL ATLAS for Seoul Hero, a restrained premium modern Seoul fantasy action mobile game. SIX FINISHED empty UI surfaces, precise 2 columns x 3 rows, all panels have the SAME wide rectangular outer aspect ratio approximately 2.4:1, very generous transparent gutters. Each is a complete panel with coherent inner surface material, thin edge and subtle depth; NOT empty border frames. No words, no letters, no symbols, no numbers, no bolts, no icons, no neon, no futuristic HUD diagrams. True transparent background outside every panel. Crisp large bitmap rendered materials, straight orthographic front view, no perspective. Top left: smoky blue translucent GLASS, almost invisible interior with fine reflection along upper edge and thin satin silver corners. Top right: graphite precision EQUIPMENT PAD, tactile woven dark blue cushioning, low slim polished steel bottom ledge, intentionally open-looking top edge. Middle left: cool blue-grey DOCUMENT surface, very fine fiber/ceramic grain with tidy thin slate edge, medium darkness suitable for white text, no ruled lines. Middle right: pale muted teal pearlescent CERAMIC display panel, soft silver-blue darkened center suitable for white text, light material depth and narrow edge, refined not colorful plastic. Bottom left: warm charcoal REWARD TRAY, dense soft fabric center with a subtle champagne metal lip at bottom, restrained tasteful warmth, absolutely no yellow solid block. Bottom right: compact elongated CONTROL BUTTON material, brushed satin titanium blue-gray, shallow inset center, rounded corners only slightly, thin bright rim and fine surface grain. All SIX have visually DIFFERENT surfaces and border silhouettes, elegant current mobile game quality. Avoid chunky black sci-fi crates, thick repetitive frames, color paper flat fills, drawn text or content. Entire inner material is part of bitmap. Preserve space for HTML/Godot text in interior. Exact six disconnected horizontal panels, no extra pieces.",
+  "processing": "Reviewed atlas crops and proportional runtime downsampling. Complete material interiors retained.",
+  "roles": [
+    "glass",
+    "equipment",
+    "document",
+    "ceramic",
+    "reward",
+    "control"
+  ]
+}

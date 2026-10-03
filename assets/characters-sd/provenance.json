@@ -1,0 +1,17 @@
+{
+  "tool": "built-in image_gen",
+  "date": "2026-10-01",
+  "asset": "song_sd_01.png",
+  "use": "Song Jinwoo empty-handed SD sample, gameplay and static portrait",
+  "referenceRoles": {
+    "Portfolio_img_23143110_1.png": "Style and proportions only, original user reference",
+    "godot/assets/visuals/actors/song/portrait.png": "Existing identity and colors only"
+  },
+  "prompt": "Use case: stylized-concept. Asset type: ONE production game character sprite on genuine transparent background. Image 1 is ONLY the target art STYLE and chibi PROPORTION reference; image 2 is ONLY Song Jinwoo's existing identity/colors, NOT its body proportions, rendering or lighting. Create a brand-new original empty-handed SD Song Jinwoo for Seoul Hero, matching the first reference's simple adorable battle dolls: huge head occupying 60% of total height, squat tiny torso, extremely short mitten arms touching sides and two tiny distinct stumpy shoes directly below the jacket. Entire character about 1.7 heads tall, head nearly as wide as entire body. Front-facing slightly three-quarter view with face clearly seen as in reference. Black tousled hair with 4-5 readable tufts, small cyan eyes, pale warm skin, restrained determined cute expression, cyan hooded short jacket over charcoal shirt, one tiny diamond charm earring, plain dark pants and little charcoal/cyan boots. No long legs, no realistic anatomy. Thick crisp near-black rounded outlines, flat cel-shaded simple color blocks, maximum two-tone shading, no texture/grain, no dramatic rimlight. Keep skin/face readable at tiny in-game sizes. Hands EMPTY, arms resting naturally, no weapon or handheld object. Single full-body character centered, generously occupies image, both shoes visible and separated, soles aligned horizontally, no floor shadow, no aura/glow, no props, no text, no border, no background. Isolated full-body sprite with clean antialiased alpha. Do not copy any character from reference1; only borrow its tiny cute style. Avoid the existing character's long torso, realistic clothes/folds, accessories overload, diffuse backdrop and detailed illustration rendering.",
+  "referenced_image_paths": [
+    "C:/Users/geniu/Desktop/Portfolio_img_23143110_1.png",
+    "C:/Users/geniu/Documents/GitHub/Seoul-Hero/godot/assets/visuals/actors/song/portrait.png"
+  ],
+  "transparent_background": true,
+  "generatedSource": "C:/Users/geniu/.codex/generated_images/01a0f2b0-afe6-7281-8ba3-48d0d8354159/exec-f01dbd87-6904-4ac9-b45e-ca00f69d07ee.png"
+}

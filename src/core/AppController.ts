@@ -17,6 +17,7 @@ import { RunSettlement } from './RunSettlement';
 import { KeyboardInput } from '../input/KeyboardInput';
 import { InputManager } from '../input/InputManager';
 import { TouchInput } from '../input/TouchInput';
+import { TouchStick } from '../ui/TouchStick';
 import { WorldRenderer } from '../rendering/WorldRenderer';
 import { GuildRenderer } from '../rendering/GuildRenderer';
 import { SaveManager } from '../save/SaveManager';
@@ -36,7 +37,8 @@ import { requestMobileFullscreen } from '../ui/MobileFullscreen';
 import { firstArchiveId, type ArchiveCategory } from '../ui/ArchiveScreen';
 import { AudioManager } from '../audio/AudioManager';
 import { musicForScene } from '../audio/AudioPolicy';
-import { preloadedAudioUrls, sfx } from '../data/audio';
+import { preloadedAudioUrls, sfx, audioConnections } from '../data/audio';
+import type { GameEvent, GameAudioEvent } from './GameEvents';
 import type { SfxId } from '../data/audio';
 import { ensureWeeklyGate } from '../systems/WeeklyGateSystem';
 import { BalanceTelemetryStore } from '../analytics/BalanceTelemetry';
@@ -51,6 +53,12 @@ import type { GrowthViewState } from '../ui/MetaScreens';
 import type { GuildViewState } from '../ui/GuildScreen';
 import { guildFacilities, type GuildFacilityId } from '../data/guild';
 import { closestGuildPoint, guildSpawn, guildWalkPath, moveInGuild, upgradeGuildFacility, type GuildPosition } from '../systems/GuildSystem';
+
+type AudioStageMap = Readonly<Record<string, string | number | null>>;
+const weaponAudioStages: Readonly<Record<string, AudioStageMap>> = audioConnections.weaponStages;
+const enemyAudioActions: Readonly<Record<string, string>> = audioConnections.enemyActions;
+const migratedWeaponSounds: readonly string[] = Object.values(weaponAudioStages)
+  .flatMap(stages => Object.values(stages).filter((cue): cue is string => typeof cue === 'string'));
 
 /** Owns browser-side wiring. Simulation remains independent of screens and storage. */
 export class AppController {
@@ -108,11 +116,15 @@ export class AppController {
   private terminalRevealElapsed = 0;
   private postWaveRevealRun: import('../state/RunState').RunState | null = null;
   private postWaveRevealElapsed = 0;
+  private readonly touchStick: TouchStick;
 
   constructor(private readonly worldHost: HTMLElement, uiHost: HTMLElement) {
     this.ui = new GameUI(uiHost, this.action, this.change);
     this.audio.onMusicStateChange = this.syncAudioButton;
-    this.input = new InputManager([this.keyboard, new TouchInput(this.worldHost, () => this.screen === 'waveActive')]);
+    this.touchStick = new TouchStick(this.worldHost);
+    this.input = new InputManager([this.keyboard, new TouchInput(this.worldHost,
+      () => (this.screen === 'waveActive' && this.simulation?.state.phase === 'waveActive') || (this.screen === 'guild' && !this.guildView.panelId),
+      this.touchStick.update)]);
     this.loop = new GameLoop(this.update, this.render);
   }
   async start(): Promise<void> {
@@ -221,6 +233,8 @@ export class AppController {
     }
   }
   private show(screen: Screen): void {
+    if (screen !== 'lobby') this.audio.setAmbience(null);
+    if (!['waveActive', 'paused', 'revivalChoice'].includes(screen)) this.audio.stopCombat();
     if (screen !== 'shop') this.shopPauseOpen = false;
     if(screen.startsWith('gate')&&ensureWeeklyGate(this.meta))this.persist();
     this.gateDraft.gateDepth = Math.max(1, Math.min(this.meta.gateProgression.highestUnlockedDepth, this.gateDraft.gateDepth));
@@ -235,7 +249,7 @@ export class AppController {
       screen === 'title' && this.runSnapshots.load(this.accountUserId) !== null);
     if (screen === 'shop' && this.shopPauseOpen) this.ui.setShopPause(true);
     this.ui.dev.element.hidden = !this.meta.settings.developerMode;
-    this.audio.setScene(musicForScene(screen, this.simulation?.state ?? null), screen === 'paused' || screen === 'postWave' || (screen === 'shop' && this.shopPauseOpen));
+    this.audio.setScene(this.simulation && isTerminal(this.simulation.state.phase) ? null : musicForScene(screen, this.simulation?.state ?? null), screen === 'paused' || screen === 'postWave' || (screen === 'shop' && this.shopPauseOpen));
     this.syncAudioButton();
     if (this.simulation && !isTerminal(this.simulation.state.phase)) this.saveRunSnapshot();
     if (screen !== 'title') this.guardRunHistory();
@@ -270,9 +284,38 @@ export class AppController {
     if (direction.x !== 0 || direction.y !== 0) this.walkTest.remaining = 0;
     const testingWalk = this.walkTest.remaining > 0;
     this.walkTest.remaining = Math.max(0, this.walkTest.remaining - dt);
+    const previousCombatTime = this.simulation.state.stageCombatTime;
     this.simulation.update(dt, testingWalk ? this.walkTest : direction, this.renderer.viewport);
+    this.audio.advanceCombat(this.simulation.state.stageCombatTime - previousCombatTime);
     this.syncPhase();
     return this.screen === 'waveActive';
+  };
+  private consumeGameSound = (id: GameEvent): void => {
+    // Original rule events remain available; stage-aware weapon audio owns playback.
+    if (migratedWeaponSounds.includes(id)) return;
+    if (id === 'stageClear' || id === 'gameOver') {
+      this.audio.stopCombat();
+      this.audio.setScene(null, false);
+    } else if (sfx[id].group === 'combat' && this.simulation?.state.phase !== 'waveActive'
+      && !(id === 'playerHit' && this.simulation?.state.phase === 'revivalChoice')) return;
+    this.audio.play(id);
+  };
+  private consumeAudioEvent = (event: GameAudioEvent): void => {
+    if (event.kind === 'cleanup') { this.audio.stopCombat(); return; }
+    if (this.simulation?.state.phase !== 'waveActive') return;
+    let cue: string | number | null | undefined;
+    let delay = event.delay;
+    if (event.kind === 'weapon') {
+      const stages = weaponAudioStages[event.weaponId ?? ''];
+      cue = stages?.[event.stage ?? ''];
+      if (event.stage === 'hop') {
+        const index = event.hopIndex ?? 0;
+        if (index < 1 || index > Number(stages?.maxHopsPerAttack ?? 0)) return;
+        if (typeof cue === 'string' && Object.hasOwn(sfx, cue)) delay ??= index * sfx[cue as SfxId].interval;
+      }
+    } else cue = enemyAudioActions[event.action ?? ''];
+    if (typeof cue !== 'string' || !Object.hasOwn(sfx, cue)) return;
+    this.audio.play(cue as SfxId, { ...event, delay });
   };
   private render = (dt: number): void => {
     if (this.screen === 'guild') { this.guildRenderer.render(this.guildPosition, dt); return; }
@@ -286,8 +329,9 @@ export class AppController {
       this.simulation.sweepPickupsToWallet(dt, walletWorldTarget);
       this.syncPhase(dt);
     }
-    this.audio.setScene(musicForScene(this.screen, run), this.screen === 'paused' || this.screen === 'postWave');
-    this.simulation?.events.drain(this.audio.play);
+    this.audio.setScene(run && isTerminal(run.phase) ? null : musicForScene(this.screen, run), this.screen === 'paused' || this.screen === 'postWave');
+    this.simulation?.events.drainAudio(this.consumeAudioEvent);
+    this.simulation?.events.drain(this.consumeGameSound);
     if (run?.phase === 'waveActive' && run.currentWave < run.totalWaves) {
       if (this.countdownRun !== run || this.countdownWave !== run.currentWave) {
         this.countdownRun = run;
@@ -330,7 +374,7 @@ export class AppController {
       if (this.terminalRevealElapsed < 0.65) return;
       this.finalizeRun();
       if (this.screen !== 'result') this.show('result');
-    } else if (phase === 'postWave' && this.screen !== 'postWave') {
+    } else if (phase === 'postWave') {
       const run = this.simulation!.state;
       if (this.postWaveRevealRun !== run || this.postWaveRevealElapsed < 0) {
         this.postWaveRevealRun = run;
@@ -344,9 +388,11 @@ export class AppController {
       }
       this.terminalRevealRun = null;
       this.postWaveRevealElapsed += dt;
-      if (this.postWaveRevealElapsed >= 1.05) {
-        this.show('postWave');
+      if (this.postWaveRevealElapsed >= 1) {
+        this.simulation!.continuePostWave();
         this.postWaveRevealElapsed = -1;
+        this.ui.hud.clearWalletSweep();
+        this.syncPhase();
       }
     }
     else if (phase === 'shop' && this.screen !== 'shop') this.show('shop');
@@ -940,7 +986,7 @@ export class AppController {
     this.audio.destroy();
     window.removeEventListener('pointerdown', this.unlockAudio);
     window.removeEventListener('focus', this.reclaimAudio);
-    this.markOfflineExit(); this.loop.stop(); this.input.destroy(); this.renderer.destroy(); this.guildRenderer.destroy();
+    this.markOfflineExit(); this.loop.stop(); this.input.destroy(); this.touchStick.destroy(); this.renderer.destroy(); this.guildRenderer.destroy();
     window.clearInterval(this.autosaveTimer);
     window.removeEventListener('keydown', this.keydown); window.removeEventListener('blur', this.pause);
     document.removeEventListener('visibilitychange', this.visibility); window.removeEventListener('pagehide', this.markOfflineExit);

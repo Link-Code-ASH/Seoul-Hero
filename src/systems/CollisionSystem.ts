@@ -9,6 +9,7 @@ import { distanceSquared, segmentCircleHit } from '../utils/math';
 import { ignoreGameEvent } from '../core/GameEvents';
 import type { GameEventSink } from '../core/GameEvents';
 import { spawnRunEffect } from './RunEffectSystem';
+import { itemDamageMultiplier } from './ItemTriggers';
 
 export type DamageObserver = (weaponId: string | undefined, damage: number, critical: boolean, killed: boolean) => void;
 export class CollisionSystem {
@@ -47,6 +48,7 @@ export class CollisionSystem {
   }
   hit(enemy: Enemy, damage: number, run?: RunState, context?: AttackContext, color = 0x8fdcff): void {
     if (enemy.hp <= 0) return;
+    if(run && context)damage*=itemDamageMultiplier(run,enemy);
     const rolled = outgoingDamage(damage, context, this.random);
     const critical = rolled > damage;
     if (critical) this.emit('critical');

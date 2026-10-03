@@ -1,5 +1,6 @@
 import { items, type Rarity } from '../data/items';
 import { addItem, applyItems } from '../systems/ItemSystem';
+import { updateItemTriggers } from '../systems/ItemTriggers';
 import { REWARD_CONFIG } from '../data/rewardConfig';
 import { enterShop, buyItem, buyWeapon, rerollItems, rerollWeapons, toggleItemLock, toggleWeaponLock, chooseShopWeaponBranch, grantWeapon, itemRerollCost, weaponRerollCost, weaponPrice } from '../systems/ShopSystem';
 import { characters } from '../data/characters';
@@ -53,8 +54,8 @@ export class Simulation {
     if (!stage) throw new Error('스테이지를 찾을 수 없습니다.');
     const nextId = () => ++this.sequence;
     this.pickups = new PickupSystem(nextId, this.events.emit);
-    this.enemySystem = new EnemySystem(nextId, random, this.events.emit);
-    this.combat = new CombatSystem(nextId, this.pickups, stage.clearReward, this.events.emit, random, (state,enemy)=>{this.telemetry.enemyKilled(enemy.definitionId);this.enemySystem.onDeath(state,enemy);}, (weaponId,damage,critical,killed)=>this.telemetry.damage(weaponId,damage,critical,killed), enemyId=>this.telemetry.playerHit(enemyId));
+    this.enemySystem = new EnemySystem(nextId, random, this.events.emit, this.events.emitAudio);
+    this.combat = new CombatSystem(nextId, this.pickups, stage.clearReward, this.events.emit, random, (state,enemy)=>{this.telemetry.enemyKilled(enemy.definitionId);this.enemySystem.onDeath(state,enemy);}, (weaponId,damage,critical,killed)=>this.telemetry.damage(weaponId,damage,critical,killed), enemyId=>this.telemetry.playerHit(enemyId), this.events.emitAudio);
     this.spawn = new SpawnSystem(stage, random, nextId, this.events.emit);
     this.beginWave(1);
   }
@@ -83,6 +84,8 @@ export class Simulation {
     const current = this.state as unknown as Record<string, unknown>;
     const saved = snapshot.state as unknown as Record<string, unknown>;
     for (const key of Object.keys(current)) if (Object.hasOwn(saved, key)) current[key] = saved[key];
+    // Display definitions follow current artwork, never retired checkpoint sprites.
+    this.state.player.visual = { ...characters[this.state.characterId]!.visual };
     if (typeof snapshot.state.pendingBranchWeaponId === 'string')
       this.state.pendingBranchWeaponId = snapshot.state.pendingBranchWeaponId;
     const attacks = new Map<number, NonNullable<Projectile['attack']>>();
@@ -123,6 +126,7 @@ export class Simulation {
       this.completeWave(); return;
     }
     const player = state.player;
+    updateItemTriggers(state,dt,Math.hypot(direction.x,direction.y)>0.01);
     player.hp = Math.min(player.maxHp, player.hp + state.calculatedStats.hpRegeneration * dt);
     const magnitude = Math.hypot(direction.x, direction.y);
     if (Number.isFinite(magnitude) && magnitude > 0) {
@@ -242,6 +246,7 @@ export class Simulation {
     this.beginWave(number); return true;
   }
   private cleanupCombat(): void {
+    this.events.emitAudio({ kind: 'cleanup' });
     this.combat.clearWave(this.state);
     this.enemySystem.clear(this.state);
     this.spawn.reset();

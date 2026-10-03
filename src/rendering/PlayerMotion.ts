@@ -73,7 +73,7 @@ export class PlayerMotion {
   }
 
   get bobY(): number {
-    const vibration = Math.abs(Math.sin(this.phase * 2.4)) * (this.player?.visual.motionStyle === 'truck' ? 1.2 : 2.1);
+    const vibration = Math.abs(Math.sin(this.phase * 2.4)) * 2.1;
     return -(vibration + Math.abs(Math.sin(this.phase * 6)) * .25) * this.intensity;
   }
   get swayX(): number { return (Math.sin(this.phase) * .72 + Math.sin(this.phase * 5) * .18) * this.intensity; }

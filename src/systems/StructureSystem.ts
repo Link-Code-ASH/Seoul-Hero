@@ -1,4 +1,4 @@
-import { ignoreGameEvent, type GameEventSink } from '../core/GameEvents';
+import { ignoreGameEvent, ignoreGameAudioEvent, type GameEventSink, type GameAudioEventSink } from '../core/GameEvents';
 import { STRUCTURE_CONFIG } from '../data/structureConfig';
 import { weapons } from '../data/weapons';
 import { maps } from '../data/maps';
@@ -16,7 +16,8 @@ export function structureLimit(run: RunState, weapon: Weapon): number {
 }
 export class StructureSystem {
   private readonly candidates: Enemy[] = [];
-  constructor(private readonly collision: CollisionSystem, private readonly nextId: () => number, private readonly emit: GameEventSink = ignoreGameEvent, private readonly random: () => number = Math.random) {}
+  private audioSequence = 0;
+  constructor(private readonly collision: CollisionSystem, private readonly nextId: () => number, private readonly emit: GameEventSink = ignoreGameEvent, private readonly random: () => number = Math.random, private readonly emitAudio: GameAudioEventSink = ignoreGameAudioEvent) {}
   private safePosition(run: RunState, ignoreId = -1, avoid?: { x: number; y: number }): { x: number; y: number } {
     const arena = maps[run.mapId]!;
     const halfWidth = Math.max(0, arena.arenaWidth / 2 - STRUCTURE_CONFIG.boundaryMargin);
@@ -44,8 +45,14 @@ export class StructureSystem {
     if (!weapon.structure) return;
     const count = run.structures.filter(s => s.weaponId === weapon.id).length;
     if (count >= structureLimit(run, weapon) || run.structures.length >= STRUCTURE_LIMIT) return;
-    if(weapon.structure.kind==='mine') this.emit('minePlaced');
-    if(weapon.structure.kind==='aura') this.emit('fieldActivated');
+    if(weapon.structure.kind==='mine') {
+      this.emitAudio({ kind: 'weapon', weaponId: weapon.id, stage: 'place', attackId: `structure:${weapon.id}:${run.stageCombatTime}:${++this.audioSequence}` });
+      this.emit('minePlaced');
+    }
+    if(weapon.structure.kind==='aura') {
+      this.emitAudio({ kind: 'weapon', weaponId: weapon.id, stage: 'activate', attackId: `structure:${weapon.id}:${run.stageCombatTime}:${++this.audioSequence}` });
+      this.emit('fieldActivated');
+    }
     const position = this.safePosition(run);
     run.structures.push({id:this.nextId(),weaponId:weapon.id,x:position.x,y:position.y,remaining:Number.POSITIVE_INFINITY,cooldown:0});
   }
@@ -79,6 +86,7 @@ export class StructureSystem {
             const context=attackContext(stats,run.player.maxHp,w.id);
             for (const e of this.candidates) if (Math.hypot(e.x-entity.x,e.y-entity.y)<=stats.blastRadius) this.collision.hit(e,stats.damage,run,context,w.visual.color);
             if (kind==='mine') {
+              this.emitAudio({ kind: 'weapon', weaponId: w.id, stage: 'impact', attackId: `structure:${entity.id}:${run.stageCombatTime}` });
               this.emit('mineExploded');
               entity.remaining=0;
               spawnRunEffect(run, 'mineBlast', { x: entity.x, y: entity.y, radius: stats.blastRadius, color: w.visual.color });

@@ -1,8 +1,9 @@
+import { weaponShopCardText } from '../shopCardText';
 import { structureWeapons } from './structures';
 import { weaponBranches } from './branches';
 import type { Weapon } from '../types';
 import { expandWeaponProgression } from './progression';
-const definitions: Record<string, Omit<Weapon, "branches">> = {
+const definitions: Record<string, Omit<Weapon, "branches" | "shopCardText">> = {
   manaSword: {
     "id": "manaSword",
     maxLevel: 6, branchAtLevel: 3,
@@ -236,4 +237,4 @@ const definitions: Record<string, Omit<Weapon, "branches">> = {
 };
 
 
-export const weapons: Record<string, Weapon> = Object.assign({}, Object.fromEntries(Object.entries(definitions).map(([id, definition]) => [id, expandWeaponProgression({ ...definition, branches: weaponBranches[id]! })])), structureWeapons);
+export const weapons: Record<string, Weapon> = Object.assign({}, Object.fromEntries(Object.entries(definitions).map(([id, definition]) => [id, expandWeaponProgression({ ...definition, shopCardText: weaponShopCardText[id]!, branches: weaponBranches[id]! })])), structureWeapons);

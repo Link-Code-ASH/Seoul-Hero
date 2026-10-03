@@ -1,0 +1,229 @@
+{
+  "limits": {
+    "active": 64,
+    "particles": 192,
+    "outsideMargin": 140,
+    "particlesPerEffect": 12
+  },
+  "projectiles": {
+    "displayScale": 1.5
+  },
+  "muzzle": {
+    "duration": 0.16,
+    "layers": [
+      {
+        "texture": "vfxMuzzle",
+        "start": 0,
+        "end": 0.11,
+        "from": 0.32,
+        "to": 0.9,
+        "alpha": 0.85
+      },
+      {
+        "texture": "vfxImpact",
+        "start": 0.018,
+        "end": 0.16,
+        "from": 0.25,
+        "to": 0.6,
+        "alpha": 0.3,
+        "offset": 12
+      }
+    ]
+  },
+  "impact": {
+    "duration": 0.23,
+    "particles": 5,
+    "layers": [
+      {
+        "texture": "vfxImpact",
+        "start": 0,
+        "end": 0.12,
+        "from": 0.35,
+        "to": 0.9,
+        "alpha": 0.9
+      },
+      {
+        "texture": "res://assets/visuals/vfx/smoke.png",
+        "start": 0.06,
+        "end": 0.23,
+        "from": 0.35,
+        "to": 0.7,
+        "alpha": 0.23,
+        "rise": 8
+      }
+    ]
+  },
+  "critical": {
+    "duration": 0.32,
+    "particles": 8,
+    "layers": [
+      {
+        "texture": "vfxCritical",
+        "start": 0,
+        "end": 0.15,
+        "from": 0.4,
+        "to": 0.9,
+        "alpha": 0.96
+      },
+      {
+        "texture": "vfxImpact",
+        "start": 0.045,
+        "end": 0.22,
+        "from": 0.4,
+        "to": 1.1,
+        "alpha": 0.6
+      },
+      {
+        "texture": "res://assets/visuals/vfx/smoke.png",
+        "start": 0.1,
+        "end": 0.32,
+        "from": 0.35,
+        "to": 0.75,
+        "alpha": 0.25,
+        "rise": 8
+      }
+    ]
+  },
+  "explosion": {
+    "duration": 0.62,
+    "particles": 12,
+    "layers": [
+      {
+        "texture": "vfxMuzzle",
+        "start": 0,
+        "end": 0.085,
+        "from": 0.2,
+        "to": 0.6,
+        "alpha": 0.9
+      },
+      {
+        "texture": "vfxExplosion",
+        "start": 0.025,
+        "end": 0.4,
+        "from": 0.52,
+        "to": 1,
+        "alpha": 0.9
+      },
+      {
+        "texture": "res://assets/visuals/vfx/shockwave.png",
+        "start": 0.065,
+        "end": 0.37,
+        "from": 0.35,
+        "to": 1,
+        "alpha": 0.5
+      },
+      {
+        "texture": "vfxImpact",
+        "start": 0.07,
+        "end": 0.24,
+        "from": 0.45,
+        "to": 1.05,
+        "alpha": 0.3
+      },
+      {
+        "texture": "res://assets/visuals/vfx/smoke.png",
+        "start": 0.13,
+        "end": 0.62,
+        "from": 0.55,
+        "to": 1.12,
+        "alpha": 0.44,
+        "rise": 16
+      }
+    ]
+  },
+  "mine": {
+    "duration": 0.62,
+    "particles": 12,
+    "layers": [
+      {
+        "texture": "vfxMuzzle",
+        "start": 0,
+        "end": 0.085,
+        "from": 0.2,
+        "to": 0.6,
+        "alpha": 0.85
+      },
+      {
+        "texture": "vfxMineExplosion",
+        "start": 0.025,
+        "end": 0.4,
+        "from": 0.52,
+        "to": 1,
+        "alpha": 0.9
+      },
+      {
+        "texture": "res://assets/visuals/vfx/shockwave.png",
+        "start": 0.065,
+        "end": 0.37,
+        "from": 0.35,
+        "to": 1,
+        "alpha": 0.5
+      },
+      {
+        "texture": "vfxImpact",
+        "start": 0.07,
+        "end": 0.24,
+        "from": 0.45,
+        "to": 1.05,
+        "alpha": 0.3
+      },
+      {
+        "texture": "res://assets/visuals/vfx/smoke.png",
+        "start": 0.13,
+        "end": 0.62,
+        "from": 0.55,
+        "to": 1.12,
+        "alpha": 0.44,
+        "rise": 16
+      }
+    ]
+  },
+  "death": {
+    "duration": 0.44,
+    "particles": 6,
+    "layers": [
+      {
+        "texture": "res://assets/visuals/vfx/smoke.png",
+        "start": 0,
+        "end": 0.44,
+        "from": 0.35,
+        "to": 0.85,
+        "alpha": 0.4,
+        "rise": 18
+      }
+    ]
+  },
+  "slash": {
+    "duration": 0.3,
+    "sweepFraction": 0.62,
+    "ribbonWidth": 0.042,
+    "tailFraction": 0.64,
+    "glowStrength": 0.24,
+    "layers": []
+  },
+  "chain": {
+    "duration": 0.22,
+    "displayScale": 1.7,
+    "thickness": 22,
+    "travelTime": 0.05,
+    "hopDelay": 0.045,
+    "flickerSpeed": 55,
+    "edgeColor": "264eb8",
+    "edgeWidth": 0.08,
+    "layers": []
+  },
+  "walletBonus": {
+    "duration": 0.3,
+    "layers": [
+      {
+        "texture": "wallet",
+        "start": 0,
+        "end": 0.3,
+        "from": 0.65,
+        "to": 0.65,
+        "alpha": 0.9,
+        "rise": 22
+      }
+    ]
+  }
+}

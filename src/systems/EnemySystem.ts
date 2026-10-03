@@ -9,13 +9,13 @@ import { SpatialGrid } from '../utils/SpatialGrid';
 import { HostileAttackSystem } from './HostileAttackSystem';
 import { createEnemy } from './EnemyFactory';
 import { enemyBehaviors, type EnemyContext } from './EnemyBehaviors';
-import type { GameEventSink } from '../core/GameEvents';
+import { ignoreGameAudioEvent, type GameEventSink, type GameAudioEventSink } from '../core/GameEvents';
 export class EnemySystem {
   readonly attacks: HostileAttackSystem;
   private readonly grid = new SpatialGrid<Enemy>(160);
   private readonly candidates: Enemy[] = [];
   private readonly pending: Enemy[] = [];
-  constructor(private readonly nextId: () => number, random: () => number, emit: GameEventSink) { this.attacks = new HostileAttackSystem(random, emit); }
+  constructor(private readonly nextId: () => number, random: () => number, emit: GameEventSink, private readonly emitAudio: GameAudioEventSink = ignoreGameAudioEvent) { this.attacks = new HostileAttackSystem(random, emit, emitAudio); }
   private nearby = (enemy: Enemy, radius: number): readonly Enemy[] => {
     this.grid.query(enemy.x - radius, enemy.y - radius, enemy.x + radius, enemy.y + radius, this.candidates);
     return this.candidates;
@@ -32,7 +32,7 @@ export class EnemySystem {
   }
   update(run: RunState, dt: number): void {
     this.grid.rebuild(run.enemies);
-    const context: EnemyContext = { run, dt, def: enemies.crawler!, attacks: this.attacks, nearby: this.nearby, summon: (parent, id, count) => this.summon(run, parent, id, count) };
+    const context: EnemyContext = { run, dt, def: enemies.crawler!, attacks: this.attacks, emitAudio: this.emitAudio, nearby: this.nearby, summon: (parent, id, count) => this.summon(run, parent, id, count) };
     for (const e of run.enemies) {
       if (e.hp <= 0) continue;
       const def = enemies[e.definitionId]; if (!def) continue;

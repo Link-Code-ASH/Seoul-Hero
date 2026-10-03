@@ -1,0 +1,55 @@
+{
+  "tool": "built-in image_gen",
+  "generatedAt": "2026-10-01",
+  "description": "Bright enamel game icons for the SD lobby. Existing assets preserved.",
+  "assets": [
+    {
+      "id": "lobbyGuildSD",
+      "file": "guild_icon_01.png",
+      "visibleRegion": [128,49,1016,1125],
+      "prompt": "Use case: stylized-concept\nAsset type: transparent lobby icon for the Korean SD survival game Seoul Hero, displayed at only 72–127 px.\nPrimary request: Replace heavy realistic metal lobby graphics with a bright, cute, light game icon.\nStyle: polished hand-drawn cartoon game icon, large rounded simple shapes, a clean medium-thick navy outline, flat two-tone fills with a small enamel highlight and gentle volume. Match a chibi mobile game. NOT realistic, NOT paper cutout, NOT dark military metal.\nPalette: warm ivory dominant, pale mint secondary, deep navy contour, small warm gold accents. Keep the overall icon bright.\nComposition: exactly ONE icon subject, centered, unobstructed whole silhouette, 12 percent transparent margin, square canvas. Crisp and readable at small size, no frame, no circular background, no floor or background shadow.\nBackground: true transparent alpha.\nText: none. Avoid letters, words, numbers, watermark, busy detailing, photorealism, distressed texture.\nSubject: A cozy modern Seoul guild headquarters as a tiny rounded two-storey building. Ivory walls, broad mint roof trim, two warm golden windows, a simple mint diamond sign, a small green plant. Clearly a friendly headquarters, almost a toy building.",
+      "transparentBackground": true,
+      "source": "C:\\Users\\geniu\\.codex\\generated_images\\01a0f74d-4a5b-77d0-9a58-3b1dd29f2b41\\exec-f57f830b-783a-4519-b1cb-780b29d52b0e.png"
+    },
+    {
+      "id": "lobbyGrowthSD",
+      "file": "growth_icon_01.png",
+      "visibleRegion": [153,78,948,1075],
+      "prompt": "Use case: stylized-concept\nAsset type: transparent lobby icon for the Korean SD survival game Seoul Hero, displayed at only 72–127 px.\nPrimary request: Replace heavy realistic metal lobby graphics with a bright, cute, light game icon.\nStyle: polished hand-drawn cartoon game icon, large rounded simple shapes, a clean medium-thick navy outline, flat two-tone fills with a small enamel highlight and gentle volume. Match a chibi mobile game. NOT realistic, NOT paper cutout, NOT dark military metal.\nPalette: warm ivory dominant, pale mint secondary, deep navy contour, small warm gold accents. Keep the overall icon bright.\nComposition: exactly ONE icon subject, centered, unobstructed whole silhouette, 12 percent transparent margin, square canvas. Crisp and readable at small size, no frame, no circular background, no floor or background shadow.\nBackground: true transparent alpha.\nText: none. Avoid letters, words, numbers, watermark, busy detailing, photorealism, distressed texture.\nSubject: A chunky compact training pod: an ivory rounded stand with a mint glass upright screen showing two large upward chevrons. One gold sparkle beside the screen, no sword. Clearly character growth and improvement.",
+      "transparentBackground": true,
+      "source": "C:\\Users\\geniu\\.codex\\generated_images\\01a0f74d-4a5b-77d0-9a58-3b1dd29f2b41\\exec-3af76e70-b416-45e3-b241-e29ffb9c97f6.png"
+    },
+    {
+      "id": "lobbyAssociationSD",
+      "file": "association_icon_01.png",
+      "visibleRegion": [130,88,994,1078],
+      "prompt": "Use case: stylized-concept\nAsset type: transparent lobby icon for the Korean SD survival game Seoul Hero, displayed at only 72–127 px.\nPrimary request: Replace heavy realistic metal lobby graphics with a bright, cute, light game icon.\nStyle: polished hand-drawn cartoon game icon, large rounded simple shapes, a clean medium-thick navy outline, flat two-tone fills with a small enamel highlight and gentle volume. Match a chibi mobile game. NOT realistic, NOT paper cutout, NOT dark military metal.\nPalette: warm ivory dominant, pale mint secondary, deep navy contour, small warm gold accents. Keep the overall icon bright.\nComposition: exactly ONE icon subject, centered, unobstructed whole silhouette, 12 percent transparent margin, square canvas. Crisp and readable at small size, no frame, no circular background, no floor or background shadow.\nBackground: true transparent alpha.\nText: none. Avoid letters, words, numbers, watermark, busy detailing, photorealism, distressed texture.\nSubject: A compact badge: an ivory rounded shield with navy outline, a large gold four-point star, and a small closed navy-blue handbook resting in front. Clearly association and official support, friendly and uncluttered.",
+      "transparentBackground": true,
+      "source": "C:\\Users\\geniu\\.codex\\generated_images\\01a0f74d-4a5b-77d0-9a58-3b1dd29f2b41\\exec-62c0407b-4817-4f60-b0fc-1bb8459754bb.png"
+    },
+    {
+      "id": "lobbyRecoverySD",
+      "file": "recovery_icon_01.png",
+      "visibleRegion": [28,112,1206,1011],
+      "prompt": "Use case: stylized-concept\nAsset type: transparent lobby icon for the Korean SD survival game Seoul Hero, displayed at only 72–127 px.\nPrimary request: Replace heavy realistic metal lobby graphics with a bright, cute, light game icon.\nStyle: polished hand-drawn cartoon game icon, large rounded simple shapes, a clean medium-thick navy outline, flat two-tone fills with a small enamel highlight and gentle volume. Match a chibi mobile game. NOT realistic, NOT paper cutout, NOT dark military metal.\nPalette: warm ivory dominant, pale mint secondary, deep navy contour, small warm gold accents. Keep the overall icon bright.\nComposition: exactly ONE icon subject, centered, unobstructed whole silhouette, 12 percent transparent margin, square canvas. Crisp and readable at small size, no frame, no circular background, no floor or background shadow.\nBackground: true transparent alpha.\nText: none. Avoid letters, words, numbers, watermark, busy detailing, photorealism, distressed texture.\nSubject: A small friendly recovery drone with a rounded ivory body, two simple mint rotor rings, one large cyan lens, carrying a compact mint recovery crate with a white cross. Toy proportions, no exposed wires, no realistic machinery.",
+      "transparentBackground": true,
+      "source": "C:\\Users\\geniu\\.codex\\generated_images\\01a0f74d-4a5b-77d0-9a58-3b1dd29f2b41\\exec-f0ca5167-69c0-4215-b2ce-c0d50c67ac1a.png"
+    },
+    {
+      "id": "lobbySupplySD",
+      "file": "supply_icon_01.png",
+      "visibleRegion": [154,101,948,1017],
+      "prompt": "Use case: stylized-concept\nAsset type: transparent lobby icon for the Korean SD survival game Seoul Hero, displayed at only 72–127 px.\nPrimary request: Replace heavy realistic metal lobby graphics with a bright, cute, light game icon.\nStyle: polished hand-drawn cartoon game icon, large rounded simple shapes, a clean medium-thick navy outline, flat two-tone fills with a small enamel highlight and gentle volume. Match a chibi mobile game. NOT realistic, NOT paper cutout, NOT dark military metal.\nPalette: warm ivory dominant, pale mint secondary, deep navy contour, small warm gold accents. Keep the overall icon bright.\nComposition: exactly ONE icon subject, centered, unobstructed whole silhouette, 12 percent transparent margin, square canvas. Crisp and readable at small size, no frame, no circular background, no floor or background shadow.\nBackground: true transparent alpha.\nText: none. Avoid letters, words, numbers, watermark, busy detailing, photorealism, distressed texture.\nSubject: A compact rounded supply chest with an ivory body, broad mint lid, a navy outline and a large simple gold latch. Three small gold sparkles over the top. Friendly game loot chest with no military hardware.",
+      "transparentBackground": true,
+      "source": "C:\\Users\\geniu\\.codex\\generated_images\\01a0f74d-4a5b-77d0-9a58-3b1dd29f2b41\\exec-ee65a953-3932-43fd-8729-36af0a852022.png"
+    },
+    {
+      "id": "lobbyDeploymentSD",
+      "file": "deployment_icon_01.png",
+      "visibleRegion": [79,128,1097,999],
+      "prompt": "Use case: stylized-concept\nAsset type: transparent lobby icon for the Korean SD survival game Seoul Hero, displayed at only 72–127 px.\nPrimary request: Replace heavy realistic metal lobby graphics with a bright, cute, light game icon.\nStyle: polished hand-drawn cartoon game icon, large rounded simple shapes, a clean medium-thick navy outline, flat two-tone fills with a small enamel highlight and gentle volume. Match a chibi mobile game. NOT realistic, NOT paper cutout, NOT dark military metal.\nPalette: warm ivory dominant, pale mint secondary, deep navy contour, small warm gold accents. Keep the overall icon bright.\nComposition: exactly ONE icon subject, centered, unobstructed whole silhouette, 12 percent transparent margin, square canvas. Crisp and readable at small size, no frame, no circular background, no floor or background shadow.\nBackground: true transparent alpha.\nText: none. Avoid letters, words, numbers, watermark, busy detailing, photorealism, distressed texture.\nSubject: A chunky compact mission tablet with a rounded ivory frame and mint screen. On the screen: one simple navy route line connecting three large gold location dots, with a small gold arrow. A tiny mint radio nub at its corner. Friendly readable mission icon, no intricate map or text.",
+      "transparentBackground": true,
+      "source": "C:\\Users\\geniu\\.codex\\generated_images\\01a0f74d-4a5b-77d0-9a58-3b1dd29f2b41\\exec-62fb2540-7b85-4de1-bb48-f2adf7b735cb.png"
+    }
+  ]
+}

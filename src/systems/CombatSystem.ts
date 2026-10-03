@@ -12,11 +12,12 @@ import type { RunState } from '../state/RunState';
 import { ObjectPool } from '../utils/ObjectPool';
 import { CollisionSystem, type DamageObserver } from './CollisionSystem';
 import type { PickupSystem } from './PickupSystem';
-import { ignoreGameEvent } from '../core/GameEvents';
+import { ignoreGameEvent, ignoreGameAudioEvent, type GameAudioEventSink } from '../core/GameEvents';
 import type { GameEventSink } from '../core/GameEvents';
 import { WeaponBehaviors } from './WeaponBehaviors';
 import { transitionRun } from '../state/RunPhase';
 import { spawnRunEffect } from './RunEffectSystem';
+import { itemKill, itemRuntime, clearItemWave } from './ItemTriggers';
 
 export function calculateDamage(base: number, multiplier: number): number {
   return Math.max(0, Math.round(base * multiplier));
@@ -30,19 +31,21 @@ export class CombatSystem {
   readonly structures: StructureSystem;
   readonly collisions: CollisionSystem;
   private readonly behaviors: WeaponBehaviors;
+  private audioSequence = 0;
   private readonly projectilePool = new ObjectPool<Projectile>(() => ({
     id: 0, x: 0, y: 0, vx: 0, vy: 0, radius: 0, damage: 0,
     remaining: 0, penetration: 0, hitIds: new Set(), visual: { color: 0, shape: 'circle' },
   }));
 
-  constructor(private readonly nextId: () => number, private readonly pickups: PickupSystem, _clearReward: number, private readonly emit: GameEventSink = ignoreGameEvent, random: () => number = Math.random, private readonly onDeath: (state: RunState, enemy: Enemy) => void = () => {}, observeDamage: DamageObserver = () => {}, observePlayerHit: (enemyId:string)=>void = () => {}) {
+  constructor(private readonly nextId: () => number, private readonly pickups: PickupSystem, _clearReward: number, private readonly emit: GameEventSink = ignoreGameEvent, random: () => number = Math.random, private readonly onDeath: (state: RunState, enemy: Enemy) => void = () => {}, observeDamage: DamageObserver = () => {}, observePlayerHit: (enemyId:string)=>void = () => {}, private readonly emitAudio: GameAudioEventSink = ignoreGameAudioEvent) {
     this.collisions = new CollisionSystem(emit, random, observeDamage, observePlayerHit);
-    this.behaviors = new WeaponBehaviors(this.collisions, emit);
-    this.structures = new StructureSystem(this.collisions, nextId, emit, random);
+    this.behaviors = new WeaponBehaviors(this.collisions, emit, emitAudio);
+    this.structures = new StructureSystem(this.collisions, nextId, emit, random, emitAudio);
   }
 
   clearWave(state: RunState): void {
     this.behaviors.cancel();
+    clearItemWave(state);
     for (const projectile of state.projectiles) { projectile.hitIds.clear(); projectile.attack = undefined; this.projectilePool.release(projectile); }
     state.projectiles.length = 0; state.enemies.length = 0; state.effects.length = 0;
     this.collisions.rebuild(state.enemies);
@@ -54,6 +57,10 @@ export class CombatSystem {
     state.effects.length = effectsKept;
     this.collisions.rebuild(state.enemies);
     this.behaviors.update(state, dt);
+    for(const burst of itemRuntime(state).bursts.splice(0)){
+      for(const enemy of state.enemies)if(Math.hypot(enemy.x-burst.x,enemy.y-burst.y)<=burst.radius)this.collisions.hit(enemy,burst.damage,state);
+      spawnRunEffect(state,'impact',{x:burst.x,y:burst.y,radius:burst.radius,color:0xffb769});
+    }
     this.attack(state, dt);
     this.structures.update(state, dt, (w,s,t,o) => this.fireProjectiles(state,w,s,t,o));
     let kept = 0;
@@ -81,6 +88,7 @@ export class CombatSystem {
       if (enemy.hp > 0) { state.enemies[kept++] = enemy; continue; }
       if (!enemy.rewardEligible) continue;
       state.kills++;
+      itemKill(state);
       this.emit('enemyKilled');
 
       spawnRunEffect(state, 'enemyDeath', {
@@ -113,6 +121,7 @@ export class CombatSystem {
       if (definition.behavior === 'orbit') {
         const stats = weaponStats(definition, slot.level, state);
         if (this.behaviors.updateOrbit(state, definition, stats, dt) && slot.cooldownRemaining === 0) {
+          this.emitAudio({ kind: 'weapon', weaponId: definition.id, stage: 'contact', attackId: this.audioAttackId(state, definition) });
           this.emit('orbitAttack');
           slot.cooldownRemaining = stats.cooldown;
         }
@@ -136,8 +145,15 @@ export class CombatSystem {
     }
   }
 
+  private audioAttackId(run: RunState, weapon: Weapon): string {
+    return `projectile:${weapon.id}:${run.stageCombatTime}:${++this.audioSequence}`;
+  }
+
   private fireProjectiles(state: RunState, definition: Weapon, stats: ResolvedWeaponStats, target: Enemy, origin: {x:number;y:number} = state.player): void {
-    if (state.projectiles.length < GAME_CONFIG.combat.maxProjectiles) this.emit(definition.structure ? 'turretFired' : definition.base.penetration > 0 ? 'piercingAttack' : 'weaponFired');
+    if (state.projectiles.length < GAME_CONFIG.combat.maxProjectiles) {
+      this.emitAudio({ kind: 'weapon', weaponId: definition.id, stage: 'launch', attackId: this.audioAttackId(state, definition) });
+      this.emit(definition.structure ? 'turretFired' : definition.base.penetration > 0 ? 'piercingAttack' : 'weaponFired');
+    }
     const context = attackContext(stats, state.player.maxHp, definition.id);
     const direction = Math.atan2(target.y - origin.y, target.x - origin.x);
     spawnRunEffect(state, 'muzzle', {

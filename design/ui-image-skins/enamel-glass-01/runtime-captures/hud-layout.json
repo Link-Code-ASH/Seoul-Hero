@@ -1,0 +1,1700 @@
+{
+	"checks": [
+		{
+			"check": "01-hud has no hover tooltips",
+			"passed": true
+		},
+		{
+			"check": "qa-hud-low-large has no hover tooltips",
+			"passed": true
+		},
+		{
+			"check": "qa-hud-post-wave-wallet has no hover tooltips",
+			"passed": true
+		},
+		{
+			"check": "qa-hp-0-1x has no hover tooltips",
+			"passed": true
+		},
+		{
+			"check": "qa-hp-50-1x has no hover tooltips",
+			"passed": true
+		},
+		{
+			"check": "qa-hp-100-1x has no hover tooltips",
+			"passed": true
+		},
+		{
+			"check": "qa-hp-0-2x has no hover tooltips",
+			"passed": true
+		},
+		{
+			"check": "qa-hp-50-2x has no hover tooltips",
+			"passed": true
+		},
+		{
+			"check": "qa-hp-100-2x has no hover tooltips",
+			"passed": true
+		},
+		{
+			"check": "HUD live level update",
+			"passed": true
+		},
+		{
+			"check": "Weapon level white 14px lower-right",
+			"passed": true
+		},
+		{
+			"check": "Six owned weapon icons without empty plates",
+			"passed": true
+		},
+		{
+			"check": "Wallet flight target remains a visible HUD icon",
+			"passed": true
+		},
+		{
+			"check": "Pause touch target minimum 44",
+			"passed": true
+		},
+		{
+			"check": "Currency and wallet share one compact 13px row above HP",
+			"passed": true
+		},
+		{
+			"check": "Wallet icon is 12px and centered on the resource row",
+			"passed": true
+		},
+		{
+			"check": "Both resource icons and full number rectangles sit above HP within its visual horizontal span",
+			"passed": true
+		},
+		{
+			"check": "Stone icon is 12px and centered on the resource row",
+			"passed": true
+		},
+		{
+			"check": "Compact resource groups retain 4px icon gaps and 5px between groups",
+			"passed": true
+		},
+		{
+			"check": "Prominent HP number remains separate from the resource row",
+			"passed": true
+		},
+		{
+			"check": "Six weapons stay below HP within its horizontal span",
+			"passed": true
+		},
+		{
+			"check": "HP native bar displays 180x10 with 4x raster and linear filter",
+			"passed": true
+		}
+	],
+	"productionClasses": true,
+	"saveWrites": false,
+	"screenRecords": [
+		{
+			"fitIssues": [],
+			"labels": [
+				{
+					"insideScroll": false,
+					"needed": [
+						62.0,
+						29.0
+					],
+					"rect": [
+						20.0,
+						6.0,
+						82.0,
+						29.0
+					],
+					"size": 24,
+					"text": "97 / 115"
+				},
+				{
+					"insideScroll": false,
+					"needed": [
+						18.0,
+						16.0
+					],
+					"rect": [
+						120.0,
+						8.0,
+						32.0,
+						24.0
+					],
+					"size": 13,
+					"text": "240"
+				},
+				{
+					"insideScroll": false,
+					"needed": [
+						12.0,
+						16.0
+					],
+					"rect": [
+						173.0,
+						8.0,
+						27.0,
+						24.0
+					],
+					"size": 13,
+					"text": "36"
+				},
+				{
+					"insideScroll": false,
+					"needed": [
+						4.0,
+						17.0
+					],
+					"rect": [
+						32.0,
+						70.0,
+						13.0,
+						23.0
+					],
+					"size": 14,
+					"text": "1"
+				},
+				{
+					"insideScroll": false,
+					"needed": [
+						6.0,
+						17.0
+					],
+					"rect": [
+						59.0,
+						70.0,
+						13.0,
+						23.0
+					],
+					"size": 14,
+					"text": "2"
+				},
+				{
+					"insideScroll": false,
+					"needed": [
+						6.0,
+						17.0
+					],
+					"rect": [
+						86.0,
+						70.0,
+						13.0,
+						23.0
+					],
+					"size": 14,
+					"text": "3"
+				},
+				{
+					"insideScroll": false,
+					"needed": [
+						7.0,
+						17.0
+					],
+					"rect": [
+						113.0,
+						70.0,
+						13.0,
+						23.0
+					],
+					"size": 14,
+					"text": "4"
+				},
+				{
+					"insideScroll": false,
+					"needed": [
+						6.0,
+						17.0
+					],
+					"rect": [
+						140.0,
+						70.0,
+						13.0,
+						23.0
+					],
+					"size": 14,
+					"text": "5"
+				},
+				{
+					"insideScroll": false,
+					"needed": [
+						4.0,
+						17.0
+					],
+					"rect": [
+						167.0,
+						70.0,
+						13.0,
+						23.0
+					],
+					"size": 14,
+					"text": "1"
+				},
+				{
+					"insideScroll": false,
+					"needed": [
+						85.0,
+						18.0
+					],
+					"rect": [
+						365.0,
+						8.0,
+						185.0,
+						26.0
+					],
+					"size": 15,
+					"text": "웨이브 7 / 20"
+				},
+				{
+					"insideScroll": false,
+					"needed": [
+						54.0,
+						33.0
+					],
+					"rect": [
+						400.0,
+						33.0,
+						115.0,
+						34.0
+					],
+					"size": 27,
+					"text": "00:28"
+				}
+			],
+			"pixelSize": [
+				915,
+				412
+			],
+			"screen": "01-hud",
+			"tooltips": []
+		},
+		{
+			"fitIssues": [],
+			"labels": [
+				{
+					"insideScroll": false,
+					"needed": [
+						63.0,
+						29.0
+					],
+					"rect": [
+						20.0,
+						6.0,
+						82.0,
+						29.0
+					],
+					"size": 24,
+					"text": "20 / 115"
+				},
+				{
+					"insideScroll": false,
+					"needed": [
+						30.0,
+						16.0
+					],
+					"rect": [
+						120.0,
+						8.0,
+						32.0,
+						24.0
+					],
+					"size": 13,
+					"text": "987.7K"
+				},
+				{
+					"insideScroll": false,
+					"needed": [
+						24.0,
+						16.0
+					],
+					"rect": [
+						173.0,
+						8.0,
+						27.0,
+						24.0
+					],
+					"size": 13,
+					"text": "12.5K"
+				},
+				{
+					"insideScroll": false,
+					"needed": [
+						4.0,
+						17.0
+					],
+					"rect": [
+						32.0,
+						70.0,
+						13.0,
+						23.0
+					],
+					"size": 14,
+					"text": "1"
+				},
+				{
+					"insideScroll": false,
+					"needed": [
+						6.0,
+						17.0
+					],
+					"rect": [
+						59.0,
+						70.0,
+						13.0,
+						23.0
+					],
+					"size": 14,
+					"text": "2"
+				},
+				{
+					"insideScroll": false,
+					"needed": [
+						6.0,
+						17.0
+					],
+					"rect": [
+						86.0,
+						70.0,
+						13.0,
+						23.0
+					],
+					"size": 14,
+					"text": "3"
+				},
+				{
+					"insideScroll": false,
+					"needed": [
+						7.0,
+						17.0
+					],
+					"rect": [
+						113.0,
+						70.0,
+						13.0,
+						23.0
+					],
+					"size": 14,
+					"text": "4"
+				},
+				{
+					"insideScroll": false,
+					"needed": [
+						6.0,
+						17.0
+					],
+					"rect": [
+						140.0,
+						70.0,
+						13.0,
+						23.0
+					],
+					"size": 14,
+					"text": "5"
+				},
+				{
+					"insideScroll": false,
+					"needed": [
+						4.0,
+						17.0
+					],
+					"rect": [
+						167.0,
+						70.0,
+						13.0,
+						23.0
+					],
+					"size": 14,
+					"text": "1"
+				},
+				{
+					"insideScroll": false,
+					"needed": [
+						85.0,
+						18.0
+					],
+					"rect": [
+						365.0,
+						8.0,
+						185.0,
+						26.0
+					],
+					"size": 15,
+					"text": "웨이브 7 / 20"
+				},
+				{
+					"insideScroll": false,
+					"needed": [
+						56.0,
+						33.0
+					],
+					"rect": [
+						400.0,
+						33.0,
+						115.0,
+						34.0
+					],
+					"size": 27,
+					"text": "00:04"
+				}
+			],
+			"pixelSize": [
+				915,
+				412
+			],
+			"screen": "qa-hud-low-large",
+			"tooltips": []
+		},
+		{
+			"fitIssues": [],
+			"labels": [
+				{
+					"insideScroll": false,
+					"needed": [
+						63.0,
+						29.0
+					],
+					"rect": [
+						20.0,
+						6.0,
+						82.0,
+						29.0
+					],
+					"size": 24,
+					"text": "20 / 115"
+				},
+				{
+					"insideScroll": false,
+					"needed": [
+						30.0,
+						16.0
+					],
+					"rect": [
+						120.0,
+						8.0,
+						32.0,
+						24.0
+					],
+					"size": 13,
+					"text": "987.7K"
+				},
+				{
+					"insideScroll": false,
+					"needed": [
+						24.0,
+						16.0
+					],
+					"rect": [
+						173.0,
+						8.0,
+						27.0,
+						24.0
+					],
+					"size": 13,
+					"text": "12.5K"
+				},
+				{
+					"insideScroll": false,
+					"needed": [
+						4.0,
+						17.0
+					],
+					"rect": [
+						32.0,
+						70.0,
+						13.0,
+						23.0
+					],
+					"size": 14,
+					"text": "1"
+				},
+				{
+					"insideScroll": false,
+					"needed": [
+						6.0,
+						17.0
+					],
+					"rect": [
+						59.0,
+						70.0,
+						13.0,
+						23.0
+					],
+					"size": 14,
+					"text": "2"
+				},
+				{
+					"insideScroll": false,
+					"needed": [
+						6.0,
+						17.0
+					],
+					"rect": [
+						86.0,
+						70.0,
+						13.0,
+						23.0
+					],
+					"size": 14,
+					"text": "3"
+				},
+				{
+					"insideScroll": false,
+					"needed": [
+						7.0,
+						17.0
+					],
+					"rect": [
+						113.0,
+						70.0,
+						13.0,
+						23.0
+					],
+					"size": 14,
+					"text": "4"
+				},
+				{
+					"insideScroll": false,
+					"needed": [
+						6.0,
+						17.0
+					],
+					"rect": [
+						140.0,
+						70.0,
+						13.0,
+						23.0
+					],
+					"size": 14,
+					"text": "5"
+				},
+				{
+					"insideScroll": false,
+					"needed": [
+						4.0,
+						17.0
+					],
+					"rect": [
+						167.0,
+						70.0,
+						13.0,
+						23.0
+					],
+					"size": 14,
+					"text": "1"
+				},
+				{
+					"insideScroll": false,
+					"needed": [
+						85.0,
+						18.0
+					],
+					"rect": [
+						365.0,
+						8.0,
+						185.0,
+						26.0
+					],
+					"size": 15,
+					"text": "웨이브 7 / 20"
+				},
+				{
+					"insideScroll": false,
+					"needed": [
+						56.0,
+						33.0
+					],
+					"rect": [
+						400.0,
+						33.0,
+						115.0,
+						34.0
+					],
+					"size": 27,
+					"text": "00:04"
+				},
+				{
+					"insideScroll": false,
+					"needed": [
+						108.0,
+						29.0
+					],
+					"rect": [
+						347.0,
+						86.0,
+						220.0,
+						40.0
+					],
+					"size": 24,
+					"text": "웨이브 종료"
+				}
+			],
+			"pixelSize": [
+				915,
+				412
+			],
+			"screen": "qa-hud-post-wave-wallet",
+			"tooltips": []
+		},
+		{
+			"fitIssues": [],
+			"labels": [
+				{
+					"insideScroll": false,
+					"needed": [
+						53.0,
+						29.0
+					],
+					"rect": [
+						20.0,
+						6.0,
+						82.0,
+						29.0
+					],
+					"size": 24,
+					"text": "0 / 115"
+				},
+				{
+					"insideScroll": false,
+					"needed": [
+						30.0,
+						16.0
+					],
+					"rect": [
+						120.0,
+						8.0,
+						32.0,
+						24.0
+					],
+					"size": 13,
+					"text": "987.7K"
+				},
+				{
+					"insideScroll": false,
+					"needed": [
+						24.0,
+						16.0
+					],
+					"rect": [
+						173.0,
+						8.0,
+						27.0,
+						24.0
+					],
+					"size": 13,
+					"text": "12.5K"
+				},
+				{
+					"insideScroll": false,
+					"needed": [
+						4.0,
+						17.0
+					],
+					"rect": [
+						32.0,
+						70.0,
+						13.0,
+						23.0
+					],
+					"size": 14,
+					"text": "1"
+				},
+				{
+					"insideScroll": false,
+					"needed": [
+						6.0,
+						17.0
+					],
+					"rect": [
+						59.0,
+						70.0,
+						13.0,
+						23.0
+					],
+					"size": 14,
+					"text": "2"
+				},
+				{
+					"insideScroll": false,
+					"needed": [
+						6.0,
+						17.0
+					],
+					"rect": [
+						86.0,
+						70.0,
+						13.0,
+						23.0
+					],
+					"size": 14,
+					"text": "3"
+				},
+				{
+					"insideScroll": false,
+					"needed": [
+						7.0,
+						17.0
+					],
+					"rect": [
+						113.0,
+						70.0,
+						13.0,
+						23.0
+					],
+					"size": 14,
+					"text": "4"
+				},
+				{
+					"insideScroll": false,
+					"needed": [
+						6.0,
+						17.0
+					],
+					"rect": [
+						140.0,
+						70.0,
+						13.0,
+						23.0
+					],
+					"size": 14,
+					"text": "5"
+				},
+				{
+					"insideScroll": false,
+					"needed": [
+						4.0,
+						17.0
+					],
+					"rect": [
+						167.0,
+						70.0,
+						13.0,
+						23.0
+					],
+					"size": 14,
+					"text": "1"
+				},
+				{
+					"insideScroll": false,
+					"needed": [
+						85.0,
+						18.0
+					],
+					"rect": [
+						365.0,
+						8.0,
+						185.0,
+						26.0
+					],
+					"size": 15,
+					"text": "웨이브 7 / 20"
+				},
+				{
+					"insideScroll": false,
+					"needed": [
+						56.0,
+						33.0
+					],
+					"rect": [
+						400.0,
+						33.0,
+						115.0,
+						34.0
+					],
+					"size": 27,
+					"text": "00:04"
+				}
+			],
+			"pixelSize": [
+				915,
+				412
+			],
+			"screen": "qa-hp-0-1x",
+			"tooltips": []
+		},
+		{
+			"fitIssues": [],
+			"labels": [
+				{
+					"insideScroll": false,
+					"needed": [
+						63.0,
+						29.0
+					],
+					"rect": [
+						20.0,
+						6.0,
+						82.0,
+						29.0
+					],
+					"size": 24,
+					"text": "58 / 115"
+				},
+				{
+					"insideScroll": false,
+					"needed": [
+						30.0,
+						16.0
+					],
+					"rect": [
+						120.0,
+						8.0,
+						32.0,
+						24.0
+					],
+					"size": 13,
+					"text": "987.7K"
+				},
+				{
+					"insideScroll": false,
+					"needed": [
+						24.0,
+						16.0
+					],
+					"rect": [
+						173.0,
+						8.0,
+						27.0,
+						24.0
+					],
+					"size": 13,
+					"text": "12.5K"
+				},
+				{
+					"insideScroll": false,
+					"needed": [
+						4.0,
+						17.0
+					],
+					"rect": [
+						32.0,
+						70.0,
+						13.0,
+						23.0
+					],
+					"size": 14,
+					"text": "1"
+				},
+				{
+					"insideScroll": false,
+					"needed": [
+						6.0,
+						17.0
+					],
+					"rect": [
+						59.0,
+						70.0,
+						13.0,
+						23.0
+					],
+					"size": 14,
+					"text": "2"
+				},
+				{
+					"insideScroll": false,
+					"needed": [
+						6.0,
+						17.0
+					],
+					"rect": [
+						86.0,
+						70.0,
+						13.0,
+						23.0
+					],
+					"size": 14,
+					"text": "3"
+				},
+				{
+					"insideScroll": false,
+					"needed": [
+						7.0,
+						17.0
+					],
+					"rect": [
+						113.0,
+						70.0,
+						13.0,
+						23.0
+					],
+					"size": 14,
+					"text": "4"
+				},
+				{
+					"insideScroll": false,
+					"needed": [
+						6.0,
+						17.0
+					],
+					"rect": [
+						140.0,
+						70.0,
+						13.0,
+						23.0
+					],
+					"size": 14,
+					"text": "5"
+				},
+				{
+					"insideScroll": false,
+					"needed": [
+						4.0,
+						17.0
+					],
+					"rect": [
+						167.0,
+						70.0,
+						13.0,
+						23.0
+					],
+					"size": 14,
+					"text": "1"
+				},
+				{
+					"insideScroll": false,
+					"needed": [
+						85.0,
+						18.0
+					],
+					"rect": [
+						365.0,
+						8.0,
+						185.0,
+						26.0
+					],
+					"size": 15,
+					"text": "웨이브 7 / 20"
+				},
+				{
+					"insideScroll": false,
+					"needed": [
+						56.0,
+						33.0
+					],
+					"rect": [
+						400.0,
+						33.0,
+						115.0,
+						34.0
+					],
+					"size": 27,
+					"text": "00:04"
+				}
+			],
+			"pixelSize": [
+				915,
+				412
+			],
+			"screen": "qa-hp-50-1x",
+			"tooltips": []
+		},
+		{
+			"fitIssues": [],
+			"labels": [
+				{
+					"insideScroll": false,
+					"needed": [
+						65.0,
+						29.0
+					],
+					"rect": [
+						20.0,
+						6.0,
+						82.0,
+						29.0
+					],
+					"size": 24,
+					"text": "115 / 115"
+				},
+				{
+					"insideScroll": false,
+					"needed": [
+						30.0,
+						16.0
+					],
+					"rect": [
+						120.0,
+						8.0,
+						32.0,
+						24.0
+					],
+					"size": 13,
+					"text": "987.7K"
+				},
+				{
+					"insideScroll": false,
+					"needed": [
+						24.0,
+						16.0
+					],
+					"rect": [
+						173.0,
+						8.0,
+						27.0,
+						24.0
+					],
+					"size": 13,
+					"text": "12.5K"
+				},
+				{
+					"insideScroll": false,
+					"needed": [
+						4.0,
+						17.0
+					],
+					"rect": [
+						32.0,
+						70.0,
+						13.0,
+						23.0
+					],
+					"size": 14,
+					"text": "1"
+				},
+				{
+					"insideScroll": false,
+					"needed": [
+						6.0,
+						17.0
+					],
+					"rect": [
+						59.0,
+						70.0,
+						13.0,
+						23.0
+					],
+					"size": 14,
+					"text": "2"
+				},
+				{
+					"insideScroll": false,
+					"needed": [
+						6.0,
+						17.0
+					],
+					"rect": [
+						86.0,
+						70.0,
+						13.0,
+						23.0
+					],
+					"size": 14,
+					"text": "3"
+				},
+				{
+					"insideScroll": false,
+					"needed": [
+						7.0,
+						17.0
+					],
+					"rect": [
+						113.0,
+						70.0,
+						13.0,
+						23.0
+					],
+					"size": 14,
+					"text": "4"
+				},
+				{
+					"insideScroll": false,
+					"needed": [
+						6.0,
+						17.0
+					],
+					"rect": [
+						140.0,
+						70.0,
+						13.0,
+						23.0
+					],
+					"size": 14,
+					"text": "5"
+				},
+				{
+					"insideScroll": false,
+					"needed": [
+						4.0,
+						17.0
+					],
+					"rect": [
+						167.0,
+						70.0,
+						13.0,
+						23.0
+					],
+					"size": 14,
+					"text": "1"
+				},
+				{
+					"insideScroll": false,
+					"needed": [
+						85.0,
+						18.0
+					],
+					"rect": [
+						365.0,
+						8.0,
+						185.0,
+						26.0
+					],
+					"size": 15,
+					"text": "웨이브 7 / 20"
+				},
+				{
+					"insideScroll": false,
+					"needed": [
+						56.0,
+						33.0
+					],
+					"rect": [
+						400.0,
+						33.0,
+						115.0,
+						34.0
+					],
+					"size": 27,
+					"text": "00:04"
+				}
+			],
+			"pixelSize": [
+				915,
+				412
+			],
+			"screen": "qa-hp-100-1x",
+			"tooltips": []
+		},
+		{
+			"fitIssues": [],
+			"labels": [
+				{
+					"insideScroll": false,
+					"needed": [
+						53.0,
+						29.0
+					],
+					"rect": [
+						20.0,
+						6.0,
+						82.0,
+						29.0
+					],
+					"size": 24,
+					"text": "0 / 115"
+				},
+				{
+					"insideScroll": false,
+					"needed": [
+						30.0,
+						16.0
+					],
+					"rect": [
+						120.0,
+						8.0,
+						32.0,
+						24.0
+					],
+					"size": 13,
+					"text": "987.7K"
+				},
+				{
+					"insideScroll": false,
+					"needed": [
+						24.0,
+						16.0
+					],
+					"rect": [
+						173.0,
+						8.0,
+						27.0,
+						24.0
+					],
+					"size": 13,
+					"text": "12.5K"
+				},
+				{
+					"insideScroll": false,
+					"needed": [
+						4.0,
+						17.0
+					],
+					"rect": [
+						32.0,
+						70.0,
+						13.0,
+						23.0
+					],
+					"size": 14,
+					"text": "1"
+				},
+				{
+					"insideScroll": false,
+					"needed": [
+						6.0,
+						17.0
+					],
+					"rect": [
+						59.0,
+						70.0,
+						13.0,
+						23.0
+					],
+					"size": 14,
+					"text": "2"
+				},
+				{
+					"insideScroll": false,
+					"needed": [
+						6.0,
+						17.0
+					],
+					"rect": [
+						86.0,
+						70.0,
+						13.0,
+						23.0
+					],
+					"size": 14,
+					"text": "3"
+				},
+				{
+					"insideScroll": false,
+					"needed": [
+						7.0,
+						17.0
+					],
+					"rect": [
+						113.0,
+						70.0,
+						13.0,
+						23.0
+					],
+					"size": 14,
+					"text": "4"
+				},
+				{
+					"insideScroll": false,
+					"needed": [
+						6.0,
+						17.0
+					],
+					"rect": [
+						140.0,
+						70.0,
+						13.0,
+						23.0
+					],
+					"size": 14,
+					"text": "5"
+				},
+				{
+					"insideScroll": false,
+					"needed": [
+						4.0,
+						17.0
+					],
+					"rect": [
+						167.0,
+						70.0,
+						13.0,
+						23.0
+					],
+					"size": 14,
+					"text": "1"
+				},
+				{
+					"insideScroll": false,
+					"needed": [
+						85.0,
+						18.0
+					],
+					"rect": [
+						365.0,
+						8.0,
+						185.0,
+						26.0
+					],
+					"size": 15,
+					"text": "웨이브 7 / 20"
+				},
+				{
+					"insideScroll": false,
+					"needed": [
+						56.0,
+						33.0
+					],
+					"rect": [
+						400.0,
+						33.0,
+						115.0,
+						34.0
+					],
+					"size": 27,
+					"text": "00:04"
+				}
+			],
+			"pixelSize": [
+				1830,
+				824
+			],
+			"screen": "qa-hp-0-2x",
+			"tooltips": []
+		},
+		{
+			"fitIssues": [],
+			"labels": [
+				{
+					"insideScroll": false,
+					"needed": [
+						63.0,
+						29.0
+					],
+					"rect": [
+						20.0,
+						6.0,
+						82.0,
+						29.0
+					],
+					"size": 24,
+					"text": "58 / 115"
+				},
+				{
+					"insideScroll": false,
+					"needed": [
+						30.0,
+						16.0
+					],
+					"rect": [
+						120.0,
+						8.0,
+						32.0,
+						24.0
+					],
+					"size": 13,
+					"text": "987.7K"
+				},
+				{
+					"insideScroll": false,
+					"needed": [
+						24.0,
+						16.0
+					],
+					"rect": [
+						173.0,
+						8.0,
+						27.0,
+						24.0
+					],
+					"size": 13,
+					"text": "12.5K"
+				},
+				{
+					"insideScroll": false,
+					"needed": [
+						4.0,
+						17.0
+					],
+					"rect": [
+						32.0,
+						70.0,
+						13.0,
+						23.0
+					],
+					"size": 14,
+					"text": "1"
+				},
+				{
+					"insideScroll": false,
+					"needed": [
+						6.0,
+						17.0
+					],
+					"rect": [
+						59.0,
+						70.0,
+						13.0,
+						23.0
+					],
+					"size": 14,
+					"text": "2"
+				},
+				{
+					"insideScroll": false,
+					"needed": [
+						6.0,
+						17.0
+					],
+					"rect": [
+						86.0,
+						70.0,
+						13.0,
+						23.0
+					],
+					"size": 14,
+					"text": "3"
+				},
+				{
+					"insideScroll": false,
+					"needed": [
+						7.0,
+						17.0
+					],
+					"rect": [
+						113.0,
+						70.0,
+						13.0,
+						23.0
+					],
+					"size": 14,
+					"text": "4"
+				},
+				{
+					"insideScroll": false,
+					"needed": [
+						6.0,
+						17.0
+					],
+					"rect": [
+						140.0,
+						70.0,
+						13.0,
+						23.0
+					],
+					"size": 14,
+					"text": "5"
+				},
+				{
+					"insideScroll": false,
+					"needed": [
+						4.0,
+						17.0
+					],
+					"rect": [
+						167.0,
+						70.0,
+						13.0,
+						23.0
+					],
+					"size": 14,
+					"text": "1"
+				},
+				{
+					"insideScroll": false,
+					"needed": [
+						85.0,
+						18.0
+					],
+					"rect": [
+						365.0,
+						8.0,
+						185.0,
+						26.0
+					],
+					"size": 15,
+					"text": "웨이브 7 / 20"
+				},
+				{
+					"insideScroll": false,
+					"needed": [
+						56.0,
+						33.0
+					],
+					"rect": [
+						400.0,
+						33.0,
+						115.0,
+						34.0
+					],
+					"size": 27,
+					"text": "00:04"
+				}
+			],
+			"pixelSize": [
+				1830,
+				824
+			],
+			"screen": "qa-hp-50-2x",
+			"tooltips": []
+		},
+		{
+			"fitIssues": [],
+			"labels": [
+				{
+					"insideScroll": false,
+					"needed": [
+						65.0,
+						29.0
+					],
+					"rect": [
+						20.0,
+						6.0,
+						82.0,
+						29.0
+					],
+					"size": 24,
+					"text": "115 / 115"
+				},
+				{
+					"insideScroll": false,
+					"needed": [
+						30.0,
+						16.0
+					],
+					"rect": [
+						120.0,
+						8.0,
+						32.0,
+						24.0
+					],
+					"size": 13,
+					"text": "987.7K"
+				},
+				{
+					"insideScroll": false,
+					"needed": [
+						24.0,
+						16.0
+					],
+					"rect": [
+						173.0,
+						8.0,
+						27.0,
+						24.0
+					],
+					"size": 13,
+					"text": "12.5K"
+				},
+				{
+					"insideScroll": false,
+					"needed": [
+						4.0,
+						17.0
+					],
+					"rect": [
+						32.0,
+						70.0,
+						13.0,
+						23.0
+					],
+					"size": 14,
+					"text": "1"
+				},
+				{
+					"insideScroll": false,
+					"needed": [
+						6.0,
+						17.0
+					],
+					"rect": [
+						59.0,
+						70.0,
+						13.0,
+						23.0
+					],
+					"size": 14,
+					"text": "2"
+				},
+				{
+					"insideScroll": false,
+					"needed": [
+						6.0,
+						17.0
+					],
+					"rect": [
+						86.0,
+						70.0,
+						13.0,
+						23.0
+					],
+					"size": 14,
+					"text": "3"
+				},
+				{
+					"insideScroll": false,
+					"needed": [
+						7.0,
+						17.0
+					],
+					"rect": [
+						113.0,
+						70.0,
+						13.0,
+						23.0
+					],
+					"size": 14,
+					"text": "4"
+				},
+				{
+					"insideScroll": false,
+					"needed": [
+						6.0,
+						17.0
+					],
+					"rect": [
+						140.0,
+						70.0,
+						13.0,
+						23.0
+					],
+					"size": 14,
+					"text": "5"
+				},
+				{
+					"insideScroll": false,
+					"needed": [
+						4.0,
+						17.0
+					],
+					"rect": [
+						167.0,
+						70.0,
+						13.0,
+						23.0
+					],
+					"size": 14,
+					"text": "1"
+				},
+				{
+					"insideScroll": false,
+					"needed": [
+						85.0,
+						18.0
+					],
+					"rect": [
+						365.0,
+						8.0,
+						185.0,
+						26.0
+					],
+					"size": 15,
+					"text": "웨이브 7 / 20"
+				},
+				{
+					"insideScroll": false,
+					"needed": [
+						56.0,
+						33.0
+					],
+					"rect": [
+						400.0,
+						33.0,
+						115.0,
+						34.0
+					],
+					"size": 27,
+					"text": "00:04"
+				}
+			],
+			"pixelSize": [
+				1830,
+				824
+			],
+			"screen": "qa-hp-100-2x",
+			"tooltips": []
+		}
+	],
+	"simulation": false,
+	"size": [
+		915,
+		412
+	]
+}

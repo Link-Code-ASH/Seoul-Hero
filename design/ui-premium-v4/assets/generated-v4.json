@@ -1,0 +1,32 @@
+[
+  {
+    "file": "lobby-rain.png",
+    "prompt": "Wide 2.22:1 landscape game lobby background only, no UI no lettering. Stylized premium Korean modern fantasy action game, Gwanghwamun Seoul boulevard under ominous blue dusk, rain-soaked asphalt, stylized readable buildings and road barricades, mysterious turquoise gate at distant center-left, calm negative space along top and bottom for UI overlay. Game environment art with simplified sculpted shapes and painterly texture, not photo, no characters. Tense but readable charcoal blue palette, warm small street lamps. No baked rain streaks; rain animated separately.",
+    "method": "built-in image_gen",
+    "source": "C:\\Users\\geniu\\.codex\\generated_images\\01a07bcf-7f98-7021-bf14-e9c913993db8\\exec-6d9677ae-f05b-47dc-80a9-d79d0a2cac19.png"
+  },
+  {
+    "file": "lobby-wind.png",
+    "prompt": "Wide 2.22:1 landscape game lobby background only, no UI no lettering. Stylized premium Korean modern fantasy action game, modern Seoul elevated operation terrace overlooking Gwanghwamun city rooftops, late overcast amber sunset and slate blue shadows, gate anomaly glows violet in distance left of center. Foreground tactical railing and concrete, quiet center, top and bottom negative space for HUD. Simplified dimensional game environment with painterly textures, no photo no characters. Tense wartime Seoul, windblown atmosphere but no baked flying particles.",
+    "method": "built-in image_gen",
+    "source": "C:\\Users\\geniu\\.codex\\generated_images\\01a07bcf-7f98-7021-bf14-e9c913993db8\\exec-0df4b548-d992-4bb6-8226-4e92aa9f316f.png"
+  },
+  {
+    "file": "lobby-energy.png",
+    "prompt": "Wide 2.22:1 landscape game lobby background only, no UI no lettering. Stylized premium Korean modern fantasy action game, evacuated modern Seoul intersection at indigo night, dormant teal rift between distant office buildings left of center, organized barricades, lit windows, simplified dimensional game environment and painterly texture. Spacious quiet foreground and negative space at top and bottom for UI. Readable blue grey and subtle violet supernatural light, ominous anticipation, no photo no characters no rain.",
+    "method": "built-in image_gen",
+    "source": "C:\\Users\\geniu\\.codex\\generated_images\\01a07bcf-7f98-7021-bf14-e9c913993db8\\exec-84014c52-94cb-435b-ad9c-9c625e4fb6e7.png"
+  },
+  {
+    "file": "gate-emblem.png",
+    "prompt": "Transparent background isolated premium game deployment emblem, dimensional silver and dark titanium upright portal with intense turquoise magical core, small angular winglike stabilizers and violet energy wisps, frontal symmetric three-quarter object, polished stylized Korean fantasy game art. Compact imposing silhouette, spectacular but clean, no text, no square backing plate, no arrows. Designed to sit above a gate deployment label, entire object visible.",
+    "method": "built-in image_gen",
+    "source": "C:\\Users\\geniu\\.codex\\generated_images\\01a07bcf-7f98-7021-bf14-e9c913993db8\\exec-6be1141b-8590-41ef-853b-9db0e5649bd9.png"
+  },
+  {
+    "file": "glass-pad.png",
+    "prompt": "Transparent background single rounded-square smoked blue optical glass UI icon pad, frontal view, subtle translucent center with real alpha, fine bright bevel and slight thickness, soft cool edge reflections, sophisticated modern game HUD glassmorphism, empty center for separate object icon, no text no icon no opaque solid fill no bolts. Entire pad centered with small transparent margin, square image.",
+    "method": "built-in image_gen",
+    "source": "C:\\Users\\geniu\\.codex\\generated_images\\01a07bcf-7f98-7021-bf14-e9c913993db8\\exec-cacabf23-873e-48dd-a676-b83b28c68ae2.png"
+  }
+]

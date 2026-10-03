@@ -6,7 +6,8 @@ export class TouchInput implements InputSource {
   private originX = 0;
   private originY = 0;
   private readonly direction: Vec2 = { x: 0, y: 0 };
-  constructor(private readonly element: HTMLElement, private readonly active: () => boolean = () => true) {
+  constructor(private readonly element: HTMLElement, private readonly active: () => boolean = () => true,
+    private readonly showStick: (position: { originX: number; originY: number; x: number; y: number } | null) => void = () => {}) {
     element.addEventListener('pointerdown', this.down);
     element.addEventListener('pointermove', this.move);
     element.addEventListener('pointerup', this.up);
@@ -20,12 +21,18 @@ export class TouchInput implements InputSource {
     this.originY = event.clientY;
     this.element.setPointerCapture(event.pointerId);
     this.direction.x = 0; this.direction.y = 0;
+    this.showStick({ originX: this.originX, originY: this.originY, x: event.clientX, y: event.clientY });
   };
   private move = (event: PointerEvent): void => {
     if (event.pointerId !== this.pointerId) return;
+    if (!this.active()) { this.clear(); return; }
     let dx = event.clientX - this.originX, dy = event.clientY - this.originY;
     const distance = Math.hypot(dx, dy);
-    if (distance < 4) { this.direction.x = 0; this.direction.y = 0; return; }
+    if (distance < 4) {
+      this.direction.x = 0; this.direction.y = 0;
+      this.showStick({ originX: this.originX, originY: this.originY, x: event.clientX, y: event.clientY });
+      return;
+    }
     // Keep the floating stick close to the finger so reversing direction never
     // requires dragging back across a long, invisible 56px analog travel.
     if (distance > 28) {
@@ -37,13 +44,16 @@ export class TouchInput implements InputSource {
     const length = Math.hypot(dx, dy);
     this.direction.x = dx / length;
     this.direction.y = dy / length;
+    this.showStick({ originX: this.originX, originY: this.originY, x: event.clientX, y: event.clientY });
   };
   private up = (event: PointerEvent): void => { if (event.pointerId === this.pointerId) this.clear(); };
   clear = (): void => {
     this.pointerId = null; this.direction.x = 0; this.direction.y = 0;
+    this.showStick(null);
   };
   read(): Vec2 { return this.direction; }
   destroy(): void {
+    this.clear();
     this.element.removeEventListener('pointerdown', this.down);
     this.element.removeEventListener('pointermove', this.move);
     this.element.removeEventListener('pointerup', this.up);

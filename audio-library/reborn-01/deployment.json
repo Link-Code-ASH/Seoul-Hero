@@ -1,0 +1,678 @@
+{
+  "revision": "reborn-01",
+  "authorization": "User authorized all sounds and mix policies; no listening approval required",
+  "cues": 44,
+  "one_shot_cues": 39,
+  "ambience_cues": 5,
+  "files": 128,
+  "bytes": 20844832,
+  "assets": [
+    {
+      "file": "assets/audio/sfx/reborn-01/bombardAttack/01.wav",
+      "sha256": "34688c3a6a781e3ad83801ac8bce3ecf6f87b61a2abe0d68e2389e00aeb7b82c"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/bombardAttack/02.wav",
+      "sha256": "ea1c118415b705312446b3110829e81e1ddc47e3fbaae40877cc45309c255f5b"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/bombardAttack/03.wav",
+      "sha256": "f6096cde9812fbe216a4bb41950ab5d75c438570dda96a45001fa9762b1fb955"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/bombardAttack/04.wav",
+      "sha256": "d83ebea4c8c5eca27001757e675b50d0d343f73219fbeb801f88a1ac5b2d9f17"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/bombardLaunch/01.wav",
+      "sha256": "f91591a4e75575273d5e70b9135c6d64b3ac2a70153c9fe9258656ce9063f724"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/bombardLaunch/02.wav",
+      "sha256": "c710c56bad5b084186b347fe57a40e06990037430d1d947025a6927ba6f5c252"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/bombardLaunch/03.wav",
+      "sha256": "51af88545e62760f97cc6e896f0e6933bab6de0067ec91708e8118b5726a78d2"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/bombardLaunch/04.wav",
+      "sha256": "f1edd731bb6cfafb3713145ca092ba6833b7c57fd3ed40fee183148d3d9f4cfd"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/bossAttack/01.wav",
+      "sha256": "4a07b534dbd548fa65efa9351b5d77d977150a4fd363fe2810df3787d0a8d737"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/bossAttack/02.wav",
+      "sha256": "c609156db002ce998b6ba6ae5f6d086a7403fb2213e089956d18c9d53792fb48"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/bossAttack/03.wav",
+      "sha256": "002d289373dd9806ca38b849f7c9f4ef9529ade393f447875155dcf62ceefec0"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/bossAttack/04.wav",
+      "sha256": "56ea89eb38198c6e029a2731cdd3c4d0b037eff7a52948cebd7424ca11f27525"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/bossSpawned/01.wav",
+      "sha256": "158a52b66cc32c031cceb71fe68bf050a95cfb1a54f4babc82dd7615bcf6f5d9"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/bossSpawned/02.wav",
+      "sha256": "af101670175603703589d69bf69851a492143acec6d7d43bc9bf1b903a192444"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/branchChoice/01.wav",
+      "sha256": "fbc7f6fa525cbdcffd87a5ecc679af3778b179feb0d77e30dfa262ecc6bad377"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/branchChoice/02.wav",
+      "sha256": "b2b947c9cfd0948a19aff286980b64ebec87aafa664db29af0d05801bc6abd49"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/buttonClick/01.wav",
+      "sha256": "bea273bd5650056232c4fecdd760a2a5da2feb18cd1d0bedc4ffd8e2cf54fb97"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/chainAttack/01.wav",
+      "sha256": "55cc7af8776985772580255a9bc84099166318134e98aff56ab21c5e3546833e"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/chainAttack/02.wav",
+      "sha256": "b6a969338367f6aa5768d46a615de96e3d44937b718cbd1351930c24f527341d"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/chainAttack/03.wav",
+      "sha256": "3e5930347ccbfa394743b1595eac4fc4772a69ef00a5537f28691a8d0f2d9dde"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/chainAttack/04.wav",
+      "sha256": "9ec7f1acb3ccef866cfdee8c7841fd7f57cd9089360a65861cdb4c63f665c25e"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/chainHop/01.wav",
+      "sha256": "aed27252486357385557b3d2a86dfc52b2f448eb03b17a4aa2087a73b3d26dd3"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/chainHop/02.wav",
+      "sha256": "df9ab2541bce64383f907f68990e3573323d4ea945bfe76e3b54a4dbc534a687"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/chainHop/03.wav",
+      "sha256": "b06584453e88c803528fa22bd92e0601047b5a5d47fdff0a6305d29763dd6ec7"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/chainHop/04.wav",
+      "sha256": "08dca8a723dc31ea4d2b109812a7b806399bb391e927af35a7da5b5035205d65"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/critical/01.wav",
+      "sha256": "35cbce0034ffa2d0ea71e0dc125dd11520f23554e7fb1f6b6dc8523aaea8f62d"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/critical/02.wav",
+      "sha256": "6d17e5836f904bce5358f7d4c5f363d9bce91ac73c9497034ab6f72213042d07"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/critical/03.wav",
+      "sha256": "57414bd7919feb76b0027458fb16c7edd55df091e288e9955d448e14e47688e5"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/critical/04.wav",
+      "sha256": "ba335303105e159bf5ef5b621ce4f573fe286df70cca88c2dc6d55ea4ad9f63d"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/eliteSpawned/01.wav",
+      "sha256": "96eb0d5b0b089127b018b49ff833c2ea8aef01c39129db815581d9c46a6413c4"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/eliteSpawned/02.wav",
+      "sha256": "76a83f634cee6a27c2224ee3142eefc6e59990e6435bc9c89ab7c6d31091f2de"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/enemyCharge/01.wav",
+      "sha256": "b288f9ce13651489b146ab21202b037663293479dbf631ebd49a3f3a59cf458b"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/enemyCharge/02.wav",
+      "sha256": "9528bdc7803341933d95c1bcca567dac918487f4065090f3a1ad522da41414fd"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/enemyCharge/03.wav",
+      "sha256": "4dc3b85cf18e347c79c72af436301aaf81c7e6bfa2f5ebff0e1f7ccb2a47d814"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/enemyCharge/04.wav",
+      "sha256": "310e65204b7af09c391e6d42071ffa902ee0dc364a84425c73be9e2843be97ff"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/enemyDetonate/01.wav",
+      "sha256": "f3a3b8c7a603b1f90af82deda1af0b0acd1d18324a651e297d57886308125ca1"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/enemyDetonate/02.wav",
+      "sha256": "77b8cd60544db43d8e6c7ac3725df697816c6441c3aa08fa6214a6395049eb19"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/enemyDetonate/03.wav",
+      "sha256": "3e11e711d51a12372378ce3fcf8fc9cb6bae90a213e595fce7796f1d50596409"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/enemyDetonate/04.wav",
+      "sha256": "a5a92ffb69a87b948f1bc4f2a06a2b08794e9dc169a1abe56a680d729c967dce"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/enemyHit/01.wav",
+      "sha256": "80a18651d55660df1bade652ed24289954bcff394b5d5bc9e4834655110e045f"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/enemyHit/02.wav",
+      "sha256": "b7f4f1f6bcd031747acb430793e78d8827554367dd71a7dd42547716667440ba"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/enemyHit/03.wav",
+      "sha256": "718e61e740a8aa77a949859ce3e27506ffba7d4364f40b4ea46500227df58fb8"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/enemyHit/04.wav",
+      "sha256": "6f8976e0e83da3a0db366ca4b6f08eaf83bbed9cd3263c0d581ca03f375b4a38"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/enemyKilled/01.wav",
+      "sha256": "a4d7fb18926dd53ab5d550c2ec5cdf64739b4dbbbe203892e822452185969a90"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/enemyKilled/02.wav",
+      "sha256": "d13900c5b5fdd623449b52150663008d9e1e1cc29fde8c726019e90616e2214d"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/enemyKilled/03.wav",
+      "sha256": "50a44c1a8f860a25af5f70feee1b101f260299dfc01b5151b862aff3b88c8532"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/enemyKilled/04.wav",
+      "sha256": "a28c7aaa019260e8beabd0bd2e7014be4b4fbd08269358449d04c0c1a4aba1d4"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/enemyProjectile/01.wav",
+      "sha256": "6d981bc1877c94d69376a4018359e9f2d05e211c196e83ca44b4406340f57775"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/enemyProjectile/02.wav",
+      "sha256": "59da9145cc5e78444c37b721d785434b1c69300f23cb7a24371a891161cadee6"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/enemyProjectile/03.wav",
+      "sha256": "ff234233d8c7f0847c835038f21707f61e8259d7698bc079a96b8d6bb48ead74"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/enemyProjectile/04.wav",
+      "sha256": "3f4695931ec0e0a2fc6d8a1c8c63562ce83283db6d402a18aa2af6e7f60087fa"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/enemySupport/01.wav",
+      "sha256": "0ba00a9ebaeeb7d16e811710dba3bfe69f63ea9960e728d38e174401038253fb"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/enemySupport/02.wav",
+      "sha256": "9696ec6a00aa9da37d9f58cf25a523e6f2f0a4b179bbbfae93436104e00829b4"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/enemySupport/03.wav",
+      "sha256": "39b7edf391820f6850c3d6c19a0fa237c1061b605f5aa94205cdf5329a7ca904"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/enemySupport/04.wav",
+      "sha256": "f163886f197bca218033a78af5d53eb94265b66fd1fb804b6503d889209d661d"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/fieldActivated/01.wav",
+      "sha256": "471df8e358674a716b616a75906de2ce7b27d79e8c0e51dcbbd24ba8f3aa121e"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/fieldActivated/02.wav",
+      "sha256": "2f4556901bf78739c5ddb9008af280839707b3291de2dbfb6a9579fcdf4babd6"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/fieldActivated/03.wav",
+      "sha256": "1310057b284600de307fc6d1eaed0afce2276347c1ec4a68872463daf5b20f07"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/fieldActivated/04.wav",
+      "sha256": "5def48cd991f293c1964f224535319ff3f9ac093ae6beced3da309293b6ef9ec"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/gameOver/01.wav",
+      "sha256": "a065eeff9b721701b35216198448f06231c675f58861fd5124224a564844987f"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/gameOver/02.wav",
+      "sha256": "e630a93605c0a91715ddf39912862c88f360ebb678de2513f9a20d7389391417"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/lobbyGate/01.wav",
+      "sha256": "70a66deef4505f24c61392475bc1be3cef46b4da969996dbb3207cbc86210870"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/lobbyRain/01.wav",
+      "sha256": "0669000f36b68da8d8e7426dfdb995f51f9afd30e1d26d25cfc5c91968ea3493"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/lobbyRoof/01.wav",
+      "sha256": "b778476b7e0e7da9812a8c787dca7d471dce85380ea5cf27ba560d7e5aa001a4"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/lobbyWind/01.wav",
+      "sha256": "f895e8a02769a3b98c40bc503abe1d49ffe55b4170d2dbe780eadace2db9e5aa"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/lobbyWinter/01.wav",
+      "sha256": "39ccbe9d8c617b5fbf246eb37f044a11ab1fed097d49d116104a0bbd3ff42f0e"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/lock/01.wav",
+      "sha256": "8c84f7939fc7d0baf5b03699f9268bb6356007bd11b96dc8ec840c21897d76d4"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/lock/02.wav",
+      "sha256": "d67e8a27de86061167aa0b749651fecf0d573278a16f19929124e75cf9f9e5a9"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/magicStoneCollected/01.wav",
+      "sha256": "3f45e7fd0394ba28524075e2080c975da991256ac6b6b28a8028bdeb7079172b"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/magicStoneCollected/02.wav",
+      "sha256": "a8636d5a6cab2ba38d28387cf69a1e2254fbb5018a5e3b19906ab4adeded8729"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/magicStoneCollected/03.wav",
+      "sha256": "2420c9ad501ba68daa9a865635d2f4c555867fee70bd59d9bde8e01f03de899a"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/magicStoneCollected/04.wav",
+      "sha256": "8e5d987eb7ad3d0d3b55f10deb84f5ccd7e7cda5d730617211d20f9bcb1adb2a"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/mineExploded/01.wav",
+      "sha256": "84591783674007ebe06a9b20b32d5dfd3045df2af8b215c4c13eb8f44ee4a033"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/mineExploded/02.wav",
+      "sha256": "eb4d2c89bc40ed9c66af8cdb1e57f59999a724d11a967979c8f699de6a0b5406"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/mineExploded/03.wav",
+      "sha256": "d7b570eaf00da8965f3d07fe58a21c2203b219bab5957a52dd84f082a5d47632"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/mineExploded/04.wav",
+      "sha256": "34abc81378a0dd20887daff362cd024a053a2b3bdfc929eaffeed45716a0222f"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/minePlaced/01.wav",
+      "sha256": "6415c3eea4a9b61774db358a59a4fe2a2f7a806cd49a91da87f49542812bcac5"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/minePlaced/02.wav",
+      "sha256": "36e8e5ae855b30d4d98b06434843ac617ecad477fe2a1833615cde4b09056439"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/minePlaced/03.wav",
+      "sha256": "1081d35057cb95447c1e03cab436024e9c1c31c754bbc7431b82e824220f094e"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/minePlaced/04.wav",
+      "sha256": "e56c832fcbd9ea9719fea43605b2a3c86889a87768914071dc6edabe8e56a6df"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/orbitAttack/01.wav",
+      "sha256": "8124035063b0cff63e8fb2c90f0136df85df5cad90ab940b8990950874b5ff25"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/orbitAttack/02.wav",
+      "sha256": "20b798814915b11dfffae94c59593366cc6c52ce03f30e2191620cbe90b2fb41"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/orbitAttack/03.wav",
+      "sha256": "e0edc54972f2ab37d56bf31d7d365f8802a4d1d00d1f2b060cb4bf7c3152de31"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/orbitAttack/04.wav",
+      "sha256": "78c3ae7632cb0cf60dd462e1e0cfcf18ee20cf46c66ba2af7f6892e2fc1cd322"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/piercingAttack/01.wav",
+      "sha256": "4f1d2e4343f09ffb912a1a17077ef5201f51574c7508be6411a2d7ad28dc0cf8"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/piercingAttack/02.wav",
+      "sha256": "3685853f5aa752977d9d3026c1183abdd0152e6e7044e3fcff377fe615c8cc71"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/piercingAttack/03.wav",
+      "sha256": "e4986e3c8868c8898ef61b4ee374b7af0cfdf528bf4df920ac53a199efb59586"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/piercingAttack/04.wav",
+      "sha256": "760ab62c333a75f647cd6f5689af659300ab78c5bfe9ce895e9612ecb0978125"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/playerHit/01.wav",
+      "sha256": "72bcaf70d8984eeb737cc36791cbb56275bf5568affe88a90f041e2c13c4aecb"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/playerHit/02.wav",
+      "sha256": "66af7e0d14e7056a6281322291a14bf74d07053410757ae0ca8cf8faa78e2ac1"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/playerHit/03.wav",
+      "sha256": "4913fded9396a343a5e7c6254956aa4d2ba45d10438077891c55a5e0664be0eb"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/playerHit/04.wav",
+      "sha256": "1926746365fda885d22f678ed13aca759e5a2bfdec4f9189630d49107ceb6e49"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/purchase/01.wav",
+      "sha256": "7d01dbd2b888027af82b806be5fca99a5ba63c47cdf15c301982c12e4dcd03fd"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/purchase/02.wav",
+      "sha256": "3d9653e90622a2d5bee882fa8cccf39712751cec58793fcaf0981e374042c33e"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/reroll/01.wav",
+      "sha256": "b56a030f571c3c43d6b9f81aa793a9af91ce9ecc5a671ef679302cceacef71f6"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/reroll/02.wav",
+      "sha256": "01603eaea073da935977a9f7f75bcd42ddb45a59f88efaaae537b61b0784d434"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/shotgunAttack/01.wav",
+      "sha256": "7449b6195ee77d12a413cd37aa56f5095fbd479b27adfb3341ec419ffe435993"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/shotgunAttack/02.wav",
+      "sha256": "da688f34fa3cafc7f660abe64829ad7dee3520800c004dd522218123e62a28d8"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/shotgunAttack/03.wav",
+      "sha256": "669c371110bc8b0f642c96e728da013dcdebeee09da5e04ca67a83c961c33f7f"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/shotgunAttack/04.wav",
+      "sha256": "e44c2ed01abee2fb4355bb0be6282faa2b2cabd6f442fb3e5e4edfd063536b9f"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/slashAttack/01.wav",
+      "sha256": "0431b25f1e5ef3e1b9f7c4ad854342b2e607b968395a2ebbcbe05ce855dd861d"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/slashAttack/02.wav",
+      "sha256": "69b8755a6f14cbe0e739f1c9284d6c411e278335e4b6f0cb46b8112ec104d01b"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/slashAttack/03.wav",
+      "sha256": "a507d88d60b9a7f1e629e09f4ecb6ebbb297bb7f26b44e55e5b2e09b4bb6afd1"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/slashAttack/04.wav",
+      "sha256": "e0b7302a43adaf7ed0e4a6effd0de42f10f33a5d60ca66a682694fbd4fb9a588"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/stageClear/01.wav",
+      "sha256": "e4bc32dcf85e5c4af10d8fe4a957e48c67df5765b34cd7b0f2ddb4c79725bf73"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/stageClear/02.wav",
+      "sha256": "34ab7937ea1f81c532f042ba8a8f4528dd431ebe68dbcf41232e4693549cbb8b"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/supplyFanfare/01.wav",
+      "sha256": "1a9115f9708badf3ce859387abf7628230caa9337f28061d5934cf3d65b7d8f1"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/supplyFanfare/02.wav",
+      "sha256": "4ead46076feef3be7848bb034c9a8bb22e35025b681d1bc3d558083accde998b"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/supplyLatch/01.wav",
+      "sha256": "878e42fdcef1d76c7dd9f5ceed92b39f739ced926eb5bdf4ed76b72ab6136912"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/supplyLatch/02.wav",
+      "sha256": "a946d89908ac70112ee2e7cabe734ff5a4f894de0f9be2179a7b579d7dea1aa1"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/turretFired/01.wav",
+      "sha256": "ca6af20991f312eaa806bc9a9579666630088ebdb81cec80a67f3f960d9b45be"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/turretFired/02.wav",
+      "sha256": "023ccded3facfad3c0fe40675ecc0c4d791fd22c6eebf4f1dd4873c5f8c5c45e"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/turretFired/03.wav",
+      "sha256": "b9b309704524f47f982a7e1020ea231fc94243eb4fdd7bcc8a3f72b4f5cfb34c"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/turretFired/04.wav",
+      "sha256": "6423cf81b0f80d3651604a200440461b14a2bb3cdec54fc2051e5df60bd1a3fc"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/walletSweep/01.wav",
+      "sha256": "79e9907355c1c01808161cd9c54397bbf40113adde34783b4a7c22819ff07006"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/walletSweep/02.wav",
+      "sha256": "8ac6b9596da5a9846e00cc8f7709dd97a5743c90267d36c8d816a048118c789d"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/waveCompleted/01.wav",
+      "sha256": "b0d9d87ac2e15ee0c4995e32bfaabc6d22ea53b63f63c0614dcbc05756e9a03b"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/waveCompleted/02.wav",
+      "sha256": "bd24eaee9cbfa1cabd6889259b6ab580fd0689285f879e0cb9757b425b602c26"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/waveCountdownTick/01.wav",
+      "sha256": "dc53ee6e51054814831dd6437fea816441593d2c97b1bd40b7e983970ab16c2a"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/waveCountdownTick/02.wav",
+      "sha256": "bbb67ecef42e0fec63ac82bd930fccb2a9a2543dfb9bb9b543a9cbe4dd460e32"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/waveStarted/01.wav",
+      "sha256": "933b1e7a371d8c2186a8622a942d027b44393d94d0e0483de513a5e5e792c80b"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/waveStarted/02.wav",
+      "sha256": "c5fcbe2496221e8cd1d401260236afa4b81e2ad39e4c0966544ed435003d2466"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/weaponFired/01.wav",
+      "sha256": "eaa48a70b83e3348987656a02f8191c5b5e0e74aba0faddadfcf4333f1a5c133"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/weaponFired/02.wav",
+      "sha256": "92f20c10e421ae6a39615edc5cc4e0e458ef410cffdb8273b21f83ee2afe7aec"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/weaponFired/03.wav",
+      "sha256": "a7a1cc36d696269931f0c4ffe6ac11b131ec2b15e3c247da10705e9413abd8cb"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/weaponFired/04.wav",
+      "sha256": "920f77f4c8ee7fe1a297b6be9addefce2a35224ada269da6ae55b25c0f9a0615"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/weaponPurchase/01.wav",
+      "sha256": "5251f9cd386c3b075563f78d7d522970ce60b6fa45abca4429c64e35a7839ca7"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-01/weaponPurchase/02.wav",
+      "sha256": "33bf4e7e8fbc6a6899e443373416e5bc397c0c837f8a1e69bb9ce01c13b0f0b1"
+    }
+  ],
+  "bgm": {
+    "assets/audio/bgm/provided/combat_01.mp3": "c8ec2f17f6d97aafb20c8e9cdcba4ba1b967fef6cc6ce8808f3251530fb17d2d",
+    "assets/audio/bgm/provided/combat_02.mp3": "e4e07276db401dbfc1eb3932633bbad558400abc3ca5a241f8215c41adef5d5e",
+    "assets/audio/bgm/provided/guild_01.mp3": "444d24862ee734c7dcd232048d97f59e63251369b9ef73c91b006e1b448568fc",
+    "assets/audio/bgm/provided/menu_01.mp3": "00875eed9e5562be7ec64ca4095c4ba6d20347ee1035f36a664009335d26b1ea",
+    "assets/audio/bgm/provided/menu_02.mp3": "c4d4804020659e00b3b8ed90918b54f75429e92b26a88358c6913b350dcbb7c0",
+    "assets/audio/bgm/provided/menu_03.mp3": "b302b4a0d8b53fcdc5594239b7ab51257feab41cc7c5ec7604fb447d814d09ab"
+  },
+  "runtime_verification": {
+    "passed": true,
+    "checks": [
+      {
+        "name": "profile_writes_blocked",
+        "passed": true
+      },
+      {
+        "name": "preview_audio_disabled",
+        "passed": true
+      },
+      {
+        "name": "script_compile_main.gd",
+        "passed": true
+      },
+      {
+        "name": "script_compile_run.gd",
+        "passed": true
+      },
+      {
+        "name": "script_compile_attacks.gd",
+        "passed": true
+      },
+      {
+        "name": "script_compile_enemy_brain.gd",
+        "passed": true
+      },
+      {
+        "name": "script_compile_lobby_screen.gd",
+        "passed": true
+      },
+      {
+        "name": "128_wav_formats",
+        "passed": true
+      },
+      {
+        "name": "audio_mapping_paths",
+        "passed": true
+      },
+      {
+        "name": "music_data_only",
+        "passed": true
+      },
+      {
+        "name": "no_consecutive_variant",
+        "passed": true
+      },
+      {
+        "name": "protected_hit_without_busy_attenuation",
+        "passed": true
+      },
+      {
+        "name": "voice_reserve_limits",
+        "passed": true
+      },
+      {
+        "name": "two_hops_per_attack",
+        "passed": true
+      },
+      {
+        "name": "scheduled_combat_dt_and_pause",
+        "passed": true
+      },
+      {
+        "name": "cleanup_cancels_queued_audio",
+        "passed": true
+      },
+      {
+        "name": "single_stereo_loop",
+        "passed": true
+      },
+      {
+        "name": "ambience_stops_outside_lobby",
+        "passed": true
+      },
+      {
+        "name": "no_mp3_playback",
+        "passed": true
+      }
+    ],
+    "wavFiles": 128,
+    "typescriptChangedFiles": 13,
+    "typescriptDiagnostics": 0,
+    "dataProblems": []
+  },
+  "direct_listening": "not performed; signal analysis and editing only",
+  "rollback": "rollback/files plus preserved old live assets; see README.md",
+  "checkedAt": "2026-10-03T11:35:40.201Z",
+  "godotImport": {
+    "compressMode": 0,
+    "format": "48kHz PCM16",
+    "result": "128 files imported; no script or audio resource blocker",
+    "nonBlockingEnvironmentMessages": [
+      "Windows certificate store unavailable in sandbox",
+      "Editor settings outside writable workspace could not be saved"
+    ]
+  },
+  "integration": {
+    "godot": "all 39 cues + 5 matched lobby loops",
+    "web": "same 39 cues/policies; fixed web lobby has no environment metadata, ambience remains off"
+  },
+  "runtimeFiles": [
+    "src/data/audio.ts",
+    "src/data/sourcedAudio.ts",
+    "src/audio/AudioManager.ts",
+    "src/audio/AudioPolicy.ts",
+    "src/core/GameEvents.ts",
+    "src/core/Simulation.ts",
+    "src/core/AppController.ts",
+    "src/systems/CombatSystem.ts",
+    "src/systems/WeaponBehaviors.ts",
+    "src/systems/StructureSystem.ts",
+    "src/systems/EnemySystem.ts",
+    "src/systems/EnemyBehaviors.ts",
+    "src/systems/HostileAttackSystem.ts",
+    "godot/scripts/presentation/sound.gd",
+    "godot/scripts/core/main.gd",
+    "godot/scripts/state/run.gd",
+    "godot/scripts/systems/attacks.gd",
+    "godot/scripts/systems/enemy_brain.gd",
+    "godot/scripts/ui/lobby_screen.gd",
+    "godot/data/visuals/lobby_atmospheres.json",
+    "scripts/export-godot-content.mjs"
+  ],
+  "runtimeHashes": {
+    "src/data/audio.ts": "8751cbc126d7fea0d350798d10a8a004b00c32160ace887ff3bed2ab138f466e",
+    "src/data/sourcedAudio.ts": "81013d0a46780c4dd9fb6f08f0fc911d3d437eb48bed22905e54248185ae7d6a",
+    "src/audio/AudioManager.ts": "01606bd5ceb563c3feea8d124293e742de10a7d0793d22f23d48268bb2872a61",
+    "src/audio/AudioPolicy.ts": "2f60813d51f973b2484e34745f44445552019ff6c2611e2f95c1d6b95ef60968",
+    "src/core/GameEvents.ts": "b3a4de18213a811e455bd9c2b3208f0bfb801cea4f97c9078e8dc1d01700dabe",
+    "src/core/Simulation.ts": "b9bc473bd696f14bb5aa229664ffa7ca28391d852d72544e61ac9b8560f68737",
+    "src/core/AppController.ts": "e7d3f0a6bebc73b9eab33a910e6943f739faff13d6f5d7ba425f1b93d177ddb9",
+    "src/systems/CombatSystem.ts": "174ae852ca26e06dc2f6a2e7364e5a07300c6ae901ed7d424944ee0b22913257",
+    "src/systems/WeaponBehaviors.ts": "fc13864dfc044cab1b6dcda2d108e253c2e7fde314334d780355bc96d27d40ff",
+    "src/systems/StructureSystem.ts": "46b9784a2074dd890743c055164a5f252a4c65f45327840b5b882536d092404c",
+    "src/systems/EnemySystem.ts": "7b9cc1bf4238b8cfef5389101f3ba9af11ab9c78d15cdb95c091430b110f8296",
+    "src/systems/EnemyBehaviors.ts": "853a89ae32cb49881eb79c3a76abdc23f7683fd39cfad36a6efa9bdfc1759958",
+    "src/systems/HostileAttackSystem.ts": "5e43b429bb4b3ad18e29b5a8bd5861b5c5abe833d0f72c370e313523dff9e6c0",
+    "godot/scripts/presentation/sound.gd": "2f55ed89e8cf8d97220e54919fa3f9d362c99684ef0d6393a44b71d0366f36bf",
+    "godot/scripts/core/main.gd": "1aac719402693f9fcb58340489420e098bac062165bad8f91d98aece5a9e5a48",
+    "godot/scripts/state/run.gd": "f1922859d45e93411a381d267f9cd8093bcf815e62d89a9ffa091a83e9623519",
+    "godot/scripts/systems/attacks.gd": "f6480b68a021a9fef074b8d73cbbd511a08bf3dcc7d0bdd4d895b8eeaa6f298f",
+    "godot/scripts/systems/enemy_brain.gd": "1a98b1e4d87e82aa3295a3b5e16ac6cf0c3d8c6f559ca15e0b3ba9bcc89f5cea",
+    "godot/scripts/ui/lobby_screen.gd": "24577cbbb48259dfac2c8bb9c4677a5c403bb777d4472cc9f7c8ff26ea49be0c",
+    "godot/data/visuals/lobby_atmospheres.json": "7e9ba79834a836036759eb228145cd1ac79e08e2df3a768bda85cbe129badcdd",
+    "scripts/export-godot-content.mjs": "32c3f76a3c055e2789fc54f7aa879c4ac5bdd5f6b4d6a80e4a0328daced9e72c"
+  }
+}

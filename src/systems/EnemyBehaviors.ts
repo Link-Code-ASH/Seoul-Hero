@@ -3,9 +3,18 @@ import type { EnemyDefinition } from '../data/types';
 import type { Enemy } from '../entities/types';
 import type { RunState } from '../state/RunState';
 import type { HostileAttackSystem } from './HostileAttackSystem';
+import type { GameAudioEvent, GameAudioEventSink } from '../core/GameEvents';
 export interface EnemyContext { run: RunState; dt: number; def: EnemyDefinition; attacks: HostileAttackSystem;
+  emitAudio?: GameAudioEventSink;
   nearby: (enemy: Enemy, radius: number) => readonly Enemy[];
   summon: (parent: Enemy, id: string, count: number) => void;
+}
+function enemyAudio(e: Enemy, c: EnemyContext, action: string, stage: string): GameAudioEvent {
+  return { kind: 'enemy', action, stage, enemyId: e.id, monsterId: e.definitionId,
+    behavior: c.def.behavior, attackId: `enemy:${e.id}:${c.run.stageCombatTime}` };
+}
+function soundAction(e: Enemy, c: EnemyContext, action: string, stage: string): void {
+  c.emitAudio?.(enemyAudio(e, c, action, stage));
 }
 export function moveToward(e: Enemy, x: number, y: number, dt: number, speed = e.moveSpeed): void {
   const dx = x - e.x, dy = y - e.y, d = Math.hypot(dx, dy); if (!d) return;
@@ -23,6 +32,7 @@ function charge(e: Enemy, c: EnemyContext, ambush = false): void {
     if (e.timer <= 0) { e.action = 'move'; e.timer = tuning.cooldown; }
   } else if (e.timer <= 0 && distance(e, c) < tuning.triggerRange) {
     aim(e, c); e.action = 'warning'; e.timer = tuning.warning;
+    soundAction(e, c, 'chargeWindup', 'windup');
   } else if (ambush) {
     const a = Math.atan2(c.run.player.y - e.y, c.run.player.x - e.x) + 0.6;
     moveToward(e, e.x + Math.cos(a) * 200, e.y + Math.sin(a) * 200, c.dt);
@@ -31,7 +41,7 @@ function charge(e: Enemy, c: EnemyContext, ambush = false): void {
 }
 function ranged(e: Enemy, c: EnemyContext): void {
   if (e.action === 'warning') {
-    if (e.timer <= 0) { c.attacks.shoot(c.run, e.x, e.y, Math.atan2(e.aimY - e.y, e.aimX - e.x), e.contactDamage); e.action = 'move'; e.timer = R.rangedCooldown; }
+    if (e.timer <= 0) { c.attacks.shoot(c.run, e.x, e.y, Math.atan2(e.aimY - e.y, e.aimX - e.x), e.contactDamage, enemyAudio(e, c, 'projectileLaunch', 'launch')); e.action = 'move'; e.timer = R.rangedCooldown; }
     return;
   }
   const d = distance(e, c);
@@ -49,10 +59,11 @@ function boss(e: Enemy, c: EnemyContext): void {
   }
   if (e.action === 'warning') {
     if (e.timer > 0) return;
+    soundAction(e, c, 'bossMajorAttack', 'execute');
     if (pattern.type === 'charge') { e.action = 'dash'; e.timer = R.chargeDuration; return; }
     if (pattern.type === 'volley') {
       const angle = Math.atan2(e.aimY - e.y, e.aimX - e.x);
-      for (let i = 0; i < pattern.count; i++) c.attacks.shoot(c.run, e.x, e.y, angle + (i - (pattern.count - 1) / 2) * 0.22, e.contactDamage * pattern.damageMultiplier);
+      for (let i = 0; i < pattern.count; i++) c.attacks.shoot(c.run, e.x, e.y, angle + (i - (pattern.count - 1) / 2) * 0.22, e.contactDamage * pattern.damageMultiplier, enemyAudio(e, c, 'projectileLaunch', 'launch'));
     }
     if (pattern.type === 'summon' && pattern.childId) c.summon(e, pattern.childId, pattern.count);
     e.action = 'move'; e.timer = pattern.cooldown; e.pattern++; return;
@@ -109,17 +120,18 @@ export const enemyBehaviors: Record<EnemyDefinition['behavior'], Handler> = {
   bomber(e, c) {
     if (e.action === 'warning') {
       if (e.timer <= 0) { c.attacks.area(c.run, e.x, e.y, R.bomberRadius, 0, e.contactDamage); e.hp = 0; }
-    } else if (distance(e, c) <= R.bomberTrigger) { e.action = 'warning'; e.timer = R.bomberWarning; }
+    } else if (distance(e, c) <= R.bomberTrigger) { e.action = 'warning'; e.timer = R.bomberWarning; soundAction(e, c, 'selfDestructWarning', 'windup'); }
     else chase(e, c);
   },
   support(e, c) {
     chase(e, c);
     if (e.timer <= 0) {
+      soundAction(e, c, 'supportOrSummonCast', 'cast');
       for (const other of c.nearby(e, R.supportRadius)) if (other !== e && other.hp > 0 && Math.hypot(other.x - e.x, other.y - e.y) <= R.supportRadius) other.hp = Math.min(other.maxHp, other.hp + other.maxHp * R.supportHealFraction);
       e.timer = R.supportInterval;
     }
   },
-  summoner(e, c) { rangedMovement(e, c); if (e.timer <= 0 && c.def.childId) { c.summon(e, c.def.childId, 2); e.timer = R.summonInterval; } },
+  summoner(e, c) { rangedMovement(e, c); if (e.timer <= 0 && c.def.childId) { soundAction(e, c, 'supportOrSummonCast', 'cast'); c.summon(e, c.def.childId, 2); e.timer = R.summonInterval; } },
   defender(e, c) { e.armor = e.baseArmor + (e.age % R.defenderCycle < R.defenderGuard ? R.defenderArmor : 0); chase(e, c); },
   boss,
 };

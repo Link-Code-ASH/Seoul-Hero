@@ -11,3 +11,10 @@ These font files were supplied by the project owner on 2026-09-24. The originals
 | BMJUA | `BMJUA.ttf` from `BMJUA_ttf.ttf` | Reward headings |
 
 Existing Barlow Condensed remains for numbers and instrument labels; Pretendard remains as a local fallback.
+
+
+## Godot native font inputs (2026-10-02)
+
+- `KMU80HaeongSans.ttf` is the matching owner-supplied native TTF from `KMU80SungkokHaeong_01/TTF/KMU80TTFHaeongSans.ttf`. Its original KMU copyright remains embedded.
+- `BarlowCondensed-SemiBold.ttf` and `BarlowCondensed-Bold.ttf` are lossless decompressions of the existing WOFF2 files using fontTools 4.66.1 and Brotli 1.2.0. Glyph outlines and metrics are unchanged; `BarlowCondensed-OFL.txt` applies to both formats.
+- Original WOFF2 files remain in source assets. Godot uses the TTF copies to avoid the WOFF2 importer failure. Hashes and format provenance are in `font-import-provenance.json`.

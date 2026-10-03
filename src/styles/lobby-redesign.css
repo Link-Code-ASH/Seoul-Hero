@@ -73,10 +73,10 @@
   overflow: hidden;
   padding: 12px 14px;
   text-align: left;
-  border-image: var(--menu-frame,var(--frame-command)) 12% / 2px;
-  background: linear-gradient(120deg,#091522c9,#132b3ba8 60%,#1b35477d);
-  box-shadow: inset 0 1px #c4d8df4d,inset 0 -2px #06131bd1,0 8px 18px #0008;
-  backdrop-filter: blur(3px) saturate(.8);
+  border-image: var(--menu-frame,var(--frame-command)) 12% / 6px;
+  background: transparent;
+  box-shadow: inset 0 1px #c4d8df4d,0 6px 16px #0005;
+  backdrop-filter: blur(5px);
 }
 .hq-menu button::before {
   content: '';
@@ -85,7 +85,7 @@
   z-index: -1;
   pointer-events: none;
   background: linear-gradient(90deg,#0715229e,#07152238 68%,#0715228c),var(--card-scene) var(--card-position,center)/cover;
-  opacity: .68;
+  opacity: .48;
 }
 .hq-menu button[data-action="gateMap"] { --menu-frame: var(--frame-map); }
 .hq-menu button[data-action="guild"] { --menu-frame: var(--frame-personnel); }

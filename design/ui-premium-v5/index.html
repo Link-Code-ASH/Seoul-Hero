@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>서울 히어로 · 프리미엄 UI 시안</title>
+    <link rel="stylesheet" href="./preview.css" />
+  </head>
+  <body>
+    <header class="preview-tools">
+      <strong>SEOUL HERO / UI MATERIAL STUDY</strong>
+      <nav aria-label="시안 보기">
+        <a href="?screen=lobby">로비</a>
+        <a href="?screen=weapons">무기 선택</a>
+        <a href="?screen=archive">자료집</a>
+        <a href="?screen=compare">나란히 보기</a>
+      </nav>
+      <span><select id="background-choice" aria-label="배경"><option value="">배경 무작위</option><option value="rain">광화문</option><option value="wind">전망대</option><option value="energy">교차로</option><option value="checkpoint">통제선</option><option value="rooftop">옥상</option></select> <select id="effect-choice" aria-label="애니메이션"><option value="">연출 무작위</option><option value="rain">비</option><option value="wind">바람</option><option value="energy">마력</option><option value="snow">눈</option><option value="mist">안개</option><option value="embers">불씨</option></select></span>
+    </header>
+    <main id="preview"></main>
+    <script type="module" src="./preview.ts"></script>
+  </body>
+</html>

@@ -1,0 +1,10 @@
+{
+  "date": "2026-10-01",
+  "tool": "built-in image_gen",
+  "file": "gwanghwamun_floor_03.png",
+  "prompt": "Create a new complete background ground map for Seoul Hero 2D top-down combat, approximately 20:9 wide landscape. Reference is STYLE only: subdued blue gray painterly casual game granite. ALL parts are flat walkable ground seen in strictly orthographic OVERHEAD view, no perspective or horizon. Make varied believable Gwanghwamun urban plaza ground instead of monotonous tiles: upper and central regions fine small rectangular granite paving, a few differently colored flush stone bands and dark slate inlay areas, a broad gently bending asphalt road passing horizontally through the LOWER THIRD, understated worn white dashed lane markings and TWO short zebra crossings linking across that road, flush paving continuing along bottom edge. Asymmetrical but restrained floor variation, no repeated patch blocks. IMPORTANT scale: individual paving slabs are very small, approximately 1/80 of total map width, many fine slabs across frame. A game character is about 1/9 of image height so tiles must be much smaller than the person. Medium muted blue-gray ground, low contrast, no harsh shadows. NO buildings, palace, walls, gates, trees, plants, statues, street furniture, vehicles, railings, raised curbs, steps, ramps, deep cracks, holes, rubble, UI, text or border. Asphalt, crossings and paving at same elevation; EVERY corner and EVERY pixel remains traversable. Whole opaque image reaches all edges. This texture covers the entire screen once, not a repeated tile atlas.",
+  "referenced_image_paths": [
+    "C:/Users/geniu/Documents/GitHub/Seoul-Hero/godot/assets/visuals/environment/gwanghwamun_floor_02.png"
+  ],
+  "transparent_background": false
+}

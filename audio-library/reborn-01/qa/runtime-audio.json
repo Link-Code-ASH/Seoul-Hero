@@ -1,0 +1,1304 @@
+{
+	"checkedAt": "2026-10-03T11:29:53",
+	"checks": [
+		{
+			"detail": null,
+			"name": "profile_writes_blocked",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "preview_audio_disabled",
+			"passed": true
+		},
+		{
+			"detail": "res://scripts/core/main.gd",
+			"name": "script_compile_main.gd",
+			"passed": true
+		},
+		{
+			"detail": "res://scripts/state/run.gd",
+			"name": "script_compile_run.gd",
+			"passed": true
+		},
+		{
+			"detail": "res://scripts/systems/attacks.gd",
+			"name": "script_compile_attacks.gd",
+			"passed": true
+		},
+		{
+			"detail": "res://scripts/systems/enemy_brain.gd",
+			"name": "script_compile_enemy_brain.gd",
+			"passed": true
+		},
+		{
+			"detail": "res://scripts/ui/lobby_screen.gd",
+			"name": "script_compile_lobby_screen.gd",
+			"passed": true
+		},
+		{
+			"detail": {
+				"count": 128,
+				"invalid": []
+			},
+			"name": "128_wav_formats",
+			"passed": true
+		},
+		{
+			"detail": [],
+			"name": "audio_mapping_paths",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "music_data_only",
+			"passed": true
+		},
+		{
+			"detail": [
+				"res://assets/audio/sfx/reborn-01/weaponFired/03.wav",
+				"res://assets/audio/sfx/reborn-01/weaponFired/04.wav",
+				"res://assets/audio/sfx/reborn-01/weaponFired/01.wav",
+				"res://assets/audio/sfx/reborn-01/weaponFired/04.wav",
+				"res://assets/audio/sfx/reborn-01/weaponFired/03.wav"
+			],
+			"name": "no_consecutive_variant",
+			"passed": true
+		},
+		{
+			"detail": {
+				"busyNormals": 12,
+				"gain": 0.457343297870904,
+				"minimum": 0.4485
+			},
+			"name": "protected_hit_without_busy_attenuation",
+			"passed": true
+		},
+		{
+			"detail": {
+				"max": 16,
+				"normalMax": 12
+			},
+			"name": "voice_reserve_limits",
+			"passed": true
+		},
+		{
+			"detail": [
+				{
+					"count": 1,
+					"hop": 1,
+					"lastVariant": "res://assets/audio/sfx/reborn-01/chainHop/03.wav",
+					"ticks": 1952,
+					"voices": 1
+				},
+				{
+					"count": 2,
+					"hop": 2,
+					"lastVariant": "res://assets/audio/sfx/reborn-01/chainHop/02.wav",
+					"ticks": 1952,
+					"voices": 1
+				},
+				{
+					"count": 2,
+					"hop": 3,
+					"lastVariant": "res://assets/audio/sfx/reborn-01/chainHop/02.wav",
+					"ticks": 1952,
+					"voices": 0
+				}
+			],
+			"name": "two_hops_per_attack",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "scheduled_combat_dt_and_pause",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "cleanup_cancels_queued_audio",
+			"passed": true
+		},
+		{
+			"detail": {
+				"active": 1,
+				"id": "lobbyWind"
+			},
+			"name": "single_stereo_loop",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "ambience_stops_outside_lobby",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "no_mp3_playback",
+			"passed": true
+		}
+	],
+	"errors": [],
+	"passed": true,
+	"scope": "audio-only Dummy output smoke check; no gameplay or saved writes",
+	"unverified": [
+		"direct listening",
+		"device playback",
+		"MP3 fade listening",
+		"full tests/build/performance"
+	],
+	"wavFiles": [
+		{
+			"bits16": true,
+			"cue": "purchase",
+			"length": 0.43,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/purchase/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "purchase",
+			"length": 0.46,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/purchase/02.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "reroll",
+			"length": 0.29,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/reroll/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "reroll",
+			"length": 0.35,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/reroll/02.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "lock",
+			"length": 0.21,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/lock/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "lock",
+			"length": 0.25,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/lock/02.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "weaponPurchase",
+			"length": 0.7,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/weaponPurchase/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "weaponPurchase",
+			"length": 0.76,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/weaponPurchase/02.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "branchChoice",
+			"length": 1.02,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/branchChoice/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "branchChoice",
+			"length": 1.1,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/branchChoice/02.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "critical",
+			"length": 0.23,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/critical/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "critical",
+			"length": 0.25,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/critical/02.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "critical",
+			"length": 0.24,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/critical/03.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "critical",
+			"length": 0.27,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/critical/04.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "eliteSpawned",
+			"length": 0.8,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/eliteSpawned/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "eliteSpawned",
+			"length": 0.88,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/eliteSpawned/02.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "waveStarted",
+			"length": 0.64,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/waveStarted/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "waveStarted",
+			"length": 0.65,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/waveStarted/02.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "waveCompleted",
+			"length": 0.9,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/waveCompleted/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "waveCompleted",
+			"length": 0.98,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/waveCompleted/02.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "waveCountdownTick",
+			"length": 0.17,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/waveCountdownTick/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "waveCountdownTick",
+			"length": 0.17,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/waveCountdownTick/02.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "slashAttack",
+			"length": 0.32,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/slashAttack/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "slashAttack",
+			"length": 0.34,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/slashAttack/02.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "slashAttack",
+			"length": 0.35,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/slashAttack/03.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "slashAttack",
+			"length": 0.33,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/slashAttack/04.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "orbitAttack",
+			"length": 0.18,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/orbitAttack/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "orbitAttack",
+			"length": 0.19,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/orbitAttack/02.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "orbitAttack",
+			"length": 0.18,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/orbitAttack/03.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "orbitAttack",
+			"length": 0.2,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/orbitAttack/04.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "chainAttack",
+			"length": 0.33,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/chainAttack/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "chainAttack",
+			"length": 0.34,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/chainAttack/02.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "chainAttack",
+			"length": 0.31,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/chainAttack/03.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "chainAttack",
+			"length": 0.34,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/chainAttack/04.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "bombardAttack",
+			"length": 0.64,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/bombardAttack/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "bombardAttack",
+			"length": 0.7,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/bombardAttack/02.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "bombardAttack",
+			"length": 0.65,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/bombardAttack/03.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "bombardAttack",
+			"length": 0.69,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/bombardAttack/04.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "piercingAttack",
+			"length": 0.26,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/piercingAttack/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "piercingAttack",
+			"length": 0.28,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/piercingAttack/02.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "piercingAttack",
+			"length": 0.27,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/piercingAttack/03.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "piercingAttack",
+			"length": 0.28,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/piercingAttack/04.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "turretFired",
+			"length": 0.16,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/turretFired/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "turretFired",
+			"length": 0.17,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/turretFired/02.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "turretFired",
+			"length": 0.17,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/turretFired/03.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "turretFired",
+			"length": 0.18,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/turretFired/04.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "minePlaced",
+			"length": 0.32,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/minePlaced/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "minePlaced",
+			"length": 0.31,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/minePlaced/02.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "minePlaced",
+			"length": 0.33,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/minePlaced/03.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "minePlaced",
+			"length": 0.32,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/minePlaced/04.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "mineExploded",
+			"length": 0.49,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/mineExploded/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "mineExploded",
+			"length": 0.52,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/mineExploded/02.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "mineExploded",
+			"length": 0.5,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/mineExploded/03.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "mineExploded",
+			"length": 0.53,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/mineExploded/04.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "fieldActivated",
+			"length": 0.74,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/fieldActivated/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "fieldActivated",
+			"length": 0.78,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/fieldActivated/02.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "fieldActivated",
+			"length": 0.8,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/fieldActivated/03.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "fieldActivated",
+			"length": 0.76,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/fieldActivated/04.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "weaponFired",
+			"length": 0.23,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/weaponFired/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "weaponFired",
+			"length": 0.24,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/weaponFired/02.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "weaponFired",
+			"length": 0.23,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/weaponFired/03.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "weaponFired",
+			"length": 0.25,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/weaponFired/04.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "enemyHit",
+			"length": 0.15,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/enemyHit/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "enemyHit",
+			"length": 0.16,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/enemyHit/02.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "enemyHit",
+			"length": 0.15,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/enemyHit/03.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "enemyHit",
+			"length": 0.17,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/enemyHit/04.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "enemyKilled",
+			"length": 0.28,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/enemyKilled/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "enemyKilled",
+			"length": 0.3,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/enemyKilled/02.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "enemyKilled",
+			"length": 0.29,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/enemyKilled/03.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "enemyKilled",
+			"length": 0.31,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/enemyKilled/04.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "magicStoneCollected",
+			"length": 0.19,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/magicStoneCollected/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "magicStoneCollected",
+			"length": 0.2,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/magicStoneCollected/02.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "magicStoneCollected",
+			"length": 0.18,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/magicStoneCollected/03.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "magicStoneCollected",
+			"length": 0.2,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/magicStoneCollected/04.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "walletSweep",
+			"length": 0.48,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/walletSweep/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "walletSweep",
+			"length": 0.49,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/walletSweep/02.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "buttonClick",
+			"length": 0.145,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/buttonClick/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "supplyLatch",
+			"length": 0.44,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/supplyLatch/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "supplyLatch",
+			"length": 0.48,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/supplyLatch/02.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "supplyFanfare",
+			"length": 1.28,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/supplyFanfare/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "supplyFanfare",
+			"length": 1.35,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/supplyFanfare/02.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "playerHit",
+			"length": 0.28,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/playerHit/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "playerHit",
+			"length": 0.29,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/playerHit/02.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "playerHit",
+			"length": 0.3,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/playerHit/03.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "playerHit",
+			"length": 0.29,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/playerHit/04.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "bossSpawned",
+			"length": 1.18,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/bossSpawned/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "bossSpawned",
+			"length": 1.22,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/bossSpawned/02.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "stageClear",
+			"length": 1.62,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/stageClear/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "stageClear",
+			"length": 1.7,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/stageClear/02.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "gameOver",
+			"length": 0.96,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/gameOver/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "gameOver",
+			"length": 1.02,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/gameOver/02.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "shotgunAttack",
+			"length": 0.32,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/shotgunAttack/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "shotgunAttack",
+			"length": 0.34,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/shotgunAttack/02.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "shotgunAttack",
+			"length": 0.33,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/shotgunAttack/03.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "shotgunAttack",
+			"length": 0.35,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/shotgunAttack/04.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "bombardLaunch",
+			"length": 0.3,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/bombardLaunch/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "bombardLaunch",
+			"length": 0.31,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/bombardLaunch/02.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "bombardLaunch",
+			"length": 0.32,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/bombardLaunch/03.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "bombardLaunch",
+			"length": 0.3,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/bombardLaunch/04.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "chainHop",
+			"length": 0.13,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/chainHop/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "chainHop",
+			"length": 0.14,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/chainHop/02.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "chainHop",
+			"length": 0.13,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/chainHop/03.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "chainHop",
+			"length": 0.14,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/chainHop/04.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "enemyProjectile",
+			"length": 0.24,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/enemyProjectile/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "enemyProjectile",
+			"length": 0.25,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/enemyProjectile/02.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "enemyProjectile",
+			"length": 0.24,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/enemyProjectile/03.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "enemyProjectile",
+			"length": 0.26,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/enemyProjectile/04.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "enemyCharge",
+			"length": 0.55,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/enemyCharge/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "enemyCharge",
+			"length": 0.56,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/enemyCharge/02.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "enemyCharge",
+			"length": 0.54,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/enemyCharge/03.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "enemyCharge",
+			"length": 0.57,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/enemyCharge/04.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "enemySupport",
+			"length": 0.62,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/enemySupport/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "enemySupport",
+			"length": 0.66,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/enemySupport/02.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "enemySupport",
+			"length": 0.64,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/enemySupport/03.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "enemySupport",
+			"length": 0.65,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/enemySupport/04.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "enemyDetonate",
+			"length": 0.56,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/enemyDetonate/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "enemyDetonate",
+			"length": 0.57,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/enemyDetonate/02.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "enemyDetonate",
+			"length": 0.56,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/enemyDetonate/03.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "enemyDetonate",
+			"length": 0.57,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/enemyDetonate/04.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "bossAttack",
+			"length": 0.69,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/bossAttack/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "bossAttack",
+			"length": 0.73,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/bossAttack/02.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "bossAttack",
+			"length": 0.7,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/bossAttack/03.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "bossAttack",
+			"length": 0.74,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-01/bossAttack/04.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "lobbyRain",
+			"length": 16.0,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": true,
+			"url": "res://assets/audio/sfx/reborn-01/lobbyRain/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "lobbyWind",
+			"length": 16.0,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": true,
+			"url": "res://assets/audio/sfx/reborn-01/lobbyWind/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "lobbyGate",
+			"length": 16.0,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": true,
+			"url": "res://assets/audio/sfx/reborn-01/lobbyGate/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "lobbyWinter",
+			"length": 16.0,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": true,
+			"url": "res://assets/audio/sfx/reborn-01/lobbyWinter/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "lobbyRoof",
+			"length": 16.0,
+			"loaded": true,
+			"rate": 48000,
+			"stereo": true,
+			"url": "res://assets/audio/sfx/reborn-01/lobbyRoof/01.wav"
+		}
+	]
+}

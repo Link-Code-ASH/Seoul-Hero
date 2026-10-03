@@ -1,0 +1,38 @@
+{
+  "viewport": [
+    915,
+    412
+  ],
+  "pc": "default browser viewport",
+  "page": "http://127.0.0.1:4175/reborn-01/",
+  "httpStatus": 200,
+  "cues": 44,
+  "mixes": 11,
+  "sourceRecords": 346,
+  "variantComparisons": 128,
+  "missingReferences": 0,
+  "sourceHashChanges": 0,
+  "candidateChecks": 128,
+  "auxiliaryChecks": 1082,
+  "problems": [],
+  "browserWavMetadata": {
+    "file": "comparisons/lock-02-new.wav",
+    "duration": 0.25,
+    "error": null
+  },
+  "mobileMixButton": {
+    "x": 637.5,
+    "y": 247.296875,
+    "width": 244.5,
+    "height": 44,
+    "bottom": 291.296875
+  },
+  "screenshots": [
+    "listening-915x412.png",
+    "mixes-915x412.png",
+    "mixes-pc.png"
+  ],
+  "directListening": "not_performed",
+  "runtimeDeployment": "pending user listening approval",
+  "previewBundleMiB": 418.33
+}

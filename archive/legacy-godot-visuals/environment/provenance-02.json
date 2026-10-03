@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-01",
+  "tool": "built-in image_gen",
+  "reference": "gwanghwamun_casual_01.webp (style and architectural reference)",
+  "assets": [
+    {
+      "file": "gwanghwamun_floor_02.png",
+      "prompt": "Create a production background texture for Seoul Hero 2D top-down survival combat. Reference image is STYLE ONLY, its architectural composition must NOT be copied. Wide landscape approximately 20:9. Orthographic straight overhead view of an entirely WALKABLE empty Gwanghwamun stone plaza. Every pixel from all four corners to center is flat blue-gray paving ground at the same elevation. Large lightly weathered rectangular granite slabs with subdued joints, tiny cracks, subtle slate inlays. Restrained soft painted casual mobile game style matching reference, cool gray, medium-dark, low contrast so small monsters read well. Absolutely no palace, gate, buildings, walls, trees, flowerbeds, statues, props, roads, cars, curbs, stairs, rails, holes, rubble piles, grass, horizon, perspective converging lines, text, border or raised obstacles. Floor continues naturally right to every edge. Opaque background.",
+      "transparent_background": false
+    },
+    {
+      "file": "gwanghwamun_gate_02.png",
+      "prompt": "Create one isolated Gwanghwamun palace gate decorative game sprite on transparent background. Reference is architectural subject and painterly style only. A recognizable compact Seoul Gwanghwamun gate: low gray stone base with three archways, traditional two-tier blue-black tiled roof, muted red wooden pavilion, warm restrained windows. Elevated orthographic 2D top-down three-quarter frontal view matching reference casual painted mobile game art. Entire single building clearly isolated including roof corners, tight surrounding transparent alpha, no ground, no plaza, no trees, no extra props, no sky, no text, no bounding frame. Long horizontally elongated silhouette roughly 3:1. Will be placed beyond the northern edge of a walkable arena, building feet align along bottom of image.",
+      "transparent_background": true
+    },
+    {
+      "file": "haetae_02.png",
+      "prompt": "One isolated pale granite Haetae guardian lion statue of Seoul Gwanghwamun on a low rectangular stone pedestal. Entire object shown, transparent background, no ground. Elevated orthographic 2D top-down three-quarter view, casual soft painted mobile game sprite style matching reference, cool light gray stone with restrained blue shadows and small sculpted curled mane. Compact squat mythical lion with curled tail, facing toward screen center (slightly right), recognizable carved guardian statue rather than living animal. No labels, text, trees, other objects, backdrop or frame. Tight transparent alpha around single statue and pedestal. Foot of pedestal at bottom.",
+      "transparent_background": true
+    }
+  ]
+}

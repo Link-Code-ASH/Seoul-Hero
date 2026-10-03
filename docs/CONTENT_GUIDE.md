@@ -25,7 +25,9 @@
 
 ## 아이템
 
-ItemData에 이름, 설명, rarity, basePrice, statModifiers, specialEffects, maxStacks, tags, icon, unlockCondition을 지정합니다. 현재 아이템은 30개입니다. 지원하는 스탯 보정만 쓰는 아이템은 ShopSystem 변경이 필요 없습니다. 새로운 사건형 효과는 해당 사건의 전용 처리기에 effect type을 추가합니다.
+ItemData에 이름, 설명, rarity, basePrice, statModifiers, specialEffects, maxStacks, tags, icon, unlockCondition을 지정합니다. 현재 아이템은 55개입니다. 수치만 다른 복제품을 추가하지 않고 발동 조건·기능·역할을 구분하거나 큰 이득과 명확한 패널티를 묶습니다. 효과·패널티는 설명에 적고 고유 이미지를 연결합니다.
+
+조건부 스탯/피해, 처치·회수 회복, 피격 반격, 첫 피격 방어, 한 판 1회 생존은 `systems/ItemTriggers.ts`와 Godot `systems/item_effects.gd`가 처리합니다. 발동 상태는 Run 전용이며 영구 성장에 저장하지 않습니다. Godot 전투 체크포인트 v2는 발동 횟수도 복원해 재시작으로 생존 효과가 재충전되지 않게 합니다. `save/run_checkpoint.gd`에서 v1→v2 이관·검증을 담당하며 미래 버전은 덮어쓰지 않습니다. 반격에는 치명타·흡혈·조건부 피해를 중복 적용하지 않고 웨이브 정리 때 예약 공격을 취소합니다.
 
 자료집은 캐릭터·무기·적·아이템 원본 데이터를 직접 읽습니다. 새 맵에서 일부 콘텐츠만 보여주려면 `MapData.archiveContent`의 `weaponIds`, `enemyIds`, `itemIds`를 지정합니다. 생략한 분류는 전부 표시합니다. 자료집 하단 버튼은 맵 전환, 가운데 목록은 내부 스크롤입니다.
 

@@ -1,0 +1,5 @@
+{
+  "generator": "OpenAI imagegen",
+  "prompt": "One transparent inventory/pickup game sprite, a cute small purple magic stone for Seoul Hero. Compact plump faceted crystal pebble, slightly rounded corners, broad simple facets, lavender and lilac body with deeper violet near base, one restrained pale highlight, subtle hand-painted cel shading and clean dark-purple contour. Modern Korean casual chibi action game style, matching detailed SD characters with painted jackets and tactical gear. Three-quarter top-down view, short hexagonal chunk resting on its flat small base, NOT a long needle or crystal cluster. Strong silhouette readable at 16-24 pixels, charming collectible, not photorealistic, not jewelry render, no metallic holder, no ground shadow, no aura or rays, no external particles, no text. One single centered isolated crystal on genuine transparent background, ample margin. Render clean large raster, no pixel art or flat SVG aesthetic. Color is pale lavender so game can tint it into darker purple drop tiers.",
+  "usage": "Godot magicStone world pickup and UI; cropped transparent bounds and resized to 384px; original preserved"
+}

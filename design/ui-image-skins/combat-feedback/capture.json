@@ -1,0 +1,79 @@
+{
+  "combatSimulation": false,
+  "productionRenderer": true,
+  "projectileDisplayScale": 1.5,
+  "saveWrites": false,
+  "scenes": [
+    {
+      "frames": 18,
+      "id": "slash"
+    },
+    {
+      "frames": 21,
+      "id": "chain"
+    },
+    {
+      "frames": 48,
+      "id": "installations"
+    },
+    {
+      "frames": 20,
+      "id": "projectiles",
+      "topOrbitHeadGapPx": 4.82251069810655
+    }
+  ],
+  "shop": {
+    "itemRerollBase": 5,
+    "itemRerollStep": 1,
+    "itemSlots": 4,
+    "luckScale": 100,
+    "rarities": {
+      "COMMON": {
+        "luckBoost": 0,
+        "wave": 1,
+        "weight": 70
+      },
+      "LEGENDARY": {
+        "luckBoost": 4,
+        "wave": 12,
+        "weight": 1
+      },
+      "RARE": {
+        "luckBoost": 2,
+        "wave": 7,
+        "weight": 6
+      },
+      "UNCOMMON": {
+        "luckBoost": 1,
+        "wave": 3,
+        "weight": 23
+      }
+    },
+    "weaponPrices": {
+      "newStructure": 44,
+      "newWeapon": 36,
+      "upgrade": {
+        "2": 18,
+        "3": 23,
+        "4": 29,
+        "5": 36,
+        "6": 43,
+        "7": 48,
+        "8": 55,
+        "9": 62,
+        "10": 69
+      }
+    },
+    "weaponRerollBase": 6,
+    "weaponRerollStep": 2,
+    "weaponSlots": 4
+  },
+  "size": [
+    915,
+    412
+  ],
+  "revision": 7,
+  "slashMode": "generatedCurvedRibbon",
+  "chainThickness": 22,
+  "fieldSpreadPeriod": 3.4
+}

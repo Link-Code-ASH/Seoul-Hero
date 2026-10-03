@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-01",
+  "tool": "built-in image_gen",
+  "assets": [
+    {
+      "file": "environment/sejong_02.png",
+      "prompt": "Create one isolated bronze statue of King Sejong the Great from Seoul Gwanghwamun Square, for a 2D top-down survival mobile game. Single game-world object, genuinely transparent background. Sejong sits on a dignified square throne, traditional royal robes and Korean royal hat, a book resting in one hand, recognizable warm aged golden bronze sculpture on a short dark square stone plinth. Use an elevated orthographic three-quarter downward camera view, show the TOP surfaces of hat, shoulders, throne and pedestal clearly so it belongs beside top-down walking chibi characters; avoid eye-level frontal monumental facade perspective. Same soft painted casual game sprite style and restrained lighting as reference Haetae statue, but subject is seated bronze King Sejong. Entire object contained, tight alpha around the silhouette, no floor, surrounding plaza, palace, trees, background, border, lettering or UI. Occupies compact square-ish footprint, sculpture height roughly twice a standing game character when placed. Standalone finished object with all parts joined, not sprite sheet.",
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "C:/Users/geniu/Documents/GitHub/Seoul-Hero/godot/assets/visuals/environment/haetae_02.png"
+      ]
+    },
+    {
+      "file": "actors/crawler/claw_02.png",
+      "prompt": "Create a single isolated lower forearm and clawed hand game sprite for a nonhuman crawling basalt monster. Reference image is style and material guide: charcoal obsidian stone plates, glowing scarlet cracks and red crystal spikes. One heavy elongated forearm vertically oriented, proximal elbow attachment at the TOP, a broad animalistic clawed paw at the BOTTOM with four distinctly pointed black-red stone talons aimed down and slightly right. Not a human fist or human fingers. Stocky feral knuckle-walking creature, exaggerated rugged talons and jagged crystal armor. Same elevated casual painted mobile game style as reference. Transparent background, tight alpha, single connected forearm/paw only; no whole monster, no extra parts, no labels, no circular joint markers, no background. It will replace the lower arm of an articulated crouched monster.",
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "C:/Users/geniu/Documents/GitHub/Seoul-Hero/godot/assets/visuals/source/crawler-source.png"
+      ]
+    }
+  ]
+}

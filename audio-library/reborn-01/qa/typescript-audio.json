@@ -1,0 +1,19 @@
+{
+  "scope": "changed audio and audio-event files only; no full typecheck/build/tests",
+  "files": [
+    "src/data/audio.ts",
+    "src/data/sourcedAudio.ts",
+    "src/audio/AudioManager.ts",
+    "src/audio/AudioPolicy.ts",
+    "src/core/AppController.ts",
+    "src/core/GameEvents.ts",
+    "src/core/Simulation.ts",
+    "src/systems/CombatSystem.ts",
+    "src/systems/WeaponBehaviors.ts",
+    "src/systems/StructureSystem.ts",
+    "src/systems/EnemySystem.ts",
+    "src/systems/EnemyBehaviors.ts",
+    "src/systems/HostileAttackSystem.ts"
+  ],
+  "diagnostics": []
+}

@@ -22,7 +22,7 @@ export const actorShadowProfiles: Partial<Record<ImageId, ActorShadowProfile>> =
   turret: { x: .50, y: .91, halfWidth: .39, depth: .065 },
   // Riders: a single elongated patch connects the rear and front wheels.
   player: { x: .55, y: .835, halfWidth: .32, depth: .115 },
-  kangTaehoonTruck: { x: .51, y: .855, halfWidth: .35, depth: .09 },
+  kangTaehoonBody: { x: .51, y: .855, halfWidth: .35, depth: .09 },
 
   // Each monster is fitted to its own stance, including alternate poses.
   brute: { x: .49, y: .845, halfWidth: .36, depth: .09 },

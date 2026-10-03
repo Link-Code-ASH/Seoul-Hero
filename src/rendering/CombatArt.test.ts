@@ -4,7 +4,7 @@ import { groundProfileFor, enemyPose } from './CombatArt';
 
 describe('combat art presentation', () => {
   it('defines a distinct positive ground footprint for every playable and enemy sprite', () => {
-    const sprites = ['player', 'kangTaehoonTruck', ...Object.values(enemies).map(enemy => enemy.visual.sprite)] as const;
+    const sprites = ['player', 'kangTaehoonBody', ...Object.values(enemies).map(enemy => enemy.visual.sprite)] as const;
     for (const sprite of sprites) {
       const ground = groundProfileFor(sprite);
       expect(ground.anchorY).toBeGreaterThan(.75);

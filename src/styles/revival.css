@@ -13,7 +13,7 @@
   padding: 16px 20px;
   border: 1px solid #b0c2ce7a;
   border-top: 3px solid #a8b8d4;
-  background-image: linear-gradient(130deg,#243745f2,#0b171ff4),var(--frame-arcane);
+  background-image: linear-gradient(130deg,#abcddd20,#0b171f55),var(--frame-arcane);
   background-size: auto, 470px;
   box-shadow: 0 24px 65px #000d, inset 0 1px #eefaff35;
   color: #e7edf1;
@@ -116,8 +116,7 @@
   padding: 2px 8px;
   border: 2px solid transparent;
   border-image: var(--frame-arcane) 12% / 5px;
-  background: linear-gradient(110deg,#795c9ca6,#3d617b80),var(--frame-arcane) center/150% 150%;
-  background-blend-mode: screen;
+  background: linear-gradient(110deg,#bba2de2b,transparent 65%),var(--frame-arcane) center/125% 125%;
 }
 .shop-revival-stock>span {
   display: inline-flex;

@@ -1,5 +1,15 @@
 # 서울 히어로 작업 규칙
 
+## 적용 범위
+
+현재 기본 개발·실행 대상은 `godot/project.godot`이다. Godot 작업에는 이 문서의 공통 원칙과 `godot/AGENTS.md`·`godot/README.md`를 함께 적용한다. 확인한 로컬 엔진은 Godot 4.7.2 Standard이며 GDScript·2D Compatibility를 사용한다.
+
+`src/data`는 Godot과 보존 웹판의 공용 콘텐츠·밸런스 원본이다. 나머지 `src`·`public`·Vite 설정은 보존 웹판이다. 아래 **보존 웹판 전용 규칙**의 TypeScript/PixiJS·엔진 추가 금지·npm 실행·단계별 구현 설명은 해당 웹판 작업에만 적용한다. Godot 구현 상태와 실행·저장 경계는 Godot 하위 안내를 우선한다.
+
+- 플레이어·인간형 NPC·각성자 신규 원화는 큰 머리·작은 몸통·아주 짧은 팔다리의 빈손 SD로 통일한다. 본체 공용 최소 모션과 공격 VFX를 분리하며 전투에서 캐릭터 주변에 무기 이미지를 띄우지 않는다. 캐릭터별/무기별 공격 리그를 추가하지 않는다. Godot 샘플과 확장 규칙은 `godot/docs/SD_PIPELINE.md`를 따른다.
+- Godot 몬스터는 다리·발·보행 관절 없이 귀엽고 위협적인 단일 PNG로 제작한다. 공용 점프·부유·날갯짓·몸 물결을 비주얼 데이터로 선택하며 새 개별 파츠 리그를 추가하지 않는다. UI는 상점·로비·전투 HUD부터 서울 아케이드 `arcade` 팔레트로 시안을 적용한다. 그 밖의 `light` 화면 확장은 이 세 화면의 상세 피드백을 반영한 다음 단계다.
+- UI 프레임·버튼·기본 표면은 제작한 래스터 PNG와 9분할 소재를 기본으로 사용한다. `StyleBoxFlat`·SVG·코드로 만든 프레임과 광택을 새 UI의 기본 미술 경로로 삼지 않는다. 기능 텍스트는 네이티브 텍스트로 유지하며 실제 폰트를 제목·본문·버튼·숫자 역할에 맞게 구분한다. 아이콘은 기능과 정보를 전달하는 곳에 사용하고 메인 타이틀의 장식으로 채우지 않는다. 모든 새 UI는 먼저 시안을 제시하고 사용자 승인을 받은 뒤 런타임에 연결한다. 시안은 `design/ui-image-skins`에 분리하며 상세 규칙은 `godot/docs/UI_GUIDE.md`를 따른다.
+
 현대 서울의 게이트와 각성자를 배경으로, 개인이 수개월 이상 확장하며 즐길 2D 탑다운 자동 전투 생존 게임이다. 단기 데모보다 유지보수, 저장 안정성, 데이터 중심 확장을 우선한다.
 
 ## 최우선 작업 원칙
@@ -15,7 +25,16 @@
 - 요청을 제대로 구현하는 데 필요한 데이터 구조·UI·시각 효과·사운드·공통 로직 정리는 별도 질문 없이 함께 수행할 수 있다. 게임 방향, 기술 스택, 핵심 밸런스 철학의 큰 변경은 사용자 요청 없이 하지 않는다.
 - 문서는 새 주요 시스템, 중요한 책임 변경, 다음 작업자가 반드시 알아야 할 규칙이 생길 때만 짧게 갱신한다. 완료 보고는 구현 내용, 주요 파일, 사용자가 알아야 할 사항만 간단히 전한다.
 
-아래 실행·검증 항목은 사용자가 검증을 요청했거나 현재 변경의 필수 오류 확인이 필요한 경우에 적용한다.
+## Godot·공용 데이터 작업
+
+- Godot 기능은 `godot/scripts`의 소유 모듈과 `godot/data/visuals`에서 확장한다. 공용 콘텐츠 수치는 먼저 `src/data`에서 변경하고 `node scripts/export-godot-content.mjs`로 가져온다. 생성된 `godot/data/content.json`에 같은 수치를 따로 편집하지 않는다.
+- exporter가 읽는 `src/state/MetaState.ts`, `src/save/SaveData.ts`, `design/ui-premium-v5/weapon-notes.ts`와 그 import 의존성을 보존한다. `package.json`·`package-lock.json`은 웹판과 exporter의 재현에 필요하므로 유지한다.
+- `assets`의 원본·라이선스·프롬프트와 승인 시안, `archive`의 이동 기록·복구 원본을 보존한다. Godot 소스의 `.uid`와 원본 옆 `.import` 설정은 포함하고, 모든 프로젝트의 `.godot`·내보내기 출력·로컬 도구와 재생성 가능한 청취 산출물은 커밋하지 않는다.
+- Godot과 웹 저장은 별개다. 기준 커밋·워크트리 준비에서 사용자 저장을 복사·초기화하거나 기존 워크트리를 정리하지 않는다. 가져오기·실행을 막는 오류와 파일 누락만 필요한 범위에서 확인한다.
+
+## 보존 웹판 전용 규칙
+
+이하 실행·검증 항목과 단계별 구현 규칙은 보존 웹판 범위에 적용하며, 사용자가 검증을 요청했거나 현재 변경의 필수 오류 확인이 필요한 경우에 실행한다.
 
 - HTML/hSS, strict TypeScript, Vite, PixiJS 8 WebGL. UI 프레임워크/완성형 게임 엔진을 추가하지 않는다. 정확한 의존성 버전과 lock 파일을 유지한다.
 - `src/data`: 콘텐츠/밸런스, `state`: 한 판/영구 상태, `systems`: 순수 게임 규칙, `core`: 실행/시간/연결, `input`: 플랫폼 입력, `rendering`: Pixi 화면, `world`: 아레나 경계·고정 배경 타일, `save`: 검증/이관/저장 어댑터, `meta`: 영구 성장, `ui`: HTML UI, `dev`: 개발 도구.
@@ -32,7 +51,7 @@
 - 이미지 추가는 `docs/VISUAL_GUIDE.md`, 소리 추가는 `docs/AUDIO_GUIDE.md`를 따른다. `assets` 파일과 `src/data/images.ts`/`audio.ts` 연결을 함께 갱신한다. 생성 출처·프롬프트를 보존한다.
 - 순수 게임 로직에서 Audiohontext를 참조하지 않는다. GameEvents → Apphontroller → AudioManager로 연결하며, 공용 텍스처를 스테이지 배경 제거 때 파괴하지 않는다. 음소거·첫 클릭 재생·배속·결과 음악 전환도 회귀 확인한다.
 
-## 10단계 개편 중 2단계 규칙
+### 10단계 개편 중 2단계 규칙
 
 상태는 state/RunPhase.ts의 전환표를 사용한다. preparing → waveActive → postWave → shop → 다음 Wave를 유지한다. 전투 시간은 waveActive에서만 흐른다. SHOP은 무기 4칸과 Item 4칸을 판매하며 두 진열의 리롤과 잠금을 독립적으로 관리한다.
 
@@ -40,26 +59,28 @@ RunState의 runItems/ownedWeapons/calculatedStats/HP/선택권은 영구 저장�
 
 postWave 진입 시 적·투사체·효과·공간 검색 참조를 정리한다. 회귀 검사는 docs/WAVE_SYSTEM.md와 docs/QA.md를 따른다.
 
-## 3단계 스탯 규칙
+### 3단계 스탯 규칙
 플레이어는 src/data/stats.ts의 20개 스탯만 사용한다. 별도 Experience Gain/hooldown Reduction/설치물 전용 Player Stat을 추가하지 않는다. 보정은 baseStats와 meta/item/run 출처를 구분하고 replaceModifiers를 통해 변경 시 재계산한다. 무기 적용은 capability 규칙과 공통 피해 경로를 사용한다. STRUhTURE/SUMMON 흡혈은 명시적 허용 없이는 금지하며 다중 적중 공격은 회복 예산을 공유한다.
 
-## 4단계 적·자원 규칙
+### 4단계 적·자원 규칙
 일반 적은 마력석을 드랍하며 hurrency Gain은 실제 회수량에만 적용한다. 별도 경험치 드랍은 없다. 적 행동은 EnemyBehaviors, 조합형 엘리트는 eliteModifiers, 보스는 bossPatterns를 확장한다. 새 소환 자식은 수량 상한·보상 배율·재소환 여부를 확인한다. Wave 정리는 적 탄/바닥 예고/공간 검색 참조까지 비우며 정리 처치 보상을 만들지 않는다.
 
-## 5단계 무기 규칙
+### 5단계 무기 규칙
 Character.signatureWeaponId는 미래 캐릭터용 선택 항목이다. 송진우는 출동 전 전투 무기 6종 중 하나를 선택하며 시작 무기를 포함해 총 6슬롯을 사용한다. 중복 무기는 강화한다. 상점 필터는 소유/해금/슬롯/최대 레벨을 검사하며 Luck은 아이템 등급에만 적용한다.
 
-## 6단계 분기 규칙
+### 6단계 분기 규칙
 maxLevel/branchAtLevel/branches는 무기 데이터에서 관리한다. Lv.3 강화를 결제하면 추가 비용 없이 분기를 선택하고 pendingBranchWeaponId를 해결하기 전 다른 구매/리롤/다음 Wave 이동을 막는다. 선택 branchId는 해당 Run에서 고정한다. 예약 공격은 전투 dt를 사용하고 Wave 정리 시 취소하며 반복 타격의 흡혈 예산은 공유한다.
 
-## 7단계 설치물 규칙
+### 7단계 설치물 규칙
 설치물은 일반 Weapon 슬롯을 소비한다. 설치물 전용 스탯을 추가하지 않는다. StructureSystem과 data/weapons/structures.ts를 사용하고 전투 dt/유한 개수/Wave cleanup을 유지한다. 특수효과는 sourceId/tag 조건의 structureEffects에서 확장한다. 기본 간접 흡혈 금지.
 
-## 8단계 상점 규칙
+### 8단계 상점 규칙
+
+- 아이템은 수치만 바꾼 효과 복제품을 추가하지 않는다. 고유 발동 조건·추가 기능·역할을 주거나 큰 이득과 명확한 패널티를 묶는다. 상점·자료집에는 효과와 패널티를 읽을 수 있는 텍스트를 제공하고 새 아이템에는 고유 이미지를 연결한다.
 상점은 무기와 Item을 각각 4칸 판매한다. 두 상품군은 독립 리롤 횟수와 잠금 상태를 사용한다. 가격은 Wave 자동 인상 없음. 잠금은 리롤/다음 상점 유지, 구매 칸은 비우고 해제. Run Item/Shop은 영구 저장하지 않는다.
 
-## 9단계 보상/저장 규칙
+### 9단계 보상/저장 규칙
 적은 마력석 픽업을 드랍한다. 획득 시 한 판용 재화만 오르며, 무기와 아이템은 같은 재화를 사용한다. StageReward와 RunSettlement는 종료 성과 보너스와 현재 재화를 한 번 정산한다. Wave 지갑은 RunState에만 존재하며 저장하지 않는다. 현재 저장 v6의 deferredMagicStone은 구버전 호환 필드로 0을 유지한다. 이미 해금한 콘텐츠 재구매 금지.
 
-## 10단계 현행 규칙
+### 10단계 현행 규칙
 위 단계별 미구현 언급보다 현재 IMPLEMENTATION_STATUS.md가 우선한다. SHOP/설치물/아이템/hurse는 구현 상태다. 이미지와 캐시된 실루엣을 함께 유지하고 SFX29/BGM4 manifest와 이벤트 테스트를 갱신한다. 터치 Pointer 취소/해제와 작은 가로 화면을 회귀 확인한다. 최종 확인 근거와 미검증 범위는 FINAL_QA.md에 기록한다.

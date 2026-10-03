@@ -1,0 +1,14 @@
+{
+  "created": "2026-10-02",
+  "records": [
+    {
+      "asset": "assets/environment-sd/gwanghwamun_sd_03.png",
+      "prompt": "Use case: sketch-to-render. Asset type: finished 2D mobile survival-game Gwanghwamun arena background, wide 20:9 landscape. Input image is ONLY a road geometry/layout guide, preserve exact straight rectangular street axes, intersections and relative landmark positions. Turn it into beautiful clean hand-painted cel-shaded cartoon game art, cute but mature, delicate ink outlines, controlled bright ivory plaza and blue-gray asphalt, small paving texture, restrained natural colors. Camera almost top-down with shallow front-facing dimensionality on small statues, NO horizon. The large central-left rectangle is Gwanghwamun plaza; golden block on its vertical axis is seated King Sejong statue with book on a LOW tiny base; lower green block is standing Admiral Yi Sun-sin statue on a LOW base; two tiny blue blocks are Haechi stone beasts. Make these recognizable Korean landmarks in MINIATURE, not gigantic or photoreal. Right vertical road is straight Sejong-daero with parallel 4 lanes and yellow median, perpendicular lower horizontal Seoul street, left short T access street. Correctly aligned zebra crossings, arrows and rectangular sidewalk corners; no random lane curves, no winding ribbon road, no round plaza motifs. Ground covers entire frame edge to edge, all areas playable floor, background objects purely painted landmarks. Add modest small curb drains and street paint for believable Seoul road organization, avoid tall objects blocking floor. All major landmarks in central crop-safe region. No palace, no gate building, no buildings, no vehicles, no traffic people, no UI, no lettering, no border, no vignette, no dramatic glow. Follow guide geometry rather than inventing roads. Very wide 20:9 image, crisp game-ready art.",
+      "source": "Generated images are saved to C:\\Users\\geniu\\.codex\\generated_images\\01a0f2b0-afe6-7281-8ba3-48d0d8354159 as C:\\Users\\geniu\\.codex\\generated_images\\01a0f2b0-afe6-7281-8ba3-48d0d8354159\\exec-c83756cd-5bf6-4adb-a329-b78fa37e1b23.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "reference": "design/urban-operation/gwanghwamun-layout-guide.png",
+      "tool": "image_gen",
+      "use": "20:9 arena background; right-angle Seoul road plan; all ground passable"
+    }
+  ],
+  "geometryReference": "https://gwanghwamun.seoul.go.kr/archive/contents/detail.do?cid=29&id=1982&mid=1062"
+}

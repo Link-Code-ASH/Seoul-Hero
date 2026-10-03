@@ -1,0 +1,442 @@
+{
+  "created": "2026-10-03",
+  "generator": "image_gen.imagegen",
+  "approvedBase": "design/ui-image-skins/phase3",
+  "runtimeConnected": true,
+  "newAssets": [
+    {
+      "name": "cards",
+      "path": "C:\\Users\\geniu\\.codex\\generated_images\\01a0f2b0-afe6-7281-8ba3-48d0d8354159\\exec-c6685c08-787a-49a1-a9b6-8c2d72569956.png",
+      "prompt": "Use case: stylized-concept. Production PNG UI asset sheet for Seoul Hero, a cute SD modern Seoul survival game. Transparent background with exactly four separated components arranged in a 2 by 2 grid, large transparent gutters. Absolutely NO text, NO characters, NO items, NO letters, NO numerical labels. Crisp polished painted game UI artwork: ivory and pale blue-gray face, dark navy structure, restrained mint active accent, subtle real raster material variation, very thin edge. ALL elements viewed perfectly front-on, orthographic FLAT information surfaces. NO pedestal, NO tray, NO perspective shelf, NO feet, NO plinth. Quiet central safe space for native text and illustrations. Four identical-size nearly SQUARE empty selection card BACKGROUNDS with 5% edge margin. Upper left normal: soft light blue-gray inset with very faint Seoul city window silhouettes only near outer edges, cream quiet center and ultra-thin navy rim. Upper right selected: same geometry, mint thin rim and small mint lower corner ticks, warm pale center. Lower left locked: same geometry, desaturated gray-blue face and fine rim, no lock icon. Lower right detail: taller rectangular ivory reading surface, tiny thin blue-gray corner clips, no heavy frame, no motif in center. No large physical rim, no thick 3D construction. These are flat image wells behind characters, not a stand under them.",
+      "rects": [
+        [
+          60,
+          60,
+          514,
+          481
+        ],
+        [
+          656,
+          60,
+          513,
+          482
+        ],
+        [
+          60,
+          675,
+          514,
+          493
+        ],
+        [
+          681,
+          643,
+          461,
+          556
+        ]
+      ]
+    },
+    {
+      "name": "growth",
+      "path": "C:\\Users\\geniu\\.codex\\generated_images\\01a0f2b0-afe6-7281-8ba3-48d0d8354159\\exec-fdec04d2-88e7-41ac-84fb-cfd4653b497d.png",
+      "prompt": "Use case: stylized-concept. Production PNG UI asset sheet for Seoul Hero, a cute SD modern Seoul survival game. Transparent background with exactly four separated components arranged in a 2 by 2 grid, large transparent gutters. Absolutely NO text, NO characters, NO items, NO letters, NO numerical labels. Crisp polished painted game UI artwork: ivory and pale blue-gray face, dark navy structure, restrained mint active accent, subtle real raster material variation, very thin edge. ALL elements viewed perfectly front-on, orthographic FLAT information surfaces. NO pedestal, NO tray, NO perspective shelf, NO feet, NO plinth. Quiet central safe space for native text and illustrations. Upper left: WIDE flat operational growth information board, soft ivory center and understated thin navy/blue-gray rim, a slim calm blue-gray vertical separator line in left third, fine corner joins, absolutely no curved semicircle or physical shelf. Upper right: wide thin quiet section header strip cream and navy, symmetrical central safe text area, no icon. Lower left: small flat blue-gray rectangular EMPTY progression-stage segment, shallow 1px styled edge, no medallion, no laurels. Lower right: identical progression-stage segment with muted mint active rim and pale mint fill. No perspective or podium. This is an elegant strategic operation UI, not toys.",
+      "rects": [
+        [
+          35,
+          149,
+          783,
+          381
+        ],
+        [
+          866,
+          264,
+          642,
+          108
+        ],
+        [
+          94,
+          668,
+          618,
+          204
+        ],
+        [
+          852,
+          668,
+          619,
+          204
+        ]
+      ]
+    },
+    {
+      "name": "sliders",
+      "path": "C:\\Users\\geniu\\.codex\\generated_images\\01a0f2b0-afe6-7281-8ba3-48d0d8354159\\exec-7b1e09b0-b98c-47ff-9c2f-59ffaff402a8.png",
+      "prompt": "Use case: stylized-concept. Production PNG UI asset sheet for Seoul Hero, a cute SD modern Seoul survival game. Transparent background with exactly four separated components arranged in a 2 by 2 grid, large transparent gutters. Absolutely NO text, NO characters, NO items, NO letters, NO numerical labels. Crisp polished painted game UI artwork: ivory and pale blue-gray face, dark navy structure, restrained mint active accent, subtle real raster material variation, very thin edge. ALL elements viewed perfectly front-on, orthographic FLAT information surfaces. NO pedestal, NO tray, NO perspective shelf, NO feet, NO plinth. Quiet central safe space for native text and illustrations. Upper left: very long ultra-thin horizontal empty slider TRACK, desaturated navy and blue-gray recessed line with minimal small end caps, thickness around 22 pixels at source. Upper right: same long thin continuous mint slider FILL strip, no dark border and no knobs. Lower left: a SINGLE SMALL ROUND front-on slider THUMB, ivory enamel circle, thin navy rim and tiny mint center accent, perfect circle not horizontal capsule, no perspective. Lower right: same round thumb in active state with slightly brighter mint rim. Both thumbs centered well inside their quarters, circle diameter around180sourcepixels, preserve circular geometry. Transparent surrounding areas. No text or icons. Fine restrained game finish.",
+      "rects": [
+        [
+          75,
+          269,
+          661,
+          39
+        ],
+        [
+          808,
+          270,
+          654,
+          37
+        ],
+        [
+          300,
+          594,
+          224,
+          225
+        ],
+        [
+          1011,
+          592,
+          228,
+          229
+        ]
+      ]
+    }
+  ],
+  "reusedAssets": [
+    "navigation",
+    "personnel",
+    "armory",
+    "arcane",
+    "codex",
+    "console",
+    "command",
+    "controls"
+  ],
+  "fontRoles": {
+    "brand": "BMJUA",
+    "heading": "HaeongSans",
+    "body": "Paperlogy4",
+    "control": "Paperlogy5",
+    "number": "BarlowCondensedSemiBold"
+  },
+  "clarityRevision": {
+    "date": "2026-10-03",
+    "generator": "built-in image_gen",
+    "prompts": {
+      "bars": "Use case: ui-mockup. Asset type: transparent raster UI sprite atlas for a Korean Seoul survival arcade game. Create a very clean high resolution 1536x1024 transparent PNG with SIX completely separate UI components, no text or numbers. Composition: four long thin horizontal bars, each about 1280 pixels wide, each about 40 pixels tall, centered and separated by at least 90 pixels transparent space; ordered top to bottom: (1) empty HP track, a restrained navy rim with light blue gray recessed interior and small rounded ends; (2) mint HP fill, a smooth mint enamel stripe with subtle light top edge; (3) sound slider empty track, simple blue gray recessed stripe with softly rounded ends; (4) sound slider mint fill, clean mint stripe with a very slight gloss. In the lower quarter, two separate circular slider thumb images of exactly the same geometric size, about 160 pixels diameter: ivory disk with fine navy rim and a tiny mint center; active version just a brighter mint center. Make all bars straight and uniformly thick, flat front-facing UI, very little bevel, no perspective. Shape edges must be precise and antialiased. Mild surface shading only. No screws, no bolts, no black caps, no symbols, no decorative terminals, no panels behind the elements, no glow outside silhouettes. Truly transparent background outside components. This is actual game UI material, not a full screen mockup.",
+      "accents": "Use case: ui-mockup. Asset type: transparent high resolution raster UI component atlas for a cream navy mint orange Korean Seoul survival arcade game. 1536x1024 transparent PNG. Three completely isolated components only, no letters, numbers or icons. Top left: a wide horizontal orange enamel purchase button surface, about 610x150 pixels, smooth restrained corners, extremely shallow bevel with a subtle lighter upper edge and darker lower edge, no rim decorations and absolutely no screws or bolts. Top right: a rectangular mint selection outline roughly 520x420 pixels, almost square, empty TRANSPARENT center, straight thin sides, gently clipped corner tips, elegant consistent 6-pixel mint stroke, no background inside, no extra glow or protruding ornaments; usable as a 9-slice outline around an existing flat card. Bottom spanning the width: one straight horizontal pale blue gray separator about 1300 pixels long and 6 pixels thick, equal color and opacity all along including the ends, no black caps, no fade, no shadow. Large transparent gaps between all components. Front facing, pixel precise antialiased edges. Flat useful UI sprites, not presentation plates, no perspective, no scene. Preserve true transparent background."
+    },
+    "sources": {
+      "bars": "C:/Users/geniu/.codex/generated_images/01a0f2b0-afe6-7281-8ba3-48d0d8354159/exec-2914cd5f-4eb9-43e0-a8f2-9d59089e0260.png",
+      "accents": "C:/Users/geniu/.codex/generated_images/01a0f2b0-afe6-7281-8ba3-48d0d8354159/exec-ebb7b12a-022a-4697-9ff0-80206e56df3c.png"
+    },
+    "saved": [
+      "assets/ui/image-skin/runtime/bars_02.png",
+      "assets/ui/image-skin/runtime/accents_02.png"
+    ],
+    "roles": {
+      "bars": {
+        "image_id": "runtimeUiBars2",
+        "asset_scale": 4,
+        "roles": {
+          "hp_track": {
+            "rect": [
+              60,
+              131,
+              1417,
+              74
+            ],
+            "logical_size": [
+              190,
+              8
+            ],
+            "slice": [
+              32,
+              0,
+              32,
+              0
+            ],
+            "asset_scale": 4,
+            "safe_padding": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "hp_fill": {
+            "rect": [
+              63,
+              283,
+              1410,
+              67
+            ],
+            "logical_size": [
+              190,
+              8
+            ],
+            "slice": [
+              32,
+              0,
+              32,
+              0
+            ],
+            "asset_scale": 4,
+            "safe_padding": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "track": {
+            "rect": [
+              60,
+              475,
+              1417,
+              75
+            ],
+            "logical_size": [
+              275,
+              8
+            ],
+            "slice": [
+              32,
+              0,
+              32,
+              0
+            ],
+            "asset_scale": 4,
+            "safe_padding": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "fill": {
+            "rect": [
+              63,
+              624,
+              1410,
+              66
+            ],
+            "logical_size": [
+              275,
+              8
+            ],
+            "slice": [
+              32,
+              0,
+              32,
+              0
+            ],
+            "asset_scale": 4,
+            "safe_padding": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "thumb": {
+            "rect": [
+              552,
+              791,
+              162,
+              162
+            ],
+            "logical_size": [
+              22,
+              22
+            ],
+            "slice": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "asset_scale": 4,
+            "safe_padding": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "thumb_active": {
+            "rect": [
+              822,
+              791,
+              162,
+              162
+            ],
+            "logical_size": [
+              22,
+              22
+            ],
+            "slice": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "asset_scale": 4,
+            "safe_padding": [
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        }
+      },
+      "accents": {
+        "image_id": "runtimeUiAccents2",
+        "asset_scale": 4,
+        "roles": {
+          "purchase": {
+            "rect": [
+              50,
+              130,
+              744,
+              176
+            ],
+            "slice": [
+              48,
+              24,
+              48,
+              24
+            ],
+            "asset_scale": 4,
+            "safe_padding": [
+              12,
+              4,
+              12,
+              4
+            ]
+          },
+          "purchase_disabled": {
+            "rect": [
+              50,
+              130,
+              744,
+              176
+            ],
+            "slice": [
+              48,
+              24,
+              48,
+              24
+            ],
+            "asset_scale": 4,
+            "safe_padding": [
+              12,
+              4,
+              12,
+              4
+            ],
+            "saturation": 0,
+            "disabled": true,
+            "tint": [
+              1.25,
+              1.25,
+              1.25,
+              0.75
+            ]
+          },
+          "disabled": {
+            "rect": [
+              50,
+              130,
+              744,
+              176
+            ],
+            "slice": [
+              48,
+              24,
+              48,
+              24
+            ],
+            "asset_scale": 4,
+            "safe_padding": [
+              12,
+              4,
+              12,
+              4
+            ],
+            "saturation": 0,
+            "disabled": true,
+            "tint": [
+              1.25,
+              1.25,
+              1.25,
+              0.75
+            ]
+          },
+          "selection": {
+            "rect": [
+              886,
+              97,
+              578,
+              473
+            ],
+            "slice": [
+              36,
+              36,
+              36,
+              36
+            ],
+            "asset_scale": 4,
+            "safe_padding": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "rule_h": {
+            "rect": [
+              85,
+              910,
+              1374,
+              8
+            ],
+            "slice": [
+              4,
+              0,
+              4,
+              0
+            ],
+            "asset_scale": 4,
+            "safe_padding": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "rule_v": {
+            "rect": [
+              85,
+              910,
+              1374,
+              8
+            ],
+            "rotation": 90,
+            "slice": [
+              0,
+              4,
+              0,
+              4
+            ],
+            "asset_scale": 4,
+            "safe_padding": [
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        }
+      }
+    },
+    "display": "HP and native HSlider render internally at density 4 and scale 0.25; card background stays normal atlas cell; selection uses shader tint and separate transparent outline."
+  }
+}

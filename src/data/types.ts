@@ -1,7 +1,7 @@
 import type { PlayerStats, StatKey, WeaponCapability } from './stats';
 export interface Vec2 { x: number; y: number }
 export interface Visual {
-  motif?: 'tank'|'ranged'|'swarm'|'charge'|'bomber'|'splitter'|'support'|'summoner'|'defender'|'ambush'|'queen'; color: number; shape: 'circle' | 'diamond' | 'triangle' | 'hexagon'; sprite?: import('./images').ImageId; motionStyle?: 'scooter' | 'truck' }
+  motif?: 'tank'|'ranged'|'swarm'|'charge'|'bomber'|'splitter'|'support'|'summoner'|'defender'|'ambush'|'queen'; color: number; shape: 'circle' | 'diamond' | 'triangle' | 'hexagon'; sprite?: import('./images').ImageId }
 export interface Character {
   id: string; name: string; description: string; background: string; personality: string;
   baseStats: PlayerStats; radius: number; signatureWeaponId?: string; portraitSprite?: import('./images').ImageId; visual: Visual;
@@ -26,7 +26,9 @@ export interface WeaponStats {
   range: number; duration: number; penetration: number; projectileRadius: number;
 }
 export interface WeaponBranch { id: 'A' | 'B'; name: string; description: string; levels: Partial<WeaponStats>[] }
+export interface ShopCardText { summary: string; penalty: string }
 export interface Weapon {
+  shopCardText?: ShopCardText;
   maxLevel: number; branchAtLevel: number; branches: WeaponBranch[];
   id: string; name: string; description: string; targeting: 'nearest';
   signatureOwnerId?: string;
@@ -49,6 +51,8 @@ export interface MapData extends ArenaSize {
   thumbnail: import('./images').ImageId;
   backgroundTheme: 'neighborhood'; totalWaves: number; bossWave: number;
   waveDefinitions: Wave[]; clearReward: number;
+  /** Standalone scenery; blocksMovement:false makes the footprint visual only. */
+  objects?: { id: string; position: Vec2; footprint: { width: number; height: number }; blocksMovement?: boolean }[];
   /** Relative to Song Jinwoo / Gwanghwamun / gate depth 1. Omitted values are 1.0. */
   balanceModifiers?: Partial<StageBalanceModifiers>;
   /** Optional archive roster. Omitted lists show all currently registered content. */

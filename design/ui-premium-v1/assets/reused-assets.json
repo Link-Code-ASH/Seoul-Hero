@@ -1,0 +1,106 @@
+{
+  "imageManifest": "src/data/images.ts",
+  "dataSource": "src/data/weapons/index.ts",
+  "fonts": [
+    "assets/ui/fonts/Paperlogy-4Regular.ttf",
+    "assets/ui/fonts/Paperlogy-8ExtraBold.ttf"
+  ],
+  "images": [
+    {
+      "id": "lobbyGate",
+      "path": "assets/ui/lobby/lobby_gate_terminal_01.png"
+    },
+    {
+      "id": "seoulIntersection",
+      "path": "assets/backgrounds/gwanghwamun_plaza_01.webp"
+    },
+    {
+      "id": "guildOperatorLobbyFace",
+      "path": "assets/guild/guild_operator_han_seoa_lobby_face_01.webp"
+    },
+    {
+      "id": "guildCafeBackdrop",
+      "path": "assets/guild/guild_hall_cafe_04.webp"
+    },
+    {
+      "id": "lobbyFutureStrategy",
+      "path": "assets/ui/lobby/lobby_future_strategy_01.png"
+    },
+    {
+      "id": "metaGrowthLab",
+      "path": "assets/ui/meta/meta_growth_lab_01.png"
+    },
+    {
+      "id": "lobbyAssociation",
+      "path": "assets/ui/lobby/lobby_association_01.png"
+    },
+    {
+      "id": "metaAssociationOffice",
+      "path": "assets/ui/meta/meta_association_office_01.png"
+    },
+    {
+      "id": "lobbyRecoveryUnit",
+      "path": "assets/ui/lobby/lobby_recovery_unit_01.png"
+    },
+    {
+      "id": "metaOfflineTerminal",
+      "path": "assets/ui/meta/meta_offline_terminal_01.png"
+    },
+    {
+      "id": "lobbySupplyVault",
+      "path": "assets/ui/lobby/lobby_supply_vault_02.png"
+    },
+    {
+      "id": "metaSupplyVault",
+      "path": "assets/ui/meta/meta_supply_vault_01.png"
+    },
+    {
+      "id": "associationCoin",
+      "path": "assets/ui/ui_association_coin_01.png"
+    },
+    {
+      "id": "supplyTicket",
+      "path": "assets/ui/lobby/lobby_supply_ticket_01.png"
+    },
+    {
+      "id": "weaponManaSword",
+      "path": "assets/ui/weapons/weapon_mana_sword_casual_01.webp"
+    },
+    {
+      "id": "weaponGuardianShuriken",
+      "path": "assets/ui/weapons/weapon_guardian_shuriken_casual_01.webp"
+    },
+    {
+      "id": "weaponManaBolt",
+      "path": "assets/ui/weapons/weapon_mana_bolt_casual_01.webp"
+    },
+    {
+      "id": "weaponManaShotgun",
+      "path": "assets/ui/weapons/weapon_mana_shotgun_casual_01.webp"
+    },
+    {
+      "id": "weaponPiercingShot",
+      "path": "assets/ui/weapons/weapon_piercing_shot_casual_01.webp"
+    },
+    {
+      "id": "weaponChainLightning",
+      "path": "assets/ui/weapons/weapon_chain_lightning_casual_01.webp"
+    },
+    {
+      "id": "weaponManaBombard",
+      "path": "assets/ui/weapons/weapon_mana_bombard_casual_01.webp"
+    },
+    {
+      "id": "weaponAutoTurret",
+      "path": "assets/ui/weapons/weapon_auto_turret_omni_02.webp"
+    },
+    {
+      "id": "weaponMineLayer",
+      "path": "assets/ui/weapons/weapon_mine_layer_casual_01.webp"
+    },
+    {
+      "id": "weaponManaField",
+      "path": "assets/ui/weapons/weapon_mana_field_casual_01.webp"
+    }
+  ]
+}

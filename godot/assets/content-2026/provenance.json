@@ -1,0 +1,174 @@
+{
+  "date": "2026-10-01",
+  "generator": "OpenAI built-in image_gen",
+  "assets": [
+    {
+      "id": "anchorBadge",
+      "kind": "item",
+      "path": "assets/content-2026/anchorBadge-01.png",
+      "prompt": "Create one game inventory icon: heavy forged bronze anchor badge threaded with faint teal energy. Modern Seoul gate-survival fantasy equipment. Hand-painted polished 2D game art, tactile metal/leather/glass materials, strong readable silhouette, restrained luminous accents, 3/4 view, single centered object occupying 76% of square canvas. Clean transparent background, no shadow floor, no text, no letters, no numbers, no UI frame, no extra objects. Crisp elegant illustration, readable at 42 px. 512x512.",
+      "transparent": true
+    },
+    {
+      "id": "kineticSpool",
+      "kind": "item",
+      "path": "assets/content-2026/kineticSpool-01.png",
+      "prompt": "Create one game inventory icon: compact industrial gyroscopic copper spool with blue kinetic ribbons. Modern Seoul gate-survival fantasy equipment. Hand-painted polished 2D game art, tactile metal/leather/glass materials, strong readable silhouette, restrained luminous accents, 3/4 view, single centered object occupying 76% of square canvas. Clean transparent background, no shadow floor, no text, no letters, no numbers, no UI frame, no extra objects. Crisp elegant illustration, readable at 42 px. 512x512.",
+      "transparent": true
+    },
+    {
+      "id": "scarSeal",
+      "kind": "item",
+      "path": "assets/content-2026/scarSeal-01.png",
+      "prompt": "Create one game inventory icon: cracked blood-red stone seal wrapped with black leather. Modern Seoul gate-survival fantasy equipment. Hand-painted polished 2D game art, tactile metal/leather/glass materials, strong readable silhouette, restrained luminous accents, 3/4 view, single centered object occupying 76% of square canvas. Clean transparent background, no shadow floor, no text, no letters, no numbers, no UI frame, no extra objects. Crisp elegant illustration, readable at 42 px. 512x512.",
+      "transparent": true
+    },
+    {
+      "id": "openingTicket",
+      "kind": "item",
+      "path": "assets/content-2026/openingTicket-01.png",
+      "prompt": "Create one game inventory icon: single metallic Seoul subway ticket with luminous amber punched aperture. Modern Seoul gate-survival fantasy equipment. Hand-painted polished 2D game art, tactile metal/leather/glass materials, strong readable silhouette, restrained luminous accents, 3/4 view, single centered object occupying 76% of square canvas. Clean transparent background, no shadow floor, no text, no letters, no numbers, no UI frame, no extra objects. Crisp elegant illustration, readable at 42 px. 512x512.",
+      "transparent": true
+    },
+    {
+      "id": "executionBell",
+      "kind": "item",
+      "path": "assets/content-2026/executionBell-01.png",
+      "prompt": "Create one game inventory icon: tiny tarnished iron hand bell containing a violet crystal. Modern Seoul gate-survival fantasy equipment. Hand-painted polished 2D game art, tactile metal/leather/glass materials, strong readable silhouette, restrained luminous accents, 3/4 view, single centered object occupying 76% of square canvas. Clean transparent background, no shadow floor, no text, no letters, no numbers, no UI frame, no extra objects. Crisp elegant illustration, readable at 42 px. 512x512.",
+      "transparent": true
+    },
+    {
+      "id": "duelCompass",
+      "kind": "item",
+      "path": "assets/content-2026/duelCompass-01.png",
+      "prompt": "Create one game inventory icon: brass pocket compass whose two short crimson needles point together. Modern Seoul gate-survival fantasy equipment. Hand-painted polished 2D game art, tactile metal/leather/glass materials, strong readable silhouette, restrained luminous accents, 3/4 view, single centered object occupying 76% of square canvas. Clean transparent background, no shadow floor, no text, no letters, no numbers, no UI frame, no extra objects. Crisp elegant illustration, readable at 42 px. 512x512.",
+      "transparent": true
+    },
+    {
+      "id": "horizonMirror",
+      "kind": "item",
+      "path": "assets/content-2026/horizonMirror-01.png",
+      "prompt": "Create one game inventory icon: small oval smoked-silver handheld mirror showing distant cyan skyline. Modern Seoul gate-survival fantasy equipment. Hand-painted polished 2D game art, tactile metal/leather/glass materials, strong readable silhouette, restrained luminous accents, 3/4 view, single centered object occupying 76% of square canvas. Clean transparent background, no shadow floor, no text, no letters, no numbers, no UI frame, no extra objects. Crisp elegant illustration, readable at 42 px. 512x512.",
+      "transparent": true
+    },
+    {
+      "id": "dawnThermos",
+      "kind": "item",
+      "path": "assets/content-2026/dawnThermos-01.png",
+      "prompt": "Create one game inventory icon: weathered navy rescue thermos with warm golden light at cap. Modern Seoul gate-survival fantasy equipment. Hand-painted polished 2D game art, tactile metal/leather/glass materials, strong readable silhouette, restrained luminous accents, 3/4 view, single centered object occupying 76% of square canvas. Clean transparent background, no shadow floor, no text, no letters, no numbers, no UI frame, no extra objects. Crisp elegant illustration, readable at 42 px. 512x512.",
+      "transparent": true
+    },
+    {
+      "id": "fieldSuture",
+      "kind": "item",
+      "path": "assets/content-2026/fieldSuture-01.png",
+      "prompt": "Create one game inventory icon: handheld charcoal surgical stapler loaded with glowing green sutures. Modern Seoul gate-survival fantasy equipment. Hand-painted polished 2D game art, tactile metal/leather/glass materials, strong readable silhouette, restrained luminous accents, 3/4 view, single centered object occupying 76% of square canvas. Clean transparent background, no shadow floor, no text, no letters, no numbers, no UI frame, no extra objects. Crisp elegant illustration, readable at 42 px. 512x512.",
+      "transparent": true
+    },
+    {
+      "id": "revengeFuse",
+      "kind": "item",
+      "path": "assets/content-2026/revengeFuse-01.png",
+      "prompt": "Create one game inventory icon: heavy copper electrical fuse with coiled orange arc. Modern Seoul gate-survival fantasy equipment. Hand-painted polished 2D game art, tactile metal/leather/glass materials, strong readable silhouette, restrained luminous accents, 3/4 view, single centered object occupying 76% of square canvas. Clean transparent background, no shadow floor, no text, no letters, no numbers, no UI frame, no extra objects. Crisp elegant illustration, readable at 42 px. 512x512.",
+      "transparent": true
+    },
+    {
+      "id": "salvageFilter",
+      "kind": "item",
+      "path": "assets/content-2026/salvageFilter-01.png",
+      "prompt": "Create one game inventory icon: small glass chamber filtering purple magic fragments into pale green drops. Modern Seoul gate-survival fantasy equipment. Hand-painted polished 2D game art, tactile metal/leather/glass materials, strong readable silhouette, restrained luminous accents, 3/4 view, single centered object occupying 76% of square canvas. Clean transparent background, no shadow floor, no text, no letters, no numbers, no UI frame, no extra objects. Crisp elegant illustration, readable at 42 px. 512x512.",
+      "transparent": true
+    },
+    {
+      "id": "courierWheel",
+      "kind": "item",
+      "path": "assets/content-2026/courierWheel-01.png",
+      "prompt": "Create one game inventory icon: single miniature teal roller wheel with polished black bearings. Modern Seoul gate-survival fantasy equipment. Hand-painted polished 2D game art, tactile metal/leather/glass materials, strong readable silhouette, restrained luminous accents, 3/4 view, single centered object occupying 76% of square canvas. Clean transparent background, no shadow floor, no text, no letters, no numbers, no UI frame, no extra objects. Crisp elegant illustration, readable at 42 px. 512x512.",
+      "transparent": true
+    },
+    {
+      "id": "firstShield",
+      "kind": "item",
+      "path": "assets/content-2026/firstShield-01.png",
+      "prompt": "Create one game inventory icon: small hexagonal guardian token with translucent blue shield core. Modern Seoul gate-survival fantasy equipment. Hand-painted polished 2D game art, tactile metal/leather/glass materials, strong readable silhouette, restrained luminous accents, 3/4 view, single centered object occupying 76% of square canvas. Clean transparent background, no shadow floor, no text, no letters, no numbers, no UI frame, no extra objects. Crisp elegant illustration, readable at 42 px. 512x512.",
+      "transparent": true
+    },
+    {
+      "id": "vaultLedger",
+      "kind": "item",
+      "path": "assets/content-2026/vaultLedger-01.png",
+      "prompt": "Create one game inventory icon: dark leather account ledger with gold steel clasp and embedded violet stones. Modern Seoul gate-survival fantasy equipment. Hand-painted polished 2D game art, tactile metal/leather/glass materials, strong readable silhouette, restrained luminous accents, 3/4 view, single centered object occupying 76% of square canvas. Clean transparent background, no shadow floor, no text, no letters, no numbers, no UI frame, no extra objects. Crisp elegant illustration, readable at 42 px. 512x512.",
+      "transparent": true
+    },
+    {
+      "id": "phoenixMatch",
+      "kind": "item",
+      "path": "assets/content-2026/phoenixMatch-01.png",
+      "prompt": "Create one game inventory icon: single charred black match with vivid red-gold phoenix-shaped flame. Modern Seoul gate-survival fantasy equipment. Hand-painted polished 2D game art, tactile metal/leather/glass materials, strong readable silhouette, restrained luminous accents, 3/4 view, single centered object occupying 76% of square canvas. Clean transparent background, no shadow floor, no text, no letters, no numbers, no UI frame, no extra objects. Crisp elegant illustration, readable at 42 px. 512x512.",
+      "transparent": true
+    },
+    {
+      "id": "copperCrab",
+      "kind": "enemy",
+      "path": "assets/content-2026/copperCrab-01.png",
+      "prompt": "One complete full-body enemy creature sprite for a 2D modern Seoul gate-survival game: a broad six-legged crab made of oxidized copper utility pipes, amber crystal eyes, asymmetrical heavy pincer, compact low body, skittering stance. Polished hand-painted casual-dark fantasy game art, chunky anatomically attached limbs, simple readable silhouette, 3/4 view facing lower right, subtle top-down view matching an isometric character without floor perspective. Rich tactile materials and restrained rim light, big head/body and small limbs, not pixel art. Transparent background, no scene, no ground, no cast shadow, no text, no letters, no UI, one creature only. Keep entire silhouette within square canvas with 10% transparent margins. 1024x1024.",
+      "transparent": true
+    },
+    {
+      "id": "ironBoar",
+      "kind": "enemy",
+      "path": "assets/content-2026/ironBoar-01.png",
+      "prompt": "One complete full-body enemy creature sprite for a 2D modern Seoul gate-survival game: a large muscular iron-armored boar with short powerful legs, one forward steel tusk, glowing red fissures, braced charging stance. Polished hand-painted casual-dark fantasy game art, chunky anatomically attached limbs, simple readable silhouette, 3/4 view facing lower right, subtle top-down view matching an isometric character without floor perspective. Rich tactile materials and restrained rim light, big head/body and small limbs, not pixel art. Transparent background, no scene, no ground, no cast shadow, no text, no letters, no UI, one creature only. Keep entire silhouette within square canvas with 10% transparent margins. 1024x1024.",
+      "transparent": true
+    },
+    {
+      "id": "signalMoth",
+      "kind": "enemy",
+      "path": "assets/content-2026/signalMoth-01.png",
+      "prompt": "One complete full-body enemy creature sprite for a 2D modern Seoul gate-survival game: a strange nocturnal moth with navy shell and folded emerald and amber stained-glass wings, luminous antennae, threatening compact silhouette. Polished hand-painted casual-dark fantasy game art, chunky anatomically attached limbs, simple readable silhouette, 3/4 view facing lower right, subtle top-down view matching an isometric character without floor perspective. Rich tactile materials and restrained rim light, big head/body and small limbs, not pixel art. Transparent background, no scene, no ground, no cast shadow, no text, no letters, no UI, one creature only. Keep entire silhouette within square canvas with 10% transparent margins. 1024x1024.",
+      "transparent": true
+    },
+    {
+      "id": "glassJelly",
+      "kind": "enemy",
+      "path": "assets/content-2026/glassJelly-01.png",
+      "prompt": "One complete full-body enemy creature sprite for a 2D modern Seoul gate-survival game: a levitating translucent pale aqua jellyfish creature, floating faceted glass bell enclosing a mint crystal, four short dangling tentacles. Polished hand-painted casual-dark fantasy game art, chunky anatomically attached limbs, simple readable silhouette, 3/4 view facing lower right, subtle top-down view matching an isometric character without floor perspective. Rich tactile materials and restrained rim light, big head/body and small limbs, not pixel art. Transparent background, no scene, no ground, no cast shadow, no text, no letters, no UI, one creature only. Keep entire silhouette within square canvas with 10% transparent margins. 1024x1024.",
+      "transparent": true
+    },
+    {
+      "id": "chainWarden",
+      "kind": "enemy",
+      "path": "assets/content-2026/chainWarden-01.png",
+      "prompt": "One complete full-body enemy creature sprite for a 2D modern Seoul gate-survival game: a stout upright nonhuman stone creature wrapped in thick black chains, squat legs, broad rectangular basalt arms, broken circular steel shield, cyan eye slit. Polished hand-painted casual-dark fantasy game art, chunky anatomically attached limbs, simple readable silhouette, 3/4 view facing lower right, subtle top-down view matching an isometric character without floor perspective. Rich tactile materials and restrained rim light, big head/body and small limbs, not pixel art. Transparent background, no scene, no ground, no cast shadow, no text, no letters, no UI, one creature only. Keep entire silhouette within square canvas with 10% transparent margins. 1024x1024.",
+      "transparent": true
+    },
+    {
+      "id": "parkDojun",
+      "kind": "portrait",
+      "path": "assets/content-2026/parkDojun-portrait-01.png",
+      "prompt": "Create one complete full-body character portrait for a modern Seoul gate-survival RPG. Korean middle-aged man, age 49, broad sturdy build, short salt-and-pepper hair, a trimmed gray moustache and beard, calm weathered face, ochre rescue work jacket with charcoal shoulders, navy utility trousers, dark reinforced work boots, subtle amber energy badge. Polished chibi anime game illustration, big head, believable short body, tactile fabric, restrained rim lighting, modern grounded clothing, hands relaxed, 3/4 facing lower right, entire person connected and standing naturally. Transparent background with no scene, no ground shadow, no UI, no lettering. Canvas portrait 1024x1536, full boots visible with margin. Match quality and illustration language of the reference, but create this distinct adult character.",
+      "transparent": true
+    },
+    {
+      "id": "parkDojun",
+      "kind": "parts",
+      "path": "godot/assets/visuals/source/parkDojun-quarter-source-01.png",
+      "prompt": "Create a clean animation parts sheet for ONE new character: Korean middle-aged man, age 49, broad sturdy build, short salt-and-pepper hair, a trimmed gray moustache and beard, calm weathered face, ochre rescue work jacket with charcoal shoulders, navy utility trousers, dark reinforced work boots, subtle amber energy badge. Polished chibi anime game art, 3/4 view facing lower right, matching the reference sheet's rendering style. EXACTLY 8 isolated transparent cutouts in a perfectly aligned 4-column by 2-row grid, no objects cross cell boundaries. Top row left to right: head including hair and short neck; jacket torso WITHOUT arms and WITHOUT head; trouser hips and waist; ONE upper sleeve arm. Bottom row left to right: ONE lower sleeve forearm plus gloved hand; ONE upper trouser leg thigh; ONE lower trouser leg shin; ONE boot pointing lower right. Each cutout centered in its cell, occupy most cell with 8% clear transparent margins, long joint edges for overlap, no dark holes as fills, no labels, no text, no scene, no full assembled character. Wide 1536x1024 canvas. All cutouts same orientation; no weapon or extra props.",
+      "transparent": true
+    },
+    {
+      "id": "yoonHarin",
+      "kind": "portrait",
+      "path": "assets/content-2026/yoonHarin-portrait-01.png",
+      "prompt": "Create one complete full-body character portrait for a modern Seoul gate-survival RPG. Korean young adult woman age 24, athletic compact build, short black bob with one small side braid, confident lively face, muted plum and teal courier windbreaker, charcoal fitted utility trousers, teal-black ankle boots, small silver geometric earring. Polished chibi anime game illustration, big head, believable short body, tactile fabric, restrained rim lighting, modern grounded clothing, hands relaxed, 3/4 facing lower right, entire person connected and standing naturally. Transparent background with no scene, no ground shadow, no UI, no lettering. Canvas portrait 1024x1536, full boots visible with margin. Match quality and illustration language of the reference, but create this distinct adult character.",
+      "transparent": true
+    },
+    {
+      "id": "yoonHarin",
+      "kind": "parts",
+      "path": "godot/assets/visuals/source/yoonHarin-quarter-source-01.png",
+      "prompt": "Create a clean animation parts sheet for ONE new character: Korean young adult woman age 24, athletic compact build, short black bob with one small side braid, confident lively face, muted plum and teal courier windbreaker, charcoal fitted utility trousers, teal-black ankle boots, small silver geometric earring. Polished chibi anime game art, 3/4 view facing lower right, matching the reference sheet's rendering style. EXACTLY 8 isolated transparent cutouts in a perfectly aligned 4-column by 2-row grid, no objects cross cell boundaries. Top row left to right: head including hair and short neck; jacket torso WITHOUT arms and WITHOUT head; trouser hips and waist; ONE upper sleeve arm. Bottom row left to right: ONE lower sleeve forearm plus gloved hand; ONE upper trouser leg thigh; ONE lower trouser leg shin; ONE boot pointing lower right. Each cutout centered in its cell, occupy most cell with 8% clear transparent margins, long joint edges for overlap, no dark holes as fills, no labels, no text, no scene, no full assembled character. Wide 1536x1024 canvas. All cutouts same orientation; no weapon or extra props.",
+      "transparent": true
+    }
+  ]
+}

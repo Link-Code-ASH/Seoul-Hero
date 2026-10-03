@@ -165,6 +165,7 @@ export class GuildRenderer {
   private readonly onViewportResize = (): void => { if (this.ready) this.resize(); };
 
   private pointerDown = (event: PointerEvent): void => {
+    if (event.pointerType !== 'mouse') return;
     if (!this.ready || !this.host || !this.onFloorTap) return;
     event.preventDefault();
     const bounds = this.app.canvas.getBoundingClientRect();

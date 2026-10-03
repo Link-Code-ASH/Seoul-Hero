@@ -1,0 +1,11702 @@
+{
+	"approvalPending": true,
+	"audioPlayback": false,
+	"issueCount": 0,
+	"previewOnly": true,
+	"productionLoaded": false,
+	"saveAdaptersLoaded": false,
+	"screens": [
+		{
+			"controls": [
+				{
+					"caption": "일시정지",
+					"minimum44": true,
+					"rect": [
+						850.0,
+						7.0,
+						44.0,
+						44.0
+					],
+					"role": "unframed",
+					"staticPreview": true
+				}
+			],
+			"fitIssues": [],
+			"labels": [
+				{
+					"actualSize": [
+						100.0,
+						29.0
+					],
+					"align": 0,
+					"fontHeight": 29.0,
+					"fontSize": 24,
+					"lines": 1,
+					"rect": [
+						20.0,
+						6.0,
+						100.0,
+						28.0
+					],
+					"requiredHeight": 29.0,
+					"requiredWidth": 68.0,
+					"role": "number",
+					"text": "84 / 100"
+				},
+				{
+					"actualSize": [
+						35.0,
+						24.0
+					],
+					"align": 0,
+					"fontHeight": 18.0,
+					"fontSize": 15,
+					"lines": 1,
+					"rect": [
+						245.0,
+						17.0,
+						35.0,
+						24.0
+					],
+					"requiredHeight": 18.0,
+					"requiredWidth": 20.0,
+					"role": "number",
+					"text": "240"
+				},
+				{
+					"actualSize": [
+						35.0,
+						24.0
+					],
+					"align": 0,
+					"fontHeight": 18.0,
+					"fontSize": 15,
+					"lines": 1,
+					"rect": [
+						245.0,
+						37.0,
+						35.0,
+						24.0
+					],
+					"requiredHeight": 18.0,
+					"requiredWidth": 13.0,
+					"role": "number",
+					"text": "36"
+				},
+				{
+					"actualSize": [
+						12.0,
+						18.0
+					],
+					"align": 2,
+					"fontHeight": 17.0,
+					"fontSize": 14,
+					"lines": 1,
+					"rect": [
+						35.0,
+						79.0,
+						12.0,
+						18.0
+					],
+					"requiredHeight": 17.0,
+					"requiredWidth": 4.0,
+					"role": "number",
+					"text": "1"
+				},
+				{
+					"actualSize": [
+						12.0,
+						18.0
+					],
+					"align": 2,
+					"fontHeight": 17.0,
+					"fontSize": 14,
+					"lines": 1,
+					"rect": [
+						62.0,
+						79.0,
+						12.0,
+						18.0
+					],
+					"requiredHeight": 17.0,
+					"requiredWidth": 6.0,
+					"role": "number",
+					"text": "2"
+				},
+				{
+					"actualSize": [
+						12.0,
+						18.0
+					],
+					"align": 2,
+					"fontHeight": 17.0,
+					"fontSize": 14,
+					"lines": 1,
+					"rect": [
+						89.0,
+						79.0,
+						12.0,
+						18.0
+					],
+					"requiredHeight": 17.0,
+					"requiredWidth": 6.0,
+					"role": "number",
+					"text": "3"
+				},
+				{
+					"actualSize": [
+						12.0,
+						18.0
+					],
+					"align": 2,
+					"fontHeight": 17.0,
+					"fontSize": 14,
+					"lines": 1,
+					"rect": [
+						116.0,
+						79.0,
+						12.0,
+						18.0
+					],
+					"requiredHeight": 17.0,
+					"requiredWidth": 6.0,
+					"role": "number",
+					"text": "4"
+				},
+				{
+					"actualSize": [
+						12.0,
+						18.0
+					],
+					"align": 2,
+					"fontHeight": 17.0,
+					"fontSize": 14,
+					"lines": 1,
+					"rect": [
+						143.0,
+						79.0,
+						12.0,
+						18.0
+					],
+					"requiredHeight": 17.0,
+					"requiredWidth": 6.0,
+					"role": "number",
+					"text": "5"
+				},
+				{
+					"actualSize": [
+						12.0,
+						18.0
+					],
+					"align": 2,
+					"fontHeight": 17.0,
+					"fontSize": 14,
+					"lines": 1,
+					"rect": [
+						170.0,
+						79.0,
+						12.0,
+						18.0
+					],
+					"requiredHeight": 17.0,
+					"requiredWidth": 6.0,
+					"role": "number",
+					"text": "6"
+				},
+				{
+					"actualSize": [
+						185.0,
+						26.0
+					],
+					"align": 1,
+					"fontHeight": 18.0,
+					"fontSize": 15,
+					"lines": 1,
+					"rect": [
+						365.0,
+						8.0,
+						185.0,
+						26.0
+					],
+					"requiredHeight": 18.0,
+					"requiredWidth": 85.0,
+					"role": "control",
+					"text": "웨이브 7 / 20"
+				},
+				{
+					"actualSize": [
+						115.0,
+						34.0
+					],
+					"align": 1,
+					"fontHeight": 33.0,
+					"fontSize": 27,
+					"lines": 1,
+					"rect": [
+						400.0,
+						33.0,
+						115.0,
+						34.0
+					],
+					"requiredHeight": 33.0,
+					"requiredWidth": 54.0,
+					"role": "number",
+					"text": "00:28"
+				}
+			],
+			"materials": [
+				{
+					"assetScale": 4.0,
+					"material": "enamel/hp_track",
+					"rect": [
+						20.0,
+						46.0,
+						180.0,
+						10.0
+					],
+					"slice": [
+						145.0,
+						28.0,
+						145.0,
+						28.0
+					],
+					"source": [
+						42.0,
+						66.0,
+						1455.0,
+						102.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "enamel/hp_fill",
+					"rect": [
+						22.0,
+						48.0,
+						147.839996337891,
+						6.0
+					],
+					"slice": [
+						55.0,
+						18.0,
+						55.0,
+						18.0
+					],
+					"source": [
+						52.0,
+						218.0,
+						1432.0,
+						66.0
+					]
+				}
+			],
+			"screen": "01-hud"
+		},
+		{
+			"controls": [
+				{
+					"caption": "이전",
+					"minimum44": true,
+					"rect": [
+						22,
+						14,
+						90,
+						44
+					],
+					"role": "unframed"
+				},
+				{
+					"caption": "시작 무기 선택",
+					"minimum44": true,
+					"rect": [
+						727.0,
+						351.0,
+						158.0,
+						45.0
+					],
+					"role": "controls/primary"
+				}
+			],
+			"fitIssues": [],
+			"labels": [
+				{
+					"actualSize": [
+						90.0,
+						44.0
+					],
+					"align": 0,
+					"fontHeight": 18.0,
+					"fontSize": 15,
+					"lines": 1,
+					"rect": [
+						22.0,
+						14.0,
+						90.0,
+						44.0
+					],
+					"requiredHeight": 18.0,
+					"requiredWidth": 39.0,
+					"role": "control",
+					"text": "‹ 이전"
+				},
+				{
+					"actualSize": [
+						568.0,
+						41.0
+					],
+					"align": 0,
+					"fontHeight": 34.0,
+					"fontSize": 28,
+					"lines": 1,
+					"rect": [
+						127.0,
+						12.0,
+						568.0,
+						41.0
+					],
+					"requiredHeight": 34.0,
+					"requiredWidth": 120.0,
+					"role": "brand",
+					"text": "각성자 선택"
+				},
+				{
+					"actualSize": [
+						707.0,
+						28.0
+					],
+					"align": 0,
+					"fontHeight": 17.0,
+					"fontSize": 14,
+					"lines": 1,
+					"rect": [
+						128.0,
+						54.0,
+						707.0,
+						28.0
+					],
+					"requiredHeight": 17.0,
+					"requiredWidth": 265.0,
+					"role": "body",
+					"text": "함께 서울의 게이트로 들어갈 각성자를 고르세요."
+				},
+				{
+					"actualSize": [
+						150.0,
+						38.0
+					],
+					"align": 2,
+					"fontHeight": 24.0,
+					"fontSize": 20,
+					"lines": 1,
+					"rect": [
+						743.0,
+						15.0,
+						150.0,
+						38.0
+					],
+					"requiredHeight": 24.0,
+					"requiredWidth": 52.0,
+					"role": "number",
+					"text": "03 / 06"
+				},
+				{
+					"actualSize": [
+						116.0,
+						25.0
+					],
+					"align": 1,
+					"fontHeight": 17.0,
+					"fontSize": 14,
+					"lines": 1,
+					"rect": [
+						8.0,
+						90.0,
+						116.0,
+						25.0
+					],
+					"requiredHeight": 17.0,
+					"requiredWidth": 37.0,
+					"role": "control",
+					"text": "송진우"
+				},
+				{
+					"actualSize": [
+						116.0,
+						25.0
+					],
+					"align": 1,
+					"fontHeight": 17.0,
+					"fontSize": 14,
+					"lines": 1,
+					"rect": [
+						8.0,
+						90.0,
+						116.0,
+						25.0
+					],
+					"requiredHeight": 17.0,
+					"requiredWidth": 37.0,
+					"role": "control",
+					"text": "강태훈"
+				},
+				{
+					"actualSize": [
+						116.0,
+						25.0
+					],
+					"align": 1,
+					"fontHeight": 17.0,
+					"fontSize": 14,
+					"lines": 1,
+					"rect": [
+						8.0,
+						90.0,
+						116.0,
+						25.0
+					],
+					"requiredHeight": 17.0,
+					"requiredWidth": 37.0,
+					"role": "control",
+					"text": "박도준"
+				},
+				{
+					"actualSize": [
+						116.0,
+						25.0
+					],
+					"align": 1,
+					"fontHeight": 17.0,
+					"fontSize": 14,
+					"lines": 1,
+					"rect": [
+						8.0,
+						90.0,
+						116.0,
+						25.0
+					],
+					"requiredHeight": 17.0,
+					"requiredWidth": 37.0,
+					"role": "control",
+					"text": "윤하린"
+				},
+				{
+					"actualSize": [
+						230.0,
+						30.0
+					],
+					"align": 1,
+					"fontHeight": 28.0,
+					"fontSize": 23,
+					"lines": 1,
+					"rect": [
+						636.0,
+						97.0,
+						230.0,
+						30.0
+					],
+					"requiredHeight": 28.0,
+					"requiredWidth": 230.0,
+					"role": "brand",
+					"text": "송진우"
+				},
+				{
+					"actualSize": [
+						142.0,
+						23.0
+					],
+					"align": 0,
+					"fontHeight": 21.0,
+					"fontSize": 17,
+					"lines": 1,
+					"rect": [
+						0.0,
+						0.0,
+						142.0,
+						23.0
+					],
+					"requiredHeight": 21.0,
+					"requiredWidth": 142.0,
+					"role": "heading",
+					"text": "현장 적응"
+				},
+				{
+					"actualSize": [
+						142.0,
+						19.0
+					],
+					"align": 0,
+					"fontHeight": 17.0,
+					"fontSize": 14,
+					"lines": 1,
+					"rect": [
+						0.0,
+						0.0,
+						142.0,
+						19.0
+					],
+					"requiredHeight": 17.0,
+					"requiredWidth": 142.0,
+					"role": "control",
+					"text": "모든 무기 피해 +5%"
+				},
+				{
+					"actualSize": [
+						222.0,
+						38.0
+					],
+					"align": 0,
+					"fontHeight": 17.0,
+					"fontSize": 14,
+					"lines": 2,
+					"rect": [
+						0.0,
+						0.0,
+						214.0,
+						38.0
+					],
+					"requiredHeight": 36.0,
+					"requiredWidth": 214.0,
+					"role": "body",
+					"text": "현장에서 얻은 장비를 빠르게 익혀 자신의 방식으로 활용하는 각성자."
+				},
+				{
+					"actualSize": [
+						222.0,
+						23.0
+					],
+					"align": 0,
+					"fontHeight": 21.0,
+					"fontSize": 17,
+					"lines": 1,
+					"rect": [
+						0.0,
+						0.0,
+						214.0,
+						23.0
+					],
+					"requiredHeight": 21.0,
+					"requiredWidth": 214.0,
+					"role": "heading",
+					"text": "기본 스탯"
+				},
+				{
+					"actualSize": [
+						140.0,
+						28.0
+					],
+					"align": 0,
+					"fontHeight": 17.0,
+					"fontSize": 14,
+					"lines": 1,
+					"rect": [
+						0.0,
+						0.0,
+						130.0,
+						28.0
+					],
+					"requiredHeight": 17.0,
+					"requiredWidth": 53.0,
+					"role": "body",
+					"text": "공통 피해"
+				},
+				{
+					"actualSize": [
+						74.0,
+						28.0
+					],
+					"align": 2,
+					"fontHeight": 20.0,
+					"fontSize": 16,
+					"lines": 1,
+					"rect": [
+						0.0,
+						0.0,
+						74.0,
+						28.0
+					],
+					"requiredHeight": 20.0,
+					"requiredWidth": 31.0,
+					"role": "number",
+					"text": "100%"
+				},
+				{
+					"actualSize": [
+						140.0,
+						28.0
+					],
+					"align": 0,
+					"fontHeight": 17.0,
+					"fontSize": 14,
+					"lines": 1,
+					"rect": [
+						0.0,
+						0.0,
+						130.0,
+						28.0
+					],
+					"requiredHeight": 17.0,
+					"requiredWidth": 53.0,
+					"role": "body",
+					"text": "공격 속도"
+				},
+				{
+					"actualSize": [
+						74.0,
+						28.0
+					],
+					"align": 2,
+					"fontHeight": 20.0,
+					"fontSize": 16,
+					"lines": 1,
+					"rect": [
+						0.0,
+						0.0,
+						74.0,
+						28.0
+					],
+					"requiredHeight": 20.0,
+					"requiredWidth": 31.0,
+					"role": "number",
+					"text": "100%"
+				},
+				{
+					"actualSize": [
+						140.0,
+						28.0
+					],
+					"align": 0,
+					"fontHeight": 17.0,
+					"fontSize": 14,
+					"lines": 1,
+					"rect": [
+						0.0,
+						0.0,
+						130.0,
+						28.0
+					],
+					"requiredHeight": 17.0,
+					"requiredWidth": 53.0,
+					"role": "body",
+					"text": "근접 피해"
+				},
+				{
+					"actualSize": [
+						74.0,
+						28.0
+					],
+					"align": 2,
+					"fontHeight": 20.0,
+					"fontSize": 16,
+					"lines": 1,
+					"rect": [
+						0.0,
+						0.0,
+						74.0,
+						28.0
+					],
+					"requiredHeight": 20.0,
+					"requiredWidth": 31.0,
+					"role": "number",
+					"text": "100%"
+				},
+				{
+					"actualSize": [
+						140.0,
+						28.0
+					],
+					"align": 0,
+					"fontHeight": 17.0,
+					"fontSize": 14,
+					"lines": 1,
+					"rect": [
+						0.0,
+						0.0,
+						130.0,
+						28.0
+					],
+					"requiredHeight": 17.0,
+					"requiredWidth": 65.0,
+					"role": "body",
+					"text": "원거리 피해"
+				},
+				{
+					"actualSize": [
+						74.0,
+						28.0
+					],
+					"align": 2,
+					"fontHeight": 20.0,
+					"fontSize": 16,
+					"lines": 1,
+					"rect": [
+						0.0,
+						0.0,
+						74.0,
+						28.0
+					],
+					"requiredHeight": 20.0,
+					"requiredWidth": 31.0,
+					"role": "number",
+					"text": "100%"
+				},
+				{
+					"actualSize": [
+						140.0,
+						28.0
+					],
+					"align": 0,
+					"fontHeight": 17.0,
+					"fontSize": 14,
+					"lines": 1,
+					"rect": [
+						0.0,
+						0.0,
+						130.0,
+						28.0
+					],
+					"requiredHeight": 17.0,
+					"requiredWidth": 65.0,
+					"role": "body",
+					"text": "치명타 확률"
+				},
+				{
+					"actualSize": [
+						74.0,
+						28.0
+					],
+					"align": 2,
+					"fontHeight": 20.0,
+					"fontSize": 16,
+					"lines": 1,
+					"rect": [
+						0.0,
+						0.0,
+						74.0,
+						28.0
+					],
+					"requiredHeight": 20.0,
+					"requiredWidth": 20.0,
+					"role": "number",
+					"text": "0%"
+				},
+				{
+					"actualSize": [
+						140.0,
+						28.0
+					],
+					"align": 0,
+					"fontHeight": 17.0,
+					"fontSize": 14,
+					"lines": 1,
+					"rect": [
+						0.0,
+						0.0,
+						130.0,
+						28.0
+					],
+					"requiredHeight": 17.0,
+					"requiredWidth": 65.0,
+					"role": "body",
+					"text": "치명타 피해"
+				},
+				{
+					"actualSize": [
+						74.0,
+						28.0
+					],
+					"align": 2,
+					"fontHeight": 20.0,
+					"fontSize": 16,
+					"lines": 1,
+					"rect": [
+						0.0,
+						0.0,
+						74.0,
+						28.0
+					],
+					"requiredHeight": 20.0,
+					"requiredWidth": 31.0,
+					"role": "number",
+					"text": "150%"
+				},
+				{
+					"actualSize": [
+						140.0,
+						28.0
+					],
+					"align": 0,
+					"fontHeight": 17.0,
+					"fontSize": 14,
+					"lines": 1,
+					"rect": [
+						0.0,
+						0.0,
+						130.0,
+						28.0
+					],
+					"requiredHeight": 17.0,
+					"requiredWidth": 37.0,
+					"role": "body",
+					"text": "사거리"
+				},
+				{
+					"actualSize": [
+						74.0,
+						28.0
+					],
+					"align": 2,
+					"fontHeight": 20.0,
+					"fontSize": 16,
+					"lines": 1,
+					"rect": [
+						0.0,
+						0.0,
+						74.0,
+						28.0
+					],
+					"requiredHeight": 20.0,
+					"requiredWidth": 31.0,
+					"role": "number",
+					"text": "100%"
+				},
+				{
+					"actualSize": [
+						140.0,
+						28.0
+					],
+					"align": 0,
+					"fontHeight": 17.0,
+					"fontSize": 14,
+					"lines": 1,
+					"rect": [
+						0.0,
+						0.0,
+						130.0,
+						28.0
+					],
+					"requiredHeight": 17.0,
+					"requiredWidth": 25.0,
+					"role": "body",
+					"text": "범위"
+				},
+				{
+					"actualSize": [
+						74.0,
+						28.0
+					],
+					"align": 2,
+					"fontHeight": 20.0,
+					"fontSize": 16,
+					"lines": 1,
+					"rect": [
+						0.0,
+						0.0,
+						74.0,
+						28.0
+					],
+					"requiredHeight": 20.0,
+					"requiredWidth": 31.0,
+					"role": "number",
+					"text": "100%"
+				},
+				{
+					"actualSize": [
+						140.0,
+						28.0
+					],
+					"align": 0,
+					"fontHeight": 17.0,
+					"fontSize": 14,
+					"lines": 1,
+					"rect": [
+						0.0,
+						0.0,
+						130.0,
+						28.0
+					],
+					"requiredHeight": 17.0,
+					"requiredWidth": 49.0,
+					"role": "body",
+					"text": "지속시간"
+				},
+				{
+					"actualSize": [
+						74.0,
+						28.0
+					],
+					"align": 2,
+					"fontHeight": 20.0,
+					"fontSize": 16,
+					"lines": 1,
+					"rect": [
+						0.0,
+						0.0,
+						74.0,
+						28.0
+					],
+					"requiredHeight": 20.0,
+					"requiredWidth": 31.0,
+					"role": "number",
+					"text": "100%"
+				},
+				{
+					"actualSize": [
+						140.0,
+						28.0
+					],
+					"align": 0,
+					"fontHeight": 17.0,
+					"fontSize": 14,
+					"lines": 1,
+					"rect": [
+						0.0,
+						0.0,
+						130.0,
+						28.0
+					],
+					"requiredHeight": 17.0,
+					"requiredWidth": 65.0,
+					"role": "body",
+					"text": "투사체 속도"
+				},
+				{
+					"actualSize": [
+						74.0,
+						28.0
+					],
+					"align": 2,
+					"fontHeight": 20.0,
+					"fontSize": 16,
+					"lines": 1,
+					"rect": [
+						0.0,
+						0.0,
+						74.0,
+						28.0
+					],
+					"requiredHeight": 20.0,
+					"requiredWidth": 31.0,
+					"role": "number",
+					"text": "100%"
+				},
+				{
+					"actualSize": [
+						140.0,
+						28.0
+					],
+					"align": 0,
+					"fontHeight": 17.0,
+					"fontSize": 14,
+					"lines": 1,
+					"rect": [
+						0.0,
+						0.0,
+						130.0,
+						28.0
+					],
+					"requiredHeight": 17.0,
+					"requiredWidth": 53.0,
+					"role": "body",
+					"text": "최대 체력"
+				},
+				{
+					"actualSize": [
+						74.0,
+						28.0
+					],
+					"align": 2,
+					"fontHeight": 20.0,
+					"fontSize": 16,
+					"lines": 1,
+					"rect": [
+						0.0,
+						0.0,
+						74.0,
+						28.0
+					],
+					"requiredHeight": 20.0,
+					"requiredWidth": 19.0,
+					"role": "number",
+					"text": "100"
+				},
+				{
+					"actualSize": [
+						140.0,
+						28.0
+					],
+					"align": 0,
+					"fontHeight": 17.0,
+					"fontSize": 14,
+					"lines": 1,
+					"rect": [
+						0.0,
+						0.0,
+						130.0,
+						28.0
+					],
+					"requiredHeight": 17.0,
+					"requiredWidth": 37.0,
+					"role": "body",
+					"text": "방어력"
+				},
+				{
+					"actualSize": [
+						74.0,
+						28.0
+					],
+					"align": 2,
+					"fontHeight": 20.0,
+					"fontSize": 16,
+					"lines": 1,
+					"rect": [
+						0.0,
+						0.0,
+						74.0,
+						28.0
+					],
+					"requiredHeight": 20.0,
+					"requiredWidth": 7.0,
+					"role": "number",
+					"text": "0"
+				},
+				{
+					"actualSize": [
+						140.0,
+						28.0
+					],
+					"align": 0,
+					"fontHeight": 17.0,
+					"fontSize": 14,
+					"lines": 1,
+					"rect": [
+						0.0,
+						0.0,
+						130.0,
+						28.0
+					],
+					"requiredHeight": 17.0,
+					"requiredWidth": 25.0,
+					"role": "body",
+					"text": "회피"
+				},
+				{
+					"actualSize": [
+						74.0,
+						28.0
+					],
+					"align": 2,
+					"fontHeight": 20.0,
+					"fontSize": 16,
+					"lines": 1,
+					"rect": [
+						0.0,
+						0.0,
+						74.0,
+						28.0
+					],
+					"requiredHeight": 20.0,
+					"requiredWidth": 20.0,
+					"role": "number",
+					"text": "0%"
+				},
+				{
+					"actualSize": [
+						140.0,
+						28.0
+					],
+					"align": 0,
+					"fontHeight": 17.0,
+					"fontSize": 14,
+					"lines": 1,
+					"rect": [
+						0.0,
+						0.0,
+						130.0,
+						28.0
+					],
+					"requiredHeight": 17.0,
+					"requiredWidth": 25.0,
+					"role": "body",
+					"text": "흡혈"
+				},
+				{
+					"actualSize": [
+						74.0,
+						28.0
+					],
+					"align": 2,
+					"fontHeight": 20.0,
+					"fontSize": 16,
+					"lines": 1,
+					"rect": [
+						0.0,
+						0.0,
+						74.0,
+						28.0
+					],
+					"requiredHeight": 20.0,
+					"requiredWidth": 20.0,
+					"role": "number",
+					"text": "0%"
+				},
+				{
+					"actualSize": [
+						140.0,
+						28.0
+					],
+					"align": 0,
+					"fontHeight": 17.0,
+					"fontSize": 14,
+					"lines": 1,
+					"rect": [
+						0.0,
+						0.0,
+						130.0,
+						28.0
+					],
+					"requiredHeight": 17.0,
+					"requiredWidth": 53.0,
+					"role": "body",
+					"text": "체력 재생"
+				},
+				{
+					"actualSize": [
+						74.0,
+						28.0
+					],
+					"align": 2,
+					"fontHeight": 20.0,
+					"fontSize": 16,
+					"lines": 1,
+					"rect": [
+						0.0,
+						0.0,
+						74.0,
+						28.0
+					],
+					"requiredHeight": 20.0,
+					"requiredWidth": 7.0,
+					"role": "number",
+					"text": "0"
+				},
+				{
+					"actualSize": [
+						140.0,
+						28.0
+					],
+					"align": 0,
+					"fontHeight": 17.0,
+					"fontSize": 14,
+					"lines": 1,
+					"rect": [
+						0.0,
+						0.0,
+						130.0,
+						28.0
+					],
+					"requiredHeight": 17.0,
+					"requiredWidth": 53.0,
+					"role": "body",
+					"text": "이동 속도"
+				},
+				{
+					"actualSize": [
+						74.0,
+						28.0
+					],
+					"align": 2,
+					"fontHeight": 20.0,
+					"fontSize": 16,
+					"lines": 1,
+					"rect": [
+						0.0,
+						0.0,
+						74.0,
+						28.0
+					],
+					"requiredHeight": 20.0,
+					"requiredWidth": 18.0,
+					"role": "number",
+					"text": "185"
+				},
+				{
+					"actualSize": [
+						140.0,
+						28.0
+					],
+					"align": 0,
+					"fontHeight": 17.0,
+					"fontSize": 14,
+					"lines": 1,
+					"rect": [
+						0.0,
+						0.0,
+						130.0,
+						28.0
+					],
+					"requiredHeight": 17.0,
+					"requiredWidth": 65.0,
+					"role": "body",
+					"text": "마력석 획득"
+				},
+				{
+					"actualSize": [
+						74.0,
+						28.0
+					],
+					"align": 2,
+					"fontHeight": 20.0,
+					"fontSize": 16,
+					"lines": 1,
+					"rect": [
+						0.0,
+						0.0,
+						74.0,
+						28.0
+					],
+					"requiredHeight": 20.0,
+					"requiredWidth": 31.0,
+					"role": "number",
+					"text": "100%"
+				},
+				{
+					"actualSize": [
+						140.0,
+						28.0
+					],
+					"align": 0,
+					"fontHeight": 17.0,
+					"fontSize": 14,
+					"lines": 1,
+					"rect": [
+						0.0,
+						0.0,
+						130.0,
+						28.0
+					],
+					"requiredHeight": 17.0,
+					"requiredWidth": 53.0,
+					"role": "body",
+					"text": "획득 범위"
+				},
+				{
+					"actualSize": [
+						74.0,
+						28.0
+					],
+					"align": 2,
+					"fontHeight": 20.0,
+					"fontSize": 16,
+					"lines": 1,
+					"rect": [
+						0.0,
+						0.0,
+						74.0,
+						28.0
+					],
+					"requiredHeight": 20.0,
+					"requiredWidth": 19.0,
+					"role": "number",
+					"text": "100"
+				},
+				{
+					"actualSize": [
+						140.0,
+						28.0
+					],
+					"align": 0,
+					"fontHeight": 17.0,
+					"fontSize": 14,
+					"lines": 1,
+					"rect": [
+						0.0,
+						0.0,
+						130.0,
+						28.0
+					],
+					"requiredHeight": 17.0,
+					"requiredWidth": 25.0,
+					"role": "body",
+					"text": "행운"
+				},
+				{
+					"actualSize": [
+						74.0,
+						28.0
+					],
+					"align": 2,
+					"fontHeight": 20.0,
+					"fontSize": 16,
+					"lines": 1,
+					"rect": [
+						0.0,
+						0.0,
+						74.0,
+						28.0
+					],
+					"requiredHeight": 20.0,
+					"requiredWidth": 7.0,
+					"role": "number",
+					"text": "0"
+				},
+				{
+					"actualSize": [
+						140.0,
+						28.0
+					],
+					"align": 0,
+					"fontHeight": 17.0,
+					"fontSize": 14,
+					"lines": 1,
+					"rect": [
+						0.0,
+						0.0,
+						130.0,
+						28.0
+					],
+					"requiredHeight": 17.0,
+					"requiredWidth": 25.0,
+					"role": "body",
+					"text": "저주"
+				},
+				{
+					"actualSize": [
+						74.0,
+						28.0
+					],
+					"align": 2,
+					"fontHeight": 20.0,
+					"fontSize": 16,
+					"lines": 1,
+					"rect": [
+						0.0,
+						0.0,
+						74.0,
+						28.0
+					],
+					"requiredHeight": 20.0,
+					"requiredWidth": 7.0,
+					"role": "number",
+					"text": "0"
+				},
+				{
+					"actualSize": [
+						664.0,
+						45.0
+					],
+					"align": 0,
+					"fontHeight": 17.0,
+					"fontSize": 14,
+					"lines": 1,
+					"rect": [
+						36.0,
+						351.0,
+						664.0,
+						45.0
+					],
+					"requiredHeight": 17.0,
+					"requiredWidth": 100.0,
+					"role": "control",
+					"text": "현재 선택 · 송진우"
+				},
+				{
+					"actualSize": [
+						134.0,
+						37.0
+					],
+					"align": 1,
+					"fontHeight": 20.0,
+					"fontSize": 16,
+					"lines": 1,
+					"rect": [
+						739.0,
+						355.0,
+						134.0,
+						37.0
+					],
+					"requiredHeight": 20.0,
+					"requiredWidth": 92.0,
+					"role": "control",
+					"text": "시작 무기 선택"
+				}
+			],
+			"materials": [
+				{
+					"assetScale": 4.0,
+					"material": "cards/normal",
+					"rect": [
+						0.0,
+						0.0,
+						132.0,
+						120.0
+					],
+					"slice": [
+						35.0,
+						35.0,
+						35.0,
+						35.0
+					],
+					"source": [
+						60.0,
+						60.0,
+						514.0,
+						481.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/cell",
+					"rect": [
+						0.0,
+						0.0,
+						132.0,
+						120.0
+					],
+					"slice": [
+						70.0,
+						70.0,
+						70.0,
+						70.0
+					],
+					"source": [
+						48.0,
+						115.0,
+						695.0,
+						718.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/shadow",
+					"rect": [
+						31.6800003051758,
+						74.0,
+						68.6399993896484,
+						14.0
+					],
+					"slice": [
+						0.0,
+						0.0,
+						0.0,
+						0.0
+					],
+					"source": [
+						850.0,
+						430.0,
+						520.0,
+						180.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "accents/selection",
+					"rect": [
+						0.0,
+						0.0,
+						132.0,
+						120.0
+					],
+					"slice": [
+						36.0,
+						36.0,
+						36.0,
+						36.0
+					],
+					"source": [
+						886.0,
+						97.0,
+						578.0,
+						473.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "cards/normal",
+					"rect": [
+						0.0,
+						0.0,
+						132.0,
+						120.0
+					],
+					"slice": [
+						35.0,
+						35.0,
+						35.0,
+						35.0
+					],
+					"source": [
+						60.0,
+						60.0,
+						514.0,
+						481.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/cell",
+					"rect": [
+						0.0,
+						0.0,
+						132.0,
+						120.0
+					],
+					"slice": [
+						70.0,
+						70.0,
+						70.0,
+						70.0
+					],
+					"source": [
+						48.0,
+						115.0,
+						695.0,
+						718.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/shadow",
+					"rect": [
+						31.6800003051758,
+						74.0,
+						68.6399993896484,
+						14.0
+					],
+					"slice": [
+						0.0,
+						0.0,
+						0.0,
+						0.0
+					],
+					"source": [
+						850.0,
+						430.0,
+						520.0,
+						180.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "cards/normal",
+					"rect": [
+						0.0,
+						0.0,
+						132.0,
+						120.0
+					],
+					"slice": [
+						35.0,
+						35.0,
+						35.0,
+						35.0
+					],
+					"source": [
+						60.0,
+						60.0,
+						514.0,
+						481.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/cell",
+					"rect": [
+						0.0,
+						0.0,
+						132.0,
+						120.0
+					],
+					"slice": [
+						70.0,
+						70.0,
+						70.0,
+						70.0
+					],
+					"source": [
+						48.0,
+						115.0,
+						695.0,
+						718.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/shadow",
+					"rect": [
+						31.6800003051758,
+						74.0,
+						68.6399993896484,
+						14.0
+					],
+					"slice": [
+						0.0,
+						0.0,
+						0.0,
+						0.0
+					],
+					"source": [
+						850.0,
+						430.0,
+						520.0,
+						180.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "cards/normal",
+					"rect": [
+						0.0,
+						0.0,
+						132.0,
+						120.0
+					],
+					"slice": [
+						35.0,
+						35.0,
+						35.0,
+						35.0
+					],
+					"source": [
+						60.0,
+						60.0,
+						514.0,
+						481.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/cell",
+					"rect": [
+						0.0,
+						0.0,
+						132.0,
+						120.0
+					],
+					"slice": [
+						70.0,
+						70.0,
+						70.0,
+						70.0
+					],
+					"source": [
+						48.0,
+						115.0,
+						695.0,
+						718.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/shadow",
+					"rect": [
+						31.6800003051758,
+						74.0,
+						68.6399993896484,
+						14.0
+					],
+					"slice": [
+						0.0,
+						0.0,
+						0.0,
+						0.0
+					],
+					"source": [
+						850.0,
+						430.0,
+						520.0,
+						180.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "cards/detail",
+					"rect": [
+						618.0,
+						85.0,
+						266.0,
+						257.0
+					],
+					"slice": [
+						30.0,
+						30.0,
+						30.0,
+						30.0
+					],
+					"source": [
+						681.0,
+						643.0,
+						461.0,
+						556.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "controls/primary",
+					"rect": [
+						727.0,
+						351.0,
+						158.0,
+						45.0
+					],
+					"slice": [
+						72.0,
+						36.0,
+						72.0,
+						48.0
+					],
+					"source": [
+						39.0,
+						135.0,
+						762.0,
+						245.0
+					]
+				}
+			],
+			"screen": "02-character"
+		},
+		{
+			"controls": [
+				{
+					"caption": "이전",
+					"minimum44": true,
+					"rect": [
+						22,
+						14,
+						90,
+						44
+					],
+					"role": "unframed"
+				},
+				{
+					"caption": "단군의 축복",
+					"minimum44": true,
+					"rect": [
+						727.0,
+						351.0,
+						158.0,
+						45.0
+					],
+					"role": "controls/primary"
+				}
+			],
+			"fitIssues": [],
+			"labels": [
+				{
+					"actualSize": [
+						90.0,
+						44.0
+					],
+					"align": 0,
+					"fontHeight": 18.0,
+					"fontSize": 15,
+					"lines": 1,
+					"rect": [
+						22.0,
+						14.0,
+						90.0,
+						44.0
+					],
+					"requiredHeight": 18.0,
+					"requiredWidth": 39.0,
+					"role": "control",
+					"text": "‹ 이전"
+				},
+				{
+					"actualSize": [
+						568.0,
+						41.0
+					],
+					"align": 0,
+					"fontHeight": 34.0,
+					"fontSize": 28,
+					"lines": 1,
+					"rect": [
+						127.0,
+						12.0,
+						568.0,
+						41.0
+					],
+					"requiredHeight": 34.0,
+					"requiredWidth": 148.0,
+					"role": "brand",
+					"text": "시작 무기 선택"
+				},
+				{
+					"actualSize": [
+						707.0,
+						28.0
+					],
+					"align": 0,
+					"fontHeight": 17.0,
+					"fontSize": 14,
+					"lines": 1,
+					"rect": [
+						128.0,
+						54.0,
+						707.0,
+						28.0
+					],
+					"requiredHeight": 17.0,
+					"requiredWidth": 343.0,
+					"role": "body",
+					"text": "선택한 무기 1종으로 시작합니다. 전투 보유 한도는 6종입니다."
+				},
+				{
+					"actualSize": [
+						150.0,
+						38.0
+					],
+					"align": 2,
+					"fontHeight": 24.0,
+					"fontSize": 20,
+					"lines": 1,
+					"rect": [
+						743.0,
+						15.0,
+						150.0,
+						38.0
+					],
+					"requiredHeight": 24.0,
+					"requiredWidth": 52.0,
+					"role": "number",
+					"text": "04 / 06"
+				},
+				{
+					"actualSize": [
+						116.0,
+						25.0
+					],
+					"align": 1,
+					"fontHeight": 17.0,
+					"fontSize": 14,
+					"lines": 1,
+					"rect": [
+						8.0,
+						90.0,
+						116.0,
+						25.0
+					],
+					"requiredHeight": 17.0,
+					"requiredWidth": 37.0,
+					"role": "control",
+					"text": "마력검"
+				},
+				{
+					"actualSize": [
+						116.0,
+						25.0
+					],
+					"align": 1,
+					"fontHeight": 17.0,
+					"fontSize": 14,
+					"lines": 1,
+					"rect": [
+						8.0,
+						90.0,
+						116.0,
+						25.0
+					],
+					"requiredHeight": 17.0,
+					"requiredWidth": 53.0,
+					"role": "control",
+					"text": "수호 표창"
+				},
+				{
+					"actualSize": [
+						116.0,
+						25.0
+					],
+					"align": 1,
+					"fontHeight": 17.0,
+					"fontSize": 14,
+					"lines": 1,
+					"rect": [
+						8.0,
+						90.0,
+						116.0,
+						25.0
+					],
+					"requiredHeight": 17.0,
+					"requiredWidth": 37.0,
+					"role": "control",
+					"text": "마력탄"
+				},
+				{
+					"actualSize": [
+						116.0,
+						25.0
+					],
+					"align": 1,
+					"fontHeight": 17.0,
+					"fontSize": 14,
+					"lines": 1,
+					"rect": [
+						8.0,
+						90.0,
+						116.0,
+						25.0
+					],
+					"requiredHeight": 17.0,
+					"requiredWidth": 53.0,
+					"role": "control",
+					"text": "관통 사격"
+				},
+				{
+					"actualSize": [
+						116.0,
+						25.0
+					],
+					"align": 1,
+					"fontHeight": 17.0,
+					"fontSize": 14,
+					"lines": 1,
+					"rect": [
+						8.0,
+						90.0,
+						116.0,
+						25.0
+					],
+					"requiredHeight": 17.0,
+					"requiredWidth": 53.0,
+					"role": "control",
+					"text": "연쇄 번개"
+				},
+				{
+					"actualSize": [
+						116.0,
+						25.0
+					],
+					"align": 1,
+					"fontHeight": 17.0,
+					"fontSize": 14,
+					"lines": 1,
+					"rect": [
+						8.0,
+						90.0,
+						116.0,
+						25.0
+					],
+					"requiredHeight": 17.0,
+					"requiredWidth": 53.0,
+					"role": "control",
+					"text": "마력 폭격"
+				},
+				{
+					"actualSize": [
+						116.0,
+						25.0
+					],
+					"align": 1,
+					"fontHeight": 17.0,
+					"fontSize": 14,
+					"lines": 1,
+					"rect": [
+						8.0,
+						90.0,
+						116.0,
+						25.0
+					],
+					"requiredHeight": 17.0,
+					"requiredWidth": 53.0,
+					"role": "control",
+					"text": "마력 샷건"
+				},
+				{
+					"actualSize": [
+						230.0,
+						30.0
+					],
+					"align": 1,
+					"fontHeight": 28.0,
+					"fontSize": 23,
+					"lines": 1,
+					"rect": [
+						636.0,
+						97.0,
+						230.0,
+						30.0
+					],
+					"requiredHeight": 28.0,
+					"requiredWidth": 230.0,
+					"role": "brand",
+					"text": "마력탄"
+				},
+				{
+					"actualSize": [
+						142.0,
+						23.0
+					],
+					"align": 0,
+					"fontHeight": 21.0,
+					"fontSize": 17,
+					"lines": 1,
+					"rect": [
+						0.0,
+						0.0,
+						142.0,
+						23.0
+					],
+					"requiredHeight": 21.0,
+					"requiredWidth": 142.0,
+					"role": "heading",
+					"text": "원거리 · Lv.1"
+				},
+				{
+					"actualSize": [
+						142.0,
+						19.0
+					],
+					"align": 0,
+					"fontHeight": 17.0,
+					"fontSize": 14,
+					"lines": 1,
+					"rect": [
+						0.0,
+						0.0,
+						142.0,
+						19.0
+					],
+					"requiredHeight": 17.0,
+					"requiredWidth": 142.0,
+					"role": "body",
+					"text": "피해 22"
+				},
+				{
+					"actualSize": [
+						142.0,
+						19.0
+					],
+					"align": 0,
+					"fontHeight": 17.0,
+					"fontSize": 14,
+					"lines": 1,
+					"rect": [
+						0.0,
+						0.0,
+						142.0,
+						19.0
+					],
+					"requiredHeight": 17.0,
+					"requiredWidth": 142.0,
+					"role": "body",
+					"text": "공격 간격 0.65초"
+				},
+				{
+					"actualSize": [
+						222.0,
+						19.0
+					],
+					"align": 0,
+					"fontHeight": 17.0,
+					"fontSize": 14,
+					"lines": 1,
+					"rect": [
+						0.0,
+						0.0,
+						214.0,
+						19.0
+					],
+					"requiredHeight": 17.0,
+					"requiredWidth": 214.0,
+					"role": "control",
+					"text": "투사체 · 지속 · 사거리 · 관통 · 치명타"
+				},
+				{
+					"actualSize": [
+						222.0,
+						38.0
+					],
+					"align": 0,
+					"fontHeight": 17.0,
+					"fontSize": 14,
+					"lines": 2,
+					"rect": [
+						0.0,
+						0.0,
+						214.0,
+						38.0
+					],
+					"requiredHeight": 36.0,
+					"requiredWidth": 214.0,
+					"role": "body",
+					"text": "가장 가까운 적에게 날아가는 마력의 파편"
+				},
+				{
+					"actualSize": [
+						222.0,
+						23.0
+					],
+					"align": 0,
+					"fontHeight": 21.0,
+					"fontSize": 17,
+					"lines": 1,
+					"rect": [
+						0.0,
+						0.0,
+						214.0,
+						23.0
+					],
+					"requiredHeight": 21.0,
+					"requiredWidth": 214.0,
+					"role": "heading",
+					"text": "기초 공격 · Lv.1"
+				},
+				{
+					"actualSize": [
+						140.0,
+						28.0
+					],
+					"align": 0,
+					"fontHeight": 17.0,
+					"fontSize": 14,
+					"lines": 1,
+					"rect": [
+						0.0,
+						0.0,
+						130.0,
+						28.0
+					],
+					"requiredHeight": 17.0,
+					"requiredWidth": 37.0,
+					"role": "body",
+					"text": "사거리"
+				},
+				{
+					"actualSize": [
+						74.0,
+						28.0
+					],
+					"align": 2,
+					"fontHeight": 20.0,
+					"fontSize": 16,
+					"lines": 1,
+					"rect": [
+						0.0,
+						0.0,
+						74.0,
+						28.0
+					],
+					"requiredHeight": 20.0,
+					"requiredWidth": 21.0,
+					"role": "number",
+					"text": "420"
+				},
+				{
+					"actualSize": [
+						140.0,
+						28.0
+					],
+					"align": 0,
+					"fontHeight": 17.0,
+					"fontSize": 14,
+					"lines": 1,
+					"rect": [
+						0.0,
+						0.0,
+						130.0,
+						28.0
+					],
+					"requiredHeight": 17.0,
+					"requiredWidth": 88.0,
+					"role": "body",
+					"text": "투사체 / 타격 수"
+				},
+				{
+					"actualSize": [
+						74.0,
+						28.0
+					],
+					"align": 2,
+					"fontHeight": 20.0,
+					"fontSize": 16,
+					"lines": 1,
+					"rect": [
+						0.0,
+						0.0,
+						74.0,
+						28.0
+					],
+					"requiredHeight": 20.0,
+					"requiredWidth": 4.0,
+					"role": "number",
+					"text": "1"
+				},
+				{
+					"actualSize": [
+						222.0,
+						23.0
+					],
+					"align": 0,
+					"fontHeight": 21.0,
+					"fontSize": 17,
+					"lines": 1,
+					"rect": [
+						0.0,
+						0.0,
+						214.0,
+						23.0
+					],
+					"requiredHeight": 21.0,
+					"requiredWidth": 214.0,
+					"role": "heading",
+					"text": "적용 스탯"
+				},
+				{
+					"actualSize": [
+						222.0,
+						57.0
+					],
+					"align": 0,
+					"fontHeight": 17.0,
+					"fontSize": 14,
+					"lines": 3,
+					"rect": [
+						0.0,
+						0.0,
+						214.0,
+						57.0
+					],
+					"requiredHeight": 55.0,
+					"requiredWidth": 214.0,
+					"role": "body",
+					"text": "공통 피해 · 공격 속도 · 원거리 피해 · 투사체 속도 · 지속시간 · 사거리 · 치명타 확률·피해"
+				},
+				{
+					"actualSize": [
+						664.0,
+						45.0
+					],
+					"align": 0,
+					"fontHeight": 17.0,
+					"fontSize": 14,
+					"lines": 1,
+					"rect": [
+						36.0,
+						351.0,
+						664.0,
+						45.0
+					],
+					"requiredHeight": 17.0,
+					"requiredWidth": 100.0,
+					"role": "control",
+					"text": "현재 선택 · 마력탄"
+				},
+				{
+					"actualSize": [
+						134.0,
+						37.0
+					],
+					"align": 1,
+					"fontHeight": 20.0,
+					"fontSize": 16,
+					"lines": 1,
+					"rect": [
+						739.0,
+						355.0,
+						134.0,
+						37.0
+					],
+					"requiredHeight": 20.0,
+					"requiredWidth": 74.0,
+					"role": "control",
+					"text": "단군의 축복"
+				}
+			],
+			"materials": [
+				{
+					"assetScale": 4.0,
+					"material": "cards/normal",
+					"rect": [
+						0.0,
+						0.0,
+						132.0,
+						120.0
+					],
+					"slice": [
+						35.0,
+						35.0,
+						35.0,
+						35.0
+					],
+					"source": [
+						60.0,
+						60.0,
+						514.0,
+						481.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/cell",
+					"rect": [
+						0.0,
+						0.0,
+						132.0,
+						120.0
+					],
+					"slice": [
+						70.0,
+						70.0,
+						70.0,
+						70.0
+					],
+					"source": [
+						48.0,
+						115.0,
+						695.0,
+						718.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/shadow",
+					"rect": [
+						31.6800003051758,
+						74.0,
+						68.6399993896484,
+						14.0
+					],
+					"slice": [
+						0.0,
+						0.0,
+						0.0,
+						0.0
+					],
+					"source": [
+						850.0,
+						430.0,
+						520.0,
+						180.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "cards/normal",
+					"rect": [
+						0.0,
+						0.0,
+						132.0,
+						120.0
+					],
+					"slice": [
+						35.0,
+						35.0,
+						35.0,
+						35.0
+					],
+					"source": [
+						60.0,
+						60.0,
+						514.0,
+						481.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/cell",
+					"rect": [
+						0.0,
+						0.0,
+						132.0,
+						120.0
+					],
+					"slice": [
+						70.0,
+						70.0,
+						70.0,
+						70.0
+					],
+					"source": [
+						48.0,
+						115.0,
+						695.0,
+						718.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/shadow",
+					"rect": [
+						31.6800003051758,
+						74.0,
+						68.6399993896484,
+						14.0
+					],
+					"slice": [
+						0.0,
+						0.0,
+						0.0,
+						0.0
+					],
+					"source": [
+						850.0,
+						430.0,
+						520.0,
+						180.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "cards/normal",
+					"rect": [
+						0.0,
+						0.0,
+						132.0,
+						120.0
+					],
+					"slice": [
+						35.0,
+						35.0,
+						35.0,
+						35.0
+					],
+					"source": [
+						60.0,
+						60.0,
+						514.0,
+						481.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/cell",
+					"rect": [
+						0.0,
+						0.0,
+						132.0,
+						120.0
+					],
+					"slice": [
+						70.0,
+						70.0,
+						70.0,
+						70.0
+					],
+					"source": [
+						48.0,
+						115.0,
+						695.0,
+						718.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/shadow",
+					"rect": [
+						31.6800003051758,
+						74.0,
+						68.6399993896484,
+						14.0
+					],
+					"slice": [
+						0.0,
+						0.0,
+						0.0,
+						0.0
+					],
+					"source": [
+						850.0,
+						430.0,
+						520.0,
+						180.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "accents/selection",
+					"rect": [
+						0.0,
+						0.0,
+						132.0,
+						120.0
+					],
+					"slice": [
+						36.0,
+						36.0,
+						36.0,
+						36.0
+					],
+					"source": [
+						886.0,
+						97.0,
+						578.0,
+						473.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "cards/normal",
+					"rect": [
+						0.0,
+						0.0,
+						132.0,
+						120.0
+					],
+					"slice": [
+						35.0,
+						35.0,
+						35.0,
+						35.0
+					],
+					"source": [
+						60.0,
+						60.0,
+						514.0,
+						481.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/cell",
+					"rect": [
+						0.0,
+						0.0,
+						132.0,
+						120.0
+					],
+					"slice": [
+						70.0,
+						70.0,
+						70.0,
+						70.0
+					],
+					"source": [
+						48.0,
+						115.0,
+						695.0,
+						718.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/shadow",
+					"rect": [
+						31.6800003051758,
+						74.0,
+						68.6399993896484,
+						14.0
+					],
+					"slice": [
+						0.0,
+						0.0,
+						0.0,
+						0.0
+					],
+					"source": [
+						850.0,
+						430.0,
+						520.0,
+						180.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "cards/normal",
+					"rect": [
+						0.0,
+						0.0,
+						132.0,
+						120.0
+					],
+					"slice": [
+						35.0,
+						35.0,
+						35.0,
+						35.0
+					],
+					"source": [
+						60.0,
+						60.0,
+						514.0,
+						481.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/cell",
+					"rect": [
+						0.0,
+						0.0,
+						132.0,
+						120.0
+					],
+					"slice": [
+						70.0,
+						70.0,
+						70.0,
+						70.0
+					],
+					"source": [
+						48.0,
+						115.0,
+						695.0,
+						718.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/shadow",
+					"rect": [
+						31.6800003051758,
+						74.0,
+						68.6399993896484,
+						14.0
+					],
+					"slice": [
+						0.0,
+						0.0,
+						0.0,
+						0.0
+					],
+					"source": [
+						850.0,
+						430.0,
+						520.0,
+						180.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "cards/normal",
+					"rect": [
+						0.0,
+						0.0,
+						132.0,
+						120.0
+					],
+					"slice": [
+						35.0,
+						35.0,
+						35.0,
+						35.0
+					],
+					"source": [
+						60.0,
+						60.0,
+						514.0,
+						481.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/cell",
+					"rect": [
+						0.0,
+						0.0,
+						132.0,
+						120.0
+					],
+					"slice": [
+						70.0,
+						70.0,
+						70.0,
+						70.0
+					],
+					"source": [
+						48.0,
+						115.0,
+						695.0,
+						718.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/shadow",
+					"rect": [
+						31.6800003051758,
+						74.0,
+						68.6399993896484,
+						14.0
+					],
+					"slice": [
+						0.0,
+						0.0,
+						0.0,
+						0.0
+					],
+					"source": [
+						850.0,
+						430.0,
+						520.0,
+						180.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "cards/normal",
+					"rect": [
+						0.0,
+						0.0,
+						132.0,
+						120.0
+					],
+					"slice": [
+						35.0,
+						35.0,
+						35.0,
+						35.0
+					],
+					"source": [
+						60.0,
+						60.0,
+						514.0,
+						481.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/cell",
+					"rect": [
+						0.0,
+						0.0,
+						132.0,
+						120.0
+					],
+					"slice": [
+						70.0,
+						70.0,
+						70.0,
+						70.0
+					],
+					"source": [
+						48.0,
+						115.0,
+						695.0,
+						718.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/shadow",
+					"rect": [
+						31.6800003051758,
+						74.0,
+						68.6399993896484,
+						14.0
+					],
+					"slice": [
+						0.0,
+						0.0,
+						0.0,
+						0.0
+					],
+					"source": [
+						850.0,
+						430.0,
+						520.0,
+						180.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "cards/detail",
+					"rect": [
+						618.0,
+						85.0,
+						266.0,
+						257.0
+					],
+					"slice": [
+						30.0,
+						30.0,
+						30.0,
+						30.0
+					],
+					"source": [
+						681.0,
+						643.0,
+						461.0,
+						556.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "controls/primary",
+					"rect": [
+						727.0,
+						351.0,
+						158.0,
+						45.0
+					],
+					"slice": [
+						72.0,
+						36.0,
+						72.0,
+						48.0
+					],
+					"source": [
+						39.0,
+						135.0,
+						762.0,
+						245.0
+					]
+				}
+			],
+			"screen": "03-weapon"
+		},
+		{
+			"controls": [
+				{
+					"caption": "이전",
+					"minimum44": true,
+					"rect": [
+						22,
+						14,
+						90,
+						44
+					],
+					"role": "unframed"
+				},
+				{
+					"caption": "편성 확인",
+					"minimum44": true,
+					"rect": [
+						727.0,
+						351.0,
+						158.0,
+						45.0
+					],
+					"role": "controls/primary"
+				}
+			],
+			"fitIssues": [],
+			"labels": [
+				{
+					"actualSize": [
+						90.0,
+						44.0
+					],
+					"align": 0,
+					"fontHeight": 18.0,
+					"fontSize": 15,
+					"lines": 1,
+					"rect": [
+						22.0,
+						14.0,
+						90.0,
+						44.0
+					],
+					"requiredHeight": 18.0,
+					"requiredWidth": 39.0,
+					"role": "control",
+					"text": "‹ 이전"
+				},
+				{
+					"actualSize": [
+						568.0,
+						41.0
+					],
+					"align": 0,
+					"fontHeight": 34.0,
+					"fontSize": 28,
+					"lines": 1,
+					"rect": [
+						127.0,
+						12.0,
+						568.0,
+						41.0
+					],
+					"requiredHeight": 34.0,
+					"requiredWidth": 171.0,
+					"role": "brand",
+					"text": "단군의 축복 선택"
+				},
+				{
+					"actualSize": [
+						707.0,
+						28.0
+					],
+					"align": 0,
+					"fontHeight": 17.0,
+					"fontSize": 14,
+					"lines": 1,
+					"rect": [
+						128.0,
+						54.0,
+						707.0,
+						28.0
+					],
+					"requiredHeight": 17.0,
+					"requiredWidth": 229.0,
+					"role": "body",
+					"text": "이번 작전에 적용할 축복을 하나 고르세요."
+				},
+				{
+					"actualSize": [
+						150.0,
+						38.0
+					],
+					"align": 2,
+					"fontHeight": 24.0,
+					"fontSize": 20,
+					"lines": 1,
+					"rect": [
+						743.0,
+						15.0,
+						150.0,
+						38.0
+					],
+					"requiredHeight": 24.0,
+					"requiredWidth": 52.0,
+					"role": "number",
+					"text": "05 / 06"
+				},
+				{
+					"actualSize": [
+						116.0,
+						25.0
+					],
+					"align": 1,
+					"fontHeight": 17.0,
+					"fontSize": 14,
+					"lines": 1,
+					"rect": [
+						8.0,
+						90.0,
+						116.0,
+						25.0
+					],
+					"requiredHeight": 17.0,
+					"requiredWidth": 53.0,
+					"role": "control",
+					"text": "축복 없음"
+				},
+				{
+					"actualSize": [
+						116.0,
+						38.0
+					],
+					"align": 1,
+					"fontHeight": 17.0,
+					"fontSize": 14,
+					"lines": 2,
+					"rect": [
+						8.0,
+						77.0,
+						116.0,
+						38.0
+					],
+					"requiredHeight": 36.0,
+					"requiredWidth": 77.0,
+					"role": "control",
+					"text": "천부인의 맹세\nLv.1"
+				},
+				{
+					"actualSize": [
+						116.0,
+						38.0
+					],
+					"align": 1,
+					"fontHeight": 17.0,
+					"fontSize": 14,
+					"lines": 2,
+					"rect": [
+						8.0,
+						77.0,
+						116.0,
+						38.0
+					],
+					"requiredHeight": 36.0,
+					"requiredWidth": 65.0,
+					"role": "control",
+					"text": "불굴의 장승\n미해금"
+				},
+				{
+					"actualSize": [
+						116.0,
+						38.0
+					],
+					"align": 1,
+					"fontHeight": 17.0,
+					"fontSize": 14,
+					"lines": 2,
+					"rect": [
+						8.0,
+						77.0,
+						116.0,
+						38.0
+					],
+					"requiredHeight": 36.0,
+					"requiredWidth": 77.0,
+					"role": "control",
+					"text": "삼족오의 날개\n미해금"
+				},
+				{
+					"actualSize": [
+						116.0,
+						38.0
+					],
+					"align": 1,
+					"fontHeight": 17.0,
+					"fontSize": 14,
+					"lines": 2,
+					"rect": [
+						8.0,
+						77.0,
+						116.0,
+						38.0
+					],
+					"requiredHeight": 36.0,
+					"requiredWidth": 52.0,
+					"role": "control",
+					"text": "백호의 눈\n미해금"
+				},
+				{
+					"actualSize": [
+						116.0,
+						38.0
+					],
+					"align": 1,
+					"fontHeight": 17.0,
+					"fontSize": 14,
+					"lines": 2,
+					"rect": [
+						8.0,
+						77.0,
+						116.0,
+						38.0
+					],
+					"requiredHeight": 36.0,
+					"requiredWidth": 77.0,
+					"role": "control",
+					"text": "도깨비 대장간\n미해금"
+				},
+				{
+					"actualSize": [
+						116.0,
+						38.0
+					],
+					"align": 1,
+					"fontHeight": 17.0,
+					"fontSize": 14,
+					"lines": 2,
+					"rect": [
+						8.0,
+						77.0,
+						116.0,
+						38.0
+					],
+					"requiredHeight": 36.0,
+					"requiredWidth": 65.0,
+					"role": "control",
+					"text": "풍요의 매듭\nLv.2"
+				},
+				{
+					"actualSize": [
+						116.0,
+						38.0
+					],
+					"align": 1,
+					"fontHeight": 17.0,
+					"fontSize": 14,
+					"lines": 2,
+					"rect": [
+						8.0,
+						77.0,
+						116.0,
+						38.0
+					],
+					"requiredHeight": 36.0,
+					"requiredWidth": 65.0,
+					"role": "control",
+					"text": "역린의 계약\n미해금"
+				},
+				{
+					"actualSize": [
+						230.0,
+						30.0
+					],
+					"align": 1,
+					"fontHeight": 28.0,
+					"fontSize": 23,
+					"lines": 1,
+					"rect": [
+						636.0,
+						97.0,
+						230.0,
+						30.0
+					],
+					"requiredHeight": 28.0,
+					"requiredWidth": 230.0,
+					"role": "brand",
+					"text": "천부인의 맹세"
+				},
+				{
+					"actualSize": [
+						142.0,
+						19.0
+					],
+					"align": 0,
+					"fontHeight": 17.0,
+					"fontSize": 14,
+					"lines": 1,
+					"rect": [
+						0.0,
+						0.0,
+						142.0,
+						19.0
+					],
+					"requiredHeight": 17.0,
+					"requiredWidth": 142.0,
+					"role": "control",
+					"text": "보유 레벨 · Lv.1"
+				},
+				{
+					"actualSize": [
+						142.0,
+						19.0
+					],
+					"align": 0,
+					"fontHeight": 17.0,
+					"fontSize": 14,
+					"lines": 1,
+					"rect": [
+						0.0,
+						0.0,
+						142.0,
+						19.0
+					],
+					"requiredHeight": 17.0,
+					"requiredWidth": 142.0,
+					"role": "body",
+					"text": "공통 피해 +4%"
+				},
+				{
+					"actualSize": [
+						230.0,
+						38.0
+					],
+					"align": 0,
+					"fontHeight": 17.0,
+					"fontSize": 14,
+					"lines": 1,
+					"rect": [
+						0.0,
+						0.0,
+						214.0,
+						38.0
+					],
+					"requiredHeight": 17.0,
+					"requiredWidth": 214.0,
+					"role": "body",
+					"text": "세 인장의 마력이 모든 공격을 증폭합니다."
+				},
+				{
+					"actualSize": [
+						664.0,
+						45.0
+					],
+					"align": 0,
+					"fontHeight": 17.0,
+					"fontSize": 14,
+					"lines": 1,
+					"rect": [
+						36.0,
+						351.0,
+						664.0,
+						45.0
+					],
+					"requiredHeight": 17.0,
+					"requiredWidth": 140.0,
+					"role": "control",
+					"text": "현재 선택 · 천부인의 맹세"
+				},
+				{
+					"actualSize": [
+						134.0,
+						37.0
+					],
+					"align": 1,
+					"fontHeight": 20.0,
+					"fontSize": 16,
+					"lines": 1,
+					"rect": [
+						739.0,
+						355.0,
+						134.0,
+						37.0
+					],
+					"requiredHeight": 20.0,
+					"requiredWidth": 60.0,
+					"role": "control",
+					"text": "편성 확인"
+				}
+			],
+			"materials": [
+				{
+					"assetScale": 4.0,
+					"material": "cards/normal",
+					"rect": [
+						0.0,
+						0.0,
+						132.0,
+						120.0
+					],
+					"slice": [
+						35.0,
+						35.0,
+						35.0,
+						35.0
+					],
+					"source": [
+						60.0,
+						60.0,
+						514.0,
+						481.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/cell",
+					"rect": [
+						0.0,
+						0.0,
+						132.0,
+						120.0
+					],
+					"slice": [
+						70.0,
+						70.0,
+						70.0,
+						70.0
+					],
+					"source": [
+						48.0,
+						115.0,
+						695.0,
+						718.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "cards/normal",
+					"rect": [
+						0.0,
+						0.0,
+						132.0,
+						120.0
+					],
+					"slice": [
+						35.0,
+						35.0,
+						35.0,
+						35.0
+					],
+					"source": [
+						60.0,
+						60.0,
+						514.0,
+						481.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/cell",
+					"rect": [
+						0.0,
+						0.0,
+						132.0,
+						120.0
+					],
+					"slice": [
+						70.0,
+						70.0,
+						70.0,
+						70.0
+					],
+					"source": [
+						48.0,
+						115.0,
+						695.0,
+						718.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/shadow",
+					"rect": [
+						31.6800003051758,
+						62.0,
+						68.6399993896484,
+						14.0
+					],
+					"slice": [
+						0.0,
+						0.0,
+						0.0,
+						0.0
+					],
+					"source": [
+						850.0,
+						430.0,
+						520.0,
+						180.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "accents/selection",
+					"rect": [
+						0.0,
+						0.0,
+						132.0,
+						120.0
+					],
+					"slice": [
+						36.0,
+						36.0,
+						36.0,
+						36.0
+					],
+					"source": [
+						886.0,
+						97.0,
+						578.0,
+						473.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "cards/normal",
+					"rect": [
+						0.0,
+						0.0,
+						132.0,
+						120.0
+					],
+					"slice": [
+						35.0,
+						35.0,
+						35.0,
+						35.0
+					],
+					"source": [
+						60.0,
+						60.0,
+						514.0,
+						481.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/cell",
+					"rect": [
+						0.0,
+						0.0,
+						132.0,
+						120.0
+					],
+					"slice": [
+						70.0,
+						70.0,
+						70.0,
+						70.0
+					],
+					"source": [
+						48.0,
+						115.0,
+						695.0,
+						718.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/shadow",
+					"rect": [
+						31.6800003051758,
+						62.0,
+						68.6399993896484,
+						14.0
+					],
+					"slice": [
+						0.0,
+						0.0,
+						0.0,
+						0.0
+					],
+					"source": [
+						850.0,
+						430.0,
+						520.0,
+						180.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "cards/normal",
+					"rect": [
+						0.0,
+						0.0,
+						132.0,
+						120.0
+					],
+					"slice": [
+						35.0,
+						35.0,
+						35.0,
+						35.0
+					],
+					"source": [
+						60.0,
+						60.0,
+						514.0,
+						481.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/cell",
+					"rect": [
+						0.0,
+						0.0,
+						132.0,
+						120.0
+					],
+					"slice": [
+						70.0,
+						70.0,
+						70.0,
+						70.0
+					],
+					"source": [
+						48.0,
+						115.0,
+						695.0,
+						718.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/shadow",
+					"rect": [
+						31.6800003051758,
+						62.0,
+						68.6399993896484,
+						14.0
+					],
+					"slice": [
+						0.0,
+						0.0,
+						0.0,
+						0.0
+					],
+					"source": [
+						850.0,
+						430.0,
+						520.0,
+						180.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "cards/normal",
+					"rect": [
+						0.0,
+						0.0,
+						132.0,
+						120.0
+					],
+					"slice": [
+						35.0,
+						35.0,
+						35.0,
+						35.0
+					],
+					"source": [
+						60.0,
+						60.0,
+						514.0,
+						481.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/cell",
+					"rect": [
+						0.0,
+						0.0,
+						132.0,
+						120.0
+					],
+					"slice": [
+						70.0,
+						70.0,
+						70.0,
+						70.0
+					],
+					"source": [
+						48.0,
+						115.0,
+						695.0,
+						718.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/shadow",
+					"rect": [
+						31.6800003051758,
+						62.0,
+						68.6399993896484,
+						14.0
+					],
+					"slice": [
+						0.0,
+						0.0,
+						0.0,
+						0.0
+					],
+					"source": [
+						850.0,
+						430.0,
+						520.0,
+						180.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "cards/normal",
+					"rect": [
+						0.0,
+						0.0,
+						132.0,
+						120.0
+					],
+					"slice": [
+						35.0,
+						35.0,
+						35.0,
+						35.0
+					],
+					"source": [
+						60.0,
+						60.0,
+						514.0,
+						481.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/cell",
+					"rect": [
+						0.0,
+						0.0,
+						132.0,
+						120.0
+					],
+					"slice": [
+						70.0,
+						70.0,
+						70.0,
+						70.0
+					],
+					"source": [
+						48.0,
+						115.0,
+						695.0,
+						718.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/shadow",
+					"rect": [
+						31.6800003051758,
+						62.0,
+						68.6399993896484,
+						14.0
+					],
+					"slice": [
+						0.0,
+						0.0,
+						0.0,
+						0.0
+					],
+					"source": [
+						850.0,
+						430.0,
+						520.0,
+						180.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "cards/normal",
+					"rect": [
+						0.0,
+						0.0,
+						132.0,
+						120.0
+					],
+					"slice": [
+						35.0,
+						35.0,
+						35.0,
+						35.0
+					],
+					"source": [
+						60.0,
+						60.0,
+						514.0,
+						481.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/cell",
+					"rect": [
+						0.0,
+						0.0,
+						132.0,
+						120.0
+					],
+					"slice": [
+						70.0,
+						70.0,
+						70.0,
+						70.0
+					],
+					"source": [
+						48.0,
+						115.0,
+						695.0,
+						718.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/shadow",
+					"rect": [
+						31.6800003051758,
+						62.0,
+						68.6399993896484,
+						14.0
+					],
+					"slice": [
+						0.0,
+						0.0,
+						0.0,
+						0.0
+					],
+					"source": [
+						850.0,
+						430.0,
+						520.0,
+						180.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "cards/normal",
+					"rect": [
+						0.0,
+						0.0,
+						132.0,
+						120.0
+					],
+					"slice": [
+						35.0,
+						35.0,
+						35.0,
+						35.0
+					],
+					"source": [
+						60.0,
+						60.0,
+						514.0,
+						481.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/cell",
+					"rect": [
+						0.0,
+						0.0,
+						132.0,
+						120.0
+					],
+					"slice": [
+						70.0,
+						70.0,
+						70.0,
+						70.0
+					],
+					"source": [
+						48.0,
+						115.0,
+						695.0,
+						718.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/shadow",
+					"rect": [
+						31.6800003051758,
+						62.0,
+						68.6399993896484,
+						14.0
+					],
+					"slice": [
+						0.0,
+						0.0,
+						0.0,
+						0.0
+					],
+					"source": [
+						850.0,
+						430.0,
+						520.0,
+						180.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "cards/detail",
+					"rect": [
+						618.0,
+						85.0,
+						266.0,
+						257.0
+					],
+					"slice": [
+						30.0,
+						30.0,
+						30.0,
+						30.0
+					],
+					"source": [
+						681.0,
+						643.0,
+						461.0,
+						556.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "controls/primary",
+					"rect": [
+						727.0,
+						351.0,
+						158.0,
+						45.0
+					],
+					"slice": [
+						72.0,
+						36.0,
+						72.0,
+						48.0
+					],
+					"source": [
+						39.0,
+						135.0,
+						762.0,
+						245.0
+					]
+				}
+			],
+			"screen": "04-blessing"
+		},
+		{
+			"controls": [
+				{
+					"caption": "이전",
+					"minimum44": true,
+					"rect": [
+						22,
+						14,
+						90,
+						44
+					],
+					"role": "unframed"
+				},
+				{
+					"caption": "각성자",
+					"minimum44": true,
+					"rect": [
+						24.0,
+						93.0,
+						138.0,
+						44.0
+					],
+					"role": "controls/secondary"
+				},
+				{
+					"caption": "무기",
+					"minimum44": true,
+					"rect": [
+						170.0,
+						93.0,
+						138.0,
+						44.0
+					],
+					"role": "controls/secondary"
+				},
+				{
+					"caption": "몬스터",
+					"minimum44": true,
+					"rect": [
+						316.0,
+						93.0,
+						138.0,
+						44.0
+					],
+					"role": "controls/secondary"
+				},
+				{
+					"caption": "아이템",
+					"minimum44": true,
+					"rect": [
+						462.0,
+						93.0,
+						138.0,
+						44.0
+					],
+					"role": "controls/selected"
+				},
+				{
+					"caption": "주간 규칙",
+					"minimum44": true,
+					"rect": [
+						608.0,
+						93.0,
+						138.0,
+						44.0
+					],
+					"role": "controls/secondary"
+				},
+				{
+					"caption": "단군의 축복",
+					"minimum44": true,
+					"rect": [
+						754.0,
+						93.0,
+						138.0,
+						44.0
+					],
+					"role": "controls/secondary"
+				},
+				{
+					"caption": "지역 이전",
+					"minimum44": true,
+					"rect": [
+						24,
+						357,
+						44,
+						44
+					],
+					"role": "unframed"
+				},
+				{
+					"caption": "지역 다음",
+					"minimum44": true,
+					"rect": [
+						413,
+						357,
+						44,
+						44
+					],
+					"role": "unframed"
+				},
+				{
+					"caption": "특징",
+					"minimum44": true,
+					"rect": [
+						536.0,
+						202.0,
+						108.0,
+						44.0
+					],
+					"role": "controls/secondary"
+				},
+				{
+					"caption": "효과",
+					"minimum44": true,
+					"rect": [
+						648.0,
+						202.0,
+						108.0,
+						44.0
+					],
+					"role": "controls/selected"
+				},
+				{
+					"caption": "구매 정보",
+					"minimum44": true,
+					"rect": [
+						760.0,
+						202.0,
+						108.0,
+						44.0
+					],
+					"role": "controls/secondary"
+				}
+			],
+			"fitIssues": [],
+			"labels": [
+				{
+					"actualSize": [
+						90.0,
+						44.0
+					],
+					"align": 0,
+					"fontHeight": 18.0,
+					"fontSize": 15,
+					"lines": 1,
+					"rect": [
+						22.0,
+						14.0,
+						90.0,
+						44.0
+					],
+					"requiredHeight": 18.0,
+					"requiredWidth": 39.0,
+					"role": "control",
+					"text": "‹ 이전"
+				},
+				{
+					"actualSize": [
+						568.0,
+						41.0
+					],
+					"align": 0,
+					"fontHeight": 34.0,
+					"fontSize": 28,
+					"lines": 1,
+					"rect": [
+						127.0,
+						12.0,
+						568.0,
+						41.0
+					],
+					"requiredHeight": 34.0,
+					"requiredWidth": 68.0,
+					"role": "brand",
+					"text": "자료집"
+				},
+				{
+					"actualSize": [
+						707.0,
+						28.0
+					],
+					"align": 0,
+					"fontHeight": 17.0,
+					"fontSize": 14,
+					"lines": 1,
+					"rect": [
+						128.0,
+						54.0,
+						707.0,
+						28.0
+					],
+					"requiredHeight": 17.0,
+					"requiredWidth": 187.0,
+					"role": "body",
+					"text": "수집물 · 능력치 · 성장과 분기 기록"
+				},
+				{
+					"actualSize": [
+						114.0,
+						36.0
+					],
+					"align": 1,
+					"fontHeight": 17.0,
+					"fontSize": 14,
+					"lines": 1,
+					"rect": [
+						36.0,
+						97.0,
+						114.0,
+						36.0
+					],
+					"requiredHeight": 17.0,
+					"requiredWidth": 37.0,
+					"role": "control",
+					"text": "각성자"
+				},
+				{
+					"actualSize": [
+						114.0,
+						36.0
+					],
+					"align": 1,
+					"fontHeight": 17.0,
+					"fontSize": 14,
+					"lines": 1,
+					"rect": [
+						182.0,
+						97.0,
+						114.0,
+						36.0
+					],
+					"requiredHeight": 17.0,
+					"requiredWidth": 25.0,
+					"role": "control",
+					"text": "무기"
+				},
+				{
+					"actualSize": [
+						114.0,
+						36.0
+					],
+					"align": 1,
+					"fontHeight": 17.0,
+					"fontSize": 14,
+					"lines": 1,
+					"rect": [
+						328.0,
+						97.0,
+						114.0,
+						36.0
+					],
+					"requiredHeight": 17.0,
+					"requiredWidth": 37.0,
+					"role": "control",
+					"text": "몬스터"
+				},
+				{
+					"actualSize": [
+						114.0,
+						36.0
+					],
+					"align": 1,
+					"fontHeight": 17.0,
+					"fontSize": 14,
+					"lines": 1,
+					"rect": [
+						474.0,
+						97.0,
+						114.0,
+						36.0
+					],
+					"requiredHeight": 17.0,
+					"requiredWidth": 37.0,
+					"role": "control",
+					"text": "아이템"
+				},
+				{
+					"actualSize": [
+						114.0,
+						36.0
+					],
+					"align": 1,
+					"fontHeight": 17.0,
+					"fontSize": 14,
+					"lines": 1,
+					"rect": [
+						620.0,
+						97.0,
+						114.0,
+						36.0
+					],
+					"requiredHeight": 17.0,
+					"requiredWidth": 53.0,
+					"role": "control",
+					"text": "주간 규칙"
+				},
+				{
+					"actualSize": [
+						114.0,
+						36.0
+					],
+					"align": 1,
+					"fontHeight": 17.0,
+					"fontSize": 14,
+					"lines": 1,
+					"rect": [
+						766.0,
+						97.0,
+						114.0,
+						36.0
+					],
+					"requiredHeight": 17.0,
+					"requiredWidth": 65.0,
+					"role": "control",
+					"text": "단군의 축복"
+				},
+				{
+					"actualSize": [
+						326.0,
+						28.0
+					],
+					"align": 0,
+					"fontHeight": 22.0,
+					"fontSize": 18,
+					"lines": 1,
+					"rect": [
+						26.0,
+						143.0,
+						326.0,
+						28.0
+					],
+					"requiredHeight": 22.0,
+					"requiredWidth": 48.0,
+					"role": "heading",
+					"text": "아이템"
+				},
+				{
+					"actualSize": [
+						74.0,
+						28.0
+					],
+					"align": 2,
+					"fontHeight": 23.0,
+					"fontSize": 19,
+					"lines": 1,
+					"rect": [
+						382.0,
+						143.0,
+						74.0,
+						28.0
+					],
+					"requiredHeight": 23.0,
+					"requiredWidth": 16.0,
+					"role": "number",
+					"text": "55"
+				},
+				{
+					"actualSize": [
+						44.0,
+						44.0
+					],
+					"align": 1,
+					"fontHeight": 27.0,
+					"fontSize": 22,
+					"lines": 1,
+					"rect": [
+						24.0,
+						357.0,
+						44.0,
+						44.0
+					],
+					"requiredHeight": 27.0,
+					"requiredWidth": 7.0,
+					"role": "number",
+					"text": "‹"
+				},
+				{
+					"actualSize": [
+						320.0,
+						44.0
+					],
+					"align": 1,
+					"fontHeight": 17.0,
+					"fontSize": 14,
+					"lines": 1,
+					"rect": [
+						79.0,
+						357.0,
+						320.0,
+						44.0
+					],
+					"requiredHeight": 17.0,
+					"requiredWidth": 65.0,
+					"role": "body",
+					"text": "광화문 광장"
+				},
+				{
+					"actualSize": [
+						44.0,
+						44.0
+					],
+					"align": 1,
+					"fontHeight": 27.0,
+					"fontSize": 22,
+					"lines": 1,
+					"rect": [
+						413.0,
+						357.0,
+						44.0,
+						44.0
+					],
+					"requiredHeight": 27.0,
+					"requiredWidth": 7.0,
+					"role": "number",
+					"text": "›"
+				},
+				{
+					"actualSize": [
+						332.0,
+						33.0
+					],
+					"align": 1,
+					"fontHeight": 26.0,
+					"fontSize": 21,
+					"lines": 1,
+					"rect": [
+						536.0,
+						159.0,
+						332.0,
+						33.0
+					],
+					"requiredHeight": 26.0,
+					"requiredWidth": 77.0,
+					"role": "heading",
+					"text": "금고 장부"
+				},
+				{
+					"actualSize": [
+						84.0,
+						36.0
+					],
+					"align": 1,
+					"fontHeight": 17.0,
+					"fontSize": 14,
+					"lines": 1,
+					"rect": [
+						548.0,
+						206.0,
+						84.0,
+						36.0
+					],
+					"requiredHeight": 17.0,
+					"requiredWidth": 25.0,
+					"role": "control",
+					"text": "특징"
+				},
+				{
+					"actualSize": [
+						84.0,
+						36.0
+					],
+					"align": 1,
+					"fontHeight": 17.0,
+					"fontSize": 14,
+					"lines": 1,
+					"rect": [
+						660.0,
+						206.0,
+						84.0,
+						36.0
+					],
+					"requiredHeight": 17.0,
+					"requiredWidth": 25.0,
+					"role": "control",
+					"text": "효과"
+				},
+				{
+					"actualSize": [
+						84.0,
+						36.0
+					],
+					"align": 1,
+					"fontHeight": 17.0,
+					"fontSize": 14,
+					"lines": 1,
+					"rect": [
+						772.0,
+						206.0,
+						84.0,
+						36.0
+					],
+					"requiredHeight": 17.0,
+					"requiredWidth": 53.0,
+					"role": "control",
+					"text": "구매 정보"
+				},
+				{
+					"actualSize": [
+						214.0,
+						22.0
+					],
+					"align": 0,
+					"fontHeight": 20.0,
+					"fontSize": 16,
+					"lines": 1,
+					"rect": [
+						0.0,
+						0.0,
+						198.0,
+						22.0
+					],
+					"requiredHeight": 20.0,
+					"requiredWidth": 198.0,
+					"role": "heading",
+					"text": "희귀 · 게이트24"
+				},
+				{
+					"actualSize": [
+						214.0,
+						19.0
+					],
+					"align": 0,
+					"fontHeight": 17.0,
+					"fontSize": 14,
+					"lines": 1,
+					"rect": [
+						0.0,
+						0.0,
+						198.0,
+						19.0
+					],
+					"requiredHeight": 17.0,
+					"requiredWidth": 198.0,
+					"role": "body",
+					"text": "마력석20당 피해+2%"
+				},
+				{
+					"actualSize": [
+						214.0,
+						19.0
+					],
+					"align": 0,
+					"fontHeight": 17.0,
+					"fontSize": 14,
+					"lines": 1,
+					"rect": [
+						0.0,
+						0.0,
+						198.0,
+						19.0
+					],
+					"requiredHeight": 17.0,
+					"requiredWidth": 198.0,
+					"role": "body",
+					"text": "최대+30%·소비 시 감소"
+				},
+				{
+					"actualSize": [
+						214.0,
+						19.0
+					],
+					"align": 0,
+					"fontHeight": 17.0,
+					"fontSize": 14,
+					"lines": 1,
+					"rect": [
+						0.0,
+						0.0,
+						198.0,
+						19.0
+					],
+					"requiredHeight": 17.0,
+					"requiredWidth": 198.0,
+					"role": "body",
+					"text": "패널티 · 획득범위 -10"
+				},
+				{
+					"actualSize": [
+						324.0,
+						38.0
+					],
+					"align": 0,
+					"fontHeight": 17.0,
+					"fontSize": 14,
+					"lines": 2,
+					"rect": [
+						0.0,
+						0.0,
+						316.0,
+						38.0
+					],
+					"requiredHeight": 36.0,
+					"requiredWidth": 316.0,
+					"role": "body",
+					"text": "보유 마력석 20마다 피해 +2%, 최대 +30%. 소비 시 즉시 감소. · 획득 범위 -10 감소"
+				},
+				{
+					"actualSize": [
+						242.0,
+						28.0
+					],
+					"align": 0,
+					"fontHeight": 17.0,
+					"fontSize": 14,
+					"lines": 1,
+					"rect": [
+						0.0,
+						0.0,
+						130.0,
+						28.0
+					],
+					"requiredHeight": 17.0,
+					"requiredWidth": 112.0,
+					"role": "body",
+					"text": "정확한 가격 · 마력석"
+				},
+				{
+					"actualSize": [
+						74.0,
+						28.0
+					],
+					"align": 2,
+					"fontHeight": 20.0,
+					"fontSize": 16,
+					"lines": 1,
+					"rect": [
+						0.0,
+						0.0,
+						74.0,
+						28.0
+					],
+					"requiredHeight": 20.0,
+					"requiredWidth": 14.0,
+					"role": "number",
+					"text": "48"
+				},
+				{
+					"actualSize": [
+						242.0,
+						28.0
+					],
+					"align": 0,
+					"fontHeight": 17.0,
+					"fontSize": 14,
+					"lines": 1,
+					"rect": [
+						0.0,
+						0.0,
+						130.0,
+						28.0
+					],
+					"requiredHeight": 17.0,
+					"requiredWidth": 53.0,
+					"role": "body",
+					"text": "보유 상한"
+				},
+				{
+					"actualSize": [
+						74.0,
+						28.0
+					],
+					"align": 2,
+					"fontHeight": 20.0,
+					"fontSize": 16,
+					"lines": 1,
+					"rect": [
+						0.0,
+						0.0,
+						74.0,
+						28.0
+					],
+					"requiredHeight": 20.0,
+					"requiredWidth": 4.0,
+					"role": "number",
+					"text": "1"
+				}
+			],
+			"materials": [
+				{
+					"assetScale": 4.0,
+					"material": "controls/secondary",
+					"rect": [
+						24.0,
+						93.0,
+						138.0,
+						44.0
+					],
+					"slice": [
+						72.0,
+						36.0,
+						72.0,
+						48.0
+					],
+					"source": [
+						859.0,
+						134.0,
+						762.0,
+						246.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "controls/secondary",
+					"rect": [
+						170.0,
+						93.0,
+						138.0,
+						44.0
+					],
+					"slice": [
+						72.0,
+						36.0,
+						72.0,
+						48.0
+					],
+					"source": [
+						859.0,
+						134.0,
+						762.0,
+						246.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "controls/secondary",
+					"rect": [
+						316.0,
+						93.0,
+						138.0,
+						44.0
+					],
+					"slice": [
+						72.0,
+						36.0,
+						72.0,
+						48.0
+					],
+					"source": [
+						859.0,
+						134.0,
+						762.0,
+						246.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "controls/selected",
+					"rect": [
+						462.0,
+						93.0,
+						138.0,
+						44.0
+					],
+					"slice": [
+						72.0,
+						36.0,
+						72.0,
+						48.0
+					],
+					"source": [
+						44.0,
+						553.0,
+						761.0,
+						246.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "controls/secondary",
+					"rect": [
+						608.0,
+						93.0,
+						138.0,
+						44.0
+					],
+					"slice": [
+						72.0,
+						36.0,
+						72.0,
+						48.0
+					],
+					"source": [
+						859.0,
+						134.0,
+						762.0,
+						246.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "controls/secondary",
+					"rect": [
+						754.0,
+						93.0,
+						138.0,
+						44.0
+					],
+					"slice": [
+						72.0,
+						36.0,
+						72.0,
+						48.0
+					],
+					"source": [
+						859.0,
+						134.0,
+						762.0,
+						246.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "cards/normal",
+					"rect": [
+						0.0,
+						0.0,
+						78.0,
+						73.0
+					],
+					"slice": [
+						35.0,
+						35.0,
+						35.0,
+						35.0
+					],
+					"source": [
+						60.0,
+						60.0,
+						514.0,
+						481.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/cell",
+					"rect": [
+						0.0,
+						0.0,
+						78.0,
+						73.0
+					],
+					"slice": [
+						70.0,
+						70.0,
+						70.0,
+						70.0
+					],
+					"source": [
+						48.0,
+						115.0,
+						695.0,
+						718.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/shadow",
+					"rect": [
+						18.7199993133545,
+						53.0,
+						40.560001373291,
+						14.0
+					],
+					"slice": [
+						0.0,
+						0.0,
+						0.0,
+						0.0
+					],
+					"source": [
+						850.0,
+						430.0,
+						520.0,
+						180.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "cards/normal",
+					"rect": [
+						0.0,
+						0.0,
+						78.0,
+						73.0
+					],
+					"slice": [
+						35.0,
+						35.0,
+						35.0,
+						35.0
+					],
+					"source": [
+						60.0,
+						60.0,
+						514.0,
+						481.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/cell",
+					"rect": [
+						0.0,
+						0.0,
+						78.0,
+						73.0
+					],
+					"slice": [
+						70.0,
+						70.0,
+						70.0,
+						70.0
+					],
+					"source": [
+						48.0,
+						115.0,
+						695.0,
+						718.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/shadow",
+					"rect": [
+						18.7199993133545,
+						53.0,
+						40.560001373291,
+						14.0
+					],
+					"slice": [
+						0.0,
+						0.0,
+						0.0,
+						0.0
+					],
+					"source": [
+						850.0,
+						430.0,
+						520.0,
+						180.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "cards/normal",
+					"rect": [
+						0.0,
+						0.0,
+						78.0,
+						73.0
+					],
+					"slice": [
+						35.0,
+						35.0,
+						35.0,
+						35.0
+					],
+					"source": [
+						60.0,
+						60.0,
+						514.0,
+						481.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/cell",
+					"rect": [
+						0.0,
+						0.0,
+						78.0,
+						73.0
+					],
+					"slice": [
+						70.0,
+						70.0,
+						70.0,
+						70.0
+					],
+					"source": [
+						48.0,
+						115.0,
+						695.0,
+						718.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/shadow",
+					"rect": [
+						18.7199993133545,
+						53.0,
+						40.560001373291,
+						14.0
+					],
+					"slice": [
+						0.0,
+						0.0,
+						0.0,
+						0.0
+					],
+					"source": [
+						850.0,
+						430.0,
+						520.0,
+						180.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "cards/normal",
+					"rect": [
+						0.0,
+						0.0,
+						78.0,
+						73.0
+					],
+					"slice": [
+						35.0,
+						35.0,
+						35.0,
+						35.0
+					],
+					"source": [
+						60.0,
+						60.0,
+						514.0,
+						481.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/cell",
+					"rect": [
+						0.0,
+						0.0,
+						78.0,
+						73.0
+					],
+					"slice": [
+						70.0,
+						70.0,
+						70.0,
+						70.0
+					],
+					"source": [
+						48.0,
+						115.0,
+						695.0,
+						718.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/shadow",
+					"rect": [
+						18.7199993133545,
+						53.0,
+						40.560001373291,
+						14.0
+					],
+					"slice": [
+						0.0,
+						0.0,
+						0.0,
+						0.0
+					],
+					"source": [
+						850.0,
+						430.0,
+						520.0,
+						180.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "cards/normal",
+					"rect": [
+						0.0,
+						0.0,
+						78.0,
+						73.0
+					],
+					"slice": [
+						35.0,
+						35.0,
+						35.0,
+						35.0
+					],
+					"source": [
+						60.0,
+						60.0,
+						514.0,
+						481.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/cell",
+					"rect": [
+						0.0,
+						0.0,
+						78.0,
+						73.0
+					],
+					"slice": [
+						70.0,
+						70.0,
+						70.0,
+						70.0
+					],
+					"source": [
+						48.0,
+						115.0,
+						695.0,
+						718.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/shadow",
+					"rect": [
+						18.7199993133545,
+						53.0,
+						40.560001373291,
+						14.0
+					],
+					"slice": [
+						0.0,
+						0.0,
+						0.0,
+						0.0
+					],
+					"source": [
+						850.0,
+						430.0,
+						520.0,
+						180.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "cards/normal",
+					"rect": [
+						0.0,
+						0.0,
+						78.0,
+						73.0
+					],
+					"slice": [
+						35.0,
+						35.0,
+						35.0,
+						35.0
+					],
+					"source": [
+						60.0,
+						60.0,
+						514.0,
+						481.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/cell",
+					"rect": [
+						0.0,
+						0.0,
+						78.0,
+						73.0
+					],
+					"slice": [
+						70.0,
+						70.0,
+						70.0,
+						70.0
+					],
+					"source": [
+						48.0,
+						115.0,
+						695.0,
+						718.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/shadow",
+					"rect": [
+						18.7199993133545,
+						53.0,
+						40.560001373291,
+						14.0
+					],
+					"slice": [
+						0.0,
+						0.0,
+						0.0,
+						0.0
+					],
+					"source": [
+						850.0,
+						430.0,
+						520.0,
+						180.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "cards/normal",
+					"rect": [
+						0.0,
+						0.0,
+						78.0,
+						73.0
+					],
+					"slice": [
+						35.0,
+						35.0,
+						35.0,
+						35.0
+					],
+					"source": [
+						60.0,
+						60.0,
+						514.0,
+						481.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/cell",
+					"rect": [
+						0.0,
+						0.0,
+						78.0,
+						73.0
+					],
+					"slice": [
+						70.0,
+						70.0,
+						70.0,
+						70.0
+					],
+					"source": [
+						48.0,
+						115.0,
+						695.0,
+						718.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/shadow",
+					"rect": [
+						18.7199993133545,
+						53.0,
+						40.560001373291,
+						14.0
+					],
+					"slice": [
+						0.0,
+						0.0,
+						0.0,
+						0.0
+					],
+					"source": [
+						850.0,
+						430.0,
+						520.0,
+						180.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "cards/normal",
+					"rect": [
+						0.0,
+						0.0,
+						78.0,
+						73.0
+					],
+					"slice": [
+						35.0,
+						35.0,
+						35.0,
+						35.0
+					],
+					"source": [
+						60.0,
+						60.0,
+						514.0,
+						481.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/cell",
+					"rect": [
+						0.0,
+						0.0,
+						78.0,
+						73.0
+					],
+					"slice": [
+						70.0,
+						70.0,
+						70.0,
+						70.0
+					],
+					"source": [
+						48.0,
+						115.0,
+						695.0,
+						718.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/shadow",
+					"rect": [
+						18.7199993133545,
+						53.0,
+						40.560001373291,
+						14.0
+					],
+					"slice": [
+						0.0,
+						0.0,
+						0.0,
+						0.0
+					],
+					"source": [
+						850.0,
+						430.0,
+						520.0,
+						180.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "cards/normal",
+					"rect": [
+						0.0,
+						0.0,
+						78.0,
+						73.0
+					],
+					"slice": [
+						35.0,
+						35.0,
+						35.0,
+						35.0
+					],
+					"source": [
+						60.0,
+						60.0,
+						514.0,
+						481.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/cell",
+					"rect": [
+						0.0,
+						0.0,
+						78.0,
+						73.0
+					],
+					"slice": [
+						70.0,
+						70.0,
+						70.0,
+						70.0
+					],
+					"source": [
+						48.0,
+						115.0,
+						695.0,
+						718.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/shadow",
+					"rect": [
+						18.7199993133545,
+						53.0,
+						40.560001373291,
+						14.0
+					],
+					"slice": [
+						0.0,
+						0.0,
+						0.0,
+						0.0
+					],
+					"source": [
+						850.0,
+						430.0,
+						520.0,
+						180.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "cards/normal",
+					"rect": [
+						0.0,
+						0.0,
+						78.0,
+						73.0
+					],
+					"slice": [
+						35.0,
+						35.0,
+						35.0,
+						35.0
+					],
+					"source": [
+						60.0,
+						60.0,
+						514.0,
+						481.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/cell",
+					"rect": [
+						0.0,
+						0.0,
+						78.0,
+						73.0
+					],
+					"slice": [
+						70.0,
+						70.0,
+						70.0,
+						70.0
+					],
+					"source": [
+						48.0,
+						115.0,
+						695.0,
+						718.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/shadow",
+					"rect": [
+						18.7199993133545,
+						53.0,
+						40.560001373291,
+						14.0
+					],
+					"slice": [
+						0.0,
+						0.0,
+						0.0,
+						0.0
+					],
+					"source": [
+						850.0,
+						430.0,
+						520.0,
+						180.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "cards/normal",
+					"rect": [
+						0.0,
+						0.0,
+						78.0,
+						73.0
+					],
+					"slice": [
+						35.0,
+						35.0,
+						35.0,
+						35.0
+					],
+					"source": [
+						60.0,
+						60.0,
+						514.0,
+						481.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/cell",
+					"rect": [
+						0.0,
+						0.0,
+						78.0,
+						73.0
+					],
+					"slice": [
+						70.0,
+						70.0,
+						70.0,
+						70.0
+					],
+					"source": [
+						48.0,
+						115.0,
+						695.0,
+						718.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/shadow",
+					"rect": [
+						18.7199993133545,
+						53.0,
+						40.560001373291,
+						14.0
+					],
+					"slice": [
+						0.0,
+						0.0,
+						0.0,
+						0.0
+					],
+					"source": [
+						850.0,
+						430.0,
+						520.0,
+						180.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "cards/normal",
+					"rect": [
+						0.0,
+						0.0,
+						78.0,
+						73.0
+					],
+					"slice": [
+						35.0,
+						35.0,
+						35.0,
+						35.0
+					],
+					"source": [
+						60.0,
+						60.0,
+						514.0,
+						481.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/cell",
+					"rect": [
+						0.0,
+						0.0,
+						78.0,
+						73.0
+					],
+					"slice": [
+						70.0,
+						70.0,
+						70.0,
+						70.0
+					],
+					"source": [
+						48.0,
+						115.0,
+						695.0,
+						718.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/shadow",
+					"rect": [
+						18.7199993133545,
+						53.0,
+						40.560001373291,
+						14.0
+					],
+					"slice": [
+						0.0,
+						0.0,
+						0.0,
+						0.0
+					],
+					"source": [
+						850.0,
+						430.0,
+						520.0,
+						180.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "cards/normal",
+					"rect": [
+						0.0,
+						0.0,
+						78.0,
+						73.0
+					],
+					"slice": [
+						35.0,
+						35.0,
+						35.0,
+						35.0
+					],
+					"source": [
+						60.0,
+						60.0,
+						514.0,
+						481.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/cell",
+					"rect": [
+						0.0,
+						0.0,
+						78.0,
+						73.0
+					],
+					"slice": [
+						70.0,
+						70.0,
+						70.0,
+						70.0
+					],
+					"source": [
+						48.0,
+						115.0,
+						695.0,
+						718.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/shadow",
+					"rect": [
+						18.7199993133545,
+						53.0,
+						40.560001373291,
+						14.0
+					],
+					"slice": [
+						0.0,
+						0.0,
+						0.0,
+						0.0
+					],
+					"source": [
+						850.0,
+						430.0,
+						520.0,
+						180.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "cards/normal",
+					"rect": [
+						0.0,
+						0.0,
+						78.0,
+						73.0
+					],
+					"slice": [
+						35.0,
+						35.0,
+						35.0,
+						35.0
+					],
+					"source": [
+						60.0,
+						60.0,
+						514.0,
+						481.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/cell",
+					"rect": [
+						0.0,
+						0.0,
+						78.0,
+						73.0
+					],
+					"slice": [
+						70.0,
+						70.0,
+						70.0,
+						70.0
+					],
+					"source": [
+						48.0,
+						115.0,
+						695.0,
+						718.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/shadow",
+					"rect": [
+						18.7199993133545,
+						53.0,
+						40.560001373291,
+						14.0
+					],
+					"slice": [
+						0.0,
+						0.0,
+						0.0,
+						0.0
+					],
+					"source": [
+						850.0,
+						430.0,
+						520.0,
+						180.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "cards/normal",
+					"rect": [
+						0.0,
+						0.0,
+						78.0,
+						73.0
+					],
+					"slice": [
+						35.0,
+						35.0,
+						35.0,
+						35.0
+					],
+					"source": [
+						60.0,
+						60.0,
+						514.0,
+						481.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/cell",
+					"rect": [
+						0.0,
+						0.0,
+						78.0,
+						73.0
+					],
+					"slice": [
+						70.0,
+						70.0,
+						70.0,
+						70.0
+					],
+					"source": [
+						48.0,
+						115.0,
+						695.0,
+						718.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/shadow",
+					"rect": [
+						18.7199993133545,
+						53.0,
+						40.560001373291,
+						14.0
+					],
+					"slice": [
+						0.0,
+						0.0,
+						0.0,
+						0.0
+					],
+					"source": [
+						850.0,
+						430.0,
+						520.0,
+						180.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "cards/normal",
+					"rect": [
+						0.0,
+						0.0,
+						78.0,
+						73.0
+					],
+					"slice": [
+						35.0,
+						35.0,
+						35.0,
+						35.0
+					],
+					"source": [
+						60.0,
+						60.0,
+						514.0,
+						481.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/cell",
+					"rect": [
+						0.0,
+						0.0,
+						78.0,
+						73.0
+					],
+					"slice": [
+						70.0,
+						70.0,
+						70.0,
+						70.0
+					],
+					"source": [
+						48.0,
+						115.0,
+						695.0,
+						718.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/shadow",
+					"rect": [
+						18.7199993133545,
+						53.0,
+						40.560001373291,
+						14.0
+					],
+					"slice": [
+						0.0,
+						0.0,
+						0.0,
+						0.0
+					],
+					"source": [
+						850.0,
+						430.0,
+						520.0,
+						180.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "cards/normal",
+					"rect": [
+						0.0,
+						0.0,
+						78.0,
+						73.0
+					],
+					"slice": [
+						35.0,
+						35.0,
+						35.0,
+						35.0
+					],
+					"source": [
+						60.0,
+						60.0,
+						514.0,
+						481.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/cell",
+					"rect": [
+						0.0,
+						0.0,
+						78.0,
+						73.0
+					],
+					"slice": [
+						70.0,
+						70.0,
+						70.0,
+						70.0
+					],
+					"source": [
+						48.0,
+						115.0,
+						695.0,
+						718.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/shadow",
+					"rect": [
+						18.7199993133545,
+						53.0,
+						40.560001373291,
+						14.0
+					],
+					"slice": [
+						0.0,
+						0.0,
+						0.0,
+						0.0
+					],
+					"source": [
+						850.0,
+						430.0,
+						520.0,
+						180.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "cards/normal",
+					"rect": [
+						0.0,
+						0.0,
+						78.0,
+						73.0
+					],
+					"slice": [
+						35.0,
+						35.0,
+						35.0,
+						35.0
+					],
+					"source": [
+						60.0,
+						60.0,
+						514.0,
+						481.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/cell",
+					"rect": [
+						0.0,
+						0.0,
+						78.0,
+						73.0
+					],
+					"slice": [
+						70.0,
+						70.0,
+						70.0,
+						70.0
+					],
+					"source": [
+						48.0,
+						115.0,
+						695.0,
+						718.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/shadow",
+					"rect": [
+						18.7199993133545,
+						53.0,
+						40.560001373291,
+						14.0
+					],
+					"slice": [
+						0.0,
+						0.0,
+						0.0,
+						0.0
+					],
+					"source": [
+						850.0,
+						430.0,
+						520.0,
+						180.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "cards/normal",
+					"rect": [
+						0.0,
+						0.0,
+						78.0,
+						73.0
+					],
+					"slice": [
+						35.0,
+						35.0,
+						35.0,
+						35.0
+					],
+					"source": [
+						60.0,
+						60.0,
+						514.0,
+						481.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/cell",
+					"rect": [
+						0.0,
+						0.0,
+						78.0,
+						73.0
+					],
+					"slice": [
+						70.0,
+						70.0,
+						70.0,
+						70.0
+					],
+					"source": [
+						48.0,
+						115.0,
+						695.0,
+						718.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/shadow",
+					"rect": [
+						18.7199993133545,
+						53.0,
+						40.560001373291,
+						14.0
+					],
+					"slice": [
+						0.0,
+						0.0,
+						0.0,
+						0.0
+					],
+					"source": [
+						850.0,
+						430.0,
+						520.0,
+						180.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "cards/normal",
+					"rect": [
+						0.0,
+						0.0,
+						78.0,
+						73.0
+					],
+					"slice": [
+						35.0,
+						35.0,
+						35.0,
+						35.0
+					],
+					"source": [
+						60.0,
+						60.0,
+						514.0,
+						481.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/cell",
+					"rect": [
+						0.0,
+						0.0,
+						78.0,
+						73.0
+					],
+					"slice": [
+						70.0,
+						70.0,
+						70.0,
+						70.0
+					],
+					"source": [
+						48.0,
+						115.0,
+						695.0,
+						718.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/shadow",
+					"rect": [
+						18.7199993133545,
+						53.0,
+						40.560001373291,
+						14.0
+					],
+					"slice": [
+						0.0,
+						0.0,
+						0.0,
+						0.0
+					],
+					"source": [
+						850.0,
+						430.0,
+						520.0,
+						180.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "cards/normal",
+					"rect": [
+						0.0,
+						0.0,
+						78.0,
+						73.0
+					],
+					"slice": [
+						35.0,
+						35.0,
+						35.0,
+						35.0
+					],
+					"source": [
+						60.0,
+						60.0,
+						514.0,
+						481.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/cell",
+					"rect": [
+						0.0,
+						0.0,
+						78.0,
+						73.0
+					],
+					"slice": [
+						70.0,
+						70.0,
+						70.0,
+						70.0
+					],
+					"source": [
+						48.0,
+						115.0,
+						695.0,
+						718.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/shadow",
+					"rect": [
+						18.7199993133545,
+						53.0,
+						40.560001373291,
+						14.0
+					],
+					"slice": [
+						0.0,
+						0.0,
+						0.0,
+						0.0
+					],
+					"source": [
+						850.0,
+						430.0,
+						520.0,
+						180.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "cards/normal",
+					"rect": [
+						0.0,
+						0.0,
+						78.0,
+						73.0
+					],
+					"slice": [
+						35.0,
+						35.0,
+						35.0,
+						35.0
+					],
+					"source": [
+						60.0,
+						60.0,
+						514.0,
+						481.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/cell",
+					"rect": [
+						0.0,
+						0.0,
+						78.0,
+						73.0
+					],
+					"slice": [
+						70.0,
+						70.0,
+						70.0,
+						70.0
+					],
+					"source": [
+						48.0,
+						115.0,
+						695.0,
+						718.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/shadow",
+					"rect": [
+						18.7199993133545,
+						53.0,
+						40.560001373291,
+						14.0
+					],
+					"slice": [
+						0.0,
+						0.0,
+						0.0,
+						0.0
+					],
+					"source": [
+						850.0,
+						430.0,
+						520.0,
+						180.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "cards/normal",
+					"rect": [
+						0.0,
+						0.0,
+						78.0,
+						73.0
+					],
+					"slice": [
+						35.0,
+						35.0,
+						35.0,
+						35.0
+					],
+					"source": [
+						60.0,
+						60.0,
+						514.0,
+						481.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/cell",
+					"rect": [
+						0.0,
+						0.0,
+						78.0,
+						73.0
+					],
+					"slice": [
+						70.0,
+						70.0,
+						70.0,
+						70.0
+					],
+					"source": [
+						48.0,
+						115.0,
+						695.0,
+						718.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/shadow",
+					"rect": [
+						18.7199993133545,
+						53.0,
+						40.560001373291,
+						14.0
+					],
+					"slice": [
+						0.0,
+						0.0,
+						0.0,
+						0.0
+					],
+					"source": [
+						850.0,
+						430.0,
+						520.0,
+						180.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "cards/normal",
+					"rect": [
+						0.0,
+						0.0,
+						78.0,
+						73.0
+					],
+					"slice": [
+						35.0,
+						35.0,
+						35.0,
+						35.0
+					],
+					"source": [
+						60.0,
+						60.0,
+						514.0,
+						481.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/cell",
+					"rect": [
+						0.0,
+						0.0,
+						78.0,
+						73.0
+					],
+					"slice": [
+						70.0,
+						70.0,
+						70.0,
+						70.0
+					],
+					"source": [
+						48.0,
+						115.0,
+						695.0,
+						718.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/shadow",
+					"rect": [
+						18.7199993133545,
+						53.0,
+						40.560001373291,
+						14.0
+					],
+					"slice": [
+						0.0,
+						0.0,
+						0.0,
+						0.0
+					],
+					"source": [
+						850.0,
+						430.0,
+						520.0,
+						180.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "cards/normal",
+					"rect": [
+						0.0,
+						0.0,
+						78.0,
+						73.0
+					],
+					"slice": [
+						35.0,
+						35.0,
+						35.0,
+						35.0
+					],
+					"source": [
+						60.0,
+						60.0,
+						514.0,
+						481.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/cell",
+					"rect": [
+						0.0,
+						0.0,
+						78.0,
+						73.0
+					],
+					"slice": [
+						70.0,
+						70.0,
+						70.0,
+						70.0
+					],
+					"source": [
+						48.0,
+						115.0,
+						695.0,
+						718.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/shadow",
+					"rect": [
+						18.7199993133545,
+						53.0,
+						40.560001373291,
+						14.0
+					],
+					"slice": [
+						0.0,
+						0.0,
+						0.0,
+						0.0
+					],
+					"source": [
+						850.0,
+						430.0,
+						520.0,
+						180.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "cards/normal",
+					"rect": [
+						0.0,
+						0.0,
+						78.0,
+						73.0
+					],
+					"slice": [
+						35.0,
+						35.0,
+						35.0,
+						35.0
+					],
+					"source": [
+						60.0,
+						60.0,
+						514.0,
+						481.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/cell",
+					"rect": [
+						0.0,
+						0.0,
+						78.0,
+						73.0
+					],
+					"slice": [
+						70.0,
+						70.0,
+						70.0,
+						70.0
+					],
+					"source": [
+						48.0,
+						115.0,
+						695.0,
+						718.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/shadow",
+					"rect": [
+						18.7199993133545,
+						53.0,
+						40.560001373291,
+						14.0
+					],
+					"slice": [
+						0.0,
+						0.0,
+						0.0,
+						0.0
+					],
+					"source": [
+						850.0,
+						430.0,
+						520.0,
+						180.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "cards/normal",
+					"rect": [
+						0.0,
+						0.0,
+						78.0,
+						73.0
+					],
+					"slice": [
+						35.0,
+						35.0,
+						35.0,
+						35.0
+					],
+					"source": [
+						60.0,
+						60.0,
+						514.0,
+						481.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/cell",
+					"rect": [
+						0.0,
+						0.0,
+						78.0,
+						73.0
+					],
+					"slice": [
+						70.0,
+						70.0,
+						70.0,
+						70.0
+					],
+					"source": [
+						48.0,
+						115.0,
+						695.0,
+						718.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/shadow",
+					"rect": [
+						18.7199993133545,
+						53.0,
+						40.560001373291,
+						14.0
+					],
+					"slice": [
+						0.0,
+						0.0,
+						0.0,
+						0.0
+					],
+					"source": [
+						850.0,
+						430.0,
+						520.0,
+						180.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "cards/normal",
+					"rect": [
+						0.0,
+						0.0,
+						78.0,
+						73.0
+					],
+					"slice": [
+						35.0,
+						35.0,
+						35.0,
+						35.0
+					],
+					"source": [
+						60.0,
+						60.0,
+						514.0,
+						481.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/cell",
+					"rect": [
+						0.0,
+						0.0,
+						78.0,
+						73.0
+					],
+					"slice": [
+						70.0,
+						70.0,
+						70.0,
+						70.0
+					],
+					"source": [
+						48.0,
+						115.0,
+						695.0,
+						718.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/shadow",
+					"rect": [
+						18.7199993133545,
+						53.0,
+						40.560001373291,
+						14.0
+					],
+					"slice": [
+						0.0,
+						0.0,
+						0.0,
+						0.0
+					],
+					"source": [
+						850.0,
+						430.0,
+						520.0,
+						180.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "cards/normal",
+					"rect": [
+						0.0,
+						0.0,
+						78.0,
+						73.0
+					],
+					"slice": [
+						35.0,
+						35.0,
+						35.0,
+						35.0
+					],
+					"source": [
+						60.0,
+						60.0,
+						514.0,
+						481.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/cell",
+					"rect": [
+						0.0,
+						0.0,
+						78.0,
+						73.0
+					],
+					"slice": [
+						70.0,
+						70.0,
+						70.0,
+						70.0
+					],
+					"source": [
+						48.0,
+						115.0,
+						695.0,
+						718.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/shadow",
+					"rect": [
+						18.7199993133545,
+						53.0,
+						40.560001373291,
+						14.0
+					],
+					"slice": [
+						0.0,
+						0.0,
+						0.0,
+						0.0
+					],
+					"source": [
+						850.0,
+						430.0,
+						520.0,
+						180.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "cards/normal",
+					"rect": [
+						0.0,
+						0.0,
+						78.0,
+						73.0
+					],
+					"slice": [
+						35.0,
+						35.0,
+						35.0,
+						35.0
+					],
+					"source": [
+						60.0,
+						60.0,
+						514.0,
+						481.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/cell",
+					"rect": [
+						0.0,
+						0.0,
+						78.0,
+						73.0
+					],
+					"slice": [
+						70.0,
+						70.0,
+						70.0,
+						70.0
+					],
+					"source": [
+						48.0,
+						115.0,
+						695.0,
+						718.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/shadow",
+					"rect": [
+						18.7199993133545,
+						53.0,
+						40.560001373291,
+						14.0
+					],
+					"slice": [
+						0.0,
+						0.0,
+						0.0,
+						0.0
+					],
+					"source": [
+						850.0,
+						430.0,
+						520.0,
+						180.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "cards/normal",
+					"rect": [
+						0.0,
+						0.0,
+						78.0,
+						73.0
+					],
+					"slice": [
+						35.0,
+						35.0,
+						35.0,
+						35.0
+					],
+					"source": [
+						60.0,
+						60.0,
+						514.0,
+						481.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/cell",
+					"rect": [
+						0.0,
+						0.0,
+						78.0,
+						73.0
+					],
+					"slice": [
+						70.0,
+						70.0,
+						70.0,
+						70.0
+					],
+					"source": [
+						48.0,
+						115.0,
+						695.0,
+						718.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/shadow",
+					"rect": [
+						18.7199993133545,
+						53.0,
+						40.560001373291,
+						14.0
+					],
+					"slice": [
+						0.0,
+						0.0,
+						0.0,
+						0.0
+					],
+					"source": [
+						850.0,
+						430.0,
+						520.0,
+						180.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "cards/normal",
+					"rect": [
+						0.0,
+						0.0,
+						78.0,
+						73.0
+					],
+					"slice": [
+						35.0,
+						35.0,
+						35.0,
+						35.0
+					],
+					"source": [
+						60.0,
+						60.0,
+						514.0,
+						481.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/cell",
+					"rect": [
+						0.0,
+						0.0,
+						78.0,
+						73.0
+					],
+					"slice": [
+						70.0,
+						70.0,
+						70.0,
+						70.0
+					],
+					"source": [
+						48.0,
+						115.0,
+						695.0,
+						718.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/shadow",
+					"rect": [
+						18.7199993133545,
+						53.0,
+						40.560001373291,
+						14.0
+					],
+					"slice": [
+						0.0,
+						0.0,
+						0.0,
+						0.0
+					],
+					"source": [
+						850.0,
+						430.0,
+						520.0,
+						180.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "cards/normal",
+					"rect": [
+						0.0,
+						0.0,
+						78.0,
+						73.0
+					],
+					"slice": [
+						35.0,
+						35.0,
+						35.0,
+						35.0
+					],
+					"source": [
+						60.0,
+						60.0,
+						514.0,
+						481.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/cell",
+					"rect": [
+						0.0,
+						0.0,
+						78.0,
+						73.0
+					],
+					"slice": [
+						70.0,
+						70.0,
+						70.0,
+						70.0
+					],
+					"source": [
+						48.0,
+						115.0,
+						695.0,
+						718.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/shadow",
+					"rect": [
+						18.7199993133545,
+						53.0,
+						40.560001373291,
+						14.0
+					],
+					"slice": [
+						0.0,
+						0.0,
+						0.0,
+						0.0
+					],
+					"source": [
+						850.0,
+						430.0,
+						520.0,
+						180.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "cards/normal",
+					"rect": [
+						0.0,
+						0.0,
+						78.0,
+						73.0
+					],
+					"slice": [
+						35.0,
+						35.0,
+						35.0,
+						35.0
+					],
+					"source": [
+						60.0,
+						60.0,
+						514.0,
+						481.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/cell",
+					"rect": [
+						0.0,
+						0.0,
+						78.0,
+						73.0
+					],
+					"slice": [
+						70.0,
+						70.0,
+						70.0,
+						70.0
+					],
+					"source": [
+						48.0,
+						115.0,
+						695.0,
+						718.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/shadow",
+					"rect": [
+						18.7199993133545,
+						53.0,
+						40.560001373291,
+						14.0
+					],
+					"slice": [
+						0.0,
+						0.0,
+						0.0,
+						0.0
+					],
+					"source": [
+						850.0,
+						430.0,
+						520.0,
+						180.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "cards/normal",
+					"rect": [
+						0.0,
+						0.0,
+						78.0,
+						73.0
+					],
+					"slice": [
+						35.0,
+						35.0,
+						35.0,
+						35.0
+					],
+					"source": [
+						60.0,
+						60.0,
+						514.0,
+						481.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/cell",
+					"rect": [
+						0.0,
+						0.0,
+						78.0,
+						73.0
+					],
+					"slice": [
+						70.0,
+						70.0,
+						70.0,
+						70.0
+					],
+					"source": [
+						48.0,
+						115.0,
+						695.0,
+						718.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/shadow",
+					"rect": [
+						18.7199993133545,
+						53.0,
+						40.560001373291,
+						14.0
+					],
+					"slice": [
+						0.0,
+						0.0,
+						0.0,
+						0.0
+					],
+					"source": [
+						850.0,
+						430.0,
+						520.0,
+						180.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "cards/normal",
+					"rect": [
+						0.0,
+						0.0,
+						78.0,
+						73.0
+					],
+					"slice": [
+						35.0,
+						35.0,
+						35.0,
+						35.0
+					],
+					"source": [
+						60.0,
+						60.0,
+						514.0,
+						481.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/cell",
+					"rect": [
+						0.0,
+						0.0,
+						78.0,
+						73.0
+					],
+					"slice": [
+						70.0,
+						70.0,
+						70.0,
+						70.0
+					],
+					"source": [
+						48.0,
+						115.0,
+						695.0,
+						718.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/shadow",
+					"rect": [
+						18.7199993133545,
+						53.0,
+						40.560001373291,
+						14.0
+					],
+					"slice": [
+						0.0,
+						0.0,
+						0.0,
+						0.0
+					],
+					"source": [
+						850.0,
+						430.0,
+						520.0,
+						180.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "cards/normal",
+					"rect": [
+						0.0,
+						0.0,
+						78.0,
+						73.0
+					],
+					"slice": [
+						35.0,
+						35.0,
+						35.0,
+						35.0
+					],
+					"source": [
+						60.0,
+						60.0,
+						514.0,
+						481.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/cell",
+					"rect": [
+						0.0,
+						0.0,
+						78.0,
+						73.0
+					],
+					"slice": [
+						70.0,
+						70.0,
+						70.0,
+						70.0
+					],
+					"source": [
+						48.0,
+						115.0,
+						695.0,
+						718.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/shadow",
+					"rect": [
+						18.7199993133545,
+						53.0,
+						40.560001373291,
+						14.0
+					],
+					"slice": [
+						0.0,
+						0.0,
+						0.0,
+						0.0
+					],
+					"source": [
+						850.0,
+						430.0,
+						520.0,
+						180.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "cards/normal",
+					"rect": [
+						0.0,
+						0.0,
+						78.0,
+						73.0
+					],
+					"slice": [
+						35.0,
+						35.0,
+						35.0,
+						35.0
+					],
+					"source": [
+						60.0,
+						60.0,
+						514.0,
+						481.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/cell",
+					"rect": [
+						0.0,
+						0.0,
+						78.0,
+						73.0
+					],
+					"slice": [
+						70.0,
+						70.0,
+						70.0,
+						70.0
+					],
+					"source": [
+						48.0,
+						115.0,
+						695.0,
+						718.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/shadow",
+					"rect": [
+						18.7199993133545,
+						53.0,
+						40.560001373291,
+						14.0
+					],
+					"slice": [
+						0.0,
+						0.0,
+						0.0,
+						0.0
+					],
+					"source": [
+						850.0,
+						430.0,
+						520.0,
+						180.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "cards/normal",
+					"rect": [
+						0.0,
+						0.0,
+						78.0,
+						73.0
+					],
+					"slice": [
+						35.0,
+						35.0,
+						35.0,
+						35.0
+					],
+					"source": [
+						60.0,
+						60.0,
+						514.0,
+						481.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/cell",
+					"rect": [
+						0.0,
+						0.0,
+						78.0,
+						73.0
+					],
+					"slice": [
+						70.0,
+						70.0,
+						70.0,
+						70.0
+					],
+					"source": [
+						48.0,
+						115.0,
+						695.0,
+						718.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/shadow",
+					"rect": [
+						18.7199993133545,
+						53.0,
+						40.560001373291,
+						14.0
+					],
+					"slice": [
+						0.0,
+						0.0,
+						0.0,
+						0.0
+					],
+					"source": [
+						850.0,
+						430.0,
+						520.0,
+						180.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "cards/normal",
+					"rect": [
+						0.0,
+						0.0,
+						78.0,
+						73.0
+					],
+					"slice": [
+						35.0,
+						35.0,
+						35.0,
+						35.0
+					],
+					"source": [
+						60.0,
+						60.0,
+						514.0,
+						481.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/cell",
+					"rect": [
+						0.0,
+						0.0,
+						78.0,
+						73.0
+					],
+					"slice": [
+						70.0,
+						70.0,
+						70.0,
+						70.0
+					],
+					"source": [
+						48.0,
+						115.0,
+						695.0,
+						718.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/shadow",
+					"rect": [
+						18.7199993133545,
+						53.0,
+						40.560001373291,
+						14.0
+					],
+					"slice": [
+						0.0,
+						0.0,
+						0.0,
+						0.0
+					],
+					"source": [
+						850.0,
+						430.0,
+						520.0,
+						180.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "cards/normal",
+					"rect": [
+						0.0,
+						0.0,
+						78.0,
+						73.0
+					],
+					"slice": [
+						35.0,
+						35.0,
+						35.0,
+						35.0
+					],
+					"source": [
+						60.0,
+						60.0,
+						514.0,
+						481.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/cell",
+					"rect": [
+						0.0,
+						0.0,
+						78.0,
+						73.0
+					],
+					"slice": [
+						70.0,
+						70.0,
+						70.0,
+						70.0
+					],
+					"source": [
+						48.0,
+						115.0,
+						695.0,
+						718.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/shadow",
+					"rect": [
+						18.7199993133545,
+						53.0,
+						40.560001373291,
+						14.0
+					],
+					"slice": [
+						0.0,
+						0.0,
+						0.0,
+						0.0
+					],
+					"source": [
+						850.0,
+						430.0,
+						520.0,
+						180.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "cards/normal",
+					"rect": [
+						0.0,
+						0.0,
+						78.0,
+						73.0
+					],
+					"slice": [
+						35.0,
+						35.0,
+						35.0,
+						35.0
+					],
+					"source": [
+						60.0,
+						60.0,
+						514.0,
+						481.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/cell",
+					"rect": [
+						0.0,
+						0.0,
+						78.0,
+						73.0
+					],
+					"slice": [
+						70.0,
+						70.0,
+						70.0,
+						70.0
+					],
+					"source": [
+						48.0,
+						115.0,
+						695.0,
+						718.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/shadow",
+					"rect": [
+						18.7199993133545,
+						53.0,
+						40.560001373291,
+						14.0
+					],
+					"slice": [
+						0.0,
+						0.0,
+						0.0,
+						0.0
+					],
+					"source": [
+						850.0,
+						430.0,
+						520.0,
+						180.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "cards/normal",
+					"rect": [
+						0.0,
+						0.0,
+						78.0,
+						73.0
+					],
+					"slice": [
+						35.0,
+						35.0,
+						35.0,
+						35.0
+					],
+					"source": [
+						60.0,
+						60.0,
+						514.0,
+						481.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/cell",
+					"rect": [
+						0.0,
+						0.0,
+						78.0,
+						73.0
+					],
+					"slice": [
+						70.0,
+						70.0,
+						70.0,
+						70.0
+					],
+					"source": [
+						48.0,
+						115.0,
+						695.0,
+						718.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/shadow",
+					"rect": [
+						18.7199993133545,
+						53.0,
+						40.560001373291,
+						14.0
+					],
+					"slice": [
+						0.0,
+						0.0,
+						0.0,
+						0.0
+					],
+					"source": [
+						850.0,
+						430.0,
+						520.0,
+						180.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "cards/normal",
+					"rect": [
+						0.0,
+						0.0,
+						78.0,
+						73.0
+					],
+					"slice": [
+						35.0,
+						35.0,
+						35.0,
+						35.0
+					],
+					"source": [
+						60.0,
+						60.0,
+						514.0,
+						481.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/cell",
+					"rect": [
+						0.0,
+						0.0,
+						78.0,
+						73.0
+					],
+					"slice": [
+						70.0,
+						70.0,
+						70.0,
+						70.0
+					],
+					"source": [
+						48.0,
+						115.0,
+						695.0,
+						718.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/shadow",
+					"rect": [
+						18.7199993133545,
+						53.0,
+						40.560001373291,
+						14.0
+					],
+					"slice": [
+						0.0,
+						0.0,
+						0.0,
+						0.0
+					],
+					"source": [
+						850.0,
+						430.0,
+						520.0,
+						180.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "cards/normal",
+					"rect": [
+						0.0,
+						0.0,
+						78.0,
+						73.0
+					],
+					"slice": [
+						35.0,
+						35.0,
+						35.0,
+						35.0
+					],
+					"source": [
+						60.0,
+						60.0,
+						514.0,
+						481.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/cell",
+					"rect": [
+						0.0,
+						0.0,
+						78.0,
+						73.0
+					],
+					"slice": [
+						70.0,
+						70.0,
+						70.0,
+						70.0
+					],
+					"source": [
+						48.0,
+						115.0,
+						695.0,
+						718.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/shadow",
+					"rect": [
+						18.7199993133545,
+						53.0,
+						40.560001373291,
+						14.0
+					],
+					"slice": [
+						0.0,
+						0.0,
+						0.0,
+						0.0
+					],
+					"source": [
+						850.0,
+						430.0,
+						520.0,
+						180.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "cards/normal",
+					"rect": [
+						0.0,
+						0.0,
+						78.0,
+						73.0
+					],
+					"slice": [
+						35.0,
+						35.0,
+						35.0,
+						35.0
+					],
+					"source": [
+						60.0,
+						60.0,
+						514.0,
+						481.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/cell",
+					"rect": [
+						0.0,
+						0.0,
+						78.0,
+						73.0
+					],
+					"slice": [
+						70.0,
+						70.0,
+						70.0,
+						70.0
+					],
+					"source": [
+						48.0,
+						115.0,
+						695.0,
+						718.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/shadow",
+					"rect": [
+						18.7199993133545,
+						53.0,
+						40.560001373291,
+						14.0
+					],
+					"slice": [
+						0.0,
+						0.0,
+						0.0,
+						0.0
+					],
+					"source": [
+						850.0,
+						430.0,
+						520.0,
+						180.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "cards/normal",
+					"rect": [
+						0.0,
+						0.0,
+						78.0,
+						73.0
+					],
+					"slice": [
+						35.0,
+						35.0,
+						35.0,
+						35.0
+					],
+					"source": [
+						60.0,
+						60.0,
+						514.0,
+						481.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/cell",
+					"rect": [
+						0.0,
+						0.0,
+						78.0,
+						73.0
+					],
+					"slice": [
+						70.0,
+						70.0,
+						70.0,
+						70.0
+					],
+					"source": [
+						48.0,
+						115.0,
+						695.0,
+						718.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/shadow",
+					"rect": [
+						18.7199993133545,
+						53.0,
+						40.560001373291,
+						14.0
+					],
+					"slice": [
+						0.0,
+						0.0,
+						0.0,
+						0.0
+					],
+					"source": [
+						850.0,
+						430.0,
+						520.0,
+						180.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "cards/normal",
+					"rect": [
+						0.0,
+						0.0,
+						78.0,
+						73.0
+					],
+					"slice": [
+						35.0,
+						35.0,
+						35.0,
+						35.0
+					],
+					"source": [
+						60.0,
+						60.0,
+						514.0,
+						481.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/cell",
+					"rect": [
+						0.0,
+						0.0,
+						78.0,
+						73.0
+					],
+					"slice": [
+						70.0,
+						70.0,
+						70.0,
+						70.0
+					],
+					"source": [
+						48.0,
+						115.0,
+						695.0,
+						718.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/shadow",
+					"rect": [
+						18.7199993133545,
+						53.0,
+						40.560001373291,
+						14.0
+					],
+					"slice": [
+						0.0,
+						0.0,
+						0.0,
+						0.0
+					],
+					"source": [
+						850.0,
+						430.0,
+						520.0,
+						180.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "cards/normal",
+					"rect": [
+						0.0,
+						0.0,
+						78.0,
+						73.0
+					],
+					"slice": [
+						35.0,
+						35.0,
+						35.0,
+						35.0
+					],
+					"source": [
+						60.0,
+						60.0,
+						514.0,
+						481.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/cell",
+					"rect": [
+						0.0,
+						0.0,
+						78.0,
+						73.0
+					],
+					"slice": [
+						70.0,
+						70.0,
+						70.0,
+						70.0
+					],
+					"source": [
+						48.0,
+						115.0,
+						695.0,
+						718.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/shadow",
+					"rect": [
+						18.7199993133545,
+						53.0,
+						40.560001373291,
+						14.0
+					],
+					"slice": [
+						0.0,
+						0.0,
+						0.0,
+						0.0
+					],
+					"source": [
+						850.0,
+						430.0,
+						520.0,
+						180.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "cards/normal",
+					"rect": [
+						0.0,
+						0.0,
+						78.0,
+						73.0
+					],
+					"slice": [
+						35.0,
+						35.0,
+						35.0,
+						35.0
+					],
+					"source": [
+						60.0,
+						60.0,
+						514.0,
+						481.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/cell",
+					"rect": [
+						0.0,
+						0.0,
+						78.0,
+						73.0
+					],
+					"slice": [
+						70.0,
+						70.0,
+						70.0,
+						70.0
+					],
+					"source": [
+						48.0,
+						115.0,
+						695.0,
+						718.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/shadow",
+					"rect": [
+						18.7199993133545,
+						53.0,
+						40.560001373291,
+						14.0
+					],
+					"slice": [
+						0.0,
+						0.0,
+						0.0,
+						0.0
+					],
+					"source": [
+						850.0,
+						430.0,
+						520.0,
+						180.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "accents/selection",
+					"rect": [
+						0.0,
+						0.0,
+						78.0,
+						73.0
+					],
+					"slice": [
+						36.0,
+						36.0,
+						36.0,
+						36.0
+					],
+					"source": [
+						886.0,
+						97.0,
+						578.0,
+						473.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "cards/normal",
+					"rect": [
+						0.0,
+						0.0,
+						78.0,
+						73.0
+					],
+					"slice": [
+						35.0,
+						35.0,
+						35.0,
+						35.0
+					],
+					"source": [
+						60.0,
+						60.0,
+						514.0,
+						481.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/cell",
+					"rect": [
+						0.0,
+						0.0,
+						78.0,
+						73.0
+					],
+					"slice": [
+						70.0,
+						70.0,
+						70.0,
+						70.0
+					],
+					"source": [
+						48.0,
+						115.0,
+						695.0,
+						718.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/shadow",
+					"rect": [
+						18.7199993133545,
+						53.0,
+						40.560001373291,
+						14.0
+					],
+					"slice": [
+						0.0,
+						0.0,
+						0.0,
+						0.0
+					],
+					"source": [
+						850.0,
+						430.0,
+						520.0,
+						180.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "cards/normal",
+					"rect": [
+						0.0,
+						0.0,
+						78.0,
+						73.0
+					],
+					"slice": [
+						35.0,
+						35.0,
+						35.0,
+						35.0
+					],
+					"source": [
+						60.0,
+						60.0,
+						514.0,
+						481.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/cell",
+					"rect": [
+						0.0,
+						0.0,
+						78.0,
+						73.0
+					],
+					"slice": [
+						70.0,
+						70.0,
+						70.0,
+						70.0
+					],
+					"source": [
+						48.0,
+						115.0,
+						695.0,
+						718.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/shadow",
+					"rect": [
+						18.7199993133545,
+						53.0,
+						40.560001373291,
+						14.0
+					],
+					"slice": [
+						0.0,
+						0.0,
+						0.0,
+						0.0
+					],
+					"source": [
+						850.0,
+						430.0,
+						520.0,
+						180.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "cards/normal",
+					"rect": [
+						0.0,
+						0.0,
+						78.0,
+						73.0
+					],
+					"slice": [
+						35.0,
+						35.0,
+						35.0,
+						35.0
+					],
+					"source": [
+						60.0,
+						60.0,
+						514.0,
+						481.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/cell",
+					"rect": [
+						0.0,
+						0.0,
+						78.0,
+						73.0
+					],
+					"slice": [
+						70.0,
+						70.0,
+						70.0,
+						70.0
+					],
+					"source": [
+						48.0,
+						115.0,
+						695.0,
+						718.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/shadow",
+					"rect": [
+						18.7199993133545,
+						53.0,
+						40.560001373291,
+						14.0
+					],
+					"slice": [
+						0.0,
+						0.0,
+						0.0,
+						0.0
+					],
+					"source": [
+						850.0,
+						430.0,
+						520.0,
+						180.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "cards/normal",
+					"rect": [
+						0.0,
+						0.0,
+						78.0,
+						73.0
+					],
+					"slice": [
+						35.0,
+						35.0,
+						35.0,
+						35.0
+					],
+					"source": [
+						60.0,
+						60.0,
+						514.0,
+						481.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/cell",
+					"rect": [
+						0.0,
+						0.0,
+						78.0,
+						73.0
+					],
+					"slice": [
+						70.0,
+						70.0,
+						70.0,
+						70.0
+					],
+					"source": [
+						48.0,
+						115.0,
+						695.0,
+						718.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/shadow",
+					"rect": [
+						18.7199993133545,
+						53.0,
+						40.560001373291,
+						14.0
+					],
+					"slice": [
+						0.0,
+						0.0,
+						0.0,
+						0.0
+					],
+					"source": [
+						850.0,
+						430.0,
+						520.0,
+						180.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "cards/normal",
+					"rect": [
+						0.0,
+						0.0,
+						78.0,
+						73.0
+					],
+					"slice": [
+						35.0,
+						35.0,
+						35.0,
+						35.0
+					],
+					"source": [
+						60.0,
+						60.0,
+						514.0,
+						481.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/cell",
+					"rect": [
+						0.0,
+						0.0,
+						78.0,
+						73.0
+					],
+					"slice": [
+						70.0,
+						70.0,
+						70.0,
+						70.0
+					],
+					"source": [
+						48.0,
+						115.0,
+						695.0,
+						718.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/shadow",
+					"rect": [
+						18.7199993133545,
+						53.0,
+						40.560001373291,
+						14.0
+					],
+					"slice": [
+						0.0,
+						0.0,
+						0.0,
+						0.0
+					],
+					"source": [
+						850.0,
+						430.0,
+						520.0,
+						180.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "codex/panel",
+					"rect": [
+						488.0,
+						143.0,
+						404.0,
+						262.0
+					],
+					"slice": [
+						106.0,
+						34.0,
+						66.0,
+						36.0
+					],
+					"source": [
+						25.0,
+						30.0,
+						785.0,
+						422.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "controls/secondary",
+					"rect": [
+						536.0,
+						202.0,
+						108.0,
+						44.0
+					],
+					"slice": [
+						72.0,
+						36.0,
+						72.0,
+						48.0
+					],
+					"source": [
+						859.0,
+						134.0,
+						762.0,
+						246.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "controls/selected",
+					"rect": [
+						648.0,
+						202.0,
+						108.0,
+						44.0
+					],
+					"slice": [
+						72.0,
+						36.0,
+						72.0,
+						48.0
+					],
+					"source": [
+						44.0,
+						553.0,
+						761.0,
+						246.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "controls/secondary",
+					"rect": [
+						760.0,
+						202.0,
+						108.0,
+						44.0
+					],
+					"slice": [
+						72.0,
+						36.0,
+						72.0,
+						48.0
+					],
+					"source": [
+						859.0,
+						134.0,
+						762.0,
+						246.0
+					]
+				}
+			],
+			"screen": "05-archive"
+		},
+		{
+			"controls": [
+				{
+					"caption": "자료집",
+					"minimum44": true,
+					"rect": [
+						725.0,
+						19.0,
+						44.0,
+						44.0
+					],
+					"role": "preview-only unframed"
+				},
+				{
+					"caption": "설정",
+					"minimum44": true,
+					"rect": [
+						783.0,
+						19.0,
+						44.0,
+						44.0
+					],
+					"role": "preview-only unframed"
+				},
+				{
+					"caption": "음악 ON",
+					"minimum44": true,
+					"rect": [
+						841.0,
+						19.0,
+						44.0,
+						44.0
+					],
+					"role": "preview-only unframed"
+				},
+				{
+					"caption": "길드",
+					"minimum44": true,
+					"rect": [
+						27.0,
+						278.0,
+						92.0,
+						113.0
+					],
+					"role": "preview-only unframed"
+				},
+				{
+					"caption": "전략지원",
+					"minimum44": true,
+					"rect": [
+						126.0,
+						278.0,
+						92.0,
+						113.0
+					],
+					"role": "preview-only unframed"
+				},
+				{
+					"caption": "협회",
+					"minimum44": true,
+					"rect": [
+						225.0,
+						278.0,
+						92.0,
+						113.0
+					],
+					"role": "preview-only unframed"
+				},
+				{
+					"caption": "회수",
+					"minimum44": true,
+					"rect": [
+						324.0,
+						278.0,
+						92.0,
+						113.0
+					],
+					"role": "preview-only unframed"
+				},
+				{
+					"caption": "보급",
+					"minimum44": true,
+					"rect": [
+						423.0,
+						278.0,
+						92.0,
+						113.0
+					],
+					"role": "preview-only unframed"
+				},
+				{
+					"caption": "작전 투입",
+					"minimum44": true,
+					"rect": [
+						659.0,
+						340.0,
+						240.0,
+						56.0
+					],
+					"role": "preview-only unframed"
+				}
+			],
+			"fitIssues": [],
+			"labels": [
+				{
+					"actualSize": [
+						213.0,
+						36.0
+					],
+					"align": 0,
+					"fontHeight": 33.0,
+					"fontSize": 27,
+					"lines": 1,
+					"rect": [
+						34.0,
+						22.0,
+						213.0,
+						36.0
+					],
+					"requiredHeight": 33.0,
+					"requiredWidth": 116.0,
+					"role": "brand",
+					"text": "서울 히어로"
+				},
+				{
+					"actualSize": [
+						47.0,
+						36.0
+					],
+					"align": 0,
+					"fontHeight": 26.0,
+					"fontSize": 21,
+					"lines": 1,
+					"rect": [
+						332.5,
+						23.0,
+						47.0,
+						36.0
+					],
+					"requiredHeight": 26.0,
+					"requiredWidth": 47.0,
+					"role": "number",
+					"text": "12,480"
+				},
+				{
+					"actualSize": [
+						15.0,
+						36.0
+					],
+					"align": 0,
+					"fontHeight": 26.0,
+					"fontSize": 21,
+					"lines": 1,
+					"rect": [
+						468.5,
+						23.0,
+						15.0,
+						36.0
+					],
+					"requiredHeight": 26.0,
+					"requiredWidth": 15.0,
+					"role": "number",
+					"text": "12"
+				},
+				{
+					"actualSize": [
+						92.0,
+						22.0
+					],
+					"align": 1,
+					"fontHeight": 20.0,
+					"fontSize": 16,
+					"lines": 1,
+					"rect": [
+						27.0,
+						357.0,
+						92.0,
+						22.0
+					],
+					"requiredHeight": 20.0,
+					"requiredWidth": 27.0,
+					"role": "heading",
+					"text": "길드"
+				},
+				{
+					"actualSize": [
+						92.0,
+						22.0
+					],
+					"align": 1,
+					"fontHeight": 20.0,
+					"fontSize": 16,
+					"lines": 1,
+					"rect": [
+						126.0,
+						357.0,
+						92.0,
+						22.0
+					],
+					"requiredHeight": 20.0,
+					"requiredWidth": 55.0,
+					"role": "heading",
+					"text": "전략지원"
+				},
+				{
+					"actualSize": [
+						92.0,
+						22.0
+					],
+					"align": 1,
+					"fontHeight": 20.0,
+					"fontSize": 16,
+					"lines": 1,
+					"rect": [
+						225.0,
+						357.0,
+						92.0,
+						22.0
+					],
+					"requiredHeight": 20.0,
+					"requiredWidth": 27.0,
+					"role": "heading",
+					"text": "협회"
+				},
+				{
+					"actualSize": [
+						92.0,
+						22.0
+					],
+					"align": 1,
+					"fontHeight": 20.0,
+					"fontSize": 16,
+					"lines": 1,
+					"rect": [
+						324.0,
+						357.0,
+						92.0,
+						22.0
+					],
+					"requiredHeight": 20.0,
+					"requiredWidth": 27.0,
+					"role": "heading",
+					"text": "회수"
+				},
+				{
+					"actualSize": [
+						92.0,
+						22.0
+					],
+					"align": 1,
+					"fontHeight": 20.0,
+					"fontSize": 16,
+					"lines": 1,
+					"rect": [
+						423.0,
+						357.0,
+						92.0,
+						22.0
+					],
+					"requiredHeight": 20.0,
+					"requiredWidth": 26.0,
+					"role": "heading",
+					"text": "보급"
+				},
+				{
+					"actualSize": [
+						212.0,
+						43.0
+					],
+					"align": 1,
+					"fontHeight": 24.0,
+					"fontSize": 20,
+					"lines": 1,
+					"rect": [
+						673.0,
+						346.0,
+						212.0,
+						43.0
+					],
+					"requiredHeight": 24.0,
+					"requiredWidth": 74.0,
+					"role": "heading",
+					"text": "작전 투입"
+				}
+			],
+			"materials": [
+				{
+					"assetScale": 4.0,
+					"material": "glass/tools",
+					"rect": [
+						18.0,
+						12.0,
+						511.0,
+						58.0
+					],
+					"slice": [
+						60.0,
+						40.0,
+						60.0,
+						40.0
+					],
+					"source": [
+						802.0,
+						132.0,
+						687.0,
+						177.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "glass/tools",
+					"rect": [
+						714.0,
+						17.0,
+						182.0,
+						48.0
+					],
+					"slice": [
+						60.0,
+						40.0,
+						60.0,
+						40.0
+					],
+					"source": [
+						802.0,
+						132.0,
+						687.0,
+						177.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "lobby_icons/codex",
+					"rect": [
+						729.0,
+						25.4067802429199,
+						36.0,
+						31.1864414215088
+					],
+					"slice": [
+						0.0,
+						0.0,
+						0.0,
+						0.0
+					],
+					"source": [
+						139.0,
+						48.0,
+						531.0,
+						460.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "lobby_icons/settings",
+					"rect": [
+						787.816345214844,
+						23.0,
+						34.3673477172852,
+						36.0
+					],
+					"slice": [
+						0.0,
+						0.0,
+						0.0,
+						0.0
+					],
+					"source": [
+						937.0,
+						54.0,
+						421.0,
+						441.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "lobby_icons/music_on",
+					"rect": [
+						845.0,
+						23.3758697509766,
+						36.0,
+						35.2482604980469
+					],
+					"slice": [
+						0.0,
+						0.0,
+						0.0,
+						0.0
+					],
+					"source": [
+						170.0,
+						543.0,
+						431.0,
+						422.0
+					]
+				},
+				{
+					"assetScale": 8.0,
+					"material": "glass/guild",
+					"rect": [
+						27.0,
+						285.0,
+						92.0,
+						106.0
+					],
+					"slice": [
+						156.0,
+						156.0,
+						156.0,
+						156.0
+					],
+					"source": [
+						132.0,
+						138.0,
+						868.0,
+						1172.0
+					]
+				},
+				{
+					"assetScale": 8.0,
+					"material": "glass/guild",
+					"rect": [
+						126.0,
+						285.0,
+						92.0,
+						106.0
+					],
+					"slice": [
+						156.0,
+						156.0,
+						156.0,
+						156.0
+					],
+					"source": [
+						132.0,
+						138.0,
+						868.0,
+						1172.0
+					]
+				},
+				{
+					"assetScale": 8.0,
+					"material": "glass/guild",
+					"rect": [
+						225.0,
+						285.0,
+						92.0,
+						106.0
+					],
+					"slice": [
+						156.0,
+						156.0,
+						156.0,
+						156.0
+					],
+					"source": [
+						132.0,
+						138.0,
+						868.0,
+						1172.0
+					]
+				},
+				{
+					"assetScale": 8.0,
+					"material": "glass/guild",
+					"rect": [
+						324.0,
+						285.0,
+						92.0,
+						106.0
+					],
+					"slice": [
+						156.0,
+						156.0,
+						156.0,
+						156.0
+					],
+					"source": [
+						132.0,
+						138.0,
+						868.0,
+						1172.0
+					]
+				},
+				{
+					"assetScale": 8.0,
+					"material": "glass/guild",
+					"rect": [
+						423.0,
+						285.0,
+						92.0,
+						106.0
+					],
+					"slice": [
+						156.0,
+						156.0,
+						156.0,
+						156.0
+					],
+					"source": [
+						132.0,
+						138.0,
+						868.0,
+						1172.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "spy/terminal",
+					"rect": [
+						695.0,
+						145.0,
+						190.0,
+						175.0
+					],
+					"slice": [
+						0.0,
+						0.0,
+						0.0,
+						0.0
+					],
+					"source": [
+						30.0,
+						0.0,
+						940.0,
+						770.0
+					]
+				},
+				{
+					"animationIntent": {
+						"capturePhase": 0.25,
+						"fixedPosition": true,
+						"fixedSize": true,
+						"maximum": 0.6,
+						"minimum": 0.25,
+						"periodSeconds": 2.0,
+						"property": "modulate:a"
+					},
+					"assetScale": 4.0,
+					"material": "spy/pulse",
+					"rect": [
+						695.0,
+						145.0,
+						190.0,
+						175.0
+					],
+					"slice": [
+						0.0,
+						0.0,
+						0.0,
+						0.0
+					],
+					"source": [
+						990.0,
+						10.0,
+						490.0,
+						750.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "spy/deploy",
+					"rect": [
+						659.0,
+						340.0,
+						240.0,
+						56.0
+					],
+					"slice": [
+						125.0,
+						50.0,
+						125.0,
+						50.0
+					],
+					"source": [
+						35.0,
+						776.0,
+						1468.0,
+						213.0
+					]
+				}
+			],
+			"screen": "06-lobby"
+		},
+		{
+			"controls": [
+				{
+					"caption": "무기",
+					"minimum44": true,
+					"rect": [
+						438.0,
+						27.0,
+						84.0,
+						44.0
+					],
+					"role": "cstore/tab",
+					"staticPreview": true
+				},
+				{
+					"caption": "아이템",
+					"minimum44": true,
+					"rect": [
+						530.0,
+						27.0,
+						84.0,
+						44.0
+					],
+					"role": "cstore/tab",
+					"staticPreview": true
+				},
+				{
+					"caption": "재진열",
+					"minimum44": true,
+					"rect": [
+						644.0,
+						27.0,
+						140.0,
+						44.0
+					],
+					"role": "cstore/reroll",
+					"staticPreview": true
+				},
+				{
+					"caption": "일시정지",
+					"minimum44": true,
+					"rect": [
+						813.0,
+						27.0,
+						44.0,
+						44.0
+					],
+					"role": "unframed",
+					"staticPreview": true
+				},
+				{
+					"caption": "전체 스탯",
+					"minimum44": true,
+					"rect": [
+						37.0,
+						348.0,
+						145.0,
+						44.0
+					],
+					"role": "cstore/secondary",
+					"staticPreview": true
+				},
+				{
+					"caption": "가격 18",
+					"minimum44": true,
+					"rect": [
+						221.0,
+						299.0,
+						130.0,
+						44.0
+					],
+					"role": "cstore/purchase_navy",
+					"staticPreview": true
+				},
+				{
+					"caption": "잠금 0",
+					"minimum44": true,
+					"rect": [
+						319.0,
+						87.0,
+						44.0,
+						44.0
+					],
+					"role": "unframed",
+					"staticPreview": true
+				},
+				{
+					"caption": "전체 상세 0",
+					"minimum44": true,
+					"rect": [
+						213.0,
+						132.0,
+						146.0,
+						162.0
+					],
+					"role": "unframed",
+					"staticPreview": true
+				},
+				{
+					"caption": "가격 23",
+					"minimum44": true,
+					"rect": [
+						392.0,
+						299.0,
+						130.0,
+						44.0
+					],
+					"role": "cstore/purchase_navy",
+					"staticPreview": true
+				},
+				{
+					"caption": "잠금 1",
+					"minimum44": true,
+					"rect": [
+						490.0,
+						87.0,
+						44.0,
+						44.0
+					],
+					"role": "unframed",
+					"staticPreview": true
+				},
+				{
+					"caption": "전체 상세 1",
+					"minimum44": true,
+					"rect": [
+						384.0,
+						132.0,
+						146.0,
+						162.0
+					],
+					"role": "unframed",
+					"staticPreview": true
+				},
+				{
+					"caption": "가격 36",
+					"minimum44": true,
+					"rect": [
+						563.0,
+						299.0,
+						130.0,
+						44.0
+					],
+					"role": "cstore/purchase_navy",
+					"staticPreview": true
+				},
+				{
+					"caption": "잠금 2",
+					"minimum44": true,
+					"rect": [
+						661.0,
+						87.0,
+						44.0,
+						44.0
+					],
+					"role": "unframed",
+					"staticPreview": true
+				},
+				{
+					"caption": "전체 상세 2",
+					"minimum44": true,
+					"rect": [
+						555.0,
+						132.0,
+						146.0,
+						162.0
+					],
+					"role": "unframed",
+					"staticPreview": true
+				},
+				{
+					"caption": "가격 12345678",
+					"minimum44": true,
+					"rect": [
+						734.0,
+						299.0,
+						130.0,
+						44.0
+					],
+					"role": "cstore/purchase_navy",
+					"staticPreview": true
+				},
+				{
+					"caption": "잠금 3",
+					"minimum44": true,
+					"rect": [
+						832.0,
+						87.0,
+						44.0,
+						44.0
+					],
+					"role": "unframed",
+					"staticPreview": true
+				},
+				{
+					"caption": "전체 상세 3",
+					"minimum44": true,
+					"rect": [
+						726.0,
+						132.0,
+						146.0,
+						162.0
+					],
+					"role": "unframed",
+					"staticPreview": true
+				},
+				{
+					"caption": "보유 아이템",
+					"minimum44": true,
+					"rect": [
+						205.0,
+						350.0,
+						163.0,
+						44.0
+					],
+					"role": "cstore/secondary",
+					"staticPreview": true
+				},
+				{
+					"caption": "다음 웨이브",
+					"minimum44": true,
+					"rect": [
+						674.0,
+						350.0,
+						205.0,
+						44.0
+					],
+					"role": "cstore/next",
+					"staticPreview": true
+				}
+			],
+			"fitIssues": [],
+			"labels": [
+				{
+					"actualSize": [
+						137.0,
+						35.0
+					],
+					"align": 1,
+					"fontHeight": 27.0,
+					"fontSize": 22,
+					"lines": 1,
+					"rect": [
+						42.0,
+						31.0,
+						137.0,
+						35.0
+					],
+					"requiredHeight": 27.0,
+					"requiredWidth": 80.0,
+					"role": "heading",
+					"text": "게이트24"
+				},
+				{
+					"actualSize": [
+						45.0,
+						32.0
+					],
+					"align": 1,
+					"fontHeight": 22.0,
+					"fontSize": 18,
+					"lines": 1,
+					"rect": [
+						225.5,
+						33.0,
+						45.0,
+						32.0
+					],
+					"requiredHeight": 22.0,
+					"requiredWidth": 43.0,
+					"role": "number",
+					"text": "12 / 20"
+				},
+				{
+					"actualSize": [
+						20.0,
+						32.0
+					],
+					"align": 1,
+					"fontHeight": 24.0,
+					"fontSize": 20,
+					"lines": 1,
+					"rect": [
+						357.0,
+						33.0,
+						20.0,
+						32.0
+					],
+					"requiredHeight": 24.0,
+					"requiredWidth": 18.0,
+					"role": "number",
+					"text": "60"
+				},
+				{
+					"actualSize": [
+						68.0,
+						34.0
+					],
+					"align": 1,
+					"fontHeight": 17.0,
+					"fontSize": 14,
+					"lines": 1,
+					"rect": [
+						446.0,
+						32.0,
+						68.0,
+						34.0
+					],
+					"requiredHeight": 17.0,
+					"requiredWidth": 25.0,
+					"role": "control",
+					"text": "무기"
+				},
+				{
+					"actualSize": [
+						68.0,
+						34.0
+					],
+					"align": 1,
+					"fontHeight": 17.0,
+					"fontSize": 14,
+					"lines": 1,
+					"rect": [
+						538.0,
+						32.0,
+						68.0,
+						34.0
+					],
+					"requiredHeight": 17.0,
+					"requiredWidth": 37.0,
+					"role": "control",
+					"text": "아이템"
+				},
+				{
+					"actualSize": [
+						9.0,
+						32.0
+					],
+					"align": 1,
+					"fontHeight": 20.0,
+					"fontSize": 16,
+					"lines": 1,
+					"rect": [
+						740.5,
+						33.0,
+						9.0,
+						32.0
+					],
+					"requiredHeight": 20.0,
+					"requiredWidth": 7.0,
+					"role": "number",
+					"text": "6"
+				},
+				{
+					"actualSize": [
+						138.0,
+						29.0
+					],
+					"align": 1,
+					"fontHeight": 22.0,
+					"fontSize": 18,
+					"lines": 1,
+					"rect": [
+						39.0,
+						225.0,
+						138.0,
+						29.0
+					],
+					"requiredHeight": 22.0,
+					"requiredWidth": 45.0,
+					"role": "heading",
+					"text": "송진우"
+				},
+				{
+					"actualSize": [
+						105.0,
+						23.0
+					],
+					"align": 2,
+					"fontHeight": 21.0,
+					"fontSize": 17,
+					"lines": 1,
+					"rect": [
+						68.0,
+						253.0,
+						105.0,
+						23.0
+					],
+					"requiredHeight": 21.0,
+					"requiredWidth": 48.0,
+					"role": "number",
+					"text": "84 / 100"
+				},
+				{
+					"actualSize": [
+						105.0,
+						21.0
+					],
+					"align": 2,
+					"fontHeight": 20.0,
+					"fontSize": 16,
+					"lines": 1,
+					"rect": [
+						68.0,
+						274.0,
+						105.0,
+						21.0
+					],
+					"requiredHeight": 20.0,
+					"requiredWidth": 31.0,
+					"role": "number",
+					"text": "100%"
+				},
+				{
+					"actualSize": [
+						105.0,
+						21.0
+					],
+					"align": 2,
+					"fontHeight": 20.0,
+					"fontSize": 16,
+					"lines": 1,
+					"rect": [
+						68.0,
+						295.0,
+						105.0,
+						21.0
+					],
+					"requiredHeight": 20.0,
+					"requiredWidth": 31.0,
+					"role": "number",
+					"text": "100%"
+				},
+				{
+					"actualSize": [
+						105.0,
+						21.0
+					],
+					"align": 2,
+					"fontHeight": 20.0,
+					"fontSize": 16,
+					"lines": 1,
+					"rect": [
+						68.0,
+						316.0,
+						105.0,
+						21.0
+					],
+					"requiredHeight": 20.0,
+					"requiredWidth": 7.0,
+					"role": "number",
+					"text": "0"
+				},
+				{
+					"actualSize": [
+						121.0,
+						36.0
+					],
+					"align": 1,
+					"fontHeight": 17.0,
+					"fontSize": 14,
+					"lines": 1,
+					"rect": [
+						49.0,
+						352.0,
+						121.0,
+						36.0
+					],
+					"requiredHeight": 17.0,
+					"requiredWidth": 53.0,
+					"role": "control",
+					"text": "전체 스탯"
+				},
+				{
+					"actualSize": [
+						122.0,
+						42.0
+					],
+					"align": 1,
+					"fontHeight": 18.0,
+					"fontSize": 15,
+					"lines": 1,
+					"rect": [
+						20.0,
+						87.0,
+						122.0,
+						42.0
+					],
+					"requiredHeight": 18.0,
+					"requiredWidth": 122.0,
+					"role": "heading",
+					"text": "마력검"
+				},
+				{
+					"actualSize": [
+						122.0,
+						36.0
+					],
+					"align": 0,
+					"fontHeight": 16.0,
+					"fontSize": 13,
+					"lines": 2,
+					"rect": [
+						20.0,
+						132.0,
+						122.0,
+						36.0
+					],
+					"requiredHeight": 34.0,
+					"requiredWidth": 122.0,
+					"role": "body",
+					"text": "가까운 적을 향한\n넓은 부채꼴 베기"
+				},
+				{
+					"actualSize": [
+						122.0,
+						36.0
+					],
+					"align": 0,
+					"fontHeight": 16.0,
+					"fontSize": 13,
+					"lines": 1,
+					"rect": [
+						20.0,
+						173.0,
+						122.0,
+						36.0
+					],
+					"requiredHeight": 16.0,
+					"requiredWidth": 122.0,
+					"role": "body",
+					"text": "Lv.2 강화"
+				},
+				{
+					"actualSize": [
+						13.0,
+						32.0
+					],
+					"align": 1,
+					"fontHeight": 20.0,
+					"fontSize": 16,
+					"lines": 1,
+					"rect": [
+						86.5,
+						221.0,
+						13.0,
+						32.0
+					],
+					"requiredHeight": 20.0,
+					"requiredWidth": 11.0,
+					"role": "number",
+					"text": "18"
+				},
+				{
+					"actualSize": [
+						122.0,
+						42.0
+					],
+					"align": 1,
+					"fontHeight": 18.0,
+					"fontSize": 15,
+					"lines": 1,
+					"rect": [
+						20.0,
+						87.0,
+						122.0,
+						42.0
+					],
+					"requiredHeight": 18.0,
+					"requiredWidth": 122.0,
+					"role": "heading",
+					"text": "연쇄 번개"
+				},
+				{
+					"actualSize": [
+						122.0,
+						36.0
+					],
+					"align": 0,
+					"fontHeight": 16.0,
+					"fontSize": 13,
+					"lines": 2,
+					"rect": [
+						20.0,
+						132.0,
+						122.0,
+						36.0
+					],
+					"requiredHeight": 34.0,
+					"requiredWidth": 122.0,
+					"role": "body",
+					"text": "적 사이로 이어지는\n연쇄 번개"
+				},
+				{
+					"actualSize": [
+						122.0,
+						36.0
+					],
+					"align": 0,
+					"fontHeight": 16.0,
+					"fontSize": 13,
+					"lines": 1,
+					"rect": [
+						20.0,
+						173.0,
+						122.0,
+						36.0
+					],
+					"requiredHeight": 16.0,
+					"requiredWidth": 122.0,
+					"role": "body",
+					"text": "Lv.3 강화"
+				},
+				{
+					"actualSize": [
+						16.0,
+						32.0
+					],
+					"align": 1,
+					"fontHeight": 20.0,
+					"fontSize": 16,
+					"lines": 1,
+					"rect": [
+						85.0,
+						221.0,
+						16.0,
+						32.0
+					],
+					"requiredHeight": 20.0,
+					"requiredWidth": 14.0,
+					"role": "number",
+					"text": "23"
+				},
+				{
+					"actualSize": [
+						122.0,
+						42.0
+					],
+					"align": 1,
+					"fontHeight": 18.0,
+					"fontSize": 15,
+					"lines": 1,
+					"rect": [
+						20.0,
+						87.0,
+						122.0,
+						42.0
+					],
+					"requiredHeight": 18.0,
+					"requiredWidth": 122.0,
+					"role": "heading",
+					"text": "마력 샷건"
+				},
+				{
+					"actualSize": [
+						122.0,
+						36.0
+					],
+					"align": 0,
+					"fontHeight": 16.0,
+					"fontSize": 13,
+					"lines": 2,
+					"rect": [
+						20.0,
+						132.0,
+						122.0,
+						36.0
+					],
+					"requiredHeight": 34.0,
+					"requiredWidth": 122.0,
+					"role": "body",
+					"text": "근거리 다중 산탄\n넓게 퍼지는 공격"
+				},
+				{
+					"actualSize": [
+						122.0,
+						36.0
+					],
+					"align": 0,
+					"fontHeight": 16.0,
+					"fontSize": 13,
+					"lines": 1,
+					"rect": [
+						20.0,
+						173.0,
+						122.0,
+						36.0
+					],
+					"requiredHeight": 16.0,
+					"requiredWidth": 122.0,
+					"role": "body",
+					"text": "신규 무기"
+				},
+				{
+					"actualSize": [
+						16.0,
+						32.0
+					],
+					"align": 1,
+					"fontHeight": 20.0,
+					"fontSize": 16,
+					"lines": 1,
+					"rect": [
+						85.0,
+						221.0,
+						16.0,
+						32.0
+					],
+					"requiredHeight": 20.0,
+					"requiredWidth": 14.0,
+					"role": "number",
+					"text": "36"
+				},
+				{
+					"actualSize": [
+						122.0,
+						42.0
+					],
+					"align": 1,
+					"fontHeight": 18.0,
+					"fontSize": 15,
+					"lines": 1,
+					"rect": [
+						20.0,
+						87.0,
+						122.0,
+						42.0
+					],
+					"requiredHeight": 18.0,
+					"requiredWidth": 122.0,
+					"role": "heading",
+					"text": "마력탄"
+				},
+				{
+					"actualSize": [
+						122.0,
+						36.0
+					],
+					"align": 0,
+					"fontHeight": 16.0,
+					"fontSize": 13,
+					"lines": 2,
+					"rect": [
+						20.0,
+						132.0,
+						122.0,
+						36.0
+					],
+					"requiredHeight": 34.0,
+					"requiredWidth": 122.0,
+					"role": "body",
+					"text": "가까운 적을 노리는\n마력 투사체"
+				},
+				{
+					"actualSize": [
+						122.0,
+						36.0
+					],
+					"align": 0,
+					"fontHeight": 16.0,
+					"fontSize": 13,
+					"lines": 1,
+					"rect": [
+						20.0,
+						173.0,
+						122.0,
+						36.0
+					],
+					"requiredHeight": 16.0,
+					"requiredWidth": 122.0,
+					"role": "body",
+					"text": "Lv.2 강화"
+				},
+				{
+					"actualSize": [
+						54.0,
+						32.0
+					],
+					"align": 1,
+					"fontHeight": 20.0,
+					"fontSize": 16,
+					"lines": 1,
+					"rect": [
+						66.0,
+						221.0,
+						54.0,
+						32.0
+					],
+					"requiredHeight": 20.0,
+					"requiredWidth": 52.0,
+					"role": "number",
+					"text": "12345678"
+				},
+				{
+					"actualSize": [
+						139.0,
+						36.0
+					],
+					"align": 1,
+					"fontHeight": 17.0,
+					"fontSize": 14,
+					"lines": 1,
+					"rect": [
+						217.0,
+						354.0,
+						139.0,
+						36.0
+					],
+					"requiredHeight": 17.0,
+					"requiredWidth": 77.0,
+					"role": "control",
+					"text": "보유 아이템 1"
+				},
+				{
+					"actualSize": [
+						14.0,
+						30.0
+					],
+					"align": 1,
+					"fontHeight": 18.0,
+					"fontSize": 15,
+					"lines": 1,
+					"rect": [
+						406.0,
+						357.0,
+						14.0,
+						30.0
+					],
+					"requiredHeight": 18.0,
+					"requiredWidth": 4.0,
+					"role": "number",
+					"text": "1"
+				},
+				{
+					"actualSize": [
+						14.0,
+						30.0
+					],
+					"align": 1,
+					"fontHeight": 18.0,
+					"fontSize": 15,
+					"lines": 1,
+					"rect": [
+						452.0,
+						357.0,
+						14.0,
+						30.0
+					],
+					"requiredHeight": 18.0,
+					"requiredWidth": 6.0,
+					"role": "number",
+					"text": "2"
+				},
+				{
+					"actualSize": [
+						14.0,
+						30.0
+					],
+					"align": 1,
+					"fontHeight": 18.0,
+					"fontSize": 15,
+					"lines": 1,
+					"rect": [
+						498.0,
+						357.0,
+						14.0,
+						30.0
+					],
+					"requiredHeight": 18.0,
+					"requiredWidth": 6.0,
+					"role": "number",
+					"text": "3"
+				},
+				{
+					"actualSize": [
+						14.0,
+						30.0
+					],
+					"align": 1,
+					"fontHeight": 18.0,
+					"fontSize": 15,
+					"lines": 1,
+					"rect": [
+						544.0,
+						357.0,
+						14.0,
+						30.0
+					],
+					"requiredHeight": 18.0,
+					"requiredWidth": 7.0,
+					"role": "number",
+					"text": "4"
+				},
+				{
+					"actualSize": [
+						14.0,
+						30.0
+					],
+					"align": 1,
+					"fontHeight": 18.0,
+					"fontSize": 15,
+					"lines": 1,
+					"rect": [
+						590.0,
+						357.0,
+						14.0,
+						30.0
+					],
+					"requiredHeight": 18.0,
+					"requiredWidth": 6.0,
+					"role": "number",
+					"text": "5"
+				},
+				{
+					"actualSize": [
+						14.0,
+						30.0
+					],
+					"align": 1,
+					"fontHeight": 18.0,
+					"fontSize": 15,
+					"lines": 1,
+					"rect": [
+						636.0,
+						357.0,
+						14.0,
+						30.0
+					],
+					"requiredHeight": 18.0,
+					"requiredWidth": 6.0,
+					"role": "number",
+					"text": "6"
+				},
+				{
+					"actualSize": [
+						181.0,
+						36.0
+					],
+					"align": 1,
+					"fontHeight": 22.0,
+					"fontSize": 18,
+					"lines": 1,
+					"rect": [
+						686.0,
+						354.0,
+						181.0,
+						36.0
+					],
+					"requiredHeight": 22.0,
+					"requiredWidth": 83.0,
+					"role": "control",
+					"text": "다음 웨이브"
+				}
+			],
+			"materials": [
+				{
+					"assetScale": 4.0,
+					"material": "cstore/cabinet",
+					"rect": [
+						14.0,
+						10.0,
+						887.0,
+						392.0
+					],
+					"slice": [
+						110.0,
+						118.0,
+						110.0,
+						60.0
+					],
+					"source": [
+						40.0,
+						110.0,
+						1018.0,
+						573.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "cstore/header",
+					"rect": [
+						24.0,
+						20.0,
+						867.0,
+						47.0
+					],
+					"slice": [
+						60.0,
+						30.0,
+						60.0,
+						25.0
+					],
+					"source": [
+						40.0,
+						719.0,
+						1016.0,
+						151.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "cstore/tab",
+					"rect": [
+						438.0,
+						32.0,
+						84.0,
+						34.0
+					],
+					"slice": [
+						65.0,
+						30.0,
+						65.0,
+						30.0
+					],
+					"source": [
+						41.0,
+						92.0,
+						594.0,
+						199.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "cstore/tab",
+					"rect": [
+						530.0,
+						32.0,
+						84.0,
+						34.0
+					],
+					"slice": [
+						65.0,
+						30.0,
+						65.0,
+						30.0
+					],
+					"source": [
+						41.0,
+						92.0,
+						594.0,
+						199.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "cstore/reroll",
+					"rect": [
+						648.0,
+						33.0,
+						133.0,
+						32.0
+					],
+					"slice": [
+						65.0,
+						30.0,
+						65.0,
+						30.0
+					],
+					"source": [
+						712.0,
+						93.0,
+						785.0,
+						198.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "enamel/reroll_icon",
+					"rect": [
+						657.0,
+						39.0,
+						20.0,
+						20.0
+					],
+					"slice": [
+						0.0,
+						0.0,
+						0.0,
+						0.0
+					],
+					"source": [
+						752.0,
+						527.0,
+						195.0,
+						204.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "enamel/pause_icon",
+					"rect": [
+						825.0,
+						37.0,
+						20.0,
+						24.0
+					],
+					"slice": [
+						0.0,
+						0.0,
+						0.0,
+						0.0
+					],
+					"source": [
+						1111.0,
+						541.0,
+						133.0,
+						172.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "cstore/info",
+					"rect": [
+						24.0,
+						95.0,
+						169.0,
+						303.0
+					],
+					"slice": [
+						30.0,
+						35.0,
+						30.0,
+						30.0
+					],
+					"source": [
+						1078.0,
+						708.0,
+						423.0,
+						210.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "cstore/secondary",
+					"rect": [
+						37.0,
+						348.0,
+						145.0,
+						44.0
+					],
+					"slice": [
+						60.0,
+						30.0,
+						60.0,
+						30.0
+					],
+					"source": [
+						38.0,
+						759.0,
+						1462.0,
+						187.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "cstore/card",
+					"rect": [
+						205.0,
+						84.0,
+						162.0,
+						266.0
+					],
+					"slice": [
+						30.0,
+						35.0,
+						30.0,
+						30.0
+					],
+					"source": [
+						1078.0,
+						112.0,
+						420.0,
+						581.0
+					]
+				},
+				{
+					"assetScale": 8.0,
+					"material": "cstore/purchase_navy",
+					"rect": [
+						26.0,
+						223.0,
+						110.0,
+						28.0
+					],
+					"slice": [
+						100.0,
+						40.0,
+						100.0,
+						40.0
+					],
+					"source": [
+						36.0,
+						360.0,
+						1464.0,
+						300.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "cstore/card",
+					"rect": [
+						376.0,
+						84.0,
+						162.0,
+						266.0
+					],
+					"slice": [
+						30.0,
+						35.0,
+						30.0,
+						30.0
+					],
+					"source": [
+						1078.0,
+						112.0,
+						420.0,
+						581.0
+					]
+				},
+				{
+					"assetScale": 8.0,
+					"material": "cstore/purchase_navy",
+					"rect": [
+						26.0,
+						223.0,
+						110.0,
+						28.0
+					],
+					"slice": [
+						100.0,
+						40.0,
+						100.0,
+						40.0
+					],
+					"source": [
+						36.0,
+						360.0,
+						1464.0,
+						300.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "cstore/card",
+					"rect": [
+						547.0,
+						84.0,
+						162.0,
+						266.0
+					],
+					"slice": [
+						30.0,
+						35.0,
+						30.0,
+						30.0
+					],
+					"source": [
+						1078.0,
+						112.0,
+						420.0,
+						581.0
+					]
+				},
+				{
+					"assetScale": 8.0,
+					"material": "cstore/purchase_navy",
+					"rect": [
+						26.0,
+						223.0,
+						110.0,
+						28.0
+					],
+					"slice": [
+						100.0,
+						40.0,
+						100.0,
+						40.0
+					],
+					"source": [
+						36.0,
+						360.0,
+						1464.0,
+						300.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "cstore/card",
+					"rect": [
+						718.0,
+						84.0,
+						162.0,
+						266.0
+					],
+					"slice": [
+						30.0,
+						35.0,
+						30.0,
+						30.0
+					],
+					"source": [
+						1078.0,
+						112.0,
+						420.0,
+						581.0
+					]
+				},
+				{
+					"assetScale": 8.0,
+					"material": "cstore/purchase_disabled_navy",
+					"rect": [
+						26.0,
+						223.0,
+						110.0,
+						28.0
+					],
+					"slice": [
+						100.0,
+						40.0,
+						100.0,
+						40.0
+					],
+					"source": [
+						36.0,
+						360.0,
+						1464.0,
+						300.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "cstore/secondary",
+					"rect": [
+						205.0,
+						350.0,
+						163.0,
+						44.0
+					],
+					"slice": [
+						60.0,
+						30.0,
+						60.0,
+						30.0
+					],
+					"source": [
+						38.0,
+						759.0,
+						1462.0,
+						187.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "cstore/next",
+					"rect": [
+						674.0,
+						350.0,
+						205.0,
+						44.0
+					],
+					"slice": [
+						70.0,
+						35.0,
+						70.0,
+						35.0
+					],
+					"source": [
+						666.0,
+						390.0,
+						836.0,
+						241.0
+					]
+				}
+			],
+			"screen": "07-shop-weapons"
+		},
+		{
+			"controls": [
+				{
+					"caption": "무기",
+					"minimum44": true,
+					"rect": [
+						438.0,
+						27.0,
+						84.0,
+						44.0
+					],
+					"role": "cstore/tab",
+					"staticPreview": true
+				},
+				{
+					"caption": "아이템",
+					"minimum44": true,
+					"rect": [
+						530.0,
+						27.0,
+						84.0,
+						44.0
+					],
+					"role": "cstore/tab",
+					"staticPreview": true
+				},
+				{
+					"caption": "재진열",
+					"minimum44": true,
+					"rect": [
+						644.0,
+						27.0,
+						140.0,
+						44.0
+					],
+					"role": "cstore/reroll",
+					"staticPreview": true
+				},
+				{
+					"caption": "일시정지",
+					"minimum44": true,
+					"rect": [
+						813.0,
+						27.0,
+						44.0,
+						44.0
+					],
+					"role": "unframed",
+					"staticPreview": true
+				},
+				{
+					"caption": "전체 스탯",
+					"minimum44": true,
+					"rect": [
+						37.0,
+						348.0,
+						145.0,
+						44.0
+					],
+					"role": "cstore/secondary",
+					"staticPreview": true
+				},
+				{
+					"caption": "가격 96",
+					"minimum44": true,
+					"rect": [
+						221.0,
+						299.0,
+						130.0,
+						44.0
+					],
+					"role": "cstore/purchase_navy",
+					"staticPreview": true
+				},
+				{
+					"caption": "잠금 0",
+					"minimum44": true,
+					"rect": [
+						319.0,
+						87.0,
+						44.0,
+						44.0
+					],
+					"role": "unframed",
+					"staticPreview": true
+				},
+				{
+					"caption": "전체 상세 0",
+					"minimum44": true,
+					"rect": [
+						213.0,
+						132.0,
+						146.0,
+						162.0
+					],
+					"role": "unframed",
+					"staticPreview": true
+				},
+				{
+					"caption": "가격 48",
+					"minimum44": true,
+					"rect": [
+						392.0,
+						299.0,
+						130.0,
+						44.0
+					],
+					"role": "cstore/purchase_navy",
+					"staticPreview": true
+				},
+				{
+					"caption": "잠금 1",
+					"minimum44": true,
+					"rect": [
+						490.0,
+						87.0,
+						44.0,
+						44.0
+					],
+					"role": "unframed",
+					"staticPreview": true
+				},
+				{
+					"caption": "전체 상세 1",
+					"minimum44": true,
+					"rect": [
+						384.0,
+						132.0,
+						146.0,
+						162.0
+					],
+					"role": "unframed",
+					"staticPreview": true
+				},
+				{
+					"caption": "가격 52",
+					"minimum44": true,
+					"rect": [
+						563.0,
+						299.0,
+						130.0,
+						44.0
+					],
+					"role": "cstore/purchase_navy",
+					"staticPreview": true
+				},
+				{
+					"caption": "잠금 2",
+					"minimum44": true,
+					"rect": [
+						661.0,
+						87.0,
+						44.0,
+						44.0
+					],
+					"role": "unframed",
+					"staticPreview": true
+				},
+				{
+					"caption": "전체 상세 2",
+					"minimum44": true,
+					"rect": [
+						555.0,
+						132.0,
+						146.0,
+						162.0
+					],
+					"role": "unframed",
+					"staticPreview": true
+				},
+				{
+					"caption": "가격 19",
+					"minimum44": true,
+					"rect": [
+						734.0,
+						299.0,
+						130.0,
+						44.0
+					],
+					"role": "cstore/purchase_navy",
+					"staticPreview": true
+				},
+				{
+					"caption": "잠금 3",
+					"minimum44": true,
+					"rect": [
+						832.0,
+						87.0,
+						44.0,
+						44.0
+					],
+					"role": "unframed",
+					"staticPreview": true
+				},
+				{
+					"caption": "전체 상세 3",
+					"minimum44": true,
+					"rect": [
+						726.0,
+						132.0,
+						146.0,
+						162.0
+					],
+					"role": "unframed",
+					"staticPreview": true
+				},
+				{
+					"caption": "보유 아이템",
+					"minimum44": true,
+					"rect": [
+						205.0,
+						350.0,
+						163.0,
+						44.0
+					],
+					"role": "cstore/secondary",
+					"staticPreview": true
+				},
+				{
+					"caption": "다음 웨이브",
+					"minimum44": true,
+					"rect": [
+						674.0,
+						350.0,
+						205.0,
+						44.0
+					],
+					"role": "cstore/next",
+					"staticPreview": true
+				}
+			],
+			"fitIssues": [],
+			"labels": [
+				{
+					"actualSize": [
+						137.0,
+						35.0
+					],
+					"align": 1,
+					"fontHeight": 27.0,
+					"fontSize": 22,
+					"lines": 1,
+					"rect": [
+						42.0,
+						31.0,
+						137.0,
+						35.0
+					],
+					"requiredHeight": 27.0,
+					"requiredWidth": 80.0,
+					"role": "heading",
+					"text": "게이트24"
+				},
+				{
+					"actualSize": [
+						45.0,
+						32.0
+					],
+					"align": 1,
+					"fontHeight": 22.0,
+					"fontSize": 18,
+					"lines": 1,
+					"rect": [
+						225.5,
+						33.0,
+						45.0,
+						32.0
+					],
+					"requiredHeight": 22.0,
+					"requiredWidth": 43.0,
+					"role": "number",
+					"text": "12 / 20"
+				},
+				{
+					"actualSize": [
+						20.0,
+						32.0
+					],
+					"align": 1,
+					"fontHeight": 24.0,
+					"fontSize": 20,
+					"lines": 1,
+					"rect": [
+						357.0,
+						33.0,
+						20.0,
+						32.0
+					],
+					"requiredHeight": 24.0,
+					"requiredWidth": 18.0,
+					"role": "number",
+					"text": "60"
+				},
+				{
+					"actualSize": [
+						68.0,
+						34.0
+					],
+					"align": 1,
+					"fontHeight": 17.0,
+					"fontSize": 14,
+					"lines": 1,
+					"rect": [
+						446.0,
+						32.0,
+						68.0,
+						34.0
+					],
+					"requiredHeight": 17.0,
+					"requiredWidth": 25.0,
+					"role": "control",
+					"text": "무기"
+				},
+				{
+					"actualSize": [
+						68.0,
+						34.0
+					],
+					"align": 1,
+					"fontHeight": 17.0,
+					"fontSize": 14,
+					"lines": 1,
+					"rect": [
+						538.0,
+						32.0,
+						68.0,
+						34.0
+					],
+					"requiredHeight": 17.0,
+					"requiredWidth": 37.0,
+					"role": "control",
+					"text": "아이템"
+				},
+				{
+					"actualSize": [
+						9.0,
+						32.0
+					],
+					"align": 1,
+					"fontHeight": 20.0,
+					"fontSize": 16,
+					"lines": 1,
+					"rect": [
+						740.5,
+						33.0,
+						9.0,
+						32.0
+					],
+					"requiredHeight": 20.0,
+					"requiredWidth": 7.0,
+					"role": "number",
+					"text": "5"
+				},
+				{
+					"actualSize": [
+						138.0,
+						29.0
+					],
+					"align": 1,
+					"fontHeight": 22.0,
+					"fontSize": 18,
+					"lines": 1,
+					"rect": [
+						39.0,
+						225.0,
+						138.0,
+						29.0
+					],
+					"requiredHeight": 22.0,
+					"requiredWidth": 45.0,
+					"role": "heading",
+					"text": "송진우"
+				},
+				{
+					"actualSize": [
+						105.0,
+						23.0
+					],
+					"align": 2,
+					"fontHeight": 21.0,
+					"fontSize": 17,
+					"lines": 1,
+					"rect": [
+						68.0,
+						253.0,
+						105.0,
+						23.0
+					],
+					"requiredHeight": 21.0,
+					"requiredWidth": 48.0,
+					"role": "number",
+					"text": "84 / 100"
+				},
+				{
+					"actualSize": [
+						105.0,
+						21.0
+					],
+					"align": 2,
+					"fontHeight": 20.0,
+					"fontSize": 16,
+					"lines": 1,
+					"rect": [
+						68.0,
+						274.0,
+						105.0,
+						21.0
+					],
+					"requiredHeight": 20.0,
+					"requiredWidth": 31.0,
+					"role": "number",
+					"text": "100%"
+				},
+				{
+					"actualSize": [
+						105.0,
+						21.0
+					],
+					"align": 2,
+					"fontHeight": 20.0,
+					"fontSize": 16,
+					"lines": 1,
+					"rect": [
+						68.0,
+						295.0,
+						105.0,
+						21.0
+					],
+					"requiredHeight": 20.0,
+					"requiredWidth": 31.0,
+					"role": "number",
+					"text": "100%"
+				},
+				{
+					"actualSize": [
+						105.0,
+						21.0
+					],
+					"align": 2,
+					"fontHeight": 20.0,
+					"fontSize": 16,
+					"lines": 1,
+					"rect": [
+						68.0,
+						316.0,
+						105.0,
+						21.0
+					],
+					"requiredHeight": 20.0,
+					"requiredWidth": 7.0,
+					"role": "number",
+					"text": "0"
+				},
+				{
+					"actualSize": [
+						121.0,
+						36.0
+					],
+					"align": 1,
+					"fontHeight": 17.0,
+					"fontSize": 14,
+					"lines": 1,
+					"rect": [
+						49.0,
+						352.0,
+						121.0,
+						36.0
+					],
+					"requiredHeight": 17.0,
+					"requiredWidth": 53.0,
+					"role": "control",
+					"text": "전체 스탯"
+				},
+				{
+					"actualSize": [
+						122.0,
+						42.0
+					],
+					"align": 1,
+					"fontHeight": 18.0,
+					"fontSize": 15,
+					"lines": 1,
+					"rect": [
+						20.0,
+						87.0,
+						122.0,
+						42.0
+					],
+					"requiredHeight": 18.0,
+					"requiredWidth": 122.0,
+					"role": "heading",
+					"text": "불사 성냥"
+				},
+				{
+					"actualSize": [
+						122.0,
+						36.0
+					],
+					"align": 0,
+					"fontHeight": 16.0,
+					"fontSize": 13,
+					"lines": 2,
+					"rect": [
+						20.0,
+						132.0,
+						122.0,
+						36.0
+					],
+					"requiredHeight": 34.0,
+					"requiredWidth": 122.0,
+					"role": "body",
+					"text": "한 판 1회 HP 1 생존\n2.5초 무적"
+				},
+				{
+					"actualSize": [
+						122.0,
+						36.0
+					],
+					"align": 0,
+					"fontHeight": 16.0,
+					"fontSize": 13,
+					"lines": 1,
+					"rect": [
+						20.0,
+						173.0,
+						122.0,
+						36.0
+					],
+					"requiredHeight": 16.0,
+					"requiredWidth": 122.0,
+					"role": "body",
+					"text": "최대 HP -10"
+				},
+				{
+					"actualSize": [
+						16.0,
+						32.0
+					],
+					"align": 1,
+					"fontHeight": 20.0,
+					"fontSize": 16,
+					"lines": 1,
+					"rect": [
+						85.0,
+						221.0,
+						16.0,
+						32.0
+					],
+					"requiredHeight": 20.0,
+					"requiredWidth": 14.0,
+					"role": "number",
+					"text": "96"
+				},
+				{
+					"actualSize": [
+						122.0,
+						42.0
+					],
+					"align": 1,
+					"fontHeight": 18.0,
+					"fontSize": 15,
+					"lines": 1,
+					"rect": [
+						20.0,
+						87.0,
+						122.0,
+						42.0
+					],
+					"requiredHeight": 18.0,
+					"requiredWidth": 122.0,
+					"role": "heading",
+					"text": "금고 장부"
+				},
+				{
+					"actualSize": [
+						122.0,
+						36.0
+					],
+					"align": 0,
+					"fontHeight": 16.0,
+					"fontSize": 13,
+					"lines": 2,
+					"rect": [
+						20.0,
+						132.0,
+						122.0,
+						36.0
+					],
+					"requiredHeight": 34.0,
+					"requiredWidth": 122.0,
+					"role": "body",
+					"text": "보유 마력석에 따라\n피해 최대 +30%"
+				},
+				{
+					"actualSize": [
+						122.0,
+						36.0
+					],
+					"align": 0,
+					"fontHeight": 16.0,
+					"fontSize": 13,
+					"lines": 1,
+					"rect": [
+						20.0,
+						173.0,
+						122.0,
+						36.0
+					],
+					"requiredHeight": 16.0,
+					"requiredWidth": 122.0,
+					"role": "body",
+					"text": "획득범위 -10"
+				},
+				{
+					"actualSize": [
+						16.0,
+						32.0
+					],
+					"align": 1,
+					"fontHeight": 20.0,
+					"fontSize": 16,
+					"lines": 1,
+					"rect": [
+						85.0,
+						221.0,
+						16.0,
+						32.0
+					],
+					"requiredHeight": 20.0,
+					"requiredWidth": 14.0,
+					"role": "number",
+					"text": "48"
+				},
+				{
+					"actualSize": [
+						122.0,
+						42.0
+					],
+					"align": 1,
+					"fontHeight": 18.0,
+					"fontSize": 15,
+					"lines": 1,
+					"rect": [
+						20.0,
+						87.0,
+						122.0,
+						42.0
+					],
+					"requiredHeight": 18.0,
+					"requiredWidth": 122.0,
+					"role": "heading",
+					"text": "보복 퓨즈"
+				},
+				{
+					"actualSize": [
+						122.0,
+						36.0
+					],
+					"align": 0,
+					"fontHeight": 16.0,
+					"fontSize": 13,
+					"lines": 2,
+					"rect": [
+						20.0,
+						132.0,
+						122.0,
+						36.0
+					],
+					"requiredHeight": 34.0,
+					"requiredWidth": 122.0,
+					"role": "body",
+					"text": "피격 시 주변 피해\n고정 24 · 쿨 6초"
+				},
+				{
+					"actualSize": [
+						122.0,
+						36.0
+					],
+					"align": 0,
+					"fontHeight": 16.0,
+					"fontSize": 13,
+					"lines": 1,
+					"rect": [
+						20.0,
+						173.0,
+						122.0,
+						36.0
+					],
+					"requiredHeight": 16.0,
+					"requiredWidth": 122.0,
+					"role": "body",
+					"text": "회피 -4%"
+				},
+				{
+					"actualSize": [
+						16.0,
+						32.0
+					],
+					"align": 1,
+					"fontHeight": 20.0,
+					"fontSize": 16,
+					"lines": 1,
+					"rect": [
+						85.0,
+						221.0,
+						16.0,
+						32.0
+					],
+					"requiredHeight": 20.0,
+					"requiredWidth": 14.0,
+					"role": "number",
+					"text": "52"
+				},
+				{
+					"actualSize": [
+						122.0,
+						42.0
+					],
+					"align": 1,
+					"fontHeight": 18.0,
+					"fontSize": 15,
+					"lines": 1,
+					"rect": [
+						20.0,
+						87.0,
+						122.0,
+						42.0
+					],
+					"requiredHeight": 18.0,
+					"requiredWidth": 122.0,
+					"role": "heading",
+					"text": "전술 발목 보호대"
+				},
+				{
+					"actualSize": [
+						122.0,
+						36.0
+					],
+					"align": 0,
+					"fontHeight": 16.0,
+					"fontSize": 13,
+					"lines": 2,
+					"rect": [
+						20.0,
+						132.0,
+						122.0,
+						36.0
+					],
+					"requiredHeight": 34.0,
+					"requiredWidth": 122.0,
+					"role": "body",
+					"text": "회피 +2%\n이동속도 +3"
+				},
+				{
+					"actualSize": [
+						122.0,
+						36.0
+					],
+					"align": 0,
+					"fontHeight": 16.0,
+					"fontSize": 13,
+					"lines": 1,
+					"rect": [
+						20.0,
+						173.0,
+						122.0,
+						36.0
+					],
+					"requiredHeight": 16.0,
+					"requiredWidth": 122.0,
+					"role": "body",
+					"text": ""
+				},
+				{
+					"actualSize": [
+						13.0,
+						32.0
+					],
+					"align": 1,
+					"fontHeight": 20.0,
+					"fontSize": 16,
+					"lines": 1,
+					"rect": [
+						86.5,
+						221.0,
+						13.0,
+						32.0
+					],
+					"requiredHeight": 20.0,
+					"requiredWidth": 11.0,
+					"role": "number",
+					"text": "19"
+				},
+				{
+					"actualSize": [
+						139.0,
+						36.0
+					],
+					"align": 1,
+					"fontHeight": 17.0,
+					"fontSize": 14,
+					"lines": 1,
+					"rect": [
+						217.0,
+						354.0,
+						139.0,
+						36.0
+					],
+					"requiredHeight": 17.0,
+					"requiredWidth": 77.0,
+					"role": "control",
+					"text": "보유 아이템 1"
+				},
+				{
+					"actualSize": [
+						14.0,
+						30.0
+					],
+					"align": 1,
+					"fontHeight": 18.0,
+					"fontSize": 15,
+					"lines": 1,
+					"rect": [
+						406.0,
+						357.0,
+						14.0,
+						30.0
+					],
+					"requiredHeight": 18.0,
+					"requiredWidth": 4.0,
+					"role": "number",
+					"text": "1"
+				},
+				{
+					"actualSize": [
+						14.0,
+						30.0
+					],
+					"align": 1,
+					"fontHeight": 18.0,
+					"fontSize": 15,
+					"lines": 1,
+					"rect": [
+						452.0,
+						357.0,
+						14.0,
+						30.0
+					],
+					"requiredHeight": 18.0,
+					"requiredWidth": 6.0,
+					"role": "number",
+					"text": "2"
+				},
+				{
+					"actualSize": [
+						14.0,
+						30.0
+					],
+					"align": 1,
+					"fontHeight": 18.0,
+					"fontSize": 15,
+					"lines": 1,
+					"rect": [
+						498.0,
+						357.0,
+						14.0,
+						30.0
+					],
+					"requiredHeight": 18.0,
+					"requiredWidth": 6.0,
+					"role": "number",
+					"text": "3"
+				},
+				{
+					"actualSize": [
+						14.0,
+						30.0
+					],
+					"align": 1,
+					"fontHeight": 18.0,
+					"fontSize": 15,
+					"lines": 1,
+					"rect": [
+						544.0,
+						357.0,
+						14.0,
+						30.0
+					],
+					"requiredHeight": 18.0,
+					"requiredWidth": 7.0,
+					"role": "number",
+					"text": "4"
+				},
+				{
+					"actualSize": [
+						14.0,
+						30.0
+					],
+					"align": 1,
+					"fontHeight": 18.0,
+					"fontSize": 15,
+					"lines": 1,
+					"rect": [
+						590.0,
+						357.0,
+						14.0,
+						30.0
+					],
+					"requiredHeight": 18.0,
+					"requiredWidth": 6.0,
+					"role": "number",
+					"text": "5"
+				},
+				{
+					"actualSize": [
+						14.0,
+						30.0
+					],
+					"align": 1,
+					"fontHeight": 18.0,
+					"fontSize": 15,
+					"lines": 1,
+					"rect": [
+						636.0,
+						357.0,
+						14.0,
+						30.0
+					],
+					"requiredHeight": 18.0,
+					"requiredWidth": 6.0,
+					"role": "number",
+					"text": "6"
+				},
+				{
+					"actualSize": [
+						181.0,
+						36.0
+					],
+					"align": 1,
+					"fontHeight": 22.0,
+					"fontSize": 18,
+					"lines": 1,
+					"rect": [
+						686.0,
+						354.0,
+						181.0,
+						36.0
+					],
+					"requiredHeight": 22.0,
+					"requiredWidth": 83.0,
+					"role": "control",
+					"text": "다음 웨이브"
+				}
+			],
+			"materials": [
+				{
+					"assetScale": 4.0,
+					"material": "cstore/cabinet",
+					"rect": [
+						14.0,
+						10.0,
+						887.0,
+						392.0
+					],
+					"slice": [
+						110.0,
+						118.0,
+						110.0,
+						60.0
+					],
+					"source": [
+						40.0,
+						110.0,
+						1018.0,
+						573.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "cstore/header",
+					"rect": [
+						24.0,
+						20.0,
+						867.0,
+						47.0
+					],
+					"slice": [
+						60.0,
+						30.0,
+						60.0,
+						25.0
+					],
+					"source": [
+						40.0,
+						719.0,
+						1016.0,
+						151.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "cstore/tab",
+					"rect": [
+						438.0,
+						32.0,
+						84.0,
+						34.0
+					],
+					"slice": [
+						65.0,
+						30.0,
+						65.0,
+						30.0
+					],
+					"source": [
+						41.0,
+						92.0,
+						594.0,
+						199.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "cstore/tab",
+					"rect": [
+						530.0,
+						32.0,
+						84.0,
+						34.0
+					],
+					"slice": [
+						65.0,
+						30.0,
+						65.0,
+						30.0
+					],
+					"source": [
+						41.0,
+						92.0,
+						594.0,
+						199.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "cstore/reroll",
+					"rect": [
+						648.0,
+						33.0,
+						133.0,
+						32.0
+					],
+					"slice": [
+						65.0,
+						30.0,
+						65.0,
+						30.0
+					],
+					"source": [
+						712.0,
+						93.0,
+						785.0,
+						198.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "enamel/reroll_icon",
+					"rect": [
+						657.0,
+						39.0,
+						20.0,
+						20.0
+					],
+					"slice": [
+						0.0,
+						0.0,
+						0.0,
+						0.0
+					],
+					"source": [
+						752.0,
+						527.0,
+						195.0,
+						204.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "enamel/pause_icon",
+					"rect": [
+						825.0,
+						37.0,
+						20.0,
+						24.0
+					],
+					"slice": [
+						0.0,
+						0.0,
+						0.0,
+						0.0
+					],
+					"source": [
+						1111.0,
+						541.0,
+						133.0,
+						172.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "cstore/info",
+					"rect": [
+						24.0,
+						95.0,
+						169.0,
+						303.0
+					],
+					"slice": [
+						30.0,
+						35.0,
+						30.0,
+						30.0
+					],
+					"source": [
+						1078.0,
+						708.0,
+						423.0,
+						210.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "cstore/secondary",
+					"rect": [
+						37.0,
+						348.0,
+						145.0,
+						44.0
+					],
+					"slice": [
+						60.0,
+						30.0,
+						60.0,
+						30.0
+					],
+					"source": [
+						38.0,
+						759.0,
+						1462.0,
+						187.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "cstore/card",
+					"rect": [
+						205.0,
+						84.0,
+						162.0,
+						266.0
+					],
+					"slice": [
+						30.0,
+						35.0,
+						30.0,
+						30.0
+					],
+					"source": [
+						1078.0,
+						112.0,
+						420.0,
+						581.0
+					]
+				},
+				{
+					"assetScale": 8.0,
+					"material": "cstore/purchase_disabled_navy",
+					"rect": [
+						26.0,
+						223.0,
+						110.0,
+						28.0
+					],
+					"slice": [
+						100.0,
+						40.0,
+						100.0,
+						40.0
+					],
+					"source": [
+						36.0,
+						360.0,
+						1464.0,
+						300.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "cstore/card",
+					"rect": [
+						376.0,
+						84.0,
+						162.0,
+						266.0
+					],
+					"slice": [
+						30.0,
+						35.0,
+						30.0,
+						30.0
+					],
+					"source": [
+						1078.0,
+						112.0,
+						420.0,
+						581.0
+					]
+				},
+				{
+					"assetScale": 8.0,
+					"material": "cstore/purchase_navy",
+					"rect": [
+						26.0,
+						223.0,
+						110.0,
+						28.0
+					],
+					"slice": [
+						100.0,
+						40.0,
+						100.0,
+						40.0
+					],
+					"source": [
+						36.0,
+						360.0,
+						1464.0,
+						300.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "cstore/card",
+					"rect": [
+						547.0,
+						84.0,
+						162.0,
+						266.0
+					],
+					"slice": [
+						30.0,
+						35.0,
+						30.0,
+						30.0
+					],
+					"source": [
+						1078.0,
+						112.0,
+						420.0,
+						581.0
+					]
+				},
+				{
+					"assetScale": 8.0,
+					"material": "cstore/purchase_navy",
+					"rect": [
+						26.0,
+						223.0,
+						110.0,
+						28.0
+					],
+					"slice": [
+						100.0,
+						40.0,
+						100.0,
+						40.0
+					],
+					"source": [
+						36.0,
+						360.0,
+						1464.0,
+						300.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "cstore/card",
+					"rect": [
+						718.0,
+						84.0,
+						162.0,
+						266.0
+					],
+					"slice": [
+						30.0,
+						35.0,
+						30.0,
+						30.0
+					],
+					"source": [
+						1078.0,
+						112.0,
+						420.0,
+						581.0
+					]
+				},
+				{
+					"assetScale": 8.0,
+					"material": "cstore/purchase_navy",
+					"rect": [
+						26.0,
+						223.0,
+						110.0,
+						28.0
+					],
+					"slice": [
+						100.0,
+						40.0,
+						100.0,
+						40.0
+					],
+					"source": [
+						36.0,
+						360.0,
+						1464.0,
+						300.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "cstore/secondary",
+					"rect": [
+						205.0,
+						350.0,
+						163.0,
+						44.0
+					],
+					"slice": [
+						60.0,
+						30.0,
+						60.0,
+						30.0
+					],
+					"source": [
+						38.0,
+						759.0,
+						1462.0,
+						187.0
+					]
+				},
+				{
+					"assetScale": 4.0,
+					"material": "cstore/next",
+					"rect": [
+						674.0,
+						350.0,
+						205.0,
+						44.0
+					],
+					"slice": [
+						70.0,
+						35.0,
+						70.0,
+						35.0
+					],
+					"source": [
+						666.0,
+						390.0,
+						836.0,
+						241.0
+					]
+				}
+			],
+			"screen": "08-shop-items"
+		}
+	],
+	"shopCopyAudit": {
+		"fitIssues": [],
+		"labels": 195,
+		"products": 65
+	},
+	"simulation": false,
+	"size": [
+		915,
+		412
+	]
+}

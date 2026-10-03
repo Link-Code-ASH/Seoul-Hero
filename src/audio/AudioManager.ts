@@ -1,9 +1,24 @@
 import { AUDIO_CONFIG, preloadedAudioUrls, bgm, sfx } from '../data/audio';
-import type { BgmId, BgmTrack, SfxId } from '../data/audio';
+import type { BgmId, BgmTrack, SfxDefinition, SfxId } from '../data/audio';
 import type { Settings } from '../state/MetaState';
 import { SoundGate } from './AudioPolicy';
 
-interface EffectVoice { source: AudioBufferSourceNode; gain: GainNode; id: SfxId; priority: number }
+export interface AudioCueContext {
+  readonly weaponId?: string;
+  readonly stage?: string;
+  readonly behavior?: string;
+  readonly attackId?: string | number;
+  readonly hopIndex?: number;
+  /** Optional delay in combat seconds; advanceCombat() owns this clock. */
+  readonly delay?: number;
+}
+
+interface EffectVoice {
+  source: AudioBufferSourceNode; gain: GainNode; id: SfxId; priority: number;
+  protected: boolean; group: 'combat' | 'ui'; startedAt: number; order: number;
+}
+interface ScheduledCue { id: SfxId; at: number; context: AudioCueContext; order: number }
+interface AmbientVoice { source: AudioBufferSourceNode; gain: GainNode; id: SfxId }
 
 /** Browser output adapter. The simulation only emits domain events and knows no audio APIs. */
 export class AudioManager {
@@ -19,7 +34,13 @@ export class AudioManager {
   private readonly bytes = new Map<string, ArrayBuffer>();
   private readonly buffers = new Map<string, AudioBuffer>();
   private readonly voices = new Set<EffectVoice>();
-  private readonly variantCursor = new Map<SfxId, number>();
+  private readonly lastEffectUrl = new Map<SfxId, string>();
+  private readonly scheduled: ScheduledCue[] = [];
+  private readonly chainHops = new Map<string | number, number>();
+  private combatTime = 0;
+  private voiceOrder = 0;
+  private desiredAmbience: SfxId | null = null;
+  private ambience: AmbientVoice | null = null;
   private readonly lastMusicUrl = new Map<BgmId, string>();
   private readonly gate = new SoundGate();
   private readonly tabId = Math.random().toString(36).slice(2);
@@ -49,6 +70,7 @@ export class AudioManager {
       this.silencedByOtherTab = true;
       window.clearTimeout(this.musicFadeTimer);
       this.musicElement?.pause();
+      this.stopAmbience();
     };
   }
   get status(): string { return this.stateText; }
@@ -165,7 +187,7 @@ export class AudioManager {
         if (this.disposed) return;
         if (this.buffers.size === preloadedAudioUrls().length) this.stateText = '오디오 준비 완료';
         if (this.hidden) await context.suspend();
-        else this.reconcileMusic();
+        else { this.reconcileMusic(); this.reconcileAmbience(); }
       })().catch(() => { this.stateText = '소리를 켜려면 사운드 버튼을 다시 눌러주세요.'; })
         .finally(() => { this.unlocking = null; });
       return this.unlocking;
@@ -186,13 +208,17 @@ export class AudioManager {
     this.musicBus.gain.setTargetAtTime((settings.muted ? 0 : settings.musicVolume) * (this.dimmed ? AUDIO_CONFIG.pausedMusicGain : 1), now, AUDIO_CONFIG.volumeFade);
     this.combatBus.gain.setTargetAtTime(settings.combatVolume, now, AUDIO_CONFIG.volumeFade);
     this.uiBus.gain.setTargetAtTime(settings.uiVolume, now, AUDIO_CONFIG.volumeFade);
+    this.reconcileAmbience();
   }
   setScene(id: BgmId | null, dimmed: boolean): void {
     if (this.desired === id && this.dimmed === dimmed) return;
     this.desired = id; this.dimmed = dimmed;
+    if (id !== 'combat') this.stopCombat();
+    if (id === 'combat' || id === null) this.setAmbience(null);
     if (!this.context && this.musicElement && id !== this.currentGroup) this.stopMusic();
     this.applySettings(this.settings);
     this.reconcileMusic();
+    this.reconcileAmbience();
   }
   /** Only the tab receiving the latest user gesture owns audible BGM. */
   claimOutput(): void {
@@ -201,6 +227,7 @@ export class AudioManager {
     this.tabChannel?.postMessage({ type: 'claim', sender: this.tabId });
     if (!this.context && this.musicElement && this.desired === this.currentGroup && this.musicElement.paused) this.playMusic();
     this.reconcileMusic();
+    this.reconcileAmbience();
   }
   private reconcileMusic(): void {
     const context = this.context, element = this.musicElement, gain = this.musicGain;
@@ -282,54 +309,154 @@ export class AudioManager {
     this.currentGroup = null;
     this.currentTrack = null;
   }
-  play = (id: SfxId): boolean => {
-    const context = this.context, definition = sfx[id];
+  private chooseEffect(id: SfxId): { url: string; buffer: AudioBuffer } | null {
+    const urls = sfx[id].urls.filter(url => this.buffers.has(url));
+    const previous = this.lastEffectUrl.get(id);
+    const choices = urls.length > 1 ? urls.filter(url => url !== previous) : urls;
+    const url = choices[Math.floor(Math.random() * choices.length)];
+    const buffer = url ? this.buffers.get(url) : undefined;
+    return url && buffer ? { url, buffer } : null;
+  }
+
+  private stopVoice(voice: EffectVoice): void {
+    this.voices.delete(voice);
+    try { voice.source.stop(); } catch { /* voice already ended */ }
+  }
+
+  /** Keeps one lobby loop on the music bus, with the existing music settings. */
+  setAmbience(id: SfxId | null): void {
+    if (id && (sfx[id].group !== 'ambience' || !sfx[id].loop)) return;
+    this.desiredAmbience = id;
+    this.reconcileAmbience();
+  }
+
+  private stopAmbience(): void {
+    const voice = this.ambience;
+    this.ambience = null;
+    if (!voice) return;
+    try { voice.source.stop(); } catch { /* loop already stopped */ }
+  }
+
+  private reconcileAmbience(): void {
+    const context = this.context, output = this.musicBus, id = this.desiredAmbience;
+    if (!context || !output || !id || this.disposed || this.hidden || this.silencedByOtherTab || this.settings.muted || this.settings.masterVolume <= 0 || this.settings.musicVolume <= 0 || context.state !== 'running') {
+      this.stopAmbience(); return;
+    }
+    if (this.ambience?.id === id) return;
+    this.stopAmbience();
+    const variant = this.chooseEffect(id);
+    if (!variant) return;
+    const source = context.createBufferSource(), gain = context.createGain();
+    source.buffer = variant.buffer; source.loop = true;
+    gain.gain.value = sfx[id].gain;
+    source.connect(gain); gain.connect(output);
+    const voice: AmbientVoice = { source, gain, id };
+    this.ambience = voice;
+    source.onended = () => {
+      if (this.ambience === voice) this.ambience = null;
+      source.disconnect(); gain.disconnect();
+    };
+    source.start(); this.lastEffectUrl.set(id, variant.url);
+  }
+
+  /** Schedule presentation audio without adding a wall-clock timer to combat. */
+  schedule(id: SfxId, delay: number, context: AudioCueContext = {}): boolean {
+    if (this.disposed || this.hidden || sfx[id].group !== 'combat' || !Number.isFinite(delay)) return false;
+    const payload = { ...context, delay: undefined };
+    if (delay <= 0) return this.play(id, payload);
+    this.scheduled.push({ id, at: this.combatTime + delay, context: payload, order: this.voiceOrder++ });
+    return true;
+  }
+
+  advanceCombat(dt: number): void {
+    if (this.disposed || this.hidden || !Number.isFinite(dt) || dt <= 0) return;
+    this.combatTime += dt;
+    const due = this.scheduled.filter(cue => cue.at <= this.combatTime).sort((a, b) => a.at - b.at || a.order - b.order);
+    for (let i = this.scheduled.length - 1; i >= 0; i--) {
+      if (this.scheduled[i]!.at <= this.combatTime) this.scheduled.splice(i, 1);
+    }
+    for (const cue of due) this.play(cue.id, cue.context);
+  }
+
+  /** Wave cleanup cancels delayed attacks and combat tails, while UI cues remain. */
+  stopCombat(): void {
+    this.scheduled.length = 0; this.chainHops.clear(); this.combatTime = 0;
+    for (const voice of this.voices) if (voice.group === 'combat') this.stopVoice(voice);
+    this.gate.clear('combat');
+  }
+
+  play = (id: SfxId, cueContext: AudioCueContext = {}): boolean => {
+    const context = this.context, definition: SfxDefinition = sfx[id];
+    if (definition.group === 'ambience') {
+      this.setAmbience(id); return this.ambience?.id === id;
+    }
+    if (definition.group === 'combat' && cueContext.delay && cueContext.delay > 0) return this.schedule(id, cueContext.delay, cueContext);
     const output = definition.group === 'ui' ? this.uiBus : this.combatBus;
     const groupVolume = definition.group === 'ui' ? this.settings.uiVolume : this.settings.combatVolume;
-    if (!context || !output || this.hidden || this.settings.masterVolume <= 0 || groupVolume <= 0 || context.state !== 'running') return false;
+    if (!context || !output || this.disposed || this.hidden || this.settings.masterVolume <= 0 || groupVolume <= 0 || context.state !== 'running') return false;
     if ([...this.voices].filter(voice => voice.id === id).length >= definition.concurrency) return false;
-    if (this.voices.size >= AUDIO_CONFIG.maxVoices && definition.priority >= 4) {
-      const victim = [...this.voices].sort((a, b) => a.priority - b.priority)[0];
-      if (victim && victim.priority < definition.priority) {
-        this.voices.delete(victim);
-        try { victim.source.stop(); } catch { /* voice already ended */ }
-      }
+    if (id === 'chainHop') {
+      if (cueContext.hopIndex !== undefined && (cueContext.hopIndex <= 0 || cueContext.hopIndex > AUDIO_CONFIG.chainHopMaxPerAttack)) return false;
+      if (cueContext.attackId !== undefined && (this.chainHops.get(cueContext.attackId) ?? 0) >= AUDIO_CONFIG.chainHopMaxPerAttack) return false;
     }
-    const cursor = this.variantCursor.get(id) ?? 0;
-    const url = definition.urls[cursor % definition.urls.length];
-    if (!url) return false;
-    const buffer = this.buffers.get(url);
-    if (!buffer || !this.gate.allow(id, context.currentTime, this.voices.size)) return false;
+    const variant = this.chooseEffect(id);
+    if (!variant) return false;
+    const normalCount = [...this.voices].filter(voice => !voice.protected).length;
+    const constrainedNormal = !definition.protected && normalCount >= AUDIO_CONFIG.normalVoices;
+    let victim: EffectVoice | undefined;
+    if (constrainedNormal || this.voices.size >= AUDIO_CONFIG.maxVoices) {
+      victim = [...this.voices]
+        .filter(voice => !voice.protected && voice.priority < definition.priority)
+        .sort((a, b) => a.priority - b.priority || a.startedAt - b.startedAt || a.order - b.order)[0];
+      if (!victim) return false;
+    }
+    const activeCount = this.voices.size - (victim ? 1 : 0);
+    const nextNormalCount = normalCount - (victim && !victim.protected ? 1 : 0);
+    if (!this.gate.allow(id, context.currentTime, activeCount, nextNormalCount)) return false;
+    if (victim) this.stopVoice(victim);
     const source = context.createBufferSource(), gain = context.createGain();
     const [lowPitch, highPitch] = definition.pitch;
-    source.buffer = buffer;
+    source.buffer = variant.buffer;
     source.playbackRate.value = lowPitch + Math.random() * (highPitch - lowPitch);
-    gain.gain.value = definition.gain * (1 + (Math.random() * 2 - 1) * definition.volumeVariation);
+    const attenuation = definition.protected ? 1 : 1 / Math.sqrt(1 + activeCount * AUDIO_CONFIG.busyAttenuation);
+    gain.gain.value = definition.gain * attenuation * (1 + (Math.random() * 2 - 1) * definition.volumeVariation);
     source.connect(gain); gain.connect(output);
-    const voice: EffectVoice = { source, gain, id, priority: definition.priority };
-    this.voices.add(voice); this.variantCursor.set(id, cursor + 1);
+    const voice: EffectVoice = { source, gain, id, priority: definition.priority, protected: definition.protected,
+      group: definition.group, startedAt: context.currentTime, order: this.voiceOrder++ };
+    this.voices.add(voice); this.lastEffectUrl.set(id, variant.url);
     source.onended = () => { this.voices.delete(voice); source.disconnect(); gain.disconnect(); };
     source.start(); this.playedCount++; this.lastSound = definition.label;
+    if (id === 'chainHop' && cueContext.attackId !== undefined) {
+      if (this.chainHops.size >= 256 && !this.chainHops.has(cueContext.attackId)) this.chainHops.delete(this.chainHops.keys().next().value!);
+      this.chainHops.set(cueContext.attackId, (this.chainHops.get(cueContext.attackId) ?? 0) + 1);
+    }
     return true;
   };
   setHidden(hidden: boolean): void {
     this.hidden = hidden;
     const context = this.context;
-    if (!context) return;
     if (hidden) {
-      for (const voice of this.voices) voice.source.stop();
+      this.stopCombat();
+      for (const voice of this.voices) this.stopVoice(voice);
+      this.stopAmbience();
       this.gate.clear();
       window.clearTimeout(this.musicFadeTimer);
       this.musicElement?.pause();
-      void context.suspend().catch(() => {});
+      void context?.suspend().catch(() => {});
     } else {
-      void context.resume().then(() => { if (!this.hidden) this.reconcileMusic(); }).catch(() => {});
+      if (!context) {
+        if (!this.settings.muted && !this.silencedByOtherTab && this.desired === this.currentGroup) this.playMusic();
+        return;
+      }
+      void context.resume().then(() => { if (!this.hidden) { this.reconcileMusic(); this.reconcileAmbience(); } }).catch(() => {});
     }
   }
   destroy(): void {
     this.disposed = true;
     window.clearTimeout(this.musicFadeTimer);
-    for (const voice of this.voices) voice.source.stop();
+    this.stopCombat();
+    for (const voice of this.voices) this.stopVoice(voice);
+    this.stopAmbience();
     this.stopMusic();
     this.tabChannel?.close();
     this.musicSource?.disconnect(); this.musicGain?.disconnect();

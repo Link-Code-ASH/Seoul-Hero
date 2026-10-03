@@ -1,0 +1,8 @@
+{
+  "scope": "deployed source/Godot WAV hashes, BGM hashes, mapping coverage, unchanged combat/save/content",
+  "files": 128,
+  "cues": 44,
+  "bgm": 6,
+  "problems": [],
+  "gameplay_listening_full_build": "not performed"
+}

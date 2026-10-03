@@ -5,17 +5,18 @@ import { maps } from '../data/maps';
 import { ObjectPool } from '../utils/ObjectPool';
 import { segmentCircleHit } from '../utils/math';
 import { damagePlayer } from './PlayerDamageSystem';
-import type { GameEventSink } from '../core/GameEvents';
+import { ignoreGameAudioEvent, type GameEventSink, type GameAudioEvent, type GameAudioEventSink } from '../core/GameEvents';
 export class HostileAttackSystem {
   private readonly bullets = new ObjectPool<HostileProjectile>(() => ({ x: 0, y: 0, vx: 0, vy: 0, radius: 0, damage: 0, remaining: 0 }));
   private readonly areas = new ObjectPool<HostileHazard>(() => ({ x: 0, y: 0, radius: 0, damage: 0, warning: 0, remaining: 0, triggered: false }));
-  constructor(private readonly random: () => number, private readonly emit: GameEventSink) {}
-  shoot(run: RunState, x: number, y: number, angle: number, damage: number): void {
+  constructor(private readonly random: () => number, private readonly emit: GameEventSink, private readonly emitAudio: GameAudioEventSink = ignoreGameAudioEvent) {}
+  shoot(run: RunState, x: number, y: number, angle: number, damage: number, audio?: GameAudioEvent): void {
     if (run.hostileProjectiles.length >= ENEMY_RULES.maxHostileProjectiles) return;
     const p = this.bullets.acquire();
     Object.assign(p, { x, y, vx: Math.cos(angle) * ENEMY_RULES.bulletSpeed, vy: Math.sin(angle) * ENEMY_RULES.bulletSpeed,
       radius: ENEMY_RULES.projectileRadius, damage, remaining: ENEMY_RULES.projectileLifetime });
     run.hostileProjectiles.push(p);
+    if (audio) this.emitAudio(audio);
   }
   area(run: RunState, x: number, y: number, radius: number, warning: number, damage: number): void {
     if (run.hazards.length >= ENEMY_RULES.maxHazards) return;

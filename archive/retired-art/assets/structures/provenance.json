@@ -1,0 +1,10 @@
+{
+  "generatedAt": "2026-09-22",
+  "generator": "OpenAI built-in image generation",
+  "assets": {
+    "structure_auto_turret_02.png": {
+      "source": "C:/Users/geniu/.codex/generated_images/01a07bcf-7f98-7021-bf14-e9c913993db8/exec-d8905961-618b-4bbd-8523-fa323309c958.png",
+      "promptSummary": "Raised omnidirectional sentry tower with a central column, rotating crown and six evenly distributed firing apertures; transparent background; no baked shadow or directional barrel."
+    }
+  }
+}

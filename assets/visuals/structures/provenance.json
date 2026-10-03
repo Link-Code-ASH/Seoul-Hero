@@ -1,0 +1,31 @@
+{
+  "tool": "built-in imagegen",
+  "date": "2026-10-03",
+  "source": "C:/Users/geniu/.codex/generated_images/01a0f2b0-afe6-7281-8ba3-48d0d8354159/exec-8cb59151-ba3d-4998-90c9-edcc6ecc736e.png",
+  "output": "ground_installations_01.png",
+  "prompt": "Create a production-ready transparent PNG game-sprite atlas with TWO isolated ground installations in two equal horizontal cells. Reference images are existing Seoul Hero mine and mana-field item art; preserve their ivory/slate metallic, brass accents, teal circuitry, amber mine crystal and cyan mana emitter identity, but redraw for actual grounded in-game use, not inventory front-facing icons. LEFT: a low squat circular magic mine viewed from a gently overhead three-quarter camera, elliptical top, clearly visible thick beveled front sidewall, four short anchored mounting lugs, amber inset central gem, small teal status light. RIGHT: compact mana-field emitter, low round thick anchored base, three short mounting lugs, a small upright cyan crystal seated in a socket; remove huge upright ornamental ring and swirling magic field from the reference. Both objects sit on the ground with strong readable volume and restrained painterly SD game shading, dark clean contours, top lit from upper left and front sidewall slightly darker. Each object centered with 15 percent transparent padding, no overlap between cells. No floor, no backdrop, no UI frame, no text, no labels, no baked drop shadow (runtime adds contact/cast shadow), no broad glow halo, no creatures, no weapon held by character. Keep silhouettes clean and readable at 35-55 screen pixels. Transparent alpha background. High-resolution raster game art.",
+  "references": [
+    "assets/ui/weapons/weapon_mine_layer_casual_01.webp",
+    "assets/ui/weapons/weapon_mana_field_casual_01.webp"
+  ],
+  "sourceSize": [
+    1774,
+    887
+  ],
+  "regions": {
+    "mine": [
+      134,
+      205,
+      684,
+      551
+    ],
+    "aura": [
+      985,
+      172,
+      692,
+      592
+    ]
+  },
+  "runtime": "godot/data/visuals/actors.json/structures",
+  "notes": "PNG intact. Reviewed alpha32 bounds padded4px. Ground/cast shadow and field animation provided by runtime."
+}

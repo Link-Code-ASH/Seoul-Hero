@@ -1,0 +1,513 @@
+{
+  "characters": {
+    "awakener": {
+      "rig": "sd",
+      "height": 98,
+      "displayScale": 0.8,
+      "sprite": "res://assets/characters-sd/song_sd_01.png",
+      "portrait": "res://assets/characters-sd/song_sd_01.png",
+      "region": [
+        246,
+        72,
+        757,
+        1149
+      ],
+      "shadow": [
+        54,
+        14
+      ],
+      "feetTop": 0.83,
+      "footLift": 0.03,
+      "handMotion": 0.016,
+      "handRegions": [
+        [
+          0.16,
+          0.69,
+          0.24,
+          0.22
+        ],
+        [
+          0.64,
+          0.7,
+          0.24,
+          0.21
+        ]
+      ],
+      "bounce": 2.2,
+      "cadence": 2.2,
+      "sockets": {
+        "impact": [
+          0,
+          -0.45
+        ],
+        "muzzle": [
+          0,
+          -0.45
+        ]
+      },
+      "source": "song_sd_01.png"
+    },
+    "kangTaehoon": {
+      "rig": "sd",
+      "height": 98,
+      "displayScale": 0.8,
+      "sprite": "res://assets/characters-sd/kang_sd_01.png",
+      "portrait": "res://assets/characters-sd/kang_sd_01.png",
+      "region": [
+        241,
+        61,
+        765,
+        1168
+      ],
+      "shadow": [
+        54,
+        14
+      ],
+      "feetTop": 0.83,
+      "footLift": 0.03,
+      "handMotion": 0.016,
+      "handRegions": [
+        [
+          0.19,
+          0.74,
+          0.19,
+          0.14
+        ],
+        [
+          0.68,
+          0.74,
+          0.16,
+          0.14
+        ]
+      ],
+      "bounce": 2.2,
+      "cadence": 2.2,
+      "sockets": {
+        "impact": [
+          0,
+          -0.45
+        ],
+        "muzzle": [
+          0,
+          -0.45
+        ]
+      },
+      "source": "kang_sd_01.png"
+    },
+    "parkDojun": {
+      "rig": "sd",
+      "height": 98,
+      "displayScale": 0.8,
+      "sprite": "res://assets/characters-sd/park_sd_01.png",
+      "portrait": "res://assets/characters-sd/park_sd_01.png",
+      "region": [
+        278,
+        106,
+        727,
+        1128
+      ],
+      "shadow": [
+        54,
+        14
+      ],
+      "feetTop": 0.83,
+      "footLift": 0.03,
+      "handMotion": 0.016,
+      "handRegions": [
+        [
+          0.14,
+          0.72,
+          0.2,
+          0.16
+        ],
+        [
+          0.67,
+          0.72,
+          0.18,
+          0.16
+        ]
+      ],
+      "bounce": 2.2,
+      "cadence": 2.2,
+      "sockets": {
+        "impact": [
+          0,
+          -0.45
+        ],
+        "muzzle": [
+          0,
+          -0.45
+        ]
+      },
+      "source": "park_sd_01.png"
+    },
+    "yoonHarin": {
+      "rig": "sd",
+      "height": 98,
+      "displayScale": 0.8,
+      "sprite": "res://assets/characters-sd/yoon_sd_01.png",
+      "portrait": "res://assets/characters-sd/yoon_sd_01.png",
+      "region": [
+        237,
+        93,
+        798,
+        1118
+      ],
+      "shadow": [
+        54,
+        14
+      ],
+      "feetTop": 0.83,
+      "footLift": 0.03,
+      "handMotion": 0.016,
+      "handRegions": [
+        [
+          0.2,
+          0.73,
+          0.17,
+          0.17
+        ],
+        [
+          0.68,
+          0.73,
+          0.16,
+          0.17
+        ]
+      ],
+      "bounce": 2.2,
+      "cadence": 2.2,
+      "sockets": {
+        "impact": [
+          0,
+          -0.45
+        ],
+        "muzzle": [
+          0,
+          -0.45
+        ]
+      },
+      "source": "yoon_sd_01.png"
+    }
+  },
+  "enemies": {
+    "crawler": {
+      "rig": "legless",
+      "sprite": "res://assets/monsters-sd/crawler_sd_01.png",
+      "portrait": "res://assets/monsters-sd/crawler_sd_01.png",
+      "region": [
+        59,
+        111,
+        1205,
+        964
+      ],
+      "source": "crawler_sd_01.png"
+    },
+    "runner": {
+      "rig": "legless",
+      "sprite": "res://assets/monsters-sd/runner_sd_01.png",
+      "portrait": "res://assets/monsters-sd/runner_sd_01.png",
+      "region": [
+        94,
+        146,
+        1300,
+        779
+      ],
+      "source": "runner_sd_01.png"
+    },
+    "swarm": {
+      "rig": "legless",
+      "sprite": "res://assets/monsters-sd/swarm_sd_01.png",
+      "portrait": "res://assets/monsters-sd/swarm_sd_01.png",
+      "region": [
+        55,
+        26,
+        1427,
+        940
+      ],
+      "source": "swarm_sd_01.png"
+    },
+    "bomber": {
+      "rig": "legless",
+      "sprite": "res://assets/monsters-sd/bomber_sd_01.png",
+      "portrait": "res://assets/monsters-sd/bomber_sd_01.png",
+      "region": [
+        76,
+        125,
+        1055,
+        937
+      ],
+      "source": "bomber_sd_01.png"
+    },
+    "bulwark": {
+      "rig": "legless",
+      "sprite": "res://assets/monsters-sd/bulwark_sd_01.png",
+      "portrait": "res://assets/monsters-sd/bulwark_sd_01.png",
+      "region": [
+        60,
+        74,
+        1196,
+        1047
+      ],
+      "source": "bulwark_sd_01.png"
+    },
+    "chainWarden": {
+      "rig": "legless",
+      "sprite": "res://assets/monsters-sd/chainWarden_sd_01.png",
+      "portrait": "res://assets/monsters-sd/chainWarden_sd_01.png",
+      "region": [
+        167,
+        222,
+        881,
+        806
+      ],
+      "source": "chainWarden_sd_01.png"
+    },
+    "charger": {
+      "rig": "legless",
+      "sprite": "res://assets/monsters-sd/charger_sd_01.png",
+      "portrait": "res://assets/monsters-sd/charger_sd_01.png",
+      "region": [
+        109,
+        30,
+        1089,
+        1228
+      ],
+      "source": "charger_sd_01.png"
+    },
+    "copperCrab": {
+      "rig": "legless",
+      "sprite": "res://assets/monsters-sd/copperCrab_sd_01.png",
+      "portrait": "res://assets/monsters-sd/copperCrab_sd_01.png",
+      "region": [
+        199,
+        159,
+        935,
+        852
+      ],
+      "source": "copperCrab_sd_01.png"
+    },
+    "gatekeeper": {
+      "rig": "legless",
+      "sprite": "res://assets/monsters-sd/gatekeeper_sd_01.png",
+      "portrait": "res://assets/monsters-sd/gatekeeper_sd_01.png",
+      "region": [
+        91,
+        40,
+        1061,
+        1186
+      ],
+      "source": "gatekeeper_sd_01.png"
+    },
+    "glassJelly": {
+      "rig": "legless",
+      "sprite": "res://assets/monsters-sd/glassJelly_sd_01.png",
+      "portrait": "res://assets/monsters-sd/glassJelly_sd_01.png",
+      "region": [
+        138,
+        107,
+        948,
+        1086
+      ],
+      "source": "glassJelly_sd_01.png"
+    },
+    "ironBoar": {
+      "rig": "legless",
+      "sprite": "res://assets/monsters-sd/ironBoar_sd_01.png",
+      "portrait": "res://assets/monsters-sd/ironBoar_sd_01.png",
+      "region": [
+        86,
+        146,
+        1368,
+        733
+      ],
+      "source": "ironBoar_sd_01.png"
+    },
+    "lurker": {
+      "rig": "legless",
+      "sprite": "res://assets/monsters-sd/lurker_sd_01.png",
+      "portrait": "res://assets/monsters-sd/lurker_sd_01.png",
+      "region": [
+        184,
+        60,
+        843,
+        1130
+      ],
+      "source": "lurker_sd_01.png"
+    },
+    "mender": {
+      "rig": "legless",
+      "sprite": "res://assets/monsters-sd/mender_sd_01.png",
+      "portrait": "res://assets/monsters-sd/mender_sd_01.png",
+      "region": [
+        127,
+        21,
+        994,
+        1211
+      ],
+      "source": "mender_sd_01.png"
+    },
+    "riftQueen": {
+      "rig": "legless",
+      "sprite": "res://assets/monsters-sd/riftQueen_sd_01.png",
+      "portrait": "res://assets/monsters-sd/riftQueen_sd_01.png",
+      "region": [
+        89,
+        101,
+        1045,
+        1100
+      ],
+      "source": "riftQueen_sd_01.png"
+    },
+    "sentinel": {
+      "rig": "legless",
+      "sprite": "res://assets/monsters-sd/sentinel_sd_01.png",
+      "portrait": "res://assets/monsters-sd/sentinel_sd_01.png",
+      "region": [
+        175,
+        154,
+        877,
+        997
+      ],
+      "source": "sentinel_sd_01.png"
+    },
+    "signalMoth": {
+      "rig": "legless",
+      "sprite": "res://assets/monsters-sd/signalMoth_sd_01.png",
+      "portrait": "res://assets/monsters-sd/signalMoth_sd_01.png",
+      "region": [
+        48,
+        127,
+        1225,
+        968
+      ],
+      "source": "signalMoth_sd_01.png"
+    },
+    "spitter": {
+      "rig": "legless",
+      "sprite": "res://assets/monsters-sd/spitter_sd_01.png",
+      "portrait": "res://assets/monsters-sd/spitter_sd_01.png",
+      "region": [
+        124,
+        125,
+        1092,
+        868
+      ],
+      "source": "spitter_sd_01.png"
+    },
+    "splitter": {
+      "rig": "legless",
+      "sprite": "res://assets/monsters-sd/splitter_sd_01.png",
+      "portrait": "res://assets/monsters-sd/splitter_sd_01.png",
+      "region": [
+        68,
+        132,
+        1120,
+        971
+      ],
+      "source": "splitter_sd_01.png"
+    },
+    "summoner": {
+      "rig": "legless",
+      "sprite": "res://assets/monsters-sd/summoner_sd_01.png",
+      "portrait": "res://assets/monsters-sd/summoner_sd_01.png",
+      "region": [
+        183,
+        56,
+        853,
+        1179
+      ],
+      "source": "summoner_sd_01.png"
+    }
+  },
+  "structures": {
+    "mineLayer": {
+      "rig": "grounded",
+      "sprite": "runtimeGroundInstallations",
+      "region": [134, 205, 684, 551],
+      "height": 38,
+      "groundAnchor": [0.50, 0.80],
+      "contactShadow": [48, 16],
+      "castShadow": [56, 20],
+      "shadowOffset": [7, 4],
+      "glowFrequency": 1.6,
+      "source": "ground_installations_01.png"
+    },
+    "manaField": {
+      "rig": "grounded",
+      "sprite": "runtimeGroundInstallations",
+      "region": [985, 172, 692, 592],
+      "height": 44,
+      "groundAnchor": [0.50, 0.84],
+      "contactShadow": [48, 16],
+      "castShadow": [54, 19],
+      "shadowOffset": [6, 3],
+      "glowFrequency": 1.3,
+      "fieldSprite": "manaFieldAura",
+      "fieldProjection": 0.60,
+      "spreadPeriod": 3.4,
+      "flowSpeed": 0.05,
+      "fieldTint": [0.86, 0.92, 1.0],
+      "fieldOpacity": 0.18,
+      "fieldWaveOpacity": 0.22,
+      "source": "ground_installations_01.png"
+    }
+  },
+  "maps": {
+    "seoul": {
+      "texture": "gwanghwamunPlazaSD",
+      "fit": "cover"
+    }
+  },
+  "resources": {
+    "magicStone": "res://assets/pickups/pickup_magic_stone_02.png"
+  },
+  "npcs": {
+    "hanSeoa": {
+      "rig": "sd",
+      "height": 98,
+      "displayScale": 0.8,
+      "sprite": "res://assets/characters-sd/han_seoa_sd_01.png",
+      "portrait": "res://assets/characters-sd/han_seoa_sd_01.png",
+      "region": [
+        267,
+        125,
+        758,
+        1076
+      ],
+      "shadow": [
+        54,
+        14
+      ],
+      "feetTop": 0.83,
+      "footLift": 0.03,
+      "handMotion": 0.016,
+      "handRegions": [
+        [
+          0.2,
+          0.7,
+          0.2,
+          0.17
+        ],
+        [
+          0.68,
+          0.7,
+          0.16,
+          0.17
+        ]
+      ],
+      "bounce": 2.2,
+      "cadence": 2.2,
+      "sockets": {
+        "impact": [
+          0,
+          -0.45
+        ],
+        "muzzle": [
+          0,
+          -0.45
+        ]
+      },
+      "source": "han_seoa_sd_01.png"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "SongQuarter": {
+    "prompt": "PRODUCTION CUTOUT ATLAS, not full character, not animation frames. Design ONE Song Jinwoo in a SINGLE consistent front-right three-quarter viewing direction: he looks toward the lower-right of a 2D top-down game screen (we see the front of his jacket AND his right-facing face, NOT a strict 90-degree profile, NOT head looking opposite body). Preserve identity from reference: tousled black hair, teal hooded civilian jacket, dark cargo trousers, teal-black sneakers, casual detailed 3.5-head SD/chibi hand-painted cel style. SONG IS NOT MILITARY. NO vehicle, no weapon, no uniform. Paint 8 FULLY SEPARATE rig-ready pieces in a spacious 4-column x 2-row grid: top row head+neck / jacket torso with hidden shoulders, NO arms / pelvis / upper arm sleeve; bottom row forearm+gloved hand / trouser thigh / trouser shin / sneaker. All limb segments relaxed vertical with rounded painted hidden joint overlap, feet point lower-right. Only one arm/leg, engine duplicates, all pieces viewed from SAME angle. Torso must have NO attached sleeves hanging off its sides: detached upper sleeve is separate cell. No cast shadows, no background glow. TRUE transparent alpha zero background, generous blank alpha gutters, no text/borders. Clear controlled highlights, smooth edges, not pixel/vector/photorealistic. ONE direction only, NO alternate views.",
+    "tool": "built-in image_gen",
+    "date": "2026-09-30",
+    "asset": "song-quarter-source.png"
+  },
+  "KangQuarter": {
+    "prompt": "PRODUCTION CUTOUT ATLAS, not full character, not animation frames. Design ONE Kang Taehoon in a SINGLE consistent front-right three-quarter viewing direction: he looks toward lower-right of a 2D top-down game screen (we see front of his vest AND right-facing face, NOT a strict 90-degree profile, NOT head opposite body). Preserve tactical clothing from reference: olive military jacket, plate carrier and pouches, charcoal cargo trousers, black combat boots. Kang is a former special forces soldier, with SHORT CROPPED dark brown military hair, warm brown eyes, firmer eyebrows than Song Jinwoo, calm vigilant expression. Casual detailed 3.5-head SD/chibi hand-painted cel style. NO truck, vehicle, weapons. Paint 8 FULLY SEPARATE rig-ready pieces in a spacious 4-column x 2-row grid: top row head+neck / torso vest with hidden shoulders, NO arms / pelvis / upper arm sleeve; bottom row forearm+gloved hand / trouser thigh / trouser shin / boot. Segments relaxed vertical with rounded painted hidden joint overlaps, boots point lower-right. Only one arm/leg for engine duplication. All pieces same angle. Torso NO attached arms hanging off its sides: upper sleeve separate cell. TRUE RGBA transparent background alpha zero between objects, generous gutters, no halos/shadows/text/borders. Smooth edges, restrained highlights, not pixel/vector/photorealism. ONE direction only, NO alternate views.",
+    "tool": "built-in image_gen",
+    "date": "2026-09-30",
+    "asset": "kang-quarter-source.png"
+  },
+  "SongQuarterTorsoCorrection": {
+    "prompt": "Precise production cutout edit. Edit ONLY the torso piece in the second cell of the top row of this 4 by 2 character-parts atlas. It must be a SLEEVELESS TORSO ONLY: remove both attached upper arms/sleeves completely, leaving the central teal jacket/chest/waist with clean shoulder armholes, filled hidden side cloth beneath the armpits, matching the existing three-quarter front-right view. The two arms will be attached as separate animation bones using the OTHER cells, so ANY baked-in sleeve on the torso causes a duplicate arm. Keep the torso chest, zipper, collar, straps, teal civilian outfit and style. All seven other separated body pieces stay the same. Keep original arrangement, eight cells, part positions and transparent background. No added text, full figure, new poses, no weapons or vehicle. True RGBA alpha.",
+    "tool": "built-in image_gen",
+    "date": "2026-09-30",
+    "asset": "song-quarter-source.png"
+  },
+  "KangQuarterTorsoCorrection": {
+    "prompt": "Precise production cutout edit. Edit ONLY the torso piece in the second cell of the top row of this 4 by 2 character-parts atlas. It must be a SLEEVELESS TORSO ONLY: remove both attached upper arms/sleeves completely, leaving the central olive tactical chest/vest/waist with clean shoulder armholes and filled hidden side cloth beneath the armpits, in the exact same three-quarter front-right view. Arms will be attached as separate animation bones using the OTHER cells, so any baked-in sleeve on the torso causes duplicate arms. Preserve tactical vest, pouches, collar, short cropped brown hair, brown eyes and all existing character styling. All seven other separated body pieces remain the same. Keep eight cells, arrangement, piece positions and true transparent background. No text, full figure, new poses, weapons or vehicle. True RGBA alpha.",
+    "tool": "built-in image_gen",
+    "date": "2026-09-30",
+    "asset": "kang-quarter-source.png"
+  }
+}

@@ -1,0 +1,6464 @@
+{
+  "summary": {
+    "originals": 346,
+    "original_bytes": 8021726582,
+    "original_duration_seconds": 12872.725604166666,
+    "legacy_edits": 450,
+    "existing_events": 31,
+    "new_events": 8,
+    "lobby_loops": 5,
+    "cues": 44,
+    "edited_files": 128,
+    "used_sources": 90,
+    "statuses": {
+      "hold": 190,
+      "excluded": 66,
+      "candidate": 90
+    },
+    "direct_listening": "NOT PERFORMED; user listening determines adoption",
+    "runtime": "UNCHANGED"
+  },
+  "problems": [],
+  "measurements": [
+    {
+      "cue": "purchase",
+      "file": "sounds/purchase/01.wav",
+      "peak_dbfs": -5.67,
+      "rms_dbfs": -22.5,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "purchase",
+      "file": "sounds/purchase/02.wav",
+      "peak_dbfs": -7.12,
+      "rms_dbfs": -22.5,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "reroll",
+      "file": "sounds/reroll/01.wav",
+      "peak_dbfs": -4.85,
+      "rms_dbfs": -23.35,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "reroll",
+      "file": "sounds/reroll/02.wav",
+      "peak_dbfs": -8.25,
+      "rms_dbfs": -23.35,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "lock",
+      "file": "sounds/lock/01.wav",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -26.36,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "lock",
+      "file": "sounds/lock/02.wav",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -24.86,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "weaponPurchase",
+      "file": "sounds/weaponPurchase/01.wav",
+      "peak_dbfs": -5.51,
+      "rms_dbfs": -21.11,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "weaponPurchase",
+      "file": "sounds/weaponPurchase/02.wav",
+      "peak_dbfs": -4.67,
+      "rms_dbfs": -21.11,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "branchChoice",
+      "file": "sounds/branchChoice/01.wav",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -23.01,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "branchChoice",
+      "file": "sounds/branchChoice/02.wav",
+      "peak_dbfs": -6.75,
+      "rms_dbfs": -20.45,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "critical",
+      "file": "sounds/critical/01.wav",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -20.65,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "critical",
+      "file": "sounds/critical/02.wav",
+      "peak_dbfs": -6.01,
+      "rms_dbfs": -18.79,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "critical",
+      "file": "sounds/critical/03.wav",
+      "peak_dbfs": -5.29,
+      "rms_dbfs": -18.79,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "critical",
+      "file": "sounds/critical/04.wav",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -19.06,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "eliteSpawned",
+      "file": "sounds/eliteSpawned/01.wav",
+      "peak_dbfs": -4.06,
+      "rms_dbfs": -18.42,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "eliteSpawned",
+      "file": "sounds/eliteSpawned/02.wav",
+      "peak_dbfs": -5.92,
+      "rms_dbfs": -18.42,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "waveStarted",
+      "file": "sounds/waveStarted/01.wav",
+      "peak_dbfs": -6.78,
+      "rms_dbfs": -20.92,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "waveStarted",
+      "file": "sounds/waveStarted/02.wav",
+      "peak_dbfs": -4.08,
+      "rms_dbfs": -20.92,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "waveCompleted",
+      "file": "sounds/waveCompleted/01.wav",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -24.49,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "waveCompleted",
+      "file": "sounds/waveCompleted/02.wav",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -23.77,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "waveCountdownTick",
+      "file": "sounds/waveCountdownTick/01.wav",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -24.09,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "waveCountdownTick",
+      "file": "sounds/waveCountdownTick/02.wav",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -24.08,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "slashAttack",
+      "file": "sounds/slashAttack/01.wav",
+      "peak_dbfs": -9.67,
+      "rms_dbfs": -21.51,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "slashAttack",
+      "file": "sounds/slashAttack/02.wav",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -23.98,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "slashAttack",
+      "file": "sounds/slashAttack/03.wav",
+      "peak_dbfs": -5.19,
+      "rms_dbfs": -21.51,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "slashAttack",
+      "file": "sounds/slashAttack/04.wav",
+      "peak_dbfs": -6.24,
+      "rms_dbfs": -21.51,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "orbitAttack",
+      "file": "sounds/orbitAttack/01.wav",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -25.96,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "orbitAttack",
+      "file": "sounds/orbitAttack/02.wav",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -25.65,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "orbitAttack",
+      "file": "sounds/orbitAttack/03.wav",
+      "peak_dbfs": -13.35,
+      "rms_dbfs": -25.04,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "orbitAttack",
+      "file": "sounds/orbitAttack/04.wav",
+      "peak_dbfs": -7.08,
+      "rms_dbfs": -25.04,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "chainAttack",
+      "file": "sounds/chainAttack/01.wav",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -21.96,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "chainAttack",
+      "file": "sounds/chainAttack/02.wav",
+      "peak_dbfs": -6.05,
+      "rms_dbfs": -20.45,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "chainAttack",
+      "file": "sounds/chainAttack/03.wav",
+      "peak_dbfs": -6.03,
+      "rms_dbfs": -20.45,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "chainAttack",
+      "file": "sounds/chainAttack/04.wav",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -26.84,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "bombardAttack",
+      "file": "sounds/bombardAttack/01.wav",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -20.07,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "bombardAttack",
+      "file": "sounds/bombardAttack/02.wav",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -20.54,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "bombardAttack",
+      "file": "sounds/bombardAttack/03.wav",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -22.74,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "bombardAttack",
+      "file": "sounds/bombardAttack/04.wav",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -19.59,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "piercingAttack",
+      "file": "sounds/piercingAttack/01.wav",
+      "peak_dbfs": -6.12,
+      "rms_dbfs": -21.11,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "piercingAttack",
+      "file": "sounds/piercingAttack/02.wav",
+      "peak_dbfs": -8.35,
+      "rms_dbfs": -21.11,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "piercingAttack",
+      "file": "sounds/piercingAttack/03.wav",
+      "peak_dbfs": -5.7,
+      "rms_dbfs": -21.11,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "piercingAttack",
+      "file": "sounds/piercingAttack/04.wav",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -22.96,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "turretFired",
+      "file": "sounds/turretFired/01.wav",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -23.13,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "turretFired",
+      "file": "sounds/turretFired/02.wav",
+      "peak_dbfs": -8.14,
+      "rms_dbfs": -22.85,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "turretFired",
+      "file": "sounds/turretFired/03.wav",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -25.62,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "turretFired",
+      "file": "sounds/turretFired/04.wav",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -22.92,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "minePlaced",
+      "file": "sounds/minePlaced/01.wav",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -23.98,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "minePlaced",
+      "file": "sounds/minePlaced/02.wav",
+      "peak_dbfs": -12.09,
+      "rms_dbfs": -22.73,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "minePlaced",
+      "file": "sounds/minePlaced/03.wav",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -25.51,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "minePlaced",
+      "file": "sounds/minePlaced/04.wav",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -25.21,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "mineExploded",
+      "file": "sounds/mineExploded/01.wav",
+      "peak_dbfs": -4.9,
+      "rms_dbfs": -18.42,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "mineExploded",
+      "file": "sounds/mineExploded/02.wav",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -22.24,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "mineExploded",
+      "file": "sounds/mineExploded/03.wav",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -20.8,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "mineExploded",
+      "file": "sounds/mineExploded/04.wav",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -22.02,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "fieldActivated",
+      "file": "sounds/fieldActivated/01.wav",
+      "peak_dbfs": -9.25,
+      "rms_dbfs": -22.98,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "fieldActivated",
+      "file": "sounds/fieldActivated/02.wav",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -23.06,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "fieldActivated",
+      "file": "sounds/fieldActivated/03.wav",
+      "peak_dbfs": -9.66,
+      "rms_dbfs": -22.98,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "fieldActivated",
+      "file": "sounds/fieldActivated/04.wav",
+      "peak_dbfs": -9.57,
+      "rms_dbfs": -22.98,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "weaponFired",
+      "file": "sounds/weaponFired/01.wav",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -22.05,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "weaponFired",
+      "file": "sounds/weaponFired/02.wav",
+      "peak_dbfs": -7.05,
+      "rms_dbfs": -21.01,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "weaponFired",
+      "file": "sounds/weaponFired/03.wav",
+      "peak_dbfs": -6.27,
+      "rms_dbfs": -21.01,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "weaponFired",
+      "file": "sounds/weaponFired/04.wav",
+      "peak_dbfs": -7.27,
+      "rms_dbfs": -21.01,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "enemyHit",
+      "file": "sounds/enemyHit/01.wav",
+      "peak_dbfs": -9.88,
+      "rms_dbfs": -23.61,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "enemyHit",
+      "file": "sounds/enemyHit/02.wav",
+      "peak_dbfs": -9.37,
+      "rms_dbfs": -23.61,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "enemyHit",
+      "file": "sounds/enemyHit/03.wav",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -23.79,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "enemyHit",
+      "file": "sounds/enemyHit/04.wav",
+      "peak_dbfs": -9.23,
+      "rms_dbfs": -23.61,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "enemyKilled",
+      "file": "sounds/enemyKilled/01.wav",
+      "peak_dbfs": -8.13,
+      "rms_dbfs": -22.27,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "enemyKilled",
+      "file": "sounds/enemyKilled/02.wav",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -26.41,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "enemyKilled",
+      "file": "sounds/enemyKilled/03.wav",
+      "peak_dbfs": -9.69,
+      "rms_dbfs": -22.27,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "enemyKilled",
+      "file": "sounds/enemyKilled/04.wav",
+      "peak_dbfs": -8.91,
+      "rms_dbfs": -22.27,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "magicStoneCollected",
+      "file": "sounds/magicStoneCollected/01.wav",
+      "peak_dbfs": -9.62,
+      "rms_dbfs": -27.54,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "magicStoneCollected",
+      "file": "sounds/magicStoneCollected/02.wav",
+      "peak_dbfs": -18.17,
+      "rms_dbfs": -27.54,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "magicStoneCollected",
+      "file": "sounds/magicStoneCollected/03.wav",
+      "peak_dbfs": -13.88,
+      "rms_dbfs": -27.54,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "magicStoneCollected",
+      "file": "sounds/magicStoneCollected/04.wav",
+      "peak_dbfs": -7.79,
+      "rms_dbfs": -27.54,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "walletSweep",
+      "file": "sounds/walletSweep/01.wav",
+      "peak_dbfs": -4.25,
+      "rms_dbfs": -25.04,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "walletSweep",
+      "file": "sounds/walletSweep/02.wav",
+      "peak_dbfs": -12.51,
+      "rms_dbfs": -25.04,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "buttonClick",
+      "file": "sounds/buttonClick/01.wav",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -27.27,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "supplyLatch",
+      "file": "sounds/supplyLatch/01.wav",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -27.25,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "supplyLatch",
+      "file": "sounds/supplyLatch/02.wav",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -28.47,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "supplyFanfare",
+      "file": "sounds/supplyFanfare/01.wav",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -21.97,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "supplyFanfare",
+      "file": "sounds/supplyFanfare/02.wav",
+      "peak_dbfs": -4.5,
+      "rms_dbfs": -20.63,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "playerHit",
+      "file": "sounds/playerHit/01.wav",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -21.54,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "playerHit",
+      "file": "sounds/playerHit/02.wav",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -21.4,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "playerHit",
+      "file": "sounds/playerHit/03.wav",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -22.47,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "playerHit",
+      "file": "sounds/playerHit/04.wav",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -17.41,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "bossSpawned",
+      "file": "sounds/bossSpawned/01.wav",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -20.73,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "bossSpawned",
+      "file": "sounds/bossSpawned/02.wav",
+      "peak_dbfs": -4.57,
+      "rms_dbfs": -17.79,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "stageClear",
+      "file": "sounds/stageClear/01.wav",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -22.95,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "stageClear",
+      "file": "sounds/stageClear/02.wav",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -21.85,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "gameOver",
+      "file": "sounds/gameOver/01.wav",
+      "peak_dbfs": -6.58,
+      "rms_dbfs": -20.45,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "gameOver",
+      "file": "sounds/gameOver/02.wav",
+      "peak_dbfs": -6.87,
+      "rms_dbfs": -20.45,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "shotgunAttack",
+      "file": "sounds/shotgunAttack/01.wav",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -21.99,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "shotgunAttack",
+      "file": "sounds/shotgunAttack/02.wav",
+      "peak_dbfs": -4.11,
+      "rms_dbfs": -19.83,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "shotgunAttack",
+      "file": "sounds/shotgunAttack/03.wav",
+      "peak_dbfs": -4.59,
+      "rms_dbfs": -19.83,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "shotgunAttack",
+      "file": "sounds/shotgunAttack/04.wav",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -21.06,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "bombardLaunch",
+      "file": "sounds/bombardLaunch/01.wav",
+      "peak_dbfs": -10.86,
+      "rms_dbfs": -22.5,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "bombardLaunch",
+      "file": "sounds/bombardLaunch/02.wav",
+      "peak_dbfs": -6.9,
+      "rms_dbfs": -22.5,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "bombardLaunch",
+      "file": "sounds/bombardLaunch/03.wav",
+      "peak_dbfs": -9.77,
+      "rms_dbfs": -22.5,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "bombardLaunch",
+      "file": "sounds/bombardLaunch/04.wav",
+      "peak_dbfs": -7.08,
+      "rms_dbfs": -22.5,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "chainHop",
+      "file": "sounds/chainHop/01.wav",
+      "peak_dbfs": -6.76,
+      "rms_dbfs": -25.35,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "chainHop",
+      "file": "sounds/chainHop/02.wav",
+      "peak_dbfs": -11.44,
+      "rms_dbfs": -25.35,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "chainHop",
+      "file": "sounds/chainHop/03.wav",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -29.35,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "chainHop",
+      "file": "sounds/chainHop/04.wav",
+      "peak_dbfs": -14.64,
+      "rms_dbfs": -25.35,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "enemyProjectile",
+      "file": "sounds/enemyProjectile/01.wav",
+      "peak_dbfs": -9.51,
+      "rms_dbfs": -21.94,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "enemyProjectile",
+      "file": "sounds/enemyProjectile/02.wav",
+      "peak_dbfs": -10.25,
+      "rms_dbfs": -21.94,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "enemyProjectile",
+      "file": "sounds/enemyProjectile/03.wav",
+      "peak_dbfs": -8.41,
+      "rms_dbfs": -21.94,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "enemyProjectile",
+      "file": "sounds/enemyProjectile/04.wav",
+      "peak_dbfs": -6.3,
+      "rms_dbfs": -21.94,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "enemyCharge",
+      "file": "sounds/enemyCharge/01.wav",
+      "peak_dbfs": -4.37,
+      "rms_dbfs": -19.58,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "enemyCharge",
+      "file": "sounds/enemyCharge/02.wav",
+      "peak_dbfs": -8.04,
+      "rms_dbfs": -19.58,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "enemyCharge",
+      "file": "sounds/enemyCharge/03.wav",
+      "peak_dbfs": -4.57,
+      "rms_dbfs": -19.58,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "enemyCharge",
+      "file": "sounds/enemyCharge/04.wav",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -24.29,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "enemySupport",
+      "file": "sounds/enemySupport/01.wav",
+      "peak_dbfs": -7.85,
+      "rms_dbfs": -21.94,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "enemySupport",
+      "file": "sounds/enemySupport/02.wav",
+      "peak_dbfs": -4.87,
+      "rms_dbfs": -21.94,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "enemySupport",
+      "file": "sounds/enemySupport/03.wav",
+      "peak_dbfs": -8.47,
+      "rms_dbfs": -21.94,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "enemySupport",
+      "file": "sounds/enemySupport/04.wav",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -23.06,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "enemyDetonate",
+      "file": "sounds/enemyDetonate/01.wav",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -20.7,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "enemyDetonate",
+      "file": "sounds/enemyDetonate/02.wav",
+      "peak_dbfs": -5.89,
+      "rms_dbfs": -19.02,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "enemyDetonate",
+      "file": "sounds/enemyDetonate/03.wav",
+      "peak_dbfs": -8.04,
+      "rms_dbfs": -19.02,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "enemyDetonate",
+      "file": "sounds/enemyDetonate/04.wav",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -21.3,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "bossAttack",
+      "file": "sounds/bossAttack/01.wav",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -20.55,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "bossAttack",
+      "file": "sounds/bossAttack/02.wav",
+      "peak_dbfs": -4.57,
+      "rms_dbfs": -18.49,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "bossAttack",
+      "file": "sounds/bossAttack/03.wav",
+      "peak_dbfs": -4.36,
+      "rms_dbfs": -18.49,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "bossAttack",
+      "file": "sounds/bossAttack/04.wav",
+      "peak_dbfs": -6.06,
+      "rms_dbfs": -18.49,
+      "edge_step": 0.0,
+      "errors": []
+    },
+    {
+      "cue": "lobbyRain",
+      "file": "sounds/lobbyRain/01.wav",
+      "peak_dbfs": -4.01,
+      "rms_dbfs": -31.12,
+      "edge_step": 0.01336669921875,
+      "errors": []
+    },
+    {
+      "cue": "lobbyWind",
+      "file": "sounds/lobbyWind/01.wav",
+      "peak_dbfs": -9.3,
+      "rms_dbfs": -25.68,
+      "edge_step": 0.001007080078125,
+      "errors": []
+    },
+    {
+      "cue": "lobbyGate",
+      "file": "sounds/lobbyGate/01.wav",
+      "peak_dbfs": -13.16,
+      "rms_dbfs": -26.38,
+      "edge_step": 0.00555419921875,
+      "errors": []
+    },
+    {
+      "cue": "lobbyWinter",
+      "file": "sounds/lobbyWinter/01.wav",
+      "peak_dbfs": -11.59,
+      "rms_dbfs": -26.56,
+      "edge_step": 0.002838134765625,
+      "errors": []
+    },
+    {
+      "cue": "lobbyRoof",
+      "file": "sounds/lobbyRoof/01.wav",
+      "peak_dbfs": -9.03,
+      "rms_dbfs": -25.85,
+      "edge_step": 0.00128173828125,
+      "errors": []
+    }
+  ],
+  "auxiliary_measurements": [
+    {
+      "file": "source-previews/0066d8dbf352466e6950d1b7.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/00aa9c6f52c80d0341a7bfd3.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/0107b24dca985fedef5adc6c.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/014fafee42e8a50682f5ea84.wav",
+      "peak_dbfs": -5.87,
+      "errors": []
+    },
+    {
+      "file": "source-previews/01a429865efef3040387c7fd.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/01ba3b7777dff8cf0d8befb0.wav",
+      "peak_dbfs": -9.32,
+      "errors": []
+    },
+    {
+      "file": "source-previews/027b6081eb0ba674cfbc1fc7.wav",
+      "peak_dbfs": -6.27,
+      "errors": []
+    },
+    {
+      "file": "source-previews/02c05c7a54303ac4c1eb548f.wav",
+      "peak_dbfs": -9.26,
+      "errors": []
+    },
+    {
+      "file": "source-previews/034883d401266f6c2926778a.wav",
+      "peak_dbfs": -5.45,
+      "errors": []
+    },
+    {
+      "file": "source-previews/0375c1b460e0bfd46234d91e.wav",
+      "peak_dbfs": -7.42,
+      "errors": []
+    },
+    {
+      "file": "source-previews/040aad315938e71455d8bda8.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/044086b465ce79c63fa784bf.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/04f7469e1d1bd243c4b6a43a.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/0599c6e7eb6f10782d08925e.wav",
+      "peak_dbfs": -7.15,
+      "errors": []
+    },
+    {
+      "file": "source-previews/059f8a256a654999d84eedad.wav",
+      "peak_dbfs": -8.49,
+      "errors": []
+    },
+    {
+      "file": "source-previews/05b6e33d3a9a7d5f527bd2cf.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/05ed293825d11e405a22981e.wav",
+      "peak_dbfs": -6.95,
+      "errors": []
+    },
+    {
+      "file": "source-previews/0606d0e212a934801796623a.wav",
+      "peak_dbfs": -6.42,
+      "errors": []
+    },
+    {
+      "file": "source-previews/0699d45941c18088e13e8219.wav",
+      "peak_dbfs": -11.41,
+      "errors": []
+    },
+    {
+      "file": "source-previews/06e6c49340022d26330410c0.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/07b3daacc7cd3c7332ebec96.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/09605fa391444a9cab630d51.wav",
+      "peak_dbfs": -6.34,
+      "errors": []
+    },
+    {
+      "file": "source-previews/098cd0a043e7d055636ed056.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/09fa01b54c65947ad5b7863f.wav",
+      "peak_dbfs": -6.63,
+      "errors": []
+    },
+    {
+      "file": "source-previews/09fdf58817ccb4f9b134f81a.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/0a2c7d1009958656f69e4e36.wav",
+      "peak_dbfs": -7.39,
+      "errors": []
+    },
+    {
+      "file": "source-previews/0a6680084fb689a8504d67bb.wav",
+      "peak_dbfs": -8.35,
+      "errors": []
+    },
+    {
+      "file": "source-previews/0a7de2a516254e1754b0b9f9.wav",
+      "peak_dbfs": -10.97,
+      "errors": []
+    },
+    {
+      "file": "source-previews/0afe3ce3775fd17c1f6def1d.wav",
+      "peak_dbfs": -11.77,
+      "errors": []
+    },
+    {
+      "file": "source-previews/0b454cf80cfa915bdfa0bc54.wav",
+      "peak_dbfs": -8.46,
+      "errors": []
+    },
+    {
+      "file": "source-previews/0b6902237ec6b526be19d881.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/0b8b8b12c2b583e08cd32b02.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/0bb35b4ac02e42f2c4500927.wav",
+      "peak_dbfs": -6.72,
+      "errors": []
+    },
+    {
+      "file": "source-previews/0bcd04a7c4140413ab6ce855.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/0bfffc3ff98152078cf23c7f.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/0c24d5153db5889c79c45e55.wav",
+      "peak_dbfs": -9.61,
+      "errors": []
+    },
+    {
+      "file": "source-previews/0c35eceb1bebb4dc33a31170.wav",
+      "peak_dbfs": -11.26,
+      "errors": []
+    },
+    {
+      "file": "source-previews/0c643f73a8efac1d609cd361.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/0d282a5a2c89ef9d8345bf4d.wav",
+      "peak_dbfs": -8.31,
+      "errors": []
+    },
+    {
+      "file": "source-previews/0dbd02a7c6fd24fc6b387b4d.wav",
+      "peak_dbfs": -10.66,
+      "errors": []
+    },
+    {
+      "file": "source-previews/0de1b0b9739df456caae4e6a.wav",
+      "peak_dbfs": -6.14,
+      "errors": []
+    },
+    {
+      "file": "source-previews/0e31dbc8629e5a9bd18db891.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/0e495d2b2b8a9d1f996be7ac.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/0e65f0cc0c6871c11425b3c7.wav",
+      "peak_dbfs": -5.89,
+      "errors": []
+    },
+    {
+      "file": "source-previews/0eaf627621ab35c8ac851413.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/0ed243f7bd8ee7eb21032785.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/0f03ea7784ef4ea702c574d4.wav",
+      "peak_dbfs": -5.73,
+      "errors": []
+    },
+    {
+      "file": "source-previews/0f40a50726560301fd822d3d.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/0f58b0939fba4403add5f835.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/0f98c2b914875b9b1af7ef47.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/0fa328c723223d6893dd3adf.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/0fcb9fc22bff33b5d9c98a2b.wav",
+      "peak_dbfs": -9.12,
+      "errors": []
+    },
+    {
+      "file": "source-previews/10381094eb2d76fc28c9d850.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/106824c89b6c981aa300daf0.wav",
+      "peak_dbfs": -7.87,
+      "errors": []
+    },
+    {
+      "file": "source-previews/1105741f23568c76b735c880.wav",
+      "peak_dbfs": -8.81,
+      "errors": []
+    },
+    {
+      "file": "source-previews/118f6129e3e864ed52c81588.wav",
+      "peak_dbfs": -6.71,
+      "errors": []
+    },
+    {
+      "file": "source-previews/11ab2cf9ff3c807375f00baf.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/122578ac86064ab54bfb7b6f.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/124845521c8b88cf63794a41.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/12e2f15d42fcbc93a2047a37.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/130fcf2803a6ef559fe9a017.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/13612ba6b9c2214511dfcbff.wav",
+      "peak_dbfs": -7.0,
+      "errors": []
+    },
+    {
+      "file": "source-previews/138bbad365078ef8f56a5e6b.wav",
+      "peak_dbfs": -6.31,
+      "errors": []
+    },
+    {
+      "file": "source-previews/1423e301cae95614fbef56fe.wav",
+      "peak_dbfs": -4.67,
+      "errors": []
+    },
+    {
+      "file": "source-previews/143c991592007a4709e1c178.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/1442043768b1c8610b252c9a.wav",
+      "peak_dbfs": -7.24,
+      "errors": []
+    },
+    {
+      "file": "source-previews/145f3afbbe4b5ec700c3768c.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/14bce1cb6f2992aca83b00c8.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/14ea3b96970f897daf358fda.wav",
+      "peak_dbfs": -4.34,
+      "errors": []
+    },
+    {
+      "file": "source-previews/1516e562a133f259e9a2a03e.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/1551cb07697bc12f2b4822f4.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/1576ca9c607fcae51a1f07a3.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/1601f0b958a0aa07ad2ce466.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/1637aa6a14e80cc9f07d6ab4.wav",
+      "peak_dbfs": -4.75,
+      "errors": []
+    },
+    {
+      "file": "source-previews/16be6830c4656d8abd22186c.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/16f3f20ec258fe20841c0cbf.wav",
+      "peak_dbfs": -6.33,
+      "errors": []
+    },
+    {
+      "file": "source-previews/171ddd3cd4588bd38299cd91.wav",
+      "peak_dbfs": -6.37,
+      "errors": []
+    },
+    {
+      "file": "source-previews/172f5d4cce1f0c0779af1284.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/173a8f11a5adec3a8e4a4c3b.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/173c4f2fffbd14fea980ae29.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/176f8cc16e173be727fb08e9.wav",
+      "peak_dbfs": -8.52,
+      "errors": []
+    },
+    {
+      "file": "source-previews/181833d39534fbb8e50fb0f6.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/184350eafe0bc3a08660d66f.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/187070795a6fd7b1ca7e75a7.wav",
+      "peak_dbfs": -4.78,
+      "errors": []
+    },
+    {
+      "file": "source-previews/18a11e33b81b876393737163.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/18b791b51373782139281a7a.wav",
+      "peak_dbfs": -8.49,
+      "errors": []
+    },
+    {
+      "file": "source-previews/18d43708487764aa016f462f.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/18fabdd544ad73a975be8340.wav",
+      "peak_dbfs": -5.7,
+      "errors": []
+    },
+    {
+      "file": "source-previews/1914b29fe4ca2231466e6ae8.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/1948f510e3e7d4cd7efc1b8c.wav",
+      "peak_dbfs": -5.62,
+      "errors": []
+    },
+    {
+      "file": "source-previews/19efec84af3ce1bcb4fbd8c6.wav",
+      "peak_dbfs": -4.45,
+      "errors": []
+    },
+    {
+      "file": "source-previews/1a077a17af18a206522434a1.wav",
+      "peak_dbfs": -5.3,
+      "errors": []
+    },
+    {
+      "file": "source-previews/1a33aa966e8d43b2f9a1949d.wav",
+      "peak_dbfs": -9.18,
+      "errors": []
+    },
+    {
+      "file": "source-previews/1aa1fb6349bc9dfcfced0aa5.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/1ae5eddd727ddda830520c99.wav",
+      "peak_dbfs": -4.74,
+      "errors": []
+    },
+    {
+      "file": "source-previews/1b25206fa7dfe2271a577892.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/1bde706cc227442d13436654.wav",
+      "peak_dbfs": -6.04,
+      "errors": []
+    },
+    {
+      "file": "source-previews/1be589f61faea25f408071c1.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/1ce3e6e8d6bd8e32f05f1b4d.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/1d430c6251fa3b09f5149a6e.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/1d956bcbafb903ea98ecb5e1.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/1df7fb1e9332a21f60f61f29.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/1e362c18af5959704c4c7501.wav",
+      "peak_dbfs": -4.73,
+      "errors": []
+    },
+    {
+      "file": "source-previews/1e97fe42d60cb413f9ee0cbc.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/1ea56acb7034257638bc36d4.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/1ead7de37e9f55dc745fca53.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/1ecfddb40bfb81404a0eb76d.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/1f2509d3fe720e16a1ed5702.wav",
+      "peak_dbfs": -9.67,
+      "errors": []
+    },
+    {
+      "file": "source-previews/1f96b601931c605a2d2ae387.wav",
+      "peak_dbfs": -6.73,
+      "errors": []
+    },
+    {
+      "file": "source-previews/1f993a7f7aa4909b6b2944db.wav",
+      "peak_dbfs": -5.75,
+      "errors": []
+    },
+    {
+      "file": "source-previews/1f9a1fa4015306922f7a48df.wav",
+      "peak_dbfs": -6.11,
+      "errors": []
+    },
+    {
+      "file": "source-previews/1fac4717545c5af0daa77163.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/1fc939728f4e1961886689b6.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/204a09dc0ab2609ae2b3caf0.wav",
+      "peak_dbfs": -5.47,
+      "errors": []
+    },
+    {
+      "file": "source-previews/205d7bba8315a864a7c26953.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/20876308bbbe8eb86c085838.wav",
+      "peak_dbfs": -4.7,
+      "errors": []
+    },
+    {
+      "file": "source-previews/2161c2d37be69a2f1b3560f2.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/217a80107cab73c6bc898169.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/21cc169b1ae29e9e315e8b9d.wav",
+      "peak_dbfs": -5.76,
+      "errors": []
+    },
+    {
+      "file": "source-previews/2272c17d1c39eefbc2cac7dc.wav",
+      "peak_dbfs": -5.07,
+      "errors": []
+    },
+    {
+      "file": "source-previews/22811047051f2dba737671d4.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/2283965292ee18d8b92e82dc.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/22c5c8d74d82ebd6e520f8b7.wav",
+      "peak_dbfs": -7.15,
+      "errors": []
+    },
+    {
+      "file": "source-previews/22f2c7384c942da5069f3d5e.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/235011c8f7b1368d12f43703.wav",
+      "peak_dbfs": -6.86,
+      "errors": []
+    },
+    {
+      "file": "source-previews/238624c48892af0246865355.wav",
+      "peak_dbfs": -10.47,
+      "errors": []
+    },
+    {
+      "file": "source-previews/23f1eb462f436687867909fc.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/2439d85cf53d4af417a165dd.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/24b007a1947bdab96ff729ad.wav",
+      "peak_dbfs": -5.73,
+      "errors": []
+    },
+    {
+      "file": "source-previews/24fe0faf8800ab221a234cef.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/257f0d7441b3836dc3ece396.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/2595bf9515932978aee8a1f0.wav",
+      "peak_dbfs": -9.12,
+      "errors": []
+    },
+    {
+      "file": "source-previews/25fa835808e75edfef1a67ce.wav",
+      "peak_dbfs": -6.44,
+      "errors": []
+    },
+    {
+      "file": "source-previews/26100adac3c9feefc0df07c0.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/26157969d913624f3ddda108.wav",
+      "peak_dbfs": -8.3,
+      "errors": []
+    },
+    {
+      "file": "source-previews/26d973e32a1608edac51e358.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/26e8c7745191efa9990b5d3f.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/26f212620ada121b2abb040a.wav",
+      "peak_dbfs": -7.73,
+      "errors": []
+    },
+    {
+      "file": "source-previews/26fc5a72acf02ace604a34f5.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/2717eb9f338aa4c987752358.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/274b3ca88dcec2be8da8c7f0.wav",
+      "peak_dbfs": -6.54,
+      "errors": []
+    },
+    {
+      "file": "source-previews/279b363d3d2944cf05dcbdfd.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/27f9d1f852f6c2461124687c.wav",
+      "peak_dbfs": -7.51,
+      "errors": []
+    },
+    {
+      "file": "source-previews/282268fc35616d7163e2f2d0.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/28b02b4e9a0b1b21f12f680e.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/28ed3f2ff99db62d3dec679c.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/29052cda16d2c1b188767a49.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/2929c37d90d12dac91eec806.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/2a1a6052ed2d5c7f84e6f42e.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/2ac0d02c6b443d8c94aea794.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/2ac64e79951134f21f4e6444.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/2b59c1a528a1ad3e5f07588d.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/2c6775c788b8b3226d64b110.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/2c7705b5f9adce8276a1f55f.wav",
+      "peak_dbfs": -4.68,
+      "errors": []
+    },
+    {
+      "file": "source-previews/2cbc19ec50e7fa99accbb67e.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/2cc8709a4e9f6311aba77b79.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/2ced996cd4d5b9e312bbf47e.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/2cee6c5af86c1fdba2f1ad27.wav",
+      "peak_dbfs": -9.39,
+      "errors": []
+    },
+    {
+      "file": "source-previews/2cf4f988e96ace36b2c986b8.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/2cfa2c0c69623741c763bb20.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/2cfd6a6c7659327a96ef784d.wav",
+      "peak_dbfs": -4.66,
+      "errors": []
+    },
+    {
+      "file": "source-previews/2d33d5edfd77f7c0b3a37471.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/2d35f3c4645bd70621eb260a.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/2d491612a7cb7b4d719da965.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/2d9f3a37754dc8706a6a8a06.wav",
+      "peak_dbfs": -8.23,
+      "errors": []
+    },
+    {
+      "file": "source-previews/2e4ffabf93a7641192755726.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/2ea68570cb1833dfed7eef8a.wav",
+      "peak_dbfs": -4.72,
+      "errors": []
+    },
+    {
+      "file": "source-previews/2ee00ef0a64aab67b90d7efa.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/2f372e5cd71ef3b6f94f4d5a.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/2f4a74acf9061b9dd6fda2cf.wav",
+      "peak_dbfs": -4.02,
+      "errors": []
+    },
+    {
+      "file": "source-previews/2f86aba1999720d897712764.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/2fc80c82440efccab57a5ef4.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/300f61efd02e182d877cbcca.wav",
+      "peak_dbfs": -10.23,
+      "errors": []
+    },
+    {
+      "file": "source-previews/304e7744f6bb2fe2f16ceb28.wav",
+      "peak_dbfs": -5.28,
+      "errors": []
+    },
+    {
+      "file": "source-previews/30d1ca2df8a669728fe73a8f.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/31128ba4fec8accb3f1f1486.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/317878da13940aa53c96fdc2.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/319740b4d1f5c7837bf08f37.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/31edc07af0600e7f1a655220.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/324489c4905d6f7649cbc736.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/32bb7eff7bb314739bad7910.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/3304355b2cae0d9c7c237909.wav",
+      "peak_dbfs": -6.03,
+      "errors": []
+    },
+    {
+      "file": "source-previews/33e20d756b6fbd299551bf5a.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/345e1878907f589bc1199911.wav",
+      "peak_dbfs": -8.55,
+      "errors": []
+    },
+    {
+      "file": "source-previews/347790261f4d15be4d26b591.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/34e4c876b375c5cfe8c2932c.wav",
+      "peak_dbfs": -5.64,
+      "errors": []
+    },
+    {
+      "file": "source-previews/35887ecb546ea3ac27174624.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/3812f10ebb4f3b84ad87a492.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/383d7e6360720d36a31de302.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/384d5aab172b67ce320c678c.wav",
+      "peak_dbfs": -5.29,
+      "errors": []
+    },
+    {
+      "file": "source-previews/38689c759ac9930654e440f4.wav",
+      "peak_dbfs": -5.84,
+      "errors": []
+    },
+    {
+      "file": "source-previews/38e6a7af00e24cf53c25f729.wav",
+      "peak_dbfs": -4.41,
+      "errors": []
+    },
+    {
+      "file": "source-previews/3a34462604b5ccfa95d5d4b4.wav",
+      "peak_dbfs": -8.27,
+      "errors": []
+    },
+    {
+      "file": "source-previews/3a37b9390040a03e4a153e22.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/3a4d4bcdd8836a8d508fddbb.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/3aa848cee1ec8f3ae1933a9e.wav",
+      "peak_dbfs": -4.7,
+      "errors": []
+    },
+    {
+      "file": "source-previews/3b4e6fdf0e38025bf32ff7af.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/3b65e3112c559c173d2886c1.wav",
+      "peak_dbfs": -8.51,
+      "errors": []
+    },
+    {
+      "file": "source-previews/3bb75ec106a3f5b4f8205d9a.wav",
+      "peak_dbfs": -7.98,
+      "errors": []
+    },
+    {
+      "file": "source-previews/3befba4a2cfb6b01f9283859.wav",
+      "peak_dbfs": -10.58,
+      "errors": []
+    },
+    {
+      "file": "source-previews/3c147da207167bca909b0fd4.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/3c949e7c0f86c8b1d38199d4.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/3dfc27398935cdf0c48ab708.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/3dfd2bf6853c8aa0171dce10.wav",
+      "peak_dbfs": -5.91,
+      "errors": []
+    },
+    {
+      "file": "source-previews/3e6796783be76f86c74828a5.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/3edc8b771eff2dbf0fac982b.wav",
+      "peak_dbfs": -6.05,
+      "errors": []
+    },
+    {
+      "file": "source-previews/3f990fa60d1080d54515af38.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/3fc24d872a6f21766639d556.wav",
+      "peak_dbfs": -5.38,
+      "errors": []
+    },
+    {
+      "file": "source-previews/4032055ea576fbf02d055120.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/4046800dfee6ec41483177ef.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/406df6511a3ae3f419c1d11b.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/40892dbe230913ac59b4ad33.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/40a113d5037fd5529115b473.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/4126d5f4f2194ec74d226c79.wav",
+      "peak_dbfs": -7.58,
+      "errors": []
+    },
+    {
+      "file": "source-previews/415666f2aa816edfdb4b8778.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/4190d4a97faea1437c0342a9.wav",
+      "peak_dbfs": -6.54,
+      "errors": []
+    },
+    {
+      "file": "source-previews/41c4934671c09b6984910ead.wav",
+      "peak_dbfs": -6.52,
+      "errors": []
+    },
+    {
+      "file": "source-previews/41e01b6d5f851f38c8acdb0a.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/42836e5b7f6c4a8b2c66e3a4.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/42b365e7fb0a558254dd6e5e.wav",
+      "peak_dbfs": -4.54,
+      "errors": []
+    },
+    {
+      "file": "source-previews/42c6af5adde8949dd91e5312.wav",
+      "peak_dbfs": -9.28,
+      "errors": []
+    },
+    {
+      "file": "source-previews/4310056b4b6382efe430ef9b.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/43209e8f3316f8c2f5b7414b.wav",
+      "peak_dbfs": -4.38,
+      "errors": []
+    },
+    {
+      "file": "source-previews/4348f116ff6e11e45b07c45c.wav",
+      "peak_dbfs": -6.09,
+      "errors": []
+    },
+    {
+      "file": "source-previews/44d9e8a4f768b524208353a0.wav",
+      "peak_dbfs": -6.58,
+      "errors": []
+    },
+    {
+      "file": "source-previews/451c2e5780932b4eadf6a16b.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/4544cc18798708a3aa92ec27.wav",
+      "peak_dbfs": -5.05,
+      "errors": []
+    },
+    {
+      "file": "source-previews/457bcdf0d6dc00aa70f6195a.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/4673c92e1af86a8a7ea85c1c.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/46783b4d07a1fe376d0369b2.wav",
+      "peak_dbfs": -8.05,
+      "errors": []
+    },
+    {
+      "file": "source-previews/46d0aff46105eac72ff32c91.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/46f75e17d9e271d0fdb611c3.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/477db91e9447f013239c724c.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/479c21de7effeb7f49853cc3.wav",
+      "peak_dbfs": -5.66,
+      "errors": []
+    },
+    {
+      "file": "source-previews/47d1b340fbebe06b68b7af21.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/4818f338eb3d557320fc2980.wav",
+      "peak_dbfs": -5.65,
+      "errors": []
+    },
+    {
+      "file": "source-previews/484bb05776b243770c34a037.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/48cc677be12169da4287f107.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/48e8448b3f7cf95f70e81718.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/4909f7cfeb9e0dab2930eb96.wav",
+      "peak_dbfs": -4.48,
+      "errors": []
+    },
+    {
+      "file": "source-previews/49322222c59afa801ee644e1.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/49683a43aadaf6d95a80553a.wav",
+      "peak_dbfs": -4.42,
+      "errors": []
+    },
+    {
+      "file": "source-previews/496cc6cd8dce397f9f0ec953.wav",
+      "peak_dbfs": -5.42,
+      "errors": []
+    },
+    {
+      "file": "source-previews/4984c7d2210d45cc462e5a92.wav",
+      "peak_dbfs": -6.83,
+      "errors": []
+    },
+    {
+      "file": "source-previews/49c7ddbfa2fcbc8443edf594.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/4a7a5df8a89a4759d4d8aeab.wav",
+      "peak_dbfs": -11.36,
+      "errors": []
+    },
+    {
+      "file": "source-previews/4a9ae7d4ec17df0a9b9069ab.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/4aa6c5229f1dc0f2cc77cd99.wav",
+      "peak_dbfs": -5.11,
+      "errors": []
+    },
+    {
+      "file": "source-previews/4ae5884f5855c51db715ed51.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/4b144c4a84c4a6fc4d488a2c.wav",
+      "peak_dbfs": -8.15,
+      "errors": []
+    },
+    {
+      "file": "source-previews/4bcab3cf3edb7d10222aff4e.wav",
+      "peak_dbfs": -4.68,
+      "errors": []
+    },
+    {
+      "file": "source-previews/4c018c8eb5a6f4c18ed521bc.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/4c11f650e74a57775cda2626.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/4c13202369b1e3630b4b86b8.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/4c1e8088f2854b952bb6e487.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/4ca1e1e96b4fec544d6a7517.wav",
+      "peak_dbfs": -6.16,
+      "errors": []
+    },
+    {
+      "file": "source-previews/4cf1ea0c666769fb5f427919.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/4d6387b4a1d38e822a7f380e.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/4e30f5c07e402d59588a1c22.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/4e813db06f93b0f67c34d0e0.wav",
+      "peak_dbfs": -4.88,
+      "errors": []
+    },
+    {
+      "file": "source-previews/4ec7772d13e8de1a95ead820.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/4f117fe78988cc48cb441e5e.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/4f402f0c60bb95f98e50757a.wav",
+      "peak_dbfs": -5.71,
+      "errors": []
+    },
+    {
+      "file": "source-previews/4f40b3d577fbe383cd7f9fe8.wav",
+      "peak_dbfs": -5.59,
+      "errors": []
+    },
+    {
+      "file": "source-previews/5002ccf9cef3b65f9c3db1c5.wav",
+      "peak_dbfs": -10.19,
+      "errors": []
+    },
+    {
+      "file": "source-previews/50483a085d90492c0f66232c.wav",
+      "peak_dbfs": -6.62,
+      "errors": []
+    },
+    {
+      "file": "source-previews/5059373dcf584e034f4291b2.wav",
+      "peak_dbfs": -6.26,
+      "errors": []
+    },
+    {
+      "file": "source-previews/50999b148ef0ef45c5a784f7.wav",
+      "peak_dbfs": -7.05,
+      "errors": []
+    },
+    {
+      "file": "source-previews/51173bfb8cf1c879f162a67c.wav",
+      "peak_dbfs": -5.09,
+      "errors": []
+    },
+    {
+      "file": "source-previews/51e09d3ebfa2c80eee242bd0.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/52877f2f42abf17db232f7b9.wav",
+      "peak_dbfs": -9.85,
+      "errors": []
+    },
+    {
+      "file": "source-previews/52e1981ef6b7b59aea0f948c.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/52e3380f9ee7ab3ef8d35435.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/52f11ded423ead9d4d1bfdee.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/53057e309a022bf5311bbbce.wav",
+      "peak_dbfs": -7.74,
+      "errors": []
+    },
+    {
+      "file": "source-previews/537224a188fbfc828ddb9382.wav",
+      "peak_dbfs": -5.37,
+      "errors": []
+    },
+    {
+      "file": "source-previews/53b1bf475f7e06e8f1d044dd.wav",
+      "peak_dbfs": -4.57,
+      "errors": []
+    },
+    {
+      "file": "source-previews/54dd418d94c65b222be02360.wav",
+      "peak_dbfs": -7.98,
+      "errors": []
+    },
+    {
+      "file": "source-previews/55496d77488d4a4066c9de9a.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/556e064c4ff06503373b5a33.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/562f72115804512fa3d40cf0.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/567b5b16782f49ec5d44be6e.wav",
+      "peak_dbfs": -6.49,
+      "errors": []
+    },
+    {
+      "file": "source-previews/57dbcabe11955eb28ea5f026.wav",
+      "peak_dbfs": -4.37,
+      "errors": []
+    },
+    {
+      "file": "source-previews/57f4680e5799c71e123e4a79.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/58127ddb32d22d76d55516ea.wav",
+      "peak_dbfs": -4.74,
+      "errors": []
+    },
+    {
+      "file": "source-previews/587457f883bcda151411cd3e.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/5937efc7ca83767977269e02.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/595cd349eb7bffeaf77b8b18.wav",
+      "peak_dbfs": -6.45,
+      "errors": []
+    },
+    {
+      "file": "source-previews/59f2f1d7174b66c8db90514f.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/5a2963f47e433407945d36a3.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/5a397079ef695282ffbc0ef9.wav",
+      "peak_dbfs": -12.15,
+      "errors": []
+    },
+    {
+      "file": "source-previews/5a4524d1e59a12885b93625f.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/5ac226b8a087ee800e4b3885.wav",
+      "peak_dbfs": -5.07,
+      "errors": []
+    },
+    {
+      "file": "source-previews/5af3d4d86f22f5c5e1ef3ae3.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/5b9cff5a5143bee33d4b3f82.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/5ba23bb7599ab154b028f2ef.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/5bdb5f54094dfeb289dbc68c.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/5be45cc045593ca69d9a9a3c.wav",
+      "peak_dbfs": -9.57,
+      "errors": []
+    },
+    {
+      "file": "source-previews/5c43d232d58e9d9ca5fbbe55.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/5d3c3a542a4a5eb29d3b162e.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/5d59f03ac9da61261990a894.wav",
+      "peak_dbfs": -4.5,
+      "errors": []
+    },
+    {
+      "file": "source-previews/5d7b09762d43f7afa96a9cd3.wav",
+      "peak_dbfs": -6.05,
+      "errors": []
+    },
+    {
+      "file": "source-previews/5d7b8988238def8ad937eeb0.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/5d7fda48189728e274ec56ec.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/5d859efba163264ff2d1561e.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/5da9e8dba839f40c021e77e3.wav",
+      "peak_dbfs": -7.64,
+      "errors": []
+    },
+    {
+      "file": "source-previews/5db3e6c7d773eb0ca3df6f3d.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/5dcec37d4986c560a6622d70.wav",
+      "peak_dbfs": -5.94,
+      "errors": []
+    },
+    {
+      "file": "source-previews/5e11aaca36d059196e06a440.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/5e203fe7155e357e664252b5.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/5e2caf1493894b21e6f0a6df.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/5e486c533194cf210a74dc62.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/5f3e193173422fac38c808d9.wav",
+      "peak_dbfs": -6.66,
+      "errors": []
+    },
+    {
+      "file": "source-previews/5fc5af1e1e1f042ec2418ea6.wav",
+      "peak_dbfs": -9.11,
+      "errors": []
+    },
+    {
+      "file": "source-previews/6003cfebdf0d58bd9ddab3a0.wav",
+      "peak_dbfs": -8.08,
+      "errors": []
+    },
+    {
+      "file": "source-previews/6059eddad616172d5341e4f4.wav",
+      "peak_dbfs": -5.13,
+      "errors": []
+    },
+    {
+      "file": "source-previews/607084210a774f4124eb858c.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/60b29cfdbd804008104f2b02.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/6134312edf35f75894553beb.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/615db6df43b1742767fa164b.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/618d619f793d7f1ca0274019.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/61d1f7b7f864eb623f4ea78a.wav",
+      "peak_dbfs": -6.04,
+      "errors": []
+    },
+    {
+      "file": "source-previews/61d614a4a8ac2cc597299000.wav",
+      "peak_dbfs": -7.97,
+      "errors": []
+    },
+    {
+      "file": "source-previews/61f4e2818d61509a20a5fdb4.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/622bd8dc60031aaa612a503d.wav",
+      "peak_dbfs": -4.59,
+      "errors": []
+    },
+    {
+      "file": "source-previews/6254f6351c449c5229f01706.wav",
+      "peak_dbfs": -6.91,
+      "errors": []
+    },
+    {
+      "file": "source-previews/62d392ae4f3a785f0d101e8a.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/62f663c756fb09ae987dad21.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/63173895d54172cd1a52c865.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/636be1e5e4e3f3e2e5c12c24.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/636d632cfc1054483f8ea267.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/6496d76d4b30db51d9ed6ca4.wav",
+      "peak_dbfs": -6.58,
+      "errors": []
+    },
+    {
+      "file": "source-previews/650f2189e35ffb7503fc3b51.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/65215e63ee0e5734877aa5d0.wav",
+      "peak_dbfs": -6.04,
+      "errors": []
+    },
+    {
+      "file": "source-previews/653262a714bf1ca95bddbb38.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/6567e7f358f8d533d55c6c14.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/65eacefe6d2d51fae154232b.wav",
+      "peak_dbfs": -4.52,
+      "errors": []
+    },
+    {
+      "file": "source-previews/6621f7fe197a14740780ce80.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/67f3abef25296cee3fae7eaf.wav",
+      "peak_dbfs": -6.75,
+      "errors": []
+    },
+    {
+      "file": "source-previews/690016b5f2fcc1991fe8d5f4.wav",
+      "peak_dbfs": -10.53,
+      "errors": []
+    },
+    {
+      "file": "source-previews/69125165cc7c1ae1cf0e24d3.wav",
+      "peak_dbfs": -9.45,
+      "errors": []
+    },
+    {
+      "file": "source-previews/69216d228b3749f8e89707f6.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/692b5ca3f00135c03543472a.wav",
+      "peak_dbfs": -6.11,
+      "errors": []
+    },
+    {
+      "file": "source-previews/69c314a194a2ad2d9ee6332f.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/69f0b01f2a2a204a8c4e2d15.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/6a4abd0e5a857562213f4b66.wav",
+      "peak_dbfs": -5.77,
+      "errors": []
+    },
+    {
+      "file": "source-previews/6af2d4d839c3b60a27a5f201.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/6b07f959522d268ac4f1fc98.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/6b109ab8374fd4175371574d.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/6b11fe8946d31c07ef85ddf3.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/6b1bcfeec29a1691cdff1d4b.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/6b4283610cde4e95710fb808.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/6b4c26e0d94da20e62531d00.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/6b718155821870e950d803fa.wav",
+      "peak_dbfs": -5.27,
+      "errors": []
+    },
+    {
+      "file": "source-previews/6bb1eee8148f078c30875464.wav",
+      "peak_dbfs": -4.64,
+      "errors": []
+    },
+    {
+      "file": "source-previews/6c8081616f124675a0657b64.wav",
+      "peak_dbfs": -10.25,
+      "errors": []
+    },
+    {
+      "file": "source-previews/6cca55060ae781602dccd46b.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/6ccc633b636060472093b366.wav",
+      "peak_dbfs": -9.82,
+      "errors": []
+    },
+    {
+      "file": "source-previews/6d188ec6920b2afc6de076cd.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/6d4799914c4c10f44209b68f.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/6d622262b4c5b18d34b58b0e.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/6dc2cff6f9b527ff4fed3bc0.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/6dc7938805963f1ab58f841b.wav",
+      "peak_dbfs": -4.58,
+      "errors": []
+    },
+    {
+      "file": "source-previews/6e2df3edead2fcdc25b4579f.wav",
+      "peak_dbfs": -4.43,
+      "errors": []
+    },
+    {
+      "file": "source-previews/6e5bc7e2f05d0bd03403542d.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/6e6ab4a1a51810f8dbc513ac.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/6e9780cf7f1fd4e213465eb9.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/6eb0ac4e110bc4199ba44f9a.wav",
+      "peak_dbfs": -7.27,
+      "errors": []
+    },
+    {
+      "file": "source-previews/6edde8e647164f9ff7bd44c2.wav",
+      "peak_dbfs": -5.27,
+      "errors": []
+    },
+    {
+      "file": "source-previews/6f6173bdad3f143946efeb0f.wav",
+      "peak_dbfs": -5.8,
+      "errors": []
+    },
+    {
+      "file": "source-previews/6fc298f65285d29a08463e7a.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/702c7941df0a1a3e58d28f2a.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/704ef417b765d47f687e1246.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/70690a989f5a6979cc6c5867.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/70a60d486d310a8a9402288e.wav",
+      "peak_dbfs": -6.22,
+      "errors": []
+    },
+    {
+      "file": "source-previews/70a7afa859cd6071ef939305.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/70bcea27c07e7858a1e19f6b.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/70f647e9c062c3043104e7e5.wav",
+      "peak_dbfs": -5.04,
+      "errors": []
+    },
+    {
+      "file": "source-previews/71101a46c4edabbbb9b59822.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/7160cb03c8eff59837c6a113.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/71ec54ff37f6666c374f5db5.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/72500ab567eff19e8bdb4f6e.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/7252310d5ac268bca044b48e.wav",
+      "peak_dbfs": -4.39,
+      "errors": []
+    },
+    {
+      "file": "source-previews/7340aea7996e76ae07e3a618.wav",
+      "peak_dbfs": -5.28,
+      "errors": []
+    },
+    {
+      "file": "source-previews/73af99f74ee8a0c176208a0c.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/73e7899e48c88fc654c93783.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/749b838f2e59495cb6e58824.wav",
+      "peak_dbfs": -8.53,
+      "errors": []
+    },
+    {
+      "file": "source-previews/7558f02c8f25542b01c629aa.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/7581b751ed05a2294ee6d001.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/75c45295c11d2dff16721dcf.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/75ce6990346f14b82c4577e4.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/75da90ebe2e380a1066439a1.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/760972747b3f0cf47b7569bc.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/7655179472b063051aae2a77.wav",
+      "peak_dbfs": -4.74,
+      "errors": []
+    },
+    {
+      "file": "source-previews/76df3d1c7d2f1c1b7c9c6939.wav",
+      "peak_dbfs": -6.5,
+      "errors": []
+    },
+    {
+      "file": "source-previews/771175f77a2b8a4b26ef5c97.wav",
+      "peak_dbfs": -8.12,
+      "errors": []
+    },
+    {
+      "file": "source-previews/7863b7676977880522447afc.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/78b4bc2350b3b1355e07369a.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/78ba63594a2a30fbbbb33185.wav",
+      "peak_dbfs": -6.11,
+      "errors": []
+    },
+    {
+      "file": "source-previews/79016d20feadfff93eefb9f2.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/7914cbdb7765aae070ba35b8.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/792a6a7392f542ab83e625f8.wav",
+      "peak_dbfs": -5.86,
+      "errors": []
+    },
+    {
+      "file": "source-previews/7a272b09b244f1d5f61f0a40.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/7a7bb0f26681e4ca57686584.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/7afc619f6fe91878c638545f.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/7b245f12497aa3368834b8b7.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/7b3a0c595aa66baa6106c954.wav",
+      "peak_dbfs": -9.34,
+      "errors": []
+    },
+    {
+      "file": "source-previews/7b5fa6d08d96e2e3b00ae4b4.wav",
+      "peak_dbfs": -5.85,
+      "errors": []
+    },
+    {
+      "file": "source-previews/7b78b6591825dece4153c9ba.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/7ba6e3e7c7bd451ab7cc2b07.wav",
+      "peak_dbfs": -7.68,
+      "errors": []
+    },
+    {
+      "file": "source-previews/7bef05bfca25ed477c80a6a1.wav",
+      "peak_dbfs": -4.24,
+      "errors": []
+    },
+    {
+      "file": "source-previews/7bfc4fde37c65434d05bc42e.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/7c3c1d7b0ceff3c9c2bf7e7a.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/7c86992fb4d7e0727a1b2705.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/7cb5bb8b849979f37fdf8be5.wav",
+      "peak_dbfs": -4.16,
+      "errors": []
+    },
+    {
+      "file": "source-previews/7d27342ca3ed2ff4c7e1f44b.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/7d369c4cb3d82835b894c2e4.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/7d4a5259be2a97ed1cd89ae4.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/7d8dc8ed00b0f6b3f6d9d7ef.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/7e0d1ff8bfa1e03eb6777fe4.wav",
+      "peak_dbfs": -5.17,
+      "errors": []
+    },
+    {
+      "file": "source-previews/7eaba97753a041911b900abe.wav",
+      "peak_dbfs": -5.08,
+      "errors": []
+    },
+    {
+      "file": "source-previews/7fa4aa4d97a3610cbb54e6d9.wav",
+      "peak_dbfs": -7.54,
+      "errors": []
+    },
+    {
+      "file": "source-previews/7fd1d93791d4b0ad1b40aa2b.wav",
+      "peak_dbfs": -4.33,
+      "errors": []
+    },
+    {
+      "file": "source-previews/804caeceef3e6bb1b26222b0.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/80f87ab4fbf274e184b5ec48.wav",
+      "peak_dbfs": -6.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/818d78689d6a527efaa42d92.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/828cae8e465e70aee40fa557.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/82da1f6316170eb5fdb94b81.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/83364c0ae7e882450b583222.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/834ff287adaaafcf94c00eec.wav",
+      "peak_dbfs": -10.34,
+      "errors": []
+    },
+    {
+      "file": "source-previews/84258f22ee68b4af6d7d96f5.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/84475a89b335a884499f8585.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/84599ea4d916bc167a180560.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/8465b6925a6336d150970443.wav",
+      "peak_dbfs": -5.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/84c02e00579b148f6852d71f.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/850ecb4d9fac6bb640c2221f.wav",
+      "peak_dbfs": -4.37,
+      "errors": []
+    },
+    {
+      "file": "source-previews/856c59406b9910ae9f028db3.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/85fe240c797fd56ec4370d26.wav",
+      "peak_dbfs": -8.16,
+      "errors": []
+    },
+    {
+      "file": "source-previews/8701323b890b4551cf2adc48.wav",
+      "peak_dbfs": -5.42,
+      "errors": []
+    },
+    {
+      "file": "source-previews/872f4a723ee9f822ec983a16.wav",
+      "peak_dbfs": -4.36,
+      "errors": []
+    },
+    {
+      "file": "source-previews/8773654de58b8fb6c822fcdd.wav",
+      "peak_dbfs": -4.12,
+      "errors": []
+    },
+    {
+      "file": "source-previews/886f8e7ab7b2368c82bd23e5.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/88870091a39876429f0fbd53.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/88ca824480d66eda2e9d4424.wav",
+      "peak_dbfs": -7.2,
+      "errors": []
+    },
+    {
+      "file": "source-previews/88cefbe2028be78314532678.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/88d7c69251cacbcf75a9924a.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/895d51496002d99563d4f5e9.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/896fd3776f81299e1999a557.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/8976d09277142c254b86d1fa.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/898bcbbb59dd0a814a2fc2c6.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/89adb167ad18502c788e89dd.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/89ccdd5607a3156e50fed85b.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/89ef9fbe928e7fad65790f6b.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/8ad8900fff4e9bcdf48a5e70.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/8b3bacaa804d6942e1ba8db0.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/8b63b0bdc80d957b604fd842.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/8b75398c176ff89cfd40072d.wav",
+      "peak_dbfs": -4.34,
+      "errors": []
+    },
+    {
+      "file": "source-previews/8ba3b0d6d0bc8a7c09197d77.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/8bb248ca134543f29261064b.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/8bce852e49d9275dab7cdb45.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/8be2098ec1790d53199920cd.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/8bf868ef71a1832fa5ec777b.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/8c26f6604b49797f5c689151.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/8cc2cbf296abbbe9f32c3f6d.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/8d13a9c216362ece056b5d49.wav",
+      "peak_dbfs": -4.31,
+      "errors": []
+    },
+    {
+      "file": "source-previews/8d3c440e25f2b6e4b4147260.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/8dc74219f9135102dfa37ca6.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/8e13e08e92d0495e53a3164e.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/8e1891560d024e20bbacf9f3.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/8e289e10c329915dbf8c1418.wav",
+      "peak_dbfs": -7.84,
+      "errors": []
+    },
+    {
+      "file": "source-previews/8ec7ed106df4c8a8c56bd009.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/8f3c0410146d8b36027348dd.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/8f85f0d0d187f6302eef9a78.wav",
+      "peak_dbfs": -10.26,
+      "errors": []
+    },
+    {
+      "file": "source-previews/8fab0902f007bae08f9d0d5e.wav",
+      "peak_dbfs": -9.51,
+      "errors": []
+    },
+    {
+      "file": "source-previews/8fbc73fe33877096d6e529fa.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/8fbcb498c1cdd48d8248381b.wav",
+      "peak_dbfs": -5.95,
+      "errors": []
+    },
+    {
+      "file": "source-previews/8fd5f2ee34fa33570e27db76.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/903e46507c15d40ef863b6b3.wav",
+      "peak_dbfs": -8.7,
+      "errors": []
+    },
+    {
+      "file": "source-previews/9054e99361f0a21ec8a19194.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/90988b65a0f5c43cb5e7959d.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/90eca550c7201671156b390a.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/91595b6984fc75b08d83ea77.wav",
+      "peak_dbfs": -10.22,
+      "errors": []
+    },
+    {
+      "file": "source-previews/918aad7faffa57ae7cd9a28d.wav",
+      "peak_dbfs": -4.13,
+      "errors": []
+    },
+    {
+      "file": "source-previews/91ad04f3646a7a584f05f999.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/924368a99c4924b5b0b8962b.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/92491141f22a5a622849839a.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/92516216897e1be6f4022b07.wav",
+      "peak_dbfs": -6.23,
+      "errors": []
+    },
+    {
+      "file": "source-previews/9297e7b9b757aa4315bf6f5e.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/92d6a3066e6a90d3f5f42e59.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/92dd7261b28b6d4d6f90cdb1.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/92f63005a255c1e6d4dec07e.wav",
+      "peak_dbfs": -9.27,
+      "errors": []
+    },
+    {
+      "file": "source-previews/9300094d2d92da400f52f23e.wav",
+      "peak_dbfs": -4.5,
+      "errors": []
+    },
+    {
+      "file": "source-previews/9320247c8d6fe6c0ea6da64e.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/932e7d86d8eea74e114a5530.wav",
+      "peak_dbfs": -7.17,
+      "errors": []
+    },
+    {
+      "file": "source-previews/934eafb8f2b83e8eda34bdc0.wav",
+      "peak_dbfs": -7.38,
+      "errors": []
+    },
+    {
+      "file": "source-previews/9383a96a88ecede73ac8bf4d.wav",
+      "peak_dbfs": -4.22,
+      "errors": []
+    },
+    {
+      "file": "source-previews/942fbf3a5c7cdf729f75b857.wav",
+      "peak_dbfs": -6.61,
+      "errors": []
+    },
+    {
+      "file": "source-previews/9478f3c88ece6ad36943f331.wav",
+      "peak_dbfs": -5.62,
+      "errors": []
+    },
+    {
+      "file": "source-previews/94cecd208e16cc3b2be442a2.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/94e897a0160096b6c230db09.wav",
+      "peak_dbfs": -4.75,
+      "errors": []
+    },
+    {
+      "file": "source-previews/951061ee9a448d3be04735ad.wav",
+      "peak_dbfs": -6.24,
+      "errors": []
+    },
+    {
+      "file": "source-previews/9552188b2874b5a7ea4d858d.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/958a92e5a9befde54311c4f7.wav",
+      "peak_dbfs": -5.6,
+      "errors": []
+    },
+    {
+      "file": "source-previews/95accde1ac95a2d835d37085.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/95d2a9940e07acc81eb4f089.wav",
+      "peak_dbfs": -7.11,
+      "errors": []
+    },
+    {
+      "file": "source-previews/962c14bfe15f563df631c62b.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/9697682cd537e8501fd5158a.wav",
+      "peak_dbfs": -6.18,
+      "errors": []
+    },
+    {
+      "file": "source-previews/96feb9afa4060e64dce134fe.wav",
+      "peak_dbfs": -12.69,
+      "errors": []
+    },
+    {
+      "file": "source-previews/97566c06d72d0519a0ef0a70.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/9812354beb13a89a711cadf5.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/983492dc00d1f9852b96d043.wav",
+      "peak_dbfs": -4.39,
+      "errors": []
+    },
+    {
+      "file": "source-previews/98b6f0cf039d0ecafa3c10fd.wav",
+      "peak_dbfs": -5.65,
+      "errors": []
+    },
+    {
+      "file": "source-previews/99415e35f30fd625f70ebffc.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/997d730077540adffa7b2726.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/9980701045f51b9a81b3bfee.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/99c75affdfb4914f6a8a10fc.wav",
+      "peak_dbfs": -9.96,
+      "errors": []
+    },
+    {
+      "file": "source-previews/9a57186df546e55f3e60977e.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/9b949ddc29e5be7797978ab1.wav",
+      "peak_dbfs": -6.46,
+      "errors": []
+    },
+    {
+      "file": "source-previews/9badc6ff34d71743d207e715.wav",
+      "peak_dbfs": -4.98,
+      "errors": []
+    },
+    {
+      "file": "source-previews/9bd96e8bf15f588c92bee25b.wav",
+      "peak_dbfs": -5.39,
+      "errors": []
+    },
+    {
+      "file": "source-previews/9c3057119b199b4c46f36858.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/9c5c6b5a825d447873add63e.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/9c6936f053871bc10337c662.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/9c9a7dc37ee4dbd4eebb31fc.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/9cea8ad336c600aecfa620c1.wav",
+      "peak_dbfs": -6.73,
+      "errors": []
+    },
+    {
+      "file": "source-previews/9cfa7727c1f2397a53ecec67.wav",
+      "peak_dbfs": -5.62,
+      "errors": []
+    },
+    {
+      "file": "source-previews/9cfe6b8437b1c0e041ff4e85.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/9d462131ee6683a16879e1df.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/9d57df07603d38741537faec.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/9d7358dd961aee45b764fb08.wav",
+      "peak_dbfs": -6.79,
+      "errors": []
+    },
+    {
+      "file": "source-previews/9dbace8b8ee5f52f0d82bdec.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/9de68d01d911f9de25a372f0.wav",
+      "peak_dbfs": -10.88,
+      "errors": []
+    },
+    {
+      "file": "source-previews/9ea63ac212981f5718a64612.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/9f7360764b7a08464a3df633.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/9f8da761b815a011ab5e8518.wav",
+      "peak_dbfs": -5.63,
+      "errors": []
+    },
+    {
+      "file": "source-previews/9f9558b95275d8a591c90ea0.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/a0017010b0059464705574ce.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/a04db415b4bf30c2f3e88c16.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/a11cf3c3a8bdb39680e5d6f6.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/a169e919b0b437529d338d16.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/a16bd0799d25b2b9b2f2c9a2.wav",
+      "peak_dbfs": -5.86,
+      "errors": []
+    },
+    {
+      "file": "source-previews/a16fa886d0134cc269da3704.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/a1891c48e25770c1a8c0b33e.wav",
+      "peak_dbfs": -7.48,
+      "errors": []
+    },
+    {
+      "file": "source-previews/a1eccdc69a9a02fd68c21b0b.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/a1f59fadd1a480ff3fb03d89.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/a2371bc737b765b85400af8f.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/a2b0674e3a7f2903ce44c55d.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/a2de9e86d9ab71e69380d230.wav",
+      "peak_dbfs": -9.18,
+      "errors": []
+    },
+    {
+      "file": "source-previews/a2ea6dc7ca7b4c0c8ab5a59f.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/a2f201eff8236ee2ec367830.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/a359ff0fef7fe70217178f02.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/a37cb4e664b641a17f29c465.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/a3b8b0dc9253cef261c6f53e.wav",
+      "peak_dbfs": -8.33,
+      "errors": []
+    },
+    {
+      "file": "source-previews/a3d49e4b7647a87a85e772a5.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/a3e21ac6b8916bfbf497dc70.wav",
+      "peak_dbfs": -4.81,
+      "errors": []
+    },
+    {
+      "file": "source-previews/a3f06faf73276e9a236d55b7.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/a4639b2d593be44ade63511a.wav",
+      "peak_dbfs": -8.04,
+      "errors": []
+    },
+    {
+      "file": "source-previews/a48d30ccc0950a665f3bc26f.wav",
+      "peak_dbfs": -5.59,
+      "errors": []
+    },
+    {
+      "file": "source-previews/a4b9d08f5a5ceddb3a36cf96.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/a4fb558a3e16e5a4123e25ff.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/a50ea1ae1e12db19c8ff3945.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/a5afe32c3418294b57bbc100.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/a60fe05a0c91ff837f22fde0.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/a6a9dee99f8ef32098c6ec06.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/a6dcb3da6112f7156177ac49.wav",
+      "peak_dbfs": -6.44,
+      "errors": []
+    },
+    {
+      "file": "source-previews/a6e61cff17375b9373318472.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/a7258076b91e8f53251d8333.wav",
+      "peak_dbfs": -6.9,
+      "errors": []
+    },
+    {
+      "file": "source-previews/a7284374fa670fa7de224d02.wav",
+      "peak_dbfs": -10.43,
+      "errors": []
+    },
+    {
+      "file": "source-previews/a78f4836100b490bb3794cb5.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/a83e83bc819e57ff7efd339b.wav",
+      "peak_dbfs": -7.03,
+      "errors": []
+    },
+    {
+      "file": "source-previews/a8ac1a590b0ad12b6e4c300f.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/a93a4e620183a56ec5fa10da.wav",
+      "peak_dbfs": -9.19,
+      "errors": []
+    },
+    {
+      "file": "source-previews/aac623c3108d2af58631be3f.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/aae8c65aaf7a95433e03bdee.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/ab1a1d8bd395bca4d9afc3a8.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/ab2a65bb0487527fb221ebb9.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/ab3d935c661376e7d32897a9.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/ab5ce383e64772c2b060f1fa.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/ab7624b37a28c2a429bd8e4c.wav",
+      "peak_dbfs": -4.59,
+      "errors": []
+    },
+    {
+      "file": "source-previews/ab7979e0f335dd5f6be2d6a9.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/abe04676596b43590044131e.wav",
+      "peak_dbfs": -5.32,
+      "errors": []
+    },
+    {
+      "file": "source-previews/ac3ebced3fed0e81a44d8a6b.wav",
+      "peak_dbfs": -4.9,
+      "errors": []
+    },
+    {
+      "file": "source-previews/ac95d6abba45836e6d8ce4ae.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/ace21ca773f1e1cba4467238.wav",
+      "peak_dbfs": -8.96,
+      "errors": []
+    },
+    {
+      "file": "source-previews/acf3041494aaff4bfddd3f90.wav",
+      "peak_dbfs": -6.34,
+      "errors": []
+    },
+    {
+      "file": "source-previews/ae0a44e726fb49d787757ed0.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/ae27b88f49a37b3abf213b82.wav",
+      "peak_dbfs": -7.58,
+      "errors": []
+    },
+    {
+      "file": "source-previews/ae4935399750fb4c31ebeaa4.wav",
+      "peak_dbfs": -7.93,
+      "errors": []
+    },
+    {
+      "file": "source-previews/ae6177e01de36375936385d4.wav",
+      "peak_dbfs": -5.29,
+      "errors": []
+    },
+    {
+      "file": "source-previews/ae6b5cd02fe7046d399e85e4.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/aed9b7780f699c5f7ac40571.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/af7492133d6244f6957ed746.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/af9e45ac30bbaf9bb200b50f.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/b010866170b064d2630c9ff3.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/b078d29eb976a1e7536f2e33.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/b08558879d998950c520b2fe.wav",
+      "peak_dbfs": -6.64,
+      "errors": []
+    },
+    {
+      "file": "source-previews/b0d38db37d71b5f2f024b7ce.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/b0e7eb07fce8e307e2bc5ef9.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/b126a0c10adfc6e13ea7faa3.wav",
+      "peak_dbfs": -7.76,
+      "errors": []
+    },
+    {
+      "file": "source-previews/b1363d195bb94678de9d04b0.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/b263b15d51d2c4b6d77035e8.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/b27b6482737e1ce0fb9a3cef.wav",
+      "peak_dbfs": -5.9,
+      "errors": []
+    },
+    {
+      "file": "source-previews/b2a300cafdbe263530d66ce4.wav",
+      "peak_dbfs": -4.33,
+      "errors": []
+    },
+    {
+      "file": "source-previews/b2cea3f39e4d919e02174a20.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/b2e8f419fdace1ddab19e4ce.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/b340ca7255a42d7a187edac1.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/b36790e7612f322437caa5fa.wav",
+      "peak_dbfs": -6.82,
+      "errors": []
+    },
+    {
+      "file": "source-previews/b39c91ea7697092d4ec2bab9.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/b3d4f836e67806cdda7df224.wav",
+      "peak_dbfs": -4.02,
+      "errors": []
+    },
+    {
+      "file": "source-previews/b4181c1de83a1a1095a2ec81.wav",
+      "peak_dbfs": -5.47,
+      "errors": []
+    },
+    {
+      "file": "source-previews/b41ba17fc2172ff9315d4769.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/b4b8a46bf343ef7808305a8e.wav",
+      "peak_dbfs": -6.04,
+      "errors": []
+    },
+    {
+      "file": "source-previews/b58029605d270267daf5eee2.wav",
+      "peak_dbfs": -5.28,
+      "errors": []
+    },
+    {
+      "file": "source-previews/b5e53785bf254cd17f97a1a4.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/b64de15fa189e83f6298d839.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/b728ec9bee94a1f4ddf35817.wav",
+      "peak_dbfs": -5.79,
+      "errors": []
+    },
+    {
+      "file": "source-previews/b73cc291ca7de794d4c7f950.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/b784083258fdafbd2f98cfdb.wav",
+      "peak_dbfs": -4.23,
+      "errors": []
+    },
+    {
+      "file": "source-previews/b7bbff4871e1ef897404caac.wav",
+      "peak_dbfs": -9.5,
+      "errors": []
+    },
+    {
+      "file": "source-previews/b7c0a6b78a1c71f4c2d170e8.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/b85e7d9a07376058e1a93ccd.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/b87b17ac519a2e72efac950a.wav",
+      "peak_dbfs": -7.29,
+      "errors": []
+    },
+    {
+      "file": "source-previews/b8b8807e56ca07262a5e0d1d.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/b8f731b875c40e594b16d0e5.wav",
+      "peak_dbfs": -5.35,
+      "errors": []
+    },
+    {
+      "file": "source-previews/b90b14f9ce2ae3d714ef2021.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/b92d522c9977635878ebf815.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/b97afec9da72246657263d3c.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/b997d8f8c680d0ad8891dde9.wav",
+      "peak_dbfs": -7.9,
+      "errors": []
+    },
+    {
+      "file": "source-previews/b9d4ac692af46c7eab2e5ca3.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/ba1772cf94adf96ec8e78e2e.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/ba2a187a63a061758479d137.wav",
+      "peak_dbfs": -8.84,
+      "errors": []
+    },
+    {
+      "file": "source-previews/bac3b8e4b4ba30c7bf1f04aa.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/bacbd90fc04c51bfee1cea47.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/bad6cfdd128778c5490167f0.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/baecff3b3bfa1f130da2134b.wav",
+      "peak_dbfs": -6.54,
+      "errors": []
+    },
+    {
+      "file": "source-previews/bb57e856c3cd1c78ba7fbe55.wav",
+      "peak_dbfs": -4.44,
+      "errors": []
+    },
+    {
+      "file": "source-previews/bb68d443b89147dec5601f89.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/bb6cb637a1fd742e820f44e3.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/bb8ae61c017278ab61a1a949.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/bbc3f638b027f641b1bb004f.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/bbf6483a79fead5442b1d6a5.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/bc49a542475454fdac6a9a99.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/bcf484d5f4520303a7739288.wav",
+      "peak_dbfs": -4.9,
+      "errors": []
+    },
+    {
+      "file": "source-previews/bd7d75718ec62af588687779.wav",
+      "peak_dbfs": -7.47,
+      "errors": []
+    },
+    {
+      "file": "source-previews/bdd93b27101ca7da6917569c.wav",
+      "peak_dbfs": -4.31,
+      "errors": []
+    },
+    {
+      "file": "source-previews/be760e2d6e09d00ff27c0d13.wav",
+      "peak_dbfs": -6.13,
+      "errors": []
+    },
+    {
+      "file": "source-previews/bec155e413c66b1e00d232f6.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/bf42850ee58081485e40fa40.wav",
+      "peak_dbfs": -4.93,
+      "errors": []
+    },
+    {
+      "file": "source-previews/bf7942db00c8b0d80bf81803.wav",
+      "peak_dbfs": -4.25,
+      "errors": []
+    },
+    {
+      "file": "source-previews/c0425a7d3e2241b6276a2060.wav",
+      "peak_dbfs": -7.29,
+      "errors": []
+    },
+    {
+      "file": "source-previews/c04b90bc538f40b302b705ed.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/c067d60b87608575a640a00c.wav",
+      "peak_dbfs": -5.39,
+      "errors": []
+    },
+    {
+      "file": "source-previews/c08c660ca0b719e3814d4eb7.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/c1158467577a90e0ad910775.wav",
+      "peak_dbfs": -4.88,
+      "errors": []
+    },
+    {
+      "file": "source-previews/c15ccb22ebf1cf86ab11831b.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/c17cc2620bad80566506d3b5.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/c1a97d0084cfcdf0df225796.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/c1b5cf036b1da9357654c168.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/c1be8a72c3883c3057168ca6.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/c23194d7db4c67fd423c6db4.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/c23c90b7acdf62b63b027945.wav",
+      "peak_dbfs": -4.83,
+      "errors": []
+    },
+    {
+      "file": "source-previews/c277b0c0744cb9e18756ee29.wav",
+      "peak_dbfs": -10.29,
+      "errors": []
+    },
+    {
+      "file": "source-previews/c2ec62b56afc62ac934d2794.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/c36557fd697333f9f0ffbb35.wav",
+      "peak_dbfs": -4.4,
+      "errors": []
+    },
+    {
+      "file": "source-previews/c392c6bb579bb491995f3036.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/c3ec3abadb29777324bfee5d.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/c3f374561974734499258548.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/c3f47ccce428aff887a5cba0.wav",
+      "peak_dbfs": -9.21,
+      "errors": []
+    },
+    {
+      "file": "source-previews/c40c08d274a38f0464e13827.wav",
+      "peak_dbfs": -7.33,
+      "errors": []
+    },
+    {
+      "file": "source-previews/c5059b347557658a7c92cf1b.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/c5aff3877220b65578ef77c2.wav",
+      "peak_dbfs": -4.93,
+      "errors": []
+    },
+    {
+      "file": "source-previews/c5b7cbc861ca7b4b26e38684.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/c5ba937237a6a187ad11dd68.wav",
+      "peak_dbfs": -4.45,
+      "errors": []
+    },
+    {
+      "file": "source-previews/c6c82d0bc79982252dbc613c.wav",
+      "peak_dbfs": -10.75,
+      "errors": []
+    },
+    {
+      "file": "source-previews/c6feebd567205957ea5b1ef1.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/c71040ee0f2d6defd0b4769b.wav",
+      "peak_dbfs": -11.39,
+      "errors": []
+    },
+    {
+      "file": "source-previews/c74b99d3aef47504bf0cdfc4.wav",
+      "peak_dbfs": -5.66,
+      "errors": []
+    },
+    {
+      "file": "source-previews/c7d5b6ae7cc2418f52ddd1ca.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/c7d7dc9374d8ee2c2d81e483.wav",
+      "peak_dbfs": -4.68,
+      "errors": []
+    },
+    {
+      "file": "source-previews/c7f0e3255676127f8c85506e.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/c8bf19b70db16e5efbc32588.wav",
+      "peak_dbfs": -9.28,
+      "errors": []
+    },
+    {
+      "file": "source-previews/c941228e83a0e9cb6b376052.wav",
+      "peak_dbfs": -9.92,
+      "errors": []
+    },
+    {
+      "file": "source-previews/c95038643ce55607c3f817f0.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/c95e7bdcdab8e7cdd3e0469d.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/c98e2c79804fba86b5584524.wav",
+      "peak_dbfs": -10.89,
+      "errors": []
+    },
+    {
+      "file": "source-previews/c9c608908edc4a609e899b7d.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/c9d5bbd16c496987f66b32eb.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/c9e1d5d9aaea434f681dad68.wav",
+      "peak_dbfs": -9.77,
+      "errors": []
+    },
+    {
+      "file": "source-previews/caea878b884a952a23988bdf.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/cc3d6eb921805d66f7aa7af1.wav",
+      "peak_dbfs": -13.82,
+      "errors": []
+    },
+    {
+      "file": "source-previews/cc45bf1c42e5ec0aaadc1506.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/cc71d6398a6960cce8137a66.wav",
+      "peak_dbfs": -4.57,
+      "errors": []
+    },
+    {
+      "file": "source-previews/ccb039e229bd9f3e831449c7.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/ccd1bd7559a21a0d44470e86.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/ccfa7b177b5db245a4e701e7.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/cd290dca6170271e47e7231e.wav",
+      "peak_dbfs": -5.68,
+      "errors": []
+    },
+    {
+      "file": "source-previews/cd89890af1635f48528a307b.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/cddd69e03896277de8df7fdd.wav",
+      "peak_dbfs": -10.05,
+      "errors": []
+    },
+    {
+      "file": "source-previews/ce132887b6a4780e0d56bc1c.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/ce23dcd9342d2788e341ce30.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/cee8e487465fdb12a04fe0f3.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/cf7cc33b9ef085fb29e32795.wav",
+      "peak_dbfs": -6.68,
+      "errors": []
+    },
+    {
+      "file": "source-previews/d032f743d7c9a7f860707f16.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/d08be45f5ad748ddaeb6e490.wav",
+      "peak_dbfs": -9.52,
+      "errors": []
+    },
+    {
+      "file": "source-previews/d0df650d7938ac5685b2455c.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/d1317451dd7b58564422ea74.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/d24afc4ecf71dfa0b325e3b2.wav",
+      "peak_dbfs": -4.08,
+      "errors": []
+    },
+    {
+      "file": "source-previews/d33b269eeec3719de67c4b76.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/d3471e3d89062514140f23c0.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/d3b5d9bc8dc3417b8252f0dd.wav",
+      "peak_dbfs": -10.94,
+      "errors": []
+    },
+    {
+      "file": "source-previews/d4928e884f48acaec70b716c.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/d5591519d18189226edae973.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/d5843906e05cfb9e889189b3.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/d58dcf6dedac2798c977e438.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/d5a90771bd859df0ae0d2ad2.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/d5e9d9e4cca9af21b1b5f4a0.wav",
+      "peak_dbfs": -5.54,
+      "errors": []
+    },
+    {
+      "file": "source-previews/d5f1ea85f260adbb6ce25b8f.wav",
+      "peak_dbfs": -15.58,
+      "errors": []
+    },
+    {
+      "file": "source-previews/d634686b7a61697cf0e84af9.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/d69266e3f4435fceab765375.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/d6c05252596efa0ec3d169f0.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/d6f5e4923e4c8a78831ec682.wav",
+      "peak_dbfs": -4.82,
+      "errors": []
+    },
+    {
+      "file": "source-previews/d77b942cf5894e4c0b66bf74.wav",
+      "peak_dbfs": -4.39,
+      "errors": []
+    },
+    {
+      "file": "source-previews/d7d95cb6e13eb09f5dddc93e.wav",
+      "peak_dbfs": -4.94,
+      "errors": []
+    },
+    {
+      "file": "source-previews/d828a2511a6f38b4b9fd905b.wav",
+      "peak_dbfs": -6.22,
+      "errors": []
+    },
+    {
+      "file": "source-previews/d8ccf25558297e4ce836b725.wav",
+      "peak_dbfs": -9.02,
+      "errors": []
+    },
+    {
+      "file": "source-previews/d92a0bb93000e5466398e2f4.wav",
+      "peak_dbfs": -6.31,
+      "errors": []
+    },
+    {
+      "file": "source-previews/d9c9b0527bbc5b4b8ef51565.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/d9e5df7ecdcfac57a8bd1b51.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/da450e66255f63ec8a4fe7c5.wav",
+      "peak_dbfs": -5.57,
+      "errors": []
+    },
+    {
+      "file": "source-previews/da509a6b2231b3c08ed571b5.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/dbcea1522bca0718dfa467f1.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/dc69bc6a6938cd306f6cbe75.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/dc98e609d09989415dba66a2.wav",
+      "peak_dbfs": -6.51,
+      "errors": []
+    },
+    {
+      "file": "source-previews/dcb99f7622900b8d17147f5f.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/dcf689bf5f3d683e1a679710.wav",
+      "peak_dbfs": -4.19,
+      "errors": []
+    },
+    {
+      "file": "source-previews/dd98a28d8ee495d9e266c29d.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/dda7d4ce0d3febcee8cc8ff6.wav",
+      "peak_dbfs": -4.97,
+      "errors": []
+    },
+    {
+      "file": "source-previews/ddca8ac6b34595f30037e6bd.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/dddd1ea811a97ee162e5a815.wav",
+      "peak_dbfs": -4.47,
+      "errors": []
+    },
+    {
+      "file": "source-previews/ddfb285cdd1e7e766d3c2af8.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/de183d887e30388e0c9394e2.wav",
+      "peak_dbfs": -8.69,
+      "errors": []
+    },
+    {
+      "file": "source-previews/debe2188cb649ae9e0a1208b.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/defc088b5fab5b1d89be8de1.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/df3d4394d6370b65f580626c.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/dfd5bfc5c4c39da6310aa719.wav",
+      "peak_dbfs": -5.85,
+      "errors": []
+    },
+    {
+      "file": "source-previews/e0d24cf0f1c39cb58efa9601.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/e16aa67d43a909dc7482edb4.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/e1816cd3939e2ab8cebe48fc.wav",
+      "peak_dbfs": -9.47,
+      "errors": []
+    },
+    {
+      "file": "source-previews/e1b1d2759b520d3009fab49c.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/e1b3cabf20e3811a063ea8f0.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/e229f1a26ab668636914e065.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/e23ba5afb0f7bcb00d31679b.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/e2558b659d0f3ae511969184.wav",
+      "peak_dbfs": -4.67,
+      "errors": []
+    },
+    {
+      "file": "source-previews/e2709d083d6decafb73c0e36.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/e3be5141b41ec22e6ca181e9.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/e41139f2a864c826d4f57983.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/e4ac6af5bcd5d5ae98ee2b38.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/e4e8fb932cf2a26d551dbf99.wav",
+      "peak_dbfs": -4.04,
+      "errors": []
+    },
+    {
+      "file": "source-previews/e53509e5913dbca842b06fc6.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/e5f09b2a1f83630070902101.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/e64675dd2e8e6cedd6632c38.wav",
+      "peak_dbfs": -8.59,
+      "errors": []
+    },
+    {
+      "file": "source-previews/e66855d87c74ee4ee0dbd4bc.wav",
+      "peak_dbfs": -10.59,
+      "errors": []
+    },
+    {
+      "file": "source-previews/e6732dffd2f54a461db068cc.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/e688098c8510bb491ce39f54.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/e703e997a68603eee6ce305e.wav",
+      "peak_dbfs": -12.77,
+      "errors": []
+    },
+    {
+      "file": "source-previews/e7a8640333838853073f9865.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/e814314ebdba9b3d1279c953.wav",
+      "peak_dbfs": -7.75,
+      "errors": []
+    },
+    {
+      "file": "source-previews/e8593fa70cff0cec295102c2.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/e86138a1a866695dba371b83.wav",
+      "peak_dbfs": -4.05,
+      "errors": []
+    },
+    {
+      "file": "source-previews/e89b08e6aa805c24db381f35.wav",
+      "peak_dbfs": -10.32,
+      "errors": []
+    },
+    {
+      "file": "source-previews/e8e8986d9557020f0a7e40c5.wav",
+      "peak_dbfs": -5.43,
+      "errors": []
+    },
+    {
+      "file": "source-previews/e8efc457fa31dcfa02248c67.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/e92072dea29b2482e29eb13d.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/e9495bab549f5e97f9b7f37e.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/e94b85ea70b4abe87f3e2d85.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/e96d3c787fbddfcec967c669.wav",
+      "peak_dbfs": -8.94,
+      "errors": []
+    },
+    {
+      "file": "source-previews/e9a3dfccb6d77aa7c89ad903.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/ea4b69b1d44f0b362b4a83b5.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/ea7720116b7e6276fedd31d4.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/ea7ce5c4384d8cab8fdbd929.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/eaace36b62a86ce5f48a3e68.wav",
+      "peak_dbfs": -4.46,
+      "errors": []
+    },
+    {
+      "file": "source-previews/eaee8fec7438308b82abdfe0.wav",
+      "peak_dbfs": -4.4,
+      "errors": []
+    },
+    {
+      "file": "source-previews/eb775a8ddeb5473c177e138b.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/ebbfd32c3b6d86462253b4ae.wav",
+      "peak_dbfs": -6.62,
+      "errors": []
+    },
+    {
+      "file": "source-previews/ebc42dc4d2052fc340d166a3.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/ec2b6fde51f1db4f871bbde0.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/ec384e6413a1615dee45e84d.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/ec46de8af64c3f94f2a4b8f8.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/ec52c5f5127de6940c7975ff.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/ec8260755f6b8eaceb648ac6.wav",
+      "peak_dbfs": -9.43,
+      "errors": []
+    },
+    {
+      "file": "source-previews/ecdfac83e93e314356645346.wav",
+      "peak_dbfs": -5.75,
+      "errors": []
+    },
+    {
+      "file": "source-previews/ed435eff28a3296895b676ea.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/eec0f6dbe91aaf35078daf07.wav",
+      "peak_dbfs": -7.36,
+      "errors": []
+    },
+    {
+      "file": "source-previews/eec92c29dafea4b0c83ac6b6.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/eee060d8a7476b1ac833c626.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/eef96f57dce1ba18a87d1ea3.wav",
+      "peak_dbfs": -5.97,
+      "errors": []
+    },
+    {
+      "file": "source-previews/ef0cc59284718e0043477d99.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/f00bb7cbd3e8e5a7b9f6a5b2.wav",
+      "peak_dbfs": -5.18,
+      "errors": []
+    },
+    {
+      "file": "source-previews/f065ca038ed3cf1991cc6d61.wav",
+      "peak_dbfs": -6.36,
+      "errors": []
+    },
+    {
+      "file": "source-previews/f070574cb22c659d102075d4.wav",
+      "peak_dbfs": -4.5,
+      "errors": []
+    },
+    {
+      "file": "source-previews/f0e2556502266e887193330e.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/f103f235478297e2726ccf29.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/f10f2b13b311099d1a49f8cc.wav",
+      "peak_dbfs": -6.15,
+      "errors": []
+    },
+    {
+      "file": "source-previews/f196502bb9c14885cebb9f5c.wav",
+      "peak_dbfs": -10.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/f1f206c20e01579ed62633e0.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/f20e62177ef9354284ed1bd0.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/f2bacdc6e1af028af128f6d7.wav",
+      "peak_dbfs": -4.31,
+      "errors": []
+    },
+    {
+      "file": "source-previews/f2cd7c32acbf443ecc9db243.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/f2e098455b9325ca9a0f5396.wav",
+      "peak_dbfs": -9.43,
+      "errors": []
+    },
+    {
+      "file": "source-previews/f2ea2db989adf4eb7646cae7.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/f322dc9879f1526ea9b24f0c.wav",
+      "peak_dbfs": -7.51,
+      "errors": []
+    },
+    {
+      "file": "source-previews/f345e64c5ba4b3ebc744b47c.wav",
+      "peak_dbfs": -6.03,
+      "errors": []
+    },
+    {
+      "file": "source-previews/f3ae1c8a9ea537aab53eb785.wav",
+      "peak_dbfs": -6.63,
+      "errors": []
+    },
+    {
+      "file": "source-previews/f420d6e372ccc2031bd89794.wav",
+      "peak_dbfs": -8.87,
+      "errors": []
+    },
+    {
+      "file": "source-previews/f4306bc08d1ee4217b73dce2.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/f556601f010c9a3f42cb06d5.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/f58b58d99bcd8b64fc5e03c7.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/f5b6ffadced1fd96e7a7d753.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/f6dedaf70cc40714f83c9113.wav",
+      "peak_dbfs": -5.74,
+      "errors": []
+    },
+    {
+      "file": "source-previews/f871694d1d513581990369dd.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/f87fa3b23ba9f58af0add82e.wav",
+      "peak_dbfs": -5.51,
+      "errors": []
+    },
+    {
+      "file": "source-previews/f898516269e96101ce56ac36.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/fa1ba4aa02c89dd2c69d665d.wav",
+      "peak_dbfs": -5.3,
+      "errors": []
+    },
+    {
+      "file": "source-previews/fa2de8b5c63657ac60d006b3.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/faaf6ab9184534a88ef8c09e.wav",
+      "peak_dbfs": -7.88,
+      "errors": []
+    },
+    {
+      "file": "source-previews/faeb0ab7f433d809a01ed862.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/fb1a5b397fe130004fcee846.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/fb2357887c59679c441040ab.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/fb52c574cb5637c5a64e0c80.wav",
+      "peak_dbfs": -4.4,
+      "errors": []
+    },
+    {
+      "file": "source-previews/fb97f7c564fe77acf2fc6423.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/fbb0003cf8f209866a0ca9a3.wav",
+      "peak_dbfs": -5.89,
+      "errors": []
+    },
+    {
+      "file": "source-previews/fbbaf5747bf3ea17c7b3f66f.wav",
+      "peak_dbfs": -5.31,
+      "errors": []
+    },
+    {
+      "file": "source-previews/fbc00a9394dab12975a89fa6.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/fbe2300ee72d5ea634471176.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/fbe55266b92e8b6e00724bf7.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/fbf92d34c9dcd56ec8bb3af7.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/fc4c057451f45bb70ac0557c.wav",
+      "peak_dbfs": -9.58,
+      "errors": []
+    },
+    {
+      "file": "source-previews/fc8290747074a944d672ddbb.wav",
+      "peak_dbfs": -6.5,
+      "errors": []
+    },
+    {
+      "file": "source-previews/fcdc3dd309873084cbf1d54c.wav",
+      "peak_dbfs": -6.28,
+      "errors": []
+    },
+    {
+      "file": "source-previews/fd603f0e596029cb40354529.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/fd72da22a00b53c46f9cdbb5.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/fdef3d0d31b985bfaa06340a.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/fe32d67d4fa748df9e78beff.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/fe723856eb83353ecd8bd594.wav",
+      "peak_dbfs": -5.99,
+      "errors": []
+    },
+    {
+      "file": "source-previews/fe72f665f69225bf9d89cda2.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/feacd79cb9d2219b1b2e9eda.wav",
+      "peak_dbfs": -6.52,
+      "errors": []
+    },
+    {
+      "file": "source-previews/feb0bafa9dc40fc764c9460d.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/ff08aebb2378b1457bfc6e18.wav",
+      "peak_dbfs": -5.06,
+      "errors": []
+    },
+    {
+      "file": "source-previews/ff9b5f5213a372e26066c325.wav",
+      "peak_dbfs": -6.15,
+      "errors": []
+    },
+    {
+      "file": "source-previews/fff9c756dd33ec294234fc92.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "source-previews/fffcb9e461c78a5241d5672a.wav",
+      "peak_dbfs": -5.63,
+      "errors": []
+    },
+    {
+      "file": "comparisons/bombardAttack-02-current.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "comparisons/bombardAttack-02-new.wav",
+      "peak_dbfs": -5.42,
+      "errors": []
+    },
+    {
+      "file": "comparisons/bombardAttack-03-current.wav",
+      "peak_dbfs": -4.81,
+      "errors": []
+    },
+    {
+      "file": "comparisons/bombardAttack-03-new.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "comparisons/bombardAttack-04-current.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "comparisons/bombardAttack-04-new.wav",
+      "peak_dbfs": -6.37,
+      "errors": []
+    },
+    {
+      "file": "comparisons/bombardAttack-current.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "comparisons/bombardAttack-new.wav",
+      "peak_dbfs": -5.89,
+      "errors": []
+    },
+    {
+      "file": "comparisons/bombardLaunch-02-current.wav",
+      "peak_dbfs": -4.56,
+      "errors": []
+    },
+    {
+      "file": "comparisons/bombardLaunch-02-new.wav",
+      "peak_dbfs": -6.9,
+      "errors": []
+    },
+    {
+      "file": "comparisons/bombardLaunch-03-current.wav",
+      "peak_dbfs": -4.56,
+      "errors": []
+    },
+    {
+      "file": "comparisons/bombardLaunch-03-new.wav",
+      "peak_dbfs": -9.77,
+      "errors": []
+    },
+    {
+      "file": "comparisons/bombardLaunch-04-current.wav",
+      "peak_dbfs": -4.56,
+      "errors": []
+    },
+    {
+      "file": "comparisons/bombardLaunch-04-new.wav",
+      "peak_dbfs": -7.08,
+      "errors": []
+    },
+    {
+      "file": "comparisons/bombardLaunch-current.wav",
+      "peak_dbfs": -4.56,
+      "errors": []
+    },
+    {
+      "file": "comparisons/bombardLaunch-new.wav",
+      "peak_dbfs": -10.86,
+      "errors": []
+    },
+    {
+      "file": "comparisons/bossAttack-02-new.wav",
+      "peak_dbfs": -5.25,
+      "errors": []
+    },
+    {
+      "file": "comparisons/bossAttack-03-new.wav",
+      "peak_dbfs": -5.04,
+      "errors": []
+    },
+    {
+      "file": "comparisons/bossAttack-04-new.wav",
+      "peak_dbfs": -6.74,
+      "errors": []
+    },
+    {
+      "file": "comparisons/bossAttack-new.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "comparisons/bossSpawned-02-current.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "comparisons/bossSpawned-02-new.wav",
+      "peak_dbfs": -7.21,
+      "errors": []
+    },
+    {
+      "file": "comparisons/bossSpawned-current.wav",
+      "peak_dbfs": -4.32,
+      "errors": []
+    },
+    {
+      "file": "comparisons/bossSpawned-new.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "comparisons/branchChoice-02-current.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "comparisons/branchChoice-02-new.wav",
+      "peak_dbfs": -9.59,
+      "errors": []
+    },
+    {
+      "file": "comparisons/branchChoice-current.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "comparisons/branchChoice-new.wav",
+      "peak_dbfs": -4.29,
+      "errors": []
+    },
+    {
+      "file": "comparisons/buttonClick-current.wav",
+      "peak_dbfs": -7.56,
+      "errors": []
+    },
+    {
+      "file": "comparisons/buttonClick-new.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "comparisons/chainAttack-02-current.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "comparisons/chainAttack-02-new.wav",
+      "peak_dbfs": -8.86,
+      "errors": []
+    },
+    {
+      "file": "comparisons/chainAttack-03-current.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "comparisons/chainAttack-03-new.wav",
+      "peak_dbfs": -8.84,
+      "errors": []
+    },
+    {
+      "file": "comparisons/chainAttack-04-current.wav",
+      "peak_dbfs": -7.6,
+      "errors": []
+    },
+    {
+      "file": "comparisons/chainAttack-04-new.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "comparisons/chainAttack-current.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "comparisons/chainAttack-new.wav",
+      "peak_dbfs": -5.31,
+      "errors": []
+    },
+    {
+      "file": "comparisons/chainHop-02-current.wav",
+      "peak_dbfs": -6.11,
+      "errors": []
+    },
+    {
+      "file": "comparisons/chainHop-02-new.wav",
+      "peak_dbfs": -11.44,
+      "errors": []
+    },
+    {
+      "file": "comparisons/chainHop-03-current.wav",
+      "peak_dbfs": -10.11,
+      "errors": []
+    },
+    {
+      "file": "comparisons/chainHop-03-new.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "comparisons/chainHop-04-current.wav",
+      "peak_dbfs": -6.11,
+      "errors": []
+    },
+    {
+      "file": "comparisons/chainHop-04-new.wav",
+      "peak_dbfs": -14.64,
+      "errors": []
+    },
+    {
+      "file": "comparisons/chainHop-current.wav",
+      "peak_dbfs": -6.11,
+      "errors": []
+    },
+    {
+      "file": "comparisons/chainHop-new.wav",
+      "peak_dbfs": -6.76,
+      "errors": []
+    },
+    {
+      "file": "comparisons/critical-02-current.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "comparisons/critical-02-new.wav",
+      "peak_dbfs": -11.49,
+      "errors": []
+    },
+    {
+      "file": "comparisons/critical-03-current.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "comparisons/critical-03-new.wav",
+      "peak_dbfs": -10.78,
+      "errors": []
+    },
+    {
+      "file": "comparisons/critical-04-current.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "comparisons/critical-04-new.wav",
+      "peak_dbfs": -9.22,
+      "errors": []
+    },
+    {
+      "file": "comparisons/critical-current.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "comparisons/critical-new.wav",
+      "peak_dbfs": -7.63,
+      "errors": []
+    },
+    {
+      "file": "comparisons/eliteSpawned-02-current.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "comparisons/eliteSpawned-02-new.wav",
+      "peak_dbfs": -7.15,
+      "errors": []
+    },
+    {
+      "file": "comparisons/eliteSpawned-current.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "comparisons/eliteSpawned-new.wav",
+      "peak_dbfs": -5.3,
+      "errors": []
+    },
+    {
+      "file": "comparisons/enemyCharge-02-new.wav",
+      "peak_dbfs": -8.04,
+      "errors": []
+    },
+    {
+      "file": "comparisons/enemyCharge-03-new.wav",
+      "peak_dbfs": -4.57,
+      "errors": []
+    },
+    {
+      "file": "comparisons/enemyCharge-04-new.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "comparisons/enemyCharge-new.wav",
+      "peak_dbfs": -4.37,
+      "errors": []
+    },
+    {
+      "file": "comparisons/enemyDetonate-02-new.wav",
+      "peak_dbfs": -6.05,
+      "errors": []
+    },
+    {
+      "file": "comparisons/enemyDetonate-03-new.wav",
+      "peak_dbfs": -8.19,
+      "errors": []
+    },
+    {
+      "file": "comparisons/enemyDetonate-04-new.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "comparisons/enemyDetonate-new.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "comparisons/enemyHit-02-current.wav",
+      "peak_dbfs": -8.37,
+      "errors": []
+    },
+    {
+      "file": "comparisons/enemyHit-02-new.wav",
+      "peak_dbfs": -9.37,
+      "errors": []
+    },
+    {
+      "file": "comparisons/enemyHit-03-current.wav",
+      "peak_dbfs": -8.55,
+      "errors": []
+    },
+    {
+      "file": "comparisons/enemyHit-03-new.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "comparisons/enemyHit-04-current.wav",
+      "peak_dbfs": -8.37,
+      "errors": []
+    },
+    {
+      "file": "comparisons/enemyHit-04-new.wav",
+      "peak_dbfs": -9.23,
+      "errors": []
+    },
+    {
+      "file": "comparisons/enemyHit-current.wav",
+      "peak_dbfs": -8.37,
+      "errors": []
+    },
+    {
+      "file": "comparisons/enemyHit-new.wav",
+      "peak_dbfs": -9.88,
+      "errors": []
+    },
+    {
+      "file": "comparisons/enemyKilled-02-current.wav",
+      "peak_dbfs": -6.47,
+      "errors": []
+    },
+    {
+      "file": "comparisons/enemyKilled-02-new.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "comparisons/enemyKilled-03-current.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "comparisons/enemyKilled-03-new.wav",
+      "peak_dbfs": -11.37,
+      "errors": []
+    },
+    {
+      "file": "comparisons/enemyKilled-04-current.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "comparisons/enemyKilled-04-new.wav",
+      "peak_dbfs": -10.59,
+      "errors": []
+    },
+    {
+      "file": "comparisons/enemyKilled-current.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "comparisons/enemyKilled-new.wav",
+      "peak_dbfs": -9.81,
+      "errors": []
+    },
+    {
+      "file": "comparisons/enemyProjectile-02-new.wav",
+      "peak_dbfs": -10.25,
+      "errors": []
+    },
+    {
+      "file": "comparisons/enemyProjectile-03-new.wav",
+      "peak_dbfs": -8.41,
+      "errors": []
+    },
+    {
+      "file": "comparisons/enemyProjectile-04-new.wav",
+      "peak_dbfs": -6.3,
+      "errors": []
+    },
+    {
+      "file": "comparisons/enemyProjectile-new.wav",
+      "peak_dbfs": -9.51,
+      "errors": []
+    },
+    {
+      "file": "comparisons/enemySupport-02-new.wav",
+      "peak_dbfs": -4.87,
+      "errors": []
+    },
+    {
+      "file": "comparisons/enemySupport-03-new.wav",
+      "peak_dbfs": -8.47,
+      "errors": []
+    },
+    {
+      "file": "comparisons/enemySupport-04-new.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "comparisons/enemySupport-new.wav",
+      "peak_dbfs": -7.85,
+      "errors": []
+    },
+    {
+      "file": "comparisons/fieldActivated-02-current.wav",
+      "peak_dbfs": -9.65,
+      "errors": []
+    },
+    {
+      "file": "comparisons/fieldActivated-02-new.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "comparisons/fieldActivated-03-current.wav",
+      "peak_dbfs": -9.57,
+      "errors": []
+    },
+    {
+      "file": "comparisons/fieldActivated-03-new.wav",
+      "peak_dbfs": -9.66,
+      "errors": []
+    },
+    {
+      "file": "comparisons/fieldActivated-04-current.wav",
+      "peak_dbfs": -9.57,
+      "errors": []
+    },
+    {
+      "file": "comparisons/fieldActivated-04-new.wav",
+      "peak_dbfs": -9.57,
+      "errors": []
+    },
+    {
+      "file": "comparisons/fieldActivated-current.wav",
+      "peak_dbfs": -9.57,
+      "errors": []
+    },
+    {
+      "file": "comparisons/fieldActivated-new.wav",
+      "peak_dbfs": -9.25,
+      "errors": []
+    },
+    {
+      "file": "comparisons/gameOver-02-current.wav",
+      "peak_dbfs": -7.97,
+      "errors": []
+    },
+    {
+      "file": "comparisons/gameOver-02-new.wav",
+      "peak_dbfs": -6.87,
+      "errors": []
+    },
+    {
+      "file": "comparisons/gameOver-current.wav",
+      "peak_dbfs": -7.97,
+      "errors": []
+    },
+    {
+      "file": "comparisons/gameOver-new.wav",
+      "peak_dbfs": -6.58,
+      "errors": []
+    },
+    {
+      "file": "comparisons/lobbyGate-new.wav",
+      "peak_dbfs": -13.16,
+      "errors": []
+    },
+    {
+      "file": "comparisons/lobbyRain-new.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "comparisons/lobbyRoof-new.wav",
+      "peak_dbfs": -9.03,
+      "errors": []
+    },
+    {
+      "file": "comparisons/lobbyWind-new.wav",
+      "peak_dbfs": -9.3,
+      "errors": []
+    },
+    {
+      "file": "comparisons/lobbyWinter-new.wav",
+      "peak_dbfs": -11.59,
+      "errors": []
+    },
+    {
+      "file": "comparisons/lock-02-current.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "comparisons/lock-02-new.wav",
+      "peak_dbfs": -10.18,
+      "errors": []
+    },
+    {
+      "file": "comparisons/lock-current.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "comparisons/lock-new.wav",
+      "peak_dbfs": -8.68,
+      "errors": []
+    },
+    {
+      "file": "comparisons/magicStoneCollected-02-current.wav",
+      "peak_dbfs": -13.91,
+      "errors": []
+    },
+    {
+      "file": "comparisons/magicStoneCollected-02-new.wav",
+      "peak_dbfs": -18.17,
+      "errors": []
+    },
+    {
+      "file": "comparisons/magicStoneCollected-03-current.wav",
+      "peak_dbfs": -13.91,
+      "errors": []
+    },
+    {
+      "file": "comparisons/magicStoneCollected-03-new.wav",
+      "peak_dbfs": -13.88,
+      "errors": []
+    },
+    {
+      "file": "comparisons/magicStoneCollected-04-current.wav",
+      "peak_dbfs": -13.91,
+      "errors": []
+    },
+    {
+      "file": "comparisons/magicStoneCollected-04-new.wav",
+      "peak_dbfs": -7.79,
+      "errors": []
+    },
+    {
+      "file": "comparisons/magicStoneCollected-current.wav",
+      "peak_dbfs": -13.91,
+      "errors": []
+    },
+    {
+      "file": "comparisons/magicStoneCollected-new.wav",
+      "peak_dbfs": -9.62,
+      "errors": []
+    },
+    {
+      "file": "comparisons/mineExploded-02-current.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "comparisons/mineExploded-02-new.wav",
+      "peak_dbfs": -4.59,
+      "errors": []
+    },
+    {
+      "file": "comparisons/mineExploded-03-current.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "comparisons/mineExploded-03-new.wav",
+      "peak_dbfs": -6.03,
+      "errors": []
+    },
+    {
+      "file": "comparisons/mineExploded-04-current.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "comparisons/mineExploded-04-new.wav",
+      "peak_dbfs": -4.81,
+      "errors": []
+    },
+    {
+      "file": "comparisons/mineExploded-current.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "comparisons/mineExploded-new.wav",
+      "peak_dbfs": -9.3,
+      "errors": []
+    },
+    {
+      "file": "comparisons/minePlaced-02-current.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "comparisons/minePlaced-02-new.wav",
+      "peak_dbfs": -15.65,
+      "errors": []
+    },
+    {
+      "file": "comparisons/minePlaced-03-current.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "comparisons/minePlaced-03-new.wav",
+      "peak_dbfs": -4.79,
+      "errors": []
+    },
+    {
+      "file": "comparisons/minePlaced-04-current.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "comparisons/minePlaced-04-new.wav",
+      "peak_dbfs": -5.09,
+      "errors": []
+    },
+    {
+      "file": "comparisons/minePlaced-current.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "comparisons/minePlaced-new.wav",
+      "peak_dbfs": -6.32,
+      "errors": []
+    },
+    {
+      "file": "comparisons/orbitAttack-02-current.wav",
+      "peak_dbfs": -13.42,
+      "errors": []
+    },
+    {
+      "file": "comparisons/orbitAttack-02-new.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "comparisons/orbitAttack-03-current.wav",
+      "peak_dbfs": -12.81,
+      "errors": []
+    },
+    {
+      "file": "comparisons/orbitAttack-03-new.wav",
+      "peak_dbfs": -13.35,
+      "errors": []
+    },
+    {
+      "file": "comparisons/orbitAttack-04-current.wav",
+      "peak_dbfs": -12.81,
+      "errors": []
+    },
+    {
+      "file": "comparisons/orbitAttack-04-new.wav",
+      "peak_dbfs": -7.08,
+      "errors": []
+    },
+    {
+      "file": "comparisons/orbitAttack-current.wav",
+      "peak_dbfs": -13.73,
+      "errors": []
+    },
+    {
+      "file": "comparisons/orbitAttack-new.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "comparisons/piercingAttack-02-current.wav",
+      "peak_dbfs": -6.69,
+      "errors": []
+    },
+    {
+      "file": "comparisons/piercingAttack-02-new.wav",
+      "peak_dbfs": -8.35,
+      "errors": []
+    },
+    {
+      "file": "comparisons/piercingAttack-03-current.wav",
+      "peak_dbfs": -6.69,
+      "errors": []
+    },
+    {
+      "file": "comparisons/piercingAttack-03-new.wav",
+      "peak_dbfs": -5.7,
+      "errors": []
+    },
+    {
+      "file": "comparisons/piercingAttack-04-current.wav",
+      "peak_dbfs": -8.53,
+      "errors": []
+    },
+    {
+      "file": "comparisons/piercingAttack-04-new.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "comparisons/piercingAttack-current.wav",
+      "peak_dbfs": -6.69,
+      "errors": []
+    },
+    {
+      "file": "comparisons/piercingAttack-new.wav",
+      "peak_dbfs": -6.12,
+      "errors": []
+    },
+    {
+      "file": "comparisons/playerHit-02-current.wav",
+      "peak_dbfs": -7.73,
+      "errors": []
+    },
+    {
+      "file": "comparisons/playerHit-02-new.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "comparisons/playerHit-03-current.wav",
+      "peak_dbfs": -8.81,
+      "errors": []
+    },
+    {
+      "file": "comparisons/playerHit-03-new.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "comparisons/playerHit-04-current.wav",
+      "peak_dbfs": -5.5,
+      "errors": []
+    },
+    {
+      "file": "comparisons/playerHit-04-new.wav",
+      "peak_dbfs": -5.77,
+      "errors": []
+    },
+    {
+      "file": "comparisons/playerHit-current.wav",
+      "peak_dbfs": -7.87,
+      "errors": []
+    },
+    {
+      "file": "comparisons/playerHit-new.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "comparisons/purchase-02-current.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "comparisons/purchase-02-new.wav",
+      "peak_dbfs": -12.99,
+      "errors": []
+    },
+    {
+      "file": "comparisons/purchase-current.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "comparisons/purchase-new.wav",
+      "peak_dbfs": -11.53,
+      "errors": []
+    },
+    {
+      "file": "comparisons/reroll-02-current.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "comparisons/reroll-02-new.wav",
+      "peak_dbfs": -12.11,
+      "errors": []
+    },
+    {
+      "file": "comparisons/reroll-current.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "comparisons/reroll-new.wav",
+      "peak_dbfs": -8.71,
+      "errors": []
+    },
+    {
+      "file": "comparisons/shotgunAttack-02-current.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "comparisons/shotgunAttack-02-new.wav",
+      "peak_dbfs": -6.27,
+      "errors": []
+    },
+    {
+      "file": "comparisons/shotgunAttack-03-current.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "comparisons/shotgunAttack-03-new.wav",
+      "peak_dbfs": -6.75,
+      "errors": []
+    },
+    {
+      "file": "comparisons/shotgunAttack-04-current.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "comparisons/shotgunAttack-04-new.wav",
+      "peak_dbfs": -4.94,
+      "errors": []
+    },
+    {
+      "file": "comparisons/shotgunAttack-current.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "comparisons/shotgunAttack-new.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "comparisons/slashAttack-02-current.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "comparisons/slashAttack-02-new.wav",
+      "peak_dbfs": -10.76,
+      "errors": []
+    },
+    {
+      "file": "comparisons/slashAttack-03-current.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "comparisons/slashAttack-03-new.wav",
+      "peak_dbfs": -14.41,
+      "errors": []
+    },
+    {
+      "file": "comparisons/slashAttack-04-current.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "comparisons/slashAttack-04-new.wav",
+      "peak_dbfs": -15.46,
+      "errors": []
+    },
+    {
+      "file": "comparisons/slashAttack-current.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "comparisons/slashAttack-new.wav",
+      "peak_dbfs": -18.88,
+      "errors": []
+    },
+    {
+      "file": "comparisons/stageClear-02-current.wav",
+      "peak_dbfs": -7.36,
+      "errors": []
+    },
+    {
+      "file": "comparisons/stageClear-02-new.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "comparisons/stageClear-current.wav",
+      "peak_dbfs": -8.46,
+      "errors": []
+    },
+    {
+      "file": "comparisons/stageClear-new.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "comparisons/supplyFanfare-02-current.wav",
+      "peak_dbfs": -6.14,
+      "errors": []
+    },
+    {
+      "file": "comparisons/supplyFanfare-02-new.wav",
+      "peak_dbfs": -4.5,
+      "errors": []
+    },
+    {
+      "file": "comparisons/supplyFanfare-current.wav",
+      "peak_dbfs": -7.48,
+      "errors": []
+    },
+    {
+      "file": "comparisons/supplyFanfare-new.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "comparisons/supplyLatch-02-current.wav",
+      "peak_dbfs": -6.29,
+      "errors": []
+    },
+    {
+      "file": "comparisons/supplyLatch-02-new.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "comparisons/supplyLatch-current.wav",
+      "peak_dbfs": -5.06,
+      "errors": []
+    },
+    {
+      "file": "comparisons/supplyLatch-new.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "comparisons/turretFired-02-current.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "comparisons/turretFired-02-new.wav",
+      "peak_dbfs": -10.45,
+      "errors": []
+    },
+    {
+      "file": "comparisons/turretFired-03-current.wav",
+      "peak_dbfs": -4.47,
+      "errors": []
+    },
+    {
+      "file": "comparisons/turretFired-03-new.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "comparisons/turretFired-04-current.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "comparisons/turretFired-04-new.wav",
+      "peak_dbfs": -6.25,
+      "errors": []
+    },
+    {
+      "file": "comparisons/turretFired-current.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "comparisons/turretFired-new.wav",
+      "peak_dbfs": -6.04,
+      "errors": []
+    },
+    {
+      "file": "comparisons/walletSweep-02-current.wav",
+      "peak_dbfs": -9.2,
+      "errors": []
+    },
+    {
+      "file": "comparisons/walletSweep-02-new.wav",
+      "peak_dbfs": -12.51,
+      "errors": []
+    },
+    {
+      "file": "comparisons/walletSweep-current.wav",
+      "peak_dbfs": -9.2,
+      "errors": []
+    },
+    {
+      "file": "comparisons/walletSweep-new.wav",
+      "peak_dbfs": -4.25,
+      "errors": []
+    },
+    {
+      "file": "comparisons/waveCompleted-02-current.wav",
+      "peak_dbfs": -5.7,
+      "errors": []
+    },
+    {
+      "file": "comparisons/waveCompleted-02-new.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "comparisons/waveCompleted-current.wav",
+      "peak_dbfs": -6.42,
+      "errors": []
+    },
+    {
+      "file": "comparisons/waveCompleted-new.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "comparisons/waveCountdownTick-02-current.wav",
+      "peak_dbfs": -5.19,
+      "errors": []
+    },
+    {
+      "file": "comparisons/waveCountdownTick-02-new.wav",
+      "peak_dbfs": -8.58,
+      "errors": []
+    },
+    {
+      "file": "comparisons/waveCountdownTick-current.wav",
+      "peak_dbfs": -5.19,
+      "errors": []
+    },
+    {
+      "file": "comparisons/waveCountdownTick-new.wav",
+      "peak_dbfs": -8.58,
+      "errors": []
+    },
+    {
+      "file": "comparisons/waveStarted-02-current.wav",
+      "peak_dbfs": -7.4,
+      "errors": []
+    },
+    {
+      "file": "comparisons/waveStarted-02-new.wav",
+      "peak_dbfs": -4.08,
+      "errors": []
+    },
+    {
+      "file": "comparisons/waveStarted-current.wav",
+      "peak_dbfs": -7.4,
+      "errors": []
+    },
+    {
+      "file": "comparisons/waveStarted-new.wav",
+      "peak_dbfs": -6.78,
+      "errors": []
+    },
+    {
+      "file": "comparisons/weaponFired-02-current.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "comparisons/weaponFired-02-new.wav",
+      "peak_dbfs": -8.03,
+      "errors": []
+    },
+    {
+      "file": "comparisons/weaponFired-03-current.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "comparisons/weaponFired-03-new.wav",
+      "peak_dbfs": -7.24,
+      "errors": []
+    },
+    {
+      "file": "comparisons/weaponFired-04-current.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "comparisons/weaponFired-04-new.wav",
+      "peak_dbfs": -8.25,
+      "errors": []
+    },
+    {
+      "file": "comparisons/weaponFired-current.wav",
+      "peak_dbfs": -4.07,
+      "errors": []
+    },
+    {
+      "file": "comparisons/weaponFired-new.wav",
+      "peak_dbfs": -4.01,
+      "errors": []
+    },
+    {
+      "file": "comparisons/weaponPurchase-02-current.wav",
+      "peak_dbfs": -6.83,
+      "errors": []
+    },
+    {
+      "file": "comparisons/weaponPurchase-02-new.wav",
+      "peak_dbfs": -4.67,
+      "errors": []
+    },
+    {
+      "file": "comparisons/weaponPurchase-current.wav",
+      "peak_dbfs": -6.83,
+      "errors": []
+    },
+    {
+      "file": "comparisons/weaponPurchase-new.wav",
+      "peak_dbfs": -5.51,
+      "errors": []
+    }
+  ],
+  "scope": "sample format/peak/silence/edge/loop seam/provenance/mapping/audio preview only",
+  "auditory_review": "NOT PERFORMED: no audio perception tool; user approval pending",
+  "gameplay_device_full_tests": "NOT PERFORMED",
+  "live_files_unchanged": true
+}

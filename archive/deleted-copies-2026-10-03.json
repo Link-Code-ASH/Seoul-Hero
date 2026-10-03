@@ -1,0 +1,289 @@
+{
+  "date": "2026-10-03",
+  "description": "Only byte-identical Godot export copies were deleted. Regenerate from listed canonical source if historical rendering is required.",
+  "entries": [
+    {
+      "file": "godot/assets/content-2026/parkDojun-portrait-01.png",
+      "original": "archive/retired-art/assets/content-2026/parkDojun-portrait-01.png",
+      "bytes": 2081663,
+      "sha256": "150c2bace66fd48b84bc225d2b08068386c35b89b3f52abdbe1405fe8b59da2b"
+    },
+    {
+      "file": "godot/assets/content-2026/yoonHarin-portrait-01.png",
+      "original": "archive/retired-art/assets/content-2026/yoonHarin-portrait-01.png",
+      "bytes": 1734440,
+      "sha256": "a11c132c9d8a1fbaf217f60d4f970d4ea05445ba166e37993af33fe97429592f"
+    },
+    {
+      "file": "godot/assets/ui/materials/frame_command_01.webp",
+      "original": "assets/ui/materials/frame_command_01.webp",
+      "bytes": 11042,
+      "sha256": "ded6440f13be8f3e7238d4c294a4be5de04539007ee39c88074b3f2f0d88b6e2"
+    },
+    {
+      "file": "godot/assets/ui/materials/frame_map_01.webp",
+      "original": "assets/ui/materials/frame_map_01.webp",
+      "bytes": 18946,
+      "sha256": "6cc140d4f5222bdb173aa9a95241b1e11ecb42d9076160d259149d96cb4ce4f5"
+    },
+    {
+      "file": "godot/assets/ui/materials/frame_instrument_01.webp",
+      "original": "assets/ui/materials/frame_instrument_01.webp",
+      "bytes": 10678,
+      "sha256": "43f7966050b8099dc35210e4d74a3dd907dd732a32d302af417634339d7d1eeb"
+    },
+    {
+      "file": "godot/assets/ui/materials/frame_personnel_01.webp",
+      "original": "assets/ui/materials/frame_personnel_01.webp",
+      "bytes": 77599,
+      "sha256": "7fae428e77b8a80bb371a4ccf07a9ac86ab13322e73929dc9b8a6836b890d639"
+    },
+    {
+      "file": "godot/assets/ui/materials/frame_weapon_01.webp",
+      "original": "assets/ui/materials/frame_weapon_01.webp",
+      "bytes": 46914,
+      "sha256": "8d3a97f2d09b8d8c31fd34ffc025300199bac102a4deefc9eae676e242a00897"
+    },
+    {
+      "file": "godot/assets/ui/materials/frame_arcane_01.webp",
+      "original": "assets/ui/materials/frame_arcane_01.webp",
+      "bytes": 13246,
+      "sha256": "bb9cd6d27c989a3f61afb03dfc69527137231ac4e90ee8f7da8eb63225ad5ed7"
+    },
+    {
+      "file": "godot/assets/ui/materials/frame_supply_01.webp",
+      "original": "assets/ui/materials/frame_supply_01.webp",
+      "bytes": 16198,
+      "sha256": "d5d9140f84e649118bdae4f51d86b821b900e4d8154dda2b8f682be709750982"
+    },
+    {
+      "file": "godot/assets/ui/materials/frame_reward_01.webp",
+      "original": "assets/ui/materials/frame_reward_01.webp",
+      "bytes": 42524,
+      "sha256": "4c4b3ebbfcec01c8a8c2c2dc54614e685ba2ad90fcdfa65d0f3e9371d4261853"
+    },
+    {
+      "file": "godot/assets/ui/materials/frame_association_01.webp",
+      "original": "assets/ui/materials/frame_association_01.webp",
+      "bytes": 31855,
+      "sha256": "6c9822c0c9d2a6f6f72c981791a39c8c2a6c2973fc3246da4933873810d0959f"
+    },
+    {
+      "file": "godot/assets/ui/materials/frame_control_01.webp",
+      "original": "assets/ui/materials/frame_control_01.webp",
+      "bytes": 10592,
+      "sha256": "e0b3cb569f49cd7dc7fa00f2299c23ca2046cae0b69fe85eb83ef4b614607fd7"
+    },
+    {
+      "file": "godot/assets/ui/materials/steel_panel_01.png",
+      "original": "archive/retired-art/assets/ui/materials/steel_panel_01.png",
+      "bytes": 395829,
+      "sha256": "0af14d76c80511fb535e2e4441bf07b7d59d98eb3500148306468590516ea552"
+    },
+    {
+      "file": "godot/assets/guild/guild_rail_foreground_01.webp",
+      "original": "archive/retired-art/assets/guild/guild_rail_foreground_01.webp",
+      "bytes": 94084,
+      "sha256": "edbb7b10b67e2171e9e2c80b71072f1882f60079958a8cc21f8cddfec8930cb6"
+    },
+    {
+      "file": "godot/assets/guild/guild_song_pixel_01.png",
+      "original": "archive/retired-art/assets/guild/guild_song_pixel_01.png",
+      "bytes": 27062,
+      "sha256": "2fc5d4d62609eb1aedd071ede7f0c4202b5e23440a339bf0af60d71cdbc5d912"
+    },
+    {
+      "file": "godot/assets/guild/guild_kang_pixel_01.png",
+      "original": "archive/retired-art/assets/guild/guild_kang_pixel_01.png",
+      "bytes": 32108,
+      "sha256": "bbc7c0ae490bb46615eced27675c9bcf031db57434ee5483195fc97869feb1c8"
+    },
+    {
+      "file": "godot/assets/effects/effect_mana_slash_02.png",
+      "original": "archive/retired-art/assets/effects/effect_mana_slash_02.png",
+      "bytes": 1628075,
+      "sha256": "78793c45c401c4d6e62d6a70b1908acd054265bfe46927749fe7a13aacc6d26c"
+    },
+    {
+      "file": "godot/assets/effects/effect_chain_lightning_02.png",
+      "original": "archive/retired-art/assets/effects/effect_chain_lightning_02.png",
+      "bytes": 700433,
+      "sha256": "33677549064baa67503ee57beccfe14ff6964a4896c88f0bd7273c06f6233297"
+    },
+    {
+      "file": "godot/assets/effects/effect_combined_explosion_mine_02.png",
+      "original": "archive/retired-art/assets/effects/effect_combined_explosion_mine_02.png",
+      "bytes": 1698405,
+      "sha256": "bd16fd8cbf593c69007c5baa11ea7ab70ef9c47f6b5fc2527fc6d9b321210402"
+    },
+    {
+      "file": "godot/assets/effects/effect_combined_explosion_orange_01.png",
+      "original": "archive/retired-art/assets/effects/effect_combined_explosion_orange_01.png",
+      "bytes": 1755499,
+      "sha256": "fab174c4a783072ae40a12efed60d020cbde2bac3c9c747b92880906a27c1fff"
+    },
+    {
+      "file": "godot/assets/ui/archive/blessing_tempo_01.png",
+      "original": "archive/retired-art/assets/ui/archive/blessing_tempo_01.png",
+      "bytes": 183258,
+      "sha256": "6195e549f2a75207ee2fecb66dae397c6e9cef192bd0fd468622df159f6a56b9"
+    },
+    {
+      "file": "godot/assets/ui/archive/blessing_mountain_01.png",
+      "original": "archive/retired-art/assets/ui/archive/blessing_mountain_01.png",
+      "bytes": 253714,
+      "sha256": "18bbaddca33f475d8c0368789ecce505ccb8fdd3221e49f86677f83d87503578"
+    },
+    {
+      "file": "godot/assets/ui/archive/blessing_armor_01.png",
+      "original": "archive/retired-art/assets/ui/archive/blessing_armor_01.png",
+      "bytes": 219113,
+      "sha256": "bc3bed692a1660880caec88105a239ace09862fd4a6c0bb739d840f397bb29df"
+    },
+    {
+      "file": "godot/assets/ui/archive/blessing_wind_01.png",
+      "original": "archive/retired-art/assets/ui/archive/blessing_wind_01.png",
+      "bytes": 229124,
+      "sha256": "c50084cc006aea75f4b1ab3026411e51220b92a7f702d291184cd4763f560354"
+    },
+    {
+      "file": "godot/assets/ui/archive/blessing_fortune_01.png",
+      "original": "archive/retired-art/assets/ui/archive/blessing_fortune_01.png",
+      "bytes": 197466,
+      "sha256": "8c0d5fec86a8cfc34356fd4d0d214d4fdef648fdf898a3aeb477e6600818c1db"
+    },
+    {
+      "file": "godot/assets/ui/archive/blessing_harvest_01.png",
+      "original": "archive/retired-art/assets/ui/archive/blessing_harvest_01.png",
+      "bytes": 238279,
+      "sha256": "4abda34736da2593b0fe2c5712ea4cb9177233704f9c5d74f79d0a543c94dc36"
+    },
+    {
+      "file": "godot/assets/environment/environment_bus_stop_01.png",
+      "original": "archive/retired-art/assets/environment/environment_bus_stop_01.png",
+      "bytes": 1263252,
+      "sha256": "6b75b2c43368f45001395548ff7f93f8933d29b81a75c2c8cc34f4859e1412be"
+    },
+    {
+      "file": "godot/assets/environment/environment_street_lamp_01.png",
+      "original": "archive/retired-art/assets/environment/environment_street_lamp_01.png",
+      "bytes": 402091,
+      "sha256": "bdf52ec1501462cd2ffeca5f8cc83922f50fc8238569eca7420a974d057b1b5d"
+    },
+    {
+      "file": "godot/assets/environment/environment_tree_planter_01.png",
+      "original": "archive/retired-art/assets/environment/environment_tree_planter_01.png",
+      "bytes": 1211002,
+      "sha256": "3253fb738e2ecba6f07653437fa5c598827ba5e3c62ed301e1be3f9d27a5e9a1"
+    },
+    {
+      "file": "godot/assets/ui/title/title_awakener_duo_01.webp",
+      "original": "assets/ui/title/title_awakener_duo_01.webp",
+      "bytes": 372394,
+      "sha256": "2fce0c9c15e0555a6f6cacd60f7e09caa6749a6e6be8d212be5c91ef02e00341"
+    },
+    {
+      "file": "godot/assets/guild/guild_operator_han_seoa_illustration_01.webp",
+      "original": "assets/guild/guild_operator_han_seoa_illustration_01.webp",
+      "bytes": 188903,
+      "sha256": "d5be3c84e838ccf4a2ccdd9738607d6f40a33766981b1eab50ac2234e9e3b05e"
+    },
+    {
+      "file": "godot/assets/guild/guild_operator_han_seoa_lobby_face_01.webp",
+      "original": "assets/guild/guild_operator_han_seoa_lobby_face_01.webp",
+      "bytes": 288397,
+      "sha256": "7309f454fde92a98946ff951467e06010532357fa5f44beb6d43afc5d55d8b7b"
+    },
+    {
+      "file": "godot/assets/guild/guild_operator_han_seoa_topdown_01.webp",
+      "original": "assets/guild/guild_operator_han_seoa_topdown_01.webp",
+      "bytes": 114863,
+      "sha256": "5366572aea70535237e6d4763d55abba599f3df82dd733393a0d1b72d172f6c5"
+    },
+    {
+      "file": "godot/assets/guild/guild_operator_pogo_down_upper_01.webp",
+      "original": "assets/guild/guild_operator_pogo_down_upper_01.webp",
+      "bytes": 107877,
+      "sha256": "3c36be752ff324fc6481aca547137b449101e66b234174c04d526b74cd48ae62"
+    },
+    {
+      "file": "godot/assets/guild/guild_operator_pogo_up_upper_01.webp",
+      "original": "assets/guild/guild_operator_pogo_up_upper_01.webp",
+      "bytes": 147780,
+      "sha256": "2c91d6184e225192fbb9bd5987e7b5aa6445c055cedaa81cb2ca0b1673591ef3"
+    },
+    {
+      "file": "godot/assets/guild/guild_operator_pogo_right_upper_01.webp",
+      "original": "assets/guild/guild_operator_pogo_right_upper_01.webp",
+      "bytes": 171330,
+      "sha256": "195ca5fdf56471677af9dfab35842672066e23bfafcea64c9027fc8d0ca19866"
+    },
+    {
+      "file": "godot/assets/guild/guild_operator_pogo_left_upper_01.webp",
+      "original": "assets/guild/guild_operator_pogo_left_upper_01.webp",
+      "bytes": 168111,
+      "sha256": "ec63217693b2ec04ef113c41da819f9dc23e288ef58e5e3831bf19cb6d7c4aa2"
+    },
+    {
+      "file": "godot/assets/guild/guild_operator_pogo_spring_01.webp",
+      "original": "assets/guild/guild_operator_pogo_spring_01.webp",
+      "bytes": 7067,
+      "sha256": "09c16c7a5eefd4f6d7d5b40a553bf1d07e91dbbb33ad9e859683e3d9fac50498"
+    },
+    {
+      "file": "godot/assets/guild/guild_operator_pogo_tip_01.webp",
+      "original": "assets/guild/guild_operator_pogo_tip_01.webp",
+      "bytes": 5330,
+      "sha256": "5654e3f18a8b2292638b035799fdd18ece11104c8c8fbbda31b9370e8e0993e0"
+    },
+    {
+      "file": "godot/design/ui-premium-v5/assets/weapon-surface.png",
+      "original": "design/ui-premium-v5/assets/weapon-surface.png",
+      "bytes": 1507540,
+      "sha256": "da8ab8d7863cada5f603cf7a0b0c0338ad2f6a5175ca1b458fea1eebff1be457"
+    },
+    {
+      "file": "godot/design/ui-premium-v5/assets/archive-surface.png",
+      "original": "design/ui-premium-v5/assets/archive-surface.png",
+      "bytes": 1939296,
+      "sha256": "eccf618ad4ceae90946ca90935f66f1eba515b4805b71bdeb5032ae2086ef1a6"
+    },
+    {
+      "file": "godot/design/ui-premium-v5/assets/control-surface.png",
+      "original": "design/ui-premium-v5/assets/control-surface.png",
+      "bytes": 1012851,
+      "sha256": "f729f4fba4c5c14d7d16929fb1662f34aae3e76a48bdf935de43622e891c820f"
+    },
+    {
+      "file": "godot/design/ui-premium-v5/assets/growth-panel.png",
+      "original": "design/ui-premium-v5/assets/growth-panel.png",
+      "bytes": 2233907,
+      "sha256": "b043977e0c6c00e7669de0939956c06742638a948153da80e366154d121377b7"
+    },
+    {
+      "file": "godot/design/ui-premium-v5/assets/dock-haze.png",
+      "original": "design/ui-premium-v5/assets/dock-haze.png",
+      "bytes": 1224825,
+      "sha256": "883a10297183c52e6c8d8ec6af73278168c18c089ae3e6529caab2ead60470c1"
+    },
+    {
+      "file": "godot/design/ui-premium-v5/assets/facility-icons.png",
+      "original": "design/ui-premium-v5/assets/facility-icons.png",
+      "bytes": 1226753,
+      "sha256": "dd16c9d820768d3f4efe1c722380d8d138a89fea6aca20b141bee187e975d556"
+    },
+    {
+      "file": "godot/design/ui-premium-v5/assets/deployment.png",
+      "original": "design/ui-premium-v5/assets/deployment.png",
+      "bytes": 2397894,
+      "sha256": "83256659952c19672ecfdd5b8354d719c33af255f14980e14d0f25f47d16f6bc"
+    },
+    {
+      "file": "godot/assets/ui/inventory_atlas_01.png",
+      "original": "assets/ui/inventory_atlas_01.png",
+      "bytes": 2154747,
+      "sha256": "28e8ec49b4080cac8357553934accba184640e540111231f1a6e285c24b588e3"
+    }
+  ],
+  "retained": []
+}
