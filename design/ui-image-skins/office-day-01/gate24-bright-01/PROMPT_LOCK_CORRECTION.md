@@ -1,0 +1,5 @@
+# 무기 탭 잠금 조작부 보완 프롬프트
+
+Precise UI mockup correction. Edit this bright Gate24 WEAPONS concept image. Change ONLY the missing unlocked lock controls: add one small pale-white beveled octagonal button with a deep navy OPEN PADLOCK glyph at the top-right inside product card1 (마력탄), card3 (연쇄 번개), and card4 (자동 포탑). Each control is exactly the same size and position relative to its card as card2's existing mint lock control. These are the three existing standard shop controls, not new actions. Card2's mint CLOSED lock stays unchanged. There must be exactly FOUR visible lock controls, one per product card. Make the open shackle unmistakable.
+Preserve absolutely everything else: entire background, all text/values/icons/shapes, brightness/color palette, same character, same four cards, selected무기tab, header and footer, all purchase priceplates23/36/36/44, all weapon art and descriptions. Keep same exact image dimensions and915:412aspect ratio. No other changes, no new labels, no darker style, no extra decorations. Output one corrected screen only.
+

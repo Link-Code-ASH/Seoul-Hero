@@ -11,6 +11,7 @@ var _particles: Array[Dictionary] = []
 var _clock := 0.0
 var _last_size := REFERENCE
 var _mist: GradientTexture2D
+var _app_hidden := false
 
 func _ready() -> void:
 	mouse_filter = Control.MOUSE_FILTER_IGNORE
@@ -37,7 +38,7 @@ func _ready() -> void:
 	_visibility_changed()
 
 func _visibility_changed() -> void:
-	set_process(is_visible_in_tree())
+	set_process(is_visible_in_tree() and not _app_hidden)
 
 func _resize_particles() -> void:
 	if size.x <= 0 or size.y <= 0: return
@@ -48,7 +49,7 @@ func _resize_particles() -> void:
 	queue_redraw()
 
 func _process(delta: float) -> void:
-	if not is_visible_in_tree(): return
+	if not is_visible_in_tree() or _app_hidden: return
 	var dt := minf(delta,0.04)
 	_clock += dt
 	var pixel_scale := minf(size.x / REFERENCE.x,size.y / REFERENCE.y)
@@ -79,6 +80,9 @@ func _draw() -> void:
 		var color := Color(str(layer.color))
 		var radius: float = float(layer["size"]) * depth * pixel_scale
 		color.a *= depth
+		# Layer-specific traveling emphasis strengthens depth without adding particles.
+		var rhythm: float = float(layer.get("rhythm",0.0))
+		color.a *= 1.0-rhythm+rhythm*(0.5+0.5*sin(_clock*float(layer.get("rhythm_speed",0.7))+particle.phase))
 		match str(layer.kind):
 			"rain": draw_line(at,at+Vector2(-0.25,1.0)*radius,color,maxf(0.65,pixel_scale*0.7),true)
 			"ripple":
@@ -108,3 +112,10 @@ func _draw() -> void:
 				draw_set_transform(center,0,Vector2(0.7,1.0))
 				draw_arc(Vector2.ZERO,radius*(0.82+particle.cycle*0.18),0,TAU,48,color,pixel_scale*2.0,true)
 				draw_set_transform(Vector2.ZERO)
+
+func _notification(what: int) -> void:
+	if what == NOTIFICATION_APPLICATION_PAUSED or what == NOTIFICATION_APPLICATION_FOCUS_OUT:
+		_app_hidden = true; set_process(false)
+	elif what == NOTIFICATION_APPLICATION_RESUMED or what == NOTIFICATION_APPLICATION_FOCUS_IN:
+		_app_hidden = false
+		if is_node_ready(): _visibility_changed()

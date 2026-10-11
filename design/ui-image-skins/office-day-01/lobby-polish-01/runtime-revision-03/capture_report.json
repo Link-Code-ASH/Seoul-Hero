@@ -1,0 +1,109 @@
+{
+  "artworkLocalTransforms": {
+    "GateIcon": [
+      40.0,
+      20.0,
+      1.0,
+      1.0
+    ],
+    "LobbyArchive": [
+      26.0,
+      7.0,
+      1.0,
+      1.0
+    ],
+    "LobbyAssociation": [
+      26.0,
+      7.0,
+      1.0,
+      1.0
+    ],
+    "LobbySettings": [
+      26.0,
+      7.0,
+      1.0,
+      1.0
+    ],
+    "OperatorFace": [
+      9.0,
+      9.0,
+      1.0,
+      1.0
+    ]
+  },
+  "artworkLocalTransformsUnchanged": true,
+  "crewFrozen": true,
+  "deployHoverX": -12.0,
+  "deployInputRectUnchanged": true,
+  "deployPressedY": 1.5,
+  "deployRestored": true,
+  "fixedSeed": 20261011,
+  "frames": 90,
+  "gifFPS": 15,
+  "gifSeconds": 6.0,
+  "menuDeploySlopesEqual": true,
+  "menuHoverX": -12.0,
+  "menuInputRectUnchanged": true,
+  "menuPressedY": 1.5,
+  "menuRestored": true,
+  "nativeFocusStyleEmpty": true,
+  "operatorLine": "오늘 목표는 칼퇴예요. 게이트가 협조만 해 준다면요...",
+  "plateSlopes": [
+    0.285714285714286,
+    0.285714285714286
+  ],
+  "productionLobby": true,
+  "profileCharacters": [
+    "yoonHarin",
+    "parkDojun",
+    "kangTaehoon",
+    "awakener"
+  ],
+  "rapidHoverRestored": true,
+  "saveWrites": false,
+  "speakerButtonRect": [
+    858.0,
+    10.0,
+    44.0,
+    44.0
+  ],
+  "userProfileRead": false,
+  "viewport": [
+    915,
+    412
+  ],
+  "officeBackgroundUnchangedPixels": true,
+  "crewFixedPositions": [
+    [
+      100,
+      366
+    ],
+    [
+      226,
+      376
+    ],
+    [
+      352,
+      366
+    ],
+    [
+      478,
+      376
+    ]
+  ],
+  "crewPosePixelsUnchanged": true,
+  "crewInitialPoseDifference": "Exact neutral poses match.",
+  "gifActualFrames": 90,
+  "gifActualDurationMs": 6000,
+  "gifDecodedFramesMatchQuantizedSources": true,
+  "gifBytes": 1071964,
+  "nativeMenuFocusAddsNoPixels": true,
+  "beforeAfterSize": [
+    1854,
+    492
+  ],
+  "detailsSize": [
+    1260,
+    1374
+  ]
+}

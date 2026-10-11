@@ -1,0 +1,200 @@
+[
+  {
+    "file": "bg_settings.png",
+    "size": [
+      1830,
+      824
+    ],
+    "mode": "RGBA",
+    "originalSize": [
+      1870,
+      841
+    ],
+    "crop": [
+      0,
+      0,
+      1870,
+      841
+    ],
+    "alphaMin": 255,
+    "alphaMax": 255,
+    "alphaCenter": 255,
+    "fullyTransparentPixels": 0
+  },
+  {
+    "file": "bg_archive.png",
+    "size": [
+      1830,
+      824
+    ],
+    "mode": "RGBA",
+    "originalSize": [
+      1870,
+      841
+    ],
+    "crop": [
+      0,
+      0,
+      1870,
+      841
+    ],
+    "alphaMin": 255,
+    "alphaMax": 255,
+    "alphaCenter": 255,
+    "fullyTransparentPixels": 0
+  },
+  {
+    "file": "bg_association.png",
+    "size": [
+      1830,
+      824
+    ],
+    "mode": "RGBA",
+    "originalSize": [
+      1870,
+      841
+    ],
+    "crop": [
+      0,
+      0,
+      1870,
+      841
+    ],
+    "alphaMin": 255,
+    "alphaMax": 255,
+    "alphaCenter": 255,
+    "fullyTransparentPixels": 0
+  },
+  {
+    "file": "bg_gate.png",
+    "size": [
+      1830,
+      824
+    ],
+    "mode": "RGBA",
+    "originalSize": [
+      1870,
+      841
+    ],
+    "crop": [
+      0,
+      0,
+      1870,
+      841
+    ],
+    "alphaMin": 255,
+    "alphaMax": 255,
+    "alphaCenter": 255,
+    "fullyTransparentPixels": 0
+  },
+  {
+    "file": "glass_panel.png",
+    "size": [
+      512,
+      384
+    ],
+    "mode": "RGBA",
+    "originalSize": [
+      1448,
+      1086
+    ],
+    "crop": [
+      28,
+      65,
+      1418,
+      1029
+    ],
+    "alphaMin": 0,
+    "alphaMax": 255,
+    "alphaCenter": 253,
+    "fullyTransparentPixels": 412
+  },
+  {
+    "file": "glass_header.png",
+    "size": [
+      1024,
+      128
+    ],
+    "mode": "RGBA",
+    "originalSize": [
+      1983,
+      793
+    ],
+    "crop": [
+      14,
+      246,
+      1970,
+      541
+    ],
+    "alphaMin": 0,
+    "alphaMax": 255,
+    "alphaCenter": 253,
+    "fullyTransparentPixels": 9165
+  },
+  {
+    "file": "glass_button.png",
+    "size": [
+      512,
+      160
+    ],
+    "mode": "RGBA",
+    "originalSize": [
+      1774,
+      887
+    ],
+    "crop": [
+      24,
+      229,
+      1756,
+      658
+    ],
+    "alphaMin": 0,
+    "alphaMax": 255,
+    "alphaCenter": 254,
+    "fullyTransparentPixels": 6365
+  },
+  {
+    "file": "glass_button_navy.png",
+    "size": [
+      512,
+      160
+    ],
+    "mode": "RGBA",
+    "originalSize": [
+      2172,
+      724
+    ],
+    "crop": [
+      37,
+      114,
+      2149,
+      609
+    ],
+    "alphaMin": 0,
+    "alphaMax": 255,
+    "alphaCenter": 254,
+    "fullyTransparentPixels": 7800
+  },
+  {
+    "file": "glass_row.png",
+    "size": [
+      512,
+      112
+    ],
+    "mode": "RGBA",
+    "originalSize": [
+      1898,
+      829
+    ],
+    "crop": [
+      14,
+      174,
+      1886,
+      654
+    ],
+    "alphaMin": 0,
+    "alphaMax": 255,
+    "alphaCenter": 253,
+    "fullyTransparentPixels": 152
+  }
+]

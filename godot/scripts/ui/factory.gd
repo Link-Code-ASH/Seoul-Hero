@@ -1,6 +1,9 @@
 class_name HeroUI
 extends RefCounted
 
+# One vocabulary for selection, archive, growth and shop statistics.
+const STAT_NAMES := {"damage":"공통 피해","attackSpeed":"공격 속도","meleeDamage":"근접 피해","rangedDamage":"원거리 피해","criticalChance":"치명타 확률","criticalDamage":"치명타 피해","range":"사거리","area":"범위","duration":"지속시간","projectileSpeed":"투사체 속도","maxHp":"최대 체력","armor":"방어력","dodge":"회피","lifesteal":"흡혈","hpRegeneration":"초당 회복","moveSpeed":"이동 속도","currencyGain":"마력석 획득","pickupRange":"획득 범위","luck":"행운","curse":"저주"}
+
 const ICON_KEYS := ["maxHp","hpRegen","lifeSteal","damage","meleeDamage","rangedDamage","area","attackSpeed","critChance","critDamage","armor","dodge","speed","luck","duration","range","pickupRange","curse","projectileSpeed","currencyGain","back","next","settings","details","musicOn","musicOff","pause","reroll","lock","unlock","wave","depth"]
 const ICON_ALIASES := {"hpRegeneration":"hpRegen","lifesteal":"lifeSteal","criticalChance":"critChance","criticalDamage":"critDamage","moveSpeed":"speed","gate":"depth","health":"maxHp","time":"duration","equipment":"settings","check":"unlock"}
 static var _fonts: Dictionary = {}
@@ -8,17 +11,7 @@ static var _icons: Dictionary = {}
 
 # Faces have distinct roles; the Korean body face remains the number-font fallback.
 static func role_font(role: String = "body") -> Font:
-	if role in ["display","brand"]: role = "heading"
-	if role == "numbers": role = "number"
-	if _fonts.has(role): return _fonts[role]
-	var paths := {"body":"Paperlogy-4Regular.ttf","control":"Paperlogy-5Medium.ttf","heading":"KMU80HaeongSans.ttf","number":"BarlowCondensed-SemiBold.ttf"}
-	var path := "res://assets/ui/fonts/"+str(paths.get(role,paths.body))
-	var base: Font = load(path) if ResourceLoader.exists(path) else load("res://assets/ui/fonts/Paperlogy-4Regular.ttf")
-	var face := FontVariation.new()
-	face.base_font = base
-	if role != "body": face.fallbacks = [role_font("body")]
-	_fonts[role] = face
-	return face
+	return HeroImageSkin.font(role)
 
 static func apply_font(control: Control, role: String, font_size: int = -1) -> void:
 	control.add_theme_font_override("font",role_font(role))
@@ -129,6 +122,7 @@ static func palette(parent: Node = null) -> String:
 	return "light"
 
 static func ink(parent: Node, role: String = "text") -> Color:
+	if palette(parent) == "image_skin": return HeroImageSkin.color(role)
 	var colors: Dictionary = Content.ui_materials.palettes[palette(parent)].colors
 	return Color(str(colors.get(role,colors.text)))
 
@@ -226,6 +220,7 @@ static func arcade_button(parent: Node, text: String, rect: Rect2, action: Calla
 	return result
 
 static func root(palette_id: String = "light") -> Control:
+	if palette_id in ["light","image_skin"]: return HeroImageSkin.root()
 	var control := HeroMobileScreen.new()
 	control.set_meta("hero_ui_palette",palette_id)
 	control.theme = theme(palette_id)
@@ -270,15 +265,22 @@ static func background(parent: Control, id: String, tint: Color = Color.WHITE) -
 static func panel(parent: Node, id: String) -> PanelContainer:
 	var result := PanelContainer.new()
 	result.clip_contents = true
-	result.add_theme_stylebox_override("panel",material(id,-1,"normal",false,palette(parent)))
+	if palette(parent) == "image_skin":
+		# PanelContainer owns its child layout: use a native texture style so an
+		# internal NinePatch cannot be laid out as another content child.
+		result.add_theme_stylebox_override("panel",HeroImageSkin.style("ops/info",Vector4(20,12,20,12)))
+		result.set_meta("material_key","ops/info")
+	else:
+		result.add_theme_stylebox_override("panel",material(id,-1,"normal",false,palette(parent)))
 	result.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	result.size_flags_vertical = Control.SIZE_EXPAND_FILL
 	parent.add_child(result)
-	finish(result)
+	if palette(parent) != "image_skin": finish(result)
 	return result
 
 # Native enamel surfaces keep artwork and text independent of frame graphics.
 static func finish(control: Control) -> void:
+	if palette(control) == "image_skin": return
 	if control.has_meta("material_finish"): return
 	var layer := HeroSurfaceFinish.new()
 	layer.palette_id = palette(control)
@@ -292,6 +294,10 @@ static func place(control: Control, rect: Rect2) -> Control:
 	return control
 
 static func sheet(parent: Node, frame: String, rect: Rect2, selected: bool = false) -> Panel:
+	if palette(parent) == "image_skin":
+		var panel_control := HeroImageSkin.material(parent,"ops/info",rect)
+		if selected: panel_control.modulate = Color(0.8,1,0.91)
+		return panel_control
 	var result := Panel.new()
 	result.add_theme_stylebox_override("panel",material(frame,0,"normal",selected,palette(parent)))
 	result.mouse_filter = Control.MOUSE_FILTER_IGNORE
@@ -369,6 +375,7 @@ static func flat_button(parent: Node, text: String, rect: Rect2, action: Callabl
 	return result
 
 static func framed_button(parent: Node, text: String, rect: Rect2, action: Callable, selected: bool = false) -> Button:
+	if palette(parent) == "image_skin": return HeroImageSkin.image_button(parent,text,rect,action,"ops/secondary",16,selected)
 	var result := button(parent,text,action,rect.size.x)
 	for state in ["normal","hover","pressed","disabled"]:
 		result.add_theme_stylebox_override(state,material("control",-1,state,selected,palette(parent)))
@@ -398,7 +405,14 @@ static func paragraph(parent: Node, text: String, size: int = 14) -> Label:
 	result.vertical_alignment = VERTICAL_ALIGNMENT_TOP
 	return result
 
+static func ui_reaction(target: Control) -> void:
+	if not is_instance_valid(target) or not target.is_inside_tree(): return
+	var effects = target.get_tree().get_first_node_in_group("ui_effects")
+	if effects != null: effects.show_effect("click",{"control":target})
+
 static func button(parent: Node, text: String, action: Callable, width: float = 90.0, selected: bool = false) -> Button:
+	if palette(parent) == "image_skin":
+		return HeroImageSkin.image_button(parent,text,Rect2(0,0,width,44),action,"ops/icon" if text.is_empty() else "ops/secondary",16,selected)
 	var result := Button.new()
 	result.text = text
 	result.clip_text = true
@@ -409,7 +423,7 @@ static func button(parent: Node, text: String, action: Callable, width: float = 
 	result.custom_minimum_size = Vector2(width,44)
 	result.mouse_filter = Control.MOUSE_FILTER_STOP
 	result.add_to_group("input_blocker")
-	result.pressed.connect(func(): Sound.prime(); Sound.cue("buttonClick"); action.call())
+	result.pressed.connect(func(): ui_reaction(result); Sound.prime(); Sound.cue("buttonClick"); action.call())
 	parent.add_child(result)
 	if not text.is_empty(): finish(result)
 	if text in ["이전","뒤로"]: button_icon(result,"back",18)
@@ -417,12 +431,23 @@ static func button(parent: Node, text: String, action: Callable, width: float = 
 	return result
 
 static func set_selected(control: Button, selected: bool) -> void:
+	if palette(control) == "image_skin":
+		control.set_meta("selected_state",selected)
+		control.add_theme_color_override("font_color",HeroImageSkin.color("accent" if selected else "ink"))
+		control.queue_redraw()
+		return
 	for state in ["normal","hover","pressed","disabled","focus"]:
 		control.add_theme_stylebox_override(state,material("control",-1,state,selected,palette(control)))
 	control.add_theme_color_override("font_color",ink(control,"selected" if selected else "text"))
 	control.add_theme_color_override("font_hover_color",ink(control,"selected" if selected else "text"))
 
 static func danger(control: Button) -> Button:
+	if palette(control) == "image_skin":
+		control.set_meta("danger_action",true)
+		for state in ["font_color","font_hover_color","font_pressed_color","font_focus_color"]:
+			control.add_theme_color_override(state,HeroImageSkin.color("danger"))
+		control.queue_redraw()
+		return control
 	for state in ["normal","hover","pressed","disabled"]:
 		var style := material("control",-1,state,false,palette(control))
 		if state != "disabled":
@@ -482,6 +507,11 @@ static func scroll(parent: Node) -> ScrollContainer:
 	parent.add_child(result)
 	var bar := result.get_v_scroll_bar()
 	bar.custom_minimum_size.x = 8
+	if palette(parent) == "image_skin":
+		bar.add_theme_stylebox_override("scroll",HeroImageSkin.style("sliders/scroll_track"))
+		for state in ["grabber","grabber_highlight","grabber_pressed"]:
+			bar.add_theme_stylebox_override(state,HeroImageSkin.style("sliders/scroll_thumb"))
+		return result
 	for state in ["scroll","grabber","grabber_highlight","grabber_pressed"]:
 		var style := material("glass" if state == "scroll" else "control",0,"normal",false,palette(parent))
 		style.set_corner_radius_all(3)
@@ -489,6 +519,7 @@ static func scroll(parent: Node) -> ScrollContainer:
 	return result
 
 static func choice(parent: Node, text: String, texture: Texture2D, selected: bool, action: Callable, frame: String = "equipment", height: float = 96.0) -> Button:
+	if palette(parent) == "image_skin": return HeroImageSkin.card(parent,text,texture,Vector2(126,height),selected,false,action)
 	var result := button(parent,"",action,126)
 	result.custom_minimum_size.y = height
 	result.size_flags_horizontal = Control.SIZE_EXPAND_FILL

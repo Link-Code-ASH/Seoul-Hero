@@ -16,6 +16,10 @@ func _ready() -> void:
 	else:
 		push_error("콘텐츠를 읽을 수 없습니다. export-godot-content.mjs를 실행하세요.")
 
+# Disabled features stay in code and saves but are hidden from the game.
+func enabled(feature: String) -> bool:
+	return bool(data.get("features",{}).get(feature,true))
+
 func texture(id: String) -> Texture2D:
 	if _textures.has(id): return _textures[id]
 	var url: String = id if id.begins_with("res://") else data.get("images", {}).get(id, {}).get("url", "")

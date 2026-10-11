@@ -272,6 +272,9 @@
   color: var(--gold);
 }
 .rarity-rare {
+  color: #8fc1ee;
+}
+.rarity-epic {
   color: #bfa6dd;
 }
 .rule-pair .benefit dd {
@@ -285,7 +288,8 @@
   border-bottom: 2px solid var(--rule-accent,#657d91);
   padding-bottom: 6px;
 }
-.archive-detail .rarity-rare { color: #655080; }
+.archive-detail .rarity-rare { color: #2f5f8a; }
+.archive-detail .rarity-epic { color: #655080; }
 .archive-detail .rarity-legendary { color: #735526; }
 @container game (max-height:500px) {
   .archive-screen {

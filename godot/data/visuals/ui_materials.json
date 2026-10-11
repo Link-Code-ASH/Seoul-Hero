@@ -788,7 +788,805 @@
     }
   },
   "image_skin": {
-    "name": "B 디자인·폰트 + A 나사형 프레임",
+    "cstore_bright": {
+      "image_id": "res://assets/ui/office-day-01/gate24-bright-01/panel_frame.png",
+      "asset_scale": 4,
+      "preserve_source_color": true,
+      "state_images": true,
+      "roles": {
+        "header": {
+          "image_id": "res://assets/ui/office-day-01/gate24-bright-01/panel_frame.png",
+          "rect": [
+            56,
+            199,
+            1425,
+            611
+          ],
+          "slice": [
+            44,
+            34,
+            44,
+            30
+          ],
+          "safe_padding": [
+            16,
+            12,
+            16,
+            12
+          ],
+          "source": "design/ui-image-skins/office-day-01/gate24-bright-01",
+          "text_color_role": "#24395c",
+          "disabled_text_color_role": "#708090"
+        },
+        "info": {
+          "image_id": "res://assets/ui/office-day-01/gate24-bright-01/panel_frame.png",
+          "rect": [
+            56,
+            199,
+            1425,
+            611
+          ],
+          "slice": [
+            44,
+            34,
+            44,
+            30
+          ],
+          "safe_padding": [
+            16,
+            12,
+            16,
+            12
+          ],
+          "source": "design/ui-image-skins/office-day-01/gate24-bright-01",
+          "text_color_role": "#24395c",
+          "disabled_text_color_role": "#708090"
+        },
+        "popup": {
+          "image_id": "res://assets/ui/office-day-01/gate24-bright-01/panel_frame.png",
+          "rect": [
+            56,
+            199,
+            1425,
+            611
+          ],
+          "slice": [
+            44,
+            34,
+            44,
+            30
+          ],
+          "safe_padding": [
+            16,
+            12,
+            16,
+            12
+          ],
+          "source": "design/ui-image-skins/office-day-01/gate24-bright-01",
+          "text_color_role": "#24395c",
+          "disabled_text_color_role": "#708090"
+        },
+        "cabinet": {
+          "image_id": "res://assets/ui/office-day-01/gate24-bright-01/panel_frame.png",
+          "rect": [
+            56,
+            199,
+            1425,
+            611
+          ],
+          "slice": [
+            44,
+            34,
+            44,
+            30
+          ],
+          "safe_padding": [
+            16,
+            12,
+            16,
+            12
+          ],
+          "source": "design/ui-image-skins/office-day-01/gate24-bright-01",
+          "text_color_role": "#24395c",
+          "disabled_text_color_role": "#708090",
+          "opacity": 0.28
+        },
+        "card_common": {
+          "image_id": "res://assets/ui/office-day-01/gate24-bright-01/product_bay.png",
+          "rect": [
+            55,
+            67,
+            886,
+            1409
+          ],
+          "slice": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "safe_padding": [
+            20,
+            18,
+            20,
+            16
+          ],
+          "source": "design/ui-image-skins/office-day-01/gate24-bright-01",
+          "text_color_role": "#24395c",
+          "disabled_text_color_role": "#708090",
+          "logical_size": [
+            162,
+            266
+          ]
+        },
+        "card_uncommon": {
+          "image_id": "res://assets/ui/office-day-01/gate24-bright-01/product_bay.png",
+          "rect": [
+            55,
+            67,
+            886,
+            1409
+          ],
+          "slice": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "safe_padding": [
+            20,
+            18,
+            20,
+            16
+          ],
+          "source": "design/ui-image-skins/office-day-01/gate24-bright-01",
+          "text_color_role": "#24395c",
+          "disabled_text_color_role": "#708090",
+          "logical_size": [
+            162,
+            266
+          ]
+        },
+        "card_rare": {
+          "image_id": "res://assets/ui/office-day-01/gate24-bright-01/product_bay.png",
+          "rect": [
+            55,
+            67,
+            886,
+            1409
+          ],
+          "slice": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "safe_padding": [
+            20,
+            18,
+            20,
+            16
+          ],
+          "source": "design/ui-image-skins/office-day-01/gate24-bright-01",
+          "text_color_role": "#24395c",
+          "disabled_text_color_role": "#708090",
+          "logical_size": [
+            162,
+            266
+          ]
+        },
+        "card_epic": {
+          "image_id": "res://assets/ui/office-day-01/gate24-bright-01/product_bay.png",
+          "rect": [
+            55,
+            67,
+            886,
+            1409
+          ],
+          "slice": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "safe_padding": [
+            20,
+            18,
+            20,
+            16
+          ],
+          "source": "design/ui-image-skins/office-day-01/gate24-bright-01",
+          "text_color_role": "#24395c",
+          "disabled_text_color_role": "#708090",
+          "logical_size": [
+            162,
+            266
+          ]
+        },
+        "card_legendary": {
+          "image_id": "res://assets/ui/office-day-01/gate24-bright-01/product_bay.png",
+          "rect": [
+            55,
+            67,
+            886,
+            1409
+          ],
+          "slice": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "safe_padding": [
+            20,
+            18,
+            20,
+            16
+          ],
+          "source": "design/ui-image-skins/office-day-01/gate24-bright-01",
+          "text_color_role": "#24395c",
+          "disabled_text_color_role": "#708090",
+          "logical_size": [
+            162,
+            266
+          ]
+        },
+        "tier_rail": {
+          "image_id": "res://assets/ui/office-day-01/gate24-bright-01/controls_atlas.png",
+          "rect": [
+            120,
+            104,
+            1010,
+            12
+          ],
+          "slice": [
+            12,
+            0,
+            12,
+            0
+          ],
+          "safe_padding": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "source": "design/ui-image-skins/office-day-01/gate24-bright-01",
+          "text_color_role": "#24395c",
+          "disabled_text_color_role": "#708090",
+          "asset_scale": 4
+        },
+        "secondary": {
+          "image_id": "res://assets/ui/office-day-01/gate24-bright-01/controls_atlas.png",
+          "rect": [
+            78,
+            86,
+            1096,
+            192
+          ],
+          "slice": [
+            48,
+            24,
+            48,
+            24
+          ],
+          "safe_padding": [
+            8,
+            4,
+            8,
+            4
+          ],
+          "source": "design/ui-image-skins/office-day-01/gate24-bright-01",
+          "text_color_role": "#24395c",
+          "disabled_text_color_role": "#708090"
+        },
+        "secondary_pressed": {
+          "image_id": "res://assets/ui/office-day-01/gate24-bright-01/controls_atlas.png",
+          "rect": [
+            78,
+            86,
+            1096,
+            192
+          ],
+          "slice": [
+            48,
+            24,
+            48,
+            24
+          ],
+          "safe_padding": [
+            8,
+            4,
+            8,
+            4
+          ],
+          "source": "design/ui-image-skins/office-day-01/gate24-bright-01",
+          "text_color_role": "#24395c",
+          "disabled_text_color_role": "#708090",
+          "tint": [
+            0.94,
+            0.94,
+            0.94,
+            1.0
+          ]
+        },
+        "secondary_disabled": {
+          "image_id": "res://assets/ui/office-day-01/gate24-bright-01/controls_atlas.png",
+          "rect": [
+            78,
+            86,
+            1096,
+            192
+          ],
+          "slice": [
+            48,
+            24,
+            48,
+            24
+          ],
+          "safe_padding": [
+            8,
+            4,
+            8,
+            4
+          ],
+          "source": "design/ui-image-skins/office-day-01/gate24-bright-01",
+          "text_color_role": "#24395c",
+          "disabled_text_color_role": "#708090",
+          "tint": [
+            0.84,
+            0.85,
+            0.86,
+            1.0
+          ]
+        },
+        "tab": {
+          "image_id": "res://assets/ui/office-day-01/gate24-bright-01/controls_atlas.png",
+          "rect": [
+            78,
+            86,
+            1096,
+            192
+          ],
+          "slice": [
+            48,
+            24,
+            48,
+            24
+          ],
+          "safe_padding": [
+            8,
+            4,
+            8,
+            4
+          ],
+          "source": "design/ui-image-skins/office-day-01/gate24-bright-01",
+          "text_color_role": "#24395c",
+          "disabled_text_color_role": "#708090"
+        },
+        "tab_pressed": {
+          "image_id": "res://assets/ui/office-day-01/gate24-bright-01/controls_atlas.png",
+          "rect": [
+            78,
+            86,
+            1096,
+            192
+          ],
+          "slice": [
+            48,
+            24,
+            48,
+            24
+          ],
+          "safe_padding": [
+            8,
+            4,
+            8,
+            4
+          ],
+          "source": "design/ui-image-skins/office-day-01/gate24-bright-01",
+          "text_color_role": "#24395c",
+          "disabled_text_color_role": "#708090",
+          "tint": [
+            0.94,
+            0.94,
+            0.94,
+            1.0
+          ]
+        },
+        "tab_disabled": {
+          "image_id": "res://assets/ui/office-day-01/gate24-bright-01/controls_atlas.png",
+          "rect": [
+            78,
+            86,
+            1096,
+            192
+          ],
+          "slice": [
+            48,
+            24,
+            48,
+            24
+          ],
+          "safe_padding": [
+            8,
+            4,
+            8,
+            4
+          ],
+          "source": "design/ui-image-skins/office-day-01/gate24-bright-01",
+          "text_color_role": "#24395c",
+          "disabled_text_color_role": "#708090",
+          "tint": [
+            0.84,
+            0.85,
+            0.86,
+            1.0
+          ]
+        },
+        "tab_selected": {
+          "image_id": "res://assets/ui/office-day-01/gate24-bright-01/controls_atlas.png",
+          "rect": [
+            78,
+            320,
+            1096,
+            192
+          ],
+          "slice": [
+            48,
+            24,
+            48,
+            24
+          ],
+          "safe_padding": [
+            8,
+            4,
+            8,
+            4
+          ],
+          "source": "design/ui-image-skins/office-day-01/gate24-bright-01",
+          "text_color_role": "#fffcf5",
+          "disabled_text_color_role": "#708090"
+        },
+        "primary": {
+          "image_id": "res://assets/ui/office-day-01/gate24-bright-01/controls_atlas.png",
+          "rect": [
+            78,
+            548,
+            1096,
+            192
+          ],
+          "slice": [
+            48,
+            24,
+            48,
+            24
+          ],
+          "safe_padding": [
+            8,
+            4,
+            8,
+            4
+          ],
+          "source": "design/ui-image-skins/office-day-01/gate24-bright-01",
+          "text_color_role": "#fffcf5",
+          "disabled_text_color_role": "#708090"
+        },
+        "primary_pressed": {
+          "image_id": "res://assets/ui/office-day-01/gate24-bright-01/controls_atlas.png",
+          "rect": [
+            78,
+            548,
+            1096,
+            192
+          ],
+          "slice": [
+            48,
+            24,
+            48,
+            24
+          ],
+          "safe_padding": [
+            8,
+            4,
+            8,
+            4
+          ],
+          "source": "design/ui-image-skins/office-day-01/gate24-bright-01",
+          "text_color_role": "#fffcf5",
+          "disabled_text_color_role": "#708090",
+          "tint": [
+            0.94,
+            0.94,
+            0.94,
+            1.0
+          ]
+        },
+        "primary_disabled": {
+          "image_id": "res://assets/ui/office-day-01/gate24-bright-01/controls_atlas.png",
+          "rect": [
+            78,
+            86,
+            1096,
+            192
+          ],
+          "slice": [
+            48,
+            24,
+            48,
+            24
+          ],
+          "safe_padding": [
+            8,
+            4,
+            8,
+            4
+          ],
+          "source": "design/ui-image-skins/office-day-01/gate24-bright-01",
+          "text_color_role": "#fffcf5",
+          "disabled_text_color_role": "#708090",
+          "tint": [
+            0.84,
+            0.85,
+            0.86,
+            1.0
+          ]
+        },
+        "purchase": {
+          "image_id": "res://assets/ui/office-day-01/gate24-bright-01/controls_atlas.png",
+          "rect": [
+            78,
+            786,
+            1096,
+            192
+          ],
+          "slice": [
+            48,
+            24,
+            48,
+            24
+          ],
+          "safe_padding": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "source": "design/ui-image-skins/office-day-01/gate24-bright-01",
+          "text_color_role": "#24395c",
+          "disabled_text_color_role": "#708090"
+        },
+        "purchase_pressed": {
+          "image_id": "res://assets/ui/office-day-01/gate24-bright-01/controls_atlas.png",
+          "rect": [
+            78,
+            786,
+            1096,
+            192
+          ],
+          "slice": [
+            48,
+            24,
+            48,
+            24
+          ],
+          "safe_padding": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "source": "design/ui-image-skins/office-day-01/gate24-bright-01",
+          "text_color_role": "#24395c",
+          "disabled_text_color_role": "#708090",
+          "tint": [
+            0.94,
+            0.94,
+            0.94,
+            1.0
+          ]
+        },
+        "purchase_disabled": {
+          "image_id": "res://assets/ui/office-day-01/gate24-bright-01/controls_atlas.png",
+          "rect": [
+            78,
+            86,
+            1096,
+            192
+          ],
+          "slice": [
+            48,
+            24,
+            48,
+            24
+          ],
+          "safe_padding": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "source": "design/ui-image-skins/office-day-01/gate24-bright-01",
+          "text_color_role": "#24395c",
+          "disabled_text_color_role": "#708090",
+          "tint": [
+            0.84,
+            0.85,
+            0.86,
+            1.0
+          ]
+        },
+        "lock": {
+          "image_id": "res://assets/ui/office-day-01/gate24-bright-01/controls_atlas.png",
+          "rect": [
+            78,
+            1011,
+            1096,
+            192
+          ],
+          "slice": [
+            48,
+            24,
+            48,
+            24
+          ],
+          "safe_padding": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "source": "design/ui-image-skins/office-day-01/gate24-bright-01",
+          "text_color_role": "#24395c",
+          "disabled_text_color_role": "#708090"
+        },
+        "lock_pressed": {
+          "image_id": "res://assets/ui/office-day-01/gate24-bright-01/controls_atlas.png",
+          "rect": [
+            78,
+            1011,
+            1096,
+            192
+          ],
+          "slice": [
+            48,
+            24,
+            48,
+            24
+          ],
+          "safe_padding": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "source": "design/ui-image-skins/office-day-01/gate24-bright-01",
+          "text_color_role": "#24395c",
+          "disabled_text_color_role": "#708090",
+          "tint": [
+            0.94,
+            0.94,
+            0.94,
+            1.0
+          ]
+        },
+        "lock_disabled": {
+          "image_id": "res://assets/ui/office-day-01/gate24-bright-01/controls_atlas.png",
+          "rect": [
+            78,
+            86,
+            1096,
+            192
+          ],
+          "slice": [
+            48,
+            24,
+            48,
+            24
+          ],
+          "safe_padding": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "source": "design/ui-image-skins/office-day-01/gate24-bright-01",
+          "text_color_role": "#24395c",
+          "disabled_text_color_role": "#708090",
+          "tint": [
+            0.84,
+            0.85,
+            0.86,
+            1.0
+          ]
+        },
+        "lock_on": {
+          "image_id": "res://assets/ui/office-day-01/gate24-bright-01/controls_atlas.png",
+          "rect": [
+            78,
+            320,
+            1096,
+            192
+          ],
+          "slice": [
+            48,
+            24,
+            48,
+            24
+          ],
+          "safe_padding": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "source": "design/ui-image-skins/office-day-01/gate24-bright-01",
+          "text_color_role": "#24395c",
+          "disabled_text_color_role": "#708090"
+        },
+        "lock_on_pressed": {
+          "image_id": "res://assets/ui/office-day-01/gate24-bright-01/controls_atlas.png",
+          "rect": [
+            78,
+            320,
+            1096,
+            192
+          ],
+          "slice": [
+            48,
+            24,
+            48,
+            24
+          ],
+          "safe_padding": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "source": "design/ui-image-skins/office-day-01/gate24-bright-01",
+          "text_color_role": "#24395c",
+          "disabled_text_color_role": "#708090",
+          "tint": [
+            0.94,
+            0.94,
+            0.94,
+            1.0
+          ]
+        },
+        "lock_on_disabled": {
+          "image_id": "res://assets/ui/office-day-01/gate24-bright-01/controls_atlas.png",
+          "rect": [
+            78,
+            86,
+            1096,
+            192
+          ],
+          "slice": [
+            48,
+            24,
+            48,
+            24
+          ],
+          "safe_padding": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "source": "design/ui-image-skins/office-day-01/gate24-bright-01",
+          "text_color_role": "#24395c",
+          "disabled_text_color_role": "#708090",
+          "tint": [
+            0.84,
+            0.85,
+            0.86,
+            1.0
+          ]
+        }
+      }
+    },
+    "name": "A 서울 야간 작전 (night-operations-01)",
     "panels": {
       "file": "res://assets/ui/image-skin/panels_01.png",
       "columns": 3,
@@ -796,149 +1594,142 @@
       "asset_scale": 4,
       "roles": {
         "cabinet": {
-          "cell": [
-            0,
-            0
-          ],
+          "image_id": "res://assets/ui/image-skin/night-operations-01/info.png",
           "rect": [
-            31,
-            29,
-            467,
-            440
+            0,
+            0,
+            406,
+            307
           ],
           "slice": [
-            62,
-            62,
-            62,
-            62
+            44,
+            46,
+            44,
+            40
           ],
-          "padding": [
-            18,
-            18,
-            18,
-            18
-          ]
+          "asset_scale": 2.0,
+          "safe_padding": [
+            20,
+            12,
+            20,
+            12
+          ],
+          "source": "design/ui-image-skins/night-operations-01"
         },
         "info": {
-          "cell": [
-            1,
-            0
-          ],
+          "image_id": "res://assets/ui/image-skin/night-operations-01/info.png",
           "rect": [
-            542,
-            36,
-            451,
-            428
+            0,
+            0,
+            406,
+            307
           ],
           "slice": [
-            56,
-            56,
-            56,
-            56
+            44,
+            46,
+            44,
+            40
           ],
-          "padding": [
-            16,
-            16,
-            16,
-            16
-          ]
+          "asset_scale": 2.0,
+          "safe_padding": [
+            20,
+            12,
+            20,
+            12
+          ],
+          "source": "design/ui-image-skins/night-operations-01"
         },
         "card": {
-          "cell": [
-            2,
-            0
-          ],
+          "image_id": "res://assets/ui/image-skin/night-operations-01/card.png",
           "rect": [
-            1038,
-            35,
-            467,
-            433
+            0,
+            0,
+            301,
+            389
           ],
           "slice": [
-            34,
-            34,
-            34,
-            34
+            44,
+            50,
+            44,
+            44
           ],
-          "padding": [
-            11,
-            11,
-            11,
-            11
-          ]
+          "asset_scale": 2.0,
+          "safe_padding": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "source": "design/ui-image-skins/night-operations-01"
         },
         "header": {
-          "cell": [
-            2,
-            0
-          ],
+          "image_id": "res://assets/ui/image-skin/night-operations-01/header.png",
           "rect": [
-            1038,
-            35,
-            467,
-            433
+            0,
+            0,
+            530,
+            88
           ],
           "slice": [
-            34,
-            34,
-            34,
-            34
+            40,
+            20,
+            40,
+            20
           ],
-          "padding": [
-            12,
-            10,
-            12,
-            10
+          "asset_scale": 2.0,
+          "safe_padding": [
+            16,
+            8,
+            16,
+            8
           ],
-          "source_role": "card"
+          "source": "design/ui-image-skins/night-operations-01"
         },
         "footer": {
-          "cell": [
-            1,
-            1
-          ],
+          "image_id": "res://assets/ui/image-skin/night-operations-01/row.png",
           "rect": [
-            537,
-            519,
-            461,
-            434
+            0,
+            0,
+            531,
+            89
           ],
           "slice": [
-            56,
-            56,
-            56,
-            56
+            40,
+            20,
+            40,
+            20
           ],
-          "padding": [
-            16,
-            16,
-            16,
-            16
-          ]
+          "asset_scale": 2.0,
+          "safe_padding": [
+            20,
+            12,
+            20,
+            12
+          ],
+          "source": "design/ui-image-skins/night-operations-01"
         },
         "popup": {
-          "cell": [
-            2,
-            1
-          ],
+          "image_id": "res://assets/ui/image-skin/night-operations-01/popup.png",
           "rect": [
-            1040,
-            521,
-            464,
-            426
+            0,
+            0,
+            431,
+            280
           ],
           "slice": [
             48,
+            50,
             48,
-            48,
-            48
+            44
           ],
-          "padding": [
-            14,
-            14,
-            14,
-            14
-          ]
+          "asset_scale": 2.0,
+          "safe_padding": [
+            20,
+            12,
+            20,
+            12
+          ],
+          "source": "design/ui-image-skins/night-operations-01"
         }
       },
       "image_id": "imageSkinPanels"
@@ -950,159 +1741,155 @@
       "asset_scale": 4,
       "roles": {
         "primary": {
-          "cell": [
-            0,
-            0
-          ],
+          "image_id": "res://assets/ui/image-skin/night-operations-01/primary.png",
           "rect": [
-            36,
-            263,
-            471,
-            186
+            0,
+            0,
+            390,
+            124
           ],
           "slice": [
-            55,
-            40,
-            55,
-            40
+            42,
+            36,
+            42,
+            36
           ],
-          "padding": [
-            15,
-            10,
-            15,
-            10
-          ]
+          "asset_scale": 2.7,
+          "safe_padding": [
+            14,
+            4,
+            14,
+            4
+          ],
+          "source": "design/ui-image-skins/night-operations-01"
         },
         "secondary": {
-          "cell": [
-            1,
-            0
-          ],
+          "image_id": "res://assets/ui/image-skin/night-operations-01/secondary.png",
           "rect": [
-            534,
-            263,
-            471,
-            186
+            0,
+            0,
+            420,
+            128
           ],
           "slice": [
-            55,
-            40,
-            55,
-            40
+            42,
+            36,
+            42,
+            36
           ],
-          "padding": [
-            15,
-            10,
-            15,
-            10
-          ]
+          "asset_scale": 2.7,
+          "safe_padding": [
+            14,
+            4,
+            14,
+            4
+          ],
+          "source": "design/ui-image-skins/night-operations-01"
         },
         "selected": {
-          "cell": [
-            2,
-            0
-          ],
+          "image_id": "res://assets/ui/image-skin/night-operations-01/tab_selected.png",
           "rect": [
-            1032,
-            263,
-            470,
-            186
+            0,
+            0,
+            306,
+            126
           ],
           "slice": [
-            55,
-            40,
-            55,
-            40
+            42,
+            36,
+            42,
+            36
           ],
-          "padding": [
-            15,
-            10,
-            15,
-            10
-          ]
+          "asset_scale": 2.7,
+          "safe_padding": [
+            14,
+            4,
+            14,
+            4
+          ],
+          "source": "design/ui-image-skins/night-operations-01"
         },
         "disabled": {
-          "cell": [
-            0,
-            1
-          ],
+          "image_id": "res://assets/ui/image-skin/night-operations-01/secondary_disabled.png",
           "rect": [
-            36,
-            579,
-            471,
-            185
+            0,
+            0,
+            420,
+            134
           ],
           "slice": [
-            55,
-            40,
-            55,
-            40
+            42,
+            36,
+            42,
+            36
           ],
-          "padding": [
-            15,
-            10,
-            15,
-            10
-          ]
+          "asset_scale": 2.7,
+          "safe_padding": [
+            14,
+            4,
+            14,
+            4
+          ],
+          "source": "design/ui-image-skins/night-operations-01"
         },
         "locked": {
-          "cell": [
-            1,
-            1
-          ],
+          "image_id": "res://assets/ui/image-skin/night-operations-01/secondary_disabled.png",
           "rect": [
-            533,
-            578,
-            472,
-            186
+            0,
+            0,
+            420,
+            134
           ],
           "slice": [
-            55,
-            40,
-            55,
-            40
+            42,
+            36,
+            42,
+            36
           ],
-          "padding": [
-            15,
-            10,
-            15,
-            10
-          ]
+          "asset_scale": 2.7,
+          "safe_padding": [
+            14,
+            4,
+            14,
+            4
+          ],
+          "source": "design/ui-image-skins/night-operations-01"
         },
         "tab": {
-          "cell": [
-            2,
-            1
-          ],
+          "image_id": "res://assets/ui/image-skin/night-operations-01/tab.png",
           "rect": [
-            1032,
-            578,
-            470,
-            186
+            0,
+            0,
+            305,
+            122
           ],
           "slice": [
-            55,
-            40,
-            55,
-            40
+            42,
+            36,
+            42,
+            36
           ],
-          "padding": [
-            15,
-            10,
-            15,
-            10
-          ]
+          "asset_scale": 2.7,
+          "safe_padding": [
+            14,
+            4,
+            14,
+            4
+          ],
+          "source": "design/ui-image-skins/night-operations-01"
         }
       },
       "image_id": "imageSkinButtons"
     },
     "colors": {
-      "ink": "#243448",
-      "muted": "#657787",
-      "accent": "#267f75",
-      "reward": "#9a7128",
-      "danger": "#b64e49",
-      "scene": "#f5f8fa"
+      "ink": "#E6F0F4",
+      "muted": "#93A7B5",
+      "accent": "#3DD6B5",
+      "reward": "#E8B75A",
+      "danger": "#EF7A6D",
+      "scene": "#F5F8FA",
+      "on_accent": "#0B1621",
+      "on_accent_muted": "#33475A"
     },
     "glass": {
       "file": "res://assets/ui/image-skin/lobby_glass_01.png",
@@ -1215,49 +2002,52 @@
           ]
         },
         "cell": {
+          "image_id": "res://assets/ui/image-skin/night-operations-01/card.png",
           "rect": [
-            48,
-            115,
-            695,
-            718
+            0,
+            0,
+            301,
+            389
           ],
           "slice": [
-            70,
-            70,
-            70,
-            70
+            44,
+            50,
+            44,
+            44
           ],
+          "asset_scale": 2.0,
           "safe_padding": [
-            10,
-            8,
-            10,
-            8
-          ],
-          "asset_scale": 4,
-          "opacity": 0.5,
-          "image_id": "runtimeUiGlass1"
-        },
-        "tools": {
-          "rect": [
-            802,
-            132,
-            687,
-            177
-          ],
-          "slice": [
-            60,
-            40,
-            60,
-            40
-          ],
-          "safe_padding": [
-            12,
             6,
-            12,
+            6,
+            6,
             6
           ],
-          "asset_scale": 4,
-          "image_id": "runtimeUiGlass1"
+          "source": "design/ui-image-skins/night-operations-01",
+          "opacity": 0.0
+        },
+        "tools": {
+          "image_id": "res://assets/ui/image-skin/night-operations-01/row.png",
+          "rect": [
+            0,
+            0,
+            531,
+            89
+          ],
+          "slice": [
+            40,
+            20,
+            40,
+            20
+          ],
+          "asset_scale": 2.0,
+          "safe_padding": [
+            20,
+            12,
+            20,
+            12
+          ],
+          "source": "design/ui-image-skins/night-operations-01",
+          "opacity": 0.92
         },
         "shadow": {
           "rect": [
@@ -1331,25 +2121,27 @@
           ]
         },
         "selection": {
+          "image_id": "res://assets/ui/image-skin/night-operations-01/rule.png",
           "rect": [
-            41,
-            529,
-            767,
-            339
+            0,
+            0,
+            196,
+            22
           ],
           "slice": [
-            48,
-            34,
-            48,
-            34
+            12,
+            0,
+            12,
+            0
           ],
-          "asset_scale": 4,
+          "asset_scale": 4.4,
           "safe_padding": [
-            16,
-            8,
-            16,
-            8
-          ]
+            0,
+            0,
+            0,
+            0
+          ],
+          "source": "design/ui-image-skins/night-operations-01"
         },
         "marker": {
           "rect": [
@@ -1649,25 +2441,27 @@
       "asset_scale": 4,
       "roles": {
         "panel": {
+          "image_id": "res://assets/ui/image-skin/night-operations-01/info.png",
           "rect": [
-            25,
-            30,
-            785,
-            422
+            0,
+            0,
+            406,
+            307
           ],
           "slice": [
-            106,
-            34,
-            66,
-            36
+            44,
+            46,
+            44,
+            40
           ],
-          "asset_scale": 4,
+          "asset_scale": 2.0,
           "safe_padding": [
-            48,
-            16,
-            24,
-            16
-          ]
+            20,
+            12,
+            20,
+            12
+          ],
+          "source": "design/ui-image-skins/night-operations-01"
         },
         "title": {
           "rect": [
@@ -2060,88 +2854,96 @@
       "asset_scale": 4,
       "roles": {
         "normal": {
+          "image_id": "res://assets/ui/image-skin/night-operations-01/card.png",
           "rect": [
-            60,
-            60,
-            514,
-            481
+            0,
+            0,
+            301,
+            389
           ],
           "slice": [
-            35,
-            35,
-            35,
-            35
+            44,
+            50,
+            44,
+            44
           ],
-          "asset_scale": 4,
+          "asset_scale": 2.0,
           "safe_padding": [
             6,
             6,
             6,
             6
-          ]
+          ],
+          "source": "design/ui-image-skins/night-operations-01"
         },
         "selected": {
+          "image_id": "res://assets/ui/image-skin/night-operations-01/card_selected.png",
           "rect": [
-            656,
-            60,
-            513,
-            482
+            0,
+            0,
+            306,
+            392
           ],
           "slice": [
-            35,
-            35,
-            35,
-            35
+            46,
+            52,
+            46,
+            46
           ],
-          "asset_scale": 4,
+          "asset_scale": 2.0,
           "safe_padding": [
             6,
             6,
             6,
             6
-          ]
+          ],
+          "source": "design/ui-image-skins/night-operations-01"
         },
         "locked": {
+          "image_id": "res://assets/ui/image-skin/night-operations-01/card.png",
           "rect": [
-            60,
-            675,
-            514,
-            493
+            0,
+            0,
+            301,
+            389
           ],
           "slice": [
-            35,
-            35,
-            35,
-            35
+            44,
+            50,
+            44,
+            44
           ],
-          "asset_scale": 4,
+          "asset_scale": 2.0,
           "safe_padding": [
             6,
             6,
             6,
             6
-          ]
+          ],
+          "source": "design/ui-image-skins/night-operations-01"
         },
         "detail": {
+          "image_id": "res://assets/ui/image-skin/night-operations-01/info.png",
           "rect": [
-            681,
-            643,
-            461,
-            556
+            0,
+            0,
+            406,
+            307
           ],
           "slice": [
-            30,
-            30,
-            30,
-            30
+            44,
+            46,
+            44,
+            40
           ],
-          "asset_scale": 4,
+          "asset_scale": 2.0,
           "safe_padding": [
-            6,
-            6,
-            6,
-            6
-          ]
+            20,
+            12,
+            20,
+            12
+          ],
+          "source": "design/ui-image-skins/night-operations-01"
         }
       }
     },
@@ -2633,25 +3435,27 @@
           ]
         },
         "selection": {
+          "image_id": "res://assets/ui/image-skin/night-operations-01/card_outline.png",
           "rect": [
-            886,
-            97,
-            578,
-            473
+            0,
+            0,
+            306,
+            392
           ],
           "slice": [
-            36,
-            36,
-            36,
-            36
+            46,
+            52,
+            46,
+            46
           ],
-          "asset_scale": 4,
+          "asset_scale": 2.0,
           "safe_padding": [
             0,
             0,
             0,
             0
-          ]
+          ],
+          "source": "design/ui-image-skins/night-operations-01"
         },
         "rule_h": {
           "rect": [
@@ -2703,53 +3507,57 @@
       "asset_scale": 4,
       "roles": {
         "hp_track": {
+          "image_id": "res://assets/ui/image-skin/night-operations-01/hp_frame.png",
           "rect": [
-            42,
-            66,
-            1455,
-            102
+            0,
+            0,
+            684,
+            90
           ],
           "slice": [
-            145,
-            12,
-            145,
-            12
+            34,
+            30,
+            34,
+            30
           ],
+          "asset_scale": 3.42,
           "safe_padding": [
             0,
             0,
             0,
             0
           ],
-          "asset_scale": 4,
+          "source": "design/ui-image-skins/night-operations-01",
           "logical_size": [
-            180,
-            10
+            200,
+            22
           ]
         },
         "hp_fill": {
+          "image_id": "res://assets/ui/image-skin/night-operations-01/hp_fill.png",
           "rect": [
-            52,
-            218,
-            1432,
-            66
+            0,
+            0,
+            660,
+            90
           ],
           "slice": [
-            40,
-            8,
-            40,
-            8
+            34,
+            30,
+            34,
+            30
           ],
+          "asset_scale": 3.3,
           "safe_padding": [
             0,
             0,
             0,
             0
           ],
-          "asset_scale": 4,
+          "source": "design/ui-image-skins/night-operations-01",
           "logical_size": [
-            180,
-            10
+            200,
+            22
           ]
         },
         "tab": {
@@ -2856,6 +3664,33 @@
             8
           ],
           "asset_scale": 4
+        },
+        "hp_low": {
+          "image_id": "res://assets/ui/image-skin/night-operations-01/hp_low.png",
+          "rect": [
+            0,
+            0,
+            660,
+            90
+          ],
+          "slice": [
+            34,
+            30,
+            34,
+            30
+          ],
+          "asset_scale": 3.3,
+          "safe_padding": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "source": "design/ui-image-skins/night-operations-01",
+          "logical_size": [
+            200,
+            22
+          ]
         }
       }
     },
@@ -2864,88 +3699,97 @@
       "asset_scale": 4,
       "roles": {
         "cabinet": {
+          "image_id": "res://assets/ui/image-skin/night-operations-01/info.png",
           "rect": [
-            40,
-            110,
-            1018,
-            573
+            0,
+            0,
+            406,
+            307
           ],
           "slice": [
-            110,
-            118,
-            110,
-            60
+            44,
+            46,
+            44,
+            40
           ],
+          "asset_scale": 2.0,
           "safe_padding": [
-            16,
+            20,
             12,
-            16,
+            20,
             12
           ],
-          "asset_scale": 4
+          "source": "design/ui-image-skins/night-operations-01",
+          "opacity": 0.9
         },
         "header": {
+          "image_id": "res://assets/ui/image-skin/night-operations-01/header.png",
           "rect": [
-            40,
-            719,
-            1016,
-            151
+            0,
+            0,
+            530,
+            88
           ],
           "slice": [
-            60,
-            30,
-            60,
-            25
+            40,
+            20,
+            40,
+            20
           ],
+          "asset_scale": 2.0,
           "safe_padding": [
             16,
-            7,
+            8,
             16,
-            7
+            8
           ],
-          "asset_scale": 4
+          "source": "design/ui-image-skins/night-operations-01"
         },
         "card": {
+          "image_id": "res://assets/ui/image-skin/night-operations-01/card.png",
           "rect": [
-            1078,
-            112,
-            420,
-            581
+            0,
+            0,
+            301,
+            389
           ],
           "slice": [
-            30,
-            35,
-            30,
-            30
+            44,
+            50,
+            44,
+            44
           ],
+          "asset_scale": 2.0,
           "safe_padding": [
-            20,
-            16,
-            20,
-            16
+            6,
+            6,
+            6,
+            6
           ],
-          "asset_scale": 4
+          "source": "design/ui-image-skins/night-operations-01"
         },
         "info": {
+          "image_id": "res://assets/ui/image-skin/night-operations-01/info.png",
           "rect": [
-            1078,
-            708,
-            423,
-            210
+            0,
+            0,
+            406,
+            307
           ],
           "slice": [
-            30,
-            35,
-            30,
-            30
+            44,
+            46,
+            44,
+            40
           ],
+          "asset_scale": 2.0,
           "safe_padding": [
-            15,
-            15,
-            15,
-            15
+            20,
+            12,
+            20,
+            12
           ],
-          "asset_scale": 4
+          "source": "design/ui-image-skins/night-operations-01"
         },
         "tab": {
           "rect": [
@@ -3036,57 +3880,50 @@
           "image_id": "runtimeUiCStoreControls2"
         },
         "purchase_yellow": {
-          "image_id": "runtimeUiPurchaseYellow4",
+          "image_id": "res://assets/ui/image-skin/night-operations-01/price.png",
           "rect": [
-            36,
-            358,
-            1465,
-            302
+            0,
+            0,
+            357,
+            96
           ],
           "slice": [
-            100,
             40,
-            100,
-            40
+            30,
+            40,
+            30
           ],
+          "asset_scale": 2.6,
           "safe_padding": [
-            10,
-            4,
-            10,
-            4
+            0,
+            0,
+            0,
+            0
           ],
-          "asset_scale": 8,
-          "disabled_role": "purchase_disabled_yellow"
+          "source": "design/ui-image-skins/night-operations-01"
         },
         "purchase_disabled_yellow": {
-          "image_id": "runtimeUiPurchaseYellow4",
+          "image_id": "res://assets/ui/image-skin/night-operations-01/price_disabled.png",
           "rect": [
-            36,
-            358,
-            1465,
-            302
+            0,
+            0,
+            350,
+            96
           ],
           "slice": [
-            100,
             40,
-            100,
-            40
+            30,
+            40,
+            30
           ],
+          "asset_scale": 2.6,
           "safe_padding": [
-            10,
-            4,
-            10,
-            4
+            0,
+            0,
+            0,
+            0
           ],
-          "asset_scale": 8,
-          "disabled_role": "purchase_disabled_yellow",
-          "saturation": 0,
-          "tint": [
-            0.75,
-            0.8,
-            0.83,
-            1
-          ]
+          "source": "design/ui-image-skins/night-operations-01"
         }
       }
     },
@@ -3248,6 +4085,1252 @@
           "asset_scale": 4
         }
       }
-    }
+    },
+    "support": {
+      "image_id": "supportGlassPanel",
+      "asset_scale": 4,
+      "approved_revision": "02-grounding",
+      "approved_date": "2026-10-05",
+      "roles": {
+        "panel": {
+          "image_id": "res://assets/ui/image-skin/night-operations-01/info.png",
+          "rect": [
+            0,
+            0,
+            406,
+            307
+          ],
+          "slice": [
+            44,
+            46,
+            44,
+            40
+          ],
+          "asset_scale": 2.0,
+          "safe_padding": [
+            20,
+            12,
+            20,
+            12
+          ],
+          "source": "design/ui-image-skins/night-operations-01"
+        }
+      }
+    },
+    "ops": {
+      "file": "assets/info-4x.png",
+      "asset_scale": 4,
+      "roles": {
+        "header": {
+          "image_id": "res://assets/ui/image-skin/night-operations-01/header.png",
+          "rect": [
+            0,
+            0,
+            530,
+            88
+          ],
+          "slice": [
+            40,
+            20,
+            40,
+            20
+          ],
+          "asset_scale": 2.0,
+          "safe_padding": [
+            16,
+            8,
+            16,
+            8
+          ],
+          "source": "design/ui-image-skins/night-operations-01"
+        },
+        "info": {
+          "image_id": "res://assets/ui/image-skin/night-operations-01/info.png",
+          "rect": [
+            0,
+            0,
+            406,
+            307
+          ],
+          "slice": [
+            44,
+            46,
+            44,
+            40
+          ],
+          "asset_scale": 2.0,
+          "safe_padding": [
+            20,
+            12,
+            20,
+            12
+          ],
+          "source": "design/ui-image-skins/night-operations-01"
+        },
+        "popup": {
+          "image_id": "res://assets/ui/image-skin/night-operations-01/popup.png",
+          "rect": [
+            0,
+            0,
+            431,
+            280
+          ],
+          "slice": [
+            48,
+            50,
+            48,
+            44
+          ],
+          "asset_scale": 2.0,
+          "safe_padding": [
+            20,
+            12,
+            20,
+            12
+          ],
+          "source": "design/ui-image-skins/night-operations-01"
+        },
+        "row": {
+          "image_id": "res://assets/ui/image-skin/night-operations-01/row.png",
+          "rect": [
+            0,
+            0,
+            531,
+            89
+          ],
+          "slice": [
+            40,
+            20,
+            40,
+            20
+          ],
+          "asset_scale": 2.0,
+          "safe_padding": [
+            20,
+            12,
+            20,
+            12
+          ],
+          "source": "design/ui-image-skins/night-operations-01"
+        },
+        "primary": {
+          "image_id": "res://assets/ui/image-skin/night-operations-01/primary.png",
+          "rect": [
+            0,
+            0,
+            390,
+            124
+          ],
+          "slice": [
+            42,
+            36,
+            42,
+            36
+          ],
+          "asset_scale": 2.7,
+          "safe_padding": [
+            14,
+            4,
+            14,
+            4
+          ],
+          "source": "design/ui-image-skins/night-operations-01",
+          "text_color_role": "on_accent",
+          "disabled_text_color_role": "muted"
+        },
+        "primary_pressed": {
+          "image_id": "res://assets/ui/image-skin/night-operations-01/primary_pressed.png",
+          "rect": [
+            0,
+            0,
+            390,
+            125
+          ],
+          "slice": [
+            42,
+            36,
+            42,
+            36
+          ],
+          "asset_scale": 2.7,
+          "safe_padding": [
+            14,
+            4,
+            14,
+            4
+          ],
+          "source": "design/ui-image-skins/night-operations-01"
+        },
+        "primary_disabled": {
+          "image_id": "res://assets/ui/image-skin/night-operations-01/secondary_disabled.png",
+          "rect": [
+            0,
+            0,
+            420,
+            134
+          ],
+          "slice": [
+            42,
+            36,
+            42,
+            36
+          ],
+          "asset_scale": 2.7,
+          "safe_padding": [
+            14,
+            4,
+            14,
+            4
+          ],
+          "source": "design/ui-image-skins/night-operations-01"
+        },
+        "secondary": {
+          "image_id": "res://assets/ui/image-skin/night-operations-01/secondary.png",
+          "rect": [
+            0,
+            0,
+            420,
+            128
+          ],
+          "slice": [
+            42,
+            36,
+            42,
+            36
+          ],
+          "asset_scale": 2.7,
+          "safe_padding": [
+            14,
+            4,
+            14,
+            4
+          ],
+          "source": "design/ui-image-skins/night-operations-01"
+        },
+        "secondary_pressed": {
+          "image_id": "res://assets/ui/image-skin/night-operations-01/secondary_pressed.png",
+          "rect": [
+            0,
+            0,
+            420,
+            129
+          ],
+          "slice": [
+            42,
+            36,
+            42,
+            36
+          ],
+          "asset_scale": 2.7,
+          "safe_padding": [
+            14,
+            4,
+            14,
+            4
+          ],
+          "source": "design/ui-image-skins/night-operations-01"
+        },
+        "secondary_disabled": {
+          "image_id": "res://assets/ui/image-skin/night-operations-01/secondary_disabled.png",
+          "rect": [
+            0,
+            0,
+            420,
+            134
+          ],
+          "slice": [
+            42,
+            36,
+            42,
+            36
+          ],
+          "asset_scale": 2.7,
+          "safe_padding": [
+            14,
+            4,
+            14,
+            4
+          ],
+          "source": "design/ui-image-skins/night-operations-01"
+        },
+        "tab": {
+          "image_id": "res://assets/ui/image-skin/night-operations-01/tab.png",
+          "rect": [
+            0,
+            0,
+            305,
+            122
+          ],
+          "slice": [
+            42,
+            36,
+            42,
+            36
+          ],
+          "asset_scale": 2.7,
+          "safe_padding": [
+            14,
+            4,
+            14,
+            4
+          ],
+          "source": "design/ui-image-skins/night-operations-01"
+        },
+        "tab_pressed": {
+          "image_id": "res://assets/ui/image-skin/night-operations-01/tab.png",
+          "rect": [
+            0,
+            0,
+            305,
+            122
+          ],
+          "slice": [
+            42,
+            36,
+            42,
+            36
+          ],
+          "asset_scale": 2.7,
+          "safe_padding": [
+            14,
+            4,
+            14,
+            4
+          ],
+          "source": "design/ui-image-skins/night-operations-01"
+        },
+        "tab_selected": {
+          "image_id": "res://assets/ui/image-skin/night-operations-01/tab_selected.png",
+          "rect": [
+            0,
+            0,
+            306,
+            126
+          ],
+          "slice": [
+            42,
+            36,
+            42,
+            36
+          ],
+          "asset_scale": 2.7,
+          "safe_padding": [
+            14,
+            4,
+            14,
+            4
+          ],
+          "source": "design/ui-image-skins/night-operations-01"
+        },
+        "tab_disabled": {
+          "image_id": "res://assets/ui/image-skin/night-operations-01/secondary_disabled.png",
+          "rect": [
+            0,
+            0,
+            420,
+            134
+          ],
+          "slice": [
+            42,
+            36,
+            42,
+            36
+          ],
+          "asset_scale": 2.7,
+          "safe_padding": [
+            14,
+            4,
+            14,
+            4
+          ],
+          "source": "design/ui-image-skins/night-operations-01"
+        },
+        "row_selected": {
+          "image_id": "res://assets/ui/image-skin/night-operations-01/row.png",
+          "rect": [
+            0,
+            0,
+            531,
+            89
+          ],
+          "slice": [
+            40,
+            20,
+            40,
+            20
+          ],
+          "asset_scale": 2.0,
+          "safe_padding": [
+            20,
+            12,
+            20,
+            12
+          ],
+          "source": "design/ui-image-skins/night-operations-01",
+          "tint": [
+            0.75,
+            1.15,
+            1.05,
+            1
+          ]
+        },
+        "disabled": {
+          "image_id": "res://assets/ui/image-skin/night-operations-01/secondary_disabled.png",
+          "rect": [
+            0,
+            0,
+            420,
+            134
+          ],
+          "slice": [
+            42,
+            36,
+            42,
+            36
+          ],
+          "asset_scale": 2.7,
+          "safe_padding": [
+            14,
+            4,
+            14,
+            4
+          ],
+          "source": "design/ui-image-skins/night-operations-01"
+        },
+        "icon": {
+          "image_id": "res://assets/ui/image-skin/night-operations-01/icon.png",
+          "rect": [
+            0,
+            0,
+            162,
+            153
+          ],
+          "slice": [
+            40,
+            40,
+            40,
+            40
+          ],
+          "asset_scale": 3.4,
+          "safe_padding": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "source": "design/ui-image-skins/night-operations-01"
+        }
+      },
+      "image_id": "runtimeUiOpsInfo",
+      "state_images": true,
+      "revision": "night-operations-01 (2026-10-08, direction A)"
+    },
+    "specialized_usage": {
+      "cstore": [
+        "shop"
+      ],
+      "codex/panel": [
+        "archive"
+      ],
+      "support/panel": [
+        "offline",
+        "supply"
+      ],
+      "spy/deploy": [
+        "lobby"
+      ],
+      "cards/normal": [
+        "gate",
+        "archive"
+      ]
+    },
+    "operations_revision": "operations-standard-01 approved 2026-10-05",
+    "compact": {
+      "asset_scale": 4,
+      "roles": {
+        "back": {
+          "image_id": "res://assets/ui/image-skin/night-operations-01/icon.png",
+          "rect": [
+            0,
+            0,
+            162,
+            153
+          ],
+          "slice": [
+            40,
+            40,
+            40,
+            40
+          ],
+          "asset_scale": 3.4,
+          "safe_padding": [
+            8,
+            6,
+            8,
+            6
+          ],
+          "source": "design/ui-image-skins/night-operations-01",
+          "text_color_role": "ink"
+        },
+        "back_pressed": {
+          "image_id": "res://assets/ui/image-skin/night-operations-01/icon_pressed.png",
+          "rect": [
+            0,
+            0,
+            162,
+            155
+          ],
+          "slice": [
+            40,
+            40,
+            40,
+            40
+          ],
+          "asset_scale": 3.4,
+          "safe_padding": [
+            8,
+            6,
+            8,
+            6
+          ],
+          "source": "design/ui-image-skins/night-operations-01"
+        },
+        "back_disabled": {
+          "image_id": "res://assets/ui/image-skin/night-operations-01/icon_disabled.png",
+          "rect": [
+            0,
+            0,
+            163,
+            158
+          ],
+          "slice": [
+            40,
+            40,
+            40,
+            40
+          ],
+          "asset_scale": 3.4,
+          "safe_padding": [
+            8,
+            6,
+            8,
+            6
+          ],
+          "source": "design/ui-image-skins/night-operations-01"
+        },
+        "secondary": {
+          "image_id": "res://assets/ui/image-skin/night-operations-01/secondary.png",
+          "rect": [
+            0,
+            0,
+            420,
+            128
+          ],
+          "slice": [
+            42,
+            36,
+            42,
+            36
+          ],
+          "asset_scale": 2.7,
+          "safe_padding": [
+            6,
+            4,
+            6,
+            4
+          ],
+          "source": "design/ui-image-skins/night-operations-01",
+          "text_color_role": "ink"
+        },
+        "secondary_pressed": {
+          "image_id": "res://assets/ui/image-skin/night-operations-01/secondary_pressed.png",
+          "rect": [
+            0,
+            0,
+            420,
+            129
+          ],
+          "slice": [
+            42,
+            36,
+            42,
+            36
+          ],
+          "asset_scale": 2.7,
+          "safe_padding": [
+            6,
+            4,
+            6,
+            4
+          ],
+          "source": "design/ui-image-skins/night-operations-01"
+        },
+        "secondary_disabled": {
+          "image_id": "res://assets/ui/image-skin/night-operations-01/secondary_disabled.png",
+          "rect": [
+            0,
+            0,
+            420,
+            134
+          ],
+          "slice": [
+            42,
+            36,
+            42,
+            36
+          ],
+          "asset_scale": 2.7,
+          "safe_padding": [
+            6,
+            4,
+            6,
+            4
+          ],
+          "source": "design/ui-image-skins/night-operations-01"
+        },
+        "tab": {
+          "image_id": "res://assets/ui/image-skin/night-operations-01/tab.png",
+          "rect": [
+            0,
+            0,
+            305,
+            122
+          ],
+          "slice": [
+            42,
+            36,
+            42,
+            36
+          ],
+          "asset_scale": 2.7,
+          "safe_padding": [
+            8,
+            4,
+            8,
+            4
+          ],
+          "source": "design/ui-image-skins/night-operations-01",
+          "text_color_role": "ink"
+        },
+        "tab_pressed": {
+          "image_id": "res://assets/ui/image-skin/night-operations-01/tab.png",
+          "rect": [
+            0,
+            0,
+            305,
+            122
+          ],
+          "slice": [
+            42,
+            36,
+            42,
+            36
+          ],
+          "asset_scale": 2.7,
+          "safe_padding": [
+            8,
+            4,
+            8,
+            4
+          ],
+          "source": "design/ui-image-skins/night-operations-01"
+        },
+        "tab_selected": {
+          "image_id": "res://assets/ui/image-skin/night-operations-01/tab_selected.png",
+          "rect": [
+            0,
+            0,
+            306,
+            126
+          ],
+          "slice": [
+            42,
+            36,
+            42,
+            36
+          ],
+          "asset_scale": 2.7,
+          "safe_padding": [
+            8,
+            4,
+            8,
+            4
+          ],
+          "source": "design/ui-image-skins/night-operations-01"
+        },
+        "tab_disabled": {
+          "image_id": "res://assets/ui/image-skin/night-operations-01/secondary_disabled.png",
+          "rect": [
+            0,
+            0,
+            420,
+            134
+          ],
+          "slice": [
+            42,
+            36,
+            42,
+            36
+          ],
+          "asset_scale": 2.7,
+          "safe_padding": [
+            8,
+            4,
+            8,
+            4
+          ],
+          "source": "design/ui-image-skins/night-operations-01"
+        },
+        "primary": {
+          "image_id": "res://assets/ui/image-skin/night-operations-01/primary.png",
+          "rect": [
+            0,
+            0,
+            390,
+            124
+          ],
+          "slice": [
+            42,
+            36,
+            42,
+            36
+          ],
+          "asset_scale": 2.7,
+          "safe_padding": [
+            10,
+            4,
+            10,
+            4
+          ],
+          "source": "design/ui-image-skins/night-operations-01",
+          "text_color_role": "on_accent",
+          "disabled_text_color_role": "muted"
+        },
+        "primary_pressed": {
+          "image_id": "res://assets/ui/image-skin/night-operations-01/primary_pressed.png",
+          "rect": [
+            0,
+            0,
+            390,
+            125
+          ],
+          "slice": [
+            42,
+            36,
+            42,
+            36
+          ],
+          "asset_scale": 2.7,
+          "safe_padding": [
+            10,
+            4,
+            10,
+            4
+          ],
+          "source": "design/ui-image-skins/night-operations-01"
+        },
+        "primary_disabled": {
+          "image_id": "res://assets/ui/image-skin/night-operations-01/secondary_disabled.png",
+          "rect": [
+            0,
+            0,
+            420,
+            134
+          ],
+          "slice": [
+            42,
+            36,
+            42,
+            36
+          ],
+          "asset_scale": 2.7,
+          "safe_padding": [
+            10,
+            4,
+            10,
+            4
+          ],
+          "source": "design/ui-image-skins/night-operations-01"
+        }
+      },
+      "image_id": "runtimeUiCompactSecondary",
+      "fixed_state_geometry": true,
+      "preserve_source_color": true,
+      "selected_tint": [
+        0.82,
+        1.0,
+        0.94,
+        1.0
+      ],
+      "state_images": true
+    },
+    "compact_revision": "operations-light-controls-02 approved 2026-10-05",
+    "night": {
+      "image_id": "res://assets/ui/image-skin/night-operations-01/card.png",
+      "asset_scale": 2.0,
+      "roles": {
+        "card_common": {
+          "image_id": "res://assets/ui/image-skin/night-operations-01/card_common.png",
+          "rect": [
+            0,
+            0,
+            253,
+            373
+          ],
+          "slice": [
+            40,
+            190,
+            40,
+            44
+          ],
+          "asset_scale": 1.95,
+          "safe_padding": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "source": "design/ui-image-skins/night-operations-01"
+        },
+        "card_uncommon": {
+          "image_id": "res://assets/ui/image-skin/night-operations-01/card_uncommon.png",
+          "rect": [
+            0,
+            0,
+            252,
+            373
+          ],
+          "slice": [
+            40,
+            190,
+            40,
+            44
+          ],
+          "asset_scale": 1.95,
+          "safe_padding": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "source": "design/ui-image-skins/night-operations-01"
+        },
+        "card_rare": {
+          "image_id": "res://assets/ui/image-skin/night-operations-01/card_rare.png",
+          "rect": [
+            0,
+            0,
+            252,
+            373
+          ],
+          "slice": [
+            40,
+            190,
+            40,
+            44
+          ],
+          "asset_scale": 1.95,
+          "safe_padding": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "source": "design/ui-image-skins/night-operations-01"
+        },
+        "card_epic": {
+          "image_id": "res://assets/ui/image-skin/night-operations-01/card_epic.png",
+          "rect": [
+            0,
+            0,
+            255,
+            373
+          ],
+          "slice": [
+            40,
+            190,
+            40,
+            44
+          ],
+          "asset_scale": 1.95,
+          "safe_padding": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "source": "design/ui-image-skins/night-operations-01"
+        },
+        "card_legendary": {
+          "image_id": "res://assets/ui/image-skin/night-operations-01/card_legendary.png",
+          "rect": [
+            0,
+            0,
+            257,
+            374
+          ],
+          "slice": [
+            40,
+            190,
+            40,
+            44
+          ],
+          "asset_scale": 1.95,
+          "safe_padding": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "source": "design/ui-image-skins/night-operations-01"
+        },
+        "lock": {
+          "image_id": "res://assets/ui/image-skin/night-operations-01/lock.png",
+          "rect": [
+            0,
+            0,
+            112,
+            112
+          ],
+          "slice": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "asset_scale": 4.0,
+          "safe_padding": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "source": "design/ui-image-skins/night-operations-01"
+        },
+        "lock_on": {
+          "image_id": "res://assets/ui/image-skin/night-operations-01/lock_on.png",
+          "rect": [
+            0,
+            0,
+            115,
+            112
+          ],
+          "slice": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "asset_scale": 4.0,
+          "safe_padding": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "source": "design/ui-image-skins/night-operations-01"
+        },
+        "level_ring": {
+          "image_id": "res://assets/ui/image-skin/night-operations-01/level_ring.png",
+          "rect": [
+            0,
+            0,
+            183,
+            183
+          ],
+          "slice": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "asset_scale": 4.0,
+          "safe_padding": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "source": "design/ui-image-skins/night-operations-01"
+        },
+        "slot": {
+          "image_id": "res://assets/ui/image-skin/night-operations-01/slot.png",
+          "rect": [
+            0,
+            0,
+            171,
+            169
+          ],
+          "slice": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "asset_scale": 4.0,
+          "safe_padding": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "source": "design/ui-image-skins/night-operations-01"
+        },
+        "icon_archive": {
+          "image_id": "res://assets/ui/image-skin/night-operations-01/icon_archive.png",
+          "rect": [
+            0,
+            0,
+            281,
+            210
+          ],
+          "slice": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "asset_scale": 6.0,
+          "safe_padding": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "source": "design/ui-image-skins/night-operations-01"
+        },
+        "icon_ticket": {
+          "image_id": "res://assets/ui/image-skin/night-operations-01/icon_ticket.png",
+          "rect": [
+            0,
+            0,
+            292,
+            175
+          ],
+          "slice": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "asset_scale": 6.0,
+          "safe_padding": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "source": "design/ui-image-skins/night-operations-01"
+        },
+        "icon_craft": {
+          "image_id": "res://assets/ui/image-skin/night-operations-01/icon_craft.png",
+          "rect": [
+            0,
+            0,
+            246,
+            293
+          ],
+          "slice": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "asset_scale": 6.0,
+          "safe_padding": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "source": "design/ui-image-skins/night-operations-01"
+        },
+        "icon_bag": {
+          "image_id": "res://assets/ui/image-skin/night-operations-01/icon_bag.png",
+          "rect": [
+            0,
+            0,
+            291,
+            256
+          ],
+          "slice": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "asset_scale": 6.0,
+          "safe_padding": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "source": "design/ui-image-skins/night-operations-01"
+        },
+        "icon_close": {
+          "image_id": "res://assets/ui/image-skin/night-operations-01/icon_close.png",
+          "rect": [
+            0,
+            0,
+            241,
+            237
+          ],
+          "slice": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "asset_scale": 6.0,
+          "safe_padding": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "source": "design/ui-image-skins/night-operations-01"
+        },
+        "icon_check": {
+          "image_id": "res://assets/ui/image-skin/night-operations-01/icon_check.png",
+          "rect": [
+            0,
+            0,
+            279,
+            229
+          ],
+          "slice": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "asset_scale": 6.0,
+          "safe_padding": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "source": "design/ui-image-skins/night-operations-01"
+        },
+        "icon_star": {
+          "image_id": "res://assets/ui/image-skin/night-operations-01/icon_star.png",
+          "rect": [
+            0,
+            0,
+            254,
+            240
+          ],
+          "slice": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "asset_scale": 6.0,
+          "safe_padding": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "source": "design/ui-image-skins/night-operations-01"
+        },
+        "icon_stats": {
+          "image_id": "res://assets/ui/image-skin/night-operations-01/icon_stats.png",
+          "rect": [
+            0,
+            0,
+            271,
+            224
+          ],
+          "slice": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "asset_scale": 6.0,
+          "safe_padding": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "source": "design/ui-image-skins/night-operations-01"
+        },
+        "timer_rule": {
+          "image_id": "res://assets/ui/image-skin/night-operations-01/timer_rule.png",
+          "rect": [
+            0,
+            0,
+            640,
+            41
+          ],
+          "slice": [
+            40,
+            0,
+            40,
+            0
+          ],
+          "asset_scale": 4.0,
+          "safe_padding": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "source": "design/ui-image-skins/night-operations-01"
+        },
+        "rule": {
+          "image_id": "res://assets/ui/image-skin/night-operations-01/rule.png",
+          "rect": [
+            0,
+            0,
+            196,
+            22
+          ],
+          "slice": [
+            12,
+            0,
+            12,
+            0
+          ],
+          "asset_scale": 4.4,
+          "safe_padding": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "source": "design/ui-image-skins/night-operations-01"
+        },
+        "card_outline": {
+          "image_id": "res://assets/ui/image-skin/night-operations-01/card_outline.png",
+          "rect": [
+            0,
+            0,
+            306,
+            392
+          ],
+          "slice": [
+            46,
+            52,
+            46,
+            46
+          ],
+          "asset_scale": 2.0,
+          "safe_padding": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "source": "design/ui-image-skins/night-operations-01"
+        }
+      }
+    },
+    "night_revision": "night-operations-01 approved 2026-10-08 (user: \"너의 스타일대로 한 번 디자인 조정 부탁할게\")"
   }
 }

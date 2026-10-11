@@ -1,0 +1,305 @@
+{
+  "revision": "guild-2p5d-01",
+  "status": "awaiting-preview-approval",
+  "createdAt": "2026-10-04",
+  "method": "built-in image_gen",
+  "promptRecord": "prompts.json",
+  "approval": null,
+  "runtimeConnected": false,
+  "saveBoundary": "Standalone preview uses memory-only guild state; current game profile and run checkpoint remain unchanged.",
+  "gallery": {
+    "file": "index.html",
+    "screenSize": [
+      915,
+      412
+    ],
+    "captures": [
+      "01-initial.png",
+      "02-expanded.png",
+      "03-management.png",
+      "04-assets.png"
+    ],
+    "fonts": [
+      "assets/ui/fonts/Paperlogy-4Regular.ttf",
+      "assets/ui/fonts/Paperlogy-8ExtraBold.ttf",
+      "assets/ui/fonts/BarlowCondensed-SemiBold.ttf"
+    ],
+    "captureSources": {
+      "initial": "captures/initial.png",
+      "expanded": "captures/expanded.png",
+      "management": "captures/management.png",
+      "assets": "assets-board.png"
+    }
+  },
+  "expectedAssets": [
+    "office",
+    "floor",
+    "research",
+    "expedition",
+    "production",
+    "recovery",
+    "workshop",
+    "revival",
+    "analysis",
+    "construction",
+    "module-cabinet",
+    "module-monitor",
+    "module-core"
+  ],
+  "generatedOutputs": [
+    {
+      "id": "office",
+      "file": "assets/office.png",
+      "source_path": "C:\\Users\\geniu\\.codex\\generated_images\\01a1023b-a2e0-7ad2-9df8-a5c819425960\\exec-52b737c2-052b-4ebf-b959-02ca6fde4acb.png",
+      "prompt": "Use case: stylized-concept. Asset type: transparent world sprite for a 915x412 mobile 2.5D guild management game. Premium mobile strategy game prop, rounded stylized 3D render rendered into a PNG, believable solid volume, bevelled edges, subtle material variation and ambient occlusion, modern Seoul awakener guild, warm ivory ceramic and pale ash wood with graphite navy metal, restrained teal illumination. No black cartoon outlines, no flat vector/Flash art, no cards, no UI, no people, no logos, no lettering. Orthographic three-quarter view from front and slightly right, camera elevated 40 degrees, yaw 18 degrees, long horizontal faces slope gently; top faces clearly visible. Soft broad daylight from upper left; shadow falls toward lower right. Ground sits horizontal in scene. Object cluster isolated on genuine alpha including soft contact shadow, transparent background; no square base, pedestal or floor tile. Entire cluster visible with generous transparent margins. Subject: the guild operations station: substantial curved L-shaped pale-wood reception/manager desk, built-in navy lower cabinets, one cream swivel chair tucked behind, two slim monitors showing abstract teal maps without text, small radio and document stack. Reads immediately as an office station at 140px wide. Arrange as one coherent functional object cluster, not a room. Keep silhouette low and wide, bright recognizable surfaces. Make it feel like a crafted high-quality game asset, not a toy icon or an illustration panel.",
+      "tool": "built-in image_gen",
+      "size": [
+        1672,
+        941
+      ],
+      "alphaChannel": true,
+      "sha256": "f0b47e56e5876c8f25811988fb5cd1d3a31a6309d7ac726e0a9570e5a1525023"
+    },
+    {
+      "id": "floor",
+      "file": "assets/floor.png",
+      "source_path": "C:\\Users\\geniu\\.codex\\generated_images\\01a1023b-a2e0-7ad2-9df8-a5c819425960\\exec-cf55f64c-cb0d-430e-9765-3e6bab943c4e.png",
+      "prompt": "Use case: stylized-concept. Asset type: wide environment PNG for mobile 2.5D guild headquarters. Premium rounded stylized 3D game rendering, contemporary Seoul awakener guild. A large empty open-plan office interior with ceiling removed, viewed from above the front and slightly right, orthographic camera elevation40 degrees and yaw18 degrees. Very wide horizontal composition; spacious warm limestone/pale ash floor, visually width about4 times depth. Floor must provide two clear rows of four future equipment placement locations separated by a roomy unobstructed central walkway. Entire floor is EMPTY, no desks, no machines, no characters, no furniture in those8 areas. One restrained graphite navy/ivory back wall with tall windows showing soft distant Seoul buildings and daylight, low rear utility railing; only short side wall stubs, completely open front so all equipment will be visible. A small integrated entry recess in the left front edge, no stairs or elevators. Upper-left soft daylight, believable solid wall thickness, bevelled architecture, subtle material grain and occlusion, subdued backdrop so separate props will stand out. Fill wide image elegantly with sufficient floor area, thin architecture. No board-game bases, cards, thick black outlines, vector shapes, cartoon/Flash rendering, labels, text, logos or UI. Actual transparent exterior around the cutaway interior, full environment visible with transparent margin.",
+      "tool": "built-in image_gen",
+      "size": [
+        1931,
+        814
+      ],
+      "alphaChannel": true,
+      "sha256": "57c7dff4a8ef942cc2022fd821dbbd13f0fe72c7d2ae9ee5417491f1f9b010b4"
+    },
+    {
+      "id": "research",
+      "file": "assets/research.png",
+      "source_path": "C:\\Users\\geniu\\.codex\\generated_images\\01a1023b-a2e0-7ad2-9df8-a5c819425960\\exec-2a081b62-ee1e-4639-9b8e-61e5dd78785a.png",
+      "prompt": "Use case: stylized-concept. Asset type: individual transparent world sprite for 915x412 mobile 2.5D guild management game. Input image1 is ONLY a style/material/camera/light reference; create the NEW subject below, do not reproduce the desk. Premium mobile strategy game prop, rounded stylized 3D render rendered into a PNG, believable solid volume, bevelled edges, subtle material variation and ambient occlusion, modern Seoul awakener guild, warm ivory ceramic and pale ash wood with graphite navy metal, restrained teal illumination. No black cartoon outlines, no flat vector/Flash art, no cards, no UI, no people, no logos, no lettering. Orthographic three-quarter view from front and slightly right, camera elevated 40 degrees, yaw 18 degrees, long horizontal faces slope gently; top faces clearly visible. Soft broad daylight from upper left; shadow falls toward lower right. Ground sits horizontal in scene. Object cluster isolated on genuine alpha including soft contact shadow, transparent background; no square base, pedestal or floor tile. Entire cluster visible with generous transparent margins. Subject: A futuristic but practical research lab station: a waist-high ivory scientific workbench with navy cabinet doors, prominent compact cylindrical transparent teal sample chamber, microscope, thick scanner unit, small monitor, a few sample containers. Recognizable research laboratory silhouette, no writing. Coherent functional equipment cluster, low and wide where appropriate, readable at140px wide. Match image1's camera, render polish, material realism and bevels. Entire asset fits with margin, genuine alpha exterior and soft contact shadow. Do not copy the desk, books, office chair or plants from the reference. Avoid floating UI icon, decorative border, floor tile or room.",
+      "tool": "built-in image_gen",
+      "size": [
+        1671,
+        941
+      ],
+      "alphaChannel": true,
+      "sha256": "63188ce59a3b4dabd6c31d345ce1ff3c3c0ad2aa3a0ce48f1944cbd6e94905ee",
+      "referenced_image_paths": [
+        "C:\\Users\\geniu\\.codex\\generated_images\\01a1023b-a2e0-7ad2-9df8-a5c819425960\\exec-52b737c2-052b-4ebf-b959-02ca6fde4acb.png"
+      ]
+    },
+    {
+      "id": "expedition",
+      "file": "assets/expedition.png",
+      "source_path": "C:\\Users\\geniu\\.codex\\generated_images\\01a1023b-a2e0-7ad2-9df8-a5c819425960\\exec-36812682-e657-47aa-81cb-85a06cbeced6.png",
+      "prompt": "Use case: stylized-concept. Asset type: individual transparent world sprite for 915x412 mobile 2.5D guild management game. Input image1 is ONLY a style/material/camera/light reference; create the NEW subject below, do not reproduce the desk. Premium mobile strategy game prop, rounded stylized 3D render rendered into a PNG, believable solid volume, bevelled edges, subtle material variation and ambient occlusion, modern Seoul awakener guild, warm ivory ceramic and pale ash wood with graphite navy metal, restrained teal illumination. No black cartoon outlines, no flat vector/Flash art, no cards, no UI, no people, no logos, no lettering. Orthographic three-quarter view from front and slightly right, camera elevated 40 degrees, yaw 18 degrees, long horizontal faces slope gently; top faces clearly visible. Soft broad daylight from upper left; shadow falls toward lower right. Ground sits horizontal in scene. Object cluster isolated on genuine alpha including soft contact shadow, transparent background; no square base, pedestal or floor tile. Entire cluster visible with generous transparent margins. Subject: An expedition dispatch station: a compact navy-and-ivory freestanding dispatch console with tilted wide translucent teal map display, short curved counter, two rugged travel equipment cases and wall-less narrow charging rack. Clear departure/dispatch function, no doors or people, no writing. Coherent functional equipment cluster, low and wide where appropriate, readable at140px wide. Match image1's camera, render polish, material realism and bevels. Entire asset fits with margin, genuine alpha exterior and soft contact shadow. Do not copy the desk, books, office chair or plants from the reference. Avoid floating UI icon, decorative border, floor tile or room.",
+      "tool": "built-in image_gen",
+      "size": [
+        1663,
+        946
+      ],
+      "alphaChannel": true,
+      "sha256": "ab4663f4214ef44bfe2e38132eeb5c78e57cfc8ab8f0d714c872d03cb0ad15a2",
+      "referenced_image_paths": [
+        "C:\\Users\\geniu\\.codex\\generated_images\\01a1023b-a2e0-7ad2-9df8-a5c819425960\\exec-52b737c2-052b-4ebf-b959-02ca6fde4acb.png"
+      ]
+    },
+    {
+      "id": "production",
+      "file": "assets/production.png",
+      "source_path": "C:\\Users\\geniu\\.codex\\generated_images\\01a1023b-a2e0-7ad2-9df8-a5c819425960\\exec-dba1f14b-d127-444a-ad48-7e123331a37c.png",
+      "prompt": "Use case: stylized-concept. Asset type: individual transparent world sprite for 915x412 mobile 2.5D guild management game. Input image1 is ONLY a style/material/camera/light reference; create the NEW subject below, do not reproduce the desk. Premium mobile strategy game prop, rounded stylized 3D render rendered into a PNG, believable solid volume, bevelled edges, subtle material variation and ambient occlusion, modern Seoul awakener guild, warm ivory ceramic and pale ash wood with graphite navy metal, restrained teal illumination. No black cartoon outlines, no flat vector/Flash art, no cards, no UI, no people, no logos, no lettering. Orthographic three-quarter view from front and slightly right, camera elevated 40 degrees, yaw 18 degrees, long horizontal faces slope gently; top faces clearly visible. Soft broad daylight from upper left; shadow falls toward lower right. Ground sits horizontal in scene. Object cluster isolated on genuine alpha including soft contact shadow, transparent background; no square base, pedestal or floor tile. Entire cluster visible with generous transparent margins. Subject: An automated mana materials production station: solid chunky ivory-and-navy industrial fabricator with rounded housing, visible teal glowing processing chamber, short roller output tray with a few small amber material ingots, two storage bins. Readable miniature factory silhouette, no writing. Coherent functional equipment cluster, low and wide where appropriate, readable at140px wide. Match image1's camera, render polish, material realism and bevels. Entire asset fits with margin, genuine alpha exterior and soft contact shadow. Do not copy the desk, books, office chair or plants from the reference. Avoid floating UI icon, decorative border, floor tile or room.",
+      "tool": "built-in image_gen",
+      "size": [
+        1536,
+        1024
+      ],
+      "alphaChannel": true,
+      "sha256": "b8cf1aac328d4486582a9ea75307c42b5888c55f3d502cbe70f9a2d4ea11d909",
+      "referenced_image_paths": [
+        "C:\\Users\\geniu\\.codex\\generated_images\\01a1023b-a2e0-7ad2-9df8-a5c819425960\\exec-52b737c2-052b-4ebf-b959-02ca6fde4acb.png"
+      ]
+    },
+    {
+      "id": "recovery",
+      "file": "assets/recovery.png",
+      "source_path": "C:\\Users\\geniu\\.codex\\generated_images\\01a1023b-a2e0-7ad2-9df8-a5c819425960\\exec-27f183fa-36e5-472a-a2df-70c42a7fbefa.png",
+      "prompt": "Use case: stylized-concept. Asset type: individual transparent world sprite for 915x412 mobile 2.5D guild management game. Input image1 is ONLY a style/material/camera/light reference; create the NEW subject below, do not reproduce the desk. Premium mobile strategy game prop, rounded stylized 3D render rendered into a PNG, believable solid volume, bevelled edges, subtle material variation and ambient occlusion, modern Seoul awakener guild, warm ivory ceramic and pale ash wood with graphite navy metal, restrained teal illumination. No black cartoon outlines, no flat vector/Flash art, no cards, no UI, no people, no logos, no lettering. Orthographic three-quarter view from front and slightly right, camera elevated 40 degrees, yaw 18 degrees, long horizontal faces slope gently; top faces clearly visible. Soft broad daylight from upper left; shadow falls toward lower right. Ground sits horizontal in scene. Object cluster isolated on genuine alpha including soft contact shadow, transparent background; no square base, pedestal or floor tile. Entire cluster visible with generous transparent margins. Subject: A recovery/medical station: compact ivory reclining treatment bed with upholstered pale mint mattress, short rounded medical scanner arm arching over the bed, small navy diagnostic terminal and supply cabinet, gentle teal light. Clean friendly healing equipment, not hospital horror, no person, no writing. Coherent functional equipment cluster, low and wide where appropriate, readable at140px wide. Match image1's camera, render polish, material realism and bevels. Entire asset fits with margin, genuine alpha exterior and soft contact shadow. Do not copy the desk, books, office chair or plants from the reference. Avoid floating UI icon, decorative border, floor tile or room.",
+      "tool": "built-in image_gen",
+      "size": [
+        1536,
+        1024
+      ],
+      "alphaChannel": true,
+      "sha256": "a10d385d02de214a7434b971461eb4e1a2a5223bd4d272d8ba9f966282fa33a0",
+      "referenced_image_paths": [
+        "C:\\Users\\geniu\\.codex\\generated_images\\01a1023b-a2e0-7ad2-9df8-a5c819425960\\exec-52b737c2-052b-4ebf-b959-02ca6fde4acb.png"
+      ]
+    },
+    {
+      "id": "workshop",
+      "file": "assets/workshop.png",
+      "source_path": "C:\\Users\\geniu\\.codex\\generated_images\\01a1023b-a2e0-7ad2-9df8-a5c819425960\\exec-566d7ba0-39d2-4f13-83a4-230b5e7d0e3c.png",
+      "prompt": "Use case: stylized-concept. Asset type: individual transparent world sprite for 915x412 mobile 2.5D guild management game. Input image1 is ONLY a style/material/camera/light reference; create the NEW subject below, do not reproduce the desk. Premium mobile strategy game prop, rounded stylized 3D render rendered into a PNG, believable solid volume, bevelled edges, subtle material variation and ambient occlusion, modern Seoul awakener guild, warm ivory ceramic and pale ash wood with graphite navy metal, restrained teal illumination. No black cartoon outlines, no flat vector/Flash art, no cards, no UI, no people, no logos, no lettering. Orthographic three-quarter view from front and slightly right, camera elevated 40 degrees, yaw 18 degrees, long horizontal faces slope gently; top faces clearly visible. Soft broad daylight from upper left; shadow falls toward lower right. Ground sits horizontal in scene. Object cluster isolated on genuine alpha including soft contact shadow, transparent background; no square base, pedestal or floor tile. Entire cluster visible with generous transparent margins. Subject: A guild crafting workshop station: sturdy pale-wood workbench on graphite navy storage cabinets, chunky blue-grey benchtop press and vise, low open tool stand, neatly arranged small crafting components, restrained warm amber task light. No weapons, no giant hammer icon, believable workbench machine silhouette, no writing. Coherent functional equipment cluster, low and wide where appropriate, readable at140px wide. Match image1's camera, render polish, material realism and bevels. Entire asset fits with margin, genuine alpha exterior and soft contact shadow. Do not copy the desk, books, office chair or plants from the reference. Avoid floating UI icon, decorative border, floor tile or room.",
+      "tool": "built-in image_gen",
+      "size": [
+        1666,
+        944
+      ],
+      "alphaChannel": true,
+      "sha256": "a9f5a621f94e3d5907cd0a4a583be1824093821f02a4f7f838ac2b7696e4ddb9",
+      "referenced_image_paths": [
+        "C:\\Users\\geniu\\.codex\\generated_images\\01a1023b-a2e0-7ad2-9df8-a5c819425960\\exec-52b737c2-052b-4ebf-b959-02ca6fde4acb.png"
+      ]
+    },
+    {
+      "id": "revival",
+      "file": "assets/revival.png",
+      "source_path": "C:\\Users\\geniu\\.codex\\generated_images\\01a1023b-a2e0-7ad2-9df8-a5c819425960\\exec-0834101f-c338-42d2-ac09-46597d5725e5.png",
+      "prompt": "Use case: stylized-concept. Asset type: individual transparent world sprite for 915x412 mobile 2.5D guild management game. Input image1 is ONLY a style/material/camera/light reference; create the NEW subject below, do not reproduce the desk. Premium mobile strategy game prop, rounded stylized 3D render rendered into a PNG, believable solid volume, bevelled edges, subtle material variation and ambient occlusion, modern Seoul awakener guild, warm ivory ceramic and pale ash wood with graphite navy metal, restrained teal illumination. No black cartoon outlines, no flat vector/Flash art, no cards, no UI, no people, no logos, no lettering. Orthographic three-quarter view from front and slightly right, camera elevated 40 degrees, yaw 18 degrees, long horizontal faces slope gently; top faces clearly visible. Soft broad daylight from upper left; shadow falls toward lower right. Ground sits horizontal in scene. Object cluster isolated on genuine alpha including soft contact shadow, transparent background; no square base, pedestal or floor tile. Entire cluster visible with generous transparent margins. Subject: A revival-stone synthesis station: substantial rounded ivory containment pod with deep navy lower housing, visible transparent bowl-shaped synthesis chamber containing one luminous turquoise stone, three short condenser columns and compact operator console. Magical technology treated as practical 3D machinery, no writing. Coherent functional equipment cluster, low and wide where appropriate, readable at140px wide. Match image1's camera, render polish, material realism and bevels. Entire asset fits with margin, genuine alpha exterior and soft contact shadow. Do not copy the desk, books, office chair or plants from the reference. Avoid floating UI icon, decorative border, floor tile or room.",
+      "tool": "built-in image_gen",
+      "size": [
+        1536,
+        1024
+      ],
+      "alphaChannel": true,
+      "sha256": "9a1efb4312b49d7099afd70f5163afc01c8492b76f6cb235d4c9ad4962e62b22",
+      "referenced_image_paths": [
+        "C:\\Users\\geniu\\.codex\\generated_images\\01a1023b-a2e0-7ad2-9df8-a5c819425960\\exec-52b737c2-052b-4ebf-b959-02ca6fde4acb.png"
+      ]
+    },
+    {
+      "id": "analysis",
+      "file": "assets/analysis.png",
+      "source_path": "C:\\Users\\geniu\\.codex\\generated_images\\01a1023b-a2e0-7ad2-9df8-a5c819425960\\exec-8be6b24f-feb7-49b5-aa66-3aab6c8456c2.png",
+      "prompt": "Use case: stylized-concept. Asset type: individual transparent world sprite for 915x412 mobile 2.5D guild management game. Input image1 is ONLY a style/material/camera/light reference; create the NEW subject below, do not reproduce the desk. Premium mobile strategy game prop, rounded stylized 3D render rendered into a PNG, believable solid volume, bevelled edges, subtle material variation and ambient occlusion, modern Seoul awakener guild, warm ivory ceramic and pale ash wood with graphite navy metal, restrained teal illumination. No black cartoon outlines, no flat vector/Flash art, no cards, no UI, no people, no logos, no lettering. Orthographic three-quarter view from front and slightly right, camera elevated 40 degrees, yaw 18 degrees, long horizontal faces slope gently; top faces clearly visible. Soft broad daylight from upper left; shadow falls toward lower right. Ground sits horizontal in scene. Object cluster isolated on genuine alpha including soft contact shadow, transparent background; no square base, pedestal or floor tile. Entire cluster visible with generous transparent margins. Subject: An artifact analysis station: broad rounded navy-and-ivory scan table with central faceted artifact under a teal translucent scanning hoop, two upright slim sensor pylons, one small monitor, attached low drawer cabinet. Clear analytical instrument silhouette, no writing. Coherent functional equipment cluster, low and wide where appropriate, readable at140px wide. Match image1's camera, render polish, material realism and bevels. Entire asset fits with margin, genuine alpha exterior and soft contact shadow. Do not copy the desk, books, office chair or plants from the reference. Avoid floating UI icon, decorative border, floor tile or room.",
+      "tool": "built-in image_gen",
+      "size": [
+        1670,
+        941
+      ],
+      "alphaChannel": true,
+      "sha256": "0892db4bb7e03d1e3592a6cbb8b9289d249c1790ecba1b015fd10e5920e7a744",
+      "referenced_image_paths": [
+        "C:\\Users\\geniu\\.codex\\generated_images\\01a1023b-a2e0-7ad2-9df8-a5c819425960\\exec-52b737c2-052b-4ebf-b959-02ca6fde4acb.png"
+      ]
+    },
+    {
+      "id": "construction",
+      "file": "assets/construction.png",
+      "source_path": "C:\\Users\\geniu\\.codex\\generated_images\\01a1023b-a2e0-7ad2-9df8-a5c819425960\\exec-f8507c8a-cae1-4fb4-9085-17ff550e454f.png",
+      "prompt": "Use case: stylized-concept. Asset type: individual transparent game-world sprite. Input image1 is ONLY style, palette, camera and lighting reference. Premium mobile strategy game prop, rounded stylized 3D render rendered into a PNG, believable solid volume, bevelled edges, subtle material variation and ambient occlusion, modern Seoul awakener guild, warm ivory ceramic and pale ash wood with graphite navy metal, restrained teal illumination. No black cartoon outlines, no flat vector/Flash art, no cards, no UI, no people, no logos, no lettering. Orthographic three-quarter view from front and slightly right, camera elevated 40 degrees, yaw 18 degrees, long horizontal faces slope gently; top faces clearly visible. Soft broad daylight from upper left; shadow falls toward lower right. Ground sits horizontal in scene. Object cluster isolated on genuine alpha including soft contact shadow, transparent background; no square base, pedestal or floor tile. Entire cluster visible with generous transparent margins. Subject: A low coherent construction staging kit: two compact orange-and-ivory safety cones, a narrow navy folding safety barrier with diagonal amber stripes, a closed pale-wood delivery crate and folded ivory protective tarp. Equipment-only construction signifier for placing over an unfinished facility. NO text or traffic-sign numbers. Low silhouette so upgraded existing facilities remain visible; no person. Match reference's materials and camera. No background vignette or ambient fog; all exterior pixels transparent except tightly confined contact shadow. Entire single object/group visible with margin.",
+      "tool": "built-in image_gen",
+      "size": [
+        1672,
+        941
+      ],
+      "alphaChannel": true,
+      "sha256": "573474b571dd6e6a8fc16f4f065b4f35dd84eae2b5199365b64bb68f566352f2",
+      "referenced_image_paths": [
+        "C:\\Users\\geniu\\.codex\\generated_images\\01a1023b-a2e0-7ad2-9df8-a5c819425960\\exec-52b737c2-052b-4ebf-b959-02ca6fde4acb.png"
+      ]
+    },
+    {
+      "id": "module-cabinet",
+      "file": "assets/module-cabinet.png",
+      "source_path": "C:\\Users\\geniu\\.codex\\generated_images\\01a1023b-a2e0-7ad2-9df8-a5c819425960\\exec-f5b8d5ad-7f6c-419a-a0bb-345dc8542a8d.png",
+      "prompt": "Use case: stylized-concept. Asset type: individual transparent game-world sprite. Input image1 is ONLY style, palette, camera and lighting reference. Premium mobile strategy game prop, rounded stylized 3D render rendered into a PNG, believable solid volume, bevelled edges, subtle material variation and ambient occlusion, modern Seoul awakener guild, warm ivory ceramic and pale ash wood with graphite navy metal, restrained teal illumination. No black cartoon outlines, no flat vector/Flash art, no cards, no UI, no people, no logos, no lettering. Orthographic three-quarter view from front and slightly right, camera elevated 40 degrees, yaw 18 degrees, long horizontal faces slope gently; top faces clearly visible. Soft broad daylight from upper left; shadow falls toward lower right. Ground sits horizontal in scene. Object cluster isolated on genuine alpha including soft contact shadow, transparent background; no square base, pedestal or floor tile. Entire cluster visible with generous transparent margins. Subject: One small standalone tier4 facility extension module: compact rounded ivory utility storage cabinet with navy drawers, bronze handles and tidy component tray on top. Low rectangular cabinet only, fits beside many kinds of guild station. No desk, no chair, no floor. Match reference's materials and camera. No background vignette or ambient fog; all exterior pixels transparent except tightly confined contact shadow. Entire single object/group visible with margin.",
+      "tool": "built-in image_gen",
+      "size": [
+        1672,
+        941
+      ],
+      "alphaChannel": true,
+      "sha256": "9d562e0a1bd124c4d8022bf27d6f363785718cd6937cda42c305d057ee385521",
+      "referenced_image_paths": [
+        "C:\\Users\\geniu\\.codex\\generated_images\\01a1023b-a2e0-7ad2-9df8-a5c819425960\\exec-52b737c2-052b-4ebf-b959-02ca6fde4acb.png"
+      ]
+    },
+    {
+      "id": "module-monitor",
+      "file": "assets/module-monitor.png",
+      "source_path": "C:\\Users\\geniu\\.codex\\generated_images\\01a1023b-a2e0-7ad2-9df8-a5c819425960\\exec-e2edec7f-93d0-451f-9c20-991970dc446b.png",
+      "prompt": "Use case: stylized-concept. Asset type: individual transparent game-world sprite. Input image1 is ONLY style, palette, camera and lighting reference. Premium mobile strategy game prop, rounded stylized 3D render rendered into a PNG, believable solid volume, bevelled edges, subtle material variation and ambient occlusion, modern Seoul awakener guild, warm ivory ceramic and pale ash wood with graphite navy metal, restrained teal illumination. No black cartoon outlines, no flat vector/Flash art, no cards, no UI, no people, no logos, no lettering. Orthographic three-quarter view from front and slightly right, camera elevated 40 degrees, yaw 18 degrees, long horizontal faces slope gently; top faces clearly visible. Soft broad daylight from upper left; shadow falls toward lower right. Ground sits horizontal in scene. Object cluster isolated on genuine alpha including soft contact shadow, transparent background; no square base, pedestal or floor tile. Entire cluster visible with generous transparent margins. Subject: One small standalone tier7 facility extension module: compact ivory utility cabinet topped with a slim angled translucent teal secondary monitor and short scanner antenna. Solid low navy base and softly rounded cream sides. No desk, no chair, no floor. Match reference's materials and camera. No background vignette or ambient fog; all exterior pixels transparent except tightly confined contact shadow. Entire single object/group visible with margin.",
+      "tool": "built-in image_gen",
+      "size": [
+        1350,
+        1165
+      ],
+      "alphaChannel": true,
+      "sha256": "c21febcca1419283bd962a17986c69bc8146d9741b3ec55ff50ae047ac5911f7",
+      "referenced_image_paths": [
+        "C:\\Users\\geniu\\.codex\\generated_images\\01a1023b-a2e0-7ad2-9df8-a5c819425960\\exec-52b737c2-052b-4ebf-b959-02ca6fde4acb.png"
+      ]
+    },
+    {
+      "id": "module-core",
+      "file": "assets/module-core.png",
+      "source_path": "C:\\Users\\geniu\\.codex\\generated_images\\01a1023b-a2e0-7ad2-9df8-a5c819425960\\exec-872a5127-a139-45e3-b615-7b011bf1ea70.png",
+      "prompt": "Use case: stylized-concept. Asset type: individual transparent game-world sprite. Input image1 is ONLY style, palette, camera and lighting reference. Premium mobile strategy game prop, rounded stylized 3D render rendered into a PNG, believable solid volume, bevelled edges, subtle material variation and ambient occlusion, modern Seoul awakener guild, warm ivory ceramic and pale ash wood with graphite navy metal, restrained teal illumination. No black cartoon outlines, no flat vector/Flash art, no cards, no UI, no people, no logos, no lettering. Orthographic three-quarter view from front and slightly right, camera elevated 40 degrees, yaw 18 degrees, long horizontal faces slope gently; top faces clearly visible. Soft broad daylight from upper left; shadow falls toward lower right. Ground sits horizontal in scene. Object cluster isolated on genuine alpha including soft contact shadow, transparent background; no square base, pedestal or floor tile. Entire cluster visible with generous transparent margins. Subject: One small standalone tier10 facility extension module: compact ivory and navy utility pedestal containing a tiny turquoise cylindrical energy core behind a curved transparent window, short bronze stabilizer fins, refined understated teal glow. Same physical scale as a small office cabinet. No desk, no chair, no floor. Match reference's materials and camera. No background vignette or ambient fog; all exterior pixels transparent except tightly confined contact shadow. Entire single object/group visible with margin.",
+      "tool": "built-in image_gen",
+      "size": [
+        1448,
+        1086
+      ],
+      "alphaChannel": true,
+      "sha256": "c11b25202d383dda3ccf6aea39a052b88b38e6db72c448448cd5e610754a51f4",
+      "referenced_image_paths": [
+        "C:\\Users\\geniu\\.codex\\generated_images\\01a1023b-a2e0-7ad2-9df8-a5c819425960\\exec-52b737c2-052b-4ebf-b959-02ca6fde4acb.png"
+      ]
+    }
+  ],
+  "notes": [
+    "All 13 generated PNG originals are preserved separately: eight facilities, one open-plan floor, construction and three upgrade modules.",
+    "Artwork has a rendered 3D material appearance stored as 2D PNG sprites; no 3D engine or source model is added.",
+    "This standalone preview is awaiting approval and is not connected to the runtime game or exporter.",
+    "The user profile and run checkpoint remain unchanged; preview management state exists only in memory."
+  ],
+  "generatedRecord": "generated.json",
+  "camera": {
+    "elevationDegrees": 40,
+    "yawDegrees": 18,
+    "projection": "orthographic"
+  },
+  "lighting": {
+    "key": "upper-left",
+    "shadow": "lower-right"
+  },
+  "materials": [
+    "warm ivory ceramic",
+    "pale ash wood",
+    "graphite navy metal",
+    "restrained teal light"
+  ],
+  "floor": "wide open-plan interior, width about 4 times depth, two rows of four facility positions with central walkway",
+  "previewProject": "project.godot",
+  "previewLauncher": "Preview-Guild-2p5D.cmd",
+  "stylePrompt": "Premium mobile strategy game prop, rounded stylized 3D render rendered into a PNG, believable solid volume, bevelled edges, subtle material variation and ambient occlusion, modern Seoul awakener guild, warm ivory ceramic and pale ash wood with graphite navy metal, restrained teal illumination. No black cartoon outlines, no flat vector/Flash art, no cards, no UI, no people, no logos, no lettering. Orthographic three-quarter view from front and slightly right, camera elevated 40 degrees, yaw 18 degrees, long horizontal faces slope gently; top faces clearly visible. Soft broad daylight from upper left; shadow falls toward lower right. Ground sits horizontal in scene. Object cluster isolated on genuine alpha including soft contact shadow, transparent background; no square base, pedestal or floor tile. Entire cluster visible with generous transparent margins.",
+  "previewControls": {
+    "F1": "initial layout",
+    "F2": "expanded layout",
+    "F3": "management panel",
+    "Escape": "close management panel first, then exit preview",
+    "startExpanded": "--expanded"
+  },
+  "capture": {
+    "engine": "Godot 4.7.2 Standard / Compatibility",
+    "screenSize": [
+      915,
+      412
+    ],
+    "files": [
+      "01-initial.png",
+      "02-expanded.png",
+      "03-management.png",
+      "04-assets.png"
+    ],
+    "assetBoardSize": [
+      1536,
+      1100
+    ],
+    "saveAccess": false,
+    "review": "awaiting-user-approval"
+  }
+}

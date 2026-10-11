@@ -1,0 +1,234 @@
+[
+  {
+    "name": "desk_background",
+    "width": 1830,
+    "height": 824,
+    "transparent": false,
+    "source": "C:\\Users\\geniu\\.codex\\generated_images\\01a124d2-3d06-7a31-b813-60c304738541\\exec-1cbc1137-49d1-46a9-ac7b-96348502cbf7.png",
+    "prompt": "Use case: stylized-concept. A production raster UI sprite for Seoul Hero's warm daytime awakened-association office archive. Warm hand-painted indie game illustration, softly brushed gouache material texture and subtle depth, mature everyday office aesthetic. No outlines around objects, no vector-flat shapes, no neon, no dark cyberpunk, no childish decorations. Absolutely NO text, letters, numbers, logos, watermarks or pseudo-writing. Straight orthographic overhead / frontal flat lay, axis-aligned and unrotated unless requested. One isolated requested asset only, completely visible with tiny transparent padding, genuine RGBA alpha outside its silhouette, never checkerboard or a background surface. Shadows extremely soft and confined within the piece, no external drop shadow. Target file desk_background.png, exact size 1830x824 pixels. Opaque full-bleed empty light natural oak office desktop, overhead. Fine subtle horizontal wood grain, honey cream color, slightly darker edges, even warm daylight. No objects, seams, plank gaps, borders or decorations. Background for THIS asset is opaque, overriding isolated sprite instructions."
+  },
+  {
+    "name": "tab_characters",
+    "width": 236,
+    "height": 80,
+    "transparent": true,
+    "source": "C:\\Users\\geniu\\.codex\\generated_images\\01a124d2-3d06-7a31-b813-60c304738541\\exec-ba62b9b3-d121-4ece-b198-e91b9444bb9a.png",
+    "prompt": "Use case: stylized-concept. A production raster UI sprite for Seoul Hero's warm daytime awakened-association office archive. Warm hand-painted indie game illustration, softly brushed gouache material texture and subtle depth, mature everyday office aesthetic. No outlines around objects, no vector-flat shapes, no neon, no dark cyberpunk, no childish decorations. Absolutely NO text, letters, numbers, logos, watermarks or pseudo-writing. Straight orthographic overhead / frontal flat lay, axis-aligned and unrotated unless requested. One isolated requested asset only, completely visible with tiny transparent padding, genuine RGBA alpha outside its silhouette, never checkerboard or a background surface. Shadows extremely soft and confined within the piece, no external drop shadow. Target file tab_characters.png, exact canvas 236x80 pixels, object fills 96% of canvas in matching aspect ratio. Wide horizontal warm yellow paper file tab, darker narrow band at far left. Rectangle with very subtly rounded corners, fine paper grain, uniform blank center."
+  },
+  {
+    "name": "tab_weapons",
+    "width": 236,
+    "height": 80,
+    "transparent": true,
+    "source": "C:\\Users\\geniu\\.codex\\generated_images\\01a124d2-3d06-7a31-b813-60c304738541\\exec-d7a29fa2-d4b9-4fd6-b535-c0f51463f81f.png",
+    "prompt": "Use case: stylized-concept. A production raster UI sprite for Seoul Hero's warm daytime awakened-association office archive. Warm hand-painted indie game illustration, softly brushed gouache material texture and subtle depth, mature everyday office aesthetic. No outlines around objects, no vector-flat shapes, no neon, no dark cyberpunk, no childish decorations. Absolutely NO text, letters, numbers, logos, watermarks or pseudo-writing. Straight orthographic overhead / frontal flat lay, axis-aligned and unrotated unless requested. One isolated requested asset only, completely visible with tiny transparent padding, genuine RGBA alpha outside its silhouette, never checkerboard or a background surface. Shadows extremely soft and confined within the piece, no external drop shadow. Target file tab_weapons.png, exact canvas 236x80 pixels, object fills 96% of canvas in matching aspect ratio. Wide horizontal sky-blue paper file tab, darker narrow blue band at far left. Rectangle with very subtly rounded corners, fine paper grain, uniform blank center. STRICT SILHOUETTE: simple rounded rectangle, top edge perfectly straight, absolutely NO protruding file folder tab or notch."
+  },
+  {
+    "name": "tab_enemies",
+    "width": 236,
+    "height": 80,
+    "transparent": true,
+    "source": "C:\\Users\\geniu\\.codex\\generated_images\\01a124d2-3d06-7a31-b813-60c304738541\\exec-0283dc07-6cc1-4c1f-a29f-b7400182f8d9.png",
+    "prompt": "Use case: stylized-concept. A production raster UI sprite for Seoul Hero's warm daytime awakened-association office archive. Warm hand-painted indie game illustration, softly brushed gouache material texture and subtle depth, mature everyday office aesthetic. No outlines around objects, no vector-flat shapes, no neon, no dark cyberpunk, no childish decorations. Absolutely NO text, letters, numbers, logos, watermarks or pseudo-writing. Straight orthographic overhead / frontal flat lay, axis-aligned and unrotated unless requested. One isolated requested asset only, completely visible with tiny transparent padding, genuine RGBA alpha outside its silhouette, never checkerboard or a background surface. Shadows extremely soft and confined within the piece, no external drop shadow. Target file tab_enemies.png, exact canvas 236x80 pixels, object fills 96% of canvas in matching aspect ratio. Wide horizontal muted coral paper file tab, darker narrow coral band at far left. Rectangle with very subtly rounded corners, fine paper grain, uniform blank center."
+  },
+  {
+    "name": "tab_items",
+    "width": 236,
+    "height": 80,
+    "transparent": true,
+    "source": "C:\\Users\\geniu\\.codex\\generated_images\\01a124d2-3d06-7a31-b813-60c304738541\\exec-4d758a55-7fa3-4a82-a129-f71c83a4aaca.png",
+    "prompt": "Use case: stylized-concept. A production raster UI sprite for Seoul Hero's warm daytime awakened-association office archive. Warm hand-painted indie game illustration, softly brushed gouache material texture and subtle depth, mature everyday office aesthetic. No outlines around objects, no vector-flat shapes, no neon, no dark cyberpunk, no childish decorations. Absolutely NO text, letters, numbers, logos, watermarks or pseudo-writing. Straight orthographic overhead / frontal flat lay, axis-aligned and unrotated unless requested. One isolated requested asset only, completely visible with tiny transparent padding, genuine RGBA alpha outside its silhouette, never checkerboard or a background surface. Shadows extremely soft and confined within the piece, no external drop shadow. Target file tab_items.png, exact canvas 236x80 pixels, object fills 96% of canvas in matching aspect ratio. Wide horizontal light yellow-green paper file tab, darker narrow green band at far left. Rectangle with very subtly rounded corners, fine paper grain, uniform blank center."
+  },
+  {
+    "name": "tab_weekly",
+    "width": 236,
+    "height": 80,
+    "transparent": true,
+    "source": "C:\\Users\\geniu\\.codex\\generated_images\\01a124d2-3d06-7a31-b813-60c304738541\\exec-83555109-0552-49fc-ad19-e940915a1e8f.png",
+    "prompt": "Use case: stylized-concept. A production raster UI sprite for Seoul Hero's warm daytime awakened-association office archive. Warm hand-painted indie game illustration, softly brushed gouache material texture and subtle depth, mature everyday office aesthetic. No outlines around objects, no vector-flat shapes, no neon, no dark cyberpunk, no childish decorations. Absolutely NO text, letters, numbers, logos, watermarks or pseudo-writing. Straight orthographic overhead / frontal flat lay, axis-aligned and unrotated unless requested. One isolated requested asset only, completely visible with tiny transparent padding, genuine RGBA alpha outside its silhouette, never checkerboard or a background surface. Shadows extremely soft and confined within the piece, no external drop shadow. Target file tab_weekly.png, exact canvas 236x80 pixels, object fills 96% of canvas in matching aspect ratio. Wide horizontal pastel lavender paper file tab, darker narrow purple band at far left. Rectangle with very subtly rounded corners, fine paper grain, uniform blank center."
+  },
+  {
+    "name": "tab_blessings",
+    "width": 236,
+    "height": 80,
+    "transparent": true,
+    "source": "C:\\Users\\geniu\\.codex\\generated_images\\01a124d2-3d06-7a31-b813-60c304738541\\exec-0766a2b7-18f0-46c3-9fbd-fe2c8440d998.png",
+    "prompt": "Use case: stylized-concept. A production raster UI sprite for Seoul Hero's warm daytime awakened-association office archive. Warm hand-painted indie game illustration, softly brushed gouache material texture and subtle depth, mature everyday office aesthetic. No outlines around objects, no vector-flat shapes, no neon, no dark cyberpunk, no childish decorations. Absolutely NO text, letters, numbers, logos, watermarks or pseudo-writing. Straight orthographic overhead / frontal flat lay, axis-aligned and unrotated unless requested. One isolated requested asset only, completely visible with tiny transparent padding, genuine RGBA alpha outside its silhouette, never checkerboard or a background surface. Shadows extremely soft and confined within the piece, no external drop shadow. Target file tab_blessings.png, exact canvas 236x80 pixels, object fills 96% of canvas in matching aspect ratio. Wide horizontal pale gold paper file tab, darker narrow golden band at far left. Rectangle with very subtly rounded corners, fine paper grain, uniform blank center."
+  },
+  {
+    "name": "tab_selected_glow",
+    "width": 236,
+    "height": 80,
+    "transparent": true,
+    "source": "C:\\Users\\geniu\\.codex\\generated_images\\01a124d2-3d06-7a31-b813-60c304738541\\exec-de8339c9-5e77-418e-bed4-aa93506d934d.png",
+    "prompt": "Use case: stylized-concept. A production raster UI sprite for Seoul Hero's warm daytime awakened-association office archive. Warm hand-painted indie game illustration, softly brushed gouache material texture and subtle depth, mature everyday office aesthetic. No outlines around objects, no vector-flat shapes, no neon, no dark cyberpunk, no childish decorations. Absolutely NO text, letters, numbers, logos, watermarks or pseudo-writing. Straight orthographic overhead / frontal flat lay, axis-aligned and unrotated unless requested. One isolated requested asset only, completely visible with tiny transparent padding, genuine RGBA alpha outside its silhouette, never checkerboard or a background surface. Shadows extremely soft and confined within the piece, no external drop shadow. Only a translucent pale warm cream highlight overlay shaped like a horizontal rectangular file tab, delicate painted soft light at top and left fading to clear center. No opaque paper or underlying tab. Whole sprite semi-transparent."
+  },
+  {
+    "name": "folder_open",
+    "width": 520,
+    "height": 620,
+    "transparent": true,
+    "source": "C:\\Users\\geniu\\.codex\\generated_images\\01a124d2-3d06-7a31-b813-60c304738541\\exec-b01e3bc6-21c1-4c5a-8b8e-e7e6542639e5.png",
+    "prompt": "Use case: stylized-concept. A production raster UI sprite for Seoul Hero's warm daytime awakened-association office archive. Warm hand-painted indie game illustration, softly brushed gouache material texture and subtle depth, mature everyday office aesthetic. No outlines around objects, no vector-flat shapes, no neon, no dark cyberpunk, no childish decorations. Absolutely NO text, letters, numbers, logos, watermarks or pseudo-writing. Straight orthographic overhead / frontal flat lay, axis-aligned and unrotated unless requested. One isolated requested asset only, completely visible with tiny transparent padding, genuine RGBA alpha outside its silhouette, never checkerboard or a background surface. Shadows extremely soft and confined within the piece, no external drop shadow. Target file folder_open.png, exact canvas 520x620 pixels, object fills 94% of canvas. Open Manila file folder as a single portrait rectangular panel, soft buff tan cardstock, slightly darker horizontal band across top. No contents, text or flaps outside rectangle. Designed for 9-slice: uniform straight side edges and uniform blank center with only subtle paper grain. Top details restricted to top 65px of target."
+  },
+  {
+    "name": "photo_frame",
+    "width": 220,
+    "height": 250,
+    "transparent": true,
+    "source": "C:\\Users\\geniu\\.codex\\generated_images\\01a124d2-3d06-7a31-b813-60c304738541\\exec-7d05d8c0-27b2-4674-9198-0b4eb4875130.png",
+    "prompt": "Use case: stylized-concept. A production raster UI sprite for Seoul Hero's warm daytime awakened-association office archive. Warm hand-painted indie game illustration, softly brushed gouache material texture and subtle depth, mature everyday office aesthetic. No outlines around objects, no vector-flat shapes, no neon, no dark cyberpunk, no childish decorations. Absolutely NO text, letters, numbers, logos, watermarks or pseudo-writing. Straight orthographic overhead / frontal flat lay, axis-aligned and unrotated unless requested. One isolated requested asset only, completely visible with tiny transparent padding, genuine RGBA alpha outside its silhouette, never checkerboard or a background surface. Shadows extremely soft and confined within the piece, no external drop shadow. Target file photo_frame.png, exact canvas 220x250 pixels, object fills 94% of canvas. One upright instant photograph frame, warm off-white paper border, broad white bottom caption margin, inset pale gray-blue blank photo window. No picture. Flat front view, no rotation."
+  },
+  {
+    "name": "photo_frame_selected",
+    "width": 220,
+    "height": 250,
+    "transparent": true,
+    "source": "C:\\Users\\geniu\\.codex\\generated_images\\01a124d2-3d06-7a31-b813-60c304738541\\exec-8ad18f07-60ba-4e4c-815b-aa9a4917811e.png",
+    "prompt": "Use case: stylized-concept. A production raster UI sprite for Seoul Hero's warm daytime awakened-association office archive. Warm hand-painted indie game illustration, softly brushed gouache material texture and subtle depth, mature everyday office aesthetic. No outlines around objects, no vector-flat shapes, no neon, no dark cyberpunk, no childish decorations. Absolutely NO text, letters, numbers, logos, watermarks or pseudo-writing. Straight orthographic overhead / frontal flat lay, axis-aligned and unrotated unless requested. One isolated requested asset only, completely visible with tiny transparent padding, genuine RGBA alpha outside its silhouette, never checkerboard or a background surface. Shadows extremely soft and confined within the piece, no external drop shadow. Target file photo_frame_selected.png, exact canvas 220x250 pixels, object fills 94% of canvas. One upright instant photograph frame, warm off-white paper border, broad white bottom caption margin, inset pale gray-blue blank photo window. Selection marked with a narrow coral paper tape strip along top edge. Match classic instant photo frame, no picture, no rotation."
+  },
+  {
+    "name": "clip_paper",
+    "width": 48,
+    "height": 110,
+    "transparent": true,
+    "source": "C:\\Users\\geniu\\.codex\\generated_images\\01a124d2-3d06-7a31-b813-60c304738541\\exec-65a60089-5356-49e9-b8be-338c17ad7957.png",
+    "prompt": "Use case: stylized-concept. A production raster UI sprite for Seoul Hero's warm daytime awakened-association office archive. Warm hand-painted indie game illustration, softly brushed gouache material texture and subtle depth, mature everyday office aesthetic. No outlines around objects, no vector-flat shapes, no neon, no dark cyberpunk, no childish decorations. Absolutely NO text, letters, numbers, logos, watermarks or pseudo-writing. Straight orthographic overhead / frontal flat lay, axis-aligned and unrotated unless requested. One isolated requested asset only, completely visible with tiny transparent padding, genuine RGBA alpha outside its silhouette, never checkerboard or a background surface. Shadows extremely soft and confined within the piece, no external drop shadow. Target file clip_paper.png, exact canvas 48x110 pixels, object fills 94% of canvas. One narrow vertically upright silver metal paperclip, double-loop bent wire, subtle brushed metallic highlights. Open areas inside loops genuinely transparent."
+  },
+  {
+    "name": "clip_binder",
+    "width": 120,
+    "height": 100,
+    "transparent": true,
+    "source": "C:\\Users\\geniu\\.codex\\generated_images\\01a124d2-3d06-7a31-b813-60c304738541\\exec-f78e2e9a-73aa-4310-8427-c2e8bfda2e7c.png",
+    "prompt": "Use case: stylized-concept. A production raster UI sprite for Seoul Hero's warm daytime awakened-association office archive. Warm hand-painted indie game illustration, softly brushed gouache material texture and subtle depth, mature everyday office aesthetic. No outlines around objects, no vector-flat shapes, no neon, no dark cyberpunk, no childish decorations. Absolutely NO text, letters, numbers, logos, watermarks or pseudo-writing. Straight orthographic overhead / frontal flat lay, axis-aligned and unrotated unless requested. One isolated requested asset only, completely visible with tiny transparent padding, genuine RGBA alpha outside its silhouette, never checkerboard or a background surface. Shadows extremely soft and confined within the piece, no external drop shadow. Target file clip_binder.png, exact canvas 120x100 pixels, object fills 94% of canvas. One black office binder clip, frontal overhead view, black folded metal body and two silver wire handles, soft metallic shine, isolated."
+  },
+  {
+    "name": "sheet_personnel",
+    "width": 840,
+    "height": 720,
+    "transparent": true,
+    "source": "C:\\Users\\geniu\\.codex\\generated_images\\01a124d2-3d06-7a31-b813-60c304738541\\exec-07b04fb0-9dcd-4d86-b2bf-8152d1dfa129.png",
+    "prompt": "Use case: stylized-concept. A production raster UI sprite for Seoul Hero's warm daytime awakened-association office archive. Warm hand-painted indie game illustration, softly brushed gouache material texture and subtle depth, mature everyday office aesthetic. No outlines around objects, no vector-flat shapes, no neon, no dark cyberpunk, no childish decorations. Absolutely NO text, letters, numbers, logos, watermarks or pseudo-writing. Straight orthographic overhead / frontal flat lay, axis-aligned and unrotated unless requested. One isolated requested asset only, completely visible with tiny transparent padding, genuine RGBA alpha outside its silhouette, never checkerboard or a background surface. Shadows extremely soft and confined within the piece, no external drop shadow. Target file sheet_personnel.png, exact canvas 840x720 pixels, object fills 90% of canvas. Cream personnel record paper, broad blank title area at top, restrained navy horizontal line near top, three EMPTY small approval boxes at upper right. Entire decoration confined to top 130px, large remaining center completely blank subtle paper grain. 9-slice stable straight edges, no stains. STRICT: only ONE bare rectangular paper sheet, absolutely no clips, folders, leaves, stars, plants, ornaments or extra objects. Navy straight line and three empty approval boxes are the only printing."
+  },
+  {
+    "name": "sheet_incident",
+    "width": 840,
+    "height": 720,
+    "transparent": true,
+    "source": "C:\\Users\\geniu\\.codex\\generated_images\\01a124d2-3d06-7a31-b813-60c304738541\\exec-ff406884-4800-4704-af2e-75f3be03426d.png",
+    "prompt": "Use case: stylized-concept. A production raster UI sprite for Seoul Hero's warm daytime awakened-association office archive. Warm hand-painted indie game illustration, softly brushed gouache material texture and subtle depth, mature everyday office aesthetic. No outlines around objects, no vector-flat shapes, no neon, no dark cyberpunk, no childish decorations. Absolutely NO text, letters, numbers, logos, watermarks or pseudo-writing. Straight orthographic overhead / frontal flat lay, axis-aligned and unrotated unless requested. One isolated requested asset only, completely visible with tiny transparent padding, genuine RGBA alpha outside its silhouette, never checkerboard or a background surface. Shadows extremely soft and confined within the piece, no external drop shadow. Target file sheet_incident.png, exact canvas 840x720 pixels, rectangular paper fills 96% of canvas. Cream incident report paper, coral warning band across upper header, small EMPTY pale gray-blue photo mounting rectangle at upper right fully contained in top-right 180x180 corner. Blank title space at upper left. Entire large body blank paper grain. 9-slice stable straight edges. No perimeter ink outline."
+  },
+  {
+    "name": "sheet_ledger",
+    "width": 840,
+    "height": 720,
+    "transparent": true,
+    "source": "C:\\Users\\geniu\\.codex\\generated_images\\01a124d2-3d06-7a31-b813-60c304738541\\exec-b4be85ed-e68a-43e2-9449-80dd0fd6d30b.png",
+    "prompt": "Use case: stylized-concept. A production raster UI sprite for Seoul Hero's warm daytime awakened-association office archive. Warm hand-painted indie game illustration, softly brushed gouache material texture and subtle depth, mature everyday office aesthetic. No outlines around objects, no vector-flat shapes, no neon, no dark cyberpunk, no childish decorations. Absolutely NO text, letters, numbers, logos, watermarks or pseudo-writing. Straight orthographic overhead / frontal flat lay, axis-aligned and unrotated unless requested. One isolated requested asset only, completely visible with tiny transparent padding, genuine RGBA alpha outside its silhouette, never checkerboard or a background surface. Shadows extremely soft and confined within the piece, no external drop shadow. Target file sheet_ledger.png, exact canvas 840x720 pixels, rectangular paper fills 96% of canvas. Cream equipment ledger paper with extremely faint light beige-gray regular grid ruling in body and roomy blank header area in top 120px. No symbols or numbers. 9-slice stable straight edges and visually uniform low contrast grid. No perimeter ink outline."
+  },
+  {
+    "name": "sheet_inventory",
+    "width": 840,
+    "height": 720,
+    "transparent": true,
+    "source": "C:\\Users\\geniu\\.codex\\generated_images\\01a124d2-3d06-7a31-b813-60c304738541\\exec-db338e3e-5c71-42fc-b0c7-8c92134967a7.png",
+    "prompt": "Use case: stylized-concept. A production raster UI sprite for Seoul Hero's warm daytime awakened-association office archive. Warm hand-painted indie game illustration, softly brushed gouache material texture and subtle depth, mature everyday office aesthetic. No outlines around objects, no vector-flat shapes, no neon, no dark cyberpunk, no childish decorations. Absolutely NO text, letters, numbers, logos, watermarks or pseudo-writing. Straight orthographic overhead / frontal flat lay, axis-aligned and unrotated unless requested. One isolated requested asset only, completely visible with tiny transparent padding, genuine RGBA alpha outside its silhouette, never checkerboard or a background surface. Shadows extremely soft and confined within the piece, no external drop shadow. Target file sheet_inventory.png, exact canvas 840x720 pixels, rectangular paper fills 96% of canvas. Cream inventory list paper, blank title area top 120px, then 7 evenly spaced rows of small EMPTY checkboxes in narrow left margin and very faint horizontal rules across body. No ticks or text. 9-slice simple uniform edges, restrained faint stationery printing. No perimeter ink outline."
+  },
+  {
+    "name": "sheet_notice",
+    "width": 840,
+    "height": 720,
+    "transparent": true,
+    "source": "C:\\Users\\geniu\\.codex\\generated_images\\01a124d2-3d06-7a31-b813-60c304738541\\exec-4e0a3381-0e50-4c08-8615-c3e00ca20f3b.png",
+    "prompt": "Use case: stylized-concept. A production raster UI sprite for Seoul Hero's warm daytime awakened-association office archive. Warm hand-painted indie game illustration, softly brushed gouache material texture and subtle depth, mature everyday office aesthetic. No outlines around objects, no vector-flat shapes, no neon, no dark cyberpunk, no childish decorations. Absolutely NO text, letters, numbers, logos, watermarks or pseudo-writing. Straight orthographic overhead / frontal flat lay, axis-aligned and unrotated unless requested. One isolated requested asset only, completely visible with tiny transparent padding, genuine RGBA alpha outside its silhouette, never checkerboard or a background surface. Shadows extremely soft and confined within the piece, no external drop shadow. Target file sheet_notice.png, exact canvas 840x720 pixels, rectangular paper fills 96% of canvas. Cream official notice paper with top-center small EMPTY circular medallion reservation, just a faint impression no symbol inside, and two restrained thin navy decorative horizontal lines below the top header. All details contained within top 150px. Large center blank, uniform grain, 9-slice straight uniform edges. No perimeter ink outline."
+  },
+  {
+    "name": "sheet_ancient",
+    "width": 840,
+    "height": 720,
+    "transparent": true,
+    "source": "C:\\Users\\geniu\\.codex\\generated_images\\01a124d2-3d06-7a31-b813-60c304738541\\exec-3837e6ce-003c-45c1-981a-d0231bd59a75.png",
+    "prompt": "Use case: stylized-concept. A production raster UI sprite for Seoul Hero's warm daytime awakened-association office archive. Warm hand-painted indie game illustration, softly brushed gouache material texture and subtle depth, mature everyday office aesthetic. No outlines around objects, no vector-flat shapes, no neon, no dark cyberpunk, no childish decorations. Absolutely NO text, letters, numbers, logos, watermarks or pseudo-writing. Straight orthographic overhead / frontal flat lay, axis-aligned and unrotated unless requested. One isolated requested asset only, completely visible with tiny transparent padding, genuine RGBA alpha outside its silhouette, never checkerboard or a background surface. Shadows extremely soft and confined within the piece, no external drop shadow. Target file sheet_ancient.png, exact canvas 840x720 pixels, rectangular paper fills 96% of canvas. Pale golden aged Korean hanji manuscript paper, subtle visible fibers, lightly frayed worn edges, flat rectangular sheet (no rolled scroll rods). Large blank center with uniform subtle grain, no stains, markings or illustrations. 9-slice uniform straight edges except tiny worn corners. No perimeter ink outline."
+  },
+  {
+    "name": "postit_yellow",
+    "width": 260,
+    "height": 200,
+    "transparent": true,
+    "source": "C:\\Users\\geniu\\.codex\\generated_images\\01a124d2-3d06-7a31-b813-60c304738541\\exec-999f5aac-370f-4ea4-a1a0-35a2c990abcb.png",
+    "prompt": "Use case: stylized-concept. A production raster UI sprite for Seoul Hero's warm daytime awakened-association office archive. Warm hand-painted indie game illustration, softly brushed gouache material texture and subtle depth, mature everyday office aesthetic. No outlines around objects, no vector-flat shapes, no neon, no dark cyberpunk, no childish decorations. Absolutely NO text, letters, numbers, logos, watermarks or pseudo-writing. Straight orthographic overhead / frontal flat lay, axis-aligned and unrotated unless requested. One isolated requested asset only, completely visible with tiny transparent padding, genuine RGBA alpha outside its silhouette, never checkerboard or a background surface. Shadows extremely soft and confined within the piece, no external drop shadow. Target file postit_yellow.png, exact canvas 260x200 pixels, requested shape fills 90% of canvas. Warm yellow blank rectangular sticky note, subtly darker adhesive strip along top, tiny softly lifted lower-right corner. No external shadow, fine paper grain, upright."
+  },
+  {
+    "name": "postit_mint",
+    "width": 260,
+    "height": 200,
+    "transparent": true,
+    "source": "C:\\Users\\geniu\\.codex\\generated_images\\01a124d2-3d06-7a31-b813-60c304738541\\exec-772f0f7f-7986-4d5c-b946-53bf3f4dc9fc.png",
+    "prompt": "Use case: stylized-concept. A production raster UI sprite for Seoul Hero's warm daytime awakened-association office archive. Warm hand-painted indie game illustration, softly brushed gouache material texture and subtle depth, mature everyday office aesthetic. No outlines around objects, no vector-flat shapes, no neon, no dark cyberpunk, no childish decorations. Absolutely NO text, letters, numbers, logos, watermarks or pseudo-writing. Straight orthographic overhead / frontal flat lay, axis-aligned and unrotated unless requested. One isolated requested asset only, completely visible with tiny transparent padding, genuine RGBA alpha outside its silhouette, never checkerboard or a background surface. Shadows extremely soft and confined within the piece, no external drop shadow. Target file postit_mint.png, exact canvas 260x200 pixels, requested shape fills 90% of canvas. Pastel mint green blank rectangular sticky note, subtly darker adhesive strip along top, tiny softly lifted lower-right corner. No external shadow, fine paper grain, upright."
+  },
+  {
+    "name": "postit_pink",
+    "width": 260,
+    "height": 200,
+    "transparent": true,
+    "source": "C:\\Users\\geniu\\.codex\\generated_images\\01a124d2-3d06-7a31-b813-60c304738541\\exec-9bfda439-7365-4e25-a43c-f39f69ce4922.png",
+    "prompt": "Use case: stylized-concept. A production raster UI sprite for Seoul Hero's warm daytime awakened-association office archive. Warm hand-painted indie game illustration, softly brushed gouache material texture and subtle depth, mature everyday office aesthetic. No outlines around objects, no vector-flat shapes, no neon, no dark cyberpunk, no childish decorations. Absolutely NO text, letters, numbers, logos, watermarks or pseudo-writing. Straight orthographic overhead / frontal flat lay, axis-aligned and unrotated unless requested. One isolated requested asset only, completely visible with tiny transparent padding, genuine RGBA alpha outside its silhouette, never checkerboard or a background surface. Shadows extremely soft and confined within the piece, no external drop shadow. Target file postit_pink.png, exact canvas 260x200 pixels, requested shape fills 90% of canvas. Pastel warm pink blank rectangular sticky note, subtly darker adhesive strip along top, tiny softly lifted lower-right corner. No external shadow, fine paper grain, upright."
+  },
+  {
+    "name": "stamp_round_red",
+    "width": 90,
+    "height": 90,
+    "transparent": true,
+    "source": "C:\\Users\\geniu\\.codex\\generated_images\\01a124d2-3d06-7a31-b813-60c304738541\\exec-cc959dd2-e0e8-4a2e-a762-b61a46cf8447.png",
+    "prompt": "Use case: stylized-concept. A production raster UI sprite for Seoul Hero's warm daytime awakened-association office archive. Warm hand-painted indie game illustration, softly brushed gouache material texture and subtle depth, mature everyday office aesthetic. No outlines around objects, no vector-flat shapes, no neon, no dark cyberpunk, no childish decorations. Absolutely NO text, letters, numbers, logos, watermarks or pseudo-writing. Straight orthographic overhead / frontal flat lay, axis-aligned and unrotated unless requested. One isolated requested asset only, completely visible with tiny transparent padding, genuine RGBA alpha outside its silhouette, never checkerboard or a background surface. Shadows extremely soft and confined within the piece, no external drop shadow. Target file stamp_round_red.png, exact canvas 90x90 pixels, requested shape fills 90% of canvas. Red circular rubber stamp ink imprint, ONLY a distressed thin circular ink ring with subtle ink bleeding and broken grain. Center and exterior fully transparent, no symbols at all, no solid paper."
+  },
+  {
+    "name": "stamp_square_red",
+    "width": 110,
+    "height": 80,
+    "transparent": true,
+    "source": "C:\\Users\\geniu\\.codex\\generated_images\\01a124d2-3d06-7a31-b813-60c304738541\\exec-ea4f1778-de29-4c27-9063-12c5ff95cd3f.png",
+    "prompt": "Use case: stylized-concept. A production raster UI sprite for Seoul Hero's warm daytime awakened-association office archive. Warm hand-painted indie game illustration, softly brushed gouache material texture and subtle depth, mature everyday office aesthetic. No outlines around objects, no vector-flat shapes, no neon, no dark cyberpunk, no childish decorations. Absolutely NO text, letters, numbers, logos, watermarks or pseudo-writing. Straight orthographic overhead / frontal flat lay, axis-aligned and unrotated unless requested. One isolated requested asset only, completely visible with tiny transparent padding, genuine RGBA alpha outside its silhouette, never checkerboard or a background surface. Shadows extremely soft and confined within the piece, no external drop shadow. Target file stamp_square_red.png, exact canvas 110x80 pixels, requested shape fills 90% of canvas. Red rectangular rubber stamp ink imprint, ONLY a distressed thin rectangular ink frame with slight bleeding and broken grain. Center and exterior fully transparent, no symbols at all, no solid paper."
+  },
+  {
+    "name": "stamp_danger_frame",
+    "width": 220,
+    "height": 90,
+    "transparent": true,
+    "source": "C:\\Users\\geniu\\.codex\\generated_images\\01a124d2-3d06-7a31-b813-60c304738541\\exec-d2ae215e-4278-4713-a934-dbfb12cf7f8d.png",
+    "prompt": "Use case: stylized-concept. A production raster UI sprite for Seoul Hero's warm daytime awakened-association office archive. Warm hand-painted indie game illustration, softly brushed gouache material texture and subtle depth, mature everyday office aesthetic. No outlines around objects, no vector-flat shapes, no neon, no dark cyberpunk, no childish decorations. Absolutely NO text, letters, numbers, logos, watermarks or pseudo-writing. Straight orthographic overhead / frontal flat lay, axis-aligned and unrotated unless requested. One isolated requested asset only, completely visible with tiny transparent padding, genuine RGBA alpha outside its silhouette, never checkerboard or a background surface. Shadows extremely soft and confined within the piece, no external drop shadow. Target file stamp_danger_frame.png, exact canvas 220x90 pixels, requested shape fills 90% of canvas. Wide coral-red rectangular danger stamp ink frame rotated slightly counterclockwise 7 degrees, distressed rubber ink texture, thin border ONLY. Center and exterior fully transparent, no symbols, no solid paper."
+  },
+  {
+    "name": "tape_strip",
+    "width": 140,
+    "height": 40,
+    "transparent": true,
+    "source": "C:\\Users\\geniu\\.codex\\generated_images\\01a124d2-3d06-7a31-b813-60c304738541\\exec-b61b2376-862d-4dc0-b3a7-6a0f4a8b0e2a.png",
+    "prompt": "Use case: stylized-concept. A production raster UI sprite for Seoul Hero's warm daytime awakened-association office archive. Warm hand-painted indie game illustration, softly brushed gouache material texture and subtle depth, mature everyday office aesthetic. No outlines around objects, no vector-flat shapes, no neon, no dark cyberpunk, no childish decorations. Absolutely NO text, letters, numbers, logos, watermarks or pseudo-writing. Straight orthographic overhead / frontal flat lay, axis-aligned and unrotated unless requested. One isolated requested asset only, completely visible with tiny transparent padding, genuine RGBA alpha outside its silhouette, never checkerboard or a background surface. Shadows extremely soft and confined within the piece, no external drop shadow. One horizontal translucent cream paper masking tape strip, softly torn short ends, subtle paper fibers and slight variations in adhesive opacity. Entire tape semi-transparent, no solid background."
+  },
+  {
+    "name": "deco_coffee_mug",
+    "width": 180,
+    "height": 180,
+    "transparent": true,
+    "source": "C:\\Users\\geniu\\.codex\\generated_images\\01a124d2-3d06-7a31-b813-60c304738541\\exec-b6fd2c8c-5eec-406b-9e11-619dd371ed8d.png",
+    "prompt": "Use case: stylized-concept. A production raster UI sprite for Seoul Hero's warm daytime awakened-association office archive. Warm hand-painted indie game illustration, softly brushed gouache material texture and subtle depth, mature everyday office aesthetic. No outlines around objects, no vector-flat shapes, no neon, no dark cyberpunk, no childish decorations. Absolutely NO text, letters, numbers, logos, watermarks or pseudo-writing. Straight orthographic overhead / frontal flat lay, axis-aligned and unrotated unless requested. One isolated requested asset only, completely visible with tiny transparent padding, genuine RGBA alpha outside its silhouette, never checkerboard or a background surface. Shadows extremely soft and confined within the piece, no external drop shadow. Target file deco_coffee_mug.png, exact canvas 180x180 pixels, object fills 90% of canvas. Single ceramic cream coffee mug strictly viewed directly from above, oval handle on right, filled with dark brown coffee and subtle soft reflection. No steam, saucer, letters or decorations, no external shadow."
+  },
+  {
+    "name": "deco_pen",
+    "width": 260,
+    "height": 60,
+    "transparent": true,
+    "source": "C:\\Users\\geniu\\.codex\\generated_images\\01a124d2-3d06-7a31-b813-60c304738541\\exec-2e44a773-fce6-462c-b5ac-fe1a76a60828.png",
+    "prompt": "Use case: stylized-concept. A production raster UI sprite for Seoul Hero's warm daytime awakened-association office archive. Warm hand-painted indie game illustration, softly brushed gouache material texture and subtle depth, mature everyday office aesthetic. No outlines around objects, no vector-flat shapes, no neon, no dark cyberpunk, no childish decorations. Absolutely NO text, letters, numbers, logos, watermarks or pseudo-writing. Straight orthographic overhead / frontal flat lay, axis-aligned and unrotated unless requested. One isolated requested asset only, completely visible with tiny transparent padding, genuine RGBA alpha outside its silhouette, never checkerboard or a background surface. Shadows extremely soft and confined within the piece, no external drop shadow. Target file deco_pen.png, exact canvas 260x60 pixels, object fills 90% of canvas. Single office ballpoint pen horizontal pointing to left, dark navy barrel, brushed silver tip and pocket clip, warm hand-painted soft highlights, no writing or branding."
+  },
+  {
+    "name": "deco_stamp_handle",
+    "width": 140,
+    "height": 140,
+    "transparent": true,
+    "source": "C:\\Users\\geniu\\.codex\\generated_images\\01a124d2-3d06-7a31-b813-60c304738541\\exec-8d9ae1b0-841a-47f1-b845-401fce4cbd74.png",
+    "prompt": "Use case: stylized-concept. A production raster UI sprite for Seoul Hero's warm daytime awakened-association office archive. Warm hand-painted indie game illustration, softly brushed gouache material texture and subtle depth, mature everyday office aesthetic. No outlines around objects, no vector-flat shapes, no neon, no dark cyberpunk, no childish decorations. Absolutely NO text, letters, numbers, logos, watermarks or pseudo-writing. Straight orthographic overhead / frontal flat lay, axis-aligned and unrotated unless requested. One isolated requested asset only, completely visible with tiny transparent padding, genuine RGBA alpha outside its silhouette, never checkerboard or a background surface. Shadows extremely soft and confined within the piece, no external drop shadow. Target deco_stamp_handle.png, square 140x140. STRICT ORTHOGRAPHIC ZENITH TOP VIEW CAMERA EXACTLY 90 DEGREES ABOVE: wooden stamp handle visible as circular concentric wooden disks, NO visible vertical stem or side faces. Beside it a small square red ink pad with no lid, seen as flat square of red felt inside wooden rim. Compact two-object composition. Not isometric. No perspective. No letters. Actual transparent background."
+  }
+]

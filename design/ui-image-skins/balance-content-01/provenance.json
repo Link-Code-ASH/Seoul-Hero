@@ -1,0 +1,291 @@
+{
+  "title": "서울 히어로 밸런스·콘텐츠 점검과 경험 시안",
+  "createdAt": "2026-10-07",
+  "status": "review_candidate",
+  "scope": "report_and_independent_drafts",
+  "engine": "Godot 4.7.2 Standard / 2D Compatibility",
+  "canvas": [
+    915,
+    412
+  ],
+  "productionConnected": false,
+  "productionDataChanged": false,
+  "userSaveAccessed": false,
+  "newOriginalArtGenerated": false,
+  "sourceDefinitions": [
+    {
+      "path": "godot/data/content.json",
+      "sha256": "858829d9b846b90252bd45a7ab1308e3b1341f732cb0381e9cdd3a57c6a04488"
+    },
+    {
+      "path": "godot/data/visuals/ui_materials.json",
+      "sha256": "0ac56e7d083a955f21044363839e50d31d057fca2278294f805dce7e592ea355"
+    },
+    {
+      "path": "godot/data/visuals/actors.json",
+      "sha256": "f6f5cd1b7adc205276ae0224cf9c5473cff56c867e22a1e4e71ca9ff1ccfe8c7"
+    },
+    {
+      "path": "godot/data/import-provenance.json",
+      "sha256": "d763d3c77e0bb05e53736a72452109cf226880f2733c5b51c2728adda6cf2fd2"
+    }
+  ],
+  "originalArtAndLicenses": "Existing assets source/provenance/prompt/license records are preserved without edits.",
+  "materialReuse": [
+    "ops/*",
+    "compact/*",
+    "cstore/*"
+  ],
+  "fonts": [
+    "BMJUA",
+    "KMU80HaeongSans",
+    "Paperlogy 4 Regular",
+    "Paperlogy 5 Medium",
+    "Barlow Condensed SemiBold"
+  ],
+  "report": "godot/docs/BALANCE_CONTENT_REVIEW.md",
+  "draftStates": [
+    "01-deploy",
+    "02-deploy-locked",
+    "03-shop-weapons",
+    "04-shop-items",
+    "05-shop-detail",
+    "06-result-clear",
+    "07-result-death"
+  ],
+  "fixtureAssumptions": {
+    "weaponCharacter": "awakener",
+    "additionalStatModifiers": "none",
+    "clearDepth": 3,
+    "clearRewards": {
+      "associationCoins": 120,
+      "supplyTickets": 1,
+      "materials": 10,
+      "speedupTickets": 4
+    },
+    "deathDepth": 3,
+    "deathCompletedWaves": 10,
+    "deathRewards": {
+      "associationCoins": 3,
+      "supplyTickets": 0,
+      "materials": 5,
+      "speedupTickets": 2
+    },
+    "newAccountGoalRewards": "Unapproved proposal; separate from current battle settlement."
+  },
+  "verification": {
+    "sourceInspection": true,
+    "staticCalculations": true,
+    "draftRendering": true,
+    "automatedTests": false,
+    "fullBuild": false,
+    "playQA": false,
+    "mobileQA": false,
+    "captureCount": 7,
+    "textFitIssues": 0,
+    "smallHitTargets": 0,
+    "actualPlayerTelemetryAccessed": false
+  },
+  "sourceAssets": [
+    {
+      "path": "godot/assets/environment-sd/gwanghwamun_sd_03.png",
+      "sha256": "ac3091cb64f037fa3f2a83a8012ef40be92f4b71bcdba1f4a1468f831e648630"
+    },
+    {
+      "path": "godot/assets/ui/image-skin/operations-standard-01/header-4x.png",
+      "sha256": "8a3a0ae46aff3bd5f2738dc52815c351c200accaa827b410c010341da5529f59"
+    },
+    {
+      "path": "godot/assets/ui/image-skin/operations-light-controls-02/back-4x.png",
+      "sha256": "76bfb2082389fec3bde5ebae4c9880803d2a5c23cd121fc255afe8876e41bf44"
+    },
+    {
+      "path": "godot/assets/ui/fonts/Paperlogy-5Medium.ttf",
+      "sha256": "f3c97ace885bb7d2a53a73dc71d832fa79988d5f546c2562abbb87aa07492f4b"
+    },
+    {
+      "path": "godot/assets/ui/fonts/Paperlogy-4Regular.ttf",
+      "sha256": "05e1021e3de620dddc97875342e2be1a94c5f8e9b9f792bd16c4c1d0085343b3"
+    },
+    {
+      "path": "godot/assets/ui/fonts/BMJUA.ttf",
+      "sha256": "e8e6aa8b1b662c7bf0d7f136f29e822e0985176458a6e5d0ba08afc4a5c901a9"
+    },
+    {
+      "path": "godot/assets/ui/image-skin/operations-standard-01/info-4x.png",
+      "sha256": "c3eaa034b9e47b0e283fede0a8b306ccbe60a07d52e43e27da255d6772647768"
+    },
+    {
+      "path": "godot/assets/ui/fonts/KMU80HaeongSans.ttf",
+      "sha256": "df9f536e641de9637041ce763c653b02ccd21f336246a2e30700c9d25f5e90f5"
+    },
+    {
+      "path": "godot/assets/ui/image-skin/operations-light-controls-02/secondary-4x.png",
+      "sha256": "28d6c8ca2a452202ee439535026775bd8e6259c3db95f3969677b3bf23532ec2"
+    },
+    {
+      "path": "godot/assets/ui/image-skin/operations-standard-01/tab-4x.png",
+      "sha256": "48a72643a5e1765f36b5da6c3623fb5f1e0a3295c29df90baae8540b32fb92fb"
+    },
+    {
+      "path": "godot/assets/ui/fonts/BarlowCondensed-SemiBold.ttf",
+      "sha256": "0d6fc1596f18256209e2deeb99aed78c499e4c6393ac1e3da416c9b0b7492a64"
+    },
+    {
+      "path": "godot/assets/ui/image-skin/operations-standard-01/secondary-4x.png",
+      "sha256": "f9c0b23e11f91fcc45168e4af8f34e739a0f1066768efbf1a250209bb4313f57"
+    },
+    {
+      "path": "godot/assets/ui/urban-operation/urban_icons_01.png",
+      "sha256": "24ab0fd370c44ae7529d776b655de7875fd38a872bee5e1b859e33bb8185e22b"
+    },
+    {
+      "path": "godot/assets/monsters-sd/runner_sd_01.png",
+      "sha256": "01d8d42882497330c1257d42c36bac0afa2ea0b48df23e253afb72f47934ec1c"
+    },
+    {
+      "path": "godot/assets/monsters-sd/spitter_sd_01.png",
+      "sha256": "affd462fadb19deb7b44ddefac835fe416474a42fd102f9a1da45dece340892a"
+    },
+    {
+      "path": "godot/assets/ui/ui_association_coin_01.png",
+      "sha256": "be18df6c59f14c1025095c931e9c52803f0894ba26668c458c3828e6b4a99d84"
+    },
+    {
+      "path": "godot/assets/ui/lobby/lobby_supply_ticket_01.png",
+      "sha256": "cb9cf5a8e48b9ce87a16926e804bcbc3cec10f3c67737911a152a77e00b2fdd7"
+    },
+    {
+      "path": "godot/assets/ui/image-skin/operations-standard-01/row-4x.png",
+      "sha256": "7b39ebe79d0c57f6e698cf4347dde024e4b6d2f9ec0f9a52cecebdbc5942aae4"
+    },
+    {
+      "path": "godot/assets/ui/weapons/weapon_mana_bolt_casual_01.webp",
+      "sha256": "834d3427179c827e7e2fb105918b811446bbd4e17fbcf706c0a1b5c5cf64675a"
+    },
+    {
+      "path": "godot/assets/ui/image-skin/operations-standard-01/primary-4x.png",
+      "sha256": "0604a649d746a8f5765be8e48c38188e3270d8dc773fc5d69e2fc462cb282b76"
+    },
+    {
+      "path": "godot/assets/monsters-sd/riftQueen_sd_01.png",
+      "sha256": "8fb5c2cf16c4ec0d05bfeea2450e02d38a2773e17d6c6526b657834e1e6e40ad"
+    },
+    {
+      "path": "godot/design/ui-premium-v5/assets/lobby-rain.png",
+      "sha256": "57d9e878d19bc4c4a013556ceb22be78534635ac365e1a8c9c6bf7ca482f93c3"
+    },
+    {
+      "path": "godot/assets/ui/image-skin/enamel-glass/cstore_surfaces_02.png",
+      "sha256": "0a161e9da42e56583898f059a44d0c0c1c6002504df909328600c10e45accf3f"
+    },
+    {
+      "path": "godot/assets/pickups/pickup_magic_stone_02.png",
+      "sha256": "498f36df222f2d37b5df28cb694cce30bd9928c9c5decb529047cf43a411fe3c"
+    },
+    {
+      "path": "godot/assets/ui/image-skin/operations-light-controls-02/tab-4x.png",
+      "sha256": "1cf7f6e459535ce02123d5f93242c8dc125d0c98cba8459c366afc1e348a819e"
+    },
+    {
+      "path": "godot/assets/ui/image-skin/enamel-glass/enamel_01.png",
+      "sha256": "77bf3e99b1cd101de49a54cfb0030cffe05aafc4e8723eb7acfee66aae29ad22"
+    },
+    {
+      "path": "godot/assets/characters-sd/song_sd_01.png",
+      "sha256": "d855f73c3cbeb171ea81aa855712ce49dd2cda6bcf32f4012144bb7e04a5a50c"
+    },
+    {
+      "path": "godot/assets/ui/weapons/weapon_mana_sword_casual_01.webp",
+      "sha256": "7bc8fb9d1813d03faa3b71f3f1920b8f95d12c9000485a123f6b946e71bc822e"
+    },
+    {
+      "path": "godot/assets/ui/image-skin/operations-light-controls-02/primary-4x.png",
+      "sha256": "2c562ad3facc1b8d5dda0d916a0ead2eccb4781dcee0f5eedca0afec6673a3ca"
+    },
+    {
+      "path": "godot/assets/ui/weapons/weapon_chain_lightning_casual_01.webp",
+      "sha256": "429e687a09355d00d2ba291693ece11d5c3fd40b84ecbbaad00a4d4364fb71d7"
+    },
+    {
+      "path": "godot/assets/ui/weapons/weapon_mana_shotgun_casual_01.webp",
+      "sha256": "886197b7e8b225595c29780dd415093221cb8caf73e13c6cd38ad6ca4909d3d8"
+    },
+    {
+      "path": "godot/assets/content-2026/openingTicket-01.png",
+      "sha256": "af2fe2090b3290a265fa29f5176cf4ea25d310d7aa55ea218153ae4ce23a3afe"
+    },
+    {
+      "path": "godot/assets/content-2026/kineticSpool-01.png",
+      "sha256": "693bdf092847d4eeb72e4798d94bd2d645034a22c625468731c94f3f9fe5522a"
+    },
+    {
+      "path": "godot/assets/content-2026/duelCompass-01.png",
+      "sha256": "6fd7914449a348292a2d3907e322d0b317621e2992a3edfefc20963a731dedc9"
+    },
+    {
+      "path": "godot/assets/ui/inventory_atlas_transparent_02.png",
+      "sha256": "9a3787b5fa8f1a6acffab93e4f6632033db774d1308434fd8fb54074f6b970e1"
+    },
+    {
+      "path": "godot/assets/ui/image-skin/operations-standard-01/popup-4x.png",
+      "sha256": "e7e03b400303570d2de8bf12409c2ff77936a26b3975094923500df5594411c2"
+    },
+    {
+      "path": "godot/assets/ui/economy-01/guildMaterials.png",
+      "sha256": "4f95896f8172528ed1e8ecf47cecfe39909d9017f5fd08c49bfb4a99e7cf7915"
+    },
+    {
+      "path": "godot/assets/ui/economy-01/guildSpeedupTicket.png",
+      "sha256": "e5f6b9fa9eb2317338d46820d4f6bde94355662850961ac3830c6daad8230b73"
+    },
+    {
+      "path": "godot/assets/ui/archive/blessing_white_tiger_eye_casual_01.webp",
+      "sha256": "2912793bac05d2b1b87aecd817ab7da6eeb1ab74d32fb6d59f302ee98e8d2225"
+    }
+  ],
+  "captureFiles": [
+    {
+      "path": "captures/01-deploy.png",
+      "width": 915,
+      "height": 412,
+      "sha256": "f9da31790d6c587803eaae7e8e162f0f929adab93b1e7fd94da49908e5972893"
+    },
+    {
+      "path": "captures/02-deploy-locked.png",
+      "width": 915,
+      "height": 412,
+      "sha256": "41e5774dc0200dffe7a4dea12b1d5f63ae8fa7cf6885bd7b03834805c506c934"
+    },
+    {
+      "path": "captures/03-shop-weapons.png",
+      "width": 915,
+      "height": 412,
+      "sha256": "0f2e6c3aa5720366de2dcd3eed305b63b1a75b4501a255c1f111dcbb14b83c99"
+    },
+    {
+      "path": "captures/04-shop-items.png",
+      "width": 915,
+      "height": 412,
+      "sha256": "5599169d03f2ecbbadf743b214f7e68e034cbf440e8f3b02f0f3ac8553ca2c52"
+    },
+    {
+      "path": "captures/05-shop-detail.png",
+      "width": 915,
+      "height": 412,
+      "sha256": "bc2b33fc9e6cc19b5c2a44ba66ab7adaee29108be04f418143966cd7e2f4bf52"
+    },
+    {
+      "path": "captures/06-result-clear.png",
+      "width": 915,
+      "height": 412,
+      "sha256": "469ec6ce21ba602c609bc0a97ed735bc573b7806cf48b7fc1154c2a33b4f1154"
+    },
+    {
+      "path": "captures/07-result-death.png",
+      "width": 915,
+      "height": 412,
+      "sha256": "dcfa260715260fc09963e465d29c7539edea3afd02943918150e37b50779afd0"
+    }
+  ]
+}

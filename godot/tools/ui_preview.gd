@@ -19,11 +19,11 @@ func _archive(group: String, id: String, page: int, noop: Callable) -> Control:
 	return HeroArchive.build({"group":group,"id":id,"page":page,"growthPage":0,"map":"seoul","scroll":0},noop,noop)
 
 func _guild(nearest: String, noop: Callable) -> Control:
-	var guild := HeroGuild.new(); guild.nearest = nearest
-	guild.set_physics_process(false)
-	var screen := guild.controls(noop)
-	screen.add_child(guild); screen.move_child(guild,0)
-	return screen
+	var visuals: Dictionary = JSON.parse_string(FileAccess.get_file_as_string("res://data/visuals/guild.json"))
+	var images := {"rooms":Content.texture(visuals.rooms.file),"states":Content.texture(visuals.states.file),"facilityOrder":visuals.rooms.facility_order,"tiers":visuals.rooms.tiers,"structure":Content.texture(visuals.walk.file),"structureRegions":visuals.walk.regions}
+	var slot := int(Profile.meta.guild.facilities.get(nearest,{}).get("slot",0))
+	var ui := {"panel":"staff" if nearest=="roster" else "facility","slot":slot,"employee":"","expedition":"cityScout","selectedStaff":[],"panelOpen":not nearest.is_empty() and nearest!="gate","walk":{"x":240.0,"floor":0}}
+	return HeroGuildWalkScreen.create(Profile.meta,noop,noop,noop,images,ui)
 
 func _preview() -> void:
 	await get_tree().process_frame

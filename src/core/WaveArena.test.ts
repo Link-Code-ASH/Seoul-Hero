@@ -71,10 +71,10 @@ describe('finite arena and wave lifecycle', () => {
     const sim = make(); sim.state.invincible = true; sim.state.earnedMetaCurrency = 50;
     sim.completeWave(); sim.continuePostWave(); sim.debugWeapon('manaSword',false);
     const weapons = structuredClone(sim.state.ownedWeapons);
-    for (const n of [10, 1, 10]) {
+    for (const n of [7, 1, 7]) {
       expect(sim.goToWave(n)).toBe(true); expect(sim.state.enemies).toHaveLength(0);
       sim.setTime(10); tick(sim);
-      expect(sim.state.enemies.filter(e => e.elite)).toHaveLength(n === 10 ? 1 : 0);
+      expect(sim.state.enemies.filter(e => e.elite)).toHaveLength(n === 7 ? 1 : 0);
     }
     expect(sim.state.ownedWeapons.map(w => [w.id, w.level])).toEqual(weapons.map(w => [w.id, w.level])); expect(sim.state.earnedMetaCurrency).toBe(50);
     const before = structuredClone(sim.state);

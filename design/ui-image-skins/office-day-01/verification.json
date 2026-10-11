@@ -1,0 +1,602 @@
+[
+  {
+    "file": "panel_card.png",
+    "size": [
+      512,
+      384
+    ],
+    "mode": "RGBA",
+    "transparent_pixels": 4540,
+    "partial_alpha_pixels": 190385,
+    "edges_alpha_zero": true,
+    "crop": [
+      26,
+      68,
+      1424,
+      1018
+    ],
+    "placement": [
+      2,
+      2,
+      510,
+      382
+    ],
+    "sha256": "b07ff7811f02ab7518d8fcde89c4ff7882e40927464410ca89ff17713a32c2c1"
+  },
+  {
+    "file": "panel_window.png",
+    "size": [
+      1024,
+      640
+    ],
+    "mode": "RGBA",
+    "transparent_pixels": 11306,
+    "partial_alpha_pixels": 642509,
+    "edges_alpha_zero": true,
+    "crop": [
+      15,
+      39,
+      1571,
+      944
+    ],
+    "placement": [
+      2,
+      2,
+      1022,
+      638
+    ],
+    "sha256": "2469ac8788e7eaf43a4013524e88eda0f356fb5af7845f04bdf91a69eed69ca8"
+  },
+  {
+    "file": "header_bar.png",
+    "size": [
+      1024,
+      128
+    ],
+    "mode": "RGBA",
+    "transparent_pixels": 5172,
+    "partial_alpha_pixels": 123714,
+    "edges_alpha_zero": true,
+    "crop": [
+      3,
+      234,
+      2171,
+      486
+    ],
+    "placement": [
+      2,
+      2,
+      1022,
+      126
+    ],
+    "sha256": "5b79b03edb844113536dafaf902de68af537334a03ae610382ef2177a61aa4ce"
+  },
+  {
+    "file": "button_primary_normal.png",
+    "size": [
+      480,
+      144
+    ],
+    "mode": "RGBA",
+    "transparent_pixels": 3172,
+    "partial_alpha_pixels": 64953,
+    "edges_alpha_zero": true,
+    "crop": [
+      20,
+      145,
+      1964,
+      640
+    ],
+    "placement": [
+      2,
+      2,
+      478,
+      142
+    ],
+    "sha256": "36fe84bb8a2fd053bbed4c1eadc0997d407b056fdad501cfe210b5ee5eed5231"
+  },
+  {
+    "file": "button_primary_pressed.png",
+    "size": [
+      480,
+      144
+    ],
+    "mode": "RGBA",
+    "transparent_pixels": 4574,
+    "partial_alpha_pixels": 63685,
+    "edges_alpha_zero": true,
+    "crop": [
+      18,
+      147,
+      1966,
+      625
+    ],
+    "placement": [
+      2,
+      5,
+      478,
+      142
+    ],
+    "sha256": "756b1e632e2bc93cfe7987a948b0db452cd45f6e469807189ae9b63e445be242"
+  },
+  {
+    "file": "button_primary_disabled.png",
+    "size": [
+      480,
+      144
+    ],
+    "mode": "RGBA",
+    "transparent_pixels": 3199,
+    "partial_alpha_pixels": 65143,
+    "edges_alpha_zero": true,
+    "crop": [
+      20,
+      144,
+      1965,
+      640
+    ],
+    "placement": [
+      2,
+      2,
+      478,
+      142
+    ],
+    "sha256": "94f261eeed142e90655954aad2e71d2447da7af9b1d579716c883bd59298e4bb"
+  },
+  {
+    "file": "button_secondary_normal.png",
+    "size": [
+      384,
+      128
+    ],
+    "mode": "RGBA",
+    "transparent_pixels": 2323,
+    "partial_alpha_pixels": 46098,
+    "edges_alpha_zero": true,
+    "crop": [
+      24,
+      105,
+      2150,
+      616
+    ],
+    "placement": [
+      2,
+      2,
+      382,
+      126
+    ],
+    "sha256": "51e1e64d8043d5b0d9bf54868ca4592dcb2d891e89b1b44bb249d0ba1af37316"
+  },
+  {
+    "file": "button_secondary_pressed.png",
+    "size": [
+      384,
+      128
+    ],
+    "mode": "RGBA",
+    "transparent_pixels": 3439,
+    "partial_alpha_pixels": 44791,
+    "edges_alpha_zero": true,
+    "crop": [
+      25,
+      109,
+      2148,
+      604
+    ],
+    "placement": [
+      2,
+      5,
+      382,
+      126
+    ],
+    "sha256": "8a6ebf6dbf4d175035493693625c2d8b50c230e47cae6f0d224f6ec121711540"
+  },
+  {
+    "file": "button_secondary_disabled.png",
+    "size": [
+      384,
+      128
+    ],
+    "mode": "RGBA",
+    "transparent_pixels": 2337,
+    "partial_alpha_pixels": 46239,
+    "edges_alpha_zero": true,
+    "crop": [
+      23,
+      100,
+      2150,
+      614
+    ],
+    "placement": [
+      2,
+      2,
+      382,
+      126
+    ],
+    "sha256": "955b16fb47d4f64d493fa8cdc8326b2a0f9bbb64ee3f6cc9bbd5e253d9a56e78"
+  },
+  {
+    "file": "button_mint_normal.png",
+    "size": [
+      384,
+      128
+    ],
+    "mode": "RGBA",
+    "transparent_pixels": 2569,
+    "partial_alpha_pixels": 45720,
+    "edges_alpha_zero": true,
+    "crop": [
+      21,
+      97,
+      2152,
+      623
+    ],
+    "placement": [
+      2,
+      2,
+      382,
+      126
+    ],
+    "sha256": "c7d1241521c9195a6b80fa94c7b63b56e2bdd37a0746891ff2930bbf1d0b97b8"
+  },
+  {
+    "file": "button_mint_pressed.png",
+    "size": [
+      384,
+      128
+    ],
+    "mode": "RGBA",
+    "transparent_pixels": 3650,
+    "partial_alpha_pixels": 44939,
+    "edges_alpha_zero": true,
+    "crop": [
+      22,
+      102,
+      2151,
+      602
+    ],
+    "placement": [
+      2,
+      5,
+      382,
+      126
+    ],
+    "sha256": "2b6ea5d0e3470daee6bd1acd52d8eeb8cc5ff6d0fad93a8ff28740b857141062"
+  },
+  {
+    "file": "button_round_normal.png",
+    "size": [
+      160,
+      160
+    ],
+    "mode": "RGBA",
+    "transparent_pixels": 5983,
+    "partial_alpha_pixels": 19257,
+    "edges_alpha_zero": true,
+    "crop": [
+      52,
+      47,
+      1201,
+      1203
+    ],
+    "placement": [
+      2,
+      2,
+      158,
+      158
+    ],
+    "sha256": "5fddbc99bf14a6744edc8dd2eb5126d9d86f50107804f449d333f0f07031bc58"
+  },
+  {
+    "file": "button_round_pressed.png",
+    "size": [
+      160,
+      160
+    ],
+    "mode": "RGBA",
+    "transparent_pixels": 6445,
+    "partial_alpha_pixels": 18809,
+    "edges_alpha_zero": true,
+    "crop": [
+      54,
+      63,
+      1201,
+      1185
+    ],
+    "placement": [
+      2,
+      5,
+      158,
+      158
+    ],
+    "sha256": "9d79bfee6066b714c88fceff0c27c8d43337af929129850ab26aa22d5db7839d"
+  },
+  {
+    "file": "button_close.png",
+    "size": [
+      128,
+      128
+    ],
+    "mode": "RGBA",
+    "transparent_pixels": 3839,
+    "partial_alpha_pixels": 12264,
+    "edges_alpha_zero": true,
+    "crop": [
+      66,
+      68,
+      1187,
+      1196
+    ],
+    "placement": [
+      2,
+      2,
+      126,
+      126
+    ],
+    "sha256": "ae927a4a83a3152e2b9cdb53f5e7916dcdc1188f16f993435c4ab5c166cdf1ac"
+  },
+  {
+    "file": "chip_currency.png",
+    "size": [
+      320,
+      112
+    ],
+    "mode": "RGBA",
+    "transparent_pixels": 3352,
+    "partial_alpha_pixels": 31811,
+    "edges_alpha_zero": true,
+    "crop": [
+      26,
+      91,
+      2093,
+      609
+    ],
+    "placement": [
+      2,
+      2,
+      318,
+      110
+    ],
+    "sha256": "b709b92d14177c0030f49dee10abc2552f57338eb7e29c0ccd805ce965f699cb"
+  },
+  {
+    "file": "tab_active.png",
+    "size": [
+      320,
+      112
+    ],
+    "mode": "RGBA",
+    "transparent_pixels": 1911,
+    "partial_alpha_pixels": 33149,
+    "edges_alpha_zero": true,
+    "crop": [
+      43,
+      57,
+      2078,
+      681
+    ],
+    "placement": [
+      2,
+      2,
+      318,
+      110
+    ],
+    "sha256": "ca98d090a417d88988a7fc2bffd3f35f855b8be9a11032c368b2c503e05979fc"
+  },
+  {
+    "file": "tab_inactive.png",
+    "size": [
+      320,
+      112
+    ],
+    "mode": "RGBA",
+    "transparent_pixels": 2833,
+    "partial_alpha_pixels": 32228,
+    "edges_alpha_zero": true,
+    "crop": [
+      43,
+      55,
+      2077,
+      655
+    ],
+    "placement": [
+      2,
+      5,
+      318,
+      110
+    ],
+    "sha256": "fed4d1a7ec9f12aa079ed704f15716c9ed21abcb4292a12d870f9e3fbdbb304a"
+  },
+  {
+    "file": "tile_facility.png",
+    "size": [
+      256,
+      288
+    ],
+    "mode": "RGBA",
+    "transparent_pixels": 2489,
+    "partial_alpha_pixels": 70506,
+    "edges_alpha_zero": true,
+    "crop": [
+      19,
+      9,
+      1161,
+      1313
+    ],
+    "placement": [
+      2,
+      2,
+      254,
+      286
+    ],
+    "sha256": "7a4ef1319edebe0d19f62eaf4e3b63e0b13009b005ec82bff9b899978f917082"
+  },
+  {
+    "file": "badge_id_card.png",
+    "size": [
+      512,
+      288
+    ],
+    "mode": "RGBA",
+    "transparent_pixels": 27548,
+    "partial_alpha_pixels": 118614,
+    "edges_alpha_zero": true,
+    "crop": [
+      126,
+      0,
+      1546,
+      905
+    ],
+    "placement": [
+      2,
+      2,
+      510,
+      286
+    ],
+    "sha256": "08d0af306a30c9c335c60889f930304c008acdbd88307637a82abf3de28414f5"
+  },
+  {
+    "file": "list_row_normal.png",
+    "size": [
+      768,
+      112
+    ],
+    "mode": "RGBA",
+    "transparent_pixels": 4040,
+    "partial_alpha_pixels": 80560,
+    "edges_alpha_zero": true,
+    "crop": [
+      9,
+      210,
+      2065,
+      521
+    ],
+    "placement": [
+      2,
+      2,
+      766,
+      110
+    ],
+    "sha256": "de24f9eafd466586b4dbe9d8c17d4164b7e3a5fa43d870f0041a3366343497e3"
+  },
+  {
+    "file": "list_row_selected.png",
+    "size": [
+      768,
+      112
+    ],
+    "mode": "RGBA",
+    "transparent_pixels": 4084,
+    "partial_alpha_pixels": 80944,
+    "edges_alpha_zero": true,
+    "crop": [
+      8,
+      208,
+      2065,
+      522
+    ],
+    "placement": [
+      2,
+      2,
+      766,
+      110
+    ],
+    "sha256": "49ff7ab4881612fce2df5c2583b4e2b4f7d100fe79a51bbd81acba170277ab7e"
+  },
+  {
+    "file": "bar_frame.png",
+    "size": [
+      512,
+      64
+    ],
+    "mode": "RGBA",
+    "transparent_pixels": 2497,
+    "partial_alpha_pixels": 29683,
+    "edges_alpha_zero": true,
+    "crop": [
+      12,
+      250,
+      2160,
+      466
+    ],
+    "placement": [
+      2,
+      2,
+      510,
+      62
+    ],
+    "sha256": "71b706a09fe3bc1fa3dcc25cd2ae5c3ced68b0826a50326b4777d006d2731bc0"
+  },
+  {
+    "file": "bar_fill.png",
+    "size": [
+      512,
+      64
+    ],
+    "mode": "RGBA",
+    "transparent_pixels": 2767,
+    "partial_alpha_pixels": 28958,
+    "edges_alpha_zero": true,
+    "crop": [
+      30,
+      280,
+      2142,
+      439
+    ],
+    "placement": [
+      2,
+      2,
+      510,
+      62
+    ],
+    "sha256": "d74d3d7da286dadef82e29e46114bf607ed317b877e7921b83aec4e76d4d14d0"
+  },
+  {
+    "file": "tooltip_bubble.png",
+    "size": [
+      384,
+      192
+    ],
+    "mode": "RGBA",
+    "transparent_pixels": 10048,
+    "partial_alpha_pixels": 62677,
+    "edges_alpha_zero": true,
+    "crop": [
+      22,
+      57,
+      1752,
+      825
+    ],
+    "placement": [
+      2,
+      2,
+      382,
+      190
+    ],
+    "sha256": "8a1f214f7ab252ec5d476cbe6cdf49019c6b4a934f3d11d6feb00d57ff4cf291"
+  },
+  {
+    "file": "lock_overlay.png",
+    "size": [
+      256,
+      256
+    ],
+    "mode": "RGBA",
+    "transparent_pixels": 2310,
+    "partial_alpha_pixels": 62542,
+    "edges_alpha_zero": true,
+    "crop": [
+      65,
+      70,
+      1189,
+      1183
+    ],
+    "placement": [
+      2,
+      2,
+      254,
+      254
+    ],
+    "sha256": "b67b97cac0fb700115d5bc4adb6c30bb3ece4d4450deb5656aa7cb8f7649a632"
+  }
+]

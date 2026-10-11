@@ -1,0 +1,7 @@
+# Reproducible native viewport frame sequences and local logs.
+captures/
+runtime-captures/
+*.log
+masters/*.log
+runtime-masters/*.log
+__pycache__/

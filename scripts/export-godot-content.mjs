@@ -9,6 +9,7 @@ import ts from 'typescript';
 // No browser runtime, game state, secrets or local saves are copied.
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const target = path.join(root, 'godot');
+const audioOnly = process.argv.includes('--audio-only');
 const modules = new Map();
 const assetFiles = [];
 function walk(dir) {
@@ -44,15 +45,39 @@ function copyAsset(full) {
   fs.mkdirSync(path.dirname(output), { recursive: true });
   if (!fs.existsSync(output) || fs.statSync(output).size !== fs.statSync(full).size || fs.statSync(output).mtimeMs < fs.statSync(full).mtimeMs) fs.copyFileSync(full, output);
   // Preserve edited PCM and exact loop seams; Godot's default WAV import is lossy QOA.
-  if (relative.startsWith('assets/audio/sfx/reborn-01/') && relative.endsWith('.wav')) {
+  if (/^assets\/audio\/sfx\/reborn-\d+\//.test(relative) && relative.endsWith('.wav')) {
     const settingsFile = output + '.import';
     const settings = fs.existsSync(settingsFile) ? fs.readFileSync(settingsFile, 'utf8')
       : '[remap]\n\nimporter="wav"\ntype="AudioStreamWAV"\n\n[params]\n\ncompress/mode=0\n';
-    const pcm = settings.replace(/compress\/mode=\d+/, 'compress/mode=0');
+    const pcm = /compress\/mode=\d+/.test(settings)
+      ? settings.replace(/compress\/mode=\d+/, 'compress/mode=0')
+      : settings.includes('[params]') ? settings.replace('[params]', '[params]\n\ncompress/mode=0')
+      : settings + '\n[params]\n\ncompress/mode=0\n';
     if (!fs.existsSync(settingsFile) || pcm !== settings) fs.writeFileSync(settingsFile, pcm);
   }
   if (!media.some(entry => entry.source === relative)) media.push({ source: relative, sha256: crypto.createHash('sha256').update(fs.readFileSync(full)).digest('hex') });
   return 'res://' + relative;
+}
+function exportAudio() {
+  const audio = load('src/data/audio');
+  const sfx = Object.fromEntries(Object.entries(audio.sfx).map(([id, cue]) => [id, { ...cue, urls: cue.urls.map(copyAsset).filter(Boolean) }]));
+  const bgm = Object.fromEntries(Object.entries(audio.bgm).map(([id, group]) => [id, { ...group, tracks: group.tracks.map(track => ({ ...track, url: copyAsset(track.url) })).filter(track => track.url) }]));
+  copyAsset(path.join(root, 'assets/audio/sfx', audio.activeAudioRevision, 'provenance.json'));
+  return { sfx, bgm, audioConfig: audio.AUDIO_CONFIG, audioConnections: audio.audioConnections, audioRevision: audio.activeAudioRevision };
+}
+// An audio adoption must not import concurrent artwork, balance or save-data edits.
+if (audioOnly) {
+  const contentFile = path.join(target, 'data/content.json');
+  const existing = JSON.parse(fs.readFileSync(contentFile, 'utf8'));
+  const { audioRevision, ...audioData } = exportAudio();
+  if (JSON.stringify(existing.bgm) !== JSON.stringify(audioData.bgm)) throw new Error('Audio-only export refused a BGM change');
+  fs.writeFileSync(contentFile, JSON.stringify({ ...existing, ...audioData }, null, 2) + '\n');
+  const provenanceFile = path.join(target, 'data/import-provenance.json');
+  const previous = fs.existsSync(provenanceFile) ? JSON.parse(fs.readFileSync(provenanceFile, 'utf8')) : {};
+  const previousMedia = (previous.media || []).filter(entry => !entry.source.startsWith('assets/audio/'));
+  fs.writeFileSync(provenanceFile, JSON.stringify({ ...previous, tool: 'scripts/export-godot-content.mjs', audioRevision, media: [...previousMedia, ...media] }, null, 2) + '\n');
+  console.log(JSON.stringify({ mode: 'audio-only', revision: audioRevision, cues: Object.keys(audioData.sfx).length, assets: media.length }));
+  process.exit(0);
 }
 // Preserved web-only artwork. Godot uses SD actor data and the battlefield title.
 const webOnlyImages = new Set([
@@ -66,24 +91,34 @@ for (const [id, image] of Object.entries(manifest)) {
   const full = image.url.startsWith('/') ? path.join(root, 'public', image.url) : image.url;
   images[id] = { ...image, url: copyAsset(full) };
 }
-const audio = load('src/data/audio');
-const sfx = Object.fromEntries(Object.entries(audio.sfx).map(([id, cue]) => [id, { ...cue, urls: cue.urls.map(copyAsset).filter(Boolean) }]));
-const audioConfig = audio.AUDIO_CONFIG;
-const audioConnections = audio.audioConnections;
-const bgm = Object.fromEntries(Object.entries(audio.bgm).map(([id, group]) => [id, { ...group, tracks: group.tracks.map(track => ({ ...track, url: copyAsset(track.url) })).filter(track => track.url) }]));
-copyAsset(path.join(root, 'assets/audio/sfx/reborn-01/provenance.json'));
+const { sfx, audioConfig, audioConnections, bgm } = exportAudio();
 copyAsset(path.join(root, 'assets/ui/inventory-transparent-provenance.json'));
 copyAsset(path.join(root, 'assets/content-2026/provenance.json'));
 copyAsset(path.join(root, 'assets/characters-sd/provenance.json'));
 copyAsset(path.join(root, 'assets/characters-sd/provenance-02.json'));
 copyAsset(path.join(root, 'assets/monsters-sd/provenance.json'));
+copyAsset(path.join(root, 'assets/monsters-sd/provenance-02.json'));
+copyAsset(path.join(root, 'assets/monsters-library/provenance.json'));
 copyAsset(path.join(root, 'assets/lobby-sd/provenance.json'));
 copyAsset(path.join(root, 'assets/environment-sd/provenance.json'));
 copyAsset(path.join(root, 'assets/environment-sd/provenance-03.json'));
 copyAsset(path.join(root, 'assets/visuals/structures/provenance.json'));
 copyAsset(path.join(root, 'assets/ui/urban-operation/provenance.json'));
 copyAsset(path.join(root, 'assets/ui/image-skin/provenance.json'));
-copyAsset(path.join(root, 'assets/ui/image-skin/runtime/provenance.json')); 
+for (const file of ['provenance.json','source-prompts.json']) copyAsset(path.join(root, 'assets/ui/image-skin/operations-standard-01', file));
+for (const file of ['provenance.json','source-prompts.json']) copyAsset(path.join(root, 'assets/ui/image-skin/operations-light-controls-02', file));
+copyAsset(path.join(root, 'assets/ui/image-skin/runtime/provenance.json'));
+for (const file of ['provenance.json','source-prompts.json','approved-preview-manifest.json']) copyAsset(path.join(root, 'assets/ui/image-skin/seoul-support', file));
+// Approved guild room/state atlases and their original generation records.
+for (const file of ['rooms.png', 'room-states.png', 'provenance.json']) copyAsset(path.join(root, 'assets/ui/guild-management', file));
+// Approved side-view corridors, elevator and building exterior.
+for (const file of ['structure.png', 'structure.json', 'provenance.json']) {
+  const source = path.join(root, 'assets/ui/guild-walk', file);
+  copyAsset(source);
+  // Retain authored import settings when supplied; otherwise keep Godot's existing settings.
+  if (fs.existsSync(source + '.import')) copyAsset(source + '.import');
+}
+
 for (const file of [
   'BMJUA.ttf','Paperlogy-4Regular.ttf', 'Paperlogy-5Medium.ttf', 'Paperlogy-6SemiBold.ttf', 'Paperlogy-8ExtraBold.ttf',
   'KMU80HaeongSans.ttf', 'BarlowCondensed-SemiBold.ttf', 'BarlowCondensed-Bold.ttf',
@@ -111,12 +146,14 @@ const content = {
   items: use('data/items','items'), maps: use('data/maps','maps'), stats: use('data/stats','DEFAULT_STATS'), statRules: use('data/stats','STAT_RULES'),
   shop: use('data/shopConfig','SHOP_CONFIG'), weaponConfig: use('data/weaponConfig','WEAPON_CONFIG'), game: use('data/config','GAME_CONFIG'),
   balance: use('data/balanceConfig','BALANCE_CONFIG'),
-  gate: use('data/gateProgression','GATE_CONFIG'), milestones: use('data/gateProgression','GATE_MILESTONES'), elites: use('data/eliteModifiers','eliteModifiers'),
+  gate: use('data/economy','ECONOMY_GATE'), milestones: use('data/gateProgression','GATE_MILESTONES'), weeklyMonster: use('data/gateProgression','WEEKLY_MONSTER'), elites: use('data/eliteModifiers','eliteModifiers'), featuredElites: use('data/featuredElites','FEATURED_ELITE_RULES'),
   enemyRules: use('data/enemyConfig','ENEMY_RULES'), curseRules: use('data/enemyConfig','CURSE_RULES'), enemyMoveScale: use('data/enemyConfig','ENEMY_MOVE_SCALE'),
   enemyPresentation: use('data/enemyPresentation','enemyPresentation'), magicStone: use('data/magicStoneConfig','MAGIC_STONE_TIERS'),
   weeklyRules: use('data/weeklyGate','weeklyGateRules'), blessings: use('data/weeklyGate','dangunBlessings'),
-  growth: use('data/metaFacilities','META_GROWTH_CONFIG'), offline: use('data/metaFacilities','OFFLINE_REWARD_CONFIG'), supply: use('data/metaFacilities','SUPPLY_BOX_CONFIG'),
-  upgrades: use('data/meta','metaUpgrades'), guildRoom: use('data/guild','GUILD_ROOM'), guildFacilities: use('data/guild','guildFacilities'), guildPoints: use('data/guild','guildPoints'),
+  resources: use('data/economy','ECONOMY_RESOURCES'),
+  growth: use('data/economy','ECONOMY_GROWTH'), offline: use('data/economy','ECONOMY_OFFLINE'), supply: use('data/economy','ECONOMY_SUPPLY'), daily: use('data/economy','ECONOMY_DAILY'), region: use('data/economy','ECONOMY_REGION'),
+  guildManagement: use('data/guildManagement','GUILD_MANAGEMENT_DATA'), features: use('data/features','GAME_FEATURES'), draws: use('data/features','GAME_DRAWS'), runLoot: use('data/features','GAME_RUN_LOOT'),
+  upgrades: use('data/economy','ECONOMY_UPGRADES'), guildRoom: use('data/guild','GUILD_ROOM'), guildFacilities: use('data/guild','guildFacilities'), guildPoints: use('data/guild','guildPoints'),
   guildFootprints: use('data/guild','guildCafeFootprints'), revivalStones: use('data/revivalStones','REVIVAL_STONES'),
   defaultMeta: use('state/MetaState','createDefaultMeta')(), images, weaponArt, premiumUI, sfx, bgm, audioConfig, audioConnections,
 };

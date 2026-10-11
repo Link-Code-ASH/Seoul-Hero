@@ -1,0 +1,89 @@
+{
+  "revision": "guild-walk-01",
+  "status": "approved-runtime-connected",
+  "createdAt": "2026-10-04",
+  "source": "built-in image_gen",
+  "asset": "structure.png",
+  "transparent": true,
+  "grid": {
+    "columns": 4,
+    "rows": 2,
+    "roles": [
+      "corridor",
+      "ceiling",
+      "leftWall",
+      "rightWall",
+      "elevator",
+      "roof",
+      "foregroundRailing",
+      "entrance"
+    ]
+  },
+  "prompt": "Use case: stylized-concept. Asset type: transparent PNG atlas for a 2D SIDE VIEW cutaway guild management game set in modern Seoul. Create one 2048x1024 image containing EXACTLY 4 columns by 2 rows, 8 equally sized cells, no gutters or labels. Each cell has a truly transparent background and contains ONE modular architectural sprite centered, nothing touches neighboring cells. Style: polished hand-painted anime game background art, warm cream office walls, deep navy steel beams with tiny screws, warm ceiling lights, subtle cyan glass, matching an SD character game; NOT pixel art, NOT medieval, no characters, no logos, no words or numbers. Orthographic SIDE VIEW, horizontal floors, no isometric view, no visible top-down perspective. Cells in reading order: row1 col1 a long continuous cream-tile corridor FLOOR platform, horizontal thin 5:1 aspect, dark navy structural underside, left and right ends perfectly flat seamless for horizontal repetition; row1 col2 a thin horizontal ceiling beam with warm inset lighting, flat seamless ends, 5:1 aspect; row1 col3 a narrow LEFT building exterior end wall steel column, tall 1:3 aspect; row1 col4 matching RIGHT end wall steel column, tall 1:3 aspect. Row2 col1 a tall modern office ELEVATOR open shaft/cabin front, 1:2 aspect, navy and brushed silver doorframe, glowing cyan call light, transparent open center with subtle cream interior but no people; row2 col2 a long flat navy modern rooftop cornice, thin 5:1 aspect, ends flat seamless; row2 col3 a low subtle front edge / railing of polished navy metal and transparent cyan glass, very thin 8:1 aspect with flat seamless ends, does not block characters; row2 col4 a tall modern glass building entrance doorway, 1:2 aspect, cream and navy metal frame, transparent door center. Fill shapes to approximately 90% of their cell width for horizontal strips and 85% of cell height for tall structures. Consistent crisp dark outlines, restrained texture, easy to crop each equal cell separately. Transparent alpha everywhere outside the sprites. This is a technical sprite sheet, do not arrange sprites into a complete building or add backgrounds.",
+  "reused": {
+    "rooms": "../guild-management-01/rooms.png",
+    "states": "../guild-management-01/room-states.png",
+    "actors": "Godot approved empty-handed SD + shared motion"
+  },
+  "implementation": "HeroGuildWalkScreen is connected to the current worktree guild route; existing Profile.guild_action and profile v2/run v3 remain unchanged.",
+  "output": {
+    "source": "C:/Users/geniu/.codex/generated_images/01a1023b-a2e0-7ad2-9df8-a5c819425960/exec-8d79d930-f994-421d-bd61-b51b350a2e4b.png",
+    "size": [
+      1774,
+      887
+    ],
+    "regions": [
+      [
+        20,
+        224,
+        590,
+        96
+      ],
+      [
+        620,
+        204,
+        537,
+        82
+      ],
+      [
+        1184,
+        34,
+        132,
+        397
+      ],
+      [
+        1536,
+        34,
+        136,
+        399
+      ],
+      [
+        82,
+        460,
+        280,
+        384
+      ],
+      [
+        443,
+        631,
+        464,
+        80
+      ],
+      [
+        916,
+        680,
+        424,
+        90
+      ],
+      [
+        1407,
+        456,
+        314,
+        387
+      ]
+    ],
+    "notes": "Generated spacing differs from equal grid; explicit non-overlapping atlas regions preserve the original pixels and alpha."
+  },
+  "approvedAt": "2026-10-04",
+  "approval": "User: 이 시안으로 게임에 연결해줘"
+}

@@ -1,0 +1,256 @@
+[
+  {
+    "file": "source/buttons_01.png",
+    "generated_at": "2026-10-09T08:08:54+09:00",
+    "timestamp_basis": "generated file LastWriteTime",
+    "tool": "image_gen",
+    "prompt_file": "prompts/buttons_01.txt",
+    "width": 1536,
+    "height": 1024,
+    "has_alpha": true,
+    "nonzero_alpha_edge_pixels_top_bottom_left_right": [
+      0,
+      0,
+      18,
+      0
+    ],
+    "sha256": "5ca6a2aee6f869e26bc48bb4969948b119a87fc9f6a1d8d03167a97e75aef6b7"
+  },
+  {
+    "file": "source/buttons_02.png",
+    "generated_at": "2026-10-09T08:11:54+09:00",
+    "timestamp_basis": "generated file LastWriteTime",
+    "tool": "image_gen",
+    "prompt_file": "prompts/buttons_02.txt",
+    "width": 1536,
+    "height": 1024,
+    "has_alpha": true,
+    "nonzero_alpha_edge_pixels_top_bottom_left_right": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "sha256": "0af24f71826ee67ea9ba93f703f164e12be4fa8e867c5d7c5b693db38439bd14"
+  },
+  {
+    "file": "source/buttons_03.png",
+    "generated_at": "2026-10-09T08:13:45+09:00",
+    "timestamp_basis": "generated file LastWriteTime",
+    "tool": "image_gen",
+    "prompt_file": "prompts/buttons_03.txt",
+    "width": 1536,
+    "height": 1024,
+    "has_alpha": true,
+    "nonzero_alpha_edge_pixels_top_bottom_left_right": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "sha256": "f93d5e8682294475ef9d5598cce5e7c81e85af4149a2ab3b2ca906ecbb202636"
+  },
+  {
+    "file": "source/hud_01.png",
+    "generated_at": "2026-10-09T08:09:52+09:00",
+    "timestamp_basis": "generated file LastWriteTime",
+    "tool": "image_gen",
+    "prompt_file": "prompts/hud_01.txt",
+    "width": 1536,
+    "height": 1024,
+    "has_alpha": true,
+    "nonzero_alpha_edge_pixels_top_bottom_left_right": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "sha256": "ad34c756e7484b93a34b542ec345a8280e2f9013d37b6fdea6f8e5a3d0568285"
+  },
+  {
+    "file": "source/icons_extra_01.png",
+    "generated_at": "2026-10-09T08:10:22+09:00",
+    "timestamp_basis": "generated file LastWriteTime",
+    "tool": "image_gen",
+    "prompt_file": "prompts/icons_extra_01.txt",
+    "width": 1536,
+    "height": 1024,
+    "has_alpha": true,
+    "nonzero_alpha_edge_pixels_top_bottom_left_right": [
+      0,
+      20,
+      16,
+      0
+    ],
+    "sha256": "89e092bae7aa3757b92fde3acd2b662f4301beda5dd3304ae17ec5d084626b1c"
+  },
+  {
+    "file": "source/icons_extra_02.png",
+    "generated_at": "2026-10-09T08:12:48+09:00",
+    "timestamp_basis": "generated file LastWriteTime",
+    "tool": "image_gen",
+    "prompt_file": "prompts/icons_extra_02.txt",
+    "width": 1536,
+    "height": 1024,
+    "has_alpha": true,
+    "nonzero_alpha_edge_pixels_top_bottom_left_right": [
+      0,
+      14,
+      1,
+      0
+    ],
+    "sha256": "85fde010a06cd769998f626357a288ac9454d8dc325ee2b89e0b725dec00ee5c"
+  },
+  {
+    "file": "source/icons_extra_03.png",
+    "generated_at": "2026-10-09T08:14:33+09:00",
+    "timestamp_basis": "generated file LastWriteTime",
+    "tool": "image_gen",
+    "prompt_file": "prompts/icons_extra_03.txt",
+    "width": 1536,
+    "height": 1024,
+    "has_alpha": true,
+    "nonzero_alpha_edge_pixels_top_bottom_left_right": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "sha256": "4a2b6f534767456424162a3ac60c4cc1d0a4be9380a205886c902791836eaeb0"
+  },
+  {
+    "file": "source/panels_01.png",
+    "generated_at": "2026-10-09T08:08:30+09:00",
+    "timestamp_basis": "generated file LastWriteTime",
+    "tool": "image_gen",
+    "prompt_file": "prompts/panels_01.txt",
+    "width": 1536,
+    "height": 1024,
+    "has_alpha": true,
+    "nonzero_alpha_edge_pixels_top_bottom_left_right": [
+      0,
+      0,
+      2,
+      0
+    ],
+    "sha256": "983b22a234881b1710d92c88a6bcbb9ce504886e8e175ba53e4fe3c51eac39f3"
+  },
+  {
+    "file": "source/panels_02.png",
+    "generated_at": "2026-10-09T08:11:21+09:00",
+    "timestamp_basis": "generated file LastWriteTime",
+    "tool": "image_gen",
+    "prompt_file": "prompts/panels_02.txt",
+    "width": 1536,
+    "height": 1024,
+    "has_alpha": true,
+    "nonzero_alpha_edge_pixels_top_bottom_left_right": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "sha256": "8ac940e591775bf777c42b5fb5eec7e0e50e64f9e52034a0cebf2a0456fe0b22"
+  },
+  {
+    "file": "source/shop_cards_01.png",
+    "generated_at": "2026-10-09T08:09:23+09:00",
+    "timestamp_basis": "generated file LastWriteTime",
+    "tool": "image_gen",
+    "prompt_file": "prompts/shop_cards_01.txt",
+    "width": 1536,
+    "height": 1024,
+    "has_alpha": true,
+    "nonzero_alpha_edge_pixels_top_bottom_left_right": [
+      0,
+      0,
+      13,
+      0
+    ],
+    "sha256": "b9787655b0804d5aac7cbf11ebf20c0eb29d6febfc70efd47ee1c8c276b32339"
+  },
+  {
+    "file": "source/shop_cards_02.png",
+    "generated_at": "2026-10-09T08:12:20+09:00",
+    "timestamp_basis": "generated file LastWriteTime",
+    "tool": "image_gen",
+    "prompt_file": "prompts/shop_cards_02.txt",
+    "width": 1536,
+    "height": 1024,
+    "has_alpha": true,
+    "nonzero_alpha_edge_pixels_top_bottom_left_right": [
+      0,
+      0,
+      9,
+      0
+    ],
+    "sha256": "ed57dd2aa4fa3ca051b02ca80e1adfb8b9365a635fa1369889b85a0cf673110d"
+  },
+  {
+    "file": "source/shop_cards_03.png",
+    "generated_at": "2026-10-09T08:14:05+09:00",
+    "timestamp_basis": "generated file LastWriteTime",
+    "tool": "image_gen",
+    "prompt_file": "prompts/shop_cards_03.txt",
+    "width": 1536,
+    "height": 1024,
+    "has_alpha": true,
+    "nonzero_alpha_edge_pixels_top_bottom_left_right": [
+      0,
+      12,
+      0,
+      0
+    ],
+    "sha256": "ff6450369ca25c3b427ada726de7c2920c8e8c9d42d3084f0f277aedf043d14c"
+  },
+  {
+    "file": "source/shop_cards_04.png",
+    "generated_at": "2026-10-09T08:15:27+09:00",
+    "timestamp_basis": "generated file LastWriteTime",
+    "tool": "image_gen",
+    "prompt_file": "prompts/shop_cards_04.txt",
+    "width": 1536,
+    "height": 1024,
+    "has_alpha": true,
+    "nonzero_alpha_edge_pixels_top_bottom_left_right": [
+      0,
+      13,
+      11,
+      0
+    ],
+    "sha256": "7ff7bcdf5d2856eff903525766807b1dc3fcf93de9f9c09c8a55bb647890952a"
+  },
+  {
+    "file": "source/shop_cards_05.png",
+    "generated_at": "2026-10-09T08:16:21+09:00",
+    "timestamp_basis": "generated file LastWriteTime",
+    "tool": "image_gen",
+    "prompt_file": "prompts/shop_cards_05.txt",
+    "width": 1536,
+    "height": 1024,
+    "has_alpha": true,
+    "nonzero_alpha_edge_pixels_top_bottom_left_right": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "sha256": "1c4fc01b5d2d04ce336aadf705483917a0017c9346cce035c35721941514f130"
+  }
+  ,{
+    "file": "source/icons_extra_04.png",
+    "generated_at": "2026-10-09T08:35:51+09:00",
+    "timestamp_basis": "generated file LastWriteTime",
+    "tool": "image_gen",
+    "edit_input": "source/icons_extra_03.png",
+    "prompt_file": "prompts/icons_extra_04.txt",
+    "width": 1536,
+    "height": 1024,
+    "has_alpha": true,
+    "pixel_format": "32-bit RGBA",
+    "nonzero_alpha_edge_pixels_top_bottom_left_right": [0, 0, 1, 0],
+    "sha256": "286f7961c2a16106e7f8f7212cb45e321a662e51ae70f9ebc83f538a5f645d57",
+    "status": "incomplete_alpha_cleanup",
+    "validation_notes": "Frames removed, but strict transparency failed: one nonzero-alpha pixel remains on left edge. Outside-silhouette alpha and >=120px spacing are not certified. No alpha postprocessing applied."
+  }
+]

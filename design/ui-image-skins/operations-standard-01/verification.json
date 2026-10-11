@@ -1,0 +1,104 @@
+{
+  "previewOnly": true,
+  "approvalPending": true,
+  "productionConnected": false,
+  "runtimeFilesCompared": 182,
+  "runtimeChangedFiles": [],
+  "saveAdaptersLoaded": false,
+  "simulation": false,
+  "captures": {
+    "00-materials.png": [
+      915,
+      412
+    ],
+    "01-guild-1830x824.png": [
+      1830,
+      824
+    ],
+    "01-guild-844x390.png": [
+      844,
+      380
+    ],
+    "01-guild.png": [
+      915,
+      412
+    ],
+    "02-lobby.png": [
+      915,
+      412
+    ],
+    "03-shop-1830x824.png": [
+      1830,
+      824
+    ],
+    "03-shop-844x390.png": [
+      844,
+      380
+    ],
+    "03-shop.png": [
+      915,
+      412
+    ],
+    "04-character-1830x824.png": [
+      1830,
+      824
+    ],
+    "04-character-844x390.png": [
+      844,
+      380
+    ],
+    "04-character.png": [
+      915,
+      412
+    ],
+    "05-archive-1830x824.png": [
+      1830,
+      824
+    ],
+    "05-archive-844x390.png": [
+      844,
+      380
+    ],
+    "05-archive.png": [
+      915,
+      412
+    ],
+    "06-hud-1830x824.png": [
+      1830,
+      824
+    ],
+    "06-hud-844x390.png": [
+      844,
+      380
+    ],
+    "06-hud.png": [
+      915,
+      412
+    ]
+  },
+  "fitIssues": 0,
+  "sizes": [
+    [
+      915,
+      412
+    ],
+    [
+      844,
+      390
+    ],
+    [
+      1830,
+      824
+    ]
+  ],
+  "newMaterials": "2 built-in image_gen sprite sheets, native crop and 4x raster 9-slice masters",
+  "sourceDetail": "Generated image dimensions1254x1254/1448x1086; 4x master expansion does not invent higher-resolution native detail.",
+  "notVerified": [
+    "runtime callbacks",
+    "economic operations",
+    "actual gameplay",
+    "touch",
+    "device performance",
+    "full tests/build"
+  ]
+}

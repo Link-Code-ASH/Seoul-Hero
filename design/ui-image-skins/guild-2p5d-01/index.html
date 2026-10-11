@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>서울 히어로 · 2.5D 길드 본부 시안</title>
+<style>
+@font-face{font-family:Paperlogy;src:url('../../../assets/ui/fonts/Paperlogy-4Regular.ttf') format('truetype');font-weight:400;font-display:swap}
+@font-face{font-family:Paperlogy;src:url('../../../assets/ui/fonts/Paperlogy-8ExtraBold.ttf') format('truetype');font-weight:800;font-display:swap}
+@font-face{font-family:Barlow;src:url('../../../assets/ui/fonts/BarlowCondensed-SemiBold.ttf') format('truetype');font-weight:600;font-display:swap}
+*{box-sizing:border-box}body{margin:0;background:#101b2c;color:#eef3f7;font-family:Paperlogy,sans-serif;font-size:14px}main{max-width:1115px;margin:auto;padding:26px 20px 40px}header{max-width:915px;margin:auto}h1{font-weight:800;font-size:25px;line-height:1.4;margin:0 0 10px}p{line-height:1.7;margin:8px 0;color:#bdd0df}.status{display:inline-block;border:1px solid #6a8795;background:#253e4b;color:#d3edf3;padding:5px 10px;font-size:12px;border-radius:5px}.meta{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0}.metric{font-family:Barlow,Paperlogy,sans-serif;font-size:17px}nav{display:flex;gap:7px;flex-wrap:wrap;margin:19px 0 12px}button{font:inherit;font-weight:800;font-size:13px;min-height:42px;cursor:pointer;color:#d7e7ef;background:#20354b;border:1px solid #5a7388;border-radius:5px;padding:9px 16px}button[aria-selected="true"]{color:#122a3c;background:#bdd9e5;border-color:#e2edf3}button:focus-visible,a:focus-visible{outline:3px solid #d9c579;outline-offset:3px}.viewer{max-width:915px;margin:auto;overflow:auto;border:1px solid #546b7b;background:#0a1321;border-radius:5px;min-height:240px}.viewer img{display:block;width:100%;height:auto}.viewer.zoom img{width:auto;max-width:none}.placeholder{padding:65px 20px;text-align:center;color:#adc5d3;line-height:1.8}.tools{display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap;max-width:915px;margin:12px auto}.tools p{margin:0;font-size:12px}.tools button{font-weight:400;font-size:12px;min-height:36px;padding:6px 12px}a{color:#bce6f5;text-underline-offset:3px}.details{max-width:915px;margin:18px auto 0;display:grid;grid-template-columns:1fr 1fr;gap:16px}.detail{background:#16293a;border:1px solid #374f64;padding:13px 16px;border-radius:5px}.detail h2{font-size:14px;font-weight:800;margin:0 0 8px}.detail p{font-size:12px;margin:0}.links{display:flex;gap:15px;flex-wrap:wrap;font-size:12px;margin:16px 0 0}small{display:block;color:#9db5c8;line-height:1.7;font-size:12px;margin-top:16px}@media(max-width:650px){main{padding:18px 12px}h1{font-size:21px}.details{grid-template-columns:1fr}button{padding:8px 11px;font-size:12px}}
+</style>
+</head>
+<body>
+<main>
+<header>
+<span class="status">새 시안 · 승인 대기</span>
+<h1>2.5D 길드 본부</h1>
+<p>넓은 실내 공간 안에 독립된 시설을 배치하고, SD 각성자가 걸어 다니며 건설·경영하는 길드 시안입니다. 밝은 아이보리·목재와 네이비·청록 소재를 사용합니다.</p>
+<div class="meta"><span class="metric">915 × 412</span><span>서울 · SD 화풍</span><span>개별 투명 시설 PNG</span><span>시점 40° · 회전 18°</span></div>
+<nav role="tablist" aria-label="시안 화면">
+<button type="button" id="tab-0" role="tab" aria-selected="true" aria-controls="preview" onclick="show(0)">초기 본부</button>
+<button type="button" id="tab-1" role="tab" aria-selected="false" aria-controls="preview" onclick="show(1)">확장 본부</button>
+<button type="button" id="tab-2" role="tab" aria-selected="false" aria-controls="preview" onclick="show(2)">시설 관리</button>
+<button type="button" id="tab-3" role="tab" aria-selected="false" aria-controls="preview" onclick="show(3)">에셋 확대판</button>
+</nav>
+</header>
+<div class="viewer" id="viewer" role="tabpanel" aria-labelledby="tab-0">
+<img id="preview" src="01-initial.png" alt="915×412 초기 길드 본부 시안" onload="loaded()" onerror="missing()">
+<div class="placeholder" id="placeholder" hidden>이 화면의 캡처를 준비하고 있습니다.<br>이미지가 추가되면 갤러리를 다시 열어 주세요.</div>
+</div>
+<div class="tools"><p id="caption">초기 길드 본부 · 915×412</p><div><button type="button" id="zoom" aria-pressed="false" onclick="toggleZoom()">원본 크기로 보기</button> <a id="original" href="C:/Users/geniu/.codex/worktrees/055e/Seoul-Hero/design/ui-image-skins/guild-2p5d-01/01-initial.png" target="_blank" rel="noopener">PNG 열기</a></div></div>
+<div class="details">
+<section class="detail"><h2>독립 시안</h2><p>현재 게임과 분리한 Godot 시안 프로젝트입니다. 미리보기의 건설·직원·생산 변경은 사용자 프로필과 출동 저장에 기록하지 않습니다.</p></section>
+<section class="detail"><h2>승인 전 화면</h2><p>이번 2.5D 배치는 아직 승인되지 않았습니다. 승인 후 현재 워크트리 게임에 연결하며, 현재 게임의 길드와 저장은 그대로 유지합니다.</p></section>
+</div>
+<header>
+<p>직접 확인: 탐색기에서 <a href="C:/Users/geniu/.codex/worktrees/055e/Seoul-Hero/design/ui-image-skins/guild-2p5d-01/Preview-Guild-2p5D.cmd">Preview-Guild-2p5D.cmd</a>를 더블클릭하세요. 같은 폴더의 독립 <a href="C:/Users/geniu/.codex/worktrees/055e/Seoul-Hero/design/ui-image-skins/guild-2p5d-01/project.godot">Godot 프로젝트</a>로도 열 수 있습니다.</p>
+<div class="links"><a href="C:/Users/geniu/.codex/worktrees/055e/Seoul-Hero/design/ui-image-skins/guild-2p5d-01/01-initial.png">초기 PNG</a><a href="C:/Users/geniu/.codex/worktrees/055e/Seoul-Hero/design/ui-image-skins/guild-2p5d-01/02-expanded.png">확장 PNG</a><a href="C:/Users/geniu/.codex/worktrees/055e/Seoul-Hero/design/ui-image-skins/guild-2p5d-01/03-management.png">시설 관리 PNG</a><a href="C:/Users/geniu/.codex/worktrees/055e/Seoul-Hero/design/ui-image-skins/guild-2p5d-01/04-assets.png">에셋 확대 PNG</a><a href="README.md">시안 안내</a><a href="prompts.json">생성 프롬프트</a><a href="provenance.json">제작 출처</a></div>
+<small>화면 캡처는 시각 배치 확인용이며 실제 플레이·터치 실기기 QA를 대신하지 않습니다. 게임 UI의 기능 텍스트는 네이티브 텍스트로 표시하고, 시설과 공간은 래스터 PNG를 사용합니다.</small>
+</header>
+</main>
+<script>
+const files=['01-initial.png','02-expanded.png','03-management.png','04-assets.png'];
+const captions=['초기 길드 본부 · 915×412','확장된 길드 본부 · 915×412','시설 관리창 · 915×412','시설·공간 에셋 확대판'];
+const absolute="C:/Users/geniu/.codex/worktrees/055e/Seoul-Hero/design/ui-image-skins/guild-2p5d-01";
+function show(i){const img=document.getElementById('preview');document.getElementById('placeholder').hidden=true;img.hidden=false;img.src=files[i];img.alt=captions[i];document.getElementById('caption').textContent=captions[i];document.getElementById('original').href=absolute+'/'+files[i];document.getElementById('viewer').setAttribute('aria-labelledby','tab-'+i);document.querySelectorAll('nav button').forEach((b,j)=>b.setAttribute('aria-selected',j===i));}
+function loaded(){document.getElementById('preview').hidden=false;document.getElementById('placeholder').hidden=true;}
+function missing(){document.getElementById('preview').hidden=true;document.getElementById('placeholder').hidden=false;}
+function toggleZoom(){const on=document.getElementById('viewer').classList.toggle('zoom');const b=document.getElementById('zoom');b.setAttribute('aria-pressed',on);b.textContent=on?'화면에 맞추기':'원본 크기로 보기';}
+</script>
+</body>
+</html>

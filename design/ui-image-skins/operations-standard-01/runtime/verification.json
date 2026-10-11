@@ -1,0 +1,17 @@
+{
+  "approval": {
+    "date": "2026-10-05",
+    "userMessage": "좋아 좋아 적용해"
+  },
+  "productionConnected": true,
+  "renderer": "Godot 4.7.2 Compatibility",
+  "screenCaptures": 34,
+  "nativeTextChecks": 138,
+  "fitIssues": 0,
+  "supportChecks": 12,
+  "supportLifecycleChecks": 12,
+  "nonImageContentUnchanged": true,
+  "userSavesRead": false,
+  "saveWrites": false,
+  "combatSimulation": false
+}

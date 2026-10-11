@@ -16,8 +16,10 @@
         54,
         14
       ],
-      "feetTop": 0.83,
-      "footLift": 0.03,
+      "feetTop": 0.89,
+      "footLift": 0.035,
+      "footStride": 0.05,
+      "legSplit": 0.488,
       "handMotion": 0.016,
       "handRegions": [
         [
@@ -63,8 +65,10 @@
         54,
         14
       ],
-      "feetTop": 0.83,
-      "footLift": 0.03,
+      "feetTop": 0.885,
+      "footLift": 0.035,
+      "footStride": 0.05,
+      "legSplit": 0.509,
       "handMotion": 0.016,
       "handRegions": [
         [
@@ -110,8 +114,10 @@
         54,
         14
       ],
-      "feetTop": 0.83,
-      "footLift": 0.03,
+      "feetTop": 0.84,
+      "footLift": 0.035,
+      "footStride": 0.05,
+      "legSplit": 0.49,
       "handMotion": 0.016,
       "handRegions": [
         [
@@ -157,8 +163,10 @@
         54,
         14
       ],
-      "feetTop": 0.83,
-      "footLift": 0.03,
+      "feetTop": 0.888,
+      "footLift": 0.035,
+      "footStride": 0.05,
+      "legSplit": 0.492,
       "handMotion": 0.016,
       "handRegions": [
         [
@@ -417,6 +425,202 @@
         1179
       ],
       "source": "summoner_sd_01.png"
+    },
+    "haetaeHead": {
+      "rig": "legless",
+      "sprite": "res://assets/monsters-sd/haetaeHead_sd_01.png",
+      "portrait": "res://assets/monsters-sd/haetaeHead_sd_01.png",
+      "region": [44, 56, 1132, 1178],
+      "source": "haetaeHead_sd_01.png"
+    },
+    "lampFirefly": {
+      "rig": "legless",
+      "sprite": "res://assets/monsters-sd/lampFirefly_sd_01.png",
+      "portrait": "res://assets/monsters-sd/lampFirefly_sd_01.png",
+      "region": [56, 110, 1110, 1056],
+      "source": "lampFirefly_sd_01.png"
+    },
+    "paperCrane": {
+      "rig": "legless",
+      "sprite": "res://assets/monsters-sd/paperCrane_sd_01.png",
+      "portrait": "res://assets/monsters-sd/paperCrane_sd_01.png",
+      "region": [48, 82, 1142, 1084],
+      "source": "paperCrane_sd_01.png"
+    },
+    "tileTortoise": {
+      "rig": "legless",
+      "sprite": "res://assets/monsters-sd/tileTortoise_sd_01.png",
+      "portrait": "res://assets/monsters-sd/tileTortoise_sd_01.png",
+      "region": [34, 114, 1164, 1062],
+      "source": "tileTortoise_sd_01.png"
+    },
+    "fenceSerpent": {
+      "rig": "legless",
+      "sprite": "res://assets/monsters-sd/fenceSerpent_sd_01.png",
+      "portrait": "res://assets/monsters-sd/fenceSerpent_sd_01.png",
+      "region": [130, 72, 1074, 1154],
+      "source": "fenceSerpent_sd_01.png"
+    },
+    "riverEel": {
+      "rig": "legless",
+      "sprite": "res://assets/monsters-sd/riverEel_sd_01.png",
+      "portrait": "res://assets/monsters-sd/riverEel_sd_01.png",
+      "region": [132, 34, 1020, 1226],
+      "source": "riverEel_sd_01.png"
+    },
+    "lampDrop": {
+      "rig": "legless",
+      "sprite": "res://assets/monsters-library/monster-002.png",
+      "portrait": "res://assets/monsters-library/monster-002.png",
+      "region": [26, 12, 566, 552],
+      "source": "art-library monster-002"
+    },
+    "borderDrop": {
+      "rig": "legless",
+      "sprite": "res://assets/monsters-library/monster-014.png",
+      "portrait": "res://assets/monsters-library/monster-014.png",
+      "region": [28, 40, 566, 524],
+      "source": "art-library monster-014"
+    },
+    "riftDrop": {
+      "rig": "legless",
+      "sprite": "res://assets/monsters-library/monster-001.png",
+      "portrait": "res://assets/monsters-library/monster-001.png",
+      "region": [36, 34, 554, 574],
+      "source": "art-library monster-001"
+    },
+    "riftCrescent": {
+      "rig": "legless",
+      "sprite": "res://assets/monsters-library/monster-017.png",
+      "portrait": "res://assets/monsters-library/monster-017.png",
+      "region": [16, 20, 580, 602],
+      "source": "art-library monster-017"
+    },
+    "riftTwin": {
+      "rig": "legless",
+      "sprite": "res://assets/monsters-library/monster-033.png",
+      "portrait": "res://assets/monsters-library/monster-033.png",
+      "region": [40, 38, 684, 568],
+      "source": "art-library monster-033"
+    },
+    "riftSlab": {
+      "rig": "legless",
+      "sprite": "res://assets/monsters-library/monster-049.png",
+      "portrait": "res://assets/monsters-library/monster-049.png",
+      "region": [42, 56, 880, 528],
+      "source": "art-library monster-049"
+    },
+    "riftCoil": {
+      "rig": "legless",
+      "sprite": "res://assets/monsters-library/monster-065.png",
+      "portrait": "res://assets/monsters-library/monster-065.png",
+      "region": [12, 14, 746, 614],
+      "source": "art-library monster-065"
+    },
+    "riftTower": {
+      "rig": "legless",
+      "sprite": "res://assets/monsters-library/monster-081.png",
+      "portrait": "res://assets/monsters-library/monster-081.png",
+      "region": [10, 0, 660, 632],
+      "source": "art-library monster-081"
+    },
+    "riftTrefoil": {
+      "rig": "legless",
+      "sprite": "res://assets/monsters-library/monster-097.png",
+      "portrait": "res://assets/monsters-library/monster-097.png",
+      "region": [12, 14, 696, 612],
+      "source": "art-library monster-097"
+    },
+    "riftMask": {
+      "rig": "legless",
+      "sprite": "res://assets/monsters-library/monster-113.png",
+      "portrait": "res://assets/monsters-library/monster-113.png",
+      "region": [28, 32, 562, 574],
+      "source": "art-library monster-113"
+    },
+    "riftNest": {
+      "rig": "legless",
+      "sprite": "res://assets/monsters-library/monster-129.png",
+      "portrait": "res://assets/monsters-library/monster-129.png",
+      "region": [32, 32, 566, 580],
+      "source": "art-library monster-129"
+    },
+    "riftBud": {
+      "rig": "legless",
+      "sprite": "res://assets/monsters-library/monster-145.png",
+      "portrait": "res://assets/monsters-library/monster-145.png",
+      "region": [74, 12, 514, 616],
+      "source": "art-library monster-145"
+    },
+    "glassDrop": {
+      "rig": "legless",
+      "sprite": "res://assets/monsters-library/monster-003.png",
+      "portrait": "res://assets/monsters-library/monster-003.png",
+      "region": [44, 6, 638, 594],
+      "source": "art-library monster-003"
+    },
+    "glassCrescent": {
+      "rig": "legless",
+      "sprite": "res://assets/monsters-library/monster-019.png",
+      "portrait": "res://assets/monsters-library/monster-019.png",
+      "region": [12, 34, 584, 558],
+      "source": "art-library monster-019"
+    },
+    "glassTwin": {
+      "rig": "legless",
+      "sprite": "res://assets/monsters-library/monster-035.png",
+      "portrait": "res://assets/monsters-library/monster-035.png",
+      "region": [14, 22, 670, 588],
+      "source": "art-library monster-035"
+    },
+    "glassSlab": {
+      "rig": "legless",
+      "sprite": "res://assets/monsters-library/monster-051.png",
+      "portrait": "res://assets/monsters-library/monster-051.png",
+      "region": [44, 72, 876, 468],
+      "source": "art-library monster-051"
+    },
+    "glassCoil": {
+      "rig": "legless",
+      "sprite": "res://assets/monsters-library/monster-067.png",
+      "portrait": "res://assets/monsters-library/monster-067.png",
+      "region": [16, 22, 588, 600],
+      "source": "art-library monster-067"
+    },
+    "glassTower": {
+      "rig": "legless",
+      "sprite": "res://assets/monsters-library/monster-083.png",
+      "portrait": "res://assets/monsters-library/monster-083.png",
+      "region": [36, 32, 594, 586],
+      "source": "art-library monster-083"
+    },
+    "glassTrefoil": {
+      "rig": "legless",
+      "sprite": "res://assets/monsters-library/monster-099.png",
+      "portrait": "res://assets/monsters-library/monster-099.png",
+      "region": [46, 30, 560, 540],
+      "source": "art-library monster-099"
+    },
+    "glassMask": {
+      "rig": "legless",
+      "sprite": "res://assets/monsters-library/monster-115.png",
+      "portrait": "res://assets/monsters-library/monster-115.png",
+      "region": [8, 6, 594, 600],
+      "source": "art-library monster-115"
+    },
+    "glassNest": {
+      "rig": "legless",
+      "sprite": "res://assets/monsters-library/monster-131.png",
+      "portrait": "res://assets/monsters-library/monster-131.png",
+      "region": [28, 56, 566, 522],
+      "source": "art-library monster-131"
+    },
+    "glassBud": {
+      "rig": "legless",
+      "sprite": "res://assets/monsters-library/monster-147.png",
+      "portrait": "res://assets/monsters-library/monster-147.png",
+      "region": [120, 14, 416, 606],
+      "source": "art-library monster-147"
     }
   },
   "structures": {
@@ -444,11 +648,11 @@
       "glowFrequency": 1.3,
       "fieldSprite": "manaFieldAura",
       "fieldProjection": 0.60,
-      "spreadPeriod": 3.4,
-      "flowSpeed": 0.05,
+      "spreadPeriod": 4.8,
+      "flowSpeed": 0.035,
       "fieldTint": [0.86, 0.92, 1.0],
-      "fieldOpacity": 0.18,
-      "fieldWaveOpacity": 0.22,
+      "fieldOpacity": 0.13,
+      "fieldWaveOpacity": 0.16,
       "source": "ground_installations_01.png"
     }
   },
@@ -478,8 +682,10 @@
         54,
         14
       ],
-      "feetTop": 0.83,
-      "footLift": 0.03,
+      "feetTop": 0.837,
+      "footLift": 0.035,
+      "footStride": 0.05,
+      "legSplit": 0.498,
       "handMotion": 0.016,
       "handRegions": [
         [

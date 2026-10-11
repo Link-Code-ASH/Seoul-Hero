@@ -1,0 +1,64 @@
+{
+  "revision": "02",
+  "assets": [
+    {
+      "file": "operator_halo.png",
+      "size": [
+        256,
+        256
+      ],
+      "expected_size": [
+        256,
+        256
+      ],
+      "dimensions_match": true,
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "has_alpha_zero": true,
+      "alpha_zero_pixels": 42070,
+      "center_alpha": 0,
+      "sha256": "cb5eb43d31553eea267317c0f6a1a586a5a16f5f15902ac11dc701b8240e0e2f",
+      "runtime_sha256": "cb5eb43d31553eea267317c0f6a1a586a5a16f5f15902ac11dc701b8240e0e2f",
+      "runtime_copy_matches": true,
+      "text_logo_visual_check": "none",
+      "fake_checkerboard_visual_check": "none",
+      "role": "effect overlay; no opaque panel backing",
+      "center64x64_alpha_extrema": [
+        0,
+        1
+      ],
+      "center_visual_check": "empty center; central pixel alpha0; negligible original generated edge noise<=1/255 inside64x64 is preserved"
+    },
+    {
+      "file": "operator_glint.png",
+      "size": [
+        256,
+        64
+      ],
+      "expected_size": [
+        256,
+        64
+      ],
+      "dimensions_match": true,
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "has_alpha_zero": true,
+      "alpha_zero_pixels": 13336,
+      "center_alpha": 221,
+      "sha256": "eadd8b00e6ff472b09fc43cb98f7d34ae534d5b37ca9a80a50be5314d8b21011",
+      "runtime_sha256": "eadd8b00e6ff472b09fc43cb98f7d34ae534d5b37ca9a80a50be5314d8b21011",
+      "runtime_copy_matches": true,
+      "text_logo_visual_check": "none",
+      "fake_checkerboard_visual_check": "none",
+      "role": "effect overlay; no opaque panel backing"
+    }
+  ],
+  "scope": "Exact image dimensions/mode/alpha/hash are computed; text/logo/checkerboard checks are manual visual inspection of generated sources and resampled previews. No alpha normalization or repainting.",
+  "all_computed_checks_pass": true
+}

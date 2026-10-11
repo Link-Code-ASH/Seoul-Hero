@@ -1,0 +1,62 @@
+{
+  "crewFrozen": true,
+  "deployHoverX": -12.0,
+  "deployInputRectUnchanged": true,
+  "deployPressedY": 1.5,
+  "deployRestored": true,
+  "fixedSeed": 20261011,
+  "frames": 90,
+  "gifFPS": 15,
+  "gifSeconds": 6.0,
+  "menuHoverX": -12.0,
+  "menuInputRectUnchanged": true,
+  "menuPressedY": 1.5,
+  "menuRestored": true,
+  "operatorLine": "오늘 목표는 칼퇴예요. 게이트가 협조만 해 준다면요...",
+  "productionLobby": true,
+  "profileCharacters": [
+    "yoonHarin",
+    "parkDojun",
+    "kangTaehoon",
+    "awakener"
+  ],
+  "rapidHoverRestored": true,
+  "saveWrites": false,
+  "userProfileRead": false,
+  "viewport": [
+    915,
+    412
+  ],
+  "gifActualFrames": 90,
+  "gifActualDurationMs": 6000,
+  "beforeAfterSize": [
+    1854,
+    492
+  ],
+  "detailsSize": [
+    1260,
+    1374
+  ],
+  "officeBackgroundUnchangedPixels": true,
+  "crewFixedPositions": [
+    [
+      100,
+      366
+    ],
+    [
+      226,
+      376
+    ],
+    [
+      352,
+      366
+    ],
+    [
+      478,
+      376
+    ]
+  ],
+  "crewInitialPoseDifference": "Fixed positions match; character squash/turn interpolation retained a few pre-freeze engine frames.",
+  "gifDecodedFramesMatchQuantizedSources": true,
+  "gifBytes": 724836
+}

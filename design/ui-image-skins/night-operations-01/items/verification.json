@@ -1,0 +1,302 @@
+[
+  {
+    "file": "energyDrink.png",
+    "width": 1254,
+    "height": 1254,
+    "format": "Format32bppArgb",
+    "transparent_pixels": 1002059,
+    "opaque_pixels": 1116,
+    "passed": true,
+    "sha256": "f50127016cf480f632a0ce206a1c50744369028748454f1eee319d5f0b19173e"
+  },
+  {
+    "file": "riceBall.png",
+    "width": 1254,
+    "height": 1254,
+    "format": "Format32bppArgb",
+    "transparent_pixels": 871681,
+    "opaque_pixels": 734,
+    "passed": true,
+    "sha256": "c5f5cc42b753f240a4d9e7bd0a3514cc34baccac5d57058b30b52607ac3d9a40"
+  },
+  {
+    "file": "runningShoes.png",
+    "width": 1254,
+    "height": 1254,
+    "format": "Format32bppArgb",
+    "transparent_pixels": 780234,
+    "opaque_pixels": 1222,
+    "passed": true,
+    "sha256": "e0efb13be2092d7fcccce2e54881a1cd35f0279f7ddb667fb1e391f8585925db"
+  },
+  {
+    "file": "scope.png",
+    "width": 1254,
+    "height": 1254,
+    "format": "Format32bppArgb",
+    "transparent_pixels": 1045030,
+    "opaque_pixels": 1333,
+    "passed": true,
+    "sha256": "15e712fd3736f04240f7e06a565e642cde6d620281596ce1060063abcdfdc405"
+  },
+  {
+    "file": "luckyCharm.png",
+    "width": 1254,
+    "height": 1254,
+    "format": "Format32bppArgb",
+    "transparent_pixels": 919548,
+    "opaque_pixels": 1581,
+    "passed": true,
+    "sha256": "9e70d5942662605c1d6b2e430d43e569f5ee866595cd00f90b9cc7b0edce4ff2"
+  },
+  {
+    "file": "vest.png",
+    "width": 1254,
+    "height": 1254,
+    "format": "Format32bppArgb",
+    "transparent_pixels": 688910,
+    "opaque_pixels": 1083,
+    "passed": true,
+    "sha256": "3f863c8491d876a33eea4f5c8a659aeb3065466de3b7336217edae4a915f1210"
+  },
+  {
+    "file": "bandage.png",
+    "width": 1254,
+    "height": 1254,
+    "format": "Format32bppArgb",
+    "transparent_pixels": 1028893,
+    "opaque_pixels": 726,
+    "passed": true,
+    "sha256": "af83df3bc743fccff2f5d5e4963d730d047251c9359c7adc37c12e390b801b76"
+  },
+  {
+    "file": "wallet.png",
+    "width": 1254,
+    "height": 1254,
+    "format": "Format32bppArgb",
+    "transparent_pixels": 934007,
+    "opaque_pixels": 1034,
+    "passed": true,
+    "sha256": "ee2d9c79aecf8607dac8b16804c60e03207cb86856e3276c313913c6c43ca1dd"
+  },
+  {
+    "file": "magnet.png",
+    "width": 1254,
+    "height": 1254,
+    "format": "Format32bppArgb",
+    "transparent_pixels": 1185412,
+    "opaque_pixels": 954,
+    "passed": true,
+    "sha256": "fe95f39251fd9c74c1298ed5695f324ae3f6a732926460716b48b8ce6e4b00b1"
+  },
+  {
+    "file": "gloves.png",
+    "width": 1254,
+    "height": 1254,
+    "format": "Format32bppArgb",
+    "transparent_pixels": 1015033,
+    "opaque_pixels": 741,
+    "passed": true,
+    "sha256": "6bcbcc6089de22cf5a3fc021d6a02090e2ef542e1d73e26d5b20b3aeefa3730f"
+  },
+  {
+    "file": "sight.png",
+    "width": 1254,
+    "height": 1254,
+    "format": "Format32bppArgb",
+    "transparent_pixels": 1074984,
+    "opaque_pixels": 1014,
+    "passed": true,
+    "sha256": "285bc326f9edd4b785ba303873e09b627188f198841fb5c0a08ee327780eaf13"
+  },
+  {
+    "file": "lens.png",
+    "width": 1254,
+    "height": 1254,
+    "format": "Format32bppArgb",
+    "transparent_pixels": 1129254,
+    "opaque_pixels": 1134,
+    "passed": true,
+    "sha256": "9e537353b30b533e52d095c564921082cfeeea74fae9e439247964a7870a0242"
+  },
+  {
+    "file": "spring.png",
+    "width": 1254,
+    "height": 1254,
+    "format": "Format32bppArgb",
+    "transparent_pixels": 1181595,
+    "opaque_pixels": 622,
+    "passed": true,
+    "sha256": "98a1f2f47d435a319f594a61b7df02cfe92101a03e4f72d188205e805df5a6d9"
+  },
+  {
+    "file": "timer.png",
+    "width": 1254,
+    "height": 1254,
+    "format": "Format32bppArgb",
+    "transparent_pixels": 1035132,
+    "opaque_pixels": 1759,
+    "passed": true,
+    "sha256": "106d582f7638d7a0231834514dfbdb7c4119a98a91d9ac52bc0002f94dfec655"
+  },
+  {
+    "file": "battery.png",
+    "width": 1254,
+    "height": 1254,
+    "format": "Format32bppArgb",
+    "transparent_pixels": 1110371,
+    "opaque_pixels": 726,
+    "passed": true,
+    "sha256": "b5a48766de34b64035096ada08771c2ffdecde38c8d22aa0ab7dcf55af0a2195"
+  },
+  {
+    "file": "wideLens.png",
+    "width": 1254,
+    "height": 1254,
+    "format": "Format32bppArgb",
+    "transparent_pixels": 1099703,
+    "opaque_pixels": 987,
+    "passed": true,
+    "sha256": "478caadeb8b730e7e563745936a153ff56ee0cf3fcd80be6c1478cf285a3168e"
+  },
+  {
+    "file": "criticalEye.png",
+    "width": 1254,
+    "height": 1254,
+    "format": "Format32bppArgb",
+    "transparent_pixels": 1262684,
+    "opaque_pixels": 1166,
+    "passed": true,
+    "sha256": "3e6769e8463b0305bf683c0dc50f80387a269be66051164181e9f08a72fc1bdb"
+  },
+  {
+    "file": "sharpStone.png",
+    "width": 1254,
+    "height": 1254,
+    "format": "Format32bppArgb",
+    "transparent_pixels": 1017578,
+    "opaque_pixels": 1180,
+    "passed": true,
+    "sha256": "22437300b2db98b74811d7cf023a33002477158ba36a7c78644f8daccb47f69c"
+  },
+  {
+    "file": "umbrella.png",
+    "width": 1254,
+    "height": 1254,
+    "format": "Format32bppArgb",
+    "transparent_pixels": 1295513,
+    "opaque_pixels": 931,
+    "passed": true,
+    "sha256": "f6e2a7a889b158bc439b4bce77b702f6bbe2ad37c2ce30294e0f334438f70c23"
+  },
+  {
+    "file": "bloodPack.png",
+    "width": 1254,
+    "height": 1254,
+    "format": "Format32bppArgb",
+    "transparent_pixels": 985223,
+    "opaque_pixels": 477,
+    "passed": true,
+    "sha256": "f5e5cb63b66421c7bf91f4dfd28df666486e972b07b003e63ff6e907414f2a2c"
+  },
+  {
+    "file": "swordManual.png",
+    "width": 1254,
+    "height": 1254,
+    "format": "Format32bppArgb",
+    "transparent_pixels": 1062280,
+    "opaque_pixels": 830,
+    "passed": true,
+    "sha256": "113b4ab147fb3572e3244d29691f9e91ab117c87ca1123d3a37187d65be548c4"
+  },
+  {
+    "file": "toolbox.png",
+    "width": 1254,
+    "height": 1254,
+    "format": "Format32bppArgb",
+    "transparent_pixels": 880390,
+    "opaque_pixels": 736,
+    "passed": true,
+    "sha256": "058e1570641dac85c34ce130bf0cab25dbe7de166c64679154093498d5715ccc"
+  },
+  {
+    "file": "conductor.png",
+    "width": 1254,
+    "height": 1254,
+    "format": "Format32bppArgb",
+    "transparent_pixels": 1062890,
+    "opaque_pixels": 1302,
+    "passed": true,
+    "sha256": "4627237fd56740f3ed7698dd4eee72b8bfafa0ace8a58f513c03f4e0051f8b46"
+  },
+  {
+    "file": "splitter.png",
+    "width": 1254,
+    "height": 1254,
+    "format": "Format32bppArgb",
+    "transparent_pixels": 1046186,
+    "opaque_pixels": 930,
+    "passed": true,
+    "sha256": "a8175d5c7b316530ed9baf912fc25a447f8ed23b2bdea7b402e1121580f24c28"
+  },
+  {
+    "file": "mineCase.png",
+    "width": 1254,
+    "height": 1254,
+    "format": "Format32bppArgb",
+    "transparent_pixels": 944401,
+    "opaque_pixels": 467,
+    "passed": true,
+    "sha256": "175cbf1ac6cd9ef04b73f0b47ed90e079f85f0ef6aff588739a897500a3ca59f"
+  },
+  {
+    "file": "cursedStone.png",
+    "width": 1254,
+    "height": 1254,
+    "format": "Format32bppArgb",
+    "transparent_pixels": 1220985,
+    "opaque_pixels": 1062,
+    "passed": true,
+    "sha256": "523b988e188e8462fe12613a12263abd24b68d878568592796ee1504f35dcfa7"
+  },
+  {
+    "file": "hunterCoat.png",
+    "width": 1254,
+    "height": 1254,
+    "format": "Format32bppArgb",
+    "transparent_pixels": 891000,
+    "opaque_pixels": 768,
+    "passed": true,
+    "sha256": "648e28bbedee5ead398de246127f2531b980c0a053b52ca7d046777972b57353"
+  },
+  {
+    "file": "bloodCircuit.png",
+    "width": 1254,
+    "height": 1254,
+    "format": "Format32bppArgb",
+    "transparent_pixels": 1086055,
+    "opaque_pixels": 822,
+    "passed": true,
+    "sha256": "8e171a66f806ea1693a361a77dacdacb1fc76ef3dc0471cc3457af2110389e6b"
+  },
+  {
+    "file": "commandCore.png",
+    "width": 1254,
+    "height": 1254,
+    "format": "Format32bppArgb",
+    "transparent_pixels": 1037818,
+    "opaque_pixels": 1179,
+    "passed": true,
+    "sha256": "9b3a933d83cc69549f8658b939863d78afee675ed0b7acd393a3aef3ef391b69"
+  },
+  {
+    "file": "stormCore.png",
+    "width": 1254,
+    "height": 1254,
+    "format": "Format32bppArgb",
+    "transparent_pixels": 1097736,
+    "opaque_pixels": 1003,
+    "passed": true,
+    "sha256": "d59cdc97f3001b130e2d4653248d564be8531a88b7e2c8094553c37f447cd8e3"
+  }
+]

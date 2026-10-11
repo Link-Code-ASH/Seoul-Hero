@@ -1,4 +1,5 @@
 import type { EliteModifierId } from './eliteModifiers';
+import { enemies as enemyDefinitions } from './enemies';
 import type { Wave } from './types';
 
 export const GATE_CONFIG = {
@@ -16,18 +17,17 @@ export const GATE_CONFIG = {
 
 export interface GateMilestone {
   depth: number;
-  enemyAdditions?: { enemyId: string; fromWave: number; weight: number }[];
+  /** Added to every featured elite of the Wave table. */
+  featuredEliteModifiers?: EliteModifierId[];
   eliteModifiers?: EliteModifierId[];
-  bossId?: string;
   spawnMultiplier?: number;
 }
 
-/** Ten-depth content beats are cumulative. Add future roster/boss changes here. */
+/** Ten-depth difficulty beats are cumulative. The cast of a map never changes with depth. */
 export const GATE_MILESTONES: readonly GateMilestone[] = [
-  { depth: 10, enemyAdditions: [{ enemyId: 'lurker', fromWave: 11, weight: 1 }], eliteModifiers: ['ARMORED'], spawnMultiplier: 1.08 },
-  { depth: 20, bossId: 'riftQueen', eliteModifiers: ['BERSERK', 'REGENERATING'], spawnMultiplier: 1.08 },
+  { depth: 10, eliteModifiers: ['ARMORED'], featuredEliteModifiers: ['CURSED_AURA'], spawnMultiplier: 1.08 },
+  { depth: 20, eliteModifiers: ['BERSERK', 'REGENERATING'], spawnMultiplier: 1.08 },
 ];
-
 export interface EnemyDifficulty {
   hp: number;
   damage: number;
@@ -54,15 +54,75 @@ export function gateDifficulty(depth: number): EnemyDifficulty {
   };
 }
 
-export function resolveGateWave(wave: Wave, depth: number, bossWave: number): Wave {
-  const additions = GATE_MILESTONES.filter(entry => entry.depth <= depth).flatMap(entry => entry.enemyAdditions ?? []);
-  const enemies = [...wave.enemies];
-  for (const addition of additions) {
-    if (wave.waveNumber < addition.fromWave || enemies.some(entry => entry.enemyId === addition.enemyId)) continue;
-    enemies.push({ enemyId: addition.enemyId, weight: addition.weight });
+const WEEK_SECONDS = 604_800;
+/** Weeks since the first Sunday 05:00 KST (Saturday 20:00 UTC) of the Unix epoch; the weekly gate rule resets on the same boundary. */
+export const weekNumber = (unixSeconds: number): number => Math.floor((unixSeconds - 244_800) / WEEK_SECONDS);
+
+/**
+ * One weekly monster for every map: it leads the listed Waves with `share` of the Wave weight
+ * and the authored slots shrink to fit. The pool is a shuffle bag: every pool.length weeks each
+ * monster comes up once in a random order, and no monster comes up two weeks in a row.
+ *
+ * `enabled` is the one switch for the whole feature (web and Godot). While it is false no Wave gets a
+ * weekly lead, the gate screen shows no weekly monster and the map's archive lists no weekly-only monster.
+ */
+export const WEEKLY_MONSTER = {
+  enabled: true as boolean,
+  // One monster per weekly pattern: 소환, 분열, 자폭.
+  pool: ['summoner', 'splitter', 'lampFirefly'],
+  // Former weekly monsters. Their data and art stay; no week, Wave lead or map archive uses them.
+  reserve: ['swarm', 'ironBoar', 'chainWarden', 'sentinel', 'paperCrane', 'tileTortoise', 'fenceSerpent', 'riverEel', 'lampDrop', 'borderDrop'],
+  waves: [3, 6, 9, 12, 15, 18],
+  share: 0.35,
+} as const;
+
+/** The pool in the order one bag deals it. */
+function weeklyBag(bag: number, pool: readonly string[]): string[] {
+  // Park–Miller steps stay below 2^53, so GDScript and JS draw the same numbers.
+  // The xorshift between two steps breaks the straight line that neighbouring bag numbers would otherwise draw along.
+  let state = ((bag * 131) % 2_147_483_646 + 2_147_483_646) % 2_147_483_646 + 1;
+  const next = () => {
+    state = state * 48_271 % 2_147_483_647;
+    state = (state ^ (state >>> 15)) % 2_147_483_646 + 1;
+    return (state = state * 48_271 % 2_147_483_647);
+  };
+  next();
+  const order = [...pool];
+  for (let index = order.length - 1; index > 0; index -= 1) {
+    const other = next() % (index + 1);
+    [order[index], order[other]] = [order[other]!, order[index]!];
   }
-  const bossId = wave.waveNumber === bossWave
-    ? [...GATE_MILESTONES].reverse().find(entry => entry.depth <= depth && entry.bossId)?.bossId
-    : undefined;
-  return { ...wave, enemies, boss: bossId ? { enemyId: bossId } : wave.boss };
+  return order;
+}
+
+/** This week's monster. Mirrors HeroRoster.weekly_monster in godot/scripts/systems/roster.gd. */
+export function weeklyMonster(week: number, pool: readonly string[] = WEEKLY_MONSTER.pool): string {
+  const size = pool.length, bag = Math.floor(week / size);
+  const order = weeklyBag(bag, pool);
+  // A bag never opens with the monster that closed the one before; swapping the first two slots leaves its own last slot alone.
+  if (size > 2 && order[0] === weeklyBag(bag - 1, pool)[size - 1]) [order[0], order[1]] = [order[1]!, order[0]!];
+  return order[((week % size) + size) % size]!;
+}
+
+/** The elite a Run meets on every elite Wave; roll is the Run's one random draw in [0, 1). */
+export const runElite = (pool: readonly string[] | undefined, roll: number): string | undefined =>
+  pool?.length ? pool[Math.min(pool.length - 1, Math.floor(roll * pool.length))] : undefined;
+
+/** Wave as one Run plays it: the weekly lead, the Run's elite body and the depth's elite modifiers. */
+export function resolveGateWave(wave: Wave, depth: number, run: { week?: number; eliteId?: string } = {}): Wave {
+  const milestones = GATE_MILESTONES.filter(entry => entry.depth <= depth);
+  let enemies = [...wave.enemies];
+  const weekly = run.week === undefined || !WEEKLY_MONSTER.enabled ? undefined : weeklyMonster(run.week);
+  if (weekly && (WEEKLY_MONSTER.waves as readonly number[]).includes(wave.waveNumber) && !enemies.some(entry => entry.enemyId === weekly)) {
+    const total = enemies.reduce((sum, entry) => sum + entry.weight, 0);
+    enemies = [{ enemyId: weekly, weight: total * WEEKLY_MONSTER.share }, ...enemies.map(entry => ({ ...entry, weight: entry.weight * (1 - WEEKLY_MONSTER.share) }))];
+  }
+  const featuredModifiers = milestones.flatMap(entry => entry.featuredEliteModifiers ?? []);
+  const elites = wave.elites?.filter(elite => (elite.minDepth ?? 1) <= depth).map(elite => {
+    if (!elite.featured) return elite;
+    const enemyId = run.eliteId ?? elite.enemyId, body = enemyDefinitions[enemyId];
+    return { ...elite, enemyId, hpMultiplier: elite.hp && body ? elite.hp / body.maxHp : elite.hpMultiplier,
+      modifiers: [...new Set([...(elite.modifiers ?? []), ...featuredModifiers])] };
+  });
+  return { ...wave, enemies, ...(elites ? { elites } : {}) };
 }

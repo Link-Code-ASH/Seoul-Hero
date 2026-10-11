@@ -8,6 +8,8 @@ var _ground := Node2D.new()
 var _actors := Node2D.new()
 var _projectiles := Node2D.new()
 var _effects := Node2D.new()
+var _numbers := HeroDamageNumbers.new()
+var _bombard_marks := HeroBombardMarks.new()
 var _active: Dictionary = {}
 var _actor_pool: Dictionary = {}
 var _shots: Dictionary = {}
@@ -19,10 +21,10 @@ var _presets: Dictionary = {}
 var visible_world := Rect2(-640,-360,1280,720)
 
 func _ready() -> void:
-	add_child(_ground); add_child(_actors); add_child(_projectiles); add_child(_effects)
+	add_child(_ground); _ground.add_child(_bombard_marks); add_child(_actors); add_child(_projectiles); add_child(_effects); add_child(_numbers)
 	# Ground effects must remain above HeroWorld's floor, below every actor.
 	_ground.z_index = 0; _actors.z_index = 1
-	_actors.y_sort_enabled = true; _projectiles.z_index = 3; _effects.z_index = 4
+	_actors.y_sort_enabled = true; _projectiles.z_index = 3; _effects.z_index = 4; _numbers.z_index = 5
 	_presets = JSON.parse_string(FileAccess.get_file_as_string("res://data/visuals/effects.json"))
 
 func bind(state: HeroRun) -> void:
@@ -92,11 +94,14 @@ func sync(dt: float) -> void:
 			actor.update_state({"pos":actor.position},dt,float(actor.get_meta("height",108)))
 		else: _release_actor(key)
 	_sync_projectiles(dt)
-	for effect in _playing: effect.tick(dt)
+	_numbers.tick(dt)
+	for effect in _playing:
+		_follow_effect_anchors(effect)
+		effect.tick(dt)
 	for effect in _playing.duplicate():
 		if effect.finished: _playing.erase(effect); _effect_pool.append(effect)
 
-func _shot(key: String, texture: Texture2D, point: Vector2, angle: float, dimensions: Vector2, dt: float, seen: Dictionary) -> void:
+func _shot(key: String, texture: Texture2D, point: Vector2, angle: float, dimensions: Vector2, dt: float, seen: Dictionary, profile_key: String = "default") -> void:
 	if texture == null: return
 	seen[key] = true
 	var shot: HeroProjectileVisual = _shots.get(key)
@@ -104,9 +109,14 @@ func _shot(key: String, texture: Texture2D, point: Vector2, angle: float, dimens
 		if _shots.size() >= 160: return
 		shot = _shot_pool.pop_back() if not _shot_pool.is_empty() else PROJECTILE_SCENE.instantiate()
 		if not shot.is_inside_tree(): _projectiles.add_child(shot)
-		shot.configure(texture,_projectile_dimensions(dimensions)); _shots[key] = shot
+		shot.configure(texture,_projectile_dimensions(dimensions),_weapon_profile(profile_key)); _shots[key] = shot
+	shot.scale = Vector2.ONE
 	shot.update_state(point,angle,dt)
 	shot.visible = visible_world.grow(100).has_point(point)
+
+func _weapon_profile(key: String) -> Dictionary:
+	var profiles: Dictionary = _presets.get("weapons",{})
+	return profiles.get(key,profiles.get("default",{}))
 
 func _projectile_dimensions(dimensions: Vector2) -> Vector2:
 	return dimensions * float(_presets.get("projectiles",{}).get("displayScale",1.5))
@@ -127,19 +137,35 @@ func _sync_projectiles(dt: float) -> void:
 		var direction: Vector2 = bullet.velocity.normalized() + (heights[1]-heights[0])/reach if progress < 1 else bullet.velocity.normalized()
 		# Point-blank targets inside the launch clearance show impact rather than a backwards flight.
 		if direction.dot(bullet.velocity) <= 0: continue
-		_shot(key,Content.trimmed_texture(bullet.sprite),point,direction.angle(),Vector2(24,13),dt,seen)
+		_shot(key,Content.trimmed_texture(bullet.sprite),point,direction.angle(),Vector2(24,13),dt,seen,str(bullet.context.get("weaponId",bullet.context.get("weapon","default"))))
 	for i in range(_run.hostile.size()):
 		var bullet: Dictionary = _run.hostile[i]
-		_shot("hostile:"+str(i),Content.trimmed_texture("hostileBolt"),bullet.pos,bullet.velocity.angle(),Vector2(22,15),dt,seen)
+		if not bullet.has("visualId"): bullet.visualId = _run.next_visual_id()
+		_shot("hostile:"+str(bullet.visualId),Content.trimmed_texture("hostileBolt"),bullet.pos,bullet.velocity.angle(),Vector2(22,15),dt,seen,"hostile")
+	var marks: Array[Dictionary] = []
 	for i in range(_run.pending.size()):
 		var attack: Dictionary = _run.pending[i]
 		if attack.kind != "bombard": continue
-		var t: float = clampf(1.0-attack.remaining/attack.duration,0,1)
 		var key := "bombard:"+str(attack.context.contextId)+":"+str(attack.target)
-		var heights := _flight_heights(key,attack.context,(attack.target-attack.pos).angle(),Vector2(38,38))
+		var heights := _flight_heights(key,attack.context,(attack.target-attack.pos).angle(),Vector2(48,48))
+		# The shell lobs over the short visual flight, then sits on the mark until the delayed blast.
+		var elapsed: float = attack.duration-attack.remaining
+		var flight := minf(float(_run.data.weaponConfig.get("bombardVisualDuration",0.546)),float(attack.duration))
+		var t := clampf(elapsed/maxf(0.001,flight),0,1)
+		var fuse := clampf((elapsed-flight)/maxf(0.001,float(attack.duration)-flight),0,1)
+		var apex := clampf(attack.pos.distance_to(attack.target)*0.6,90.0,190.0)
+		var lift := 4.0*apex*t*(1.0-t)
+		var ground: Vector2 = attack.pos.lerp(attack.target,t)
 		# Area explosions land on the ground; their radius remains a ground-plane radius.
-		var point: Vector2 = attack.pos.lerp(attack.target,t)+heights[0]*(1.0-t)-Vector2(0,sin(t*PI)*95.0)
-		_shot(key,Content.trimmed_texture("bombardShell"),point,0,Vector2(38,38),dt,seen)
+		var point: Vector2 = ground+heights[0]*(1.0-t)-Vector2(0,lift+12.0*t)
+		_shot(key,Content.trimmed_texture("bombardShell"),point,elapsed*7.0,Vector2(48,48),dt,seen,"manaBombard")
+		var shot: HeroProjectileVisual = _shots.get(key)
+		if shot != null:
+			var swell := 1.0+0.18*sin(t*PI)
+			if t >= 1.0: swell = 1.0+0.12*fuse+0.07*sin(elapsed*lerpf(12.0,30.0,fuse))
+			shot.scale = Vector2.ONE*swell
+		marks.append({"ground":ground,"height":lift/apex,"target":attack.target,"radius":float(attack.get("stats",{}).get("blastRadius",110.0)),"approach":t,"fuse":fuse})
+	_bombard_marks.show_marks(marks)
 	for slot in _run.owned:
 		if _run.data.weapons[slot.id].behavior != "orbit": continue
 		var stats := _run.weapon_stats(slot)
@@ -148,10 +174,10 @@ func _sync_projectiles(dt: float) -> void:
 			var angle: float = _run.combat_time*_run.data.weaponConfig.orbitAngularSpeed+TAU*i/stats.projectileCount
 			# An orbiting shuriken is the attack projectile, never a held weapon.
 			var definition: Dictionary = _run.data.weapons[slot.id]
-			_shot("orbit:"+slot.id+str(i),Content.trimmed_texture(definition.visual.get("sprite","guardianShuriken")),orbit_center+Vector2.from_angle(angle)*stats.range,_run.combat_time*_run.data.weaponConfig.shurikenSpinSpeed,Vector2(40,40),dt,seen)
+			_shot("orbit:"+slot.id+str(i),Content.trimmed_texture(definition.visual.get("sprite","guardianShuriken")),orbit_center+Vector2.from_angle(angle)*stats.range,_run.combat_time*_run.data.weaponConfig.shurikenSpinSpeed,Vector2(40,40),dt,seen,slot.id)
 	for key in _shots.keys():
 		if seen.has(key): continue
-		var shot: Node2D = _shots[key]; shot.visible = false; _shot_pool.append(shot); _shots.erase(key)
+		var shot: HeroProjectileVisual = _shots[key]; shot.reset(); _shot_pool.append(shot); _shots.erase(key)
 	for key in _shot_heights.keys():
 		if not seen.has(key): _shot_heights.erase(key)
 
@@ -206,13 +232,20 @@ func present(payload: Dictionary) -> void:
 			actor.set_meta("height",_run.data.enemies[payload.definition].radius*3.4)
 		if actor != null:
 			actor.action(kind,payload)
+			if kind == "actorHit" and payload.has("damage") and actor.visible:
+				var head: Vector2 = actor.position+Vector2(0,actor.visual_bounds().position.y-4)
+				_numbers.add(head,float(payload.damage),bool(payload.get("critical",false)))
 		return
-	if kind == "muzzle":
+	if kind == "structureActivate":
+		var installation: Node2D = _active.get(str(payload.get("sourceActor","")))
+		if installation != null: installation.action(kind,payload)
+	if kind in ["muzzle","enemyProjectile"]:
 		var angle: float = payload.get("angle",0.0)
 		if payload.has("visualId") and payload.has("context"):
 			payload.pos += _flight_heights("bullet:"+str(payload.visualId),payload.context,angle,Vector2(24,13))[0]
 		else: payload.pos += launch_offset(payload.get("sourceActor","player"),angle,_projectile_dimensions(Vector2(24,13)))
-	elif kind in ["impact","critical"] and payload.has("targetActor"): payload.pos += _offset(payload.targetActor)
+	elif kind in ["impact","critical","death"] and payload.has("targetActor"): payload.pos += _offset(payload.targetActor)
+	elif kind == "pickup" and payload.has("targetActor"): payload.target += _offset(payload.targetActor)
 	elif kind == "slash": payload.pos += _offset(payload.get("sourceActor","player"),"impact")
 	elif kind == "chain":
 		var source_actor: String = str(payload.get("sourceActor","player"))
@@ -222,28 +255,63 @@ func present(payload: Dictionary) -> void:
 		else: payload.pos += _offset(source_actor)
 		payload.target = target_point
 	if not _presets.has(kind): return
-	if not visible_world.grow(140).has_point(payload.pos) and kind != "chain": return
+	if not visible_world.grow(float(_presets.limits.get("outsideMargin",140))).has_point(payload.pos) and kind != "chain": return
+	var preset: Dictionary = _presets[kind].duplicate(true)
+	var stage_variant: Dictionary = preset.get("stageVariants",{}).get(str(payload.get("stage","")),{})
+	preset.merge(stage_variant,true)
+	var priority := int(preset.get("priority",0))
+	if kind in ["enemyWarning","chargeWarning","selfDestructWarning"]: priority = maxi(priority,8)
+	if kind in ["impact","critical"] and str(payload.get("targetActor","")) == "player": priority = maxi(priority,7)
+	if float(payload.get("duration",0)) > 0: preset.duration = payload.duration
+	var profile := _weapon_profile(str(payload.get("weaponId","hostile" if kind == "enemyProjectile" else "default")))
+	if kind in ["muzzle","enemyProjectile"]: preset.color = profile.get("muzzleColor",preset.get("color","#b9fff5"))
+	elif kind == "impact": preset.color = profile.get("impactColor",preset.get("color","#b9fff5"))
 	if _playing.size() >= int(_presets.limits.active):
-		var priority: Dictionary = {"impact":0,"muzzle":1,"death":1,"walletBonus":1,"chain":2,"slash":3,"critical":3,"explosion":4,"mine":4}
 		var lowest: HeroTimedVfx = null
 		for candidate in _playing:
-			if int(candidate.get_meta("priority",0)) < int(priority.get(kind,0)) and (lowest == null or int(candidate.get_meta("priority",0)) < int(lowest.get_meta("priority",0))): lowest = candidate
+			if int(candidate.get_meta("priority",0)) < priority and (lowest == null or int(candidate.get_meta("priority",0)) < int(lowest.get_meta("priority",0))): lowest = candidate
 		if lowest == null: return
 		_playing.erase(lowest); lowest.reset(); _effect_pool.append(lowest)
 	var effect: HeroTimedVfx = _effect_pool.pop_back() if not _effect_pool.is_empty() else EFFECT_SCENE.instantiate()
-	if not effect.is_inside_tree(): _effects.add_child(effect)
+	var effect_layer: Node2D = _ground if bool(preset.get("grounded",preset.get("ground",false))) else _effects
+	if not effect.is_inside_tree(): effect_layer.add_child(effect)
+	elif effect.get_parent() != effect_layer: effect.reparent(effect_layer,false)
 	var used := 0
 	for active in _playing: used += int(active.get_meta("particles",0))
-	var preset: Dictionary = _presets[kind].duplicate(true)
 	preset.particles = mini(int(preset.get("particles",0)),maxi(0,int(_presets.limits.particles)-used))
 	effect.set_meta("particles",preset.particles)
-	effect.set_meta("priority",{"impact":0,"muzzle":1,"death":1,"walletBonus":1,"chain":2,"slash":3,"critical":3,"explosion":4,"mine":4}.get(kind,0))
+	effect.set_meta("priority",priority)
+	effect.set_meta("chainSource",str(payload.get("sourceActor","")) if kind == "chain" else "")
+	effect.set_meta("chainTarget",str(payload.get("targetActor","")) if kind == "chain" else "")
+	effect.set_meta("lastSource",Vector2(payload.pos))
+	effect.set_meta("lastTarget",Vector2(payload.get("target",payload.pos)))
+	effect.set_meta("anchorActor",str(payload.get("sourceActor","")) if bool(preset.get("followActor",false)) else "")
 	effect.configure(payload,preset); _playing.append(effect)
+	if kind == "chargeWarning": effect.rotation = float(payload.get("angle",0.0))
+
+func _follow_effect_anchors(effect: HeroTimedVfx) -> void:
+	if str(effect.get_meta("kind","")) == "chain":
+		var source_id := str(effect.get_meta("chainSource",""))
+		var target_id := str(effect.get_meta("chainTarget",""))
+		var source: Vector2 = effect.get_meta("lastSource",effect.position)
+		var target: Vector2 = effect.get_meta("lastTarget",effect.position)
+		if _active.has(target_id) and not _active[target_id].dead: target = _active[target_id].position+_offset(target_id)
+		if _active.has(source_id) and not _active[source_id].dead:
+			source = _active[source_id].position
+			source += launch_offset(source_id,(target-source).angle(),Vector2(8,8)) if source_id == "player" else _offset(source_id)
+		effect.set_meta("lastSource",source); effect.set_meta("lastTarget",target)
+		effect.update_chain_endpoints(source,target)
+	else:
+		var anchor := str(effect.get_meta("anchorActor",""))
+		if _active.has(anchor) and not _active[anchor].dead: effect.position = _active[anchor].position
+		elif not anchor.is_empty() and str(effect.get_meta("kind","")) in ["chargeWarning","selfDestructWarning"]: effect.reset()
 
 func clear() -> void:
 	for key in _active.keys(): _release_actor(key)
 	for effect in _playing: effect.reset(); _effect_pool.append(effect)
 	_playing.clear()
-	for shot in _shots.values(): shot.visible = false; _shot_pool.append(shot)
+	for shot in _shots.values(): shot.reset(); _shot_pool.append(shot)
 	_shots.clear()
 	_shot_heights.clear()
+	_numbers.clear()
+	_bombard_marks.show_marks([])

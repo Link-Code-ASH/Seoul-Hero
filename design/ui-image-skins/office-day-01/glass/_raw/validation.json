@@ -1,0 +1,106 @@
+{
+  "files": [
+    {
+      "file": "glass_menu_normal.png",
+      "width": 452,
+      "height": 100,
+      "transparentPixels": 7736,
+      "coreAlphaMin": 140,
+      "coreAlphaMax": 150,
+      "edgeNonzero": 0
+    },
+    {
+      "file": "glass_menu_pressed.png",
+      "width": 452,
+      "height": 100,
+      "transparentPixels": 7736,
+      "coreAlphaMin": 141,
+      "coreAlphaMax": 165,
+      "edgeNonzero": 0
+    },
+    {
+      "file": "glass_menu_hover.png",
+      "width": 452,
+      "height": 100,
+      "transparentPixels": 7736,
+      "coreAlphaMin": 140,
+      "coreAlphaMax": 150,
+      "edgeNonzero": 0
+    },
+    {
+      "file": "glass_deploy_normal.png",
+      "width": 524,
+      "height": 216,
+      "transparentPixels": 14604,
+      "coreAlphaMin": 140,
+      "coreAlphaMax": 150,
+      "edgeNonzero": 0
+    },
+    {
+      "file": "glass_deploy_pressed.png",
+      "width": 524,
+      "height": 216,
+      "transparentPixels": 14604,
+      "coreAlphaMin": 140,
+      "coreAlphaMax": 165,
+      "edgeNonzero": 0
+    },
+    {
+      "file": "glass_round_normal.png",
+      "width": 112,
+      "height": 112,
+      "transparentPixels": 4536,
+      "coreAlphaMin": 140,
+      "coreAlphaMax": 150,
+      "edgeNonzero": 0
+    },
+    {
+      "file": "glass_round_pressed.png",
+      "width": 112,
+      "height": 112,
+      "transparentPixels": 4536,
+      "coreAlphaMin": 140,
+      "coreAlphaMax": 165,
+      "edgeNonzero": 0
+    },
+    {
+      "file": "glass_chevron_double.png",
+      "width": 64,
+      "height": 48,
+      "transparentPixels": 2186,
+      "coreAlphaMin": 144,
+      "coreAlphaMax": 255,
+      "edgeNonzero": 0
+    },
+    {
+      "file": "glass_chevron_triple.png",
+      "width": 96,
+      "height": 64,
+      "transparentPixels": 4801,
+      "coreAlphaMin": 140,
+      "coreAlphaMax": 255,
+      "edgeNonzero": 0
+    }
+  ],
+  "states": [
+    {
+      "family": "menu",
+      "pressedOffsetY": 3,
+      "maskMismatchAfterAlignment": 0,
+      "coreAlphaDeltaMismatch": 0
+    },
+    {
+      "family": "deploy",
+      "pressedOffsetY": 3,
+      "maskMismatchAfterAlignment": 0,
+      "coreAlphaDeltaMismatch": 0
+    },
+    {
+      "family": "round",
+      "pressedOffsetY": 3,
+      "maskMismatchAfterAlignment": 0,
+      "coreAlphaDeltaMismatch": 0
+    }
+  ],
+  "hoverMaskMismatch": 0
+}

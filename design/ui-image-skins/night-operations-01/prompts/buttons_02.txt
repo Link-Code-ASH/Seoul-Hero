@@ -1,0 +1,28 @@
+Game UI asset sheet for "Seoul Hero", a 2D mobile roguelite arena game set in night-time Seoul.
+Art direction "Seoul Night Operations": dark navy-black translucent glass panels (#0B1621 at about 86% opacity),
+thin 1-2px cool cyan edge highlight (#84CED6 at low opacity), a single mint accent color (#3DD6B5) used only for
+active / selected / primary elements, warm gold (#E8B75A) only for rewards, coral (#EF7A6D) only for danger.
+Clean flat-shaded vector-like finish with a very subtle top inner highlight, no heavy bevel, no metal texture,
+no rust, no paper, no grunge, no neon overload, no realistic photo texture.
+Shapes: crisp rectangles with small 45-degree chamfered corners (cut corners) instead of rounded corners.
+Must sit comfortably next to thick-outline cel-shaded chibi characters without competing with them.
+Front orthographic view, perfectly straight edges, no perspective, no drop shadow outside the element,
+transparent background, no text, no letters, no numbers, no logos, no characters.
+Every element is separated by generous empty transparent space and aligned to an invisible grid.
+
+Sheet layout: 4 columns x 3 rows. All buttons in the same column have exactly the same size and outline,
+only color and lighting change between states.
+Column 1, primary action button, aspect 4:1, solid mint fill (#3DD6B5) with chamfered top-left and
+ bottom-right corners: row 1 normal, row 2 pressed (slightly darker, no size change), row 3 disabled
+ (desaturated grey-blue, low contrast).
+Column 2, secondary button, aspect 4:1, dark navy translucent fill with a 1px light cyan outline, small chamfer
+ on all corners: row 1 normal, row 2 pressed, row 3 disabled.
+Column 3, tab, aspect 3:1, row 1 inactive (almost transparent, faint outline), row 2 active (mint tinted fill
+ at 15%, mint outline, solid 2px mint underline along the bottom edge), row 3 empty.
+Column 4, square icon button, aspect 1:1, dark navy fill with thin cyan outline and chamfered corners:
+ row 1 normal, row 2 pressed, row 3 disabled.
+Leave the center of every button completely plain so a label or icon can be placed on top.
+
+Output: transparent PNG, 1536x1024 pixels, landscape. Keep every element fully inside the canvas with transparent padding on all four outer edges.
+
+EDIT — background and framing correction only. Preserve all existing UI elements and their arrangement. Remove the ambient colored haze outside the elements. Make all space between elements genuinely transparent (alpha 0), and ensure a minimum 48-pixel fully transparent border on ALL FOUR canvas edges. Keep every shape and its local glow completely within that border. No opaque background, no checkerboard painted in. Preserve 1536x1024 PNG size.

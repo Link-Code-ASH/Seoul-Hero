@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="preview.gd" id="1"]
+
+[node name="SeoulSupportPreview" type="Control"]
+layout_mode = 0
+offset_right = 915.0
+offset_bottom = 412.0
+script = ExtResource("1")

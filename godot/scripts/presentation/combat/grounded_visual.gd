@@ -6,6 +6,10 @@ extends Node2D
 const LOCOMOTION = preload("res://shaders/enemy_locomotion.gdshader")
 const INSTALLATION_GLOW = preload("res://shaders/installation_glow.gdshader")
 const FIELD_FLOW = preload("res://shaders/field_flow.gdshader")
+# Smallest fill width and the height of the bar art in its own logical pixels.
+const BAR_ART := Vector2(20,22)
+static var _bar_track: StyleBoxTexture
+static var _bar_fill: StyleBoxTexture
 var sprite := Sprite2D.new()
 var shadow := Sprite2D.new()
 var _cast_shadow := Sprite2D.new()
@@ -27,6 +31,10 @@ var _hit_age := 0.0
 var _hit_direction := Vector2.ZERO
 var _attack_age := 0.0
 var _warning := 0.0
+# 땅울림 hop: the share of the warning spent crouching, and the landing squash age.
+const HOP_CROUCH := 0.42
+var _hopping := false
+var _land_age := 0.0
 var _facing := 1.0
 var _installation: Dictionary = {}
 var _installation_material: ShaderMaterial
@@ -46,16 +54,17 @@ func _ready() -> void:
 
 func configure(id: String, is_structure: bool = false) -> void:
 	_is_structure = is_structure; dead = false; death_age = 0
-	_initialized = false; _phase = 0; _walk_amount = 0; _hit_age = 0; _attack_age = 0; _warning = 0; _facing = 1
+	_initialized = false; _phase = 0; _walk_amount = 0; _hit_age = 0; _attack_age = 0; _warning = 0; _hopping = false; _land_age = 0; _facing = 1
 	var data: Dictionary = Content.data.weapons[id].structure if is_structure else Content.data.enemies[id].visual
 	var visual: Dictionary = Content.visuals.get("structures" if is_structure else "enemies",{}).get(id,{})
 	_texture = Content.actor_texture(visual) if visual.get("rig","") in ["legless","grounded"] else Content.trimmed_texture(data.sprite)
 	sprite.texture = _texture; visible = true; modulate = Color.WHITE
 	sprite.centered = false; sprite.offset = Vector2(-_texture.get_width()*0.5,-_texture.get_height())
 	_motion = Content.data.enemyPresentation.get(id,{}) if not is_structure else {}
-	sprite.material = null; _material = null
+	sprite.material = null
 	if not is_structure:
-		_material = ShaderMaterial.new(); _material.shader = LOCOMOTION
+		if _material == null:
+			_material = ShaderMaterial.new(); _material.shader = LOCOMOTION
 		if _texture is AtlasTexture:
 			_material.set_shader_parameter("region_origin",_texture.region.position/_texture.atlas.get_size())
 			_material.set_shader_parameter("region_span",_texture.region.size/_texture.atlas.get_size())
@@ -66,25 +75,34 @@ func configure(id: String, is_structure: bool = false) -> void:
 	_cast_shadow.visible = false
 	_installation = visual if is_structure else {}
 	_structure_kind = str(data.get("kind","")) if is_structure else ""
-	_installation_material = null; _field_materials.clear()
+	
 	if is_structure:
-		_installation_material = ShaderMaterial.new(); _installation_material.shader = INSTALLATION_GLOW
+		if _installation_material == null:
+			_installation_material = ShaderMaterial.new(); _installation_material.shader = INSTALLATION_GLOW
+		_installation_material.set_shader_parameter("region_origin",Vector2.ZERO)
+		_installation_material.set_shader_parameter("region_span",Vector2.ONE)
+		if _texture is AtlasTexture:
+			_installation_material.set_shader_parameter("region_origin",_texture.region.position/_texture.atlas.get_size())
+			_installation_material.set_shader_parameter("region_span",_texture.region.size/_texture.atlas.get_size())
 		sprite.material = _installation_material
 		_cast_shadow.visible = true
 		if _structure_kind == "aura":
-			for layer in _aura:
+			for i in range(_aura.size()):
+				var layer := _aura[i]
 				layer.texture = Content.trimmed_texture(str(_installation.get("fieldSprite","manaFieldAura")))
 				layer.visible = true
-				var field_material := ShaderMaterial.new(); field_material.shader = FIELD_FLOW
+				if i >= _field_materials.size():
+					var created := ShaderMaterial.new(); created.shader = FIELD_FLOW; _field_materials.append(created)
+				var field_material := _field_materials[i]
 				if layer.texture is AtlasTexture:
 					field_material.set_shader_parameter("region_origin",layer.texture.region.position/layer.texture.atlas.get_size())
 					field_material.set_shader_parameter("region_span",layer.texture.region.size/layer.texture.atlas.get_size())
-				layer.material = field_material; _field_materials.append(field_material)
+				layer.material = field_material
 
 func update_state(state: Dictionary, dt: float, height: float) -> void:
 	position = state.pos
 	if _is_structure:
-		_update_installation(state,height)
+		_update_installation(state,dt,height)
 		return
 	_height = height * float(_motion.get("displayScale",1.0))
 	var delta := position-_last_position
@@ -100,7 +118,10 @@ func update_state(state: Dictionary, dt: float, height: float) -> void:
 	if state.get("action","") == "warning": pace = 0.5
 	_phase += dt*float(_motion.get("frequency",3.0))*pace
 	_hit_age = maxf(0,_hit_age-dt); _attack_age = maxf(0,_attack_age-dt)
-	_warning = move_toward(_warning,1.0 if state.get("action","") == "warning" else 0.0,dt*8.0)
+	var hopping: bool = state.get("action","") == "hop"
+	_land_age = .2 if _hopping and not hopping else maxf(0,_land_age-dt)
+	_hopping = hopping
+	_warning = move_toward(_warning,1.0 if hopping or state.get("action","") == "warning" else 0.0,dt*8.0)
 	var base := _height/_texture.get_height()
 	var shape := Vector2.ONE
 	var offset := Vector2.ZERO
@@ -141,13 +162,26 @@ func update_state(state: Dictionary, dt: float, height: float) -> void:
 		shape.y *= 1.0+sin(_phase*.6)*0.009
 		shape *= Vector2(1+_warning*.13,1-_warning*.12)
 		lift *= 1.0-_warning*.55
+		if hopping:
+			# One whole-body hop per warning: crouch, leave the ground, touch down as the blast lands.
+			var progress := clampf(1.0-float(state.get("timer",0.0))/maxf(0.01,float(state.get("hop",1.0))),0,1)
+			var crouch := sin(clampf(progress/HOP_CROUCH,0,1)*PI)
+			var arc := sin(clampf((progress-HOP_CROUCH)/(1.0-HOP_CROUCH),0,1)*PI)
+			lift = arc*_height*.5
+			shape = Vector2(1+crouch*.15-arc*.09,1-crouch*.17+arc*.11)
+			offset.x = 0; lean = 0
+		var landing := sin(clampf(_land_age/.2,0,1)*PI)
+		shape *= Vector2(1+landing*.17,1-landing*.19)
 		if state.get("action","") == "dash":
 			shape *= Vector2(1.16,.88); lean -= _facing*.06
 		var attack := sin(clampf(_attack_age/.22,0,1)*PI)
 		shape *= Vector2(1+attack*.075,1-attack*.06)
 		offset.x += _facing*attack*_height*.025
 		lean -= _facing*attack*.035
-		offset += _hit_direction*sin(clampf(_hit_age/.14,0,1)*PI)*3.5
+		# Hit punch: a clear shove plus a quick squash so every hit reads on the bright plaza.
+		var punch := sin(clampf(_hit_age/.14,0,1)*PI)
+		offset += _hit_direction*punch*7.0
+		shape *= Vector2(1+punch*.10,1-punch*.08)
 		_material.set_shader_parameter("phase",_phase)
 		_material.set_shader_parameter("walk_amount",_walk_amount)
 		_material.set_shader_parameter("hit_flash",1.0 if _hit_age > 0 or state.get("flash",0)>0 else 0.0)
@@ -164,24 +198,31 @@ func update_state(state: Dictionary, dt: float, height: float) -> void:
 		var fade := clampf(death_age/.36,0,1)
 		sprite.scale *= Vector2(1+fade*.16,1-fade*.75)
 		sprite.position.y *= 1-fade; sprite.rotation += _facing*fade*.12
+		# A short white silhouette pop sells the kill before the squash fade.
+		sprite.scale *= 1.0+(1.0-smoothstep(0.0,0.1,death_age))*0.12
 		sprite.modulate.a *= 1-fade; shadow.modulate.a *= 1-fade
-		if _material != null: _material.set_shader_parameter("walk_amount",0.0)
+		if _material != null:
+			_material.set_shader_parameter("walk_amount",0.0)
+			_material.set_shader_parameter("hit_flash",1.0 if death_age < 0.07 else 0.0)
 	_hp = state.get("hp",1.0)/maxf(1,state.get("maxHp",1.0)); _elite = state.get("elite",false) or state.get("boss",false)
 	queue_redraw()
 
-func _update_installation(state: Dictionary, height: float) -> void:
+func _update_installation(state: Dictionary, dt: float, height: float) -> void:
 	# Art is a low device in a three-quarter view. Its reviewed ground footprint
 	# anchors to the placement point; the nearer feet extend naturally below it.
 	_height = float(_installation.get("height",height))
 	var age: float = maxf(0.0,float(state.get("age",0.0)))
-	var appearance := smoothstep(0.0,0.35,age)
+	var appearance := smoothstep(0.0,0.28,age)
+	_attack_age = maxf(0.0,_attack_age-dt)
+	var activation := sin(clampf(_attack_age/.24,0.0,1.0)*PI)
 	var opacity := float(state.get("alpha",1.0))
 	var base := _height/_texture.get_height()
 	var anchor: Array = _installation.get("groundAnchor",[.5,1.0])
 	sprite.offset = -_texture.get_size()*Vector2(anchor[0],anchor[1])
-	sprite.scale = Vector2.ONE*base; sprite.position = Vector2.ZERO; sprite.rotation = 0.0
-	sprite.modulate = Color(1,1,1,opacity)
+	sprite.scale = Vector2.ONE*base*lerpf(.96,1.0,appearance); sprite.position = Vector2(0,-2.0*(1.0-appearance)); sprite.rotation = 0.0
+	sprite.modulate = Color(1,1,1,opacity*appearance)
 	_installation_material.set_shader_parameter("pulse",sin(age*float(_installation.get("glowFrequency",1.7)))*0.5+0.5)
+	_installation_material.set_shader_parameter("activation",activation)
 	var contact: Array = _installation.get("contactShadow",[_height*1.3,_height*.36])
 	var cast: Array = _installation.get("castShadow",[_height*1.5,_height*.44])
 	var cast_offset: Array = _installation.get("shadowOffset",[_height*.18,2.0])
@@ -209,6 +250,7 @@ func _update_installation(state: Dictionary, height: float) -> void:
 			layer.scale = Vector2(radius*2.0*spread,radius*2.0*spread*projection)/layer.texture.get_size()
 			layer.modulate = Color(tint[0],tint[1],tint[2],(field_opacity+envelope*wave_opacity)*appearance*opacity)
 			_field_materials[i].set_shader_parameter("flow_angle",age*float(_installation.get("flowSpeed",.035))*(1.0 if i == 0 else -.65))
+			_field_materials[i].set_shader_parameter("phase",age+float(i)*PI)
 	_elite = false
 	queue_redraw()
 
@@ -216,7 +258,8 @@ func action(kind: String, payload: Dictionary) -> void:
 	match kind:
 		"actorDeath": dead = true; death_age = 0
 		"actorHit": _hit_age = .14; _hit_direction = payload.get("direction",Vector2.RIGHT)
-		"actorAttack": _attack_age = .22
+		"actorAttack": _attack_age = .24
+		"structureActivate": _attack_age = .24
 
 func socket_offset(_socket: String = "muzzle") -> Vector2:
 	return sprite.transform*Vector2(0,-_texture.get_height()*.48)
@@ -226,6 +269,16 @@ func visual_bounds() -> Rect2:
 
 func _draw() -> void:
 	if not _elite: return
+	# The HUD's enamel health bar art, scaled down above the head.
+	if _bar_track == null:
+		_bar_track = HeroImageSkin.style("enamel/hp_track")
+		_bar_fill = HeroImageSkin.style("enamel/hp_low")
 	var width := _height*.6
-	draw_line(Vector2(-width/2,-_height-8),Vector2(width/2,-_height-8),Color(.08,.11,.14,.8),4)
-	draw_line(Vector2(-width/2,-_height-8),Vector2(-width/2+width*_hp,-_height-8),Color(.94,.72,.28),3)
+	var unit := clampf(_height*.09,7.0,11.0)/BAR_ART.y
+	var length := width/unit
+	# Floating bodies lift above their nominal height; the bar follows the drawn top.
+	var top := minf(-_height,visual_bounds().position.y)
+	draw_set_transform(Vector2(-width/2,top-6-BAR_ART.y*unit),0.0,Vector2(unit,unit))
+	draw_style_box(_bar_track,Rect2(0,0,length,BAR_ART.y))
+	if _hp > 0.0: draw_style_box(_bar_fill,Rect2(0,0,maxf(BAR_ART.x,length*_hp),BAR_ART.y))
+	draw_set_transform(Vector2.ZERO)

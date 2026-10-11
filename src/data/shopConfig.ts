@@ -5,5 +5,5 @@ export const SHOP_CONFIG={
   weaponRerollBase:6, weaponRerollStep:2,
   weaponPrices:{newWeapon:36,newStructure:44,upgrade:{2:18,3:23,4:29,5:36,6:43,7:48,8:55,9:62,10:69} as Record<number,number>},
   luckScale:100,
-  rarities:{COMMON:{wave:1,weight:70,luckBoost:0},UNCOMMON:{wave:3,weight:23,luckBoost:1},RARE:{wave:7,weight:6,luckBoost:2},LEGENDARY:{wave:12,weight:1,luckBoost:4}} satisfies Record<Rarity,{wave:number;weight:number;luckBoost:number}>
+  rarities:{COMMON:{wave:1,weight:70,luckBoost:0},UNCOMMON:{wave:3,weight:23,luckBoost:1},RARE:{wave:7,weight:6,luckBoost:2},EPIC:{wave:10,weight:2.5,luckBoost:3},LEGENDARY:{wave:12,weight:1,luckBoost:4}} satisfies Record<Rarity,{wave:number;weight:number;luckBoost:number}>
 } as const;

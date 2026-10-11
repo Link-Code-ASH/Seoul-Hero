@@ -6,7 +6,7 @@ export interface Enemy extends Vec2 {
   elite: boolean; boss: boolean; hitFlash: number;
   armor: number; baseArmor: number; regeneration: number; cursedAura: boolean;
   eliteModifiers: import('../data/eliteModifiers').EliteModifierId[];
-  age: number; timer: number; action: 'move' | 'warning' | 'dash'; aimX: number; aimY: number;
+  age: number; timer: number; action: 'move' | 'warning' | 'dash' | 'hop' | 'volley'; /** Dashes, hops or rings left in the current attack. */ repeats?: number; aimX: number; aimY: number;
   pattern: number; summonCount: number; auraTimer: number; alpha: number; rewardEligible: boolean;
 }
 export interface Projectile extends Vec2 {

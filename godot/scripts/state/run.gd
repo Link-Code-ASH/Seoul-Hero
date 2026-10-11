@@ -7,6 +7,8 @@ signal visual_event(payload: Dictionary)
 signal phase_changed
 
 var data: Dictionary
+var run_id: String
+var guild_support: Dictionary = HeroGuildSupport.empty()
 var setup: Dictionary
 var map: Dictionary
 var character: Dictionary
@@ -20,6 +22,8 @@ var wallet := 0.0
 var collected := 0.0
 var kills := 0
 var sequence := 0
+# Transient identity for presentation objects; never advances gameplay IDs/RNG.
+var _visual_sequence := 0
 var player: Dictionary
 var stats: Dictionary
 var modifiers: Array = []
@@ -30,6 +34,9 @@ var owned: Array = []
 var items: Dictionary = {}
 var enemies: Array = []
 var pickups: Array = []
+# Account loot (협회 코인, 생환석) on the ground and already picked up this run.
+var loot_pickups: Array = []
+var loot := {"associationCoins":0,"revivalStones":{"low":0,"mid":0,"high":0}}
 var bullets: Array = []
 var hostile: Array = []
 var hazards: Array = []
@@ -48,15 +55,26 @@ var available_items: Array = []
 var base_modifiers: Array = []
 var settled := false
 var reward := 0
+var reward_tickets := 0
 var last_countdown := 6
 var spawn_state: Dictionary = {}
 var telemetry: Dictionary = {}
+# Transient HUD banner (elite kill supply, surge); never enters checkpoints.
+var notice := {"text":"","time":-100.0}
+# This week's lead monster; derived from setup.week.
+var _weekly := ""
 
 func _init(content: Dictionary, selection: Dictionary, meta: Dictionary) -> void:
+	run_id = Crypto.new().generate_random_bytes(16).hex_encode()
 	data = content
 	setup = selection.duplicate(true)
 	map = data.maps[setup.map].duplicate(true)
 	character = data.characters[setup.character]
+	# Fixed for the whole Run, also across a weekly reset and a checkpoint resume.
+	_weekly = HeroRoster.weekly_monster(data,int(setup.get("week",-1)))
+	# One elite body per Run; it is drawn once and saved with the setup.
+	if not data.enemies.has(str(setup.get("elite",""))): setup["elite"] = HeroRoster.draw_elite(map)
+	guild_support = HeroGuildSupport.snapshot(data,meta) if bool(data.get("features",{}).get("guild",true)) else HeroGuildSupport.empty()
 	base_modifiers = HeroMeta.modifiers(data, meta, setup)
 	recalculate()
 	player = {"pos":Vector2.ZERO,"hp":stats.maxHp,"invulnerability":0.0,"facing":1.0,"moving":false}
@@ -66,13 +84,13 @@ func _init(content: Dictionary, selection: Dictionary, meta: Dictionary) -> void
 	for id in data.weapons:
 		var weapon: Dictionary = data.weapons[id]
 		if weapon.get("signatureOwnerId", setup.character) != setup.character: continue
-		if not weapon.get("requiresUnlock", false) or meta.sharedWeapons.get(id, {}).get("unlocked", false): available_weapons.append(id)
+		if meta.sharedWeapons.get(id, {}).get("unlocked", false): available_weapons.append(id)
 	for id in data.items:
 		if not data.items[id].get("requiresUnlock", false) or id in meta.account.unlockedItemIds: available_items.append(id)
 	phase = "waveActive"
 
 func recalculate() -> void:
-	modifiers = base_modifiers + HeroStats.item_modifiers(data.items, items)
+	modifiers = base_modifiers + HeroGuildSupport.item_modifiers(data,items,guild_support)
 	var old_max: float = stats.get("maxHp", character.baseStats.maxHp) if stats != null else character.baseStats.maxHp
 	stats = HeroStats.calculate(character.baseStats, modifiers, data.statRules)
 	item_effects.clear()
@@ -82,26 +100,52 @@ func recalculate() -> void:
 	if player != null and not player.is_empty(): player.hp = minf(stats.maxHp, player.hp / old_max * stats.maxHp)
 
 func weapon_stats(slot: Dictionary) -> Dictionary:
-	return HeroStats.resolve_weapon(data.weapons[slot.id], slot, stats, item_effects, data.weaponConfig, character.get("trait", {}))
+	var resolved := HeroStats.resolve_weapon(data.weapons[slot.id], slot, stats, item_effects, data.weaponConfig, character.get("trait", {}))
+	resolved.damage = roundf(resolved.damage*guild_support.weaponDamageMultipliers.get(slot.id,1.0))
+	return resolved
 
 func wave_data() -> Dictionary:
 	var result: Dictionary = map.waveDefinitions[wave - 1].duplicate(true)
+	var depth := int(setup.depth)
+	var featured_modifiers: Array = []
 	for milestone in data.milestones:
-		if milestone.depth > setup.depth: continue
-		for addition in milestone.get("enemyAdditions", []):
-			if wave >= addition.fromWave and not result.enemies.any(func(entry): return entry.enemyId == addition.enemyId): result.enemies.append({"enemyId":addition.enemyId,"weight":addition.weight})
-		if wave == int(map.bossWave) and milestone.has("bossId"): result.boss = {"enemyId":milestone.bossId}
+		if milestone.depth > depth: continue
+		featured_modifiers.append_array(milestone.get("featuredEliteModifiers", []))
+	HeroRoster.lead(data,result.enemies,wave,_weekly)
+	if result.has("elites"):
+		result.elites = result.elites.filter(func(elite): return int(elite.get("minDepth",1)) <= depth)
+		for elite in result.elites:
+			if not elite.get("featured",false): continue
+			if not str(setup.elite).is_empty(): elite.enemyId = setup.elite
+			# hp is the depth-1 max HP whichever body the Run drew.
+			if elite.has("hp"): elite.hpMultiplier = float(elite.hp) / float(data.enemies[elite.enemyId].maxHp)
+			if not elite.has("modifiers"): elite["modifiers"] = []
+			for id in featured_modifiers:
+				if id not in elite.modifiers: elite.modifiers.append(id)
 	return result
+
+func announce(text: String) -> void:
+	notice = {"text":text,"time":combat_time}
 
 func next_id() -> int:
 	sequence += 1
 	return sequence
 
+func next_visual_id() -> int:
+	_visual_sequence += 1
+	return _visual_sequence
+
 # Presentation-only events; they never enter checkpoints or gameplay state.
+func audio_cue(id: String, details: Dictionary = {}) -> void:
+	if id.is_empty(): return
+	audio_event.emit(id, details.duplicate(true))
+
 func audio_weapon(weapon_id: String, stage: String, details: Dictionary = {}) -> void:
 	var connections: Dictionary = data.get("audioConnections", {})
 	var stages: Dictionary = connections.get("weaponStages", {}).get(weapon_id, {})
-	var cue_id := str(stages.get(stage, ""))
+	var target: Variant = stages.get(stage, "")
+	if target == null: return
+	var cue_id := str(target)
 	if cue_id.is_empty(): return
 	var payload: Dictionary = details.duplicate(true)
 	payload["weaponId"] = weapon_id

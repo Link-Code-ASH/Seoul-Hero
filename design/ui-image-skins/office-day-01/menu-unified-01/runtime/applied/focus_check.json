@@ -1,0 +1,47 @@
+{
+  "checks": [
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Applied captures use the production presentation default"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Applied surfaces use internal runtime assets"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Application-focus check begins from pressed 1.5px with visible glint"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Application focus loss resets Face, Plate and glint"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Application focus loss kills hover, press and sweep tweens"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Application focus loss stays settled"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Application focus return restores resting control"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Application-focus verification preserves memory and save boundary"
+    }
+  ],
+  "freshProcess": true,
+  "stage": "applied",
+  "visualChanges": false
+}

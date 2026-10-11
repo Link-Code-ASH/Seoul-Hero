@@ -1,0 +1,104 @@
+{
+  "proposal": "guild-offices-01",
+  "createdAt": "2026-10-05",
+  "status": "approved-connected-current-worktree",
+  "viewport": [
+    915,
+    412
+  ],
+  "layout": {
+    "view": "front-cutaway",
+    "roomsPerFloor": 3,
+    "floorUnlockOfficeLevels": [
+      1,
+      2,
+      3
+    ],
+    "buildingRect": [
+      12,
+      65,
+      547,
+      335
+    ],
+    "panelRect": [
+      573,
+      65,
+      330,
+      335
+    ],
+    "panelAlwaysReserved": true,
+    "footerButtons": false,
+    "panelTabs": [
+      "management",
+      "staff",
+      "jobs"
+    ],
+    "tapDragThreshold": 8
+  },
+  "sources": [
+    {
+      "file": "assets/rooms.png",
+      "from": "godot/assets/ui/guild-management/rooms.png",
+      "provenance": "../../../assets/ui/guild-management/provenance.json",
+      "note": "Unmodified approved facility atlas; four columns are level1/4/7/10, eight rows are facility types."
+    },
+    {
+      "file": "assets/states.png",
+      "from": "godot/assets/ui/guild-management/room-states.png",
+      "note": "Unmodified approved empty/construction/unbuilt-floor atlas."
+    },
+    {
+      "file": "assets/structure.png",
+      "from": "godot/assets/ui/guild-walk/structure.png",
+      "provenance": "../guild-walk-01/provenance.json",
+      "note": "Unmodified approved shared corridor/wall/roof/railing atlas."
+    },
+    {
+      "file": "assets/staff.png",
+      "from": "godot/assets/characters-sd/han_seoa_sd_01.png",
+      "metadata": "assets/actors.json"
+    },
+    {
+      "file": "assets/awk.png",
+      "from": "godot/assets/characters-sd/song_sd_01.png",
+      "metadata": "assets/actors.json"
+    },
+    {
+      "file": "sd_visual.gd",
+      "from": "godot/scripts/presentation/combat/sd_visual.gd",
+      "note": "Shared minimal SD motion copied for isolated preview; gameplay Content dependency replaced with injected texture."
+    },
+    {
+      "file": "shaders/sd_feet.gdshader",
+      "from": "godot/shaders/sd_feet.gdshader"
+    },
+    {
+      "file": "assets/visuals/vfx/contact_shadow.png",
+      "from": "godot/assets/visuals/vfx/contact_shadow.png"
+    },
+    {
+      "role": "UI PNG9patch and native fonts",
+      "from": "godot/data/visuals/ui_materials.json",
+      "note": "Read existing skin PNG/font assets; keep original source/licensing records."
+    }
+  ],
+  "imageGeneration": {
+    "newImages": false,
+    "note": "This proposal recomposes existing assets. Original imagegen prompts and provenance remain in original asset directories."
+  },
+  "saveBoundary": {
+    "independentPreview": "Standalone project uses only memory; no Profile or actual user save.",
+    "runtime": "Approved screen connected to Profile.guild_action and profile format v3. Checks use isolated memory and forbid real profile reads/writes."
+  },
+  "revision": 2,
+  "previous": "revision-01",
+  "approvedAt": "2026-10-05",
+  "connectedAt": "2026-10-05",
+  "runtime": {
+    "screen": "godot/scripts/ui/guild_office_screen.gd",
+    "world": "godot/scripts/presentation/guild_office_world.gd",
+    "launcher": "Play-Seoul-Hero.cmd",
+    "captures": "runtime/",
+    "originalRepositoryModified": false
+  }
+}

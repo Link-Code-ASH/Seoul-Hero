@@ -11,7 +11,7 @@ import {itemCount,canAddItem} from '../systems/ItemSystem';
 import {itemRerollCost,weaponRerollCost,itemAvailable,weaponOfferAvailable,weaponPrice} from '../systems/ShopSystem';
 import {button,escapeHtml} from './helpers';
 import {shopStats} from './ShopStats';
-const rarityNames={COMMON:'일반',UNCOMMON:'고급',RARE:'희귀',LEGENDARY:'전설'};
+const rarityNames={COMMON:'일반',UNCOMMON:'고급',RARE:'희귀',EPIC:'영웅',LEGENDARY:'전설'};
 const price=(amount:number)=>imageRegionArt('magicStone','price-coin')+'<b>'+amount+'</b>';
 const productDetail=(description:string)=>'<details class="product-detail"><summary aria-label="상품 효과 상세">상세</summary><p class="item-effect">'+escapeHtml(description)+'</p></details>';
 const lock=(action:string,locked:boolean)=>button(action,inventoryArt(locked?43:44),'lock-button',`aria-label="${locked?'잠금 해제':'상품 잠금'}" aria-pressed="${locked}"`);

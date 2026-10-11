@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>서울 히어로 · 밸런스와 플레이 경험 검토안</title>
+  <style>
+    :root { color-scheme:light; --ink:#20364a; --muted:#546a7b; --accent:#14796e; --line:#ccd9df; --paper:#f4f8f8; --navy:#142c42; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:"Malgun Gothic",system-ui,sans-serif; line-height:1.7; }
+    a { color:var(--accent); text-underline-offset:3px; }
+    button { font:inherit; cursor:pointer; }
+    header { padding:42px 24px 32px; background:var(--navy); color:#edf8f6; }
+    header .inner, main { max-width:1140px; margin:auto; }
+    .eyebrow { margin:0 0 8px; font-size:13px; font-weight:700; letter-spacing:.1em; color:#83ddcb; }
+    h1 { margin:0; font-size:clamp(25px,4vw,38px); line-height:1.35; }
+    h2 { margin:0 0 10px; font-size:25px; line-height:1.5; }
+    h3 { margin:0 0 6px; font-size:16px; }
+    p { margin:0 0 12px; }
+    header .lead { margin:16px 0; max-width:820px; color:#c8dcdf; }
+    .header-actions { display:flex; flex-wrap:wrap; gap:12px; align-items:center; }
+    .report { display:inline-block; padding:9px 18px; border-radius:8px; background:#b9ecdf; color:#123c38; font-weight:700; text-decoration:none; }
+    .date { font-size:13px; color:#b5cfd5; }
+    main { padding:30px 24px 60px; }
+    nav { display:flex; flex-wrap:wrap; gap:20px; border-bottom:1px solid var(--line); padding-bottom:18px; margin-bottom:26px; }
+    nav a { font-weight:700; text-decoration:none; }
+    .intro { display:grid; grid-template-columns:1.15fr 1fr; gap:24px; margin-bottom:36px; }
+    .note { background:#fff; border:1px solid var(--line); border-left:4px solid var(--accent); padding:18px 20px; border-radius:8px; }
+    .note p:last-child { margin-bottom:0; }
+    .small { font-size:13px; color:var(--muted); }
+    .loop { display:flex; flex-wrap:wrap; align-items:center; gap:8px; padding:0; margin:16px 0 0; list-style:none; }
+    .loop li { padding:5px 10px; border:1px solid var(--line); border-radius:6px; background:#fff; font-size:14px; }
+    .loop li:not(:last-child)::after { content:" →"; color:var(--accent); font-weight:700; }
+    section { margin:0 0 46px; scroll-margin-top:20px; }
+    .section-number { color:var(--accent); font-size:13px; font-weight:700; margin-bottom:6px; }
+    .section-lead { color:var(--muted); max-width:950px; }
+    .tabs { display:flex; flex-wrap:wrap; gap:8px; margin:20px 0 12px; }
+    .tabs button { background:#fff; border:1px solid #b6c9d1; color:var(--ink); border-radius:7px; padding:9px 16px; min-height:44px; }
+    .tabs button[aria-selected="true"] { color:#fff; border-color:var(--accent); background:var(--accent); font-weight:700; }
+    .tabs button:focus-visible { outline:3px solid #dc963c; outline-offset:3px; }
+    figure { margin:0; }
+    .screen { display:block; width:100%; height:auto; aspect-ratio:915 / 412; background:#dce8e9; border-radius:7px; box-shadow:0 6px 22px #19324918; }
+    figcaption { margin:12px 0 0; padding:10px 0; color:var(--muted); font-size:14px; }
+    .preview-links { display:flex; flex-wrap:wrap; gap:16px; font-size:13px; margin:0 0 20px; }
+    .cards { display:grid; grid-template-columns:repeat(3,1fr); gap:14px; }
+    .card { padding:18px 20px; background:#fff; border:1px solid var(--line); border-radius:8px; }
+    .card .label { display:block; color:var(--accent); font-size:12px; font-weight:700; margin-bottom:6px; }
+    .card p { margin:0; font-size:14px; }
+    .roadmap { width:100%; border-collapse:collapse; font-size:14px; background:#fff; }
+    .roadmap th, .roadmap td { padding:13px 16px; border-bottom:1px solid var(--line); text-align:left; vertical-align:top; }
+    .roadmap th { background:#e5efef; }
+    .roadmap td:first-child { color:var(--accent); font-weight:700; white-space:nowrap; }
+    .badge { display:inline-block; border:1px solid #bfd4ce; border-radius:4px; padding:1px 7px; color:#196956; font-size:12px; margin:0 6px 6px 0; }
+    .qa { margin-top:22px; }
+    .qa ul { margin:8px 0 0; padding-left:20px; }
+    footer { color:var(--muted); font-size:13px; border-top:1px solid var(--line); padding-top:20px; }
+    @media (max-width:780px) { .intro, .cards { grid-template-columns:1fr; } header { padding-top:28px; } main { padding:24px 16px 40px; } .roadmap th, .roadmap td { padding:10px; } }
+    @media print { header { background:white; color:var(--ink); } header .lead,.date { color:var(--muted); } .tabs,.preview-links,nav,.header-actions { display:none; } section { break-inside:avoid; } .card { box-shadow:none; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="inner">
+      <p class="eyebrow">SEOUL HERO · DESIGN REVIEW 01</p>
+      <h1>한 출동의 성장이<br>다음 출동의 목표가 되도록</h1>
+      <p class="lead">15~20분 출동을 2~3회 이어 즐기는 흐름을 검토했습니다. 기존 콘텐츠의 효과를 바로잡고, 이번 위협과 구매 이유, 다음 성장 경로를 화면에서 연결하는 제안입니다.</p>
+      <div class="header-actions">
+        <a class="report" href="../../../godot/docs/BALANCE_CONTENT_REVIEW.md">전체 점검 보고서</a>
+        <span class="date">2026-10-07 · Godot 현재 코드·공용 데이터 기준</span>
+      </div>
+    </div>
+  </header>
+  <main>
+    <nav aria-label="검토안 이동">
+      <a href="#deploy">출동 준비</a><a href="#shop">게이트24</a><a href="#result">작전 결과</a><a href="#order">개발 우선순위</a>
+    </nav>
+    <div class="intro">
+      <div>
+        <h2>이미 있는 선택을 연결합니다</h2>
+        <p>각성자 4명, 무기·설치물 10종, 아이템 55종, 적 19종이 있습니다. 현재는 광화문 한 맵을 반복하며 심도 10·20에 콘텐츠 변화가 생깁니다. 새 종류를 늘리기 전에 효과와 성장 경로를 정리할 필요가 있습니다.</p>
+        <ol class="loop" aria-label="연속 플레이의 흐름"><li>도전 선택</li><li>빌드 구매</li><li>정산·성장</li><li>다음 출동</li></ol>
+      </div>
+      <div class="note">
+        <h3>검토용 독립 시안</h3>
+        <p>이 화면은 승인된 PNG·폰트·기존 원화를 재사용한 합성 예시입니다. 새로운 배치, 계정 목표, 지정 조각 보상과 개선 후 효과는 <strong>기획 후보</strong>입니다.</p>
+        <p class="small">실제 게임의 코드·수치·보상·사용자 저장에는 연결하지 않았습니다. 정적 계산을 실제 클리어율이나 플레이 난이도로 해석하지 않습니다.</p>
+      </div>
+    </div>
+
+    <section id="deploy" data-screen-set="deploy">
+      <p class="section-number">01 · 이번 출동에서 무엇을 할까</p>
+      <h2>출동 준비 — 위협과 성장 목표</h2>
+      <p class="section-lead">숫자 배율에 더해 대표 위협과 대응, 계정 최초 보상 여부, 다음 콘텐츠 변화를 확인합니다. 목표를 고른 뒤 다음 출동의 편성을 결정합니다.</p>
+      <div class="tabs" role="tablist" aria-label="출동 준비 시안 상태">
+        <button role="tab" aria-selected="true" data-file="01-deploy.png" data-caption="심도 3 도전 예시. 최초 완료 120코인·보급권 1장은 현행 정산입니다. 지정 무기 목표와 조각 보상은 새 기획 후보입니다." data-alt="심도 3의 대표 위협, 최초 완료 보상과 지정 성장 목표를 표시한 출동 준비 시안">심도 1~20 · 도전</button>
+        <button role="tab" aria-selected="false" data-file="02-deploy-locked.png" data-caption="심도 21~40 페이지와 잠금 상태. 심도 21 이후 접근 및 25·30·40의 전술 변화는 후속 개발안입니다. 현재는 선택 화면이 20까지만 표시됩니다." data-alt="심도 21~40 페이지와 잠금 이유 및 다음 콘텐츠 변화가 있는 출동 준비 시안" tabindex="-1">심도 21~40 · 잠금</button>
+      </div>
+      <figure>
+        <img class="screen" src="captures/01-deploy.png" width="915" height="412" alt="심도 3의 대표 위협, 최초 완료 보상과 지정 성장 목표를 표시한 출동 준비 시안">
+        <figcaption aria-live="polite">심도 3 도전 예시. 최초 완료 120코인·보급권 1장은 현행 정산입니다. 지정 무기 목표와 조각 보상은 새 기획 후보입니다.</figcaption>
+      </figure>
+      <div class="preview-links"><a class="original" href="captures/01-deploy.png" target="_blank" rel="noopener">현재 시안 원본 열기</a><a href="captures/02-deploy-locked.png">잠금 시안 PNG</a></div>
+      <div class="cards">
+        <div class="card"><span class="label">현재의 문제</span><p>심도 화면의 정보가 적 배율 중심이며, 21 이후를 선택할 경로가 없습니다. 특정 축복을 목표로 모으는 초기 경로도 약합니다.</p></div>
+        <div class="card"><span class="label">제안한 경험</span><p>이번 구간의 위협과 다음 변화가 보입니다. 선택한 목표에 맞춰 무기·축복을 바꾸며 다음 출동을 준비합니다.</p></div>
+        <div class="card"><span class="label">필요한 개발 과제</span><p>심도 페이지, 계정 최초 완료 표기, 위협·콘텐츠 변화 설명, 지정 목표와 확보 경로를 연결합니다. 목표 보상은 별도 승인 대상입니다.</p></div>
+      </div>
+    </section>
+
+    <section id="shop" data-screen-set="shop">
+      <p class="section-number">02 · 지금 무엇을 사야 할까</p>
+      <h2>게이트24 — 구매 이유와 실제 변화</h2>
+      <p class="section-lead">무기·아이템 진열과 잠금·리롤은 유지합니다. 다음 위협과 현재 빌드를 함께 보고, 신규 무기와 강화 중 어떤 선택이 도움이 되는지 판단합니다.</p>
+      <div class="tabs" role="tablist" aria-label="게이트24 시안 상태">
+        <button role="tab" aria-selected="true" data-file="03-shop-weapons.png" data-caption="무기 진열 4칸. 다음 위협, 보유 빌드의 역할과 강화 변화를 함께 제시합니다. 추천은 구매를 강제하지 않으며, 효과 수치는 합성 예시입니다." data-alt="다음 웨이브의 위협과 보유 빌드 역할이 있는 게이트24 무기 진열 시안">무기 진열</button>
+        <button role="tab" aria-selected="false" data-file="04-shop-items.png" data-caption="아이템 진열 4칸. 효과·패널티와 현재 빌드에 대한 역할을 함께 보여줍니다. 무기와 아이템 리롤·잠금의 독립성은 유지합니다." data-alt="효과와 패널티, 빌드별 사용 이유를 보여주는 게이트24 아이템 진열 시안" tabindex="-1">아이템 진열</button>
+        <button role="tab" aria-selected="false" data-file="05-shop-detail.png" data-caption="선택 상세에서 구매 전후 효과와 분기의 장단점을 비교합니다. 확정 DPS 대신 타격 피해·쿨타임·대상 수처럼 판단 가능한 정보로 설명합니다." data-alt="선택한 무기의 강화 전후 효과와 분기 장단점을 비교하는 상세 시안" tabindex="-1">선택 상세</button>
+      </div>
+      <figure>
+        <img class="screen" src="captures/03-shop-weapons.png" width="915" height="412" alt="다음 웨이브의 위협과 보유 빌드 역할이 있는 게이트24 무기 진열 시안" loading="lazy">
+        <figcaption aria-live="polite">무기 진열 4칸. 다음 위협, 보유 빌드의 역할과 강화 변화를 함께 제시합니다. 추천은 구매를 강제하지 않으며, 효과 수치는 합성 예시입니다.</figcaption>
+      </figure>
+      <div class="preview-links"><a class="original" href="captures/03-shop-weapons.png" target="_blank" rel="noopener">현재 시안 원본 열기</a><a href="captures/04-shop-items.png">아이템 시안 PNG</a><a href="captures/05-shop-detail.png">상세 시안 PNG</a></div>
+      <div class="cards">
+        <div class="card"><span class="label">현재의 문제</span><p>구매 뒤 실제로 무엇이 달라지는지, 다음 위협에 어떤 선택이 유효한지 연결이 약합니다. 일부 최종 강화와 분기 효과는 구현부터 정리해야 합니다.</p></div>
+        <div class="card"><span class="label">제안한 경험</span><p>보스 대응·군집 정리·근접 방어 등 현재 빌드의 역할을 읽고 선택합니다. 분기는 수치뿐 아니라 사용 상황과 교환 조건으로 비교합니다.</p></div>
+        <div class="card"><span class="label">필요한 개발 과제</span><p>강화 곡선·폭격 반복·표창 범위·설치물 지속 효과를 먼저 정리합니다. 이후 실제 계산값을 구매 전후 비교와 위협 설명에 연결합니다.</p></div>
+      </div>
+    </section>
+
+    <section id="result" data-screen-set="result">
+      <p class="section-number">03 · 이 판이 다음 판에 무엇을 남겼을까</p>
+      <h2>작전 결과 — 정산과 다음 행동</h2>
+      <p class="section-lead">전투 성과와 실제 정산을 확인하고, 선택한 성장 목표의 진척을 읽습니다. 다시 도전하거나 편성·성장·생산을 바꾸는 행동을 바로 고릅니다.</p>
+      <div class="tabs" role="tablist" aria-label="작전 결과 시안 상태">
+        <button role="tab" aria-selected="true" data-file="06-result-clear.png" data-caption="심도 3 최초 완료: 협회 코인 120·보급권 1·마력자재 10·가속권 4. 계정 목표의 지정 조각 보상은 이 정산과 분리한 미승인 기획 후보입니다." data-alt="심도 3 완료 보상과 무기 기여도, 성장 목표 진척 및 다음 행동이 있는 작전 결과 시안">최초 완료</button>
+        <button role="tab" aria-selected="false" data-file="07-result-death.png" data-caption="심도 3에서 10웨이브 완료 후 사망: 협회 코인 3·마력자재 5·가속권 2·보급권 없음. 목표 진행률은 별도 후보이며 사망 정산을 늘리는 안이 아닙니다." data-alt="사망 정산과 다음 도전을 위한 성장 및 편성 변경 행동이 있는 작전 결과 시안" tabindex="-1">사망</button>
+      </div>
+      <figure>
+        <img class="screen" src="captures/06-result-clear.png" width="915" height="412" alt="심도 3 완료 보상과 무기 기여도, 성장 목표 진척 및 다음 행동이 있는 작전 결과 시안" loading="lazy">
+        <figcaption aria-live="polite">심도 3 최초 완료: 협회 코인 120·보급권 1·마력자재 10·가속권 4. 계정 목표의 지정 조각 보상은 이 정산과 분리한 미승인 기획 후보입니다.</figcaption>
+      </figure>
+      <div class="preview-links"><a class="original" href="captures/06-result-clear.png" target="_blank" rel="noopener">현재 시안 원본 열기</a><a href="captures/07-result-death.png">사망 시안 PNG</a></div>
+      <div class="cards">
+        <div class="card"><span class="label">현재의 문제</span><p>결과에는 피해와 보상이 있지만, 목표 성장을 위해 무엇이 부족하고 어디로 가야 하는지 한 번에 파악하기 어렵습니다.</p></div>
+        <div class="card"><span class="label">제안한 경험</span><p>완료와 실패 모두 다음 행동을 선택합니다. 보상·목표·성장 비용을 구분해 코인을 어디에 쓸지 직접 판단합니다.</p></div>
+        <div class="card"><span class="label">필요한 개발 과제</span><p>실제 정산 결과와 성장 요구량을 읽는 표시, 목표 진척, 화면 이동을 연결합니다. 지급은 결과 표시와 분리하고 계정 목표의 중복 수령을 막아야 합니다.</p></div>
+      </div>
+    </section>
+
+    <section id="order">
+      <p class="section-number">DEVELOPMENT ORDER</p>
+      <h2>개발은 이 순서로 제안합니다</h2>
+      <p class="section-lead">현재 선택의 효과가 정확해야 비교 화면과 콘텐츠 판단도 의미가 있습니다. 작업별 근거·규모·완료 기준은 전체 보고서에 정리했습니다.</p>
+      <table class="roadmap">
+        <thead><tr><th>순서</th><th>핵심 작업</th><th>플레이어에게 남는 변화</th></tr></thead>
+        <tbody>
+          <tr><td>P0</td><td>최종 강화·분기·지속 효과·리롤 허가·심도 접근 정리</td><td>구매와 설명에 맞는 효과, 다음 심도로 가는 경로</td></tr>
+          <tr><td>P1</td><td>작은 성장의 실제 효용, 지정 목표와 조각 확보 경로</td><td>한 세션 안에서 확인할 수 있는 진척과 다음 목표</td></tr>
+          <tr><td>P2</td><td>웨이브별 주역 적, 캐릭터 행동 차이, 빌드와 아이템 역할</td><td>같은 콘텐츠로 다른 대응과 선택을 경험</td></tr>
+          <tr><td>P3</td><td>심도 25·30·40 전술 변화와 후속 서울 지역 설계</td><td>수치 상승과 함께 새로운 전투 목적이 등장</td></tr>
+        </tbody>
+      </table>
+      <div class="note qa">
+        <h3>확인한 범위와 사용자 확인 항목</h3>
+        <p><span class="badge">현재 코드 읽기</span><span class="badge">정적 수급·효과 계산</span><span class="badge">독립 시안 렌더링</span></p>
+        <p>순정 첫 진행, Lv.9→10 강화, 빌드별 보스 대응, 실패 후 성장, 심도 21 접근은 후속 구현 뒤 사용자 플레이로 확인할 항목입니다. 자동 테스트·전체 빌드·실제 플레이·실기기 QA는 수행하지 않았습니다.</p>
+      </div>
+    </section>
+    <footer>
+      <p>보고서와 시안은 현재 작업 디렉터리의 콘텐츠를 기준으로 작성했습니다. 신규 원화는 만들지 않았으며 소재 출처와 렌더 방법은 <a href="README.md">제작 기록</a>에 보존합니다. 새 배치를 게임에 연결하려면 별도 시안 승인이 필요합니다.</p>
+    </footer>
+  </main>
+  <script>
+    document.querySelectorAll('[data-screen-set]').forEach(section => {
+      const buttons = Array.from(section.querySelectorAll('[role="tab"]'));
+      const select = button => {
+        buttons.forEach(item => { const active = item === button; item.setAttribute('aria-selected', String(active)); item.tabIndex = active ? 0 : -1; });
+        const path = 'captures/' + button.dataset.file;
+        const image = section.querySelector('.screen');
+        image.src = path; image.alt = button.dataset.alt;
+        section.querySelector('figcaption').textContent = button.dataset.caption;
+        section.querySelector('.original').href = path;
+      };
+      buttons.forEach((button, index) => {
+        button.addEventListener('click', () => select(button));
+        button.addEventListener('keydown', event => {
+          let next;
+          if (event.key === 'ArrowRight') next = (index + 1) % buttons.length;
+          if (event.key === 'ArrowLeft') next = (index + buttons.length - 1) % buttons.length;
+          if (event.key === 'Home') next = 0;
+          if (event.key === 'End') next = buttons.length - 1;
+          if (next !== undefined) { event.preventDefault(); select(buttons[next]); buttons[next].focus(); }
+        });
+      });
+    });
+  </script>
+</body>
+</html>

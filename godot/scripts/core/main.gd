@@ -1,11 +1,11 @@
 extends Node
 
-var screen := "title"
+var screen := "lobby"
 var view: Control
 var canvas := CanvasLayer.new()
 var world := HeroWorld.new()
 var movement := HeroMovement.new()
-var guild: HeroGuild
+var guild_ui := {"panel":"facility","slot":0,"employee":"","expedition":"cityScout","selectedStaff":[]}
 var run: HeroRun
 var simulation: HeroSimulation
 var draft := {"map":"seoul","depth":1,"character":"awakener","weapon":"manaBolt","blessing":"","weekly":""}
@@ -18,13 +18,21 @@ var checkpoint_clock := 0.0
 var _redraw_pending := false
 var _lobby_scene := ""
 var _weapon_audio_events: Dictionary = {}
+var ui_fx := HeroUIEffects.new()
+var _mounted_ui_key := ""
+var _support_action_active := false
+var _recovery_clock := 0.0
+var _daily_prompted_day := -1
+var _association_result_pending := false
 
 func _ready() -> void:
 	get_tree().auto_accept_quit = false
 	add_child(world); add_child(canvas)
 	canvas.add_child(movement)
+	canvas.add_child(ui_fx)
 	draft.weekly = Profile.meta.weeklyGate.ruleId
 	Sound.music("menu"); Sound.prime()
+	_lobby_scene = str(Content.data.premiumUI.scenes.pick_random())
 	_render()
 	# Optional local developer shortcut, without modifying the saved profile.
 	for argument in OS.get_cmdline_user_args():
@@ -38,7 +46,11 @@ func _ready() -> void:
 func _mount(control: Control) -> void:
 	if is_instance_valid(view): canvas.remove_child(view); view.queue_free()
 	view = control; canvas.add_child(view)
+	canvas.move_child(ui_fx,canvas.get_child_count()-1)
 	canvas.move_child(movement,canvas.get_child_count()-1)
+	var key := screen + (":%d" % gate_step if screen == "gate" else ":"+run.phase if screen == "combat" and run != null else "")
+	ui_fx.bind_view(view,key,key != _mounted_ui_key)
+	_mounted_ui_key = key
 	movement.reset()
 
 func _refresh() -> void:
@@ -49,17 +61,20 @@ func _refresh() -> void:
 func _render() -> void:
 	_redraw_pending = false
 	world.visible = screen == "combat" and run != null
-	movement.active = (screen == "combat" and run != null and run.phase == "waveActive") or screen == "guild"
-	if is_instance_valid(guild): guild.visible = screen == "guild"
+	movement.active = screen == "combat" and run != null and run.phase == "waveActive"
 	match screen:
 		"title": _mount(HeroMetaScreens.title(func(): go("lobby"),_resume_saved,FileAccess.file_exists(Profile.CHECKPOINT_PATH)))
 		"lobby":
-			_mount(HeroLobbyScreen.build(go,_lobby_scene))
+			_mount(HeroLobbyScreen.build(go,_lobby_scene,FileAccess.file_exists(Profile.CHECKPOINT_PATH)))
 			Sound.ambience(str(view.get_meta("lobbyAmbience", "")))
+			_offer_daily()
 		"gate": _mount(HeroGateScreen.build(draft,gate_step,_gate_change,_gate_navigate,_deploy,gate_ui))
 		"growth","association","offline","supply","settings": _mount(HeroMetaScreens.build(screen,growth,go,_meta_action))
 		"archive": _mount(HeroArchive.build(archive,func(): go("lobby"),_archive_select))
-		"guild": _mount(guild.controls(func(): go("lobby")))
+		"guild":
+			var headquarters := HeroGuildOfficeScreen.create(Profile.meta,Profile.guild_action,func(): go("lobby"),func(): go("gate"),_guild_art(),guild_ui)
+			headquarters.read_only = not Profile.writable
+			_mount(headquarters)
 		"graphics":
 			var preview := HeroGraphicsPreview.new()
 			preview.back = func(): go("settings")
@@ -73,37 +88,50 @@ func _render() -> void:
 				"waveActive","postWave": _mount(HeroCombatUI.hud(run,_pause))
 				"shop": _mount(HeroCombatUI.shop(run,shop_weapon,_shop_tab,_shop_refresh,func(): simulation.next_wave(),_pause))
 				"paused": _mount(HeroCombatUI.pause_menu(run,func(): run.resume(),_abandon))
-				"revivalChoice": _mount(HeroCombatUI.revival(run,_revive,_die))
+				"revivalChoice":
+					if Content.enabled("revivalStones"): _mount(HeroCombatUI.revival(run,_revive,_die))
+					else: _die.call_deferred()
 				"stageClear","gameOver":
 					_mount(HeroCombatUI.result(run,func(): go("lobby")))
 			Profile.save_run(run)
 
 func go(destination: String) -> void:
+	_association_result_pending = false
+	if destination == "resume": _resume_saved(); return
 	if destination != "lobby": Sound.ambience("")
 	if screen == "combat" and destination != "combat": Sound.stop_combat()
 	if destination != "combat": Sound.set_paused(false)
 	if destination == "lobby" and (screen != "lobby" or _lobby_scene.is_empty()):
 		_lobby_scene = str(Content.data.premiumUI.scenes.pick_random())
-	if screen == "guild" and is_instance_valid(guild): remove_child(guild); guild.queue_free(); guild = null
+	if screen == "guild" and destination != "guild": Profile.save()
 	if destination != "combat":
 		if run != null and run.settled: run = null; simulation = null; world.run = null
 		Sound.music("guild" if destination == "guild" else "menu")
+	var feature_of := {"guild":"guild","offline":"offlineReward","supply":"supplyBox","growth":"fragments"}
+	if feature_of.has(destination) and not Content.enabled(feature_of[destination]): destination = "lobby"
 	screen = destination
 	if destination == "gate":
 		HeroMeta.weekly(Content.data,Profile.meta,Time.get_unix_time_from_system())
 		draft.weekly = Profile.meta.weeklyGate.ruleId
+		draft.week = int(Profile.meta.weeklyGate.weekKey)
 		gate_step = 0
 	if destination == "guild":
-		guild = HeroGuild.new(); guild.movement = movement; add_child(guild)
-		guild.enter_gate.connect(func(): go("gate"))
-		guild.open_roster.connect(func(): archive.group = "characters"; archive.id = "awakener"; archive.page = 0; go("archive"))
-		guild.facility_changed.connect(_refresh)
+		HeroGuildClock.advance(Content.data,Profile.meta,Time.get_unix_time_from_system())
+		Profile.save()
+	if destination == "offline": Profile.save()
 	_refresh()
+
+func _guild_art() -> Dictionary:
+	var visuals: Dictionary = JSON.parse_string(FileAccess.get_file_as_string("res://data/visuals/guild.json"))
+	return {"rooms":Content.texture(visuals.rooms.file),"states":Content.texture(visuals.states.file),"facilityOrder":visuals.rooms.facility_order,"tiers":visuals.rooms.tiers,"structure":Content.texture(visuals.walk.file),"structureRegions":visuals.walk.regions}
 
 func _gate_change(key: String, value) -> void:
 	if key == "uiInspect":
+		if str(gate_ui.inspected.get(value.kind,"")) != str(value.id): ui_fx.queue_effect("detail",{"anchor":"GateDetailArt"})
 		gate_ui.inspected[value.kind] = value.id
 		_refresh(); return
+	if key in ["character","weapon","blessing"] and draft.get(key) != value:
+		ui_fx.queue_effect("select",{"anchor":"GateChoice_"+str(value)})
 	draft[key] = value
 	if key in ["character","weapon","blessing"]: gate_ui.inspected[key] = value
 	if key == "character":
@@ -131,7 +159,9 @@ func _valid_entry() -> bool:
 
 func _deploy() -> void:
 	if not _valid_entry(): return
-	draft.blessingLevel = int(Profile.meta.blessings.get(draft.blessing,{}).get("level",0))
+	if Content.enabled("guild"): HeroGuildClock.advance(Content.data,Profile.meta,Time.get_unix_time_from_system())
+	draft.blessingLevel = HeroMeta.blessing_level(Content.data,Profile.meta.blessings.get(draft.blessing,{}))
+	Profile.save()
 	_start_run(HeroRun.new(Content.data,draft,Profile.meta))
 
 func _resume_saved() -> void:
@@ -140,6 +170,7 @@ func _resume_saved() -> void:
 	_start_run(saved)
 
 func _start_run(state: HeroRun) -> void:
+	draft.character = state.setup.character
 	run = state; simulation = HeroSimulation.new(run); world.run = run
 	_weapon_audio_events.clear()
 	var weapon_stages: Dictionary = Content.data.get("audioConnections", {}).get("weaponStages", {})
@@ -156,8 +187,8 @@ func _start_run(state: HeroRun) -> void:
 	Sound.music("combat"); Profile.save_run(run); _refresh()
 
 func _legacy_run_sound(id: String) -> void:
-	# Keep gameplay event subscribers intact while weapon audio uses stage payloads.
-	if _weapon_audio_events.has(id): return
+	# Gameplay subscribers retain the original events; semantic audio emits once.
+	if _weapon_audio_events.has(id) or id in ["enemyHit","critical","enemyKilled","playerHit","magicStoneCollected","purchase","weaponPurchase"]: return
 	if id in ["stageClear", "gameOver"]: Sound.music("")
 	Sound.cue(id)
 
@@ -168,10 +199,11 @@ func _run_phase_changed() -> void:
 	Sound.set_paused(run.phase == "paused")
 	if run.phase in ["stageClear","gameOver"]:
 		if not run.settled:
-			HeroMeta.settle(Content.data,Profile.meta,run,run.phase == "stageClear")
+			HeroMeta.settle(Content.data,Profile.meta,run,"clear" if run.phase == "stageClear" else "death")
 			Profile.record_analytics(run)
-			Profile.clear_run(); Profile.save()
+			if Profile.save(): Profile.clear_run()
 		Sound.stop_combat(); Sound.music("")
+		ui_fx.queue_effect("result" if run.phase == "stageClear" else "calm",{"anchor":"ResultRewardArt","view_key":"combat:"+run.phase})
 	else: Profile.save_run(run)
 	_refresh()
 
@@ -193,9 +225,10 @@ func _pause() -> void:
 func _abandon() -> void:
 	if run == null: return
 	run.phase = "gameOver"
-	HeroMeta.settle(Content.data,Profile.meta,run,false)
+	HeroMeta.settle(Content.data,Profile.meta,run,"abandon")
 	Profile.record_analytics(run)
-	Profile.clear_run(); Profile.save(); go("lobby")
+	if Profile.save(): Profile.clear_run()
+	go("lobby")
 
 func _die() -> void:
 	run.phase = "gameOver"; run.phase_changed.emit(); Sound.cue("gameOver")
@@ -212,39 +245,144 @@ func _shop_tab(weapon: bool) -> void: shop_weapon = weapon; _refresh()
 func _shop_refresh() -> void: Profile.save_run(run); _refresh()
 
 func _archive_select(key: String, value) -> void:
+	if key == "id" and archive.id != value:
+		ui_fx.queue_effect("select",{"anchor":"Archive_"+str(value)})
+		ui_fx.queue_effect("detail",{"anchor":"ArchiveDetailArt"})
 	archive[key] = value
 	if key == "group": archive.id = Content.data[value].keys()[0]; archive.scroll = 0
 	if key in ["group","id","map"]: archive.page = 0; archive.growthPage = 0
 	if key == "page": archive.growthPage = 0
 	_refresh()
 
-func _meta_action(action: String, value) -> void:
+# Shows today's gift once per day per session; claiming saves before the rewards appear.
+func _offer_daily() -> void:
+	if not Profile.writable: return
+	var now := Time.get_unix_time_from_system()
+	var today := HeroMeta.day_key(Content.data,now)
+	if _daily_prompted_day == today or not HeroMeta.daily_available(Content.data,Profile.meta,now): return
+	_daily_prompted_day = today
+	var offer := HeroMeta.daily_offer(Content.data,Profile.meta,now)
+	var daily: Dictionary = Profile.meta.daily
+	var streak_day := int(daily.get("streak",0)) + 1 if int(daily.get("claimedDayKey",-1)) == today - 1 else 1
+	HeroLobbyScreen.daily_popup(view,offer,streak_day,int(Content.data.daily.streakDays),func():
+		var before := Profile.meta.duplicate(true)
+		var rewards := HeroMeta.claim_daily(Content.data,Profile.meta,Time.get_unix_time_from_system())
+		if rewards.is_empty() or not Profile.save():
+			Profile.meta = before
+			return
+		Sound.cue("purchase")
+		# Redraw the lobby wallet first, then open the results on the new view.
+		_refresh()
+		_show_daily_rewards.call_deferred(rewards)
+	)
+
+func _show_draw(kind: String, id: String) -> void:
+	if screen == "association" and is_instance_valid(view): HeroAssociationFeedback.draw(view,kind,id)
+
+func _show_association_result(result: Dictionary) -> void:
+	_association_result_pending = false
+	if screen != "association" or not is_instance_valid(view): return
+	if result.action == "associationDraw": _show_draw(str(result.kind),str(result.id))
+	else: HeroAssociationFeedback.play(view,result.payload)
+
+# A transaction commits once before any visual feedback. The capture uses a memory-only
+# commit callback to exercise the same success/rollback path without touching user files.
+func _association_transaction(action: String, value: Variant, commit: Callable) -> Dictionary:
+	if not commit.is_valid(): return {}
+	var before := Profile.meta.duplicate(true)
+	var result: Dictionary = {"action":action}
+	if action == "associationDraw":
+		var id := HeroMeta.draw(Content.data,Profile.meta,str(value))
+		if id.is_empty(): return {}
+		result["kind"] = str(value)
+		result["id"] = id
+	elif action == "associationBuy":
+		var id := str(value)
+		if not Content.data.upgrades.has(id): return {}
+		var upgrade: Dictionary = Content.data.upgrades[id]
+		var old_level := int(before.association.upgrades.get(id,0))
+		if not HeroMeta.buy_association(Content.data,Profile.meta,id): return {}
+		var new_level := int(Profile.meta.association.upgrades.get(id,0))
+		var is_stat: bool = str(upgrade.effect.type) == "stat"
+		var suffix := ""
+		if is_stat:
+			if upgrade.effect.operation == "multiply": suffix = "%"
+			elif upgrade.effect.stat in HeroArchive.MULTIPLIERS or upgrade.effect.stat in HeroArchive.PROBABILITIES: suffix = "%p"
+		result["payload"] = {"id":id,"name":str(upgrade.name),"type":str(upgrade.effect.type),
+			"old_level":old_level,"new_level":new_level,"bonus_suffix":suffix,
+			"old_bonus":HeroMeta.association_bonus(upgrade,old_level) if is_stat else 0.0,
+			"new_bonus":HeroMeta.association_bonus(upgrade,new_level) if is_stat else 0.0}
+		if not is_stat and str(upgrade.effect.get("target","")) in ["character","weapon","blessing"]:
+			result.payload["reward_kind"] = str(upgrade.effect.target)
+			result.payload["content_id"] = str(upgrade.effect.contentId)
+	else: return {}
+	if not bool(commit.call()):
+		Profile.meta = before
+		return {}
+	return result
+
+func _show_daily_rewards(rewards: Array) -> void:
+	if screen == "lobby" and is_instance_valid(view): HeroMetaScreens.rewards_popup(view,rewards,"오늘의 선물")
+
+func _meta_action(action: String, value) -> Variant:
+	if not Profile.writable and action in ["grow","associationBuy","associationDraw","claimOffline","supplyOpen","offlineAdvance","devTickets"]: return null
+	if action in ["associationBuy","associationDraw"]:
+		if screen != "association" or _redraw_pending or _association_result_pending or not is_instance_valid(view) or HeroAssociationFeedback.is_busy(view): return null
+		var result := _association_transaction(action,value,Profile.save)
+		if result.is_empty(): return null
+		_association_result_pending = true
+		_refresh()
+		_show_association_result.call_deferred(result)
+		return null
+	if action == "associationSelect" and (_association_result_pending or (is_instance_valid(view) and HeroAssociationFeedback.is_busy(view))): return null
 	match action:
 		"growthTab":
 			growth.kind = value; growth.id = Content.data[{"character":"characters","weapon":"weapons","blessing":"blessings"}[value]].keys()[0]
-		"growthSelect": growth.id = value
-		"grow": HeroMeta.grow(Content.data,Profile.meta,growth.kind,value); Sound.cue("purchase")
-		"associationBuy": HeroMeta.buy_association(Content.data,Profile.meta,value); Sound.cue("purchase")
+		"growthSelect":
+			if growth.id != value: ui_fx.queue_effect("detail",{"anchor":"GrowthArt"})
+			growth.id = value
+		"grow":
+			var payload := {"anchor":"GrowthArt","content_id":str(value),"kind":str(growth.kind)}
+			if HeroMeta.grow(Content.data,Profile.meta,growth.kind,value):
+				ui_fx.queue_effect("growth",payload); Sound.cue("purchase")
+		"associationSelect": growth["associationId"] = str(value)
 		"claimOffline":
-			HeroMeta.claim_offline(Profile.meta); Profile.meta.offlineReward.lastClaimedAt = Time.get_datetime_string_from_system(true)
-			Profile.save(); Sound.cue("purchase"); return
+			if screen != "offline" or _support_action_active or _support_view_busy(): return {}
+			_support_action_active = true
+			HeroMeta.accrue_offline(Content.data,Profile.meta,Time.get_unix_time_from_system())
+			var before := Profile.meta.duplicate(true)
+			var claimed: Dictionary = Profile.meta.offlineReward.pendingRewards.duplicate(true)
+			var received := HeroMeta.claim_offline(Content.data,Profile.meta)
+			Profile.meta.offlineReward.lastClaimedAt = Time.get_datetime_string_from_system(true)
+			if not Profile.save():
+				Profile.meta = before
+				received = false
+			_support_action_active = false
+			if received: Sound.cue("purchase")
+			return claimed if received else {}
 		"offlineAdvance":
-			Profile.meta.offlineReward.lastExitAt = Time.get_datetime_string_from_unix_time(int(Time.get_unix_time_from_system()) - int(value))
+			if not Profile.meta.settings.developerMode: return null
+			Profile.meta.offlineReward.lastAccruedAt -= float(value)
 			HeroMeta.accrue_offline(Content.data,Profile.meta,Time.get_unix_time_from_system())
 		"supplyOpen":
+			if screen != "supply" or _support_action_active or _support_view_busy(): return []
+			_support_action_active = true
+			var before := Profile.meta.duplicate(true)
 			var results := HeroMeta.open_supply(Content.data,Profile.meta,int(value))
-			Profile.save()
-			if not results.is_empty(): _opening(results)
-			return
+			if not Profile.save():
+				Profile.meta = before
+				results.clear()
+			_support_action_active = false
+			return results
 		"devTickets": if Profile.meta.settings.developerMode: Profile.meta.wallet.supplyTickets += int(value)
-		"volume": Profile.meta.settings[value.key] = value.value; Sound.apply_settings(); Profile.save(); return
+		"volume": Profile.meta.settings[value.key] = value.value; Sound.apply_settings(); Profile.save(); return null
 		"developer": Profile.meta.settings.developerMode = value
-		"graphics": go("graphics"); return
-		"sd-sample": go("sd-sample"); return
+		"graphics": go("graphics"); return null
+		"sd-sample": go("sd-sample"); return null
 		"backup":
 			var backup := FileAccess.open("user://export-%d.json" % Time.get_unix_time_from_system(),FileAccess.WRITE)
-			if backup: backup.store_string(JSON.stringify({"formatVersion":1,"meta":Profile.meta},"\t"))
-			return
+			if backup: backup.store_string(JSON.stringify({"formatVersion":Profile.FORMAT_VERSION,"meta":Profile.meta},"\t"))
+			return null
 		"import":
 			var dialog := FileDialog.new()
 			dialog.file_mode = FileDialog.FILE_MODE_OPEN_FILE
@@ -257,27 +395,21 @@ func _meta_action(action: String, value) -> void:
 			)
 			dialog.canceled.connect(dialog.queue_free)
 			dialog.popup_centered_ratio(0.8)
-			return
+			return null
 	Profile.save(); _refresh()
+	return null
 
-func _opening(results: Array) -> void:
-	var box := HeroCombatUI.popup(view,"봉인 해제",650,300)
-	var chest := HeroUI.image(box,Content.trimmed_texture("lobbySupplyVault"),300,124)
-	chest.size_flags_vertical = Control.SIZE_EXPAND_FILL
-	var halo := HeroUI.image(box,Content.trimmed_texture("supplyOpeningBurst"),200,52)
-	halo.modulate.a = 0
-	Sound.cue("supplyLatch")
-	var tween := chest.create_tween()
-	tween.tween_property(chest,"modulate",Color(1.25,1.25,1.3),0.25)
-	tween.tween_property(halo,"modulate:a",0.85,0.2)
-	tween.tween_interval(0.4)
-	tween.tween_callback(func():
-		Sound.cue("supplyFanfare")
-		if is_instance_valid(box): box.get_meta("overlay").queue_free()
-		HeroMetaScreens.rewards_popup(view,results)
-	)
+func _support_view_busy() -> bool:
+	return is_instance_valid(view) and view.has_method("is_busy") and bool(view.call("is_busy"))
 
 func _back() -> void:
+	if screen == "association" and is_instance_valid(view) and HeroAssociationFeedback.close_or_reveal(view): return
+	if is_instance_valid(view):
+		var modal := view.find_child("EconomyModal",true,false)
+		if modal:
+			modal.queue_free()
+			return
+	if screen == "guild" and view is HeroGuildOfficeScreen and view.close_management(): return
 	if screen == "combat" and run != null:
 		if run.phase == "paused": run.resume()
 		elif run.phase in ["waveActive","shop","revivalChoice"]: _pause()
@@ -288,18 +420,25 @@ func _back() -> void:
 
 func _process(_dt: float) -> void:
 	if run != null and run.phase == "waveActive": HeroTelemetry.fps(run,Engine.get_frames_per_second())
+	_recovery_clock += _dt
+	if _recovery_clock >= 30.0:
+		_recovery_clock = 0.0
+		if Profile.save() and run != null and run.settled: Profile.clear_run()
+		if screen == "offline" and not _support_view_busy(): _refresh()
 
 func _input(event: InputEvent) -> void:
 	if event is InputEventScreenTouch and event.pressed: Sound.prime()
 	if event is InputEventKey and event.pressed and not event.echo:
 		if event.keycode == KEY_ESCAPE: _back(); get_viewport().set_input_as_handled()
-		elif event.keycode == KEY_E and screen == "guild" and is_instance_valid(guild): guild.interact()
 
 func _notification(what: int) -> void:
 	if not is_node_ready(): return
 	if what == NOTIFICATION_APPLICATION_PAUSED or what == NOTIFICATION_APPLICATION_FOCUS_OUT:
+		ui_fx.suspend(true)
 		if run != null and screen == "combat": _pause(); Profile.save_run(run)
 		Profile.save()
+	elif what == NOTIFICATION_APPLICATION_RESUMED or what == NOTIFICATION_APPLICATION_FOCUS_IN:
+		ui_fx.suspend(false)
 	elif what == NOTIFICATION_WM_GO_BACK_REQUEST: _back()
 	elif what == NOTIFICATION_WM_CLOSE_REQUEST:
 		if run != null: _pause(); Profile.save_run(run)

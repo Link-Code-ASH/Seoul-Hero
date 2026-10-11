@@ -1,0 +1,5860 @@
+{
+	"audioCallbacks": false,
+	"checks": [
+		{
+			"check": "Title action uses 이어하기",
+			"passed": true
+		},
+		{
+			"check": "Resume and new-run actions share type size and height",
+			"passed": true
+		},
+		{
+			"check": "compact-01-title-continue has no hover tooltips",
+			"passed": true
+		},
+		{
+			"actualRole": "compact/primary",
+			"check": "compact-01-title-continue primary actual PNG role, native font, touch geometry and viewport bounds",
+			"expectedRole": "compact/primary",
+			"logicalSize": [
+				328.0,
+				52.0
+			],
+			"passed": true
+		},
+		{
+			"actualRole": "compact/secondary",
+			"check": "compact-01-title-continue secondary actual PNG role, native font, touch geometry and viewport bounds",
+			"expectedRole": "compact/secondary",
+			"logicalSize": [
+				328.0,
+				52.0
+			],
+			"passed": true
+		},
+		{
+			"check": "Title action uses 시작하기",
+			"passed": true
+		},
+		{
+			"check": "No-run title shows only the start action",
+			"passed": true
+		},
+		{
+			"check": "compact-02-title-start has no hover tooltips",
+			"passed": true
+		},
+		{
+			"actualRole": "compact/primary",
+			"check": "compact-02-title-start primary actual PNG role, native font, touch geometry and viewport bounds",
+			"expectedRole": "compact/primary",
+			"logicalSize": [
+				328.0,
+				52.0
+			],
+			"passed": true
+		},
+		{
+			"check": "compact-03-character has no hover tooltips",
+			"passed": true
+		},
+		{
+			"actualRole": "compact/back",
+			"check": "compact-03-character back actual PNG role, native font, touch geometry and viewport bounds",
+			"expectedRole": "compact/back",
+			"logicalSize": [
+				44.0,
+				44.0
+			],
+			"passed": true
+		},
+		{
+			"check": "compact-03-character retains real selection cards and detail pane",
+			"passed": true
+		},
+		{
+			"check": "compact-04-shop-items has no hover tooltips",
+			"passed": true
+		},
+		{
+			"check": "compact-04-shop-items has four products with no internal scroll",
+			"passed": true
+		},
+		{
+			"check": "compact-04-shop-items purchase and lock targets remain 44px",
+			"passed": true
+		},
+		{
+			"check": "compact-04-shop-items locks sit at product upper right",
+			"passed": true
+		},
+		{
+			"actualRole": "compact/tab",
+			"check": "compact-04-shop-items weapon tab actual PNG role, native font, touch geometry and viewport bounds",
+			"expectedRole": "compact/tab",
+			"logicalSize": [
+				84.0,
+				44.0
+			],
+			"passed": true
+		},
+		{
+			"actualRole": "compact/tab",
+			"check": "compact-04-shop-items item tab actual PNG role, native font, touch geometry and viewport bounds",
+			"expectedRole": "compact/tab",
+			"logicalSize": [
+				84.0,
+				44.0
+			],
+			"passed": true
+		},
+		{
+			"actualRole": "compact/secondary",
+			"check": "compact-04-shop-items reroll actual PNG role, native font, touch geometry and viewport bounds",
+			"expectedRole": "compact/secondary",
+			"logicalSize": [
+				140.0,
+				44.0
+			],
+			"passed": true
+		},
+		{
+			"check": "compact-04-shop-items ShopWeaponsTab smaller painted frame stays within title height; touch area unchanged",
+			"paintedSize": [
+				72.0,
+				30.0
+			],
+			"passed": true
+		},
+		{
+			"check": "compact-04-shop-items ShopItemsTab smaller painted frame stays within title height; touch area unchanged",
+			"paintedSize": [
+				72.0,
+				30.0
+			],
+			"passed": true
+		},
+		{
+			"check": "compact-04-shop-items ShopReroll smaller painted frame stays within title height; touch area unchanged",
+			"paintedSize": [
+				120.0,
+				30.0
+			],
+			"passed": true
+		},
+		{
+			"actualRole": "compact/secondary",
+			"check": "compact-04-shop-items stats actual PNG role, native font, touch geometry and viewport bounds",
+			"expectedRole": "compact/secondary",
+			"logicalSize": [
+				145.0,
+				44.0
+			],
+			"passed": true
+		},
+		{
+			"actualRole": "compact/primary",
+			"check": "compact-04-shop-items advance actual PNG role, native font, touch geometry and viewport bounds",
+			"expectedRole": "compact/primary",
+			"logicalSize": [
+				205.0,
+				44.0
+			],
+			"passed": true
+		},
+		{
+			"actualRole": "compact/secondary",
+			"check": "compact-04-shop-items owned items actual PNG role, native font, touch geometry and viewport bounds",
+			"expectedRole": "compact/secondary",
+			"logicalSize": [
+				163.0,
+				44.0
+			],
+			"passed": true
+		},
+		{
+			"check": "compact-05-shop-weapons has no hover tooltips",
+			"passed": true
+		},
+		{
+			"check": "compact-05-shop-weapons has four products with no internal scroll",
+			"passed": true
+		},
+		{
+			"check": "compact-05-shop-weapons purchase and lock targets remain 44px",
+			"passed": true
+		},
+		{
+			"check": "compact-05-shop-weapons locks sit at product upper right",
+			"passed": true
+		},
+		{
+			"actualRole": "compact/tab",
+			"check": "compact-05-shop-weapons weapon tab actual PNG role, native font, touch geometry and viewport bounds",
+			"expectedRole": "compact/tab",
+			"logicalSize": [
+				84.0,
+				44.0
+			],
+			"passed": true
+		},
+		{
+			"actualRole": "compact/tab",
+			"check": "compact-05-shop-weapons item tab actual PNG role, native font, touch geometry and viewport bounds",
+			"expectedRole": "compact/tab",
+			"logicalSize": [
+				84.0,
+				44.0
+			],
+			"passed": true
+		},
+		{
+			"actualRole": "compact/secondary",
+			"check": "compact-05-shop-weapons reroll actual PNG role, native font, touch geometry and viewport bounds",
+			"expectedRole": "compact/secondary",
+			"logicalSize": [
+				140.0,
+				44.0
+			],
+			"passed": true
+		},
+		{
+			"check": "compact-05-shop-weapons ShopWeaponsTab smaller painted frame stays within title height; touch area unchanged",
+			"paintedSize": [
+				72.0,
+				30.0
+			],
+			"passed": true
+		},
+		{
+			"check": "compact-05-shop-weapons ShopItemsTab smaller painted frame stays within title height; touch area unchanged",
+			"paintedSize": [
+				72.0,
+				30.0
+			],
+			"passed": true
+		},
+		{
+			"check": "compact-05-shop-weapons ShopReroll smaller painted frame stays within title height; touch area unchanged",
+			"paintedSize": [
+				120.0,
+				30.0
+			],
+			"passed": true
+		},
+		{
+			"actualRole": "compact/secondary",
+			"check": "compact-05-shop-weapons stats actual PNG role, native font, touch geometry and viewport bounds",
+			"expectedRole": "compact/secondary",
+			"logicalSize": [
+				145.0,
+				44.0
+			],
+			"passed": true
+		},
+		{
+			"actualRole": "compact/primary",
+			"check": "compact-05-shop-weapons advance actual PNG role, native font, touch geometry and viewport bounds",
+			"expectedRole": "compact/primary",
+			"logicalSize": [
+				205.0,
+				44.0
+			],
+			"passed": true
+		},
+		{
+			"actualRole": "compact/secondary",
+			"check": "compact-05-shop-weapons owned items actual PNG role, native font, touch geometry and viewport bounds",
+			"expectedRole": "compact/secondary",
+			"logicalSize": [
+				163.0,
+				44.0
+			],
+			"passed": true
+		},
+		{
+			"check": "compact-06-shop-disabled-recipes has no hover tooltips",
+			"passed": true
+		},
+		{
+			"check": "compact-06-shop-disabled-recipes has four products with no internal scroll",
+			"passed": true
+		},
+		{
+			"check": "compact-06-shop-disabled-recipes purchase and lock targets remain 44px",
+			"passed": true
+		},
+		{
+			"check": "compact-06-shop-disabled-recipes locks sit at product upper right",
+			"passed": true
+		},
+		{
+			"actualRole": "compact/tab",
+			"check": "compact-06-shop-disabled-recipes weapon tab actual PNG role, native font, touch geometry and viewport bounds",
+			"expectedRole": "compact/tab",
+			"logicalSize": [
+				84.0,
+				44.0
+			],
+			"passed": true
+		},
+		{
+			"actualRole": "compact/tab",
+			"check": "compact-06-shop-disabled-recipes item tab actual PNG role, native font, touch geometry and viewport bounds",
+			"expectedRole": "compact/tab",
+			"logicalSize": [
+				84.0,
+				44.0
+			],
+			"passed": true
+		},
+		{
+			"actualRole": "compact/secondary",
+			"check": "compact-06-shop-disabled-recipes reroll actual PNG role, native font, touch geometry and viewport bounds",
+			"expectedRole": "compact/secondary",
+			"logicalSize": [
+				140.0,
+				44.0
+			],
+			"passed": true
+		},
+		{
+			"check": "compact-06-shop-disabled-recipes ShopWeaponsTab smaller painted frame stays within title height; touch area unchanged",
+			"paintedSize": [
+				72.0,
+				30.0
+			],
+			"passed": true
+		},
+		{
+			"check": "compact-06-shop-disabled-recipes ShopItemsTab smaller painted frame stays within title height; touch area unchanged",
+			"paintedSize": [
+				72.0,
+				30.0
+			],
+			"passed": true
+		},
+		{
+			"check": "compact-06-shop-disabled-recipes ShopReroll smaller painted frame stays within title height; touch area unchanged",
+			"paintedSize": [
+				120.0,
+				30.0
+			],
+			"passed": true
+		},
+		{
+			"actualRole": "compact/secondary",
+			"check": "compact-06-shop-disabled-recipes stats actual PNG role, native font, touch geometry and viewport bounds",
+			"expectedRole": "compact/secondary",
+			"logicalSize": [
+				145.0,
+				44.0
+			],
+			"passed": true
+		},
+		{
+			"actualRole": "compact/primary",
+			"check": "compact-06-shop-disabled-recipes advance actual PNG role, native font, touch geometry and viewport bounds",
+			"expectedRole": "compact/primary",
+			"logicalSize": [
+				205.0,
+				44.0
+			],
+			"passed": true
+		},
+		{
+			"actualRole": "compact/secondary",
+			"check": "compact-06-shop-disabled-recipes owned items actual PNG role, native font, touch geometry and viewport bounds",
+			"expectedRole": "compact/secondary",
+			"logicalSize": [
+				74.0,
+				44.0
+			],
+			"passed": true
+		},
+		{
+			"actualRole": "compact/secondary",
+			"check": "compact-06-shop-disabled-recipes crafting actual PNG role, native font, touch geometry and viewport bounds",
+			"expectedRole": "compact/secondary",
+			"logicalSize": [
+				81.0,
+				44.0
+			],
+			"passed": true
+		},
+		{
+			"check": "compact-06-shop-disabled-recipes native purchases are disabled",
+			"passed": true
+		},
+		{
+			"check": "compact-07-character-844x390 has no hover tooltips",
+			"passed": true
+		},
+		{
+			"actualRole": "compact/back",
+			"check": "compact-07-character-844x390 back actual PNG role, native font, touch geometry and viewport bounds",
+			"expectedRole": "compact/back",
+			"logicalSize": [
+				44.0,
+				44.0
+			],
+			"passed": true
+		},
+		{
+			"check": "compact-07-character-844x390 retains real selection cards and detail pane",
+			"passed": true
+		},
+		{
+			"check": "compact-08-shop-eight-digit-price-844x390 has no hover tooltips",
+			"passed": true
+		},
+		{
+			"check": "compact-08-shop-eight-digit-price-844x390 has four products with no internal scroll",
+			"passed": true
+		},
+		{
+			"check": "compact-08-shop-eight-digit-price-844x390 purchase and lock targets remain 44px",
+			"passed": true
+		},
+		{
+			"check": "compact-08-shop-eight-digit-price-844x390 locks sit at product upper right",
+			"passed": true
+		},
+		{
+			"actualRole": "compact/tab",
+			"check": "compact-08-shop-eight-digit-price-844x390 weapon tab actual PNG role, native font, touch geometry and viewport bounds",
+			"expectedRole": "compact/tab",
+			"logicalSize": [
+				84.0,
+				44.0
+			],
+			"passed": true
+		},
+		{
+			"actualRole": "compact/tab",
+			"check": "compact-08-shop-eight-digit-price-844x390 item tab actual PNG role, native font, touch geometry and viewport bounds",
+			"expectedRole": "compact/tab",
+			"logicalSize": [
+				84.0,
+				44.0
+			],
+			"passed": true
+		},
+		{
+			"actualRole": "compact/secondary",
+			"check": "compact-08-shop-eight-digit-price-844x390 reroll actual PNG role, native font, touch geometry and viewport bounds",
+			"expectedRole": "compact/secondary",
+			"logicalSize": [
+				140.0,
+				44.0
+			],
+			"passed": true
+		},
+		{
+			"check": "compact-08-shop-eight-digit-price-844x390 ShopWeaponsTab smaller painted frame stays within title height; touch area unchanged",
+			"paintedSize": [
+				72.0,
+				30.0
+			],
+			"passed": true
+		},
+		{
+			"check": "compact-08-shop-eight-digit-price-844x390 ShopItemsTab smaller painted frame stays within title height; touch area unchanged",
+			"paintedSize": [
+				72.0,
+				30.0
+			],
+			"passed": true
+		},
+		{
+			"check": "compact-08-shop-eight-digit-price-844x390 ShopReroll smaller painted frame stays within title height; touch area unchanged",
+			"paintedSize": [
+				120.0,
+				30.0
+			],
+			"passed": true
+		},
+		{
+			"actualRole": "compact/secondary",
+			"check": "compact-08-shop-eight-digit-price-844x390 stats actual PNG role, native font, touch geometry and viewport bounds",
+			"expectedRole": "compact/secondary",
+			"logicalSize": [
+				145.0,
+				44.0
+			],
+			"passed": true
+		},
+		{
+			"actualRole": "compact/primary",
+			"check": "compact-08-shop-eight-digit-price-844x390 advance actual PNG role, native font, touch geometry and viewport bounds",
+			"expectedRole": "compact/primary",
+			"logicalSize": [
+				205.0,
+				44.0
+			],
+			"passed": true
+		},
+		{
+			"actualRole": "compact/secondary",
+			"check": "compact-08-shop-eight-digit-price-844x390 owned items actual PNG role, native font, touch geometry and viewport bounds",
+			"expectedRole": "compact/secondary",
+			"logicalSize": [
+				74.0,
+				44.0
+			],
+			"passed": true
+		},
+		{
+			"actualRole": "compact/secondary",
+			"check": "compact-08-shop-eight-digit-price-844x390 crafting actual PNG role, native font, touch geometry and viewport bounds",
+			"expectedRole": "compact/secondary",
+			"logicalSize": [
+				81.0,
+				44.0
+			],
+			"passed": true
+		},
+		{
+			"check": "compact-08-shop-eight-digit-price-844x390 eight-digit native price fits retained yellow purchase control",
+			"passed": true
+		}
+	],
+	"economyCallbacks": false,
+	"mode": "compact-controls-preview",
+	"productionClasses": true,
+	"saveReads": false,
+	"saveWrites": false,
+	"screenRecords": [
+		{
+			"class": "HeroMobileScreen",
+			"fitIssues": [],
+			"labels": [
+				{
+					"fontFile": "res://assets/ui/fonts/BMJUA.ttf",
+					"fontRole": "brand",
+					"insideScroll": false,
+					"needed": [
+						74.0,
+						47.0
+					],
+					"node": "@Label@13",
+					"rect": [
+						60.0,
+						66.0,
+						296.0,
+						55.0
+					],
+					"size": 46,
+					"text": "서울"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/BMJUA.ttf",
+					"fontRole": "brand",
+					"insideScroll": false,
+					"needed": [
+						133.0,
+						55.0
+					],
+					"node": "@Label@14",
+					"rect": [
+						56.0,
+						119.0,
+						304.0,
+						66.0
+					],
+					"size": 55,
+					"text": "히어로"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/Paperlogy-4Regular.ttf",
+					"fontRole": "body",
+					"insideScroll": false,
+					"needed": [
+						121.0,
+						17.0
+					],
+					"node": "@Label@15",
+					"rect": [
+						62.0,
+						192.0,
+						292.0,
+						25.0
+					],
+					"size": 14,
+					"text": "서울 게이트 생존 액션"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/Paperlogy-5Medium.ttf",
+					"fontRole": "control",
+					"insideScroll": false,
+					"needed": [
+						67.0,
+						23.0
+					],
+					"node": "TitleResume",
+					"rect": [
+						44.0,
+						248.0,
+						328.0,
+						52.0
+					],
+					"size": 19,
+					"text": "이어하기"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/Paperlogy-5Medium.ttf",
+					"fontRole": "control",
+					"insideScroll": false,
+					"needed": [
+						67.0,
+						23.0
+					],
+					"node": "TitleNewRun",
+					"rect": [
+						44.0,
+						312.0,
+						328.0,
+						52.0
+					],
+					"size": 19,
+					"text": "새로하기"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/Paperlogy-4Regular.ttf",
+					"fontRole": "body",
+					"insideScroll": false,
+					"needed": [
+						58.0,
+						17.0
+					],
+					"node": "@Label@19",
+					"rect": [
+						801.0,
+						14.0,
+						94.0,
+						24.0
+					],
+					"size": 14,
+					"text": "음악 OFF"
+				}
+			],
+			"materials": [
+				{
+					"node": "@Panel@12",
+					"role": "ops/info",
+					"texture": "res://assets/ui/image-skin/operations-standard-01/info-4x.png"
+				},
+				{
+					"node": "TitleResume",
+					"role": "compact/primary",
+					"texture": "res://assets/ui/image-skin/operations-light-controls-02/primary-4x.png"
+				},
+				{
+					"node": "TitleNewRun",
+					"role": "compact/secondary",
+					"texture": "res://assets/ui/image-skin/operations-light-controls-02/secondary-4x.png"
+				}
+			],
+			"pixelSize": [
+				915,
+				412
+			],
+			"screen": "compact-01-title-continue",
+			"tooltips": []
+		},
+		{
+			"class": "HeroMobileScreen",
+			"fitIssues": [],
+			"labels": [
+				{
+					"fontFile": "res://assets/ui/fonts/BMJUA.ttf",
+					"fontRole": "brand",
+					"insideScroll": false,
+					"needed": [
+						74.0,
+						47.0
+					],
+					"node": "@Label@23",
+					"rect": [
+						60.0,
+						66.0,
+						296.0,
+						55.0
+					],
+					"size": 46,
+					"text": "서울"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/BMJUA.ttf",
+					"fontRole": "brand",
+					"insideScroll": false,
+					"needed": [
+						133.0,
+						55.0
+					],
+					"node": "@Label@24",
+					"rect": [
+						56.0,
+						119.0,
+						304.0,
+						66.0
+					],
+					"size": 55,
+					"text": "히어로"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/Paperlogy-4Regular.ttf",
+					"fontRole": "body",
+					"insideScroll": false,
+					"needed": [
+						121.0,
+						17.0
+					],
+					"node": "@Label@25",
+					"rect": [
+						62.0,
+						192.0,
+						292.0,
+						25.0
+					],
+					"size": 14,
+					"text": "서울 게이트 생존 액션"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/Paperlogy-5Medium.ttf",
+					"fontRole": "control",
+					"insideScroll": false,
+					"needed": [
+						67.0,
+						23.0
+					],
+					"node": "TitleStart",
+					"rect": [
+						44.0,
+						248.0,
+						328.0,
+						52.0
+					],
+					"size": 19,
+					"text": "시작하기"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/Paperlogy-4Regular.ttf",
+					"fontRole": "body",
+					"insideScroll": false,
+					"needed": [
+						58.0,
+						17.0
+					],
+					"node": "@Label@28",
+					"rect": [
+						801.0,
+						14.0,
+						94.0,
+						24.0
+					],
+					"size": 14,
+					"text": "음악 OFF"
+				}
+			],
+			"materials": [
+				{
+					"node": "@Panel@22",
+					"role": "ops/info",
+					"texture": "res://assets/ui/image-skin/operations-standard-01/info-4x.png"
+				},
+				{
+					"node": "TitleStart",
+					"role": "compact/primary",
+					"texture": "res://assets/ui/image-skin/operations-light-controls-02/primary-4x.png"
+				}
+			],
+			"pixelSize": [
+				915,
+				412
+			],
+			"screen": "compact-02-title-start",
+			"tooltips": []
+		},
+		{
+			"class": "HeroMobileScreen",
+			"fitIssues": [],
+			"labels": [
+				{
+					"fontFile": "res://assets/ui/fonts/Paperlogy-5Medium.ttf",
+					"fontRole": "control",
+					"insideScroll": false,
+					"needed": [
+						15.0,
+						29.0
+					],
+					"node": "HeaderBack",
+					"rect": [
+						20.0,
+						16.0,
+						44.0,
+						44.0
+					],
+					"size": 24,
+					"text": "‹"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/BMJUA.ttf",
+					"fontRole": "brand",
+					"insideScroll": false,
+					"needed": [
+						103.0,
+						25.0
+					],
+					"node": "ScreenTitle",
+					"rect": [
+						76.0,
+						16.0,
+						115.0,
+						44.0
+					],
+					"size": 24,
+					"text": "각성자 선택"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/BarlowCondensed-SemiBold.ttf",
+					"fontRole": "number",
+					"insideScroll": false,
+					"needed": [
+						46.0,
+						22.0
+					],
+					"node": "ResourceValue",
+					"rect": [
+						837.0,
+						27.0,
+						46.0,
+						22.0
+					],
+					"size": 18,
+					"text": "03 / 06"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/Paperlogy-4Regular.ttf",
+					"fontRole": "body",
+					"insideScroll": false,
+					"needed": [
+						247.0,
+						16.0
+					],
+					"node": "@Label@36",
+					"rect": [
+						28.0,
+						72.0,
+						790.0,
+						24.0
+					],
+					"size": 13,
+					"text": "함께 서울의 게이트로 들어갈 각성자를 고르세요."
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/Paperlogy-5Medium.ttf",
+					"fontRole": "control",
+					"insideScroll": true,
+					"needed": [
+						43.0,
+						20.0
+					],
+					"node": "@Label@49",
+					"rect": [
+						34.0,
+						180.0,
+						125.0,
+						36.0
+					],
+					"size": 16,
+					"text": "송진우"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/Paperlogy-5Medium.ttf",
+					"fontRole": "control",
+					"insideScroll": true,
+					"needed": [
+						43.0,
+						20.0
+					],
+					"node": "@Label@57",
+					"rect": [
+						179.0,
+						180.0,
+						125.0,
+						36.0
+					],
+					"size": 16,
+					"text": "강태훈"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/Paperlogy-5Medium.ttf",
+					"fontRole": "control",
+					"insideScroll": true,
+					"needed": [
+						43.0,
+						20.0
+					],
+					"node": "@Label@65",
+					"rect": [
+						324.0,
+						180.0,
+						125.0,
+						36.0
+					],
+					"size": 16,
+					"text": "박도준"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/Paperlogy-5Medium.ttf",
+					"fontRole": "control",
+					"insideScroll": true,
+					"needed": [
+						43.0,
+						20.0
+					],
+					"node": "@Label@73",
+					"rect": [
+						469.0,
+						180.0,
+						125.0,
+						36.0
+					],
+					"size": 16,
+					"text": "윤하린"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/KMU80HaeongSans.ttf",
+					"fontRole": "heading",
+					"insideScroll": false,
+					"needed": [
+						45.0,
+						22.0
+					],
+					"node": "GateDetailTitle",
+					"rect": [
+						638.0,
+						114.0,
+						226.0,
+						24.0
+					],
+					"size": 18,
+					"text": "송진우"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/KMU80HaeongSans.ttf",
+					"fontRole": "heading",
+					"insideScroll": false,
+					"needed": [
+						67.0,
+						22.0
+					],
+					"node": "@Label@77",
+					"rect": [
+						726.0,
+						165.0,
+						138.0,
+						24.0
+					],
+					"size": 18,
+					"text": "현장 적응"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/Paperlogy-4Regular.ttf",
+					"fontRole": "body",
+					"insideScroll": false,
+					"needed": [
+						115.0,
+						17.0
+					],
+					"node": "@Label@78",
+					"rect": [
+						726.0,
+						195.0,
+						138.0,
+						19.0
+					],
+					"size": 14,
+					"text": "모든 무기 피해 +5%"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/Paperlogy-4Regular.ttf",
+					"fontRole": "body",
+					"insideScroll": true,
+					"needed": [
+						213.0,
+						36.0
+					],
+					"node": "@Label@82",
+					"rect": [
+						638.0,
+						243.0,
+						218.0,
+						36.0
+					],
+					"size": 14,
+					"text": "현장에서 얻은 장비를 빠르게 익혀 자신의 방식으로 활용하는 각성자."
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/KMU80HaeongSans.ttf",
+					"fontRole": "heading",
+					"insideScroll": true,
+					"needed": [
+						66.0,
+						22.0
+					],
+					"node": "@Label@83",
+					"rect": [
+						638.0,
+						286.0,
+						218.0,
+						22.0
+					],
+					"size": 18,
+					"text": "기본 스탯"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/Paperlogy-4Regular.ttf",
+					"fontRole": "body",
+					"insideScroll": true,
+					"needed": [
+						53.0,
+						17.0
+					],
+					"node": "@Label@85",
+					"rect": [
+						638.0,
+						317.0,
+						105.0,
+						17.0
+					],
+					"size": 14,
+					"text": "공통 피해"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/BarlowCondensed-SemiBold.ttf",
+					"fontRole": "number",
+					"insideScroll": true,
+					"needed": [
+						36.0,
+						22.0
+					],
+					"node": "@Label@86",
+					"rect": [
+						751.0,
+						315.0,
+						105.0,
+						22.0
+					],
+					"size": 18,
+					"text": "100%"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/Paperlogy-4Regular.ttf",
+					"fontRole": "body",
+					"insideScroll": true,
+					"needed": [
+						53.0,
+						17.0
+					],
+					"node": "@Label@88",
+					"rect": [
+						638.0,
+						346.0,
+						105.0,
+						17.0
+					],
+					"size": 14,
+					"text": "공격 속도"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/BarlowCondensed-SemiBold.ttf",
+					"fontRole": "number",
+					"insideScroll": true,
+					"needed": [
+						36.0,
+						22.0
+					],
+					"node": "@Label@89",
+					"rect": [
+						751.0,
+						344.0,
+						105.0,
+						22.0
+					],
+					"size": 18,
+					"text": "100%"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/Paperlogy-4Regular.ttf",
+					"fontRole": "body",
+					"insideScroll": true,
+					"needed": [
+						53.0,
+						17.0
+					],
+					"node": "@Label@91",
+					"rect": [
+						638.0,
+						375.0,
+						105.0,
+						17.0
+					],
+					"size": 14,
+					"text": "근접 피해"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/BarlowCondensed-SemiBold.ttf",
+					"fontRole": "number",
+					"insideScroll": true,
+					"needed": [
+						36.0,
+						22.0
+					],
+					"node": "@Label@92",
+					"rect": [
+						751.0,
+						373.0,
+						105.0,
+						22.0
+					],
+					"size": 18,
+					"text": "100%"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/Paperlogy-4Regular.ttf",
+					"fontRole": "body",
+					"insideScroll": true,
+					"needed": [
+						65.0,
+						17.0
+					],
+					"node": "@Label@94",
+					"rect": [
+						638.0,
+						404.0,
+						105.0,
+						17.0
+					],
+					"size": 14,
+					"text": "원거리 피해"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/BarlowCondensed-SemiBold.ttf",
+					"fontRole": "number",
+					"insideScroll": true,
+					"needed": [
+						36.0,
+						22.0
+					],
+					"node": "@Label@95",
+					"rect": [
+						751.0,
+						402.0,
+						105.0,
+						22.0
+					],
+					"size": 18,
+					"text": "100%"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/Paperlogy-4Regular.ttf",
+					"fontRole": "body",
+					"insideScroll": true,
+					"needed": [
+						65.0,
+						17.0
+					],
+					"node": "@Label@97",
+					"rect": [
+						638.0,
+						433.0,
+						105.0,
+						17.0
+					],
+					"size": 14,
+					"text": "치명타 확률"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/BarlowCondensed-SemiBold.ttf",
+					"fontRole": "number",
+					"insideScroll": true,
+					"needed": [
+						22.0,
+						22.0
+					],
+					"node": "@Label@98",
+					"rect": [
+						751.0,
+						431.0,
+						105.0,
+						22.0
+					],
+					"size": 18,
+					"text": "0%"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/Paperlogy-4Regular.ttf",
+					"fontRole": "body",
+					"insideScroll": true,
+					"needed": [
+						65.0,
+						17.0
+					],
+					"node": "@Label@100",
+					"rect": [
+						638.0,
+						462.0,
+						105.0,
+						17.0
+					],
+					"size": 14,
+					"text": "치명타 피해"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/BarlowCondensed-SemiBold.ttf",
+					"fontRole": "number",
+					"insideScroll": true,
+					"needed": [
+						35.0,
+						22.0
+					],
+					"node": "@Label@101",
+					"rect": [
+						751.0,
+						460.0,
+						105.0,
+						22.0
+					],
+					"size": 18,
+					"text": "150%"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/Paperlogy-4Regular.ttf",
+					"fontRole": "body",
+					"insideScroll": true,
+					"needed": [
+						37.0,
+						17.0
+					],
+					"node": "@Label@103",
+					"rect": [
+						638.0,
+						491.0,
+						105.0,
+						17.0
+					],
+					"size": 14,
+					"text": "사거리"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/BarlowCondensed-SemiBold.ttf",
+					"fontRole": "number",
+					"insideScroll": true,
+					"needed": [
+						36.0,
+						22.0
+					],
+					"node": "@Label@104",
+					"rect": [
+						751.0,
+						489.0,
+						105.0,
+						22.0
+					],
+					"size": 18,
+					"text": "100%"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/Paperlogy-4Regular.ttf",
+					"fontRole": "body",
+					"insideScroll": true,
+					"needed": [
+						25.0,
+						17.0
+					],
+					"node": "@Label@106",
+					"rect": [
+						638.0,
+						520.0,
+						105.0,
+						17.0
+					],
+					"size": 14,
+					"text": "범위"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/BarlowCondensed-SemiBold.ttf",
+					"fontRole": "number",
+					"insideScroll": true,
+					"needed": [
+						36.0,
+						22.0
+					],
+					"node": "@Label@107",
+					"rect": [
+						751.0,
+						518.0,
+						105.0,
+						22.0
+					],
+					"size": 18,
+					"text": "100%"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/Paperlogy-4Regular.ttf",
+					"fontRole": "body",
+					"insideScroll": true,
+					"needed": [
+						50.0,
+						17.0
+					],
+					"node": "@Label@109",
+					"rect": [
+						638.0,
+						549.0,
+						105.0,
+						17.0
+					],
+					"size": 14,
+					"text": "지속시간"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/BarlowCondensed-SemiBold.ttf",
+					"fontRole": "number",
+					"insideScroll": true,
+					"needed": [
+						36.0,
+						22.0
+					],
+					"node": "@Label@110",
+					"rect": [
+						751.0,
+						547.0,
+						105.0,
+						22.0
+					],
+					"size": 18,
+					"text": "100%"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/Paperlogy-4Regular.ttf",
+					"fontRole": "body",
+					"insideScroll": true,
+					"needed": [
+						65.0,
+						17.0
+					],
+					"node": "@Label@112",
+					"rect": [
+						638.0,
+						578.0,
+						105.0,
+						17.0
+					],
+					"size": 14,
+					"text": "투사체 속도"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/BarlowCondensed-SemiBold.ttf",
+					"fontRole": "number",
+					"insideScroll": true,
+					"needed": [
+						36.0,
+						22.0
+					],
+					"node": "@Label@113",
+					"rect": [
+						751.0,
+						576.0,
+						105.0,
+						22.0
+					],
+					"size": 18,
+					"text": "100%"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/Paperlogy-4Regular.ttf",
+					"fontRole": "body",
+					"insideScroll": true,
+					"needed": [
+						53.0,
+						17.0
+					],
+					"node": "@Label@115",
+					"rect": [
+						638.0,
+						607.0,
+						105.0,
+						17.0
+					],
+					"size": 14,
+					"text": "최대 체력"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/BarlowCondensed-SemiBold.ttf",
+					"fontRole": "number",
+					"insideScroll": true,
+					"needed": [
+						22.0,
+						22.0
+					],
+					"node": "@Label@116",
+					"rect": [
+						751.0,
+						605.0,
+						105.0,
+						22.0
+					],
+					"size": 18,
+					"text": "100"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/Paperlogy-4Regular.ttf",
+					"fontRole": "body",
+					"insideScroll": true,
+					"needed": [
+						37.0,
+						17.0
+					],
+					"node": "@Label@118",
+					"rect": [
+						638.0,
+						636.0,
+						105.0,
+						17.0
+					],
+					"size": 14,
+					"text": "방어력"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/BarlowCondensed-SemiBold.ttf",
+					"fontRole": "number",
+					"insideScroll": true,
+					"needed": [
+						9.0,
+						22.0
+					],
+					"node": "@Label@119",
+					"rect": [
+						751.0,
+						634.0,
+						105.0,
+						22.0
+					],
+					"size": 18,
+					"text": "0"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/Paperlogy-4Regular.ttf",
+					"fontRole": "body",
+					"insideScroll": true,
+					"needed": [
+						25.0,
+						17.0
+					],
+					"node": "@Label@121",
+					"rect": [
+						638.0,
+						665.0,
+						105.0,
+						17.0
+					],
+					"size": 14,
+					"text": "회피"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/BarlowCondensed-SemiBold.ttf",
+					"fontRole": "number",
+					"insideScroll": true,
+					"needed": [
+						22.0,
+						22.0
+					],
+					"node": "@Label@122",
+					"rect": [
+						751.0,
+						663.0,
+						105.0,
+						22.0
+					],
+					"size": 18,
+					"text": "0%"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/Paperlogy-4Regular.ttf",
+					"fontRole": "body",
+					"insideScroll": true,
+					"needed": [
+						25.0,
+						17.0
+					],
+					"node": "@Label@124",
+					"rect": [
+						638.0,
+						694.0,
+						105.0,
+						17.0
+					],
+					"size": 14,
+					"text": "흡혈"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/BarlowCondensed-SemiBold.ttf",
+					"fontRole": "number",
+					"insideScroll": true,
+					"needed": [
+						22.0,
+						22.0
+					],
+					"node": "@Label@125",
+					"rect": [
+						751.0,
+						692.0,
+						105.0,
+						22.0
+					],
+					"size": 18,
+					"text": "0%"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/Paperlogy-4Regular.ttf",
+					"fontRole": "body",
+					"insideScroll": true,
+					"needed": [
+						53.0,
+						17.0
+					],
+					"node": "@Label@127",
+					"rect": [
+						638.0,
+						723.0,
+						105.0,
+						17.0
+					],
+					"size": 14,
+					"text": "초당 회복"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/BarlowCondensed-SemiBold.ttf",
+					"fontRole": "number",
+					"insideScroll": true,
+					"needed": [
+						9.0,
+						22.0
+					],
+					"node": "@Label@128",
+					"rect": [
+						751.0,
+						721.0,
+						105.0,
+						22.0
+					],
+					"size": 18,
+					"text": "0"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/Paperlogy-4Regular.ttf",
+					"fontRole": "body",
+					"insideScroll": true,
+					"needed": [
+						53.0,
+						17.0
+					],
+					"node": "@Label@130",
+					"rect": [
+						638.0,
+						752.0,
+						105.0,
+						17.0
+					],
+					"size": 14,
+					"text": "이동 속도"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/BarlowCondensed-SemiBold.ttf",
+					"fontRole": "number",
+					"insideScroll": true,
+					"needed": [
+						21.0,
+						22.0
+					],
+					"node": "@Label@131",
+					"rect": [
+						751.0,
+						750.0,
+						105.0,
+						22.0
+					],
+					"size": 18,
+					"text": "185"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/Paperlogy-4Regular.ttf",
+					"fontRole": "body",
+					"insideScroll": true,
+					"needed": [
+						65.0,
+						17.0
+					],
+					"node": "@Label@133",
+					"rect": [
+						638.0,
+						781.0,
+						105.0,
+						17.0
+					],
+					"size": 14,
+					"text": "마력석 획득"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/BarlowCondensed-SemiBold.ttf",
+					"fontRole": "number",
+					"insideScroll": true,
+					"needed": [
+						36.0,
+						22.0
+					],
+					"node": "@Label@134",
+					"rect": [
+						751.0,
+						779.0,
+						105.0,
+						22.0
+					],
+					"size": 18,
+					"text": "100%"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/Paperlogy-4Regular.ttf",
+					"fontRole": "body",
+					"insideScroll": true,
+					"needed": [
+						53.0,
+						17.0
+					],
+					"node": "@Label@136",
+					"rect": [
+						638.0,
+						810.0,
+						105.0,
+						17.0
+					],
+					"size": 14,
+					"text": "획득 범위"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/BarlowCondensed-SemiBold.ttf",
+					"fontRole": "number",
+					"insideScroll": true,
+					"needed": [
+						22.0,
+						22.0
+					],
+					"node": "@Label@137",
+					"rect": [
+						751.0,
+						808.0,
+						105.0,
+						22.0
+					],
+					"size": 18,
+					"text": "100"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/Paperlogy-4Regular.ttf",
+					"fontRole": "body",
+					"insideScroll": true,
+					"needed": [
+						25.0,
+						17.0
+					],
+					"node": "@Label@139",
+					"rect": [
+						638.0,
+						839.0,
+						105.0,
+						17.0
+					],
+					"size": 14,
+					"text": "행운"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/BarlowCondensed-SemiBold.ttf",
+					"fontRole": "number",
+					"insideScroll": true,
+					"needed": [
+						9.0,
+						22.0
+					],
+					"node": "@Label@140",
+					"rect": [
+						751.0,
+						837.0,
+						105.0,
+						22.0
+					],
+					"size": 18,
+					"text": "0"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/Paperlogy-4Regular.ttf",
+					"fontRole": "body",
+					"insideScroll": true,
+					"needed": [
+						25.0,
+						17.0
+					],
+					"node": "@Label@142",
+					"rect": [
+						638.0,
+						868.0,
+						105.0,
+						17.0
+					],
+					"size": 14,
+					"text": "저주"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/BarlowCondensed-SemiBold.ttf",
+					"fontRole": "number",
+					"insideScroll": true,
+					"needed": [
+						9.0,
+						22.0
+					],
+					"node": "@Label@143",
+					"rect": [
+						751.0,
+						866.0,
+						105.0,
+						22.0
+					],
+					"size": 18,
+					"text": "0"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/Paperlogy-4Regular.ttf",
+					"fontRole": "body",
+					"insideScroll": false,
+					"needed": [
+						100.0,
+						17.0
+					],
+					"node": "@Label@144",
+					"rect": [
+						36.0,
+						351.0,
+						655.0,
+						45.0
+					],
+					"size": 14,
+					"text": "현재 선택 · 송진우"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/Paperlogy-5Medium.ttf",
+					"fontRole": "control",
+					"insideScroll": false,
+					"needed": [
+						92.0,
+						20.0
+					],
+					"node": "@Button@145",
+					"rect": [
+						711.0,
+						351.0,
+						174.0,
+						45.0
+					],
+					"size": 16,
+					"text": "시작 무기 선택"
+				}
+			],
+			"materials": [
+				{
+					"node": "OperationsHeader",
+					"role": "ops/header",
+					"texture": "res://assets/ui/image-skin/operations-standard-01/header-4x.png"
+				},
+				{
+					"node": "HeaderBack",
+					"role": "compact/back",
+					"texture": "res://assets/ui/image-skin/operations-light-controls-02/back-4x.png"
+				},
+				{
+					"node": "GateChoice_awakener",
+					"role": "accents/selection",
+					"texture": "res://assets/ui/image-skin/runtime/cards_01.png"
+				},
+				{
+					"node": "GateChoice_kangTaehoon",
+					"role": "glass/cell",
+					"texture": "res://assets/ui/image-skin/runtime/cards_01.png"
+				},
+				{
+					"node": "GateChoice_parkDojun",
+					"role": "glass/cell",
+					"texture": "res://assets/ui/image-skin/runtime/cards_01.png"
+				},
+				{
+					"node": "GateChoice_yoonHarin",
+					"role": "glass/cell",
+					"texture": "res://assets/ui/image-skin/runtime/cards_01.png"
+				},
+				{
+					"node": "GateSelectionPanel",
+					"role": "ops/info",
+					"texture": "res://assets/ui/image-skin/operations-standard-01/info-4x.png"
+				},
+				{
+					"node": "@Button@145",
+					"role": "ops/primary",
+					"texture": "res://assets/ui/image-skin/operations-standard-01/primary-4x.png"
+				}
+			],
+			"pixelSize": [
+				915,
+				412
+			],
+			"screen": "compact-03-character",
+			"tooltips": []
+		},
+		{
+			"class": "HeroMobileScreen",
+			"fitIssues": [],
+			"labels": [
+				{
+					"fontFile": "res://assets/ui/fonts/BMJUA.ttf",
+					"fontRole": "brand",
+					"insideScroll": false,
+					"needed": [
+						87.0,
+						25.0
+					],
+					"node": "ShopTitle",
+					"rect": [
+						42.0,
+						31.0,
+						137.0,
+						35.0
+					],
+					"size": 24,
+					"text": "게이트24"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/BarlowCondensed-SemiBold.ttf",
+					"fontRole": "number",
+					"insideScroll": false,
+					"needed": [
+						43.0,
+						22.0
+					],
+					"node": "@Label@152",
+					"rect": [
+						225.5,
+						33.0,
+						45.0,
+						32.0
+					],
+					"size": 18,
+					"text": "12 / 20"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/BarlowCondensed-SemiBold.ttf",
+					"fontRole": "number",
+					"insideScroll": false,
+					"needed": [
+						25.0,
+						22.0
+					],
+					"node": "ShopCurrency",
+					"rect": [
+						353.5,
+						33.0,
+						27.0,
+						32.0
+					],
+					"size": 18,
+					"text": "240"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/Paperlogy-5Medium.ttf",
+					"fontRole": "control",
+					"insideScroll": false,
+					"needed": [
+						29.0,
+						20.0
+					],
+					"node": "ShopWeaponsTab",
+					"rect": [
+						438.0,
+						27.0,
+						84.0,
+						44.0
+					],
+					"size": 16,
+					"text": "무기"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/Paperlogy-5Medium.ttf",
+					"fontRole": "control",
+					"insideScroll": false,
+					"needed": [
+						43.0,
+						20.0
+					],
+					"node": "ShopItemsTab",
+					"rect": [
+						530.0,
+						27.0,
+						84.0,
+						44.0
+					],
+					"size": 16,
+					"text": "아이템"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/BarlowCondensed-SemiBold.ttf",
+					"fontRole": "number",
+					"insideScroll": false,
+					"needed": [
+						7.0,
+						20.0
+					],
+					"node": "@Label@160",
+					"rect": [
+						740.5,
+						33.0,
+						9.0,
+						32.0
+					],
+					"size": 16,
+					"text": "5"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/KMU80HaeongSans.ttf",
+					"fontRole": "heading",
+					"insideScroll": false,
+					"needed": [
+						45.0,
+						22.0
+					],
+					"node": "@Label@165",
+					"rect": [
+						39.0,
+						225.0,
+						138.0,
+						29.0
+					],
+					"size": 18,
+					"text": "송진우"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/BarlowCondensed-SemiBold.ttf",
+					"fontRole": "number",
+					"insideScroll": false,
+					"needed": [
+						52.0,
+						22.0
+					],
+					"node": "@Label@167",
+					"rect": [
+						68.0,
+						253.0,
+						105.0,
+						23.0
+					],
+					"size": 18,
+					"text": "84 / 100"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/BarlowCondensed-SemiBold.ttf",
+					"fontRole": "number",
+					"insideScroll": false,
+					"needed": [
+						36.0,
+						22.0
+					],
+					"node": "@Label@169",
+					"rect": [
+						68.0,
+						274.0,
+						105.0,
+						23.0
+					],
+					"size": 18,
+					"text": "100%"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/BarlowCondensed-SemiBold.ttf",
+					"fontRole": "number",
+					"insideScroll": false,
+					"needed": [
+						32.0,
+						22.0
+					],
+					"node": "@Label@171",
+					"rect": [
+						68.0,
+						295.0,
+						105.0,
+						23.0
+					],
+					"size": 18,
+					"text": "110%"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/BarlowCondensed-SemiBold.ttf",
+					"fontRole": "number",
+					"insideScroll": false,
+					"needed": [
+						9.0,
+						22.0
+					],
+					"node": "@Label@173",
+					"rect": [
+						68.0,
+						316.0,
+						105.0,
+						23.0
+					],
+					"size": 18,
+					"text": "0"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/Paperlogy-5Medium.ttf",
+					"fontRole": "control",
+					"insideScroll": false,
+					"needed": [
+						60.0,
+						20.0
+					],
+					"node": "@Button@174",
+					"rect": [
+						37.0,
+						348.0,
+						145.0,
+						44.0
+					],
+					"size": 16,
+					"text": "전체 스탯"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/KMU80HaeongSans.ttf",
+					"fontRole": "heading",
+					"insideScroll": false,
+					"needed": [
+						67.0,
+						22.0
+					],
+					"node": "CardName",
+					"rect": [
+						225.0,
+						166.0,
+						122.0,
+						50.0
+					],
+					"size": 18,
+					"text": "불사 성냥"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/Paperlogy-4Regular.ttf",
+					"fontRole": "body",
+					"insideScroll": false,
+					"needed": [
+						109.0,
+						34.0
+					],
+					"node": "CardSummary",
+					"rect": [
+						225.0,
+						221.0,
+						122.0,
+						36.0
+					],
+					"size": 13,
+					"text": "한 판 1회 HP 1 생존\n2.5초 무적"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/Paperlogy-4Regular.ttf",
+					"fontRole": "body",
+					"insideScroll": false,
+					"needed": [
+						71.0,
+						16.0
+					],
+					"node": "CardNote",
+					"rect": [
+						225.0,
+						262.0,
+						122.0,
+						38.0
+					],
+					"size": 13,
+					"text": "최대 HP -10"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/BarlowCondensed-SemiBold.ttf",
+					"fontRole": "number",
+					"insideScroll": false,
+					"needed": [
+						14.0,
+						20.0
+					],
+					"node": "@Label@184",
+					"rect": [
+						290.0,
+						305.0,
+						16.0,
+						32.0
+					],
+					"size": 16,
+					"text": "96"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/KMU80HaeongSans.ttf",
+					"fontRole": "heading",
+					"insideScroll": false,
+					"needed": [
+						66.0,
+						22.0
+					],
+					"node": "CardName",
+					"rect": [
+						396.0,
+						166.0,
+						122.0,
+						50.0
+					],
+					"size": 18,
+					"text": "금고 장부"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/Paperlogy-4Regular.ttf",
+					"fontRole": "body",
+					"insideScroll": false,
+					"needed": [
+						98.0,
+						34.0
+					],
+					"node": "CardSummary",
+					"rect": [
+						396.0,
+						221.0,
+						122.0,
+						36.0
+					],
+					"size": 13,
+					"text": "보유 마력석에 따라\n피해 최대 +30%"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/Paperlogy-4Regular.ttf",
+					"fontRole": "body",
+					"insideScroll": false,
+					"needed": [
+						72.0,
+						16.0
+					],
+					"node": "CardNote",
+					"rect": [
+						396.0,
+						262.0,
+						122.0,
+						38.0
+					],
+					"size": 13,
+					"text": "획득범위 -10"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/BarlowCondensed-SemiBold.ttf",
+					"fontRole": "number",
+					"insideScroll": false,
+					"needed": [
+						15.0,
+						20.0
+					],
+					"node": "@Label@196",
+					"rect": [
+						460.5,
+						305.0,
+						17.0,
+						32.0
+					],
+					"size": 16,
+					"text": "48"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/KMU80HaeongSans.ttf",
+					"fontRole": "heading",
+					"insideScroll": false,
+					"needed": [
+						65.0,
+						22.0
+					],
+					"node": "CardName",
+					"rect": [
+						567.0,
+						166.0,
+						122.0,
+						50.0
+					],
+					"size": 18,
+					"text": "보복 퓨즈"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/Paperlogy-4Regular.ttf",
+					"fontRole": "body",
+					"insideScroll": false,
+					"needed": [
+						89.0,
+						34.0
+					],
+					"node": "CardSummary",
+					"rect": [
+						567.0,
+						221.0,
+						122.0,
+						36.0
+					],
+					"size": 13,
+					"text": "피격 시 주변 피해\n고정 24 · 쿨 6초"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/Paperlogy-4Regular.ttf",
+					"fontRole": "body",
+					"insideScroll": false,
+					"needed": [
+						52.0,
+						16.0
+					],
+					"node": "CardNote",
+					"rect": [
+						567.0,
+						262.0,
+						122.0,
+						38.0
+					],
+					"size": 13,
+					"text": "회피 -4%"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/BarlowCondensed-SemiBold.ttf",
+					"fontRole": "number",
+					"insideScroll": false,
+					"needed": [
+						14.0,
+						20.0
+					],
+					"node": "@Label@208",
+					"rect": [
+						632.0,
+						305.0,
+						16.0,
+						32.0
+					],
+					"size": 16,
+					"text": "52"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/KMU80HaeongSans.ttf",
+					"fontRole": "heading",
+					"insideScroll": false,
+					"needed": [
+						117.0,
+						22.0
+					],
+					"node": "CardName",
+					"rect": [
+						738.0,
+						166.0,
+						122.0,
+						50.0
+					],
+					"size": 18,
+					"text": "전술 발목 보호대"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/Paperlogy-4Regular.ttf",
+					"fontRole": "body",
+					"insideScroll": false,
+					"needed": [
+						66.0,
+						34.0
+					],
+					"node": "CardSummary",
+					"rect": [
+						738.0,
+						221.0,
+						122.0,
+						36.0
+					],
+					"size": 13,
+					"text": "회피 +2%\n이동속도 +3"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/BarlowCondensed-SemiBold.ttf",
+					"fontRole": "number",
+					"insideScroll": false,
+					"needed": [
+						12.0,
+						20.0
+					],
+					"node": "@Label@220",
+					"rect": [
+						804.0,
+						305.0,
+						14.0,
+						32.0
+					],
+					"size": 16,
+					"text": "19"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/Paperlogy-5Medium.ttf",
+					"fontRole": "control",
+					"insideScroll": false,
+					"needed": [
+						89.0,
+						20.0
+					],
+					"node": "@Button@223",
+					"rect": [
+						205.0,
+						350.0,
+						163.0,
+						44.0
+					],
+					"size": 16,
+					"text": "보유 아이템 7"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/BarlowCondensed-SemiBold.ttf",
+					"fontRole": "number",
+					"insideScroll": false,
+					"needed": [
+						5.0,
+						22.0
+					],
+					"node": "@Label@225",
+					"rect": [
+						406.0,
+						357.0,
+						14.0,
+						30.0
+					],
+					"size": 18,
+					"text": "1"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/BarlowCondensed-SemiBold.ttf",
+					"fontRole": "number",
+					"insideScroll": false,
+					"needed": [
+						8.0,
+						22.0
+					],
+					"node": "@Label@227",
+					"rect": [
+						452.0,
+						357.0,
+						14.0,
+						30.0
+					],
+					"size": 18,
+					"text": "2"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/BarlowCondensed-SemiBold.ttf",
+					"fontRole": "number",
+					"insideScroll": false,
+					"needed": [
+						8.0,
+						22.0
+					],
+					"node": "@Label@229",
+					"rect": [
+						498.0,
+						357.0,
+						14.0,
+						30.0
+					],
+					"size": 18,
+					"text": "3"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/BarlowCondensed-SemiBold.ttf",
+					"fontRole": "number",
+					"insideScroll": false,
+					"needed": [
+						9.0,
+						22.0
+					],
+					"node": "@Label@231",
+					"rect": [
+						544.0,
+						357.0,
+						14.0,
+						30.0
+					],
+					"size": 18,
+					"text": "4"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/BarlowCondensed-SemiBold.ttf",
+					"fontRole": "number",
+					"insideScroll": false,
+					"needed": [
+						8.0,
+						22.0
+					],
+					"node": "@Label@233",
+					"rect": [
+						590.0,
+						357.0,
+						14.0,
+						30.0
+					],
+					"size": 18,
+					"text": "5"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/BarlowCondensed-SemiBold.ttf",
+					"fontRole": "number",
+					"insideScroll": false,
+					"needed": [
+						5.0,
+						22.0
+					],
+					"node": "@Label@235",
+					"rect": [
+						636.0,
+						357.0,
+						14.0,
+						30.0
+					],
+					"size": 18,
+					"text": "1"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/Paperlogy-5Medium.ttf",
+					"fontRole": "control",
+					"insideScroll": false,
+					"needed": [
+						74.0,
+						20.0
+					],
+					"node": "@Button@236",
+					"rect": [
+						674.0,
+						350.0,
+						205.0,
+						44.0
+					],
+					"size": 16,
+					"text": "다음 웨이브"
+				}
+			],
+			"materials": [
+				{
+					"node": "@Panel@148",
+					"role": "cstore/cabinet",
+					"texture": "res://assets/ui/image-skin/enamel-glass/cstore_surfaces_02.png"
+				},
+				{
+					"node": "@Panel@149",
+					"role": "cstore/header",
+					"texture": "res://assets/ui/image-skin/enamel-glass/cstore_surfaces_02.png"
+				},
+				{
+					"node": "ShopWeaponsTab",
+					"role": "compact/tab",
+					"texture": "res://assets/ui/image-skin/operations-light-controls-02/tab-4x.png"
+				},
+				{
+					"node": "ShopItemsTab",
+					"role": "compact/tab",
+					"texture": "res://assets/ui/image-skin/operations-light-controls-02/tab-4x.png"
+				},
+				{
+					"node": "ShopReroll",
+					"role": "compact/secondary",
+					"texture": "res://assets/ui/image-skin/operations-light-controls-02/secondary-4x.png"
+				},
+				{
+					"node": "@Panel@163",
+					"role": "cstore/info",
+					"texture": "res://assets/ui/image-skin/enamel-glass/cstore_surfaces_02.png"
+				},
+				{
+					"node": "@Button@174",
+					"role": "compact/secondary",
+					"texture": "res://assets/ui/image-skin/operations-light-controls-02/secondary-4x.png"
+				},
+				{
+					"node": "ShopProduct_0",
+					"role": "cstore/card",
+					"texture": "res://assets/ui/image-skin/enamel-glass/cstore_surfaces_02.png"
+				},
+				{
+					"node": "@Panel@182",
+					"role": "cstore/purchase_disabled_yellow",
+					"texture": "res://assets/ui/image-skin/enamel-glass/purchase_yellow_04.png"
+				},
+				{
+					"node": "ShopProduct_1",
+					"role": "cstore/card",
+					"texture": "res://assets/ui/image-skin/enamel-glass/cstore_surfaces_02.png"
+				},
+				{
+					"node": "@Panel@194",
+					"role": "cstore/purchase_yellow",
+					"texture": "res://assets/ui/image-skin/enamel-glass/purchase_yellow_04.png"
+				},
+				{
+					"node": "ShopProduct_2",
+					"role": "cstore/card",
+					"texture": "res://assets/ui/image-skin/enamel-glass/cstore_surfaces_02.png"
+				},
+				{
+					"node": "@Panel@206",
+					"role": "cstore/purchase_yellow",
+					"texture": "res://assets/ui/image-skin/enamel-glass/purchase_yellow_04.png"
+				},
+				{
+					"node": "ShopProduct_3",
+					"role": "cstore/card",
+					"texture": "res://assets/ui/image-skin/enamel-glass/cstore_surfaces_02.png"
+				},
+				{
+					"node": "@Panel@218",
+					"role": "cstore/purchase_yellow",
+					"texture": "res://assets/ui/image-skin/enamel-glass/purchase_yellow_04.png"
+				},
+				{
+					"node": "@Button@223",
+					"role": "compact/secondary",
+					"texture": "res://assets/ui/image-skin/operations-light-controls-02/secondary-4x.png"
+				},
+				{
+					"node": "@Button@236",
+					"role": "compact/primary",
+					"texture": "res://assets/ui/image-skin/operations-light-controls-02/primary-4x.png"
+				}
+			],
+			"pixelSize": [
+				915,
+				412
+			],
+			"screen": "compact-04-shop-items",
+			"tooltips": []
+		},
+		{
+			"class": "HeroMobileScreen",
+			"fitIssues": [],
+			"labels": [
+				{
+					"fontFile": "res://assets/ui/fonts/BMJUA.ttf",
+					"fontRole": "brand",
+					"insideScroll": false,
+					"needed": [
+						87.0,
+						25.0
+					],
+					"node": "ShopTitle",
+					"rect": [
+						42.0,
+						31.0,
+						137.0,
+						35.0
+					],
+					"size": 24,
+					"text": "게이트24"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/BarlowCondensed-SemiBold.ttf",
+					"fontRole": "number",
+					"insideScroll": false,
+					"needed": [
+						43.0,
+						22.0
+					],
+					"node": "@Label@243",
+					"rect": [
+						225.5,
+						33.0,
+						45.0,
+						32.0
+					],
+					"size": 18,
+					"text": "12 / 20"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/BarlowCondensed-SemiBold.ttf",
+					"fontRole": "number",
+					"insideScroll": false,
+					"needed": [
+						25.0,
+						22.0
+					],
+					"node": "ShopCurrency",
+					"rect": [
+						353.5,
+						33.0,
+						27.0,
+						32.0
+					],
+					"size": 18,
+					"text": "240"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/Paperlogy-5Medium.ttf",
+					"fontRole": "control",
+					"insideScroll": false,
+					"needed": [
+						29.0,
+						20.0
+					],
+					"node": "ShopWeaponsTab",
+					"rect": [
+						438.0,
+						27.0,
+						84.0,
+						44.0
+					],
+					"size": 16,
+					"text": "무기"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/Paperlogy-5Medium.ttf",
+					"fontRole": "control",
+					"insideScroll": false,
+					"needed": [
+						43.0,
+						20.0
+					],
+					"node": "ShopItemsTab",
+					"rect": [
+						530.0,
+						27.0,
+						84.0,
+						44.0
+					],
+					"size": 16,
+					"text": "아이템"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/BarlowCondensed-SemiBold.ttf",
+					"fontRole": "number",
+					"insideScroll": false,
+					"needed": [
+						7.0,
+						20.0
+					],
+					"node": "@Label@251",
+					"rect": [
+						740.5,
+						33.0,
+						9.0,
+						32.0
+					],
+					"size": 16,
+					"text": "6"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/KMU80HaeongSans.ttf",
+					"fontRole": "heading",
+					"insideScroll": false,
+					"needed": [
+						45.0,
+						22.0
+					],
+					"node": "@Label@256",
+					"rect": [
+						39.0,
+						225.0,
+						138.0,
+						29.0
+					],
+					"size": 18,
+					"text": "송진우"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/BarlowCondensed-SemiBold.ttf",
+					"fontRole": "number",
+					"insideScroll": false,
+					"needed": [
+						52.0,
+						22.0
+					],
+					"node": "@Label@258",
+					"rect": [
+						68.0,
+						253.0,
+						105.0,
+						23.0
+					],
+					"size": 18,
+					"text": "84 / 100"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/BarlowCondensed-SemiBold.ttf",
+					"fontRole": "number",
+					"insideScroll": false,
+					"needed": [
+						36.0,
+						22.0
+					],
+					"node": "@Label@260",
+					"rect": [
+						68.0,
+						274.0,
+						105.0,
+						23.0
+					],
+					"size": 18,
+					"text": "100%"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/BarlowCondensed-SemiBold.ttf",
+					"fontRole": "number",
+					"insideScroll": false,
+					"needed": [
+						32.0,
+						22.0
+					],
+					"node": "@Label@262",
+					"rect": [
+						68.0,
+						295.0,
+						105.0,
+						23.0
+					],
+					"size": 18,
+					"text": "110%"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/BarlowCondensed-SemiBold.ttf",
+					"fontRole": "number",
+					"insideScroll": false,
+					"needed": [
+						9.0,
+						22.0
+					],
+					"node": "@Label@264",
+					"rect": [
+						68.0,
+						316.0,
+						105.0,
+						23.0
+					],
+					"size": 18,
+					"text": "0"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/Paperlogy-5Medium.ttf",
+					"fontRole": "control",
+					"insideScroll": false,
+					"needed": [
+						60.0,
+						20.0
+					],
+					"node": "@Button@265",
+					"rect": [
+						37.0,
+						348.0,
+						145.0,
+						44.0
+					],
+					"size": 16,
+					"text": "전체 스탯"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/KMU80HaeongSans.ttf",
+					"fontRole": "heading",
+					"insideScroll": false,
+					"needed": [
+						47.0,
+						22.0
+					],
+					"node": "CardName",
+					"rect": [
+						225.0,
+						166.0,
+						122.0,
+						50.0
+					],
+					"size": 18,
+					"text": "마력검"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/Paperlogy-4Regular.ttf",
+					"fontRole": "body",
+					"insideScroll": false,
+					"needed": [
+						86.0,
+						34.0
+					],
+					"node": "CardSummary",
+					"rect": [
+						225.0,
+						221.0,
+						122.0,
+						36.0
+					],
+					"size": 13,
+					"text": "가까운 적을 향한\n넓은 부채꼴 베기"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/Paperlogy-4Regular.ttf",
+					"fontRole": "body",
+					"insideScroll": false,
+					"needed": [
+						52.0,
+						16.0
+					],
+					"node": "CardNote",
+					"rect": [
+						225.0,
+						262.0,
+						122.0,
+						38.0
+					],
+					"size": 13,
+					"text": "Lv.2 강화"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/BarlowCondensed-SemiBold.ttf",
+					"fontRole": "number",
+					"insideScroll": false,
+					"needed": [
+						12.0,
+						20.0
+					],
+					"node": "@Label@275",
+					"rect": [
+						291.0,
+						305.0,
+						14.0,
+						32.0
+					],
+					"size": 16,
+					"text": "18"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/KMU80HaeongSans.ttf",
+					"fontRole": "heading",
+					"insideScroll": false,
+					"needed": [
+						66.0,
+						22.0
+					],
+					"node": "CardName",
+					"rect": [
+						396.0,
+						166.0,
+						122.0,
+						50.0
+					],
+					"size": 18,
+					"text": "수호 표창"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/Paperlogy-4Regular.ttf",
+					"fontRole": "body",
+					"insideScroll": false,
+					"needed": [
+						89.0,
+						34.0
+					],
+					"node": "CardSummary",
+					"rect": [
+						396.0,
+						221.0,
+						122.0,
+						36.0
+					],
+					"size": 13,
+					"text": "몸 주위 회전 공격\n근접 적 견제"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/Paperlogy-4Regular.ttf",
+					"fontRole": "body",
+					"insideScroll": false,
+					"needed": [
+						52.0,
+						16.0
+					],
+					"node": "CardNote",
+					"rect": [
+						396.0,
+						262.0,
+						122.0,
+						38.0
+					],
+					"size": 13,
+					"text": "Lv.3 강화"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/BarlowCondensed-SemiBold.ttf",
+					"fontRole": "number",
+					"insideScroll": false,
+					"needed": [
+						14.0,
+						20.0
+					],
+					"node": "@Label@287",
+					"rect": [
+						461.0,
+						305.0,
+						16.0,
+						32.0
+					],
+					"size": 16,
+					"text": "23"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/KMU80HaeongSans.ttf",
+					"fontRole": "heading",
+					"insideScroll": false,
+					"needed": [
+						48.0,
+						22.0
+					],
+					"node": "CardName",
+					"rect": [
+						567.0,
+						166.0,
+						122.0,
+						50.0
+					],
+					"size": 18,
+					"text": "마력탄"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/Paperlogy-4Regular.ttf",
+					"fontRole": "body",
+					"insideScroll": false,
+					"needed": [
+						98.0,
+						34.0
+					],
+					"node": "CardSummary",
+					"rect": [
+						567.0,
+						221.0,
+						122.0,
+						36.0
+					],
+					"size": 13,
+					"text": "가까운 적을 노리는\n마력 투사체"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/Paperlogy-4Regular.ttf",
+					"fontRole": "body",
+					"insideScroll": false,
+					"needed": [
+						51.0,
+						16.0
+					],
+					"node": "CardNote",
+					"rect": [
+						567.0,
+						262.0,
+						122.0,
+						38.0
+					],
+					"size": 13,
+					"text": "Lv.4 강화"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/BarlowCondensed-SemiBold.ttf",
+					"fontRole": "number",
+					"insideScroll": false,
+					"needed": [
+						14.0,
+						20.0
+					],
+					"node": "@Label@299",
+					"rect": [
+						632.0,
+						305.0,
+						16.0,
+						32.0
+					],
+					"size": 16,
+					"text": "29"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/KMU80HaeongSans.ttf",
+					"fontRole": "heading",
+					"insideScroll": false,
+					"needed": [
+						67.0,
+						22.0
+					],
+					"node": "CardName",
+					"rect": [
+						738.0,
+						166.0,
+						122.0,
+						50.0
+					],
+					"size": 18,
+					"text": "관통 사격"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/Paperlogy-4Regular.ttf",
+					"fontRole": "body",
+					"insideScroll": false,
+					"needed": [
+						98.0,
+						34.0
+					],
+					"node": "CardSummary",
+					"rect": [
+						738.0,
+						221.0,
+						122.0,
+						36.0
+					],
+					"size": 13,
+					"text": "여러 적을 관통하는\n고속 장거리 탄"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/Paperlogy-4Regular.ttf",
+					"fontRole": "body",
+					"insideScroll": false,
+					"needed": [
+						52.0,
+						16.0
+					],
+					"node": "CardNote",
+					"rect": [
+						738.0,
+						262.0,
+						122.0,
+						38.0
+					],
+					"size": 13,
+					"text": "Lv.5 강화"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/BarlowCondensed-SemiBold.ttf",
+					"fontRole": "number",
+					"insideScroll": false,
+					"needed": [
+						14.0,
+						20.0
+					],
+					"node": "@Label@311",
+					"rect": [
+						803.0,
+						305.0,
+						16.0,
+						32.0
+					],
+					"size": 16,
+					"text": "36"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/Paperlogy-5Medium.ttf",
+					"fontRole": "control",
+					"insideScroll": false,
+					"needed": [
+						89.0,
+						20.0
+					],
+					"node": "@Button@314",
+					"rect": [
+						205.0,
+						350.0,
+						163.0,
+						44.0
+					],
+					"size": 16,
+					"text": "보유 아이템 7"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/BarlowCondensed-SemiBold.ttf",
+					"fontRole": "number",
+					"insideScroll": false,
+					"needed": [
+						5.0,
+						22.0
+					],
+					"node": "@Label@316",
+					"rect": [
+						406.0,
+						357.0,
+						14.0,
+						30.0
+					],
+					"size": 18,
+					"text": "1"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/BarlowCondensed-SemiBold.ttf",
+					"fontRole": "number",
+					"insideScroll": false,
+					"needed": [
+						8.0,
+						22.0
+					],
+					"node": "@Label@318",
+					"rect": [
+						452.0,
+						357.0,
+						14.0,
+						30.0
+					],
+					"size": 18,
+					"text": "2"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/BarlowCondensed-SemiBold.ttf",
+					"fontRole": "number",
+					"insideScroll": false,
+					"needed": [
+						8.0,
+						22.0
+					],
+					"node": "@Label@320",
+					"rect": [
+						498.0,
+						357.0,
+						14.0,
+						30.0
+					],
+					"size": 18,
+					"text": "3"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/BarlowCondensed-SemiBold.ttf",
+					"fontRole": "number",
+					"insideScroll": false,
+					"needed": [
+						9.0,
+						22.0
+					],
+					"node": "@Label@322",
+					"rect": [
+						544.0,
+						357.0,
+						14.0,
+						30.0
+					],
+					"size": 18,
+					"text": "4"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/BarlowCondensed-SemiBold.ttf",
+					"fontRole": "number",
+					"insideScroll": false,
+					"needed": [
+						8.0,
+						22.0
+					],
+					"node": "@Label@324",
+					"rect": [
+						590.0,
+						357.0,
+						14.0,
+						30.0
+					],
+					"size": 18,
+					"text": "5"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/BarlowCondensed-SemiBold.ttf",
+					"fontRole": "number",
+					"insideScroll": false,
+					"needed": [
+						5.0,
+						22.0
+					],
+					"node": "@Label@326",
+					"rect": [
+						636.0,
+						357.0,
+						14.0,
+						30.0
+					],
+					"size": 18,
+					"text": "1"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/Paperlogy-5Medium.ttf",
+					"fontRole": "control",
+					"insideScroll": false,
+					"needed": [
+						74.0,
+						20.0
+					],
+					"node": "@Button@327",
+					"rect": [
+						674.0,
+						350.0,
+						205.0,
+						44.0
+					],
+					"size": 16,
+					"text": "다음 웨이브"
+				}
+			],
+			"materials": [
+				{
+					"node": "@Panel@239",
+					"role": "cstore/cabinet",
+					"texture": "res://assets/ui/image-skin/enamel-glass/cstore_surfaces_02.png"
+				},
+				{
+					"node": "@Panel@240",
+					"role": "cstore/header",
+					"texture": "res://assets/ui/image-skin/enamel-glass/cstore_surfaces_02.png"
+				},
+				{
+					"node": "ShopWeaponsTab",
+					"role": "compact/tab",
+					"texture": "res://assets/ui/image-skin/operations-light-controls-02/tab-4x.png"
+				},
+				{
+					"node": "ShopItemsTab",
+					"role": "compact/tab",
+					"texture": "res://assets/ui/image-skin/operations-light-controls-02/tab-4x.png"
+				},
+				{
+					"node": "ShopReroll",
+					"role": "compact/secondary",
+					"texture": "res://assets/ui/image-skin/operations-light-controls-02/secondary-4x.png"
+				},
+				{
+					"node": "@Panel@254",
+					"role": "cstore/info",
+					"texture": "res://assets/ui/image-skin/enamel-glass/cstore_surfaces_02.png"
+				},
+				{
+					"node": "@Button@265",
+					"role": "compact/secondary",
+					"texture": "res://assets/ui/image-skin/operations-light-controls-02/secondary-4x.png"
+				},
+				{
+					"node": "ShopProduct_0",
+					"role": "cstore/card",
+					"texture": "res://assets/ui/image-skin/enamel-glass/cstore_surfaces_02.png"
+				},
+				{
+					"node": "@Panel@273",
+					"role": "cstore/purchase_yellow",
+					"texture": "res://assets/ui/image-skin/enamel-glass/purchase_yellow_04.png"
+				},
+				{
+					"node": "ShopProduct_1",
+					"role": "cstore/card",
+					"texture": "res://assets/ui/image-skin/enamel-glass/cstore_surfaces_02.png"
+				},
+				{
+					"node": "@Panel@285",
+					"role": "cstore/purchase_yellow",
+					"texture": "res://assets/ui/image-skin/enamel-glass/purchase_yellow_04.png"
+				},
+				{
+					"node": "ShopProduct_2",
+					"role": "cstore/card",
+					"texture": "res://assets/ui/image-skin/enamel-glass/cstore_surfaces_02.png"
+				},
+				{
+					"node": "@Panel@297",
+					"role": "cstore/purchase_yellow",
+					"texture": "res://assets/ui/image-skin/enamel-glass/purchase_yellow_04.png"
+				},
+				{
+					"node": "ShopProduct_3",
+					"role": "cstore/card",
+					"texture": "res://assets/ui/image-skin/enamel-glass/cstore_surfaces_02.png"
+				},
+				{
+					"node": "@Panel@309",
+					"role": "cstore/purchase_yellow",
+					"texture": "res://assets/ui/image-skin/enamel-glass/purchase_yellow_04.png"
+				},
+				{
+					"node": "@Button@314",
+					"role": "compact/secondary",
+					"texture": "res://assets/ui/image-skin/operations-light-controls-02/secondary-4x.png"
+				},
+				{
+					"node": "@Button@327",
+					"role": "compact/primary",
+					"texture": "res://assets/ui/image-skin/operations-light-controls-02/primary-4x.png"
+				}
+			],
+			"pixelSize": [
+				915,
+				412
+			],
+			"screen": "compact-05-shop-weapons",
+			"tooltips": []
+		},
+		{
+			"class": "HeroMobileScreen",
+			"fitIssues": [],
+			"labels": [
+				{
+					"fontFile": "res://assets/ui/fonts/BMJUA.ttf",
+					"fontRole": "brand",
+					"insideScroll": false,
+					"needed": [
+						87.0,
+						25.0
+					],
+					"node": "ShopTitle",
+					"rect": [
+						42.0,
+						31.0,
+						137.0,
+						35.0
+					],
+					"size": 24,
+					"text": "게이트24"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/BarlowCondensed-SemiBold.ttf",
+					"fontRole": "number",
+					"insideScroll": false,
+					"needed": [
+						43.0,
+						22.0
+					],
+					"node": "@Label@334",
+					"rect": [
+						225.5,
+						33.0,
+						45.0,
+						32.0
+					],
+					"size": 18,
+					"text": "12 / 20"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/BarlowCondensed-SemiBold.ttf",
+					"fontRole": "number",
+					"insideScroll": false,
+					"needed": [
+						9.0,
+						22.0
+					],
+					"node": "ShopCurrency",
+					"rect": [
+						361.5,
+						33.0,
+						11.0,
+						32.0
+					],
+					"size": 18,
+					"text": "0"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/Paperlogy-5Medium.ttf",
+					"fontRole": "control",
+					"insideScroll": false,
+					"needed": [
+						29.0,
+						20.0
+					],
+					"node": "ShopWeaponsTab",
+					"rect": [
+						438.0,
+						27.0,
+						84.0,
+						44.0
+					],
+					"size": 16,
+					"text": "무기"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/Paperlogy-5Medium.ttf",
+					"fontRole": "control",
+					"insideScroll": false,
+					"needed": [
+						43.0,
+						20.0
+					],
+					"node": "ShopItemsTab",
+					"rect": [
+						530.0,
+						27.0,
+						84.0,
+						44.0
+					],
+					"size": 16,
+					"text": "아이템"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/BarlowCondensed-SemiBold.ttf",
+					"fontRole": "number",
+					"insideScroll": false,
+					"needed": [
+						7.0,
+						20.0
+					],
+					"node": "@Label@342",
+					"rect": [
+						740.5,
+						33.0,
+						9.0,
+						32.0
+					],
+					"size": 16,
+					"text": "5"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/KMU80HaeongSans.ttf",
+					"fontRole": "heading",
+					"insideScroll": false,
+					"needed": [
+						45.0,
+						22.0
+					],
+					"node": "@Label@347",
+					"rect": [
+						39.0,
+						225.0,
+						138.0,
+						29.0
+					],
+					"size": 18,
+					"text": "송진우"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/BarlowCondensed-SemiBold.ttf",
+					"fontRole": "number",
+					"insideScroll": false,
+					"needed": [
+						52.0,
+						22.0
+					],
+					"node": "@Label@349",
+					"rect": [
+						68.0,
+						253.0,
+						105.0,
+						23.0
+					],
+					"size": 18,
+					"text": "84 / 100"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/BarlowCondensed-SemiBold.ttf",
+					"fontRole": "number",
+					"insideScroll": false,
+					"needed": [
+						36.0,
+						22.0
+					],
+					"node": "@Label@351",
+					"rect": [
+						68.0,
+						274.0,
+						105.0,
+						23.0
+					],
+					"size": 18,
+					"text": "100%"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/BarlowCondensed-SemiBold.ttf",
+					"fontRole": "number",
+					"insideScroll": false,
+					"needed": [
+						32.0,
+						22.0
+					],
+					"node": "@Label@353",
+					"rect": [
+						68.0,
+						295.0,
+						105.0,
+						23.0
+					],
+					"size": 18,
+					"text": "110%"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/BarlowCondensed-SemiBold.ttf",
+					"fontRole": "number",
+					"insideScroll": false,
+					"needed": [
+						9.0,
+						22.0
+					],
+					"node": "@Label@355",
+					"rect": [
+						68.0,
+						316.0,
+						105.0,
+						23.0
+					],
+					"size": 18,
+					"text": "0"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/Paperlogy-5Medium.ttf",
+					"fontRole": "control",
+					"insideScroll": false,
+					"needed": [
+						60.0,
+						20.0
+					],
+					"node": "@Button@356",
+					"rect": [
+						37.0,
+						348.0,
+						145.0,
+						44.0
+					],
+					"size": 16,
+					"text": "전체 스탯"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/KMU80HaeongSans.ttf",
+					"fontRole": "heading",
+					"insideScroll": false,
+					"needed": [
+						67.0,
+						22.0
+					],
+					"node": "CardName",
+					"rect": [
+						225.0,
+						166.0,
+						122.0,
+						50.0
+					],
+					"size": 18,
+					"text": "불사 성냥"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/Paperlogy-4Regular.ttf",
+					"fontRole": "body",
+					"insideScroll": false,
+					"needed": [
+						109.0,
+						34.0
+					],
+					"node": "CardSummary",
+					"rect": [
+						225.0,
+						221.0,
+						122.0,
+						36.0
+					],
+					"size": 13,
+					"text": "한 판 1회 HP 1 생존\n2.5초 무적"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/Paperlogy-4Regular.ttf",
+					"fontRole": "body",
+					"insideScroll": false,
+					"needed": [
+						71.0,
+						16.0
+					],
+					"node": "CardNote",
+					"rect": [
+						225.0,
+						262.0,
+						122.0,
+						38.0
+					],
+					"size": 13,
+					"text": "최대 HP -10"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/BarlowCondensed-SemiBold.ttf",
+					"fontRole": "number",
+					"insideScroll": false,
+					"needed": [
+						14.0,
+						20.0
+					],
+					"node": "@Label@366",
+					"rect": [
+						290.0,
+						305.0,
+						16.0,
+						32.0
+					],
+					"size": 16,
+					"text": "96"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/KMU80HaeongSans.ttf",
+					"fontRole": "heading",
+					"insideScroll": false,
+					"needed": [
+						66.0,
+						22.0
+					],
+					"node": "CardName",
+					"rect": [
+						396.0,
+						166.0,
+						122.0,
+						50.0
+					],
+					"size": 18,
+					"text": "금고 장부"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/Paperlogy-4Regular.ttf",
+					"fontRole": "body",
+					"insideScroll": false,
+					"needed": [
+						98.0,
+						34.0
+					],
+					"node": "CardSummary",
+					"rect": [
+						396.0,
+						221.0,
+						122.0,
+						36.0
+					],
+					"size": 13,
+					"text": "보유 마력석에 따라\n피해 최대 +30%"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/Paperlogy-4Regular.ttf",
+					"fontRole": "body",
+					"insideScroll": false,
+					"needed": [
+						72.0,
+						16.0
+					],
+					"node": "CardNote",
+					"rect": [
+						396.0,
+						262.0,
+						122.0,
+						38.0
+					],
+					"size": 13,
+					"text": "획득범위 -10"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/BarlowCondensed-SemiBold.ttf",
+					"fontRole": "number",
+					"insideScroll": false,
+					"needed": [
+						15.0,
+						20.0
+					],
+					"node": "@Label@378",
+					"rect": [
+						460.5,
+						305.0,
+						17.0,
+						32.0
+					],
+					"size": 16,
+					"text": "48"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/KMU80HaeongSans.ttf",
+					"fontRole": "heading",
+					"insideScroll": false,
+					"needed": [
+						65.0,
+						22.0
+					],
+					"node": "CardName",
+					"rect": [
+						567.0,
+						166.0,
+						122.0,
+						50.0
+					],
+					"size": 18,
+					"text": "보복 퓨즈"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/Paperlogy-4Regular.ttf",
+					"fontRole": "body",
+					"insideScroll": false,
+					"needed": [
+						89.0,
+						34.0
+					],
+					"node": "CardSummary",
+					"rect": [
+						567.0,
+						221.0,
+						122.0,
+						36.0
+					],
+					"size": 13,
+					"text": "피격 시 주변 피해\n고정 24 · 쿨 6초"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/Paperlogy-4Regular.ttf",
+					"fontRole": "body",
+					"insideScroll": false,
+					"needed": [
+						52.0,
+						16.0
+					],
+					"node": "CardNote",
+					"rect": [
+						567.0,
+						262.0,
+						122.0,
+						38.0
+					],
+					"size": 13,
+					"text": "회피 -4%"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/BarlowCondensed-SemiBold.ttf",
+					"fontRole": "number",
+					"insideScroll": false,
+					"needed": [
+						14.0,
+						20.0
+					],
+					"node": "@Label@390",
+					"rect": [
+						632.0,
+						305.0,
+						16.0,
+						32.0
+					],
+					"size": 16,
+					"text": "52"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/KMU80HaeongSans.ttf",
+					"fontRole": "heading",
+					"insideScroll": false,
+					"needed": [
+						117.0,
+						22.0
+					],
+					"node": "CardName",
+					"rect": [
+						738.0,
+						166.0,
+						122.0,
+						50.0
+					],
+					"size": 18,
+					"text": "전술 발목 보호대"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/Paperlogy-4Regular.ttf",
+					"fontRole": "body",
+					"insideScroll": false,
+					"needed": [
+						66.0,
+						34.0
+					],
+					"node": "CardSummary",
+					"rect": [
+						738.0,
+						221.0,
+						122.0,
+						36.0
+					],
+					"size": 13,
+					"text": "회피 +2%\n이동속도 +3"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/BarlowCondensed-SemiBold.ttf",
+					"fontRole": "number",
+					"insideScroll": false,
+					"needed": [
+						12.0,
+						20.0
+					],
+					"node": "@Label@402",
+					"rect": [
+						804.0,
+						305.0,
+						14.0,
+						32.0
+					],
+					"size": 16,
+					"text": "19"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/Paperlogy-5Medium.ttf",
+					"fontRole": "control",
+					"insideScroll": false,
+					"needed": [
+						57.0,
+						20.0
+					],
+					"node": "@Button@405",
+					"rect": [
+						205.0,
+						350.0,
+						74.0,
+						44.0
+					],
+					"size": 16,
+					"text": "아이템 7"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/Paperlogy-5Medium.ttf",
+					"fontRole": "control",
+					"insideScroll": false,
+					"needed": [
+						29.0,
+						20.0
+					],
+					"node": "ShopCrafting",
+					"rect": [
+						287.0,
+						350.0,
+						81.0,
+						44.0
+					],
+					"size": 16,
+					"text": "조합"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/BarlowCondensed-SemiBold.ttf",
+					"fontRole": "number",
+					"insideScroll": false,
+					"needed": [
+						5.0,
+						22.0
+					],
+					"node": "@Label@408",
+					"rect": [
+						406.0,
+						357.0,
+						14.0,
+						30.0
+					],
+					"size": 18,
+					"text": "1"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/BarlowCondensed-SemiBold.ttf",
+					"fontRole": "number",
+					"insideScroll": false,
+					"needed": [
+						8.0,
+						22.0
+					],
+					"node": "@Label@410",
+					"rect": [
+						452.0,
+						357.0,
+						14.0,
+						30.0
+					],
+					"size": 18,
+					"text": "2"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/BarlowCondensed-SemiBold.ttf",
+					"fontRole": "number",
+					"insideScroll": false,
+					"needed": [
+						8.0,
+						22.0
+					],
+					"node": "@Label@412",
+					"rect": [
+						498.0,
+						357.0,
+						14.0,
+						30.0
+					],
+					"size": 18,
+					"text": "3"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/BarlowCondensed-SemiBold.ttf",
+					"fontRole": "number",
+					"insideScroll": false,
+					"needed": [
+						9.0,
+						22.0
+					],
+					"node": "@Label@414",
+					"rect": [
+						544.0,
+						357.0,
+						14.0,
+						30.0
+					],
+					"size": 18,
+					"text": "4"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/BarlowCondensed-SemiBold.ttf",
+					"fontRole": "number",
+					"insideScroll": false,
+					"needed": [
+						8.0,
+						22.0
+					],
+					"node": "@Label@416",
+					"rect": [
+						590.0,
+						357.0,
+						14.0,
+						30.0
+					],
+					"size": 18,
+					"text": "5"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/BarlowCondensed-SemiBold.ttf",
+					"fontRole": "number",
+					"insideScroll": false,
+					"needed": [
+						5.0,
+						22.0
+					],
+					"node": "@Label@418",
+					"rect": [
+						636.0,
+						357.0,
+						14.0,
+						30.0
+					],
+					"size": 18,
+					"text": "1"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/Paperlogy-5Medium.ttf",
+					"fontRole": "control",
+					"insideScroll": false,
+					"needed": [
+						74.0,
+						20.0
+					],
+					"node": "@Button@419",
+					"rect": [
+						674.0,
+						350.0,
+						205.0,
+						44.0
+					],
+					"size": 16,
+					"text": "다음 웨이브"
+				}
+			],
+			"materials": [
+				{
+					"node": "@Panel@330",
+					"role": "cstore/cabinet",
+					"texture": "res://assets/ui/image-skin/enamel-glass/cstore_surfaces_02.png"
+				},
+				{
+					"node": "@Panel@331",
+					"role": "cstore/header",
+					"texture": "res://assets/ui/image-skin/enamel-glass/cstore_surfaces_02.png"
+				},
+				{
+					"node": "ShopWeaponsTab",
+					"role": "compact/tab",
+					"texture": "res://assets/ui/image-skin/operations-light-controls-02/tab-4x.png"
+				},
+				{
+					"node": "ShopItemsTab",
+					"role": "compact/tab",
+					"texture": "res://assets/ui/image-skin/operations-light-controls-02/tab-4x.png"
+				},
+				{
+					"node": "ShopReroll",
+					"role": "compact/secondary",
+					"texture": "res://assets/ui/image-skin/operations-light-controls-02/secondary-4x.png"
+				},
+				{
+					"node": "@Panel@345",
+					"role": "cstore/info",
+					"texture": "res://assets/ui/image-skin/enamel-glass/cstore_surfaces_02.png"
+				},
+				{
+					"node": "@Button@356",
+					"role": "compact/secondary",
+					"texture": "res://assets/ui/image-skin/operations-light-controls-02/secondary-4x.png"
+				},
+				{
+					"node": "ShopProduct_0",
+					"role": "cstore/card",
+					"texture": "res://assets/ui/image-skin/enamel-glass/cstore_surfaces_02.png"
+				},
+				{
+					"node": "@Panel@364",
+					"role": "cstore/purchase_disabled_yellow",
+					"texture": "res://assets/ui/image-skin/enamel-glass/purchase_yellow_04.png"
+				},
+				{
+					"node": "ShopProduct_1",
+					"role": "cstore/card",
+					"texture": "res://assets/ui/image-skin/enamel-glass/cstore_surfaces_02.png"
+				},
+				{
+					"node": "@Panel@376",
+					"role": "cstore/purchase_disabled_yellow",
+					"texture": "res://assets/ui/image-skin/enamel-glass/purchase_yellow_04.png"
+				},
+				{
+					"node": "ShopProduct_2",
+					"role": "cstore/card",
+					"texture": "res://assets/ui/image-skin/enamel-glass/cstore_surfaces_02.png"
+				},
+				{
+					"node": "@Panel@388",
+					"role": "cstore/purchase_disabled_yellow",
+					"texture": "res://assets/ui/image-skin/enamel-glass/purchase_yellow_04.png"
+				},
+				{
+					"node": "ShopProduct_3",
+					"role": "cstore/card",
+					"texture": "res://assets/ui/image-skin/enamel-glass/cstore_surfaces_02.png"
+				},
+				{
+					"node": "@Panel@400",
+					"role": "cstore/purchase_disabled_yellow",
+					"texture": "res://assets/ui/image-skin/enamel-glass/purchase_yellow_04.png"
+				},
+				{
+					"node": "@Button@405",
+					"role": "compact/secondary",
+					"texture": "res://assets/ui/image-skin/operations-light-controls-02/secondary-4x.png"
+				},
+				{
+					"node": "ShopCrafting",
+					"role": "compact/secondary",
+					"texture": "res://assets/ui/image-skin/operations-light-controls-02/secondary-4x.png"
+				},
+				{
+					"node": "@Button@419",
+					"role": "compact/primary",
+					"texture": "res://assets/ui/image-skin/operations-light-controls-02/primary-4x.png"
+				}
+			],
+			"pixelSize": [
+				915,
+				412
+			],
+			"screen": "compact-06-shop-disabled-recipes",
+			"tooltips": []
+		},
+		{
+			"class": "HeroMobileScreen",
+			"fitIssues": [],
+			"labels": [
+				{
+					"fontFile": "res://assets/ui/fonts/Paperlogy-5Medium.ttf",
+					"fontRole": "control",
+					"insideScroll": false,
+					"needed": [
+						15.0,
+						29.0
+					],
+					"node": "HeaderBack",
+					"rect": [
+						20.0,
+						21.0,
+						44.0,
+						44.0
+					],
+					"size": 24,
+					"text": "‹"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/BMJUA.ttf",
+					"fontRole": "brand",
+					"insideScroll": false,
+					"needed": [
+						103.0,
+						25.0
+					],
+					"node": "ScreenTitle",
+					"rect": [
+						76.0,
+						21.0,
+						115.0,
+						44.0
+					],
+					"size": 24,
+					"text": "각성자 선택"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/BarlowCondensed-SemiBold.ttf",
+					"fontRole": "number",
+					"insideScroll": false,
+					"needed": [
+						46.0,
+						22.0
+					],
+					"node": "ResourceValue",
+					"rect": [
+						837.0,
+						32.0,
+						46.0,
+						22.0
+					],
+					"size": 18,
+					"text": "03 / 06"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/Paperlogy-4Regular.ttf",
+					"fontRole": "body",
+					"insideScroll": false,
+					"needed": [
+						247.0,
+						16.0
+					],
+					"node": "@Label@427",
+					"rect": [
+						28.0,
+						77.0,
+						790.0,
+						24.0
+					],
+					"size": 13,
+					"text": "함께 서울의 게이트로 들어갈 각성자를 고르세요."
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/Paperlogy-5Medium.ttf",
+					"fontRole": "control",
+					"insideScroll": true,
+					"needed": [
+						43.0,
+						20.0
+					],
+					"node": "@Label@440",
+					"rect": [
+						34.0,
+						185.0,
+						125.0,
+						36.0
+					],
+					"size": 16,
+					"text": "송진우"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/Paperlogy-5Medium.ttf",
+					"fontRole": "control",
+					"insideScroll": true,
+					"needed": [
+						43.0,
+						20.0
+					],
+					"node": "@Label@448",
+					"rect": [
+						179.0,
+						185.0,
+						125.0,
+						36.0
+					],
+					"size": 16,
+					"text": "강태훈"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/Paperlogy-5Medium.ttf",
+					"fontRole": "control",
+					"insideScroll": true,
+					"needed": [
+						43.0,
+						20.0
+					],
+					"node": "@Label@456",
+					"rect": [
+						324.0,
+						185.0,
+						125.0,
+						36.0
+					],
+					"size": 16,
+					"text": "박도준"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/Paperlogy-5Medium.ttf",
+					"fontRole": "control",
+					"insideScroll": true,
+					"needed": [
+						43.0,
+						20.0
+					],
+					"node": "@Label@464",
+					"rect": [
+						469.0,
+						185.0,
+						125.0,
+						36.0
+					],
+					"size": 16,
+					"text": "윤하린"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/KMU80HaeongSans.ttf",
+					"fontRole": "heading",
+					"insideScroll": false,
+					"needed": [
+						45.0,
+						22.0
+					],
+					"node": "GateDetailTitle",
+					"rect": [
+						638.0,
+						119.0,
+						226.0,
+						24.0
+					],
+					"size": 18,
+					"text": "송진우"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/KMU80HaeongSans.ttf",
+					"fontRole": "heading",
+					"insideScroll": false,
+					"needed": [
+						67.0,
+						22.0
+					],
+					"node": "@Label@468",
+					"rect": [
+						726.0,
+						170.0,
+						138.0,
+						24.0
+					],
+					"size": 18,
+					"text": "현장 적응"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/Paperlogy-4Regular.ttf",
+					"fontRole": "body",
+					"insideScroll": false,
+					"needed": [
+						115.0,
+						17.0
+					],
+					"node": "@Label@469",
+					"rect": [
+						726.0,
+						200.0,
+						138.0,
+						19.0
+					],
+					"size": 14,
+					"text": "모든 무기 피해 +5%"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/Paperlogy-4Regular.ttf",
+					"fontRole": "body",
+					"insideScroll": true,
+					"needed": [
+						213.0,
+						36.0
+					],
+					"node": "@Label@473",
+					"rect": [
+						638.0,
+						248.0,
+						218.0,
+						36.0
+					],
+					"size": 14,
+					"text": "현장에서 얻은 장비를 빠르게 익혀 자신의 방식으로 활용하는 각성자."
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/KMU80HaeongSans.ttf",
+					"fontRole": "heading",
+					"insideScroll": true,
+					"needed": [
+						66.0,
+						22.0
+					],
+					"node": "@Label@474",
+					"rect": [
+						638.0,
+						291.0,
+						218.0,
+						22.0
+					],
+					"size": 18,
+					"text": "기본 스탯"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/Paperlogy-4Regular.ttf",
+					"fontRole": "body",
+					"insideScroll": true,
+					"needed": [
+						53.0,
+						17.0
+					],
+					"node": "@Label@476",
+					"rect": [
+						638.0,
+						322.0,
+						105.0,
+						17.0
+					],
+					"size": 14,
+					"text": "공통 피해"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/BarlowCondensed-SemiBold.ttf",
+					"fontRole": "number",
+					"insideScroll": true,
+					"needed": [
+						36.0,
+						22.0
+					],
+					"node": "@Label@477",
+					"rect": [
+						751.0,
+						320.0,
+						105.0,
+						22.0
+					],
+					"size": 18,
+					"text": "100%"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/Paperlogy-4Regular.ttf",
+					"fontRole": "body",
+					"insideScroll": true,
+					"needed": [
+						53.0,
+						17.0
+					],
+					"node": "@Label@479",
+					"rect": [
+						638.0,
+						351.0,
+						105.0,
+						17.0
+					],
+					"size": 14,
+					"text": "공격 속도"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/BarlowCondensed-SemiBold.ttf",
+					"fontRole": "number",
+					"insideScroll": true,
+					"needed": [
+						36.0,
+						22.0
+					],
+					"node": "@Label@480",
+					"rect": [
+						751.0,
+						349.0,
+						105.0,
+						22.0
+					],
+					"size": 18,
+					"text": "100%"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/Paperlogy-4Regular.ttf",
+					"fontRole": "body",
+					"insideScroll": true,
+					"needed": [
+						53.0,
+						17.0
+					],
+					"node": "@Label@482",
+					"rect": [
+						638.0,
+						380.0,
+						105.0,
+						17.0
+					],
+					"size": 14,
+					"text": "근접 피해"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/BarlowCondensed-SemiBold.ttf",
+					"fontRole": "number",
+					"insideScroll": true,
+					"needed": [
+						36.0,
+						22.0
+					],
+					"node": "@Label@483",
+					"rect": [
+						751.0,
+						378.0,
+						105.0,
+						22.0
+					],
+					"size": 18,
+					"text": "100%"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/Paperlogy-4Regular.ttf",
+					"fontRole": "body",
+					"insideScroll": true,
+					"needed": [
+						65.0,
+						17.0
+					],
+					"node": "@Label@485",
+					"rect": [
+						638.0,
+						409.0,
+						105.0,
+						17.0
+					],
+					"size": 14,
+					"text": "원거리 피해"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/BarlowCondensed-SemiBold.ttf",
+					"fontRole": "number",
+					"insideScroll": true,
+					"needed": [
+						36.0,
+						22.0
+					],
+					"node": "@Label@486",
+					"rect": [
+						751.0,
+						407.0,
+						105.0,
+						22.0
+					],
+					"size": 18,
+					"text": "100%"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/Paperlogy-4Regular.ttf",
+					"fontRole": "body",
+					"insideScroll": true,
+					"needed": [
+						65.0,
+						17.0
+					],
+					"node": "@Label@488",
+					"rect": [
+						638.0,
+						438.0,
+						105.0,
+						17.0
+					],
+					"size": 14,
+					"text": "치명타 확률"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/BarlowCondensed-SemiBold.ttf",
+					"fontRole": "number",
+					"insideScroll": true,
+					"needed": [
+						22.0,
+						22.0
+					],
+					"node": "@Label@489",
+					"rect": [
+						751.0,
+						436.0,
+						105.0,
+						22.0
+					],
+					"size": 18,
+					"text": "0%"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/Paperlogy-4Regular.ttf",
+					"fontRole": "body",
+					"insideScroll": true,
+					"needed": [
+						65.0,
+						17.0
+					],
+					"node": "@Label@491",
+					"rect": [
+						638.0,
+						467.0,
+						105.0,
+						17.0
+					],
+					"size": 14,
+					"text": "치명타 피해"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/BarlowCondensed-SemiBold.ttf",
+					"fontRole": "number",
+					"insideScroll": true,
+					"needed": [
+						35.0,
+						22.0
+					],
+					"node": "@Label@492",
+					"rect": [
+						751.0,
+						465.0,
+						105.0,
+						22.0
+					],
+					"size": 18,
+					"text": "150%"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/Paperlogy-4Regular.ttf",
+					"fontRole": "body",
+					"insideScroll": true,
+					"needed": [
+						37.0,
+						17.0
+					],
+					"node": "@Label@494",
+					"rect": [
+						638.0,
+						496.0,
+						105.0,
+						17.0
+					],
+					"size": 14,
+					"text": "사거리"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/BarlowCondensed-SemiBold.ttf",
+					"fontRole": "number",
+					"insideScroll": true,
+					"needed": [
+						36.0,
+						22.0
+					],
+					"node": "@Label@495",
+					"rect": [
+						751.0,
+						494.0,
+						105.0,
+						22.0
+					],
+					"size": 18,
+					"text": "100%"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/Paperlogy-4Regular.ttf",
+					"fontRole": "body",
+					"insideScroll": true,
+					"needed": [
+						25.0,
+						17.0
+					],
+					"node": "@Label@497",
+					"rect": [
+						638.0,
+						525.0,
+						105.0,
+						17.0
+					],
+					"size": 14,
+					"text": "범위"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/BarlowCondensed-SemiBold.ttf",
+					"fontRole": "number",
+					"insideScroll": true,
+					"needed": [
+						36.0,
+						22.0
+					],
+					"node": "@Label@498",
+					"rect": [
+						751.0,
+						523.0,
+						105.0,
+						22.0
+					],
+					"size": 18,
+					"text": "100%"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/Paperlogy-4Regular.ttf",
+					"fontRole": "body",
+					"insideScroll": true,
+					"needed": [
+						50.0,
+						17.0
+					],
+					"node": "@Label@500",
+					"rect": [
+						638.0,
+						554.0,
+						105.0,
+						17.0
+					],
+					"size": 14,
+					"text": "지속시간"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/BarlowCondensed-SemiBold.ttf",
+					"fontRole": "number",
+					"insideScroll": true,
+					"needed": [
+						36.0,
+						22.0
+					],
+					"node": "@Label@501",
+					"rect": [
+						751.0,
+						552.0,
+						105.0,
+						22.0
+					],
+					"size": 18,
+					"text": "100%"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/Paperlogy-4Regular.ttf",
+					"fontRole": "body",
+					"insideScroll": true,
+					"needed": [
+						65.0,
+						17.0
+					],
+					"node": "@Label@503",
+					"rect": [
+						638.0,
+						583.0,
+						105.0,
+						17.0
+					],
+					"size": 14,
+					"text": "투사체 속도"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/BarlowCondensed-SemiBold.ttf",
+					"fontRole": "number",
+					"insideScroll": true,
+					"needed": [
+						36.0,
+						22.0
+					],
+					"node": "@Label@504",
+					"rect": [
+						751.0,
+						581.0,
+						105.0,
+						22.0
+					],
+					"size": 18,
+					"text": "100%"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/Paperlogy-4Regular.ttf",
+					"fontRole": "body",
+					"insideScroll": true,
+					"needed": [
+						53.0,
+						17.0
+					],
+					"node": "@Label@506",
+					"rect": [
+						638.0,
+						612.0,
+						105.0,
+						17.0
+					],
+					"size": 14,
+					"text": "최대 체력"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/BarlowCondensed-SemiBold.ttf",
+					"fontRole": "number",
+					"insideScroll": true,
+					"needed": [
+						22.0,
+						22.0
+					],
+					"node": "@Label@507",
+					"rect": [
+						751.0,
+						610.0,
+						105.0,
+						22.0
+					],
+					"size": 18,
+					"text": "100"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/Paperlogy-4Regular.ttf",
+					"fontRole": "body",
+					"insideScroll": true,
+					"needed": [
+						37.0,
+						17.0
+					],
+					"node": "@Label@509",
+					"rect": [
+						638.0,
+						641.0,
+						105.0,
+						17.0
+					],
+					"size": 14,
+					"text": "방어력"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/BarlowCondensed-SemiBold.ttf",
+					"fontRole": "number",
+					"insideScroll": true,
+					"needed": [
+						9.0,
+						22.0
+					],
+					"node": "@Label@510",
+					"rect": [
+						751.0,
+						639.0,
+						105.0,
+						22.0
+					],
+					"size": 18,
+					"text": "0"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/Paperlogy-4Regular.ttf",
+					"fontRole": "body",
+					"insideScroll": true,
+					"needed": [
+						25.0,
+						17.0
+					],
+					"node": "@Label@512",
+					"rect": [
+						638.0,
+						670.0,
+						105.0,
+						17.0
+					],
+					"size": 14,
+					"text": "회피"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/BarlowCondensed-SemiBold.ttf",
+					"fontRole": "number",
+					"insideScroll": true,
+					"needed": [
+						22.0,
+						22.0
+					],
+					"node": "@Label@513",
+					"rect": [
+						751.0,
+						668.0,
+						105.0,
+						22.0
+					],
+					"size": 18,
+					"text": "0%"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/Paperlogy-4Regular.ttf",
+					"fontRole": "body",
+					"insideScroll": true,
+					"needed": [
+						25.0,
+						17.0
+					],
+					"node": "@Label@515",
+					"rect": [
+						638.0,
+						699.0,
+						105.0,
+						17.0
+					],
+					"size": 14,
+					"text": "흡혈"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/BarlowCondensed-SemiBold.ttf",
+					"fontRole": "number",
+					"insideScroll": true,
+					"needed": [
+						22.0,
+						22.0
+					],
+					"node": "@Label@516",
+					"rect": [
+						751.0,
+						697.0,
+						105.0,
+						22.0
+					],
+					"size": 18,
+					"text": "0%"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/Paperlogy-4Regular.ttf",
+					"fontRole": "body",
+					"insideScroll": true,
+					"needed": [
+						53.0,
+						17.0
+					],
+					"node": "@Label@518",
+					"rect": [
+						638.0,
+						728.0,
+						105.0,
+						17.0
+					],
+					"size": 14,
+					"text": "초당 회복"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/BarlowCondensed-SemiBold.ttf",
+					"fontRole": "number",
+					"insideScroll": true,
+					"needed": [
+						9.0,
+						22.0
+					],
+					"node": "@Label@519",
+					"rect": [
+						751.0,
+						726.0,
+						105.0,
+						22.0
+					],
+					"size": 18,
+					"text": "0"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/Paperlogy-4Regular.ttf",
+					"fontRole": "body",
+					"insideScroll": true,
+					"needed": [
+						53.0,
+						17.0
+					],
+					"node": "@Label@521",
+					"rect": [
+						638.0,
+						757.0,
+						105.0,
+						17.0
+					],
+					"size": 14,
+					"text": "이동 속도"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/BarlowCondensed-SemiBold.ttf",
+					"fontRole": "number",
+					"insideScroll": true,
+					"needed": [
+						21.0,
+						22.0
+					],
+					"node": "@Label@522",
+					"rect": [
+						751.0,
+						755.0,
+						105.0,
+						22.0
+					],
+					"size": 18,
+					"text": "185"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/Paperlogy-4Regular.ttf",
+					"fontRole": "body",
+					"insideScroll": true,
+					"needed": [
+						65.0,
+						17.0
+					],
+					"node": "@Label@524",
+					"rect": [
+						638.0,
+						786.0,
+						105.0,
+						17.0
+					],
+					"size": 14,
+					"text": "마력석 획득"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/BarlowCondensed-SemiBold.ttf",
+					"fontRole": "number",
+					"insideScroll": true,
+					"needed": [
+						36.0,
+						22.0
+					],
+					"node": "@Label@525",
+					"rect": [
+						751.0,
+						784.0,
+						105.0,
+						22.0
+					],
+					"size": 18,
+					"text": "100%"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/Paperlogy-4Regular.ttf",
+					"fontRole": "body",
+					"insideScroll": true,
+					"needed": [
+						53.0,
+						17.0
+					],
+					"node": "@Label@527",
+					"rect": [
+						638.0,
+						815.0,
+						105.0,
+						17.0
+					],
+					"size": 14,
+					"text": "획득 범위"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/BarlowCondensed-SemiBold.ttf",
+					"fontRole": "number",
+					"insideScroll": true,
+					"needed": [
+						22.0,
+						22.0
+					],
+					"node": "@Label@528",
+					"rect": [
+						751.0,
+						813.0,
+						105.0,
+						22.0
+					],
+					"size": 18,
+					"text": "100"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/Paperlogy-4Regular.ttf",
+					"fontRole": "body",
+					"insideScroll": true,
+					"needed": [
+						25.0,
+						17.0
+					],
+					"node": "@Label@530",
+					"rect": [
+						638.0,
+						844.0,
+						105.0,
+						17.0
+					],
+					"size": 14,
+					"text": "행운"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/BarlowCondensed-SemiBold.ttf",
+					"fontRole": "number",
+					"insideScroll": true,
+					"needed": [
+						9.0,
+						22.0
+					],
+					"node": "@Label@531",
+					"rect": [
+						751.0,
+						842.0,
+						105.0,
+						22.0
+					],
+					"size": 18,
+					"text": "0"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/Paperlogy-4Regular.ttf",
+					"fontRole": "body",
+					"insideScroll": true,
+					"needed": [
+						25.0,
+						17.0
+					],
+					"node": "@Label@533",
+					"rect": [
+						638.0,
+						873.0,
+						105.0,
+						17.0
+					],
+					"size": 14,
+					"text": "저주"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/BarlowCondensed-SemiBold.ttf",
+					"fontRole": "number",
+					"insideScroll": true,
+					"needed": [
+						9.0,
+						22.0
+					],
+					"node": "@Label@534",
+					"rect": [
+						751.0,
+						871.0,
+						105.0,
+						22.0
+					],
+					"size": 18,
+					"text": "0"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/Paperlogy-4Regular.ttf",
+					"fontRole": "body",
+					"insideScroll": false,
+					"needed": [
+						100.0,
+						17.0
+					],
+					"node": "@Label@535",
+					"rect": [
+						36.0,
+						356.0,
+						655.0,
+						45.0
+					],
+					"size": 14,
+					"text": "현재 선택 · 송진우"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/Paperlogy-5Medium.ttf",
+					"fontRole": "control",
+					"insideScroll": false,
+					"needed": [
+						92.0,
+						20.0
+					],
+					"node": "@Button@536",
+					"rect": [
+						711.0,
+						356.0,
+						174.0,
+						45.0
+					],
+					"size": 16,
+					"text": "시작 무기 선택"
+				}
+			],
+			"materials": [
+				{
+					"node": "OperationsHeader",
+					"role": "ops/header",
+					"texture": "res://assets/ui/image-skin/operations-standard-01/header-4x.png"
+				},
+				{
+					"node": "HeaderBack",
+					"role": "compact/back",
+					"texture": "res://assets/ui/image-skin/operations-light-controls-02/back-4x.png"
+				},
+				{
+					"node": "GateChoice_awakener",
+					"role": "accents/selection",
+					"texture": "res://assets/ui/image-skin/runtime/cards_01.png"
+				},
+				{
+					"node": "GateChoice_kangTaehoon",
+					"role": "glass/cell",
+					"texture": "res://assets/ui/image-skin/runtime/cards_01.png"
+				},
+				{
+					"node": "GateChoice_parkDojun",
+					"role": "glass/cell",
+					"texture": "res://assets/ui/image-skin/runtime/cards_01.png"
+				},
+				{
+					"node": "GateChoice_yoonHarin",
+					"role": "glass/cell",
+					"texture": "res://assets/ui/image-skin/runtime/cards_01.png"
+				},
+				{
+					"node": "GateSelectionPanel",
+					"role": "ops/info",
+					"texture": "res://assets/ui/image-skin/operations-standard-01/info-4x.png"
+				},
+				{
+					"node": "@Button@536",
+					"role": "ops/primary",
+					"texture": "res://assets/ui/image-skin/operations-standard-01/primary-4x.png"
+				}
+			],
+			"pixelSize": [
+				844,
+				390
+			],
+			"screen": "compact-07-character-844x390",
+			"tooltips": []
+		},
+		{
+			"class": "HeroMobileScreen",
+			"fitIssues": [],
+			"labels": [
+				{
+					"fontFile": "res://assets/ui/fonts/BMJUA.ttf",
+					"fontRole": "brand",
+					"insideScroll": false,
+					"needed": [
+						87.0,
+						25.0
+					],
+					"node": "ShopTitle",
+					"rect": [
+						42.0,
+						36.0,
+						137.0,
+						35.0
+					],
+					"size": 24,
+					"text": "게이트24"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/BarlowCondensed-SemiBold.ttf",
+					"fontRole": "number",
+					"insideScroll": false,
+					"needed": [
+						43.0,
+						22.0
+					],
+					"node": "@Label@543",
+					"rect": [
+						225.5,
+						38.0,
+						45.0,
+						32.0
+					],
+					"size": 18,
+					"text": "12 / 20"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/BarlowCondensed-SemiBold.ttf",
+					"fontRole": "number",
+					"insideScroll": false,
+					"needed": [
+						42.0,
+						22.0
+					],
+					"node": "ShopCurrency",
+					"rect": [
+						345.0,
+						38.0,
+						44.0,
+						32.0
+					],
+					"size": 18,
+					"text": "987.7M"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/Paperlogy-5Medium.ttf",
+					"fontRole": "control",
+					"insideScroll": false,
+					"needed": [
+						29.0,
+						20.0
+					],
+					"node": "ShopWeaponsTab",
+					"rect": [
+						438.0,
+						32.0,
+						84.0,
+						44.0
+					],
+					"size": 16,
+					"text": "무기"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/Paperlogy-5Medium.ttf",
+					"fontRole": "control",
+					"insideScroll": false,
+					"needed": [
+						43.0,
+						20.0
+					],
+					"node": "ShopItemsTab",
+					"rect": [
+						530.0,
+						32.0,
+						84.0,
+						44.0
+					],
+					"size": 16,
+					"text": "아이템"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/BarlowCondensed-SemiBold.ttf",
+					"fontRole": "number",
+					"insideScroll": false,
+					"needed": [
+						7.0,
+						20.0
+					],
+					"node": "@Label@551",
+					"rect": [
+						740.5,
+						38.0,
+						9.0,
+						32.0
+					],
+					"size": 16,
+					"text": "5"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/KMU80HaeongSans.ttf",
+					"fontRole": "heading",
+					"insideScroll": false,
+					"needed": [
+						45.0,
+						22.0
+					],
+					"node": "@Label@556",
+					"rect": [
+						39.0,
+						230.0,
+						138.0,
+						29.0
+					],
+					"size": 18,
+					"text": "송진우"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/BarlowCondensed-SemiBold.ttf",
+					"fontRole": "number",
+					"insideScroll": false,
+					"needed": [
+						52.0,
+						22.0
+					],
+					"node": "@Label@558",
+					"rect": [
+						68.0,
+						258.0,
+						105.0,
+						23.0
+					],
+					"size": 18,
+					"text": "84 / 100"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/BarlowCondensed-SemiBold.ttf",
+					"fontRole": "number",
+					"insideScroll": false,
+					"needed": [
+						36.0,
+						22.0
+					],
+					"node": "@Label@560",
+					"rect": [
+						68.0,
+						279.0,
+						105.0,
+						23.0
+					],
+					"size": 18,
+					"text": "100%"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/BarlowCondensed-SemiBold.ttf",
+					"fontRole": "number",
+					"insideScroll": false,
+					"needed": [
+						32.0,
+						22.0
+					],
+					"node": "@Label@562",
+					"rect": [
+						68.0,
+						300.0,
+						105.0,
+						23.0
+					],
+					"size": 18,
+					"text": "110%"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/BarlowCondensed-SemiBold.ttf",
+					"fontRole": "number",
+					"insideScroll": false,
+					"needed": [
+						9.0,
+						22.0
+					],
+					"node": "@Label@564",
+					"rect": [
+						68.0,
+						321.0,
+						105.0,
+						23.0
+					],
+					"size": 18,
+					"text": "0"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/Paperlogy-5Medium.ttf",
+					"fontRole": "control",
+					"insideScroll": false,
+					"needed": [
+						60.0,
+						20.0
+					],
+					"node": "@Button@565",
+					"rect": [
+						37.0,
+						353.0,
+						145.0,
+						44.0
+					],
+					"size": 16,
+					"text": "전체 스탯"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/KMU80HaeongSans.ttf",
+					"fontRole": "heading",
+					"insideScroll": false,
+					"needed": [
+						67.0,
+						22.0
+					],
+					"node": "CardName",
+					"rect": [
+						225.0,
+						171.0,
+						122.0,
+						50.0
+					],
+					"size": 18,
+					"text": "불사 성냥"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/Paperlogy-4Regular.ttf",
+					"fontRole": "body",
+					"insideScroll": false,
+					"needed": [
+						109.0,
+						34.0
+					],
+					"node": "CardSummary",
+					"rect": [
+						225.0,
+						226.0,
+						122.0,
+						36.0
+					],
+					"size": 13,
+					"text": "한 판 1회 HP 1 생존\n2.5초 무적"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/Paperlogy-4Regular.ttf",
+					"fontRole": "body",
+					"insideScroll": false,
+					"needed": [
+						71.0,
+						16.0
+					],
+					"node": "CardNote",
+					"rect": [
+						225.0,
+						267.0,
+						122.0,
+						38.0
+					],
+					"size": 13,
+					"text": "최대 HP -10"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/BarlowCondensed-SemiBold.ttf",
+					"fontRole": "number",
+					"insideScroll": false,
+					"needed": [
+						55.0,
+						20.0
+					],
+					"node": "@Label@575",
+					"rect": [
+						269.5,
+						310.0,
+						57.0,
+						32.0
+					],
+					"size": 16,
+					"text": "98765432"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/KMU80HaeongSans.ttf",
+					"fontRole": "heading",
+					"insideScroll": false,
+					"needed": [
+						66.0,
+						22.0
+					],
+					"node": "CardName",
+					"rect": [
+						396.0,
+						171.0,
+						122.0,
+						50.0
+					],
+					"size": 18,
+					"text": "금고 장부"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/Paperlogy-4Regular.ttf",
+					"fontRole": "body",
+					"insideScroll": false,
+					"needed": [
+						98.0,
+						34.0
+					],
+					"node": "CardSummary",
+					"rect": [
+						396.0,
+						226.0,
+						122.0,
+						36.0
+					],
+					"size": 13,
+					"text": "보유 마력석에 따라\n피해 최대 +30%"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/Paperlogy-4Regular.ttf",
+					"fontRole": "body",
+					"insideScroll": false,
+					"needed": [
+						72.0,
+						16.0
+					],
+					"node": "CardNote",
+					"rect": [
+						396.0,
+						267.0,
+						122.0,
+						38.0
+					],
+					"size": 13,
+					"text": "획득범위 -10"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/BarlowCondensed-SemiBold.ttf",
+					"fontRole": "number",
+					"insideScroll": false,
+					"needed": [
+						15.0,
+						20.0
+					],
+					"node": "@Label@587",
+					"rect": [
+						460.5,
+						310.0,
+						17.0,
+						32.0
+					],
+					"size": 16,
+					"text": "48"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/KMU80HaeongSans.ttf",
+					"fontRole": "heading",
+					"insideScroll": false,
+					"needed": [
+						65.0,
+						22.0
+					],
+					"node": "CardName",
+					"rect": [
+						567.0,
+						171.0,
+						122.0,
+						50.0
+					],
+					"size": 18,
+					"text": "보복 퓨즈"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/Paperlogy-4Regular.ttf",
+					"fontRole": "body",
+					"insideScroll": false,
+					"needed": [
+						89.0,
+						34.0
+					],
+					"node": "CardSummary",
+					"rect": [
+						567.0,
+						226.0,
+						122.0,
+						36.0
+					],
+					"size": 13,
+					"text": "피격 시 주변 피해\n고정 24 · 쿨 6초"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/Paperlogy-4Regular.ttf",
+					"fontRole": "body",
+					"insideScroll": false,
+					"needed": [
+						52.0,
+						16.0
+					],
+					"node": "CardNote",
+					"rect": [
+						567.0,
+						267.0,
+						122.0,
+						38.0
+					],
+					"size": 13,
+					"text": "회피 -4%"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/BarlowCondensed-SemiBold.ttf",
+					"fontRole": "number",
+					"insideScroll": false,
+					"needed": [
+						14.0,
+						20.0
+					],
+					"node": "@Label@599",
+					"rect": [
+						632.0,
+						310.0,
+						16.0,
+						32.0
+					],
+					"size": 16,
+					"text": "52"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/KMU80HaeongSans.ttf",
+					"fontRole": "heading",
+					"insideScroll": false,
+					"needed": [
+						117.0,
+						22.0
+					],
+					"node": "CardName",
+					"rect": [
+						738.0,
+						171.0,
+						122.0,
+						50.0
+					],
+					"size": 18,
+					"text": "전술 발목 보호대"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/Paperlogy-4Regular.ttf",
+					"fontRole": "body",
+					"insideScroll": false,
+					"needed": [
+						66.0,
+						34.0
+					],
+					"node": "CardSummary",
+					"rect": [
+						738.0,
+						226.0,
+						122.0,
+						36.0
+					],
+					"size": 13,
+					"text": "회피 +2%\n이동속도 +3"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/BarlowCondensed-SemiBold.ttf",
+					"fontRole": "number",
+					"insideScroll": false,
+					"needed": [
+						12.0,
+						20.0
+					],
+					"node": "@Label@611",
+					"rect": [
+						804.0,
+						310.0,
+						14.0,
+						32.0
+					],
+					"size": 16,
+					"text": "19"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/Paperlogy-5Medium.ttf",
+					"fontRole": "control",
+					"insideScroll": false,
+					"needed": [
+						57.0,
+						20.0
+					],
+					"node": "@Button@614",
+					"rect": [
+						205.0,
+						355.0,
+						74.0,
+						44.0
+					],
+					"size": 16,
+					"text": "아이템 7"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/Paperlogy-5Medium.ttf",
+					"fontRole": "control",
+					"insideScroll": false,
+					"needed": [
+						29.0,
+						20.0
+					],
+					"node": "ShopCrafting",
+					"rect": [
+						287.0,
+						355.0,
+						81.0,
+						44.0
+					],
+					"size": 16,
+					"text": "조합"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/BarlowCondensed-SemiBold.ttf",
+					"fontRole": "number",
+					"insideScroll": false,
+					"needed": [
+						5.0,
+						22.0
+					],
+					"node": "@Label@617",
+					"rect": [
+						406.0,
+						362.0,
+						14.0,
+						30.0
+					],
+					"size": 18,
+					"text": "1"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/BarlowCondensed-SemiBold.ttf",
+					"fontRole": "number",
+					"insideScroll": false,
+					"needed": [
+						8.0,
+						22.0
+					],
+					"node": "@Label@619",
+					"rect": [
+						452.0,
+						362.0,
+						14.0,
+						30.0
+					],
+					"size": 18,
+					"text": "2"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/BarlowCondensed-SemiBold.ttf",
+					"fontRole": "number",
+					"insideScroll": false,
+					"needed": [
+						8.0,
+						22.0
+					],
+					"node": "@Label@621",
+					"rect": [
+						498.0,
+						362.0,
+						14.0,
+						30.0
+					],
+					"size": 18,
+					"text": "3"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/BarlowCondensed-SemiBold.ttf",
+					"fontRole": "number",
+					"insideScroll": false,
+					"needed": [
+						9.0,
+						22.0
+					],
+					"node": "@Label@623",
+					"rect": [
+						544.0,
+						362.0,
+						14.0,
+						30.0
+					],
+					"size": 18,
+					"text": "4"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/BarlowCondensed-SemiBold.ttf",
+					"fontRole": "number",
+					"insideScroll": false,
+					"needed": [
+						8.0,
+						22.0
+					],
+					"node": "@Label@625",
+					"rect": [
+						590.0,
+						362.0,
+						14.0,
+						30.0
+					],
+					"size": 18,
+					"text": "5"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/BarlowCondensed-SemiBold.ttf",
+					"fontRole": "number",
+					"insideScroll": false,
+					"needed": [
+						5.0,
+						22.0
+					],
+					"node": "@Label@627",
+					"rect": [
+						636.0,
+						362.0,
+						14.0,
+						30.0
+					],
+					"size": 18,
+					"text": "1"
+				},
+				{
+					"fontFile": "res://assets/ui/fonts/Paperlogy-5Medium.ttf",
+					"fontRole": "control",
+					"insideScroll": false,
+					"needed": [
+						74.0,
+						20.0
+					],
+					"node": "@Button@628",
+					"rect": [
+						674.0,
+						355.0,
+						205.0,
+						44.0
+					],
+					"size": 16,
+					"text": "다음 웨이브"
+				}
+			],
+			"materials": [
+				{
+					"node": "@Panel@539",
+					"role": "cstore/cabinet",
+					"texture": "res://assets/ui/image-skin/enamel-glass/cstore_surfaces_02.png"
+				},
+				{
+					"node": "@Panel@540",
+					"role": "cstore/header",
+					"texture": "res://assets/ui/image-skin/enamel-glass/cstore_surfaces_02.png"
+				},
+				{
+					"node": "ShopWeaponsTab",
+					"role": "compact/tab",
+					"texture": "res://assets/ui/image-skin/operations-light-controls-02/tab-4x.png"
+				},
+				{
+					"node": "ShopItemsTab",
+					"role": "compact/tab",
+					"texture": "res://assets/ui/image-skin/operations-light-controls-02/tab-4x.png"
+				},
+				{
+					"node": "ShopReroll",
+					"role": "compact/secondary",
+					"texture": "res://assets/ui/image-skin/operations-light-controls-02/secondary-4x.png"
+				},
+				{
+					"node": "@Panel@554",
+					"role": "cstore/info",
+					"texture": "res://assets/ui/image-skin/enamel-glass/cstore_surfaces_02.png"
+				},
+				{
+					"node": "@Button@565",
+					"role": "compact/secondary",
+					"texture": "res://assets/ui/image-skin/operations-light-controls-02/secondary-4x.png"
+				},
+				{
+					"node": "ShopProduct_0",
+					"role": "cstore/card",
+					"texture": "res://assets/ui/image-skin/enamel-glass/cstore_surfaces_02.png"
+				},
+				{
+					"node": "@Panel@573",
+					"role": "cstore/purchase_disabled_yellow",
+					"texture": "res://assets/ui/image-skin/enamel-glass/purchase_yellow_04.png"
+				},
+				{
+					"node": "ShopProduct_1",
+					"role": "cstore/card",
+					"texture": "res://assets/ui/image-skin/enamel-glass/cstore_surfaces_02.png"
+				},
+				{
+					"node": "@Panel@585",
+					"role": "cstore/purchase_yellow",
+					"texture": "res://assets/ui/image-skin/enamel-glass/purchase_yellow_04.png"
+				},
+				{
+					"node": "ShopProduct_2",
+					"role": "cstore/card",
+					"texture": "res://assets/ui/image-skin/enamel-glass/cstore_surfaces_02.png"
+				},
+				{
+					"node": "@Panel@597",
+					"role": "cstore/purchase_yellow",
+					"texture": "res://assets/ui/image-skin/enamel-glass/purchase_yellow_04.png"
+				},
+				{
+					"node": "ShopProduct_3",
+					"role": "cstore/card",
+					"texture": "res://assets/ui/image-skin/enamel-glass/cstore_surfaces_02.png"
+				},
+				{
+					"node": "@Panel@609",
+					"role": "cstore/purchase_yellow",
+					"texture": "res://assets/ui/image-skin/enamel-glass/purchase_yellow_04.png"
+				},
+				{
+					"node": "@Button@614",
+					"role": "compact/secondary",
+					"texture": "res://assets/ui/image-skin/operations-light-controls-02/secondary-4x.png"
+				},
+				{
+					"node": "ShopCrafting",
+					"role": "compact/secondary",
+					"texture": "res://assets/ui/image-skin/operations-light-controls-02/secondary-4x.png"
+				},
+				{
+					"node": "@Button@628",
+					"role": "compact/primary",
+					"texture": "res://assets/ui/image-skin/operations-light-controls-02/primary-4x.png"
+				}
+			],
+			"pixelSize": [
+				844,
+				390
+			],
+			"screen": "compact-08-shop-eight-digit-price-844x390",
+			"tooltips": []
+		}
+	],
+	"simulation": false,
+	"sizes": [
+		[
+			915,
+			412
+		],
+		[
+			844,
+			390
+		]
+	]
+}

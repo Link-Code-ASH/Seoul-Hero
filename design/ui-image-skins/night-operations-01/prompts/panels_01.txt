@@ -1,0 +1,28 @@
+Game UI asset sheet for "Seoul Hero", a 2D mobile roguelite arena game set in night-time Seoul.
+Art direction "Seoul Night Operations": dark navy-black translucent glass panels (#0B1621 at about 86% opacity),
+thin 1-2px cool cyan edge highlight (#84CED6 at low opacity), a single mint accent color (#3DD6B5) used only for
+active / selected / primary elements, warm gold (#E8B75A) only for rewards, coral (#EF7A6D) only for danger.
+Clean flat-shaded vector-like finish with a very subtle top inner highlight, no heavy bevel, no metal texture,
+no rust, no paper, no grunge, no neon overload, no realistic photo texture.
+Shapes: crisp rectangles with small 45-degree chamfered corners (cut corners) instead of rounded corners.
+Must sit comfortably next to thick-outline cel-shaded chibi characters without competing with them.
+Front orthographic view, perfectly straight edges, no perspective, no drop shadow outside the element,
+transparent background, no text, no letters, no numbers, no logos, no characters.
+Every element is separated by generous empty transparent space and aligned to an invisible grid.
+
+Sheet layout: 3 columns x 2 rows, each element centered in its cell.
+Row 1:
+ (1) Screen header bar: very wide flat bar, aspect about 8:1, chamfered top-left and bottom-right corners only,
+     slightly brighter top edge line.
+ (2) Information panel: large panel, aspect about 4:3, chamfer on all four corners, thin cyan edge, faint inner
+     top highlight, plain flat interior so text can sit on it.
+ (3) Popup frame: panel aspect about 3:2, same as (2) but with a slightly stronger edge and a faint outer glow.
+Row 2:
+ (4) List row: thin wide row, aspect about 6:1, chamfer on all corners, subtle.
+ (5) Selection card, normal state: tall card, aspect about 3:4, chamfer corners, faint mint gradient rising from
+     the bottom 40% of the card.
+ (6) Selection card, selected state: identical shape to (5) but with a 2px mint border, soft mint outer glow and a
+     slightly stronger mint inner gradient.
+Corners and edges must stay inside the outer 12% of each element so the middle can stretch (9-slice friendly).
+
+Output: transparent PNG, 1536x1024 pixels, landscape. Keep every element fully inside the canvas with transparent padding on all four outer edges.

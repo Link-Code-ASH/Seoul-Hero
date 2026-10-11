@@ -1,0 +1,18 @@
+{
+  "characters": [
+    "yoonHarin",
+    "parkDojun",
+    "kangTaehoon",
+    "awakener"
+  ],
+  "crewFrozen": true,
+  "fixedSeed": 20261011,
+  "operatorLine": "오늘 목표는 칼퇴예요. 게이트가 협조만 해 준다면요...",
+  "productionLobby": true,
+  "saveWrites": false,
+  "userProfileRead": false,
+  "viewport": [
+    915,
+    412
+  ]
+}

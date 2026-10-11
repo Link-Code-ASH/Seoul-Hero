@@ -2,11 +2,12 @@ class_name HeroImageSkin
 extends RefCounted
 
 # Approved image art owns the surfaces. Native Controls still own input/text.
-# The old light/arcade theme stays active on screens awaiting a design review.
+# Operations roles are shared; dedicated store, book and support art stays local.
 static var _fonts: Dictionary = {}
 
 class ImageSurface extends NinePatchRect:
 	var source_factor := 4.0
+	var visual_inset := Vector4.ZERO
 	func _ready() -> void:
 		mouse_filter = Control.MOUSE_FILTER_IGNORE
 		show_behind_parent = true
@@ -15,17 +16,18 @@ class ImageSurface extends NinePatchRect:
 			owner_control.resized.connect(_fit)
 			_fit()
 	func _fit() -> void:
-		position = Vector2.ZERO
-		size = (get_parent() as Control).size * source_factor
+		var owner_size := (get_parent() as Control).size
+		position = Vector2(visual_inset.x,visual_inset.y)
+		size = Vector2(maxf(0,owner_size.x-visual_inset.x-visual_inset.z),maxf(0,owner_size.y-visual_inset.y-visual_inset.w)) * source_factor
 		scale = Vector2.ONE / source_factor
 
 static func _data() -> Dictionary:
 	return Content.ui_materials.image_skin
 
 static func color(role: String = "ink") -> Color:
-	var aliases := {"text":"ink","selected":"accent","disabled":"muted","scene_muted":"muted"}
+	var aliases := {"text":"ink","selected":"accent"}
 	var key: String = aliases.get(role,role)
-	var extra := {"rule":"#b4c6cf","danger":"#b64e49","coral":"#b64e49","reward":"#9a7128","navy":"#243448","white":"#f5f8fa"}
+	var extra := {"rule":"#2e4a5e","danger":"#ef7a6d","coral":"#ef7a6d","reward":"#e8b75a","navy":"#0b1621","white":"#f5f8fa","scene_muted":"#cad6df","scene_reward":"#ffe0a2","disabled":"#6f8291","benefit":"#3dd6b5"}
 	return Color(role) if role.begins_with("#") else Color(str(extra.get(key,_data().colors.get(key,_data().colors.ink))))
 
 static func font(role: String = "body") -> Font:
@@ -69,6 +71,63 @@ static func root() -> Control:
 	result.theme = theme()
 	return result
 
+# Native containers measure icon/name/value widths, including live value changes.
+# Neither digit count nor localization can separate a value from its own icon.
+static func resource_group(parent: Node, entry: Dictionary, font_size: int = 18, color_role: String = "scene") -> HBoxContainer:
+	var group := HBoxContainer.new()
+	group.add_theme_constant_override("separation",6)
+	group.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	parent.add_child(group)
+	var image_id := str(entry.get("image_id",entry.get("icon","")))
+	if not image_id.is_empty():
+		var art := HeroUI.image(group,Content.trimmed_texture(image_id),20,20)
+		if entry.has("texture_filter"): art.texture_filter = int(entry.texture_filter)
+		art.size_flags_vertical = Control.SIZE_SHRINK_CENTER
+	if not str(entry.get("name","")).is_empty():
+		text(group,str(entry.name),Rect2(),"body",13,color_role)
+	var value := text(group,str(entry.get("amount",entry.get("text",""))),Rect2(),"number",font_size,color_role)
+	value.name = str(entry.get("label_name","ResourceValue"))
+	value.horizontal_alignment = HORIZONTAL_ALIGNMENT_RIGHT
+	return group
+
+# Direction A: every menu sits on its scene art under one night-navy veil.
+static func night_backdrop(root: Control, image_id: String) -> void:
+	HeroUI.background(root,image_id)
+	var veil := ColorRect.new()
+	veil.name = "NightVeil"
+	veil.color = Color(0.035,0.07,0.11,0.84)
+	veil.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	veil.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	veil.set_meta("full_bleed",true)
+	root.add_child(veil)
+
+static func header(parent: Node, title: String, back: Callable = Callable(), resources: Array = [], options: Dictionary = {}) -> Panel:
+	var panel_control := material(parent,"ops/header",Rect2(16,12,883,52))
+	panel_control.name = "OperationsHeader"
+	if back.is_valid():
+		var previous := image_button(panel_control,"‹",Rect2(4,4,44,44),back,"compact/back",24)
+		previous.name = "HeaderBack"
+		previous.set_meta("action_name",str(options.get("back_caption","뒤로")))
+	var title_x := 60.0 if back.is_valid() else 20.0
+	var title_width := minf(float(options.get("title_width",500)),font("brand").get_string_size(title,HORIZONTAL_ALIGNMENT_LEFT,-1,24).x+12)
+	text(panel_control,title,Rect2(title_x,4,title_width,44),"brand",24,"scene",HORIZONTAL_ALIGNMENT_CENTER).name = "ScreenTitle"
+	if not resources.is_empty():
+		var row := HBoxContainer.new()
+		row.name = "HeaderResources"
+		row.add_theme_constant_override("separation",int(options.get("resource_separation",18)))
+		row.mouse_filter = Control.MOUSE_FILTER_IGNORE
+		panel_control.add_child(row)
+		for entry in resources: resource_group(row,entry)
+		var fit := func():
+			if not is_instance_valid(row) or not is_instance_valid(panel_control): return
+			var width := row.get_combined_minimum_size().x
+			row.position = Vector2(panel_control.size.x-float(options.get("resources_right",16))-width,4)
+			row.size = Vector2(width,44)
+		row.minimum_size_changed.connect(fit)
+		panel_control.resized.connect(fit)
+		fit.call_deferred()
+	return panel_control
+
 static func _surface(parent: Control, pack_name: String, role: String) -> ImageSurface:
 	var pack: Dictionary = _data()[pack_name]
 	var entry: Dictionary = pack.roles[role]
@@ -83,7 +142,7 @@ static func _surface(parent: Control, pack_name: String, role: String) -> ImageS
 		surface.region_rect = Rect2(Vector2.ZERO,surface.texture.get_size())
 	if entry.has("saturation") or entry.has("tint"):
 		var tint: Array = entry.get("tint",[1.0,1.0,1.0,1.0])
-		surface.material = _state_material(float(entry.get("saturation",1.0)),Color(tint[0],tint[1],tint[2],tint[3]))
+		surface.material = _state_material(float(entry.get("saturation",1.0)),Color(tint[0],tint[1],tint[2],tint[3]),bool(pack.get("preserve_source_color",false)))
 	surface.patch_margin_left = int(slices[0]); surface.patch_margin_top = int(slices[1])
 	surface.patch_margin_right = int(slices[2]); surface.patch_margin_bottom = int(slices[3])
 	surface.source_factor = float(entry.get("asset_scale",pack.get("asset_scale",4)))
@@ -134,7 +193,7 @@ static func button(parent: Node, caption: String, rect: Rect2, action: Callable,
 	apply_font(result,"control",font_size)
 	for state in ["normal","hover","pressed","disabled","focus"]:
 		result.add_theme_stylebox_override(state,_empty(Vector4(12,4,12,4) if role != "plain" else Vector4.ZERO))
-	var caption_color := color("scene") if role == "primary" else color("ink")
+	var caption_color := color("on_accent") if role == "primary" else color("ink")
 	for state in ["font_color","font_hover_color","font_pressed_color","font_focus_color"]:
 		result.add_theme_color_override(state,caption_color)
 	result.add_theme_color_override("font_disabled_color",color("muted"))
@@ -144,6 +203,7 @@ static func button(parent: Node, caption: String, rect: Rect2, action: Callable,
 		var surface := _surface(result,"buttons","selected" if selected else role)
 		result.draw.connect(func(): _button_surface(result,surface,role,selected))
 	if action.is_valid(): result.pressed.connect(func():
+		HeroUI.ui_reaction(result)
 		Sound.prime()
 		Sound.cue("buttonClick")
 		action.call()
@@ -244,11 +304,12 @@ static func style(key: String, inset: Vector4 = Vector4.ZERO, raster_density: in
 		result.set_content_margin(side,inset[side]*density)
 	return result
 
-static func _state_material(saturation: float, tint: Color) -> ShaderMaterial:
+static func _state_material(saturation: float, tint: Color, preserve_source_color: bool = false) -> ShaderMaterial:
 	var result := ShaderMaterial.new()
 	result.shader = preload("res://shaders/ui_surface_state.gdshader")
 	result.set_shader_parameter("saturation",saturation)
 	result.set_shader_parameter("tint",tint)
+	result.set_shader_parameter("preserve_source_color",preserve_source_color)
 	return result
 
 static func stable_button(parent: Node, caption: String, rect: Rect2, action: Callable, base_role: String = "tab", font_size: int = 15, selected: bool = false) -> Button:
@@ -264,11 +325,31 @@ static func stable_button(parent: Node, caption: String, rect: Rect2, action: Ca
 	return result
 
 static func _image_button_state(control: Button, surface: ImageSurface, base_role: String, selected: bool) -> void:
+	selected = bool(control.get_meta("selected_state",selected))
 	var pack_name := base_role.get_slice("/",0)
 	var base_name := base_role.get_slice("/",1)
 	var pack: Dictionary = _data()[pack_name]
 	var roles: Dictionary = pack.roles
 	var base: Dictionary = roles[base_name]
+	if bool(pack.get("state_images",false)):
+		# Night-operations art ships one authored image per state; the content
+		# area and slices stay identical, so captions never move between states.
+		var state := "_disabled" if control.disabled else "_selected" if selected else "_pressed" if control.is_pressed() else ""
+		var entry: Dictionary = roles.get(base_name+state,base)
+		_apply_entry(surface,pack,entry)
+		var hover := not control.disabled and (control.is_hovered() or control.has_focus())
+		surface.self_modulate = Color(1.06,1.06,1.06) if hover else Color.WHITE
+		if control.has_meta("danger_action"): surface.self_modulate = Color(1.0,0.82,0.80)
+		return
+	if pack_name == "ops" or bool(pack.get("fixed_state_geometry",false)):
+		# Every state keeps the exact same source geometry and safe content area.
+		var selected_tint: Array = pack.get("selected_tint",[0.8,1.0,0.91,1.0])
+		var tint := Color(selected_tint[0],selected_tint[1],selected_tint[2],selected_tint[3]) if selected else Color.WHITE
+		if control.disabled: tint = Color(0.8,0.84,0.88)
+		if control.has_meta("danger_action"): tint = Color(1.0,0.85,0.85)
+		surface.material = _state_material(0.0 if control.disabled else 1.0,tint,bool(pack.get("preserve_source_color",false)))
+		surface.self_modulate = Color(0.94,0.94,0.94) if control.is_pressed() else Color(1.03,1.03,1.03) if control.is_hovered() else Color.WHITE
+		return
 	var name := str(base.get("disabled_role","disabled")) if control.disabled else "selected" if selected else base_name
 	var entry: Dictionary = roles.get(name,base)
 	var bounds: Array = entry.rect
@@ -281,30 +362,52 @@ static func _image_button_state(control: Button, surface: ImageSurface, base_rol
 	surface.material = _state_material(float(entry.get("saturation",0.0 if control.disabled else 1.0)),Color(tint[0],tint[1],tint[2],tint[3]))
 	surface.self_modulate = Color(0.94,0.94,0.94) if control.is_pressed() else Color(1.03,1.03,1.03) if control.is_hovered() else Color.WHITE
 
-static func image_button(parent: Node, caption: String, rect: Rect2, action: Callable, role: String = "controls/secondary", font_size: int = 16, selected: bool = false) -> Button:
+static func _apply_entry(surface: ImageSurface, pack: Dictionary, entry: Dictionary) -> void:
+	var bounds: Array = entry.rect
+	var art := Content.texture(str(entry.get("image_id",pack.get("image_id",""))))
+	if surface.texture != art: surface.texture = art
+	var region := Rect2(bounds[0],bounds[1],bounds[2],bounds[3])
+	if surface.region_rect != region: surface.region_rect = region
+	var slices: Array = entry.get("slice",[0,0,0,0])
+	surface.patch_margin_left = int(slices[0]); surface.patch_margin_top = int(slices[1])
+	surface.patch_margin_right = int(slices[2]); surface.patch_margin_bottom = int(slices[3])
+	if entry.has("tint"):
+		var tint: Array = entry.tint
+		surface.material = _state_material(1.0,Color(tint[0],tint[1],tint[2],tint[3]),bool(pack.get("preserve_source_color",false)))
+	else: surface.material = null
+
+static func image_button(parent: Node, caption: String, rect: Rect2, action: Callable, role: String = "ops/secondary", font_size: int = 16, selected: bool = false, visual_inset: Vector4 = Vector4.ZERO) -> Button:
 	var result := Button.new()
 	result.text = caption; result.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 	result.text_overrun_behavior = TextServer.OVERRUN_NO_TRIMMING
 	result.alignment = HORIZONTAL_ALIGNMENT_CENTER
 	result.custom_minimum_size = Vector2(rect.size.x,maxf(44,rect.size.y))
 	result.add_to_group("input_blocker")
+	result.set_meta("selected_state",selected)
 	apply_font(result,"control",font_size)
-	var padding: Array = [0,0,0,0] if role == "plain" else _definition(role).get("safe_padding",[16,4,16,8])
+	var unframed := role == "plain" or role == "ops/icon"
+	var padding: Array = [0,0,0,0] if unframed else _definition(role).get("safe_padding",[16,4,16,8])
+	var caption_role := "scene" if role == "ops/primary" else "ink"
+	if not unframed: caption_role = str(_definition(role).get("text_color_role",caption_role))
 	for state_name in ["normal","hover","pressed","disabled","focus"]:
 		result.add_theme_stylebox_override(state_name,_empty(Vector4(padding[0],padding[1],padding[2],padding[3])))
 	for text_state in ["font_color","font_hover_color","font_pressed_color","font_focus_color"]:
-		result.add_theme_color_override(text_state,color("ink"))
-	result.add_theme_color_override("font_disabled_color",color("muted"))
+		result.add_theme_color_override(text_state,color("accent" if selected else caption_role))
+	var disabled_role := "muted" if unframed else str(_definition(role).get("disabled_text_color_role","muted"))
+	result.add_theme_color_override("font_disabled_color",color(disabled_role))
 	parent.add_child(result); HeroUI.place(result,rect)
-	if role != "plain":
+	if not unframed:
 		var selected_role := role.get_slice("/",0)+"/selected"
 		var surface := put_surface(result,selected_role if selected and _data()[role.get_slice("/",0)].roles.has("selected") else role)
+		surface.visual_inset = visual_inset
+		surface._fit()
 		result.draw.connect(func(): _image_button_state(result,surface,role,selected))
 	if action.is_valid(): result.pressed.connect(func():
 		var ancestor: Node = result.get_parent()
 		while ancestor != null:
 			if ancestor is DragScroll and ancestor.suppress_click: return
 			ancestor = ancestor.get_parent()
+		HeroUI.ui_reaction(result)
 		Sound.prime(); Sound.cue("buttonClick"); action.call()
 	)
 	return result
@@ -420,18 +523,24 @@ static func card(parent: Node, caption: String, art: Texture2D, minimum_size: Ve
 		image.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	if not caption.is_empty():
 		var label := Label.new()
-		label.text = caption; apply_font(label,"control",14)
+		label.text = caption; apply_font(label,"control",16)
 		label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER; label.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
 		label.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART; label.text_overrun_behavior = TextServer.OVERRUN_NO_TRIMMING
 		label.custom_minimum_size.y = 36; label.add_theme_constant_override("line_spacing",2)
 		label.add_theme_color_override("font_color",color("accent" if selected else "muted" if locked else "ink"))
 		label.mouse_filter = Control.MOUSE_FILTER_IGNORE
 		body.add_child(label)
+	result.draw.connect(func():
+		var state_material := background.material as ShaderMaterial
+		state_material.set_shader_parameter("saturation",0.0 if result.disabled else 0.25 if locked else 1.0)
+		body.modulate = Color(0.8,0.84,0.88,0.65) if result.disabled else Color.WHITE
+	)
 	if action.is_valid(): result.pressed.connect(func():
 		var ancestor: Node = result.get_parent()
 		while ancestor != null:
 			if ancestor is DragScroll and ancestor.suppress_click: return
 			ancestor = ancestor.get_parent()
+		HeroUI.ui_reaction(result)
 		Sound.prime(); Sound.cue("buttonClick"); action.call()
 	)
 	return result

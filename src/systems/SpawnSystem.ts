@@ -9,7 +9,7 @@ import { arenaSpawn } from '../world/Arena';
 import { weightedIndex } from '../utils/math';
 import { ignoreGameEvent } from '../core/GameEvents';
 import type { GameEventSink } from '../core/GameEvents';
-import { resolveGateWave } from '../data/gateProgression';
+import { resolveGateWave, runElite } from '../data/gateProgression';
 
 export interface Viewport { width: number; height: number }
 export interface SpawnSnapshot { nextSpawn: number; triggeredElites: number[] }
@@ -20,8 +20,9 @@ export class SpawnSystem {
   private nextSpawn = 0;
   private readonly triggeredElites = new Set<number>();
   private readonly waveCache = new Map<number, Wave>();
+  private eliteId: string | undefined;
 
-  constructor(private readonly stage: MapData, private readonly random: () => number, private readonly nextId: () => number, private readonly emit: GameEventSink = ignoreGameEvent) {}
+  constructor(private readonly stage: MapData, private readonly random: () => number, private readonly nextId: () => number, private readonly emit: GameEventSink = ignoreGameEvent, private readonly week?: number) {}
 
   reset(): void { this.nextSpawn = 0; this.triggeredElites.clear(); }
   snapshot(): SpawnSnapshot { return { nextSpawn: this.nextSpawn, triggeredElites: [...this.triggeredElites] }; }
@@ -36,7 +37,8 @@ export class SpawnSystem {
     const wave = this.wave(state.currentWave, state.gateDepth);
     if (!wave) return;
     state.waveId = wave.id;
-    if (state.currentWave === this.stage.bossWave) { this.boss(state, viewport); return; }
+    // The boss Wave keeps its elites and ordinary spawns beside the boss.
+    if (state.currentWave === this.stage.bossWave) this.boss(state, viewport);
     (wave.elites ?? []).forEach((event, index) => {
       if (state.waveElapsedTime < event.at || this.triggeredElites.has(index)) return;
       this.triggeredElites.add(index);
@@ -81,7 +83,9 @@ export class SpawnSystem {
     if (cached) return cached;
     const base = currentWave(this.stage, number);
     if (!base) return undefined;
-    const resolved = resolveGateWave(base, depth, this.stage.bossWave);
+    // One elite body for the whole Run, drawn on first use.
+    this.eliteId ??= runElite(this.stage.elitePool, this.random());
+    const resolved = resolveGateWave(base, depth, { week: this.week, eliteId: this.eliteId });
     this.waveCache.set(number, resolved);
     return resolved;
   }

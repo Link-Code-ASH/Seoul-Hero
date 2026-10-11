@@ -3,25 +3,26 @@ extends RefCounted
 
 static func hud(run: HeroRun, pause: Callable) -> Control:
 	var root := HeroImageSkin.root()
-	var hp := _hud_text(root,"",Rect2(20,6,82,28),"number",24)
-	hp.name = "Health"
-	var stone := HeroUI.fixed_art(root,Content.trimmed_texture("magicStone"),Rect2(104,14,12,12))
-	stone.name = "StoneIcon"
-	var money := _hud_text(root,"0",Rect2(120,8,32,24),"number",13)
-	money.name = "Currency"; money.add_theme_constant_override("outline_size",1)
-	var icon := HeroUI.fixed_art(root,Content.trimmed_texture("wallet"),Rect2(157,14,12,12))
-	icon.name = "WalletIcon"; icon.modulate = Color(0.90,0.98,1.0)
-	var wallet := _hud_text(root,"0",Rect2(173,8,27,24),"number",13)
-	wallet.name = "Wallet"; wallet.add_theme_constant_override("outline_size",1)
+	# Plate-free HUD: thick health bar, stone and wallet on its right, weapons below.
 	var bar := ProgressBar.new(); bar.name = "HealthBar"; bar.show_percentage = false
 	bar.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	bar.add_theme_stylebox_override("background",HeroImageSkin.style("enamel/hp_track",Vector4.ZERO,4))
 	bar.add_theme_stylebox_override("fill",HeroImageSkin.style("enamel/hp_fill",Vector4.ZERO,4))
 	bar.texture_filter = CanvasItem.TEXTURE_FILTER_LINEAR
-	root.add_child(bar); HeroUI.place(bar,Rect2(20,37,720,40))
+	root.add_child(bar); HeroUI.place(bar,Rect2(16,10,800,88))
 	bar.scale = Vector2(0.25,0.25)
+	var hp := _hud_text(root,"",Rect2(16,10,200,22),"number",16,HORIZONTAL_ALIGNMENT_CENTER)
+	hp.name = "Health"
+	var stone := HeroUI.fixed_art(root,Content.trimmed_texture("magicStone"),Rect2(226,13,16,16))
+	stone.name = "StoneIcon"
+	var money := _hud_text(root,"0",Rect2(246,8,52,26),"number",18)
+	money.name = "Currency"
+	var icon := HeroUI.fixed_art(root,Content.trimmed_texture("wallet"),Rect2(302,13,16,16))
+	icon.name = "WalletIcon"; icon.modulate = Color(0.90,0.98,1.0)
+	var wallet := _hud_text(root,"0",Rect2(322,8,52,26),"number",18)
+	wallet.name = "Wallet"
 	var weapons := Control.new(); weapons.name = "HudWeapons"; weapons.mouse_filter = Control.MOUSE_FILTER_IGNORE
-	root.add_child(weapons); HeroUI.place(weapons,Rect2(20,60,162,32))
+	root.add_child(weapons); HeroUI.place(weapons,Rect2(16,38,162,32))
 	_sync_weapons(weapons,run)
 	var wave := _hud_text(root,"",Rect2(365,8,185,26),"control",15,HORIZONTAL_ALIGNMENT_CENTER)
 	wave.name = "Wave"
@@ -33,6 +34,7 @@ static func hud(run: HeroRun, pause: Callable) -> Control:
 	if run.phase == "postWave":
 		var notice := _hud_text(root,"웨이브 종료",Rect2(347,86,220,40),"heading",24,HORIZONTAL_ALIGNMENT_CENTER)
 		notice.name = "WaveNotice"
+	HeroEliteHud.build(root,run)
 	update_hud(root,run)
 	return root
 
@@ -66,13 +68,17 @@ static func update_hud(root: Control, run: HeroRun) -> void:
 	var hp := root.find_child("Health",true,false) as Label
 	if hp:
 		hp.text = "%d / %d" % [ceili(run.player.hp),roundi(run.stats.maxHp)]
-		hp.add_theme_color_override("font_color",Color("ff8994") if low_hp else Color.WHITE)
+		hp.add_theme_color_override("font_color",Color.WHITE)
 	var bar := root.find_child("HealthBar",true,false) as ProgressBar
 	if bar:
 		bar.max_value = run.stats.maxHp; bar.value = run.player.hp
-		bar.self_modulate = Color("f19b90") if low_hp else Color.WHITE
+		if bool(bar.get_meta("low_hp",false)) != low_hp:
+			bar.set_meta("low_hp",low_hp)
+			bar.add_theme_stylebox_override("fill",HeroImageSkin.style("enamel/hp_low" if low_hp else "enamel/hp_fill",Vector4.ZERO,4))
 	var currency := root.find_child("Currency",true,false) as Label
-	if currency: currency.text = HeroUI.amount(floori(run.currency))
+	if currency:
+		currency.text = HeroUI.amount(floori(run.currency))
+		_stone_punch(root,currency,floori(run.currency))
 	var wallet := root.find_child("Wallet",true,false) as Label
 	if wallet: wallet.text = HeroUI.amount(ceili(run.wallet))
 	var wave := root.find_child("Wave",true,false) as Label
@@ -87,6 +93,25 @@ static func update_hud(root: Control, run: HeroRun) -> void:
 	if weapons: _sync_weapons(weapons,run)
 	var notice := root.find_child("WaveNotice",true,false) as Label
 	if notice: notice.modulate.a = 0.7 + sin(run.post_elapsed * 18.0) * 0.3
+	HeroEliteHud.update(root,run)
+
+# A collected stone briefly pops the HUD stone icon and warms its number to gold.
+static func _stone_punch(root: Control, currency: Label, amount: int) -> void:
+	var previous := int(root.get_meta("stone_amount",amount))
+	root.set_meta("stone_amount",amount)
+	if amount <= previous or not root.is_inside_tree(): return
+	var icon := root.find_child("StoneIcon",true,false) as Control
+	if root.has_meta("stone_tween"):
+		var running: Tween = root.get_meta("stone_tween")
+		if running and running.is_valid(): running.kill()
+	var tween := root.create_tween().set_parallel(true)
+	if icon:
+		icon.pivot_offset = icon.size*0.5
+		icon.scale = Vector2.ONE*1.32
+		tween.tween_property(icon,"scale",Vector2.ONE,0.2).set_trans(Tween.TRANS_BACK).set_ease(Tween.EASE_OUT)
+	currency.modulate = Color("ffe08a")
+	tween.tween_property(currency,"modulate",Color.WHITE,0.28)
+	root.set_meta("stone_tween",tween)
 
 static func shop(run: HeroRun, tab: bool, set_tab: Callable, refresh: Callable, advance: Callable, pause: Callable) -> Control:
 	return HeroShopScreen.build(run,tab,set_tab,refresh,advance,pause)
@@ -97,11 +122,12 @@ static func popup(root: Control, title: String, width: float = 440, height: floa
 	blocker.color = Color(0.02,0.03,0.05,0.55)
 	blocker.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	blocker.add_to_group("input_blocker"); root.add_child(blocker)
-	var panel := HeroUI.sheet(blocker,"glass",Rect2((915-width)/2,(412-height)/2,width,height))
+	var panel := HeroImageSkin.material(blocker,"ops/popup",Rect2((915-width)/2,(412-height)/2,width,height))
 	panel.mouse_filter = Control.MOUSE_FILTER_STOP
-	var box := HeroUI.inset(panel)
+	var box := HeroUI.inset(panel,Vector2(20,12))
 	box.set_meta("overlay",blocker)
-	HeroUI.text_block(box,title,HeroUI.lines_height(box,21,2),21,HeroUI.ink(box),true,{"align":HORIZONTAL_ALIGNMENT_CENTER,"valign":VERTICAL_ALIGNMENT_CENTER,"lines":2})
+	var heading := HeroUI.text_block(box,title,HeroUI.lines_height(box,18,2),18,HeroImageSkin.color("ink"),true,{"align":HORIZONTAL_ALIGNMENT_CENTER,"valign":VERTICAL_ALIGNMENT_CENTER,"lines":2,"font_role":"heading"})
+	HeroImageSkin.apply_font(heading,"heading",18)
 	return box
 
 static func details_popup(root: Control, description: String, title: String) -> void:
@@ -109,7 +135,7 @@ static func details_popup(root: Control, description: String, title: String) -> 
 	var scroll := HeroUI.scroll(box)
 	var content := HeroUI.column(scroll); content.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	HeroUI.paragraph(content,description,14)
-	var close := HeroUI.button(box,"닫기",func(): box.get_meta("overlay").queue_free(),120)
+	var close := HeroImageSkin.image_button(box,"닫기",Rect2(0,0,120,44),func(): box.get_meta("overlay").queue_free(),"ops/secondary",16)
 	close.size_flags_horizontal = Control.SIZE_SHRINK_CENTER
 
 static func pause_menu(run: HeroRun, resume: Callable, quit: Callable) -> Control:
@@ -117,20 +143,19 @@ static func pause_menu(run: HeroRun, resume: Callable, quit: Callable) -> Contro
 	var blocker := ColorRect.new(); blocker.color = Color(0.04,0.08,0.13,0.42)
 	blocker.mouse_filter = Control.MOUSE_FILTER_STOP; blocker.add_to_group("input_blocker")
 	root.add_child(blocker); blocker.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
-	var panel := HeroImageSkin.material(root,"command/panel",Rect2(294,81,327,250))
+	var panel := HeroImageSkin.material(root,"ops/popup",Rect2(294,81,327,250))
 	panel.mouse_filter = Control.MOUSE_FILTER_STOP
-	HeroImageSkin.material(panel,"command/title",Rect2(23,20,281,43))
-	HeroImageSkin.text(panel,"일시정지",Rect2(34,28,259,34),"heading",24,"ink",HORIZONTAL_ALIGNMENT_CENTER)
-	HeroImageSkin.text(panel,"%s · 심도 %d" % [run.map.name,run.setup.depth],Rect2(23,78,281,27),"body",14,"muted",HORIZONTAL_ALIGNMENT_CENTER)
+	HeroImageSkin.text(panel,"일시정지",Rect2(34,28,259,34),"brand",24,"ink",HORIZONTAL_ALIGNMENT_CENTER)
+	HeroImageSkin.text(panel,"%s · %d층" % [run.map.name,run.setup.depth],Rect2(23,78,281,27),"body",14,"muted",HORIZONTAL_ALIGNMENT_CENTER)
 	HeroImageSkin.text(panel,"%d / %d 웨이브" % [run.wave,int(run.map.totalWaves)],Rect2(23,109,281,27),"control",16,"ink",HORIZONTAL_ALIGNMENT_CENTER)
-	HeroImageSkin.image_button(panel,"계속하기",Rect2(31,145,265,44),resume,"controls/primary",17)
-	var exit_button := HeroImageSkin.image_button(panel,"출동 종료",Rect2(31,193,265,44),quit,"controls/secondary",16)
+	HeroImageSkin.image_button(panel,"계속하기",Rect2(31,145,265,44),resume,"ops/primary",16)
+	var exit_button := HeroImageSkin.image_button(panel,"출동 종료",Rect2(31,193,265,44),quit,"ops/secondary",16)
 	for state in ["font_color","font_hover_color","font_pressed_color","font_focus_color"]:
 		exit_button.add_theme_color_override(state,HeroImageSkin.color("danger"))
 	return root
 
 static func revival(run: HeroRun, revive: Callable, die: Callable) -> Control:
-	var root := HeroUI.root()
+	var root := HeroImageSkin.root()
 	var box := popup(root,"생환석",630,300)
 	var choices := HeroUI.row(box)
 	for grade in Content.data.revivalStones:
@@ -138,28 +163,40 @@ static func revival(run: HeroRun, revive: Callable, die: Callable) -> Control:
 		var count: int = Profile.meta.wallet.revivalStones[grade]
 		var choice := HeroUI.choice(choices,"%s · %d\n%d%% 회복" % [stone.name,count,roundi(stone.healthFraction * 100)],Content.trimmed_texture(stone.image),false,func(): revive.call(grade),"ceramic",145)
 		choice.disabled = count <= 0
-	HeroUI.danger(HeroUI.button(box,"생환 포기",die,140)).size_flags_horizontal = Control.SIZE_SHRINK_CENTER
+	HeroUI.danger(HeroImageSkin.image_button(box,"생환 포기",Rect2(0,0,140,44),die,"ops/secondary",16)).size_flags_horizontal = Control.SIZE_SHRINK_CENTER
 	return root
 
 static func result(run: HeroRun, back: Callable) -> Control:
-	var root := HeroUI.root()
+	var root := HeroImageSkin.root()
 	HeroUI.background(root,"titleGate",Color(0.45,0.5,0.6))
-	var layout := HeroUI.layout(root)
-	HeroUI.header(layout,"작전 결과",back)
-	var body := HeroUI.row(layout); body.size_flags_vertical = Control.SIZE_EXPAND_FILL
+	HeroImageSkin.header(root,"작전 결과",back,[{"image_id":"associationCoin","name":"협회 코인","amount":HeroUI.amount(int(Profile.meta.wallet.associationCoins))}],{"back_caption":"로비로"})
+	var body := HBoxContainer.new(); body.add_theme_constant_override("separation",12)
+	root.add_child(body); HeroUI.place(body,Rect2(16,76,883,324))
 	var result_box := HeroUI.column(HeroUI.panel(body,"document"))
-	HeroUI.label(result_box,"게이트 안정화" if run.phase == "stageClear" else "교전 종료",22).horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	HeroUI.label(result_box,"게이트 안정화" if run.phase == "stageClear" else "교전 종료",18,HeroImageSkin.color("ink"),"heading").horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	var box := HeroUI.column(HeroUI.scroll(result_box)); box.size_flags_horizontal = Control.SIZE_EXPAND_FILL
-	HeroUI.paragraph(box,"%s · 심도 %d · 웨이브 %d" % [run.map.name,run.setup.depth,run.wave],14)
+	HeroUI.paragraph(box,"%s · %d층 · 웨이브 %d" % [run.map.name,run.setup.depth,run.wave],14)
 	HeroUI.paragraph(box,"처치 %d   전투 %02d:%02d" % [run.kills,int(run.combat_time)/60,int(run.combat_time)%60],16)
+	var last: Dictionary = Profile.meta.statistics.get("lastRun",{})
+	if last.get("runId","") == run.run_id:
+		HeroUI.paragraph(box,"완료한 웨이브 %d / %d" % [int(last.get("completedWaves",0)),run.map.waveDefinitions.size()],14)
+		var guild_rewards: Dictionary = last.get("guildRewards",{})
+		for key in HeroGuildState.RESOURCES:
+			if int(guild_rewards.get(key,0)) > 0: HeroUI.paragraph(box,"%s +%d" % [Content.data.resources[key].name,int(guild_rewards[key])],14)
 	var contributions: Array = run.telemetry.weapons.keys()
 	contributions.sort_custom(func(a,b): return run.telemetry.weapons[a].damage > run.telemetry.weapons[b].damage)
 	for id in contributions.slice(0,3):
 		var line := HeroUI.row(box)
 		HeroUI.paragraph(line,run.data.weapons[id].name,14)
-		HeroUI.label(line,"%d 피해" % roundi(run.telemetry.weapons[id].damage),14).horizontal_alignment = HORIZONTAL_ALIGNMENT_RIGHT
-	HeroUI.button(result_box,"이전",back,150).size_flags_horizontal = Control.SIZE_SHRINK_CENTER
+		HeroUI.label(line,"%d 피해" % roundi(run.telemetry.weapons[id].damage),18,HeroImageSkin.color("ink"),"number").horizontal_alignment = HORIZONTAL_ALIGNMENT_RIGHT
+	HeroImageSkin.image_button(result_box,"로비로",Rect2(0,0,150,44),back,"ops/primary",16).size_flags_horizontal = Control.SIZE_SHRINK_CENTER
 	var reward := HeroUI.column(HeroUI.panel(body,"reward"))
-	HeroUI.image(reward,Content.trimmed_texture("associationCoin"),112,112)
-	HeroUI.paragraph(reward,"협회 코인 +%d" % run.reward,20).horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	HeroUI.image(reward,Content.trimmed_texture("associationCoin"),112,112).name = "ResultRewardArt"
+	HeroUI.label(reward,"협회 코인 +%d" % run.reward,18,HeroImageSkin.color("reward"),"number").horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	var stones: Array[String] = []
+	for grade in ["high","mid","low"]:
+		var count := int(run.loot.get("revivalStones",{}).get(grade,0))
+		if count > 0: stones.append("%s +%d" % [Content.data.revivalStones[grade].name,count])
+	if not stones.is_empty(): HeroUI.label(reward," · ".join(stones),16,HeroImageSkin.color("reward"),"number").horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	if run.reward_tickets > 0: HeroUI.label(reward,"보급권 +%d" % run.reward_tickets,16,HeroImageSkin.color("reward"),"number").horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	return root

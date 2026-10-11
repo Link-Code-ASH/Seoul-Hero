@@ -1,8 +1,10 @@
 import type { GameEvent } from '../core/GameEvents';
 import { sourcedSfxPaths, sourcedSfxSettings, sourcedAudioPolicy, sourcedAudioConnections } from './sourcedAudio';
+import { audioIdentities } from './audioIdentity';
 
 // Only the adopted revision enters the game bundle; rollback WAVs stay outside this glob.
-const audioFiles = import.meta.glob<string>(['../../assets/audio/bgm/provided/*.mp3', '../../assets/audio/sfx/reborn-01/**/*.wav'], { eager: true, query: '?url', import: 'default' });
+const audioFiles = import.meta.glob<string>(['../../assets/audio/bgm/provided/*.mp3', '../../assets/audio/sfx/reborn-02/**/*.wav'], { eager: true, query: '?url', import: 'default' });
+export const activeAudioRevision = 'reborn-02';
 const file = (path: string): string => audioFiles[`../../assets/audio/${path}`] || '';
 
 export type SfxGroup = 'combat' | 'ui' | 'ambience';
@@ -30,7 +32,11 @@ function createCues(): Readonly<CueDefinitions> {
 export const sfx = createCues() satisfies
   Record<GameEvent | 'buttonClick' | 'supplyLatch' | 'supplyFanfare' | 'walletSweep' | 'waveCountdownTick', SfxDefinition>;
 export type SfxId = keyof typeof sfx;
-export const audioConnections = sourcedAudioConnections;
+export const audioConnections = {
+  ...sourcedAudioConnections,
+  identities: audioIdentities,
+  lobbyBackgrounds: { ...sourcedAudioConnections.lobbyBackgrounds, officeDay: 'officeDay' },
+};
 
 export interface BgmTrack { readonly url: string; readonly label: string }
 export const bgm = {

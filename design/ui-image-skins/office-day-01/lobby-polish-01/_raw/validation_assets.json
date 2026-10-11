@@ -1,0 +1,172 @@
+[
+  {
+    "file": "speaker_on.png",
+    "size": [
+      512,
+      512
+    ],
+    "mode": "RGBA",
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "has_alpha_zero": true,
+    "dimensions_match": true,
+    "runtime_copy_matches": true,
+    "text_logo_visual_check": "none",
+    "fake_checkerboard_visual_check": "none"
+  },
+  {
+    "file": "speaker_off.png",
+    "size": [
+      512,
+      512
+    ],
+    "mode": "RGBA",
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "has_alpha_zero": true,
+    "dimensions_match": true,
+    "runtime_copy_matches": true,
+    "text_logo_visual_check": "none",
+    "fake_checkerboard_visual_check": "none"
+  },
+  {
+    "file": "menu_settings.png",
+    "size": [
+      560,
+      152
+    ],
+    "mode": "RGBA",
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "has_alpha_zero": true,
+    "dimensions_match": true,
+    "runtime_copy_matches": true,
+    "text_logo_visual_check": "none",
+    "fake_checkerboard_visual_check": "none"
+  },
+  {
+    "file": "menu_archive.png",
+    "size": [
+      560,
+      152
+    ],
+    "mode": "RGBA",
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "has_alpha_zero": true,
+    "dimensions_match": true,
+    "runtime_copy_matches": true,
+    "text_logo_visual_check": "none",
+    "fake_checkerboard_visual_check": "none"
+  },
+  {
+    "file": "menu_association.png",
+    "size": [
+      560,
+      152
+    ],
+    "mode": "RGBA",
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "has_alpha_zero": true,
+    "dimensions_match": true,
+    "runtime_copy_matches": true,
+    "text_logo_visual_check": "none",
+    "fake_checkerboard_visual_check": "none"
+  },
+  {
+    "file": "deploy_surface.png",
+    "size": [
+      640,
+      296
+    ],
+    "mode": "RGBA",
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "has_alpha_zero": true,
+    "dimensions_match": true,
+    "runtime_copy_matches": true,
+    "text_logo_visual_check": "none",
+    "fake_checkerboard_visual_check": "none"
+  },
+  {
+    "file": "operator_surface.png",
+    "size": [
+      752,
+      196
+    ],
+    "mode": "RGBA",
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "has_alpha_zero": true,
+    "dimensions_match": true,
+    "runtime_copy_matches": true,
+    "text_logo_visual_check": "none",
+    "fake_checkerboard_visual_check": "none"
+  },
+  {
+    "file": "deploy_corner.png",
+    "size": [
+      64,
+      64
+    ],
+    "mode": "RGBA",
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "has_alpha_zero": true,
+    "dimensions_match": true,
+    "runtime_copy_matches": true,
+    "text_logo_visual_check": "none",
+    "fake_checkerboard_visual_check": "none"
+  },
+  {
+    "file": "deploy_warning_tile.png",
+    "size": [
+      48,
+      20
+    ],
+    "mode": "RGBA",
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "has_alpha_zero": true,
+    "dimensions_match": true,
+    "runtime_copy_matches": true,
+    "text_logo_visual_check": "none",
+    "fake_checkerboard_visual_check": "none"
+  },
+  {
+    "file": "deploy_streak.png",
+    "size": [
+      112,
+      16
+    ],
+    "mode": "RGBA",
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "has_alpha_zero": true,
+    "dimensions_match": true,
+    "runtime_copy_matches": true,
+    "text_logo_visual_check": "none",
+    "fake_checkerboard_visual_check": "none"
+  }
+]

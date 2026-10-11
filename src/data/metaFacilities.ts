@@ -1,6 +1,8 @@
 export const META_GROWTH_CONFIG = {
   characterCosts: [20, 35, 55, 80, 110], weaponCosts: [12, 20, 30, 45, 65],
   blessingCosts: [18, 30, 45, 65, 90], maxLevel: 5,
+  // Godot: characters and weapons never grow; fragments only unlock locked ones.
+  characterUnlockCost: 60, weaponUnlockCost: 40,
 } as const;
 
 export const OFFLINE_REWARD_CONFIG = {

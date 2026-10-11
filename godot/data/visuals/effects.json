@@ -6,10 +6,10 @@
     "particlesPerEffect": 12
   },
   "projectiles": {
-    "displayScale": 1.5
+    "displayScale": 1.7
   },
   "muzzle": {
-    "duration": 0.16,
+    "duration": 0.18,
     "layers": [
       {
         "texture": "vfxMuzzle",
@@ -28,11 +28,26 @@
         "alpha": 0.3,
         "offset": 12
       }
-    ]
+    ],
+    "priority": 1,
+    "color": "#2fd3b0",
+    "particles": 3,
+    "particleStyle": {
+      "start": 0.005,
+      "lifetime": 0.13,
+      "speed": 85,
+      "spread": 24,
+      "gravity": 0,
+      "size": 3.5,
+      "endSize": 1,
+      "alpha": 0.85,
+      "aimed": true
+    },
+    "procedural": []
   },
   "impact": {
-    "duration": 0.23,
-    "particles": 5,
+    "duration": 0.3,
+    "particles": 6,
     "layers": [
       {
         "texture": "vfxImpact",
@@ -40,22 +55,39 @@
         "end": 0.12,
         "from": 0.35,
         "to": 0.9,
-        "alpha": 0.9
+        "alpha": 0.9,
+        "overshoot": 0.12,
+        "rotationFrom": -0.08,
+        "rotationTo": 0.08
       },
       {
         "texture": "res://assets/visuals/vfx/smoke.png",
         "start": 0.06,
-        "end": 0.23,
+        "end": 0.3,
         "from": 0.35,
         "to": 0.7,
         "alpha": 0.23,
-        "rise": 8
+        "rise": 8,
+        "drift": 4
       }
-    ]
+    ],
+    "priority": 1,
+    "color": "#2fd3b0",
+    "particleStyle": {
+      "start": 0.018,
+      "lifetime": 0.25,
+      "speed": 82,
+      "spread": 180,
+      "gravity": 35,
+      "size": 4.5,
+      "endSize": 1,
+      "alpha": 0.85
+    },
+    "procedural": []
   },
   "critical": {
-    "duration": 0.32,
-    "particles": 8,
+    "duration": 0.38,
+    "particles": 9,
     "layers": [
       {
         "texture": "vfxCritical",
@@ -63,7 +95,9 @@
         "end": 0.15,
         "from": 0.4,
         "to": 0.9,
-        "alpha": 0.96
+        "alpha": 0.96,
+        "rotationFrom": -0.12,
+        "rotationTo": 0.12
       },
       {
         "texture": "vfxImpact",
@@ -82,7 +116,20 @@
         "alpha": 0.25,
         "rise": 8
       }
-    ]
+    ],
+    "priority": 3,
+    "color": "#f2b233",
+    "particleStyle": {
+      "start": 0.012,
+      "lifetime": 0.3,
+      "speed": 109,
+      "spread": 180,
+      "gravity": 35,
+      "size": 5.4,
+      "endSize": 1,
+      "alpha": 0.85
+    },
+    "procedural": []
   },
   "explosion": {
     "duration": 0.62,
@@ -100,9 +147,10 @@
         "texture": "vfxExplosion",
         "start": 0.025,
         "end": 0.4,
-        "from": 0.52,
-        "to": 1,
-        "alpha": 0.9
+        "from": 0.62,
+        "to": 1.3,
+        "alpha": 0.9,
+        "overshoot": 0.12
       },
       {
         "texture": "res://assets/visuals/vfx/shockwave.png",
@@ -127,9 +175,26 @@
         "from": 0.55,
         "to": 1.12,
         "alpha": 0.44,
-        "rise": 16
+        "rise": 16,
+        "rotationFrom": -0.09,
+        "rotationTo": 0.1,
+        "drift": 8
       }
-    ]
+    ],
+    "priority": 4,
+    "color": "#ffd1a2",
+    "particleStyle": {
+      "start": 0.03,
+      "lifetime": 0.46,
+      "speed": 140,
+      "spread": 180,
+      "gravity": 82,
+      "size": 6.5,
+      "endSize": 2,
+      "alpha": 0.85,
+      "texture": "res://assets/visuals/vfx/debris.png"
+    },
+    "procedural": []
   },
   "mine": {
     "duration": 0.62,
@@ -149,7 +214,8 @@
         "end": 0.4,
         "from": 0.52,
         "to": 1,
-        "alpha": 0.9
+        "alpha": 0.9,
+        "overshoot": 0.1
       },
       {
         "texture": "res://assets/visuals/vfx/shockwave.png",
@@ -174,43 +240,133 @@
         "from": 0.55,
         "to": 1.12,
         "alpha": 0.44,
-        "rise": 16
+        "rise": 16,
+        "drift": -7
       }
-    ]
+    ],
+    "priority": 4,
+    "color": "#cdb4ff",
+    "particleStyle": {
+      "start": 0.035,
+      "lifetime": 0.45,
+      "speed": 125,
+      "spread": 180,
+      "gravity": 75,
+      "size": 6,
+      "endSize": 1.5,
+      "alpha": 0.85,
+      "texture": "res://assets/visuals/vfx/debris.png"
+    },
+    "procedural": []
   },
   "death": {
-    "duration": 0.44,
-    "particles": 6,
+    "duration": 0.52,
+    "particles": 10,
     "layers": [
+      {
+        "texture": "vfxImpact",
+        "start": 0,
+        "end": 0.1,
+        "from": 0.3,
+        "to": 0.85,
+        "alpha": 0.9,
+        "color": "#ffffff"
+      },
       {
         "texture": "res://assets/visuals/vfx/smoke.png",
         "start": 0,
-        "end": 0.44,
+        "end": 0.52,
         "from": 0.35,
         "to": 0.85,
         "alpha": 0.4,
-        "rise": 18
+        "rise": 18,
+        "rotationFrom": -0.12,
+        "rotationTo": 0.15,
+        "drift": 6,
+        "color": "#b8c9eb"
       }
-    ]
+    ],
+    "priority": 1,
+    "color": "#d8fff4",
+    "particleStyle": {
+      "start": 0.02,
+      "lifetime": 0.43,
+      "speed": 70,
+      "spread": 180,
+      "gravity": -18,
+      "size": 5.2,
+      "endSize": 1.2,
+      "alpha": 0.85,
+      "color": "#1fae93"
+    },
+    "procedural": []
   },
   "slash": {
     "duration": 0.3,
     "sweepFraction": 0.62,
-    "ribbonWidth": 0.042,
+    "ribbonWidth": 0.075,
     "tailFraction": 0.64,
-    "glowStrength": 0.24,
-    "layers": []
+    "glowStrength": 0.3,
+    "layers": [],
+    "priority": 3,
+    "color": "#22c9a6",
+    "particles": 5,
+    "sweepSeconds": 0.18,
+    "secondaryDelays": [
+      0.025,
+      0.055
+    ],
+    "secondaryRadii": [
+      0.9,
+      0.8
+    ],
+    "secondaryBrightness": [
+      0.4,
+      0.23
+    ],
+    "particleStyle": {
+      "start": 0.032,
+      "lifetime": 0.15,
+      "speed": 30,
+      "spread": 180,
+      "gravity": 12,
+      "size": 4,
+      "endSize": 0.8,
+      "alpha": 0.65,
+      "stagger": 0.019,
+      "emitMode": "slash"
+    },
+    "strokeEnds": [
+      0.22,
+      0.24,
+      0.27
+    ]
   },
   "chain": {
     "duration": 0.22,
     "displayScale": 1.7,
-    "thickness": 22,
+    "thickness": 30,
     "travelTime": 0.05,
     "hopDelay": 0.045,
     "flickerSpeed": 55,
-    "edgeColor": "264eb8",
+    "edgeColor": "2f6bff",
     "edgeWidth": 0.08,
-    "layers": []
+    "layers": [],
+    "priority": 3,
+    "color": "#a6ddff",
+    "particles": 4,
+    "particleStyle": {
+      "start": 0.05,
+      "lifetime": 0.13,
+      "speed": 54,
+      "spread": 180,
+      "gravity": 8,
+      "size": 3.8,
+      "endSize": 0.7,
+      "alpha": 0.85,
+      "stagger": 0.003,
+      "emitMode": "endpoint"
+    }
   },
   "walletBonus": {
     "duration": 0.3,
@@ -223,7 +379,656 @@
         "to": 0.65,
         "alpha": 0.9,
         "rise": 22
+      },
+      {
+        "texture": "res://assets/visuals/vfx/spark.png",
+        "start": 0,
+        "end": 0.27,
+        "from": 0.3,
+        "to": 0.6,
+        "alpha": 0.45
       }
-    ]
+    ],
+    "priority": 0,
+    "color": "#ffe7a8",
+    "particles": 3,
+    "particleStyle": {
+      "start": 0.02,
+      "lifetime": 0.23,
+      "speed": 20,
+      "spread": 180,
+      "gravity": -25,
+      "size": 3,
+      "endSize": 0.7,
+      "alpha": 0.85
+    },
+    "procedural": []
+  },
+  "weapons": {
+    "default": {
+      "trailColor": "#3dd6b5",
+      "trailWidth": 4,
+      "trailLifetime": 0.13,
+      "halo": 0.24,
+      "muzzleColor": "#2fd3b0",
+      "impactColor": "#2fd3b0"
+    },
+    "hostile": {
+      "trailColor": "#f05a46",
+      "trailWidth": 5.5,
+      "trailLifetime": 0.12,
+      "halo": 0.17,
+      "muzzleColor": "#ff9b83",
+      "impactColor": "#ff9b83"
+    },
+    "manaSword": {
+      "trailColor": "#3dd6b5",
+      "trailWidth": 5,
+      "trailLifetime": 0.13,
+      "halo": 0.22,
+      "muzzleColor": "#2fd3b0",
+      "impactColor": "#2fd3b0"
+    },
+    "guardianDaggers": {
+      "trailColor": "#a0c7ff",
+      "trailWidth": 3.5,
+      "trailLifetime": 0.11,
+      "halo": 0.2,
+      "muzzleColor": "#b3d2ff",
+      "impactColor": "#b3d2ff"
+    },
+    "piercingShot": {
+      "trailColor": "#ffd780",
+      "trailWidth": 3.6,
+      "trailLifetime": 0.17,
+      "halo": 0.18,
+      "muzzleColor": "#ffe39e",
+      "impactColor": "#ffe39e"
+    },
+    "chainLightning": {
+      "trailColor": "#9dbdff",
+      "trailWidth": 4,
+      "trailLifetime": 0.12,
+      "halo": 0.24,
+      "muzzleColor": "#bbd9ff",
+      "impactColor": "#bbd9ff"
+    },
+    "manaBombard": {
+      "trailColor": "#d7aaff",
+      "trailWidth": 6,
+      "trailLifetime": 0.19,
+      "halo": 0.24,
+      "muzzleColor": "#dcc2ff",
+      "impactColor": "#ffd6a8"
+    },
+    "manaBolt": {
+      "trailColor": "#4fe0c2",
+      "trailWidth": 4.8,
+      "trailLifetime": 0.14,
+      "halo": 0.23,
+      "muzzleColor": "#33c8e0",
+      "impactColor": "#33c8e0"
+    },
+    "manaShotgun": {
+      "trailColor": "#8ff0d9",
+      "trailWidth": 3,
+      "trailLifetime": 0.09,
+      "halo": 0.16,
+      "muzzleColor": "#aeffe9",
+      "impactColor": "#aeffe9"
+    },
+    "autoTurret": {
+      "trailColor": "#6bcad5",
+      "trailWidth": 3,
+      "trailLifetime": 0.1,
+      "halo": 0.16,
+      "muzzleColor": "#9bebee",
+      "impactColor": "#9bebee"
+    },
+    "mineLayer": {
+      "trailColor": "#c2a7ff",
+      "trailWidth": 4,
+      "trailLifetime": 0.12,
+      "halo": 0.18,
+      "muzzleColor": "#cbb6ff",
+      "impactColor": "#cbb6ff"
+    },
+    "manaField": {
+      "trailColor": "#a4d9e9",
+      "trailWidth": 3,
+      "trailLifetime": 0.12,
+      "halo": 0.15,
+      "muzzleColor": "#bbeaf1",
+      "impactColor": "#bbeaf1"
+    }
+  },
+  "shockwave": {
+    "priority": 2,
+    "duration": 0.4,
+    "color": "#b8e1ff",
+    "particles": 0,
+    "layers": [
+      {
+        "texture": "res://assets/visuals/vfx/shockwave.png",
+        "start": 0,
+        "end": 0.4,
+        "from": 0.2,
+        "to": 1.0,
+        "alpha": 0.75,
+        "projection": 0.62
+      },
+      {
+        "texture": "res://assets/visuals/vfx/smoke.png",
+        "start": 0.05,
+        "end": 0.4,
+        "from": 0.4,
+        "to": 1.0,
+        "alpha": 0.25,
+        "projection": 0.62
+      }
+    ],
+    "procedural": []
+  },
+  "pickup": {
+    "priority": 0,
+    "duration": 0.34,
+    "radius": 16,
+    "color": "#e8b75a",
+    "particles": 0,
+    "particleStyle": {
+      "start": 0.01,
+      "lifetime": 0.25,
+      "speed": 34,
+      "spread": 180,
+      "gravity": -35,
+      "size": 3.8,
+      "endSize": 0.7,
+      "alpha": 0.85,
+      "color": "#f5cf6e"
+    },
+    "layers": [],
+    "procedural": []
+  },
+  "enemyProjectile": {
+    "priority": 1,
+    "duration": 0.16,
+    "radius": 18,
+    "color": "#f05a46",
+    "particles": 2,
+    "particleStyle": {
+      "start": 0.008,
+      "lifetime": 0.12,
+      "speed": 70,
+      "spread": 24,
+      "gravity": 0,
+      "size": 3.5,
+      "endSize": 1,
+      "alpha": 0.85,
+      "aimed": true
+    },
+    "layers": [
+      {
+        "texture": "vfxMuzzle",
+        "start": 0,
+        "end": 0.13,
+        "from": 0.25,
+        "to": 0.75,
+        "alpha": 0.7
+      }
+    ],
+    "procedural": []
+  },
+  "enemyWarning": {
+    "priority": 5,
+    "duration": 0.7,
+    "radius": 30,
+    "color": "#e8553f",
+    "particles": 0,
+    "grounded": true,
+    "layers": [
+      {
+        "texture": "res://assets/visuals/vfx/smoke.png",
+        "start": 0,
+        "end": 0.7,
+        "from": 0.7,
+        "to": 1.0,
+        "alpha": 0.28,
+        "fadeIn": 0.12,
+        "fadeFrom": 0.9
+      },
+      {
+        "texture": "res://assets/visuals/vfx/shockwave.png",
+        "start": 0,
+        "end": 0.7,
+        "from": 0.9,
+        "to": 1.02,
+        "alpha": 1.0,
+        "fadeIn": 0.08,
+        "fadeFrom": 0.92
+      },
+      {
+        "texture": "res://assets/visuals/vfx/shockwave.png",
+        "start": 0.05,
+        "end": 0.7,
+        "from": 1.0,
+        "to": 0.3,
+        "alpha": 0.6,
+        "fadeIn": 0.08,
+        "fadeFrom": 0.8
+      }
+    ],
+    "procedural": [],
+    "followActor": false
+  },
+  "chargeWarning": {
+    "priority": 5,
+    "duration": 0.6,
+    "radius": 34,
+    "color": "#e8553f",
+    "particles": 0,
+    "grounded": true,
+    "layers": [
+      {
+        "texture": "res://assets/visuals/vfx/smoke.png",
+        "start": 0,
+        "end": 0.6,
+        "from": 0.8,
+        "to": 1.0,
+        "alpha": 0.3,
+        "fadeIn": 0.1,
+        "fadeFrom": 0.9
+      },
+      {
+        "texture": "res://assets/visuals/vfx/shockwave.png",
+        "start": 0,
+        "end": 0.6,
+        "from": 0.9,
+        "to": 1.0,
+        "alpha": 0.85,
+        "fadeIn": 0.08,
+        "fadeFrom": 0.92
+      },
+      {
+        "texture": "res://assets/visuals/vfx/smoke.png",
+        "start": 0.04,
+        "end": 0.6,
+        "from": 1.0,
+        "to": 1.7,
+        "alpha": 0.55,
+        "offset": 46,
+        "projection": 0.35,
+        "fadeIn": 0.1,
+        "fadeFrom": 0.85
+      },
+      {
+        "texture": "res://assets/visuals/vfx/spark.png",
+        "start": 0.1,
+        "end": 0.6,
+        "from": 0.45,
+        "to": 0.75,
+        "alpha": 0.75,
+        "offset": 78,
+        "projection": 0.6,
+        "fadeIn": 0.08,
+        "fadeFrom": 0.85
+      }
+    ],
+    "procedural": [],
+    "followActor": true
+  },
+  "selfDestructWarning": {
+    "priority": 5,
+    "duration": 0.7,
+    "radius": 45,
+    "color": "#ff9a78",
+    "particles": 0,
+    "grounded": true,
+    "layers": [
+      {
+        "texture": "res://assets/visuals/vfx/smoke.png",
+        "start": 0,
+        "end": 0.7,
+        "from": 0.7,
+        "to": 1.0,
+        "alpha": 0.3,
+        "fadeIn": 0.12,
+        "fadeFrom": 0.9
+      },
+      {
+        "texture": "res://assets/visuals/vfx/shockwave.png",
+        "start": 0,
+        "end": 0.7,
+        "from": 0.9,
+        "to": 1.02,
+        "alpha": 1.0,
+        "fadeIn": 0.08,
+        "fadeFrom": 0.92
+      },
+      {
+        "texture": "res://assets/visuals/vfx/shockwave.png",
+        "start": 0.05,
+        "end": 0.4,
+        "from": 1.0,
+        "to": 0.35,
+        "alpha": 0.6,
+        "fadeIn": 0.06,
+        "fadeFrom": 0.8
+      },
+      {
+        "texture": "res://assets/visuals/vfx/shockwave.png",
+        "start": 0.35,
+        "end": 0.7,
+        "from": 1.0,
+        "to": 0.35,
+        "alpha": 0.7,
+        "fadeIn": 0.06,
+        "fadeFrom": 0.8
+      }
+    ],
+    "procedural": [],
+    "followActor": true
+  },
+  "supportCast": {
+    "priority": 3,
+    "duration": 0.48,
+    "radius": 28,
+    "color": "#9df0bc",
+    "particles": 7,
+    "particleStyle": {
+      "start": 0.04,
+      "lifetime": 0.31,
+      "speed": 34,
+      "spread": 180,
+      "gravity": -29,
+      "size": 4,
+      "endSize": 1,
+      "alpha": 0.85,
+      "stagger": 0.012
+    },
+    "layers": [
+      {
+        "texture": "res://assets/visuals/vfx/smoke.png",
+        "start": 0,
+        "end": 0.45,
+        "from": 0.5,
+        "to": 1.0,
+        "alpha": 0.4,
+        "projection": 0.7,
+        "color": "#5fd99a"
+      },
+      {
+        "texture": "res://assets/visuals/vfx/shockwave.png",
+        "start": 0,
+        "end": 0.45,
+        "from": 0.3,
+        "to": 1.0,
+        "alpha": 0.95,
+        "projection": 0.7,
+        "color": "#4fe0a0"
+      },
+      {
+        "texture": "res://assets/visuals/vfx/spark.png",
+        "start": 0,
+        "end": 0.3,
+        "from": 0.4,
+        "to": 0.9,
+        "alpha": 0.9
+      },
+      {
+        "texture": "res://assets/visuals/vfx/smoke.png",
+        "start": 0.05,
+        "end": 0.48,
+        "from": 0.4,
+        "to": 0.9,
+        "alpha": 0.3,
+        "rise": 14
+      }
+    ],
+    "procedural": []
+  },
+  "bossAttack": {
+    "priority": 5,
+    "duration": 0.56,
+    "radius": 40,
+    "color": "#d9bdff",
+    "particles": 12,
+    "particleStyle": {
+      "start": 0.025,
+      "lifetime": 0.41,
+      "speed": 117,
+      "spread": 180,
+      "gravity": 38,
+      "size": 5.5,
+      "endSize": 1,
+      "alpha": 0.85
+    },
+    "layers": [
+      {
+        "texture": "vfxImpact",
+        "start": 0,
+        "end": 0.2,
+        "from": 0.4,
+        "to": 1.0,
+        "alpha": 0.95,
+        "overshoot": 0.1
+      },
+      {
+        "texture": "res://assets/visuals/vfx/smoke.png",
+        "start": 0.03,
+        "end": 0.56,
+        "from": 0.5,
+        "to": 1.1,
+        "alpha": 0.5,
+        "projection": 0.62,
+        "color": "#7d4fd6"
+      },
+      {
+        "texture": "res://assets/visuals/vfx/shockwave.png",
+        "start": 0.045,
+        "end": 0.51,
+        "from": 0.35,
+        "to": 1.1,
+        "alpha": 0.95,
+        "projection": 0.62,
+        "color": "#a070ff"
+      },
+      {
+        "texture": "res://assets/visuals/vfx/smoke.png",
+        "start": 0.08,
+        "end": 0.56,
+        "from": 0.5,
+        "to": 1.1,
+        "alpha": 0.35,
+        "rise": 10,
+        "drift": 5
+      }
+    ],
+    "procedural": []
+  },
+  "structurePlace": {
+    "priority": 2,
+    "duration": 0.38,
+    "radius": 28,
+    "color": "#a9e3ef",
+    "particles": 5,
+    "particleStyle": {
+      "start": 0.03,
+      "lifetime": 0.26,
+      "speed": 25,
+      "spread": 180,
+      "gravity": -18,
+      "size": 3.5,
+      "endSize": 0.6,
+      "alpha": 0.85
+    },
+    "grounded": true,
+    "layers": [
+      {
+        "texture": "res://assets/visuals/vfx/smoke.png",
+        "start": 0,
+        "end": 0.38,
+        "from": 0.5,
+        "to": 1.0,
+        "alpha": 0.35,
+        "projection": 0.62
+      },
+      {
+        "texture": "res://assets/visuals/vfx/shockwave.png",
+        "start": 0.02,
+        "end": 0.36,
+        "from": 0.3,
+        "to": 1.0,
+        "alpha": 0.65,
+        "projection": 0.62
+      }
+    ],
+    "procedural": []
+  },
+  "structureActivate": {
+    "priority": 2,
+    "duration": 0.32,
+    "radius": 30,
+    "color": "#b4eafa",
+    "particles": 4,
+    "particleStyle": {
+      "start": 0.02,
+      "lifetime": 0.22,
+      "speed": 36,
+      "spread": 180,
+      "gravity": -12,
+      "size": 3.5,
+      "endSize": 1,
+      "alpha": 0.85
+    },
+    "grounded": true,
+    "layers": [
+      {
+        "texture": "res://assets/visuals/vfx/shockwave.png",
+        "start": 0,
+        "end": 0.3,
+        "from": 0.3,
+        "to": 0.95,
+        "alpha": 0.55,
+        "projection": 0.62
+      },
+      {
+        "texture": "res://assets/visuals/vfx/spark.png",
+        "start": 0,
+        "end": 0.2,
+        "from": 0.3,
+        "to": 0.7,
+        "alpha": 0.6
+      }
+    ],
+    "procedural": [],
+    "stageVariants": {
+      "pulse": {
+        "duration": 0.22,
+        "particles": 0,
+        "procedural": [],
+        "layers": [
+          {
+            "texture": "res://assets/visuals/vfx/shockwave.png",
+            "start": 0,
+            "end": 0.21,
+            "from": 0.5,
+            "to": 1.0,
+            "alpha": 0.25,
+            "projection": 0.62
+          }
+        ]
+      },
+      "fire": {
+        "duration": 0.12,
+        "particles": 2,
+        "grounded": false,
+        "particleStyle": {
+          "start": 0.005,
+          "lifetime": 0.09,
+          "speed": 65,
+          "spread": 20,
+          "gravity": 0,
+          "size": 3,
+          "endSize": 1,
+          "alpha": 0.85,
+          "aimed": true
+        },
+        "procedural": [],
+        "layers": [
+          {
+            "texture": "vfxMuzzle",
+            "start": 0,
+            "end": 0.11,
+            "from": 0.2,
+            "to": 0.5,
+            "alpha": 0.8
+          }
+        ]
+      },
+      "impact": {
+        "duration": 0.2,
+        "particles": 0,
+        "procedural": [],
+        "layers": [
+          {
+            "texture": "vfxImpact",
+            "start": 0,
+            "end": 0.12,
+            "from": 0.3,
+            "to": 0.7,
+            "alpha": 0.6
+          },
+          {
+            "texture": "res://assets/visuals/vfx/shockwave.png",
+            "start": 0,
+            "end": 0.19,
+            "from": 0.3,
+            "to": 0.9,
+            "alpha": 0.3,
+            "projection": 0.62
+          }
+        ]
+      }
+    }
+  },
+  "stoneDrop": {
+    "priority": 0,
+    "duration": 0.32,
+    "radius": 15,
+    "color": "#e0a52a",
+    "particles": 4,
+    "particleStyle": {
+      "start": 0.01,
+      "lifetime": 0.24,
+      "speed": 46,
+      "spread": 180,
+      "gravity": 60,
+      "size": 3.4,
+      "endSize": 0.8,
+      "alpha": 0.9,
+      "color": "#f2c14e"
+    },
+    "layers": [
+      {
+        "texture": "res://assets/visuals/vfx/smoke.png",
+        "start": 0,
+        "end": 0.26,
+        "from": 0.5,
+        "to": 1.1,
+        "alpha": 0.45,
+        "color": "#f2c14e"
+      },
+      {
+        "texture": "res://assets/visuals/vfx/spark.png",
+        "start": 0,
+        "end": 0.26,
+        "from": 0.6,
+        "to": 1.4,
+        "alpha": 1.0,
+        "overshoot": 0.15,
+        "color": "#fff0b8"
+      }
+    ],
+    "procedural": []
   }
 }

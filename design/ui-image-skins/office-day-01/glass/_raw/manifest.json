@@ -1,0 +1,65 @@
+[
+  {
+    "name": "glass_menu_normal",
+    "width": 452,
+    "height": 100,
+    "source": "C:\\Users\\geniu\\.codex\\generated_images\\01a124d2-3d06-7a31-b813-60c304738541\\exec-a53b228c-20a4-496f-84d2-24a5eff068a5.png",
+    "prompt": "Use case: ui-mockup production raster texture. Premium restrained smoked navy glass/acrylic game UI component for a bright blurred office lobby, elegant NIKKE-like angled lobby UI. Real rendered glass material, dark navy near #0F1C30, subtle silky fine grain, soft gloss bloom across upper face, darker lower face, very thin refracted highlight on upper physical edge and dark thickness on bottom edge, not a drawn outline. Mint #3DD6B5 sole accent. Empty functional surface, no text, digits, icons, logos, symbols, screws, decorative ornaments or neon/cyberpunk. True transparent PNG with clear alpha 0 outside, interior genuinely translucent at 55-60 percent opacity (alpha 140-150), no background or checkerboard. No shadow outside silhouette. Straight front view of one isolated component, centered filling 94% canvas. Target glass_menu_normal.png exact dimensions 452x100. Wide thin parallelogram panel. TOP edge shifted RIGHT relative to bottom by 24 pixels at target size. Both horizontal edges straight, both side edges parallel leaning right as they rise. Empty left 76x76 icon area. A single thin mint vertical bar inset on left. Right end empty."
+  },
+  {
+    "name": "glass_menu_pressed",
+    "width": 452,
+    "height": 100,
+    "source": "C:\\Users\\geniu\\.codex\\generated_images\\01a124d2-3d06-7a31-b813-60c304738541\\exec-2c9f096e-1079-40dc-8be4-710d112b020e.png",
+    "prompt": "Edit the provided glass asset. Preserve exact silhouette, geometry, material texture placement, accent location and transparency. No added elements or text. Pressed version of thin menu parallelogram, top shifted RIGHT by24px, same silhouette as normal menu, darker navy, subdued upper highlight, internal opacity alpha155-165. Single thin inset mint bar on left. Empty panel.. Keep canvas and silhouette position unchanged; 3px pressed offset will be applied during final export. This is a matched UI state, not a redesign."
+  },
+  {
+    "name": "glass_menu_hover",
+    "width": 452,
+    "height": 100,
+    "source": "C:\\Users\\geniu\\.codex\\generated_images\\01a124d2-3d06-7a31-b813-60c304738541\\exec-fe458e10-3888-4b15-b07d-9808b982fdc4.png",
+    "prompt": "Edit the provided glass asset. Preserve exact silhouette, geometry, material texture placement, accent location and transparency. No added elements or text. Hover version of thin menu parallelogram, top shifted RIGHT by24px, same silhouette as normal menu. Only top gloss and refracted edge highlights gently brighter. Single thin inset mint bar on left. Empty panel.. Keep canvas and silhouette position unchanged; 3px pressed offset will be applied during final export. This is a matched UI state, not a redesign."
+  },
+  {
+    "name": "glass_deploy_normal",
+    "width": 524,
+    "height": 216,
+    "source": "C:\\Users\\geniu\\.codex\\generated_images\\01a124d2-3d06-7a31-b813-60c304738541\\exec-c032041c-ec86-4800-8d99-a7b029733d6f.png",
+    "prompt": "Use case: ui-mockup production raster texture. Premium restrained smoked navy glass/acrylic game UI component for a bright blurred office lobby, elegant NIKKE-like angled lobby UI. Real rendered glass material, dark navy near #0F1C30, subtle silky fine grain, soft gloss bloom across upper face, darker lower face, very thin refracted highlight on upper physical edge and dark thickness on bottom edge, not a drawn outline. Mint #3DD6B5 sole accent. Empty functional surface, no text, digits, icons, logos, symbols, screws, decorative ornaments or neon/cyberpunk. True transparent PNG with clear alpha 0 outside, interior genuinely translucent at 55-60 percent opacity (alpha 140-150), no background or checkerboard. No shadow outside silhouette. Straight front view of one isolated component, centered filling 94% canvas. Target glass_deploy_normal.png exact dimensions 524x216. Large wide parallelogram panel, TOP edge shifted RIGHT by36px relative to bottom. Both side edges parallel and both long edges horizontal. Empty left150x150 icon area; soft restrained mint tint gradually increases to RIGHT side. Single thin mint light streak inside near bottom. No arrow or icon."
+  },
+  {
+    "name": "glass_deploy_pressed",
+    "width": 524,
+    "height": 216,
+    "source": "C:\\Users\\geniu\\.codex\\generated_images\\01a124d2-3d06-7a31-b813-60c304738541\\exec-60576c18-72ba-4220-bf41-2a436d79a4da.png",
+    "prompt": "Edit the provided glass asset. Preserve exact silhouette, geometry, material texture placement, accent location and transparency. No added elements or text. Pressed large deploy parallelogram, top shifted RIGHT by36px, same silhouette as normal deploy. Darker glass alpha155-165, subdued gloss. Empty left150x150 icon area, restrained mint gradient to RIGHT, thin mint light streak inset near bottom.. Keep canvas and silhouette position unchanged; 3px pressed offset will be applied during final export. This is a matched UI state, not a redesign."
+  },
+  {
+    "name": "glass_round_normal",
+    "width": 112,
+    "height": 112,
+    "source": "C:\\Users\\geniu\\.codex\\generated_images\\01a124d2-3d06-7a31-b813-60c304738541\\exec-89f30886-2bcd-455a-83fd-d39e699b09ad.png",
+    "prompt": "Use case: ui-mockup production raster texture. Premium restrained smoked navy glass/acrylic game UI component for a bright blurred office lobby, elegant NIKKE-like angled lobby UI. Real rendered glass material, dark navy near #0F1C30, subtle silky fine grain, soft gloss bloom across upper face, darker lower face, very thin refracted highlight on upper physical edge and dark thickness on bottom edge, not a drawn outline. Mint #3DD6B5 sole accent. Empty functional surface, no text, digits, icons, logos, symbols, screws, decorative ornaments or neon/cyberpunk. True transparent PNG with clear alpha 0 outside, interior genuinely translucent at 55-60 percent opacity (alpha 140-150), no background or checkerboard. No shadow outside silhouette. Straight front view of one isolated component, centered filling 94% canvas. Target glass_round_normal.png exact dimensions 112x112. Circular smoked navy glass disk for sound button, completely EMPTY center no symbol. Refracted highlight strong only on upper arc, lower rim dark side face. Same translucent navy glass material, no mint ring."
+  },
+  {
+    "name": "glass_round_pressed",
+    "width": 112,
+    "height": 112,
+    "source": "C:\\Users\\geniu\\.codex\\generated_images\\01a124d2-3d06-7a31-b813-60c304738541\\exec-8687eadb-eefe-4016-97b6-2b51c44930d6.png",
+    "prompt": "Edit the provided glass asset. Preserve exact silhouette, geometry, material texture placement, accent location and transparency. No added elements or text. Pressed circular smoked navy glass disk, completely EMPTY center, same circle silhouette as normal. Darker internal opacity alpha155-165, much softer highlight on upper arc, lower rim dark side face. No symbol no mint ring.. Keep canvas and silhouette position unchanged; 3px pressed offset will be applied during final export. This is a matched UI state, not a redesign."
+  },
+  {
+    "name": "glass_chevron_double",
+    "width": 64,
+    "height": 48,
+    "source": "C:\\Users\\geniu\\.codex\\generated_images\\01a124d2-3d06-7a31-b813-60c304738541\\exec-2000b62a-88b0-46d2-8cea-ec7b7328dacc.png",
+    "prompt": "Use case: ui-mockup production raster texture. Premium restrained smoked navy glass/acrylic game UI component for a bright blurred office lobby, elegant NIKKE-like angled lobby UI. Real rendered glass material, dark navy near #0F1C30, subtle silky fine grain, soft gloss bloom across upper face, darker lower face, very thin refracted highlight on upper physical edge and dark thickness on bottom edge, not a drawn outline. Mint #3DD6B5 sole accent. Empty functional surface, no text, digits, icons, logos, symbols, screws, decorative ornaments or neon/cyberpunk. True transparent PNG with clear alpha 0 outside, interior genuinely translucent at 55-60 percent opacity (alpha 140-150), no background or checkerboard. No shadow outside silhouette. Straight front view of one isolated component, centered filling 94% canvas. Target glass_chevron_double.png exact dimensions 64x48. Exactly two mint right-facing chevrons >> built of slim luminous frosted glass facets with restrained faint light bleed, isolated on transparent background. These requested chevrons are the only symbols. No panel, no enclosure, no extra arrow shaft. Large clean shapes."
+  },
+  {
+    "name": "glass_chevron_triple",
+    "width": 96,
+    "height": 64,
+    "source": "C:\\Users\\geniu\\.codex\\generated_images\\01a124d2-3d06-7a31-b813-60c304738541\\exec-9257413a-07f0-4b5c-bbf3-e107e1125ed2.png",
+    "prompt": "Production UI glass_chevron_triple.png, 96x64 target transparent RGBA. Exactly three slim right-facing chevrons >>> made from satin frosted glass, isolated separate shapes. Left mint #3DD6B5, middle light mint, right nearly white. Gentle edge reflection on physical material but NO outer glow halo, no bloom, no aura, no background, no dark smoke. Restrained luxury consumer UI. Absolutely no text, numbers or other symbols. Empty gaps and exterior must be fully transparent. Clear clean thin shapes, not chunky, crisp readable at48x32."
+  }
+]

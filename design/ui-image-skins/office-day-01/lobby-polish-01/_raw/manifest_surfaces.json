@@ -1,0 +1,162 @@
+[
+  {
+    "name": "menu_association",
+    "size": [
+      560,
+      152
+    ],
+    "body": [
+      504,
+      96
+    ],
+    "inset": [
+      28,
+      28
+    ],
+    "source": "C:\\Users\\geniu\\.codex\\generated_images\\01a124d2-3d06-7a31-b813-60c304738541\\exec-6b500e1e-e9d4-4350-be08-08c1dae18643.png",
+    "prompt": "Use case: stylized-concept. Asset type: raster UI surface for a bright Seoul office hunter mobile game. Generate ONE isolated, front-facing long horizontal frosted acrylic parallelogram menu plate on REAL transparent background. No text, numbers, icons, logos or watermark.\nComposition: a narrow broad plate, aspect about 5.25:1, top edge shifted to the RIGHT of lower edge by about 5.5 percent of body width; perfectly straight horizontal top/bottom, vertical height small, top-left corner inset, bottom-left corner farther left. NO perspective tilt, NOT a trapezoid. Generous transparent space outside. Center empty for game text/icon.\nMaterial: pale cool white, blue-washed smoked/frosted glass, finely rendered satin depth, subtle very fine grain, soft broad top reflection, restrained prismatic light along cut edge. Bright tasteful consumer-product operating UI, mature, crisp at mobile scale. Same feel as a clean operations panel over a warm bright blurred office. Quiet blue(#2f7bf5) slender acrylic inlay along far LEFT slanted side, no other accent hue. Left inlay about 2 percent width. Pale interior visually translucent, reflectivity delicate, no giant hotspots/no diagonal stripe decoration crossing middle.\nThe edge should feel like light refracting through polished glass with thin darker underside, not an ink outline. Very slight layered clear lip on upper-right only, restrained short corner facet highlights. No thick metal border, no brackets floating in blank margin, no screws, no sci-fi frame, no ornamental circuit lines, no chrome machine, no text or holographic writing. Empty body with understated finely textured light material, NOT flat vector shapes. Render as clean hand-finished high-end 2.5D game raster surface. Want final display body252x48 with2x master, so fine texture but clear overall silhouette. Alpha outside object exactly zero; no background color or checkerboard baked in.",
+    "crop": [
+      43,
+      222,
+      1997,
+      562
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "raw_file": "_raw\\menu_association_generated.png",
+    "source_size": [
+      2032,
+      774
+    ]
+  },
+  {
+    "name": "menu_settings",
+    "size": [
+      560,
+      152
+    ],
+    "body": [
+      504,
+      96
+    ],
+    "inset": [
+      28,
+      28
+    ],
+    "source": "C:\\Users\\geniu\\.codex\\generated_images\\01a124d2-3d06-7a31-b813-60c304738541\\exec-272659b6-82d1-49e5-b5be-311c8a979dc7.png",
+    "prompt": "Use case: precise-object-edit. Edit ONLY the accent color of this transparent frosted-glass horizontal parallelogram UI plate. Keep exact same canvas, object silhouette, alpha boundary, position, straight horizontal edges, width, height, slant, detailed surface, rim and lighting. Replace blue left inlay and very pale blue surface wash with restrained purple #8c5cf0 left inlay and a very pale lavender white surface wash. Do NOT change the acrylic material, geometry, overall brightness, or thickness. Center stays blank. No text, numbers, icon, logo, watermark, no additional objects. Preserve genuine transparent background and all existing transparent pixels. This is the settings-state material in a matched game menu set; must align exactly with the blue original.",
+    "crop": [
+      38,
+      217,
+      2009,
+      563
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "raw_file": "_raw\\menu_settings_generated.png",
+    "source_size": [
+      2033,
+      773
+    ]
+  },
+  {
+    "name": "menu_archive",
+    "size": [
+      560,
+      152
+    ],
+    "body": [
+      504,
+      96
+    ],
+    "inset": [
+      28,
+      28
+    ],
+    "source": "C:\\Users\\geniu\\.codex\\generated_images\\01a124d2-3d06-7a31-b813-60c304738541\\exec-24b6d463-3e39-4560-b8a3-70a5749d4ba8.png",
+    "prompt": "Use case: precise-object-edit. Edit ONLY the accent color of this transparent frosted-glass horizontal parallelogram UI plate. Keep exact same canvas, object silhouette, alpha boundary, position, straight horizontal edges, width, height, slant, detailed surface, rim and lighting. Replace blue left inlay and very pale blue surface wash with warm gold #f2a516 left inlay and a very pale warm ivory-gold white surface wash. Do NOT change acrylic material, geometry, overall brightness or thickness. Center stays blank. No text, numbers, icon, logo, watermark, no additional objects. Preserve genuine transparent background and all existing transparent pixels. This is the archive material in a matched game menu set; must align exactly with blue original. Refined warm golden glass, not saturated orange plastic.",
+    "crop": [
+      38,
+      216,
+      2002,
+      559
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "raw_file": "_raw\\menu_archive_generated.png",
+    "source_size": [
+      2033,
+      773
+    ]
+  },
+  {
+    "name": "deploy_surface",
+    "size": [
+      640,
+      296
+    ],
+    "body": [
+      568,
+      224
+    ],
+    "inset": [
+      36,
+      36
+    ],
+    "source": "C:\\Users\\geniu\\.codex\\generated_images\\01a124d2-3d06-7a31-b813-60c304738541\\exec-f212eced-57cd-4a5b-b2de-2407d1174110.png",
+    "prompt": "Use case: stylized-concept. Asset type: single empty raster UI surface for a bright-office operations lobby. REAL transparent backdrop, no text, letters, numbers, icons or logos.\nONE front-facing horizontal parallelogram slab of sophisticated dark frosted/smoked glass, ratio 2.54:1. Straight horizontal top and bottom. Top edge shifted RIGHT from bottom edge by11.3%width (top-left inset, bottom-left outer), exactly a planar UI cutout, NOT a physical object photographed in perspective. Body empty.\nMaterial: navy charcoal glass (#121b29 near top to#0e1723 bottom), subtle violet/red tinted optical depth, very fine uniform grain, quiet broad cool-white reflected light at upper edge, faint smooth sheen near upperleft only, center/bottom dark and calm so white game words read. Thin polished beveled glass lip, very restrained coral red(#ff3d57) acrylic inlay along LEFT slanted edge, narrow coral cut edge on right. Edge glints from real material rather than an ink outline. No bright-red box stroke all around; no corner brackets, no hazard bands, no circuits, no floating lights. Refined premium operating interface with soft mature anime-game material finish, no neon/cyberpunk, no metal frame or screws.\nMatch related frosted menu plates' realistic satin grain and cut edges but this is the primary DEPLOY panel, dark with restrained coral. No scanlines/no hatch/no diagonals across text area, no visible large marks. Source designed for body284x112display with32pxslant, final2xmaster and transparentpadding. Single isolated slab centered, very pale soft glow inside cutedge only, outside alpha0.",
+    "crop": [
+      24,
+      120,
+      1983,
+      663
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "raw_file": "_raw\\deploy_surface_generated.png",
+    "source_size": [
+      1999,
+      786
+    ]
+  },
+  {
+    "name": "operator_surface",
+    "size": [
+      752,
+      196
+    ],
+    "body": [
+      720,
+      164
+    ],
+    "inset": [
+      16,
+      16
+    ],
+    "source": "C:\\Users\\geniu\\.codex\\generated_images\\01a124d2-3d06-7a31-b813-60c304738541\\exec-d95c8505-1a50-4451-a028-c28e046fa587.png",
+    "prompt": "Use case: stylized-concept. Asset type: ONE blank operator communications window raster for bright warm Seoul hunter office mobile game. REAL transparent background, isolated front-facing straight horizontal panel, no perspective. No letters, numbers, icons, logo, avatar or text.\nWindow body ratio360:82 about4.39:1, nearly rectangular with very slightly softened/small bevel corners. Soft mint sea-glass translucent acrylic(#AAF0E4), mature restrained operators-console atmosphere mixing professional operations and casual office life. Gentle finely rendered glass depth, minute smooth material texture, tiny cutedge reflections, a few restrained short white corner facets, slight pale cool gloss along TOP, darker mint transparent sideface at bottom. No large broad glowing outline, no neon frame, no thick borders/no screws/no dark machine.\nInside upper-left: a pale translucent portrait backing square64x64display at9pxleft9pxtop of body; very subtle (not dark), empty. Remaining central/right area MUST be empty calm translucent pale mint for dark native game dialogue and title. Far upper-right can have almost invisible neat14pxdisplay grid impressions, uniformly subtle. Do not add any drawn lamps, waveform, symbols or avatars; game adds those separately. No decoration crossing center, no strong reflections behind text, no rainbow flare.\nSingle clean material window centered with a little real transparent margin, inside visibly soft translucent50~60%alpha not opaque mint, outside alpha0. Final game display360x82,2xmaster with8pxpadding. Sophisticated small-screen raster material finish with believable satin refraction, airy bright clean not flatvector, not toy.",
+    "crop": [
+      45,
+      197,
+      2009,
+      565
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "raw_file": "_raw\\operator_surface_generated.png",
+    "source_size": [
+      2050,
+      767
+    ]
+  }
+]

@@ -1,0 +1,78 @@
+{
+  "generator": "built-in image_gen.imagegen",
+  "revision": "02 operator light overlays",
+  "mode": "transparent RGBA; source alpha preserved; full-canvas resize only",
+  "assets": [
+    {
+      "name": "operator_halo",
+      "raw": "C:\\Users\\geniu\\.codex\\generated_images\\01a1295b-f305-7352-aa06-e6cf330f3987\\exec-3cd7f9b1-378f-465c-a742-fc00fa9ff05a.png",
+      "size": [
+        256,
+        256
+      ],
+      "prompt": "Use case: stylized-concept\nAsset type: one transparent raster light effect for an adult polished mobile game operating-office UI. This is an effect-only overlay around a64pixel operator portrait; final texture256x256.\nPrimary request: a delicate circular optical halo, a thin pale mint and soft white refractive ring with a few softly fading sections, front-facing perfectly circular. About84percent of the square width, centered. Fine satin optical reflection on the upper-left arc, gently luminous lower-right arc, restrained soft bloom immediately around the thin ring. The entire center of the ring is fully transparent and empty so a portrait beneath stays untouched. Broad readable optics with minimal detail; feels like premium glass and a calm modern communicator, not fantasy magic.\nColor palette: pale mint #9FFFE7 and warm white #F7FFF9; no saturated neon. Maximum light sits on only a short arc, other arc sections are quieter. Ring thickness about2percent of diameter with bloom another2percent.\nConstraints: true RGBA transparent background and fully transparent center, no backing disk, no glass panel, no letters or numbers, no logo, no icon, no runes, no concentric HUD target, no ticks, no star shapes, no sparkles, no decorations, no material border line. No neon/cyberpunk. No drop shadow, room, floor or object. The effect is soft refractive light only.",
+      "source_saved": "C:\\Users\\geniu\\Documents\\GitHub\\Seoul-Hero\\design\\ui-image-skins\\office-day-01\\lobby-polish-01\\_raw\\operator_halo_revision02_source.png",
+      "original_size": [
+        1254,
+        1254
+      ],
+      "crop": "full generated canvas",
+      "final": "C:\\Users\\geniu\\Documents\\GitHub\\Seoul-Hero\\design\\ui-image-skins\\office-day-01\\lobby-polish-01\\operator_halo.png",
+      "runtime": "C:\\Users\\geniu\\Documents\\GitHub\\Seoul-Hero\\godot\\assets\\ui\\office-day-01\\lobby-polish-01\\operator_halo.png",
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "alpha_zero_pixels": 42070,
+      "center_alpha": 0,
+      "visible_bbox_alpha32": [
+        23,
+        24,
+        236,
+        232
+      ],
+      "sha256": "cb5eb43d31553eea267317c0f6a1a586a5a16f5f15902ac11dc701b8240e0e2f",
+      "center64x64_alpha_range": [
+        0,
+        1
+      ]
+    },
+    {
+      "name": "operator_glint",
+      "raw": "C:\\Users\\geniu\\.codex\\generated_images\\01a1295b-f305-7352-aa06-e6cf330f3987\\exec-aa3f6145-0376-43f2-9baf-10824659cb5e.png",
+      "size": [
+        256,
+        64
+      ],
+      "prompt": "Use case: stylized-concept\nAsset type: one transparent raster optical-gloss effect-only texture for a mature professional operating-office game UI, final256x64, animated across a360x82 glass communicator.\nPrimary request: one elegant white-to-pale-mint optical gleam ribbon, long horizontal overall silhouette with a gently curved diagonal bright ridge rising from lower left to upper right. Broad silky refractive light tapering softly into fully transparent ends. A restrained irregular pale-white specular reflection is brightest left of center; the surrounding mint sheen is faint and feathered. It is a soft surface reflection passing over a glass UI window, not a material panel, object, laser, magic effect or neon strip.\nComposition: isolated single ribbon occupying about85percent width and45percent height of a4:1 horizontal texture, centered with generous transparent margin all around. Flat frontal 2D compositor-ready raster light effect; gentle diagonal sweep and very slight curvature, no perspective. Both ends fade out into true transparency, no hard clipping.\nColor: white #F7FFF9 and pale mint #BCFFEC suitable for additive blending. No saturated colors, no dark opaque backing.\nConstraints: true RGBA transparent background outside and behind the light, no rectangular panel or material surface, no border, no text, numbers, logos, icon, stars, sparkle shapes, dots, runes, triangles, arrows or ornaments. No shadow, no environment, no floor. Refined premium consumer-device optics with a little organic painted softness; not flat vector, not sci-fi neon.",
+      "source_saved": "C:\\Users\\geniu\\Documents\\GitHub\\Seoul-Hero\\design\\ui-image-skins\\office-day-01\\lobby-polish-01\\_raw\\operator_glint_revision02_source.png",
+      "original_size": [
+        1983,
+        793
+      ],
+      "crop": "full generated canvas",
+      "final": "C:\\Users\\geniu\\Documents\\GitHub\\Seoul-Hero\\design\\ui-image-skins\\office-day-01\\lobby-polish-01\\operator_glint.png",
+      "runtime": "C:\\Users\\geniu\\Documents\\GitHub\\Seoul-Hero\\godot\\assets\\ui\\office-day-01\\lobby-polish-01\\operator_glint.png",
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        254
+      ],
+      "alpha_zero_pixels": 13336,
+      "center_alpha": 221,
+      "visible_bbox_alpha32": [
+        29,
+        22,
+        228,
+        45
+      ],
+      "sha256": "eadd8b00e6ff472b09fc43cb98f7d34ae534d5b37ca9a80a50be5314d8b21011"
+    }
+  ],
+  "notes": [
+    "Effect-only textures; existing base frames and prior textures not modified.",
+    "White/pale mint RGB suits runtime additive blending and opacity gating.",
+    "Visual inspection found no text, logos, rune/stars or frame backing."
+  ]
+}

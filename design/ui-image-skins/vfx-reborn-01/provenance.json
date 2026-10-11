@@ -1,0 +1,55 @@
+{
+  "date": "2026-10-04",
+  "capture": "Godot 4.7.2 / OpenGL Compatibility / native viewport frames",
+  "newIllustrations": [],
+  "prompts": [],
+  "artwork": "Existing approved character, monster, UI and VFX PNG artwork reused unchanged.",
+  "proceduralSources": [
+    {
+      "path": "godot/shaders/slash_sweep.gdshader",
+      "sha256": "7e42a654ea20c7abea86e6a090828cbee095d67e4881cc1022e4273c4939b95a",
+      "source": "authored in this repository; no external generated illustration"
+    },
+    {
+      "path": "godot/shaders/chain_link.gdshader",
+      "sha256": "b51c8b2de978476a59d960920ee0de090577c1f400a000f8c222e9ec2f7b8cd1",
+      "source": "authored in this repository; no external generated illustration"
+    },
+    {
+      "path": "godot/shaders/effect_pulse.gdshader",
+      "sha256": "b5e6893ebf43d7ce5e1e027563c8b206696a7d127168cefe795e30ef53646d80",
+      "source": "authored in this repository; no external generated illustration"
+    },
+    {
+      "path": "godot/shaders/projectile_trail.gdshader",
+      "sha256": "48190658d2a4c5b90b1a6c61abc7d650cf0010e31b80dc21cf425028b39fcace",
+      "source": "authored in this repository; no external generated illustration"
+    },
+    {
+      "path": "godot/shaders/field_flow.gdshader",
+      "sha256": "a7e8659c5696d72c54a4a5a68bf4685928cb3333fe3de301624d8e016f0587fd",
+      "source": "authored in this repository; no external generated illustration"
+    },
+    {
+      "path": "godot/shaders/installation_glow.gdshader",
+      "sha256": "71b99a152b5bfd50ba92e3b4f100750c8b291c3323f1a72c88499b14992fe8ac",
+      "source": "authored in this repository; no external generated illustration"
+    },
+    {
+      "path": "godot/shaders/ui_vfx.gdshader",
+      "sha256": "24e092d16694e5ca017e49a8f457829b60588590bd0f6afb788e338a76d87678",
+      "source": "authored in this repository; no external generated illustration"
+    },
+    {
+      "path": "godot/data/visuals/effects.json",
+      "sha256": "8552a1fa6873f4212bb297be62bfda0c3de9c1984c3104056652e4dfb0360459",
+      "source": "authored in this repository; no external generated illustration"
+    },
+    {
+      "path": "godot/data/visuals/ui_effects.json",
+      "sha256": "3a5df133251d0300feb974511daf3a90c2e10354b543d102b126410dbb7cb43e",
+      "source": "authored in this repository; no external generated illustration"
+    }
+  ],
+  "retouchedFrames": false
+}

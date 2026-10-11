@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>게이트24 · 낮의 헌터 편의점</title>
+<style>
+:root{font-family:"Malgun Gothic",sans-serif;color:#24395c;background:#fbf6ec}
+*{box-sizing:border-box}body{margin:0;padding:28px 20px 40px}
+main{max-width:1870px;margin:auto}h1{font-size:26px;margin:0 0 9px}
+p{margin:0 0 20px;line-height:1.65;color:#56657a}nav{display:flex;gap:10px;flex-wrap:wrap;margin:0 0 18px}
+button,a.file{border:1px solid #d5dedb;border-radius:9px;background:white;color:#24395c;padding:11px 18px;font:inherit;cursor:pointer}
+button[aria-pressed="true"]{background:#0e9f9f;color:white;border-color:#0e9f9f}
+.controls{display:flex;gap:24px;flex-wrap:wrap}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+figure{margin:0;background:white;padding:12px;border-radius:12px;border:1px solid #e3e3db}
+figcaption{font-weight:bold;padding:2px 2px 11px}img{display:block;width:100%;height:auto}
+.grid.single{display:block;max-width:915px}.grid.single figure{margin-bottom:18px}
+footer{margin-top:22px;display:flex;gap:18px;flex-wrap:wrap;font-size:14px}a{color:#087f88}
+.note{font-size:13px;margin:14px 0 0}.hidden{display:none!important}
+@media(max-width:1100px){.grid{grid-template-columns:1fr;max-width:915px}body{padding:20px 12px}h1{font-size:23px}}
+</style>
+</head>
+<body><main>
+<h1>게이트24 · 낮의 헌터 편의점</h1>
+<p>승인한 밝은 편의점 디자인을 Godot 게이트24에 적용했습니다. 흰 진열대·민트 간판·노란 가격표·주황 진행 버튼.<br>적용 화면은 실제 게임 UI를 저장 없이 합성 프로필로 캡처한 915×412 이미지입니다.</p>
+<div class="controls">
+<nav aria-label="상품 탭"><button data-tab="items" aria-pressed="true">아이템</button><button data-tab="weapons" aria-pressed="false">무기</button></nav>
+<nav aria-label="보기"><button data-view="runtime" aria-pressed="true">실제 적용 화면</button><button data-view="before" aria-pressed="false">변경 전</button><button data-view="both" aria-pressed="false">전후 비교</button><button data-view="concept" aria-pressed="false">승인 시안</button></nav>
+</div>
+<div class="grid single" id="screens">
+<figure id="current" class="hidden"><figcaption>변경 전 · 915×412</figcaption><img id="before" src="before/shop-items.png" alt="변경 전 게이트24 아이템 탭"></figure>
+<figure id="proposal"><figcaption id="afterTitle">실제 적용 화면 · 915×412</figcaption><img id="concept" src="runtime/shop-items.png" alt="실제 적용된 밝은 게이트24 아이템 탭"></figure>
+</div>
+<p class="note">제작 PNG 배경·진열대·버튼에 기존 인물·상품 아이콘과 네이티브 글자를 올렸습니다. 구매·잠금·재진열·분기 처리와 현재 콘텐츠 수치는 유지합니다. 변경 전 캡처 이후 다른 개발 작업에서 갱신된 스탯은 적용 캡처의 현재 값으로 표시됩니다.</p>
+<details style="margin-top:20px"><summary>버튼 상태·무료 보급·품절·재화 부족·상세창</summary><div class="grid" style="margin-top:12px">
+<figure><figcaption>가격표 hover</figcaption><img src="runtime/shop-items-hover.png" alt="가격표에 마우스를 올린 상태" loading="lazy"></figure>
+<figure><figcaption>가격표 눌림</figcaption><img src="runtime/shop-items-pressed.png" alt="가격표를 누르고 있는 상태" loading="lazy"></figure>
+<figure><figcaption>무료·품절·잠금·재화 부족</figcaption><img src="runtime/shop-items-stock-states.png" alt="무료 보급과 구매할 수 없는 상품 상태" loading="lazy"></figure>
+<figure><figcaption>상품 상세창</figcaption><img src="runtime/shop-items-details.png" alt="상품 상세 팝업" loading="lazy"></figure>
+</div></details>
+<footer><a id="full" href="runtime/shop-items.png" target="_blank">원본 크게 보기</a><a href="README.md">제작·적용 기록</a><a href="runtime/capture.json">실제 캡처 표시값</a></footer>
+</main>
+<script>
+let tab="items",view="runtime";
+function update(){
+ document.getElementById("before").src="before/shop-"+tab+".png";
+ const source=view==="concept"?"concepts/shop-"+tab+"-bright.png":"runtime/shop-"+tab+".png";
+ document.getElementById("concept").src=source;
+ document.getElementById("before").alt="변경 전 게이트24 "+(tab==="items"?"아이템":"무기")+" 탭";
+ document.getElementById("concept").alt=(view==="concept"?"승인 시안":"실제 적용 화면")+" · "+(tab==="items"?"아이템":"무기");
+ document.getElementById("afterTitle").textContent=view==="concept"?"승인한 밝은 편의점 시안":"실제 적용 화면 · 915×412";
+ document.getElementById("full").href=view==="before"?"before/shop-"+tab+".png":source;
+ document.getElementById("current").classList.toggle("hidden",view!=="before"&&view!=="both");
+ document.getElementById("proposal").classList.toggle("hidden",view==="before");
+ document.getElementById("screens").classList.toggle("single",view!=="both");
+ document.querySelectorAll("[data-tab]").forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.tab===tab)));
+ document.querySelectorAll("[data-view]").forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.view===view)));
+}
+document.querySelectorAll("[data-tab]").forEach(b=>b.onclick=()=>{tab=b.dataset.tab;update()});
+document.querySelectorAll("[data-view]").forEach(b=>b.onclick=()=>{view=b.dataset.view;update()});
+</script>
+</body></html>
+

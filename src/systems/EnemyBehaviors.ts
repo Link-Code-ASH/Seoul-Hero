@@ -29,9 +29,13 @@ function charge(e: Enemy, c: EnemyContext, ambush = false): void {
     if (e.timer <= 0) { e.action = 'dash'; e.timer = tuning.duration; }
   } else if (e.action === 'dash') {
     moveToward(e, e.aimX, e.aimY, c.dt, tuning.speed * ENEMY_MOVE_SCALE);
-    if (e.timer <= 0) { e.action = 'move'; e.timer = tuning.cooldown; }
+    if (e.timer > 0) return;
+    e.repeats = (e.repeats ?? 1) - 1;
+    // A repeated dash re-aims after a short second warning.
+    if (e.repeats > 0) { aim(e, c); e.action = 'warning'; e.timer = tuning.repeatWarning ?? 0.3; }
+    else { e.action = 'move'; e.timer = tuning.cooldown; }
   } else if (e.timer <= 0 && distance(e, c) < tuning.triggerRange) {
-    aim(e, c); e.action = 'warning'; e.timer = tuning.warning;
+    aim(e, c); e.action = 'warning'; e.timer = tuning.warning; e.repeats = tuning.repeats ?? 1;
     soundAction(e, c, 'chargeWindup', 'windup');
   } else if (ambush) {
     const a = Math.atan2(c.run.player.y - e.y, c.run.player.x - e.x) + 0.6;
@@ -49,9 +53,40 @@ function ranged(e: Enemy, c: EnemyContext): void {
   else if (d > R.rangedDistance) chase(e, c);
   if (e.timer <= 0 && d < R.rangedDistance * 1.5) { aim(e, c); e.action = 'warning'; e.timer = R.rangedWarning; }
 }
+// 땅울림: walk in, hop in place through the warning, the blast lands at touchdown.
+function quake(e: Enemy, c: EnemyContext): void {
+  const q = c.def.quake ?? {}, radius = q.radius ?? R.tankRadius, warning = q.warning ?? R.tankWarning, cooldown = q.cooldown ?? R.tankCooldown;
+  if (e.action === 'hop') {
+    if (e.timer > 0) return;
+    e.repeats = (e.repeats ?? 1) - 1; e.action = 'move';
+    e.timer = e.repeats > 0 ? q.repeatDelay ?? 0.7 : Math.max(0.2, cooldown - warning);
+    return;
+  }
+  chase(e, c);
+  const pending = (e.repeats ?? 0) > 0;
+  if (e.timer > 0 || (!pending && distance(e, c) >= radius)) return;
+  if (!pending) e.repeats = q.repeats ?? 1;
+  e.action = 'hop'; e.timer = warning;
+  c.attacks.area(c.run, e.x, e.y, radius, warning, e.contactDamage);
+}
+// Dedicated boss pattern: never stops circling while it scatters turning rings of bullets.
+function spiral(e: Enemy, c: EnemyContext, pattern: NonNullable<EnemyDefinition['bossPatterns']>[number]): void {
+  const toward = Math.atan2(c.run.player.y - e.y, c.run.player.x - e.x);
+  const heading = distance(e, c) > pattern.radius ? toward : toward + 1.35;
+  moveToward(e, e.x + Math.cos(heading) * 200, e.y + Math.sin(heading) * 200, c.dt, e.moveSpeed * (e.action === 'move' ? 1 : 0.6));
+  if (e.timer > 0) return;
+  if (e.action === 'move') { e.action = 'warning'; e.timer = pattern.warning; return; }
+  if (e.action === 'warning') { e.action = 'volley'; e.repeats = pattern.volleys ?? 1; soundAction(e, c, 'bossMajorAttack', 'execute'); }
+  const ring = (pattern.volleys ?? 1) - (e.repeats ?? 1);
+  for (let i = 0; i < pattern.count; i++) c.attacks.shoot(c.run, e.x, e.y, ring * (pattern.turn ?? 0) + i * Math.PI * 2 / pattern.count, e.contactDamage * pattern.damageMultiplier, enemyAudio(e, c, 'projectileLaunch', 'launch'));
+  e.repeats = (e.repeats ?? 1) - 1;
+  if (e.repeats > 0) e.timer = pattern.interval ?? 0.4;
+  else { e.action = 'move'; e.timer = pattern.cooldown; e.pattern++; }
+}
 function boss(e: Enemy, c: EnemyContext): void {
   const patterns = c.def.bossPatterns; if (!patterns?.length) { chase(e, c); return; }
   const pattern = patterns[e.pattern % patterns.length]!;
+  if (pattern.type === 'spiral') { spiral(e, c, pattern); return; }
   if (e.action === 'dash') {
     moveToward(e, e.aimX, e.aimY, c.dt, R.chargeSpeed * ENEMY_MOVE_SCALE);
     if (e.timer <= 0) { e.action = 'move'; e.timer = pattern.cooldown; e.pattern++; }
@@ -81,7 +116,7 @@ export const enemyBehaviors: Record<EnemyDefinition['behavior'], Handler> = {
     const a = Math.atan2(c.run.player.y - e.y, c.run.player.x - e.x) + Math.sin(e.age * 5 + e.id) * R.weaveAmplitude;
     moveToward(e, e.x + Math.cos(a) * 200, e.y + Math.sin(a) * 200, c.dt);
   },
-  tank(e, c) { chase(e, c); if (e.timer <= 0 && distance(e, c) < R.tankRadius) { c.attacks.area(c.run, e.x, e.y, R.tankRadius, R.tankWarning, e.contactDamage); e.timer = R.tankCooldown; } },
+  tank: quake,
   ranged,
   swarm(e, c) {
     const chaseX = c.run.player.x - e.x;

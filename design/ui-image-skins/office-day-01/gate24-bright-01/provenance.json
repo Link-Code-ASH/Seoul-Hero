@@ -1,0 +1,63 @@
+{
+  "status": "approved by user; Godot runtime applied",
+  "date": "2026-10-11",
+  "tool": "image_gen.imagegen",
+  "reference": "fresh current Godot HeroShopScreen.build capture, synthetic no-save profile",
+  "designBaseline": [
+    915,
+    412
+  ],
+  "images": [
+    {
+      "file": "concepts/shop-items-bright.png",
+      "size": [
+        1869,
+        842
+      ],
+      "mode": "RGB",
+      "source": "C:/Users/geniu/.codex/generated_images/01a124d2-3d06-7a31-b813-60c304738541/exec-ca6c35bb-c05e-4361-98b8-6918094a9d43.png",
+      "sha256": "ffed8fc61de2feab2a2d25d8f2e6e74343a062664d5f9365938cd17f4e69cf36",
+      "prompt": "PROMPTS.md"
+    },
+    {
+      "file": "concepts/shop-weapons-bright.png",
+      "size": [
+        1870,
+        841
+      ],
+      "mode": "RGB",
+      "source": "C:/Users/geniu/.codex/generated_images/01a124d2-3d06-7a31-b813-60c304738541/exec-3132f3fd-0bc9-4fd8-a886-b9219f04f876.png",
+      "sha256": "729c520c47107ffbe3433a5d744c8536f6db4a2fac1f5fdb76948bf5fca438b7",
+      "prompt": [
+        "PROMPT_WEAPONS.md",
+        "PROMPT_LOCK_CORRECTION.md"
+      ]
+    },
+    {
+      "file": "_raw/shop-weapons-draft-01.png",
+      "size": [
+        1870,
+        841
+      ],
+      "mode": "RGB",
+      "source": "C:/Users/geniu/.codex/generated_images/01a124d2-3d06-7a31-b813-60c304738541/exec-ed587864-fda3-446a-a4f3-b2543dc4bfc0.png",
+      "sha256": "ccfb470722b1254805e7e0713feef76ff177ed219c8ed4386a6ae987b92a3783",
+      "prompt": "PROMPT_WEAPONS.md"
+    }
+  ],
+  "checks": [
+    "Actual prices and descriptive text matched capture.json",
+    "Four lock controls on each tab",
+    "44px input retained as future implementation constraint, no interaction QA performed",
+    "No runtime UI or content or user save changes"
+  ],
+  "runtime_manifest": "materials/manifest.json",
+  "runtime_capture": "runtime/capture.json",
+  "runtime_checks": {
+    "png_copies_identical": true,
+    "capture_count": 7,
+    "all_915x412": true,
+    "callbackCalls": 0,
+    "normal_return_identical": true
+  }
+}

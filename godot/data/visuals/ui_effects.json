@@ -1,0 +1,140 @@
+{
+  "version": 1,
+  "maxParticles": 48,
+  "maxEffects": 20,
+  "maxQueued": 16,
+  "particleImage": "supplyOpeningBurst",
+  "recipes": {
+    "click": {
+      "duration": 0.14,
+      "mode": "gloss",
+      "color": "#d4fff2",
+      "strength": 0.14,
+      "edgeOnly": true,
+      "particles": 0
+    },
+    "gloss": {
+      "duration": 0.28,
+      "mode": "gloss",
+      "color": "#e6fff8",
+      "strength": 0.19,
+      "edgeOnly": true,
+      "particles": 0
+    },
+    "select": {
+      "duration": 0.28,
+      "mode": "edge",
+      "color": "#a0ffe0",
+      "strength": 0.7,
+      "particles": 4,
+      "particleSize": 6,
+      "spread": 15,
+      "edgeOnly": true
+    },
+    "detail": {
+      "duration": 0.15,
+      "mode": "fade",
+      "targets": "art",
+      "anchors": [
+        "GateDetailArt",
+        "GrowthArt",
+        "ArchiveDetailArt"
+      ],
+      "from": 0.45,
+      "particles": 0
+    },
+    "entry": {
+      "duration": 0.15,
+      "mode": "fade",
+      "targets": "surfaces",
+      "from": 0.78,
+      "particles": 0
+    },
+    "acquire": {
+      "duration": 0.45,
+      "mode": "burst",
+      "color": "#ffe6a5",
+      "strength": 0.23,
+      "particles": 10,
+      "particleSize": 9,
+      "spread": 26
+    },
+    "lock": {
+      "duration": 0.28,
+      "mode": "edge",
+      "color": "#baffdd",
+      "strength": 0.58,
+      "particles": 0,
+      "edgeOnly": true
+    },
+    "reroll": {
+      "duration": 0.2,
+      "mode": "gloss",
+      "color": "#cff8ec",
+      "strength": 0.22,
+      "edgeOnly": true,
+      "particles": 0
+    },
+    "growth": {
+      "duration": 0.45,
+      "mode": "burst",
+      "color": "#b8ffed",
+      "strength": 0.3,
+      "particles": 12,
+      "particleSize": 9,
+      "spread": 31,
+      "anchor": "GrowthArt"
+    },
+    "branch": {
+      "duration": 0.45,
+      "mode": "burst",
+      "color": "#d9c4ff",
+      "strength": 0.3,
+      "particles": 12,
+      "particleSize": 9,
+      "spread": 30
+    },
+    "offline": {
+      "duration": 0.45,
+      "mode": "burst",
+      "color": "#ffe5a4",
+      "strength": 0.25,
+      "particles": 10,
+      "particleSize": 9,
+      "spread": 25,
+      "anchor": "OfflineRewardArt"
+    },
+    "supply": {
+      "duration": 0.45,
+      "mode": "burst",
+      "color": "#fff0ba",
+      "strength": 0.3,
+      "particles": 12,
+      "particleSize": 9,
+      "spread": 32
+    },
+    "result": {
+      "duration": 0.7,
+      "mode": "burst",
+      "color": "#ffe4ac",
+      "strength": 0.25,
+      "particles": 18,
+      "particleSize": 10,
+      "spread": 38,
+      "anchor": "ResultRewardArt"
+    },
+    "calm": {
+      "duration": 0.2,
+      "mode": "fade",
+      "targets": "surfaces",
+      "from": 0.88,
+      "particles": 0
+    }
+  },
+  "terminal": {
+    "duration": 2.4,
+    "strength": 0.32,
+    "color": "#b1ffe2",
+    "bandWidth": 0.17
+  }
+}

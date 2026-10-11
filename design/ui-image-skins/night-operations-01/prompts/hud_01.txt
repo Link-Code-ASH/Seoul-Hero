@@ -1,0 +1,24 @@
+Game UI asset sheet for "Seoul Hero", a 2D mobile roguelite arena game set in night-time Seoul.
+Art direction "Seoul Night Operations": dark navy-black translucent glass panels (#0B1621 at about 86% opacity),
+thin 1-2px cool cyan edge highlight (#84CED6 at low opacity), a single mint accent color (#3DD6B5) used only for
+active / selected / primary elements, warm gold (#E8B75A) only for rewards, coral (#EF7A6D) only for danger.
+Clean flat-shaded vector-like finish with a very subtle top inner highlight, no heavy bevel, no metal texture,
+no rust, no paper, no grunge, no neon overload, no realistic photo texture.
+Shapes: crisp rectangles with small 45-degree chamfered corners (cut corners) instead of rounded corners.
+Must sit comfortably next to thick-outline cel-shaded chibi characters without competing with them.
+Front orthographic view, perfectly straight edges, no perspective, no drop shadow outside the element,
+transparent background, no text, no letters, no numbers, no logos, no characters.
+Every element is separated by generous empty transparent space and aligned to an invisible grid.
+
+HUD elements only, NO background plates or panels behind them; each element must read on both bright stone
+pavement and dark asphalt, so give every element a thin dark navy outline (#061016).
+Sheet layout: 2 columns x 3 rows.
+ (1) Health bar frame: long thin bar, aspect 10:1, dark translucent track with dark outline and tiny chamfered
+     ends, empty inside.
+ (2) Health bar fill: same size as the inside of (1), coral-red gradient (#F2857A to #D9574B), subtle top shine.
+ (3) Health bar fill, low-health variant: same shape, brighter red with a faint white edge glow.
+ (4) Weapon level badge: small mint circle (#3DD6B5) with a 2px dark navy ring, empty center.
+ (5) Weapon slot empty marker: small square outline, dashed, light cyan at 50% opacity.
+ (6) Wave timer underline ornament: thin horizontal line with tiny chamfered mint center mark, aspect 12:1.
+
+Output: transparent PNG, 1536x1024 pixels, landscape. Keep every element fully inside the canvas with transparent padding on all four outer edges.

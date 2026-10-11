@@ -1,0 +1,272 @@
+{
+  "description": "Art-library monster originals prepared for combat: Lanczos downscale to 640 px high and Image.fix_alpha_edges(). Originals, prompts and reviews stay in art-library.",
+  "files": [
+    {
+      "family": "균열 점액종",
+      "file": "monster-001.png",
+      "libraryId": "monster-001",
+      "nameKo": "균열 단핵 방울",
+      "size": [
+        616.0,
+        640.0
+      ],
+      "source": "art-library/originals/monster/monster-001/v02/original.png",
+      "sourceSha256": "2901769d8cd782ee8760caf578c5194ed4b17badb15e3829b23ec3baee749f4b"
+    },
+    {
+      "family": "균열 점액종",
+      "file": "monster-017.png",
+      "libraryId": "monster-017",
+      "nameKo": "균열 초승 껍질",
+      "size": [
+        611.0,
+        640.0
+      ],
+      "source": "art-library/originals/monster/monster-017/v01/original.png",
+      "sourceSha256": "351e6e9b2bdf38e7bec25b21376bd9c558f90116aa68658317b10caf6c4a1c87"
+    },
+    {
+      "family": "균열 점액종",
+      "file": "monster-033.png",
+      "libraryId": "monster-033",
+      "nameKo": "균열 쌍핵 껴안개",
+      "size": [
+        756.0,
+        640.0
+      ],
+      "source": "art-library/originals/monster/monster-033/v01/original.png",
+      "sourceSha256": "4947c277e77c2b9b718b37d67584a13b654c9be4d59202a6f972dcf73356996b"
+    },
+    {
+      "family": "균열 점액종",
+      "file": "monster-049.png",
+      "libraryId": "monster-049",
+      "nameKo": "균열 납작 숨판",
+      "size": [
+        960.0,
+        640.0
+      ],
+      "source": "art-library/originals/monster/monster-049/v01/original.png",
+      "sourceSha256": "3f808548918fec8b95134f08ecc949c28ba37aa43725ff5a76d1d494370e4bbc"
+    },
+    {
+      "family": "균열 점액종",
+      "file": "monster-065.png",
+      "libraryId": "monster-065",
+      "nameKo": "균열 말림 고리",
+      "size": [
+        761.0,
+        640.0
+      ],
+      "source": "art-library/originals/monster/monster-065/v01/original.png",
+      "sourceSha256": "a808a75236dd9657737ffd7815caae407ea15e50b51dec0f5bd99a8c129a93f0"
+    },
+    {
+      "family": "균열 점액종",
+      "file": "monster-081.png",
+      "libraryId": "monster-081",
+      "nameKo": "균열 층진 맥동탑",
+      "size": [
+        685.0,
+        640.0
+      ],
+      "source": "art-library/originals/monster/monster-081/v01/original.png",
+      "sourceSha256": "1d107d4079012e503253df31fcf88e801ecbb3dbc927552fd5c806edadebb974"
+    },
+    {
+      "family": "균열 점액종",
+      "file": "monster-097.png",
+      "libraryId": "monster-097",
+      "nameKo": "균열 삼엽 포옹체",
+      "size": [
+        717.0,
+        640.0
+      ],
+      "source": "art-library/originals/monster/monster-097/v01/original.png",
+      "sourceSha256": "76282aafa248ddbda7231e4846e3f5510fdeb0f469d886a165cc9d81c0ccc9c2"
+    },
+    {
+      "family": "균열 점액종",
+      "file": "monster-113.png",
+      "libraryId": "monster-113",
+      "nameKo": "균열 주름 가면",
+      "size": [
+        616.0,
+        640.0
+      ],
+      "source": "art-library/originals/monster/monster-113/v01/original.png",
+      "sourceSha256": "520092715d9d8fa540501e38542fc86792a10367d3e3d25ca364748b756417ee"
+    },
+    {
+      "family": "균열 점액종",
+      "file": "monster-129.png",
+      "libraryId": "monster-129",
+      "nameKo": "균열 둥지 품핵",
+      "size": [
+        625.0,
+        640.0
+      ],
+      "source": "art-library/originals/monster/monster-129/v01/original.png",
+      "sourceSha256": "dd1dd60cce2b372c9cc092423b026ce89d17fad4e6ee8dc5d4d7de3b94d5c1fd"
+    },
+    {
+      "family": "균열 점액종",
+      "file": "monster-145.png",
+      "libraryId": "monster-145",
+      "nameKo": "균열 비대칭 봉오리",
+      "size": [
+        609.0,
+        640.0
+      ],
+      "source": "art-library/originals/monster/monster-145/v01/original.png",
+      "sourceSha256": "ae5a2fb8d06c70a97d65ea91fdd08fac43e788268db170522c58212435d17fd9"
+    },
+    {
+      "family": "유리 해파리종",
+      "file": "monster-003.png",
+      "libraryId": "monster-003",
+      "nameKo": "유리 단핵 방울",
+      "size": [
+        700.0,
+        640.0
+      ],
+      "source": "art-library/originals/monster/monster-003/v02/original.png",
+      "sourceSha256": "623c4d18c2bf61c77dfc304489646765f5a0ba59c140348158747b37321a4339"
+    },
+    {
+      "family": "유리 해파리종",
+      "file": "monster-019.png",
+      "libraryId": "monster-019",
+      "nameKo": "유리 초승 껍질",
+      "size": [
+        600.0,
+        640.0
+      ],
+      "source": "art-library/originals/monster/monster-019/v01/original.png",
+      "sourceSha256": "62dad7c63d5c02f53127e231722d7d846dc4a857bb2b567cc221ddced14777bb"
+    },
+    {
+      "family": "유리 해파리종",
+      "file": "monster-035.png",
+      "libraryId": "monster-035",
+      "nameKo": "유리 쌍핵 껴안개",
+      "size": [
+        700.0,
+        640.0
+      ],
+      "source": "art-library/originals/monster/monster-035/v01/original.png",
+      "sourceSha256": "cc577b03b38870ff05126a695ae0bbf77f20931122277db10245d03cc946edac"
+    },
+    {
+      "family": "유리 해파리종",
+      "file": "monster-051.png",
+      "libraryId": "monster-051",
+      "nameKo": "유리 납작 숨판",
+      "size": [
+        960.0,
+        640.0
+      ],
+      "source": "art-library/originals/monster/monster-051/v01/original.png",
+      "sourceSha256": "8a303698213d85d64a817705bcbca2475dd379dc317fe4c4536e21aa89ecc0c3"
+    },
+    {
+      "family": "유리 해파리종",
+      "file": "monster-067.png",
+      "libraryId": "monster-067",
+      "nameKo": "유리 말림 고리",
+      "size": [
+        613.0,
+        640.0
+      ],
+      "source": "art-library/originals/monster/monster-067/v01/original.png",
+      "sourceSha256": "4a01c49ed8902d1cd1bcc777063a8a76578e2b22373afda5c438993dc3abd66d"
+    },
+    {
+      "family": "유리 해파리종",
+      "file": "monster-083.png",
+      "libraryId": "monster-083",
+      "nameKo": "유리 층진 맥동탑",
+      "size": [
+        662.0,
+        640.0
+      ],
+      "source": "art-library/originals/monster/monster-083/v01/original.png",
+      "sourceSha256": "e4ef6f64a8ecd688dee3a0b797b466cb959d395114da7a5010af48d7ff0555a3"
+    },
+    {
+      "family": "유리 해파리종",
+      "file": "monster-099.png",
+      "libraryId": "monster-099",
+      "nameKo": "유리 삼엽 포옹체",
+      "size": [
+        640.0,
+        640.0
+      ],
+      "source": "art-library/originals/monster/monster-099/v01/original.png",
+      "sourceSha256": "f1477229efae77f3766c650091a78770a67e3ff3f656c42d42f4914bff69c1de"
+    },
+    {
+      "family": "유리 해파리종",
+      "file": "monster-115.png",
+      "libraryId": "monster-115",
+      "nameKo": "유리 주름 가면",
+      "size": [
+        608.0,
+        640.0
+      ],
+      "source": "art-library/originals/monster/monster-115/v01/original.png",
+      "sourceSha256": "599fe2059ec6c30cb0b36cd60021bd98e774bdf0370ec86aa226c4dd6fcc10f1"
+    },
+    {
+      "family": "유리 해파리종",
+      "file": "monster-131.png",
+      "libraryId": "monster-131",
+      "nameKo": "유리 둥지 품핵",
+      "size": [
+        616.0,
+        640.0
+      ],
+      "source": "art-library/originals/monster/monster-131/v01/original.png",
+      "sourceSha256": "623c157d4e57395c2fbe2b66ec940ce85b8e25633f90db8bfc1e8e955c8d5c0c"
+    },
+    {
+      "family": "유리 해파리종",
+      "file": "monster-147.png",
+      "libraryId": "monster-147",
+      "nameKo": "유리 비대칭 봉오리",
+      "size": [
+        591.0,
+        640.0
+      ],
+      "source": "art-library/originals/monster/monster-147/v01/original.png",
+      "sourceSha256": "87ddd1962f2dbdd200c2da8fc02c93e017c9340933168608431b6808dcb492bf"
+    },
+    {
+      "family": "신호 날개종",
+      "file": "monster-002.png",
+      "libraryId": "monster-002",
+      "nameKo": "점등 단핵 방울",
+      "size": [
+        616,
+        640
+      ],
+      "source": "art-library/originals/monster/monster-002/v01/original.png",
+      "sourceSha256": "acaa0705fce5d539a5bf0d9c2b3791dc512c76eac7a6c9df78a92e4289f8e6dd",
+      "tool": "godot/tools/prepare_weekly_monsters.gd"
+    },
+    {
+      "family": "교통 경계종",
+      "file": "monster-014.png",
+      "libraryId": "monster-014",
+      "nameKo": "경계 단핵 방울",
+      "size": [
+        619,
+        640
+      ],
+      "source": "art-library/originals/monster/monster-014/v02/original.png",
+      "sourceSha256": "3aacb4784c386fcc72a327fd5215ef2d878cdb2348847834c0b842e0dbb0d304",
+      "tool": "godot/tools/prepare_weekly_monsters.gd"
+    }
+  ],
+  "tool": "godot/tools/prepare_library_monsters.gd"
+}

@@ -7,6 +7,9 @@ var current := Vector2.ZERO
 var finger := -1
 var active := false
 var touch_radius := 52.0
+const PAD_SMOKE = preload("res://assets/visuals/vfx/smoke.png")
+const PAD_RIM = preload("res://assets/visuals/vfx/shockwave.png")
+const KNOB_GLOW = preload("res://assets/visuals/vfx/spark.png")
 
 func _ready() -> void:
 	set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
@@ -51,6 +54,14 @@ func _notification(what: int) -> void:
 
 func _draw() -> void:
 	if finger == -1 or not active: return
-	draw_circle(origin, touch_radius, Color(0.45,0.67,0.75,0.16))
-	draw_arc(origin, touch_radius, 0, TAU, 64, Color(0.7,0.87,0.9,0.45), 1.4, true)
-	draw_circle(origin + direction * touch_radius, 18, Color(0.66,0.85,0.88,0.5))
+	# Painted pad: soft mint haze, smudged rim, and a glowing knob instead of flat circles.
+	var pad := Vector2.ONE * touch_radius * 2.2
+	draw_texture_rect(PAD_SMOKE, Rect2(origin - pad * 0.5, pad), false, Color(0.24,0.84,0.71,0.35))
+	var rim := Vector2.ONE * touch_radius * 2.0
+	draw_texture_rect(PAD_RIM, Rect2(origin - rim * 0.5, rim), false, Color(0.62,0.95,0.86,0.8))
+	var knob := origin + direction * touch_radius
+	var haze := Vector2.ONE * 64.0
+	draw_texture_rect(PAD_SMOKE, Rect2(knob - haze * 0.5, haze), false, Color(0.24,0.84,0.71,0.95))
+	draw_texture_rect(PAD_SMOKE, Rect2(knob - haze * 0.35, haze * 0.7), false, Color(0.78,1.0,0.94,1.0))
+	var glow := Vector2.ONE * 48.0
+	draw_texture_rect(KNOB_GLOW, Rect2(knob - glow * 0.5, glow), false, Color(1.0,1.0,1.0,0.9))

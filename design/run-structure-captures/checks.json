@@ -1,0 +1,413 @@
+{
+	"checks": [
+		{
+			"check": "Waves 1-19 each total weight 100",
+			"detail": "[100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100]",
+			"passed": true
+		},
+		{
+			"check": "Old fixed elites on waves 5/10/15 are gone",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "Depth 10 wave 11 adds the lurker slot (rift mask) at weight 15",
+			"detail": "[{ \"enemyId\": \"riftTrefoil\", \"weight\": 34.0 }, { \"enemyId\": \"swarm\", \"weight\": 25.5 }, { \"enemyId\": \"riftCrescent\", \"weight\": 25.5 }, { \"enemyId\": \"riftMask\", \"weight\": 15.0 }]",
+			"passed": true
+		},
+		{
+			"check": "Depth 10 wave 12 has no lurker slot",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "Depth 10 featured elite gains CURSED_AURA",
+			"detail": "[\"GIANT\", \"ARMORED\", \"CURSED_AURA\"]",
+			"passed": true
+		},
+		{
+			"check": "Depth 20 wave 14 has a third featured elite",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "Depth 19 wave 14 keeps two featured elites",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "Depth 20 boss is the rift bud queen",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "No featured elite before its time",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "Wave 7 featured elite spawned at 10s",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "Wave 7 elite HP is about 30% of the gatekeeper",
+			"detail": "1873.8 / target 1872.0",
+			"passed": true
+		},
+		{
+			"check": "Ordinary spawn rate x0.7 while the elite lives",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "Spawn banner names no elite",
+			"detail": "정예 출현!",
+			"passed": true
+		},
+		{
+			"check": "HUD has no elite nameplate, name or HP bar",
+			"detail": "[\"100 / 100\", \"0\", \"0\", \"1\", \"웨이브 7 / 20\", \"00:29\", \"\", \"정예 출현!\"]",
+			"passed": true
+		},
+		{
+			"check": "Wave timer ends the wave with the elite alive",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "Flee message is announced",
+			"detail": "정예가 도망쳤다",
+			"passed": true
+		},
+		{
+			"check": "Fled elite grants no supply",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "Elite kill is counted once",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "Stone shower scatters about 30 kills' worth",
+			"detail": "+13 stones, +34.9 value (shower 24.9)",
+			"passed": true
+		},
+		{
+			"check": "Next shop offers exactly one free item",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "Free item is rare or better",
+			"detail": "horizonMirror (RARE)",
+			"passed": true
+		},
+		{
+			"check": "Free item costs nothing and is purchasable at 0 stones",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "Free marker sits inside the existing card",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "Free item survives a reroll",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "Buying the free item succeeds and clears the slot",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "Wave 14 spawns both featured elites",
+			"detail": "[\"광폭 돌진 뿔뱀\", \"재생 분열 점액\"]",
+			"passed": true
+		},
+		{
+			"check": "Wave 14 elite HP about 760 / 790",
+			"detail": "912.6 / 945.0",
+			"passed": true
+		},
+		{
+			"check": "No surge before the last 15 seconds",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "Surge is active in the last 15 seconds",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "Surge spawn rate x1.5 (x0.7 while elites live)",
+			"detail": "1.05",
+			"passed": true
+		},
+		{
+			"check": "Living enemies pay x1.5 stones once the surge starts",
+			"detail": "0.832 -> 1.247",
+			"passed": true
+		},
+		{
+			"check": "Enemies spawned during the surge pay x1.5",
+			"detail": "1.2474",
+			"passed": true
+		},
+		{
+			"check": "HUD shows the surge tag",
+			"detail": "균열 폭주 · 생성·마력석 ×1.5",
+			"passed": true
+		},
+		{
+			"check": "Two living elites add no nameplate, name or HP bar to the HUD",
+			"detail": "[\"100 / 100\", \"0\", \"0\", \"1\", \"웨이브 14 / 20\", \"00:14\", \"균열 폭주 · 생성·마력석 ×1.5\", \"균열 폭주!\"]",
+			"passed": true
+		},
+		{
+			"check": "Surge tag has a backing and clears the timer and the centre banner",
+			"detail": "[P: (342.0, 68.0), S: (230.0, 24.0)]",
+			"passed": true
+		},
+		{
+			"check": "Killing every wave 14 elite upgrades the supply",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "Wave 14 sweep supply is epic or better",
+			"detail": "EPIC",
+			"passed": true
+		},
+		{
+			"check": "EPIC offers use the epic card skin",
+			"detail": "[\"night/card_epic\", \"night/card_rare\", \"night/card_epic\", \"night/card_legendary\"]",
+			"passed": true
+		},
+		{
+			"check": "EPIC supply is free and purchasable",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "UNCOMMON, RARE, EPIC and LEGENDARY each use their own card skin",
+			"detail": "[\"night/card_uncommon\", \"night/card_rare\", \"night/card_epic\", \"night/card_legendary\"]",
+			"passed": true
+		},
+		{
+			"check": "Resonance prism is a single-stack EPIC",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "Item rarities are 18 / 18 / 9 / 5 / 5",
+			"detail": "{ \"COMMON\": 18, \"UNCOMMON\": 18, \"EPIC\": 5, \"RARE\": 9, \"LEGENDARY\": 5 }",
+			"passed": true
+		},
+		{
+			"check": "The five EPIC items cost 60-69 stones",
+			"detail": "[68, 63, 64, 66, 65]",
+			"passed": true
+		},
+		{
+			"check": "Shop rolls EPIC from wave 10 at weight 2.5",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "Supply is rare or better, sweep is epic or better",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "EPIC enters the shop pool at wave 10, not 9",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "Archive lists EPIC between RARE and LEGENDARY",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "Archive detail names the EPIC rarity",
+			"detail": "[\"흉터 인장\", \"영웅\", \"잃은 체력 10%마다 피해 +5%, 최대 +40%. · 회피 확률 -3% 감소\"]",
+			"passed": true
+		},
+		{
+			"check": "Resumed run does not respawn triggered elites",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "Depth screen is unchanged until depth 21 unlocks",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "First page offers next and highest, not previous",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "Next selects depth 21 and highest jumps to 27",
+			"detail": "[[\"depth\", 21], [\"depth\", 27]]",
+			"passed": true
+		},
+		{
+			"check": "Second page shows 21-40 with 27 open and 28 locked",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "Last page can only go back",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "Paging controls keep 44px touch targets on screen",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "Depth 27 remains a valid deployment depth",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "Twenty art-library monsters are real enemies with art and motion",
+			"detail": "20",
+			"passed": true
+		},
+		{
+			"check": "Depth 9 keeps the current roster",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "Depth 10 fills nine role slots with the rift family, none with glass",
+			"detail": "[\"rift\", \"rift\", \"rift\", \"rift\", \"rift\", \"rift\", \"rift\", \"rift\", \"rift\", \"original\", \"original\", \"original\", \"original\", \"original\", \"original\"]",
+			"passed": true
+		},
+		{
+			"check": "Depth 20 fills the other six with the glass family",
+			"detail": "[\"rift\", \"rift\", \"rift\", \"rift\", \"rift\", \"rift\", \"rift\", \"rift\", \"rift\", \"glass\", \"glass\", \"glass\", \"glass\", \"glass\", \"glass\"]",
+			"passed": true
+		},
+		{
+			"check": "Depth 30 mixes all three groups",
+			"detail": "[\"original\", \"rift\", \"original\", \"rift\", \"original\", \"rift\", \"original\", \"rift\", \"glass\", \"glass\", \"original\", \"glass\", \"original\", \"glass\", \"original\"]",
+			"passed": true
+		},
+		{
+			"check": "Depth 30 and 31 draw different mixes",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "Band rosters keep every wave at weight 100 with no doubled or unknown monster",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "Depth 10 wave 7 elite is the rift slab with the same modifiers",
+			"detail": "{ \"at\": 10.0, \"enemyId\": \"riftSlab\", \"hpMultiplier\": 3.47, \"rewardMultiplier\": 1.0, \"modifiers\": [\"GIANT\", \"ARMORED\", \"CURSED_AURA\"], \"featured\": true, \"title\": \"거대 철갑 숨판\" }",
+			"passed": true
+		},
+		{
+			"check": "Depth 20 elites use glass bodies and the rift tower",
+			"detail": "[\"glassCoil\", \"glassTrefoil\", \"riftTower\"]",
+			"passed": true
+		},
+		{
+			"check": "Depth 9 keeps the current featured elites and boss",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "Rotation key is the weekly gate key and turns over at Sunday 05:00 KST",
+			"detail": "2961 -> 2962",
+			"passed": true
+		},
+		{
+			"check": "Rotation is identical for the whole week",
+			"detail": "[{ \"role\": \"summoner\", \"enemyId\": \"glassNest\" }, { \"role\": \"chainWarden\", \"enemyId\": \"glassSlab\" }, { \"role\": \"ironBoar\", \"enemyId\": \"glassTower\" }]",
+			"passed": true
+		},
+		{
+			"check": "Rotation changes across weeks",
+			"detail": "8 distinct in 8 weeks",
+			"passed": true
+		},
+		{
+			"check": "Rotation swaps exactly three wave-table roles at every band",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "A run without a week uses the depth band only",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "Depth 10 wave 11 spawns rift monsters in combat",
+			"detail": "[\"original\", \"rift\"]",
+			"passed": true
+		},
+		{
+			"check": "Depth 20 wave 16 spawns rift and glass monsters",
+			"detail": "[\"glassDrop\", \"riftNest\", \"glassCrescent\", \"swarm\", \"riftMask\"]",
+			"passed": true
+		},
+		{
+			"check": "Depth 20 boss wave spawns the rift bud queen at boss size",
+			"detail": "[\"riftBud\"]",
+			"passed": true
+		},
+		{
+			"check": "Gate screen shows this week's three monsters with portraits",
+			"detail": "[\"이번 주 출몰\", \"심도 10 기준\", \"유리 둥지 품핵\", \"유리 납작 숨판\", \"유리 층진 맥동탑\"]",
+			"passed": true
+		},
+		{
+			"check": "The strip stays on screen in the night-ops row skin",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "No strip without a weekly key",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "Archive lists all twenty library monsters",
+			"detail": "39",
+			"passed": true
+		},
+		{
+			"check": "Archive detail names the monster",
+			"detail": "[\"균열 말림 고리\", \"일반\", \"균열빛이 번진 흐린 점액 몸. 몸을 고리로 말았다가 직선으로 튕겨 돌진합니다.\"]",
+			"passed": true
+		},
+		{
+			"check": "No save writes",
+			"detail": "",
+			"passed": true
+		}
+	],
+	"failed": 0,
+	"isolatedProfile": true,
+	"passed": 80,
+	"realSimulation": true,
+	"saveWrites": false,
+	"size": [
+		915,
+		412
+	]
+}

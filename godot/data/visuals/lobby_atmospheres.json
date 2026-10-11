@@ -9,7 +9,9 @@
           350
         ],
         "size": 18,
-        "color": "#b7dce72e"
+        "color": "#b7dce72e",
+        "rhythm": 0.25,
+        "rhythm_speed": 1.1
       },
       {
         "kind": "ripple",
@@ -30,7 +32,9 @@
           0
         ],
         "size": 280,
-        "color": "#c2d8e322"
+        "color": "#c2d8e322",
+        "rhythm": 0.15,
+        "rhythm_speed": 0.65
       }
     ],
     "environment": "rain"
@@ -45,7 +49,9 @@
           4
         ],
         "size": 35,
-        "color": "#d6e4e119"
+        "color": "#d6e4e119",
+        "rhythm": 0.25,
+        "rhythm_speed": 0.65
       },
       {
         "kind": "leaf",
@@ -80,7 +86,9 @@
           -18
         ],
         "size": 1.8,
-        "color": "#7fe7e347"
+        "color": "#7fe7e347",
+        "rhythm": 0.25,
+        "rhythm_speed": 1.1
       },
       {
         "kind": "gate_pulse",
@@ -105,7 +113,9 @@
           0
         ],
         "size": 255,
-        "color": "#94d0d91f"
+        "color": "#94d0d91f",
+        "rhythm": 0.15,
+        "rhythm_speed": 0.65
       }
     ],
     "environment": "gate"
@@ -120,7 +130,9 @@
           27
         ],
         "size": 2.3,
-        "color": "#edf5ff52"
+        "color": "#edf5ff52",
+        "rhythm": 0.25,
+        "rhythm_speed": 0.65
       },
       {
         "kind": "mist",
@@ -130,7 +142,9 @@
           0
         ],
         "size": 300,
-        "color": "#d8e4f52b"
+        "color": "#d8e4f52b",
+        "rhythm": 0.15,
+        "rhythm_speed": 0.65
       }
     ],
     "environment": "winter"
@@ -145,7 +159,9 @@
           -3
         ],
         "size": 44,
-        "color": "#d8e7ee1f"
+        "color": "#d8e7ee1f",
+        "rhythm": 0.25,
+        "rhythm_speed": 0.65
       },
       {
         "kind": "mist",
@@ -155,7 +171,9 @@
           0
         ],
         "size": 330,
-        "color": "#c4d9ed29"
+        "color": "#c4d9ed29",
+        "rhythm": 0.15,
+        "rhythm_speed": 0.65
       }
     ],
     "environment": "roof"

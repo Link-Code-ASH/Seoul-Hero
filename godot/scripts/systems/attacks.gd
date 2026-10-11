@@ -18,6 +18,11 @@ func nearest(run: HeroRun, position: Vector2, reach: float, excluded: Array = []
 func context(run: HeroRun, stats: Dictionary, weapon_id: String) -> Dictionary:
 	return {"contextId":run.next_id(),"criticalChance":stats.criticalChance,"criticalDamage":stats.criticalDamage,"lifesteal":stats.lifesteal,"healingRemaining":minf(run.data.statRules.lifestealPerAttack,run.stats.maxHp * run.data.statRules.lifestealMaxHpFraction),"weapon":weapon_id}
 
+func _visual_context(attack: Dictionary, stage: String, details: Dictionary = {}) -> Dictionary:
+	var payload := {"weaponId":attack.get("weapon",""),"stage":stage,"contextId":attack.get("contextId",-1),"attackId":attack.get("contextId",-1),"sourceActor":attack.get("sourceActor","player"),"targetActor":attack.get("targetActor","")}
+	payload.merge(details,true)
+	return payload
+
 func update(run: HeroRun, dt: float) -> void:
 	for slot in run.owned:
 		# Idle time must not become an attack debt when a target enters range.
@@ -39,7 +44,7 @@ func update(run: HeroRun, dt: float) -> void:
 		var attack := context(run, stats, slot.id)
 		attack["sourceActor"] = "player"; attack["targetActor"] = str(target.id)
 		attack["targetDistance"] = origin.distance_to(target.pos)
-		run.visual_event.emit({"kind":"actorAttack","actorId":"player","pos":origin,"angle":angle,"radius":stats.range,"weaponId":slot.id})
+		run.visual_event.emit(_visual_context(attack,"attack",{"kind":"actorAttack","actorId":"player","pos":origin,"angle":angle,"radius":stats.range}))
 		match definition.behavior:
 			"projectile":
 				fire(run, definition, stats, target, origin, attack)
@@ -58,11 +63,12 @@ func update(run: HeroRun, dt: float) -> void:
 				var enemy: Dictionary = target
 				for i in range(int(stats.projectileCount)):
 					if enemy.is_empty(): break
-					run.effect("chain", from, 30.0, 0.0, 0.0, enemy.pos,{"delay":i*0.025,"hopIndex":i,"sourceActor":"player" if i == 0 else str(visited.back()),"targetActor":str(enemy.id)})
+					var source_actor := "player" if i == 0 else str(visited.back())
+					run.effect("chain", from, 30.0, (enemy.pos-from).angle(), 0.0, enemy.pos,_visual_context(attack,"initial" if i == 0 else "hop",{"delay":i*0.025,"hopIndex":i,"sourceActor":source_actor,"targetActor":str(enemy.id)}))
 					if i > 0 and i <= hop_limit:
 						run.audio_weapon(slot.id, "hop", {"attackId":attack.contextId,"hopIndex":i,"delay":i * hop_interval})
 					visited.append(enemy.id)
-					hit(run, enemy, stats.damage, attack)
+					hit(run, enemy, stats.damage, attack,{"sourceActor":source_actor,"sourcePosition":from,"angle":(enemy.pos-from).angle(),"hopIndex":i})
 					from = enemy.pos
 					enemy = nearest(run, from, stats.chainRange, visited)
 				run.event.emit("chainAttack")
@@ -90,27 +96,39 @@ func fire(run: HeroRun, definition: Dictionary, stats: Dictionary, target: Dicti
 		var visual_id := run.next_id()
 		launched = true
 		run.bullets.append({"visualId":visual_id,"pos":origin,"previous":origin,"velocity":Vector2.from_angle(angle) * stats.projectileSpeed,"damage":stats.damage,"radius":stats.projectileRadius,"distance":0.0,"range":stats.range,"remaining":stats.duration,"penetration":int(stats.penetration),"hits":[],"context":attack,"sprite":definition.visual.get("sprite", "manaBolt"),"angle":angle})
-		run.effect("muzzle", origin, 25.0, angle,1.0472,Vector2.ZERO,{"sourceActor":attack.sourceActor,"visualId":visual_id,"context":attack})
-	if launched: run.audio_weapon(definition.id, "launch", {"attackId":attack.contextId})
+		run.effect("muzzle", origin, 25.0, angle,1.0472,Vector2.ZERO,_visual_context(attack,"launch",{"visualId":visual_id,"context":attack,"projectileIndex":i,"target":target.pos}))
+	if launched:
+		run.audio_weapon(definition.id, "launch", {"attackId":attack.contextId})
+		if definition.has("structure"):
+			run.visual_event.emit(_visual_context(attack,"fire",{"kind":"structureActivate","structureKind":definition.structure.kind,"pos":origin,"target":target.pos,"radius":float(definition.structure.get("triggerRadius",0.0)),"angle":base_angle,"duration":0.0}))
 	run.event.emit("turretFired" if definition.has("structure") else "piercingAttack" if "PIERCING" in definition.capabilities and definition.id != "manaBolt" else "weaponFired")
 
-func hit(run: HeroRun, enemy: Dictionary, damage: float, attack: Dictionary) -> void:
+func hit(run: HeroRun, enemy: Dictionary, damage: float, attack: Dictionary, presentation: Dictionary = {}) -> void:
 	if enemy.hp <= 0: return
 	if not attack.get("itemProc",false): damage *= HeroItemEffects.damage_multiplier(run,enemy,run.player.pos)
 	var critical: bool = randf() < attack.criticalChance
 	var actual: float = damage * (attack.criticalDamage if critical else 1.0) * 100.0 / (100.0 + maxf(0.0, enemy.armor))
 	actual = minf(actual, enemy.hp)
 	enemy.hp -= actual; enemy.flash = 0.09
-	run.visual_event.emit({"kind":"actorHit","actorId":str(enemy.id),"pos":enemy.pos,"direction":(enemy.pos - run.player.pos).normalized()})
+	var visual := _visual_context(attack,"impact",{"targetActor":str(enemy.id),"angle":(enemy.pos-run.player.pos).angle(),"critical":critical})
+	visual.merge(presentation,true)
+	var actor_hit: Dictionary = visual.duplicate()
+	var reaction_origin: Vector2 = visual.get("sourcePosition",run.player.pos)
+	var reaction_direction: Vector2 = (enemy.pos-reaction_origin).normalized()
+	if reaction_direction.length_squared() < 0.001: reaction_direction = Vector2.from_angle(float(visual.angle))
+	actor_hit.merge({"kind":"actorHit","actorId":str(enemy.id),"pos":enemy.pos,"direction":reaction_direction,"damage":actual},true)
+	run.visual_event.emit(actor_hit)
 	HeroTelemetry.hit(run,attack.weapon,actual,critical,enemy.hp <= 0)
 	var healing: float = maxf(0.0, minf(minf(actual * attack.lifesteal, attack.healingRemaining), run.stats.maxHp - run.player.hp))
 	if run.player.hp > 0: run.player.hp += healing; attack.healingRemaining -= healing
-	run.effect("critical" if critical else "impact", enemy.pos, 32.0 if critical else 20.0,0.0,1.0472,Vector2.ZERO,{"targetActor":str(enemy.id)})
+	run.effect("critical" if critical else "impact", enemy.pos, 32.0 if critical else 20.0,float(visual.angle),1.0472,Vector2.ZERO,visual)
+	# Critical damage has its existing visual treatment, never a different sound.
+	run.audio_cue("enemyHit", {"weaponId":attack.weapon,"monsterId":enemy.definition,"stage":"hit","attackId":attack.get("contextId",-1)})
 	run.event.emit("critical" if critical else "enemyHit")
 
 func area(run: HeroRun, position: Vector2, radius: float, damage: float, attack: Dictionary) -> void:
 	for enemy in grid.nearby(position, radius):
-		if enemy.pos.distance_to(position) <= radius: hit(run, enemy, damage, attack)
+		if enemy.pos.distance_to(position) <= radius: hit(run, enemy, damage, attack,{"sourcePosition":position,"angle":(enemy.pos-position).angle()})
 
 func _process_pending(run: HeroRun, dt: float) -> void:
 	var kept: Array = []
@@ -119,13 +137,13 @@ func _process_pending(run: HeroRun, dt: float) -> void:
 		if attack.remaining > 0: kept.append(attack); continue
 		if attack.kind == "itemBurst":
 			area(run,attack.pos,attack.radius,attack.damage,attack.context)
-			run.effect("shockwave",attack.pos,attack.radius)
+			run.effect("shockwave",attack.pos,attack.radius,0.0,1.0472,Vector2.ZERO,_visual_context(attack.context,"impact"))
 			continue
 		var stats: Dictionary = attack.stats
 		if attack.kind == "bombard":
 			run.audio_weapon(attack.context.weapon, "impact", {"attackId":attack.context.contextId})
 			area(run, attack.target, stats.blastRadius, stats.damage, attack.context)
-			run.effect("explosion", attack.target, stats.blastRadius)
+			run.effect("explosion", attack.target, stats.blastRadius,(attack.target-attack.pos).angle(),1.0472,Vector2.ZERO,_visual_context(attack.context,"impact"))
 			run.event.emit("bombardAttack")
 		else:
 			run.audio_weapon(attack.context.weapon, "attack", {"attackId":attack.context.contextId})
@@ -134,8 +152,8 @@ func _process_pending(run: HeroRun, dt: float) -> void:
 			for enemy in grid.nearby(attack.pos, reach):
 				var direction: Vector2 = enemy.pos - attack.pos
 				if direction.length() <= reach and absf(angle_difference(attack.angle, direction.angle())) <= arc * 0.5:
-					hit(run, enemy, stats.damage, attack.context)
-			run.effect("slash", attack.pos, reach, attack.angle, arc,Vector2.ZERO,{"sourceActor":"player","weaponId":attack.context.weapon})
+					hit(run, enemy, stats.damage, attack.context,{"sourcePosition":attack.pos,"angle":attack.angle})
+			run.effect("slash", attack.pos, reach, attack.angle, arc,Vector2.ZERO,_visual_context(attack.context,"attack",{"sourceActor":"player"}))
 	run.pending = kept
 
 func _projectiles(run: HeroRun, dt: float) -> void:
@@ -152,7 +170,7 @@ func _projectiles(run: HeroRun, dt: float) -> void:
 			var point := Geometry2D.get_closest_point_to_segment(enemy.pos, bullet.previous, bullet.pos)
 			if point.distance_to(enemy.pos) > enemy.radius + bullet.radius: continue
 			bullet.hits.append(enemy.id)
-			hit(run, enemy, bullet.damage, bullet.context)
+			hit(run, enemy, bullet.damage, bullet.context,{"angle":bullet.angle,"visualId":bullet.visualId,"sourcePosition":bullet.previous})
 			bullet.penetration -= 1
 			if bullet.penetration < 0: break
 		if bullet.penetration >= 0: kept.append(bullet)
@@ -170,7 +188,7 @@ func _orbit(run: HeroRun, slot: Dictionary, stats: Dictionary) -> void:
 		for enemy in grid.nearby(position, run.data.weaponConfig.orbitHitRadius + 80.0):
 			var key := str(i) + ":" + str(enemy.id)
 			if enemy.pos.distance_to(position) <= run.data.weaponConfig.orbitHitRadius + enemy.radius and run.combat_time - slot.orbitHits.get(key, -999.0) >= stats.cooldown:
-				hit(run, enemy, stats.damage, slot.orbitContext)
+				hit(run, enemy, stats.damage, slot.orbitContext,{"stage":"contact","angle":angle,"sourcePosition":position,"orbitIndex":i})
 				slot.orbitHits[key] = run.combat_time
 				run.audio_weapon(slot.id, "contact", {"attackId":slot.orbitContext.contextId})
 				run.event.emit("orbitAttack")
@@ -190,6 +208,8 @@ func _place(run: HeroRun, slot: Dictionary, definition: Dictionary, stats: Dicti
 		position = Vector2(randf_range(-run.map.arenaWidth * 0.5 + 45.0,run.map.arenaWidth * 0.5 - 45.0),randf_range(-run.map.arenaHeight * 0.5 + 45.0,run.map.arenaHeight * 0.5 - 45.0))
 		if position.distance_to(run.player.pos) > 160.0 and run.structures.all(func(entity): return entity.pos.distance_to(position) > 60.0): break
 	run.structures.append({"weapon":slot.id,"pos":position,"cooldown":0.0,"age":0.0})
+	var structure_actor: String = "structure:"+str(slot.id)+str(position)
+	run.visual_event.emit({"kind":"structurePlace","weaponId":slot.id,"structureKind":definition.structure.kind,"stage":"place","sourceActor":structure_actor,"pos":position,"radius":stats.blastRadius if definition.structure.kind == "aura" else float(definition.structure.get("triggerRadius",0.0)),"angle":0.0,"duration":0.0})
 	slot.cooldown = minf(definition.structure.placementInterval, stats.cooldown) if definition.structure.kind == "mine" else definition.structure.placementInterval
 	var placement_audio := {"attackId":slot.id + ":place:" + str(run.combat_time)}
 	if definition.structure.kind == "mine":
@@ -198,6 +218,7 @@ func _place(run: HeroRun, slot: Dictionary, definition: Dictionary, stats: Dicti
 	elif definition.structure.kind == "aura":
 		run.audio_weapon(slot.id, "activate", placement_audio)
 		run.event.emit("fieldActivated")
+		run.visual_event.emit({"kind":"structureActivate","weaponId":slot.id,"structureKind":"aura","stage":"activate","sourceActor":structure_actor,"pos":position,"radius":stats.blastRadius,"angle":0.0,"duration":0.0})
 
 func _structures(run: HeroRun, dt: float) -> void:
 	var kept: Array = []
@@ -214,28 +235,62 @@ func _structures(run: HeroRun, dt: float) -> void:
 			else:
 				var triggered: bool = definition.structure.kind == "aura" or grid.nearby(entity.pos, definition.structure.triggerRadius + 80.0).any(func(enemy): return enemy.hp > 0 and enemy.pos.distance_to(entity.pos) <= definition.structure.triggerRadius + enemy.radius)
 				if triggered:
-					area(run, entity.pos, stats.blastRadius, stats.damage, context(run, stats, slot.id))
+					var attack := context(run, stats, slot.id)
+					attack["sourceActor"] = "structure:"+slot.id+str(entity.pos)
+					area(run, entity.pos, stats.blastRadius, stats.damage, attack)
+					var activation := _visual_context(attack,"pulse" if definition.structure.kind == "aura" else "impact",{"kind":"structureActivate","structureKind":definition.structure.kind,"pos":entity.pos,"radius":stats.blastRadius,"angle":0.0,"duration":0.0})
+					run.visual_event.emit(activation)
 					entity.cooldown = stats.cooldown
 					if definition.structure.kind == "mine":
 						run.audio_weapon(slot.id, "impact", {"attackId":slot.id + ":impact:" + str(run.combat_time)})
-						run.effect("mine",entity.pos,stats.blastRadius); run.event.emit("mineExploded"); remove = true
+						run.effect("mine",entity.pos,stats.blastRadius,0.0,1.0472,Vector2.ZERO,_visual_context(attack,"impact",{"sourceActor":activation.sourceActor})); run.event.emit("mineExploded"); remove = true
 		if not remove: kept.append(entity)
 	run.structures = kept
+
+# 협회 코인과 생환석: rolled per kill, kept for the account even when the run is lost.
+static func _drop_loot(run: HeroRun, enemy: Dictionary) -> void:
+	var rules: Dictionary = run.data.get("runLoot",{})
+	if rules.is_empty(): return
+	var tier := "boss" if enemy.get("boss",false) else "elite" if enemy.get("elite",false) else "normal"
+	var coin: Dictionary = rules.coin[tier]
+	var drops: Array = []
+	if randf() < float(coin.chance): drops.append({"type":"coin","amount":int(coin.amount)})
+	if bool(run.data.get("features",{}).get("revivalStones",true)):
+		for grade in ["high","mid","low"]:
+			if randf() < float(rules.revivalStone[tier][grade]):
+				drops.append({"type":"revivalStone","grade":grade,"amount":1})
+				break
+	for index in range(drops.size()):
+		var drop: Dictionary = drops[index]
+		var offset := Vector2.from_angle(TAU*index/maxf(1.0,drops.size())+randf()*0.6)*(18.0 if drops.size() > 1 else 10.0)
+		drop.pos = HeroArena.resolve(enemy.pos+offset,float(run.data.game.combat.pickupRadius),run.map)
+		run.loot_pickups.append(drop)
+
+static func collect_loot(run: HeroRun, drop: Dictionary) -> void:
+	if drop.type == "coin": run.loot.associationCoins = int(run.loot.associationCoins)+int(drop.amount)
+	else: run.loot.revivalStones[drop.grade] = int(run.loot.revivalStones.get(drop.grade,0))+int(drop.amount)
 
 func _deaths(run: HeroRun) -> void:
 	var dead: Array = run.enemies.filter(func(enemy): return enemy.hp <= 0)
 	run.enemies = run.enemies.filter(func(enemy): return enemy.hp > 0)
 	for enemy in dead:
 		var definition: Dictionary = run.data.enemies[enemy.definition]
-		run.visual_event.emit({"kind":"actorDeath","actorId":str(enemy.id),"definition":enemy.definition,"pos":enemy.pos})
-		run.effect("death", enemy.pos, enemy.radius * 2.0)
+		run.visual_event.emit({"kind":"actorDeath","actorId":str(enemy.id),"definition":enemy.definition,"monsterId":enemy.definition,"behavior":definition.behavior,"stage":"death","pos":enemy.pos,"radius":enemy.radius})
+		run.effect("death", enemy.pos, enemy.radius * 2.0,0.0,1.0472,Vector2.ZERO,{"targetActor":str(enemy.id),"monsterId":enemy.definition,"behavior":definition.behavior,"stage":"death"})
 		if not enemy.rewardEligible: continue
 		run.kills += 1
 		HeroItemEffects.killed(run)
 		HeroTelemetry.death(run,enemy.definition)
-		if run.pickups.size() < int(run.data.game.combat.maxPickups): run.pickups.append({"pos":enemy.pos,"value":enemy.reward,"units":1.0})
+		if run.pickups.size() < int(run.data.game.combat.maxPickups):
+			run.pickups.append({"pos":enemy.pos,"value":enemy.reward,"units":1.0})
+			# Presentation only: a small gold pop where the stone lands.
+			run.visual_event.emit({"kind":"stoneDrop","stage":"drop","pos":enemy.pos-Vector2(0,8),"radius":15.0,"duration":0.0})
 		else:
 			var pickup: Dictionary = run.pickups.back()
 			pickup.value += enemy.reward; pickup.units += 1.0
+		_drop_loot(run,enemy)
+		run.audio_cue("enemyKilled", {"monsterId":enemy.definition,"stage":"death"})
 		run.event.emit("enemyKilled")
-		if definition.behavior == "splitter": HeroEnemyBrain.summon(run, enemy, definition.get("childId", "swarm"), int(run.data.enemyRules.splitCount))
+		if definition.behavior != "splitter": continue
+		if definition.has("split"): HeroEnemyBrain.split(run, enemy, definition.split)
+		else: HeroEnemyBrain.summon(run, enemy, definition.get("childId", "swarm"), int(run.data.enemyRules.splitCount))

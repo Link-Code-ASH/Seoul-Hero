@@ -1,0 +1,29 @@
+{
+  "approval": {
+    "date": "2026-10-05",
+    "userMessage": "구현해"
+  },
+  "productionConnected": true,
+  "renderer": "Godot 4.7.2 Compatibility",
+  "captureCount": 8,
+  "nativeControlChecks": 71,
+  "fitIssues": 0,
+  "nonImageContentUnchanged": true,
+  "saveReads": false,
+  "saveWrites": false,
+  "simulation": false,
+  "economyCallbacks": false,
+  "audioCallbacks": false,
+  "layoutRevision": "shop-header-02",
+  "shopHeaderPaintedSize": {
+    "tabs": [
+      72,
+      30
+    ],
+    "reroll": [
+      120,
+      30
+    ]
+  },
+  "shopHeaderTouchSizeUnchanged": true
+}

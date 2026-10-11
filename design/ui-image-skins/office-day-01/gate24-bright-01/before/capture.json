@@ -1,0 +1,142 @@
+{
+	"audioCallbacks": false,
+	"captures": [
+		{
+			"file": "shop-weapons.png",
+			"offers": [
+				{
+					"canBuy": true,
+					"id": "manaBolt",
+					"locked": false,
+					"name": "마력탄",
+					"note": "Lv.3 강화",
+					"price": 23,
+					"summary": "가까운 적을 노리는\n마력 투사체",
+					"tier": "epic"
+				},
+				{
+					"canBuy": true,
+					"id": "manaSword",
+					"locked": true,
+					"name": "마력검",
+					"note": "신규 무기",
+					"price": 36,
+					"summary": "가까운 적을 향한\n넓은 부채꼴 베기",
+					"tier": "common"
+				},
+				{
+					"canBuy": true,
+					"id": "chainLightning",
+					"locked": false,
+					"name": "연쇄 번개",
+					"note": "신규 무기",
+					"price": 36,
+					"summary": "적 사이로 이어지는\n연쇄 번개",
+					"tier": "common"
+				},
+				{
+					"canBuy": true,
+					"id": "autoTurret",
+					"locked": false,
+					"name": "자동 포탑",
+					"note": "신규 무기",
+					"price": 44,
+					"summary": "고정 위치 설치\n자동 조준 사격",
+					"tier": "common"
+				}
+			],
+			"tab": "weapons"
+		},
+		{
+			"file": "shop-items.png",
+			"offers": [
+				{
+					"canBuy": true,
+					"id": "energyDrink",
+					"locked": false,
+					"name": "에너지 드링크",
+					"note": "",
+					"price": 14,
+					"summary": "공격속도 +5%",
+					"tier": "common"
+				},
+				{
+					"canBuy": true,
+					"id": "riceBall",
+					"locked": false,
+					"name": "삼각김밥",
+					"note": "",
+					"price": 11,
+					"summary": "최대 HP +6",
+					"tier": "common"
+				},
+				{
+					"canBuy": true,
+					"id": "gloves",
+					"locked": true,
+					"name": "작업 장갑",
+					"note": "",
+					"price": 14,
+					"summary": "근접피해 +6%",
+					"tier": "common"
+				},
+				{
+					"canBuy": true,
+					"id": "battery",
+					"locked": false,
+					"name": "과충전 배터리",
+					"note": "최대 HP -8",
+					"price": 27,
+					"summary": "공격속도 +16%",
+					"tier": "uncommon"
+				}
+			],
+			"tab": "items"
+		}
+	],
+	"currency": 240.0,
+	"economyCallbacks": false,
+	"ownedItems": {
+		"energyDrink": 1,
+		"riceBall": 1
+	},
+	"ownedWeapons": [
+		{
+			"branch": "",
+			"cooldown": 0.0,
+			"id": "manaBolt",
+			"level": 2
+		},
+		{
+			"branch": "",
+			"cooldown": 0.0,
+			"id": "guardianDaggers",
+			"level": 1
+		},
+		{
+			"branch": "",
+			"cooldown": 0.0,
+			"id": "piercingShot",
+			"level": 1
+		}
+	],
+	"saveReads": false,
+	"saveWrites": false,
+	"setup": {
+		"blessing": "",
+		"character": "awakener",
+		"depth": 1,
+		"elite": "haetaeHead",
+		"map": "seoul",
+		"weapon": "manaBolt",
+		"week": 2961,
+		"weekly": "hardened"
+	},
+	"simulation": false,
+	"size": [
+		915,
+		412
+	],
+	"source": "current HeroShopScreen.build",
+	"wave": 6
+}

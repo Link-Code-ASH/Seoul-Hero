@@ -1,0 +1,26 @@
+Game UI asset sheet for "Seoul Hero", a 2D mobile roguelite arena game set in night-time Seoul.
+Art direction "Seoul Night Operations": dark navy-black translucent glass panels (#0B1621 at about 86% opacity),
+thin 1-2px cool cyan edge highlight (#84CED6 at low opacity), a single mint accent color (#3DD6B5) used only for
+active / selected / primary elements, warm gold (#E8B75A) only for rewards, coral (#EF7A6D) only for danger.
+Clean flat-shaded vector-like finish with a very subtle top inner highlight, no heavy bevel, no metal texture,
+no rust, no paper, no grunge, no neon overload, no realistic photo texture.
+Shapes: crisp rectangles with small 45-degree chamfered corners (cut corners) instead of rounded corners.
+Must sit comfortably next to thick-outline cel-shaded chibi characters without competing with them.
+Front orthographic view, perfectly straight edges, no perspective, no drop shadow outside the element,
+transparent background, no text, no letters, no numbers, no logos, no characters.
+Every element is separated by generous empty transparent space and aligned to an invisible grid.
+
+Sheet layout: 4 columns x 2 rows.
+Row 1: four tall shop item cards, aspect about 3:5, identical shape and size, dark navy translucent fill,
+ chamfered corners, each with a 3px colored strip along the top edge and a very soft radial glow of the same
+ color behind where an item would sit (upper-middle area, item itself NOT drawn):
+ (1) common, cool grey #9FB0BB  (2) rare, blue #6FA8FF  (3) epic, violet #B48CFF  (4) legendary, gold #F0B54A.
+Row 2: (5) price button available: wide mint pill, aspect 4:1, chamfered corners.
+ (6) price button unaffordable: same shape, dark grey-blue, low contrast.
+ (7) small lock toggle background, square, faint.  (8) small lock toggle background, square, mint tinted (locked).
+
+Output: transparent PNG, 1536x1024 pixels, landscape. Keep every element fully inside the canvas with transparent padding on all four outer edges.
+
+EDIT — background and framing correction only. Preserve all existing UI elements and their arrangement. Remove the ambient colored haze outside the elements. Make all space between elements genuinely transparent (alpha 0), and ensure a minimum 48-pixel fully transparent border on ALL FOUR canvas edges. Keep every shape and its local glow completely within that border. No opaque background, no checkerboard painted in. Preserve 1536x1024 PNG size.
+
+CRITICAL CORRECTION: Preserve the assets, but shrink the entire asset arrangement to 85% of its current width and height, centered within the SAME 1536x1024 transparent canvas. The outermost 64 pixels of the canvas must have alpha exactly zero on every side. Remove ALL ambient haze outside the individual silhouettes, use NO exterior glow. 

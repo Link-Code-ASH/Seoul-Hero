@@ -1,0 +1,34 @@
+{
+  "rooms": "Use case: stylized-concept. Asset type: PNG sprite atlas for a Seoul guild headquarters cutaway management game, NOT a finished UI screenshot. Create one large atlas, 2048 by 2048 pixels, exact grid of FOUR columns and EIGHT rows, no gaps. Each cell 512 by 256: an orthographic frontal 2D side cutaway room, same cream concrete walls, navy metal edge, lilac and mint equipment accents, cozy premium Korean mobile game illustration, crisp hand painted raster detail. Floor at same height in every cell, room fills its cell. No text, letters, labels, numbers, logos, people, weapons or isometric perspective. Columns left to right are facility tiers Lv1 simple office, Lv4 upgraded equipment, Lv7 advanced equipment, Lv10 advanced prestigious room; materially change furnishings and equipment at each tier. Rows top to bottom: 1 guild operations office with desk, computer and Seoul map board; 2 research lab with microscopes and glowing sample tubes; 3 expedition headquarters with route maps, radio and backpacks; 4 mana production room with violet energy generator and crystal vats; 5 recovery center with sorting crates and conveyor; 6 equipment workshop with tools, workbench and crafting press; 7 revival crystal laboratory with healing crystal incubators; 8 awakening analysis room with scanner chair and wall readouts. Preserve EXACT uniform grid and frontal room composition, separate rooms with visible walls, every room contains a little free foreground floor for animated short SD employees overlaid later. Rich inviting Seoul arcade palette with cream surfaces/navy outlines/purple glow.",
+  "states": "Use case: stylized-concept. Asset type: raster room-state atlas for a Korean Seoul guild cutaway game. Large 1024 x 1536 PNG, exact ONE column and THREE equal horizontal rows, each 1024 x 512. Same orthographic frontal 2D cutaway composition for each panel, cream concrete/navy metal walls and floor, cozy handpainted mobile game art, cream/navy/purple/mint colors. Panel 1 TOP: completely vacant rentable Seoul office room, clean cream walls, power outlets, exposed floor, one small cardboard box in corner, no furniture, plenty of free space. Panel 2 MIDDLE: same room during construction, visible timber/metal scaffolding, sawhorse, paint bucket, floor work lamp, caution tape at edges, NO people, floor foreground clear for animated SD worker overlay. Panel 3 BOTTOM: an unbuilt second floor area, side-view navy building roofline with simple steel framework against soft rainy Seoul city silhouettes, muted blueprint atmosphere, clear silhouettes. No text, numbers, logos, HUD, UI controls, isometric view or humans. EXACT equal three-row grid, no gaps; identical floor level and camera alignment.",
+  "tool": "built-in image_gen",
+  "status": "approved for Godot runtime connection",
+  "referenceRules": "godot/docs/UI_GUIDE.md",
+  "employeeArtwork": "Existing approved blank-handed SD actors reused with common motion; no new rigs.",
+  "roomAtlas": {
+    "columns": 4,
+    "rows": 8,
+    "levels": [
+      1,
+      4,
+      7,
+      10
+    ]
+  },
+  "roomStates": {
+    "columns": 1,
+    "rows": 3,
+    "states": [
+      "empty",
+      "construction",
+      "unbuilt-floor"
+    ]
+  },
+  "approvalDate": "2026-10-04",
+  "approval": "사용자가 현재 워크트리의 길드 본부 시안을 Godot 게임에 연결하도록 승인함.",
+  "runtimeAssets": [
+    "assets/ui/guild-management/rooms.png",
+    "assets/ui/guild-management/room-states.png"
+  ],
+  "visualManifest": "godot/data/visuals/guild.json"
+}

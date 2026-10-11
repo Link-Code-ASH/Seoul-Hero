@@ -1,0 +1,257 @@
+{
+  "tool": "built-in image_gen",
+  "assets": [
+    {
+      "id": "panel_card",
+      "width": 512,
+      "height": 384,
+      "margins": 28,
+      "base": null,
+      "prompt": "Create a single empty UI art asset for Seoul Hero, a Korean indie mobile game menu evoking the warm everyday office of an awakeners association. Bright, welcoming, chunky hand-painted game UI, subtle paper/plastic/wood microtexture, restrained softly shaded physical depth. NOT dark, NOT neon, NOT cyberpunk, NOT flat vector art. NO outline strokes or border lines. Slightly rounded corners. Soft upper highlight and a darker warm beige/brown downward-facing thickness lip. Keep highlights/shadows inside the object; no large exterior drop shadow. Blank usable surface, no text, numbers, logos, icons or cute stickers. Transparent RGBA PNG with real alpha outside the asset, no checkerboard. Front-facing orthographic UI component, NOT isometric or tilted. Straight axis-aligned horizontal/vertical sides. Object fills canvas except a tiny uniform transparent safety margin. Middle surface must be bright enough for dark navy text, very even and quiet, no large gradients or blotches. For scalable pieces, center and straight edges must be uniform and tileable so 9-slice stretching works; artwork detail only at corners and a narrow vertical thickness lip.\nAsset: panel_card. Target export 512x384 pixels. Basic warm ivory #FBF6EC card panel, subtle paper-plastic texture, rounded corners, warm beige 8px bottom thickness lip at target size. Uniform blank center.",
+      "source": "C:\\Users\\geniu\\.codex\\generated_images\\01a11ddb-c675-7802-b187-17cbd1116ef1\\exec-6b1314b0-c7f5-4139-af87-858c9d17292d.png"
+    },
+    {
+      "id": "panel_window",
+      "width": 1024,
+      "height": 640,
+      "margins": [
+        32,
+        88,
+        32,
+        32
+      ],
+      "base": null,
+      "prompt": "Create a single empty UI art asset for Seoul Hero, a Korean indie mobile game menu evoking the warm everyday office of an awakeners association. Bright, welcoming, chunky hand-painted game UI, subtle paper/plastic/wood microtexture, restrained softly shaded physical depth. NOT dark, NOT neon, NOT cyberpunk, NOT flat vector art. NO outline strokes or border lines. Slightly rounded corners. Soft upper highlight and a darker warm beige/brown downward-facing thickness lip. Keep highlights/shadows inside the object; no large exterior drop shadow. Blank usable surface, no text, numbers, logos, icons or cute stickers. Transparent RGBA PNG with real alpha outside the asset, no checkerboard. Front-facing orthographic UI component, NOT isometric or tilted. Straight axis-aligned horizontal/vertical sides. Object fills canvas except a tiny uniform transparent safety margin. Middle surface must be bright enough for dark navy text, very even and quiet, no large gradients or blotches. For scalable pieces, center and straight edges must be uniform and tileable so 9-slice stretching works; artwork detail only at corners and a narrow vertical thickness lip.\nAsset: panel_window. Target export 1024x640 pixels. Large warm ivory popup window panel. Softly distinct pale cream title band across the top 72px at target size, integrated into the surface with no divider line. Warm beige bottom 8px thickness lip. Blank main body.",
+      "source": "C:\\Users\\geniu\\.codex\\generated_images\\01a11ddb-c675-7802-b187-17cbd1116ef1\\exec-5701564b-74c8-482e-9822-d031389ec860.png"
+    },
+    {
+      "id": "header_bar",
+      "width": 1024,
+      "height": 128,
+      "margins": 24,
+      "base": null,
+      "prompt": "Create a single empty UI art asset for Seoul Hero, a Korean indie mobile game menu evoking the warm everyday office of an awakeners association. Bright, welcoming, chunky hand-painted game UI, subtle paper/plastic/wood microtexture, restrained softly shaded physical depth. NOT dark, NOT neon, NOT cyberpunk, NOT flat vector art. NO outline strokes or border lines. Slightly rounded corners. Soft upper highlight and a darker warm beige/brown downward-facing thickness lip. Keep highlights/shadows inside the object; no large exterior drop shadow. Blank usable surface, no text, numbers, logos, icons or cute stickers. Transparent RGBA PNG with real alpha outside the asset, no checkerboard. Front-facing orthographic UI component, NOT isometric or tilted. Straight axis-aligned horizontal/vertical sides. Object fills canvas except a tiny uniform transparent safety margin. Middle surface must be bright enough for dark navy text, very even and quiet, no large gradients or blotches. For scalable pieces, center and straight edges must be uniform and tileable so 9-slice stretching works; artwork detail only at corners and a narrow vertical thickness lip.\nAsset: header_bar. Target export 1024x128 pixels. Long wide warm ivory title bar, 8:1 aspect ratio, subtle wood-paper feel, softly rounded corners, 8px bottom thickness lip. Blank.",
+      "source": "C:\\Users\\geniu\\.codex\\generated_images\\01a11ddb-c675-7802-b187-17cbd1116ef1\\exec-28c0dd97-fa35-4387-b907-159727cd873d.png"
+    },
+    {
+      "id": "button_primary_normal",
+      "width": 480,
+      "height": 144,
+      "margins": 28,
+      "base": null,
+      "prompt": "Create a single empty UI art asset for Seoul Hero, a Korean indie mobile game menu evoking the warm everyday office of an awakeners association. Bright, welcoming, chunky hand-painted game UI, subtle paper/plastic/wood microtexture, restrained softly shaded physical depth. NOT dark, NOT neon, NOT cyberpunk, NOT flat vector art. NO outline strokes or border lines. Slightly rounded corners. Soft upper highlight and a darker warm beige/brown downward-facing thickness lip. Keep highlights/shadows inside the object; no large exterior drop shadow. Blank usable surface, no text, numbers, logos, icons or cute stickers. Transparent RGBA PNG with real alpha outside the asset, no checkerboard. Front-facing orthographic UI component, NOT isometric or tilted. Straight axis-aligned horizontal/vertical sides. Object fills canvas except a tiny uniform transparent safety margin. Middle surface must be bright enough for dark navy text, very even and quiet, no large gradients or blotches. For scalable pieces, center and straight edges must be uniform and tileable so 9-slice stretching works; artwork detail only at corners and a narrow vertical thickness lip.\nAsset: button_primary_normal. Target export 480x144 pixels. Wide bright orange #FF9A4D primary button, normal raised state, 10:3 aspect ratio, soft upper highlight, warm deeper orange bottom 8px thickness lip. Blank.",
+      "source": "C:\\Users\\geniu\\.codex\\generated_images\\01a11ddb-c675-7802-b187-17cbd1116ef1\\exec-4e4ebb5a-6273-421e-bc35-b2bacde93865.png"
+    },
+    {
+      "id": "button_primary_pressed",
+      "width": 480,
+      "height": 144,
+      "margins": 28,
+      "base": "button_primary_normal",
+      "prompt": "Create a single empty UI art asset for Seoul Hero, a Korean indie mobile game menu evoking the warm everyday office of an awakeners association. Bright, welcoming, chunky hand-painted game UI, subtle paper/plastic/wood microtexture, restrained softly shaded physical depth. NOT dark, NOT neon, NOT cyberpunk, NOT flat vector art. NO outline strokes or border lines. Slightly rounded corners. Soft upper highlight and a darker warm beige/brown downward-facing thickness lip. Keep highlights/shadows inside the object; no large exterior drop shadow. Blank usable surface, no text, numbers, logos, icons or cute stickers. Transparent RGBA PNG with real alpha outside the asset, no checkerboard. Front-facing orthographic UI component, NOT isometric or tilted. Straight axis-aligned horizontal/vertical sides. Object fills canvas except a tiny uniform transparent safety margin. Middle surface must be bright enough for dark navy text, very even and quiet, no large gradients or blotches. For scalable pieces, center and straight edges must be uniform and tileable so 9-slice stretching works; artwork detail only at corners and a narrow vertical thickness lip.\nEDIT INPUT is the normal state. Preserve silhouette, corner radii, texture, exact position and canvas framing. Output just one changed state. Target 480x144. Pressed state: face lowered exactly 3px at target size, bottom lip compressed from 8px to 5px, slightly reduced highlight. Same orange hue.",
+      "source": "C:\\Users\\geniu\\.codex\\generated_images\\01a11ddb-c675-7802-b187-17cbd1116ef1\\exec-1a402ee0-16ca-4470-96cb-a51459466943.png"
+    },
+    {
+      "id": "button_primary_disabled",
+      "width": 480,
+      "height": 144,
+      "margins": 28,
+      "base": "button_primary_normal",
+      "prompt": "Create a single empty UI art asset for Seoul Hero, a Korean indie mobile game menu evoking the warm everyday office of an awakeners association. Bright, welcoming, chunky hand-painted game UI, subtle paper/plastic/wood microtexture, restrained softly shaded physical depth. NOT dark, NOT neon, NOT cyberpunk, NOT flat vector art. NO outline strokes or border lines. Slightly rounded corners. Soft upper highlight and a darker warm beige/brown downward-facing thickness lip. Keep highlights/shadows inside the object; no large exterior drop shadow. Blank usable surface, no text, numbers, logos, icons or cute stickers. Transparent RGBA PNG with real alpha outside the asset, no checkerboard. Front-facing orthographic UI component, NOT isometric or tilted. Straight axis-aligned horizontal/vertical sides. Object fills canvas except a tiny uniform transparent safety margin. Middle surface must be bright enough for dark navy text, very even and quiet, no large gradients or blotches. For scalable pieces, center and straight edges must be uniform and tileable so 9-slice stretching works; artwork detail only at corners and a narrow vertical thickness lip.\nEDIT INPUT is the normal state. Preserve silhouette, corner radii, texture, exact position and canvas framing. Output just one changed state. Target 480x144. Disabled state: replace orange with low-saturation warm gray-beige, subdued highlight, same geometry and raised thickness.",
+      "source": "C:\\Users\\geniu\\.codex\\generated_images\\01a11ddb-c675-7802-b187-17cbd1116ef1\\exec-86e1ff2a-4c3d-4882-a7d2-00107eba6098.png"
+    },
+    {
+      "id": "button_secondary_normal",
+      "width": 384,
+      "height": 128,
+      "margins": 26,
+      "base": null,
+      "prompt": "Create a single empty UI art asset for Seoul Hero, a Korean indie mobile game menu evoking the warm everyday office of an awakeners association. Bright, welcoming, chunky hand-painted game UI, subtle paper/plastic/wood microtexture, restrained softly shaded physical depth. NOT dark, NOT neon, NOT cyberpunk, NOT flat vector art. NO outline strokes or border lines. Slightly rounded corners. Soft upper highlight and a darker warm beige/brown downward-facing thickness lip. Keep highlights/shadows inside the object; no large exterior drop shadow. Blank usable surface, no text, numbers, logos, icons or cute stickers. Transparent RGBA PNG with real alpha outside the asset, no checkerboard. Front-facing orthographic UI component, NOT isometric or tilted. Straight axis-aligned horizontal/vertical sides. Object fills canvas except a tiny uniform transparent safety margin. Middle surface must be bright enough for dark navy text, very even and quiet, no large gradients or blotches. For scalable pieces, center and straight edges must be uniform and tileable so 9-slice stretching works; artwork detail only at corners and a narrow vertical thickness lip.\nAsset: button_secondary_normal. Target export 384x128 pixels. Wide warm ivory #FBF6EC secondary button, normal raised state, 3:1 aspect ratio, soft upper highlight, warm beige bottom 8px thickness lip. Blank.",
+      "source": "C:\\Users\\geniu\\.codex\\generated_images\\01a11ddb-c675-7802-b187-17cbd1116ef1\\exec-49045a4c-e3ad-4394-bc8c-83b3f61b6ec8.png"
+    },
+    {
+      "id": "button_secondary_pressed",
+      "width": 384,
+      "height": 128,
+      "margins": 26,
+      "base": "button_secondary_normal",
+      "prompt": "Create a single empty UI art asset for Seoul Hero, a Korean indie mobile game menu evoking the warm everyday office of an awakeners association. Bright, welcoming, chunky hand-painted game UI, subtle paper/plastic/wood microtexture, restrained softly shaded physical depth. NOT dark, NOT neon, NOT cyberpunk, NOT flat vector art. NO outline strokes or border lines. Slightly rounded corners. Soft upper highlight and a darker warm beige/brown downward-facing thickness lip. Keep highlights/shadows inside the object; no large exterior drop shadow. Blank usable surface, no text, numbers, logos, icons or cute stickers. Transparent RGBA PNG with real alpha outside the asset, no checkerboard. Front-facing orthographic UI component, NOT isometric or tilted. Straight axis-aligned horizontal/vertical sides. Object fills canvas except a tiny uniform transparent safety margin. Middle surface must be bright enough for dark navy text, very even and quiet, no large gradients or blotches. For scalable pieces, center and straight edges must be uniform and tileable so 9-slice stretching works; artwork detail only at corners and a narrow vertical thickness lip.\nEDIT INPUT is the normal state. Preserve silhouette, corner radii, texture, exact position and canvas framing. Output just one changed state. Target 384x128. Pressed state: face lowered exactly 3px, bottom lip compressed from 8px to 5px, reduced highlight. Same ivory hue.",
+      "source": "C:\\Users\\geniu\\.codex\\generated_images\\01a11ddb-c675-7802-b187-17cbd1116ef1\\exec-55eb6150-8154-4584-b572-9b163c0036bc.png"
+    },
+    {
+      "id": "button_secondary_disabled",
+      "width": 384,
+      "height": 128,
+      "margins": 26,
+      "base": "button_secondary_normal",
+      "prompt": "Create a single empty UI art asset for Seoul Hero, a Korean indie mobile game menu evoking the warm everyday office of an awakeners association. Bright, welcoming, chunky hand-painted game UI, subtle paper/plastic/wood microtexture, restrained softly shaded physical depth. NOT dark, NOT neon, NOT cyberpunk, NOT flat vector art. NO outline strokes or border lines. Slightly rounded corners. Soft upper highlight and a darker warm beige/brown downward-facing thickness lip. Keep highlights/shadows inside the object; no large exterior drop shadow. Blank usable surface, no text, numbers, logos, icons or cute stickers. Transparent RGBA PNG with real alpha outside the asset, no checkerboard. Front-facing orthographic UI component, NOT isometric or tilted. Straight axis-aligned horizontal/vertical sides. Object fills canvas except a tiny uniform transparent safety margin. Middle surface must be bright enough for dark navy text, very even and quiet, no large gradients or blotches. For scalable pieces, center and straight edges must be uniform and tileable so 9-slice stretching works; artwork detail only at corners and a narrow vertical thickness lip.\nEDIT INPUT is the normal state. Preserve silhouette, corner radii, texture, exact position and canvas framing. Output just one changed state. Target 384x128. Disabled state: slightly duller gray-beige ivory, low contrast highlight. Same geometry and raised thickness.",
+      "source": "C:\\Users\\geniu\\.codex\\generated_images\\01a11ddb-c675-7802-b187-17cbd1116ef1\\exec-aba746e6-9975-433f-a115-c96662720f6f.png"
+    },
+    {
+      "id": "button_mint_normal",
+      "width": 384,
+      "height": 128,
+      "margins": 26,
+      "base": null,
+      "prompt": "Create a single empty UI art asset for Seoul Hero, a Korean indie mobile game menu evoking the warm everyday office of an awakeners association. Bright, welcoming, chunky hand-painted game UI, subtle paper/plastic/wood microtexture, restrained softly shaded physical depth. NOT dark, NOT neon, NOT cyberpunk, NOT flat vector art. NO outline strokes or border lines. Slightly rounded corners. Soft upper highlight and a darker warm beige/brown downward-facing thickness lip. Keep highlights/shadows inside the object; no large exterior drop shadow. Blank usable surface, no text, numbers, logos, icons or cute stickers. Transparent RGBA PNG with real alpha outside the asset, no checkerboard. Front-facing orthographic UI component, NOT isometric or tilted. Straight axis-aligned horizontal/vertical sides. Object fills canvas except a tiny uniform transparent safety margin. Middle surface must be bright enough for dark navy text, very even and quiet, no large gradients or blotches. For scalable pieces, center and straight edges must be uniform and tileable so 9-slice stretching works; artwork detail only at corners and a narrow vertical thickness lip.\nAsset: button_mint_normal. Target export 384x128 pixels. Wide mint #3DD6B5 button, cheerful soft matte mint, normal raised state, 3:1 aspect ratio, soft upper highlight, muted deeper mint bottom 8px thickness lip. Blank.",
+      "source": "C:\\Users\\geniu\\.codex\\generated_images\\01a11ddb-c675-7802-b187-17cbd1116ef1\\exec-bcf32df0-c8e7-4d9b-9052-b6c16e1b2141.png"
+    },
+    {
+      "id": "button_mint_pressed",
+      "width": 384,
+      "height": 128,
+      "margins": 26,
+      "base": "button_mint_normal",
+      "prompt": "Create a single empty UI art asset for Seoul Hero, a Korean indie mobile game menu evoking the warm everyday office of an awakeners association. Bright, welcoming, chunky hand-painted game UI, subtle paper/plastic/wood microtexture, restrained softly shaded physical depth. NOT dark, NOT neon, NOT cyberpunk, NOT flat vector art. NO outline strokes or border lines. Slightly rounded corners. Soft upper highlight and a darker warm beige/brown downward-facing thickness lip. Keep highlights/shadows inside the object; no large exterior drop shadow. Blank usable surface, no text, numbers, logos, icons or cute stickers. Transparent RGBA PNG with real alpha outside the asset, no checkerboard. Front-facing orthographic UI component, NOT isometric or tilted. Straight axis-aligned horizontal/vertical sides. Object fills canvas except a tiny uniform transparent safety margin. Middle surface must be bright enough for dark navy text, very even and quiet, no large gradients or blotches. For scalable pieces, center and straight edges must be uniform and tileable so 9-slice stretching works; artwork detail only at corners and a narrow vertical thickness lip.\nEDIT INPUT is the normal state. Preserve silhouette, corner radii, texture, exact position and canvas framing. Output just one changed state. Target 384x128. Pressed state: face lowered exactly 3px, bottom lip compressed from 8px to 5px, reduced highlight. Same mint hue.",
+      "source": "C:\\Users\\geniu\\.codex\\generated_images\\01a11ddb-c675-7802-b187-17cbd1116ef1\\exec-e94b4ee9-c41f-4281-b4fa-5735e30bd1ba.png"
+    },
+    {
+      "id": "button_round_normal",
+      "width": 160,
+      "height": 160,
+      "margins": null,
+      "base": null,
+      "prompt": "Create a single empty UI art asset for Seoul Hero, a Korean indie mobile game menu evoking the warm everyday office of an awakeners association. Bright, welcoming, chunky hand-painted game UI, subtle paper/plastic/wood microtexture, restrained softly shaded physical depth. NOT dark, NOT neon, NOT cyberpunk, NOT flat vector art. NO outline strokes or border lines. Slightly rounded corners. Soft upper highlight and a darker warm beige/brown downward-facing thickness lip. Keep highlights/shadows inside the object; no large exterior drop shadow. Blank usable surface, no text, numbers, logos, icons or cute stickers. Transparent RGBA PNG with real alpha outside the asset, no checkerboard. Front-facing orthographic UI component, NOT isometric or tilted. Straight axis-aligned horizontal/vertical sides. Object fills canvas except a tiny uniform transparent safety margin. Middle surface must be bright enough for dark navy text, very even and quiet, no large gradients or blotches. For scalable pieces, center and straight edges must be uniform and tileable so 9-slice stretching works; artwork detail only at corners and a narrow vertical thickness lip.\nAsset: button_round_normal. Target export 160x160 pixels. Round warm ivory icon button, perfectly circular, normal raised state, soft upper highlight, warm beige bottom thickness lip 8px. EMPTY center, no icon.",
+      "source": "C:\\Users\\geniu\\.codex\\generated_images\\01a11ddb-c675-7802-b187-17cbd1116ef1\\exec-d5508c24-471e-4423-b12e-12aae5270470.png"
+    },
+    {
+      "id": "button_round_pressed",
+      "width": 160,
+      "height": 160,
+      "margins": null,
+      "base": "button_round_normal",
+      "prompt": "Create a single empty UI art asset for Seoul Hero, a Korean indie mobile game menu evoking the warm everyday office of an awakeners association. Bright, welcoming, chunky hand-painted game UI, subtle paper/plastic/wood microtexture, restrained softly shaded physical depth. NOT dark, NOT neon, NOT cyberpunk, NOT flat vector art. NO outline strokes or border lines. Slightly rounded corners. Soft upper highlight and a darker warm beige/brown downward-facing thickness lip. Keep highlights/shadows inside the object; no large exterior drop shadow. Blank usable surface, no text, numbers, logos, icons or cute stickers. Transparent RGBA PNG with real alpha outside the asset, no checkerboard. Front-facing orthographic UI component, NOT isometric or tilted. Straight axis-aligned horizontal/vertical sides. Object fills canvas except a tiny uniform transparent safety margin. Middle surface must be bright enough for dark navy text, very even and quiet, no large gradients or blotches. For scalable pieces, center and straight edges must be uniform and tileable so 9-slice stretching works; artwork detail only at corners and a narrow vertical thickness lip.\nEDIT INPUT is the normal state. Preserve silhouette, corner radii, texture, exact position and canvas framing. Output just one changed state. Target 160x160. Pressed round button: face lowered exactly 3px, lower lip compressed to 5px, reduced highlight, ivory unchanged.",
+      "source": "C:\\Users\\geniu\\.codex\\generated_images\\01a11ddb-c675-7802-b187-17cbd1116ef1\\exec-5ba0e26d-abf4-4e55-91a4-879289030390.png"
+    },
+    {
+      "id": "button_close",
+      "width": 128,
+      "height": 128,
+      "margins": null,
+      "base": null,
+      "prompt": "Create a single empty UI art asset for Seoul Hero, a Korean indie mobile game menu evoking the warm everyday office of an awakeners association. Bright, welcoming, chunky hand-painted game UI, subtle paper/plastic/wood microtexture, restrained softly shaded physical depth. NOT dark, NOT neon, NOT cyberpunk, NOT flat vector art. NO outline strokes or border lines. Slightly rounded corners. Soft upper highlight and a darker warm beige/brown downward-facing thickness lip. Keep highlights/shadows inside the object; no large exterior drop shadow. Blank usable surface, no text, numbers, logos, icons or cute stickers. Transparent RGBA PNG with real alpha outside the asset, no checkerboard. Front-facing orthographic UI component, NOT isometric or tilted. Straight axis-aligned horizontal/vertical sides. Object fills canvas except a tiny uniform transparent safety margin. Middle surface must be bright enough for dark navy text, very even and quiet, no large gradients or blotches. For scalable pieces, center and straight edges must be uniform and tileable so 9-slice stretching works; artwork detail only at corners and a narrow vertical thickness lip.\nAsset: button_close. Target export 128x128 pixels. Small round warm ivory popup close button, circular raised blank disc, soft upper highlight and beige bottom 6px thickness lip. NO X, no symbol, empty center.",
+      "source": "C:\\Users\\geniu\\.codex\\generated_images\\01a11ddb-c675-7802-b187-17cbd1116ef1\\exec-6c996fe7-1285-4434-acb8-eefa7f97c0b9.png"
+    },
+    {
+      "id": "chip_currency",
+      "width": 320,
+      "height": 112,
+      "margins": [
+        56,
+        20,
+        56,
+        20
+      ],
+      "base": null,
+      "prompt": "Create a single empty UI art asset for Seoul Hero, a Korean indie mobile game menu evoking the warm everyday office of an awakeners association. Bright, welcoming, chunky hand-painted game UI, subtle paper/plastic/wood microtexture, restrained softly shaded physical depth. NOT dark, NOT neon, NOT cyberpunk, NOT flat vector art. NO outline strokes or border lines. Slightly rounded corners. Soft upper highlight and a darker warm beige/brown downward-facing thickness lip. Keep highlights/shadows inside the object; no large exterior drop shadow. Blank usable surface, no text, numbers, logos, icons or cute stickers. Transparent RGBA PNG with real alpha outside the asset, no checkerboard. Front-facing orthographic UI component, NOT isometric or tilted. Straight axis-aligned horizontal/vertical sides. Object fills canvas except a tiny uniform transparent safety margin. Middle surface must be bright enough for dark navy text, very even and quiet, no large gradients or blotches. For scalable pieces, center and straight edges must be uniform and tileable so 9-slice stretching works; artwork detail only at corners and a narrow vertical thickness lip.\nAsset: chip_currency. Target export 320x112 pixels. Cream capsule pill currency chip, long rounded ends, quiet light cream face and pale gold 7px lower thickness lip. No coin/icon/text.",
+      "source": "C:\\Users\\geniu\\.codex\\generated_images\\01a11ddb-c675-7802-b187-17cbd1116ef1\\exec-c04fa180-a175-45c5-a255-5dff5f67dc72.png"
+    },
+    {
+      "id": "tab_active",
+      "width": 320,
+      "height": 112,
+      "margins": 24,
+      "base": null,
+      "prompt": "Create a single empty UI art asset for Seoul Hero, a Korean indie mobile game menu evoking the warm everyday office of an awakeners association. Bright, welcoming, chunky hand-painted game UI, subtle paper/plastic/wood microtexture, restrained softly shaded physical depth. NOT dark, NOT neon, NOT cyberpunk, NOT flat vector art. NO outline strokes or border lines. Slightly rounded corners. Soft upper highlight and a darker warm beige/brown downward-facing thickness lip. Keep highlights/shadows inside the object; no large exterior drop shadow. Blank usable surface, no text, numbers, logos, icons or cute stickers. Transparent RGBA PNG with real alpha outside the asset, no checkerboard. Front-facing orthographic UI component, NOT isometric or tilted. Straight axis-aligned horizontal/vertical sides. Object fills canvas except a tiny uniform transparent safety margin. Middle surface must be bright enough for dark navy text, very even and quiet, no large gradients or blotches. For scalable pieces, center and straight edges must be uniform and tileable so 9-slice stretching works; artwork detail only at corners and a narrow vertical thickness lip.\nAsset: tab_active. Target export 320x112 pixels. Active raised tab, warm ivory face, mildly rounded upper corners, subtle 8px beige lower thickness lip. Blank tab, no markings.",
+      "source": "C:\\Users\\geniu\\.codex\\generated_images\\01a11ddb-c675-7802-b187-17cbd1116ef1\\exec-69413c0d-4bb7-440f-bcd0-f8c2709b0720.png"
+    },
+    {
+      "id": "tab_inactive",
+      "width": 320,
+      "height": 112,
+      "margins": 24,
+      "base": "tab_active",
+      "prompt": "Create a single empty UI art asset for Seoul Hero, a Korean indie mobile game menu evoking the warm everyday office of an awakeners association. Bright, welcoming, chunky hand-painted game UI, subtle paper/plastic/wood microtexture, restrained softly shaded physical depth. NOT dark, NOT neon, NOT cyberpunk, NOT flat vector art. NO outline strokes or border lines. Slightly rounded corners. Soft upper highlight and a darker warm beige/brown downward-facing thickness lip. Keep highlights/shadows inside the object; no large exterior drop shadow. Blank usable surface, no text, numbers, logos, icons or cute stickers. Transparent RGBA PNG with real alpha outside the asset, no checkerboard. Front-facing orthographic UI component, NOT isometric or tilted. Straight axis-aligned horizontal/vertical sides. Object fills canvas except a tiny uniform transparent safety margin. Middle surface must be bright enough for dark navy text, very even and quiet, no large gradients or blotches. For scalable pieces, center and straight edges must be uniform and tileable so 9-slice stretching works; artwork detail only at corners and a narrow vertical thickness lip.\nEDIT INPUT is the normal state. Preserve silhouette, corner radii, texture, exact position and canvas framing. Output just one changed state. Target 320x112. Inactive tab: warm beige face instead of ivory, sits one step lower with a thinner 5px lip. No outline strokes.",
+      "source": "C:\\Users\\geniu\\.codex\\generated_images\\01a11ddb-c675-7802-b187-17cbd1116ef1\\exec-03c444c9-f134-408d-8d1d-6dda00daa75a.png"
+    },
+    {
+      "id": "tile_facility",
+      "width": 256,
+      "height": 288,
+      "margins": null,
+      "base": null,
+      "prompt": "Create a single empty UI art asset for Seoul Hero, a Korean indie mobile game menu evoking the warm everyday office of an awakeners association. Bright, welcoming, chunky hand-painted game UI, subtle paper/plastic/wood microtexture, restrained softly shaded physical depth. NOT dark, NOT neon, NOT cyberpunk, NOT flat vector art. NO outline strokes or border lines. Slightly rounded corners. Soft upper highlight and a darker warm beige/brown downward-facing thickness lip. Keep highlights/shadows inside the object; no large exterior drop shadow. Blank usable surface, no text, numbers, logos, icons or cute stickers. Transparent RGBA PNG with real alpha outside the asset, no checkerboard. Front-facing orthographic UI component, NOT isometric or tilted. Straight axis-aligned horizontal/vertical sides. Object fills canvas except a tiny uniform transparent safety margin. Middle surface must be bright enough for dark navy text, very even and quiet, no large gradients or blotches. For scalable pieces, center and straight edges must be uniform and tileable so 9-slice stretching works; artwork detail only at corners and a narrow vertical thickness lip.\nAsset: tile_facility. Target export 256x288 pixels. Tall facility tile button plate, ivory body, rounded corners, beige 8px thickness lip. Bottom quarter of face has a flat muted mint band reserved for a future name. All blank, NO facility illustration or icon.",
+      "source": "C:\\Users\\geniu\\.codex\\generated_images\\01a11ddb-c675-7802-b187-17cbd1116ef1\\exec-64ad3993-6cb7-4564-be36-c843e4767965.png"
+    },
+    {
+      "id": "badge_id_card",
+      "width": 512,
+      "height": 288,
+      "margins": null,
+      "base": null,
+      "prompt": "Create a single empty UI art asset for Seoul Hero, a Korean indie mobile game menu evoking the warm everyday office of an awakeners association. Bright, welcoming, chunky hand-painted game UI, subtle paper/plastic/wood microtexture, restrained softly shaded physical depth. NOT dark, NOT neon, NOT cyberpunk, NOT flat vector art. NO outline strokes or border lines. Slightly rounded corners. Soft upper highlight and a darker warm beige/brown downward-facing thickness lip. Keep highlights/shadows inside the object; no large exterior drop shadow. Blank usable surface, no text, numbers, logos, icons or cute stickers. Transparent RGBA PNG with real alpha outside the asset, no checkerboard. Front-facing orthographic UI component, NOT isometric or tilted. Straight axis-aligned horizontal/vertical sides. Object fills canvas except a tiny uniform transparent safety margin. Middle surface must be bright enough for dark navy text, very even and quiet, no large gradients or blotches. For scalable pieces, center and straight edges must be uniform and tileable so 9-slice stretching works; artwork detail only at corners and a narrow vertical thickness lip.\nAsset: badge_id_card. Target export 512x288 pixels. Landscape ivory access-pass card with a plain mint top band and a blank pale blue-gray rectangular photo placeholder on the left. Two short navy lanyard strands descend from the top and meet a small brushed brass clip attached at card top center. Keep entire object including both strands in canvas. No portrait, no text, no logo, no decorative marks. Physical cream card thickness.",
+      "source": "C:\\Users\\geniu\\.codex\\generated_images\\01a11ddb-c675-7802-b187-17cbd1116ef1\\exec-fab6e732-98b1-44c8-a5f5-f4f6cea2825d.png"
+    },
+    {
+      "id": "list_row_normal",
+      "width": 768,
+      "height": 112,
+      "margins": 20,
+      "base": null,
+      "prompt": "Create a single empty UI art asset for Seoul Hero, a Korean indie mobile game menu evoking the warm everyday office of an awakeners association. Bright, welcoming, chunky hand-painted game UI, subtle paper/plastic/wood microtexture, restrained softly shaded physical depth. NOT dark, NOT neon, NOT cyberpunk, NOT flat vector art. NO outline strokes or border lines. Slightly rounded corners. Soft upper highlight and a darker warm beige/brown downward-facing thickness lip. Keep highlights/shadows inside the object; no large exterior drop shadow. Blank usable surface, no text, numbers, logos, icons or cute stickers. Transparent RGBA PNG with real alpha outside the asset, no checkerboard. Front-facing orthographic UI component, NOT isometric or tilted. Straight axis-aligned horizontal/vertical sides. Object fills canvas except a tiny uniform transparent safety margin. Middle surface must be bright enough for dark navy text, very even and quiet, no large gradients or blotches. For scalable pieces, center and straight edges must be uniform and tileable so 9-slice stretching works; artwork detail only at corners and a narrow vertical thickness lip.\nAsset: list_row_normal. Target export 768x112 pixels. Very wide ivory list-row plate, aspect ratio 48:7, softly rounded corners, uniform blank bright surface, warm beige 6px lower thickness lip.",
+      "source": "C:\\Users\\geniu\\.codex\\generated_images\\01a11ddb-c675-7802-b187-17cbd1116ef1\\exec-f3459f0c-7e65-406a-af75-83a2fdecd760.png"
+    },
+    {
+      "id": "list_row_selected",
+      "width": 768,
+      "height": 112,
+      "margins": 20,
+      "base": "list_row_normal",
+      "prompt": "Create a single empty UI art asset for Seoul Hero, a Korean indie mobile game menu evoking the warm everyday office of an awakeners association. Bright, welcoming, chunky hand-painted game UI, subtle paper/plastic/wood microtexture, restrained softly shaded physical depth. NOT dark, NOT neon, NOT cyberpunk, NOT flat vector art. NO outline strokes or border lines. Slightly rounded corners. Soft upper highlight and a darker warm beige/brown downward-facing thickness lip. Keep highlights/shadows inside the object; no large exterior drop shadow. Blank usable surface, no text, numbers, logos, icons or cute stickers. Transparent RGBA PNG with real alpha outside the asset, no checkerboard. Front-facing orthographic UI component, NOT isometric or tilted. Straight axis-aligned horizontal/vertical sides. Object fills canvas except a tiny uniform transparent safety margin. Middle surface must be bright enough for dark navy text, very even and quiet, no large gradients or blotches. For scalable pieces, center and straight edges must be uniform and tileable so 9-slice stretching works; artwork detail only at corners and a narrow vertical thickness lip.\nEDIT INPUT is the normal state. Preserve silhouette, corner radii, texture, exact position and canvas framing. Output just one changed state. Target 768x112. Selected list row: whole face changes to pale mint, slightly raised, no border, no glowing outline, same outer footprint.",
+      "source": "C:\\Users\\geniu\\.codex\\generated_images\\01a11ddb-c675-7802-b187-17cbd1116ef1\\exec-2ada8c8a-ac28-445f-aecc-b7d858699475.png"
+    },
+    {
+      "id": "bar_frame",
+      "width": 512,
+      "height": 64,
+      "margins": [
+        24,
+        16,
+        24,
+        16
+      ],
+      "base": null,
+      "prompt": "Create a single empty UI art asset for Seoul Hero, a Korean indie mobile game menu evoking the warm everyday office of an awakeners association. Bright, welcoming, chunky hand-painted game UI, subtle paper/plastic/wood microtexture, restrained softly shaded physical depth. NOT dark, NOT neon, NOT cyberpunk, NOT flat vector art. NO outline strokes or border lines. Slightly rounded corners. Soft upper highlight and a darker warm beige/brown downward-facing thickness lip. Keep highlights/shadows inside the object; no large exterior drop shadow. Blank usable surface, no text, numbers, logos, icons or cute stickers. Transparent RGBA PNG with real alpha outside the asset, no checkerboard. Front-facing orthographic UI component, NOT isometric or tilted. Straight axis-aligned horizontal/vertical sides. Object fills canvas except a tiny uniform transparent safety margin. Middle surface must be bright enough for dark navy text, very even and quiet, no large gradients or blotches. For scalable pieces, center and straight edges must be uniform and tileable so 9-slice stretching works; artwork detail only at corners and a narrow vertical thickness lip.\nAsset: bar_frame. Target export 512x64 pixels. Very long narrow cream progress bar housing, aspect ratio 8:1, soft inset empty trough recessed into ivory plastic, warm beige inward shading, no outline strokes, no fill, no marks. Entire center is uniformly recessed.",
+      "source": "C:\\Users\\geniu\\.codex\\generated_images\\01a11ddb-c675-7802-b187-17cbd1116ef1\\exec-3623926e-c7c2-453b-9d83-d3dbe7a0c8fe.png"
+    },
+    {
+      "id": "bar_fill",
+      "width": 512,
+      "height": 64,
+      "margins": [
+        20,
+        12,
+        20,
+        12
+      ],
+      "base": null,
+      "prompt": "Create a single empty UI art asset for Seoul Hero, a Korean indie mobile game menu evoking the warm everyday office of an awakeners association. Bright, welcoming, chunky hand-painted game UI, subtle paper/plastic/wood microtexture, restrained softly shaded physical depth. NOT dark, NOT neon, NOT cyberpunk, NOT flat vector art. NO outline strokes or border lines. Slightly rounded corners. Soft upper highlight and a darker warm beige/brown downward-facing thickness lip. Keep highlights/shadows inside the object; no large exterior drop shadow. Blank usable surface, no text, numbers, logos, icons or cute stickers. Transparent RGBA PNG with real alpha outside the asset, no checkerboard. Front-facing orthographic UI component, NOT isometric or tilted. Straight axis-aligned horizontal/vertical sides. Object fills canvas except a tiny uniform transparent safety margin. Middle surface must be bright enough for dark navy text, very even and quiet, no large gradients or blotches. For scalable pieces, center and straight edges must be uniform and tileable so 9-slice stretching works; artwork detail only at corners and a narrow vertical thickness lip.\nAsset: bar_fill. Target export 512x64 pixels. Very long narrow mint progress bar fill ONLY, aspect ratio 8:1, soft rounded ends, gentle thin top highlight, even mint center and small 6px darker mint lower lip. No container, no marks.",
+      "source": "C:\\Users\\geniu\\.codex\\generated_images\\01a11ddb-c675-7802-b187-17cbd1116ef1\\exec-1c8f71df-7d3d-4cd5-8cb5-0ff1a48ba660.png"
+    },
+    {
+      "id": "tooltip_bubble",
+      "width": 384,
+      "height": 192,
+      "margins": [
+        28,
+        24,
+        28,
+        40
+      ],
+      "base": null,
+      "prompt": "Create a single empty UI art asset for Seoul Hero, a Korean indie mobile game menu evoking the warm everyday office of an awakeners association. Bright, welcoming, chunky hand-painted game UI, subtle paper/plastic/wood microtexture, restrained softly shaded physical depth. NOT dark, NOT neon, NOT cyberpunk, NOT flat vector art. NO outline strokes or border lines. Slightly rounded corners. Soft upper highlight and a darker warm beige/brown downward-facing thickness lip. Keep highlights/shadows inside the object; no large exterior drop shadow. Blank usable surface, no text, numbers, logos, icons or cute stickers. Transparent RGBA PNG with real alpha outside the asset, no checkerboard. Front-facing orthographic UI component, NOT isometric or tilted. Straight axis-aligned horizontal/vertical sides. Object fills canvas except a tiny uniform transparent safety margin. Middle surface must be bright enough for dark navy text, very even and quiet, no large gradients or blotches. For scalable pieces, center and straight edges must be uniform and tileable so 9-slice stretching works; artwork detail only at corners and a narrow vertical thickness lip.\nAsset: tooltip_bubble. Target export 384x192 pixels. Warm ivory speech bubble, rounded rectangle with a SHORT triangular downward tail exactly at bottom center. Beige lower thickness lip, subtle upper highlight. Entire interior blank and uniform. Tail is the only feature along lower edge.",
+      "source": "C:\\Users\\geniu\\.codex\\generated_images\\01a11ddb-c675-7802-b187-17cbd1116ef1\\exec-82c52077-8655-4412-902a-8e1b215e79a5.png"
+    },
+    {
+      "id": "lock_overlay",
+      "width": 256,
+      "height": 256,
+      "margins": null,
+      "base": null,
+      "prompt": "Edit this exact UI overlay. Keep the central brass padlock fully opaque, same size and location. CRITICAL: beige rounded-square plate must have real PNG alpha opacity 55% (alpha about 140/255) across its entire surface including bevel, so underlying game art will clearly show through. Do NOT simulate transparency with a flat beige opaque color. Outside the rounded square alpha=0. No checkerboard pattern. Maintain same warm hand-painted design, no text or added elements. This is a compositing overlay; translucent plate, opaque padlock.",
+      "source": "C:\\Users\\geniu\\.codex\\generated_images\\01a11ddb-c675-7802-b187-17cbd1116ef1\\exec-d194aef2-4ddc-4c28-9670-31010f3a1e55.png",
+      "previous_source": "C:\\Users\\geniu\\.codex\\generated_images\\01a11ddb-c675-7802-b187-17cbd1116ef1\\exec-5ddcd4d8-d780-49cb-b321-e2a8baa3a424.png",
+      "previous_prompt": "Create a single empty UI art asset for Seoul Hero, a Korean indie mobile game menu evoking the warm everyday office of an awakeners association. Bright, welcoming, chunky hand-painted game UI, subtle paper/plastic/wood microtexture, restrained softly shaded physical depth. NOT dark, NOT neon, NOT cyberpunk, NOT flat vector art. NO outline strokes or border lines. Slightly rounded corners. Soft upper highlight and a darker warm beige/brown downward-facing thickness lip. Keep highlights/shadows inside the object; no large exterior drop shadow. Blank usable surface, no text, numbers, logos, icons or cute stickers. Transparent RGBA PNG with real alpha outside the asset, no checkerboard. Front-facing orthographic UI component, NOT isometric or tilted. Straight axis-aligned horizontal/vertical sides. Object fills canvas except a tiny uniform transparent safety margin. Middle surface must be bright enough for dark navy text, very even and quiet, no large gradients or blotches. For scalable pieces, center and straight edges must be uniform and tileable so 9-slice stretching works; artwork detail only at corners and a narrow vertical thickness lip.\nAsset: lock_overlay. Target export 256x256 pixels. Semi-transparent warm beige rounded square overlay plate, intended to show the underlying game tile faintly through its surface. At the center ONLY a SMALL simple brass padlock icon, about 60px at target size, cute practical office lock with no face. This lock is the sole exception to the no-icons rule. No other marks. Transparent outside the plate, semitransparent beige plate."
+    }
+  ]
+}

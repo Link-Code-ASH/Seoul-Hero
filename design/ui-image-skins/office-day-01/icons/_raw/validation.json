@@ -1,0 +1,163 @@
+[
+  {
+    "file": "icon_association.png",
+    "width": 512,
+    "height": 512,
+    "mode": "RGBA",
+    "transparentPixels": 176320,
+    "partialAlphaPixels": 84389,
+    "opaquePixels": 1435,
+    "edgesTransparent": true,
+    "placement": [
+      66,
+      52,
+      380,
+      408
+    ],
+    "sourceCrop": [
+      115,
+      68,
+      1025,
+      1100
+    ],
+    "sha256": "7092AA5BE403477B983FBD19A4D0AEB489C0D03AF0CE7BCB225CFC1A1B715CC6"
+  },
+  {
+    "file": "icon_archive.png",
+    "width": 512,
+    "height": 512,
+    "mode": "RGBA",
+    "transparentPixels": 155491,
+    "partialAlphaPixels": 105448,
+    "opaquePixels": 1205,
+    "edgesTransparent": true,
+    "placement": [
+      85,
+      52,
+      342,
+      408
+    ],
+    "sourceCrop": [
+      232,
+      121,
+      824,
+      983
+    ],
+    "sha256": "086A7BF1F043E9A1AD379035C94C61FD019515B9240D53EE212F6E597763EC01"
+  },
+  {
+    "file": "icon_settings.png",
+    "width": 512,
+    "height": 512,
+    "mode": "RGBA",
+    "transparentPixels": 146561,
+    "partialAlphaPixels": 113782,
+    "opaquePixels": 1801,
+    "edgesTransparent": true,
+    "placement": [
+      52,
+      56,
+      408,
+      399
+    ],
+    "sourceCrop": [
+      135,
+      123,
+      983,
+      962
+    ],
+    "sha256": "0BE73E24ACF0EBCD450548AC2D6CF698DB88A89FEB75A1F4E2DC45B57404E715"
+  },
+  {
+    "file": "icon_deploy_gate.png",
+    "width": 512,
+    "height": 512,
+    "mode": "RGBA",
+    "transparentPixels": 161784,
+    "partialAlphaPixels": 99231,
+    "opaquePixels": 1129,
+    "edgesTransparent": true,
+    "placement": [
+      72,
+      52,
+      369,
+      408
+    ],
+    "sourceCrop": [
+      186,
+      109,
+      917,
+      1014
+    ],
+    "sha256": "B61E69EE36BCB9B84807E09144048CF9C97C0B8CA058DF4565BAAAA3670E6B95"
+  },
+  {
+    "file": "icon_sound_on.png",
+    "width": 512,
+    "height": 512,
+    "mode": "RGBA",
+    "transparentPixels": 188326,
+    "partialAlphaPixels": 72165,
+    "opaquePixels": 1653,
+    "edgesTransparent": true,
+    "placement": [
+      52,
+      95,
+      408,
+      322
+    ],
+    "sourceCrop": [
+      106,
+      225,
+      1059,
+      835
+    ],
+    "sha256": "57B28E7690B7EDD0E681F5A722B3ED63EBAA01B12AF45C049F9298BAC978F2C6"
+  },
+  {
+    "file": "icon_sound_off.png",
+    "width": 512,
+    "height": 512,
+    "mode": "RGBA",
+    "transparentPixels": 199430,
+    "partialAlphaPixels": 61375,
+    "opaquePixels": 1339,
+    "edgesTransparent": true,
+    "placement": [
+      52,
+      95,
+      408,
+      322
+    ],
+    "sourceCrop": [
+      106,
+      225,
+      1059,
+      835
+    ],
+    "sha256": "D5517BDAFF266DF8924B0EE1B8124FAF394518B6414FD34AE0D9A8BB25D9251C"
+  },
+  {
+    "file": "icon_operator_headset.png",
+    "width": 512,
+    "height": 512,
+    "mode": "RGBA",
+    "transparentPixels": 177785,
+    "partialAlphaPixels": 82409,
+    "opaquePixels": 1950,
+    "edgesTransparent": true,
+    "placement": [
+      62,
+      52,
+      389,
+      408
+    ],
+    "sourceCrop": [
+      203,
+      140,
+      896,
+      940
+    ],
+    "sha256": "1F4B74F23F77C12367182688008C64F1E7CAD4FBC3A9B7FE1490B9D54C459372"
+  }
+]

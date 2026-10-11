@@ -1,0 +1,506 @@
+{
+	"actualSceneRouter": "HeroMetaScreens.build",
+	"checks": [
+		{
+			"fitIssues": [],
+			"fixture": "ready",
+			"kind": "recovery",
+			"missingArt": [],
+			"presentation": {
+				"action_age": -1.0,
+				"age": 0.0,
+				"busy": false,
+				"completed": false,
+				"kind": "recovery",
+				"suspended": false
+			},
+			"rewardAssignment": false,
+			"runtimeConnected": true,
+			"saveWrites": false,
+			"simulation": false,
+			"size": [
+				915,
+				412
+			],
+			"state": "ready",
+			"uiEffects": {
+				"active": [],
+				"anchors": {},
+				"effects": 0,
+				"particles": 0,
+				"pending": 0,
+				"screen": "support-runtime-recovery",
+				"suspended": false
+			}
+		},
+		{
+			"fitIssues": [],
+			"fixture": "ready",
+			"kind": "supply",
+			"missingArt": [],
+			"presentation": {
+				"action_age": -1.0,
+				"age": 0.0,
+				"busy": false,
+				"completed": false,
+				"kind": "supply",
+				"suspended": false
+			},
+			"rewardAssignment": false,
+			"runtimeConnected": true,
+			"saveWrites": false,
+			"simulation": false,
+			"size": [
+				915,
+				412
+			],
+			"state": "ready",
+			"uiEffects": {
+				"active": [],
+				"anchors": {},
+				"effects": 0,
+				"particles": 0,
+				"pending": 0,
+				"screen": "support-runtime-supply",
+				"suspended": false
+			}
+		},
+		{
+			"fitIssues": [],
+			"fixture": "empty",
+			"kind": "recovery",
+			"missingArt": [],
+			"presentation": {
+				"action_age": -1.0,
+				"age": 0.0,
+				"busy": false,
+				"completed": false,
+				"kind": "recovery",
+				"suspended": false
+			},
+			"rewardAssignment": false,
+			"runtimeConnected": true,
+			"saveWrites": false,
+			"simulation": false,
+			"size": [
+				915,
+				412
+			],
+			"state": "empty",
+			"uiEffects": {
+				"active": [],
+				"anchors": {},
+				"effects": 0,
+				"particles": 0,
+				"pending": 0,
+				"screen": "support-runtime-recovery",
+				"suspended": false
+			}
+		},
+		{
+			"fitIssues": [],
+			"fixture": "claimed",
+			"kind": "recovery",
+			"missingArt": [],
+			"presentation": {
+				"action_age": 0.6,
+				"age": 0.6,
+				"busy": false,
+				"completed": true,
+				"kind": "recovery",
+				"suspended": false
+			},
+			"rewardAssignment": false,
+			"runtimeConnected": true,
+			"saveWrites": false,
+			"simulation": false,
+			"size": [
+				915,
+				412
+			],
+			"state": "claimed",
+			"uiEffects": {
+				"active": [],
+				"anchors": {},
+				"effects": 0,
+				"particles": 0,
+				"pending": 0,
+				"screen": "support-runtime-recovery",
+				"suspended": false
+			}
+		},
+		{
+			"fitIssues": [],
+			"fixture": "insufficient",
+			"kind": "supply",
+			"missingArt": [],
+			"presentation": {
+				"action_age": -1.0,
+				"age": 0.0,
+				"busy": false,
+				"completed": false,
+				"kind": "supply",
+				"suspended": false
+			},
+			"rewardAssignment": false,
+			"runtimeConnected": true,
+			"saveWrites": false,
+			"simulation": false,
+			"size": [
+				915,
+				412
+			],
+			"state": "insufficient",
+			"uiEffects": {
+				"active": [],
+				"anchors": {},
+				"effects": 0,
+				"particles": 0,
+				"pending": 0,
+				"screen": "support-runtime-supply",
+				"suspended": false
+			}
+		},
+		{
+			"fitIssues": [],
+			"fixture": "result1",
+			"kind": "supply",
+			"missingArt": [],
+			"presentation": {
+				"action_age": 1.1,
+				"age": 1.1,
+				"busy": false,
+				"completed": true,
+				"kind": "supply",
+				"suspended": false
+			},
+			"rewardAssignment": false,
+			"runtimeConnected": true,
+			"saveWrites": false,
+			"simulation": false,
+			"size": [
+				915,
+				412
+			],
+			"state": "result1",
+			"uiEffects": {
+				"active": [],
+				"anchors": {},
+				"effects": 0,
+				"particles": 0,
+				"pending": 0,
+				"screen": "support-runtime-supply",
+				"suspended": false
+			}
+		},
+		{
+			"fitIssues": [],
+			"fixture": "result10",
+			"kind": "supply",
+			"missingArt": [],
+			"presentation": {
+				"action_age": 1.1,
+				"age": 1.1,
+				"busy": false,
+				"completed": true,
+				"kind": "supply",
+				"suspended": false
+			},
+			"rewardAssignment": false,
+			"runtimeConnected": true,
+			"saveWrites": false,
+			"simulation": false,
+			"size": [
+				915,
+				412
+			],
+			"state": "result10",
+			"uiEffects": {
+				"active": [],
+				"anchors": {},
+				"effects": 0,
+				"particles": 0,
+				"pending": 0,
+				"screen": "support-runtime-supply",
+				"suspended": false
+			}
+		},
+		{
+			"fitIssues": [],
+			"fixture": "recovery-idle",
+			"kind": "recovery",
+			"missingArt": [],
+			"presentation": {
+				"action_age": -1.0,
+				"age": 2.2,
+				"busy": false,
+				"completed": false,
+				"kind": "recovery",
+				"suspended": false
+			},
+			"rewardAssignment": false,
+			"runtimeConnected": true,
+			"saveWrites": false,
+			"simulation": false,
+			"size": [
+				915,
+				412
+			],
+			"state": "ready",
+			"uiEffects": {
+				"active": [],
+				"anchors": {},
+				"effects": 0,
+				"particles": 0,
+				"pending": 0,
+				"screen": "support-runtime-recovery",
+				"suspended": false
+			}
+		},
+		{
+			"fitIssues": [],
+			"fixture": "recovery-claim",
+			"kind": "recovery",
+			"missingArt": [],
+			"presentation": {
+				"action_age": 1.8,
+				"age": 2.2,
+				"busy": false,
+				"completed": true,
+				"kind": "recovery",
+				"suspended": false
+			},
+			"rewardAssignment": false,
+			"runtimeConnected": true,
+			"saveWrites": false,
+			"simulation": false,
+			"size": [
+				915,
+				412
+			],
+			"state": "claimed",
+			"uiEffects": {
+				"active": [],
+				"anchors": {},
+				"effects": 0,
+				"particles": 0,
+				"pending": 0,
+				"screen": "support-runtime-recovery",
+				"suspended": false
+			}
+		},
+		{
+			"fitIssues": [],
+			"fixture": "supply-idle",
+			"kind": "supply",
+			"missingArt": [],
+			"presentation": {
+				"action_age": -1.0,
+				"age": 2.2,
+				"busy": false,
+				"completed": false,
+				"kind": "supply",
+				"suspended": false
+			},
+			"rewardAssignment": false,
+			"runtimeConnected": true,
+			"saveWrites": false,
+			"simulation": false,
+			"size": [
+				915,
+				412
+			],
+			"state": "ready",
+			"uiEffects": {
+				"active": [],
+				"anchors": {},
+				"effects": 0,
+				"particles": 0,
+				"pending": 0,
+				"screen": "support-runtime-supply",
+				"suspended": false
+			}
+		},
+		{
+			"fitIssues": [],
+			"fixture": "supply-open",
+			"kind": "supply",
+			"missingArt": [],
+			"presentation": {
+				"action_age": 1.8,
+				"age": 2.2,
+				"busy": false,
+				"completed": true,
+				"kind": "supply",
+				"suspended": false
+			},
+			"rewardAssignment": false,
+			"runtimeConnected": true,
+			"saveWrites": false,
+			"simulation": false,
+			"size": [
+				915,
+				412
+			],
+			"state": "result1",
+			"uiEffects": {
+				"active": [],
+				"anchors": {},
+				"effects": 0,
+				"particles": 0,
+				"pending": 0,
+				"screen": "support-runtime-supply",
+				"suspended": false
+			}
+		},
+		{
+			"fitIssues": [],
+			"fixture": "supply-ten",
+			"kind": "supply",
+			"missingArt": [],
+			"presentation": {
+				"action_age": 1.8,
+				"age": 2.2,
+				"busy": false,
+				"completed": true,
+				"kind": "supply",
+				"suspended": false
+			},
+			"rewardAssignment": false,
+			"runtimeConnected": true,
+			"saveWrites": false,
+			"simulation": false,
+			"size": [
+				915,
+				412
+			],
+			"state": "result10",
+			"uiEffects": {
+				"active": [],
+				"anchors": {},
+				"effects": 0,
+				"particles": 0,
+				"pending": 0,
+				"screen": "support-runtime-supply",
+				"suspended": false
+			}
+		}
+	],
+	"fixtureCallbacks": true,
+	"fps": 30,
+	"lifecycle": [
+		{
+			"acceptedCallbacks": 1,
+			"id": "recovery:duplicateRequest",
+			"passed": true,
+			"scope": "production screen guard; fixed in-memory callback"
+		},
+		{
+			"id": "recovery:hiddenStopsClock",
+			"passed": true
+		},
+		{
+			"id": "recovery:suspendStopsClock",
+			"passed": true,
+			"scope": "component suspend hook, not an OS event"
+		},
+		{
+			"id": "recovery:resumeAdvancesClock",
+			"passed": true
+		},
+		{
+			"callbacks": 1,
+			"id": "recovery:confirmationDoesNotGrantAgain",
+			"passed": true,
+			"routes": [
+				"lobby"
+			]
+		},
+		{
+			"callbacks": 1,
+			"id": "recovery:screenExitCancels",
+			"passed": true
+		},
+		{
+			"acceptedCallbacks": 1,
+			"id": "supply:duplicateRequest",
+			"passed": true,
+			"scope": "production screen guard; fixed in-memory callback"
+		},
+		{
+			"id": "supply:hiddenStopsClock",
+			"passed": true
+		},
+		{
+			"id": "supply:suspendStopsClock",
+			"passed": true,
+			"scope": "component suspend hook, not an OS event"
+		},
+		{
+			"id": "supply:resumeAdvancesClock",
+			"passed": true
+		},
+		{
+			"callbacks": 1,
+			"id": "supply:confirmationDoesNotGrantAgain",
+			"passed": true,
+			"routes": [
+				"lobby"
+			]
+		},
+		{
+			"callbacks": 1,
+			"id": "supply:screenExitCancels",
+			"passed": true
+		}
+	],
+	"logicalSize": [
+		915,
+		412
+	],
+	"passed": true,
+	"productionRenderer": true,
+	"rasterDensity": 1,
+	"rewardAssignment": false,
+	"runtimeConnected": true,
+	"saveWrites": false,
+	"scenes": [
+		{
+			"frames": 66,
+			"id": "recovery-idle",
+			"maximumEffects": 0,
+			"maximumParticles": 0
+		},
+		{
+			"frames": 66,
+			"id": "recovery-claim",
+			"maximumEffects": 1,
+			"maximumParticles": 10
+		},
+		{
+			"frames": 66,
+			"id": "supply-idle",
+			"maximumEffects": 0,
+			"maximumParticles": 0
+		},
+		{
+			"frames": 66,
+			"id": "supply-open",
+			"maximumEffects": 1,
+			"maximumParticles": 12
+		},
+		{
+			"frames": 66,
+			"id": "supply-ten",
+			"maximumEffects": 1,
+			"maximumParticles": 12
+		}
+	],
+	"silent": true,
+	"simulation": false,
+	"size": [
+		915,
+		412
+	],
+	"stage": "approved-runtime"
+}

@@ -1,0 +1,98 @@
+{
+  "tool": "built-in image_gen",
+  "date": "2026-10-10",
+  "purpose": "Gwanghwamun elite (haetaeHead) and weekly monsters, copied unchanged from art-library/game-ready/monster",
+  "source": "art-library/game-ready/monster/provenance.json",
+  "assets": [
+    {
+      "id": "haetaeHead",
+      "name": "해태 균열두",
+      "file": "haetaeHead_sd_01.png",
+      "prompt": "Use case: stylized-concept. Asset type: ONE legless monster sprite PNG for Seoul Hero, cute but threatening SD survivor game. Reference images are the game's SD hero and existing monsters: match their crisp bold rounded near-black line art, simple clean cel-shaded two-tone color blocks, saturated clear colors and toy-like readability, not the hero's humanoid anatomy. The creature is an urban gate monster born in present-day Seoul; its everyday-city motif must be obvious at a glance. Composition: full isolated single creature centered, front three-quarter view from a little above, all parts fully visible, generous transparent margin, big readable eyes with an angry or sly expression, role readable at 40px. One coherent compact silhouette with few broad shapes. Every monster MUST have ZERO legs, ZERO feet, ZERO shoes, ZERO human walking joints, ZERO arms/hands; only the wings, fins, tails, ribbons or continuous body named in the subject are allowed. Not babyish: no smiley faces, no blush stickers, no pastel candy look, no round button eyes without brows. No painterly or semi-realistic rendering, no soft airbrush gradients, no heavy surface texture, no muted gold/navy ornament palette, no realistic horror/gore/fur, no photorealism, no flat vector/clip-art look, no ground shadow, no background, no glow haze beyond silhouette, no text, no frame, no extra monsters, no sprite sheet. Real transparent background.\nSubject: A LARGE ELITE CRACKED HAETAE STATUE HEAD: only a floating Korean guardian haetae stone head, broad sculpted gray muzzle and stylized chunky curled stone mane, vivid purple fissure light contained in the mane cracks, huge glaring yellow eyes, short stone fangs, no neck torso or limbs, imposing weight with very few broad carved shapes.\nInput images: image 1 hero style reference only; images 2-5 monster style references. Match their bold contour thickness and large expressive eyes. Canvas: approximately 1216 x 1293 portrait; centered creature spans about 88% width with ample empty margin above and below. Two-tone cel shade per material with small crisp highlights. Any luminous parts use solid crisp color shapes, never bloom or fuzzy glow.",
+      "generatedSource": "C:\\Users\\geniu\\.codex\\generated_images\\01a124d6-7218-7b52-9121-8cd64e708621\\exec-2fa55739-4747-48f7-bbf1-901372d29d3a.png",
+      "referenced_image_paths": [
+        "C:/Users/geniu/Documents/GitHub/Seoul-Hero/godot/assets/characters-sd/song_sd_01.png",
+        "C:/Users/geniu/Documents/GitHub/Seoul-Hero/godot/assets/monsters-sd/crawler_sd_01.png",
+        "C:/Users/geniu/Documents/GitHub/Seoul-Hero/godot/assets/monsters-sd/charger_sd_01.png",
+        "C:/Users/geniu/Documents/GitHub/Seoul-Hero/godot/assets/monsters-sd/glassJelly_sd_01.png",
+        "C:/Users/geniu/Documents/GitHub/Seoul-Hero/godot/assets/monsters-sd/gatekeeper_sd_01.png"
+      ],
+      "transparent_background": true
+    },
+    {
+      "id": "lampFirefly",
+      "name": "가로등 반딧불",
+      "file": "lampFirefly_sd_01.png",
+      "prompt": "Use case: stylized-concept. Asset type: ONE legless monster sprite PNG for Seoul Hero, cute but threatening SD survivor game. Reference images are the game's SD hero and existing monsters: match their crisp bold rounded near-black line art, simple clean cel-shaded two-tone color blocks, saturated clear colors and toy-like readability, not the hero's humanoid anatomy. The creature is an urban gate monster born in present-day Seoul; its everyday-city motif must be obvious at a glance. Composition: full isolated single creature centered, front three-quarter view from a little above, all parts fully visible, generous transparent margin, big readable eyes with an angry or sly expression, role readable at 40px. One coherent compact silhouette with few broad shapes. Every monster MUST have ZERO legs, ZERO feet, ZERO shoes, ZERO human walking joints, ZERO arms/hands; only the wings, fins, tails, ribbons or continuous body named in the subject are allowed. Not babyish: no smiley faces, no blush stickers, no pastel candy look, no round button eyes without brows. No painterly or semi-realistic rendering, no soft airbrush gradients, no heavy surface texture, no muted gold/navy ornament palette, no realistic horror/gore/fur, no photorealism, no flat vector/clip-art look, no ground shadow, no background, no glow haze beyond silhouette, no text, no frame, no extra monsters, no sprite sheet. Real transparent background.\nSubject: A STREETLAMP FIREFLY HEALER: a round compact firefly spirit wearing a familiar gray curved streetlight lamp-head hood, large stern amber eyes, broad warm yellow luminous abdomen with light contained inside its body, exactly two short pale cyan wings, no insect legs, no antenna arms.\nInput images: image 1 hero style reference only; images 2-5 monster style references. Match their bold contour thickness and large expressive eyes. Canvas: approximately 1216 x 1293 portrait; centered creature spans about 80% width with ample empty margin above and below. Two-tone cel shade per material with small crisp highlights. Any luminous parts use solid crisp color shapes, never bloom or fuzzy glow.",
+      "generatedSource": "C:\\Users\\geniu\\.codex\\generated_images\\01a124d6-7218-7b52-9121-8cd64e708621\\exec-4f0ec8d2-3234-4e83-82da-9b0aa7abeb42.png",
+      "referenced_image_paths": [
+        "C:/Users/geniu/Documents/GitHub/Seoul-Hero/godot/assets/characters-sd/song_sd_01.png",
+        "C:/Users/geniu/Documents/GitHub/Seoul-Hero/godot/assets/monsters-sd/crawler_sd_01.png",
+        "C:/Users/geniu/Documents/GitHub/Seoul-Hero/godot/assets/monsters-sd/charger_sd_01.png",
+        "C:/Users/geniu/Documents/GitHub/Seoul-Hero/godot/assets/monsters-sd/glassJelly_sd_01.png",
+        "C:/Users/geniu/Documents/GitHub/Seoul-Hero/godot/assets/monsters-sd/gatekeeper_sd_01.png"
+      ],
+      "transparent_background": true
+    },
+    {
+      "id": "paperCrane",
+      "name": "폐지 종이학",
+      "file": "paperCrane_sd_01.png",
+      "prompt": "Use case: stylized-concept. Asset type: ONE legless monster sprite PNG for Seoul Hero, cute but threatening SD survivor game. Reference images are the game's SD hero and existing monsters: match their crisp bold rounded near-black line art, simple clean cel-shaded two-tone color blocks, saturated clear colors and toy-like readability, not the hero's humanoid anatomy. The creature is an urban gate monster born in present-day Seoul; its everyday-city motif must be obvious at a glance. Composition: full isolated single creature centered, front three-quarter view from a little above, all parts fully visible, generous transparent margin, big readable eyes with an angry or sly expression, role readable at 40px. One coherent compact silhouette with few broad shapes. Every monster MUST have ZERO legs, ZERO feet, ZERO shoes, ZERO human walking joints, ZERO arms/hands; only the wings, fins, tails, ribbons or continuous body named in the subject are allowed. Not babyish: no smiley faces, no blush stickers, no pastel candy look, no round button eyes without brows. No painterly or semi-realistic rendering, no soft airbrush gradients, no heavy surface texture, no muted gold/navy ornament palette, no realistic horror/gore/fur, no photorealism, no flat vector/clip-art look, no ground shadow, no background, no glow haze beyond silhouette, no text, no frame, no extra monsters, no sprite sheet. Real transparent background.\nSubject: A WASTE-PAPER CRANE: compact sharp origami crane folded from ivory newspaper and gray receipt paper, angular folded wings, continuous folded body, pointed beak and folded tail, large fierce red eyes, a few broad stripe markings instead of printed characters, no bird legs or feet.\nInput images: image 1 hero style reference only; images 2-5 monster style references. Match their bold contour thickness and large expressive eyes. Canvas: approximately 1216 x 1293 portrait; centered creature spans about 80% width with ample empty margin above and below. Two-tone cel shade per material with small crisp highlights. Any luminous parts use solid crisp color shapes, never bloom or fuzzy glow.",
+      "generatedSource": "C:\\Users\\geniu\\.codex\\generated_images\\01a124d6-7218-7b52-9121-8cd64e708621\\exec-b0e61ca8-0ec1-43ac-a618-48e104ad2179.png",
+      "referenced_image_paths": [
+        "C:/Users/geniu/Documents/GitHub/Seoul-Hero/godot/assets/characters-sd/song_sd_01.png",
+        "C:/Users/geniu/Documents/GitHub/Seoul-Hero/godot/assets/monsters-sd/crawler_sd_01.png",
+        "C:/Users/geniu/Documents/GitHub/Seoul-Hero/godot/assets/monsters-sd/charger_sd_01.png",
+        "C:/Users/geniu/Documents/GitHub/Seoul-Hero/godot/assets/monsters-sd/glassJelly_sd_01.png",
+        "C:/Users/geniu/Documents/GitHub/Seoul-Hero/godot/assets/monsters-sd/gatekeeper_sd_01.png"
+      ],
+      "transparent_background": true
+    },
+    {
+      "id": "tileTortoise",
+      "name": "기와 거북",
+      "file": "tileTortoise_sd_01.png",
+      "prompt": "Use case: stylized-concept. Asset type: ONE legless monster sprite PNG for Seoul Hero, cute but threatening SD survivor game. Reference images are the game's SD hero and existing monsters: match their crisp bold rounded near-black line art, simple clean cel-shaded two-tone color blocks, saturated clear colors and toy-like readability, not the hero's humanoid anatomy. The creature is an urban gate monster born in present-day Seoul; its everyday-city motif must be obvious at a glance. Composition: full isolated single creature centered, front three-quarter view from a little above, all parts fully visible, generous transparent margin, big readable eyes with an angry or sly expression, role readable at 40px. One coherent compact silhouette with few broad shapes. Every monster MUST have ZERO legs, ZERO feet, ZERO shoes, ZERO human walking joints, ZERO arms/hands; only the wings, fins, tails, ribbons or continuous body named in the subject are allowed. Not babyish: no smiley faces, no blush stickers, no pastel candy look, no round button eyes without brows. No painterly or semi-realistic rendering, no soft airbrush gradients, no heavy surface texture, no muted gold/navy ornament palette, no realistic horror/gore/fur, no photorealism, no flat vector/clip-art look, no ground shadow, no background, no glow haze beyond silhouette, no text, no frame, no extra monsters, no sprite sheet. Real transparent background.\nSubject: A ROOF-TILE TORTOISE SPIRIT: a broad floating rounded turtle-head mass carrying a miniature black Korean curved roof-tile shell, simple bright teal and red dancheong bands under the eaves, large stern yellow eyes and short blunt snout, smooth joined underside, absolutely no legs or feet.\nInput images: image 1 hero style reference only; images 2-5 monster style references. Match their bold contour thickness and large expressive eyes. Canvas: approximately 1216 x 1293 portrait; centered creature spans about 80% width with ample empty margin above and below. Two-tone cel shade per material with small crisp highlights. Any luminous parts use solid crisp color shapes, never bloom or fuzzy glow.",
+      "generatedSource": "C:\\Users\\geniu\\.codex\\generated_images\\01a124d6-7218-7b52-9121-8cd64e708621\\exec-bae13d83-0fdf-46fa-84df-073654714c28.png",
+      "referenced_image_paths": [
+        "C:/Users/geniu/Documents/GitHub/Seoul-Hero/godot/assets/characters-sd/song_sd_01.png",
+        "C:/Users/geniu/Documents/GitHub/Seoul-Hero/godot/assets/monsters-sd/crawler_sd_01.png",
+        "C:/Users/geniu/Documents/GitHub/Seoul-Hero/godot/assets/monsters-sd/charger_sd_01.png",
+        "C:/Users/geniu/Documents/GitHub/Seoul-Hero/godot/assets/monsters-sd/glassJelly_sd_01.png",
+        "C:/Users/geniu/Documents/GitHub/Seoul-Hero/godot/assets/monsters-sd/gatekeeper_sd_01.png"
+      ],
+      "transparent_background": true
+    },
+    {
+      "id": "fenceSerpent",
+      "name": "펜스 구렁이",
+      "file": "fenceSerpent_sd_01.png",
+      "prompt": "Use case: stylized-concept. Asset type: ONE legless monster sprite PNG for Seoul Hero, cute but threatening SD survivor game. Reference images are the game's SD hero and existing monsters: match their crisp bold rounded near-black line art, simple clean cel-shaded two-tone color blocks, saturated clear colors and toy-like readability, not the hero's humanoid anatomy. The creature is an urban gate monster born in present-day Seoul; its everyday-city motif must be obvious at a glance. Composition: full isolated single creature centered, front three-quarter view from a little above, all parts fully visible, generous transparent margin, big readable eyes with an angry or sly expression, role readable at 40px. One coherent compact silhouette with few broad shapes. Every monster MUST have ZERO legs, ZERO feet, ZERO shoes, ZERO human walking joints, ZERO arms/hands; only the wings, fins, tails, ribbons or continuous body named in the subject are allowed. Not babyish: no smiley faces, no blush stickers, no pastel candy look, no round button eyes without brows. No painterly or semi-realistic rendering, no soft airbrush gradients, no heavy surface texture, no muted gold/navy ornament palette, no realistic horror/gore/fur, no photorealism, no flat vector/clip-art look, no ground shadow, no background, no glow haze beyond silhouette, no text, no frame, no extra monsters, no sprite sheet. Real transparent background.\nSubject: A CONSTRUCTION-FENCE CHARGING SERPENT: thick compact continuous coiled snake clad in a few overlapping yellow-and-black construction fence panels like broad scales, clear warning stripes, big fierce yellow eyes, one small red warning beacon on its head like a horn. No limbs.\nInput images: image 1 hero style reference only; images 2-5 monster style references. Match their bold contour thickness and large expressive eyes. Canvas: approximately 1216 x 1293 portrait; centered creature spans about 80% width with ample empty margin above and below. Two-tone cel shade per material with small crisp highlights. Any luminous parts use solid crisp color shapes, never bloom or fuzzy glow.",
+      "generatedSource": "C:\\Users\\geniu\\.codex\\generated_images\\01a124d6-7218-7b52-9121-8cd64e708621\\exec-6327f127-389d-4023-8216-d61b678b33c8.png",
+      "referenced_image_paths": [
+        "C:/Users/geniu/Documents/GitHub/Seoul-Hero/godot/assets/characters-sd/song_sd_01.png",
+        "C:/Users/geniu/Documents/GitHub/Seoul-Hero/godot/assets/monsters-sd/crawler_sd_01.png",
+        "C:/Users/geniu/Documents/GitHub/Seoul-Hero/godot/assets/monsters-sd/charger_sd_01.png",
+        "C:/Users/geniu/Documents/GitHub/Seoul-Hero/godot/assets/monsters-sd/glassJelly_sd_01.png",
+        "C:/Users/geniu/Documents/GitHub/Seoul-Hero/godot/assets/monsters-sd/gatekeeper_sd_01.png"
+      ],
+      "transparent_background": true
+    },
+    {
+      "id": "riverEel",
+      "name": "한강 안개장어",
+      "file": "riverEel_sd_01.png",
+      "prompt": "Use case: stylized-concept. Asset type: ONE legless monster sprite PNG for Seoul Hero, cute but threatening SD survivor game. Reference images are the game's SD hero and existing monsters: match their crisp bold rounded near-black line art, simple clean cel-shaded two-tone color blocks, saturated clear colors and toy-like readability, not the hero's humanoid anatomy. The creature is an urban gate monster born in present-day Seoul; its everyday-city motif must be obvious at a glance. Composition: full isolated single creature centered, front three-quarter view from a little above, all parts fully visible, generous transparent margin, big readable eyes with an angry or sly expression, role readable at 40px. One coherent compact silhouette with few broad shapes. Every monster MUST have ZERO legs, ZERO feet, ZERO shoes, ZERO human walking joints, ZERO arms/hands; only the wings, fins, tails, ribbons or continuous body named in the subject are allowed. Not babyish: no smiley faces, no blush stickers, no pastel candy look, no round button eyes without brows. No painterly or semi-realistic rendering, no soft airbrush gradients, no heavy surface texture, no muted gold/navy ornament palette, no realistic horror/gore/fur, no photorealism, no flat vector/clip-art look, no ground shadow, no background, no glow haze beyond silhouette, no text, no frame, no extra monsters, no sprite sheet. Real transparent background.\nSubject: A HAN RIVER MIST EEL: compact fast-dodging S-curved turquoise water eel with large sharp amber eyes, continuous tapering body, broad short fins marked with simple Seoul bridge-railing bars, one clean pale cyan water-mist ribbon wraps tightly around its body, crisply bounded ribbon not atmospheric haze.\nInput images: image 1 hero style reference only; images 2-5 monster style references. Match their bold contour thickness and large expressive eyes. Canvas: approximately 1216 x 1293 portrait; centered creature spans about 80% width with ample empty margin above and below. Two-tone cel shade per material with small crisp highlights. Any luminous parts use solid crisp color shapes, never bloom or fuzzy glow.",
+      "generatedSource": "C:\\Users\\geniu\\.codex\\generated_images\\01a124d6-7218-7b52-9121-8cd64e708621\\exec-53d2301b-bb06-46f5-b375-7d0daa6ed4ac.png",
+      "referenced_image_paths": [
+        "C:/Users/geniu/Documents/GitHub/Seoul-Hero/godot/assets/characters-sd/song_sd_01.png",
+        "C:/Users/geniu/Documents/GitHub/Seoul-Hero/godot/assets/monsters-sd/crawler_sd_01.png",
+        "C:/Users/geniu/Documents/GitHub/Seoul-Hero/godot/assets/monsters-sd/charger_sd_01.png",
+        "C:/Users/geniu/Documents/GitHub/Seoul-Hero/godot/assets/monsters-sd/glassJelly_sd_01.png",
+        "C:/Users/geniu/Documents/GitHub/Seoul-Hero/godot/assets/monsters-sd/gatekeeper_sd_01.png"
+      ],
+      "transparent_background": true
+    }
+  ]
+}

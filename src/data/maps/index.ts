@@ -1,27 +1,56 @@
-import type { MapData } from '../types';
+import { WEEKLY_MONSTER } from '../gateProgression';
+import type { MapData, Wave } from '../types';
 
-/** Base threats arrive every two Waves; secondary variants join on intervening Waves. */
-const enemyRoster = [
-  { firstWave: 1, enemyId: 'crawler', weight: 3 },
-  { firstWave: 1, enemyId: 'swarm', weight: 2 },
-  { firstWave: 3, enemyId: 'runner', weight: 2 },
-  { firstWave: 4, enemyId: 'copperCrab', weight: 0.65 },
-  { firstWave: 5, enemyId: 'spitter', weight: 1 },
-  { firstWave: 6, enemyId: 'signalMoth', weight: 0.65 },
-  { firstWave: 7, enemyId: 'bulwark', weight: 1 },
-  { firstWave: 8, enemyId: 'ironBoar', weight: 0.65 },
-  { firstWave: 9, enemyId: 'charger', weight: 1 },
-  { firstWave: 11, enemyId: 'bomber', weight: 1 },
-  { firstWave: 12, enemyId: 'glassJelly', weight: 0.65 },
-  { firstWave: 13, enemyId: 'splitter', weight: 1 },
-  { firstWave: 15, enemyId: 'mender', weight: 1 },
-  { firstWave: 16, enemyId: 'chainWarden', weight: 0.65 },
-  { firstWave: 17, enemyId: 'summoner', weight: 1 },
-  { firstWave: 19, enemyId: 'sentinel', weight: 1 },
-] as const;
+/** One row per Wave. Slots are [enemyId, weight%]; the first slot is that Wave's lead threat. */
+type WaveRoster = readonly (readonly [enemyId: string, weight: number])[];
+type FeaturedElites = Readonly<Record<number, NonNullable<Wave['elites']>>>;
+type Surges = Readonly<Record<number, NonNullable<Wave['surge']>>>;
 
-const enemiesFor = (wave: number): { enemyId: string; weight: number }[] =>
-  enemyRoster.filter(enemy => enemy.firstWave <= wave).map(({ enemyId, weight }) => ({ enemyId, weight }));
+// 광화문 keeps the same four regulars at every floor: 균열체 (근거리), 마탄 사수 (원거리),
+// 질주체 (돌진), 철갑 점액 (땅울림). Swap this table to give another map its own cast.
+// The weekly monster (gateProgression.ts) takes the lead slot of Waves 3/6/9/12/15/18.
+const seoulRoster: readonly WaveRoster[] = [
+  [['crawler', 100]],
+  [['runner', 30], ['crawler', 70]],
+  [['crawler', 65], ['runner', 35]],
+  [['spitter', 30], ['crawler', 50], ['runner', 20]],
+  [['runner', 40], ['crawler', 40], ['spitter', 20]],
+  [['bulwark', 15], ['crawler', 50], ['runner', 20], ['spitter', 15]],
+  [['spitter', 35], ['crawler', 45], ['runner', 20]],
+  [['bulwark', 20], ['crawler', 40], ['runner', 25], ['spitter', 15]],
+  [['runner', 45], ['crawler', 30], ['spitter', 25]],
+  [['spitter', 40], ['crawler', 30], ['bulwark', 15], ['runner', 15]],
+  [['bulwark', 25], ['crawler', 35], ['runner', 25], ['spitter', 15]],
+  [['runner', 40], ['spitter', 30], ['crawler', 30]],
+  [['spitter', 40], ['bulwark', 20], ['crawler', 25], ['runner', 15]],
+  [['crawler', 40], ['runner', 30], ['spitter', 20], ['bulwark', 10]],
+  [['bulwark', 30], ['runner', 30], ['spitter', 25], ['crawler', 15]],
+  [['runner', 40], ['spitter', 35], ['bulwark', 15], ['crawler', 10]],
+  [['spitter', 40], ['bulwark', 25], ['runner', 25], ['crawler', 10]],
+  [['bulwark', 35], ['runner', 30], ['spitter', 25], ['crawler', 10]],
+  [['runner', 30], ['spitter', 30], ['bulwark', 30], ['crawler', 10]],
+  // Boss Wave: the regulars keep coming beside the boss and its two elites.
+  [['runner', 30], ['spitter', 30], ['bulwark', 30], ['crawler', 10]],
+];
+
+// Every Run draws one of these for all its elite Waves; the first is the fallback body.
+const seoulElitePool = ['charger', 'haetaeHead'];
+
+// hp is the depth-1 max HP of each elite, whichever body the Run drew: Wave 7 is about
+// 30% of the gatekeeper, Wave 14 keeps the former 1550 total across its pair.
+const featuredElite = (at: number, hp: number): NonNullable<Wave['elites']>[number] =>
+  ({ at, enemyId: seoulElitePool[0]!, hpMultiplier: 1, hp, rewardMultiplier: 1, featured: true });
+const seoulFeaturedElites: FeaturedElites = {
+  7: [featuredElite(10, 1560)],
+  14: [featuredElite(8, 775), featuredElite(14, 775)],
+  20: [featuredElite(10, 1000), featuredElite(18, 1000)],
+};
+
+const seoulSurges: Surges = {
+  14: { name: '균열 폭주', lastSeconds: 15, spawnMultiplier: 1.5, rewardMultiplier: 1.5 },
+};
+
+const seoulDurations = [30, 30, 35, 35, 40, 40, 40, 40, 45, 45, 45, 45, 50, 50, 50, 50, 55, 55, 55, 70];
 
 // Preserve a near-linear spawn rate even when the per-tick batch grows.
 const spawnFor = (wave: number) => {
@@ -32,7 +61,20 @@ const spawnFor = (wave: number) => {
     batch, maxEnemies: Math.round(Math.round(63 + (wave - 1) * 8.5) * 0.7) };
 };
 
-// Duration/interval are seconds. Enemy composition and elite timing remain per-Wave data.
+// Duration/interval are seconds. The last row becomes the boss Wave and spawns at the density of the Wave before it.
+const buildWaves = (roster: readonly WaveRoster[], durations: readonly number[], boss: { enemyId: string; name: string }, featured: FeaturedElites = {}, surges: Surges = {}): Wave[] =>
+  roster.map((slots, index) => {
+    const waveNumber = index + 1, last = waveNumber === roster.length;
+    return {
+      id: `wave_${waveNumber}`, name: last ? boss.name : `${waveNumber}차 침식`, waveNumber, duration: durations[index]!,
+      ...spawnFor(last ? waveNumber - 1 : waveNumber),
+      enemies: slots.map(([enemyId, weight]) => ({ enemyId, weight })),
+      ...(featured[waveNumber] ? { elites: featured[waveNumber] } : {}),
+      ...(surges[waveNumber] ? { surge: surges[waveNumber] } : {}),
+      ...(last ? { boss: { enemyId: boss.enemyId } } : {}),
+    };
+  });
+
 export const maps: Record<string, MapData> = {
   seoul: {
     id: "seoul",
@@ -51,30 +93,9 @@ export const maps: Record<string, MapData> = {
     clearReward: 200,
     // Canonical 100% stage. Future maps express differences relative to these values.
     balanceModifiers: { enemyHp: 1, enemyDamage: 1, enemySpeed: 1, spawnDensity: 1, rewards: 1 },
-    waveDefinitions: [
-      {"id":"wave_1","name":"1차 침식","waveNumber":1,"duration":30,...spawnFor(1),"enemies":enemiesFor(1)},
-      {"id":"wave_2","name":"2차 침식","waveNumber":2,"duration":30,...spawnFor(2),"enemies":enemiesFor(2)},
-      {"id":"wave_3","name":"3차 침식","waveNumber":3,"duration":35,...spawnFor(3),"enemies":enemiesFor(3)},
-      {"id":"wave_4","name":"4차 침식","waveNumber":4,"duration":35,...spawnFor(4),"enemies":enemiesFor(4)},
-      {"id":"wave_5","name":"5차 침식","waveNumber":5,"duration":40,...spawnFor(5),"enemies":enemiesFor(5),"elites":[{"at":12,"enemyId":"crawler","hpMultiplier":1,"rewardMultiplier":1,"modifiers":["GIANT"]}]},
-      {"id":"wave_6","name":"6차 침식","waveNumber":6,"duration":40,...spawnFor(6),"enemies":enemiesFor(6)},
-      {"id":"wave_7","name":"7차 침식","waveNumber":7,"duration":40,...spawnFor(7),"enemies":enemiesFor(7)},
-      {"id":"wave_8","name":"8차 침식","waveNumber":8,"duration":40,...spawnFor(8),"enemies":enemiesFor(8)},
-      {"id":"wave_9","name":"9차 침식","waveNumber":9,"duration":45,...spawnFor(9),"enemies":enemiesFor(9)},
-      {"id":"wave_10","name":"10차 침식","waveNumber":10,"duration":45,...spawnFor(10),"enemies":enemiesFor(10),"elites":[{"at":15,"enemyId":"bulwark","hpMultiplier":1.35,"rewardMultiplier":1,"modifiers":["ARMORED"]}]},
-      {"id":"wave_11","name":"11차 침식","waveNumber":11,"duration":45,...spawnFor(11),"enemies":enemiesFor(11)},
-      {"id":"wave_12","name":"12차 침식","waveNumber":12,"duration":45,...spawnFor(12),"enemies":enemiesFor(12)},
-      {"id":"wave_13","name":"13차 침식","waveNumber":13,"duration":50,...spawnFor(13),"enemies":enemiesFor(13)},
-      {"id":"wave_14","name":"14차 침식","waveNumber":14,"duration":50,...spawnFor(14),"enemies":enemiesFor(14)},
-      {"id":"wave_15","name":"15차 침식","waveNumber":15,"duration":50,...spawnFor(15),"enemies":enemiesFor(15),"elites":[{"at":18,"enemyId":"runner","hpMultiplier":2,"rewardMultiplier":1,"modifiers":["BERSERK","REGENERATING"]}]},
-      {"id":"wave_16","name":"16차 침식","waveNumber":16,"duration":50,...spawnFor(16),"enemies":enemiesFor(16)},
-      {"id":"wave_17","name":"17차 침식","waveNumber":17,"duration":55,...spawnFor(17),"enemies":enemiesFor(17)},
-      {"id":"wave_18","name":"18차 침식","waveNumber":18,"duration":55,...spawnFor(18),"enemies":enemiesFor(18)},
-      {"id":"wave_19","name":"19차 침식","waveNumber":19,"duration":55,...spawnFor(19),"enemies":enemiesFor(19)},
-      {"id":"wave_20","name":"게이트 파수꾼","waveNumber":20,"duration":70,...spawnFor(20),"enemies":enemiesFor(20),"boss":{"enemyId":"gatekeeper"}},
-    ],
+    elitePool: seoulElitePool,
+    // Monsters met on this map; archived ones stay out of its archive pages.
+    archiveContent: { enemyIds: ['crawler', 'spitter', 'runner', 'bulwark', ...seoulElitePool, 'gatekeeper', ...(WEEKLY_MONSTER.enabled ? WEEKLY_MONSTER.pool : [])] },
+    waveDefinitions: buildWaves(seoulRoster, seoulDurations, { enemyId: 'gatekeeper', name: '게이트 파수꾼' }, seoulFeaturedElites, seoulSurges),
   },
 };
-
-
-

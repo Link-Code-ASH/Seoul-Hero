@@ -1,0 +1,222 @@
+{
+  "tool": "built-in image_gen",
+  "approvalPending": false,
+  "productionConnected": true,
+  "source": {
+    "file": "controls-generated.png",
+    "size": [
+      1774,
+      887
+    ],
+    "sha256": "3c5648ee268393fb9fd779c300b67f7105fd45e4699cadc24abb992100146b01"
+  },
+  "references": [
+    "operations-standard-01/runtime/screens/approved-title.png",
+    "operations-standard-01/runtime/screens/qa-shop-weapons.png"
+  ],
+  "roles": {
+    "back": {
+      "file": "back-4x.png",
+      "native_file": "back-native.png",
+      "rect": [
+        0,
+        0,
+        176,
+        176
+      ],
+      "slice": [
+        24,
+        24,
+        24,
+        24
+      ],
+      "asset_scale": 4,
+      "safe_padding": [
+        8,
+        6,
+        8,
+        6
+      ],
+      "source_roi": [
+        208,
+        173,
+        496,
+        453
+      ],
+      "native_size": [
+        288,
+        280
+      ],
+      "master_size": [
+        176,
+        176
+      ],
+      "preparation": "Crop + height normalization + raster nine-slice horizontal assembly. Generated rims preserved; not new generated 4K detail."
+    },
+    "secondary": {
+      "file": "secondary-4x.png",
+      "native_file": "secondary-native.png",
+      "rect": [
+        0,
+        0,
+        1488,
+        176
+      ],
+      "slice": [
+        24,
+        24,
+        24,
+        24
+      ],
+      "asset_scale": 4,
+      "safe_padding": [
+        6,
+        4,
+        6,
+        4
+      ],
+      "source_roi": [
+        703,
+        190,
+        1675,
+        434
+      ],
+      "native_size": [
+        972,
+        244
+      ],
+      "master_size": [
+        1488,
+        176
+      ],
+      "preparation": "Crop + height normalization + raster nine-slice horizontal assembly. Generated rims preserved; not new generated 4K detail."
+    },
+    "tab": {
+      "file": "tab-4x.png",
+      "native_file": "tab-native.png",
+      "rect": [
+        0,
+        0,
+        1488,
+        176
+      ],
+      "slice": [
+        24,
+        24,
+        24,
+        24
+      ],
+      "asset_scale": 4,
+      "safe_padding": [
+        8,
+        4,
+        8,
+        4
+      ],
+      "source_roi": [
+        38,
+        554,
+        859,
+        757
+      ],
+      "native_size": [
+        821,
+        203
+      ],
+      "master_size": [
+        1488,
+        176
+      ],
+      "preparation": "Crop + height normalization + raster nine-slice horizontal assembly. Generated rims preserved; not new generated 4K detail."
+    },
+    "primary": {
+      "file": "primary-4x.png",
+      "native_file": "primary-native.png",
+      "rect": [
+        0,
+        0,
+        1488,
+        176
+      ],
+      "slice": [
+        24,
+        24,
+        24,
+        24
+      ],
+      "asset_scale": 4,
+      "safe_padding": [
+        10,
+        4,
+        10,
+        4
+      ],
+      "source_roi": [
+        909,
+        554,
+        1730,
+        757
+      ],
+      "native_size": [
+        821,
+        203
+      ],
+      "master_size": [
+        1488,
+        176
+      ],
+      "preparation": "Crop + height normalization + raster nine-slice horizontal assembly. Generated rims preserved; not new generated 4K detail."
+    },
+    "tab_selected": {
+      "file": "tab-4x.png",
+      "native_file": "tab-native.png",
+      "rect": [
+        0,
+        0,
+        1488,
+        176
+      ],
+      "slice": [
+        24,
+        24,
+        24,
+        24
+      ],
+      "asset_scale": 4,
+      "safe_padding": [
+        8,
+        4,
+        8,
+        4
+      ],
+      "source_roi": [
+        38,
+        554,
+        859,
+        757
+      ],
+      "native_size": [
+        821,
+        203
+      ],
+      "master_size": [
+        1488,
+        176
+      ],
+      "preparation": "Crop + height normalization + raster nine-slice horizontal assembly. Generated rims preserved; not new generated 4K detail.",
+      "tint": [
+        0.82,
+        1.0,
+        0.94,
+        1.0
+      ]
+    }
+  },
+  "preserved": "Large operations information frames, store-specific art, content, callbacks, saves, balance, and fonts.",
+  "approval": {
+    "date": "2026-10-05",
+    "userMessage": "구현해",
+    "preview": "design/ui-image-skins/operations-light-controls-02/index.html"
+  },
+  "previewOrigin": "design/ui-image-skins/operations-light-controls-02"
+}

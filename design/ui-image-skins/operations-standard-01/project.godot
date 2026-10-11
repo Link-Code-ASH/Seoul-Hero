@@ -1,0 +1,16 @@
+; Approval-only UI project. No gameplay/save/audio autoloads.
+config_version=5
+[application]
+config/name="Seoul Hero Operations UI Standards Draft"
+run/main_scene="res://main.tscn"
+[display]
+window/size/viewport_width=915
+window/size/viewport_height=412
+window/size/window_width_override=915
+window/size/window_height_override=412
+window/stretch/mode="canvas_items"
+window/stretch/aspect="keep"
+[rendering]
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+textures/default_filters/use_nearest_mipmap_filter=false

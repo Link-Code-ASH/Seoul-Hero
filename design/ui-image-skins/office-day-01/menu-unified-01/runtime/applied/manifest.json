@@ -1,0 +1,2157 @@
+{
+  "checks": [
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Applied captures use the production presentation default"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Applied surfaces use internal runtime assets"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "settings viewport"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "archive-characters viewport"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "archive-weapons viewport"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "archive-enemies viewport"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "archive-items viewport"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "archive-weeklyRules viewport"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "archive-blessings viewport"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "association-draw viewport"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "association-upgrade viewport"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "gate-map viewport"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "gate-floor viewport"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "gate-character viewport"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "gate-weapon viewport"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "gate-blessing viewport"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "gate-formation viewport"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Four native volume sliders"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Volume callback updates only synthetic memory"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "settings-slider viewport"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Archive native category callback"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Archive native item callback"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Archive detail tab callback"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "archive-weapon-detail viewport"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Archive list scroll works"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "archive-items-scroll viewport"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Insufficient funds disable draw"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "association-no-funds viewport"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Complete collection disables draw"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "association-complete viewport"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "association-locked viewport"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Unlocked one-time content disables purchase"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "association-unlocked viewport"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Rejected transaction does not commit or debit: character insufficient funds"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Rejected transaction does not commit or debit: character fully collected"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Failed synthetic commit rolls back: character"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Rejected transaction does not commit or debit: weapon insufficient funds"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Rejected transaction does not commit or debit: weapon fully collected"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Failed synthetic commit rolls back: weapon"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Rejected transaction does not commit or debit: blessing insufficient funds"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Rejected transaction does not commit or debit: blessing fully collected"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Failed synthetic commit rolls back: blessing"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Rejected transaction does not commit or debit: vitality insufficient funds"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Failed synthetic commit rolls back: vitality"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Rejected transaction does not commit or debit: circuit insufficient funds"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Failed synthetic commit rolls back: circuit"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Rejected transaction does not commit or debit: one-time unlock already complete"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Synthetic transaction commits once: character"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Synthetic transaction debits exactly once: character"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Draw unlocks the deterministic unowned character"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Applied association feedback controller exists"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Association feedback reports busy"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Rapid native requests during feedback preserve wallet and selection"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "association-character-draw-intro viewport"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "First confirm reveals without closing: character"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "association-character-draw-result viewport"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Second confirm closes without another payout: character"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "First Escape reveals the active result: character"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Second Escape closes the result: character"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Focus loss settles silently: character"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "association-character-focus-settled viewport"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Focus return does not restart draw intro: character"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Synthetic transaction commits once: weapon"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Synthetic transaction debits exactly once: weapon"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Draw unlocks the deterministic unowned weapon"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Applied association feedback controller exists"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Association feedback reports busy"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Rapid native requests during feedback preserve wallet and selection"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "association-weapon-draw-intro viewport"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "First confirm reveals without closing: weapon"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "association-weapon-draw-result viewport"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Second confirm closes without another payout: weapon"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "First Escape reveals the active result: weapon"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Second Escape closes the result: weapon"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Focus loss settles silently: weapon"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "association-weapon-focus-settled viewport"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Focus return does not restart draw intro: weapon"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Synthetic transaction commits once: blessing"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Synthetic transaction debits exactly once: blessing"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Draw unlocks the deterministic unowned blessing"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Applied association feedback controller exists"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Association feedback reports busy"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Rapid native requests during feedback preserve wallet and selection"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "association-blessing-draw-intro viewport"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "First confirm reveals without closing: blessing"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "association-blessing-draw-result viewport"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Second confirm closes without another payout: blessing"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "First Escape reveals the active result: blessing"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Second Escape closes the result: blessing"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Focus loss settles silently: blessing"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "association-blessing-focus-settled viewport"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Focus return does not restart draw intro: blessing"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Synthetic transaction commits once: vitality"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Synthetic transaction debits exactly once: vitality"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Applied association feedback controller exists"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Upgrade feedback starts busy: vitality"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Rapid upgrade request preserves one committed result: vitality"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "association-upgrade-vitality-progress viewport"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Upgrade unlocks input after 0.8 seconds: vitality"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "association-upgrade-vitality-complete viewport"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Synthetic transaction commits once: circuit"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Synthetic transaction debits exactly once: circuit"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Applied association feedback controller exists"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Upgrade feedback starts busy: circuit"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Rapid upgrade request preserves one committed result: circuit"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "association-upgrade-circuit-progress viewport"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Upgrade unlocks input after 0.8 seconds: circuit"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "association-upgrade-circuit-complete viewport"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Gate next preserves six-step route"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Floor page callback selects 21"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "gate-floor-page viewport"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Locked character inspection preserves selected item"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Locked character blocks next"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "gate-character-locked viewport"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Locked weapon inspection preserves selected item"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Locked weapon blocks next"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "gate-weapon-locked viewport"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Locked blessing inspection preserves selected item"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Locked blessing blocks next"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "gate-blessing-locked viewport"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Blessing none remains selectable"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "gate-blessing-none viewport"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Blessing none advances to formation"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "gate-formation-none viewport"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Formation edits character"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Formation edits weapon"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Formation edits blessing"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Native previous returns to prior gate step"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "First gate back returns to lobby"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "gate-primary-hover viewport"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "gate-primary-pressed viewport"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Pressed input rectangle stays fixed"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "gate-primary-restored viewport"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Pressed face returns to resting position"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "gate-primary-focus viewport"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Native focus uses no default box"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Applied gate omits standalone subtitle and footer explanation"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "No gameplay or user file action during preview"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Synthetic transaction commits once: blessing"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Synthetic transaction debits exactly once: blessing"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Applied association feedback controller exists"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Synthetic transaction commits once: vitality"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Synthetic transaction debits exactly once: vitality"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Applied association feedback controller exists"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Synthetic transaction commits once: circuit"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Synthetic transaction debits exactly once: circuit"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Applied association feedback controller exists"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "No save writes"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "No combat started"
+    }
+  ],
+  "combatStarted": false,
+  "fixedWeek": 2961,
+  "motionDurationMs": 6000,
+  "motionFrames": 90,
+  "presentationEnabled": true,
+  "presentationOverride": false,
+  "productionMainScene": true,
+  "productionPresentationDefault": true,
+  "profile": {
+    "account": {
+      "unlockedFeatureIds": [],
+      "unlockedItemIds": [],
+      "unlockedMapIds": [
+        "seoul"
+      ]
+    },
+    "association": {
+      "upgrades": {}
+    },
+    "blessings": {
+      "cheonbuOath": {
+        "fragments": 0,
+        "level": 1,
+        "unlocked": true
+      },
+      "goblinForge": {
+        "fragments": 0,
+        "level": 0,
+        "unlocked": false
+      },
+      "harvestKnot": {
+        "fragments": 0,
+        "level": 0,
+        "unlocked": false
+      },
+      "reverseScale": {
+        "fragments": 0,
+        "level": 0,
+        "unlocked": false
+      },
+      "samjogoWing": {
+        "fragments": 0,
+        "level": 0,
+        "unlocked": false
+      },
+      "unyieldingJangseung": {
+        "fragments": 0,
+        "level": 0,
+        "unlocked": false
+      },
+      "whiteTigerEye": {
+        "fragments": 0,
+        "level": 0,
+        "unlocked": false
+      }
+    },
+    "characters": {
+      "awakener": {
+        "breakthrough": 0,
+        "fragments": 0.0,
+        "unlocked": true
+      },
+      "kangTaehoon": {
+        "breakthrough": 0,
+        "fragments": 0.0,
+        "unlocked": true
+      },
+      "parkDojun": {
+        "breakthrough": 0,
+        "fragments": 0.0,
+        "unlocked": true
+      },
+      "yoonHarin": {
+        "breakthrough": 0,
+        "fragments": 0.0,
+        "unlocked": true
+      }
+    },
+    "daily": {
+      "claimedDayKey": -1,
+      "streak": 0
+    },
+    "gateProgression": {
+      "characters": {
+        "awakener": {
+          "bestWaveByDepth": {
+            "8": 12
+          },
+          "highestClearedDepth": 7,
+          "rewardedThroughDepth": 7
+        }
+      },
+      "firstClears": {},
+      "highestUnlockedDepth": 25
+    },
+    "guild": {
+      "blueprints": [],
+      "characterAffixes": {},
+      "employees": [
+        {
+          "assignment": "",
+          "experience": 0.0,
+          "id": "staffSeoYeon",
+          "level": 1
+        },
+        {
+          "assignment": "",
+          "experience": 0.0,
+          "id": "staffMinJae",
+          "level": 1
+        }
+      ],
+      "excludedItemIds": [],
+      "excludedWeaponIds": [],
+      "facilities": {
+        "analysis": {
+          "level": 0,
+          "slot": -1
+        },
+        "expedition": {
+          "level": 0,
+          "slot": -1
+        },
+        "office": {
+          "level": 1,
+          "slot": 0
+        },
+        "production": {
+          "level": 0,
+          "slot": -1
+        },
+        "recovery": {
+          "level": 0,
+          "slot": -1
+        },
+        "research": {
+          "level": 0,
+          "slot": -1
+        },
+        "revival": {
+          "level": 0,
+          "slot": -1
+        },
+        "workshop": {
+          "level": 0,
+          "slot": -1
+        }
+      },
+      "itemLevels": {},
+      "jobs": [],
+      "lastAdvancedAt": 0.0,
+      "nextJobId": 1,
+      "pendingAffix": {},
+      "pendingRewards": {
+        "bioReagents": 0,
+        "blessingFragments": {},
+        "blueprintIds": [],
+        "characterFragments": {},
+        "coins": 0,
+        "constructionParts": 0,
+        "electronicParts": 0,
+        "manaCatalysts": 0,
+        "materials": 0,
+        "researchData": 0,
+        "revivalStones": {
+          "high": 0,
+          "low": 0,
+          "mid": 0
+        },
+        "speedupTickets": 0,
+        "supplyTickets": 0,
+        "weaponFragments": {}
+      },
+      "productionAccumulated": 0.0,
+      "productionCarry": {
+        "blessingFragments": {},
+        "characterFragments": {},
+        "coins": 0.0,
+        "weaponFragments": {}
+      },
+      "productionTargets": {
+        "blessingId": "cheonbuOath",
+        "characterId": "awakener",
+        "weaponId": "manaBolt"
+      },
+      "researchLevels": {},
+      "unlockedFloors": 1,
+      "unlockedRecipeIds": [],
+      "wallet": {
+        "bioReagents": 2.0,
+        "coins": 200.0,
+        "constructionParts": 12.0,
+        "electronicParts": 8.0,
+        "manaCatalysts": 4.0,
+        "materials": 100.0,
+        "researchData": 20.0,
+        "speedupTickets": 0.0
+      }
+    },
+    "offlineReward": {
+      "accumulatedSeconds": 0.0,
+      "lastAccruedAt": 0.0,
+      "lastClaimedAt": "",
+      "lastExitAt": "",
+      "pendingRewards": {
+        "associationCoins": 0.0,
+        "bioReagents": 0,
+        "blessingFragments": {},
+        "characterFragments": {},
+        "coins": 0,
+        "constructionParts": 0,
+        "electronicParts": 0,
+        "manaCatalysts": 0,
+        "materials": 0,
+        "researchData": 0,
+        "revivalStones": {
+          "high": 0.0,
+          "low": 0.0,
+          "mid": 0.0
+        },
+        "speedupTickets": 0,
+        "supplyTickets": 0.0,
+        "weaponFragments": {}
+      },
+      "rewardCarry": {},
+      "rewardedIntervals": 0
+    },
+    "settings": {
+      "combatVolume": 0.72,
+      "developerMode": false,
+      "highResolution": true,
+      "masterVolume": 0.8,
+      "musicVolume": 0.5,
+      "muted": false,
+      "soundVolume": 0.8,
+      "uiVolume": 0.78
+    },
+    "sharedWeapons": {
+      "autoTurret": {
+        "fragments": 0,
+        "level": 0,
+        "unlocked": false
+      },
+      "chainLightning": {
+        "fragments": 0,
+        "level": 0,
+        "unlocked": true
+      },
+      "guardianDaggers": {
+        "fragments": 0,
+        "level": 0,
+        "unlocked": true
+      },
+      "manaBolt": {
+        "fragments": 0.0,
+        "level": 0,
+        "unlocked": true
+      },
+      "manaBombard": {
+        "fragments": 0,
+        "level": 0,
+        "unlocked": true
+      },
+      "manaField": {
+        "fragments": 0,
+        "level": 0,
+        "unlocked": false
+      },
+      "manaShotgun": {
+        "fragments": 0.0,
+        "level": 0,
+        "unlocked": true
+      },
+      "manaSword": {
+        "fragments": 0,
+        "level": 0,
+        "unlocked": true
+      },
+      "mineLayer": {
+        "fragments": 0,
+        "level": 0,
+        "unlocked": false
+      },
+      "piercingShot": {
+        "fragments": 0,
+        "level": 0,
+        "unlocked": true
+      }
+    },
+    "statistics": {
+      "bestTime": 0.0,
+      "bestWave": 0.0,
+      "byCharacter": {},
+      "byMap": {},
+      "clears": 0.0,
+      "kills": 0.0,
+      "runs": 0.0
+    },
+    "supply": {
+      "boxes": {}
+    },
+    "wallet": {
+      "associationCoins": 1850,
+      "revivalStones": {
+        "high": 0.0,
+        "low": 0.0,
+        "mid": 0.0
+      },
+      "supplyTickets": 0.0
+    },
+    "weeklyGate": {
+      "remainingRuleIds": [],
+      "ruleId": "hardened",
+      "weekKey": "2961"
+    }
+  },
+  "representativeOnly": false,
+  "saveWrites": false,
+  "seed": 20261011,
+  "shots": [
+    {
+      "archive": {
+        "group": "characters",
+        "growthPage": 0,
+        "id": "awakener",
+        "map": "seoul",
+        "page": 0,
+        "scroll": 0
+      },
+      "associationId": "",
+      "coins": 1850,
+      "draft": {
+        "blessing": "cheonbuOath",
+        "character": "awakener",
+        "depth": 1,
+        "map": "seoul",
+        "weapon": "manaBolt",
+        "week": 2961,
+        "weekly": "hardened"
+      },
+      "file": "settings.png",
+      "gateStep": 0,
+      "screen": "settings"
+    },
+    {
+      "archive": {
+        "group": "characters",
+        "growthPage": 0,
+        "id": "awakener",
+        "map": "seoul",
+        "page": 0,
+        "scroll": 0
+      },
+      "associationId": "",
+      "coins": 1850,
+      "draft": {
+        "blessing": "cheonbuOath",
+        "character": "awakener",
+        "depth": 1,
+        "map": "seoul",
+        "weapon": "manaBolt",
+        "week": 2961,
+        "weekly": "hardened"
+      },
+      "file": "archive-characters.png",
+      "gateStep": 0,
+      "screen": "archive"
+    },
+    {
+      "archive": {
+        "group": "weapons",
+        "growthPage": 0,
+        "id": "manaSword",
+        "map": "seoul",
+        "page": 0,
+        "scroll": 0
+      },
+      "associationId": "",
+      "coins": 1850,
+      "draft": {
+        "blessing": "cheonbuOath",
+        "character": "awakener",
+        "depth": 1,
+        "map": "seoul",
+        "weapon": "manaBolt",
+        "week": 2961,
+        "weekly": "hardened"
+      },
+      "file": "archive-weapons.png",
+      "gateStep": 0,
+      "screen": "archive"
+    },
+    {
+      "archive": {
+        "group": "enemies",
+        "growthPage": 0,
+        "id": "crawler",
+        "map": "seoul",
+        "page": 0,
+        "scroll": 0
+      },
+      "associationId": "",
+      "coins": 1850,
+      "draft": {
+        "blessing": "cheonbuOath",
+        "character": "awakener",
+        "depth": 1,
+        "map": "seoul",
+        "weapon": "manaBolt",
+        "week": 2961,
+        "weekly": "hardened"
+      },
+      "file": "archive-enemies.png",
+      "gateStep": 0,
+      "screen": "archive"
+    },
+    {
+      "archive": {
+        "group": "items",
+        "growthPage": 0,
+        "id": "energyDrink",
+        "map": "seoul",
+        "page": 0,
+        "scroll": 0
+      },
+      "associationId": "",
+      "coins": 1850,
+      "draft": {
+        "blessing": "cheonbuOath",
+        "character": "awakener",
+        "depth": 1,
+        "map": "seoul",
+        "weapon": "manaBolt",
+        "week": 2961,
+        "weekly": "hardened"
+      },
+      "file": "archive-items.png",
+      "gateStep": 0,
+      "screen": "archive"
+    },
+    {
+      "archive": {
+        "group": "weeklyRules",
+        "growthPage": 0,
+        "id": "hardened",
+        "map": "seoul",
+        "page": 0,
+        "scroll": 0
+      },
+      "associationId": "",
+      "coins": 1850,
+      "draft": {
+        "blessing": "cheonbuOath",
+        "character": "awakener",
+        "depth": 1,
+        "map": "seoul",
+        "weapon": "manaBolt",
+        "week": 2961,
+        "weekly": "hardened"
+      },
+      "file": "archive-weeklyRules.png",
+      "gateStep": 0,
+      "screen": "archive"
+    },
+    {
+      "archive": {
+        "group": "blessings",
+        "growthPage": 0,
+        "id": "cheonbuOath",
+        "map": "seoul",
+        "page": 0,
+        "scroll": 0
+      },
+      "associationId": "",
+      "coins": 1850,
+      "draft": {
+        "blessing": "cheonbuOath",
+        "character": "awakener",
+        "depth": 1,
+        "map": "seoul",
+        "weapon": "manaBolt",
+        "week": 2961,
+        "weekly": "hardened"
+      },
+      "file": "archive-blessings.png",
+      "gateStep": 0,
+      "screen": "archive"
+    },
+    {
+      "archive": {
+        "group": "blessings",
+        "growthPage": 0,
+        "id": "cheonbuOath",
+        "map": "seoul",
+        "page": 0,
+        "scroll": 0
+      },
+      "associationId": "draw:blessing",
+      "coins": 1850,
+      "draft": {
+        "blessing": "cheonbuOath",
+        "character": "awakener",
+        "depth": 1,
+        "map": "seoul",
+        "weapon": "manaBolt",
+        "week": 2961,
+        "weekly": "hardened"
+      },
+      "file": "association-draw.png",
+      "gateStep": 0,
+      "screen": "association"
+    },
+    {
+      "archive": {
+        "group": "blessings",
+        "growthPage": 0,
+        "id": "cheonbuOath",
+        "map": "seoul",
+        "page": 0,
+        "scroll": 0
+      },
+      "associationId": "vitality",
+      "coins": 1850,
+      "draft": {
+        "blessing": "cheonbuOath",
+        "character": "awakener",
+        "depth": 1,
+        "map": "seoul",
+        "weapon": "manaBolt",
+        "week": 2961,
+        "weekly": "hardened"
+      },
+      "file": "association-upgrade.png",
+      "gateStep": 0,
+      "screen": "association"
+    },
+    {
+      "archive": {
+        "group": "blessings",
+        "growthPage": 0,
+        "id": "cheonbuOath",
+        "map": "seoul",
+        "page": 0,
+        "scroll": 0
+      },
+      "associationId": "vitality",
+      "coins": 1850,
+      "draft": {
+        "blessing": "cheonbuOath",
+        "character": "awakener",
+        "depth": 1,
+        "map": "seoul",
+        "weapon": "manaBolt",
+        "week": 2961,
+        "weekly": "hardened"
+      },
+      "file": "gate-map.png",
+      "gateStep": 0,
+      "screen": "gate"
+    },
+    {
+      "archive": {
+        "group": "blessings",
+        "growthPage": 0,
+        "id": "cheonbuOath",
+        "map": "seoul",
+        "page": 0,
+        "scroll": 0
+      },
+      "associationId": "vitality",
+      "coins": 1850,
+      "draft": {
+        "blessing": "cheonbuOath",
+        "character": "awakener",
+        "depth": 1,
+        "map": "seoul",
+        "weapon": "manaBolt",
+        "week": 2961,
+        "weekly": "hardened"
+      },
+      "file": "gate-floor.png",
+      "gateStep": 1,
+      "screen": "gate"
+    },
+    {
+      "archive": {
+        "group": "blessings",
+        "growthPage": 0,
+        "id": "cheonbuOath",
+        "map": "seoul",
+        "page": 0,
+        "scroll": 0
+      },
+      "associationId": "vitality",
+      "coins": 1850,
+      "draft": {
+        "blessing": "cheonbuOath",
+        "character": "awakener",
+        "depth": 1,
+        "map": "seoul",
+        "weapon": "manaBolt",
+        "week": 2961,
+        "weekly": "hardened"
+      },
+      "file": "gate-character.png",
+      "gateStep": 2,
+      "screen": "gate"
+    },
+    {
+      "archive": {
+        "group": "blessings",
+        "growthPage": 0,
+        "id": "cheonbuOath",
+        "map": "seoul",
+        "page": 0,
+        "scroll": 0
+      },
+      "associationId": "vitality",
+      "coins": 1850,
+      "draft": {
+        "blessing": "cheonbuOath",
+        "character": "awakener",
+        "depth": 1,
+        "map": "seoul",
+        "weapon": "manaBolt",
+        "week": 2961,
+        "weekly": "hardened"
+      },
+      "file": "gate-weapon.png",
+      "gateStep": 3,
+      "screen": "gate"
+    },
+    {
+      "archive": {
+        "group": "blessings",
+        "growthPage": 0,
+        "id": "cheonbuOath",
+        "map": "seoul",
+        "page": 0,
+        "scroll": 0
+      },
+      "associationId": "vitality",
+      "coins": 1850,
+      "draft": {
+        "blessing": "cheonbuOath",
+        "character": "awakener",
+        "depth": 1,
+        "map": "seoul",
+        "weapon": "manaBolt",
+        "week": 2961,
+        "weekly": "hardened"
+      },
+      "file": "gate-blessing.png",
+      "gateStep": 4,
+      "screen": "gate"
+    },
+    {
+      "archive": {
+        "group": "blessings",
+        "growthPage": 0,
+        "id": "cheonbuOath",
+        "map": "seoul",
+        "page": 0,
+        "scroll": 0
+      },
+      "associationId": "vitality",
+      "coins": 1850,
+      "draft": {
+        "blessing": "cheonbuOath",
+        "character": "awakener",
+        "depth": 1,
+        "map": "seoul",
+        "weapon": "manaBolt",
+        "week": 2961,
+        "weekly": "hardened"
+      },
+      "file": "gate-formation.png",
+      "gateStep": 5,
+      "screen": "gate"
+    },
+    {
+      "archive": {
+        "group": "blessings",
+        "growthPage": 0,
+        "id": "cheonbuOath",
+        "map": "seoul",
+        "page": 0,
+        "scroll": 0
+      },
+      "associationId": "vitality",
+      "coins": 1850,
+      "draft": {
+        "blessing": "cheonbuOath",
+        "character": "awakener",
+        "depth": 1,
+        "map": "seoul",
+        "weapon": "manaBolt",
+        "week": 2961,
+        "weekly": "hardened"
+      },
+      "file": "settings-slider.png",
+      "gateStep": 5,
+      "screen": "settings"
+    },
+    {
+      "archive": {
+        "group": "weapons",
+        "growthPage": 0,
+        "id": "guardianDaggers",
+        "map": "seoul",
+        "page": 1,
+        "scroll": 0
+      },
+      "associationId": "vitality",
+      "coins": 1850,
+      "draft": {
+        "blessing": "cheonbuOath",
+        "character": "awakener",
+        "depth": 1,
+        "map": "seoul",
+        "weapon": "manaBolt",
+        "week": 2961,
+        "weekly": "hardened"
+      },
+      "file": "archive-weapon-detail.png",
+      "gateStep": 5,
+      "screen": "archive"
+    },
+    {
+      "archive": {
+        "group": "items",
+        "growthPage": 0,
+        "id": "energyDrink",
+        "map": "seoul",
+        "page": 0,
+        "scroll": 130
+      },
+      "associationId": "vitality",
+      "coins": 1850,
+      "draft": {
+        "blessing": "cheonbuOath",
+        "character": "awakener",
+        "depth": 1,
+        "map": "seoul",
+        "weapon": "manaBolt",
+        "week": 2961,
+        "weekly": "hardened"
+      },
+      "file": "archive-items-scroll.png",
+      "gateStep": 5,
+      "screen": "archive"
+    },
+    {
+      "archive": {
+        "group": "items",
+        "growthPage": 0,
+        "id": "energyDrink",
+        "map": "seoul",
+        "page": 0,
+        "scroll": 130
+      },
+      "associationId": "draw:blessing",
+      "coins": 0,
+      "draft": {
+        "blessing": "cheonbuOath",
+        "character": "awakener",
+        "depth": 1,
+        "map": "seoul",
+        "weapon": "manaBolt",
+        "week": 2961,
+        "weekly": "hardened"
+      },
+      "file": "association-no-funds.png",
+      "gateStep": 5,
+      "screen": "association"
+    },
+    {
+      "archive": {
+        "group": "items",
+        "growthPage": 0,
+        "id": "energyDrink",
+        "map": "seoul",
+        "page": 0,
+        "scroll": 130
+      },
+      "associationId": "draw:blessing",
+      "coins": 1850,
+      "draft": {
+        "blessing": "cheonbuOath",
+        "character": "awakener",
+        "depth": 1,
+        "map": "seoul",
+        "weapon": "manaBolt",
+        "week": 2961,
+        "weekly": "hardened"
+      },
+      "file": "association-complete.png",
+      "gateStep": 5,
+      "screen": "association"
+    },
+    {
+      "archive": {
+        "group": "items",
+        "growthPage": 0,
+        "id": "energyDrink",
+        "map": "seoul",
+        "page": 0,
+        "scroll": 130
+      },
+      "associationId": "circuit",
+      "coins": 1850,
+      "draft": {
+        "blessing": "cheonbuOath",
+        "character": "awakener",
+        "depth": 1,
+        "map": "seoul",
+        "weapon": "manaBolt",
+        "week": 2961,
+        "weekly": "hardened"
+      },
+      "file": "association-locked.png",
+      "gateStep": 5,
+      "screen": "association"
+    },
+    {
+      "archive": {
+        "group": "items",
+        "growthPage": 0,
+        "id": "energyDrink",
+        "map": "seoul",
+        "page": 0,
+        "scroll": 130
+      },
+      "associationId": "circuit",
+      "coins": 1850,
+      "draft": {
+        "blessing": "cheonbuOath",
+        "character": "awakener",
+        "depth": 1,
+        "map": "seoul",
+        "weapon": "manaBolt",
+        "week": 2961,
+        "weekly": "hardened"
+      },
+      "file": "association-unlocked.png",
+      "gateStep": 5,
+      "screen": "association"
+    },
+    {
+      "archive": {
+        "group": "items",
+        "growthPage": 0,
+        "id": "energyDrink",
+        "map": "seoul",
+        "page": 0,
+        "scroll": 130
+      },
+      "associationId": "draw:character",
+      "coins": 1450,
+      "draft": {
+        "blessing": "cheonbuOath",
+        "character": "awakener",
+        "depth": 1,
+        "map": "seoul",
+        "weapon": "manaBolt",
+        "week": 2961,
+        "weekly": "hardened"
+      },
+      "file": "association-character-draw-intro.png",
+      "gateStep": 5,
+      "screen": "association"
+    },
+    {
+      "archive": {
+        "group": "items",
+        "growthPage": 0,
+        "id": "energyDrink",
+        "map": "seoul",
+        "page": 0,
+        "scroll": 130
+      },
+      "associationId": "draw:character",
+      "coins": 1450,
+      "draft": {
+        "blessing": "cheonbuOath",
+        "character": "awakener",
+        "depth": 1,
+        "map": "seoul",
+        "weapon": "manaBolt",
+        "week": 2961,
+        "weekly": "hardened"
+      },
+      "file": "association-character-draw-result.png",
+      "gateStep": 5,
+      "screen": "association"
+    },
+    {
+      "archive": {
+        "group": "items",
+        "growthPage": 0,
+        "id": "energyDrink",
+        "map": "seoul",
+        "page": 0,
+        "scroll": 130
+      },
+      "associationId": "draw:character",
+      "coins": 1450,
+      "draft": {
+        "blessing": "cheonbuOath",
+        "character": "awakener",
+        "depth": 1,
+        "map": "seoul",
+        "weapon": "manaBolt",
+        "week": 2961,
+        "weekly": "hardened"
+      },
+      "file": "association-character-focus-settled.png",
+      "gateStep": 5,
+      "screen": "association"
+    },
+    {
+      "archive": {
+        "group": "items",
+        "growthPage": 0,
+        "id": "energyDrink",
+        "map": "seoul",
+        "page": 0,
+        "scroll": 130
+      },
+      "associationId": "draw:weapon",
+      "coins": 1650,
+      "draft": {
+        "blessing": "cheonbuOath",
+        "character": "awakener",
+        "depth": 1,
+        "map": "seoul",
+        "weapon": "manaBolt",
+        "week": 2961,
+        "weekly": "hardened"
+      },
+      "file": "association-weapon-draw-intro.png",
+      "gateStep": 5,
+      "screen": "association"
+    },
+    {
+      "archive": {
+        "group": "items",
+        "growthPage": 0,
+        "id": "energyDrink",
+        "map": "seoul",
+        "page": 0,
+        "scroll": 130
+      },
+      "associationId": "draw:weapon",
+      "coins": 1650,
+      "draft": {
+        "blessing": "cheonbuOath",
+        "character": "awakener",
+        "depth": 1,
+        "map": "seoul",
+        "weapon": "manaBolt",
+        "week": 2961,
+        "weekly": "hardened"
+      },
+      "file": "association-weapon-draw-result.png",
+      "gateStep": 5,
+      "screen": "association"
+    },
+    {
+      "archive": {
+        "group": "items",
+        "growthPage": 0,
+        "id": "energyDrink",
+        "map": "seoul",
+        "page": 0,
+        "scroll": 130
+      },
+      "associationId": "draw:weapon",
+      "coins": 1650,
+      "draft": {
+        "blessing": "cheonbuOath",
+        "character": "awakener",
+        "depth": 1,
+        "map": "seoul",
+        "weapon": "manaBolt",
+        "week": 2961,
+        "weekly": "hardened"
+      },
+      "file": "association-weapon-focus-settled.png",
+      "gateStep": 5,
+      "screen": "association"
+    },
+    {
+      "archive": {
+        "group": "items",
+        "growthPage": 0,
+        "id": "energyDrink",
+        "map": "seoul",
+        "page": 0,
+        "scroll": 130
+      },
+      "associationId": "draw:blessing",
+      "coins": 1650,
+      "draft": {
+        "blessing": "cheonbuOath",
+        "character": "awakener",
+        "depth": 1,
+        "map": "seoul",
+        "weapon": "manaBolt",
+        "week": 2961,
+        "weekly": "hardened"
+      },
+      "file": "association-blessing-draw-intro.png",
+      "gateStep": 5,
+      "screen": "association"
+    },
+    {
+      "archive": {
+        "group": "items",
+        "growthPage": 0,
+        "id": "energyDrink",
+        "map": "seoul",
+        "page": 0,
+        "scroll": 130
+      },
+      "associationId": "draw:blessing",
+      "coins": 1650,
+      "draft": {
+        "blessing": "cheonbuOath",
+        "character": "awakener",
+        "depth": 1,
+        "map": "seoul",
+        "weapon": "manaBolt",
+        "week": 2961,
+        "weekly": "hardened"
+      },
+      "file": "association-blessing-draw-result.png",
+      "gateStep": 5,
+      "screen": "association"
+    },
+    {
+      "archive": {
+        "group": "items",
+        "growthPage": 0,
+        "id": "energyDrink",
+        "map": "seoul",
+        "page": 0,
+        "scroll": 130
+      },
+      "associationId": "draw:blessing",
+      "coins": 1650,
+      "draft": {
+        "blessing": "cheonbuOath",
+        "character": "awakener",
+        "depth": 1,
+        "map": "seoul",
+        "weapon": "manaBolt",
+        "week": 2961,
+        "weekly": "hardened"
+      },
+      "file": "association-blessing-focus-settled.png",
+      "gateStep": 5,
+      "screen": "association"
+    },
+    {
+      "archive": {
+        "group": "items",
+        "growthPage": 0,
+        "id": "energyDrink",
+        "map": "seoul",
+        "page": 0,
+        "scroll": 130
+      },
+      "associationId": "vitality",
+      "coins": 1800,
+      "draft": {
+        "blessing": "cheonbuOath",
+        "character": "awakener",
+        "depth": 1,
+        "map": "seoul",
+        "weapon": "manaBolt",
+        "week": 2961,
+        "weekly": "hardened"
+      },
+      "file": "association-upgrade-vitality-progress.png",
+      "gateStep": 5,
+      "screen": "association"
+    },
+    {
+      "archive": {
+        "group": "items",
+        "growthPage": 0,
+        "id": "energyDrink",
+        "map": "seoul",
+        "page": 0,
+        "scroll": 130
+      },
+      "associationId": "vitality",
+      "coins": 1800,
+      "draft": {
+        "blessing": "cheonbuOath",
+        "character": "awakener",
+        "depth": 1,
+        "map": "seoul",
+        "weapon": "manaBolt",
+        "week": 2961,
+        "weekly": "hardened"
+      },
+      "file": "association-upgrade-vitality-complete.png",
+      "gateStep": 5,
+      "screen": "association"
+    },
+    {
+      "archive": {
+        "group": "items",
+        "growthPage": 0,
+        "id": "energyDrink",
+        "map": "seoul",
+        "page": 0,
+        "scroll": 130
+      },
+      "associationId": "circuit",
+      "coins": 1730,
+      "draft": {
+        "blessing": "cheonbuOath",
+        "character": "awakener",
+        "depth": 1,
+        "map": "seoul",
+        "weapon": "manaBolt",
+        "week": 2961,
+        "weekly": "hardened"
+      },
+      "file": "association-upgrade-circuit-progress.png",
+      "gateStep": 5,
+      "screen": "association"
+    },
+    {
+      "archive": {
+        "group": "items",
+        "growthPage": 0,
+        "id": "energyDrink",
+        "map": "seoul",
+        "page": 0,
+        "scroll": 130
+      },
+      "associationId": "circuit",
+      "coins": 1730,
+      "draft": {
+        "blessing": "cheonbuOath",
+        "character": "awakener",
+        "depth": 1,
+        "map": "seoul",
+        "weapon": "manaBolt",
+        "week": 2961,
+        "weekly": "hardened"
+      },
+      "file": "association-upgrade-circuit-complete.png",
+      "gateStep": 5,
+      "screen": "association"
+    },
+    {
+      "archive": {
+        "group": "items",
+        "growthPage": 0,
+        "id": "energyDrink",
+        "map": "seoul",
+        "page": 0,
+        "scroll": 130
+      },
+      "associationId": "circuit",
+      "coins": 1850,
+      "draft": {
+        "blessing": "cheonbuOath",
+        "character": "awakener",
+        "depth": 21,
+        "map": "seoul",
+        "weapon": "manaBolt",
+        "week": 2961,
+        "weekly": "hardened"
+      },
+      "file": "gate-floor-page.png",
+      "gateStep": 1,
+      "screen": "gate"
+    },
+    {
+      "archive": {
+        "group": "items",
+        "growthPage": 0,
+        "id": "energyDrink",
+        "map": "seoul",
+        "page": 0,
+        "scroll": 130
+      },
+      "associationId": "circuit",
+      "coins": 1850,
+      "draft": {
+        "blessing": "cheonbuOath",
+        "character": "awakener",
+        "depth": 1,
+        "map": "seoul",
+        "weapon": "manaBolt",
+        "week": 2961,
+        "weekly": "hardened"
+      },
+      "file": "gate-character-locked.png",
+      "gateStep": 2,
+      "screen": "gate"
+    },
+    {
+      "archive": {
+        "group": "items",
+        "growthPage": 0,
+        "id": "energyDrink",
+        "map": "seoul",
+        "page": 0,
+        "scroll": 130
+      },
+      "associationId": "circuit",
+      "coins": 1850,
+      "draft": {
+        "blessing": "cheonbuOath",
+        "character": "awakener",
+        "depth": 1,
+        "map": "seoul",
+        "weapon": "manaBolt",
+        "week": 2961,
+        "weekly": "hardened"
+      },
+      "file": "gate-weapon-locked.png",
+      "gateStep": 3,
+      "screen": "gate"
+    },
+    {
+      "archive": {
+        "group": "items",
+        "growthPage": 0,
+        "id": "energyDrink",
+        "map": "seoul",
+        "page": 0,
+        "scroll": 130
+      },
+      "associationId": "circuit",
+      "coins": 1850,
+      "draft": {
+        "blessing": "cheonbuOath",
+        "character": "awakener",
+        "depth": 1,
+        "map": "seoul",
+        "weapon": "manaBolt",
+        "week": 2961,
+        "weekly": "hardened"
+      },
+      "file": "gate-blessing-locked.png",
+      "gateStep": 4,
+      "screen": "gate"
+    },
+    {
+      "archive": {
+        "group": "items",
+        "growthPage": 0,
+        "id": "energyDrink",
+        "map": "seoul",
+        "page": 0,
+        "scroll": 130
+      },
+      "associationId": "circuit",
+      "coins": 1850,
+      "draft": {
+        "blessing": "",
+        "character": "awakener",
+        "depth": 1,
+        "map": "seoul",
+        "weapon": "manaBolt",
+        "week": 2961,
+        "weekly": "hardened"
+      },
+      "file": "gate-blessing-none.png",
+      "gateStep": 4,
+      "screen": "gate"
+    },
+    {
+      "archive": {
+        "group": "items",
+        "growthPage": 0,
+        "id": "energyDrink",
+        "map": "seoul",
+        "page": 0,
+        "scroll": 130
+      },
+      "associationId": "circuit",
+      "coins": 1850,
+      "draft": {
+        "blessing": "",
+        "character": "awakener",
+        "depth": 1,
+        "map": "seoul",
+        "weapon": "manaBolt",
+        "week": 2961,
+        "weekly": "hardened"
+      },
+      "file": "gate-formation-none.png",
+      "gateStep": 5,
+      "screen": "gate"
+    },
+    {
+      "archive": {
+        "group": "items",
+        "growthPage": 0,
+        "id": "energyDrink",
+        "map": "seoul",
+        "page": 0,
+        "scroll": 130
+      },
+      "associationId": "circuit",
+      "coins": 1850,
+      "draft": {
+        "blessing": "cheonbuOath",
+        "character": "awakener",
+        "depth": 1,
+        "map": "seoul",
+        "weapon": "manaBolt",
+        "week": 2961,
+        "weekly": "hardened"
+      },
+      "file": "gate-primary-hover.png",
+      "gateStep": 5,
+      "screen": "gate"
+    },
+    {
+      "archive": {
+        "group": "items",
+        "growthPage": 0,
+        "id": "energyDrink",
+        "map": "seoul",
+        "page": 0,
+        "scroll": 130
+      },
+      "associationId": "circuit",
+      "coins": 1850,
+      "draft": {
+        "blessing": "cheonbuOath",
+        "character": "awakener",
+        "depth": 1,
+        "map": "seoul",
+        "weapon": "manaBolt",
+        "week": 2961,
+        "weekly": "hardened"
+      },
+      "file": "gate-primary-pressed.png",
+      "gateStep": 5,
+      "screen": "gate"
+    },
+    {
+      "archive": {
+        "group": "items",
+        "growthPage": 0,
+        "id": "energyDrink",
+        "map": "seoul",
+        "page": 0,
+        "scroll": 130
+      },
+      "associationId": "circuit",
+      "coins": 1850,
+      "draft": {
+        "blessing": "cheonbuOath",
+        "character": "awakener",
+        "depth": 1,
+        "map": "seoul",
+        "weapon": "manaBolt",
+        "week": 2961,
+        "weekly": "hardened"
+      },
+      "file": "gate-primary-restored.png",
+      "gateStep": 5,
+      "screen": "gate"
+    },
+    {
+      "archive": {
+        "group": "items",
+        "growthPage": 0,
+        "id": "energyDrink",
+        "map": "seoul",
+        "page": 0,
+        "scroll": 130
+      },
+      "associationId": "circuit",
+      "coins": 1850,
+      "draft": {
+        "blessing": "cheonbuOath",
+        "character": "awakener",
+        "depth": 1,
+        "map": "seoul",
+        "weapon": "manaBolt",
+        "week": 2961,
+        "weekly": "hardened"
+      },
+      "file": "gate-primary-focus.png",
+      "gateStep": 5,
+      "screen": "gate"
+    }
+  ],
+  "stage": "applied",
+  "userFileActionsInvoked": false,
+  "userProfileRead": false,
+  "viewport": [
+    915,
+    412
+  ]
+}

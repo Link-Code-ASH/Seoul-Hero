@@ -8,7 +8,7 @@ static func eligible(run: HeroRun) -> Array:
 		var owned := run.owned.filter(func(slot): return slot.id == id)
 		if not owned.is_empty():
 			if owned[0].level < definition.maxLevel: result.append({"id":id,"level":int(owned[0].level) + 1,"locked":false})
-		elif run.owned.size() < int(run.data.weaponConfig.maxSlots) and not definition.has("signatureOwnerId"):
+		elif id not in run.guild_support.excludedWeaponIds and run.owned.size() < int(run.data.weaponConfig.maxSlots) and not definition.has("signatureOwnerId"):
 			result.append({"id":id,"level":1,"locked":false})
 	return result
 
@@ -23,10 +23,12 @@ static func refresh(run: HeroRun, weapon: bool) -> void:
 	while stock.size() < 4: stock.append({"id":"","locked":false,"level":0})
 	var excluded: Array = []
 	for slot in stock:
-		if slot.locked and not slot.id.is_empty(): excluded.append(slot.id)
+		if (slot.locked or slot.get("free",false)) and not slot.id.is_empty(): excluded.append(slot.id)
 	for i in range(4):
 		if stock[i].locked and not stock[i].id.is_empty():
 			if not weapon or eligible(run).any(func(offer): return offer.id == stock[i].id and offer.level == stock[i].level): continue
+		# An unclaimed elite supply stays on the shelf through rerolls and later shops.
+		if stock[i].get("free",false) and not stock[i].id.is_empty(): continue
 		var pool: Array = eligible(run) if weapon else _item_pool(run)
 		pool = pool.filter(func(offer): return offer.id not in excluded)
 		var offer: Dictionary = {"id":"","locked":false,"level":0}
@@ -48,11 +50,31 @@ static func refresh(run: HeroRun, weapon: bool) -> void:
 		stock[i] = offer
 		if not offer.id.is_empty(): excluded.append(offer.id)
 
-static func _item_pool(run: HeroRun) -> Array:
+static func item_price(run: HeroRun, offer: Dictionary) -> int:
+	return 0 if offer.get("free",false) else int(run.data.items[offer.id].basePrice)
+
+# Elite supply: one free item of the given rarities takes the first unlocked item slot.
+static func grant_supply(run: HeroRun, rarities: Array) -> bool:
+	if rarities.is_empty(): return false
+	var shown: Array = run.item_stock.map(func(slot): return slot.id)
+	var pool: Array = _item_pool(run,true).filter(func(item): return item.id not in shown)
+	var choices: Array = pool.filter(func(item): return item.rarity in rarities)
+	if choices.is_empty(): choices = pool.filter(func(item): return item.rarity in run.data.featuredElites.supplyRarities)
+	if choices.is_empty(): choices = pool
+	if choices.is_empty(): return false
+	for i in range(run.item_stock.size()):
+		var slot: Dictionary = run.item_stock[i]
+		if not slot.id.is_empty() and (slot.locked or slot.get("free",false)): continue
+		run.item_stock[i] = {"id":choices.pick_random().id,"locked":false,"level":0,"free":true}
+		return true
+	return false
+
+static func _item_pool(run: HeroRun, any_wave: bool = false) -> Array:
 	var pool: Array = []
 	for id in run.available_items:
+		if id in run.guild_support.excludedItemIds: continue
 		var item: Dictionary = run.data.items[id]
-		if run.data.shop.rarities[item.rarity].wave > run.wave: continue
+		if not any_wave and run.data.shop.rarities[item.rarity].wave > run.wave: continue
 		if item.maxStacks != null and run.items.get(id, 0) >= item.maxStacks: continue
 		pool.append(item)
 	return pool
@@ -61,7 +83,7 @@ static func offer_block_reason(run: HeroRun, offer: Dictionary, weapon: bool) ->
 	var id: String = offer.get("id","")
 	if id.is_empty(): return "soldOut"
 	if not run.pending_branch.is_empty(): return "branch"
-	var cost := price(run,offer) if weapon else int(run.data.items[id].basePrice)
+	var cost := price(run,offer) if weapon else item_price(run,offer)
 	if run.currency < cost: return "currency"
 	if weapon:
 		if eligible(run).any(func(candidate): return candidate.id == id and candidate.level == offer.level): return ""
@@ -69,7 +91,7 @@ static func offer_block_reason(run: HeroRun, offer: Dictionary, weapon: bool) ->
 		if owned.is_empty() and run.owned.size() >= int(run.data.weaponConfig.maxSlots): return "weaponSlots"
 		if not owned.is_empty() and owned[0].level >= run.data.weapons[id].maxLevel: return "weaponMax"
 	else:
-		if _item_pool(run).any(func(item): return item.id == id): return ""
+		if _item_pool(run,offer.get("free",false)).any(func(item): return item.id == id): return ""
 		var limit = run.data.items[id].maxStacks
 		if limit != null and run.items.get(id,0) >= limit: return "itemMax"
 	return "unavailable"
@@ -79,7 +101,7 @@ static func buy(run: HeroRun, index: int, weapon: bool) -> bool:
 	var stock: Array = run.weapon_stock if weapon else run.item_stock
 	var offer: Dictionary = stock[index]
 	if not offer_block_reason(run,offer,weapon).is_empty(): return false
-	var cost := price(run, offer) if weapon else int(run.data.items[offer.id].basePrice)
+	var cost := price(run, offer) if weapon else item_price(run,offer)
 	if weapon:
 		var matches := run.owned.filter(func(slot): return slot.id == offer.id)
 		var slot: Dictionary
@@ -96,6 +118,7 @@ static func buy(run: HeroRun, index: int, weapon: bool) -> bool:
 	run.currency -= cost
 	HeroTelemetry.purchase(run,offer.id,cost,weapon,int(offer.level))
 	stock[index] = {"id":"","level":0,"locked":false}
+	run.audio_cue("weaponPurchase" if weapon else "purchase", {"weaponId":offer.id,"stage":"purchase"} if weapon else {"itemId":offer.id,"stage":"acquire"})
 	run.event.emit("weaponPurchase" if weapon else "purchase")
 	return true
 

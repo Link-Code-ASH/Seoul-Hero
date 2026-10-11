@@ -1,0 +1,508 @@
+{
+  "tool": "built-in image_gen",
+  "approvalPending": false,
+  "productionConnected": true,
+  "sources": [
+    {
+      "file": "structures-generated.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "b73d3bbac6f38d74882b3cb379cad01091e3db30629fe9f81f12334261073bf6"
+    },
+    {
+      "file": "controls-generated.png",
+      "size": [
+        1448,
+        1086
+      ],
+      "sha256": "7b9bb43d2359bb1856e8290d531ecd733468cd2a43d20009380953297644ad71"
+    }
+  ],
+  "roles": {
+    "header": {
+      "file": "header-4x.png",
+      "native_file": "header-native.png",
+      "native_size": [
+        641,
+        114
+      ],
+      "master_size": [
+        3532,
+        208
+      ],
+      "rect": [
+        0,
+        0,
+        3532,
+        208
+      ],
+      "slice": [
+        32,
+        32,
+        32,
+        32
+      ],
+      "asset_scale": 4,
+      "safe_padding": [
+        16,
+        8,
+        16,
+        8
+      ],
+      "source_sheet": "exec-fb166f0b-08a7-4d62-aade-82c023c02082.png",
+      "source_roi": [
+        0,
+        210,
+        668,
+        475
+      ],
+      "trim_bbox": [
+        18,
+        82,
+        659,
+        196
+      ],
+      "preparation": "Raster 9-slice master expansion; generated corners preserved. Native source retained; not new 4K generated detail.",
+      "allowed_screens": [
+        "guild",
+        "growth",
+        "association",
+        "settings",
+        "gate",
+        "archive",
+        "offline",
+        "supply"
+      ]
+    },
+    "info": {
+      "file": "info-4x.png",
+      "native_file": "info-native.png",
+      "native_size": [
+        546,
+        518
+      ],
+      "master_size": [
+        1616,
+        1312
+      ],
+      "rect": [
+        0,
+        0,
+        1616,
+        1312
+      ],
+      "slice": [
+        40,
+        40,
+        40,
+        40
+      ],
+      "asset_scale": 4,
+      "safe_padding": [
+        20,
+        12,
+        20,
+        12
+      ],
+      "source_sheet": "exec-fb166f0b-08a7-4d62-aade-82c023c02082.png",
+      "source_roi": [
+        665,
+        0,
+        1254,
+        704
+      ],
+      "trim_bbox": [
+        18,
+        153,
+        564,
+        671
+      ],
+      "preparation": "Raster 9-slice master expansion; generated corners preserved. Native source retained; not new 4K generated detail.",
+      "allowed_screens": [
+        "guild",
+        "growth",
+        "association",
+        "settings",
+        "gate"
+      ]
+    },
+    "popup": {
+      "file": "popup-4x.png",
+      "native_file": "popup-native.png",
+      "native_size": [
+        564,
+        427
+      ],
+      "master_size": [
+        1920,
+        1312
+      ],
+      "rect": [
+        0,
+        0,
+        1920,
+        1312
+      ],
+      "slice": [
+        40,
+        40,
+        40,
+        40
+      ],
+      "asset_scale": 4,
+      "safe_padding": [
+        20,
+        12,
+        20,
+        12
+      ],
+      "source_sheet": "exec-fb166f0b-08a7-4d62-aade-82c023c02082.png",
+      "source_roi": [
+        0,
+        651,
+        621,
+        1254
+      ],
+      "trim_bbox": [
+        42,
+        67,
+        606,
+        494
+      ],
+      "preparation": "Raster 9-slice master expansion; generated corners preserved. Native source retained; not new 4K generated detail.",
+      "allowed_screens": [
+        "all"
+      ]
+    },
+    "row": {
+      "file": "row-4x.png",
+      "native_file": "row-native.png",
+      "native_size": [
+        593,
+        115
+      ],
+      "master_size": [
+        2000,
+        192
+      ],
+      "rect": [
+        0,
+        0,
+        2000,
+        192
+      ],
+      "slice": [
+        32,
+        32,
+        32,
+        32
+      ],
+      "asset_scale": 4,
+      "safe_padding": [
+        20,
+        12,
+        20,
+        12
+      ],
+      "source_sheet": "exec-fb166f0b-08a7-4d62-aade-82c023c02082.png",
+      "source_roi": [
+        615,
+        790,
+        1254,
+        1100
+      ],
+      "trim_bbox": [
+        15,
+        103,
+        608,
+        218
+      ],
+      "preparation": "Raster 9-slice master expansion; generated corners preserved. Native source retained; not new 4K generated detail.",
+      "allowed_screens": [
+        "growth",
+        "guild"
+      ]
+    },
+    "primary": {
+      "file": "primary-4x.png",
+      "native_file": "primary-native.png",
+      "native_size": [
+        1296,
+        220
+      ],
+      "master_size": [
+        1488,
+        176
+      ],
+      "rect": [
+        0,
+        0,
+        1488,
+        176
+      ],
+      "slice": [
+        44,
+        44,
+        44,
+        44
+      ],
+      "asset_scale": 4,
+      "safe_padding": [
+        14,
+        4,
+        14,
+        4
+      ],
+      "source_sheet": "exec-21721008-74f2-4320-bae3-7ee452840e2f.png",
+      "source_roi": [
+        0,
+        0,
+        1448,
+        370
+      ],
+      "trim_bbox": [
+        76,
+        100,
+        1372,
+        320
+      ],
+      "preparation": "Raster 9-slice master expansion; generated corners preserved. Native source retained; not new 4K generated detail.",
+      "allowed_screens": [
+        "all"
+      ]
+    },
+    "secondary": {
+      "file": "secondary-4x.png",
+      "native_file": "secondary-native.png",
+      "native_size": [
+        1297,
+        221
+      ],
+      "master_size": [
+        1488,
+        176
+      ],
+      "rect": [
+        0,
+        0,
+        1488,
+        176
+      ],
+      "slice": [
+        44,
+        44,
+        44,
+        44
+      ],
+      "asset_scale": 4,
+      "safe_padding": [
+        14,
+        4,
+        14,
+        4
+      ],
+      "source_sheet": "exec-21721008-74f2-4320-bae3-7ee452840e2f.png",
+      "source_roi": [
+        0,
+        370,
+        1448,
+        720
+      ],
+      "trim_bbox": [
+        76,
+        60,
+        1373,
+        281
+      ],
+      "preparation": "Raster 9-slice master expansion; generated corners preserved. Native source retained; not new 4K generated detail.",
+      "allowed_screens": [
+        "all"
+      ]
+    },
+    "tab": {
+      "file": "tab-4x.png",
+      "native_file": "tab-native.png",
+      "native_size": [
+        1296,
+        218
+      ],
+      "master_size": [
+        1488,
+        176
+      ],
+      "rect": [
+        0,
+        0,
+        1488,
+        176
+      ],
+      "slice": [
+        44,
+        44,
+        44,
+        44
+      ],
+      "asset_scale": 4,
+      "safe_padding": [
+        14,
+        4,
+        14,
+        4
+      ],
+      "source_sheet": "exec-21721008-74f2-4320-bae3-7ee452840e2f.png",
+      "source_roi": [
+        0,
+        720,
+        1448,
+        1086
+      ],
+      "trim_bbox": [
+        76,
+        42,
+        1372,
+        260
+      ],
+      "preparation": "Raster 9-slice master expansion; generated corners preserved. Native source retained; not new 4K generated detail.",
+      "allowed_screens": [
+        "all"
+      ]
+    },
+    "tab_selected": {
+      "file": "tab-4x.png",
+      "native_file": "tab-native.png",
+      "native_size": [
+        1296,
+        218
+      ],
+      "master_size": [
+        1488,
+        176
+      ],
+      "rect": [
+        0,
+        0,
+        1488,
+        176
+      ],
+      "slice": [
+        44,
+        44,
+        44,
+        44
+      ],
+      "asset_scale": 4,
+      "safe_padding": [
+        14,
+        4,
+        14,
+        4
+      ],
+      "source_sheet": "exec-21721008-74f2-4320-bae3-7ee452840e2f.png",
+      "source_roi": [
+        0,
+        720,
+        1448,
+        1086
+      ],
+      "trim_bbox": [
+        76,
+        42,
+        1372,
+        260
+      ],
+      "preparation": "Raster 9-slice master expansion; generated corners preserved. Native source retained; not new 4K generated detail.",
+      "tint": [
+        0.8,
+        1.0,
+        0.91,
+        1
+      ],
+      "allowed_screens": [
+        "all"
+      ]
+    },
+    "disabled": {
+      "file": "secondary-4x.png",
+      "native_file": "secondary-native.png",
+      "native_size": [
+        1297,
+        221
+      ],
+      "master_size": [
+        1488,
+        176
+      ],
+      "rect": [
+        0,
+        0,
+        1488,
+        176
+      ],
+      "slice": [
+        44,
+        44,
+        44,
+        44
+      ],
+      "asset_scale": 4,
+      "safe_padding": [
+        14,
+        4,
+        14,
+        4
+      ],
+      "source_sheet": "exec-21721008-74f2-4320-bae3-7ee452840e2f.png",
+      "source_roi": [
+        0,
+        370,
+        1448,
+        720
+      ],
+      "trim_bbox": [
+        76,
+        60,
+        1373,
+        281
+      ],
+      "preparation": "Raster 9-slice master expansion; generated corners preserved. Native source retained; not new 4K generated detail.",
+      "grayscale": true,
+      "tint": [
+        0.8,
+        0.84,
+        0.88,
+        1
+      ],
+      "allowed_screens": [
+        "all"
+      ]
+    },
+    "icon": {
+      "unframed": true,
+      "hit_size": [
+        44,
+        44
+      ],
+      "safe_padding": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "asset_scale": 1,
+      "description": "Native transparent input; PNG icon content; no surrounding frame.",
+      "allowed_screens": [
+        "all"
+      ]
+    }
+  },
+  "reference": "design/ui-image-skins/guild-offices-01/runtime/03-management.png",
+  "reuse": "Existing approved Seoul scene, SD/monster/item PNGs, card backgrounds, book-spine and store assets read unchanged.",
+  "approval": {
+    "date": "2026-10-05",
+    "userMessage": "좋아 좋아 적용해",
+    "preview": "design/ui-image-skins/operations-standard-01/index.html"
+  },
+  "previewOrigin": "design/ui-image-skins/operations-standard-01"
+}

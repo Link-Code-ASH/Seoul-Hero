@@ -1,0 +1,363 @@
+{
+	"budgets": {
+		"effects": 64,
+		"lobbyParticles": 160,
+		"particles": 192,
+		"projectiles": 160,
+		"uiParticles": 48
+	},
+	"checks": [
+		{
+			"id": "supply:uiPause",
+			"passed": true
+		},
+		{
+			"id": "supply:uiBudget",
+			"passed": true
+		},
+		{
+			"id": "supply:screenExit",
+			"passed": true
+		},
+		{
+			"id": "supply:hidden",
+			"passed": true
+		},
+		{
+			"id": "growth:uiPause",
+			"passed": true
+		},
+		{
+			"id": "growth:uiBudget",
+			"passed": true
+		},
+		{
+			"id": "growth:screenExit",
+			"passed": true
+		},
+		{
+			"id": "growth:hidden",
+			"passed": true
+		},
+		{
+			"id": "result:uiPause",
+			"passed": true
+		},
+		{
+			"id": "result:uiBudget",
+			"passed": true
+		},
+		{
+			"id": "result:screenExit",
+			"passed": true
+		},
+		{
+			"id": "result:hidden",
+			"passed": true
+		},
+		{
+			"id": "pickups:pause",
+			"passed": true
+		},
+		{
+			"id": "pickups:budgets",
+			"passed": true
+		},
+		{
+			"id": "pickups:cleanup",
+			"passed": true
+		},
+		{
+			"id": "slash:pause",
+			"passed": true
+		},
+		{
+			"id": "slash:budgets",
+			"passed": true
+		},
+		{
+			"id": "slash:cleanup",
+			"passed": true
+		},
+		{
+			"id": "chain:pause",
+			"passed": true
+		},
+		{
+			"id": "chain:budgets",
+			"passed": true
+		},
+		{
+			"id": "chain:cleanup",
+			"passed": true
+		},
+		{
+			"id": "projectiles:pause",
+			"passed": true
+		},
+		{
+			"id": "projectiles:budgets",
+			"passed": true
+		},
+		{
+			"id": "projectiles:cleanup",
+			"passed": true
+		},
+		{
+			"id": "orbit:pause",
+			"passed": true
+		},
+		{
+			"id": "orbit:budgets",
+			"passed": true
+		},
+		{
+			"id": "orbit:cleanup",
+			"passed": true
+		},
+		{
+			"id": "bombard:pause",
+			"passed": true
+		},
+		{
+			"id": "bombard:budgets",
+			"passed": true
+		},
+		{
+			"id": "bombard:cleanup",
+			"passed": true
+		},
+		{
+			"id": "installations:pause",
+			"passed": true
+		},
+		{
+			"id": "installations:budgets",
+			"passed": true
+		},
+		{
+			"id": "installations:cleanup",
+			"passed": true
+		},
+		{
+			"id": "enemy-actions:pause",
+			"passed": true
+		},
+		{
+			"id": "enemy-actions:budgets",
+			"passed": true
+		},
+		{
+			"id": "enemy-actions:cleanup",
+			"passed": true
+		},
+		{
+			"id": "dense:pause",
+			"passed": true
+		},
+		{
+			"id": "dense:budgets",
+			"passed": true
+		},
+		{
+			"id": "dense:cleanup",
+			"passed": true
+		},
+		{
+			"id": "lobby:uiPause",
+			"passed": true
+		},
+		{
+			"id": "lobby:uiBudget",
+			"passed": true
+		},
+		{
+			"id": "lobby:screenExit",
+			"passed": true
+		},
+		{
+			"id": "lobby:hidden",
+			"passed": true
+		},
+		{
+			"id": "selection:uiPause",
+			"passed": true
+		},
+		{
+			"id": "selection:uiBudget",
+			"passed": true
+		},
+		{
+			"id": "selection:screenExit",
+			"passed": true
+		},
+		{
+			"id": "selection:hidden",
+			"passed": true
+		},
+		{
+			"id": "shop:uiPause",
+			"passed": true
+		},
+		{
+			"id": "shop:uiBudget",
+			"passed": true
+		},
+		{
+			"id": "shop:screenExit",
+			"passed": true
+		},
+		{
+			"id": "shop:hidden",
+			"passed": true
+		}
+	],
+	"combatSimulation": false,
+	"enemies": [
+		"copperCrab",
+		"ironBoar",
+		"signalMoth",
+		"glassJelly",
+		"chainWarden",
+		"crawler",
+		"runner",
+		"bulwark",
+		"spitter",
+		"swarm",
+		"charger",
+		"bomber",
+		"splitter",
+		"mender",
+		"summoner",
+		"sentinel",
+		"lurker",
+		"gatekeeper",
+		"riftQueen"
+	],
+	"fps": 30,
+	"productionRenderer": true,
+	"saveWrites": false,
+	"scenes": [
+		{
+			"frames": 60,
+			"id": "supply",
+			"maximumEffects": 0,
+			"maximumParticles": 0,
+			"maximumShots": 0
+		},
+		{
+			"frames": 60.0,
+			"id": "growth",
+			"maximumEffects": 0.0,
+			"maximumParticles": 0.0,
+			"maximumShots": 0.0
+		},
+		{
+			"frames": 60.0,
+			"id": "result",
+			"maximumEffects": 0.0,
+			"maximumParticles": 0.0,
+			"maximumShots": 0.0
+		},
+		{
+			"frames": 90.0,
+			"id": "pickups",
+			"maximumEffects": 4.0,
+			"maximumParticles": 14.0,
+			"maximumShots": 0.0
+		},
+		{
+			"frames": 240.0,
+			"id": "slash",
+			"maximumEffects": 1.0,
+			"maximumParticles": 5.0,
+			"maximumShots": 0.0
+		},
+		{
+			"frames": 90.0,
+			"id": "chain",
+			"maximumEffects": 3.0,
+			"maximumParticles": 12.0,
+			"maximumShots": 0.0
+		},
+		{
+			"frames": 90.0,
+			"id": "projectiles",
+			"maximumEffects": 4.0,
+			"maximumParticles": 12.0,
+			"maximumShots": 37.0
+		},
+		{
+			"frames": 90.0,
+			"id": "orbit",
+			"maximumEffects": 0.0,
+			"maximumParticles": 0.0,
+			"maximumShots": 3.0
+		},
+		{
+			"frames": 90.0,
+			"id": "bombard",
+			"maximumEffects": 1.0,
+			"maximumParticles": 12.0,
+			"maximumShots": 1.0
+		},
+		{
+			"frames": 90.0,
+			"id": "installations",
+			"maximumEffects": 4.0,
+			"maximumParticles": 15.0,
+			"maximumShots": 0.0
+		},
+		{
+			"frames": 90.0,
+			"id": "enemy-actions",
+			"maximumEffects": 3.0,
+			"maximumParticles": 21.0,
+			"maximumShots": 0.0
+		},
+		{
+			"frames": 90.0,
+			"id": "dense",
+			"maximumEffects": 6.0,
+			"maximumParticles": 39.0,
+			"maximumShots": 16.0
+		},
+		{
+			"frames": 60.0,
+			"id": "lobby",
+			"maximumEffects": 0.0,
+			"maximumParticles": 0.0,
+			"maximumShots": 0.0
+		},
+		{
+			"frames": 60.0,
+			"id": "selection",
+			"maximumEffects": 0.0,
+			"maximumParticles": 0.0,
+			"maximumShots": 0.0
+		},
+		{
+			"frames": 60.0,
+			"id": "shop",
+			"maximumEffects": 0.0,
+			"maximumParticles": 0.0,
+			"maximumShots": 0.0
+		}
+	],
+	"size": [
+		915,
+		412
+	],
+	"weapons": [
+		"manaSword",
+		"guardianDaggers",
+		"piercingShot",
+		"chainLightning",
+		"manaBombard",
+		"manaBolt",
+		"manaShotgun",
+		"autoTurret",
+		"mineLayer",
+		"manaField"
+	]
+}

@@ -1,0 +1,1336 @@
+{
+	"audioCallbacks": false,
+	"callbackCalls": 0,
+	"captures": [
+		{
+			"currency": 240.0,
+			"file": "shop-weapons.png",
+			"offers": [
+				{
+					"canBuy": true,
+					"empty": false,
+					"free": false,
+					"id": "manaBolt",
+					"locked": false,
+					"name": "마력탄",
+					"note": "Lv.3 강화",
+					"price": 23,
+					"summary": "가까운 적을 노리는\n마력 투사체",
+					"tier": "epic"
+				},
+				{
+					"canBuy": true,
+					"empty": false,
+					"free": false,
+					"id": "manaSword",
+					"locked": true,
+					"name": "마력검",
+					"note": "신규 무기",
+					"price": 36,
+					"summary": "가까운 적을 향한\n넓은 부채꼴 베기",
+					"tier": "common"
+				},
+				{
+					"canBuy": true,
+					"empty": false,
+					"free": false,
+					"id": "chainLightning",
+					"locked": false,
+					"name": "연쇄 번개",
+					"note": "신규 무기",
+					"price": 36,
+					"summary": "적 사이로 이어지는\n연쇄 번개",
+					"tier": "common"
+				},
+				{
+					"canBuy": true,
+					"empty": false,
+					"free": false,
+					"id": "autoTurret",
+					"locked": false,
+					"name": "자동 포탑",
+					"note": "신규 무기",
+					"price": 44,
+					"summary": "고정 위치 설치\n자동 조준 사격",
+					"tier": "common"
+				}
+			],
+			"state": "normal",
+			"tab": "weapons"
+		},
+		{
+			"currency": 240.0,
+			"file": "shop-items.png",
+			"offers": [
+				{
+					"canBuy": true,
+					"empty": false,
+					"free": false,
+					"id": "energyDrink",
+					"locked": false,
+					"name": "에너지 드링크",
+					"note": "",
+					"price": 14,
+					"summary": "공격속도 +5%",
+					"tier": "common"
+				},
+				{
+					"canBuy": true,
+					"empty": false,
+					"free": false,
+					"id": "riceBall",
+					"locked": false,
+					"name": "삼각김밥",
+					"note": "",
+					"price": 11,
+					"summary": "최대 HP +6",
+					"tier": "common"
+				},
+				{
+					"canBuy": true,
+					"empty": false,
+					"free": false,
+					"id": "gloves",
+					"locked": true,
+					"name": "작업 장갑",
+					"note": "",
+					"price": 14,
+					"summary": "근접피해 +6%",
+					"tier": "common"
+				},
+				{
+					"canBuy": true,
+					"empty": false,
+					"free": false,
+					"id": "battery",
+					"locked": false,
+					"name": "과충전 배터리",
+					"note": "최대 HP -8",
+					"price": 27,
+					"summary": "공격속도 +16%",
+					"tier": "uncommon"
+				}
+			],
+			"state": "normal",
+			"tab": "items"
+		},
+		{
+			"currency": 240.0,
+			"file": "shop-items-hover.png",
+			"offers": [
+				{
+					"canBuy": true,
+					"empty": false,
+					"free": false,
+					"id": "energyDrink",
+					"locked": false,
+					"name": "에너지 드링크",
+					"note": "",
+					"price": 14,
+					"summary": "공격속도 +5%",
+					"tier": "common"
+				},
+				{
+					"canBuy": true,
+					"empty": false,
+					"free": false,
+					"id": "riceBall",
+					"locked": false,
+					"name": "삼각김밥",
+					"note": "",
+					"price": 11,
+					"summary": "최대 HP +6",
+					"tier": "common"
+				},
+				{
+					"canBuy": true,
+					"empty": false,
+					"free": false,
+					"id": "gloves",
+					"locked": true,
+					"name": "작업 장갑",
+					"note": "",
+					"price": 14,
+					"summary": "근접피해 +6%",
+					"tier": "common"
+				},
+				{
+					"canBuy": true,
+					"empty": false,
+					"free": false,
+					"id": "battery",
+					"locked": false,
+					"name": "과충전 배터리",
+					"note": "최대 HP -8",
+					"price": 27,
+					"summary": "공격속도 +16%",
+					"tier": "uncommon"
+				}
+			],
+			"state": "hover",
+			"tab": "items"
+		},
+		{
+			"currency": 240.0,
+			"file": "shop-items-pressed.png",
+			"offers": [
+				{
+					"canBuy": true,
+					"empty": false,
+					"free": false,
+					"id": "energyDrink",
+					"locked": false,
+					"name": "에너지 드링크",
+					"note": "",
+					"price": 14,
+					"summary": "공격속도 +5%",
+					"tier": "common"
+				},
+				{
+					"canBuy": true,
+					"empty": false,
+					"free": false,
+					"id": "riceBall",
+					"locked": false,
+					"name": "삼각김밥",
+					"note": "",
+					"price": 11,
+					"summary": "최대 HP +6",
+					"tier": "common"
+				},
+				{
+					"canBuy": true,
+					"empty": false,
+					"free": false,
+					"id": "gloves",
+					"locked": true,
+					"name": "작업 장갑",
+					"note": "",
+					"price": 14,
+					"summary": "근접피해 +6%",
+					"tier": "common"
+				},
+				{
+					"canBuy": true,
+					"empty": false,
+					"free": false,
+					"id": "battery",
+					"locked": false,
+					"name": "과충전 배터리",
+					"note": "최대 HP -8",
+					"price": 27,
+					"summary": "공격속도 +16%",
+					"tier": "uncommon"
+				}
+			],
+			"state": "pressed",
+			"tab": "items"
+		},
+		{
+			"currency": 240.0,
+			"file": "shop-items-return.png",
+			"offers": [
+				{
+					"canBuy": true,
+					"empty": false,
+					"free": false,
+					"id": "energyDrink",
+					"locked": false,
+					"name": "에너지 드링크",
+					"note": "",
+					"price": 14,
+					"summary": "공격속도 +5%",
+					"tier": "common"
+				},
+				{
+					"canBuy": true,
+					"empty": false,
+					"free": false,
+					"id": "riceBall",
+					"locked": false,
+					"name": "삼각김밥",
+					"note": "",
+					"price": 11,
+					"summary": "최대 HP +6",
+					"tier": "common"
+				},
+				{
+					"canBuy": true,
+					"empty": false,
+					"free": false,
+					"id": "gloves",
+					"locked": true,
+					"name": "작업 장갑",
+					"note": "",
+					"price": 14,
+					"summary": "근접피해 +6%",
+					"tier": "common"
+				},
+				{
+					"canBuy": true,
+					"empty": false,
+					"free": false,
+					"id": "battery",
+					"locked": false,
+					"name": "과충전 배터리",
+					"note": "최대 HP -8",
+					"price": 27,
+					"summary": "공격속도 +16%",
+					"tier": "uncommon"
+				}
+			],
+			"state": "normal",
+			"tab": "items"
+		},
+		{
+			"currency": 240.0,
+			"file": "shop-items-details.png",
+			"offers": [
+				{
+					"canBuy": true,
+					"empty": false,
+					"free": false,
+					"id": "energyDrink",
+					"locked": false,
+					"name": "에너지 드링크",
+					"note": "",
+					"price": 14,
+					"summary": "공격속도 +5%",
+					"tier": "common"
+				},
+				{
+					"canBuy": true,
+					"empty": false,
+					"free": false,
+					"id": "riceBall",
+					"locked": false,
+					"name": "삼각김밥",
+					"note": "",
+					"price": 11,
+					"summary": "최대 HP +6",
+					"tier": "common"
+				},
+				{
+					"canBuy": true,
+					"empty": false,
+					"free": false,
+					"id": "gloves",
+					"locked": true,
+					"name": "작업 장갑",
+					"note": "",
+					"price": 14,
+					"summary": "근접피해 +6%",
+					"tier": "common"
+				},
+				{
+					"canBuy": true,
+					"empty": false,
+					"free": false,
+					"id": "battery",
+					"locked": false,
+					"name": "과충전 배터리",
+					"note": "최대 HP -8",
+					"price": 27,
+					"summary": "공격속도 +16%",
+					"tier": "uncommon"
+				}
+			],
+			"state": "details",
+			"tab": "items"
+		},
+		{
+			"currency": 0.0,
+			"file": "shop-items-stock-states.png",
+			"offers": [
+				{
+					"canBuy": true,
+					"empty": false,
+					"free": true,
+					"id": "energyDrink",
+					"locked": false,
+					"name": "에너지 드링크",
+					"note": "정예 보급품",
+					"price": 0,
+					"summary": "공격속도 +5%",
+					"tier": "common"
+				},
+				{
+					"canBuy": false,
+					"empty": true,
+					"free": false,
+					"id": "",
+					"locked": false,
+					"name": "품절",
+					"note": "",
+					"price": 0,
+					"summary": "재진열로 다시 확인",
+					"tier": "common"
+				},
+				{
+					"canBuy": false,
+					"empty": false,
+					"free": false,
+					"id": "gloves",
+					"locked": true,
+					"name": "작업 장갑",
+					"note": "",
+					"price": 14,
+					"summary": "근접피해 +6%",
+					"tier": "common"
+				},
+				{
+					"canBuy": false,
+					"empty": false,
+					"free": false,
+					"id": "battery",
+					"locked": false,
+					"name": "과충전 배터리",
+					"note": "최대 HP -8",
+					"price": 27,
+					"summary": "공격속도 +16%",
+					"tier": "uncommon"
+				}
+			],
+			"state": "normal",
+			"tab": "items"
+		}
+	],
+	"currency": 240,
+	"economyCallbacks": false,
+	"inputRegions": [
+		{
+			"disabled": false,
+			"file": "shop-weapons.png",
+			"name": "ShopWeaponsTab",
+			"rect": [
+				438.0,
+				22.0,
+				84.0,
+				44.0
+			]
+		},
+		{
+			"disabled": false,
+			"file": "shop-weapons.png",
+			"name": "ShopItemsTab",
+			"rect": [
+				530.0,
+				22.0,
+				84.0,
+				44.0
+			]
+		},
+		{
+			"disabled": false,
+			"file": "shop-weapons.png",
+			"name": "ShopReroll",
+			"rect": [
+				644.0,
+				22.0,
+				140.0,
+				44.0
+			]
+		},
+		{
+			"disabled": false,
+			"file": "shop-weapons.png",
+			"name": "ShopPause",
+			"rect": [
+				813.0,
+				22.0,
+				44.0,
+				44.0
+			]
+		},
+		{
+			"disabled": false,
+			"file": "shop-weapons.png",
+			"name": "ShopPurchase_0",
+			"rect": [
+				221.0,
+				299.0,
+				130.0,
+				44.0
+			]
+		},
+		{
+			"disabled": false,
+			"file": "shop-weapons.png",
+			"name": "ShopLock_0",
+			"rect": [
+				319.0,
+				87.0,
+				44.0,
+				44.0
+			]
+		},
+		{
+			"disabled": false,
+			"file": "shop-weapons.png",
+			"name": "ShopPurchase_1",
+			"rect": [
+				392.0,
+				299.0,
+				130.0,
+				44.0
+			]
+		},
+		{
+			"disabled": false,
+			"file": "shop-weapons.png",
+			"name": "ShopLock_1",
+			"rect": [
+				490.0,
+				87.0,
+				44.0,
+				44.0
+			]
+		},
+		{
+			"disabled": false,
+			"file": "shop-weapons.png",
+			"name": "ShopPurchase_2",
+			"rect": [
+				563.0,
+				299.0,
+				130.0,
+				44.0
+			]
+		},
+		{
+			"disabled": false,
+			"file": "shop-weapons.png",
+			"name": "ShopLock_2",
+			"rect": [
+				661.0,
+				87.0,
+				44.0,
+				44.0
+			]
+		},
+		{
+			"disabled": false,
+			"file": "shop-weapons.png",
+			"name": "ShopPurchase_3",
+			"rect": [
+				734.0,
+				299.0,
+				130.0,
+				44.0
+			]
+		},
+		{
+			"disabled": false,
+			"file": "shop-weapons.png",
+			"name": "ShopLock_3",
+			"rect": [
+				832.0,
+				87.0,
+				44.0,
+				44.0
+			]
+		},
+		{
+			"disabled": false,
+			"file": "shop-items.png",
+			"name": "ShopWeaponsTab",
+			"rect": [
+				438.0,
+				22.0,
+				84.0,
+				44.0
+			]
+		},
+		{
+			"disabled": false,
+			"file": "shop-items.png",
+			"name": "ShopItemsTab",
+			"rect": [
+				530.0,
+				22.0,
+				84.0,
+				44.0
+			]
+		},
+		{
+			"disabled": false,
+			"file": "shop-items.png",
+			"name": "ShopReroll",
+			"rect": [
+				644.0,
+				22.0,
+				140.0,
+				44.0
+			]
+		},
+		{
+			"disabled": false,
+			"file": "shop-items.png",
+			"name": "ShopPause",
+			"rect": [
+				813.0,
+				22.0,
+				44.0,
+				44.0
+			]
+		},
+		{
+			"disabled": false,
+			"file": "shop-items.png",
+			"name": "ShopPurchase_0",
+			"rect": [
+				221.0,
+				299.0,
+				130.0,
+				44.0
+			]
+		},
+		{
+			"disabled": false,
+			"file": "shop-items.png",
+			"name": "ShopLock_0",
+			"rect": [
+				319.0,
+				87.0,
+				44.0,
+				44.0
+			]
+		},
+		{
+			"disabled": false,
+			"file": "shop-items.png",
+			"name": "ShopPurchase_1",
+			"rect": [
+				392.0,
+				299.0,
+				130.0,
+				44.0
+			]
+		},
+		{
+			"disabled": false,
+			"file": "shop-items.png",
+			"name": "ShopLock_1",
+			"rect": [
+				490.0,
+				87.0,
+				44.0,
+				44.0
+			]
+		},
+		{
+			"disabled": false,
+			"file": "shop-items.png",
+			"name": "ShopPurchase_2",
+			"rect": [
+				563.0,
+				299.0,
+				130.0,
+				44.0
+			]
+		},
+		{
+			"disabled": false,
+			"file": "shop-items.png",
+			"name": "ShopLock_2",
+			"rect": [
+				661.0,
+				87.0,
+				44.0,
+				44.0
+			]
+		},
+		{
+			"disabled": false,
+			"file": "shop-items.png",
+			"name": "ShopPurchase_3",
+			"rect": [
+				734.0,
+				299.0,
+				130.0,
+				44.0
+			]
+		},
+		{
+			"disabled": false,
+			"file": "shop-items.png",
+			"name": "ShopLock_3",
+			"rect": [
+				832.0,
+				87.0,
+				44.0,
+				44.0
+			]
+		},
+		{
+			"disabled": false,
+			"file": "shop-items-hover.png",
+			"name": "ShopWeaponsTab",
+			"rect": [
+				438.0,
+				22.0,
+				84.0,
+				44.0
+			]
+		},
+		{
+			"disabled": false,
+			"file": "shop-items-hover.png",
+			"name": "ShopItemsTab",
+			"rect": [
+				530.0,
+				22.0,
+				84.0,
+				44.0
+			]
+		},
+		{
+			"disabled": false,
+			"file": "shop-items-hover.png",
+			"name": "ShopReroll",
+			"rect": [
+				644.0,
+				22.0,
+				140.0,
+				44.0
+			]
+		},
+		{
+			"disabled": false,
+			"file": "shop-items-hover.png",
+			"name": "ShopPause",
+			"rect": [
+				813.0,
+				22.0,
+				44.0,
+				44.0
+			]
+		},
+		{
+			"disabled": false,
+			"file": "shop-items-hover.png",
+			"name": "ShopPurchase_0",
+			"rect": [
+				221.0,
+				299.0,
+				130.0,
+				44.0
+			]
+		},
+		{
+			"disabled": false,
+			"file": "shop-items-hover.png",
+			"name": "ShopLock_0",
+			"rect": [
+				319.0,
+				87.0,
+				44.0,
+				44.0
+			]
+		},
+		{
+			"disabled": false,
+			"file": "shop-items-hover.png",
+			"name": "ShopPurchase_1",
+			"rect": [
+				392.0,
+				299.0,
+				130.0,
+				44.0
+			]
+		},
+		{
+			"disabled": false,
+			"file": "shop-items-hover.png",
+			"name": "ShopLock_1",
+			"rect": [
+				490.0,
+				87.0,
+				44.0,
+				44.0
+			]
+		},
+		{
+			"disabled": false,
+			"file": "shop-items-hover.png",
+			"name": "ShopPurchase_2",
+			"rect": [
+				563.0,
+				299.0,
+				130.0,
+				44.0
+			]
+		},
+		{
+			"disabled": false,
+			"file": "shop-items-hover.png",
+			"name": "ShopLock_2",
+			"rect": [
+				661.0,
+				87.0,
+				44.0,
+				44.0
+			]
+		},
+		{
+			"disabled": false,
+			"file": "shop-items-hover.png",
+			"name": "ShopPurchase_3",
+			"rect": [
+				734.0,
+				299.0,
+				130.0,
+				44.0
+			]
+		},
+		{
+			"disabled": false,
+			"file": "shop-items-hover.png",
+			"name": "ShopLock_3",
+			"rect": [
+				832.0,
+				87.0,
+				44.0,
+				44.0
+			]
+		},
+		{
+			"disabled": false,
+			"file": "shop-items-pressed.png",
+			"name": "ShopWeaponsTab",
+			"rect": [
+				438.0,
+				22.0,
+				84.0,
+				44.0
+			]
+		},
+		{
+			"disabled": false,
+			"file": "shop-items-pressed.png",
+			"name": "ShopItemsTab",
+			"rect": [
+				530.0,
+				22.0,
+				84.0,
+				44.0
+			]
+		},
+		{
+			"disabled": false,
+			"file": "shop-items-pressed.png",
+			"name": "ShopReroll",
+			"rect": [
+				644.0,
+				22.0,
+				140.0,
+				44.0
+			]
+		},
+		{
+			"disabled": false,
+			"file": "shop-items-pressed.png",
+			"name": "ShopPause",
+			"rect": [
+				813.0,
+				22.0,
+				44.0,
+				44.0
+			]
+		},
+		{
+			"disabled": false,
+			"file": "shop-items-pressed.png",
+			"name": "ShopPurchase_0",
+			"rect": [
+				221.0,
+				299.0,
+				130.0,
+				44.0
+			]
+		},
+		{
+			"disabled": false,
+			"file": "shop-items-pressed.png",
+			"name": "ShopLock_0",
+			"rect": [
+				319.0,
+				87.0,
+				44.0,
+				44.0
+			]
+		},
+		{
+			"disabled": false,
+			"file": "shop-items-pressed.png",
+			"name": "ShopPurchase_1",
+			"rect": [
+				392.0,
+				299.0,
+				130.0,
+				44.0
+			]
+		},
+		{
+			"disabled": false,
+			"file": "shop-items-pressed.png",
+			"name": "ShopLock_1",
+			"rect": [
+				490.0,
+				87.0,
+				44.0,
+				44.0
+			]
+		},
+		{
+			"disabled": false,
+			"file": "shop-items-pressed.png",
+			"name": "ShopPurchase_2",
+			"rect": [
+				563.0,
+				299.0,
+				130.0,
+				44.0
+			]
+		},
+		{
+			"disabled": false,
+			"file": "shop-items-pressed.png",
+			"name": "ShopLock_2",
+			"rect": [
+				661.0,
+				87.0,
+				44.0,
+				44.0
+			]
+		},
+		{
+			"disabled": false,
+			"file": "shop-items-pressed.png",
+			"name": "ShopPurchase_3",
+			"rect": [
+				734.0,
+				299.0,
+				130.0,
+				44.0
+			]
+		},
+		{
+			"disabled": false,
+			"file": "shop-items-pressed.png",
+			"name": "ShopLock_3",
+			"rect": [
+				832.0,
+				87.0,
+				44.0,
+				44.0
+			]
+		},
+		{
+			"disabled": false,
+			"file": "shop-items-return.png",
+			"name": "ShopWeaponsTab",
+			"rect": [
+				438.0,
+				22.0,
+				84.0,
+				44.0
+			]
+		},
+		{
+			"disabled": false,
+			"file": "shop-items-return.png",
+			"name": "ShopItemsTab",
+			"rect": [
+				530.0,
+				22.0,
+				84.0,
+				44.0
+			]
+		},
+		{
+			"disabled": false,
+			"file": "shop-items-return.png",
+			"name": "ShopReroll",
+			"rect": [
+				644.0,
+				22.0,
+				140.0,
+				44.0
+			]
+		},
+		{
+			"disabled": false,
+			"file": "shop-items-return.png",
+			"name": "ShopPause",
+			"rect": [
+				813.0,
+				22.0,
+				44.0,
+				44.0
+			]
+		},
+		{
+			"disabled": false,
+			"file": "shop-items-return.png",
+			"name": "ShopPurchase_0",
+			"rect": [
+				221.0,
+				299.0,
+				130.0,
+				44.0
+			]
+		},
+		{
+			"disabled": false,
+			"file": "shop-items-return.png",
+			"name": "ShopLock_0",
+			"rect": [
+				319.0,
+				87.0,
+				44.0,
+				44.0
+			]
+		},
+		{
+			"disabled": false,
+			"file": "shop-items-return.png",
+			"name": "ShopPurchase_1",
+			"rect": [
+				392.0,
+				299.0,
+				130.0,
+				44.0
+			]
+		},
+		{
+			"disabled": false,
+			"file": "shop-items-return.png",
+			"name": "ShopLock_1",
+			"rect": [
+				490.0,
+				87.0,
+				44.0,
+				44.0
+			]
+		},
+		{
+			"disabled": false,
+			"file": "shop-items-return.png",
+			"name": "ShopPurchase_2",
+			"rect": [
+				563.0,
+				299.0,
+				130.0,
+				44.0
+			]
+		},
+		{
+			"disabled": false,
+			"file": "shop-items-return.png",
+			"name": "ShopLock_2",
+			"rect": [
+				661.0,
+				87.0,
+				44.0,
+				44.0
+			]
+		},
+		{
+			"disabled": false,
+			"file": "shop-items-return.png",
+			"name": "ShopPurchase_3",
+			"rect": [
+				734.0,
+				299.0,
+				130.0,
+				44.0
+			]
+		},
+		{
+			"disabled": false,
+			"file": "shop-items-return.png",
+			"name": "ShopLock_3",
+			"rect": [
+				832.0,
+				87.0,
+				44.0,
+				44.0
+			]
+		},
+		{
+			"disabled": false,
+			"file": "shop-items-details.png",
+			"name": "ShopWeaponsTab",
+			"rect": [
+				438.0,
+				22.0,
+				84.0,
+				44.0
+			]
+		},
+		{
+			"disabled": false,
+			"file": "shop-items-details.png",
+			"name": "ShopItemsTab",
+			"rect": [
+				530.0,
+				22.0,
+				84.0,
+				44.0
+			]
+		},
+		{
+			"disabled": false,
+			"file": "shop-items-details.png",
+			"name": "ShopReroll",
+			"rect": [
+				644.0,
+				22.0,
+				140.0,
+				44.0
+			]
+		},
+		{
+			"disabled": false,
+			"file": "shop-items-details.png",
+			"name": "ShopPause",
+			"rect": [
+				813.0,
+				22.0,
+				44.0,
+				44.0
+			]
+		},
+		{
+			"disabled": false,
+			"file": "shop-items-details.png",
+			"name": "ShopPurchase_0",
+			"rect": [
+				221.0,
+				299.0,
+				130.0,
+				44.0
+			]
+		},
+		{
+			"disabled": false,
+			"file": "shop-items-details.png",
+			"name": "ShopLock_0",
+			"rect": [
+				319.0,
+				87.0,
+				44.0,
+				44.0
+			]
+		},
+		{
+			"disabled": false,
+			"file": "shop-items-details.png",
+			"name": "ShopPurchase_1",
+			"rect": [
+				392.0,
+				299.0,
+				130.0,
+				44.0
+			]
+		},
+		{
+			"disabled": false,
+			"file": "shop-items-details.png",
+			"name": "ShopLock_1",
+			"rect": [
+				490.0,
+				87.0,
+				44.0,
+				44.0
+			]
+		},
+		{
+			"disabled": false,
+			"file": "shop-items-details.png",
+			"name": "ShopPurchase_2",
+			"rect": [
+				563.0,
+				299.0,
+				130.0,
+				44.0
+			]
+		},
+		{
+			"disabled": false,
+			"file": "shop-items-details.png",
+			"name": "ShopLock_2",
+			"rect": [
+				661.0,
+				87.0,
+				44.0,
+				44.0
+			]
+		},
+		{
+			"disabled": false,
+			"file": "shop-items-details.png",
+			"name": "ShopPurchase_3",
+			"rect": [
+				734.0,
+				299.0,
+				130.0,
+				44.0
+			]
+		},
+		{
+			"disabled": false,
+			"file": "shop-items-details.png",
+			"name": "ShopLock_3",
+			"rect": [
+				832.0,
+				87.0,
+				44.0,
+				44.0
+			]
+		},
+		{
+			"disabled": false,
+			"file": "shop-items-stock-states.png",
+			"name": "ShopWeaponsTab",
+			"rect": [
+				438.0,
+				22.0,
+				84.0,
+				44.0
+			]
+		},
+		{
+			"disabled": false,
+			"file": "shop-items-stock-states.png",
+			"name": "ShopItemsTab",
+			"rect": [
+				530.0,
+				22.0,
+				84.0,
+				44.0
+			]
+		},
+		{
+			"disabled": true,
+			"file": "shop-items-stock-states.png",
+			"name": "ShopReroll",
+			"rect": [
+				644.0,
+				22.0,
+				140.0,
+				44.0
+			]
+		},
+		{
+			"disabled": false,
+			"file": "shop-items-stock-states.png",
+			"name": "ShopPause",
+			"rect": [
+				813.0,
+				22.0,
+				44.0,
+				44.0
+			]
+		},
+		{
+			"disabled": false,
+			"file": "shop-items-stock-states.png",
+			"name": "ShopPurchase_0",
+			"rect": [
+				221.0,
+				299.0,
+				130.0,
+				44.0
+			]
+		},
+		{
+			"disabled": false,
+			"file": "shop-items-stock-states.png",
+			"name": "ShopLock_0",
+			"rect": [
+				319.0,
+				87.0,
+				44.0,
+				44.0
+			]
+		},
+		{
+			"disabled": true,
+			"file": "shop-items-stock-states.png",
+			"name": "ShopPurchase_1",
+			"rect": [
+				392.0,
+				299.0,
+				130.0,
+				44.0
+			]
+		},
+		{
+			"disabled": true,
+			"file": "shop-items-stock-states.png",
+			"name": "ShopLock_1",
+			"rect": [
+				490.0,
+				87.0,
+				44.0,
+				44.0
+			]
+		},
+		{
+			"disabled": true,
+			"file": "shop-items-stock-states.png",
+			"name": "ShopPurchase_2",
+			"rect": [
+				563.0,
+				299.0,
+				130.0,
+				44.0
+			]
+		},
+		{
+			"disabled": false,
+			"file": "shop-items-stock-states.png",
+			"name": "ShopLock_2",
+			"rect": [
+				661.0,
+				87.0,
+				44.0,
+				44.0
+			]
+		},
+		{
+			"disabled": true,
+			"file": "shop-items-stock-states.png",
+			"name": "ShopPurchase_3",
+			"rect": [
+				734.0,
+				299.0,
+				130.0,
+				44.0
+			]
+		},
+		{
+			"disabled": false,
+			"file": "shop-items-stock-states.png",
+			"name": "ShopLock_3",
+			"rect": [
+				832.0,
+				87.0,
+				44.0,
+				44.0
+			]
+		}
+	],
+	"saveReads": false,
+	"saveWrites": false,
+	"simulation": false,
+	"size": [
+		915,
+		412
+	],
+	"source": "native HeroShopScreen.build",
+	"verificationScope": "import/script errors, static shop layout and material states only; no gameplay QA",
+	"wave": 6
+}

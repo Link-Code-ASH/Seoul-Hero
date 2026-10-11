@@ -1,7 +1,7 @@
 import type { ShopCardText } from '../types';
 import { itemShopCardText } from '../shopCardText';
 import type { StatKey, WeaponCapability } from '../stats';
-export type Rarity = 'COMMON'|'UNCOMMON'|'RARE'|'LEGENDARY';
+export type Rarity = 'COMMON'|'UNCOMMON'|'RARE'|'EPIC'|'LEGENDARY';
 export type ItemEffect = {type:'structureLimit';tag:WeaponCapability;value:number}|{type:'projectileCount';tag:WeaponCapability;value:number}|{type:'indirectLifesteal';value:number}
  | {type:'conditionalStat';condition:'stationary'|'moving'|'injured'|'wealth'|'dawn'|'pickupSprint';stat:StatKey;value:number;threshold:number;limit?:number}
  | {type:'conditionalDamage';condition:'opening'|'execute'|'close'|'distant';value:number;threshold:number}
@@ -86,8 +86,8 @@ add('umbrella','회피 우산','UNCOMMON',24,'dodge',0.035,'☂',3);
 add('bloodPack','헌터 혈액팩','UNCOMMON',28,'lifesteal',0.02,'🩸',3);
 add('swordManual','검술 교본','UNCOMMON',24,'meleeDamage',0.2,'📕',3,[],{stat:'rangedDamage',value:-0.1});
 add('toolbox','공구함','UNCOMMON',30,'armor',2,'🧰',2,[{type:'structureLimit',tag:'STRUCTURE',value:1}],{stat:'moveSpeed',value:-5});
-add('conductor','연쇄 도체','RARE',48,'rangedDamage',0.05,'⚡',1,[{type:'projectileCount',tag:'CHAIN',value:1}],{stat:'attackSpeed',value:-0.06});
-add('splitter','분광 렌즈','RARE',55,'projectileSpeed',0.05,'💎',1,[{type:'projectileCount',tag:'PROJECTILE',value:1}],{stat:'attackSpeed',value:-0.08});
+add('conductor','연쇄 도체','EPIC',57,'rangedDamage',0.05,'⚡',1,[{type:'projectileCount',tag:'CHAIN',value:1}],{stat:'attackSpeed',value:-0.06});
+add('splitter','분광 렌즈','EPIC',61,'projectileSpeed',0.05,'💎',1,[{type:'projectileCount',tag:'PROJECTILE',value:1}],{stat:'attackSpeed',value:-0.08});
 add('mineCase','지뢰 보급함','RARE',42,'area',0.06,'📦',2,[{type:'structureLimit',tag:'MINE',value:1}],{stat:'moveSpeed',value:-5});
 add('cursedStone','저주받은 마력석','RARE',45,'currencyGain',0.25,'🟣',2,[],{stat:'curse',value:8});
 add('hunterCoat','헌터 방호 코트','RARE',45,'maxHp',30,'🧥',2,[],{stat:'hpRegeneration',value:-0.2});
@@ -103,7 +103,7 @@ addPair('reinforcedHarness','강화 전술 하네스','UNCOMMON',29,'maxHp',10,'
 addPair('harmonicCapacitor','위상 축전기','UNCOMMON',29,'attackSpeed',0.08,'duration',0.05,'itemHarmonicCapacitor',3);
 addPair('ionConductor','이온 도체','UNCOMMON',31,'rangedDamage',0.25,'projectileSpeed',0.18,'itemIonConductor',2,{stat:'area',value:-0.18});
 addPair('shieldEmitter','휴대 차폐기','RARE',49,'armor',4,'dodge',0.025,'itemShieldEmitter',2,{stat:'moveSpeed',value:-6});
-addPair('resonancePrism','공명 프리즘','RARE',51,'area',0.1,'duration',0.08,'itemResonancePrism',2,{stat:'attackSpeed',value:-0.06});
+addPair('resonancePrism','공명 프리즘','EPIC',59,'area',0.1,'duration',0.08,'itemResonancePrism',1,{stat:'attackSpeed',value:-0.06});
 addPair('tunedCore','조율 마력핵','LEGENDARY',90,'damage',0.13,'attackSpeed',0.08,'itemTunedCore',1,{stat:'maxHp',value:-15});
 
 items.bloodCircuit!.unlockCondition={metaItemId:'bloodCircuit'};
@@ -114,14 +114,14 @@ function unique(id:string,name:string,rarity:Rarity,price:number,description:str
 }
 unique('anchorBadge','정박 배지','UNCOMMON',34,'0.7초 정지하면 피해 +30%. 이동 시 해제.',{type:'conditionalStat',condition:'stationary',stat:'damage',value:0.3,threshold:0.7},{stat:'moveSpeed',value:-4});
 unique('kineticSpool','관성 릴','UNCOMMON',35,'이동 중 공격 속도 +22%. 멈추면 해제.',{type:'conditionalStat',condition:'moving',stat:'attackSpeed',value:0.22,threshold:0},{stat:'armor',value:-3});
-unique('scarSeal','흉터 인장','RARE',51,'잃은 체력 10%마다 피해 +5%, 최대 +40%.',{type:'conditionalStat',condition:'injured',stat:'damage',value:0.05,threshold:0.1,limit:0.4},{stat:'dodge',value:-0.03});
+unique('scarSeal','흉터 인장','EPIC',64,'잃은 체력 10%마다 피해 +5%, 최대 +40%.',{type:'conditionalStat',condition:'injured',stat:'damage',value:0.05,threshold:0.1,limit:0.4},{stat:'dodge',value:-0.03});
 unique('openingTicket','개문 승차권','UNCOMMON',36,'체력이 가득 찬 적에게 첫 적중 피해 +65%.',{type:'conditionalDamage',condition:'opening',value:0.65,threshold:1},{stat:'criticalChance',value:-0.02});
 unique('executionBell','종결 종','RARE',49,'체력 25% 이하의 적에게 피해 +55%.',{type:'conditionalDamage',condition:'execute',value:0.55,threshold:0.25});
 unique('duelCompass','결투 나침반','UNCOMMON',38,'거리 110 이내의 적에게 피해 +35%.',{type:'conditionalDamage',condition:'close',value:0.35,threshold:110},{stat:'range',value:-0.12});
 unique('horizonMirror','지평 거울','RARE',47,'거리 250 이상의 적에게 피해 +45%.',{type:'conditionalDamage',condition:'distant',value:0.45,threshold:250},{stat:'armor',value:-4});
 unique('dawnThermos','새벽 보온병','UNCOMMON',35,'각 웨이브 첫 8초 동안 초당 체력 2 회복.',{type:'conditionalStat',condition:'dawn',stat:'hpRegeneration',value:2,threshold:8},{stat:'attackSpeed',value:-0.08});
 unique('fieldSuture','전장 봉합기','RARE',46,'보상 대상 적 8마리 처치마다 체력 3 회복.',{type:'killHeal',value:3,every:8});
-unique('revengeFuse','보복 퓨즈','RARE',52,'피격 시 반경 140에 고정 피해 24. 재사용 6초. 흡혈·치명타 없음.',{type:'retaliate',value:24,radius:140,cooldown:6},{stat:'dodge',value:-0.04});
+unique('revengeFuse','보복 퓨즈','EPIC',66,'피격 시 반경 140에 고정 피해 24. 재사용 6초. 흡혈·치명타 없음.',{type:'retaliate',value:24,radius:140,cooldown:6},{stat:'dodge',value:-0.04});
 unique('salvageFilter','회수 여과기','UNCOMMON',37,'마력석 픽업 12개 회수마다 체력 5 회복.',{type:'pickupHeal',value:5,every:12});
 unique('courierWheel','배달 바퀴','UNCOMMON',33,'마력석 회수 후 1.5초 동안 이동속도 +30. 재회수 시 시간 갱신.',{type:'conditionalStat',condition:'pickupSprint',stat:'moveSpeed',value:30,threshold:1.5},{stat:'pickupRange',value:-8});
 unique('firstShield','초회 방패패','RARE',50,'웨이브마다 처음 받는 피해를 70% 줄임. 회피는 횟수를 소모하지 않음.',{type:'firstShield',value:0.7});

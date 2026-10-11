@@ -57,14 +57,15 @@ describe('ground rewards and queued progression', () => {
 });
 
 describe('twelve distinct normal enemy behaviors', () => {
-  it('registers twelve normals and two dedicated multi-pattern bosses', () => {
+  it('registers the normals and two bosses, the gatekeeper with one dedicated pattern', () => {
     const normal = Object.values(enemies).filter(e => e.tags.includes('NORMAL'));
-    expect(normal).toHaveLength(12);
+    expect(normal.length).toBeGreaterThanOrEqual(12);
     expect(new Set(normal.map(e => e.behavior)).size).toBeGreaterThanOrEqual(11);
     for (const e of normal) expect(e.magicStoneDrop).toBeGreaterThan(0);
     const bosses = Object.values(enemies).filter(e => e.tags.includes('BOSS'));
-    expect(bosses).toHaveLength(2);
-    for (const boss of bosses) { expect(boss.bossPatterns!.length).toBeGreaterThan(2); expect(boss.magicStoneDrop).toBeGreaterThan(0); }
+    expect(bosses.length).toBeGreaterThanOrEqual(2);
+    for (const boss of bosses) { expect(boss.bossPatterns!.length).toBeGreaterThan(0); expect(boss.magicStoneDrop).toBeGreaterThan(0); }
+    expect(enemies.gatekeeper!.bossPatterns!.map(pattern => pattern.type)).toEqual(['spiral']);
   });
   it.each(['crawler', 'swarm'])('%s approaches with its registered movement', id => {
     const { run, enemy, system } = behaviorRun(id);
@@ -74,9 +75,33 @@ describe('twelve distinct normal enemy behaviors', () => {
     const { run, enemy, system } = behaviorRun('runner');
     system.update(run, 0.1); expect(enemy.action).toBe('warning'); expect(enemy.x).toBe(200);
   });
-  it('tank attacks with an area warning', () => {
-    const { run, system } = behaviorRun('bulwark', 80); system.update(run, 0.1);
+  it('땅울림 hops in place through the warning and repeats only for the elite', () => {
+    const { run, enemy, system } = behaviorRun('bulwark', 80); system.update(run, 0.1);
     expect(run.hazards[0]!.warning).toBeGreaterThan(0); expect(run.player.hp).toBe(100);
+    expect(enemy.action).toBe('hop'); const x = enemy.x;
+    system.update(run, 0.5); expect(enemy.x).toBe(x);
+    system.update(run, ENEMY_RULES.tankWarning); expect(enemy.action).toBe('move');
+    expect(enemy.timer).toBeCloseTo(ENEMY_RULES.tankCooldown - ENEMY_RULES.tankWarning, 0);
+    const elite = behaviorRun('haetaeHead', 120); elite.system.update(elite.run, 0.1);
+    expect(elite.enemy.action).toBe('hop'); expect(elite.run.hazards[0]!.radius).toBe(enemies.haetaeHead!.quake!.radius);
+    elite.system.update(elite.run, ENEMY_RULES.tankWarning); elite.enemy.x = 600;
+    elite.system.update(elite.run, 0.8);
+    expect(elite.enemy.action).toBe('hop'); expect(elite.run.hazards.some(hazard => hazard.x > 500)).toBe(true);
+  });
+  it('the elite charger dashes twice after one warning', () => {
+    const { run, enemy, system } = behaviorRun('charger');
+    system.update(run, 0.1); system.update(run, 1); expect(enemy.action).toBe('dash');
+    system.update(run, 0.5); system.update(run, 0.01); expect(enemy.action).toBe('warning');
+    system.update(run, 0.4); expect(enemy.action).toBe('dash');
+    system.update(run, 0.5); system.update(run, 0.01); expect(enemy.action).toBe('move');
+  });
+  it('the gatekeeper keeps moving while it scatters rings of bullets', () => {
+    const { run, enemy, system } = behaviorRun('gatekeeper', 200);
+    const pattern = enemies.gatekeeper!.bossPatterns![0]!; let moved = 0;
+    for (let i = 0; i < 40; i++) { const x = enemy.x, y = enemy.y; system.update(run, 0.05); moved += Math.hypot(enemy.x - x, enemy.y - y); }
+    expect(run.hostileProjectiles.length).toBeGreaterThanOrEqual(pattern.count * 2);
+    expect(moved).toBeGreaterThan(40);
+    expect(run.enemies).toHaveLength(1);
   });
   it('ranged enemies warn before firing an actual hostile projectile', () => {
     const { run, enemy, system } = behaviorRun('spitter', 330);

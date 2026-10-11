@@ -1,0 +1,181 @@
+{
+  "generator": "built-in image_gen.imagegen",
+  "mode": "transparent RGBA; source alpha preserved; crop/resize only",
+  "assets": [
+    {
+      "name": "speaker_on",
+      "raw": "C:\\Users\\geniu\\.codex\\generated_images\\01a1295b-f305-7352-aa06-e6cf330f3987\\exec-7eabc933-f702-4844-8920-8b3a99b569d1.png",
+      "size": [
+        512,
+        512
+      ],
+      "crop": null,
+      "prompt": "Use case: stylized-concept\nAsset type: one transparent raster icon for a mature mobile game operating-office lobby; final display is just 32 by 32 pixels.\nPrimary request: a sophisticated compact desktop studio monitor speaker, a square deep navy cabinet with a large readable circular woofer in the lower two thirds and one small circular tweeter above. Slight view from above and slight 3/4 perspective, mostly frontal, showing a narrow top and right side. Refined warm painted 3D game icon with soft surfaces, dimensional satin highlights and only a little subtle grain. No outline stroke, no flat SVG appearance. Adult professional office hardware, not toy or childish.\nComposition: a single centered object filling about 80 percent of a square canvas, with transparent space outside; strong broad readable silhouette, no stand, no surrounding frame. Both circular drivers are broad and minimal without tiny mechanical details. Near-square cabinet, not tall tower.\nColor: navy #24395C cabinet, dark woofer cone, warm cream bevel highlights, one tiny mint #3DD6B5 status light on the front lower corner. Speaker is ON. Soft ambient studio lighting from upper left; slightly raised highlights. Shadow only extremely faint and compact.\nConstraints: genuinely transparent background, no fake checkerboard, no letters, numbers, branding or logo, no sound-wave arcs, no UI toggle glyph, no X. Do not add floor or room. Do not add another speaker. No thick outline. No bright neon.",
+      "source_saved": "C:\\Users\\geniu\\Documents\\GitHub\\Seoul-Hero\\design\\ui-image-skins\\office-day-01\\lobby-polish-01\\_raw\\speaker_on_source.png",
+      "original_size": [
+        1254,
+        1254
+      ],
+      "final": "C:\\Users\\geniu\\Documents\\GitHub\\Seoul-Hero\\design\\ui-image-skins\\office-day-01\\lobby-polish-01\\speaker_on.png",
+      "runtime": "C:\\Users\\geniu\\Documents\\GitHub\\Seoul-Hero\\godot\\assets\\ui\\office-day-01\\lobby-polish-01\\speaker_on.png",
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "alpha_zero_pixels": 109093,
+      "alpha_nonzero_pixels": 153051,
+      "solid_silhouette_bbox": [
+        79,
+        42,
+        449,
+        472
+      ],
+      "sha256": "c8dbfad5120190341dca0bebfbf7f1dc9c4bdab3eab1b524337519002366c609"
+    },
+    {
+      "name": "speaker_off",
+      "raw": "C:\\Users\\geniu\\.codex\\generated_images\\01a1295b-f305-7352-aa06-e6cf330f3987\\exec-b5a19c7b-4d8f-4e4a-82a3-e0f83e85c7a3.png",
+      "size": [
+        512,
+        512
+      ],
+      "crop": null,
+      "prompt": "Use case: precise-object-edit.\nEdit target: the referenced navy desktop speaker icon.\nPrimary request: create its sound OFF state. Keep every pixel of the silhouette, cabinet proportions, two circular speaker drivers, cream bezels, perspective, object position, crop, transparent background, and all body surface details unchanged. ONLY change the tiny mint LED on the front lower corner into an unlit muted gray-green lens and reduce bright highlight intensity on the cream bezels and cabinet very slightly. The woofer, tweeter and navy body are the same speaker. This is an exact paired UI state that will crossfade; body geometry must not move or rescale.\nConstraints: genuine RGBA transparency, no text, no logo, no X, no waves, no new symbols, no extra objects. Do not darken the entire cabinet substantially. Same centered icon composition as input. Body stays clearly readable at32px.",
+      "source_saved": "C:\\Users\\geniu\\Documents\\GitHub\\Seoul-Hero\\design\\ui-image-skins\\office-day-01\\lobby-polish-01\\_raw\\speaker_off_source.png",
+      "original_size": [
+        1254,
+        1254
+      ],
+      "final": "C:\\Users\\geniu\\Documents\\GitHub\\Seoul-Hero\\design\\ui-image-skins\\office-day-01\\lobby-polish-01\\speaker_off.png",
+      "runtime": "C:\\Users\\geniu\\Documents\\GitHub\\Seoul-Hero\\godot\\assets\\ui\\office-day-01\\lobby-polish-01\\speaker_off.png",
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "alpha_zero_pixels": 109952,
+      "alpha_nonzero_pixels": 152192,
+      "solid_silhouette_bbox": [
+        79,
+        41,
+        450,
+        473
+      ],
+      "sha256": "f6ae7b450f38781853e9b5bc4ab753ce9ee85b12a641ebb08d2e19961260572c"
+    },
+    {
+      "name": "deploy_corner",
+      "raw": "C:\\Users\\geniu\\.codex\\generated_images\\01a1295b-f305-7352-aa06-e6cf330f3987\\exec-7b1ff499-b5cc-4326-bb2b-9c9f20efb4b9.png",
+      "size": [
+        64,
+        64
+      ],
+      "crop": [
+        128,
+        133,
+        1136,
+        1141
+      ],
+      "prompt": "Use case: stylized-concept\nAsset type: one small raster corner accent for an adult polished tactical office game UI, transparent PNG.\nSubject: a single thin upper-left L-shaped bracket made of translucent coral-red #FF3D57 refractive acrylic. The horizontal arm extends to the right, the vertical arm extends downward. Both arms have equal length, open inner square negative space. The arms are straight with tiny clipped ends and a barely visible bevel at the outer edge, no additional symbols. This is a restrained premium UI surface piece, not a neon light tube.\nComposition: square canvas, bracket fits about 84% width and height with uniform margin around it, arms thickness about 12% canvas width, dead flat frontal view, no perspective. L bend at upper left. All space outside and inside the L is genuinely transparent.\nMaterials and lighting: softly textured translucent acrylic with subtle coral glass depth, satin gradient, top-left soft pale reflection integrated as a bevel surface. Very fine restrained grain. No floor shadow, no drop shadow, no bloom outside.\nConstraints: only one L bracket, no other corners, no square frame, no text, numbers, logo, icon, no thick outline stroke, no toy look, no cyberpunk neon, no fake checkerboard.",
+      "source_saved": "C:\\Users\\geniu\\Documents\\GitHub\\Seoul-Hero\\design\\ui-image-skins\\office-day-01\\lobby-polish-01\\_raw\\deploy_corner_source.png",
+      "original_size": [
+        1254,
+        1254
+      ],
+      "final": "C:\\Users\\geniu\\Documents\\GitHub\\Seoul-Hero\\design\\ui-image-skins\\office-day-01\\lobby-polish-01\\deploy_corner.png",
+      "runtime": "C:\\Users\\geniu\\Documents\\GitHub\\Seoul-Hero\\godot\\assets\\ui\\office-day-01\\lobby-polish-01\\deploy_corner.png",
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "alpha_zero_pixels": 2961,
+      "alpha_nonzero_pixels": 1135,
+      "solid_silhouette_bbox": [
+        2,
+        2,
+        62,
+        61
+      ],
+      "sha256": "025601a18fed397cb555efd155852bc2e406935b065ff2d159bc34a71765f498"
+    },
+    {
+      "name": "deploy_warning_tile",
+      "raw": "C:\\Users\\geniu\\.codex\\generated_images\\01a1295b-f305-7352-aa06-e6cf330f3987\\exec-07c3d271-ae05-4847-bb82-fdd2658d3b47.png",
+      "size": [
+        48,
+        20
+      ],
+      "crop": [
+        939,
+        270,
+        1255,
+        526
+      ],
+      "prompt": "Use case: stylized-concept\nAsset type: a tiny seamless repeating raster warning-stripe tile for a refined game operating UI. Final tile will be48 by20px.\nPrimary request: a flat front-facing thin horizontal strip of alternating charcoal navy and coral red diagonal bands tilted down toward the right, at a consistent forty-five degree angle. Just the stripe material, no frame or border, no badges, no text, no icons. The red is #FF3D57 and dark is #192332. Subtle satin acrylic grain and soft dimensional sheen within each stripe, no bright gloss, no outline. This is a technical stripe strip in a stylish adult professional operations interface, not construction equipment.\nComposition: a horizontal rectangle about2.4:1, centered on an actual transparent background with no drop shadow. Stripe bands continue across the left and right edges so the rectangular strip can repeat seamlessly horizontally. The top and bottom must be straight horizontal edges, no perspective or rounded corners. Repeating diagonal bands of equal width. No bevel framing the tile.\nConstraints: no letters, numbers, symbols, logo, fake checkerboard, no floor or surrounding panel. True transparent PNG outside the horizontal material strip. Dark stripes are actual painted charcoal material, not transparent holes.",
+      "source_saved": "C:\\Users\\geniu\\Documents\\GitHub\\Seoul-Hero\\design\\ui-image-skins\\office-day-01\\lobby-polish-01\\_raw\\deploy_warning_tile_source.png",
+      "original_size": [
+        1942,
+        809
+      ],
+      "final": "C:\\Users\\geniu\\Documents\\GitHub\\Seoul-Hero\\design\\ui-image-skins\\office-day-01\\lobby-polish-01\\deploy_warning_tile.png",
+      "runtime": "C:\\Users\\geniu\\Documents\\GitHub\\Seoul-Hero\\godot\\assets\\ui\\office-day-01\\lobby-polish-01\\deploy_warning_tile.png",
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "alpha_zero_pixels": 96,
+      "alpha_nonzero_pixels": 864,
+      "solid_silhouette_bbox": [
+        0,
+        3,
+        48,
+        17
+      ],
+      "sha256": "605875a44dfa2a92e51baabfcee78f28ae36925e8f480901684f19a5e757fd6d"
+    },
+    {
+      "name": "deploy_streak",
+      "raw": "C:\\Users\\geniu\\.codex\\generated_images\\01a1295b-f305-7352-aa06-e6cf330f3987\\exec-7331f580-1377-47ff-9692-98dd32dc4255.png",
+      "size": [
+        112,
+        16
+      ],
+      "crop": [
+        104,
+        298,
+        1930,
+        514
+      ],
+      "prompt": "Use case: stylized-concept\nAsset type: a single tiny raster directional light-streak for a refined tactical operations game UI, final112 by16px.\nSubject: one very thin elongated coral-red satin luminous trail pointing toward the LEFT. Sharp pointed left tip, long broad middle only about6 percent of width tall, and a softly tapering fading tail to the right. A narrow warm-white reflection at the central left tip transitions into coral #FF3D57, then darker transparent red tail. Restrained premium acrylic shine, not neon or laser. Minimal broad clear form, gentle thickness and subtle light diffusion confined tightly to the trail.\nComposition: a long horizontal image roughly7:1, centered with only slim vertical margin and horizontal padding, genuine RGBA transparent background; light trail spans about90 percent width. Single streak, no clusters, no dots, no arrows, no other elements.\nConstraints: no text, numbers, logos, icons, no surrounding frame, no drop shadow, no fake checkerboard. Do not render a shooting star or meteor, no star shape, no head orb, no smoky tail. It is a single leftward glint for the edge of a UI panel.",
+      "source_saved": "C:\\Users\\geniu\\Documents\\GitHub\\Seoul-Hero\\design\\ui-image-skins\\office-day-01\\lobby-polish-01\\_raw\\deploy_streak_source.png",
+      "original_size": [
+        1967,
+        799
+      ],
+      "final": "C:\\Users\\geniu\\Documents\\GitHub\\Seoul-Hero\\design\\ui-image-skins\\office-day-01\\lobby-polish-01\\deploy_streak.png",
+      "runtime": "C:\\Users\\geniu\\Documents\\GitHub\\Seoul-Hero\\godot\\assets\\ui\\office-day-01\\lobby-polish-01\\deploy_streak.png",
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "alpha_zero_pixels": 1074,
+      "alpha_nonzero_pixels": 718,
+      "solid_silhouette_bbox": [
+        5,
+        6,
+        76,
+        10
+      ],
+      "sha256": "f66e89888a49d9ee09d975dc988007bca9a8f2803e6815f1df840dd8823136be"
+    }
+  ],
+  "notes": [
+    "Speaker ON/OFF share full original1254x1254 crop and512x512 resize. Tiny generated edge variation remains visually imperceptible at32px.",
+    "Warning strip uses one316px horizontal source period; final repeated seam visual inspection at24x10.",
+    "No text or logos found during visual inspection."
+  ]
+}

@@ -21,17 +21,17 @@ const categoryNames: Record<ArchiveCategory, string> = {
   characters: '캐릭터', weapons: '무기', items: '아이템', enemies: '몬스터', weeklyTraits: '주간 특성', blessings: '단군의 축복',
 };
 const behaviorNames: Record<EnemyDefinition['behavior'], string> = {
-  chase: '추적형', skirmish: '견제형', tank: '중장형', ranged: '원거리형', swarm: '군집형', charge: '돌진형',
+  chase: '근거리', skirmish: '견제형', tank: '땅울림', ranged: '원거리', swarm: '군집형', charge: '돌진형',
   bomber: '자폭형', splitter: '분열형', support: '지원형', summoner: '소환형', defender: '방어형', ambush: '기습형', boss: '보스',
 };
 const behaviorNotes: Record<EnemyDefinition['behavior'], string> = {
-  chase: '플레이어를 계속 추적합니다.', skirmish: '적정 거리를 유지하며 빈틈을 노립니다.', tank: '느리게 접근하며 근거리 광역 충격을 일으킵니다.',
+  chase: '플레이어를 계속 추적합니다.', skirmish: '적정 거리를 유지하며 빈틈을 노립니다.', tank: '느리게 다가와 제자리에서 뛰어오른 뒤 착지하며 주변을 내려찍습니다.',
   ranged: '거리를 유지하며 적대 투사체를 발사합니다.', swarm: '빠르게 뭉쳐 접근하며 수로 압박합니다.', charge: '예고 동작 뒤 목표 방향으로 돌진합니다.',
   bomber: '접근 후 폭발해 범위 피해를 줍니다.', splitter: '처치되면 작은 개체로 분열합니다.', support: '주변 아군의 체력을 회복합니다.',
   summoner: '일정 주기로 하위 개체를 소환합니다.', defender: '주기적으로 방어 태세를 취합니다.', ambush: '희미해진 상태로 접근한 뒤 기습합니다.',
-  boss: '여러 전용 공격 패턴을 순환합니다.',
+  boss: '전용 공격 패턴 하나를 되풀이합니다.',
 };
-const patternNames = { charge: '돌진', aoe: '광역 공격', summon: '소환', volley: '탄막' } as const;
+const patternNames = { charge: '돌진', aoe: '광역 공격', summon: '소환', volley: '탄막', spiral: '회전 탄막' } as const;
 const capabilityNames: Record<WeaponCapability, string> = {
   MELEE: '근접', RANGED: '원거리', PROJECTILE: '투사체', AREA: '범위', ORBIT: '회전', BEAM: '광선', SUMMON: '소환',
   STRUCTURE: '설치물', TURRET: '포탑', TRAP: '함정', MINE: '지뢰', AURA: '마력장', DURATION: '지속', PIERCING: '관통',
@@ -138,8 +138,8 @@ function enemyDetail(id: string): string {
   return `<article class="archive-detail"><header class="archive-detail-hero archive-enemy-hero">${portrait(enemy.visual.sprite ?? 'brute', enemy.name, 'archive-enemy-image')}<div><span class="archive-record-type ${boss ? 'boss' : ''}">${boss ? 'BOSS ENTITY' : 'HOSTILE ENTITY'} · ${behaviorNames[enemy.behavior]}</span><h1>${escapeHtml(enemy.name)}</h1><p>${escapeHtml(enemy.description)}</p></div></header><section class="archive-specs"><h2>기본 전투 수치</h2><dl><div><dt>최대 체력</dt><dd>${number(enemy.maxHp)}</dd></div><div><dt>이동 속도</dt><dd>${number(enemyBaseMoveSpeed(enemy.id, enemy.moveSpeed))}</dd></div><div><dt>접촉 피해</dt><dd>${number(enemy.contactDamage)}</dd></div><div><dt>개체 크기</dt><dd>${number(enemy.radius)}</dd></div><div><dt>마력석 보상</dt><dd>${number(enemy.magicStoneDrop)}</dd></div></dl></section><section class="archive-behavior"><h2>행동 특성</h2><p>${behaviorNotes[enemy.behavior]}</p>${enemy.childId ? `<p>생성 개체: <b>${escapeHtml(enemies[enemy.childId]?.name ?? enemy.childId)}</b></p>` : ''}${enemy.charge ? `<dl><div><dt>돌진 감지 거리</dt><dd>${number(enemy.charge.triggerRange)}</dd></div><div><dt>돌진 속도</dt><dd>${number(enemy.charge.speed * ENEMY_MOVE_SCALE)}</dd></div><div><dt>예고 시간</dt><dd>${number(enemy.charge.warning)}초</dd></div></dl>` : ''}${patterns ? `<ul class="archive-patterns">${patterns}</ul>` : ''}</section></article>`;
 }
 
-const rarityNames:Record<Rarity,string>={COMMON:'일반',UNCOMMON:'고급',RARE:'희귀',LEGENDARY:'전설'};
-const rarityOrder:Rarity[]=['COMMON','UNCOMMON','RARE','LEGENDARY'];
+const rarityNames:Record<Rarity,string>={COMMON:'일반',UNCOMMON:'고급',RARE:'희귀',EPIC:'영웅',LEGENDARY:'전설'};
+const rarityOrder:Rarity[]=['COMMON','UNCOMMON','RARE','EPIC','LEGENDARY'];
 const itemPercentStats=new Set<keyof PlayerStats>(['damage','attackSpeed','meleeDamage','rangedDamage','criticalChance','criticalDamage','range','area','duration','projectileSpeed','dodge','lifesteal','currencyGain']);
 function itemModifierValue(stat:keyof PlayerStats,operation:'add'|'multiply',value:number):string {
   const change=operation==='multiply'?value-1:value;

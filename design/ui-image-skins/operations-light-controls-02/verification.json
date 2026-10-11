@@ -1,0 +1,17 @@
+{
+  "previewOnly": true,
+  "approvalPending": true,
+  "productionConnected": false,
+  "liveSourceFilesUnchanged": 182,
+  "changedLivePaths": [],
+  "fitIssues": 0,
+  "captureCount": 6,
+  "fixedTabGeometry": true,
+  "nativeFontText": true,
+  "inputMinimum44": true,
+  "limitations": [
+    "Static isolated Godot draft; no live callbacks or save adapters loaded.",
+    "No play, touch, device, performance, build or full test runs.",
+    "Readability checked visually as well as font measurement."
+  ]
+}

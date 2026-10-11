@@ -12,7 +12,6 @@ var _ambience_tween: Tween
 var _music_changing := false
 var _ambience_changing := false
 var _last: Dictionary = {}
-var _last_variant: Dictionary = {}
 var _voices: Array = []
 var _pending: Array = []
 var _hops: Dictionary = {}
@@ -145,7 +144,32 @@ func _music_finished() -> void:
 
 func _resolve_cue(id: String, context: Dictionary) -> String:
 	var connections := _connections()
+	var identities: Dictionary = connections.get("identities", {})
+	var aliases: Dictionary = identities.get("aliases", {})
+	id = str(aliases.get(id, id))
 	var weapon_id := str(context.get("weaponId", ""))
+	var monster_id := str(context.get("monsterId", ""))
+	var materials: Dictionary = identities.get("monsterMaterials", {})
+	var material := str(materials.get(monster_id, identities.get("defaultMaterial", "soft")))
+	# Resolve semantic events before weapon stages: purchase/hit are not launches.
+	if id == "enemyHit":
+		var hits: Dictionary = identities.get("weaponHits", {})
+		if hits.has(weapon_id):
+			if hits[weapon_id] == null: return ""
+			var profile: Dictionary = hits[weapon_id]
+			return str(profile.get(material, profile.get(str(identities.get("defaultMaterial", "soft")), id)))
+		return id
+	if id == "enemyKilled":
+		return str(identities.get("materialDeaths", {}).get(material, id))
+	if id == "magicStoneCollected":
+		var pickup: Variant = identities.get("pickups", {}).get(str(context.get("pickupType", "magicStone")), id)
+		if pickup is Dictionary: return str(pickup.get(str(context.get("grade", "")), id))
+		return str(pickup)
+	if id == "purchase":
+		return str(identities.get("items", {}).get(str(context.get("itemId", "")), id))
+	if id == "weaponPurchase":
+		return str(identities.get("weaponPurchases", {}).get(weapon_id, id))
+	if id == "playerHit": return id
 	var stage := str(context.get("stage", ""))
 	var weapons: Dictionary = connections.get("weaponStages", {})
 	if weapons.has(weapon_id):
@@ -156,6 +180,15 @@ func _resolve_cue(id: String, context: Dictionary) -> String:
 	if actions.has(behavior): return str(actions[behavior])
 	if actions.has(id): return str(actions[id])
 	return id
+
+# Read-only description used by audio-only diagnostics and the listening report.
+# Selection has no RNG, instance IDs, spatial parameters, or mutable history.
+func describe_cue(id: String, context: Dictionary = {}) -> Dictionary:
+	var resolved := _resolve_cue(id, context)
+	var definition: Dictionary = Content.data.sfx.get(resolved, {})
+	var urls: Array = definition.get("urls", [])
+	if resolved.is_empty() or urls.is_empty(): return {}
+	return {"id":resolved,"url":str(urls[0]),"pitch":1.0,"gain":float(definition.get("gain",0.25)),"pan":0.0,"group":str(definition.get("group","ui"))}
 
 func cue(id: String, context: Dictionary = {}) -> void:
 	if not _audible or _hidden: return
@@ -222,25 +255,21 @@ func _play_cue(id: String, context: Dictionary) -> void:
 				victim = voice
 		if victim.is_empty(): return
 		_stop_voice(victim); _voices.erase(victim)
-	var choices: Array = []
-	for url in urls:
-		if not bool(_config().get("noConsecutiveVariant", true)) or urls.size() == 1 or str(url) != str(_last_variant.get(id, "")):
-			choices.append(url)
-	var url := str(choices[_rng.randi_range(0, choices.size() - 1)])
+	# Each profile owns a single authored composite. Legacy multi-url cues also
+	# use their fixed first source; runtime never changes timbre or loudness.
+	var url := str(urls[0])
 	var stream := _stream(url)
 	if stream == null: return
 	var player := AudioStreamPlayer.new()
 	player.stream = stream
 	player.bus = "Combat" if group == "combat" else "UI"
-	var gain := float(definition.get("gain", 0.25)) * _rng.randf_range(1.0 - float(definition.get("volumeVariation", 0.0)), 1.0)
-	if not important: gain /= sqrt(1.0 + _voices.size() * float(_config().get("busyAttenuation", 0.12)))
+	var gain := float(definition.get("gain", 0.25))
 	player.volume_db = linear_to_db(maxf(0.0001, gain))
-	var pitch: Array = definition.get("pitch", [1.0, 1.0])
-	player.pitch_scale = _rng.randf_range(float(pitch[0]), float(pitch[1]))
+	player.pitch_scale = 1.0
 	add_child(player)
 	player.finished.connect(player.queue_free)
 	_voices.append({"node": player, "id": id, "group": group, "priority": priority, "protected": important, "started": now})
-	_last[id] = now; _last_variant[id] = url
+	_last[id] = now
 	if id == "chainHop" and not attack_id.is_empty(): _hops[attack_id] = {"count": int(hop_state.get("count", 0)) + 1, "at": _combat_clock}
 	player.play()
 

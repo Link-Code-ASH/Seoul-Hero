@@ -1,0 +1,166 @@
+{
+	"checks": [
+		{
+			"fitIssues": [],
+			"fontRoles": {
+				"body": "Paperlogy",
+				"number": "BarlowCondensed",
+				"section": "HaeongSans",
+				"title": "BMJUA"
+			},
+			"kind": "recovery",
+			"missingArt": [],
+			"previewOnly": true,
+			"rewardAssignment": false,
+			"runtimeConnected": false,
+			"saveWrites": false,
+			"size": [
+				915,
+				412
+			],
+			"state": "ready",
+			"uiEffects": {
+				"active": [],
+				"anchors": {},
+				"effects": 0,
+				"particles": 0,
+				"pending": 0,
+				"screen": "support-preview-recovery",
+				"suspended": false
+			}
+		},
+		{
+			"fitIssues": [],
+			"fontRoles": {
+				"body": "Paperlogy",
+				"number": "BarlowCondensed",
+				"section": "HaeongSans",
+				"title": "BMJUA"
+			},
+			"kind": "supply",
+			"missingArt": [],
+			"previewOnly": true,
+			"rewardAssignment": false,
+			"runtimeConnected": false,
+			"saveWrites": false,
+			"size": [
+				915,
+				412
+			],
+			"state": "ready",
+			"uiEffects": {
+				"active": [],
+				"anchors": {},
+				"effects": 0,
+				"particles": 0,
+				"pending": 0,
+				"screen": "support-preview-supply",
+				"suspended": false
+			}
+		},
+		{
+			"fitIssues": [],
+			"fontRoles": {
+				"body": "Paperlogy",
+				"number": "BarlowCondensed",
+				"section": "HaeongSans",
+				"title": "BMJUA"
+			},
+			"kind": "recovery",
+			"missingArt": [],
+			"previewOnly": true,
+			"rewardAssignment": false,
+			"runtimeConnected": false,
+			"saveWrites": false,
+			"size": [
+				915,
+				412
+			],
+			"state": "empty",
+			"uiEffects": {
+				"active": [],
+				"anchors": {},
+				"effects": 0,
+				"particles": 0,
+				"pending": 0,
+				"screen": "support-preview-recovery",
+				"suspended": false
+			}
+		},
+		{
+			"fitIssues": [],
+			"fontRoles": {
+				"body": "Paperlogy",
+				"number": "BarlowCondensed",
+				"section": "HaeongSans",
+				"title": "BMJUA"
+			},
+			"kind": "recovery",
+			"missingArt": [],
+			"previewOnly": true,
+			"rewardAssignment": false,
+			"runtimeConnected": false,
+			"saveWrites": false,
+			"size": [
+				915,
+				412
+			],
+			"state": "claimed",
+			"uiEffects": {
+				"active": [],
+				"anchors": {},
+				"effects": 0,
+				"particles": 0,
+				"pending": 0,
+				"screen": "support-preview-recovery",
+				"suspended": false
+			}
+		},
+		{
+			"fitIssues": [],
+			"fontRoles": {
+				"body": "Paperlogy",
+				"number": "BarlowCondensed",
+				"section": "HaeongSans",
+				"title": "BMJUA"
+			},
+			"kind": "supply",
+			"missingArt": [],
+			"previewOnly": true,
+			"rewardAssignment": false,
+			"runtimeConnected": false,
+			"saveWrites": false,
+			"size": [
+				915,
+				412
+			],
+			"state": "insufficient",
+			"uiEffects": {
+				"active": [],
+				"anchors": {},
+				"effects": 0,
+				"particles": 0,
+				"pending": 0,
+				"screen": "support-preview-supply",
+				"suspended": false
+			}
+		}
+	],
+	"fps": 30,
+	"logicalSize": [
+		915,
+		412
+	],
+	"productionSkinReused": true,
+	"rasterDensity": 4,
+	"rewardAssignment": false,
+	"runtimeConnected": false,
+	"saveWrites": false,
+	"scenes": [],
+	"simulation": false,
+	"size": [
+		3660,
+		1648
+	],
+	"stage": "approval-preview"
+}

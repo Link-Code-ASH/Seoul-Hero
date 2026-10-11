@@ -1,0 +1,1255 @@
+{
+  "approvalStageOnly": false,
+  "productionPresentationDefault": true,
+  "captureStage": "applied",
+  "presentationOverride": false,
+  "baselineFreshFromProductionMain": true,
+  "sameSyntheticProfiles": true,
+  "sameBaselineSelections": [
+    {
+      "file": "settings.png",
+      "same": true
+    },
+    {
+      "file": "archive-characters.png",
+      "same": true
+    },
+    {
+      "file": "archive-weapons.png",
+      "same": true
+    },
+    {
+      "file": "archive-enemies.png",
+      "same": true
+    },
+    {
+      "file": "archive-items.png",
+      "same": true
+    },
+    {
+      "file": "archive-weeklyRules.png",
+      "same": true
+    },
+    {
+      "file": "archive-blessings.png",
+      "same": true
+    },
+    {
+      "file": "association-draw.png",
+      "same": true
+    },
+    {
+      "file": "association-upgrade.png",
+      "same": true
+    },
+    {
+      "file": "gate-map.png",
+      "same": true
+    },
+    {
+      "file": "gate-floor.png",
+      "same": true
+    },
+    {
+      "file": "gate-character.png",
+      "same": true
+    },
+    {
+      "file": "gate-weapon.png",
+      "same": true
+    },
+    {
+      "file": "gate-blessing.png",
+      "same": true
+    },
+    {
+      "file": "gate-formation.png",
+      "same": true
+    }
+  ],
+  "allViewportPngs915x412": true,
+  "userProfileRead": false,
+  "saveWrites": false,
+  "combatStarted": false,
+  "userFileActionsInvoked": false,
+  "nativeUiChecks": [
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Applied captures use the production presentation default"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Applied surfaces use internal runtime assets"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "settings viewport"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "archive-characters viewport"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "archive-weapons viewport"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "archive-enemies viewport"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "archive-items viewport"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "archive-weeklyRules viewport"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "archive-blessings viewport"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "association-draw viewport"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "association-upgrade viewport"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "gate-map viewport"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "gate-floor viewport"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "gate-character viewport"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "gate-weapon viewport"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "gate-blessing viewport"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "gate-formation viewport"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Four native volume sliders"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Volume callback updates only synthetic memory"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "settings-slider viewport"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Archive native category callback"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Archive native item callback"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Archive detail tab callback"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "archive-weapon-detail viewport"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Archive list scroll works"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "archive-items-scroll viewport"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Insufficient funds disable draw"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "association-no-funds viewport"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Complete collection disables draw"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "association-complete viewport"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "association-locked viewport"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Unlocked one-time content disables purchase"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "association-unlocked viewport"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Rejected transaction does not commit or debit: character insufficient funds"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Rejected transaction does not commit or debit: character fully collected"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Failed synthetic commit rolls back: character"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Rejected transaction does not commit or debit: weapon insufficient funds"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Rejected transaction does not commit or debit: weapon fully collected"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Failed synthetic commit rolls back: weapon"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Rejected transaction does not commit or debit: blessing insufficient funds"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Rejected transaction does not commit or debit: blessing fully collected"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Failed synthetic commit rolls back: blessing"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Rejected transaction does not commit or debit: vitality insufficient funds"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Failed synthetic commit rolls back: vitality"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Rejected transaction does not commit or debit: circuit insufficient funds"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Failed synthetic commit rolls back: circuit"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Rejected transaction does not commit or debit: one-time unlock already complete"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Synthetic transaction commits once: character"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Synthetic transaction debits exactly once: character"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Draw unlocks the deterministic unowned character"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Applied association feedback controller exists"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Association feedback reports busy"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Rapid native requests during feedback preserve wallet and selection"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "association-character-draw-intro viewport"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "First confirm reveals without closing: character"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "association-character-draw-result viewport"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Second confirm closes without another payout: character"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "First Escape reveals the active result: character"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Second Escape closes the result: character"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Focus loss settles silently: character"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "association-character-focus-settled viewport"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Focus return does not restart draw intro: character"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Synthetic transaction commits once: weapon"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Synthetic transaction debits exactly once: weapon"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Draw unlocks the deterministic unowned weapon"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Applied association feedback controller exists"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Association feedback reports busy"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Rapid native requests during feedback preserve wallet and selection"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "association-weapon-draw-intro viewport"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "First confirm reveals without closing: weapon"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "association-weapon-draw-result viewport"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Second confirm closes without another payout: weapon"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "First Escape reveals the active result: weapon"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Second Escape closes the result: weapon"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Focus loss settles silently: weapon"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "association-weapon-focus-settled viewport"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Focus return does not restart draw intro: weapon"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Synthetic transaction commits once: blessing"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Synthetic transaction debits exactly once: blessing"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Draw unlocks the deterministic unowned blessing"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Applied association feedback controller exists"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Association feedback reports busy"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Rapid native requests during feedback preserve wallet and selection"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "association-blessing-draw-intro viewport"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "First confirm reveals without closing: blessing"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "association-blessing-draw-result viewport"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Second confirm closes without another payout: blessing"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "First Escape reveals the active result: blessing"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Second Escape closes the result: blessing"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Focus loss settles silently: blessing"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "association-blessing-focus-settled viewport"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Focus return does not restart draw intro: blessing"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Synthetic transaction commits once: vitality"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Synthetic transaction debits exactly once: vitality"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Applied association feedback controller exists"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Upgrade feedback starts busy: vitality"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Rapid upgrade request preserves one committed result: vitality"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "association-upgrade-vitality-progress viewport"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Upgrade unlocks input after 0.8 seconds: vitality"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "association-upgrade-vitality-complete viewport"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Synthetic transaction commits once: circuit"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Synthetic transaction debits exactly once: circuit"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Applied association feedback controller exists"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Upgrade feedback starts busy: circuit"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Rapid upgrade request preserves one committed result: circuit"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "association-upgrade-circuit-progress viewport"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Upgrade unlocks input after 0.8 seconds: circuit"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "association-upgrade-circuit-complete viewport"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Gate next preserves six-step route"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Floor page callback selects 21"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "gate-floor-page viewport"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Locked character inspection preserves selected item"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Locked character blocks next"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "gate-character-locked viewport"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Locked weapon inspection preserves selected item"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Locked weapon blocks next"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "gate-weapon-locked viewport"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Locked blessing inspection preserves selected item"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Locked blessing blocks next"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "gate-blessing-locked viewport"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Blessing none remains selectable"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "gate-blessing-none viewport"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Blessing none advances to formation"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "gate-formation-none viewport"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Formation edits character"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Formation edits weapon"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Formation edits blessing"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Native previous returns to prior gate step"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "First gate back returns to lobby"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "gate-primary-hover viewport"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "gate-primary-pressed viewport"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Pressed input rectangle stays fixed"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "gate-primary-restored viewport"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Pressed face returns to resting position"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "gate-primary-focus viewport"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Native focus uses no default box"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Applied gate omits standalone subtitle and footer explanation"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "No gameplay or user file action during preview"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Synthetic transaction commits once: blessing"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Synthetic transaction debits exactly once: blessing"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Applied association feedback controller exists"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Synthetic transaction commits once: vitality"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Synthetic transaction debits exactly once: vitality"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Applied association feedback controller exists"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Synthetic transaction commits once: circuit"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Synthetic transaction debits exactly once: circuit"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Applied association feedback controller exists"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "No save writes"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "No combat started"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Application-focus check begins from pressed 1.5px with visible glint"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Application focus loss resets Face, Plate and glint"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Application focus loss kills hover, press and sweep tweens"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Application focus loss stays settled"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Application focus return restores resting control"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "title": "Application-focus verification preserves memory and save boundary"
+    }
+  ],
+  "scriptShaderLoadErrors": [],
+  "motion": {
+    "sourceFrames": 90,
+    "gifFrames": 64,
+    "durationMs": 6000,
+    "sharedPalette": true,
+    "decodedMatchesQuantizedLatestFrames": true,
+    "decodedCoversSourceFrames": true,
+    "bytes": 886513,
+    "sourceFrameSha256": [
+      "0530d5760f442eeda0bf3b76505bbfb5d80c93096fa8ee593a217d3ef12ced11",
+      "0530d5760f442eeda0bf3b76505bbfb5d80c93096fa8ee593a217d3ef12ced11",
+      "aaa7faf78fa803eeace58911ddb06b843705ffc9fb85fd23909c06d01351776e",
+      "469fab43dc856b488ddbad4da2ea9e7966ec5b209285cc94fd8b0c1f25c3d578",
+      "469fab43dc856b488ddbad4da2ea9e7966ec5b209285cc94fd8b0c1f25c3d578",
+      "c296b03a6ed8649c56ae850866e9411d3db9e70f4a3790f76cc9963802c6643c",
+      "38e1ece6533d50e98e3d5eaf7c071b7eeaed6712a7d63de442a3edc57f6f8cbb",
+      "469fab43dc856b488ddbad4da2ea9e7966ec5b209285cc94fd8b0c1f25c3d578",
+      "469fab43dc856b488ddbad4da2ea9e7966ec5b209285cc94fd8b0c1f25c3d578",
+      "469fab43dc856b488ddbad4da2ea9e7966ec5b209285cc94fd8b0c1f25c3d578",
+      "0530d5760f442eeda0bf3b76505bbfb5d80c93096fa8ee593a217d3ef12ced11",
+      "0530d5760f442eeda0bf3b76505bbfb5d80c93096fa8ee593a217d3ef12ced11",
+      "46dc3cf376584a99e31c00233ead07ca04020daa94a078f4ea0b83138337eac5",
+      "46dc3cf376584a99e31c00233ead07ca04020daa94a078f4ea0b83138337eac5",
+      "8cdbad24e9213aa58c69164c9cc7af2f646a3fa043519a8475ea38ab6c70ea80",
+      "7ff88b6f6de7ac8378c43be5638bf0bf147149d10831fac958139fa93149809c",
+      "7ff88b6f6de7ac8378c43be5638bf0bf147149d10831fac958139fa93149809c",
+      "2bfd8b14e592ca7ba5afc8d03ebc6002b6a84794c719f5016f6ac81f956cf2dd",
+      "dd6f1611a747f33179e70bcc1d5f020d96f31b10178856329efad6c82c604b3d",
+      "7ff88b6f6de7ac8378c43be5638bf0bf147149d10831fac958139fa93149809c",
+      "7ff88b6f6de7ac8378c43be5638bf0bf147149d10831fac958139fa93149809c",
+      "7ff88b6f6de7ac8378c43be5638bf0bf147149d10831fac958139fa93149809c",
+      "46dc3cf376584a99e31c00233ead07ca04020daa94a078f4ea0b83138337eac5",
+      "46dc3cf376584a99e31c00233ead07ca04020daa94a078f4ea0b83138337eac5",
+      "e198ba173235e14298e1d46acccfd29b467bfa06a3a08c0cd39bfe84aa97ae76",
+      "e198ba173235e14298e1d46acccfd29b467bfa06a3a08c0cd39bfe84aa97ae76",
+      "9354c65ec410b44947f7d06852d1422255a6921eee2b488874148f3c11d37bc3",
+      "12bc9e1520e445e4145b08d9c6123cb56ffbcbc5cd852fcab0d38d25dce230cb",
+      "12bc9e1520e445e4145b08d9c6123cb56ffbcbc5cd852fcab0d38d25dce230cb",
+      "e79594158be6d1c59a3c4f6e058b6fef10f0a7daf872a3d015b0d116c6da1a66",
+      "683bb3f002eab2383f2173910875c97b393f7eb24dcc7e41db9df7323fd59666",
+      "12bc9e1520e445e4145b08d9c6123cb56ffbcbc5cd852fcab0d38d25dce230cb",
+      "12bc9e1520e445e4145b08d9c6123cb56ffbcbc5cd852fcab0d38d25dce230cb",
+      "12bc9e1520e445e4145b08d9c6123cb56ffbcbc5cd852fcab0d38d25dce230cb",
+      "e198ba173235e14298e1d46acccfd29b467bfa06a3a08c0cd39bfe84aa97ae76",
+      "e198ba173235e14298e1d46acccfd29b467bfa06a3a08c0cd39bfe84aa97ae76",
+      "7f6f82c9977f24a9b0fad158a1b7c5e0bb05971d4ae63c5351331aec5c95d6f3",
+      "28e0d2271ccb47e62d1d69b009f2dc011d6b2e70bea748dbb8b16af86832fa09",
+      "f10cb6f85812be39487226d0541ed4207dbd030a0fe94d1a8def657ceddeabcc",
+      "84d052d5b2d9658c82e059b141470cab3358617d06ffe412a32b1f39f3895390",
+      "bc38cdf8d87d57e89d0552df6e9720c3a3c69d826be7f722b65be1ad3611d019",
+      "f7ac7be694ec2c8eb80049ce203d469327c00b66a49d54e2411f4059e66378ee",
+      "cd731fc3da72f8a85bd09ef05623525e73e42f41a48b3b4f665db25e5ea646a0",
+      "b63c080a5804ed6612d34d999ea4fd7bc8fef57e400611e5aa457e1346bf3073",
+      "fbc4892163a298004b9b524f18b7f9eb6215bb75d0d4f754bdf81b1a2f1aded9",
+      "0ba1827863fdd4634ccfa32dca533ac8143d2796e75e5c2e58ee18e2c7f010bb",
+      "ad04683d8ab4b2bf67f61c91fa1ffbc3034816f0444189385ae860b233ab672b",
+      "49ae4a557e77592858416e90624a334324faa29a8036272b60f61b9dae699804",
+      "af337ad597dd1caca32923ddf053fd9918d1261726d8171601b21846e07f8c0b",
+      "ec5a53bc16404fc5a7cb8feb161df2f98371371a3a12016c3d622d2da73107e9",
+      "ebe7d47677449d2f8fb42c2ed82041da4515c8dc8c95e23eb2c7111978b9cf57",
+      "3937cb9b5497d08852180ef680bbcac5d391138373c4e5bf58188758c9fcb9f7",
+      "f8f53f8bb8fceeef78e36390bc56a3549a0b06b3f0548bca83c1dfbba9da0492",
+      "6ac40143373de08e74e5bd7c7521916f9954c921b2d483856142f105d5ef29c4",
+      "ad26e4244e9e6e53416e4ab899f5e61a7a7fc13613f645074f8a3e1a9ff615f0",
+      "ad26e4244e9e6e53416e4ab899f5e61a7a7fc13613f645074f8a3e1a9ff615f0",
+      "ad26e4244e9e6e53416e4ab899f5e61a7a7fc13613f645074f8a3e1a9ff615f0",
+      "ad26e4244e9e6e53416e4ab899f5e61a7a7fc13613f645074f8a3e1a9ff615f0",
+      "ad26e4244e9e6e53416e4ab899f5e61a7a7fc13613f645074f8a3e1a9ff615f0",
+      "ad26e4244e9e6e53416e4ab899f5e61a7a7fc13613f645074f8a3e1a9ff615f0",
+      "ad26e4244e9e6e53416e4ab899f5e61a7a7fc13613f645074f8a3e1a9ff615f0",
+      "ad26e4244e9e6e53416e4ab899f5e61a7a7fc13613f645074f8a3e1a9ff615f0",
+      "ad26e4244e9e6e53416e4ab899f5e61a7a7fc13613f645074f8a3e1a9ff615f0",
+      "ad26e4244e9e6e53416e4ab899f5e61a7a7fc13613f645074f8a3e1a9ff615f0",
+      "ad26e4244e9e6e53416e4ab899f5e61a7a7fc13613f645074f8a3e1a9ff615f0",
+      "ad26e4244e9e6e53416e4ab899f5e61a7a7fc13613f645074f8a3e1a9ff615f0",
+      "9489a1538ecacdcf3651d336d46385231b96d06f9b7b2f855c5d59d60a3581a6",
+      "6a39664a952c313e7459ed017ab2873c44029e070c7da361f0893cbfc5760ee4",
+      "8420dbb7e195f6df8eaf5fe74ae8a3fe7179d00e61bf41c822a1da4d9106f2e5",
+      "4a3a09c67cdda7a85175d0dd61134965da96812e4e1659b6115aa9d5015c58db",
+      "b28bafa7ce87ec86244666dc1e0b249cf621e8a8f07813ec532f8c390e80c360",
+      "2fbf60559ebdbb8b8081300f19e196eff6420c785dfff895ee5829175bbabe1b",
+      "9f5403e84ad05d8db0ad1bb757b4bcc942027b5e777817afc5c075069b9cd760",
+      "1d15c4c47f9e31f5ac6b242a35186378b01c79cd7bd37d46873250f6ac2f391a",
+      "3f6aaa45fc8b3a064e8489b3932326bb4a7a05b0c3166d997e6d4b3387f6388e",
+      "d48ee6b662d7ab470441b1ade021c22c654facec3cc441dfbe5c134af1ea027d",
+      "5e504329c3f2ce830a155c1bdca314b8ca6cedaecb624911fced57d2746cc3d7",
+      "0ac97500ce077e49fb93c96f8faebc0f9f2fdf47f3a730c4183d3a0bace695af",
+      "93806c645a70a54af7f903f0aa9292f6ca6d369567bbd3fe1e6118e0dc4ddab6",
+      "d8b145935140106e1121dab13a52407530fd38187a109e1050cc7423697c9dfb",
+      "3538f738bd63d8e2aa0b24e24221d9c53c61360253faf1dc42b89e3b2c394263",
+      "3f876c20187aa2e04d43eee8abf2e46a7507cd9bb40d13b5acf61cd00784146b",
+      "04882cb6f0b8b7174250e923f4af83357249f9637cd0b3d41c44ec6024aa6e32",
+      "c17904ba4ba8f170f5a8aafceb6668644c219e2574f26ab874fa0048cff81732",
+      "fbb01ded03875e862362386a53565b53e67f7bef8b52d9fd49f6b582732ab4d2",
+      "d4356e933e94e5725a4373a83bed6acdbf69d1347b91a7c87108d52f91e34647",
+      "7b4b2f84accf069c1faa88211cc00e08ed3c2a925657bd94e521ca7b22d52a4d",
+      "747e296123e1d440005ce5cda407fbdb0cb3a5f17710d6d998a0eac0cdc0ba6f",
+      "102ac25d423cb7162658fa6e7e8a1b726189196b9c11b16db613d4a14385ea91",
+      "965a46dc5930b6ef81589f780cc0fd5fffea4e7f5e5663af635f2e835fa7d43a"
+    ]
+  },
+  "pngSizes": {
+    "before\\settings.png": [
+      915,
+      412
+    ],
+    "before\\archive-characters.png": [
+      915,
+      412
+    ],
+    "before\\archive-weapons.png": [
+      915,
+      412
+    ],
+    "before\\archive-enemies.png": [
+      915,
+      412
+    ],
+    "before\\archive-items.png": [
+      915,
+      412
+    ],
+    "before\\archive-weeklyRules.png": [
+      915,
+      412
+    ],
+    "before\\archive-blessings.png": [
+      915,
+      412
+    ],
+    "before\\association-draw.png": [
+      915,
+      412
+    ],
+    "before\\association-upgrade.png": [
+      915,
+      412
+    ],
+    "before\\gate-map.png": [
+      915,
+      412
+    ],
+    "before\\gate-floor.png": [
+      915,
+      412
+    ],
+    "before\\gate-character.png": [
+      915,
+      412
+    ],
+    "before\\gate-weapon.png": [
+      915,
+      412
+    ],
+    "before\\gate-blessing.png": [
+      915,
+      412
+    ],
+    "before\\gate-formation.png": [
+      915,
+      412
+    ],
+    "applied\\settings.png": [
+      915,
+      412
+    ],
+    "applied\\archive-characters.png": [
+      915,
+      412
+    ],
+    "applied\\archive-weapons.png": [
+      915,
+      412
+    ],
+    "applied\\archive-enemies.png": [
+      915,
+      412
+    ],
+    "applied\\archive-items.png": [
+      915,
+      412
+    ],
+    "applied\\archive-weeklyRules.png": [
+      915,
+      412
+    ],
+    "applied\\archive-blessings.png": [
+      915,
+      412
+    ],
+    "applied\\association-draw.png": [
+      915,
+      412
+    ],
+    "applied\\association-upgrade.png": [
+      915,
+      412
+    ],
+    "applied\\gate-map.png": [
+      915,
+      412
+    ],
+    "applied\\gate-floor.png": [
+      915,
+      412
+    ],
+    "applied\\gate-character.png": [
+      915,
+      412
+    ],
+    "applied\\gate-weapon.png": [
+      915,
+      412
+    ],
+    "applied\\gate-blessing.png": [
+      915,
+      412
+    ],
+    "applied\\gate-formation.png": [
+      915,
+      412
+    ],
+    "applied\\settings-slider.png": [
+      915,
+      412
+    ],
+    "applied\\archive-weapon-detail.png": [
+      915,
+      412
+    ],
+    "applied\\archive-items-scroll.png": [
+      915,
+      412
+    ],
+    "applied\\association-no-funds.png": [
+      915,
+      412
+    ],
+    "applied\\association-complete.png": [
+      915,
+      412
+    ],
+    "applied\\association-locked.png": [
+      915,
+      412
+    ],
+    "applied\\association-unlocked.png": [
+      915,
+      412
+    ],
+    "applied\\association-character-draw-intro.png": [
+      915,
+      412
+    ],
+    "applied\\association-character-draw-result.png": [
+      915,
+      412
+    ],
+    "applied\\association-character-focus-settled.png": [
+      915,
+      412
+    ],
+    "applied\\association-weapon-draw-intro.png": [
+      915,
+      412
+    ],
+    "applied\\association-weapon-draw-result.png": [
+      915,
+      412
+    ],
+    "applied\\association-weapon-focus-settled.png": [
+      915,
+      412
+    ],
+    "applied\\association-blessing-draw-intro.png": [
+      915,
+      412
+    ],
+    "applied\\association-blessing-draw-result.png": [
+      915,
+      412
+    ],
+    "applied\\association-blessing-focus-settled.png": [
+      915,
+      412
+    ],
+    "applied\\association-upgrade-vitality-progress.png": [
+      915,
+      412
+    ],
+    "applied\\association-upgrade-vitality-complete.png": [
+      915,
+      412
+    ],
+    "applied\\association-upgrade-circuit-progress.png": [
+      915,
+      412
+    ],
+    "applied\\association-upgrade-circuit-complete.png": [
+      915,
+      412
+    ],
+    "applied\\gate-floor-page.png": [
+      915,
+      412
+    ],
+    "applied\\gate-character-locked.png": [
+      915,
+      412
+    ],
+    "applied\\gate-weapon-locked.png": [
+      915,
+      412
+    ],
+    "applied\\gate-blessing-locked.png": [
+      915,
+      412
+    ],
+    "applied\\gate-blessing-none.png": [
+      915,
+      412
+    ],
+    "applied\\gate-formation-none.png": [
+      915,
+      412
+    ],
+    "applied\\gate-primary-hover.png": [
+      915,
+      412
+    ],
+    "applied\\gate-primary-pressed.png": [
+      915,
+      412
+    ],
+    "applied\\gate-primary-restored.png": [
+      915,
+      412
+    ],
+    "applied\\gate-primary-focus.png": [
+      915,
+      412
+    ]
+  },
+  "baselineManifestSha256": "3300a73b50bc7a0d431323daa941416a49c7fd52ef64cf7bb7e997423e95e2ef",
+  "previewManifestSha256": "4c541b8a20da8432230fe0e2213fbbadfca5cfdbfb59f9c013dc2d8e062bab3a",
+  "focusedApplicationValidation": {
+    "checks": [
+      {
+        "detail": "",
+        "passed": true,
+        "title": "Applied captures use the production presentation default"
+      },
+      {
+        "detail": "",
+        "passed": true,
+        "title": "Applied surfaces use internal runtime assets"
+      },
+      {
+        "detail": "",
+        "passed": true,
+        "title": "Application-focus check begins from pressed 1.5px with visible glint"
+      },
+      {
+        "detail": "",
+        "passed": true,
+        "title": "Application focus loss resets Face, Plate and glint"
+      },
+      {
+        "detail": "",
+        "passed": true,
+        "title": "Application focus loss kills hover, press and sweep tweens"
+      },
+      {
+        "detail": "",
+        "passed": true,
+        "title": "Application focus loss stays settled"
+      },
+      {
+        "detail": "",
+        "passed": true,
+        "title": "Application focus return restores resting control"
+      },
+      {
+        "detail": "",
+        "passed": true,
+        "title": "Application-focus verification preserves memory and save boundary"
+      }
+    ],
+    "freshProcess": true,
+    "stage": "applied",
+    "visualChanges": false
+  },
+  "sourceCodeSha256": {
+    "godot/scripts/core/main.gd": "d8f50bfdc4ed0f2d6479a3df6db4ef5586ba980f76b2294c31d6861b9cf6726f",
+    "godot/scripts/ui/desk_kit.gd": "7cac860ba14d0ab0e7725240bf653f3f5c7a5dfbdfcc486f8f230cccd184e03c",
+    "godot/scripts/ui/archive.gd": "f174a5c4504213f1acf3ac46b0b020db0516fd582a40472634314d5a8bb96a53",
+    "godot/scripts/ui/gate_screen.gd": "8048fe521c19b3c83eb9bc36353e4b33581d40d070b75829e8d5b7820a3c7c0d",
+    "godot/scripts/ui/meta_screens.gd": "1e66c46e6c6d657f5593ce0d74daf62d28508e1646b876bb315828e1a9120861",
+    "godot/scripts/ui/economy_ui.gd": "67a965d99e5e7ada11651678b2b541bfc5e539b2da9595f096ab28df3d4c5004",
+    "godot/scripts/ui/association_feedback.gd": "58358ec31fb3789ae906a429c9923ed1331083d0c34719450961c44370f4bb82",
+    "godot/tools/menu_unified_capture.gd": "6cd5359a75c65063eec7f25c9ac0c8e84b366ec11c2a362fd35bf3e3cce64b40"
+  }
+}

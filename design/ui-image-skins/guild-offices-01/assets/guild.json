@@ -1,0 +1,483 @@
+{
+  "revision": "guild-management-01",
+  "approved_at": "2026-10-04",
+  "source": "design/ui-image-skins/guild-management-01",
+  "rooms": {
+    "file": "res://assets/ui/guild-management/rooms.png",
+    "columns": 4,
+    "rows": 8,
+    "size": [
+      1254,
+      1254
+    ],
+    "cell_size": [
+      313.5,
+      156.75
+    ],
+    "facility_order": [
+      "office",
+      "research",
+      "expedition",
+      "production",
+      "recovery",
+      "workshop",
+      "revival",
+      "analysis"
+    ],
+    "tiers": [
+      1,
+      4,
+      7,
+      10
+    ],
+    "facilities": {
+      "office": {
+        "row": 0,
+        "levels": {
+          "1": {
+            "column": 0,
+            "region": [
+              0,
+              0,
+              313.5,
+              156.75
+            ]
+          },
+          "4": {
+            "column": 1,
+            "region": [
+              313.5,
+              0,
+              313.5,
+              156.75
+            ]
+          },
+          "7": {
+            "column": 2,
+            "region": [
+              627,
+              0,
+              313.5,
+              156.75
+            ]
+          },
+          "10": {
+            "column": 3,
+            "region": [
+              940.5,
+              0,
+              313.5,
+              156.75
+            ]
+          }
+        }
+      },
+      "research": {
+        "row": 1,
+        "levels": {
+          "1": {
+            "column": 0,
+            "region": [
+              0,
+              156.75,
+              313.5,
+              156.75
+            ]
+          },
+          "4": {
+            "column": 1,
+            "region": [
+              313.5,
+              156.75,
+              313.5,
+              156.75
+            ]
+          },
+          "7": {
+            "column": 2,
+            "region": [
+              627,
+              156.75,
+              313.5,
+              156.75
+            ]
+          },
+          "10": {
+            "column": 3,
+            "region": [
+              940.5,
+              156.75,
+              313.5,
+              156.75
+            ]
+          }
+        }
+      },
+      "expedition": {
+        "row": 2,
+        "levels": {
+          "1": {
+            "column": 0,
+            "region": [
+              0,
+              313.5,
+              313.5,
+              156.75
+            ]
+          },
+          "4": {
+            "column": 1,
+            "region": [
+              313.5,
+              313.5,
+              313.5,
+              156.75
+            ]
+          },
+          "7": {
+            "column": 2,
+            "region": [
+              627,
+              313.5,
+              313.5,
+              156.75
+            ]
+          },
+          "10": {
+            "column": 3,
+            "region": [
+              940.5,
+              313.5,
+              313.5,
+              156.75
+            ]
+          }
+        }
+      },
+      "production": {
+        "row": 3,
+        "levels": {
+          "1": {
+            "column": 0,
+            "region": [
+              0,
+              470.25,
+              313.5,
+              156.75
+            ]
+          },
+          "4": {
+            "column": 1,
+            "region": [
+              313.5,
+              470.25,
+              313.5,
+              156.75
+            ]
+          },
+          "7": {
+            "column": 2,
+            "region": [
+              627,
+              470.25,
+              313.5,
+              156.75
+            ]
+          },
+          "10": {
+            "column": 3,
+            "region": [
+              940.5,
+              470.25,
+              313.5,
+              156.75
+            ]
+          }
+        }
+      },
+      "recovery": {
+        "row": 4,
+        "levels": {
+          "1": {
+            "column": 0,
+            "region": [
+              0,
+              627,
+              313.5,
+              156.75
+            ]
+          },
+          "4": {
+            "column": 1,
+            "region": [
+              313.5,
+              627,
+              313.5,
+              156.75
+            ]
+          },
+          "7": {
+            "column": 2,
+            "region": [
+              627,
+              627,
+              313.5,
+              156.75
+            ]
+          },
+          "10": {
+            "column": 3,
+            "region": [
+              940.5,
+              627,
+              313.5,
+              156.75
+            ]
+          }
+        }
+      },
+      "workshop": {
+        "row": 5,
+        "levels": {
+          "1": {
+            "column": 0,
+            "region": [
+              0,
+              783.75,
+              313.5,
+              156.75
+            ]
+          },
+          "4": {
+            "column": 1,
+            "region": [
+              313.5,
+              783.75,
+              313.5,
+              156.75
+            ]
+          },
+          "7": {
+            "column": 2,
+            "region": [
+              627,
+              783.75,
+              313.5,
+              156.75
+            ]
+          },
+          "10": {
+            "column": 3,
+            "region": [
+              940.5,
+              783.75,
+              313.5,
+              156.75
+            ]
+          }
+        }
+      },
+      "revival": {
+        "row": 6,
+        "levels": {
+          "1": {
+            "column": 0,
+            "region": [
+              0,
+              940.5,
+              313.5,
+              156.75
+            ]
+          },
+          "4": {
+            "column": 1,
+            "region": [
+              313.5,
+              940.5,
+              313.5,
+              156.75
+            ]
+          },
+          "7": {
+            "column": 2,
+            "region": [
+              627,
+              940.5,
+              313.5,
+              156.75
+            ]
+          },
+          "10": {
+            "column": 3,
+            "region": [
+              940.5,
+              940.5,
+              313.5,
+              156.75
+            ]
+          }
+        }
+      },
+      "analysis": {
+        "row": 7,
+        "levels": {
+          "1": {
+            "column": 0,
+            "region": [
+              0,
+              1097.25,
+              313.5,
+              156.75
+            ]
+          },
+          "4": {
+            "column": 1,
+            "region": [
+              313.5,
+              1097.25,
+              313.5,
+              156.75
+            ]
+          },
+          "7": {
+            "column": 2,
+            "region": [
+              627,
+              1097.25,
+              313.5,
+              156.75
+            ]
+          },
+          "10": {
+            "column": 3,
+            "region": [
+              940.5,
+              1097.25,
+              313.5,
+              156.75
+            ]
+          }
+        }
+      }
+    }
+  },
+  "states": {
+    "file": "res://assets/ui/guild-management/room-states.png",
+    "columns": 1,
+    "rows": 3,
+    "size": [
+      1024,
+      1536
+    ],
+    "cell_size": [
+      1024,
+      512
+    ],
+    "state_order": [
+      "empty",
+      "construction",
+      "unbuilt-floor"
+    ],
+    "regions": {
+      "empty": {
+        "row": 0,
+        "column": 0,
+        "region": [
+          0,
+          0,
+          1024,
+          512
+        ]
+      },
+      "construction": {
+        "row": 1,
+        "column": 0,
+        "region": [
+          0,
+          512,
+          1024,
+          512
+        ]
+      },
+      "unbuilt-floor": {
+        "row": 2,
+        "column": 0,
+        "region": [
+          0,
+          1024,
+          1024,
+          512
+        ]
+      }
+    }
+  },
+  "walk": {
+    "file": "res://assets/ui/guild-walk/structure.png",
+    "regions": [
+      [
+        20,
+        224,
+        590,
+        96
+      ],
+      [
+        620,
+        204,
+        537,
+        82
+      ],
+      [
+        1184,
+        34,
+        132,
+        397
+      ],
+      [
+        1536,
+        34,
+        136,
+        399
+      ],
+      [
+        82,
+        460,
+        280,
+        384
+      ],
+      [
+        443,
+        631,
+        464,
+        80
+      ],
+      [
+        916,
+        680,
+        424,
+        90
+      ],
+      [
+        1407,
+        456,
+        314,
+        387
+      ]
+    ],
+    "roles": [
+      "corridor",
+      "ceiling",
+      "leftWall",
+      "rightWall",
+      "elevator",
+      "roof",
+      "foregroundRailing",
+      "entrance"
+    ],
+    "size": [
+      1774,
+      887
+    ],
+    "approved_at": "2026-10-04",
+    "source": "design/ui-image-skins/guild-walk-01"
+  }
+}

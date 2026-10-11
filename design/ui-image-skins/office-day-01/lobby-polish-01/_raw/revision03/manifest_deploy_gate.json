@@ -1,0 +1,44 @@
+{
+  "revision": "03 serious deployment gate",
+  "generator": "built-in image_gen.imagegen",
+  "file": "icon_deploy_gate.png",
+  "prompt": "Use case: stylized-concept\nAsset type: one serious sophisticated transparent raster deployment-gate icon for an adult hunter mobile game operating UI, final512x512, displayed72px on a dark navy deployment plate.\nPrimary request: a single manufactured dimensional portal standing upright, a sleek angular navy and gunmetal frame forming a tall beveled rectangular opening with clipped upper corners. Shallow three-quarter view slightly from above, mostly frontal, only a narrow top and side visible. Broad clean cream/silver metal faces catch calm studio highlights and give a strong readable silhouette on dark navy. The portal is poised and solemn, precise modern equipment belonging in a professional hunter association, not a cute fantasy gateway. Two restrained coral-red readiness insets at the lower frame corners, no symbols.\nInside: a subtle cool-violet and soft-white luminous VERTICAL dimensional breach, an elongated narrow luminous rift with a little translucent depth and quiet pale lavender mist confined inside the frame. No bubbly spiral or concentric swirls. The inner opening is dark muted navy around the breach so the vertical white core reads clearly.\nStyle: refined adult game object render, softly painted tactile metal with smooth restrained dimensional shading, minimal mechanical detail, no outline stroke, no flat SVG or cartoon appearance. Bright enough to read without saturated neon; broad planes and one simple vertical light shape, very limited detail.\nComposition: one centered object filling roughly80percent of square canvas, generous real transparent margins, clear bold silhouette at72px, no environment, no ground plane, no base pedestal, no external light trails, only extremely faint compact transparent grounding shadow.\nColor palette: deep navy #24395C and gunmetal, cream/silver #ECEDE6 edge faces, subtle cool violet #B9B1E8 and soft-white #F7F6F1 core, small coral #FF3D57 accent. No warm gold.\nConstraints: genuine transparent RGBA background, no fake checkerboard, no letters, numbers, logos, no orange cartoon arrow or sign, no arrows at all, no medieval pillars or gold architectural columns, no sci-fi glyphs, no decorative stars, no rounded toy proportions, no heavy neon bloom, no outer outline, no additional object. Completely new icon, no existing game icon geometry to preserve.",
+  "generated_source": "C:\\Users\\geniu\\.codex\\generated_images\\01a1295b-f305-7352-aa06-e6cf330f3987\\exec-9ad9a13f-bfb9-41bb-881c-5d3efca9a663.png",
+  "source_saved": "C:\\Users\\geniu\\Documents\\GitHub\\Seoul-Hero\\design\\ui-image-skins\\office-day-01\\lobby-polish-01\\_raw\\revision03\\icon_deploy_gate_source.png",
+  "original_size": [
+    1254,
+    1254
+  ],
+  "crop": [
+    -60,
+    -60,
+    1314,
+    1314
+  ],
+  "final_size": [
+    512,
+    512
+  ],
+  "postprocess": "Source RGBA preserved; padded crop extends60px beyond original canvas then512x512 Lanczos resize only. No repainting or alpha normalization.",
+  "mode": "RGBA",
+  "alpha_extrema": [
+    0,
+    255
+  ],
+  "has_alpha_zero": true,
+  "alpha_zero_pixels": 163674,
+  "visible_bbox_alpha32": [
+    130,
+    45,
+    387,
+    466
+  ],
+  "text_logo_visual_check": "none",
+  "arrow_sign_medieval_column_visual_check": "none",
+  "fake_checkerboard_visual_check": "none",
+  "readability72px_visual_check": "angular metallic frame and narrow vertical rift read clearly on dark navy; restrained coral readiness accents visible",
+  "sha256": "d9285f4fb72bcb68aaa8cd3b629fde17b367b8429ee2b0b30f2cd8c49a92e01d",
+  "runtime_sha256": "d9285f4fb72bcb68aaa8cd3b629fde17b367b8429ee2b0b30f2cd8c49a92e01d",
+  "runtime_copy_matches": true,
+  "old_asset_preserved": "godot/assets/ui/office-day-01/icons/icon_deploy_gate.png not modified"
+}

@@ -21,12 +21,25 @@ func _capture_all() -> void:
 	DisplayServer.window_set_size(Vector2i(915,412))
 	for frame in range(3): await get_tree().process_frame
 	var hud_only := false
+	var operations_preview := false
+	var compact_controls_preview := false
+	var custom_output := false
 	for argument in OS.get_cmdline_user_args():
-		if argument.begins_with("--output="): _output = argument.trim_prefix("--output=")
+		if argument.begins_with("--output="):
+			_output = argument.trim_prefix("--output=")
+			custom_output = true
 		if argument == "--hud-only": hud_only = true
+		if argument == "--operations-preview": operations_preview = true
+		if argument == "--compact-controls-preview": compact_controls_preview = true
+	if compact_controls_preview:
+		if not "--ui-preview" in OS.get_cmdline_user_args() or not "--guild-office-preview" in OS.get_cmdline_user_args():
+			push_error("Compact control captures require --ui-preview --guild-office-preview for isolated profile startup.")
+			get_tree().quit(1); return
+		if not custom_output: _output = "res://exports/compact-controls-runtime-02"
 	DirAccess.make_dir_recursive_absolute(ProjectSettings.globalize_path(_output))
 	_original_profile = Profile.meta
 	Profile.meta = Content.data.defaultMeta.duplicate(true)
+	Profile.meta.guild = HeroGuildState.create(Content.data,1000.0)
 	HeroMeta.initialize(Content.data,Profile.meta)
 	HeroMeta.weekly(Content.data,Profile.meta,Time.get_unix_time_from_system())
 	Profile.meta.wallet.associationCoins = 12480; Profile.meta.wallet.supplyTickets = 12
@@ -43,6 +56,22 @@ func _capture_all() -> void:
 	var setup := {"map":"seoul","depth":6,"character":"awakener","weapon":"manaBolt","blessing":"","weekly":Profile.meta.weeklyGate.ruleId}
 	var run := HeroRun.new(Content.data.duplicate(true),setup,Profile.meta)
 	_frozen_combat(run)
+	if compact_controls_preview:
+		await _capture_compact_controls(run,setup,noop)
+		var compact_file := FileAccess.open(_output.path_join("compact-controls-layout.json"),FileAccess.WRITE)
+		compact_file.store_string(JSON.stringify({"mode":"compact-controls-preview","sizes":[[915,412],[844,390]],"saveReads":false,"saveWrites":false,"simulation":false,"economyCallbacks":false,"audioCallbacks":false,"productionClasses":true,"screenRecords":_records,"checks":_checks},"\t"))
+		Profile.meta = _original_profile
+		print("Compact control runtime captures: ",ProjectSettings.globalize_path(_output),"; isolated memory profile; callbacks/saves/simulation: false")
+		get_tree().quit()
+		return
+	if operations_preview:
+		await _capture_operations(run,setup,noop)
+		var operations_file := FileAccess.open(_output.path_join("operations-layout.json"),FileAccess.WRITE)
+		operations_file.store_string(JSON.stringify({"mode":"operations-preview","sizes":[[915,412],[844,390],[1830,824]],"saveWrites":false,"simulation":false,"economyCallbacks":false,"isolatedProfileStartup":"--guild-office-preview" in OS.get_cmdline_user_args(),"productionClasses":true,"screenRecords":_records,"checks":_checks},"\t"))
+		Profile.meta = _original_profile
+		print("Approved operations UI captures: ",ProjectSettings.globalize_path(_output),"; Profile.writable=",Profile.writable)
+		get_tree().quit()
+		return
 	if hud_only:
 		await _capture(HeroCombatUI.hud(run,noop),"01-hud",run)
 		run.phase = "waveActive"; run.wave = 7; run.elapsed = run.wave_data().duration-4
@@ -153,6 +182,137 @@ func _capture_all() -> void:
 	print("Production feedback UI captures: ",ProjectSettings.globalize_path(_output),"; Profile.writable=",Profile.writable)
 	get_tree().quit()
 
+func _capture_compact_controls(run: HeroRun, setup: Dictionary, noop: Callable) -> void:
+	# Only presentation state changes: no button presses, economic or audio routes.
+	var title := HeroMetaScreens.title(noop,noop,true)
+	_title_actions_check(title,true)
+	await _capture(title,"compact-01-title-continue")
+	title = HeroMetaScreens.title(noop,noop,false)
+	_title_actions_check(title,false)
+	await _capture(title,"compact-02-title-start")
+	await _capture(HeroGateScreen.build(setup,2,noop,noop,noop,{}),"compact-03-character")
+	_operations_shop_fixture(run)
+	var recipes: Array = run.guild_support.unlockedRecipeIds.duplicate()
+	run.guild_support.unlockedRecipeIds = []
+	await _capture(HeroShopScreen.build(run,false,noop,noop,noop,noop),"compact-04-shop-items")
+	await _capture(HeroShopScreen.build(run,true,noop,noop,noop,noop),"compact-05-shop-weapons")
+	run.guild_support.unlockedRecipeIds = recipes
+	run.currency = 0
+	await _capture(HeroShopScreen.build(run,false,noop,noop,noop,noop),"compact-06-shop-disabled-recipes")
+	DisplayServer.window_set_size(Vector2i(844,390))
+	for frame in range(3): await get_tree().process_frame
+	await _capture(HeroGateScreen.build(setup,2,noop,noop,noop,{}),"compact-07-character-844x390")
+	run.currency = 987654321
+	var previous_price: int = int(run.data.items.phoenixMatch.basePrice)
+	run.data.items.phoenixMatch.basePrice = 98765432
+	await _capture(HeroShopScreen.build(run,false,noop,noop,noop,noop),"compact-08-shop-eight-digit-price-844x390")
+	run.data.items.phoenixMatch.basePrice = previous_price
+	DisplayServer.window_set_size(Vector2i(915,412))
+	for frame in range(3): await get_tree().process_frame
+
+func _capture_operations(run: HeroRun, setup: Dictionary, noop: Callable) -> void:
+	# Render actual production classes with synthetic state. Do not invoke growth,
+	# purchases, crafting, branch choices, settlement or profile/checkpoint writes.
+	await _capture(HeroCombatUI.hud(run,noop),"01-hud",run)
+	await _capture(HeroGateScreen.build(setup,0,noop,noop,noop,{}),"02-map")
+	await _capture(HeroGateScreen.build(setup,1,noop,noop,noop,{}),"03-depth")
+	await _capture(HeroGateScreen.build(setup,2,noop,noop,noop,{}),"04-character")
+	await _capture(HeroGateScreen.build(setup,3,noop,noop,noop,{}),"05-weapon")
+	var blessing_id: String = Content.data.blessings.keys()[0]
+	setup.blessing = blessing_id
+	Profile.meta.blessings[blessing_id].level = 2
+	await _capture(HeroGateScreen.build(setup,4,noop,noop,noop,{}),"06-blessing")
+	await _capture(HeroGateScreen.build(setup,5,noop,noop,noop,{}),"07-formation")
+	await _capture(HeroMetaScreens.build("growth",{"kind":"character","id":"awakener"},noop,noop),"08-growth")
+	await _capture(HeroArchive.build(_archive_view("items","vaultLedger"),noop,noop),"09-archive")
+	await _capture(HeroMetaScreens.build("settings",{},noop,noop),"10-settings")
+	run.phase = "paused"
+	await _capture(HeroCombatUI.pause_menu(run,noop,noop),"11-pause",run)
+	var title := HeroMetaScreens.title(noop,noop,true)
+	_title_actions_check(title,true)
+	await _capture(title,"approved-title")
+	await _capture(HeroLobbyScreen.build(noop,"premiumLobbyRain"),"approved-lobby")
+	await _capture(_operations_guild_screen(noop),"approved-guild")
+	await _capture(HeroMetaScreens.build("association",{},noop,noop),"12-association")
+	run.phase = "stageClear"; run.kills = 164; run.reward = 185
+	run.telemetry.weapons = {"manaSword":{"damage":18420.0},"chainLightning":{"damage":12110.0},"manaBolt":{"damage":8650.0}}
+	await _capture(HeroCombatUI.result(run,noop),"13-result")
+	Profile.meta.wallet.revivalStones = {"low":2,"mid":1,"high":0}
+	run.phase = "revivalChoice"
+	await _capture(HeroCombatUI.revival(run,noop,noop),"14-revival")
+	_operations_shop_fixture(run)
+	await _capture(HeroShopScreen.build(run,false,noop,noop,noop,noop),"approved-shop")
+	await _capture(HeroShopScreen.build(run,true,noop,noop,noop,noop),"qa-shop-weapons")
+	var shop := HeroShopScreen.build(run,false,noop,noop,noop,noop)
+	HeroShopScreen._offer_popup(shop,HeroShopScreen._offer_model(run,run.item_stock[0],false,false))
+	await _capture(shop,"15-shop-detail")
+	shop = HeroShopScreen.build(run,false,noop,noop,noop,noop)
+	HeroShopScreen._stats_popup(shop,run)
+	await _capture(shop,"16-shop-stats")
+	run.pending_branch = "manaSword"
+	await _capture(HeroShopScreen.build(run,true,noop,noop,noop,noop),"17-shop-branch")
+	run.pending_branch = ""
+	shop = HeroShopScreen.build(run,false,noop,noop,noop,noop)
+	HeroGuildScreen.crafting_dialog(shop,run,noop)
+	await _capture(shop,"18-shop-crafting")
+	run.currency = 0
+	await _capture(HeroShopScreen.build(run,false,noop,noop,noop,noop),"qa-shop-disabled")
+	run.currency = 987654321
+	var original_price := int(run.data.items.phoenixMatch.basePrice)
+	run.data.items.phoenixMatch.basePrice = 98765432
+	await _capture(HeroShopScreen.build(run,false,noop,noop,noop,noop),"qa-shop-eight-digit-price")
+	run.data.items.phoenixMatch.basePrice = original_price
+	run.currency = 240
+	var locked_character: String = Content.data.characters.keys().back()
+	Profile.meta.characters[locked_character].unlocked = false
+	await _capture(HeroGateScreen.build(setup,2,noop,noop,noop,{"inspected":{"character":locked_character}}),"qa-character-locked")
+	Profile.meta.characters[locked_character].unlocked = true
+	await _all_shop_copy_checks()
+	for pixel_size in [Vector2i(844,390),Vector2i(1830,824)]:
+		DisplayServer.window_set_size(pixel_size)
+		for frame in range(3): await get_tree().process_frame
+		var suffix := "%dx%d" % [pixel_size.x,pixel_size.y]
+		await _capture(HeroGateScreen.build(setup,2,noop,noop,noop,{}),"responsive-character-"+suffix)
+		await _capture(HeroArchive.build(_archive_view("items","vaultLedger"),noop,noop),"responsive-archive-"+suffix)
+		run.phase = "waveActive"; run.wave = 7; run.player.hp = run.stats.maxHp*0.84
+		await _capture(HeroCombatUI.hud(run,noop),"responsive-hud-"+suffix,run)
+		run.phase = "shop"; run.wave = 12
+		await _capture(HeroShopScreen.build(run,false,noop,noop,noop,noop),"responsive-shop-"+suffix)
+	DisplayServer.window_set_size(Vector2i(915,412))
+	for frame in range(3): await get_tree().process_frame
+	await _hud_live_check(run,noop)
+
+func _operations_guild_screen(noop: Callable) -> Control:
+	var visual: Dictionary = JSON.parse_string(FileAccess.get_file_as_string("res://data/visuals/guild.json"))
+	var art := {"rooms":Content.texture(visual.rooms.file),"states":Content.texture(visual.states.file),"facilityOrder":visual.rooms.facility_order,"tiers":visual.rooms.tiers,"structure":Content.texture(visual.walk.file),"structureRegions":visual.walk.regions}
+	var meta: Dictionary = Profile.meta.duplicate(true)
+	var slot := 0
+	for id in Content.data.guildManagement.facilities:
+		meta.guild.facilities[id] = {"level":7 if id == "office" else 4 if id == "workshop" else 1,"slot":slot}
+		slot += 1
+	HeroGuildState.sync_unlocked_floors(Content.data,meta.guild)
+	meta.guild.employees[0].assignment = "workshop"
+	var state := {"panel":"facility","slot":5,"employee":"","expedition":"cityScout","selectedStaff":[],"panelOpen":true,"selectedFacility":"workshop","officeTab":"management","officeTabs":{"workshop":"management"}}
+	var screen := HeroGuildOfficeScreen.create(meta,func(_action,_args): return false,noop,noop,art,state)
+	screen.read_only = true
+	return screen
+
+func _operations_shop_fixture(run: HeroRun) -> void:
+	run.phase = "shop"; run.wave = 12; run.currency = 240; run.wallet = 60
+	run.pending_branch = ""
+	run.item_stock = []
+	for id in ["phoenixMatch","vaultLedger","revengeFuse","ankleGuard"]:
+		run.item_stock.append({"id":id,"locked":id == "vaultLedger"})
+	run.weapon_stock.clear()
+	for slot in run.owned.slice(0,4):
+		run.weapon_stock.append({"id":slot.id,"level":int(slot.level)+1,"locked":slot.id == "guardianDaggers"})
+	run.guild_support.unlockedRecipeIds = run.data.guildManagement.recipes.keys()
+	run.items.phoenixMatch = 1
+	for id in run.guild_support.unlockedRecipeIds:
+		var ingredients: Dictionary = run.data.guildManagement.recipes[id].ingredients
+		for ingredient in ingredients:
+			run.items[ingredient] = maxi(int(run.items.get(ingredient,0)),int(ingredients[ingredient]))
+
 func _archive_view(group: String, id: String) -> Dictionary:
 	return {"group":group,"id":id,"page":0,"growthPage":0,"map":"seoul","scroll":0}
 
@@ -197,11 +357,82 @@ func _capture(screen: Control, id: String, run: HeroRun = null) -> void:
 	_scan(screen,texts,issues)
 	var tooltips: Array = []
 	_collect_tooltips(screen,tooltips)
-	_records.append({"screen":id,"pixelSize":[capture_image.get_width(),capture_image.get_height()],"labels":texts,"fitIssues":issues,"tooltips":tooltips})
+	var materials: Array = []
+	_collect_materials(screen,materials)
+	var class_name_text: String = screen.get_script().get_global_name() if screen.get_script() != null else screen.get_class()
+	_records.append({"screen":id,"pixelSize":[capture_image.get_width(),capture_image.get_height()],"class":class_name_text,"materials":materials,"labels":texts,"fitIssues":issues,"tooltips":tooltips})
 	_checks.append({"check":id+" has no hover tooltips","passed":tooltips.is_empty()})
-	if id.begins_with("qa-shop-") or id == "approved-shop": _shop_layout_check(screen,id)
+	if id.begins_with("compact-"): _compact_controls_check(screen,id)
+	if id.begins_with("qa-shop-") or id == "approved-shop" or id.begins_with("responsive-shop-"): _shop_layout_check(screen,id)
 	if id == "07-formation": _formation_layout_check(screen)
 	_canvas.remove_child(screen); screen.free()
+
+func _compact_controls_check(screen: Control, id: String) -> void:
+	if id.contains("title-"):
+		var primary := screen.find_child("TitleResume" if id.contains("continue") else "TitleStart",true,false) as Button
+		_compact_button_check(primary,id+" primary","compact/primary",Vector2(328,52),19)
+		if id.contains("continue"):
+			_compact_button_check(screen.find_child("TitleNewRun",true,false) as Button,id+" secondary","compact/secondary",Vector2(328,52),19)
+	elif id.contains("character"):
+		_compact_button_check(screen.find_child("HeaderBack",true,false) as Button,id+" back","compact/back",Vector2(44,44),24)
+		var choice := screen.find_child("GateChoice_awakener",true,false) as Button
+		var detail := screen.find_child("GateSelectionDetail",true,false) as VBoxContainer
+		_checks.append({"check":id+" retains real selection cards and detail pane","passed":choice != null and detail != null and _base_surface(choice) != null})
+	elif id.contains("shop-"):
+		_shop_layout_check(screen,id)
+		_compact_button_check(screen.find_child("ShopWeaponsTab",true,false) as Button,id+" weapon tab","compact/tab",Vector2(84,44),16)
+		_compact_button_check(screen.find_child("ShopItemsTab",true,false) as Button,id+" item tab","compact/tab",Vector2(84,44),16)
+		_compact_button_check(screen.find_child("ShopReroll",true,false) as Button,id+" reroll","compact/secondary",Vector2(140,44),16)
+		var title := screen.find_child("ShopTitle",true,false) as Label
+		for name in ["ShopWeaponsTab","ShopItemsTab","ShopReroll"]:
+			var button := screen.find_child(name,true,false) as Button
+			var surface := _base_surface(button) if button != null else null
+			var painted_size: Vector2 = surface.size*surface.scale if surface != null else Vector2.ZERO
+			var expected_size := Vector2(120,30) if name == "ShopReroll" else Vector2(72,30)
+			var within_title := false
+			if surface != null and title != null:
+				var face_bounds: Rect2 = surface.get_global_rect()
+				var title_bounds := title.get_global_rect()
+				within_title = face_bounds.position.y >= title_bounds.position.y and face_bounds.end.y <= title_bounds.end.y
+			_checks.append({"check":id+" "+name+" smaller painted frame stays within title height; touch area unchanged","passed":painted_size.is_equal_approx(expected_size) and within_title,"paintedSize":[painted_size.x,painted_size.y]})
+		_compact_button_check(_find_button_caption(screen,"전체 스탯"),id+" stats","compact/secondary",Vector2(145,44),16)
+		_compact_button_check(_find_button_caption(screen,"다음 웨이브"),id+" advance","compact/primary",Vector2(205,44),16)
+		var recipe_footer := id.contains("recipes") or id.contains("eight-digit-price")
+		var items := _find_button_caption(screen,"아이템 " if recipe_footer else "보유 아이템 ",true)
+		_compact_button_check(items,id+" owned items","compact/secondary",Vector2(74 if recipe_footer else 163,44),16)
+		if recipe_footer:
+			_compact_button_check(screen.find_child("ShopCrafting",true,false) as Button,id+" crafting","compact/secondary",Vector2(81,44),16)
+		if id.contains("disabled"):
+			var disabled := true
+			for index in range(4):
+				var purchase := screen.find_child("ShopPurchase_%d" % index,true,false) as Button
+				disabled = disabled and purchase != null and purchase.disabled
+			_checks.append({"check":id+" native purchases are disabled","passed":disabled})
+		if id.contains("eight-digit-price"):
+			var purchase := screen.find_child("ShopPurchase_0",true,false) as Button
+			var price := _find_label_caption(purchase,"98765432") if purchase != null else null
+			var price_fits := price != null and purchase.get_global_rect().encloses(price.get_global_rect()) and _text_needed(price).x <= price.size.x+1 and _text_needed(price).y <= price.size.y+1 and price.get_theme_font_size("font_size") == 16
+			_checks.append({"check":id+" eight-digit native price fits retained yellow purchase control","passed":price_fits})
+
+func _compact_button_check(button: Button, caption: String, role: String, expected_size: Vector2, expected_font: int) -> void:
+	var surface: HeroImageSkin.ImageSurface = _base_surface(button) if button != null else null
+	var passed := button != null and str(button.get_meta("material_key","")) == role and button.size == expected_size and button.size.x >= 44 and button.size.y >= 44 and button.get_theme_font_size("font_size") == expected_font and surface != null and surface.texture != null
+	if button != null: passed = passed and get_viewport().get_visible_rect().encloses(button.get_global_rect())
+	_checks.append({"check":caption+" actual PNG role, native font, touch geometry and viewport bounds","passed":passed,"expectedRole":role,"actualRole":str(button.get_meta("material_key","")) if button != null else "missing","logicalSize":[button.size.x,button.size.y] if button != null else []})
+
+func _find_button_caption(node: Node, caption: String, prefix: bool = false) -> Button:
+	if node is Button and (node.text.begins_with(caption) if prefix else node.text == caption): return node
+	for child in node.get_children():
+		var found := _find_button_caption(child,caption,prefix)
+		if found != null: return found
+	return null
+
+func _find_label_caption(node: Node, caption: String) -> Label:
+	if node is Label and node.text == caption: return node
+	for child in node.get_children():
+		var found := _find_label_caption(child,caption)
+		if found != null: return found
+	return null
 
 func _title_actions_check(screen: Control, has_run: bool) -> void:
 	var primary := screen.find_child("TitleResume" if has_run else "TitleStart",true,false) as Button
@@ -358,10 +589,20 @@ func _scan(node: Node, texts: Array, issues: Array, inside_scroll: bool = false)
 			shaped.width = available.x if node.autowrap_mode != TextServer.AUTOWRAP_OFF else -1
 			var needed := shaped.get_size()
 			needed.y += maxi(0,shaped.get_line_count()-1)*control.get_theme_constant("line_spacing")
-			var entry := {"text":node.text,"size":font_size,"rect":[control.global_position.x,control.global_position.y,control.size.x,control.size.y],"needed":[needed.x,needed.y],"insideScroll":inside_scroll}
+			var entry := {"node":str(node.name),"text":node.text,"size":font_size,"fontRole":str(control.get_meta("font_role","")),"fontFile":_font_file(control.get_theme_font("font")),"rect":[control.global_position.x,control.global_position.y,control.size.x,control.size.y],"needed":[needed.x,needed.y],"insideScroll":inside_scroll}
 			texts.append(entry)
 			if needed.x > available.x+1 or needed.y > available.y+1: issues.append(entry)
 	for child in node.get_children(): _scan(child,texts,issues,inside_scroll or node is ScrollContainer)
+
+func _font_file(face: Font) -> String:
+	if face is FontVariation and face.base_font != null: return face.base_font.resource_path
+	return face.resource_path
+
+func _collect_materials(node: Node, found: Array) -> void:
+	if node.has_meta("material_key"):
+		var surface := _base_surface(node)
+		found.append({"node":str(node.name),"role":str(node.get_meta("material_key")),"texture":surface.texture.resource_path if surface != null and surface.texture != null else ""})
+	for child in node.get_children(): _collect_materials(child,found)
 
 func _collect_tooltips(node: Node, found: Array) -> void:
 	if node is Control and not node.tooltip_text.is_empty(): found.append(node.tooltip_text)

@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ko">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>서울 히어로 · 가벼운 조작 프레임</title>
+<style>
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#e7eef0;color:#243448;font-family:system-ui,"Malgun Gothic",sans-serif}main{max-width:975px;margin:auto;padding:26px 24px 56px}h1{margin:0 0 10px;font-size:26px}h2{margin:30px 0 10px;font-size:20px}p{margin:8px 0 14px;line-height:1.6;font-size:14px;color:#536b7e}nav{display:flex;gap:14px;flex-wrap:wrap;margin:20px 0}a{color:#267f75}figure{margin:12px 0 24px}img{display:block;width:100%;height:auto;background:#d9e3e7}figcaption{margin:8px 0;font-size:13px;color:#536b7e}.switch{display:flex;gap:8px;margin:8px 0}button{border:1px solid #a8bbc4;background:#f7fafb;color:#243448;padding:9px 14px;border-radius:5px;cursor:pointer;font:inherit;font-size:13px}button[aria-pressed=true]{background:#267f75;color:white;border-color:#267f75}.status{font-size:12px;color:#267f75;letter-spacing:.08em}.note{border-left:3px solid #b4c6cf;padding-left:14px}details summary{cursor:pointer;font-size:14px}details img{margin-top:12px}
+</style>
+<main>
+<div class="status">915×412 · 새 PNG 소재 검토 · 독립 Godot 렌더링</div>
+<h1>큰 정보창은 유지하고, 짧은 조작은 가볍게</h1>
+<p>타이틀을 도시 작전풍으로 맞추고, 뒤로가기·탭·보조 버튼·진행 버튼에 각기 다른 얇은 PNG 소재를 사용했습니다. 글꼴과 조작 크기는 유지했습니다.</p>
+<nav><a href="#materials">소재 4종</a><a href="#title">타이틀</a><a href="#back">뒤로가기</a><a href="#shop">게이트24</a></nav>
+<section id="materials"><h2>용도별 얇은 프레임</h2>
+<p>작은 유리 복귀 조작, 밝은 보조 버튼, 조용한 선택 탭, 청록 진행 버튼입니다. 큰 정보판과 상품 진열의 전용 원화는 유지합니다.</p>
+<figure><a href="captures/00-materials.png"><img src="captures/00-materials.png" alt="가벼운 프레임 네 종류와 상태 비교"></a><figcaption>텍스트는 실제 BMJUA·해옹산스·Paperlogy·Barlow 폰트로 렌더링합니다.</figcaption></figure></section>
+<section id="title"><h2>타이틀도 같은 톤으로</h2>
+<div class="switch"><button aria-pressed="true" data-target="title-shot" data-src="captures/01-title-resume.png">수정안</button><button aria-pressed="false" data-target="title-shot" data-src="../operations-standard-01/runtime/screens/approved-title.png">현재 구현</button></div>
+<figure><img id="title-shot" src="captures/01-title-resume.png" alt="이어하기와 새로하기가 있는 타이틀 수정안"><figcaption>로고 면은 공용 작전 정보판, 행동 버튼은 얇은 청록·아이보리 소재로 맞췄습니다. 전투 일러스트와 19px 버튼 글자는 유지합니다.</figcaption></figure>
+<details><summary>진행 중인 게임이 없는 상태 · 시작하기</summary><img src="captures/05-title-start.png" alt="진행 게임이 없는 시작하기 타이틀"></details></section>
+<section id="back"><h2>뒤로가기의 작은 유리 프레임</h2>
+<div class="switch"><button aria-pressed="true" data-target="back-shot" data-src="captures/02-character.png">수정안</button><button aria-pressed="false" data-target="back-shot" data-src="../operations-standard-01/runtime/screens/04-character.png">현재 구현</button></div>
+<figure><img id="back-shot" src="captures/02-character.png" alt="작은 유리 복귀 조작이 있는 각성자 선택 화면"><figcaption>긴 버튼을 정사각형으로 압축하던 방식에서 전용 소재로 바꿨습니다. 44×44px 조작 영역과 나머지 카드·상세판은 유지합니다.</figcaption></figure></section>
+<section id="shop"><h2>게이트24 · 내용보다 앞서지 않는 조작</h2>
+<div class="switch"><button aria-pressed="true" data-target="shop-shot" data-src="captures/03-shop-weapons.png">무기 수정안</button><button aria-pressed="false" data-target="shop-shot" data-src="captures/04-shop-items.png">아이템 수정안</button><button aria-pressed="false" data-target="shop-shot" data-src="../operations-standard-01/runtime/screens/qa-shop-weapons.png">현재 구현</button></div>
+<figure><img id="shop-shot" src="captures/03-shop-weapons.png" alt="얇은 탭과 버튼이 있는 게이트24 수정안"><figcaption>무기/아이템 탭·리롤·전체 스탯·아이템·조합·다음 웨이브의 두꺼운 검은 프레임을 교체했습니다. 구매면과 잠금 표시, 편의점 원화는 유지합니다.</figcaption></figure></section>
+<p class="note">이 페이지는 새 미술을 확인하는 시안입니다. 현재 게임은 변경하지 않았습니다. 소재 승인 후 동일한 버튼·탭 콜백에 연결합니다.</p>
+<p><a href="README.md">소재 역할·안전 여백</a> · <a href="QA.md">확인 범위</a> · <a href="provenance.json">제작 출처</a></p>
+</main>
+<script>
+document.querySelectorAll('button[data-target]').forEach(button=>button.addEventListener('click',()=>{const target=button.dataset.target;document.getElementById(target).src=button.dataset.src;document.querySelectorAll(`button[data-target="${target}"]`).forEach(other=>other.setAttribute('aria-pressed',String(other===button)));}));
+</script>
+</html>

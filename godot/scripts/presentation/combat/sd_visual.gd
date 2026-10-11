@@ -20,6 +20,10 @@ var _hit_age := 0.0
 var _hit_direction := Vector2.ZERO
 var _attack_age := 0.0
 var _height := 86.4
+# Smoothed presentation state so steps, turns and leaning ease instead of snapping.
+var _shown_facing := 1.0
+var _turn_age := 0.0
+var _lean := 0.0
 
 func _ready() -> void:
 	add_child(shadow); add_child(sprite)
@@ -30,6 +34,7 @@ func configure(id: String, visual: Dictionary) -> void:
 	actor_id = id; profile = visual; dead = false; death_age = 0
 	_initialized = false; _phase = 0; _walk = 0; _facing = 1
 	_hit_age = 0; _attack_age = 0; _hit_direction = Vector2.ZERO
+	_shown_facing = 1.0; _turn_age = 0.0; _lean = 0.0
 	_texture = Content.actor_texture(profile)
 	sprite.texture = _texture
 	sprite.centered = false
@@ -38,8 +43,10 @@ func configure(id: String, visual: Dictionary) -> void:
 	if _texture is AtlasTexture:
 		_material.set_shader_parameter("region_origin",_texture.region.position/_texture.atlas.get_size())
 		_material.set_shader_parameter("region_span",_texture.region.size/_texture.atlas.get_size())
-	_material.set_shader_parameter("feet_top",float(profile.get("feetTop",0.83)))
-	_material.set_shader_parameter("foot_lift",float(profile.get("footLift",0.03)))
+	_material.set_shader_parameter("feet_top",float(profile.get("feetTop",0.88)))
+	_material.set_shader_parameter("foot_lift",float(profile.get("footLift",0.035)))
+	_material.set_shader_parameter("foot_stride",float(profile.get("footStride",0.05)))
+	_material.set_shader_parameter("leg_split",float(profile.get("legSplit",0.495)))
 	_material.set_shader_parameter("hand_motion",float(profile.get("handMotion",0.016)))
 	var hands: Array = profile.get("handRegions",[[0.16,0.69,0.24,0.22],[0.64,0.70,0.24,0.21]])
 	for i in range(2):
@@ -60,20 +67,31 @@ func update_state(state: Dictionary, dt: float, height: float) -> void:
 		_facing = signf(float(state.facing))
 	if dt > 0:
 		var moving: bool = speed > 2.0 and state.get("action","move") != "idle" and not dead
-		_walk = move_toward(_walk,1.0 if moving else 0.0,dt*12)
+		_walk = move_toward(_walk,1.0 if moving else 0.0,dt*7)
 		# Vertical travel keeps the last horizontal facing; effects aim separately.
 		if not state.has("facing") and moving and absf(displacement.x) > absf(displacement.y)*0.25:
 			_facing = signf(displacement.x)
 		_phase += dt*TAU*float(profile.get("cadence",2.2))*clampf(speed/185.0,0.55,1.5)*_walk
 		_hit_age = maxf(0,_hit_age-dt); _attack_age = maxf(0,_attack_age-dt)
+		# Turning mirrors at once, softened by a short squash pop instead of a hard snap.
+		_turn_age = maxf(0.0,_turn_age-dt)
+		if _facing != _shown_facing: _shown_facing = _facing; _turn_age = 0.12
+		# Lean slightly into horizontal travel; eases in and out with speed.
+		var travel := clampf(displacement.x/dt/185.0,-1.0,1.0) if moving else 0.0
+		_lean = lerpf(_lean,travel*0.07,1.0-exp(-dt*9.0))
 	var beat := sin(_phase)
-	var bounce := absf(beat)*float(profile.get("bounce",2.2))*_walk
+	# The legs carry the walk in the shader; the body only rides a small step arc.
+	var step := 0.5-0.5*cos(_phase*2.0)
+	var contact := pow(1.0-step,3.0)*_walk*0.5
+	var bounce := step*float(profile.get("bounce",2.2))*0.35*_walk
 	var breath := sin(float(state.get("age",0))*2.4)*0.004*(1-_walk)
 	var reaction := sin(_attack_age/0.12*PI)
-	var shape := Vector2(1+reaction*0.035,1+breath-reaction*0.025)
+	var shape := Vector2(1+reaction*0.035+contact*0.022,1+breath-reaction*0.025-contact*0.028+step*0.012*_walk)
 	var base := _height/_texture.get_height()
-	sprite.scale = Vector2(base*_facing,base)*shape
-	sprite.rotation = beat*0.025*_walk
+	var turning := sin(_turn_age/0.12*PI)
+	shape *= Vector2(1.0-turning*0.10,1.0+turning*0.05)
+	sprite.scale = Vector2(base*_shown_facing,base)*shape
+	sprite.rotation = _lean+beat*0.006*_walk
 	sprite.position = Vector2(0,-bounce-reaction*0.7)+_hit_direction*sin(_hit_age/0.16*PI)*2.0
 	_material.set_shader_parameter("phase",_phase)
 	_material.set_shader_parameter("idle_phase",float(state.get("age",0))*2.4)
