@@ -1,2 +1,3 @@
 @echo off
-start "" "C:\Users\geniu\Documents\GitHub\Godot\Godot_v4.7.2-stable_win64.exe" --path "%~dp0godot" -- --open=lobby
+powershell.exe -NoProfile -STA -ExecutionPolicy Bypass -File "%~dp0godot\tools\play.ps1" -Screen lobby %*
+if errorlevel 1 pause
