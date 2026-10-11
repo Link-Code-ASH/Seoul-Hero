@@ -1,0 +1,79 @@
+{
+  "createdAt": "2026-09-20",
+  "generator": "OpenAI built-in image generation",
+  "usage": "Animated raster layers for the time-based CombatVfx renderer. These images do not replace the effect timelines.",
+  "assets": [
+    {
+      "id": "vfxSlash",
+      "file": "effects/effect_vfx_slash_04.png",
+      "source": "C:/Users/geniu/.codex/generated_images/01a07bcf-7f98-7021-bf14-e9c913993db8/exec-406f79f6-0320-4de9-9d53-d81a7484bbbd.png",
+      "prompt": "Transparent raster game VFX: one short shallow blue-gray mana sword brush stroke with a thin pale cyan-white center, low detail, soft feathered edges, large transparent padding, no particles, ring, sword, character, neon glow, vector-flat look, or large crescent."
+    },
+    {
+      "id": "vfxSlashFan",
+      "file": "effects/effect_mana_slash_fan_01.png",
+      "source": "C:/Users/geniu/.codex/generated_images/01a07bcf-7f98-7021-bf14-e9c913993db8/exec-a1bbdce8-b836-4a57-8e31-1dca5ddcb37a.png",
+      "prompt": "Precise edit of the existing transparent fan slash: remove chunky pixel-like radial blocks and rectangular artifacts near the character-side apex, replace them with a crisp continuous blue-gray translucent gradient, and preserve the outer white blade trails, silhouette, orientation, and transparent background."
+    },
+    {
+      "id": "vfxSlashNarrow",
+      "file": "effects/effect_mana_slash_narrow_03.png",
+      "source": "C:/Users/geniu/.codex/generated_images/01a07bcf-7f98-7021-bf14-e9c913993db8/exec-623c8a27-69fd-4ae3-b25a-616f8ad779ac.png",
+      "prompt": "Thin right-facing sword trail made from one irregular white blade line and parallel steel-blue painted afterimages, with a fully transparent center and no filled fan. The source was alpha-masked to the exact 60-degree collision arc and softly faded at both ends."
+    },
+    {
+      "id": "vfxSlashWide",
+      "file": "effects/effect_mana_slash_wide_03.png",
+      "source": "C:/Users/geniu/.codex/generated_images/01a07bcf-7f98-7021-bf14-e9c913993db8/exec-623c8a27-69fd-4ae3-b25a-616f8ad779ac.png",
+      "prompt": "Thin right-facing sword trail made from one irregular white blade line and parallel steel-blue painted afterimages, with a fully transparent center and no filled fan. The source was alpha-masked to the exact 90-degree collision arc and softly faded at both ends."
+    },
+    {
+      "id": "vfxMuzzle",
+      "file": "effects/effect_vfx_muzzle_01.png",
+      "source": "C:/Users/geniu/.codex/generated_images/01a07bcf-7f98-7021-bf14-e9c913993db8/exec-4a7b1953-838e-4b1a-a13e-d16e2d685a06.png",
+      "prompt": "Transparent PNG game VFX texture: compact horizontal teal magical muzzle flash pointing right, short energetic burst with a warm-white core and soft painterly wisps, restrained glow and detail, no object, scene, text, frame, flat vector shapes, or excessive brightness."
+    },
+    {
+      "id": "vfxImpact",
+      "file": "effects/effect_vfx_impact_01.png",
+      "source": "C:/Users/geniu/.codex/generated_images/01a07bcf-7f98-7021-bf14-e9c913993db8/exec-329e96d6-9957-4b7c-b843-dfadbf5dc428.png",
+      "prompt": "Transparent PNG game VFX texture: compact cyan magical impact bloom viewed from above, soft irregular painted energy splash and a few tiny fragments, subdued and readable, feathered edge, no scene, text, border, hard geometric ring, vector-flat look, or excessive bloom."
+    },
+    {
+      "id": "vfxCritical",
+      "file": "effects/effect_vfx_critical_01.png",
+      "source": "C:/Users/geniu/.codex/generated_images/01a07bcf-7f98-7021-bf14-e9c913993db8/exec-9e3faf68-e2d4-4705-9e61-86f53b325434.png",
+      "prompt": "Transparent PNG game VFX texture: restrained gold-white critical impact with an irregular starburst core and sparse warm fragments, painterly 2D action-game texture, soft fading edge, no scene, text, border, icon badge, flat vector look, or huge bloom."
+    },
+    {
+      "id": "vfxExplosion",
+      "file": "effects/effect_vfx_explosion_orange_03.png",
+      "source": "C:/Users/geniu/.codex/generated_images/01a07bcf-7f98-7021-bf14-e9c913993db8/exec-89c51e28-e8a6-4f3e-92bb-78f8a64ff4d5.png",
+      "prompt": "Transparent PNG game VFX texture: one circular muted orange magical explosion viewed from above, warm core, soft smoke and a few embers, compact painterly indie action-game style, feathered outer edge, no scene, text, border, photoreal fireball, flat vector look, or excessive brightness."
+    },
+    {
+      "id": "vfxMineExplosion",
+      "file": "effects/effect_vfx_explosion_mine_03.png",
+      "source": "C:/Users/geniu/.codex/generated_images/01a07bcf-7f98-7021-bf14-e9c913993db8/exec-b2bad5ba-d2fe-4efc-9faa-0f6b0ff64ca6.png",
+      "prompt": "Transparent PNG game VFX texture: one circular muted violet magical mine explosion viewed from above, pale lavender core, soft purple smoke and sparse shards, compact painterly indie action-game style, feathered edge, no scene, text, border, photoreal blast, flat vector look, or excessive bloom."
+    },
+    {
+      "id": "vfxDeath",
+      "file": "effects/effect_vfx_death_smoke_01.png",
+      "source": "C:/Users/geniu/.codex/generated_images/01a07bcf-7f98-7021-bf14-e9c913993db8/exec-120838dd-5f3a-4067-b3ec-815d20007004.png",
+      "prompt": "Transparent PNG game VFX texture: subdued smoky enemy dissolve puff with charcoal, muted teal, and faint violet tones, soft irregular painterly cloud and sparse fragments, no corpse, scene, text, border, flat vector look, or bright explosion."
+    },
+    {
+      "id": "vfxChain",
+      "file": "effects/effect_vfx_chain_03.png",
+      "source": "C:/Users/geniu/.codex/generated_images/01a07bcf-7f98-7021-bf14-e9c913993db8/exec-99c0959c-a776-47c7-b518-4b06b62ff311.png",
+      "prompt": "Transparent PNG game VFX texture: one horizontal cyan-white chain-lightning segment from left to right, thin irregular painted bolt with small branches and a soft blue tail, restrained glow, no scene, text, border, neon tube, flat vector look, or excessive brightness."
+    },
+    {
+      "id": "manaFieldAura",
+      "file": "effects/effect_mana_field_aura_01.png",
+      "source": "C:/Users/geniu/.codex/generated_images/01a07bcf-7f98-7021-bf14-e9c913993db8/exec-1f8a449c-e299-465e-a2b1-d9f4ea523ca4.png",
+      "prompt": "Transparent top-down circular mana field texture with layered lavender and deep-violet energy wisps, curved flux lines and restrained particles; soft feathered outer edge, no central object, hard outline, geometric vector look, scene, text, or watermark. Intended for code-driven rotation and opacity pulsing."
+    }
+  ]
+}

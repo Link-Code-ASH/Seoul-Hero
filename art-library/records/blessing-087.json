@@ -1,0 +1,34 @@
+{
+  "id": "blessing-087",
+  "status": "complete",
+  "revision": "v01",
+  "files": [
+    {
+      "path": "originals/blessing/blessing-087/v01/original.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "671db18df08bd4b41ea2e86e6965bfa97702963314d9461eb343b7cf4bcecb6b",
+      "alphaChannel": true,
+      "hasTransparency": true
+    }
+  ],
+  "thumbnail": "thumbnails/blessing-087-v01.png",
+  "source": {
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\geniu\\.codex\\generated_images\\01a116ba-0a91-7172-a5c2-28dde8e57760\\exec-c68b7e54-9b12-4539-aa69-919f17e8dcae.png",
+    "promptPath": "originals/blessing/blessing-087/v01/prompt.txt",
+    "referenceIds": [
+      "blessing-style"
+    ],
+    "createdAt": "2026-10-07T18:53:57.610Z",
+    "inputMode": "new-from-verbal-style",
+    "imageInputsProvided": false,
+    "imageInputs": []
+  },
+  "review": {
+    "userApproval": "pending",
+    "notes": "원본과 밝은·어두운 alpha 합성을 확인했습니다. 독립된 두 기둥과 중앙 별 결정, 직조 공명 실타래의 형태가 구분되고 장식과 외곽이 잘리지 않았으며 배경은 투명합니다.",
+    "visualChecked": true,
+    "reviewedAt": "2026-10-07T18:54:39.986Z"
+  }
+}

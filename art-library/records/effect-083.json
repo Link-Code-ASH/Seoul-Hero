@@ -1,0 +1,40 @@
+{
+  "id": "effect-083",
+  "status": "complete",
+  "revision": "v02",
+  "files": [
+    {
+      "path": "originals/effect/effect-083/v02/original.png",
+      "width": 1247,
+      "height": 1261,
+      "sha256": "680641fbaaa28365efc5b2126db453e7172503fc10dfa89e8c90ab68be1517b3",
+      "alphaChannel": true,
+      "hasTransparency": true
+    }
+  ],
+  "thumbnail": "thumbnails/effect-083-v02.png",
+  "source": {
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\geniu\\.codex\\generated_images\\01a10b3b-6dc9-7b13-a092-b8ab3abd33e2\\exec-94d1b301-de26-460b-a82b-13546b64a411.png",
+    "promptPath": "originals/effect/effect-083/v02/prompt.txt",
+    "referenceIds": [
+      "effect-style"
+    ],
+    "createdAt": "2026-10-07T15:22:15.282Z",
+    "inputMode": "edit-framing",
+    "imageInputsProvided": true,
+    "imageInputs": [
+      {
+        "path": "originals/effect/effect-083/v01/original.png",
+        "role": "edit-target",
+        "sha256": "d48f6b54dbbab1ded43ecfe0921858d30589d6c5fd5e9c5bfa96f2c8da9433c5"
+      }
+    ]
+  },
+  "review": {
+    "userApproval": "pending",
+    "notes": "v02에서 상단 별과 하단 프리즘이 모두 캔버스 안에 들어오며 투명 여백을 확보했습니다.",
+    "visualChecked": true,
+    "reviewedAt": "2026-10-07T15:31:15.406Z"
+  }
+}

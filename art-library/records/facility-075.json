@@ -1,0 +1,34 @@
+{
+  "id": "facility-075",
+  "status": "complete",
+  "revision": "v01",
+  "files": [
+    {
+      "path": "originals/facility/facility-075/v01/original.png",
+      "width": 1774,
+      "height": 887,
+      "sha256": "2f8aad5d7106ee8a8caeab9f83df40ed6d156e4efd96a2496c51b99b34946d28",
+      "alphaChannel": false,
+      "hasTransparency": false
+    }
+  ],
+  "thumbnail": "thumbnails/facility-075-v01.png",
+  "source": {
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\geniu\\.codex\\generated_images\\01a116ba-0a91-7172-a5c2-28dde8e57760\\exec-7adfe69d-5878-4f2a-8f9e-477d164831b6.png",
+    "promptPath": "originals/facility/facility-075/v01/prompt.txt",
+    "referenceIds": [
+      "facility-style"
+    ],
+    "createdAt": "2026-10-07T18:39:54.432Z",
+    "inputMode": "new-from-verbal-style",
+    "imageInputsProvided": false,
+    "imageInputs": []
+  },
+  "review": {
+    "userApproval": "pending",
+    "notes": "원본과 합성본을 확인했습니다. 봉인 상태의 전체 방 배경이며 구리 잠금봉과 전경 바닥이 온전합니다. 체크무늬가 없는 의도된 불투명 환경 원화입니다.",
+    "visualChecked": true,
+    "reviewedAt": "2026-10-07T18:41:30.000Z"
+  }
+}

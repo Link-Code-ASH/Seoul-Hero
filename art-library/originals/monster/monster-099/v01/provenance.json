@@ -1,0 +1,34 @@
+{
+  "id": "monster-099",
+  "status": "complete",
+  "revision": "v01",
+  "files": [
+    {
+      "path": "originals/monster/monster-099/v01/original.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "f1477229efae77f3766c650091a78770a67e3ff3f656c42d42f4914bff69c1de",
+      "alphaChannel": true,
+      "hasTransparency": true
+    }
+  ],
+  "thumbnail": "thumbnails/monster-099-v01.png",
+  "source": {
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\geniu\\.codex\\generated_images\\01a11608-621b-7461-9513-27b6d6c5f67d\\exec-41f67805-ee09-4cbb-bcf9-7c49d7bddce9.png",
+    "promptPath": "originals/monster/monster-099/v01/prompt.txt",
+    "referenceIds": [
+      "monster-style"
+    ],
+    "createdAt": "2026-10-07T17:21:12.934Z",
+    "inputMode": "new-from-verbal-style",
+    "imageInputsProvided": false,
+    "imageInputs": []
+  },
+  "review": {
+    "userApproval": "pending",
+    "notes": "밝은 배경 알파 합성본에서 세 잎 실루엣과 막·금속·케이블·석재·연무 재질을 확인했습니다. 단일 몸체에 다리·발 없고 전체 윤곽이 잘리지 않았습니다. 사용자 승인 대기.",
+    "visualChecked": true,
+    "reviewedAt": "2026-10-07T17:22:13.341Z"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "id": "effect-018",
+  "status": "complete",
+  "revision": "v01",
+  "files": [
+    {
+      "path": "originals/effect/effect-018/v01/original.png",
+      "width": 1242,
+      "height": 1266,
+      "sha256": "6be20b15eb8accab462c152e39968f3732eee79966e7176eea5d6e9dbed836b2",
+      "alphaChannel": true,
+      "hasTransparency": true
+    }
+  ],
+  "thumbnail": "thumbnails/effect-018-v01.png",
+  "source": {
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\geniu\\.codex\\generated_images\\01a10b3b-6dc9-7b13-a092-b8ab3abd33e2\\exec-7d1b0147-3e2e-4de9-af0b-d59e52ad8d50.png",
+    "promptPath": "originals/effect/effect-018/v01/prompt.txt",
+    "referenceIds": [
+      "effect-style"
+    ],
+    "createdAt": "2026-10-07T15:45:13.692Z",
+    "inputMode": "new-from-verbal-style",
+    "imageInputsProvided": false,
+    "imageInputs": []
+  },
+  "review": {
+    "userApproval": "pending",
+    "notes": "원본과 밝은 배경 alpha 합성에서 독립 형태·전체 외곽선·투명 배경을 확인했습니다.",
+    "visualChecked": true,
+    "reviewedAt": "2026-10-07T15:56:07.832Z"
+  }
+}

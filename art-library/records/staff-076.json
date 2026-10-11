@@ -1,0 +1,40 @@
+{
+  "id": "staff-076",
+  "status": "complete",
+  "revision": "v02",
+  "files": [
+    {
+      "path": "originals/staff/staff-076/v02/original.png",
+      "width": 1145,
+      "height": 1374,
+      "sha256": "4ce0138f249b110b3c39f923b14cc2ccb0f133baa20fdb2d7dd7998e879a462b",
+      "alphaChannel": true,
+      "hasTransparency": true
+    }
+  ],
+  "thumbnail": "thumbnails/staff-076-v02.png",
+  "source": {
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\geniu\\.codex\\generated_images\\01a10b3b-6dc9-7b13-a092-b8ab3abd33e2\\exec-ae7e2236-7d4f-4ad8-8089-b617196578d3.png",
+    "promptPath": "originals/staff/staff-076/v02/prompt.txt",
+    "referenceIds": [
+      "staff-style"
+    ],
+    "createdAt": "2026-10-07T18:52:05.947Z",
+    "inputMode": "edit-framing",
+    "imageInputsProvided": true,
+    "imageInputs": [
+      {
+        "path": "originals/staff/staff-076/v01/original.png",
+        "role": "edit-target",
+        "sha256": "0b1e54398642347e1347bb0764f5af69dadcd5dcbe2e83eae15816d442760479"
+      }
+    ]
+  },
+  "review": {
+    "userApproval": "pending",
+    "notes": "v02 원본과 실제 알파 합성을 확인함. 상단 머리카락 곡선이 모두 캔버스 안에 있고 여백이 확보됨. 큰 머리·작은 몸통·아주 짧은 팔다리의 빈손 SD 외형과 기존 얼굴·직군 의상을 유지함. v01 원본과 수정 입력 출처를 보존함.",
+    "visualChecked": true,
+    "reviewedAt": "2026-10-07T18:53:36.919Z"
+  }
+}

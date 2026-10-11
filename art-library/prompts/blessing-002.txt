@@ -1,0 +1,8 @@
+Use case: stylized-concept.
+Asset type: Seoul Hero future blessing individual PNG artwork.
+Primary request: An astral blessing emblem with a very thin tall pale crescent moon cradling one large blunt four-pointed golden star. A detached tiny dark orbit pebble sits outside the low tip of the crescent. Strong vertical curved silhouette, clearly unlike an angular seal; large empty space between moon and star, one subtle inner teal glimmer and clean rounded edges. Soft illustrated SD game icon, transparent background, no text, constellation chart, card border or surrounding badge.
+Style: match the supplied approved reference for crisp Korean mobile-game hand-painted raster art, strong silhouettes, clean navy outlines where appropriate, restrained teal/lilac/gold highlights. The reference is style guidance, not a subject to copy.
+One Korean folklore blessing artifact or protection emblem. Strong readable silhouette at 48px, polished material detail. No text, no icon frame, no floor shadow.
+Composition: single subject fully inside canvas, centered with 8 percent safe padding. No contact sheet or multiple examples.
+Background: actual transparent RGBA, no opaque backdrop, no fake checkerboard.
+Constraints: no text, logos, watermark, UI chrome, labels or numbers. Preserve the requested anatomy and view.

@@ -1,0 +1,34 @@
+{
+  "id": "staff-075",
+  "status": "complete",
+  "revision": "v01",
+  "files": [
+    {
+      "path": "originals/staff/staff-075/v01/original.png",
+      "width": 1223,
+      "height": 1286,
+      "sha256": "b2e6fcb9c034d38bf2e7a7dd56875707b81bef0f0c1c21c34f356318d941013d",
+      "alphaChannel": true,
+      "hasTransparency": true
+    }
+  ],
+  "thumbnail": "thumbnails/staff-075-v01.png",
+  "source": {
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\geniu\\.codex\\generated_images\\01a10b3b-6dc9-7b13-a092-b8ab3abd33e2\\exec-f87d26b4-475f-4eae-abd7-ef1f58559200.png",
+    "promptPath": "originals/staff/staff-075/v01/prompt.txt",
+    "referenceIds": [
+      "staff-style"
+    ],
+    "createdAt": "2026-10-07T18:36:57.583Z",
+    "inputMode": "new-from-verbal-style",
+    "imageInputsProvided": false,
+    "imageInputs": []
+  },
+  "review": {
+    "userApproval": "pending",
+    "notes": "실제 알파 합성에서 머리와 몸의 여백, 큰 머리·작은 몸통·짧은 팔다리·빈손 SD, 투명 배경을 확인함. 원본 전체가 잘리지 않음.",
+    "visualChecked": true,
+    "reviewedAt": "2026-10-07T18:45:10.183Z"
+  }
+}

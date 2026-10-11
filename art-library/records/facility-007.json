@@ -1,0 +1,30 @@
+{
+  "id": "facility-007",
+  "status": "complete",
+  "revision": "v01",
+  "files": [
+    {
+      "path": "originals/facility/facility-007/v01/original.png",
+      "width": 1774,
+      "height": 887,
+      "sha256": "27c563832f3a0f6305dc4d63cb235402e4325a104bbb6230a9e21a7e4902e8d7",
+      "alphaChannel": false,
+      "hasTransparency": false
+    }
+  ],
+  "thumbnail": "thumbnails/facility-007-v01.png",
+  "source": {
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\geniu\\.codex\\generated_images\\01a116ba-0a91-7172-a5c2-28dde8e57760\\exec-ea9e7285-a666-4851-a998-5973442abd85.png",
+    "promptPath": "originals/facility/facility-007/v01/prompt.txt",
+    "referenceIds": [
+      "facility-style"
+    ],
+    "createdAt": "2026-10-07T14:57:12.351Z"
+  },
+  "review": {
+    "userApproval": "pending",
+    "notes": "",
+    "visualChecked": true
+  }
+}

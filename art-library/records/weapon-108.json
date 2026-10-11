@@ -1,0 +1,34 @@
+{
+  "id": "weapon-108",
+  "status": "complete",
+  "revision": "v01",
+  "files": [
+    {
+      "path": "originals/weapon/weapon-108/v01/original.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "c64a8ec7eb033d5eaf97d02b3d33dbe4826d15da1e0e188efc7fa25ef76efe80",
+      "alphaChannel": true,
+      "hasTransparency": true
+    }
+  ],
+  "thumbnail": "thumbnails/weapon-108-v01.png",
+  "source": {
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\geniu\\.codex\\generated_images\\01a10b3b-6dc9-7b13-a092-b8ab3abd33e2\\exec-c14ad7b7-b396-4d5f-bc82-53c56af841af.png",
+    "promptPath": "originals/weapon/weapon-108/v01/prompt.txt",
+    "referenceIds": [
+      "weapon-style"
+    ],
+    "createdAt": "2026-10-07T18:21:44.907Z",
+    "inputMode": "new-from-verbal-style",
+    "imageInputsProvided": false,
+    "imageInputs": []
+  },
+  "review": {
+    "userApproval": "pending",
+    "notes": "Viewed actual-alpha contact sheet and originals: petal crystal mount, folding cartridge, spring plate, hollow bell, twin turret, three-column thread loop and lightning dial are distinct full silhouettes. No text, floor shadows or frames.",
+    "visualChecked": true,
+    "reviewedAt": "2026-10-07T18:24:57.837Z"
+  }
+}

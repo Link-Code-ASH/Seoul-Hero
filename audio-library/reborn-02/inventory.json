@@ -1,0 +1,5934 @@
+{
+  "source_root": "C:\\Users\\geniu\\Music",
+  "original_collection_files": 346,
+  "sources": [
+    {
+      "path": "Sonniss.com-GDC2026-GameAudioBundle1of5/344 Audio - Antique Clocks/CLOCKTick_You're Running Late _344 Audio_Antique Clocks.wav",
+      "pack": "344 Audio - Antique Clocks",
+      "sha256": "88cc8430cffdfdf9ed0c77d873cfa5040487aa1c837738fd59d7c39ae246f169",
+      "bytes": 34745080,
+      "format": 1,
+      "channels": 2,
+      "sample_rate": 96000,
+      "bits": 24,
+      "align": 6,
+      "offset": 1026,
+      "data_bytes": 34560000,
+      "frames": 5760000,
+      "duration": 60.0,
+      "peak": 0.5899380445480347,
+      "peak_dbfs": -4.58,
+      "rms": 0.018028520612016968,
+      "rms_dbfs": -34.88,
+      "clipped_samples": 0,
+      "spectral_centroid_hz": 5829.3,
+      "active_start": 0.0,
+      "active_end": 59.71,
+      "events": [
+        0.0,
+        2.23,
+        2.98,
+        5.23,
+        5.98,
+        8.23,
+        8.98,
+        11.98,
+        14.98,
+        17.98,
+        20.98,
+        23.98,
+        26.23,
+        26.98,
+        29.23,
+        29.98,
+        32.98,
+        35.23,
+        35.98,
+        38.98,
+        41.23,
+        41.98,
+        44.23,
+        44.98,
+        47.98,
+        50.98,
+        53.98,
+        56.23,
+        56.98,
+        59.23
+      ],
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 0.1,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 0.35,
+          "end": 0.45,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 0.73,
+          "end": 0.85,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 1.1,
+          "end": 1.21,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 1.48,
+          "end": 1.6,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 1.85,
+          "end": 1.95,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 2.23,
+          "end": 2.35,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 2.6,
+          "end": 2.71,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 2.98,
+          "end": 3.1,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 3.35,
+          "end": 3.45,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 3.73,
+          "end": 3.85,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 4.1,
+          "end": 4.21,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 4.48,
+          "end": 4.6,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 4.85,
+          "end": 4.95,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 5.23,
+          "end": 5.35,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 5.6,
+          "end": 5.71,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 5.98,
+          "end": 6.1,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 6.35,
+          "end": 6.45,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 6.73,
+          "end": 6.85,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 7.1,
+          "end": 7.21,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 7.48,
+          "end": 7.6,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 7.85,
+          "end": 7.95,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 8.23,
+          "end": 8.35,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 8.6,
+          "end": 8.71,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 8.98,
+          "end": 9.1,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 9.35,
+          "end": 9.45,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 9.73,
+          "end": 9.85,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 10.1,
+          "end": 10.21,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 10.48,
+          "end": 10.6,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 10.85,
+          "end": 10.95,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 11.23,
+          "end": 11.35,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 11.6,
+          "end": 11.71,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 11.98,
+          "end": 12.1,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 12.35,
+          "end": 12.45,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 12.73,
+          "end": 12.85,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 13.1,
+          "end": 13.21,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 13.48,
+          "end": 13.6,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 13.85,
+          "end": 13.95,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 14.23,
+          "end": 14.35,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 14.6,
+          "end": 14.71,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 14.98,
+          "end": 15.1,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 15.35,
+          "end": 15.45,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 15.73,
+          "end": 15.85,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 16.1,
+          "end": 16.21,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 16.48,
+          "end": 16.6,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 16.85,
+          "end": 16.95,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 17.23,
+          "end": 17.35,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 17.6,
+          "end": 17.71,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 17.98,
+          "end": 18.1,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 18.35,
+          "end": 18.45,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 18.73,
+          "end": 18.85,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 19.1,
+          "end": 19.21,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 19.48,
+          "end": 19.6,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 19.85,
+          "end": 19.95,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 20.23,
+          "end": 20.35,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 20.6,
+          "end": 20.71,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 20.98,
+          "end": 21.1,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 21.35,
+          "end": 21.45,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 21.73,
+          "end": 21.85,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 22.1,
+          "end": 22.21,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 22.48,
+          "end": 22.6,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 22.85,
+          "end": 22.95,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 23.23,
+          "end": 23.35,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 23.6,
+          "end": 23.71,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 23.98,
+          "end": 24.1,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 24.35,
+          "end": 24.45,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 24.73,
+          "end": 24.85,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 25.1,
+          "end": 25.21,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 25.48,
+          "end": 25.6,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 25.85,
+          "end": 25.95,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 26.23,
+          "end": 26.35,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 26.6,
+          "end": 26.71,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 26.98,
+          "end": 27.1,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 27.35,
+          "end": 27.45,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 27.73,
+          "end": 27.85,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 28.1,
+          "end": 28.21,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 28.48,
+          "end": 28.6,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 28.85,
+          "end": 28.95,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 29.23,
+          "end": 29.35,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 29.6,
+          "end": 29.71,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 29.98,
+          "end": 30.1,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 30.35,
+          "end": 30.45,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 30.73,
+          "end": 30.85,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 31.1,
+          "end": 31.21,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 31.48,
+          "end": 31.6,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 31.85,
+          "end": 31.95,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 32.23,
+          "end": 32.35,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 32.6,
+          "end": 32.71,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 32.98,
+          "end": 33.1,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 33.35,
+          "end": 33.45,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 33.73,
+          "end": 33.85,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 34.1,
+          "end": 34.21,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 34.48,
+          "end": 34.6,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 34.85,
+          "end": 34.95,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 35.23,
+          "end": 35.35,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 35.6,
+          "end": 35.71,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 35.98,
+          "end": 36.1,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 36.35,
+          "end": 36.45,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 36.73,
+          "end": 36.85,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 37.1,
+          "end": 37.21,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 37.48,
+          "end": 37.6,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 37.85,
+          "end": 37.95,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 38.23,
+          "end": 38.35,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 38.6,
+          "end": 38.71,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 38.98,
+          "end": 39.1,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 39.35,
+          "end": 39.45,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 39.73,
+          "end": 39.85,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 40.1,
+          "end": 40.21,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 40.48,
+          "end": 40.6,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 40.85,
+          "end": 40.95,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 41.23,
+          "end": 41.35,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 41.6,
+          "end": 41.71,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 41.98,
+          "end": 42.1,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 42.35,
+          "end": 42.45,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 42.73,
+          "end": 42.85,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 43.1,
+          "end": 43.21,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 43.48,
+          "end": 43.6,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 43.85,
+          "end": 43.95,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 44.23,
+          "end": 44.35,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 44.6,
+          "end": 44.71,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 44.98,
+          "end": 45.1,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 45.35,
+          "end": 45.45,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 45.73,
+          "end": 45.85,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 46.1,
+          "end": 46.21,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 46.48,
+          "end": 46.6,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 46.85,
+          "end": 46.95,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 47.23,
+          "end": 47.35,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 47.6,
+          "end": 47.71,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 47.98,
+          "end": 48.1,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 48.35,
+          "end": 48.45,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 48.73,
+          "end": 48.85,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 49.1,
+          "end": 49.21,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 49.48,
+          "end": 49.6,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 49.85,
+          "end": 49.95,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 50.23,
+          "end": 50.35,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 50.6,
+          "end": 50.71,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 50.98,
+          "end": 51.1,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 51.35,
+          "end": 51.45,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 51.73,
+          "end": 51.85,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 52.1,
+          "end": 52.21,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 52.48,
+          "end": 52.6,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 52.85,
+          "end": 52.95,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 53.23,
+          "end": 53.35,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 53.6,
+          "end": 53.71,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 53.98,
+          "end": 54.1,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 54.35,
+          "end": 54.45,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 54.73,
+          "end": 54.85,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 55.1,
+          "end": 55.21,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 55.48,
+          "end": 55.6,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 55.85,
+          "end": 55.95,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 56.23,
+          "end": 56.35,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 56.6,
+          "end": 56.71,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 56.98,
+          "end": 57.1,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 57.35,
+          "end": 57.45,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 57.73,
+          "end": 57.85,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 58.1,
+          "end": 58.21,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 58.48,
+          "end": 58.6,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 58.85,
+          "end": 58.95,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 59.23,
+          "end": 59.35,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 59.6,
+          "end": 59.71,
+          "reason": "파형 에너지 동작 구간"
+        }
+      ],
+      "silence_ratio": 0.72,
+      "quiet_floor_dbfs": -240.0,
+      "noise_note": "조용한 20% 구간 RMS 기반 추정값. 실제 잡음의 청각적 식별은 미실시.",
+      "mtime_ns": 1790409561206468900,
+      "audition_state": "not_auditioned",
+      "review_method": "whole-file sample/energy/metadata analysis; source semantics; no direct listening",
+      "uses": [
+        "waveCountdownTick"
+      ],
+      "status": "candidate",
+      "reason": "명시한 동작 구간을 새 효과음에 편집 사용. 최종 채택은 사용자 청취 대기.",
+      "audition_segments": [
+        {
+          "start": 0.0,
+          "duration": 3,
+          "preview": "source-previews/a4b9d08f5a5ceddb3a36cf96.wav",
+          "reason": "원본 동작 구간 청취용. 긴 녹음 전체를 대표한다고 가정하지 않음."
+        },
+        {
+          "start": 29.98,
+          "duration": 3,
+          "preview": "source-previews/5d3c3a542a4a5eb29d3b162e.wav",
+          "reason": "원본 동작 구간 청취용. 긴 녹음 전체를 대표한다고 가정하지 않음."
+        },
+        {
+          "start": 59.23,
+          "duration": 0.7700000000000031,
+          "preview": "source-previews/924368a99c4924b5b0b8962b.wav",
+          "reason": "원본 동작 구간 청취용. 긴 녹음 전체를 대표한다고 가정하지 않음."
+        }
+      ],
+      "preservation": "SHA-256 rechecked; read-only original",
+      "selection": "explicit measured transient/steady-room intervals; no runtime randomization"
+    },
+    {
+      "path": "Sonniss.com-GDC2026-GameAudioBundle1of5/344 Audio - Antique Small Metals/METLMvmt_  Antique Measuring Tape_344 Audio_Antique Small Metals.wav",
+      "pack": "344 Audio - Antique Small Metals",
+      "sha256": "2443580b380f6d5565bda7054f958b6610028e83d1555d13d6260281326d5991",
+      "bytes": 399368,
+      "format": 1,
+      "channels": 2,
+      "sample_rate": 96000,
+      "bits": 24,
+      "align": 6,
+      "offset": 1026,
+      "data_bytes": 394962,
+      "frames": 65827,
+      "duration": 0.6856979166666667,
+      "peak": 0.06292307376861572,
+      "peak_dbfs": -24.02,
+      "rms": 0.0019399468200155892,
+      "rms_dbfs": -54.24,
+      "clipped_samples": 0,
+      "spectral_centroid_hz": 3641.5,
+      "active_start": 0.16,
+      "active_end": 0.5,
+      "events": [
+        0.16,
+        0.4
+      ],
+      "segments": [
+        {
+          "start": 0.16,
+          "end": 0.5,
+          "reason": "파형 에너지 동작 구간"
+        }
+      ],
+      "silence_ratio": 0.4559,
+      "quiet_floor_dbfs": -78.96,
+      "noise_note": "조용한 20% 구간 RMS 기반 추정값. 실제 잡음의 청각적 식별은 미실시.",
+      "mtime_ns": 1790409561484500000,
+      "audition_state": "not_auditioned",
+      "review_method": "whole-file sample/energy/metadata analysis; source semantics; no direct listening",
+      "uses": [
+        "weaponPurchase",
+        "hit_autoTurret_soft",
+        "hit_autoTurret_metal",
+        "hit_autoTurret_stone",
+        "hit_autoTurret_crystal",
+        "hit_autoTurret_energy",
+        "hit_autoTurret_paper"
+      ],
+      "status": "candidate",
+      "reason": "명시한 동작 구간을 새 효과음에 편집 사용. 최종 채택은 사용자 청취 대기.",
+      "audition_segments": [
+        {
+          "start": 0.16,
+          "duration": 0.5256979166666667,
+          "preview": "source-previews/31edc07af0600e7f1a655220.wav",
+          "reason": "원본 동작 구간 청취용. 긴 녹음 전체를 대표한다고 가정하지 않음."
+        }
+      ],
+      "preservation": "SHA-256 rechecked; read-only original",
+      "selection": "explicit measured transient/steady-room intervals; no runtime randomization"
+    },
+    {
+      "path": "Sonniss.com-GDC2026-GameAudioBundle1of5/344 Audio - Antique Small Metals/METLMvmt_  Tinkering Antique Lock_344 Audio_Antique Small Metals.wav",
+      "pack": "344 Audio - Antique Small Metals",
+      "sha256": "54e94d781cbc234c393ec6b99b4b00ab0adbfb54cf6203cde3d83afe3280474e",
+      "bytes": 2347140,
+      "format": 1,
+      "channels": 2,
+      "sample_rate": 96000,
+      "bits": 24,
+      "align": 6,
+      "offset": 1026,
+      "data_bytes": 2332494,
+      "frames": 388749,
+      "duration": 4.04946875,
+      "peak": 0.33873450756073,
+      "peak_dbfs": -9.4,
+      "rms": 0.007188684264045403,
+      "rms_dbfs": -42.87,
+      "clipped_samples": 0,
+      "spectral_centroid_hz": 2473.0,
+      "active_start": 0.0,
+      "active_end": 3.51,
+      "events": [
+        0.0,
+        1.27,
+        2.43,
+        3.29
+      ],
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 0.29,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 1.27,
+          "end": 1.43,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 2.43,
+          "end": 2.51,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 3.29,
+          "end": 3.51,
+          "reason": "파형 에너지 동작 구간"
+        }
+      ],
+      "silence_ratio": 0.6535,
+      "quiet_floor_dbfs": -81.4,
+      "noise_note": "조용한 20% 구간 RMS 기반 추정값. 실제 잡음의 청각적 식별은 미실시.",
+      "mtime_ns": 1790409561631292600,
+      "audition_state": "not_auditioned",
+      "review_method": "whole-file sample/energy/metadata analysis; source semantics; no direct listening",
+      "uses": [
+        "lock",
+        "supplyLatch",
+        "item_metal"
+      ],
+      "status": "candidate",
+      "reason": "명시한 동작 구간을 새 효과음에 편집 사용. 최종 채택은 사용자 청취 대기.",
+      "audition_segments": [
+        {
+          "start": 0.0,
+          "duration": 3,
+          "preview": "source-previews/ba1772cf94adf96ec8e78e2e.wav",
+          "reason": "원본 동작 구간 청취용. 긴 녹음 전체를 대표한다고 가정하지 않음."
+        }
+      ],
+      "preservation": "SHA-256 rechecked; read-only original",
+      "selection": "explicit measured transient/steady-room intervals; no runtime randomization"
+    },
+    {
+      "path": "Sonniss.com-GDC2026-GameAudioBundle1of5/344 Audio - Cinematic Fight Vol. 1/FGHTImpt_4 x Punch, Body 02_344 Audio_Cinematic Fight Vol 1.wav",
+      "pack": "344 Audio - Cinematic Fight Vol. 1",
+      "sha256": "606f7d8bdca261f6fee6a30e19fc8a760c469e599dc0747ecb272a24d4821a31",
+      "bytes": 4534202,
+      "format": 1,
+      "channels": 2,
+      "sample_rate": 192000,
+      "bits": 24,
+      "align": 6,
+      "offset": 1026,
+      "data_bytes": 4508040,
+      "frames": 751340,
+      "duration": 3.9132291666666665,
+      "peak": 0.8871560096740723,
+      "peak_dbfs": -1.04,
+      "rms": 0.11610375624628884,
+      "rms_dbfs": -18.7,
+      "clipped_samples": 0,
+      "spectral_centroid_hz": 34057.9,
+      "active_start": 0.17,
+      "active_end": 3.46,
+      "events": [
+        0.17,
+        0.35,
+        1.16,
+        1.39,
+        2.21,
+        3.2
+      ],
+      "segments": [
+        {
+          "start": 0.17,
+          "end": 0.47,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 1.14,
+          "end": 1.52,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 2.18,
+          "end": 2.46,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 3.2,
+          "end": 3.46,
+          "reason": "파형 에너지 동작 구간"
+        }
+      ],
+      "silence_ratio": 0.4246,
+      "quiet_floor_dbfs": -101.06,
+      "noise_note": "조용한 20% 구간 RMS 기반 추정값. 실제 잡음의 청각적 식별은 미실시.",
+      "mtime_ns": 1790409564279746000,
+      "audition_state": "not_auditioned",
+      "review_method": "whole-file sample/energy/metadata analysis; source semantics; no direct listening",
+      "uses": [
+        "eliteSpawned",
+        "slashAttack",
+        "orbitAttack",
+        "chainAttack",
+        "bombardAttack",
+        "piercingAttack",
+        "turretFired",
+        "minePlaced",
+        "mineExploded",
+        "fieldActivated",
+        "weaponFired",
+        "enemyHit",
+        "enemyKilled",
+        "playerHit",
+        "bossSpawned",
+        "shotgunAttack",
+        "bombardLaunch",
+        "chainHop",
+        "enemyProjectile",
+        "enemyCharge",
+        "enemySupport",
+        "enemyDetonate",
+        "bossAttack",
+        "hit_manaSword_soft",
+        "hit_manaSword_metal",
+        "hit_manaSword_stone",
+        "hit_manaSword_crystal",
+        "hit_manaSword_energy",
+        "hit_manaSword_paper",
+        "hit_guardianDaggers_soft",
+        "hit_guardianDaggers_metal",
+        "hit_guardianDaggers_stone",
+        "hit_guardianDaggers_crystal",
+        "hit_guardianDaggers_energy",
+        "hit_guardianDaggers_paper",
+        "hit_piercingShot_soft",
+        "hit_piercingShot_metal",
+        "hit_piercingShot_stone",
+        "hit_piercingShot_crystal",
+        "hit_piercingShot_energy",
+        "hit_piercingShot_paper",
+        "hit_chainLightning_soft",
+        "hit_chainLightning_metal",
+        "hit_chainLightning_stone",
+        "hit_chainLightning_crystal",
+        "hit_chainLightning_energy",
+        "hit_chainLightning_paper",
+        "hit_manaBombard_soft",
+        "hit_manaBombard_metal",
+        "hit_manaBombard_stone",
+        "hit_manaBombard_crystal",
+        "hit_manaBombard_energy",
+        "hit_manaBombard_paper",
+        "hit_manaBolt_soft",
+        "hit_manaBolt_metal",
+        "hit_manaBolt_stone",
+        "hit_manaBolt_crystal",
+        "hit_manaBolt_energy",
+        "hit_manaBolt_paper",
+        "hit_manaShotgun_soft",
+        "hit_manaShotgun_metal",
+        "hit_manaShotgun_stone",
+        "hit_manaShotgun_crystal",
+        "hit_manaShotgun_energy",
+        "hit_manaShotgun_paper",
+        "hit_autoTurret_soft",
+        "hit_autoTurret_metal",
+        "hit_autoTurret_stone",
+        "hit_autoTurret_crystal",
+        "hit_autoTurret_energy",
+        "hit_autoTurret_paper",
+        "hit_mineLayer_soft",
+        "hit_mineLayer_metal",
+        "hit_mineLayer_stone",
+        "hit_mineLayer_crystal",
+        "hit_mineLayer_energy",
+        "hit_mineLayer_paper",
+        "death_soft",
+        "death_metal",
+        "death_stone",
+        "death_crystal",
+        "death_energy",
+        "death_paper"
+      ],
+      "status": "candidate",
+      "reason": "명시한 동작 구간을 새 효과음에 편집 사용. 최종 채택은 사용자 청취 대기.",
+      "audition_segments": [
+        {
+          "start": 0.17,
+          "duration": 3,
+          "preview": "source-previews/607084210a774f4124eb858c.wav",
+          "reason": "원본 동작 구간 청취용. 긴 녹음 전체를 대표한다고 가정하지 않음."
+        }
+      ],
+      "preservation": "SHA-256 rechecked; read-only original",
+      "selection": "explicit measured transient/steady-room intervals; no runtime randomization"
+    },
+    {
+      "path": "Sonniss.com-GDC2026-GameAudioBundle1of5/344 Audio - Elemental Palette Designed Vol. 1/WINDDsgn_Wind, Rush, Whoosh, Long x5 01_344 Audio_Elemental Palette Designed Vol 1.wav",
+      "pack": "344 Audio - Elemental Palette Designed Vol. 1",
+      "sha256": "81bc00b7592a0bc7cf34023cead68586e5a924743c294477820418590d4b1d6d",
+      "bytes": 609592,
+      "format": 1,
+      "channels": 2,
+      "sample_rate": 96000,
+      "bits": 24,
+      "align": 6,
+      "offset": 1026,
+      "data_bytes": 604056,
+      "frames": 100676,
+      "duration": 1.0487083333333334,
+      "peak": 0.1758335828781128,
+      "peak_dbfs": -15.1,
+      "rms": 0.025492703053910454,
+      "rms_dbfs": -31.87,
+      "clipped_samples": 0,
+      "spectral_centroid_hz": 6190.5,
+      "active_start": 0.04,
+      "active_end": 1.03,
+      "events": [
+        0.04,
+        0.61,
+        0.79
+      ],
+      "segments": [
+        {
+          "start": 0.04,
+          "end": 1.03,
+          "reason": "파형 에너지 동작 구간"
+        }
+      ],
+      "silence_ratio": 0.0288,
+      "quiet_floor_dbfs": -37.03,
+      "noise_note": "조용한 20% 구간 RMS 기반 추정값. 실제 잡음의 청각적 식별은 미실시.",
+      "mtime_ns": 1790409565268016000,
+      "audition_state": "not_auditioned",
+      "review_method": "whole-file sample/energy/metadata analysis; source semantics; no direct listening",
+      "uses": [
+        "bombardLaunch"
+      ],
+      "status": "candidate",
+      "reason": "명시한 동작 구간을 새 효과음에 편집 사용. 최종 채택은 사용자 청취 대기.",
+      "audition_segments": [
+        {
+          "start": 0.04,
+          "duration": 1.0087083333333333,
+          "preview": "source-previews/09fdf58817ccb4f9b134f81a.wav",
+          "reason": "원본 동작 구간 청취용. 긴 녹음 전체를 대표한다고 가정하지 않음."
+        }
+      ],
+      "preservation": "SHA-256 rechecked; read-only original",
+      "selection": "explicit measured transient/steady-room intervals; no runtime randomization"
+    },
+    {
+      "path": "Sonniss.com-GDC2026-GameAudioBundle1of5/344 Audio - Extreme Winds Vol. 1/WINDDsgn_EXT, Eye Of The Storm_344 Audio_Extreme Winds Vol 1.wav",
+      "pack": "344 Audio - Extreme Winds Vol. 1",
+      "sha256": "0b06ba66c9be19455c767865b1aab9bec4f00680b3dc2b12c0bebff80c44446e",
+      "bytes": 208667644,
+      "format": 1,
+      "channels": 2,
+      "sample_rate": 192000,
+      "bits": 24,
+      "align": 6,
+      "offset": 1026,
+      "data_bytes": 207567360,
+      "frames": 34594560,
+      "duration": 180.18,
+      "peak": 0.757300853729248,
+      "peak_dbfs": -2.41,
+      "rms": 0.12402888539055305,
+      "rms_dbfs": -18.13,
+      "clipped_samples": 0,
+      "spectral_centroid_hz": 948.7,
+      "active_start": 0.0,
+      "active_end": 180.18,
+      "events": [
+        0.0,
+        0.82,
+        1.49,
+        17.32,
+        18.91,
+        30.82,
+        31.4,
+        47.22,
+        52.55,
+        54.61,
+        55.25,
+        60.57,
+        60.82,
+        61.26,
+        76.46,
+        79.46,
+        85.76,
+        87.56,
+        90.82,
+        91.49,
+        92.66,
+        101.0,
+        120.82,
+        121.26,
+        143.34,
+        150.33,
+        150.62,
+        150.82,
+        153.24,
+        167.52
+      ],
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 20.0,
+          "reason": "긴 지속 녹음의 분할 구간"
+        },
+        {
+          "start": 20.0,
+          "end": 40.0,
+          "reason": "긴 지속 녹음의 분할 구간"
+        },
+        {
+          "start": 40.0,
+          "end": 60.0,
+          "reason": "긴 지속 녹음의 분할 구간"
+        },
+        {
+          "start": 60.0,
+          "end": 80.0,
+          "reason": "긴 지속 녹음의 분할 구간"
+        },
+        {
+          "start": 80.0,
+          "end": 100.0,
+          "reason": "긴 지속 녹음의 분할 구간"
+        },
+        {
+          "start": 100.0,
+          "end": 120.0,
+          "reason": "긴 지속 녹음의 분할 구간"
+        },
+        {
+          "start": 120.0,
+          "end": 140.0,
+          "reason": "긴 지속 녹음의 분할 구간"
+        },
+        {
+          "start": 140.0,
+          "end": 160.0,
+          "reason": "긴 지속 녹음의 분할 구간"
+        },
+        {
+          "start": 160.0,
+          "end": 180.0,
+          "reason": "긴 지속 녹음의 분할 구간"
+        },
+        {
+          "start": 180.0,
+          "end": 180.18,
+          "reason": "긴 지속 녹음의 분할 구간"
+        }
+      ],
+      "silence_ratio": 0.0,
+      "quiet_floor_dbfs": -19.8,
+      "noise_note": "조용한 20% 구간 RMS 기반 추정값. 실제 잡음의 청각적 식별은 미실시.",
+      "mtime_ns": 1790409565403053000,
+      "audition_state": "not_auditioned",
+      "review_method": "whole-file sample/energy/metadata analysis; source semantics; no direct listening",
+      "uses": [
+        "lobbyWinter"
+      ],
+      "status": "candidate",
+      "reason": "명시한 동작 구간을 새 효과음에 편집 사용. 최종 채택은 사용자 청취 대기.",
+      "audition_segments": [
+        {
+          "start": 0.0,
+          "duration": 3,
+          "preview": "source-previews/595cd349eb7bffeaf77b8b18.wav",
+          "reason": "원본 동작 구간 청취용. 긴 녹음 전체를 대표한다고 가정하지 않음."
+        },
+        {
+          "start": 79.46,
+          "duration": 3,
+          "preview": "source-previews/ff9b5f5213a372e26066c325.wav",
+          "reason": "원본 동작 구간 청취용. 긴 녹음 전체를 대표한다고 가정하지 않음."
+        },
+        {
+          "start": 167.52,
+          "duration": 3,
+          "preview": "source-previews/932e7d86d8eea74e114a5530.wav",
+          "reason": "원본 동작 구간 청취용. 긴 녹음 전체를 대표한다고 가정하지 않음."
+        }
+      ],
+      "preservation": "SHA-256 rechecked; read-only original",
+      "selection": "explicit measured transient/steady-room intervals; no runtime randomization"
+    },
+    {
+      "path": "Sonniss.com-GDC2026-GameAudioBundle1of5/344 Audio - Historical Weapons Vol. 2/WEAPBlnt_Spear And Stick Impact, Wooden MKH 2_344 Audio_Medieval Weapons Vol 2.wav",
+      "pack": "344 Audio - Historical Weapons Vol. 2",
+      "sha256": "ab2cd18aaac93afa77b48b74edf82257815ee16817bb2bb9bd5ba134e4cc1466",
+      "bytes": 13081382,
+      "format": 1,
+      "channels": 2,
+      "sample_rate": 192000,
+      "bits": 24,
+      "align": 6,
+      "offset": 1026,
+      "data_bytes": 13010220,
+      "frames": 2168370,
+      "duration": 11.29359375,
+      "peak": 0.6273362636566162,
+      "peak_dbfs": -4.05,
+      "rms": 0.028718917767119635,
+      "rms_dbfs": -30.84,
+      "clipped_samples": 0,
+      "spectral_centroid_hz": 41754.3,
+      "active_start": 0.03,
+      "active_end": 11.14,
+      "events": [
+        0.03,
+        0.64,
+        1.32,
+        1.98,
+        2.56,
+        3.44,
+        4.36,
+        5.03,
+        5.78,
+        6.46,
+        7.06,
+        7.88,
+        8.57,
+        9.32,
+        10.24,
+        11.02
+      ],
+      "segments": [
+        {
+          "start": 0.03,
+          "end": 0.15,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 0.63,
+          "end": 0.76,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 1.3,
+          "end": 1.56,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 1.97,
+          "end": 2.12,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 2.55,
+          "end": 2.68,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 3.44,
+          "end": 3.55,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 4.36,
+          "end": 4.51,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 5.03,
+          "end": 5.16,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 5.78,
+          "end": 5.89,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 6.45,
+          "end": 6.56,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 7.06,
+          "end": 7.2,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 7.88,
+          "end": 8.11,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 8.57,
+          "end": 8.69,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 9.32,
+          "end": 9.73,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 10.24,
+          "end": 10.58,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 11.02,
+          "end": 11.14,
+          "reason": "파형 에너지 동작 구간"
+        }
+      ],
+      "silence_ratio": 0.5226,
+      "quiet_floor_dbfs": -130.98,
+      "noise_note": "조용한 20% 구간 RMS 기반 추정값. 실제 잡음의 청각적 식별은 미실시.",
+      "mtime_ns": 1790409565826284300,
+      "audition_state": "not_auditioned",
+      "review_method": "whole-file sample/energy/metadata analysis; source semantics; no direct listening",
+      "uses": [
+        "hit_manaSword_stone",
+        "hit_guardianDaggers_stone",
+        "hit_piercingShot_stone",
+        "hit_chainLightning_stone",
+        "hit_manaBombard_stone",
+        "hit_manaBolt_stone",
+        "hit_manaShotgun_stone",
+        "hit_autoTurret_stone",
+        "hit_mineLayer_stone",
+        "death_stone"
+      ],
+      "status": "candidate",
+      "reason": "명시한 동작 구간을 새 효과음에 편집 사용. 최종 채택은 사용자 청취 대기.",
+      "audition_segments": [
+        {
+          "start": 0.03,
+          "duration": 3,
+          "preview": "source-previews/0f40a50726560301fd822d3d.wav",
+          "reason": "원본 동작 구간 청취용. 긴 녹음 전체를 대표한다고 가정하지 않음."
+        }
+      ],
+      "preservation": "SHA-256 rechecked; read-only original",
+      "selection": "explicit measured transient/steady-room intervals; no runtime randomization"
+    },
+    {
+      "path": "Sonniss.com-GDC2026-GameAudioBundle1of5/344 Audio - Historical Weapons Vol. 2/WEAPSwrd_Sword Slide Cuts, Metallic, Impact CM4 2_344 Audio_Medieval Weapons Vol 2.wav",
+      "pack": "344 Audio - Historical Weapons Vol. 2",
+      "sha256": "adbe3d9d5da0a987de3d4d845b62a4231862febf9ca673f8d1067fc1787eee00",
+      "bytes": 15011226,
+      "format": 1,
+      "channels": 2,
+      "sample_rate": 192000,
+      "bits": 24,
+      "align": 6,
+      "offset": 1026,
+      "data_bytes": 14929920,
+      "frames": 2488320,
+      "duration": 12.96,
+      "peak": 0.7816519737243652,
+      "peak_dbfs": -2.14,
+      "rms": 0.0188585258369679,
+      "rms_dbfs": -34.49,
+      "clipped_samples": 0,
+      "spectral_centroid_hz": 51392.8,
+      "active_start": 0.13,
+      "active_end": 11.28,
+      "events": [
+        0.13,
+        2.24,
+        2.47,
+        4.32,
+        6.32,
+        8.46,
+        10.8,
+        11.13
+      ],
+      "segments": [
+        {
+          "start": 0.13,
+          "end": 0.54,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 2.24,
+          "end": 2.65,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 4.32,
+          "end": 4.68,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 6.32,
+          "end": 6.72,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 8.46,
+          "end": 8.92,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 10.8,
+          "end": 11.28,
+          "reason": "파형 에너지 동작 구간"
+        }
+      ],
+      "silence_ratio": 0.2909,
+      "quiet_floor_dbfs": -72.5,
+      "noise_note": "조용한 20% 구간 RMS 기반 추정값. 실제 잡음의 청각적 식별은 미실시.",
+      "mtime_ns": 1790409565876410700,
+      "audition_state": "not_auditioned",
+      "review_method": "whole-file sample/energy/metadata analysis; source semantics; no direct listening",
+      "uses": [
+        "slashAttack",
+        "orbitAttack",
+        "hit_manaSword_soft",
+        "hit_manaSword_metal",
+        "hit_manaSword_stone",
+        "hit_manaSword_crystal",
+        "hit_manaSword_energy",
+        "hit_manaSword_paper"
+      ],
+      "status": "candidate",
+      "reason": "명시한 동작 구간을 새 효과음에 편집 사용. 최종 채택은 사용자 청취 대기.",
+      "audition_segments": [
+        {
+          "start": 0.13,
+          "duration": 3,
+          "preview": "source-previews/89ef9fbe928e7fad65790f6b.wav",
+          "reason": "원본 동작 구간 청취용. 긴 녹음 전체를 대표한다고 가정하지 않음."
+        },
+        {
+          "start": 6.32,
+          "duration": 3,
+          "preview": "source-previews/fe32d67d4fa748df9e78beff.wav",
+          "reason": "원본 동작 구간 청취용. 긴 녹음 전체를 대표한다고 가정하지 않음."
+        },
+        {
+          "start": 11.13,
+          "duration": 1.83,
+          "preview": "source-previews/4f117fe78988cc48cb441e5e.wav",
+          "reason": "원본 동작 구간 청취용. 긴 녹음 전체를 대표한다고 가정하지 않음."
+        }
+      ],
+      "preservation": "SHA-256 rechecked; read-only original",
+      "selection": "explicit measured transient/steady-room intervals; no runtime randomization"
+    },
+    {
+      "path": "Sonniss.com-GDC2026-GameAudioBundle2of5/Alexander Kopeikin - 100 kHz Designed Ice/ice, block of ice crushed, heavy-015.wav",
+      "pack": "Alexander Kopeikin - 100 kHz Designed Ice",
+      "sha256": "daf4e7d3087ab4cff41985396f51751637e1980648b07b404c939d797d38f69a",
+      "bytes": 822678,
+      "format": 1,
+      "channels": 2,
+      "sample_rate": 48000,
+      "bits": 24,
+      "align": 6,
+      "offset": 80,
+      "data_bytes": 816690,
+      "frames": 136115,
+      "duration": 2.835729166666667,
+      "peak": 0.926345944404602,
+      "peak_dbfs": -0.66,
+      "rms": 0.10026647132860082,
+      "rms_dbfs": -19.98,
+      "clipped_samples": 0,
+      "spectral_centroid_hz": 4517.3,
+      "active_start": 0.23,
+      "active_end": 1.89,
+      "events": [
+        0.23,
+        0.53,
+        0.81,
+        1.14,
+        1.37,
+        1.79
+      ],
+      "segments": [
+        {
+          "start": 0.23,
+          "end": 1.89,
+          "reason": "파형 에너지 동작 구간"
+        }
+      ],
+      "silence_ratio": 0.1201,
+      "quiet_floor_dbfs": -63.17,
+      "noise_note": "조용한 20% 구간 RMS 기반 추정값. 실제 잡음의 청각적 식별은 미실시.",
+      "mtime_ns": 1790409566690471700,
+      "audition_state": "not_auditioned",
+      "review_method": "whole-file sample/energy/metadata analysis; source semantics; no direct listening",
+      "uses": [
+        "bombardAttack",
+        "enemyKilled",
+        "bossAttack"
+      ],
+      "status": "candidate",
+      "reason": "명시한 동작 구간을 새 효과음에 편집 사용. 최종 채택은 사용자 청취 대기.",
+      "audition_segments": [
+        {
+          "start": 0.23,
+          "duration": 2.605729166666667,
+          "preview": "source-previews/26e8c7745191efa9990b5d3f.wav",
+          "reason": "원본 동작 구간 청취용. 긴 녹음 전체를 대표한다고 가정하지 않음."
+        }
+      ],
+      "preservation": "SHA-256 rechecked; read-only original",
+      "selection": "explicit measured transient/steady-room intervals; no runtime randomization"
+    },
+    {
+      "path": "Sonniss.com-GDC2026-GameAudioBundle2of5/Alexander Kopeikin - 100 kHz Designed Ice/ice, crack, ice block snapping-001.wav",
+      "pack": "Alexander Kopeikin - 100 kHz Designed Ice",
+      "sha256": "0a48ec3e878ae0cb35e792bd4eacb8539149c387e37557d02efa8a3bb678e06f",
+      "bytes": 1716792,
+      "format": 1,
+      "channels": 2,
+      "sample_rate": 48000,
+      "bits": 24,
+      "align": 6,
+      "offset": 80,
+      "data_bytes": 1710804,
+      "frames": 285134,
+      "duration": 5.940291666666667,
+      "peak": 1.0,
+      "peak_dbfs": 0.0,
+      "rms": 0.10990844069948175,
+      "rms_dbfs": -19.18,
+      "clipped_samples": 1,
+      "spectral_centroid_hz": 5220.3,
+      "active_start": 0.51,
+      "active_end": 3.82,
+      "events": [
+        0.51,
+        0.74,
+        1.0,
+        1.31,
+        1.88,
+        2.12,
+        3.71
+      ],
+      "segments": [
+        {
+          "start": 0.51,
+          "end": 2.2,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 2.44,
+          "end": 2.52,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 3.53,
+          "end": 3.82,
+          "reason": "파형 에너지 동작 구간"
+        }
+      ],
+      "silence_ratio": 0.3013,
+      "quiet_floor_dbfs": -90.19,
+      "noise_note": "조용한 20% 구간 RMS 기반 추정값. 실제 잡음의 청각적 식별은 미실시.",
+      "mtime_ns": 1790409566738522700,
+      "audition_state": "not_auditioned",
+      "review_method": "whole-file sample/energy/metadata analysis; source semantics; no direct listening",
+      "uses": [
+        "hit_manaSword_crystal",
+        "hit_guardianDaggers_crystal",
+        "hit_piercingShot_crystal",
+        "hit_chainLightning_crystal",
+        "hit_manaBombard_crystal",
+        "hit_manaBolt_crystal",
+        "hit_manaShotgun_crystal",
+        "hit_autoTurret_crystal",
+        "hit_mineLayer_crystal",
+        "death_crystal"
+      ],
+      "status": "candidate",
+      "reason": "명시한 동작 구간을 새 효과음에 편집 사용. 최종 채택은 사용자 청취 대기.",
+      "audition_segments": [
+        {
+          "start": 0.51,
+          "duration": 3,
+          "preview": "source-previews/3f990fa60d1080d54515af38.wav",
+          "reason": "원본 동작 구간 청취용. 긴 녹음 전체를 대표한다고 가정하지 않음."
+        }
+      ],
+      "preservation": "SHA-256 rechecked; read-only original",
+      "selection": "explicit measured transient/steady-room intervals; no runtime randomization"
+    },
+    {
+      "path": "Sonniss.com-GDC2026-GameAudioBundle2of5/Alexander Kopeikin - 100 kHz Designed Ice/ice, surface cracking, fissure, fast, hard-003.wav",
+      "pack": "Alexander Kopeikin - 100 kHz Designed Ice",
+      "sha256": "d72b1b6ea0228b71f9a7a88e0b8a4ad61da313506aa1636c1969765bacec6a12",
+      "bytes": 2905332,
+      "format": 1,
+      "channels": 2,
+      "sample_rate": 96000,
+      "bits": 24,
+      "align": 6,
+      "offset": 80,
+      "data_bytes": 2899344,
+      "frames": 483224,
+      "duration": 5.0335833333333335,
+      "peak": 1.0,
+      "peak_dbfs": 0.0,
+      "rms": 0.14072015442398184,
+      "rms_dbfs": -17.03,
+      "clipped_samples": 44,
+      "spectral_centroid_hz": 10524.3,
+      "active_start": 0.3,
+      "active_end": 2.42,
+      "events": [
+        0.3,
+        0.6,
+        0.81,
+        0.99,
+        1.34,
+        1.71,
+        2.08
+      ],
+      "segments": [
+        {
+          "start": 0.3,
+          "end": 2.42,
+          "reason": "파형 에너지 동작 구간"
+        }
+      ],
+      "silence_ratio": 0.3439,
+      "quiet_floor_dbfs": -144.11,
+      "noise_note": "조용한 20% 구간 RMS 기반 추정값. 실제 잡음의 청각적 식별은 미실시.",
+      "mtime_ns": 1790409566848593700,
+      "audition_state": "not_auditioned",
+      "review_method": "whole-file sample/energy/metadata analysis; source semantics; no direct listening",
+      "uses": [
+        "chainAttack",
+        "piercingAttack",
+        "hit_piercingShot_soft",
+        "hit_piercingShot_metal",
+        "hit_piercingShot_stone",
+        "hit_piercingShot_crystal",
+        "hit_piercingShot_energy",
+        "hit_piercingShot_paper"
+      ],
+      "status": "candidate",
+      "reason": "명시한 동작 구간을 새 효과음에 편집 사용. 최종 채택은 사용자 청취 대기.",
+      "audition_segments": [
+        {
+          "start": 0.3,
+          "duration": 3,
+          "preview": "source-previews/850ecb4d9fac6bb640c2221f.wav",
+          "reason": "원본 동작 구간 청취용. 긴 녹음 전체를 대표한다고 가정하지 않음."
+        }
+      ],
+      "preservation": "SHA-256 rechecked; read-only original",
+      "selection": "explicit measured transient/steady-room intervals; no runtime randomization"
+    },
+    {
+      "path": "Sonniss.com-GDC2026-GameAudioBundle2of5/CB_Sounddesign - Applicable Sounds - Organic UI and Building Games SFX/GAMEMisc_Magic Creation 23_CB Sounddesign_APPlicable Sounds.wav",
+      "pack": "CB_Sounddesign - Applicable Sounds - Organic UI and Building Games SFX",
+      "sha256": "061a4899d8c85abcd53eb074cbb81c56ab3688692c2838a1cdf20e64b03b506c",
+      "bytes": 918434,
+      "format": 1,
+      "channels": 2,
+      "sample_rate": 48000,
+      "bits": 24,
+      "align": 6,
+      "offset": 692,
+      "data_bytes": 917496,
+      "frames": 152916,
+      "duration": 3.18575,
+      "peak": 0.7079451084136963,
+      "peak_dbfs": -3.0,
+      "rms": 0.045922907790496556,
+      "rms_dbfs": -26.76,
+      "clipped_samples": 0,
+      "spectral_centroid_hz": 6900.7,
+      "active_start": 0.22,
+      "active_end": 1.95,
+      "events": [
+        0.22,
+        0.45,
+        0.69,
+        0.97,
+        1.19,
+        1.62,
+        1.84
+      ],
+      "segments": [
+        {
+          "start": 0.22,
+          "end": 1.95,
+          "reason": "파형 에너지 동작 구간"
+        }
+      ],
+      "silence_ratio": 0.0975,
+      "quiet_floor_dbfs": -52.93,
+      "noise_note": "조용한 20% 구간 RMS 기반 추정값. 실제 잡음의 청각적 식별은 미실시.",
+      "mtime_ns": 1790409567164013800,
+      "audition_state": "not_auditioned",
+      "review_method": "whole-file sample/energy/metadata analysis; source semantics; no direct listening",
+      "uses": [
+        "fieldActivated",
+        "supplyFanfare",
+        "stageClear",
+        "enemySupport"
+      ],
+      "status": "candidate",
+      "reason": "명시한 동작 구간을 새 효과음에 편집 사용. 최종 채택은 사용자 청취 대기.",
+      "audition_segments": [
+        {
+          "start": 0.22,
+          "duration": 2.96575,
+          "preview": "source-previews/b010866170b064d2630c9ff3.wav",
+          "reason": "원본 동작 구간 청취용. 긴 녹음 전체를 대표한다고 가정하지 않음."
+        }
+      ],
+      "preservation": "SHA-256 rechecked; read-only original",
+      "selection": "explicit measured transient/steady-room intervals; no runtime randomization"
+    },
+    {
+      "path": "Sonniss.com-GDC2026-GameAudioBundle2of5/CB_Sounddesign - Applicable Sounds - Organic UI and Building Games SFX/UIMisc_Kalimba 3 Up_CB Sounddesign_APPlicable Sounds.wav",
+      "pack": "CB_Sounddesign - Applicable Sounds - Organic UI and Building Games SFX",
+      "sha256": "0298f3405836720e064d1ff486f58fa032b03009d6f9e55e668b84e759dca360",
+      "bytes": 160420,
+      "format": 1,
+      "channels": 2,
+      "sample_rate": 48000,
+      "bits": 24,
+      "align": 6,
+      "offset": 692,
+      "data_bytes": 159258,
+      "frames": 26543,
+      "duration": 0.5529791666666667,
+      "peak": 0.7079451084136963,
+      "peak_dbfs": -3.0,
+      "rms": 0.05621770842364674,
+      "rms_dbfs": -25.0,
+      "clipped_samples": 0,
+      "spectral_centroid_hz": 8487.3,
+      "active_start": 0.0,
+      "active_end": 0.33,
+      "events": [
+        0.0
+      ],
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 0.33,
+          "reason": "파형 에너지 동작 구간"
+        }
+      ],
+      "silence_ratio": 0.2182,
+      "quiet_floor_dbfs": -71.51,
+      "noise_note": "조용한 20% 구간 RMS 기반 추정값. 실제 잡음의 청각적 식별은 미실시.",
+      "mtime_ns": 1790409567285928200,
+      "audition_state": "not_auditioned",
+      "review_method": "whole-file sample/energy/metadata analysis; source semantics; no direct listening",
+      "uses": [
+        "purchase",
+        "item_consumable",
+        "item_cloth",
+        "item_optic",
+        "item_paper",
+        "item_metal",
+        "item_arcane",
+        "item_circuitry"
+      ],
+      "status": "candidate",
+      "reason": "명시한 동작 구간을 새 효과음에 편집 사용. 최종 채택은 사용자 청취 대기.",
+      "audition_segments": [
+        {
+          "start": 0.0,
+          "duration": 0.5529791666666667,
+          "preview": "source-previews/4c018c8eb5a6f4c18ed521bc.wav",
+          "reason": "원본 동작 구간 청취용. 긴 녹음 전체를 대표한다고 가정하지 않음."
+        }
+      ],
+      "preservation": "SHA-256 rechecked; read-only original",
+      "selection": "explicit measured transient/steady-room intervals; no runtime randomization"
+    },
+    {
+      "path": "Sonniss.com-GDC2026-GameAudioBundle2of5/Cinematic Sound Design - Colossal Impacts/Impact Cut Sweep.wav",
+      "pack": "Cinematic Sound Design - Colossal Impacts",
+      "sha256": "e6b918055aa5ed53917ad217ed9077b0bfff5b0c7bcf97d07ba48be492b61b21",
+      "bytes": 1612464,
+      "format": 1,
+      "channels": 2,
+      "sample_rate": 96000,
+      "bits": 24,
+      "align": 6,
+      "offset": 680,
+      "data_bytes": 1608012,
+      "frames": 268002,
+      "duration": 2.7916875,
+      "peak": 0.875839114189148,
+      "peak_dbfs": -1.15,
+      "rms": 0.11138583589605693,
+      "rms_dbfs": -19.06,
+      "clipped_samples": 0,
+      "spectral_centroid_hz": 2710.1,
+      "active_start": 0.62,
+      "active_end": 1.47,
+      "events": [
+        0.62,
+        1.02,
+        1.21
+      ],
+      "segments": [
+        {
+          "start": 0.62,
+          "end": 1.47,
+          "reason": "파형 에너지 동작 구간"
+        }
+      ],
+      "silence_ratio": 0.1434,
+      "quiet_floor_dbfs": -63.75,
+      "noise_note": "조용한 20% 구간 RMS 기반 추정값. 실제 잡음의 청각적 식별은 미실시.",
+      "mtime_ns": 1790409568010037400,
+      "audition_state": "not_auditioned",
+      "review_method": "whole-file sample/energy/metadata analysis; source semantics; no direct listening",
+      "uses": [
+        "piercingAttack"
+      ],
+      "status": "candidate",
+      "reason": "명시한 동작 구간을 새 효과음에 편집 사용. 최종 채택은 사용자 청취 대기.",
+      "audition_segments": [
+        {
+          "start": 0.62,
+          "duration": 2.1716875,
+          "preview": "source-previews/e41139f2a864c826d4f57983.wav",
+          "reason": "원본 동작 구간 청취용. 긴 녹음 전체를 대표한다고 가정하지 않음."
+        }
+      ],
+      "preservation": "SHA-256 rechecked; read-only original",
+      "selection": "explicit measured transient/steady-room intervals; no runtime randomization"
+    },
+    {
+      "path": "Sonniss.com-GDC2026-GameAudioBundle2of5/Cinematic Sound Design - Hybrid Game & UI Elements/Foley Coin Flip Single Fast.wav",
+      "pack": "Cinematic Sound Design - Hybrid Game & UI Elements",
+      "sha256": "f6f56101e8711c22dfbb81583f4dfc78fa9c7a1b6003f82e0d3881e93774ad85",
+      "bytes": 541916,
+      "format": 1,
+      "channels": 2,
+      "sample_rate": 96000,
+      "bits": 24,
+      "align": 6,
+      "offset": 680,
+      "data_bytes": 540006,
+      "frames": 90001,
+      "duration": 0.9375104166666667,
+      "peak": 0.6968729496002197,
+      "peak_dbfs": -3.14,
+      "rms": 0.028073610498599702,
+      "rms_dbfs": -31.03,
+      "clipped_samples": 0,
+      "spectral_centroid_hz": 6284.4,
+      "active_start": 0.0,
+      "active_end": 0.49,
+      "events": [
+        0.0,
+        0.2
+      ],
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 0.49,
+          "reason": "파형 에너지 동작 구간"
+        }
+      ],
+      "silence_ratio": 0.086,
+      "quiet_floor_dbfs": -54.34,
+      "noise_note": "조용한 20% 구간 RMS 기반 추정값. 실제 잡음의 청각적 식별은 미실시.",
+      "mtime_ns": 1790409568350456300,
+      "audition_state": "not_auditioned",
+      "review_method": "whole-file sample/energy/metadata analysis; source semantics; no direct listening",
+      "uses": [
+        "pickup_associationCoin"
+      ],
+      "status": "candidate",
+      "reason": "명시한 동작 구간을 새 효과음에 편집 사용. 최종 채택은 사용자 청취 대기.",
+      "audition_segments": [
+        {
+          "start": 0.0,
+          "duration": 0.9375104166666667,
+          "preview": "source-previews/a2ea6dc7ca7b4c0c8ab5a59f.wav",
+          "reason": "원본 동작 구간 청취용. 긴 녹음 전체를 대표한다고 가정하지 않음."
+        }
+      ],
+      "preservation": "SHA-256 rechecked; read-only original",
+      "selection": "explicit measured transient/steady-room intervals; no runtime randomization"
+    },
+    {
+      "path": "Sonniss.com-GDC2026-GameAudioBundle2of5/Cinematic Sound Design - Hybrid Game & UI Elements/Game Entry Happy Short.wav",
+      "pack": "Cinematic Sound Design - Hybrid Game & UI Elements",
+      "sha256": "8ccca44905900169d322f1a0cb4afac4be4afa372c4242bf6484cb081b42f94b",
+      "bytes": 505876,
+      "format": 1,
+      "channels": 2,
+      "sample_rate": 96000,
+      "bits": 24,
+      "align": 6,
+      "offset": 680,
+      "data_bytes": 504012,
+      "frames": 84002,
+      "duration": 0.8750208333333334,
+      "peak": 0.6194940805435181,
+      "peak_dbfs": -4.16,
+      "rms": 0.09822173172074501,
+      "rms_dbfs": -20.16,
+      "clipped_samples": 0,
+      "spectral_centroid_hz": 1234.1,
+      "active_start": 0.0,
+      "active_end": 0.35,
+      "events": [
+        0.0
+      ],
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 0.35,
+          "reason": "파형 에너지 동작 구간"
+        }
+      ],
+      "silence_ratio": 0.6207,
+      "quiet_floor_dbfs": -240.0,
+      "noise_note": "조용한 20% 구간 RMS 기반 추정값. 실제 잡음의 청각적 식별은 미실시.",
+      "mtime_ns": 1790409568407537400,
+      "audition_state": "not_auditioned",
+      "review_method": "whole-file sample/energy/metadata analysis; source semantics; no direct listening",
+      "uses": [
+        "weaponPurchase",
+        "waveCompleted",
+        "stageClear"
+      ],
+      "status": "candidate",
+      "reason": "명시한 동작 구간을 새 효과음에 편집 사용. 최종 채택은 사용자 청취 대기.",
+      "audition_segments": [
+        {
+          "start": 0.0,
+          "duration": 0.8750208333333334,
+          "preview": "source-previews/9cfe6b8437b1c0e041ff4e85.wav",
+          "reason": "원본 동작 구간 청취용. 긴 녹음 전체를 대표한다고 가정하지 않음."
+        }
+      ],
+      "preservation": "SHA-256 rechecked; read-only original",
+      "selection": "explicit measured transient/steady-room intervals; no runtime randomization"
+    },
+    {
+      "path": "Sonniss.com-GDC2026-GameAudioBundle2of5/Cinematic Sound Design - Interface & Infographics/Interface Accept Glassy Snap.wav",
+      "pack": "Cinematic Sound Design - Interface & Infographics",
+      "sha256": "7c4337c429b72efa3731e2fb970f32e87ca39a6dd62adce1a6779f9e809a3444",
+      "bytes": 253766,
+      "format": 1,
+      "channels": 2,
+      "sample_rate": 96000,
+      "bits": 24,
+      "align": 6,
+      "offset": 692,
+      "data_bytes": 252000,
+      "frames": 42000,
+      "duration": 0.4375,
+      "peak": 0.35128843784332275,
+      "peak_dbfs": -9.09,
+      "rms": 0.04861960877036474,
+      "rms_dbfs": -26.26,
+      "clipped_samples": 0,
+      "spectral_centroid_hz": 6484.3,
+      "active_start": 0.0,
+      "active_end": 0.21,
+      "events": [
+        0.0
+      ],
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 0.21,
+          "reason": "파형 에너지 동작 구간"
+        }
+      ],
+      "silence_ratio": 0.2558,
+      "quiet_floor_dbfs": -85.02,
+      "noise_note": "조용한 20% 구간 RMS 기반 추정값. 실제 잡음의 청각적 식별은 미실시.",
+      "mtime_ns": 1790409568475841000,
+      "audition_state": "not_auditioned",
+      "review_method": "whole-file sample/energy/metadata analysis; source semantics; no direct listening",
+      "uses": [
+        "weaponFired",
+        "walletSweep",
+        "pickup_magicStone",
+        "item_consumable"
+      ],
+      "status": "candidate",
+      "reason": "명시한 동작 구간을 새 효과음에 편집 사용. 최종 채택은 사용자 청취 대기.",
+      "audition_segments": [
+        {
+          "start": 0.0,
+          "duration": 0.4375,
+          "preview": "source-previews/62d392ae4f3a785f0d101e8a.wav",
+          "reason": "원본 동작 구간 청취용. 긴 녹음 전체를 대표한다고 가정하지 않음."
+        }
+      ],
+      "preservation": "SHA-256 rechecked; read-only original",
+      "selection": "explicit measured transient/steady-room intervals; no runtime randomization"
+    },
+    {
+      "path": "Sonniss.com-GDC2026-GameAudioBundle2of5/Cinematic Sound Design - Interface & Infographics/Interface Percussion Snap.wav",
+      "pack": "Cinematic Sound Design - Interface & Infographics",
+      "sha256": "cd45df5914d9b430f94699dd20c7d290220680eb7cb5b55d64ed20ff18f6c7ba",
+      "bytes": 379628,
+      "format": 1,
+      "channels": 2,
+      "sample_rate": 96000,
+      "bits": 24,
+      "align": 6,
+      "offset": 692,
+      "data_bytes": 377700,
+      "frames": 62950,
+      "duration": 0.6557291666666667,
+      "peak": 0.5584975481033325,
+      "peak_dbfs": -5.06,
+      "rms": 0.029123475635961085,
+      "rms_dbfs": -30.72,
+      "clipped_samples": 0,
+      "spectral_centroid_hz": 3021.0,
+      "active_start": 0.0,
+      "active_end": 0.34,
+      "events": [
+        0.0
+      ],
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 0.34,
+          "reason": "파형 에너지 동작 구간"
+        }
+      ],
+      "silence_ratio": 0.2769,
+      "quiet_floor_dbfs": -240.0,
+      "noise_note": "조용한 20% 구간 RMS 기반 추정값. 실제 잡음의 청각적 식별은 미실시.",
+      "mtime_ns": 1790409568550902800,
+      "audition_state": "not_auditioned",
+      "review_method": "whole-file sample/energy/metadata analysis; source semantics; no direct listening",
+      "uses": [
+        "reroll",
+        "playerHit"
+      ],
+      "status": "candidate",
+      "reason": "명시한 동작 구간을 새 효과음에 편집 사용. 최종 채택은 사용자 청취 대기.",
+      "audition_segments": [
+        {
+          "start": 0.0,
+          "duration": 0.6557291666666667,
+          "preview": "source-previews/ab7979e0f335dd5f6be2d6a9.wav",
+          "reason": "원본 동작 구간 청취용. 긴 녹음 전체를 대표한다고 가정하지 않음."
+        }
+      ],
+      "preservation": "SHA-256 rechecked; read-only original",
+      "selection": "explicit measured transient/steady-room intervals; no runtime randomization"
+    },
+    {
+      "path": "Sonniss.com-GDC2026-GameAudioBundle2of5/Cinematic Sound Design - Interface & Infographics/Interface Pop High Short.wav",
+      "pack": "Cinematic Sound Design - Interface & Infographics",
+      "sha256": "8ac9cb88514baf7b59031e1eacf9a1866daa2470f6b72fefdb75df2871032546",
+      "bytes": 374222,
+      "format": 1,
+      "channels": 2,
+      "sample_rate": 96000,
+      "bits": 24,
+      "align": 6,
+      "offset": 692,
+      "data_bytes": 372300,
+      "frames": 62050,
+      "duration": 0.6463541666666667,
+      "peak": 0.9188510179519653,
+      "peak_dbfs": -0.74,
+      "rms": 0.07549432504038307,
+      "rms_dbfs": -22.44,
+      "clipped_samples": 0,
+      "spectral_centroid_hz": 2893.8,
+      "active_start": 0.0,
+      "active_end": 0.14,
+      "events": [
+        0.0
+      ],
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 0.14,
+          "reason": "파형 에너지 동작 구간"
+        }
+      ],
+      "silence_ratio": 0.8125,
+      "quiet_floor_dbfs": -97.13,
+      "noise_note": "조용한 20% 구간 RMS 기반 추정값. 실제 잡음의 청각적 식별은 미실시.",
+      "mtime_ns": 1790409568616662000,
+      "audition_state": "not_auditioned",
+      "review_method": "whole-file sample/energy/metadata analysis; source semantics; no direct listening",
+      "uses": [
+        "enemyProjectile"
+      ],
+      "status": "candidate",
+      "reason": "명시한 동작 구간을 새 효과음에 편집 사용. 최종 채택은 사용자 청취 대기.",
+      "audition_segments": [
+        {
+          "start": 0.0,
+          "duration": 0.6463541666666667,
+          "preview": "source-previews/0bfffc3ff98152078cf23c7f.wav",
+          "reason": "원본 동작 구간 청취용. 긴 녹음 전체를 대표한다고 가정하지 않음."
+        }
+      ],
+      "preservation": "SHA-256 rechecked; read-only original",
+      "selection": "explicit measured transient/steady-room intervals; no runtime randomization"
+    },
+    {
+      "path": "Sonniss.com-GDC2026-GameAudioBundle2of5/Cinematic Sound Design - Sci-Fi Drones/Roomtone Space Ship Interior Muted.wav",
+      "pack": "Cinematic Sound Design - Sci-Fi Drones",
+      "sha256": "e411e41ebefcf418622ce5e8d0ca4a5397a70d5e02784a086cc3559038365582",
+      "bytes": 41870872,
+      "format": 1,
+      "channels": 2,
+      "sample_rate": 96000,
+      "bits": 24,
+      "align": 6,
+      "offset": 680,
+      "data_bytes": 41869794,
+      "frames": 6978299,
+      "duration": 72.69061458333333,
+      "peak": 0.2080833911895752,
+      "peak_dbfs": -13.64,
+      "rms": 0.07131665392295336,
+      "rms_dbfs": -22.94,
+      "clipped_samples": 0,
+      "spectral_centroid_hz": 216.1,
+      "active_start": 0.92,
+      "active_end": 71.74,
+      "events": [
+        0.92,
+        2.8,
+        4.65,
+        6.65,
+        10.44,
+        14.15,
+        19.9,
+        21.73,
+        24.53,
+        25.54,
+        28.53,
+        30.11,
+        32.11,
+        33.84,
+        34.11,
+        37.69,
+        41.42,
+        42.94,
+        43.42,
+        46.62,
+        46.94,
+        47.46,
+        48.35,
+        50.94,
+        52.2,
+        52.52,
+        54.05,
+        56.67,
+        59.78,
+        65.3
+      ],
+      "segments": [
+        {
+          "start": 0.92,
+          "end": 20.92,
+          "reason": "긴 지속 녹음의 분할 구간"
+        },
+        {
+          "start": 20.92,
+          "end": 40.92,
+          "reason": "긴 지속 녹음의 분할 구간"
+        },
+        {
+          "start": 40.92,
+          "end": 60.92,
+          "reason": "긴 지속 녹음의 분할 구간"
+        },
+        {
+          "start": 60.92,
+          "end": 71.74,
+          "reason": "긴 지속 녹음의 분할 구간"
+        }
+      ],
+      "silence_ratio": 0.0094,
+      "quiet_floor_dbfs": -26.1,
+      "noise_note": "조용한 20% 구간 RMS 기반 추정값. 실제 잡음의 청각적 식별은 미실시.",
+      "mtime_ns": 1790409569004660000,
+      "audition_state": "not_auditioned",
+      "review_method": "whole-file sample/energy/metadata analysis; source semantics; no direct listening",
+      "uses": [
+        "lobbyWinter",
+        "officeDay"
+      ],
+      "status": "candidate",
+      "reason": "명시한 동작 구간을 새 효과음에 편집 사용. 최종 채택은 사용자 청취 대기.",
+      "audition_segments": [
+        {
+          "start": 0.92,
+          "duration": 3,
+          "preview": "source-previews/5be45cc045593ca69d9a9a3c.wav",
+          "reason": "원본 동작 구간 청취용. 긴 녹음 전체를 대표한다고 가정하지 않음."
+        },
+        {
+          "start": 37.69,
+          "duration": 3,
+          "preview": "source-previews/0afe3ce3775fd17c1f6def1d.wav",
+          "reason": "원본 동작 구간 청취용. 긴 녹음 전체를 대표한다고 가정하지 않음."
+        },
+        {
+          "start": 65.3,
+          "duration": 3,
+          "preview": "source-previews/3befba4a2cfb6b01f9283859.wav",
+          "reason": "원본 동작 구간 청취용. 긴 녹음 전체를 대표한다고 가정하지 않음."
+        }
+      ],
+      "preservation": "SHA-256 rechecked; read-only original",
+      "selection": "explicit measured transient/steady-room intervals; no runtime randomization"
+    },
+    {
+      "path": "Sonniss.com-GDC2026-GameAudioBundle2of5/Cinematic Sound Design - System & UI Feedback Elements/Interface Arp Reveal Down Long.wav",
+      "pack": "Cinematic Sound Design - System & UI Feedback Elements",
+      "sha256": "b289ca1213e055d706da72741f4c2c4de7cbecbabd0601b9a8e21f64549a06eb",
+      "bytes": 674198,
+      "format": 1,
+      "channels": 2,
+      "sample_rate": 96000,
+      "bits": 24,
+      "align": 6,
+      "offset": 692,
+      "data_bytes": 672000,
+      "frames": 112000,
+      "duration": 1.1666666666666667,
+      "peak": 0.5210225582122803,
+      "peak_dbfs": -5.66,
+      "rms": 0.08714098730211967,
+      "rms_dbfs": -21.2,
+      "clipped_samples": 0,
+      "spectral_centroid_hz": 17101.7,
+      "active_start": 0.0,
+      "active_end": 0.7,
+      "events": [
+        0.0,
+        0.23,
+        0.41
+      ],
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 0.7,
+          "reason": "파형 에너지 동작 구간"
+        }
+      ],
+      "silence_ratio": 0.3276,
+      "quiet_floor_dbfs": -141.53,
+      "noise_note": "조용한 20% 구간 RMS 기반 추정값. 실제 잡음의 청각적 식별은 미실시.",
+      "mtime_ns": 1790409569068019300,
+      "audition_state": "not_auditioned",
+      "review_method": "whole-file sample/energy/metadata analysis; source semantics; no direct listening",
+      "uses": [
+        "gameOver"
+      ],
+      "status": "candidate",
+      "reason": "명시한 동작 구간을 새 효과음에 편집 사용. 최종 채택은 사용자 청취 대기.",
+      "audition_segments": [
+        {
+          "start": 0.0,
+          "duration": 1.1666666666666667,
+          "preview": "source-previews/f5b6ffadced1fd96e7a7d753.wav",
+          "reason": "원본 동작 구간 청취용. 긴 녹음 전체를 대표한다고 가정하지 않음."
+        }
+      ],
+      "preservation": "SHA-256 rechecked; read-only original",
+      "selection": "explicit measured transient/steady-room intervals; no runtime randomization"
+    },
+    {
+      "path": "Sonniss.com-GDC2026-GameAudioBundle2of5/Cinematic Sound Design - System & UI Feedback Elements/Interface Deny Low Fat Dark.wav",
+      "pack": "Cinematic Sound Design - System & UI Feedback Elements",
+      "sha256": "b63554a4791b9d7c034e2e49e2383971870394d4a70d9e3c2bc6f99fb2fcc101",
+      "bytes": 429698,
+      "format": 1,
+      "channels": 2,
+      "sample_rate": 96000,
+      "bits": 24,
+      "align": 6,
+      "offset": 680,
+      "data_bytes": 427890,
+      "frames": 71315,
+      "duration": 0.7428645833333334,
+      "peak": 0.7222822904586792,
+      "peak_dbfs": -2.83,
+      "rms": 0.09583685680180563,
+      "rms_dbfs": -20.37,
+      "clipped_samples": 0,
+      "spectral_centroid_hz": 4823.2,
+      "active_start": 0.0,
+      "active_end": 0.49,
+      "events": [
+        0.0,
+        0.21,
+        0.4
+      ],
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 0.49,
+          "reason": "파형 에너지 동작 구간"
+        }
+      ],
+      "silence_ratio": 0.3784,
+      "quiet_floor_dbfs": -240.0,
+      "noise_note": "조용한 20% 구간 RMS 기반 추정값. 실제 잡음의 청각적 식별은 미실시.",
+      "mtime_ns": 1790409569126387600,
+      "audition_state": "not_auditioned",
+      "review_method": "whole-file sample/energy/metadata analysis; source semantics; no direct listening",
+      "uses": [
+        "gameOver"
+      ],
+      "status": "candidate",
+      "reason": "명시한 동작 구간을 새 효과음에 편집 사용. 최종 채택은 사용자 청취 대기.",
+      "audition_segments": [
+        {
+          "start": 0.0,
+          "duration": 0.7428645833333334,
+          "preview": "source-previews/46f75e17d9e271d0fdb611c3.wav",
+          "reason": "원본 동작 구간 청취용. 긴 녹음 전체를 대표한다고 가정하지 않음."
+        }
+      ],
+      "preservation": "SHA-256 rechecked; read-only original",
+      "selection": "explicit measured transient/steady-room intervals; no runtime randomization"
+    },
+    {
+      "path": "Sonniss.com-GDC2026-GameAudioBundle2of5/Cinematic Sound Design - UI Interaction Elements/Ting Coins.wav",
+      "pack": "Cinematic Sound Design - UI Interaction Elements",
+      "sha256": "7467e2687c5b9bf3cedebd0fcb3af58f7eaeffdd7201a97790daf3c87c42f1a1",
+      "bytes": 637214,
+      "format": 1,
+      "channels": 2,
+      "sample_rate": 96000,
+      "bits": 24,
+      "align": 6,
+      "offset": 680,
+      "data_bytes": 636006,
+      "frames": 106001,
+      "duration": 1.1041770833333333,
+      "peak": 0.4545278549194336,
+      "peak_dbfs": -6.85,
+      "rms": 0.03570371542914108,
+      "rms_dbfs": -28.95,
+      "clipped_samples": 0,
+      "spectral_centroid_hz": 8998.8,
+      "active_start": 0.07,
+      "active_end": 0.51,
+      "events": [
+        0.07
+      ],
+      "segments": [
+        {
+          "start": 0.07,
+          "end": 0.51,
+          "reason": "파형 에너지 동작 구간"
+        }
+      ],
+      "silence_ratio": 0.1636,
+      "quiet_floor_dbfs": -68.1,
+      "noise_note": "조용한 20% 구간 RMS 기반 추정값. 실제 잡음의 청각적 식별은 미실시.",
+      "mtime_ns": 1790409569393086800,
+      "audition_state": "not_auditioned",
+      "review_method": "whole-file sample/energy/metadata analysis; source semantics; no direct listening",
+      "uses": [
+        "purchase"
+      ],
+      "status": "candidate",
+      "reason": "명시한 동작 구간을 새 효과음에 편집 사용. 최종 채택은 사용자 청취 대기.",
+      "audition_segments": [
+        {
+          "start": 0.07,
+          "duration": 1.0341770833333332,
+          "preview": "source-previews/9a57186df546e55f3e60977e.wav",
+          "reason": "원본 동작 구간 청취용. 긴 녹음 전체를 대표한다고 가정하지 않음."
+        }
+      ],
+      "preservation": "SHA-256 rechecked; read-only original",
+      "selection": "explicit measured transient/steady-room intervals; no runtime randomization"
+    },
+    {
+      "path": "Sonniss.com-GDC2026-GameAudioBundle2of5/Cinematic Sound Design - User Interface/Interface Plucks Happy.wav",
+      "pack": "Cinematic Sound Design - User Interface",
+      "sha256": "a6866b6e04580d6f4007c59514a5530c7699f785beb27b2eda6a2b4579478ded",
+      "bytes": 493094,
+      "format": 1,
+      "channels": 2,
+      "sample_rate": 96000,
+      "bits": 24,
+      "align": 6,
+      "offset": 692,
+      "data_bytes": 491400,
+      "frames": 81900,
+      "duration": 0.853125,
+      "peak": 0.6864583492279053,
+      "peak_dbfs": -3.27,
+      "rms": 0.10771584851486773,
+      "rms_dbfs": -19.35,
+      "clipped_samples": 0,
+      "spectral_centroid_hz": 3510.6,
+      "active_start": 0.0,
+      "active_end": 0.5,
+      "events": [
+        0.0,
+        0.29
+      ],
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 0.5,
+          "reason": "파형 에너지 동작 구간"
+        }
+      ],
+      "silence_ratio": 0.2471,
+      "quiet_floor_dbfs": -240.0,
+      "noise_note": "조용한 20% 구간 RMS 기반 추정값. 실제 잡음의 청각적 식별은 미실시.",
+      "mtime_ns": 1790409569764978000,
+      "audition_state": "not_auditioned",
+      "review_method": "whole-file sample/energy/metadata analysis; source semantics; no direct listening",
+      "uses": [
+        "waveStarted",
+        "supplyFanfare"
+      ],
+      "status": "candidate",
+      "reason": "명시한 동작 구간을 새 효과음에 편집 사용. 최종 채택은 사용자 청취 대기.",
+      "audition_segments": [
+        {
+          "start": 0.0,
+          "duration": 0.853125,
+          "preview": "source-previews/a78f4836100b490bb3794cb5.wav",
+          "reason": "원본 동작 구간 청취용. 긴 녹음 전체를 대표한다고 가정하지 않음."
+        }
+      ],
+      "preservation": "SHA-256 rechecked; read-only original",
+      "selection": "explicit measured transient/steady-room intervals; no runtime randomization"
+    },
+    {
+      "path": "Sonniss.com-GDC2026-GameAudioBundle2of5/David Dumais Audio - Melee Weapons Sound Effects Pack 2/WEAPWhip_WHIP Snap Crack 05_DDUMAIS_MWP2.wav",
+      "pack": "David Dumais Audio - Melee Weapons Sound Effects Pack 2",
+      "sha256": "6f6d12cf051d597e34f58b65bcceb454a4673a4b230065d90f93636b49ec9f48",
+      "bytes": 5146722,
+      "format": 1,
+      "channels": 2,
+      "sample_rate": 96000,
+      "bits": 24,
+      "align": 6,
+      "offset": 656,
+      "data_bytes": 847050,
+      "frames": 141175,
+      "duration": 1.4705729166666666,
+      "peak": 0.8007082939147949,
+      "peak_dbfs": -1.93,
+      "rms": 0.10253504764741879,
+      "rms_dbfs": -19.78,
+      "clipped_samples": 0,
+      "spectral_centroid_hz": 9963.5,
+      "active_start": 0.14,
+      "active_end": 0.95,
+      "events": [
+        0.14,
+        0.47
+      ],
+      "segments": [
+        {
+          "start": 0.14,
+          "end": 0.95,
+          "reason": "파형 에너지 동작 구간"
+        }
+      ],
+      "silence_ratio": 0.1088,
+      "quiet_floor_dbfs": -57.85,
+      "noise_note": "조용한 20% 구간 RMS 기반 추정값. 실제 잡음의 청각적 식별은 미실시.",
+      "mtime_ns": 1790409570159875700,
+      "audition_state": "not_auditioned",
+      "review_method": "whole-file sample/energy/metadata analysis; source semantics; no direct listening",
+      "uses": [
+        "shotgunAttack"
+      ],
+      "status": "candidate",
+      "reason": "명시한 동작 구간을 새 효과음에 편집 사용. 최종 채택은 사용자 청취 대기.",
+      "audition_segments": [
+        {
+          "start": 0.14,
+          "duration": 1.3305729166666667,
+          "preview": "source-previews/9c6936f053871bc10337c662.wav",
+          "reason": "원본 동작 구간 청취용. 긴 녹음 전체를 대표한다고 가정하지 않음."
+        }
+      ],
+      "preservation": "SHA-256 rechecked; read-only original",
+      "selection": "explicit measured transient/steady-room intervals; no runtime randomization"
+    },
+    {
+      "path": "Sonniss.com-GDC2026-GameAudioBundle2of5/Epic Stock Media - Anime Game/DSGNMisc_Misc Monster Tentacle Modulated Creature Shadow Abstract Swept Wobble Lfo 02_ESM_AG.wav",
+      "pack": "Epic Stock Media - Anime Game",
+      "sha256": "d10c51599a12fbf9bcd9e73bc44bddd040029265fd33a514ff145396d7aebc2c",
+      "bytes": 1726032,
+      "format": 1,
+      "channels": 2,
+      "sample_rate": 96000,
+      "bits": 24,
+      "align": 6,
+      "offset": 656,
+      "data_bytes": 1175592,
+      "frames": 195932,
+      "duration": 2.040958333333333,
+      "peak": 0.8912500143051147,
+      "peak_dbfs": -1.0,
+      "rms": 0.21606026771109968,
+      "rms_dbfs": -13.31,
+      "clipped_samples": 0,
+      "spectral_centroid_hz": 2679.2,
+      "active_start": 0.01,
+      "active_end": 1.83,
+      "events": [
+        0.01,
+        0.21,
+        0.42,
+        0.7,
+        0.91,
+        1.24,
+        1.48,
+        1.69
+      ],
+      "segments": [
+        {
+          "start": 0.01,
+          "end": 1.83,
+          "reason": "파형 에너지 동작 구간"
+        }
+      ],
+      "silence_ratio": 0.0294,
+      "quiet_floor_dbfs": -24.12,
+      "noise_note": "조용한 20% 구간 RMS 기반 추정값. 실제 잡음의 청각적 식별은 미실시.",
+      "mtime_ns": 1790409570699612500,
+      "audition_state": "not_auditioned",
+      "review_method": "whole-file sample/energy/metadata analysis; source semantics; no direct listening",
+      "uses": [
+        "enemySupport"
+      ],
+      "status": "candidate",
+      "reason": "명시한 동작 구간을 새 효과음에 편집 사용. 최종 채택은 사용자 청취 대기.",
+      "audition_segments": [
+        {
+          "start": 0.01,
+          "duration": 2.0309583333333334,
+          "preview": "source-previews/a7258076b91e8f53251d8333.wav",
+          "reason": "원본 동작 구간 청취용. 긴 녹음 전체를 대표한다고 가정하지 않음."
+        }
+      ],
+      "preservation": "SHA-256 rechecked; read-only original",
+      "selection": "explicit measured transient/steady-room intervals; no runtime randomization"
+    },
+    {
+      "path": "Sonniss.com-GDC2026-GameAudioBundle2of5/Epic Stock Media - Anime Game/DSGNStngr_Power Up Bright Positive Successful Light Saturation Crash Shimmer 05_ESM_AG.wav",
+      "pack": "Epic Stock Media - Anime Game",
+      "sha256": "3bf090678bb55da7d38f2bf76ac6a8d826f5245452a36d54666d2597c0be0299",
+      "bytes": 1428656,
+      "format": 1,
+      "channels": 2,
+      "sample_rate": 96000,
+      "bits": 24,
+      "align": 6,
+      "offset": 656,
+      "data_bytes": 878262,
+      "frames": 146377,
+      "duration": 1.5247604166666666,
+      "peak": 0.8912500143051147,
+      "peak_dbfs": -1.0,
+      "rms": 0.07650947269846413,
+      "rms_dbfs": -22.33,
+      "clipped_samples": 0,
+      "spectral_centroid_hz": 7762.4,
+      "active_start": 0.04,
+      "active_end": 1.03,
+      "events": [
+        0.04,
+        0.28,
+        0.47
+      ],
+      "segments": [
+        {
+          "start": 0.04,
+          "end": 1.03,
+          "reason": "파형 에너지 동작 구간"
+        }
+      ],
+      "silence_ratio": 0.0526,
+      "quiet_floor_dbfs": -53.07,
+      "noise_note": "조용한 20% 구간 RMS 기반 추정값. 실제 잡음의 청각적 식별은 미실시.",
+      "mtime_ns": 1790409570769291000,
+      "audition_state": "not_auditioned",
+      "review_method": "whole-file sample/energy/metadata analysis; source semantics; no direct listening",
+      "uses": [
+        "branchChoice"
+      ],
+      "status": "candidate",
+      "reason": "명시한 동작 구간을 새 효과음에 편집 사용. 최종 채택은 사용자 청취 대기.",
+      "audition_segments": [
+        {
+          "start": 0.04,
+          "duration": 1.4847604166666666,
+          "preview": "source-previews/05b6e33d3a9a7d5f527bd2cf.wav",
+          "reason": "원본 동작 구간 청취용. 긴 녹음 전체를 대표한다고 가정하지 않음."
+        }
+      ],
+      "preservation": "SHA-256 rechecked; read-only original",
+      "selection": "explicit measured transient/steady-room intervals; no runtime randomization"
+    },
+    {
+      "path": "Sonniss.com-GDC2026-GameAudioBundle2of5/Epic Stock Media - Anime Game/FGHTImpt_Combat Punch Impact Light Hit Delay Crunchy Vintage Quick Smack 05_ESM_AG.wav",
+      "pack": "Epic Stock Media - Anime Game",
+      "sha256": "55cb8102db4d8728c2607279b4e381f27336db35bb966e5f4993c9ace2cd9ecd",
+      "bytes": 1159288,
+      "format": 1,
+      "channels": 2,
+      "sample_rate": 96000,
+      "bits": 24,
+      "align": 6,
+      "offset": 656,
+      "data_bytes": 609042,
+      "frames": 101507,
+      "duration": 1.0573645833333334,
+      "peak": 0.8912500143051147,
+      "peak_dbfs": -1.0,
+      "rms": 0.11448196284386404,
+      "rms_dbfs": -18.83,
+      "clipped_samples": 0,
+      "spectral_centroid_hz": 5734.7,
+      "active_start": 0.01,
+      "active_end": 0.63,
+      "events": [
+        0.01,
+        0.25
+      ],
+      "segments": [
+        {
+          "start": 0.01,
+          "end": 0.63,
+          "reason": "파형 에너지 동작 구간"
+        }
+      ],
+      "silence_ratio": 0.0667,
+      "quiet_floor_dbfs": -56.32,
+      "noise_note": "조용한 20% 구간 RMS 기반 추정값. 실제 잡음의 청각적 식별은 미실시.",
+      "mtime_ns": 1790409570893830600,
+      "audition_state": "not_auditioned",
+      "review_method": "whole-file sample/energy/metadata analysis; source semantics; no direct listening",
+      "uses": [
+        "turretFired",
+        "weaponFired"
+      ],
+      "status": "candidate",
+      "reason": "명시한 동작 구간을 새 효과음에 편집 사용. 최종 채택은 사용자 청취 대기.",
+      "audition_segments": [
+        {
+          "start": 0.01,
+          "duration": 1.0473645833333334,
+          "preview": "source-previews/1551cb07697bc12f2b4822f4.wav",
+          "reason": "원본 동작 구간 청취용. 긴 녹음 전체를 대표한다고 가정하지 않음."
+        }
+      ],
+      "preservation": "SHA-256 rechecked; read-only original",
+      "selection": "explicit measured transient/steady-room intervals; no runtime randomization"
+    },
+    {
+      "path": "Sonniss.com-GDC2026-GameAudioBundle2of5/Epic Stock Media - Board Game - Sound Set Kit for Tabletop and Digital Games/GAMEBoard_Event Board Reset Organic Multiple Pieces Wood Small 02_ESM_BG.wav",
+      "pack": "Epic Stock Media - Board Game - Sound Set Kit for Tabletop and Digital Games",
+      "sha256": "8ee324529ccf157cc0f3f64c6965706f4dc320a4ecd300f9a45309ab24cfb197",
+      "bytes": 771518,
+      "format": 1,
+      "channels": 2,
+      "sample_rate": 96000,
+      "bits": 24,
+      "align": 6,
+      "offset": 130160,
+      "data_bytes": 640914,
+      "frames": 106819,
+      "duration": 1.1126979166666666,
+      "peak": 0.8912500143051147,
+      "peak_dbfs": -1.0,
+      "rms": 0.12772146521567573,
+      "rms_dbfs": -17.87,
+      "clipped_samples": 0,
+      "spectral_centroid_hz": 6528.4,
+      "active_start": 0.01,
+      "active_end": 0.94,
+      "events": [
+        0.01,
+        0.22,
+        0.5,
+        0.83
+      ],
+      "segments": [
+        {
+          "start": 0.01,
+          "end": 0.94,
+          "reason": "파형 에너지 동작 구간"
+        }
+      ],
+      "silence_ratio": 0.0,
+      "quiet_floor_dbfs": -44.45,
+      "noise_note": "조용한 20% 구간 RMS 기반 추정값. 실제 잡음의 청각적 식별은 미실시.",
+      "mtime_ns": 1790409570952460600,
+      "audition_state": "not_auditioned",
+      "review_method": "whole-file sample/energy/metadata analysis; source semantics; no direct listening",
+      "uses": [
+        "reroll"
+      ],
+      "status": "candidate",
+      "reason": "명시한 동작 구간을 새 효과음에 편집 사용. 최종 채택은 사용자 청취 대기.",
+      "audition_segments": [
+        {
+          "start": 0.01,
+          "duration": 1.1026979166666666,
+          "preview": "source-previews/a2f201eff8236ee2ec367830.wav",
+          "reason": "원본 동작 구간 청취용. 긴 녹음 전체를 대표한다고 가정하지 않음."
+        }
+      ],
+      "preservation": "SHA-256 rechecked; read-only original",
+      "selection": "explicit measured transient/steady-room intervals; no runtime randomization"
+    },
+    {
+      "path": "Sonniss.com-GDC2026-GameAudioBundle2of5/Epic Stock Media - Board Game - Sound Set Kit for Tabletop and Digital Games/PAPRHndl_Game Play Cards Dry Show Flip Toss Disgard Near 12_ESM_BG.wav",
+      "pack": "Epic Stock Media - Board Game - Sound Set Kit for Tabletop and Digital Games",
+      "sha256": "8892c2dd4eb34e8e108655e292dd26da9986d2603cf59c7a3a0379dcf4cb1bf2",
+      "bytes": 226662,
+      "format": 1,
+      "channels": 2,
+      "sample_rate": 96000,
+      "bits": 24,
+      "align": 6,
+      "offset": 130192,
+      "data_bytes": 96000,
+      "frames": 16000,
+      "duration": 0.16666666666666666,
+      "peak": 0.8912500143051147,
+      "peak_dbfs": -1.0,
+      "rms": 0.13931485552543185,
+      "rms_dbfs": -17.12,
+      "clipped_samples": 0,
+      "spectral_centroid_hz": 9661.6,
+      "active_start": 0.0,
+      "active_end": 0.16,
+      "events": [
+        0.0
+      ],
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 0.167,
+          "reason": "파형 에너지 동작 구간"
+        }
+      ],
+      "silence_ratio": 0.0,
+      "quiet_floor_dbfs": -22.82,
+      "noise_note": "조용한 20% 구간 RMS 기반 추정값. 실제 잡음의 청각적 식별은 미실시.",
+      "mtime_ns": 1790409571099028500,
+      "audition_state": "not_auditioned",
+      "review_method": "whole-file sample/energy/metadata analysis; source semantics; no direct listening",
+      "uses": [
+        "hit_manaSword_paper",
+        "hit_guardianDaggers_paper",
+        "hit_piercingShot_paper",
+        "hit_chainLightning_paper",
+        "hit_manaBombard_paper",
+        "hit_manaBolt_paper",
+        "hit_manaShotgun_paper",
+        "hit_autoTurret_paper",
+        "hit_mineLayer_paper",
+        "death_paper",
+        "item_paper"
+      ],
+      "status": "candidate",
+      "reason": "명시한 동작 구간을 새 효과음에 편집 사용. 최종 채택은 사용자 청취 대기.",
+      "audition_segments": [
+        {
+          "start": 0.0,
+          "duration": 0.16666666666666666,
+          "preview": "source-previews/42836e5b7f6c4a8b2c66e3a4.wav",
+          "reason": "원본 동작 구간 청취용. 긴 녹음 전체를 대표한다고 가정하지 않음."
+        }
+      ],
+      "preservation": "SHA-256 rechecked; read-only original",
+      "selection": "explicit measured transient/steady-room intervals; no runtime randomization"
+    },
+    {
+      "path": "Sonniss.com-GDC2026-GameAudioBundle2of5/Epic Stock Media - Board Game - Sound Set Kit for Tabletop and Digital Games/UIClick_UI Button Analog Vintage Double Click Neutral Dry Press 11_ESM_BG.wav",
+      "pack": "Epic Stock Media - Board Game - Sound Set Kit for Tabletop and Digital Games",
+      "sha256": "e7029246db8489ceb4be234e5b861926a441e0bce4cb341e51e90ad2421baccb",
+      "bytes": 506374,
+      "format": 1,
+      "channels": 1,
+      "sample_rate": 96000,
+      "bits": 24,
+      "align": 3,
+      "offset": 656,
+      "data_bytes": 48117,
+      "frames": 16039,
+      "duration": 0.16707291666666665,
+      "peak": 0.8912500143051147,
+      "peak_dbfs": -1.0,
+      "rms": 0.05711360061918797,
+      "rms_dbfs": -24.87,
+      "clipped_samples": 0,
+      "spectral_centroid_hz": 6552.4,
+      "active_start": 0.0,
+      "active_end": 0.16,
+      "events": [
+        0.0
+      ],
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 0.167,
+          "reason": "파형 에너지 동작 구간"
+        }
+      ],
+      "silence_ratio": 0.0,
+      "quiet_floor_dbfs": -47.33,
+      "noise_note": "조용한 20% 구간 RMS 기반 추정값. 실제 잡음의 청각적 식별은 미실시.",
+      "mtime_ns": 1790409571171619900,
+      "audition_state": "not_auditioned",
+      "review_method": "whole-file sample/energy/metadata analysis; source semantics; no direct listening",
+      "uses": [
+        "buttonClick"
+      ],
+      "status": "candidate",
+      "reason": "명시한 동작 구간을 새 효과음에 편집 사용. 최종 채택은 사용자 청취 대기.",
+      "audition_segments": [
+        {
+          "start": 0.0,
+          "duration": 0.16707291666666665,
+          "preview": "source-previews/7863b7676977880522447afc.wav",
+          "reason": "원본 동작 구간 청취용. 긴 녹음 전체를 대표한다고 가정하지 않음."
+        }
+      ],
+      "preservation": "SHA-256 rechecked; read-only original",
+      "selection": "explicit measured transient/steady-room intervals; no runtime randomization"
+    },
+    {
+      "path": "Sonniss.com-GDC2026-GameAudioBundle2of5/Epic Stock Media - Elemental Mutation Whooshes and Impacts/ELECMisc_Impact Electric Tonal Deep Movement Motion Hiss Glitch 01_ESM_EMWI.wav",
+      "pack": "Epic Stock Media - Elemental Mutation Whooshes and Impacts",
+      "sha256": "0335965a164090995413897e71b87f04501d519222873a4301e928bf8940de38",
+      "bytes": 2513360,
+      "format": 1,
+      "channels": 2,
+      "sample_rate": 96000,
+      "bits": 24,
+      "align": 6,
+      "offset": 656,
+      "data_bytes": 2124666,
+      "frames": 354111,
+      "duration": 3.68865625,
+      "peak": 0.8912500143051147,
+      "peak_dbfs": -1.0,
+      "rms": 0.11864626386653526,
+      "rms_dbfs": -18.51,
+      "clipped_samples": 0,
+      "spectral_centroid_hz": 6767.1,
+      "active_start": 0.01,
+      "active_end": 2.6,
+      "events": [
+        0.01,
+        0.21,
+        0.45,
+        0.73,
+        0.95,
+        1.18,
+        1.4,
+        1.7,
+        1.91
+      ],
+      "segments": [
+        {
+          "start": 0.01,
+          "end": 2.6,
+          "reason": "파형 에너지 동작 구간"
+        }
+      ],
+      "silence_ratio": 0.0598,
+      "quiet_floor_dbfs": -44.63,
+      "noise_note": "조용한 20% 구간 RMS 기반 추정값. 실제 잡음의 청각적 식별은 미실시.",
+      "mtime_ns": 1790409571240976100,
+      "audition_state": "not_auditioned",
+      "review_method": "whole-file sample/energy/metadata analysis; source semantics; no direct listening",
+      "uses": [
+        "chainAttack",
+        "chainHop"
+      ],
+      "status": "candidate",
+      "reason": "명시한 동작 구간을 새 효과음에 편집 사용. 최종 채택은 사용자 청취 대기.",
+      "audition_segments": [
+        {
+          "start": 0.01,
+          "duration": 3,
+          "preview": "source-previews/2ced996cd4d5b9e312bbf47e.wav",
+          "reason": "원본 동작 구간 청취용. 긴 녹음 전체를 대표한다고 가정하지 않음."
+        }
+      ],
+      "preservation": "SHA-256 rechecked; read-only original",
+      "selection": "explicit measured transient/steady-room intervals; no runtime randomization"
+    },
+    {
+      "path": "Sonniss.com-GDC2026-GameAudioBundle2of5/Epic Stock Media - Elemental Mutation Whooshes and Impacts/FIREWhsh_Whoosh Fire Deep Growl Monster Saturated Crisp 03_ESM_EMWI.wav",
+      "pack": "Epic Stock Media - Elemental Mutation Whooshes and Impacts",
+      "sha256": "344c8a9a31205fd5842feea827a491d89528f7db1ee5b1ffd4a3a018e23395ef",
+      "bytes": 1819142,
+      "format": 1,
+      "channels": 2,
+      "sample_rate": 96000,
+      "bits": 24,
+      "align": 6,
+      "offset": 656,
+      "data_bytes": 1430754,
+      "frames": 238459,
+      "duration": 2.4839479166666667,
+      "peak": 0.8912500143051147,
+      "peak_dbfs": -1.0,
+      "rms": 0.1631601933973728,
+      "rms_dbfs": -15.75,
+      "clipped_samples": 0,
+      "spectral_centroid_hz": 2637.4,
+      "active_start": 0.15,
+      "active_end": 1.65,
+      "events": [
+        0.15,
+        0.34,
+        0.55,
+        0.77,
+        1.0,
+        1.23,
+        1.41
+      ],
+      "segments": [
+        {
+          "start": 0.15,
+          "end": 1.65,
+          "reason": "파형 에너지 동작 구간"
+        }
+      ],
+      "silence_ratio": 0.0726,
+      "quiet_floor_dbfs": -55.93,
+      "noise_note": "조용한 20% 구간 RMS 기반 추정값. 실제 잡음의 청각적 식별은 미실시.",
+      "mtime_ns": 1790409595702345900,
+      "audition_state": "not_auditioned",
+      "review_method": "whole-file sample/energy/metadata analysis; source semantics; no direct listening",
+      "uses": [
+        "enemyCharge",
+        "bossAttack"
+      ],
+      "status": "candidate",
+      "reason": "명시한 동작 구간을 새 효과음에 편집 사용. 최종 채택은 사용자 청취 대기.",
+      "audition_segments": [
+        {
+          "start": 0.15,
+          "duration": 2.333947916666667,
+          "preview": "source-previews/1e362c18af5959704c4c7501.wav",
+          "reason": "원본 동작 구간 청취용. 긴 녹음 전체를 대표한다고 가정하지 않음."
+        }
+      ],
+      "preservation": "SHA-256 rechecked; read-only original",
+      "selection": "explicit measured transient/steady-room intervals; no runtime randomization"
+    },
+    {
+      "path": "Sonniss.com-GDC2026-GameAudioBundle2of5/Epic Stock Media - Elemental Mutation Whooshes and Impacts/GLASMvmt_Whoosh Glass Crystal Fragments Sharp Shards Dry 05_ESM_EMWI.wav",
+      "pack": "Epic Stock Media - Elemental Mutation Whooshes and Impacts",
+      "sha256": "3c9eecab76ef681d0e2476eedc9ad550c48f68ad42c1431acaf7ec36532f68c8",
+      "bytes": 1905280,
+      "format": 1,
+      "channels": 2,
+      "sample_rate": 96000,
+      "bits": 24,
+      "align": 6,
+      "offset": 656,
+      "data_bytes": 1516722,
+      "frames": 252787,
+      "duration": 2.6331979166666666,
+      "peak": 0.8912500143051147,
+      "peak_dbfs": -1.0,
+      "rms": 0.10399839212238937,
+      "rms_dbfs": -19.66,
+      "clipped_samples": 0,
+      "spectral_centroid_hz": 9328.8,
+      "active_start": 0.31,
+      "active_end": 2.22,
+      "events": [
+        0.31,
+        0.68,
+        0.99,
+        1.19,
+        1.39,
+        1.58,
+        1.82,
+        2.04
+      ],
+      "segments": [
+        {
+          "start": 0.31,
+          "end": 2.22,
+          "reason": "파형 에너지 동작 구간"
+        }
+      ],
+      "silence_ratio": 0.0722,
+      "quiet_floor_dbfs": -42.47,
+      "noise_note": "조용한 20% 구간 RMS 기반 추정값. 실제 잡음의 청각적 식별은 미실시.",
+      "mtime_ns": 1790409595784801600,
+      "audition_state": "not_auditioned",
+      "review_method": "whole-file sample/energy/metadata analysis; source semantics; no direct listening",
+      "uses": [
+        "shotgunAttack",
+        "death_soft",
+        "death_metal",
+        "death_stone",
+        "death_crystal",
+        "death_energy",
+        "death_paper"
+      ],
+      "status": "candidate",
+      "reason": "명시한 동작 구간을 새 효과음에 편집 사용. 최종 채택은 사용자 청취 대기.",
+      "audition_segments": [
+        {
+          "start": 0.31,
+          "duration": 2.3231979166666665,
+          "preview": "source-previews/62f663c756fb09ae987dad21.wav",
+          "reason": "원본 동작 구간 청취용. 긴 녹음 전체를 대표한다고 가정하지 않음."
+        }
+      ],
+      "preservation": "SHA-256 rechecked; read-only original",
+      "selection": "explicit measured transient/steady-room intervals; no runtime randomization"
+    },
+    {
+      "path": "Sonniss.com-GDC2026-GameAudioBundle2of5/Epic Stock Media - Elemental Mutation Whooshes and Impacts/WATRImpt_Impact Water Deep Submerge Bubble Drown Ship Hit 05_ESM_EMWI.wav",
+      "pack": "Epic Stock Media - Elemental Mutation Whooshes and Impacts",
+      "sha256": "c1e1a20e310e259427889692846b2d561cd12d61ab4cf255fb8be6cfc5f82dae",
+      "bytes": 1638358,
+      "format": 1,
+      "channels": 2,
+      "sample_rate": 96000,
+      "bits": 24,
+      "align": 6,
+      "offset": 656,
+      "data_bytes": 1249884,
+      "frames": 208314,
+      "duration": 2.1699375,
+      "peak": 0.8912500143051147,
+      "peak_dbfs": -1.0,
+      "rms": 0.11444786415526033,
+      "rms_dbfs": -18.83,
+      "clipped_samples": 0,
+      "spectral_centroid_hz": 2638.1,
+      "active_start": 0.01,
+      "active_end": 1.34,
+      "events": [
+        0.01,
+        0.23,
+        0.5,
+        0.72
+      ],
+      "segments": [
+        {
+          "start": 0.01,
+          "end": 0.9,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 1.08,
+          "end": 1.34,
+          "reason": "파형 에너지 동작 구간"
+        }
+      ],
+      "silence_ratio": 0.0694,
+      "quiet_floor_dbfs": -49.56,
+      "noise_note": "조용한 20% 구간 RMS 기반 추정값. 실제 잡음의 청각적 식별은 미실시.",
+      "mtime_ns": 1790409595846779000,
+      "audition_state": "not_auditioned",
+      "review_method": "whole-file sample/energy/metadata analysis; source semantics; no direct listening",
+      "uses": [
+        "enemyProjectile"
+      ],
+      "status": "candidate",
+      "reason": "명시한 동작 구간을 새 효과음에 편집 사용. 최종 채택은 사용자 청취 대기.",
+      "audition_segments": [
+        {
+          "start": 0.01,
+          "duration": 2.1599375000000003,
+          "preview": "source-previews/79016d20feadfff93eefb9f2.wav",
+          "reason": "원본 동작 구간 청취용. 긴 녹음 전체를 대표한다고 가정하지 않음."
+        }
+      ],
+      "preservation": "SHA-256 rechecked; read-only original",
+      "selection": "explicit measured transient/steady-room intervals; no runtime randomization"
+    },
+    {
+      "path": "Sonniss.com-GDC2026-GameAudioBundle2of5/Epic Stock Media - Fantasy Game 2 - Sound Kit for Enchanted Realms/MAGAngl_Magic Light Spell Enchantment Potion Effect Tonal Bright 03_ESM_FG2.wav",
+      "pack": "Epic Stock Media - Fantasy Game 2 - Sound Kit for Enchanted Realms",
+      "sha256": "66fd5c33f2b5e221dce96ba2e24a172683c8c696621d8567ef895627d981d869",
+      "bytes": 3599350,
+      "format": 1,
+      "channels": 2,
+      "sample_rate": 96000,
+      "bits": 24,
+      "align": 6,
+      "offset": 656,
+      "data_bytes": 2995200,
+      "frames": 499200,
+      "duration": 5.2,
+      "peak": 0.8912500143051147,
+      "peak_dbfs": -1.0,
+      "rms": 0.09756159894611785,
+      "rms_dbfs": -20.21,
+      "clipped_samples": 0,
+      "spectral_centroid_hz": 5558.4,
+      "active_start": 0.0,
+      "active_end": 2.1,
+      "events": [
+        0.0,
+        0.29,
+        0.52,
+        0.73,
+        0.92,
+        1.28,
+        1.49
+      ],
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 2.1,
+          "reason": "파형 에너지 동작 구간"
+        }
+      ],
+      "silence_ratio": 0.35,
+      "quiet_floor_dbfs": -86.09,
+      "noise_note": "조용한 20% 구간 RMS 기반 추정값. 실제 잡음의 청각적 식별은 미실시.",
+      "mtime_ns": 1790409596163854000,
+      "audition_state": "not_auditioned",
+      "review_method": "whole-file sample/energy/metadata analysis; source semantics; no direct listening",
+      "uses": [
+        "branchChoice",
+        "hit_manaBolt_soft",
+        "hit_manaBolt_metal",
+        "hit_manaBolt_stone",
+        "hit_manaBolt_crystal",
+        "hit_manaBolt_energy",
+        "hit_manaBolt_paper",
+        "pickup_revival_low",
+        "pickup_revival_mid",
+        "pickup_revival_high",
+        "item_arcane"
+      ],
+      "status": "candidate",
+      "reason": "명시한 동작 구간을 새 효과음에 편집 사용. 최종 채택은 사용자 청취 대기.",
+      "audition_segments": [
+        {
+          "start": 0.0,
+          "duration": 3,
+          "preview": "source-previews/c7f0e3255676127f8c85506e.wav",
+          "reason": "원본 동작 구간 청취용. 긴 녹음 전체를 대표한다고 가정하지 않음."
+        }
+      ],
+      "preservation": "SHA-256 rechecked; read-only original",
+      "selection": "explicit measured transient/steady-room intervals; no runtime randomization"
+    },
+    {
+      "path": "Sonniss.com-GDC2026-GameAudioBundle2of5/Epic Stock Media - Fantasy Game 2 - Sound Kit for Enchanted Realms/UIAlert_Collect Scifi Futuristic Electronic Bass Burst Sweep Heavy 04_ESM_FG2.wav",
+      "pack": "Epic Stock Media - Fantasy Game 2 - Sound Kit for Enchanted Realms",
+      "sha256": "98c50fe281d7709223a25ba4ad06bfa4de75426e0b69f831ba75b64d69f759ec",
+      "bytes": 782516,
+      "format": 1,
+      "channels": 2,
+      "sample_rate": 96000,
+      "bits": 24,
+      "align": 6,
+      "offset": 656,
+      "data_bytes": 178464,
+      "frames": 29744,
+      "duration": 0.30983333333333335,
+      "peak": 0.8912500143051147,
+      "peak_dbfs": -1.0,
+      "rms": 0.1353787620007373,
+      "rms_dbfs": -17.37,
+      "clipped_samples": 0,
+      "spectral_centroid_hz": 7919.9,
+      "active_start": 0.0,
+      "active_end": 0.23,
+      "events": [
+        0.0
+      ],
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 0.23,
+          "reason": "파형 에너지 동작 구간"
+        }
+      ],
+      "silence_ratio": 0.0,
+      "quiet_floor_dbfs": -47.06,
+      "noise_note": "조용한 20% 구간 RMS 기반 추정값. 실제 잡음의 청각적 식별은 미실시.",
+      "mtime_ns": 1790409596241105900,
+      "audition_state": "not_auditioned",
+      "review_method": "whole-file sample/energy/metadata analysis; source semantics; no direct listening",
+      "uses": [
+        "bombardLaunch"
+      ],
+      "status": "candidate",
+      "reason": "명시한 동작 구간을 새 효과음에 편집 사용. 최종 채택은 사용자 청취 대기.",
+      "audition_segments": [
+        {
+          "start": 0.0,
+          "duration": 0.30983333333333335,
+          "preview": "source-previews/c3ec3abadb29777324bfee5d.wav",
+          "reason": "원본 동작 구간 청취용. 긴 녹음 전체를 대표한다고 가정하지 않음."
+        }
+      ],
+      "preservation": "SHA-256 rechecked; read-only original",
+      "selection": "explicit measured transient/steady-room intervals; no runtime randomization"
+    },
+    {
+      "path": "Sonniss.com-GDC2026-GameAudioBundle2of5/Epic Stock Media - HD Lock And Mechanism Sound Design Kit/MACHMech_Mechanism Counting Machine Interact Loose Container Short 01_ESM_HDLM.wav",
+      "pack": "Epic Stock Media - HD Lock And Mechanism Sound Design Kit",
+      "sha256": "22a02e08af147649519a9081ac77e13e711387944a13bb8688ae5997c6efd968",
+      "bytes": 464010,
+      "format": 1,
+      "channels": 2,
+      "sample_rate": 192000,
+      "bits": 24,
+      "align": 6,
+      "offset": 656,
+      "data_bytes": 311628,
+      "frames": 51938,
+      "duration": 0.27051041666666664,
+      "peak": 0.8912051916122437,
+      "peak_dbfs": -1.0,
+      "rms": 0.11588516402221724,
+      "rms_dbfs": -18.72,
+      "clipped_samples": 0,
+      "spectral_centroid_hz": 5492.4,
+      "active_start": 0.01,
+      "active_end": 0.21,
+      "events": [
+        0.01
+      ],
+      "segments": [
+        {
+          "start": 0.01,
+          "end": 0.21,
+          "reason": "파형 에너지 동작 구간"
+        }
+      ],
+      "silence_ratio": 0.0,
+      "quiet_floor_dbfs": -45.24,
+      "noise_note": "조용한 20% 구간 RMS 기반 추정값. 실제 잡음의 청각적 식별은 미실시.",
+      "mtime_ns": 1790409596862165100,
+      "audition_state": "not_auditioned",
+      "review_method": "whole-file sample/energy/metadata analysis; source semantics; no direct listening",
+      "uses": [
+        "waveStarted",
+        "turretFired"
+      ],
+      "status": "candidate",
+      "reason": "명시한 동작 구간을 새 효과음에 편집 사용. 최종 채택은 사용자 청취 대기.",
+      "audition_segments": [
+        {
+          "start": 0.01,
+          "duration": 0.26051041666666663,
+          "preview": "source-previews/a3d49e4b7647a87a85e772a5.wav",
+          "reason": "원본 동작 구간 청취용. 긴 녹음 전체를 대표한다고 가정하지 않음."
+        }
+      ],
+      "preservation": "SHA-256 rechecked; read-only original",
+      "selection": "explicit measured transient/steady-room intervals; no runtime randomization"
+    },
+    {
+      "path": "Sonniss.com-GDC2026-GameAudioBundle2of5/Epic Stock Media - HD Lock And Mechanism Sound Design Kit/MECHLtch_Click Deep Mechanism Latch Button Nearfield Thunk 02_ESM_HDLM.wav",
+      "pack": "Epic Stock Media - HD Lock And Mechanism Sound Design Kit",
+      "sha256": "5f356988a83acf9f320e72ad31f08a80668f9bf0474658fb50f76d5cc3b8ca10",
+      "bytes": 588596,
+      "format": 1,
+      "channels": 2,
+      "sample_rate": 192000,
+      "bits": 24,
+      "align": 6,
+      "offset": 656,
+      "data_bytes": 436224,
+      "frames": 72704,
+      "duration": 0.37866666666666665,
+      "peak": 0.8912500143051147,
+      "peak_dbfs": -1.0,
+      "rms": 0.05601923631175923,
+      "rms_dbfs": -25.03,
+      "clipped_samples": 0,
+      "spectral_centroid_hz": 16142.0,
+      "active_start": 0.0,
+      "active_end": 0.16,
+      "events": [
+        0.0
+      ],
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 0.16,
+          "reason": "파형 에너지 동작 구간"
+        }
+      ],
+      "silence_ratio": 0.4595,
+      "quiet_floor_dbfs": -82.1,
+      "noise_note": "조용한 20% 구간 RMS 기반 추정값. 실제 잡음의 청각적 식별은 미실시.",
+      "mtime_ns": 1790409596923776700,
+      "audition_state": "not_auditioned",
+      "review_method": "whole-file sample/energy/metadata analysis; source semantics; no direct listening",
+      "uses": [
+        "enemyCharge"
+      ],
+      "status": "candidate",
+      "reason": "명시한 동작 구간을 새 효과음에 편집 사용. 최종 채택은 사용자 청취 대기.",
+      "audition_segments": [
+        {
+          "start": 0.0,
+          "duration": 0.37866666666666665,
+          "preview": "source-previews/d0df650d7938ac5685b2455c.wav",
+          "reason": "원본 동작 구간 청취용. 긴 녹음 전체를 대표한다고 가정하지 않음."
+        }
+      ],
+      "preservation": "SHA-256 rechecked; read-only original",
+      "selection": "explicit measured transient/steady-room intervals; no runtime randomization"
+    },
+    {
+      "path": "Sonniss.com-GDC2026-GameAudioBundle2of5/Epic Stock Media - HD Lock And Mechanism Sound Design Kit/METLTonl_Item Spring Wire Impact Flick Top Clatter Light Tap Roll Handling Short 01_ESM_HDLM.wav",
+      "pack": "Epic Stock Media - HD Lock And Mechanism Sound Design Kit",
+      "sha256": "f778f19350bb2f77ba0e156148d8fce855adf74d5990a901e5384f8008658b9c",
+      "bytes": 13373428,
+      "format": 1,
+      "channels": 2,
+      "sample_rate": 192000,
+      "bits": 24,
+      "align": 6,
+      "offset": 656,
+      "data_bytes": 13220646,
+      "frames": 2203441,
+      "duration": 11.476255208333333,
+      "peak": 0.8912500143051147,
+      "peak_dbfs": -1.0,
+      "rms": 0.10556403905423949,
+      "rms_dbfs": -19.53,
+      "clipped_samples": 0,
+      "spectral_centroid_hz": 16620.7,
+      "active_start": 0.31,
+      "active_end": 8.66,
+      "events": [
+        0.31,
+        0.67,
+        0.9,
+        1.12,
+        1.34,
+        1.64,
+        1.85,
+        2.13,
+        2.35,
+        2.74,
+        2.97,
+        3.28,
+        3.46,
+        3.75,
+        3.97,
+        4.29,
+        4.47,
+        4.76,
+        4.98,
+        5.25,
+        5.43,
+        5.61,
+        5.86,
+        6.12,
+        6.33,
+        6.51,
+        6.72,
+        6.9,
+        7.31,
+        7.9
+      ],
+      "segments": [
+        {
+          "start": 0.31,
+          "end": 8.66,
+          "reason": "파형 에너지 동작 구간"
+        }
+      ],
+      "silence_ratio": 0.0427,
+      "quiet_floor_dbfs": -44.88,
+      "noise_note": "조용한 20% 구간 RMS 기반 추정값. 실제 잡음의 청각적 식별은 미실시.",
+      "mtime_ns": 1790409597052798700,
+      "audition_state": "not_auditioned",
+      "review_method": "whole-file sample/energy/metadata analysis; source semantics; no direct listening",
+      "uses": [
+        "hit_guardianDaggers_soft",
+        "hit_guardianDaggers_metal",
+        "hit_guardianDaggers_stone",
+        "hit_guardianDaggers_crystal",
+        "hit_guardianDaggers_energy",
+        "hit_guardianDaggers_paper",
+        "pickup_associationCoin"
+      ],
+      "status": "candidate",
+      "reason": "명시한 동작 구간을 새 효과음에 편집 사용. 최종 채택은 사용자 청취 대기.",
+      "audition_segments": [
+        {
+          "start": 0.31,
+          "duration": 3,
+          "preview": "source-previews/ae6177e01de36375936385d4.wav",
+          "reason": "원본 동작 구간 청취용. 긴 녹음 전체를 대표한다고 가정하지 않음."
+        }
+      ],
+      "preservation": "SHA-256 rechecked; read-only original",
+      "selection": "explicit measured transient/steady-room intervals; no runtime randomization"
+    },
+    {
+      "path": "Sonniss.com-GDC2026-GameAudioBundle2of5/Epic Stock Media - Public Spaces - Storms Lakes Parks and Rural Nature Exteriors/AMBPark_Berlin City Humboldthain Park Strong Wind On Trees Foliage Traffic Wash 03_ESM_CPS.wav",
+      "pack": "Epic Stock Media - Public Spaces - Storms Lakes Parks and Rural Nature Exteriors",
+      "sha256": "db582c5d72e929ba2587bf19362da47ef18dcb1034f2940bf024cb1e2c38ebf3",
+      "bytes": 86523068,
+      "format": 1,
+      "channels": 2,
+      "sample_rate": 96000,
+      "bits": 24,
+      "align": 6,
+      "offset": 716,
+      "data_bytes": 86375424,
+      "frames": 14395904,
+      "duration": 149.95733333333334,
+      "peak": 0.5414074659347534,
+      "peak_dbfs": -5.33,
+      "rms": 0.08079301102685667,
+      "rms_dbfs": -21.85,
+      "clipped_samples": 0,
+      "spectral_centroid_hz": 1231.7,
+      "active_start": 0.0,
+      "active_end": 149.95,
+      "events": [
+        0.0,
+        4.75,
+        4.95,
+        7.43,
+        10.06,
+        13.46,
+        13.75,
+        14.2,
+        15.58,
+        15.8,
+        17.16,
+        17.5,
+        17.98,
+        18.34,
+        21.52,
+        27.95,
+        33.79,
+        55.52,
+        56.46,
+        57.83,
+        73.34,
+        79.14,
+        80.13,
+        82.68,
+        86.78,
+        86.97,
+        111.86,
+        114.78,
+        119.73,
+        144.4
+      ],
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 20.0,
+          "reason": "긴 지속 녹음의 분할 구간"
+        },
+        {
+          "start": 20.0,
+          "end": 40.0,
+          "reason": "긴 지속 녹음의 분할 구간"
+        },
+        {
+          "start": 40.0,
+          "end": 60.0,
+          "reason": "긴 지속 녹음의 분할 구간"
+        },
+        {
+          "start": 60.0,
+          "end": 80.0,
+          "reason": "긴 지속 녹음의 분할 구간"
+        },
+        {
+          "start": 80.0,
+          "end": 100.0,
+          "reason": "긴 지속 녹음의 분할 구간"
+        },
+        {
+          "start": 100.0,
+          "end": 120.0,
+          "reason": "긴 지속 녹음의 분할 구간"
+        },
+        {
+          "start": 120.0,
+          "end": 140.0,
+          "reason": "긴 지속 녹음의 분할 구간"
+        },
+        {
+          "start": 140.0,
+          "end": 149.957,
+          "reason": "긴 지속 녹음의 분할 구간"
+        }
+      ],
+      "silence_ratio": 0.0,
+      "quiet_floor_dbfs": -24.55,
+      "noise_note": "조용한 20% 구간 RMS 기반 추정값. 실제 잡음의 청각적 식별은 미실시.",
+      "mtime_ns": 1790409598031816000,
+      "audition_state": "not_auditioned",
+      "review_method": "whole-file sample/energy/metadata analysis; source semantics; no direct listening",
+      "uses": [
+        "lobbyWind"
+      ],
+      "status": "candidate",
+      "reason": "명시한 동작 구간을 새 효과음에 편집 사용. 최종 채택은 사용자 청취 대기.",
+      "audition_segments": [
+        {
+          "start": 0.0,
+          "duration": 3,
+          "preview": "source-previews/b08558879d998950c520b2fe.wav",
+          "reason": "원본 동작 구간 청취용. 긴 녹음 전체를 대표한다고 가정하지 않음."
+        },
+        {
+          "start": 27.95,
+          "duration": 3,
+          "preview": "source-previews/92516216897e1be6f4022b07.wav",
+          "reason": "원본 동작 구간 청취용. 긴 녹음 전체를 대표한다고 가정하지 않음."
+        },
+        {
+          "start": 144.4,
+          "duration": 3,
+          "preview": "source-previews/0f03ea7784ef4ea702c574d4.wav",
+          "reason": "원본 동작 구간 청취용. 긴 녹음 전체를 대표한다고 가정하지 않음."
+        }
+      ],
+      "preservation": "SHA-256 rechecked; read-only original",
+      "selection": "explicit measured transient/steady-room intervals; no runtime randomization"
+    },
+    {
+      "path": "Sonniss.com-GDC2026-GameAudioBundle2of5/Epic Stock Media - Strange Game Ambient Loops 3/DSGNSynth_Dark Loop Mystic Forest Tonal Steady Synth_ESM_SGA3.wav",
+      "pack": "Epic Stock Media - Strange Game Ambient Loops 3",
+      "sha256": "c374c5b2896c9ee3ea6383108f15c8a379b93e29d3c24f4e85542aaf7a41a450",
+      "bytes": 34912614,
+      "format": 1,
+      "channels": 2,
+      "sample_rate": 96000,
+      "bits": 24,
+      "align": 6,
+      "offset": 656,
+      "data_bytes": 34362564,
+      "frames": 5727094,
+      "duration": 59.65722916666667,
+      "peak": 0.8912500143051147,
+      "peak_dbfs": -1.0,
+      "rms": 0.14488468656388448,
+      "rms_dbfs": -16.78,
+      "clipped_samples": 0,
+      "spectral_centroid_hz": 270.4,
+      "active_start": 0.0,
+      "active_end": 59.65,
+      "events": [
+        0.0,
+        0.74,
+        7.37,
+        10.14,
+        10.86,
+        11.43,
+        11.83,
+        12.1,
+        13.08,
+        13.88,
+        14.1,
+        14.83,
+        15.35,
+        15.66,
+        16.02,
+        16.31,
+        17.51,
+        18.17,
+        18.55,
+        19.29,
+        19.7,
+        22.62,
+        23.61,
+        24.63,
+        24.92,
+        29.68,
+        30.11,
+        30.31,
+        35.41,
+        59.08
+      ],
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 20.0,
+          "reason": "긴 지속 녹음의 분할 구간"
+        },
+        {
+          "start": 20.0,
+          "end": 40.0,
+          "reason": "긴 지속 녹음의 분할 구간"
+        },
+        {
+          "start": 40.0,
+          "end": 59.657,
+          "reason": "긴 지속 녹음의 분할 구간"
+        }
+      ],
+      "silence_ratio": 0.0,
+      "quiet_floor_dbfs": -19.85,
+      "noise_note": "조용한 20% 구간 RMS 기반 추정값. 실제 잡음의 청각적 식별은 미실시.",
+      "mtime_ns": 1790416499423156100,
+      "audition_state": "not_auditioned",
+      "review_method": "whole-file sample/energy/metadata analysis; source semantics; no direct listening",
+      "uses": [
+        "lobbyGate"
+      ],
+      "status": "candidate",
+      "reason": "명시한 동작 구간을 새 효과음에 편집 사용. 최종 채택은 사용자 청취 대기.",
+      "audition_segments": [
+        {
+          "start": 0.0,
+          "duration": 3,
+          "preview": "source-previews/3bb75ec106a3f5b4f8205d9a.wav",
+          "reason": "원본 동작 구간 청취용. 긴 녹음 전체를 대표한다고 가정하지 않음."
+        },
+        {
+          "start": 16.31,
+          "duration": 3,
+          "preview": "source-previews/6254f6351c449c5229f01706.wav",
+          "reason": "원본 동작 구간 청취용. 긴 녹음 전체를 대표한다고 가정하지 않음."
+        },
+        {
+          "start": 59.08,
+          "duration": 0.5772291666666689,
+          "preview": "source-previews/18b791b51373782139281a7a.wav",
+          "reason": "원본 동작 구간 청취용. 긴 녹음 전체를 대표한다고 가정하지 않음."
+        }
+      ],
+      "preservation": "SHA-256 rechecked; read-only original",
+      "selection": "explicit measured transient/steady-room intervals; no runtime randomization"
+    },
+    {
+      "path": "Sonniss.com-GDC2026-GameAudioBundle2of5/Epic Stock Media - Strange Game Ambient Loops 3/MAGShim_Shimmer Loop Small Bell Metal Taps_ESM_SGA3.wav",
+      "pack": "Epic Stock Media - Strange Game Ambient Loops 3",
+      "sha256": "2391f2cdfb47e49d659e5452962626ee9e9c17af7cb09f89261aee49d11f473a",
+      "bytes": 26180810,
+      "format": 1,
+      "channels": 2,
+      "sample_rate": 96000,
+      "bits": 24,
+      "align": 6,
+      "offset": 656,
+      "data_bytes": 25631022,
+      "frames": 4271837,
+      "duration": 44.498302083333336,
+      "peak": 0.8912500143051147,
+      "peak_dbfs": -1.0,
+      "rms": 0.08957194667345228,
+      "rms_dbfs": -20.96,
+      "clipped_samples": 0,
+      "spectral_centroid_hz": 13576.9,
+      "active_start": 0.0,
+      "active_end": 44.49,
+      "events": [
+        0.0,
+        0.74,
+        2.08,
+        3.86,
+        5.9,
+        8.94,
+        12.2,
+        12.7,
+        13.96,
+        14.5,
+        15.8,
+        21.52,
+        23.98,
+        26.29,
+        27.09,
+        28.89,
+        29.25,
+        29.97,
+        32.45,
+        33.29,
+        33.78,
+        34.2,
+        35.35,
+        35.65,
+        36.42,
+        36.74,
+        37.37,
+        39.69,
+        41.89,
+        42.3
+      ],
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 20.0,
+          "reason": "긴 지속 녹음의 분할 구간"
+        },
+        {
+          "start": 20.0,
+          "end": 40.0,
+          "reason": "긴 지속 녹음의 분할 구간"
+        },
+        {
+          "start": 40.0,
+          "end": 44.498,
+          "reason": "긴 지속 녹음의 분할 구간"
+        }
+      ],
+      "silence_ratio": 0.0,
+      "quiet_floor_dbfs": -24.06,
+      "noise_note": "조용한 20% 구간 RMS 기반 추정값. 실제 잡음의 청각적 식별은 미실시.",
+      "mtime_ns": 1790416499577177600,
+      "audition_state": "not_auditioned",
+      "review_method": "whole-file sample/energy/metadata analysis; source semantics; no direct listening",
+      "uses": [
+        "lobbyGate"
+      ],
+      "status": "candidate",
+      "reason": "명시한 동작 구간을 새 효과음에 편집 사용. 최종 채택은 사용자 청취 대기.",
+      "audition_segments": [
+        {
+          "start": 0.0,
+          "duration": 3,
+          "preview": "source-previews/c392c6bb579bb491995f3036.wav",
+          "reason": "원본 동작 구간 청취용. 긴 녹음 전체를 대표한다고 가정하지 않음."
+        },
+        {
+          "start": 28.89,
+          "duration": 3,
+          "preview": "source-previews/6e5bc7e2f05d0bd03403542d.wav",
+          "reason": "원본 동작 구간 청취용. 긴 녹음 전체를 대표한다고 가정하지 않음."
+        },
+        {
+          "start": 42.3,
+          "duration": 2.1983020833333384,
+          "preview": "source-previews/f2ea2db989adf4eb7646cae7.wav",
+          "reason": "원본 동작 구간 청취용. 긴 녹음 전체를 대표한다고 가정하지 않음."
+        }
+      ],
+      "preservation": "SHA-256 rechecked; read-only original",
+      "selection": "explicit measured transient/steady-room intervals; no runtime randomization"
+    },
+    {
+      "path": "Sonniss.com-GDC2026-GameAudioBundle2of5/Epic Stock Media - Tower Defense Game/ROBTMvmt_Tower Deploy Hitech Robot Motor Dark Thump Servo Whine 04_ESM_TDG.wav",
+      "pack": "Epic Stock Media - Tower Defense Game",
+      "sha256": "c9f2c8b24ce6ae6fb7b519b2bbcdb2503816ca5cdd6c8f81ee3fc27149600d48",
+      "bytes": 3849898,
+      "format": 1,
+      "channels": 2,
+      "sample_rate": 96000,
+      "bits": 24,
+      "align": 6,
+      "offset": 656,
+      "data_bytes": 596868,
+      "frames": 99478,
+      "duration": 1.0362291666666668,
+      "peak": 0.8912500143051147,
+      "peak_dbfs": -1.0,
+      "rms": 0.1953663037601828,
+      "rms_dbfs": -14.18,
+      "clipped_samples": 0,
+      "spectral_centroid_hz": 2499.0,
+      "active_start": 0.08,
+      "active_end": 0.68,
+      "events": [
+        0.08,
+        0.31,
+        0.57
+      ],
+      "segments": [
+        {
+          "start": 0.08,
+          "end": 0.68,
+          "reason": "파형 에너지 동작 구간"
+        }
+      ],
+      "silence_ratio": 0.0388,
+      "quiet_floor_dbfs": -51.39,
+      "noise_note": "조용한 20% 구간 RMS 기반 추정값. 실제 잡음의 청각적 식별은 미실시.",
+      "mtime_ns": 1790416500188292400,
+      "audition_state": "not_auditioned",
+      "review_method": "whole-file sample/energy/metadata analysis; source semantics; no direct listening",
+      "uses": [
+        "minePlaced",
+        "bossSpawned"
+      ],
+      "status": "candidate",
+      "reason": "명시한 동작 구간을 새 효과음에 편집 사용. 최종 채택은 사용자 청취 대기.",
+      "audition_segments": [
+        {
+          "start": 0.08,
+          "duration": 0.9562291666666668,
+          "preview": "source-previews/acf3041494aaff4bfddd3f90.wav",
+          "reason": "원본 동작 구간 청취용. 긴 녹음 전체를 대표한다고 가정하지 않음."
+        }
+      ],
+      "preservation": "SHA-256 rechecked; read-only original",
+      "selection": "explicit measured transient/steady-room intervals; no runtime randomization"
+    },
+    {
+      "path": "Sonniss.com-GDC2026-GameAudioBundle2of5/Epic Stock Media - Tower Defense Game/WOODImpt_Hit Blood Spill Splat Wood Impact Light Hit Squelch Small Thump 03_ESM_TDG.wav",
+      "pack": "Epic Stock Media - Tower Defense Game",
+      "sha256": "022152183544436b2e7ae8c82ae3cb1cff6dff5e9c0153e1096a1b638e90e518",
+      "bytes": 3444480,
+      "format": 1,
+      "channels": 2,
+      "sample_rate": 96000,
+      "bits": 24,
+      "align": 6,
+      "offset": 656,
+      "data_bytes": 191346,
+      "frames": 31891,
+      "duration": 0.33219791666666665,
+      "peak": 0.8912500143051147,
+      "peak_dbfs": -1.0,
+      "rms": 0.13406882776718101,
+      "rms_dbfs": -17.45,
+      "clipped_samples": 0,
+      "spectral_centroid_hz": 4298.5,
+      "active_start": 0.0,
+      "active_end": 0.31,
+      "events": [
+        0.0,
+        0.23
+      ],
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 0.31,
+          "reason": "파형 에너지 동작 구간"
+        }
+      ],
+      "silence_ratio": 0.0,
+      "quiet_floor_dbfs": -39.74,
+      "noise_note": "조용한 20% 구간 RMS 기반 추정값. 실제 잡음의 청각적 식별은 미실시.",
+      "mtime_ns": 1790416500255802900,
+      "audition_state": "not_auditioned",
+      "review_method": "whole-file sample/energy/metadata analysis; source semantics; no direct listening",
+      "uses": [
+        "enemyHit",
+        "enemyKilled",
+        "hit_manaSword_soft",
+        "hit_guardianDaggers_soft",
+        "hit_piercingShot_soft",
+        "hit_chainLightning_soft",
+        "hit_manaBombard_soft",
+        "hit_manaBolt_soft",
+        "hit_manaShotgun_soft",
+        "hit_autoTurret_soft",
+        "hit_mineLayer_soft",
+        "death_soft"
+      ],
+      "status": "candidate",
+      "reason": "명시한 동작 구간을 새 효과음에 편집 사용. 최종 채택은 사용자 청취 대기.",
+      "audition_segments": [
+        {
+          "start": 0.0,
+          "duration": 0.33219791666666665,
+          "preview": "source-previews/6b11fe8946d31c07ef85ddf3.wav",
+          "reason": "원본 동작 구간 청취용. 긴 녹음 전체를 대표한다고 가정하지 않음."
+        }
+      ],
+      "preservation": "SHA-256 rechecked; read-only original",
+      "selection": "explicit measured transient/steady-room intervals; no runtime randomization"
+    },
+    {
+      "path": "Sonniss.com-GDC2026-GameAudioBundle2of5/Federico Soler - Effective Trailer Alarms Vol. 2/EffectiveTrailer_Alarms_Vol2_HalfNotes_003.wav",
+      "pack": "Federico Soler - Effective Trailer Alarms Vol. 2",
+      "sha256": "2e80ebdb47942072a6776eb72b190d83d91a9807ddd54795e0a59a17f2546fc0",
+      "bytes": 8641394,
+      "format": 1,
+      "channels": 2,
+      "sample_rate": 48000,
+      "bits": 24,
+      "align": 6,
+      "offset": 692,
+      "data_bytes": 8640000,
+      "frames": 1440000,
+      "duration": 30.0,
+      "peak": 0.8912509679794312,
+      "peak_dbfs": -1.0,
+      "rms": 0.19196512853357783,
+      "rms_dbfs": -14.34,
+      "clipped_samples": 0,
+      "spectral_centroid_hz": 6830.4,
+      "active_start": 0.0,
+      "active_end": 20.02,
+      "events": [
+        0.0,
+        0.88,
+        1.19,
+        1.44,
+        1.88,
+        2.12,
+        2.34,
+        3.35,
+        3.87,
+        4.9,
+        5.64,
+        6.2,
+        6.43,
+        6.83,
+        7.34,
+        8.14,
+        8.6,
+        8.86,
+        9.13,
+        10.39,
+        10.92,
+        12.14,
+        12.91,
+        13.17,
+        14.54,
+        15.62,
+        16.62,
+        16.88,
+        18.37,
+        19.12
+      ],
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 20.0,
+          "reason": "긴 지속 녹음의 분할 구간"
+        },
+        {
+          "start": 20.0,
+          "end": 20.02,
+          "reason": "긴 지속 녹음의 분할 구간"
+        }
+      ],
+      "silence_ratio": 0.1427,
+      "quiet_floor_dbfs": -59.77,
+      "noise_note": "조용한 20% 구간 RMS 기반 추정값. 실제 잡음의 청각적 식별은 미실시.",
+      "mtime_ns": 1790416500341032900,
+      "audition_state": "not_auditioned",
+      "review_method": "whole-file sample/energy/metadata analysis; source semantics; no direct listening",
+      "uses": [
+        "eliteSpawned",
+        "bossSpawned",
+        "enemyDetonate"
+      ],
+      "status": "candidate",
+      "reason": "명시한 동작 구간을 새 효과음에 편집 사용. 최종 채택은 사용자 청취 대기.",
+      "audition_segments": [
+        {
+          "start": 0.0,
+          "duration": 3,
+          "preview": "source-previews/54dd418d94c65b222be02360.wav",
+          "reason": "원본 동작 구간 청취용. 긴 녹음 전체를 대표한다고 가정하지 않음."
+        },
+        {
+          "start": 8.14,
+          "duration": 3,
+          "preview": "source-previews/7ba6e3e7c7bd451ab7cc2b07.wav",
+          "reason": "원본 동작 구간 청취용. 긴 녹음 전체를 대표한다고 가정하지 않음."
+        },
+        {
+          "start": 19.12,
+          "duration": 3,
+          "preview": "source-previews/9c9a7dc37ee4dbd4eebb31fc.wav",
+          "reason": "원본 동작 구간 청취용. 긴 녹음 전체를 대표한다고 가정하지 않음."
+        }
+      ],
+      "preservation": "SHA-256 rechecked; read-only original",
+      "selection": "explicit measured transient/steady-room intervals; no runtime randomization"
+    },
+    {
+      "path": "Sonniss.com-GDC2026-GameAudioBundle2of5/Federico Soler - Effective Trailer Booms Vol. 2/EffectiveTrailer_Booms_Vol2_011.wav",
+      "pack": "Federico Soler - Effective Trailer Booms Vol. 2",
+      "sha256": "f3a4426e9cf9f50a8ebb4a33a095be5522abc48a7e1f9b484fdcee082d9b70d6",
+      "bytes": 9949324,
+      "format": 1,
+      "channels": 2,
+      "sample_rate": 96000,
+      "bits": 24,
+      "align": 6,
+      "offset": 740,
+      "data_bytes": 9948072,
+      "frames": 1658012,
+      "duration": 17.270958333333333,
+      "peak": 0.8912509679794312,
+      "peak_dbfs": -1.0,
+      "rms": 0.2267454103065314,
+      "rms_dbfs": -12.89,
+      "clipped_samples": 0,
+      "spectral_centroid_hz": 1268.2,
+      "active_start": 0.25,
+      "active_end": 6.95,
+      "events": [
+        0.25,
+        0.59,
+        0.86,
+        1.17,
+        1.4,
+        1.62,
+        1.82,
+        2.01,
+        2.25,
+        2.56,
+        2.83,
+        3.18,
+        3.45,
+        3.7,
+        3.94,
+        4.12,
+        4.32,
+        4.68,
+        4.86,
+        5.07,
+        5.28,
+        5.54,
+        5.73
+      ],
+      "segments": [
+        {
+          "start": 0.25,
+          "end": 6.95,
+          "reason": "파형 에너지 동작 구간"
+        }
+      ],
+      "silence_ratio": 0.2409,
+      "quiet_floor_dbfs": -78.1,
+      "noise_note": "조용한 20% 구간 RMS 기반 추정값. 실제 잡음의 청각적 식별은 미실시.",
+      "mtime_ns": 1790416500611559000,
+      "audition_state": "not_auditioned",
+      "review_method": "whole-file sample/energy/metadata analysis; source semantics; no direct listening",
+      "uses": [
+        "mineExploded",
+        "hit_manaBombard_soft",
+        "hit_manaBombard_metal",
+        "hit_manaBombard_stone",
+        "hit_manaBombard_crystal",
+        "hit_manaBombard_energy",
+        "hit_manaBombard_paper"
+      ],
+      "status": "candidate",
+      "reason": "명시한 동작 구간을 새 효과음에 편집 사용. 최종 채택은 사용자 청취 대기.",
+      "audition_segments": [
+        {
+          "start": 0.25,
+          "duration": 3,
+          "preview": "source-previews/cc3d6eb921805d66f7aa7af1.wav",
+          "reason": "원본 동작 구간 청취용. 긴 녹음 전체를 대표한다고 가정하지 않음."
+        },
+        {
+          "start": 3.18,
+          "duration": 3,
+          "preview": "source-previews/0a6680084fb689a8504d67bb.wav",
+          "reason": "원본 동작 구간 청취용. 긴 녹음 전체를 대표한다고 가정하지 않음."
+        },
+        {
+          "start": 5.73,
+          "duration": 3,
+          "preview": "source-previews/b2a300cafdbe263530d66ce4.wav",
+          "reason": "원본 동작 구간 청취용. 긴 녹음 전체를 대표한다고 가정하지 않음."
+        }
+      ],
+      "preservation": "SHA-256 rechecked; read-only original",
+      "selection": "explicit measured transient/steady-room intervals; no runtime randomization"
+    },
+    {
+      "path": "Sonniss.com-GDC2026-GameAudioBundle2of5/Federico Soler - Effective Trailer Booms Vol. 2/EffectiveTrailer_Booms_Vol2_075.wav",
+      "pack": "Federico Soler - Effective Trailer Booms Vol. 2",
+      "sha256": "c25fe59d7b6cec9c8b14d9ccd774ef11ff43d80a48c07624e5d3e33437fd0850",
+      "bytes": 8906404,
+      "format": 1,
+      "channels": 2,
+      "sample_rate": 96000,
+      "bits": 24,
+      "align": 6,
+      "offset": 740,
+      "data_bytes": 8905152,
+      "frames": 1484192,
+      "duration": 15.460333333333333,
+      "peak": 0.8912509679794312,
+      "peak_dbfs": -1.0,
+      "rms": 0.07962968492055533,
+      "rms_dbfs": -21.98,
+      "clipped_samples": 0,
+      "spectral_centroid_hz": 2091.5,
+      "active_start": 0.24,
+      "active_end": 4.61,
+      "events": [
+        0.24,
+        0.47,
+        0.98,
+        1.23,
+        1.42,
+        1.63,
+        1.87,
+        2.06,
+        2.31,
+        2.51,
+        2.93,
+        3.13,
+        3.36
+      ],
+      "segments": [
+        {
+          "start": 0.24,
+          "end": 4.61,
+          "reason": "파형 에너지 동작 구간"
+        }
+      ],
+      "silence_ratio": 0.3596,
+      "quiet_floor_dbfs": -93.8,
+      "noise_note": "조용한 20% 구간 RMS 기반 추정값. 실제 잡음의 청각적 식별은 미실시.",
+      "mtime_ns": 1790416500704070100,
+      "audition_state": "not_auditioned",
+      "review_method": "whole-file sample/energy/metadata analysis; source semantics; no direct listening",
+      "uses": [
+        "bombardAttack"
+      ],
+      "status": "candidate",
+      "reason": "명시한 동작 구간을 새 효과음에 편집 사용. 최종 채택은 사용자 청취 대기.",
+      "audition_segments": [
+        {
+          "start": 0.24,
+          "duration": 3,
+          "preview": "source-previews/70f647e9c062c3043104e7e5.wav",
+          "reason": "원본 동작 구간 청취용. 긴 녹음 전체를 대표한다고 가정하지 않음."
+        },
+        {
+          "start": 1.87,
+          "duration": 3,
+          "preview": "source-previews/fe723856eb83353ecd8bd594.wav",
+          "reason": "원본 동작 구간 청취용. 긴 녹음 전체를 대표한다고 가정하지 않음."
+        },
+        {
+          "start": 3.36,
+          "duration": 3,
+          "preview": "source-previews/63173895d54172cd1a52c865.wav",
+          "reason": "원본 동작 구간 청취용. 긴 녹음 전체를 대표한다고 가정하지 않음."
+        }
+      ],
+      "preservation": "SHA-256 rechecked; read-only original",
+      "selection": "explicit measured transient/steady-room intervals; no runtime randomization"
+    },
+    {
+      "path": "Sonniss.com-GDC2026-GameAudioBundle3of5/InMotionAudio - Arc/ELECArc_ArcDesign15_InMotionAudio_Arc.wav",
+      "pack": "InMotionAudio - Arc",
+      "sha256": "87c709fed078cfea7447e1e13b50715c59d7d78f2589d7bba9382ed3fafbef69",
+      "bytes": 604778,
+      "format": 1,
+      "channels": 2,
+      "sample_rate": 96000,
+      "bits": 24,
+      "align": 6,
+      "offset": 1026,
+      "data_bytes": 599040,
+      "frames": 99840,
+      "duration": 1.04,
+      "peak": 0.6538193225860596,
+      "peak_dbfs": -3.69,
+      "rms": 0.07348875607653921,
+      "rms_dbfs": -22.68,
+      "clipped_samples": 0,
+      "spectral_centroid_hz": 10221.2,
+      "active_start": 0.0,
+      "active_end": 0.96,
+      "events": [
+        0.0,
+        0.26,
+        0.61
+      ],
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 0.96,
+          "reason": "파형 에너지 동작 구간"
+        }
+      ],
+      "silence_ratio": 0.0481,
+      "quiet_floor_dbfs": -28.42,
+      "noise_note": "조용한 20% 구간 RMS 기반 추정값. 실제 잡음의 청각적 식별은 미실시.",
+      "mtime_ns": 1714551401000000000,
+      "audition_state": "not_auditioned",
+      "review_method": "whole-file sample/energy/metadata analysis; source semantics; no direct listening",
+      "uses": [
+        "hit_chainLightning_soft",
+        "hit_chainLightning_metal",
+        "hit_chainLightning_stone",
+        "hit_chainLightning_crystal",
+        "hit_chainLightning_energy",
+        "hit_chainLightning_paper"
+      ],
+      "status": "candidate",
+      "reason": "명시한 동작 구간을 새 효과음에 편집 사용. 최종 채택은 사용자 청취 대기.",
+      "audition_segments": [
+        {
+          "start": 0.0,
+          "duration": 1.04,
+          "preview": "source-previews/debe2188cb649ae9e0a1208b.wav",
+          "reason": "원본 동작 구간 청취용. 긴 녹음 전체를 대표한다고 가정하지 않음."
+        }
+      ],
+      "preservation": "SHA-256 rechecked; read-only original",
+      "selection": "explicit measured transient/steady-room intervals; no runtime randomization"
+    },
+    {
+      "path": "Sonniss.com-GDC2026-GameAudioBundle3of5/InMotionAudio - Arc/ELECArc_ArcPowerUpDesign04_InMotionAudio_Arc.wav",
+      "pack": "InMotionAudio - Arc",
+      "sha256": "9a34b314daf711dfe998d0823136bd2ae5342bdadd12c8c58d585ea8293266db",
+      "bytes": 4335934,
+      "format": 1,
+      "channels": 2,
+      "sample_rate": 96000,
+      "bits": 24,
+      "align": 6,
+      "offset": 1026,
+      "data_bytes": 4310538,
+      "frames": 718423,
+      "duration": 7.483572916666667,
+      "peak": 0.5037392377853394,
+      "peak_dbfs": -5.96,
+      "rms": 0.09494438066277151,
+      "rms_dbfs": -20.45,
+      "clipped_samples": 0,
+      "spectral_centroid_hz": 14212.7,
+      "active_start": 0.0,
+      "active_end": 7.48,
+      "events": [
+        0.0,
+        0.19,
+        0.38,
+        0.61,
+        0.98,
+        1.22,
+        1.46,
+        1.68,
+        2.05,
+        2.54,
+        2.74,
+        3.09,
+        3.3,
+        3.68,
+        4.13,
+        4.6,
+        4.88,
+        5.12,
+        5.34,
+        5.55,
+        5.73,
+        6.04,
+        6.22,
+        6.45,
+        6.63,
+        6.82,
+        7.02,
+        7.25
+      ],
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 7.484,
+          "reason": "파형 에너지 동작 구간"
+        }
+      ],
+      "silence_ratio": 0.0,
+      "quiet_floor_dbfs": -28.92,
+      "noise_note": "조용한 20% 구간 RMS 기반 추정값. 실제 잡음의 청각적 식별은 미실시.",
+      "mtime_ns": 1714551438000000000,
+      "audition_state": "not_auditioned",
+      "review_method": "whole-file sample/energy/metadata analysis; source semantics; no direct listening",
+      "uses": [
+        "hit_manaSword_energy",
+        "hit_guardianDaggers_energy",
+        "hit_piercingShot_energy",
+        "hit_chainLightning_energy",
+        "hit_manaBombard_energy",
+        "hit_manaBolt_energy",
+        "hit_manaShotgun_energy",
+        "hit_autoTurret_energy",
+        "hit_mineLayer_energy",
+        "death_energy",
+        "item_circuitry"
+      ],
+      "status": "candidate",
+      "reason": "명시한 동작 구간을 새 효과음에 편집 사용. 최종 채택은 사용자 청취 대기.",
+      "audition_segments": [
+        {
+          "start": 0.0,
+          "duration": 3,
+          "preview": "source-previews/dc69bc6a6938cd306f6cbe75.wav",
+          "reason": "원본 동작 구간 청취용. 긴 녹음 전체를 대표한다고 가정하지 않음."
+        }
+      ],
+      "preservation": "SHA-256 rechecked; read-only original",
+      "selection": "explicit measured transient/steady-room intervals; no runtime randomization"
+    },
+    {
+      "path": "Sonniss.com-GDC2026-GameAudioBundle3of5/InMotionAudio - Arc/ELECBuzz_Buzz27_InMotionAudio_Arc.wav",
+      "pack": "InMotionAudio - Arc",
+      "sha256": "79449b8d5cc8bc35eb37e1de70a1933a60d8988e5c1d2ccf6f312542ae8e0a53",
+      "bytes": 5677412,
+      "format": 1,
+      "channels": 2,
+      "sample_rate": 96000,
+      "bits": 24,
+      "align": 6,
+      "offset": 1026,
+      "data_bytes": 5644800,
+      "frames": 940800,
+      "duration": 9.8,
+      "peak": 0.9682004451751709,
+      "peak_dbfs": -0.28,
+      "rms": 0.05468324466846484,
+      "rms_dbfs": -25.24,
+      "clipped_samples": 0,
+      "spectral_centroid_hz": 11973.1,
+      "active_start": 0.0,
+      "active_end": 9.8,
+      "events": [
+        0.0,
+        1.16,
+        1.42,
+        1.79,
+        2.05,
+        2.26,
+        2.68,
+        2.89,
+        3.31,
+        3.52,
+        3.81,
+        4.15,
+        4.57,
+        4.78,
+        5.02,
+        5.2,
+        5.41,
+        5.78,
+        6.04,
+        6.41,
+        6.67,
+        7.01,
+        7.3,
+        7.51,
+        7.93,
+        8.14,
+        8.56,
+        8.8,
+        9.19,
+        9.4
+      ],
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 9.8,
+          "reason": "파형 에너지 동작 구간"
+        }
+      ],
+      "silence_ratio": 0.0,
+      "quiet_floor_dbfs": -29.65,
+      "noise_note": "조용한 20% 구간 RMS 기반 추정값. 실제 잡음의 청각적 식별은 미실시.",
+      "mtime_ns": 1715580766000000000,
+      "audition_state": "not_auditioned",
+      "review_method": "whole-file sample/energy/metadata analysis; source semantics; no direct listening",
+      "uses": [
+        "fieldActivated"
+      ],
+      "status": "candidate",
+      "reason": "명시한 동작 구간을 새 효과음에 편집 사용. 최종 채택은 사용자 청취 대기.",
+      "audition_segments": [
+        {
+          "start": 0.0,
+          "duration": 3,
+          "preview": "source-previews/c08c660ca0b719e3814d4eb7.wav",
+          "reason": "원본 동작 구간 청취용. 긴 녹음 전체를 대표한다고 가정하지 않음."
+        }
+      ],
+      "preservation": "SHA-256 rechecked; read-only original",
+      "selection": "explicit measured transient/steady-room intervals; no runtime randomization"
+    },
+    {
+      "path": "Sonniss.com-GDC2026-GameAudioBundle3of5/InMotionAudio - Chimney Wind/WINDInt_ChimneyWind05_InMotionAudio_ChimneyWind.wav",
+      "pack": "InMotionAudio - Chimney Wind",
+      "sha256": "de71c402bcbc62b185b3f963d514aec61c561cda9b3c2ad15d5ab8fca57b7c68",
+      "bytes": 66756950,
+      "format": 1,
+      "channels": 2,
+      "sample_rate": 96000,
+      "bits": 24,
+      "align": 6,
+      "offset": 1026,
+      "data_bytes": 66403266,
+      "frames": 11067211,
+      "duration": 115.28344791666666,
+      "peak": 0.424932599067688,
+      "peak_dbfs": -7.43,
+      "rms": 0.021735134693409784,
+      "rms_dbfs": -33.26,
+      "clipped_samples": 0,
+      "spectral_centroid_hz": 1066.9,
+      "active_start": 0.71,
+      "active_end": 102.98,
+      "events": [
+        0.71,
+        14.95,
+        15.34,
+        15.6,
+        15.81,
+        16.02,
+        23.34,
+        23.7,
+        24.95,
+        25.41,
+        25.71,
+        27.67,
+        29.68,
+        32.35,
+        32.74,
+        33.1,
+        33.36,
+        33.75,
+        35.25,
+        36.72,
+        37.08,
+        37.26,
+        37.59,
+        37.95,
+        39.07,
+        39.94,
+        42.53,
+        42.9,
+        46.92,
+        50.69
+      ],
+      "segments": [
+        {
+          "start": 0.71,
+          "end": 1.36,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 1.64,
+          "end": 2.44,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 7.4,
+          "end": 8.15,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 8.36,
+          "end": 11.6,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 12.49,
+          "end": 18.89,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 19.17,
+          "end": 22.25,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 22.46,
+          "end": 42.46,
+          "reason": "긴 지속 녹음의 분할 구간"
+        },
+        {
+          "start": 42.46,
+          "end": 56.55,
+          "reason": "긴 지속 녹음의 분할 구간"
+        },
+        {
+          "start": 57.11,
+          "end": 61.18,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 61.37,
+          "end": 61.53,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 61.87,
+          "end": 62.09,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 68.75,
+          "end": 69.6,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 69.87,
+          "end": 69.95,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 70.9,
+          "end": 71.22,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 72.34,
+          "end": 72.5,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 74.69,
+          "end": 74.78,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 75.07,
+          "end": 75.64,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 75.84,
+          "end": 76.06,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 76.3,
+          "end": 76.38,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 78.88,
+          "end": 79.58,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 87.91,
+          "end": 87.99,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 89.2,
+          "end": 89.28,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 89.83,
+          "end": 91.09,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 91.48,
+          "end": 91.58,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 91.8,
+          "end": 95.24,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 95.66,
+          "end": 97.51,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 100.76,
+          "end": 100.93,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 101.28,
+          "end": 101.36,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 101.68,
+          "end": 102.29,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 102.61,
+          "end": 102.69,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 102.9,
+          "end": 102.98,
+          "reason": "파형 에너지 동작 구간"
+        }
+      ],
+      "silence_ratio": 0.0023,
+      "quiet_floor_dbfs": -48.05,
+      "noise_note": "조용한 20% 구간 RMS 기반 추정값. 실제 잡음의 청각적 식별은 미실시.",
+      "mtime_ns": 1716649442000000000,
+      "audition_state": "not_auditioned",
+      "review_method": "whole-file sample/energy/metadata analysis; source semantics; no direct listening",
+      "uses": [
+        "lobbyWind",
+        "lobbyRoof"
+      ],
+      "status": "candidate",
+      "reason": "명시한 동작 구간을 새 효과음에 편집 사용. 최종 채택은 사용자 청취 대기.",
+      "audition_segments": [
+        {
+          "start": 0.71,
+          "duration": 3,
+          "preview": "source-previews/61d1f7b7f864eb623f4ea78a.wav",
+          "reason": "원본 동작 구간 청취용. 긴 녹음 전체를 대표한다고 가정하지 않음."
+        },
+        {
+          "start": 33.1,
+          "duration": 3,
+          "preview": "source-previews/26100adac3c9feefc0df07c0.wav",
+          "reason": "원본 동작 구간 청취용. 긴 녹음 전체를 대표한다고 가정하지 않음."
+        },
+        {
+          "start": 50.69,
+          "duration": 3,
+          "preview": "source-previews/872f4a723ee9f822ec983a16.wav",
+          "reason": "원본 동작 구간 청취용. 긴 녹음 전체를 대표한다고 가정하지 않음."
+        }
+      ],
+      "preservation": "SHA-256 rechecked; read-only original",
+      "selection": "explicit measured transient/steady-room intervals; no runtime randomization"
+    },
+    {
+      "path": "Sonniss.com-GDC2026-GameAudioBundle3of5/InMotionAudio - Christmas Cracker/OBJMisc_CrackerPull_WithBang_Effected_03_InMotionAudio_ChristmasCracker.wav",
+      "pack": "InMotionAudio - Christmas Cracker",
+      "sha256": "5419c632e774f61e0c1acc3c82ab7784533f94033dae8630d3cab4ad0d40b36f",
+      "bytes": 309240,
+      "format": 1,
+      "channels": 2,
+      "sample_rate": 96000,
+      "bits": 24,
+      "align": 6,
+      "offset": 1026,
+      "data_bytes": 305280,
+      "frames": 50880,
+      "duration": 0.53,
+      "peak": 0.9677934646606445,
+      "peak_dbfs": -0.28,
+      "rms": 0.09712055471324921,
+      "rms_dbfs": -20.25,
+      "clipped_samples": 0,
+      "spectral_centroid_hz": 4880.0,
+      "active_start": 0.06,
+      "active_end": 0.19,
+      "events": [
+        0.06
+      ],
+      "segments": [
+        {
+          "start": 0.06,
+          "end": 0.19,
+          "reason": "파형 에너지 동작 구간"
+        }
+      ],
+      "silence_ratio": 0.6981,
+      "quiet_floor_dbfs": -121.33,
+      "noise_note": "조용한 20% 구간 RMS 기반 추정값. 실제 잡음의 청각적 식별은 미실시.",
+      "mtime_ns": 1764262986000000000,
+      "audition_state": "not_auditioned",
+      "review_method": "whole-file sample/energy/metadata analysis; source semantics; no direct listening",
+      "uses": [
+        "hit_manaShotgun_soft",
+        "hit_manaShotgun_metal",
+        "hit_manaShotgun_stone",
+        "hit_manaShotgun_crystal",
+        "hit_manaShotgun_energy",
+        "hit_manaShotgun_paper"
+      ],
+      "status": "candidate",
+      "reason": "명시한 동작 구간을 새 효과음에 편집 사용. 최종 채택은 사용자 청취 대기.",
+      "audition_segments": [
+        {
+          "start": 0.06,
+          "duration": 0.47000000000000003,
+          "preview": "source-previews/a1eccdc69a9a02fd68c21b0b.wav",
+          "reason": "원본 동작 구간 청취용. 긴 녹음 전체를 대표한다고 가정하지 않음."
+        }
+      ],
+      "preservation": "SHA-256 rechecked; read-only original",
+      "selection": "explicit measured transient/steady-room intervals; no runtime randomization"
+    },
+    {
+      "path": "Sonniss.com-GDC2026-GameAudioBundle3of5/InMotionAudio - Foley T-Shirt/FOLYClth_ClothMovement29_InMotionAudio_FoleyT-Shirt.wav",
+      "pack": "InMotionAudio - Foley T-Shirt",
+      "sha256": "1846b563bf07a534a580dab0848d6c6d59b8f3d697bac328ad7d04e9dc6cdb30",
+      "bytes": 871798,
+      "format": 1,
+      "channels": 2,
+      "sample_rate": 96000,
+      "bits": 24,
+      "align": 6,
+      "offset": 1026,
+      "data_bytes": 864834,
+      "frames": 144139,
+      "duration": 1.5014479166666668,
+      "peak": 0.5090430974960327,
+      "peak_dbfs": -5.86,
+      "rms": 0.04316778131533507,
+      "rms_dbfs": -27.3,
+      "clipped_samples": 0,
+      "spectral_centroid_hz": 7148.0,
+      "active_start": 0.04,
+      "active_end": 1.26,
+      "events": [
+        0.04,
+        0.22,
+        0.47,
+        0.84,
+        1.06
+      ],
+      "segments": [
+        {
+          "start": 0.04,
+          "end": 1.26,
+          "reason": "파형 에너지 동작 구간"
+        }
+      ],
+      "silence_ratio": 0.0733,
+      "quiet_floor_dbfs": -45.89,
+      "noise_note": "조용한 20% 구간 RMS 기반 추정값. 실제 잡음의 청각적 식별은 미실시.",
+      "mtime_ns": 1661457661000000000,
+      "audition_state": "not_auditioned",
+      "review_method": "whole-file sample/energy/metadata analysis; source semantics; no direct listening",
+      "uses": [
+        "slashAttack"
+      ],
+      "status": "candidate",
+      "reason": "명시한 동작 구간을 새 효과음에 편집 사용. 최종 채택은 사용자 청취 대기.",
+      "audition_segments": [
+        {
+          "start": 0.04,
+          "duration": 1.4614479166666667,
+          "preview": "source-previews/2cbc19ec50e7fa99accbb67e.wav",
+          "reason": "원본 동작 구간 청취용. 긴 녹음 전체를 대표한다고 가정하지 않음."
+        }
+      ],
+      "preservation": "SHA-256 rechecked; read-only original",
+      "selection": "explicit measured transient/steady-room intervals; no runtime randomization"
+    },
+    {
+      "path": "Sonniss.com-GDC2026-GameAudioBundle3of5/InMotionAudio - Foley T-Shirt/FOLYClth_SinglePats04_InMotionAudio_FoleyT-Shirt.wav",
+      "pack": "InMotionAudio - Foley T-Shirt",
+      "sha256": "f723badf49fb5d2902efb259008c23cb2edc96b6ce59bf20448827f51a44e4ea",
+      "bytes": 333406,
+      "format": 1,
+      "channels": 2,
+      "sample_rate": 96000,
+      "bits": 24,
+      "align": 6,
+      "offset": 1026,
+      "data_bytes": 329274,
+      "frames": 54879,
+      "duration": 0.57165625,
+      "peak": 0.6846444606781006,
+      "peak_dbfs": -3.29,
+      "rms": 0.05257578965265878,
+      "rms_dbfs": -25.58,
+      "clipped_samples": 0,
+      "spectral_centroid_hz": 5002.3,
+      "active_start": 0.08,
+      "active_end": 0.28,
+      "events": [
+        0.08
+      ],
+      "segments": [
+        {
+          "start": 0.08,
+          "end": 0.28,
+          "reason": "파형 에너지 동작 구간"
+        }
+      ],
+      "silence_ratio": 0.3509,
+      "quiet_floor_dbfs": -81.27,
+      "noise_note": "조용한 20% 구간 RMS 기반 추정값. 실제 잡음의 청각적 식별은 미실시.",
+      "mtime_ns": 1661457668000000000,
+      "audition_state": "not_auditioned",
+      "review_method": "whole-file sample/energy/metadata analysis; source semantics; no direct listening",
+      "uses": [
+        "item_cloth"
+      ],
+      "status": "candidate",
+      "reason": "명시한 동작 구간을 새 효과음에 편집 사용. 최종 채택은 사용자 청취 대기.",
+      "audition_segments": [
+        {
+          "start": 0.08,
+          "duration": 0.49165624999999996,
+          "preview": "source-previews/e229f1a26ab668636914e065.wav",
+          "reason": "원본 동작 구간 청취용. 긴 녹음 전체를 대표한다고 가정하지 않음."
+        }
+      ],
+      "preservation": "SHA-256 rechecked; read-only original",
+      "selection": "explicit measured transient/steady-room intervals; no runtime randomization"
+    },
+    {
+      "path": "Sonniss.com-GDC2026-GameAudioBundle3of5/InMotionAudio - Instrument Case/OBJLug_CaseDown_Concrete12_InMotionAudio_InstrumentCase.wav",
+      "pack": "InMotionAudio - Instrument Case",
+      "sha256": "8c0840e15c5b1494449549ab3fd544a05064f792720871d0bb8e6c6babc3f8f3",
+      "bytes": 852210,
+      "format": 1,
+      "channels": 2,
+      "sample_rate": 96000,
+      "bits": 24,
+      "align": 6,
+      "offset": 1026,
+      "data_bytes": 845250,
+      "frames": 140875,
+      "duration": 1.4674479166666667,
+      "peak": 0.7040683031082153,
+      "peak_dbfs": -3.05,
+      "rms": 0.03258432007164968,
+      "rms_dbfs": -29.74,
+      "clipped_samples": 0,
+      "spectral_centroid_hz": 11695.7,
+      "active_start": 0.0,
+      "active_end": 0.22,
+      "events": [
+        0.0
+      ],
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 0.22,
+          "reason": "파형 에너지 동작 구간"
+        }
+      ],
+      "silence_ratio": 0.5753,
+      "quiet_floor_dbfs": -91.27,
+      "noise_note": "조용한 20% 구간 RMS 기반 추정값. 실제 잡음의 청각적 식별은 미실시.",
+      "mtime_ns": 1736181163000000000,
+      "audition_state": "not_auditioned",
+      "review_method": "whole-file sample/energy/metadata analysis; source semantics; no direct listening",
+      "uses": [
+        "mineExploded",
+        "hit_mineLayer_soft",
+        "hit_mineLayer_metal",
+        "hit_mineLayer_stone",
+        "hit_mineLayer_crystal",
+        "hit_mineLayer_energy",
+        "hit_mineLayer_paper"
+      ],
+      "status": "candidate",
+      "reason": "명시한 동작 구간을 새 효과음에 편집 사용. 최종 채택은 사용자 청취 대기.",
+      "audition_segments": [
+        {
+          "start": 0.0,
+          "duration": 1.4674479166666667,
+          "preview": "source-previews/5bdb5f54094dfeb289dbc68c.wav",
+          "reason": "원본 동작 구간 청취용. 긴 녹음 전체를 대표한다고 가정하지 않음."
+        }
+      ],
+      "preservation": "SHA-256 rechecked; read-only original",
+      "selection": "explicit measured transient/steady-room intervals; no runtime randomization"
+    },
+    {
+      "path": "Sonniss.com-GDC2026-GameAudioBundle3of5/InMotionAudio - Instrument Case/OBJLug_Case_Closed06_InMotionAudio_InstrumentCase.wav",
+      "pack": "InMotionAudio - Instrument Case",
+      "sha256": "9d56118b0a4f351b33e9761b5f72873da78ad1c030f8a91a437ae1b443887208",
+      "bytes": 572454,
+      "format": 1,
+      "channels": 2,
+      "sample_rate": 96000,
+      "bits": 24,
+      "align": 6,
+      "offset": 1026,
+      "data_bytes": 567030,
+      "frames": 94505,
+      "duration": 0.9844270833333333,
+      "peak": 0.6854332685470581,
+      "peak_dbfs": -3.28,
+      "rms": 0.03326655444571751,
+      "rms_dbfs": -29.56,
+      "clipped_samples": 0,
+      "spectral_centroid_hz": 3922.9,
+      "active_start": 0.0,
+      "active_end": 0.1,
+      "events": [
+        0.0
+      ],
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 0.1,
+          "reason": "파형 에너지 동작 구간"
+        }
+      ],
+      "silence_ratio": 0.6429,
+      "quiet_floor_dbfs": -90.87,
+      "noise_note": "조용한 20% 구간 RMS 기반 추정값. 실제 잡음의 청각적 식별은 미실시.",
+      "mtime_ns": 1736180262000000000,
+      "audition_state": "not_auditioned",
+      "review_method": "whole-file sample/energy/metadata analysis; source semantics; no direct listening",
+      "uses": [
+        "lock"
+      ],
+      "status": "candidate",
+      "reason": "명시한 동작 구간을 새 효과음에 편집 사용. 최종 채택은 사용자 청취 대기.",
+      "audition_segments": [
+        {
+          "start": 0.0,
+          "duration": 0.9844270833333333,
+          "preview": "source-previews/c9d5bbd16c496987f66b32eb.wav",
+          "reason": "원본 동작 구간 청취용. 긴 녹음 전체를 대표한다고 가정하지 않음."
+        }
+      ],
+      "preservation": "SHA-256 rechecked; read-only original",
+      "selection": "explicit measured transient/steady-room intervals; no runtime randomization"
+    },
+    {
+      "path": "Sonniss.com-GDC2026-GameAudioBundle3of5/InMotionAudio - Instrument Case/OBJLug_Handle_Movement15_InMotionAudio_InstrumentCase.wav",
+      "pack": "InMotionAudio - Instrument Case",
+      "sha256": "8fc6f4eef79bc3ad102b27e4cd69ce2c95774dcd1044825b135f1c3e05834417",
+      "bytes": 602168,
+      "format": 1,
+      "channels": 2,
+      "sample_rate": 96000,
+      "bits": 24,
+      "align": 6,
+      "offset": 1026,
+      "data_bytes": 596508,
+      "frames": 99418,
+      "duration": 1.0356041666666667,
+      "peak": 0.6854332685470581,
+      "peak_dbfs": -3.28,
+      "rms": 0.019851642870586415,
+      "rms_dbfs": -34.04,
+      "clipped_samples": 0,
+      "spectral_centroid_hz": 18096.1,
+      "active_start": 0.02,
+      "active_end": 0.69,
+      "events": [
+        0.02
+      ],
+      "segments": [
+        {
+          "start": 0.02,
+          "end": 0.15,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 0.59,
+          "end": 0.69,
+          "reason": "파형 에너지 동작 구간"
+        }
+      ],
+      "silence_ratio": 0.5728,
+      "quiet_floor_dbfs": -77.38,
+      "noise_note": "조용한 20% 구간 RMS 기반 추정값. 실제 잡음의 청각적 식별은 미실시.",
+      "mtime_ns": 1736173779000000000,
+      "audition_state": "not_auditioned",
+      "review_method": "whole-file sample/energy/metadata analysis; source semantics; no direct listening",
+      "uses": [
+        "supplyLatch"
+      ],
+      "status": "candidate",
+      "reason": "명시한 동작 구간을 새 효과음에 편집 사용. 최종 채택은 사용자 청취 대기.",
+      "audition_segments": [
+        {
+          "start": 0.02,
+          "duration": 1.0156041666666666,
+          "preview": "source-previews/2f86aba1999720d897712764.wav",
+          "reason": "원본 동작 구간 청취용. 긴 녹음 전체를 대표한다고 가정하지 않음."
+        }
+      ],
+      "preservation": "SHA-256 rechecked; read-only original",
+      "selection": "explicit measured transient/steady-room intervals; no runtime randomization"
+    },
+    {
+      "path": "Sonniss.com-GDC2026-GameAudioBundle3of5/InMotionAudio - Saxophone/MUSCInst_KeyPress64_InMotionAudio_Saxophone.wav",
+      "pack": "InMotionAudio - Saxophone",
+      "sha256": "bc8bac5955e4a7b5c7a47120d402b1b58d4e28acb133cec96b1d01105371137e",
+      "bytes": 268084,
+      "format": 1,
+      "channels": 2,
+      "sample_rate": 96000,
+      "bits": 24,
+      "align": 6,
+      "offset": 1026,
+      "data_bytes": 264264,
+      "frames": 44044,
+      "duration": 0.45879166666666665,
+      "peak": 0.9682000875473022,
+      "peak_dbfs": -0.28,
+      "rms": 0.04663919711650465,
+      "rms_dbfs": -26.62,
+      "clipped_samples": 0,
+      "spectral_centroid_hz": 5289.6,
+      "active_start": 0.01,
+      "active_end": 0.36,
+      "events": [
+        0.01
+      ],
+      "segments": [
+        {
+          "start": 0.01,
+          "end": 0.36,
+          "reason": "파형 에너지 동작 구간"
+        }
+      ],
+      "silence_ratio": 0.3333,
+      "quiet_floor_dbfs": -71.6,
+      "noise_note": "조용한 20% 구간 RMS 기반 추정값. 실제 잡음의 청각적 식별은 미실시.",
+      "mtime_ns": 1746632083000000000,
+      "audition_state": "not_auditioned",
+      "review_method": "whole-file sample/energy/metadata analysis; source semantics; no direct listening",
+      "uses": [
+        "minePlaced"
+      ],
+      "status": "candidate",
+      "reason": "명시한 동작 구간을 새 효과음에 편집 사용. 최종 채택은 사용자 청취 대기.",
+      "audition_segments": [
+        {
+          "start": 0.01,
+          "duration": 0.44879166666666664,
+          "preview": "source-previews/3c147da207167bca909b0fd4.wav",
+          "reason": "원본 동작 구간 청취용. 긴 녹음 전체를 대표한다고 가정하지 않음."
+        }
+      ],
+      "preservation": "SHA-256 rechecked; read-only original",
+      "selection": "explicit measured transient/steady-room intervals; no runtime randomization"
+    },
+    {
+      "path": "Sonniss.com-GDC2026-GameAudioBundle3of5/Jake Fielding - Interior Wind Rain and Storms/RAINInt_Heavy Rain on Window,  Constant _JF_INT Storm.wav",
+      "pack": "Jake Fielding - Interior Wind Rain and Storms",
+      "sha256": "1b7d8015e24167ad3670ea4598696dc374b2e28b5a558e938db0f6b721098443",
+      "bytes": 17790838,
+      "format": 1,
+      "channels": 2,
+      "sample_rate": 96000,
+      "bits": 24,
+      "align": 6,
+      "offset": 1026,
+      "data_bytes": 17694720,
+      "frames": 2949120,
+      "duration": 30.72,
+      "peak": 0.5324647426605225,
+      "peak_dbfs": -5.47,
+      "rms": 0.05511948872715795,
+      "rms_dbfs": -25.17,
+      "clipped_samples": 0,
+      "spectral_centroid_hz": 2792.3,
+      "active_start": 0.0,
+      "active_end": 30.72,
+      "events": [
+        0.0,
+        0.41,
+        2.08,
+        2.54,
+        3.73,
+        3.96,
+        4.14,
+        4.36,
+        5.12,
+        5.55,
+        5.73,
+        6.11,
+        6.5,
+        6.95,
+        7.37,
+        7.58,
+        8.45,
+        10.51,
+        11.37,
+        11.68,
+        12.59,
+        14.8,
+        22.57,
+        25.87,
+        26.27,
+        27.27,
+        28.39,
+        28.77,
+        28.95,
+        30.66
+      ],
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 20.0,
+          "reason": "긴 지속 녹음의 분할 구간"
+        },
+        {
+          "start": 20.0,
+          "end": 30.72,
+          "reason": "긴 지속 녹음의 분할 구간"
+        }
+      ],
+      "silence_ratio": 0.0,
+      "quiet_floor_dbfs": -27.87,
+      "noise_note": "조용한 20% 구간 RMS 기반 추정값. 실제 잡음의 청각적 식별은 미실시.",
+      "mtime_ns": 1717238993000000000,
+      "audition_state": "not_auditioned",
+      "review_method": "whole-file sample/energy/metadata analysis; source semantics; no direct listening",
+      "uses": [
+        "lobbyRain"
+      ],
+      "status": "candidate",
+      "reason": "명시한 동작 구간을 새 효과음에 편집 사용. 최종 채택은 사용자 청취 대기.",
+      "audition_segments": [
+        {
+          "start": 0.0,
+          "duration": 3,
+          "preview": "source-previews/cc71d6398a6960cce8137a66.wav",
+          "reason": "원본 동작 구간 청취용. 긴 녹음 전체를 대표한다고 가정하지 않음."
+        },
+        {
+          "start": 7.58,
+          "duration": 3,
+          "preview": "source-previews/2c7705b5f9adce8276a1f55f.wav",
+          "reason": "원본 동작 구간 청취용. 긴 녹음 전체를 대표한다고 가정하지 않음."
+        },
+        {
+          "start": 30.66,
+          "duration": 0.05999999999999872,
+          "preview": "source-previews/1ae5eddd727ddda830520c99.wav",
+          "reason": "원본 동작 구간 청취용. 긴 녹음 전체를 대표한다고 가정하지 않음."
+        }
+      ],
+      "preservation": "SHA-256 rechecked; read-only original",
+      "selection": "explicit measured transient/steady-room intervals; no runtime randomization"
+    },
+    {
+      "path": "Sonniss.com-GDC2026-GameAudioBundle4of5/Sonic Bat - Music Boxes/SBmb_Music Box A 013.wav",
+      "pack": "Sonic Bat - Music Boxes",
+      "sha256": "18fca8bffc680194363e308a83d88b007231dec4217ed180061f929f57b839fe",
+      "bytes": 2178748,
+      "format": 3,
+      "channels": 1,
+      "sample_rate": 192000,
+      "bits": 32,
+      "align": 4,
+      "offset": 736,
+      "data_bytes": 2177340,
+      "frames": 544335,
+      "duration": 2.835078125,
+      "peak": 0.6403956413269043,
+      "peak_dbfs": -3.87,
+      "rms": 0.07177364262641812,
+      "rms_dbfs": -22.88,
+      "clipped_samples": 0,
+      "spectral_centroid_hz": 26468.8,
+      "active_start": 0.03,
+      "active_end": 0.82,
+      "events": [
+        0.03
+      ],
+      "segments": [
+        {
+          "start": 0.03,
+          "end": 0.82,
+          "reason": "파형 에너지 동작 구간"
+        }
+      ],
+      "silence_ratio": 0.1307,
+      "quiet_floor_dbfs": -62.98,
+      "noise_note": "조용한 20% 구간 RMS 기반 추정값. 실제 잡음의 청각적 식별은 미실시.",
+      "mtime_ns": 1756815076627431700,
+      "audition_state": "not_auditioned",
+      "review_method": "whole-file sample/energy/metadata analysis; source semantics; no direct listening",
+      "uses": [
+        "magicStoneCollected",
+        "pickup_magicStone",
+        "pickup_revival_low"
+      ],
+      "status": "candidate",
+      "reason": "명시한 동작 구간을 새 효과음에 편집 사용. 최종 채택은 사용자 청취 대기.",
+      "audition_segments": [
+        {
+          "start": 0.03,
+          "duration": 2.805078125,
+          "preview": "source-previews/16be6830c4656d8abd22186c.wav",
+          "reason": "원본 동작 구간 청취용. 긴 녹음 전체를 대표한다고 가정하지 않음."
+        }
+      ],
+      "preservation": "SHA-256 rechecked; read-only original",
+      "selection": "explicit measured transient/steady-room intervals; no runtime randomization"
+    },
+    {
+      "path": "Sonniss.com-GDC2026-GameAudioBundle4of5/Sonic Bat - Music Boxes/SBmb_Music Box B 028.wav",
+      "pack": "Sonic Bat - Music Boxes",
+      "sha256": "5832f12ae8a3530effd5534304738a3d914b92367e69cec8ee9fcb8383e5020f",
+      "bytes": 2028624,
+      "format": 3,
+      "channels": 1,
+      "sample_rate": 192000,
+      "bits": 32,
+      "align": 4,
+      "offset": 736,
+      "data_bytes": 2027196,
+      "frames": 506799,
+      "duration": 2.639578125,
+      "peak": 0.7919475436210632,
+      "peak_dbfs": -2.03,
+      "rms": 0.02716623119467433,
+      "rms_dbfs": -31.32,
+      "clipped_samples": 0,
+      "spectral_centroid_hz": 22137.8,
+      "active_start": 0.01,
+      "active_end": 0.74,
+      "events": [
+        0.01
+      ],
+      "segments": [
+        {
+          "start": 0.01,
+          "end": 0.74,
+          "reason": "파형 에너지 동작 구간"
+        }
+      ],
+      "silence_ratio": 0.3346,
+      "quiet_floor_dbfs": -81.87,
+      "noise_note": "조용한 20% 구간 RMS 기반 추정값. 실제 잡음의 청각적 식별은 미실시.",
+      "mtime_ns": 1756815187571388200,
+      "audition_state": "not_auditioned",
+      "review_method": "whole-file sample/energy/metadata analysis; source semantics; no direct listening",
+      "uses": [
+        "pickup_revival_mid",
+        "item_optic"
+      ],
+      "status": "candidate",
+      "reason": "명시한 동작 구간을 새 효과음에 편집 사용. 최종 채택은 사용자 청취 대기.",
+      "audition_segments": [
+        {
+          "start": 0.01,
+          "duration": 2.629578125,
+          "preview": "source-previews/92d6a3066e6a90d3f5f42e59.wav",
+          "reason": "원본 동작 구간 청취용. 긴 녹음 전체를 대표한다고 가정하지 않음."
+        }
+      ],
+      "preservation": "SHA-256 rechecked; read-only original",
+      "selection": "explicit measured transient/steady-room intervals; no runtime randomization"
+    },
+    {
+      "path": "Sonniss.com-GDC2026-GameAudioBundle4of5/Sonic Bat - Music Boxes/SBmb_Music Box C 059.wav",
+      "pack": "Sonic Bat - Music Boxes",
+      "sha256": "9ae237a94eaf66eb842c4e8b38f6f53119555139b2861a022d77a58174170571",
+      "bytes": 2087304,
+      "format": 3,
+      "channels": 1,
+      "sample_rate": 192000,
+      "bits": 32,
+      "align": 4,
+      "offset": 736,
+      "data_bytes": 2085896,
+      "frames": 521474,
+      "duration": 2.7160104166666668,
+      "peak": 0.6529958844184875,
+      "peak_dbfs": -3.7,
+      "rms": 0.04744970287829077,
+      "rms_dbfs": -26.48,
+      "clipped_samples": 0,
+      "spectral_centroid_hz": 25261.7,
+      "active_start": 0.03,
+      "active_end": 0.91,
+      "events": [
+        0.03,
+        0.45
+      ],
+      "segments": [
+        {
+          "start": 0.03,
+          "end": 0.91,
+          "reason": "파형 에너지 동작 구간"
+        }
+      ],
+      "silence_ratio": 0.3321,
+      "quiet_floor_dbfs": -79.12,
+      "noise_note": "조용한 20% 구간 RMS 기반 추정값. 실제 잡음의 청각적 식별은 미실시.",
+      "mtime_ns": 1756815318895964700,
+      "audition_state": "not_auditioned",
+      "review_method": "whole-file sample/energy/metadata analysis; source semantics; no direct listening",
+      "uses": [
+        "waveCompleted",
+        "walletSweep",
+        "stageClear",
+        "pickup_revival_high"
+      ],
+      "status": "candidate",
+      "reason": "명시한 동작 구간을 새 효과음에 편집 사용. 최종 채택은 사용자 청취 대기.",
+      "audition_segments": [
+        {
+          "start": 0.03,
+          "duration": 2.686010416666667,
+          "preview": "source-previews/098cd0a043e7d055636ed056.wav",
+          "reason": "원본 동작 구간 청취용. 긴 녹음 전체를 대표한다고 가정하지 않음."
+        }
+      ],
+      "preservation": "SHA-256 rechecked; read-only original",
+      "selection": "explicit measured transient/steady-room intervals; no runtime randomization"
+    },
+    {
+      "path": "Sonniss.com-GDC2026-GameAudioBundle4of5/Sonic Bat - Vintage Radio/SBvr_Mode Select Wheel 006.wav",
+      "pack": "Sonic Bat - Vintage Radio",
+      "sha256": "93d9dac69dc063d3b8e243f8d7dd8b100fba17567f67958840b318163af0a83b",
+      "bytes": 958364,
+      "format": 3,
+      "channels": 1,
+      "sample_rate": 192000,
+      "bits": 32,
+      "align": 4,
+      "offset": 736,
+      "data_bytes": 956928,
+      "frames": 239232,
+      "duration": 1.246,
+      "peak": 0.7716575860977173,
+      "peak_dbfs": -2.25,
+      "rms": 0.016159155853845582,
+      "rms_dbfs": -35.83,
+      "clipped_samples": 0,
+      "spectral_centroid_hz": 15004.4,
+      "active_start": 0.01,
+      "active_end": 0.95,
+      "events": [
+        0.01,
+        0.53,
+        0.85
+      ],
+      "segments": [
+        {
+          "start": 0.01,
+          "end": 0.11,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 0.53,
+          "end": 0.64,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 0.84,
+          "end": 0.95,
+          "reason": "파형 에너지 동작 구간"
+        }
+      ],
+      "silence_ratio": 0.5161,
+      "quiet_floor_dbfs": -77.8,
+      "noise_note": "조용한 20% 구간 RMS 기반 추정값. 실제 잡음의 청각적 식별은 미실시.",
+      "mtime_ns": 1749906739440666700,
+      "audition_state": "not_auditioned",
+      "review_method": "whole-file sample/energy/metadata analysis; source semantics; no direct listening",
+      "uses": [
+        "purchase",
+        "reroll",
+        "lock",
+        "weaponPurchase",
+        "branchChoice",
+        "waveStarted",
+        "waveCompleted",
+        "walletSweep",
+        "supplyLatch",
+        "supplyFanfare",
+        "stageClear",
+        "gameOver"
+      ],
+      "status": "candidate",
+      "reason": "명시한 동작 구간을 새 효과음에 편집 사용. 최종 채택은 사용자 청취 대기.",
+      "audition_segments": [
+        {
+          "start": 0.01,
+          "duration": 1.236,
+          "preview": "source-previews/562f72115804512fa3d40cf0.wav",
+          "reason": "원본 동작 구간 청취용. 긴 녹음 전체를 대표한다고 가정하지 않음."
+        }
+      ],
+      "preservation": "SHA-256 rechecked; read-only original",
+      "selection": "explicit measured transient/steady-room intervals; no runtime randomization"
+    },
+    {
+      "path": "Sonniss.com-GDC2026-GameAudioBundle5of5/SoundBits - Pass-By - Trains, Trucks & Cars 2/AMBTraf_Traffic Multiple Cars Passing By 25_SNDBTS_PB-TTC2.wav",
+      "pack": "SoundBits - Pass-By - Trains, Trucks & Cars 2",
+      "sha256": "532b6daedd236814eee4d8097dd6c3d8e827f9912f805d6d835ea0b2a941acb8",
+      "bytes": 10533264,
+      "format": 1,
+      "channels": 2,
+      "sample_rate": 96000,
+      "bits": 24,
+      "align": 6,
+      "offset": 656,
+      "data_bytes": 10530516,
+      "frames": 1755086,
+      "duration": 18.282145833333335,
+      "peak": 0.707945704460144,
+      "peak_dbfs": -3.0,
+      "rms": 0.1063580702283001,
+      "rms_dbfs": -19.46,
+      "clipped_samples": 0,
+      "spectral_centroid_hz": 2030.1,
+      "active_start": 0.75,
+      "active_end": 16.74,
+      "events": [
+        0.75,
+        1.89,
+        2.15,
+        2.67,
+        3.02,
+        3.5,
+        3.72,
+        3.91,
+        4.19,
+        5.46,
+        5.78,
+        6.3,
+        7.6,
+        7.88,
+        8.63,
+        8.86,
+        9.14,
+        9.36,
+        9.73,
+        10.4,
+        10.59,
+        10.99,
+        11.28,
+        11.52,
+        11.89,
+        13.12,
+        13.3,
+        13.49,
+        13.69,
+        14.01
+      ],
+      "segments": [
+        {
+          "start": 0.75,
+          "end": 16.74,
+          "reason": "파형 에너지 동작 구간"
+        }
+      ],
+      "silence_ratio": 0.017,
+      "quiet_floor_dbfs": -28.26,
+      "noise_note": "조용한 20% 구간 RMS 기반 추정값. 실제 잡음의 청각적 식별은 미실시.",
+      "mtime_ns": 1763482362912604400,
+      "audition_state": "not_auditioned",
+      "review_method": "whole-file sample/energy/metadata analysis; source semantics; no direct listening",
+      "uses": [
+        "lobbyRoof",
+        "officeDay"
+      ],
+      "status": "candidate",
+      "reason": "명시한 동작 구간을 새 효과음에 편집 사용. 최종 채택은 사용자 청취 대기.",
+      "audition_segments": [
+        {
+          "start": 0.75,
+          "duration": 3,
+          "preview": "source-previews/f070574cb22c659d102075d4.wav",
+          "reason": "원본 동작 구간 청취용. 긴 녹음 전체를 대표한다고 가정하지 않음."
+        },
+        {
+          "start": 8.86,
+          "duration": 3,
+          "preview": "source-previews/204a09dc0ab2609ae2b3caf0.wav",
+          "reason": "원본 동작 구간 청취용. 긴 녹음 전체를 대표한다고 가정하지 않음."
+        },
+        {
+          "start": 14.01,
+          "duration": 3,
+          "preview": "source-previews/ccfa7b177b5db245a4e701e7.wav",
+          "reason": "원본 동작 구간 청취용. 긴 녹음 전체를 대표한다고 가정하지 않음."
+        }
+      ],
+      "preservation": "SHA-256 rechecked; read-only original",
+      "selection": "explicit measured transient/steady-room intervals; no runtime randomization"
+    },
+    {
+      "path": "Sonniss.com-GDC2026-GameAudioBundle5of5/The Noisery - City Rain/RAINConc_Rain Medium Exterior Splatter City Traffic 6_The Noisery_City Rain.wav",
+      "pack": "The Noisery - City Rain",
+      "sha256": "b91da0359fda43028cded0b18f9f3f4fc8fb1204144a70878658b322116ae9c1",
+      "bytes": 91200898,
+      "format": 1,
+      "channels": 2,
+      "sample_rate": 96000,
+      "bits": 24,
+      "align": 6,
+      "offset": 1026,
+      "data_bytes": 90718518,
+      "frames": 15119753,
+      "duration": 157.49742708333332,
+      "peak": 0.8912508487701416,
+      "peak_dbfs": -1.0,
+      "rms": 0.012094662205984623,
+      "rms_dbfs": -38.35,
+      "clipped_samples": 0,
+      "spectral_centroid_hz": 5024.2,
+      "active_start": 0.14,
+      "active_end": 157.09,
+      "events": [
+        0.14,
+        0.51,
+        2.57,
+        7.04,
+        7.23,
+        7.95,
+        8.45,
+        9.12,
+        16.63,
+        18.61,
+        29.69,
+        31.21,
+        36.45,
+        38.67,
+        41.0,
+        60.58,
+        78.32,
+        81.62,
+        82.23,
+        83.83,
+        90.78,
+        92.12,
+        94.36,
+        95.7,
+        117.04,
+        119.64,
+        137.03,
+        139.89,
+        149.63,
+        153.35
+      ],
+      "segments": [
+        {
+          "start": 0.14,
+          "end": 20.14,
+          "reason": "긴 지속 녹음의 분할 구간"
+        },
+        {
+          "start": 20.14,
+          "end": 40.14,
+          "reason": "긴 지속 녹음의 분할 구간"
+        },
+        {
+          "start": 40.14,
+          "end": 60.14,
+          "reason": "긴 지속 녹음의 분할 구간"
+        },
+        {
+          "start": 60.14,
+          "end": 80.14,
+          "reason": "긴 지속 녹음의 분할 구간"
+        },
+        {
+          "start": 80.14,
+          "end": 100.14,
+          "reason": "긴 지속 녹음의 분할 구간"
+        },
+        {
+          "start": 100.14,
+          "end": 120.14,
+          "reason": "긴 지속 녹음의 분할 구간"
+        },
+        {
+          "start": 120.14,
+          "end": 140.14,
+          "reason": "긴 지속 녹음의 분할 구간"
+        },
+        {
+          "start": 140.14,
+          "end": 157.09,
+          "reason": "긴 지속 녹음의 분할 구간"
+        }
+      ],
+      "silence_ratio": 0.0001,
+      "quiet_floor_dbfs": -41.31,
+      "noise_note": "조용한 20% 구간 RMS 기반 추정값. 실제 잡음의 청각적 식별은 미실시.",
+      "mtime_ns": 1721839936000000000,
+      "audition_state": "not_auditioned",
+      "review_method": "whole-file sample/energy/metadata analysis; source semantics; no direct listening",
+      "uses": [
+        "lobbyRain"
+      ],
+      "status": "candidate",
+      "reason": "명시한 동작 구간을 새 효과음에 편집 사용. 최종 채택은 사용자 청취 대기.",
+      "audition_segments": [
+        {
+          "start": 0.14,
+          "duration": 3,
+          "preview": "source-previews/896fd3776f81299e1999a557.wav",
+          "reason": "원본 동작 구간 청취용. 긴 녹음 전체를 대표한다고 가정하지 않음."
+        },
+        {
+          "start": 60.58,
+          "duration": 3,
+          "preview": "source-previews/c17cc2620bad80566506d3b5.wav",
+          "reason": "원본 동작 구간 청취용. 긴 녹음 전체를 대표한다고 가정하지 않음."
+        },
+        {
+          "start": 153.35,
+          "duration": 3,
+          "preview": "source-previews/faeb0ab7f433d809a01ed862.wav",
+          "reason": "원본 동작 구간 청취용. 긴 녹음 전체를 대표한다고 가정하지 않음."
+        }
+      ],
+      "preservation": "SHA-256 rechecked; read-only original",
+      "selection": "explicit measured transient/steady-room intervals; no runtime randomization"
+    },
+    {
+      "path": "Sonniss.com-GDC2026-GameAudioBundle5of5/The Noisery - Moaning Metal/DSGNImpt_Metal Hit Thud Thump Low Ring Geofon 1_The Noisery_Moaning Metal.wav",
+      "pack": "The Noisery - Moaning Metal",
+      "sha256": "9ae80f5d33c8b717fd3e530473387fc49ad6009725ea4d98fec4654874ae9f5c",
+      "bytes": 2996162,
+      "format": 1,
+      "channels": 1,
+      "sample_rate": 192000,
+      "bits": 24,
+      "align": 3,
+      "offset": 1026,
+      "data_bytes": 2978304,
+      "frames": 992768,
+      "duration": 5.1706666666666665,
+      "peak": 0.5800011157989502,
+      "peak_dbfs": -4.73,
+      "rms": 0.06397894417772286,
+      "rms_dbfs": -23.88,
+      "clipped_samples": 0,
+      "spectral_centroid_hz": 2572.3,
+      "active_start": 0.0,
+      "active_end": 3.92,
+      "events": [
+        0.0,
+        0.24,
+        0.6,
+        0.94,
+        1.27,
+        1.59,
+        1.99,
+        2.41,
+        2.82
+      ],
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 3.65,
+          "reason": "파형 에너지 동작 구간"
+        },
+        {
+          "start": 3.84,
+          "end": 3.92,
+          "reason": "파형 에너지 동작 구간"
+        }
+      ],
+      "silence_ratio": 0.0058,
+      "quiet_floor_dbfs": -43.11,
+      "noise_note": "조용한 20% 구간 RMS 기반 추정값. 실제 잡음의 청각적 식별은 미실시.",
+      "mtime_ns": 1721182676000000000,
+      "audition_state": "not_auditioned",
+      "review_method": "whole-file sample/energy/metadata analysis; source semantics; no direct listening",
+      "uses": [
+        "eliteSpawned",
+        "hit_manaSword_metal",
+        "hit_guardianDaggers_metal",
+        "hit_piercingShot_metal",
+        "hit_chainLightning_metal",
+        "hit_manaBombard_metal",
+        "hit_manaBolt_metal",
+        "hit_manaShotgun_metal",
+        "hit_autoTurret_metal",
+        "hit_mineLayer_metal",
+        "death_metal"
+      ],
+      "status": "candidate",
+      "reason": "명시한 동작 구간을 새 효과음에 편집 사용. 최종 채택은 사용자 청취 대기.",
+      "audition_segments": [
+        {
+          "start": 0.0,
+          "duration": 3,
+          "preview": "source-previews/fbf92d34c9dcd56ec8bb3af7.wav",
+          "reason": "원본 동작 구간 청취용. 긴 녹음 전체를 대표한다고 가정하지 않음."
+        }
+      ],
+      "preservation": "SHA-256 rechecked; read-only original",
+      "selection": "explicit measured transient/steady-room intervals; no runtime randomization"
+    }
+  ],
+  "licenses": [
+    {
+      "source": "Sonniss.com-GDC2026-GameAudioBundle1of5/License - GDC Game Audio.pdf",
+      "sha256": "8a26e0113e8b00a4dc953a2d568d326bc780ebd792165f9bb604cb26010dee27",
+      "copy": "provenance/part-1/License - GDC Game Audio.pdf"
+    },
+    {
+      "source": "Sonniss.com-GDC2026-GameAudioBundle1of5/Readme.txt",
+      "sha256": "8b44cb570c662883c81232d9478f96499eddd2d7f3de612b190bc8e59a997e1b",
+      "copy": "provenance/part-1/Readme.txt"
+    },
+    {
+      "source": "Sonniss.com-GDC2026-GameAudioBundle2of5/License - GDC Game Audio.pdf",
+      "sha256": "8a26e0113e8b00a4dc953a2d568d326bc780ebd792165f9bb604cb26010dee27",
+      "copy": "provenance/part-2/License - GDC Game Audio.pdf"
+    },
+    {
+      "source": "Sonniss.com-GDC2026-GameAudioBundle2of5/Readme.txt",
+      "sha256": "8b44cb570c662883c81232d9478f96499eddd2d7f3de612b190bc8e59a997e1b",
+      "copy": "provenance/part-2/Readme.txt"
+    },
+    {
+      "source": "Sonniss.com-GDC2026-GameAudioBundle3of5/License - GDC Game Audio.pdf",
+      "sha256": "8a26e0113e8b00a4dc953a2d568d326bc780ebd792165f9bb604cb26010dee27",
+      "copy": "provenance/part-3/License - GDC Game Audio.pdf"
+    },
+    {
+      "source": "Sonniss.com-GDC2026-GameAudioBundle3of5/Readme.txt",
+      "sha256": "8b44cb570c662883c81232d9478f96499eddd2d7f3de612b190bc8e59a997e1b",
+      "copy": "provenance/part-3/Readme.txt"
+    },
+    {
+      "source": "Sonniss.com-GDC2026-GameAudioBundle4of5/License - GDC Game Audio.pdf",
+      "sha256": "8a26e0113e8b00a4dc953a2d568d326bc780ebd792165f9bb604cb26010dee27",
+      "copy": "provenance/part-4/License - GDC Game Audio.pdf"
+    },
+    {
+      "source": "Sonniss.com-GDC2026-GameAudioBundle4of5/Readme.txt",
+      "sha256": "8b44cb570c662883c81232d9478f96499eddd2d7f3de612b190bc8e59a997e1b",
+      "copy": "provenance/part-4/Readme.txt"
+    },
+    {
+      "source": "Sonniss.com-GDC2026-GameAudioBundle5of5/License - GDC Game Audio.pdf",
+      "sha256": "8a26e0113e8b00a4dc953a2d568d326bc780ebd792165f9bb604cb26010dee27",
+      "copy": "provenance/part-5/License - GDC Game Audio.pdf"
+    },
+    {
+      "source": "Sonniss.com-GDC2026-GameAudioBundle5of5/Readme.txt",
+      "sha256": "8b44cb570c662883c81232d9478f96499eddd2d7f3de612b190bc8e59a997e1b",
+      "copy": "provenance/part-5/Readme.txt"
+    }
+  ],
+  "complete_prior_inventory": "../reborn-01/inventory.json"
+}

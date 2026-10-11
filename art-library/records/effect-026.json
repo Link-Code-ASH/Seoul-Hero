@@ -1,0 +1,34 @@
+{
+  "id": "effect-026",
+  "status": "complete",
+  "revision": "v01",
+  "files": [
+    {
+      "path": "originals/effect/effect-026/v01/original.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "cbf5ea7003ef93c3c2b3e00ea20862353687279f45e98d503173c2ee5ab04f9c",
+      "alphaChannel": true,
+      "hasTransparency": true
+    }
+  ],
+  "thumbnail": "thumbnails/effect-026-v01.png",
+  "source": {
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\geniu\\.codex\\generated_images\\01a10b3b-6dc9-7b13-a092-b8ab3abd33e2\\exec-7c17f5c5-c317-4cae-b7ff-bee5e9168d0f.png",
+    "promptPath": "originals/effect/effect-026/v01/prompt.txt",
+    "referenceIds": [
+      "effect-style"
+    ],
+    "createdAt": "2026-10-07T15:48:45.293Z",
+    "inputMode": "new-from-verbal-style",
+    "imageInputsProvided": false,
+    "imageInputs": []
+  },
+  "review": {
+    "userApproval": "pending",
+    "notes": "생성 원본과 실제 alpha 합성 접촉 시트에서 개별 형태·전체 외곽선·깨끗한 투명 배경을 확인했습니다.",
+    "visualChecked": true,
+    "reviewedAt": "2026-10-07T15:57:07.750Z"
+  }
+}

@@ -1,0 +1,564 @@
+{
+  "revision": "reborn-02",
+  "authorization": "User approved fixed-identity SFX/ambience rebuild using provided original library",
+  "cues": 117,
+  "one_shot_cues": 111,
+  "ambience_cues": 6,
+  "files": 117,
+  "bytes": 23073468,
+  "assets": [
+    {
+      "file": "assets/audio/sfx/reborn-02/purchase/01.wav",
+      "sha256": "f84f3b65d039f9b4bbb86adbecce7b23e2f3c6664a51131149732f495ac5096e"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-02/reroll/01.wav",
+      "sha256": "40e5d0cbb0183f8dd0fdb403cb81a669ac7b3ad64e4f968af13af53fc1b04f6a"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-02/lock/01.wav",
+      "sha256": "72fe6a9c1e69f79c339391a9a3f68cdcedbe29658ec5bfafdf324da8c08e45ba"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-02/weaponPurchase/01.wav",
+      "sha256": "1c2a916d85faf2712747edd6ccfb955f6a9f32475f56f3df39c58108984fa615"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-02/branchChoice/01.wav",
+      "sha256": "fe13d74afb9c97f168318910af4f01f92ed6394050a8033a75d53a1ab48c30f5"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-02/eliteSpawned/01.wav",
+      "sha256": "47226bba71bd6daf19de8d72f848b76d4a4849c0f99226428f69b3f0801c1262"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-02/waveStarted/01.wav",
+      "sha256": "0fa482ade7cf63add8f3f5e7284e0ed620cf5b33844554ad8175fd901a3dfb48"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-02/waveCompleted/01.wav",
+      "sha256": "0277acc4bfc27598e44a1d4f8e065c8f735ee34aea212cbfbc06241ea0730139"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-02/waveCountdownTick/01.wav",
+      "sha256": "bbb67ecef42e0fec63ac82bd930fccb2a9a2543dfb9bb9b543a9cbe4dd460e32"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-02/slashAttack/01.wav",
+      "sha256": "ce4c898f491f8ad94caddd9133760a83a8e9a245262a01ab3825f3e87035e5bf"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-02/orbitAttack/01.wav",
+      "sha256": "3ca4f054e1c3a17e76ffcb3f25ef1763eaf263b322e13ef20317b7aab0e5e274"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-02/chainAttack/01.wav",
+      "sha256": "b140dd61eb2f37d9acd681e8773b31867b184b39b4e8299b5b68bf0e0ab054e0"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-02/bombardAttack/01.wav",
+      "sha256": "95e166af340bf6e35192fd028370e7de9099e0ac17ca2f82e84f4b932d6bb4b9"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-02/piercingAttack/01.wav",
+      "sha256": "72baa9163ef366f32b2ed774e4aec181bc7c76c9b10507f4a33d187ba0733be7"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-02/turretFired/01.wav",
+      "sha256": "a57e02b68723686f3ff012e304a2e076ef47bf663cf80903b7032197be6ce554"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-02/minePlaced/01.wav",
+      "sha256": "e96416b9a6f33438c3e9d5113c207f9805992dd3be96c412e631c96848b10a06"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-02/mineExploded/01.wav",
+      "sha256": "9bf09c83045219387e94d51a5f508a097fc60bc37d441f2215fddf9d2350c01e"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-02/fieldActivated/01.wav",
+      "sha256": "4048a13f39d0d4baec5e55300d027079c7ccafbf522b3deaaecdc5eca6a1fe2f"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-02/weaponFired/01.wav",
+      "sha256": "b01066680edf11bc1f39c9c64e0ec37c85b134aa41694746b4d022bdb703a844"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-02/enemyHit/01.wav",
+      "sha256": "9633137daba9aa0fad9ca919e4549d7ef82804f057dbe6b1ebcea8a00492684c"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-02/enemyKilled/01.wav",
+      "sha256": "f5ddc093a1b849366cb6b3f0c08f771183723ef13360a1abfb1c332e2cdfffd7"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-02/magicStoneCollected/01.wav",
+      "sha256": "a8636d5a6cab2ba38d28387cf69a1e2254fbb5018a5e3b19906ab4adeded8729"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-02/walletSweep/01.wav",
+      "sha256": "a13eee3313f1027c4000353a5a85c8745535c7d08106ff788adadf7b9f7666f2"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-02/buttonClick/01.wav",
+      "sha256": "bea273bd5650056232c4fecdd760a2a5da2feb18cd1d0bedc4ffd8e2cf54fb97"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-02/supplyLatch/01.wav",
+      "sha256": "7d428e9e737fa4b3f258a7e003f92c393187ed3be8baf529f4fdb68ab8cd4464"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-02/supplyFanfare/01.wav",
+      "sha256": "562818b0d177dbac229ad60a02143fe657d476e129d45680a77871e902e3b312"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-02/playerHit/01.wav",
+      "sha256": "fb29cda954a11a56355d853439cb942bd34cbf90506fb4ebf7bae02c07bc8499"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-02/bossSpawned/01.wav",
+      "sha256": "5afaad91b339c88bac8fe58a6b0da31d86c7bcd10b1fd074ea12e2afc36e030f"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-02/stageClear/01.wav",
+      "sha256": "38a3afa26ac9f182fc2c9276eb6009f33d8bfe5fc4a6efc91c66504036dbd3f1"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-02/gameOver/01.wav",
+      "sha256": "60e053443a01f68895f4392275bb83b51bab09a07c2e36aa2bece40b3c4f55b3"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-02/shotgunAttack/01.wav",
+      "sha256": "3336b7910d2934b87cebc1e62ca78e6959e98aec7c55a945a73610cd2cd71634"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-02/bombardLaunch/01.wav",
+      "sha256": "5337b3b872ae56b295e6e4aa917332381a560a3ff97210b669bd1970681448b4"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-02/chainHop/01.wav",
+      "sha256": "615a0c5d7637d9fcc8b88ac26e62930e46cbf4f04b84f5bcdeca52938653e9de"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-02/enemyProjectile/01.wav",
+      "sha256": "eca9ededdeee03829cb019ae465e0254f6f63fcba586085adc7d5b2df966c6a4"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-02/enemyCharge/01.wav",
+      "sha256": "3d1fa27c21b8820202a2ccbff915b83641ca33bf721e99e73bc2dbb9ae4fc62d"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-02/enemySupport/01.wav",
+      "sha256": "8dd9adbf87c37428132365d59dcebaa8c0731471edfa3056e57f0cd5389cf45c"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-02/enemyDetonate/01.wav",
+      "sha256": "7bf42873fbc916e52c9c6f560a25d67ddffab2cde82a2dd331e2efec5115a1e2"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-02/bossAttack/01.wav",
+      "sha256": "107c899b73647acb03dda806d431fc393968c3d00d3b47f4c87fd950c6de8174"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-02/lobbyRain/01.wav",
+      "sha256": "0669000f36b68da8d8e7426dfdb995f51f9afd30e1d26d25cfc5c91968ea3493"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-02/lobbyWind/01.wav",
+      "sha256": "f895e8a02769a3b98c40bc503abe1d49ffe55b4170d2dbe780eadace2db9e5aa"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-02/lobbyGate/01.wav",
+      "sha256": "70a66deef4505f24c61392475bc1be3cef46b4da969996dbb3207cbc86210870"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-02/lobbyWinter/01.wav",
+      "sha256": "39ccbe9d8c617b5fbf246eb37f044a11ab1fed097d49d116104a0bbd3ff42f0e"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-02/lobbyRoof/01.wav",
+      "sha256": "b778476b7e0e7da9812a8c787dca7d471dce85380ea5cf27ba560d7e5aa001a4"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-02/hit_manaSword_soft/01.wav",
+      "sha256": "8aaeda5dca118e3a311f4f772256884d120d4aae7f3d2388faa68ce5576669d7"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-02/hit_manaSword_metal/01.wav",
+      "sha256": "7f13b2c3471cf532ebd2ef67c8c2313ac29f2d07e598ef78f8474aa26c4420c8"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-02/hit_manaSword_stone/01.wav",
+      "sha256": "9ed6d5e18ff131dc85c355cf755eea9adec69cfc0adc026df486b86c02e70d62"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-02/hit_manaSword_crystal/01.wav",
+      "sha256": "55442e98f7c60ea6b55d69682ab244956b2f73afeb62187d9eb68568fe653795"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-02/hit_manaSword_energy/01.wav",
+      "sha256": "8fea1446cc434d1a2501e66a38b41afe50733d8e8044c9895792462776a3737e"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-02/hit_manaSword_paper/01.wav",
+      "sha256": "035d10cfb67bb156b8a811cb92fb004b3aae92ee8bcafb7f467ff56a9253042c"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-02/hit_guardianDaggers_soft/01.wav",
+      "sha256": "b270c4520e13882c34837555fede80bf8774d2db6e9560552e372a06eb4ed870"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-02/hit_guardianDaggers_metal/01.wav",
+      "sha256": "50ab6bbedd161b591cb3392bd80a58e897ea21b1ccb086f99169cc4489539398"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-02/hit_guardianDaggers_stone/01.wav",
+      "sha256": "1107ec1a3339dd94a872d0b244924b51d770f4d3d0a669af0b0a698ae302f9dd"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-02/hit_guardianDaggers_crystal/01.wav",
+      "sha256": "db72018010f3838bb5accfa9bf412a09582c6f0a08ecf17e4e64317733c1af1e"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-02/hit_guardianDaggers_energy/01.wav",
+      "sha256": "bf4fa4e5acded30757952c8f78ccd2320d77f172b42ffc89da064216f71356bd"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-02/hit_guardianDaggers_paper/01.wav",
+      "sha256": "86da547b97a40c0e623d289028915e1a4916b7f9e2c32f7cb5ed275d39f43cad"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-02/hit_piercingShot_soft/01.wav",
+      "sha256": "0fd8458e5dbfe428bfe1d3d47cbdde095ce19f8ed2e417b66b831774772d2f71"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-02/hit_piercingShot_metal/01.wav",
+      "sha256": "788f9367eca6fab0707637e0f5405aee3c88d5de7920dd528d7fd52bd5c34b1b"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-02/hit_piercingShot_stone/01.wav",
+      "sha256": "04bfa294dbb9bc776889900e24bdf0044712bd02d451ccd67b5b69fc965872c3"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-02/hit_piercingShot_crystal/01.wav",
+      "sha256": "c123eddd7d8e906e2d4e7a52fef31ae8ed49d98fb2b742e040f4954983f2ee2d"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-02/hit_piercingShot_energy/01.wav",
+      "sha256": "3b3efdca47c47257b995c91d2e5d05bd74c1107c8c62a109d086580d35c2c4ae"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-02/hit_piercingShot_paper/01.wav",
+      "sha256": "077bf322759fbe15b48e704850a04a98b31959c06438569b0d89de1d68e81cf1"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-02/hit_chainLightning_soft/01.wav",
+      "sha256": "ae68a85358a55c0efde33b25d155709bf223c66ef3bd46d16e45cfdf41958ddc"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-02/hit_chainLightning_metal/01.wav",
+      "sha256": "7a2c0a9e441ab8b888b9968bf2f1504d8fd8f4c2983d16bed9f07b82dd169007"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-02/hit_chainLightning_stone/01.wav",
+      "sha256": "e4fb65d136ee3b4f6e196a591938c3bfda13090b5f3555da2aeb396d87e31501"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-02/hit_chainLightning_crystal/01.wav",
+      "sha256": "06d6a194b5cef77b844726d7d18bd2aabb1b07b1a6ea2f6d950ad514266ac812"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-02/hit_chainLightning_energy/01.wav",
+      "sha256": "b347de35f0b5349ddbe6107995da11836160934fe5152f226637666bbe121da3"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-02/hit_chainLightning_paper/01.wav",
+      "sha256": "54acb0c3b65409bf57ad77ce9a52efc428e15851acdbee67db35b319e61c5d11"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-02/hit_manaBombard_soft/01.wav",
+      "sha256": "ee92d2904037d5b4ccc88792563d897c2978645131fc7e7995fdbbc74ea1414b"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-02/hit_manaBombard_metal/01.wav",
+      "sha256": "70aba42c42c9089aa8fb0e2372bc29b674dda03f7b76e21ef4e9b09a0b9dac62"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-02/hit_manaBombard_stone/01.wav",
+      "sha256": "5d6234c5f73ca4b57520de1d94b96875888b432bb0aa2259414e3369f3afab4d"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-02/hit_manaBombard_crystal/01.wav",
+      "sha256": "c9a6bececd0ad44853e375821715e2fca2e44ec9cdefb11e8d9bf896915f9f1d"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-02/hit_manaBombard_energy/01.wav",
+      "sha256": "afec58d46cf4c7b038eb30659282517bfeba1763db3c962a8e39e14aead8bc5a"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-02/hit_manaBombard_paper/01.wav",
+      "sha256": "168605864a9cb7a7dbbd520ccbaedc217770ac0fe586a0e6bc5e3cfc924a3144"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-02/hit_manaBolt_soft/01.wav",
+      "sha256": "390820b8bec71d2f7cee77ef0e7a11f4d7de9fe4df432ea86d3f9b354cfaf03f"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-02/hit_manaBolt_metal/01.wav",
+      "sha256": "2f1e1cdba69b354cf8e7a20d0534f4bf789c0aa743895d3cd259343ad36cf789"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-02/hit_manaBolt_stone/01.wav",
+      "sha256": "db2d5cadd1c723e58355c3e8cb361051adbd558dd1d4f2cd06be7dc9dabdec3e"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-02/hit_manaBolt_crystal/01.wav",
+      "sha256": "e2fd0477d05ca050b2a9a464c9da3b9b7fa06cb733100a46913771fb3ff6f866"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-02/hit_manaBolt_energy/01.wav",
+      "sha256": "387ed9f476760eab51ae73aa7e896fb4f189e7a7d9c224a8fe061f3bb07aac9a"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-02/hit_manaBolt_paper/01.wav",
+      "sha256": "fe20720f938f86df716d69fbcabd834b220603f668da21e057bc178912cabca1"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-02/hit_manaShotgun_soft/01.wav",
+      "sha256": "683fcf90312113a20d0464f9bac440858e32a27d07ef992b4340947cfd85b18e"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-02/hit_manaShotgun_metal/01.wav",
+      "sha256": "b28f207f06d37af552ae4db5682bb7f1d08ab59a330b191f5702792160b3befb"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-02/hit_manaShotgun_stone/01.wav",
+      "sha256": "9eb9df001b19ab3f5341b21711f10d59aac59279d2a51a077ae26d44b142da5b"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-02/hit_manaShotgun_crystal/01.wav",
+      "sha256": "ed3c671a8edace6e6aa21bd5bb9d85736c8697a6ac8d554014a5cefd8469b615"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-02/hit_manaShotgun_energy/01.wav",
+      "sha256": "709859de1a9303273b24596f4d750c3fa3a5212c839fbd7bd26ba1f677f0cb3c"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-02/hit_manaShotgun_paper/01.wav",
+      "sha256": "f10c2600daf65486036532579af46edc98344aa6db9c0494c995f5cf5cb78e05"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-02/hit_autoTurret_soft/01.wav",
+      "sha256": "220fa7a01ca4926c92c66d94c28f05dd239c0ea2408289f83c973067412ab637"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-02/hit_autoTurret_metal/01.wav",
+      "sha256": "9a297399e99b6d02c1bbc900c1c1a2281b0f5864ee299e57d0256cdd097a611b"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-02/hit_autoTurret_stone/01.wav",
+      "sha256": "f238537bf4f8bdb78c9aecfe4a0087c1e7099503dec8dd56aedd475e82e600e2"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-02/hit_autoTurret_crystal/01.wav",
+      "sha256": "6fb5db7f6d60e03256f9f6428dc6ab7594ce497cdb37b305f42ef05bc3db9d5f"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-02/hit_autoTurret_energy/01.wav",
+      "sha256": "b8f40a61515f6fad215d6387d2d5138909c7cf3a29261d0187c65cc7d126e865"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-02/hit_autoTurret_paper/01.wav",
+      "sha256": "bf218d5b2d3186680988ad2c0c9182dbb9120f90d4d6b3584187a68090a508ed"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-02/hit_mineLayer_soft/01.wav",
+      "sha256": "678002e6e7e0ee4307d9346e6f4c7621348f359adda4dddcd73f12c401697fce"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-02/hit_mineLayer_metal/01.wav",
+      "sha256": "8e490c41937cfa0965c2e9bdef2365b2a89251983b3110dd38b7ce5ac011044d"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-02/hit_mineLayer_stone/01.wav",
+      "sha256": "d1eb9b075f0e7c8b6e43d6b644050a435c90105f58a48896082b2ec3f261b34f"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-02/hit_mineLayer_crystal/01.wav",
+      "sha256": "8c5a622335a2151fd66afd3769a1c8932d8909f3044127c9e499a01ebf565a47"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-02/hit_mineLayer_energy/01.wav",
+      "sha256": "0c1e4ae899928ac070e2e7f982700dd044345d88a0fd5603c32307a6d3643d2a"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-02/hit_mineLayer_paper/01.wav",
+      "sha256": "78ff5de7dc467ae0933c8f8fa31819a4536844ad2eabba22fae1e5fa2cb9313a"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-02/death_soft/01.wav",
+      "sha256": "ffe276cf0a2354c786c576b0ddf6d8a3aeb1e6b1aa686b6b21e0b395721ffb50"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-02/death_metal/01.wav",
+      "sha256": "540a3f916dc45ff26ca1ab51ea6552a7ed09680e62567f02555ecc33684fcf5e"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-02/death_stone/01.wav",
+      "sha256": "b23b396ae0fa7e24ecd72521c7f0cd7ade6ab6b21527afa3d364be19aff81e29"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-02/death_crystal/01.wav",
+      "sha256": "9075a2c59bab4706e0f09989db9e80afe6b8923c9612087ea5504882b361f86e"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-02/death_energy/01.wav",
+      "sha256": "9277492459444d2c403574a41737101ef2807e74b64ce3524d2e75d0d3f7e865"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-02/death_paper/01.wav",
+      "sha256": "0a5d429398d1e52b284df05091ea9e130304e1b098d9f1bca737260e1112fd7a"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-02/pickup_magicStone/01.wav",
+      "sha256": "d6cfa0774910ecbf7c6c2c6f02686bda03693a3cfce2a4cce8aba9e4fa1d2046"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-02/pickup_associationCoin/01.wav",
+      "sha256": "e13ada945774a1570e0191b449423a0952584bc5fc84d2364e4305923468f9a4"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-02/pickup_revival_low/01.wav",
+      "sha256": "a4f22eef095a7699e6890439f4545635f329dfbf92d6d02102e4c3822f220dbd"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-02/pickup_revival_mid/01.wav",
+      "sha256": "27de008d1893f6badcdb23c2a42e4ebdfa9d1d20d07be3989ca03bfadbf412d3"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-02/pickup_revival_high/01.wav",
+      "sha256": "62e4b8b8e58f792e6d8295295fe1370d0b47d5e42060f6baf819369ea8241b55"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-02/item_consumable/01.wav",
+      "sha256": "021534efc26cfb21828b6e6231707313493cebe070e0d9336ecdd7e3b4b279dd"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-02/item_cloth/01.wav",
+      "sha256": "2337260643b0e5e86296ff4faf5ba2e057fabe12710df8b858ad504a403ba761"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-02/item_optic/01.wav",
+      "sha256": "d2b2d1b342ddd04d43e66526ac171d53001e4d327a5de2dee6d3385c173900d6"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-02/item_paper/01.wav",
+      "sha256": "47f2c192e2e5c445bb2ac2812aa2aa0ab22c7ed2142ede4843c68c88b1c41a66"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-02/item_metal/01.wav",
+      "sha256": "475a8736191f96c4a8073c684545c72592657206a9193dad8ca95b68433efbe7"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-02/item_arcane/01.wav",
+      "sha256": "8b3b26600bfcf1cf98fa4a827a37c47e8f149546501963584707ddbbdfddfe43"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-02/item_circuitry/01.wav",
+      "sha256": "b025384137f195fe2faca2935be0fe03fcb00e1a0174381c2fb1856a944215de"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-02/officeDay/01.wav",
+      "sha256": "cee52340a2c7ee263f8656463112d0c9c9fe91b33db956baa12ddeceb4bf0af7"
+    },
+    {
+      "file": "assets/audio/sfx/reborn-02/critical/01.wav",
+      "sha256": "9633137daba9aa0fad9ca919e4549d7ef82804f057dbe6b1ebcea8a00492684c"
+    }
+  ],
+  "originals": {
+    "Sonniss.com-GDC2026-GameAudioBundle2of5/Cinematic Sound Design - UI Interaction Elements/Ting Coins.wav": "7467e2687c5b9bf3cedebd0fcb3af58f7eaeffdd7201a97790daf3c87c42f1a1",
+    "Sonniss.com-GDC2026-GameAudioBundle2of5/CB_Sounddesign - Applicable Sounds - Organic UI and Building Games SFX/UIMisc_Kalimba 3 Up_CB Sounddesign_APPlicable Sounds.wav": "0298f3405836720e064d1ff486f58fa032b03009d6f9e55e668b84e759dca360",
+    "Sonniss.com-GDC2026-GameAudioBundle4of5/Sonic Bat - Vintage Radio/SBvr_Mode Select Wheel 006.wav": "93d9dac69dc063d3b8e243f8d7dd8b100fba17567f67958840b318163af0a83b",
+    "Sonniss.com-GDC2026-GameAudioBundle2of5/Epic Stock Media - Board Game - Sound Set Kit for Tabletop and Digital Games/GAMEBoard_Event Board Reset Organic Multiple Pieces Wood Small 02_ESM_BG.wav": "8ee324529ccf157cc0f3f64c6965706f4dc320a4ecd300f9a45309ab24cfb197",
+    "Sonniss.com-GDC2026-GameAudioBundle2of5/Cinematic Sound Design - Interface & Infographics/Interface Percussion Snap.wav": "cd45df5914d9b430f94699dd20c7d290220680eb7cb5b55d64ed20ff18f6c7ba",
+    "Sonniss.com-GDC2026-GameAudioBundle3of5/InMotionAudio - Instrument Case/OBJLug_Case_Closed06_InMotionAudio_InstrumentCase.wav": "9d56118b0a4f351b33e9761b5f72873da78ad1c030f8a91a437ae1b443887208",
+    "Sonniss.com-GDC2026-GameAudioBundle1of5/344 Audio - Antique Small Metals/METLMvmt_  Tinkering Antique Lock_344 Audio_Antique Small Metals.wav": "54e94d781cbc234c393ec6b99b4b00ab0adbfb54cf6203cde3d83afe3280474e",
+    "Sonniss.com-GDC2026-GameAudioBundle1of5/344 Audio - Antique Small Metals/METLMvmt_  Antique Measuring Tape_344 Audio_Antique Small Metals.wav": "2443580b380f6d5565bda7054f958b6610028e83d1555d13d6260281326d5991",
+    "Sonniss.com-GDC2026-GameAudioBundle2of5/Cinematic Sound Design - Hybrid Game & UI Elements/Game Entry Happy Short.wav": "8ccca44905900169d322f1a0cb4afac4be4afa372c4242bf6484cb081b42f94b",
+    "Sonniss.com-GDC2026-GameAudioBundle2of5/Epic Stock Media - Fantasy Game 2 - Sound Kit for Enchanted Realms/MAGAngl_Magic Light Spell Enchantment Potion Effect Tonal Bright 03_ESM_FG2.wav": "66fd5c33f2b5e221dce96ba2e24a172683c8c696621d8567ef895627d981d869",
+    "Sonniss.com-GDC2026-GameAudioBundle2of5/Epic Stock Media - Anime Game/DSGNStngr_Power Up Bright Positive Successful Light Saturation Crash Shimmer 05_ESM_AG.wav": "3bf090678bb55da7d38f2bf76ac6a8d826f5245452a36d54666d2597c0be0299",
+    "Sonniss.com-GDC2026-GameAudioBundle2of5/Federico Soler - Effective Trailer Alarms Vol. 2/EffectiveTrailer_Alarms_Vol2_HalfNotes_003.wav": "2e80ebdb47942072a6776eb72b190d83d91a9807ddd54795e0a59a17f2546fc0",
+    "Sonniss.com-GDC2026-GameAudioBundle5of5/The Noisery - Moaning Metal/DSGNImpt_Metal Hit Thud Thump Low Ring Geofon 1_The Noisery_Moaning Metal.wav": "9ae80f5d33c8b717fd3e530473387fc49ad6009725ea4d98fec4654874ae9f5c",
+    "Sonniss.com-GDC2026-GameAudioBundle1of5/344 Audio - Cinematic Fight Vol. 1/FGHTImpt_4 x Punch, Body 02_344 Audio_Cinematic Fight Vol 1.wav": "606f7d8bdca261f6fee6a30e19fc8a760c469e599dc0747ecb272a24d4821a31",
+    "Sonniss.com-GDC2026-GameAudioBundle2of5/Cinematic Sound Design - User Interface/Interface Plucks Happy.wav": "a6866b6e04580d6f4007c59514a5530c7699f785beb27b2eda6a2b4579478ded",
+    "Sonniss.com-GDC2026-GameAudioBundle2of5/Epic Stock Media - HD Lock And Mechanism Sound Design Kit/MACHMech_Mechanism Counting Machine Interact Loose Container Short 01_ESM_HDLM.wav": "22a02e08af147649519a9081ac77e13e711387944a13bb8688ae5997c6efd968",
+    "Sonniss.com-GDC2026-GameAudioBundle4of5/Sonic Bat - Music Boxes/SBmb_Music Box C 059.wav": "9ae237a94eaf66eb842c4e8b38f6f53119555139b2861a022d77a58174170571",
+    "Sonniss.com-GDC2026-GameAudioBundle1of5/344 Audio - Antique Clocks/CLOCKTick_You're Running Late _344 Audio_Antique Clocks.wav": "88cc8430cffdfdf9ed0c77d873cfa5040487aa1c837738fd59d7c39ae246f169",
+    "Sonniss.com-GDC2026-GameAudioBundle1of5/344 Audio - Historical Weapons Vol. 2/WEAPSwrd_Sword Slide Cuts, Metallic, Impact CM4 2_344 Audio_Medieval Weapons Vol 2.wav": "adbe3d9d5da0a987de3d4d845b62a4231862febf9ca673f8d1067fc1787eee00",
+    "Sonniss.com-GDC2026-GameAudioBundle3of5/InMotionAudio - Foley T-Shirt/FOLYClth_ClothMovement29_InMotionAudio_FoleyT-Shirt.wav": "1846b563bf07a534a580dab0848d6c6d59b8f3d697bac328ad7d04e9dc6cdb30",
+    "Sonniss.com-GDC2026-GameAudioBundle2of5/Epic Stock Media - Elemental Mutation Whooshes and Impacts/ELECMisc_Impact Electric Tonal Deep Movement Motion Hiss Glitch 01_ESM_EMWI.wav": "0335965a164090995413897e71b87f04501d519222873a4301e928bf8940de38",
+    "Sonniss.com-GDC2026-GameAudioBundle2of5/Alexander Kopeikin - 100 kHz Designed Ice/ice, surface cracking, fissure, fast, hard-003.wav": "d72b1b6ea0228b71f9a7a88e0b8a4ad61da313506aa1636c1969765bacec6a12",
+    "Sonniss.com-GDC2026-GameAudioBundle2of5/Federico Soler - Effective Trailer Booms Vol. 2/EffectiveTrailer_Booms_Vol2_075.wav": "c25fe59d7b6cec9c8b14d9ccd774ef11ff43d80a48c07624e5d3e33437fd0850",
+    "Sonniss.com-GDC2026-GameAudioBundle2of5/Alexander Kopeikin - 100 kHz Designed Ice/ice, block of ice crushed, heavy-015.wav": "daf4e7d3087ab4cff41985396f51751637e1980648b07b404c939d797d38f69a",
+    "Sonniss.com-GDC2026-GameAudioBundle2of5/Cinematic Sound Design - Colossal Impacts/Impact Cut Sweep.wav": "e6b918055aa5ed53917ad217ed9077b0bfff5b0c7bcf97d07ba48be492b61b21",
+    "Sonniss.com-GDC2026-GameAudioBundle2of5/Epic Stock Media - Anime Game/FGHTImpt_Combat Punch Impact Light Hit Delay Crunchy Vintage Quick Smack 05_ESM_AG.wav": "55cb8102db4d8728c2607279b4e381f27336db35bb966e5f4993c9ace2cd9ecd",
+    "Sonniss.com-GDC2026-GameAudioBundle2of5/Epic Stock Media - Tower Defense Game/ROBTMvmt_Tower Deploy Hitech Robot Motor Dark Thump Servo Whine 04_ESM_TDG.wav": "c9f2c8b24ce6ae6fb7b519b2bbcdb2503816ca5cdd6c8f81ee3fc27149600d48",
+    "Sonniss.com-GDC2026-GameAudioBundle3of5/InMotionAudio - Saxophone/MUSCInst_KeyPress64_InMotionAudio_Saxophone.wav": "bc8bac5955e4a7b5c7a47120d402b1b58d4e28acb133cec96b1d01105371137e",
+    "Sonniss.com-GDC2026-GameAudioBundle2of5/Federico Soler - Effective Trailer Booms Vol. 2/EffectiveTrailer_Booms_Vol2_011.wav": "f3a4426e9cf9f50a8ebb4a33a095be5522abc48a7e1f9b484fdcee082d9b70d6",
+    "Sonniss.com-GDC2026-GameAudioBundle3of5/InMotionAudio - Instrument Case/OBJLug_CaseDown_Concrete12_InMotionAudio_InstrumentCase.wav": "8c0840e15c5b1494449549ab3fd544a05064f792720871d0bb8e6c6babc3f8f3",
+    "Sonniss.com-GDC2026-GameAudioBundle2of5/CB_Sounddesign - Applicable Sounds - Organic UI and Building Games SFX/GAMEMisc_Magic Creation 23_CB Sounddesign_APPlicable Sounds.wav": "061a4899d8c85abcd53eb074cbb81c56ab3688692c2838a1cdf20e64b03b506c",
+    "Sonniss.com-GDC2026-GameAudioBundle3of5/InMotionAudio - Arc/ELECBuzz_Buzz27_InMotionAudio_Arc.wav": "79449b8d5cc8bc35eb37e1de70a1933a60d8988e5c1d2ccf6f312542ae8e0a53",
+    "Sonniss.com-GDC2026-GameAudioBundle2of5/Cinematic Sound Design - Interface & Infographics/Interface Accept Glassy Snap.wav": "7c4337c429b72efa3731e2fb970f32e87ca39a6dd62adce1a6779f9e809a3444",
+    "Sonniss.com-GDC2026-GameAudioBundle2of5/Epic Stock Media - Tower Defense Game/WOODImpt_Hit Blood Spill Splat Wood Impact Light Hit Squelch Small Thump 03_ESM_TDG.wav": "022152183544436b2e7ae8c82ae3cb1cff6dff5e9c0153e1096a1b638e90e518",
+    "Sonniss.com-GDC2026-GameAudioBundle4of5/Sonic Bat - Music Boxes/SBmb_Music Box A 013.wav": "18fca8bffc680194363e308a83d88b007231dec4217ed180061f929f57b839fe",
+    "Sonniss.com-GDC2026-GameAudioBundle2of5/Epic Stock Media - Board Game - Sound Set Kit for Tabletop and Digital Games/UIClick_UI Button Analog Vintage Double Click Neutral Dry Press 11_ESM_BG.wav": "e7029246db8489ceb4be234e5b861926a441e0bce4cb341e51e90ad2421baccb",
+    "Sonniss.com-GDC2026-GameAudioBundle3of5/InMotionAudio - Instrument Case/OBJLug_Handle_Movement15_InMotionAudio_InstrumentCase.wav": "8fc6f4eef79bc3ad102b27e4cd69ce2c95774dcd1044825b135f1c3e05834417",
+    "Sonniss.com-GDC2026-GameAudioBundle2of5/Cinematic Sound Design - System & UI Feedback Elements/Interface Arp Reveal Down Long.wav": "b289ca1213e055d706da72741f4c2c4de7cbecbabd0601b9a8e21f64549a06eb",
+    "Sonniss.com-GDC2026-GameAudioBundle2of5/Cinematic Sound Design - System & UI Feedback Elements/Interface Deny Low Fat Dark.wav": "b63554a4791b9d7c034e2e49e2383971870394d4a70d9e3c2bc6f99fb2fcc101",
+    "Sonniss.com-GDC2026-GameAudioBundle2of5/David Dumais Audio - Melee Weapons Sound Effects Pack 2/WEAPWhip_WHIP Snap Crack 05_DDUMAIS_MWP2.wav": "6f6d12cf051d597e34f58b65bcceb454a4673a4b230065d90f93636b49ec9f48",
+    "Sonniss.com-GDC2026-GameAudioBundle2of5/Epic Stock Media - Elemental Mutation Whooshes and Impacts/GLASMvmt_Whoosh Glass Crystal Fragments Sharp Shards Dry 05_ESM_EMWI.wav": "3c9eecab76ef681d0e2476eedc9ad550c48f68ad42c1431acaf7ec36532f68c8",
+    "Sonniss.com-GDC2026-GameAudioBundle1of5/344 Audio - Elemental Palette Designed Vol. 1/WINDDsgn_Wind, Rush, Whoosh, Long x5 01_344 Audio_Elemental Palette Designed Vol 1.wav": "81bc00b7592a0bc7cf34023cead68586e5a924743c294477820418590d4b1d6d",
+    "Sonniss.com-GDC2026-GameAudioBundle2of5/Epic Stock Media - Fantasy Game 2 - Sound Kit for Enchanted Realms/UIAlert_Collect Scifi Futuristic Electronic Bass Burst Sweep Heavy 04_ESM_FG2.wav": "98c50fe281d7709223a25ba4ad06bfa4de75426e0b69f831ba75b64d69f759ec",
+    "Sonniss.com-GDC2026-GameAudioBundle2of5/Epic Stock Media - Elemental Mutation Whooshes and Impacts/WATRImpt_Impact Water Deep Submerge Bubble Drown Ship Hit 05_ESM_EMWI.wav": "c1e1a20e310e259427889692846b2d561cd12d61ab4cf255fb8be6cfc5f82dae",
+    "Sonniss.com-GDC2026-GameAudioBundle2of5/Cinematic Sound Design - Interface & Infographics/Interface Pop High Short.wav": "8ac9cb88514baf7b59031e1eacf9a1866daa2470f6b72fefdb75df2871032546",
+    "Sonniss.com-GDC2026-GameAudioBundle2of5/Epic Stock Media - Elemental Mutation Whooshes and Impacts/FIREWhsh_Whoosh Fire Deep Growl Monster Saturated Crisp 03_ESM_EMWI.wav": "344c8a9a31205fd5842feea827a491d89528f7db1ee5b1ffd4a3a018e23395ef",
+    "Sonniss.com-GDC2026-GameAudioBundle2of5/Epic Stock Media - HD Lock And Mechanism Sound Design Kit/MECHLtch_Click Deep Mechanism Latch Button Nearfield Thunk 02_ESM_HDLM.wav": "5f356988a83acf9f320e72ad31f08a80668f9bf0474658fb50f76d5cc3b8ca10",
+    "Sonniss.com-GDC2026-GameAudioBundle2of5/Epic Stock Media - Anime Game/DSGNMisc_Misc Monster Tentacle Modulated Creature Shadow Abstract Swept Wobble Lfo 02_ESM_AG.wav": "d10c51599a12fbf9bcd9e73bc44bddd040029265fd33a514ff145396d7aebc2c",
+    "Sonniss.com-GDC2026-GameAudioBundle5of5/The Noisery - City Rain/RAINConc_Rain Medium Exterior Splatter City Traffic 6_The Noisery_City Rain.wav": "b91da0359fda43028cded0b18f9f3f4fc8fb1204144a70878658b322116ae9c1",
+    "Sonniss.com-GDC2026-GameAudioBundle3of5/Jake Fielding - Interior Wind Rain and Storms/RAINInt_Heavy Rain on Window,  Constant _JF_INT Storm.wav": "1b7d8015e24167ad3670ea4598696dc374b2e28b5a558e938db0f6b721098443",
+    "Sonniss.com-GDC2026-GameAudioBundle2of5/Epic Stock Media - Public Spaces - Storms Lakes Parks and Rural Nature Exteriors/AMBPark_Berlin City Humboldthain Park Strong Wind On Trees Foliage Traffic Wash 03_ESM_CPS.wav": "db582c5d72e929ba2587bf19362da47ef18dcb1034f2940bf024cb1e2c38ebf3",
+    "Sonniss.com-GDC2026-GameAudioBundle3of5/InMotionAudio - Chimney Wind/WINDInt_ChimneyWind05_InMotionAudio_ChimneyWind.wav": "de71c402bcbc62b185b3f963d514aec61c561cda9b3c2ad15d5ab8fca57b7c68",
+    "Sonniss.com-GDC2026-GameAudioBundle2of5/Epic Stock Media - Strange Game Ambient Loops 3/DSGNSynth_Dark Loop Mystic Forest Tonal Steady Synth_ESM_SGA3.wav": "c374c5b2896c9ee3ea6383108f15c8a379b93e29d3c24f4e85542aaf7a41a450",
+    "Sonniss.com-GDC2026-GameAudioBundle2of5/Epic Stock Media - Strange Game Ambient Loops 3/MAGShim_Shimmer Loop Small Bell Metal Taps_ESM_SGA3.wav": "2391f2cdfb47e49d659e5452962626ee9e9c17af7cb09f89261aee49d11f473a",
+    "Sonniss.com-GDC2026-GameAudioBundle1of5/344 Audio - Extreme Winds Vol. 1/WINDDsgn_EXT, Eye Of The Storm_344 Audio_Extreme Winds Vol 1.wav": "0b06ba66c9be19455c767865b1aab9bec4f00680b3dc2b12c0bebff80c44446e",
+    "Sonniss.com-GDC2026-GameAudioBundle2of5/Cinematic Sound Design - Sci-Fi Drones/Roomtone Space Ship Interior Muted.wav": "e411e41ebefcf418622ce5e8d0ca4a5397a70d5e02784a086cc3559038365582",
+    "Sonniss.com-GDC2026-GameAudioBundle5of5/SoundBits - Pass-By - Trains, Trucks & Cars 2/AMBTraf_Traffic Multiple Cars Passing By 25_SNDBTS_PB-TTC2.wav": "532b6daedd236814eee4d8097dd6c3d8e827f9912f805d6d835ea0b2a941acb8",
+    "Sonniss.com-GDC2026-GameAudioBundle1of5/344 Audio - Historical Weapons Vol. 2/WEAPBlnt_Spear And Stick Impact, Wooden MKH 2_344 Audio_Medieval Weapons Vol 2.wav": "ab2cd18aaac93afa77b48b74edf82257815ee16817bb2bb9bd5ba134e4cc1466",
+    "Sonniss.com-GDC2026-GameAudioBundle2of5/Alexander Kopeikin - 100 kHz Designed Ice/ice, crack, ice block snapping-001.wav": "0a48ec3e878ae0cb35e792bd4eacb8539149c387e37557d02efa8a3bb678e06f",
+    "Sonniss.com-GDC2026-GameAudioBundle3of5/InMotionAudio - Arc/ELECArc_ArcPowerUpDesign04_InMotionAudio_Arc.wav": "9a34b314daf711dfe998d0823136bd2ae5342bdadd12c8c58d585ea8293266db",
+    "Sonniss.com-GDC2026-GameAudioBundle2of5/Epic Stock Media - Board Game - Sound Set Kit for Tabletop and Digital Games/PAPRHndl_Game Play Cards Dry Show Flip Toss Disgard Near 12_ESM_BG.wav": "8892c2dd4eb34e8e108655e292dd26da9986d2603cf59c7a3a0379dcf4cb1bf2",
+    "Sonniss.com-GDC2026-GameAudioBundle2of5/Epic Stock Media - HD Lock And Mechanism Sound Design Kit/METLTonl_Item Spring Wire Impact Flick Top Clatter Light Tap Roll Handling Short 01_ESM_HDLM.wav": "f778f19350bb2f77ba0e156148d8fce855adf74d5990a901e5384f8008658b9c",
+    "Sonniss.com-GDC2026-GameAudioBundle3of5/InMotionAudio - Arc/ELECArc_ArcDesign15_InMotionAudio_Arc.wav": "87c709fed078cfea7447e1e13b50715c59d7d78f2589d7bba9382ed3fafbef69",
+    "Sonniss.com-GDC2026-GameAudioBundle3of5/InMotionAudio - Christmas Cracker/OBJMisc_CrackerPull_WithBang_Effected_03_InMotionAudio_ChristmasCracker.wav": "5419c632e774f61e0c1acc3c82ab7784533f94033dae8630d3cab4ad0d40b36f",
+    "Sonniss.com-GDC2026-GameAudioBundle2of5/Cinematic Sound Design - Hybrid Game & UI Elements/Foley Coin Flip Single Fast.wav": "f6f56101e8711c22dfbb81583f4dfc78fa9c7a1b6003f82e0d3881e93774ad85",
+    "Sonniss.com-GDC2026-GameAudioBundle4of5/Sonic Bat - Music Boxes/SBmb_Music Box B 028.wav": "5832f12ae8a3530effd5534304738a3d914b92367e69cec8ee9fcb8383e5020f",
+    "Sonniss.com-GDC2026-GameAudioBundle3of5/InMotionAudio - Foley T-Shirt/FOLYClth_SinglePats04_InMotionAudio_FoleyT-Shirt.wav": "f723badf49fb5d2902efb259008c23cb2edc96b6ce59bf20448827f51a44e4ea"
+  },
+  "bgm": {
+    "assets/audio/bgm/provided/combat_01.mp3": "c8ec2f17f6d97aafb20c8e9cdcba4ba1b967fef6cc6ce8808f3251530fb17d2d",
+    "assets/audio/bgm/provided/combat_02.mp3": "e4e07276db401dbfc1eb3932633bbad558400abc3ca5a241f8215c41adef5d5e",
+    "assets/audio/bgm/provided/guild_01.mp3": "444d24862ee734c7dcd232048d97f59e63251369b9ef73c91b006e1b448568fc",
+    "assets/audio/bgm/provided/menu_01.mp3": "00875eed9e5562be7ec64ca4095c4ba6d20347ee1035f36a664009335d26b1ea",
+    "assets/audio/bgm/provided/menu_02.mp3": "c4d4804020659e00b3b8ed90918b54f75429e92b26a88358c6913b350dcbb7c0",
+    "assets/audio/bgm/provided/menu_03.mp3": "b302b4a0d8b53fcdc5594239b7ab51257feab41cc7c5ec7604fb447d814d09ab"
+  },
+  "runtime_verification": {
+    "passed": true,
+    "checks": 37,
+    "report": "qa/runtime-audio.json",
+    "mode": "Godot Dummy; synthetic no-read/no-write profile"
+  },
+  "direct_listening": "not performed; signal analysis and editing only",
+  "rollback": "Preserved prior content.json, sourcedAudio.ts and every mapped WAV; old source assets stay unchanged"
+}

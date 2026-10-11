@@ -1,0 +1,198 @@
+{
+  "tool": "built-in image_gen",
+  "date": "2026-10-01",
+  "purpose": "19 cute legless enemy redesigns, identity IDs and gameplay unchanged",
+  "assets": [
+    {
+      "id": "crawler",
+      "file": "crawler_sd_01.png",
+      "prompt": "Use case: stylized-concept. Asset type: ONE legless monster sprite PNG for Seoul Hero, cute but threatening SD survivor game. Reference image is the game's SD hero: match its crisp bold rounded near-black outlines, simple clean cel-shaded two-tone color blocks and toy-like readability, not its humanoid anatomy. Subject: A plump round red crimson CRACK SLIME, very large torso-like jelly blob with two big sharp amber eyes, little angry eyebrows, tiny two fangs, orange lava fissures, squat wide smooth base; no separate head/neck.\nComposition: full isolated single creature centered, front three-quarter view from a little above, all parts fully visible, generous transparent margin, eyes/role readable at 40px. One coherent compact silhouette. Every monster MUST have ZERO legs, ZERO feet, ZERO shoes, ZERO human walking joints, ZERO arms/hands. Only specified wings/ribbon tentacles or continuous body are allowed. Clean polished simple design, few broad shapes, no realistic horror/gore/fur texture, no photorealism, no ground shadow, no background, no glow haze beyond silhouette, no text, no frame, no extra monsters, no sprite sheet. Real transparent background.",
+      "generatedSource": "C:/Users/geniu/.codex/generated_images/01a0f2b0-afe6-7281-8ba3-48d0d8354159/exec-d31f5adb-9cd2-404e-8dd9-68ce00f50674.png",
+      "referenced_image_paths": [
+        "C:/Users/geniu/Documents/GitHub/Seoul-Hero/assets/characters-sd/song_sd_01.png"
+      ],
+      "transparent_background": true
+    },
+    {
+      "id": "bulwark",
+      "file": "bulwark_sd_01.png",
+      "prompt": "Use case: stylized-concept. Asset type: ONE legless monster sprite PNG for Seoul Hero, cute but threatening SD survivor game. Reference image is the game's SD hero: match its crisp bold rounded near-black outlines, simple clean cel-shaded two-tone color blocks and toy-like readability, not its humanoid anatomy. Subject: An IRON ARMORED SLIME: broad heavy round charcoal jelly encased in simple bluegray plated helmet/shell and wide steel shoulder ring, two golden slitlike large eyes, sturdy shieldlike silhouette; armor floats on the blob, not humanoid armor.\nComposition: full isolated single creature centered, front three-quarter view from a little above, all parts fully visible, generous transparent margin, eyes/role readable at 40px. One coherent compact silhouette. Every monster MUST have ZERO legs, ZERO feet, ZERO shoes, ZERO human walking joints, ZERO arms/hands. Only specified wings/ribbon tentacles or continuous body are allowed. Clean polished simple design, few broad shapes, no realistic horror/gore/fur texture, no photorealism, no ground shadow, no background, no glow haze beyond silhouette, no text, no frame, no extra monsters, no sprite sheet. Real transparent background.",
+      "generatedSource": "C:/Users/geniu/.codex/generated_images/01a0f2b0-afe6-7281-8ba3-48d0d8354159/exec-47091816-dbf6-4398-aeec-e546b6742752.png",
+      "referenced_image_paths": [
+        "C:/Users/geniu/Documents/GitHub/Seoul-Hero/assets/characters-sd/song_sd_01.png"
+      ],
+      "transparent_background": true
+    },
+    {
+      "id": "splitter",
+      "file": "splitter_sd_01.png",
+      "prompt": "Use case: stylized-concept. Asset type: ONE legless monster sprite PNG for Seoul Hero, cute but threatening SD survivor game. Reference image is the game's SD hero: match its crisp bold rounded near-black outlines, simple clean cel-shaded two-tone color blocks and toy-like readability, not its humanoid anatomy. Subject: A cheerful-threatening GREEN TWIN-CORE SLIME: joined pear-shaped bright green jelly blob with two distinct visible round lime cores in its translucent upper dome, large eyes, little fangs, broad wavy smooth base.\nComposition: full isolated single creature centered, front three-quarter view from a little above, all parts fully visible, generous transparent margin, eyes/role readable at 40px. One coherent compact silhouette. Every monster MUST have ZERO legs, ZERO feet, ZERO shoes, ZERO human walking joints, ZERO arms/hands. Only specified wings/ribbon tentacles or continuous body are allowed. Clean polished simple design, few broad shapes, no realistic horror/gore/fur texture, no photorealism, no ground shadow, no background, no glow haze beyond silhouette, no text, no frame, no extra monsters, no sprite sheet. Real transparent background.",
+      "generatedSource": "C:/Users/geniu/.codex/generated_images/01a0f2b0-afe6-7281-8ba3-48d0d8354159/exec-9d304459-75c6-4367-ba95-17775166157e.png",
+      "referenced_image_paths": [
+        "C:/Users/geniu/Documents/GitHub/Seoul-Hero/assets/characters-sd/song_sd_01.png"
+      ],
+      "transparent_background": true
+    },
+    {
+      "id": "sentinel",
+      "file": "sentinel_sd_01.png",
+      "prompt": "Use case: stylized-concept. Asset type: ONE legless monster sprite PNG for Seoul Hero, cute but threatening SD survivor game. Reference image is the game's SD hero: match its crisp bold rounded near-black outlines, simple clean cel-shaded two-tone color blocks and toy-like readability, not its humanoid anatomy. Subject: A BLUE SHIELD SLIME: small rounded aqua spirit encircled by a single broad blue shield shell in front, mint luminous big eyes visible above shield, simple cyan barrier rune on shell; no hands carrying shield.\nComposition: full isolated single creature centered, front three-quarter view from a little above, all parts fully visible, generous transparent margin, eyes/role readable at 40px. One coherent compact silhouette. Every monster MUST have ZERO legs, ZERO feet, ZERO shoes, ZERO human walking joints, ZERO arms/hands. Only specified wings/ribbon tentacles or continuous body are allowed. Clean polished simple design, few broad shapes, no realistic horror/gore/fur texture, no photorealism, no ground shadow, no background, no glow haze beyond silhouette, no text, no frame, no extra monsters, no sprite sheet. Real transparent background.",
+      "generatedSource": "C:/Users/geniu/.codex/generated_images/01a0f2b0-afe6-7281-8ba3-48d0d8354159/exec-da7c2573-d2fe-4ae9-8133-c63a50480dc8.png",
+      "referenced_image_paths": [
+        "C:/Users/geniu/Documents/GitHub/Seoul-Hero/assets/characters-sd/song_sd_01.png"
+      ],
+      "transparent_background": true
+    },
+    {
+      "id": "swarm",
+      "file": "swarm_sd_01.png",
+      "prompt": "Use case: stylized-concept. Create ONE original whimsical fantasy creature game sprite on a truly transparent background: a compact round plum-purple orb with two large coral eyes, tiny white triangular teeth and exactly two broad lavender butterfly wings, attached near the upper sides. A cute mischievous expression with lowered eyebrows. Simple polished two-tone cel shading, thick rounded near-black outline, clear large color shapes, front three-quarter view, centered full creature, all wings visible with margin. The whole body is a round orb. No arms, no legs, no feet, no insect joints. No human figure, weapon, text, frame, floor shadow or background. Readable at 40px.",
+      "generatedSource": "C:/Users/geniu/.codex/generated_images/01a0f2b0-afe6-7281-8ba3-48d0d8354159/exec-cce68425-3494-4e09-86db-f5ddc8c46daf.png",
+      "referenced_image_paths": [],
+      "transparent_background": true
+    },
+    {
+      "id": "signalMoth",
+      "file": "signalMoth_sd_01.png",
+      "prompt": "Use case: stylized-concept. Asset type: ONE legless monster sprite PNG for Seoul Hero, cute but threatening SD survivor game. Reference image is the game's SD hero: match its crisp bold rounded near-black outlines, simple clean cel-shaded two-tone color blocks and toy-like readability, not its humanoid anatomy. Subject: A LEGLESS TRAFFIC-LIGHT MOTH: one compact round dark navy magic orb body with big eyes, two large softly triangular wings divided into red/yellow/green color panels, simple rounded silhouette, no elongated insect abdomen, no legs or feet.\nComposition: full isolated single creature centered, front three-quarter view from a little above, all parts fully visible, generous transparent margin, eyes/role readable at 40px. One coherent compact silhouette. Every monster MUST have ZERO legs, ZERO feet, ZERO shoes, ZERO human walking joints, ZERO arms/hands. Only specified wings/ribbon tentacles or continuous body are allowed. Clean polished simple design, few broad shapes, no realistic horror/gore/fur texture, no photorealism, no ground shadow, no background, no glow haze beyond silhouette, no text, no frame, no extra monsters, no sprite sheet. Real transparent background.",
+      "generatedSource": "C:/Users/geniu/.codex/generated_images/01a0f2b0-afe6-7281-8ba3-48d0d8354159/exec-caca1a59-4e89-4f75-b326-b6ead6ab9e28.png",
+      "referenced_image_paths": [
+        "C:/Users/geniu/Documents/GitHub/Seoul-Hero/assets/characters-sd/song_sd_01.png"
+      ],
+      "transparent_background": true
+    },
+    {
+      "id": "spitter",
+      "file": "spitter_sd_01.png",
+      "prompt": "Use case: stylized-concept. Asset type: ONE legless monster sprite PNG for Seoul Hero, cute but threatening SD survivor game. Reference image is the game's SD hero: match its crisp bold rounded near-black outlines, simple clean cel-shaded two-tone color blocks and toy-like readability, not its humanoid anatomy. Subject: A MAGIC EYEBALL SPIRIT: floating round violet orb dominated by one giant light purple eye, cute pointed tiny ears/horns at upper sides, a simple cyan magic ring around the eyeball, two tiny teeth. Compact hovering attacker.\nComposition: full isolated single creature centered, front three-quarter view from a little above, all parts fully visible, generous transparent margin, eyes/role readable at 40px. One coherent compact silhouette. Every monster MUST have ZERO legs, ZERO feet, ZERO shoes, ZERO human walking joints, ZERO arms/hands. Only specified wings/ribbon tentacles or continuous body are allowed. Clean polished simple design, few broad shapes, no realistic horror/gore/fur texture, no photorealism, no ground shadow, no background, no glow haze beyond silhouette, no text, no frame, no extra monsters, no sprite sheet. Real transparent background.",
+      "generatedSource": "C:/Users/geniu/.codex/generated_images/01a0f2b0-afe6-7281-8ba3-48d0d8354159/exec-d576a1e6-cbd4-457c-9a94-b1d442b82966.png",
+      "referenced_image_paths": [
+        "C:/Users/geniu/Documents/GitHub/Seoul-Hero/assets/characters-sd/song_sd_01.png"
+      ],
+      "transparent_background": true
+    },
+    {
+      "id": "bomber",
+      "file": "bomber_sd_01.png",
+      "prompt": "Use case: stylized-concept. Asset type: ONE legless monster sprite PNG for Seoul Hero, cute but threatening SD survivor game. Reference image is the game's SD hero: match its crisp bold rounded near-black outlines, simple clean cel-shaded two-tone color blocks and toy-like readability, not its humanoid anatomy. Subject: A ROUND SPORE BALLOON: peach coral mushroom-spore floating sphere, puffy purple polka-dots on its round cap-shaped dome, angry large golden eyes, two tiny pointed fangs, tiny glowing orange spore core in its body. No stalk legs.\nComposition: full isolated single creature centered, front three-quarter view from a little above, all parts fully visible, generous transparent margin, eyes/role readable at 40px. One coherent compact silhouette. Every monster MUST have ZERO legs, ZERO feet, ZERO shoes, ZERO human walking joints, ZERO arms/hands. Only specified wings/ribbon tentacles or continuous body are allowed. Clean polished simple design, few broad shapes, no realistic horror/gore/fur texture, no photorealism, no ground shadow, no background, no glow haze beyond silhouette, no text, no frame, no extra monsters, no sprite sheet. Real transparent background.",
+      "generatedSource": "C:/Users/geniu/.codex/generated_images/01a0f2b0-afe6-7281-8ba3-48d0d8354159/exec-3238ebf7-688a-423f-9489-4f13b071a1ae.png",
+      "referenced_image_paths": [
+        "C:/Users/geniu/Documents/GitHub/Seoul-Hero/assets/characters-sd/song_sd_01.png"
+      ],
+      "transparent_background": true
+    },
+    {
+      "id": "mender",
+      "file": "mender_sd_01.png",
+      "prompt": "Use case: stylized-concept. Asset type: ONE legless monster sprite PNG for Seoul Hero, cute but threatening SD survivor game. Reference image is the game's SD hero: match its crisp bold rounded near-black outlines, simple clean cel-shaded two-tone color blocks and toy-like readability, not its humanoid anatomy. Subject: A FLOWER JELLYFISH HEALER: gently domed emerald-teal jellyfish bell crowned by five white/pink flower petals and glowing mint center, kindly but uncanny large eyes, 3-4 short soft flowing translucent ribbons beneath bell. Ribbons are tentacles, no foot tips.\nComposition: full isolated single creature centered, front three-quarter view from a little above, all parts fully visible, generous transparent margin, eyes/role readable at 40px. One coherent compact silhouette. Every monster MUST have ZERO legs, ZERO feet, ZERO shoes, ZERO human walking joints, ZERO arms/hands. Only specified wings/ribbon tentacles or continuous body are allowed. Clean polished simple design, few broad shapes, no realistic horror/gore/fur texture, no photorealism, no ground shadow, no background, no glow haze beyond silhouette, no text, no frame, no extra monsters, no sprite sheet. Real transparent background.",
+      "generatedSource": "C:/Users/geniu/.codex/generated_images/01a0f2b0-afe6-7281-8ba3-48d0d8354159/exec-40099149-17fb-4d47-a445-fbf657f0166f.png",
+      "referenced_image_paths": [
+        "C:/Users/geniu/Documents/GitHub/Seoul-Hero/assets/characters-sd/song_sd_01.png"
+      ],
+      "transparent_background": true
+    },
+    {
+      "id": "glassJelly",
+      "file": "glassJelly_sd_01.png",
+      "prompt": "Use case: stylized-concept. Asset type: ONE legless monster sprite PNG for Seoul Hero, cute but threatening SD survivor game. Reference image is the game's SD hero: match its crisp bold rounded near-black outlines, simple clean cel-shaded two-tone color blocks and toy-like readability, not its humanoid anatomy. Subject: A TRANSLUCENT GLASS JELLYFISH: clear icy blue round jellyfish bell, bright cyan large eyes, lavender refracted facets, 4 short curled translucent ribbon tentacles, simple strong deep blue outline; no human torso or legs.\nComposition: full isolated single creature centered, front three-quarter view from a little above, all parts fully visible, generous transparent margin, eyes/role readable at 40px. One coherent compact silhouette. Every monster MUST have ZERO legs, ZERO feet, ZERO shoes, ZERO human walking joints, ZERO arms/hands. Only specified wings/ribbon tentacles or continuous body are allowed. Clean polished simple design, few broad shapes, no realistic horror/gore/fur texture, no photorealism, no ground shadow, no background, no glow haze beyond silhouette, no text, no frame, no extra monsters, no sprite sheet. Real transparent background.",
+      "generatedSource": "C:/Users/geniu/.codex/generated_images/01a0f2b0-afe6-7281-8ba3-48d0d8354159/exec-c2d92c96-0faf-4dff-85b4-446ca8e84775.png",
+      "referenced_image_paths": [
+        "C:/Users/geniu/Documents/GitHub/Seoul-Hero/assets/characters-sd/song_sd_01.png"
+      ],
+      "transparent_background": true
+    },
+    {
+      "id": "summoner",
+      "file": "summoner_sd_01.png",
+      "prompt": "Use case: stylized-concept. Asset type: ONE legless monster sprite PNG for Seoul Hero, cute but threatening SD survivor game. Reference image is the game's SD hero: match its crisp bold rounded near-black outlines, simple clean cel-shaded two-tone color blocks and toy-like readability, not its humanoid anatomy. Subject: A VORTEX GHOST: lilac and deep violet floating teardrop ghost with round oversized face, huge mint eyes, small curved horns, tapering bottom curling into a single spiral vortex, little orbiting diamond runes close to silhouette. No arms/legs.\nComposition: full isolated single creature centered, front three-quarter view from a little above, all parts fully visible, generous transparent margin, eyes/role readable at 40px. One coherent compact silhouette. Every monster MUST have ZERO legs, ZERO feet, ZERO shoes, ZERO human walking joints, ZERO arms/hands. Only specified wings/ribbon tentacles or continuous body are allowed. Clean polished simple design, few broad shapes, no realistic horror/gore/fur texture, no photorealism, no ground shadow, no background, no glow haze beyond silhouette, no text, no frame, no extra monsters, no sprite sheet. Real transparent background.",
+      "generatedSource": "C:/Users/geniu/.codex/generated_images/01a0f2b0-afe6-7281-8ba3-48d0d8354159/exec-0fcf4826-ba63-4ea1-92df-d2497e70be6b.png",
+      "referenced_image_paths": [
+        "C:/Users/geniu/Documents/GitHub/Seoul-Hero/assets/characters-sd/song_sd_01.png"
+      ],
+      "transparent_background": true
+    },
+    {
+      "id": "lurker",
+      "file": "lurker_sd_01.png",
+      "prompt": "Use case: stylized-concept. Asset type: ONE legless monster sprite PNG for Seoul Hero, cute but threatening SD survivor game. Reference image is the game's SD hero: match its crisp bold rounded near-black outlines, simple clean cel-shaded two-tone color blocks and toy-like readability, not its humanoid anatomy. Subject: A SHADOW GHOST: compact round smoky charcoal-purple phantom, big glowing magenta eyes, little pointed ear silhouette and tiny white fangs, lower body dissolves into one smooth curling shadow tail, clear thick outline no diffuse aura.\nComposition: full isolated single creature centered, front three-quarter view from a little above, all parts fully visible, generous transparent margin, eyes/role readable at 40px. One coherent compact silhouette. Every monster MUST have ZERO legs, ZERO feet, ZERO shoes, ZERO human walking joints, ZERO arms/hands. Only specified wings/ribbon tentacles or continuous body are allowed. Clean polished simple design, few broad shapes, no realistic horror/gore/fur texture, no photorealism, no ground shadow, no background, no glow haze beyond silhouette, no text, no frame, no extra monsters, no sprite sheet. Real transparent background.",
+      "generatedSource": "C:/Users/geniu/.codex/generated_images/01a0f2b0-afe6-7281-8ba3-48d0d8354159/exec-545c0ce0-4685-4944-a7f7-3b55402f7476.png",
+      "referenced_image_paths": [
+        "C:/Users/geniu/Documents/GitHub/Seoul-Hero/assets/characters-sd/song_sd_01.png"
+      ],
+      "transparent_background": true
+    },
+    {
+      "id": "chainWarden",
+      "file": "chainWarden_sd_01.png",
+      "prompt": "Use case: stylized-concept. Asset type: ONE legless monster sprite PNG for Seoul Hero, cute but threatening SD survivor game. Reference image is the game's SD hero: match its crisp bold rounded near-black outlines, simple clean cel-shaded two-tone color blocks and toy-like readability, not its humanoid anatomy. Subject: A CHAINED METAL SPIRIT: floating round gunmetal magical orb with large mint eyes and one little forehead horn, surrounding closed chunky chain ring attached closely around lower body, amber lock-shaped core; no humanoid armor limbs.\nComposition: full isolated single creature centered, front three-quarter view from a little above, all parts fully visible, generous transparent margin, eyes/role readable at 40px. One coherent compact silhouette. Every monster MUST have ZERO legs, ZERO feet, ZERO shoes, ZERO human walking joints, ZERO arms/hands. Only specified wings/ribbon tentacles or continuous body are allowed. Clean polished simple design, few broad shapes, no realistic horror/gore/fur texture, no photorealism, no ground shadow, no background, no glow haze beyond silhouette, no text, no frame, no extra monsters, no sprite sheet. Real transparent background.",
+      "generatedSource": "C:/Users/geniu/.codex/generated_images/01a0f2b0-afe6-7281-8ba3-48d0d8354159/exec-c2712af7-44e5-4d14-84b9-3867a2633f89.png",
+      "referenced_image_paths": [
+        "C:/Users/geniu/Documents/GitHub/Seoul-Hero/assets/characters-sd/song_sd_01.png"
+      ],
+      "transparent_background": true
+    },
+    {
+      "id": "runner",
+      "file": "runner_sd_01.png",
+      "prompt": "Use case: stylized-concept. Asset type: ONE legless monster sprite PNG for Seoul Hero, cute but threatening SD survivor game. Reference image is the game's SD hero: match its crisp bold rounded near-black outlines, simple clean cel-shaded two-tone color blocks and toy-like readability, not its humanoid anatomy. Subject: A THIN ORANGE SNAKE: compact horizontal curling S-shaped fiery orange snake body, big triangular cute head, large amber eyes, tiny two fangs, very short small hornlets, smooth segmented orange yellow belly, a continuous tapering tail to left, head toward right. No legs or arms.\nComposition: full isolated single creature centered, front three-quarter view from a little above, all parts fully visible, generous transparent margin, eyes/role readable at 40px. One coherent compact silhouette. Every monster MUST have ZERO legs, ZERO feet, ZERO shoes, ZERO human walking joints, ZERO arms/hands. Only specified wings/ribbon tentacles or continuous body are allowed. Clean polished simple design, few broad shapes, no realistic horror/gore/fur texture, no photorealism, no ground shadow, no background, no glow haze beyond silhouette, no text, no frame, no extra monsters, no sprite sheet. Real transparent background.",
+      "generatedSource": "C:/Users/geniu/.codex/generated_images/01a0f2b0-afe6-7281-8ba3-48d0d8354159/exec-451c8cd5-c96c-4488-b786-ce5e6f51255c.png",
+      "referenced_image_paths": [
+        "C:/Users/geniu/Documents/GitHub/Seoul-Hero/assets/characters-sd/song_sd_01.png"
+      ],
+      "transparent_background": true
+    },
+    {
+      "id": "charger",
+      "file": "charger_sd_01.png",
+      "prompt": "Use case: stylized-concept. Asset type: ONE legless monster sprite PNG for Seoul Hero, cute but threatening SD survivor game. Reference image is the game's SD hero: match its crisp bold rounded near-black outlines, simple clean cel-shaded two-tone color blocks and toy-like readability, not its humanoid anatomy. Subject: A THICK HORNED SNAKE: hefty coiled red-orange serpent, large round head, two broad dark obsidian forward-facing horns, golden fierce eyes, tiny white fangs, robust continuous looping body curling into a pointed tail. No feet or arms.\nComposition: full isolated single creature centered, front three-quarter view from a little above, all parts fully visible, generous transparent margin, eyes/role readable at 40px. One coherent compact silhouette. Every monster MUST have ZERO legs, ZERO feet, ZERO shoes, ZERO human walking joints, ZERO arms/hands. Only specified wings/ribbon tentacles or continuous body are allowed. Clean polished simple design, few broad shapes, no realistic horror/gore/fur texture, no photorealism, no ground shadow, no background, no glow haze beyond silhouette, no text, no frame, no extra monsters, no sprite sheet. Real transparent background.",
+      "generatedSource": "C:/Users/geniu/.codex/generated_images/01a0f2b0-afe6-7281-8ba3-48d0d8354159/exec-7f32da71-f4e1-41c6-8704-f7cb0cf539ae.png",
+      "referenced_image_paths": [
+        "C:/Users/geniu/Documents/GitHub/Seoul-Hero/assets/characters-sd/song_sd_01.png"
+      ],
+      "transparent_background": true
+    },
+    {
+      "id": "ironBoar",
+      "file": "ironBoar_sd_01.png",
+      "prompt": "Use case: stylized-concept. Asset type: ONE legless monster sprite PNG for Seoul Hero, cute but threatening SD survivor game. Reference image is the game's SD hero: match its crisp bold rounded near-black outlines, simple clean cel-shaded two-tone color blocks and toy-like readability, not its humanoid anatomy. Subject: A STEEL-TUSK SLIME LARVA: low rounded indigo-gray continuous slug body with a smooth curled tail, very large cute face at right/front, two shiny short upcurved steel tusks, fierce pink eyes, sparse simple steel plates on back. No boar legs, no hooves, no arms.\nComposition: full isolated single creature centered, front three-quarter view from a little above, all parts fully visible, generous transparent margin, eyes/role readable at 40px. One coherent compact silhouette. Every monster MUST have ZERO legs, ZERO feet, ZERO shoes, ZERO human walking joints, ZERO arms/hands. Only specified wings/ribbon tentacles or continuous body are allowed. Clean polished simple design, few broad shapes, no realistic horror/gore/fur texture, no photorealism, no ground shadow, no background, no glow haze beyond silhouette, no text, no frame, no extra monsters, no sprite sheet. Real transparent background.",
+      "generatedSource": "C:/Users/geniu/.codex/generated_images/01a0f2b0-afe6-7281-8ba3-48d0d8354159/exec-86961581-11f5-4ebc-84f2-b6db1d84e445.png",
+      "referenced_image_paths": [
+        "C:/Users/geniu/Documents/GitHub/Seoul-Hero/assets/characters-sd/song_sd_01.png"
+      ],
+      "transparent_background": true
+    },
+    {
+      "id": "copperCrab",
+      "file": "copperCrab_sd_01.png",
+      "prompt": "Use case: stylized-concept. Asset type: ONE legless monster sprite PNG for Seoul Hero, cute but threatening SD survivor game. Reference image is the game's SD hero: match its crisp bold rounded near-black outlines, simple clean cel-shaded two-tone color blocks and toy-like readability, not its humanoid anatomy. Subject: A COPPER-PIPE RING WORM: cute short teal sluglike worm body looped into a nearly circular coil, three broad burnished copper tube sleeve rings around body, large amber eyes on rounded front head toward right, two tiny fangs, smooth tail. No pincers, no crab legs.\nComposition: full isolated single creature centered, front three-quarter view from a little above, all parts fully visible, generous transparent margin, eyes/role readable at 40px. One coherent compact silhouette. Every monster MUST have ZERO legs, ZERO feet, ZERO shoes, ZERO human walking joints, ZERO arms/hands. Only specified wings/ribbon tentacles or continuous body are allowed. Clean polished simple design, few broad shapes, no realistic horror/gore/fur texture, no photorealism, no ground shadow, no background, no glow haze beyond silhouette, no text, no frame, no extra monsters, no sprite sheet. Real transparent background.",
+      "generatedSource": "C:/Users/geniu/.codex/generated_images/01a0f2b0-afe6-7281-8ba3-48d0d8354159/exec-764c737c-9b80-487b-9893-139f40262508.png",
+      "referenced_image_paths": [
+        "C:/Users/geniu/Documents/GitHub/Seoul-Hero/assets/characters-sd/song_sd_01.png"
+      ],
+      "transparent_background": true
+    },
+    {
+      "id": "gatekeeper",
+      "file": "gatekeeper_sd_01.png",
+      "prompt": "Use case: stylized-concept. Asset type: ONE legless monster sprite PNG for Seoul Hero, cute but threatening SD survivor game. Reference image is the game's SD hero: match its crisp bold rounded near-black outlines, simple clean cel-shaded two-tone color blocks and toy-like readability, not its humanoid anatomy. Subject: A GIANT ARMOR RING AND MAGIC CORE BOSS: broad floating circular bluegray armored portal ring, eight simple chunky plate segments, two short curved obsidian horns on top, giant central round cyan glowing magical eye/core with angry cute face, small amber runes. The ring itself is the whole body; no humanoid chest, arms or legs.\nComposition: full isolated single creature centered, front three-quarter view from a little above, all parts fully visible, generous transparent margin, eyes/role readable at 40px. One coherent compact silhouette. Every monster MUST have ZERO legs, ZERO feet, ZERO shoes, ZERO human walking joints, ZERO arms/hands. Only specified wings/ribbon tentacles or continuous body are allowed. Clean polished simple design, few broad shapes, no realistic horror/gore/fur texture, no photorealism, no ground shadow, no background, no glow haze beyond silhouette, no text, no frame, no extra monsters, no sprite sheet. Real transparent background.",
+      "generatedSource": "C:/Users/geniu/.codex/generated_images/01a0f2b0-afe6-7281-8ba3-48d0d8354159/exec-0aa1263d-c31c-4989-b364-0f302f4477f7.png",
+      "referenced_image_paths": [
+        "C:/Users/geniu/Documents/GitHub/Seoul-Hero/assets/characters-sd/song_sd_01.png"
+      ],
+      "transparent_background": true
+    },
+    {
+      "id": "riftQueen",
+      "file": "riftQueen_sd_01.png",
+      "prompt": "Use case: stylized-concept. Asset type: ONE legless monster sprite PNG for Seoul Hero, cute but threatening SD survivor game. Reference image is the game's SD hero: match its crisp bold rounded near-black outlines, simple clean cel-shaded two-tone color blocks and toy-like readability, not its humanoid anatomy. Subject: A CROWNED GIANT JELLYFISH QUEEN BOSS: regal round deep plum jellyfish bell with gold simple crown and magenta diamond jewel, two very large stern pink eyes and tiny fangs, 5 thick flowing curled lavender ribbon tentacles, translucent pink mantle, wide imposing silhouette. No human arms, hands, legs or shoes.\nComposition: full isolated single creature centered, front three-quarter view from a little above, all parts fully visible, generous transparent margin, eyes/role readable at 40px. One coherent compact silhouette. Every monster MUST have ZERO legs, ZERO feet, ZERO shoes, ZERO human walking joints, ZERO arms/hands. Only specified wings/ribbon tentacles or continuous body are allowed. Clean polished simple design, few broad shapes, no realistic horror/gore/fur texture, no photorealism, no ground shadow, no background, no glow haze beyond silhouette, no text, no frame, no extra monsters, no sprite sheet. Real transparent background.",
+      "generatedSource": "C:/Users/geniu/.codex/generated_images/01a0f2b0-afe6-7281-8ba3-48d0d8354159/exec-f9a8388f-05d0-43d4-babe-0918b70bd344.png",
+      "referenced_image_paths": [
+        "C:/Users/geniu/Documents/GitHub/Seoul-Hero/assets/characters-sd/song_sd_01.png"
+      ],
+      "transparent_background": true,
+      "initialGeneratedSource": "C:/Users/geniu/.codex/generated_images/01a0f2b0-afe6-7281-8ba3-48d0d8354159/exec-a783c9d9-2461-473a-9a8a-5964d6a7e2cd.png",
+      "editPrompt": "Edit this original crowned jellyfish queen game sprite for clean production framing. Preserve its exact cute face, pink eyes, crown, deep plum round bell, pink translucent mantle, five flowing lavender ribbon tentacles, dark crisp outlines and cel-shaded colors. Reframe the entire creature about 15% smaller and centered on a transparent canvas so there is clearly at least 7% empty transparent margin on EVERY side. Complete the tiny cropped extremities of the crown tip and outer tentacle curves; no part may touch or be clipped by the image edges. Keep the same pose and silhouette, no new objects, no background, no shadow, no text. Genuine transparent alpha.",
+      "editReference": "C:/Users/geniu/.codex/generated_images/01a0f2b0-afe6-7281-8ba3-48d0d8354159/exec-a783c9d9-2461-473a-9a8a-5964d6a7e2cd.png"
+    }
+  ]
+}

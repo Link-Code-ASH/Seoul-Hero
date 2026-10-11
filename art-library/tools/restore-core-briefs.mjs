@@ -1,0 +1,15 @@
+import fs from 'node:fs/promises';
+const root=new URL('../',import.meta.url);
+const file=new URL('briefs/core.json',root);
+const revised=JSON.parse(await fs.readFile(file,'utf8'));
+if(Array.isArray(revised))throw new Error('Refusing to replace an intact brief array');
+const catalog=JSON.parse(await fs.readFile(new URL('catalog.json',root),'utf8'));
+const categories=new Set(['weapon','character','monster','blessing','staff','map']);
+const generatedKeys=new Set(['status','record','thumbnail','fileReady','warnings']);
+const briefs=catalog.assets.filter(item=>categories.has(item.category)).map(item=>Object.fromEntries(Object.entries(item).filter(([key])=>!generatedKeys.has(key))));
+if(briefs.length!==600||new Set(briefs.map(item=>item.id)).size!==600)throw new Error('Incomplete catalog recovery');
+const index=briefs.findIndex(item=>item.id===revised.id);
+if(index<0||revised.id!=='monster-118')throw new Error('Unexpected revised item');
+briefs[index]={...briefs[index],...revised};
+await fs.writeFile(file,JSON.stringify(briefs,null,2)+'\n');
+console.log(JSON.stringify({restored:briefs.length,revised:revised.id}));

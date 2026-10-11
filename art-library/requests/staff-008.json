@@ -1,0 +1,19 @@
+{
+  "id": "staff-008",
+  "inputMode": "edit-proportions",
+  "imageInputsProvided": true,
+  "imageInputs": [
+    {
+      "path": "originals/staff/staff-008/v01/original.png",
+      "role": "edit-target",
+      "sha256": "14880e519e676e1363cbc6beb7f34640f632e6496c042834b8d0b8f6edd947cb"
+    }
+  ],
+  "args": {
+    "prompt": "Use case: precise-object-edit.\nAsset type: Seoul Hero SD employee body proportion correction.\nInput is the exact existing EDIT TARGET. Preserve the same person, hairstyle, face, glasses or goggles, clothing design and palette, decorative seams and occupational identity. Change only the anatomical body proportion to match the Seoul Hero super-deformed standard: hair and head together occupy about sixty percent of total subject height; the entire tiny body from chin to shoe soles occupies only forty percent. Dramatically shorten both arms, upper arms, forearms, thighs and shins; keep empty hands as tiny mittens close to the compact torso. Put tiny short boots immediately under the tiny torso, with almost no visible leg length. No tall realistic knees, no long bare thigh, no elongated shins. Retain the friendly front three-quarter neutral pose. Keep both hands completely EMPTY. Strong clean navy contours with crisp soft cel shading, not realistic anatomy. One complete full-body isolated subject fully inside the canvas. Preserve actual transparent RGBA outside the subject and all gaps, no floor, shadow, background, vignette, text, logos, UI or watermark.",
+    "transparent_background": true,
+    "referenced_image_paths": [
+      "C:\\Users\\geniu\\Documents\\GitHub\\Seoul-Hero\\art-library\\originals\\staff\\staff-008\\v01\\original.png"
+    ]
+  }
+}

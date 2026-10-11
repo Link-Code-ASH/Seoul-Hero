@@ -1,0 +1,18 @@
+{
+  "artifactOnly": true,
+  "gameLoaded": false,
+  "isolatedBrowserContext": true,
+  "exportPassed": true,
+  "importPassed": true,
+  "reloadPassed": true,
+  "mapState": {
+    "loaded": true,
+    "dimensions": [
+      1870,
+      841
+    ]
+  },
+  "errors": [],
+  "exportPath": "C:\\Users\\geniu\\Documents\\GitHub\\Seoul-Hero\\art-library\\previews\\selection-review\\example-selection.json",
+  "checkedAt": "2026-10-07T18:56:54.801Z"
+}

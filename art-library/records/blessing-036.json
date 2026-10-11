@@ -1,0 +1,34 @@
+{
+  "id": "blessing-036",
+  "status": "complete",
+  "revision": "v01",
+  "files": [
+    {
+      "path": "originals/blessing/blessing-036/v01/original.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "03240152591ceb3b7f11920497629f3762061a02ef8a03eb74b3d1013d5800fd",
+      "alphaChannel": true,
+      "hasTransparency": true
+    }
+  ],
+  "thumbnail": "thumbnails/blessing-036-v01.png",
+  "source": {
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\geniu\\.codex\\generated_images\\01a116ba-0a91-7172-a5c2-28dde8e57760\\exec-674c7c3d-e8f4-4a38-a419-54b2f4f6d780.png",
+    "promptPath": "originals/blessing/blessing-036/v01/prompt.txt",
+    "referenceIds": [
+      "blessing-style"
+    ],
+    "createdAt": "2026-10-07T16:48:03.944Z",
+    "inputMode": "new-from-verbal-style",
+    "imageInputsProvided": false,
+    "imageInputs": []
+  },
+  "review": {
+    "userApproval": "pending",
+    "notes": "원본 및 밝은/어두운 alpha 합성 확인. 설비 형태와 아이콘 외곽이 완전하고 투명 경계 정상.",
+    "visualChecked": true,
+    "reviewedAt": "2026-10-07T16:48:21.545Z"
+  }
+}

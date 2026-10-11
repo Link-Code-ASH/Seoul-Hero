@@ -1,0 +1,34 @@
+{
+  "id": "blessing-043",
+  "status": "complete",
+  "revision": "v01",
+  "files": [
+    {
+      "path": "originals/blessing/blessing-043/v01/original.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "d649fc7aaf8605647381489de2c4a7fe6ad309f09cb9ebe872d76033ebbf1b72",
+      "alphaChannel": true,
+      "hasTransparency": true
+    }
+  ],
+  "thumbnail": "thumbnails/blessing-043-v01.png",
+  "source": {
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\geniu\\.codex\\generated_images\\01a116ba-0a91-7172-a5c2-28dde8e57760\\exec-d58c4af3-3170-4671-a082-6a6ad94a50a5.png",
+    "promptPath": "originals/blessing/blessing-043/v01/prompt.txt",
+    "referenceIds": [
+      "blessing-style"
+    ],
+    "createdAt": "2026-10-07T17:02:28.785Z",
+    "inputMode": "new-from-verbal-style",
+    "imageInputsProvided": false,
+    "imageInputs": []
+  },
+  "review": {
+    "userApproval": "pending",
+    "notes": "원본과 실제 alpha의 밝은/어두운 합성 검토 완료. 각각의 외곽·재질·아이콘 식별성 정상.",
+    "visualChecked": true,
+    "reviewedAt": "2026-10-07T17:02:47.572Z"
+  }
+}

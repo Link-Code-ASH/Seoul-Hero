@@ -1,0 +1,34 @@
+{
+  "id": "monster-066",
+  "status": "complete",
+  "revision": "v01",
+  "files": [
+    {
+      "path": "originals/monster/monster-066/v01/original.png",
+      "width": 1312,
+      "height": 1199,
+      "sha256": "31ee3645cc5ab62d92073d2610d82b2fecb0a597b7b1bae1decba4f8f7165e68",
+      "alphaChannel": true,
+      "hasTransparency": true
+    }
+  ],
+  "thumbnail": "thumbnails/monster-066-v01.png",
+  "source": {
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\geniu\\.codex\\generated_images\\01a11608-621b-7461-9513-27b6d6c5f67d\\exec-1467a89d-2c30-4c2c-9a50-89e150bcf0ee.png",
+    "promptPath": "originals/monster/monster-066/v01/prompt.txt",
+    "referenceIds": [
+      "monster-style"
+    ],
+    "createdAt": "2026-10-07T16:37:09.436Z",
+    "inputMode": "new-from-verbal-style",
+    "imageInputsProvided": false,
+    "imageInputs": []
+  },
+  "review": {
+    "userApproval": "pending",
+    "notes": "Alpha-composited visual review: complete legless silhouette, no opaque backdrop or canvas clipping, specific material and spiral or layered shape verified.",
+    "visualChecked": true,
+    "reviewedAt": "2026-10-07T16:38:19.906Z"
+  }
+}

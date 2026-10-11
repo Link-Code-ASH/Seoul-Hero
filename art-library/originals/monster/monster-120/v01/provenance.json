@@ -1,0 +1,34 @@
+{
+  "id": "monster-120",
+  "status": "complete",
+  "revision": "v01",
+  "files": [
+    {
+      "path": "originals/monster/monster-120/v01/original.png",
+      "width": 1223,
+      "height": 1286,
+      "sha256": "126946da419f55869b4cb954e52d24b63e1e730442125ca02af7c0e7fcd95c83",
+      "alphaChannel": true,
+      "hasTransparency": true
+    }
+  ],
+  "thumbnail": "thumbnails/monster-120-v01.png",
+  "source": {
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\geniu\\.codex\\generated_images\\01a11608-621b-7461-9513-27b6d6c5f67d\\exec-0e195255-56b3-458f-bb6c-4173308ec8d0.png",
+    "promptPath": "originals/monster/monster-120/v01/prompt.txt",
+    "referenceIds": [
+      "monster-style"
+    ],
+    "createdAt": "2026-10-07T17:42:41.185Z",
+    "inputMode": "new-from-verbal-style",
+    "imageInputsProvided": false,
+    "imageInputs": []
+  },
+  "review": {
+    "userApproval": "pending",
+    "notes": "밝은 배경 알파 합성본 확인. 연 형태의 금속띠·도자기 케이블·석재·연무·유막 몸체를 구분했고 다리·발·인간 팔과 가장자리 잘림이 없습니다. 사용자 승인 대기.",
+    "visualChecked": true,
+    "reviewedAt": "2026-10-07T17:44:03.342Z"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "id": "blessing-015",
+  "status": "complete",
+  "revision": "v01",
+  "files": [
+    {
+      "path": "originals/blessing/blessing-015/v01/original.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "d3c0344e68525381137fbbdedb19fafddecf5fa3ed96e2a364bd4f060db1120f",
+      "alphaChannel": true,
+      "hasTransparency": true
+    }
+  ],
+  "thumbnail": "thumbnails/blessing-015-v01.png",
+  "source": {
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\geniu\\.codex\\generated_images\\01a116ba-0a91-7172-a5c2-28dde8e57760\\exec-2c5b7dd5-7f45-4f14-b873-b12568b18ed3.png",
+    "promptPath": "originals/blessing/blessing-015/v01/prompt.txt",
+    "referenceIds": [
+      "blessing-style"
+    ],
+    "createdAt": "2026-10-07T15:47:00.010Z",
+    "inputMode": "new-from-verbal-style",
+    "imageInputsProvided": false,
+    "imageInputs": []
+  },
+  "review": {
+    "userApproval": "pending",
+    "notes": "",
+    "visualChecked": true
+  }
+}

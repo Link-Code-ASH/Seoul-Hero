@@ -1,0 +1,8 @@
+Use case: stylized-concept.
+Asset type: Seoul Hero individual full-body SD awakened character PNG.
+Primary request: a Korean male Seoul gate rescue responder. Rounded short black hair, a compact navy rescue helmet with no markings, large determined brown eyes, an orange cropped rescue jacket with silver reflective bands, tiny navy protective trousers and chunky compact shoes. Both hands completely empty, relaxed at sides.
+Input image: approved Song character is STYLE AND PROPORTION reference only, create a different face, hair silhouette and uniform.
+Style: crisp Korean mobile-game hand-painted raster art, clean dark navy outlines, polished restrained cel shading, match the reference's readability.
+Composition: ONE full-body subject centered; head about SIXTY PERCENT of total figure height, tiny torso, EXTREMELY SHORT arms and legs. Friendly but determined. Front three-quarter idle pose. Full helmet, hands and shoes visible, 8 percent padding.
+Background: true transparent RGBA.
+Constraints: no tools or weapons in hands, no orbiting weapons, no floor, no cast shadow, no text, numbers, logos, watermark, UI frame, or multiple views.

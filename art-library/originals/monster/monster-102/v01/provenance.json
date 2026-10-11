@@ -1,0 +1,34 @@
+{
+  "id": "monster-102",
+  "status": "needs-revision",
+  "revision": "v01",
+  "files": [
+    {
+      "path": "originals/monster/monster-102/v01/original.png",
+      "width": 1230,
+      "height": 1278,
+      "sha256": "38dcae4818ff464874ece057e0c14adbcc42967ad1f79daff257a4c808c14fe2",
+      "alphaChannel": true,
+      "hasTransparency": true
+    }
+  ],
+  "thumbnail": "thumbnails/monster-102-v01.png",
+  "source": {
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\geniu\\.codex\\generated_images\\01a11608-621b-7461-9513-27b6d6c5f67d\\exec-95edc428-0f74-40cc-88dd-17f13a913ace.png",
+    "promptPath": "originals/monster/monster-102/v01/prompt.txt",
+    "referenceIds": [
+      "monster-style"
+    ],
+    "createdAt": "2026-10-07T17:21:14.647Z",
+    "inputMode": "new-from-verbal-style",
+    "imageInputsProvided": false,
+    "imageInputs": []
+  },
+  "review": {
+    "userApproval": "pending",
+    "notes": "알파 합성본에서 종이 세 잎 윤곽은 적합하지만 상단 끝이 캔버스에 닿아 안전 여백이 없습니다. 더 작고 둥근 실루엣으로 재생성 필요. v01 원본 보존.",
+    "visualChecked": true,
+    "reviewedAt": "2026-10-07T17:22:14.959Z"
+  }
+}

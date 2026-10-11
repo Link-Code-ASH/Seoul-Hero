@@ -1,0 +1,34 @@
+{
+  "id": "monster-140",
+  "status": "complete",
+  "revision": "v01",
+  "files": [
+    {
+      "path": "originals/monster/monster-140/v01/original.png",
+      "width": 1312,
+      "height": 1199,
+      "sha256": "e5c24a6423bb3573957b6b4145030a8147acefd22d84d48dd56780c928522253",
+      "alphaChannel": true,
+      "hasTransparency": true
+    }
+  ],
+  "thumbnail": "thumbnails/monster-140-v01.png",
+  "source": {
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\geniu\\.codex\\generated_images\\01a11608-621b-7461-9513-27b6d6c5f67d\\exec-0bc5a44f-21f4-4776-84f9-7be690176b94.png",
+    "promptPath": "originals/monster/monster-140/v01/prompt.txt",
+    "referenceIds": [
+      "monster-style"
+    ],
+    "createdAt": "2026-10-07T18:15:57.227Z",
+    "inputMode": "new-from-verbal-style",
+    "imageInputsProvided": false,
+    "imageInputs": []
+  },
+  "review": {
+    "userApproval": "pending",
+    "notes": "밝은 배경 알파 합성에서 균사·기계·폐기물·현대 도로 장비·얼음·게이트 재질을 확인. 다리·발 없는 전체 윤곽과 끝부분이 보이며 잘림 없음. 144는 여백이 좁지만 외곽 전체 보임. 사용자 승인 대기.",
+    "visualChecked": true,
+    "reviewedAt": "2026-10-07T18:16:42.279Z"
+  }
+}

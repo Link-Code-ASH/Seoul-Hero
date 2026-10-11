@@ -1,0 +1,34 @@
+{
+  "id": "monster-078",
+  "status": "needs-revision",
+  "revision": "v01",
+  "files": [
+    {
+      "path": "originals/monster/monster-078/v01/original.png",
+      "width": 1312,
+      "height": 1199,
+      "sha256": "e09b54ac9ffb523145a47e3bdd64aedacc554a2d950349cce6c398742ca60f12",
+      "alphaChannel": true,
+      "hasTransparency": true
+    }
+  ],
+  "thumbnail": "thumbnails/monster-078-v01.png",
+  "source": {
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\geniu\\.codex\\generated_images\\01a11608-621b-7461-9513-27b6d6c5f67d\\exec-67be37df-6674-4e62-8afe-94a5e13a9fd4.png",
+    "promptPath": "originals/monster/monster-078/v01/prompt.txt",
+    "referenceIds": [
+      "monster-style"
+    ],
+    "createdAt": "2026-10-07T16:52:45.639Z",
+    "inputMode": "new-from-verbal-style",
+    "imageInputsProvided": false,
+    "imageInputs": []
+  },
+  "review": {
+    "userApproval": "pending",
+    "notes": "Alpha and whole silhouette valid, but ornate white-and-gold armor lacks the required blank industrial reflector panels; regenerate distinct modern equipment design.",
+    "visualChecked": true,
+    "reviewedAt": "2026-10-07T16:54:03.092Z"
+  }
+}

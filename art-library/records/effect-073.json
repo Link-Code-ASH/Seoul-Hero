@@ -1,0 +1,134 @@
+{
+  "id": "effect-073",
+  "status": "complete",
+  "revision": "v01",
+  "files": [
+    {
+      "path": "originals/effect/effect-073/v01/source-sheet.png",
+      "width": 1774,
+      "height": 887,
+      "sha256": "3e72e4223f4665935e3725a3086250404769e154fa17c3a4e6bd9a8a80edb79e",
+      "alphaChannel": true,
+      "hasTransparency": true
+    },
+    {
+      "path": "originals/effect/effect-073/v01/frame-01.png",
+      "width": 444,
+      "height": 444,
+      "sha256": "32d0af5baa947ac1e45fec574fc74f079ab46a8f4dc80880727ecdc5e6b35180",
+      "alphaChannel": true,
+      "hasTransparency": true
+    },
+    {
+      "path": "originals/effect/effect-073/v01/frame-02.png",
+      "width": 444,
+      "height": 444,
+      "sha256": "dac6038d9fa8b62ef378b57156d59845a07680c2a09f0682b58319e9340b4e2f",
+      "alphaChannel": true,
+      "hasTransparency": true
+    },
+    {
+      "path": "originals/effect/effect-073/v01/frame-03.png",
+      "width": 444,
+      "height": 444,
+      "sha256": "307ffe1c513d0ed2ca62a32627996083a0148965914eb360d1f92864004ffd10",
+      "alphaChannel": true,
+      "hasTransparency": true
+    },
+    {
+      "path": "originals/effect/effect-073/v01/frame-04.png",
+      "width": 444,
+      "height": 444,
+      "sha256": "7561e301f4f15f1b40deeb459f85d91d1a378277896f172b895a9fc809269d89",
+      "alphaChannel": true,
+      "hasTransparency": true
+    },
+    {
+      "path": "originals/effect/effect-073/v01/frame-05.png",
+      "width": 444,
+      "height": 444,
+      "sha256": "c587891846ee967df16297857a1da959ff7d8842057a442a7244a55c197cbfd2",
+      "alphaChannel": true,
+      "hasTransparency": true
+    },
+    {
+      "path": "originals/effect/effect-073/v01/frame-06.png",
+      "width": 444,
+      "height": 444,
+      "sha256": "96f1ca10d57a1d00b31a920fc3f778bb619ee7a78ed15ca2eb7323d0e4c11d9f",
+      "alphaChannel": true,
+      "hasTransparency": true
+    },
+    {
+      "path": "originals/effect/effect-073/v01/frame-07.png",
+      "width": 444,
+      "height": 444,
+      "sha256": "8ef7b70b94aeba0191891fb716c93c2c5c5708d641031363515b058f1dafd226",
+      "alphaChannel": true,
+      "hasTransparency": true
+    },
+    {
+      "path": "originals/effect/effect-073/v01/frame-08.png",
+      "width": 444,
+      "height": 444,
+      "sha256": "2cd1abe3ee074188ea41d372c7027c5ed4ca1e26b2758224a69b70a462159425",
+      "alphaChannel": true,
+      "hasTransparency": true
+    },
+    {
+      "path": "originals/effect/effect-073/v01/sprite-sheet.png",
+      "width": 1776,
+      "height": 888,
+      "sha256": "8e3c5b61abaee86bae8ecfbb05bfb3ca8af7fb5d19d44d2557ff833b5dae05e5",
+      "alphaChannel": true,
+      "hasTransparency": true,
+      "derived": true
+    }
+  ],
+  "thumbnail": "thumbnails/effect-073-v01.png",
+  "source": {
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\geniu\\.codex\\generated_images\\01a10b3b-6dc9-7b13-a092-b8ab3abd33e2\\exec-b4cb4630-bb79-4774-87b0-5f9b7b6f3c80.png",
+    "promptPath": "originals/effect/effect-073/v01/prompt.txt",
+    "referenceIds": [
+      "effect-style"
+    ],
+    "createdAt": "2026-10-07T16:23:42.420Z",
+    "inputMode": "new-from-verbal-style",
+    "imageInputsProvided": false,
+    "imageInputs": []
+  },
+  "review": {
+    "userApproval": "pending",
+    "notes": "실제 원본과 alpha 합성에서 실루엣·여백·형태 차이를 확인했습니다. 연속 프레임은 8장 순서·같은 캔버스와 기준점·형태 변화 및 잔광 단계가 읽힙니다.",
+    "visualChecked": true,
+    "reviewedAt": "2026-10-07T16:31:08.317Z"
+  },
+  "sequence": {
+    "framePaths": [
+      "originals/effect/effect-073/v01/frame-01.png",
+      "originals/effect/effect-073/v01/frame-02.png",
+      "originals/effect/effect-073/v01/frame-03.png",
+      "originals/effect/effect-073/v01/frame-04.png",
+      "originals/effect/effect-073/v01/frame-05.png",
+      "originals/effect/effect-073/v01/frame-06.png",
+      "originals/effect/effect-073/v01/frame-07.png",
+      "originals/effect/effect-073/v01/frame-08.png"
+    ],
+    "fps": 12,
+    "frameCount": 8,
+    "aligned": true,
+    "sheetPath": "originals/effect/effect-073/v01/sprite-sheet.png",
+    "grid": [
+      4,
+      2
+    ],
+    "frameSize": [
+      444,
+      444
+    ],
+    "sourceSheetPreserved": true,
+    "extraction": "rounded equal grid boundaries, transparent right/bottom padding only, source unmodified",
+    "sourceSheetPath": "originals/effect/effect-073/v01/source-sheet.png"
+  }
+}

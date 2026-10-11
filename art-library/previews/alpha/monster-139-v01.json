@@ -1,0 +1,19 @@
+{
+  "id": "monster-139",
+  "revision": "v01",
+  "dimensions": [
+    1312,
+    1199
+  ],
+  "alphaThreshold": 32,
+  "margins": [
+    46,
+    100,
+    49,
+    104
+  ],
+  "edgePixels": 0,
+  "preview": "previews/alpha/monster-139-v01-light.png",
+  "derivedForReview": true,
+  "countsAsNewDesign": false
+}

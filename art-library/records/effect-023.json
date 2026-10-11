@@ -1,0 +1,31 @@
+{
+  "id": "effect-023",
+  "status": "complete",
+  "revision": "v01",
+  "files": [
+    {
+      "path": "originals/effect/effect-023/v01/original.png",
+      "width": 1374,
+      "height": 1145,
+      "sha256": "3cb6dbf4fb2ef6b49a15ca64a03ef6b6eea163d7151b853bb5cc272b2801ede4",
+      "alphaChannel": true,
+      "hasTransparency": true
+    }
+  ],
+  "thumbnail": "thumbnails/effect-023-v01.png",
+  "source": {
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\geniu\\.codex\\generated_images\\01a10b3b-6dc9-7b13-a092-b8ab3abd33e2\\exec-dc401140-c5a5-4148-a0b1-ec6ac211b3e3.png",
+    "promptPath": "originals/effect/effect-023/v01/prompt.txt",
+    "referenceIds": [
+      "effect-style"
+    ],
+    "createdAt": "2026-10-07T15:02:41.821Z"
+  },
+  "review": {
+    "userApproval": "pending",
+    "notes": "Inspected separate pale jade turtle-shell afterglow ribbons, unclipped transparent silhouette and no baked text.",
+    "visualChecked": true,
+    "reviewedAt": "2026-10-07T15:03:57.163Z"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "id": "facility-055",
+  "status": "complete",
+  "revision": "v01",
+  "files": [
+    {
+      "path": "originals/facility/facility-055/v01/original.png",
+      "width": 1374,
+      "height": 1145,
+      "sha256": "7cdd3cc9ac596fc91719a0d096ffa3d97b5a8c713a99c67a6f2ee34736c107f5",
+      "alphaChannel": true,
+      "hasTransparency": true
+    }
+  ],
+  "thumbnail": "thumbnails/facility-055-v01.png",
+  "source": {
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\geniu\\.codex\\generated_images\\01a116ba-0a91-7172-a5c2-28dde8e57760\\exec-13befda1-94c8-40e9-8b28-53d70f8578ac.png",
+    "promptPath": "originals/facility/facility-055/v01/prompt.txt",
+    "referenceIds": [
+      "facility-style"
+    ],
+    "createdAt": "2026-10-07T17:16:23.929Z",
+    "inputMode": "new-from-verbal-style",
+    "imageInputsProvided": false,
+    "imageInputs": []
+  },
+  "review": {
+    "userApproval": "pending",
+    "notes": "개별 원본·밝은/어두운 alpha 합성 검토 완료. 장비 구조와 재료·축복의 독립 실루엣, 투명 경계 정상.",
+    "visualChecked": true,
+    "reviewedAt": "2026-10-07T17:16:58.003Z"
+  }
+}

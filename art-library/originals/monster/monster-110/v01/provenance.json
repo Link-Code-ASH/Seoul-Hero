@@ -1,0 +1,34 @@
+{
+  "id": "monster-110",
+  "status": "complete",
+  "revision": "v01",
+  "files": [
+    {
+      "path": "originals/monster/monster-110/v01/original.png",
+      "width": 1311,
+      "height": 1200,
+      "sha256": "48db77d178cead5bb7ec81b22685365a002f73214bb3a8a76cb141b181b25522",
+      "alphaChannel": true,
+      "hasTransparency": true
+    }
+  ],
+  "thumbnail": "thumbnails/monster-110-v01.png",
+  "source": {
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\geniu\\.codex\\generated_images\\01a11608-621b-7461-9513-27b6d6c5f67d\\exec-72dce290-1cf3-4222-8884-4eed98271a78.png",
+    "promptPath": "originals/monster/monster-110/v01/prompt.txt",
+    "referenceIds": [
+      "monster-style"
+    ],
+    "createdAt": "2026-10-07T17:35:06.329Z",
+    "inputMode": "new-from-verbal-style",
+    "imageInputsProvided": false,
+    "imageInputs": []
+  },
+  "review": {
+    "userApproval": "pending",
+    "notes": "밝은 배경 알파 합성본에서 현대 회색 교통 패널·설빙·관문 세 잎 및 연 형태의 점액·나방·막 재질을 확인했습니다. 다리·발·인간 팔 없고 전체 윤곽 잘림 없음. 사용자 승인 대기.",
+    "visualChecked": true,
+    "reviewedAt": "2026-10-07T17:36:01.944Z"
+  }
+}

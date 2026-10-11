@@ -1,0 +1,34 @@
+{
+  "id": "monster-078",
+  "status": "complete",
+  "revision": "v02",
+  "files": [
+    {
+      "path": "originals/monster/monster-078/v02/original.png",
+      "width": 1312,
+      "height": 1199,
+      "sha256": "9bed37155f3c6571cae95104b8922a4e73178c11b2ea16ae28e86349ac08a3c3",
+      "alphaChannel": true,
+      "hasTransparency": true
+    }
+  ],
+  "thumbnail": "thumbnails/monster-078-v02.png",
+  "source": {
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\geniu\\.codex\\generated_images\\01a11608-621b-7461-9513-27b6d6c5f67d\\exec-f2805f16-c508-4de6-a24f-786ecffe795f.png",
+    "promptPath": "originals/monster/monster-078/v02/prompt.txt",
+    "referenceIds": [
+      "monster-style"
+    ],
+    "createdAt": "2026-10-07T17:02:31.803Z",
+    "inputMode": "new-from-verbal-style",
+    "imageInputsProvided": false,
+    "imageInputs": []
+  },
+  "review": {
+    "userApproval": "pending",
+    "notes": "밝은 배경 알파 합성본에서 전체 윤곽과 다리 없는 단일 몸체를 확인했습니다. 078은 현대 회색 장비와 빈 노란 반사판으로 재제작했고, 나머지는 세 겹 실루엣과 나방·막·금속·도자기·종이 재질을 확인했습니다. 가장자리 잘림 없음. 사용자 승인 대기.",
+    "visualChecked": true,
+    "reviewedAt": "2026-10-07T17:02:56.448Z"
+  }
+}

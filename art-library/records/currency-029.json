@@ -1,0 +1,33 @@
+{
+  "id": "currency-029",
+  "status": "complete",
+  "revision": "v01",
+  "files": [
+    {
+      "path": "originals/currency/currency-029/v01/original.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "f09289e2b53a6f15716cfbda5dc5e34298d8250368a959bfdcd1d47ac29eaf74",
+      "alphaChannel": true,
+      "hasTransparency": true
+    }
+  ],
+  "thumbnail": "thumbnails/currency-029-v01.png",
+  "source": {
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\geniu\\.codex\\generated_images\\01a116ba-0a91-7172-a5c2-28dde8e57760\\exec-0e529ef1-630c-4a0f-bee9-cec2b3e486d6.png",
+    "promptPath": "originals/currency/currency-029/v01/prompt.txt",
+    "referenceIds": [
+      "currency-style"
+    ],
+    "createdAt": "2026-10-07T16:17:49.235Z",
+    "inputMode": "new-from-verbal-style",
+    "imageInputsProvided": false,
+    "imageInputs": []
+  },
+  "review": {
+    "userApproval": "pending",
+    "notes": "",
+    "visualChecked": true
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "staff-031",
+  "inputMode": "edit-proportions",
+  "imageInputsProvided": true,
+  "imageInputs": [
+    {
+      "path": "C:\\Users\\geniu\\Documents\\GitHub\\Seoul-Hero\\art-library\\originals\\staff\\staff-031\\v01\\original.png",
+      "role": "edit-target",
+      "sha256": "50869a471b66e9dfccc686ce2b26dd8f8a48ee43c069496c75977414110ce361"
+    }
+  ],
+  "args": {
+    "prompt": "Edit only the body proportions of this exact SD female staff member. Preserve her brown short wavy bob, striped headscarf and neck scarf, pearl earrings, brown eyes, smiling face identity, ivory and navy short service jacket, navy pants and empty hands. Make the figure extremely squat: the large head including hair is exactly 60% of full subject height. Chin to shoe soles is just 40%; body is tiny and boxy with no adult waist or elongated hips. Shrink the pants into a tiny compact lower body. Remove the visible long thighs, knees and shins; tiny loafers attach directly under the tiny torso. Arms and mitten-like empty hands are very short and close to the torso. Retain the full subject with margin on every edge. Clean thin dark outline, softly shaded hand-painted game art. Transparent background; no backdrop, floor, glow cloud, cast shadow, new object or text. Preserve all design details except this SD anatomy correction.",
+    "transparent_background": true,
+    "referenced_image_paths": [
+      "C:\\Users\\geniu\\Documents\\GitHub\\Seoul-Hero\\art-library\\originals\\staff\\staff-031\\v01\\original.png"
+    ]
+  }
+}

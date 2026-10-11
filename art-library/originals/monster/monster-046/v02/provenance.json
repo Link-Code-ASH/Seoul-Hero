@@ -1,0 +1,34 @@
+{
+  "id": "monster-046",
+  "status": "complete",
+  "revision": "v02",
+  "files": [
+    {
+      "path": "originals/monster/monster-046/v02/original.png",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "0ab693a8182c7e230960c68b834c49fe9db8bd0eee720d1ed24c1e750caf7471",
+      "alphaChannel": true,
+      "hasTransparency": true
+    }
+  ],
+  "thumbnail": "thumbnails/monster-046-v02.png",
+  "source": {
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\geniu\\.codex\\generated_images\\01a11608-621b-7461-9513-27b6d6c5f67d\\exec-77808dc6-0c1a-44f8-8f27-951874d25ea0.png",
+    "promptPath": "originals/monster/monster-046/v02/prompt.txt",
+    "referenceIds": [
+      "monster-style"
+    ],
+    "createdAt": "2026-10-07T16:23:19.025Z",
+    "inputMode": "new-from-verbal-style",
+    "imageInputsProvided": false,
+    "imageInputs": []
+  },
+  "review": {
+    "userApproval": "pending",
+    "notes": "Alpha-composited visual review: full unified legless body, clear material identity, genuine transparency and no clipped edges.",
+    "visualChecked": true,
+    "reviewedAt": "2026-10-07T16:23:57.062Z"
+  }
+}

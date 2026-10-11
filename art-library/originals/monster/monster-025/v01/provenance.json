@@ -1,0 +1,34 @@
+{
+  "id": "monster-025",
+  "status": "complete",
+  "revision": "v01",
+  "files": [
+    {
+      "path": "originals/monster/monster-025/v01/original.png",
+      "width": 1230,
+      "height": 1278,
+      "sha256": "e36d6770e99eb547076430150f068c60a7422b8933a7b494620d7c8fa7fb4288",
+      "alphaChannel": true,
+      "hasTransparency": true
+    }
+  ],
+  "thumbnail": "thumbnails/monster-025-v01.png",
+  "source": {
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\geniu\\.codex\\generated_images\\01a11608-621b-7461-9513-27b6d6c5f67d\\exec-b5c1015d-225a-4812-b483-450ab8e6b076.png",
+    "promptPath": "originals/monster/monster-025/v01/prompt.txt",
+    "referenceIds": [
+      "monster-style"
+    ],
+    "createdAt": "2026-10-07T15:36:51.379Z",
+    "inputMode": "new-from-verbal-style",
+    "imageInputsProvided": false,
+    "imageInputs": []
+  },
+  "review": {
+    "userApproval": "pending",
+    "notes": "Derived light-background preview confirms an intact legless water crescent and readable oil-film material; no opaque backdrop or clipped droplets. Alpha edge-pixel count is 0; top margin is narrow at 6 px.",
+    "visualChecked": true,
+    "reviewedAt": "2026-10-07T15:37:50.837Z"
+  }
+}

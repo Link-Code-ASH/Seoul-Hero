@@ -1,0 +1,15 @@
+{
+  "id": "map-033",
+  "nameKo": "관악 근린숲길 관측 공터",
+  "category": "map",
+  "format": "png",
+  "inputMode": "new-from-verbal-style",
+  "styleReferenceIds": [
+    "map-style"
+  ],
+  "imageInputsProvided": false,
+  "args": {
+    "prompt": "Use case: stylized-concept.\nAsset type: Seoul Hero future map individual PNG artwork.\nPrimary request: A single wide 20:9 top-down illustrated Seoul-inspired survival arena: an open low concrete observation pad with three short radial seam groups and sparse border foliage. Surface materials: wide level park paving, muted earthy borders, tree canopies cropped along the perimeter, flattened leaf patterns and no raised central roots. High camera directly above with only a slight consistent top-down view on edge props, no horizon, no isometric room cutaway. The central roughly seventy percent is clear low-contrast flat playable ground; decorative objects, water, raised structures and vegetation stay at the outer margins. Every ground region remains visually continuous and traversable, no walls dividing combat lanes. Hand-painted modern Korean city texture, restrained navy shadows and soft warm highlights, full opaque image to all edges, no player, monster, weapon, UI, text, logos, giant gate portal, repeated tile grid or camera-perspective vanishing point.\nStyle: original crisp Korean mobile-game hand-painted raster art, strong readable silhouettes, clean navy outlines where appropriate, restrained cel shading and material highlights. Follow the specific subject palette in the brief. Create a new silhouette and object, with no copied reference subject.\nA wide 20:9 orthographic TOP-DOWN Seoul arena environment illustration. Reference only for camera and painterly rendering, create a different place. Readable wide continuous walkable center with detail mainly at edges. No characters, HUD, labels, gibberish signage, perspective skyline or screenshot frame.\nComposition: single subject fully inside canvas, centered with 8 percent safe padding. No contact sheet or multiple examples.\nBackground: complete illustrated environment filling the image.\nConstraints: no text, logos, watermark, UI chrome, labels or numbers. Preserve the requested anatomy and view.\n",
+    "transparent_background": false
+  }
+}

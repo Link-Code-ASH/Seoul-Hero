@@ -1,0 +1,34 @@
+{
+  "id": "staff-051",
+  "status": "needs-revision",
+  "revision": "v01",
+  "files": [
+    {
+      "path": "originals/staff/staff-051/v01/original.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "9689167cb963a925e851fbbf353f98e5d3a930b2b85b0ec177b5fc754386219c",
+      "alphaChannel": true,
+      "hasTransparency": true
+    }
+  ],
+  "thumbnail": "thumbnails/staff-051-v01.png",
+  "source": {
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\geniu\\.codex\\generated_images\\01a11608-40cd-79c1-89ac-8db49a82cb9c\\exec-6fa3bbbb-64d9-48c7-ad49-42971ece85cb.png",
+    "promptPath": "originals/staff/staff-051/v01/prompt.txt",
+    "referenceIds": [
+      "staff-style"
+    ],
+    "createdAt": "2026-10-07T17:51:04.605Z",
+    "inputMode": "new-from-verbal-style",
+    "imageInputsProvided": false,
+    "imageInputs": []
+  },
+  "review": {
+    "userApproval": "pending",
+    "notes": "성인 체형과 긴 허벅지를 줄이는 SD 비율 수정 필요",
+    "visualChecked": true,
+    "reviewedAt": "2026-10-07T17:51:06.228Z"
+  }
+}

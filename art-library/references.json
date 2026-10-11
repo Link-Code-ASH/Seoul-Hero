@@ -1,0 +1,236 @@
+[
+  {
+    "id": "weapon-style",
+    "path": "references/weapon-style.png",
+    "originalPath": "assets/ui/weapons/weapon_mana_sword_casual_01.png",
+    "sha256": "958245896da4eac2517238ec9d0000be95baa81fd305fadfb31cf4a805d34ed1",
+    "width": 1254,
+    "height": 1254,
+    "role": "style reference",
+    "countsAsNewDesign": false,
+    "documentation": [
+      {
+        "path": "references/provenance/weapon-style/SOURCES.md",
+        "originalPath": "assets/ui/weapons/SOURCES.md",
+        "sha256": "c05fbd000a6a8d865c2b0a0f1ac5bce4c638c4928cc57e45200b3da80bbeff9f"
+      }
+    ]
+  },
+  {
+    "id": "character-style",
+    "path": "references/character-style.png",
+    "originalPath": "assets/characters-sd/song_sd_01.png",
+    "sha256": "d855f73c3cbeb171ea81aa855712ce49dd2cda6bcf32f4012144bb7e04a5a50c",
+    "width": 1216,
+    "height": 1294,
+    "role": "style reference",
+    "countsAsNewDesign": false,
+    "documentation": [
+      {
+        "path": "references/provenance/character-style/provenance.json",
+        "originalPath": "assets/characters-sd/provenance.json",
+        "sha256": "54a3cd7495f13ed373343402a7d1f5be05193509fcb1657c4ad8b210c3c469b9"
+      },
+      {
+        "path": "references/provenance/character-style/provenance-02.json",
+        "originalPath": "assets/characters-sd/provenance-02.json",
+        "sha256": "97788c844d4c64f60b464e8059a9adbd8cd473c4759749abefc131fd64e579df"
+      }
+    ]
+  },
+  {
+    "id": "monster-style",
+    "path": "references/monster-style.png",
+    "originalPath": "assets/monsters-sd/gatekeeper_sd_01.png",
+    "sha256": "68e87fc29692ee4b3f448a9791cf9ddf40a8d976874e5338f71270f333fb372b",
+    "width": 1230,
+    "height": 1278,
+    "role": "style reference",
+    "countsAsNewDesign": false,
+    "documentation": [
+      {
+        "path": "references/provenance/monster-style/provenance.json",
+        "originalPath": "assets/monsters-sd/provenance.json",
+        "sha256": "4aafe278688873171ff798604e47f1899653071dde5c1d71f06b6c796b36c3df"
+      }
+    ]
+  },
+  {
+    "id": "blessing-style",
+    "path": "references/blessing-style.png",
+    "originalPath": "assets/ui/archive/blessing_cheonbu_oath_casual_01.png",
+    "sha256": "1ae8c91f607136ae9fc22765921b2eea0630b827aef63f3970d833c0f7a7228e",
+    "width": 1254,
+    "height": 1254,
+    "role": "style reference",
+    "countsAsNewDesign": false,
+    "documentation": [
+      {
+        "path": "references/provenance/blessing-style/provenance.json",
+        "originalPath": "assets/ui/archive/provenance.json",
+        "sha256": "edbfebbf29442577f8ee9217c4adf93605f8599e152c38ee4e498ff1e943877f"
+      },
+      {
+        "path": "references/provenance/blessing-style/SOURCES.md",
+        "originalPath": "assets/ui/archive/SOURCES.md",
+        "sha256": "a0d5e3047af91097ffe15029a0fcfb16d01073981d05f139e7744700a3b622ae"
+      }
+    ]
+  },
+  {
+    "id": "staff-style",
+    "path": "references/staff-style.png",
+    "originalPath": "assets/characters-sd/han_seoa_sd_01.png",
+    "sha256": "a0362bfdcff74e1eebdcac50836336713d9e07e7be93f7acead5c8562f4c8087",
+    "width": 1216,
+    "height": 1293,
+    "role": "style reference",
+    "countsAsNewDesign": false,
+    "documentation": [
+      {
+        "path": "references/provenance/staff-style/provenance.json",
+        "originalPath": "assets/characters-sd/provenance.json",
+        "sha256": "54a3cd7495f13ed373343402a7d1f5be05193509fcb1657c4ad8b210c3c469b9"
+      },
+      {
+        "path": "references/provenance/staff-style/provenance-02.json",
+        "originalPath": "assets/characters-sd/provenance-02.json",
+        "sha256": "97788c844d4c64f60b464e8059a9adbd8cd473c4759749abefc131fd64e579df"
+      }
+    ]
+  },
+  {
+    "id": "map-style",
+    "path": "references/map-style.png",
+    "originalPath": "assets/environment-sd/gwanghwamun_sd_03.png",
+    "sha256": "ac3091cb64f037fa3f2a83a8012ef40be92f4b71bcdba1f4a1468f831e648630",
+    "width": 1870,
+    "height": 841,
+    "role": "style reference",
+    "countsAsNewDesign": false,
+    "documentation": [
+      {
+        "path": "references/provenance/map-style/provenance-03.json",
+        "originalPath": "assets/environment-sd/provenance-03.json",
+        "sha256": "b9b4e6bf01a3200a09f930a69efa38b9fc362e7ba24be4c36c2014a97b1bf7fe"
+      }
+    ]
+  },
+  {
+    "id": "effect-style",
+    "path": "references/effect-style.png",
+    "originalPath": "assets/effects/effect_vfx_critical_01.png",
+    "sha256": "0b47e8f09e47e7ebea15076bae5ed95f8d27055111350d47e77d5531e310b774",
+    "width": 768,
+    "height": 640,
+    "role": "style reference",
+    "countsAsNewDesign": false,
+    "documentation": [
+      {
+        "path": "references/provenance/effect-style/vfx-art-provenance.json",
+        "originalPath": "assets/vfx-art-provenance.json",
+        "sha256": "7ddf8b53673c453a0a509ba0b581e64f1a88accd3782bd6fd02d954ed373dbcb"
+      }
+    ]
+  },
+  {
+    "id": "facility-style",
+    "path": "references/facility-style.png",
+    "originalPath": "assets/ui/guild-management/rooms.png",
+    "sha256": "29598ba155cecf3de27ae74bd657c95c1266bcceb56c1e3717fa40f4828d2179",
+    "width": 1254,
+    "height": 1254,
+    "role": "style reference",
+    "countsAsNewDesign": false,
+    "documentation": [
+      {
+        "path": "references/provenance/facility-style/provenance.json",
+        "originalPath": "assets/ui/guild-management/provenance.json",
+        "sha256": "c3997139f93a48f3e7e820ee2b2e340fa8f17b2ab396d738c8011b7ee9ab3302"
+      }
+    ]
+  },
+  {
+    "id": "currency-style",
+    "path": "references/currency-style.png",
+    "originalPath": "assets/ui/economy-01/guildElectronicParts.png",
+    "sha256": "234f4f988109c055f10c2416bfcd438e3555c66c2c1c0fb7acda2d2a6396d02c",
+    "width": 1254,
+    "height": 1254,
+    "role": "style reference",
+    "countsAsNewDesign": false,
+    "documentation": [
+      {
+        "path": "references/provenance/currency-style/provenance.json",
+        "originalPath": "assets/ui/economy-01/provenance.json",
+        "sha256": "2a7797c3f62f674956e1139fa48d88cf03d1105b22928bf9c382243c277aeb51"
+      },
+      {
+        "path": "references/provenance/currency-style/source-prompts.json",
+        "originalPath": "assets/ui/economy-01/source-prompts.json",
+        "sha256": "b8083892a33ff711074d693ef187b7a6355fb26b6b5dfb992aaad15a1500760d"
+      }
+    ]
+  },
+  {
+    "id": "upgrade-icon",
+    "path": "references/upgrade-icon.png",
+    "originalPath": "assets/ui/weapons/weapon_mana_sword_casual_01.png",
+    "sha256": "958245896da4eac2517238ec9d0000be95baa81fd305fadfb31cf4a805d34ed1",
+    "width": 1254,
+    "height": 1254,
+    "role": "existing preview context",
+    "countsAsNewDesign": false,
+    "documentation": [
+      {
+        "path": "references/provenance/upgrade-icon/SOURCES.md",
+        "originalPath": "assets/ui/weapons/SOURCES.md",
+        "sha256": "c05fbd000a6a8d865c2b0a0f1ac5bce4c638c4928cc57e45200b3da80bbeff9f"
+      }
+    ]
+  },
+  {
+    "id": "supply-crate",
+    "path": "references/supply-crate.png",
+    "originalPath": "assets/ui/image-skin/seoul-support/supply_package_body.png",
+    "sha256": "70f40cd4938edbc739b44ba236809ffb1a5666deddce7736889de82c64b8adc2",
+    "width": 1254,
+    "height": 1254,
+    "role": "existing preview context",
+    "countsAsNewDesign": false,
+    "documentation": [
+      {
+        "path": "references/provenance/supply-crate/provenance.json",
+        "originalPath": "assets/ui/image-skin/seoul-support/provenance.json",
+        "sha256": "8d9a282e64003f03cebaf4409d4445471158047bd3080d4e471f9fb9f18a8158"
+      },
+      {
+        "path": "references/provenance/supply-crate/source-prompts.json",
+        "originalPath": "assets/ui/image-skin/seoul-support/source-prompts.json",
+        "sha256": "ccfcbbcf68dbaeb0feef3ba3cdeda12d1a8eadbf6ad6dfb12aa7bd19cecdd1ca"
+      }
+    ]
+  },
+  {
+    "id": "supply-lid",
+    "path": "references/supply-lid.png",
+    "originalPath": "assets/ui/image-skin/seoul-support/supply_package_lid.png",
+    "sha256": "429d7d91dbece7acac84dc46589a29dcaeb920a7fe94f05fd8cbf1fe9c2c5bb6",
+    "width": 1254,
+    "height": 1254,
+    "role": "existing preview context",
+    "countsAsNewDesign": false,
+    "documentation": [
+      {
+        "path": "references/provenance/supply-lid/provenance.json",
+        "originalPath": "assets/ui/image-skin/seoul-support/provenance.json",
+        "sha256": "8d9a282e64003f03cebaf4409d4445471158047bd3080d4e471f9fb9f18a8158"
+      },
+      {
+        "path": "references/provenance/supply-lid/source-prompts.json",
+        "originalPath": "assets/ui/image-skin/seoul-support/source-prompts.json",
+        "sha256": "ccfcbbcf68dbaeb0feef3ba3cdeda12d1a8eadbf6ad6dfb12aa7bd19cecdd1ca"
+      }
+    ]
+  }
+]

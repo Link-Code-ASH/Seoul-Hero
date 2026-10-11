@@ -1,0 +1,8 @@
+Use case: stylized-concept.
+Asset type: Seoul Hero future monster individual PNG artwork.
+Primary request: A legless signal moth monster built around a tiny squat rounded capsule, visually different from a slime. Four broad rigid kite-shaped wings fold into a compact vertical fan: two upper panels are tall and thin, two lower panels are short and deeply rounded. Wings contain large blank translucent amber and mint window patches, without traffic lettering or symbols. Two very short rounded antenna bumps and oversized black alert eyes above a tiny split mouth. No insect legs, feet or humanoid arms. Single cohesive cute threatening painted sprite, front-three-quarter view, transparent background, no environment or pedestal. Existing shared whole-image flutter is the only motion.
+Style: match the supplied approved reference for crisp Korean mobile-game hand-painted raster art, strong silhouettes, clean navy outlines where appropriate, restrained teal/lilac/gold highlights. The reference is style guidance, not a subject to copy.
+One cute threatening legless monster. Absolutely NO LEGS, NO FEET, NO WALKING JOINTS, NO HUMAN ARMS. Single cohesive body, full silhouette visible, no floor shadow or ground plane.
+Composition: single subject fully inside canvas, centered with 8 percent safe padding. No contact sheet or multiple examples.
+Background: actual transparent RGBA, no opaque backdrop, no fake checkerboard.
+Constraints: no text, logos, watermark, UI chrome, labels or numbers. Preserve the requested anatomy and view.

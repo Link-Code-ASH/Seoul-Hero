@@ -1,0 +1,15 @@
+{
+  "id": "weapon-021",
+  "nameKo": "방패 북",
+  "category": "weapon",
+  "format": "png",
+  "inputMode": "new-from-verbal-style",
+  "styleReferenceIds": [
+    "weapon-style"
+  ],
+  "imageInputsProvided": false,
+  "args": {
+    "prompt": "Use case: stylized-concept.\nAsset type: Seoul Hero future weapon individual PNG artwork.\nPrimary request: A squat round drum with a broad shield-like face, three tension lugs, and one offset strike bead. Musical instrument weapons readable as acoustical structures, with no letter-like markings. Distinct functional joints, restrained mint gate accents, worn ivory and navy industrial finish. Isolated polished hand-painted game icon, bold readable silhouette, orthographic three-quarter object view, clean edge, transparent background, no text, no UI frame, no human, no giant light bloom.\nStyle: original crisp Korean mobile-game hand-painted raster art, strong readable silhouettes, clean navy outlines where appropriate, restrained cel shading and material highlights. Follow the specific subject palette in the brief. Create a new silhouette and object, with no copied reference subject.\nOne standalone equipment icon, full object, no hand or character. Distinct readable silhouette at 48px. No floor or cast shadow.\nComposition: single subject fully inside canvas, centered with 8 percent safe padding. No contact sheet or multiple examples.\nBackground: actual transparent RGBA, no opaque backdrop, no fake checkerboard.\nConstraints: no text, logos, watermark, UI chrome, labels or numbers. Preserve the requested anatomy and view.\n",
+    "transparent_background": true
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "character-031",
+  "inputMode": "edit-proportions",
+  "imageInputsProvided": true,
+  "imageInputs": [
+    {
+      "path": "C:\\Users\\geniu\\Documents\\GitHub\\Seoul-Hero\\art-library\\originals\\character\\character-031\\v01\\original.png",
+      "role": "edit-target",
+      "sha256": "f8bdfe29899bea861328e2a84fc542156a7bee6e23b56b2385d707665c09ae33"
+    }
+  ],
+  "args": {
+    "prompt": "Edit only the body proportions of this exact SD female character. Preserve her black high messy bun, brown eyes, cheek bandage, face identity, white short orange-striped rescue jacket and navy uniform. Make the whole subject squat and tiny: head including hair is exactly 60% of full subject height. Torso is extremely small and boxy, no adult hourglass curves or defined bust, and the body from chin to shoe soles is only 40%. Hands are tiny empty mittens close against the torso; arms are very short. Remove the elongated adult thighs and knees. Tiny boots attach directly beneath the tiny torso, with almost no visible leg length. Retain full subject with margin on every edge. Clean thin dark outline, softly shaded hand-painted game art. Transparent background; no backdrop, floor, glow cloud, cast shadow, new object or text. Preserve the existing appearance except for this anatomy correction.",
+    "transparent_background": true,
+    "referenced_image_paths": [
+      "C:\\Users\\geniu\\Documents\\GitHub\\Seoul-Hero\\art-library\\originals\\character\\character-031\\v01\\original.png"
+    ]
+  }
+}

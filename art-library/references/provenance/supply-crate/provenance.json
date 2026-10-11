@@ -1,0 +1,288 @@
+{
+  "created": "2026-10-05",
+  "generator": "image_gen.imagegen",
+  "approvedDate": "2026-10-05",
+  "approvedRevision": "02-grounding",
+  "approval": "User approved runtime connection after viewing the grounding revision: 좋아 연결해.",
+  "stage": "approved-runtime-assets",
+  "approvedBase": "design/ui-image-skins/seoul-support-01",
+  "images": [
+    {
+      "id": "recovery_background",
+      "file": "recovery_background.png",
+      "source": "built-in image_gen",
+      "nativeSize": [
+        1919,
+        820
+      ],
+      "sha256": "5e4ea4e7c44762d27c4820b52710e052d346968ef9abcfc953c4edde6e79c379",
+      "displaySize": [
+        915,
+        412
+      ],
+      "minimumNativeDensity": 1.9902912621359223,
+      "meetsNative4x": false,
+      "usage": "background, center-cover",
+      "registration": null,
+      "imageId": "supportRecoveryBackground",
+      "approvedSource": "design/ui-image-skins/seoul-support-01/source/recovery_background.png",
+      "runtimeSource": "assets/ui/image-skin/seoul-support/recovery_background.png"
+    },
+    {
+      "id": "supply_background",
+      "file": "supply_background.png",
+      "source": "built-in image_gen",
+      "nativeSize": [
+        1866,
+        843
+      ],
+      "sha256": "99a6deca57e10291324e359c5fa0bb65e5b92ed02cfaf555350de37550e08522",
+      "displaySize": [
+        915,
+        412
+      ],
+      "minimumNativeDensity": 2.039344262295082,
+      "meetsNative4x": false,
+      "usage": "background, center-cover",
+      "registration": null,
+      "imageId": "supportSupplyBackground",
+      "approvedSource": "design/ui-image-skins/seoul-support-01/source/supply_background.png",
+      "runtimeSource": "assets/ui/image-skin/seoul-support/supply_background.png"
+    },
+    {
+      "id": "recovery_drone",
+      "file": "recovery_drone.png",
+      "source": "built-in image_gen",
+      "nativeSize": [
+        1448,
+        1086
+      ],
+      "sha256": "7c28156e1a92df8ff674ee5f6992f31b9647dd5951178977eb2607051ff7ce0a",
+      "displaySize": [
+        234.6667,
+        176
+      ],
+      "minimumNativeDensity": 6.17045366896965,
+      "meetsNative4x": true,
+      "usage": "untrimmed transparent canvas, aspect-fit",
+      "registration": {
+        "canvasRect": [
+          141,
+          154,
+          252,
+          176
+        ],
+        "visibleAlphaBounds": [
+          137,
+          239,
+          1341,
+          798
+        ],
+        "bobPx": 3
+      },
+      "imageId": "supportRecoveryDrone",
+      "approvedSource": "design/ui-image-skins/seoul-support-01/source/recovery_drone.png",
+      "runtimeSource": "assets/ui/image-skin/seoul-support/recovery_drone.png"
+    },
+    {
+      "id": "recovery_package",
+      "file": "recovery_package.png",
+      "source": "built-in image_gen",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "sha256": "8592e32997f2e6005079bbc1e73cef8fdf5f2f906c5966481f406d0091140054",
+      "displaySize": [
+        73,
+        73
+      ],
+      "minimumNativeDensity": 17.17808219178082,
+      "meetsNative4x": true,
+      "usage": "untrimmed transparent canvas, aspect-fit",
+      "registration": {
+        "canvasRect": [
+          242,
+          255,
+          96,
+          73
+        ],
+        "visibleAlphaBounds": [
+          130,
+          202,
+          1140,
+          1100
+        ],
+        "landingOffsetPx": 2,
+        "idleBobPx": 0
+      },
+      "imageId": "supportRecoveryPackage",
+      "approvedSource": "design/ui-image-skins/seoul-support-01/source/recovery_package.png",
+      "runtimeSource": "assets/ui/image-skin/seoul-support/recovery_package.png"
+    },
+    {
+      "id": "supply_package_body",
+      "file": "supply_package_body.png",
+      "source": "built-in image_gen",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "sha256": "70f40cd4938edbc739b44ba236809ffb1a5666deddce7736889de82c64b8adc2",
+      "displaySize": [
+        212,
+        212
+      ],
+      "minimumNativeDensity": 5.915094339622642,
+      "meetsNative4x": true,
+      "usage": "untrimmed transparent canvas, aspect-fit",
+      "registration": {
+        "canvasRect": [
+          126,
+          124,
+          347,
+          212
+        ],
+        "visibleAlphaBounds": [
+          40,
+          264,
+          1216,
+          1076
+        ]
+      },
+      "imageId": "supportSupplyBody",
+      "approvedSource": "design/ui-image-skins/seoul-support-01/source/supply_package_body.png",
+      "runtimeSource": "assets/ui/image-skin/seoul-support/supply_package_body.png"
+    },
+    {
+      "id": "supply_package_lid",
+      "file": "supply_package_lid.png",
+      "source": "built-in image_gen",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "sha256": "429d7d91dbece7acac84dc46589a29dcaeb920a7fe94f05fd8cbf1fe9c2c5bb6",
+      "displaySize": [
+        212,
+        184.016
+      ],
+      "minimumNativeDensity": 5.915094339622642,
+      "meetsNative4x": true,
+      "usage": "untrimmed transparent canvas, calibrated affine registration",
+      "registration": {
+        "canvasRect": [
+          126,
+          109,
+          347,
+          212
+        ],
+        "scale": [
+          1,
+          0.868
+        ],
+        "pivot": [
+          137,
+          60
+        ],
+        "visibleAlphaBounds": [
+          31,
+          352,
+          1226,
+          992
+        ],
+        "openingSeconds": 0.85
+      },
+      "imageId": "supportSupplyLid",
+      "approvedSource": "design/ui-image-skins/seoul-support-01/source/supply_package_lid.png",
+      "runtimeSource": "assets/ui/image-skin/seoul-support/supply_package_lid.png"
+    },
+    {
+      "id": "support_glass_panel",
+      "file": "support_glass_panel.png",
+      "source": "built-in image_gen",
+      "nativeSize": [
+        1315,
+        1196
+      ],
+      "sha256": "f9054524fc67b65813f4ffcb610bb9c7a537a4c0ce3660e5e6e2572aac507a89",
+      "displaySize": [
+        328,
+        298
+      ],
+      "minimumNativeDensity": 4.009146341463414,
+      "meetsNative4x": true,
+      "usage": "density4 nine-patch PNG surface",
+      "registration": {
+        "nativeSlice": [
+          48,
+          48,
+          48,
+          48
+        ],
+        "displaySlice": [
+          12,
+          12,
+          12,
+          12
+        ],
+        "contentSafePadding": [
+          16,
+          16,
+          20,
+          12
+        ],
+        "headerRect": [
+          22,
+          15,
+          423,
+          60
+        ],
+        "headerCenterStretched": true
+      },
+      "imageId": "supportGlassPanel",
+      "approvedSource": "design/ui-image-skins/seoul-support-01/source/support_glass_panel.png",
+      "runtimeSource": "assets/ui/image-skin/seoul-support/support_glass_panel.png"
+    },
+    {
+      "id": "package_ground_shadow",
+      "file": "package_ground_shadow.png",
+      "source": "built-in image_gen",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "sha256": "ba89f6603d7bbc6dc391710ce689f47e8f7f8dc728b4a0f5d495310619d4760e",
+      "displaySize": [
+        212,
+        212
+      ],
+      "minimumNativeDensity": 5.915094339622642,
+      "meetsNative4x": true,
+      "usage": "Registered oblique contact and short cast shadow; same square canvas as package body, behind artwork",
+      "registration": {
+        "supplyCanvasRect": [
+          126,
+          124,
+          347,
+          212
+        ],
+        "recoveryCanvasRect": [
+          243,
+          256,
+          96,
+          73
+        ],
+        "supplyOpacity": 0.85,
+        "recoveryOpacity": 0.78
+      },
+      "imageId": "supportPackageShadow",
+      "approvedSource": "design/ui-image-skins/seoul-support-01/source/package_ground_shadow.png",
+      "runtimeSource": "assets/ui/image-skin/seoul-support/package_ground_shadow.png"
+    }
+  ],
+  "prompts": "source-prompts.json",
+  "approvedPreviewManifest": "approved-preview-manifest.json",
+  "resolutionLimitation": "The built-in image generation tool returned the two backgrounds at about 2x the mobile display despite a requested 3840x1728 output. Original generated files are preserved without artificial upscale. The foreground props and main information panel meet 4x their actual displayed image footprint; backgrounds do not.",
+  "unchangedCopies": true
+}

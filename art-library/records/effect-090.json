@@ -1,0 +1,34 @@
+{
+  "id": "effect-090",
+  "status": "complete",
+  "revision": "v01",
+  "files": [
+    {
+      "path": "originals/effect/effect-090/v01/original.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "becc98868177f2be2d37ef21f447d5a8d758416f7d82241e09f8b769a98859fe",
+      "alphaChannel": true,
+      "hasTransparency": true
+    }
+  ],
+  "thumbnail": "thumbnails/effect-090-v01.png",
+  "source": {
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\geniu\\.codex\\generated_images\\01a10b3b-6dc9-7b13-a092-b8ab3abd33e2\\exec-156a3af6-8a05-4c08-8a20-cede6ed02be7.png",
+    "promptPath": "originals/effect/effect-090/v01/prompt.txt",
+    "referenceIds": [
+      "effect-style"
+    ],
+    "createdAt": "2026-10-07T16:34:26.748Z",
+    "inputMode": "new-from-verbal-style",
+    "imageInputsProvided": false,
+    "imageInputs": []
+  },
+  "review": {
+    "userApproval": "pending",
+    "notes": "실제 alpha 합성에서 꽃 문양·균열·부채꼴·연무·열린 원호·낙하 파편의 형태 차이와 잘림 없는 외곽을 확인했습니다.",
+    "visualChecked": true,
+    "reviewedAt": "2026-10-07T16:38:19.568Z"
+  }
+}

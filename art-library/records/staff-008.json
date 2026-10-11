@@ -1,0 +1,39 @@
+{
+  "id": "staff-008",
+  "status": "complete",
+  "revision": "v02",
+  "files": [
+    {
+      "path": "originals/staff/staff-008/v02/original.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "00e9aff1fc47d47fdf762f1fa765d271ee162e9f12acaf7bd1b9462ab0defe1c",
+      "alphaChannel": true,
+      "hasTransparency": true
+    }
+  ],
+  "thumbnail": "thumbnails/staff-008-v02.png",
+  "source": {
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\geniu\\.codex\\generated_images\\01a11608-40cd-79c1-89ac-8db49a82cb9c\\exec-2b47d31f-7357-40c2-ae6a-c9ac202a30af.png",
+    "promptPath": "originals/staff/staff-008/v02/prompt.txt",
+    "referenceIds": [
+      "staff-style"
+    ],
+    "createdAt": "2026-10-07T16:07:28.364Z",
+    "inputMode": "edit-proportions",
+    "imageInputsProvided": true,
+    "imageInputs": [
+      {
+        "path": "originals/staff/staff-008/v01/original.png",
+        "role": "edit-target",
+        "sha256": "14880e519e676e1363cbc6beb7f34640f632e6496c042834b8d0b8f6edd947cb"
+      }
+    ]
+  },
+  "review": {
+    "userApproval": "pending",
+    "notes": "",
+    "visualChecked": true
+  }
+}

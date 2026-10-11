@@ -1,0 +1,34 @@
+{
+  "id": "effect-182",
+  "status": "complete",
+  "revision": "v01",
+  "files": [
+    {
+      "path": "originals/effect/effect-182/v01/original.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "ef06d70f329be7deaa461507f2399f90676258a5900419150c502bf7b0feafe0",
+      "alphaChannel": true,
+      "hasTransparency": true
+    }
+  ],
+  "thumbnail": "thumbnails/effect-182-v01.png",
+  "source": {
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\geniu\\.codex\\generated_images\\01a10b3b-6dc9-7b13-a092-b8ab3abd33e2\\exec-331d354e-0bd0-4364-af68-b6ffdfea69e8.png",
+    "promptPath": "originals/effect/effect-182/v01/prompt.txt",
+    "referenceIds": [
+      "effect-style"
+    ],
+    "createdAt": "2026-10-07T17:31:34.486Z",
+    "inputMode": "new-from-verbal-style",
+    "imageInputsProvided": false,
+    "imageInputs": []
+  },
+  "review": {
+    "userApproval": "pending",
+    "notes": "실제 투명 알파 합성 원화를 확인했습니다. 전기·화염 시퀀스의 발생·확산·소멸 순서와 공통 캔버스를 확인했으며, 화염·빙결·독·마력 소재의 윤곽과 여백이 유지됩니다.",
+    "visualChecked": true,
+    "reviewedAt": "2026-10-07T17:32:42.886Z"
+  }
+}

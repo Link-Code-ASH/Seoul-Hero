@@ -1,0 +1,34 @@
+{
+  "id": "weapon-109",
+  "status": "complete",
+  "revision": "v01",
+  "files": [
+    {
+      "path": "originals/weapon/weapon-109/v01/original.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "91d0312481400babb0c0cba73a39f89703c4e63413d019187c16132347dad6ae",
+      "alphaChannel": true,
+      "hasTransparency": true
+    }
+  ],
+  "thumbnail": "thumbnails/weapon-109-v01.png",
+  "source": {
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\geniu\\.codex\\generated_images\\01a10b3b-6dc9-7b13-a092-b8ab3abd33e2\\exec-d3b2b4f9-9964-4d83-884e-a1a5c1e90442.png",
+    "promptPath": "originals/weapon/weapon-109/v01/prompt.txt",
+    "referenceIds": [
+      "weapon-style"
+    ],
+    "createdAt": "2026-10-07T18:26:32.705Z",
+    "inputMode": "new-from-verbal-style",
+    "imageInputsProvided": false,
+    "imageInputs": []
+  },
+  "review": {
+    "userApproval": "pending",
+    "notes": "Reviewed native originals and actual-alpha composite. Independent ring blade, megaphone launcher, chain weight, articulated star, four-nozzle loop, water horn, pearled shield emitter and mana fishing rod; complete outlines and alpha gaps, no text or floor shadows.",
+    "visualChecked": true,
+    "reviewedAt": "2026-10-07T18:28:31.668Z"
+  }
+}

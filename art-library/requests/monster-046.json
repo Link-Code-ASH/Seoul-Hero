@@ -1,0 +1,12 @@
+{
+  "id": "monster-046",
+  "inputMode": "new-from-verbal-style",
+  "styleReferenceIds": [
+    "monster-style"
+  ],
+  "imageInputsProvided": false,
+  "args": {
+    "prompt": "Use case: stylized-concept.\nAsset type: monster-046, individual game PNG.\nCreate one compact floating gray mechanical creature made from two unequal rounded modern equipment housings fused into one smooth body. Large lobe left, smaller lobe right, deep notch between them and a low curved underside. Plain gray painted metal with a few screws, navy rubber seams and two completely blank warm-yellow rectangular reflector inserts. A small amber oval sensor sits within a narrow central dark slit. Keep the body simple, playful and a little mysterious, suitable for a children's fantasy mobile game. No limbs, legs, feet or floor contact.\nOriginal Korean mobile-game hand-painted raster illustration, crisp navy outline, rounded cel shading, restrained highlights. Full centered silhouette with generous transparent margins, front-three-quarter view. Transparent RGBA background, one PNG only.\nNo text, signs, markings, arrows, logos or symbols. No fantasy armor, ceramic ornaments, carvings, gold trim, bells, human face or environment.",
+    "transparent_background": true
+  }
+}

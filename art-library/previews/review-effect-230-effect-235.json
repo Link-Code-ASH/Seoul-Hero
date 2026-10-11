@@ -1,0 +1,35 @@
+{
+  "purpose": "actual-alpha visual review derivative; excluded from design count",
+  "entries": [
+    {
+      "id": "effect-230",
+      "source": "originals/effect/effect-230/v01/original.png",
+      "revision": "v01"
+    },
+    {
+      "id": "effect-231",
+      "source": "originals/effect/effect-231/v01/original.png",
+      "revision": "v01"
+    },
+    {
+      "id": "effect-232",
+      "source": "originals/effect/effect-232/v01/original.png",
+      "revision": "v01"
+    },
+    {
+      "id": "effect-233",
+      "source": "originals/effect/effect-233/v01/original.png",
+      "revision": "v01"
+    },
+    {
+      "id": "effect-234",
+      "source": "originals/effect/effect-234/v01/original.png",
+      "revision": "v01"
+    },
+    {
+      "id": "effect-235",
+      "source": "originals/effect/effect-235/v01/original.png",
+      "revision": "v01"
+    }
+  ]
+}

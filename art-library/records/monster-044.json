@@ -1,0 +1,34 @@
+{
+  "id": "monster-044",
+  "status": "complete",
+  "revision": "v01",
+  "files": [
+    {
+      "path": "originals/monster/monster-044/v01/original.png",
+      "width": 1374,
+      "height": 1145,
+      "sha256": "b94fa2079c996f08694aaeff72448472db74b5a56c43596b43d05a3ed48c547f",
+      "alphaChannel": true,
+      "hasTransparency": true
+    }
+  ],
+  "thumbnail": "thumbnails/monster-044-v01.png",
+  "source": {
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\geniu\\.codex\\generated_images\\01a11608-621b-7461-9513-27b6d6c5f67d\\exec-7df9f527-dc38-4a64-8a46-3f43c24c8912.png",
+    "promptPath": "originals/monster/monster-044/v01/prompt.txt",
+    "referenceIds": [
+      "monster-style"
+    ],
+    "createdAt": "2026-10-07T16:09:56.818Z",
+    "inputMode": "new-from-verbal-style",
+    "imageInputsProvided": false,
+    "imageInputs": []
+  },
+  "review": {
+    "userApproval": "pending",
+    "notes": "Alpha-composited visual review: complete legless unified silhouette, no opaque background or canvas clipping; material theme and fused shape confirmed.",
+    "visualChecked": true,
+    "reviewedAt": "2026-10-07T16:10:56.054Z"
+  }
+}

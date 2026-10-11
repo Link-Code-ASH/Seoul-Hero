@@ -1,0 +1,34 @@
+{
+  "id": "monster-059",
+  "status": "complete",
+  "revision": "v01",
+  "files": [
+    {
+      "path": "originals/monster/monster-059/v01/original.png",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "d09f3ee5b37059f839e4b742aadae70c38535edfb89ee7b7b0225119dbaa5442",
+      "alphaChannel": true,
+      "hasTransparency": true
+    }
+  ],
+  "thumbnail": "thumbnails/monster-059-v01.png",
+  "source": {
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\geniu\\.codex\\generated_images\\01a11608-621b-7461-9513-27b6d6c5f67d\\exec-d32794b6-c997-44f2-b99c-2d63f6cc6eb2.png",
+    "promptPath": "originals/monster/monster-059/v01/prompt.txt",
+    "referenceIds": [
+      "monster-style"
+    ],
+    "createdAt": "2026-10-07T16:29:48.232Z",
+    "inputMode": "new-from-verbal-style",
+    "imageInputsProvided": false,
+    "imageInputs": []
+  },
+  "review": {
+    "userApproval": "pending",
+    "notes": "Alpha-composited visual review: no opaque backdrop or edge clipping; low-wide unified legless silhouette, face and requested material features confirmed.",
+    "visualChecked": true,
+    "reviewedAt": "2026-10-07T16:30:52.433Z"
+  }
+}

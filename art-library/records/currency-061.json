@@ -1,0 +1,34 @@
+{
+  "id": "currency-061",
+  "status": "complete",
+  "revision": "v01",
+  "files": [
+    {
+      "path": "originals/currency/currency-061/v01/original.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "11e7b586e1bf9fd4cf7692e7ff17269c86fd9a42755d50924cf877375ed1598a",
+      "alphaChannel": true,
+      "hasTransparency": true
+    }
+  ],
+  "thumbnail": "thumbnails/currency-061-v01.png",
+  "source": {
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\geniu\\.codex\\generated_images\\01a116ba-0a91-7172-a5c2-28dde8e57760\\exec-cac29634-943d-4622-8235-047d9dafbbe6.png",
+    "promptPath": "originals/currency/currency-061/v01/prompt.txt",
+    "referenceIds": [
+      "currency-style"
+    ],
+    "createdAt": "2026-10-07T17:55:32.220Z",
+    "inputMode": "new-from-verbal-style",
+    "imageInputsProvided": false,
+    "imageInputs": []
+  },
+  "review": {
+    "userApproval": "pending",
+    "notes": "원본과 밝은·어두운 배경의 실제 alpha 합성을 확인했습니다. 시설 장비·외관과 재료 실루엣, 축복 문양이 서로 구분되며 피사체가 잘리지 않았습니다.",
+    "visualChecked": true,
+    "reviewedAt": "2026-10-07T17:55:54.742Z"
+  }
+}

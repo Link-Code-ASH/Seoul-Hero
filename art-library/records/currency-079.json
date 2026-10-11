@@ -1,0 +1,34 @@
+{
+  "id": "currency-079",
+  "status": "complete",
+  "revision": "v01",
+  "files": [
+    {
+      "path": "originals/currency/currency-079/v01/original.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "5a57cc3e7b4009ab575a65de7930a2739e47a8653598340f39bea9b3565f7791",
+      "alphaChannel": true,
+      "hasTransparency": true
+    }
+  ],
+  "thumbnail": "thumbnails/currency-079-v01.png",
+  "source": {
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\geniu\\.codex\\generated_images\\01a116ba-0a91-7172-a5c2-28dde8e57760\\exec-eae2d565-2a7d-4d1b-a2aa-c068ed5eb706.png",
+    "promptPath": "originals/currency/currency-079/v01/prompt.txt",
+    "referenceIds": [
+      "currency-style"
+    ],
+    "createdAt": "2026-10-07T18:40:02.019Z",
+    "inputMode": "new-from-verbal-style",
+    "imageInputsProvided": false,
+    "imageInputs": []
+  },
+  "review": {
+    "userApproval": "pending",
+    "notes": "원본과 밝은·어두운 배경 alpha 합성을 확인했습니다. 수리 스탠드·도구와 이계 유물 용기·모듈·묶음, 초승달·삼엽 축복의 실루엣이 온전하며 배경은 투명합니다.",
+    "visualChecked": true,
+    "reviewedAt": "2026-10-07T18:40:59.520Z"
+  }
+}

@@ -1,0 +1,8 @@
+Use case: stylized-concept.
+Asset type: Seoul Hero individual weapon equipment PNG icon.
+Primary request: An urban gate folding cleaver built from two unequal broad steel blade plates around a very visible brass hinge. The forward plate is a squared heavy rescue blade with one clipped corner; the rear plate has an open rectangular cutout. Short navy insulated grip with an ivory safety collar and a tiny inset mint crystal. Lay the unfolded weapon diagonally so the large broken stepped contour and hinge read at thumbnail size. No runes or writing.
+Input image: existing mana sword is style reference only; do not copy its sword silhouette or ornaments.
+Style: crisp Korean mobile-game hand-painted raster equipment icon, polished metal, clean dark navy outlines, restrained cel shading.
+Composition: ONE full object, diagonal, centered with eight percent padding, strong readable silhouette at 48px.
+Background: real transparent RGBA.
+Constraints: no character, hand, floor shadow, text, numbers, logo, watermark, UI frame, or multiple views.

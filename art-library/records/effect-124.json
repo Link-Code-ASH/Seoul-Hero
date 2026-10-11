@@ -1,0 +1,34 @@
+{
+  "id": "effect-124",
+  "status": "complete",
+  "revision": "v01",
+  "files": [
+    {
+      "path": "originals/effect/effect-124/v01/original.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "4d759166691042e6965b82d7f13ece0bffc8eb78c5e28e11812d58535cca63e7",
+      "alphaChannel": true,
+      "hasTransparency": true
+    }
+  ],
+  "thumbnail": "thumbnails/effect-124-v01.png",
+  "source": {
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\geniu\\.codex\\generated_images\\01a10b3b-6dc9-7b13-a092-b8ab3abd33e2\\exec-d9eb03da-8f79-4e94-86a6-a2b39169d664.png",
+    "promptPath": "originals/effect/effect-124/v01/prompt.txt",
+    "referenceIds": [
+      "effect-style"
+    ],
+    "createdAt": "2026-10-07T16:54:20.962Z",
+    "inputMode": "new-from-verbal-style",
+    "imageInputsProvided": false,
+    "imageInputs": []
+  },
+  "review": {
+    "userApproval": "pending",
+    "notes": "알파 합성에서 외곽 보존과 투명 배경, 연무·궤적·해제 파편·후광의 독립 형태 확인.",
+    "visualChecked": true,
+    "reviewedAt": "2026-10-07T16:55:39.096Z"
+  }
+}

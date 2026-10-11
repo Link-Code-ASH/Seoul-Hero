@@ -1,0 +1,33 @@
+{
+  "id": "weapon-007",
+  "status": "needs-revision",
+  "revision": "v01",
+  "files": [
+    {
+      "path": "originals/weapon/weapon-007/v01/original.png",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "6cb09c801a31c6bf7f028aec1296878701c337cfa3d5b4fed14d7c11b5f9d329",
+      "alphaChannel": true,
+      "hasTransparency": true
+    }
+  ],
+  "thumbnail": "thumbnails/weapon-007-v01.png",
+  "source": {
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\geniu\\.codex\\generated_images\\01a11608-40cd-79c1-89ac-8db49a82cb9c\\exec-5229e971-e843-4f63-befd-60814c4cf126.png",
+    "promptPath": "originals/weapon/weapon-007/v01/prompt.txt",
+    "referenceIds": [
+      "weapon-style"
+    ],
+    "createdAt": "2026-10-07T15:18:29.300Z",
+    "inputMode": "new-from-verbal-style",
+    "imageInputsProvided": false
+  },
+  "review": {
+    "userApproval": "pending",
+    "notes": "직접 검토: 제작 대상 외형은 구분되지만 불투명 조명 배경이 남음. 실제 투명 배경으로 수리 필요.",
+    "visualChecked": true,
+    "reviewedAt": "2026-10-07T15:18:31.169Z"
+  }
+}

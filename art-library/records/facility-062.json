@@ -1,0 +1,34 @@
+{
+  "id": "facility-062",
+  "status": "complete",
+  "revision": "v01",
+  "files": [
+    {
+      "path": "originals/facility/facility-062/v01/original.png",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "60bf6b66c5a8636e44bf294280a81877c4a70454424006c4b57fef77a3106223",
+      "alphaChannel": true,
+      "hasTransparency": true
+    }
+  ],
+  "thumbnail": "thumbnails/facility-062-v01.png",
+  "source": {
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\geniu\\.codex\\generated_images\\01a116ba-0a91-7172-a5c2-28dde8e57760\\exec-e741f4f0-3472-428e-8a58-fee6a70702d5.png",
+    "promptPath": "originals/facility/facility-062/v01/prompt.txt",
+    "referenceIds": [
+      "facility-style"
+    ],
+    "createdAt": "2026-10-07T17:45:04.744Z",
+    "inputMode": "new-from-verbal-style",
+    "imageInputsProvided": false,
+    "imageInputs": []
+  },
+  "review": {
+    "userApproval": "pending",
+    "notes": "개별 원본과 밝은/어두운 alpha 합성 검토. 시설 063 상단 외곽은 확대 합성으로 잘림 없음 확인. 투명 경계와 전체 형태 정상.",
+    "visualChecked": true,
+    "reviewedAt": "2026-10-07T17:46:05.364Z"
+  }
+}

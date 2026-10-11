@@ -1,0 +1,22 @@
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import crypto from 'node:crypto';
+import {createRequire} from 'node:module';
+import {fileURLToPath} from 'node:url';
+const require=createRequire(import.meta.url);
+const sharp=require('C:/Users/geniu/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/sharp');
+const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
+const id=process.argv[2];const recordPath=path.join(root,'records',id+'.json');
+const record=JSON.parse(await fs.readFile(recordPath,'utf8'));if(!record.sequence)throw new Error('Not a sequence');
+const frames=record.sequence.framePaths;
+const meta=await sharp(path.join(root,frames[0])).metadata();
+for(const frame of frames){const m=await sharp(path.join(root,frame)).metadata();if(m.width!==meta.width||m.height!==meta.height)throw new Error('Frame canvas mismatch');}
+const relative=path.dirname(record.files[0].path)+'/sprite-sheet.png';
+await sharp({create:{width:meta.width*4,height:meta.height*2,channels:4,background:{r:0,g:0,b:0,alpha:0}}}).composite(frames.map((frame,index)=>({input:path.join(root,frame),left:index%4*meta.width,top:Math.floor(index/4)*meta.height}))).png().toFile(path.join(root,relative));
+const buffer=await fs.readFile(path.join(root,relative));const stats=await sharp(buffer).stats();
+const file={path:relative,width:meta.width*4,height:meta.height*2,sha256:crypto.createHash('sha256').update(buffer).digest('hex'),alphaChannel:true,hasTransparency:stats.channels.at(-1).min<255,derived:true};
+record.files=record.files.filter(item=>item.path!==relative);record.files.push(file);
+record.sequence.sourceSheetPath=record.files[0].path;record.sequence.sheetPath=relative;
+await fs.writeFile(recordPath+'.tmp',JSON.stringify(record,null,2)+'\n');await fs.rename(recordPath+'.tmp',recordPath);
+await fs.writeFile(path.join(root,path.dirname(relative),'provenance.json'),JSON.stringify(record,null,2)+'\n');
+console.log(JSON.stringify({id,sheet:relative,size:[file.width,file.height],frameSize:[meta.width,meta.height]}));

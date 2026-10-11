@@ -1,0 +1,34 @@
+{
+  "id": "currency-058",
+  "status": "complete",
+  "revision": "v01",
+  "files": [
+    {
+      "path": "originals/currency/currency-058/v01/original.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "2045600270a792c2b4a56c9fd51c372585a0c35dca37ddf86c9ad81c4507713f",
+      "alphaChannel": true,
+      "hasTransparency": true
+    }
+  ],
+  "thumbnail": "thumbnails/currency-058-v01.png",
+  "source": {
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\geniu\\.codex\\generated_images\\01a116ba-0a91-7172-a5c2-28dde8e57760\\exec-efa3ec15-260d-4368-9190-13f4a9528e42.png",
+    "promptPath": "originals/currency/currency-058/v01/prompt.txt",
+    "referenceIds": [
+      "currency-style"
+    ],
+    "createdAt": "2026-10-07T17:45:11.578Z",
+    "inputMode": "new-from-verbal-style",
+    "imageInputsProvided": false,
+    "imageInputs": []
+  },
+  "review": {
+    "userApproval": "pending",
+    "notes": "개별 원본과 밝은/어두운 alpha 합성 검토. 시설 063 상단 외곽은 확대 합성으로 잘림 없음 확인. 투명 경계와 전체 형태 정상.",
+    "visualChecked": true,
+    "reviewedAt": "2026-10-07T17:46:05.377Z"
+  }
+}

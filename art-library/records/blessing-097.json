@@ -1,0 +1,34 @@
+{
+  "id": "blessing-097",
+  "status": "complete",
+  "revision": "v01",
+  "files": [
+    {
+      "path": "originals/blessing/blessing-097/v01/original.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "b160e09601c3f048a78afe69aaa32500afe3850b54f51414ec6339891af151d7",
+      "alphaChannel": true,
+      "hasTransparency": true
+    }
+  ],
+  "thumbnail": "thumbnails/blessing-097-v01.png",
+  "source": {
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\geniu\\.codex\\generated_images\\01a10b3b-6dc9-7b13-a092-b8ab3abd33e2\\exec-61db92a9-d8fc-4dbb-95b9-5776f74322a3.png",
+    "promptPath": "originals/blessing/blessing-097/v01/prompt.txt",
+    "referenceIds": [
+      "blessing-style"
+    ],
+    "createdAt": "2026-10-07T18:49:41.540Z",
+    "inputMode": "new-from-verbal-style",
+    "imageInputsProvided": false,
+    "imageInputs": []
+  },
+  "review": {
+    "userApproval": "pending",
+    "notes": "원본과 밝은 배경의 실제 알파 합성을 직접 확인함. 여덟 디자인의 보호 곡선·부엉 문양·불씨·삼엽 경로·부채·생환 결정·불꽃 그릇·매듭 실루엣이 구분되며, 잘림·기능 글자·프레임·바닥 그림자 없이 투명 소재로 사용할 수 있음.",
+    "visualChecked": true,
+    "reviewedAt": "2026-10-07T18:53:36.934Z"
+  }
+}

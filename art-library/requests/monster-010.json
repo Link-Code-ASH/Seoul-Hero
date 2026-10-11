@@ -1,0 +1,15 @@
+{
+  "id": "monster-010",
+  "nameKo": "광맥 단핵 방울",
+  "category": "monster",
+  "format": "png",
+  "inputMode": "new-from-verbal-style",
+  "styleReferenceIds": [
+    "monster-style"
+  ],
+  "imageInputsProvided": false,
+  "args": {
+    "prompt": "Use case: stylized-concept.\nAsset type: Seoul Hero future monster individual PNG artwork.\nPrimary request: A cute but threatening Seoul gate monster with one squat pear-shaped body with an oversized upper dome, a small tucked lower taper and a single off-center hollow eye chamber. Anatomical material: large blunt faceted crystal blocks around a visible living center, chipped translucent edges, one smooth rounded eye lens and isolated floating shards. Face: one wide eye above a short curved mouth. Single cohesive body silhouette, no legs, feet, knees, humanoid torso, walking joints or articulated limb rig. Front-three-quarter view, restrained inner magic light, thick readable edge and soft painterly shading. A few small material details must explain its theme rather than recolor another monster. Transparent background, no environment, text, props in hands, or ground pedestal. Designed for one shared float motion applied to the entire PNG.\nStyle: original crisp Korean mobile-game hand-painted raster art, strong readable silhouettes, clean navy outlines where appropriate, restrained cel shading and material highlights. Follow the specific subject palette in the brief. Create a new silhouette and object, with no copied reference subject.\nOne cute threatening legless monster. Absolutely NO LEGS, NO FEET, NO WALKING JOINTS, NO HUMAN ARMS. Single cohesive body, full silhouette visible, no floor shadow or ground plane.\nComposition: single subject fully inside canvas, centered with 8 percent safe padding. No contact sheet or multiple examples.\nBackground: actual transparent RGBA, no opaque backdrop, no fake checkerboard.\nConstraints: no text, logos, watermark, UI chrome, labels or numbers. Preserve the requested anatomy and view.\n",
+    "transparent_background": true
+  }
+}

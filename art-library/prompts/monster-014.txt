@@ -1,0 +1,7 @@
+Use case: stylized-concept.
+Asset type: Seoul Hero future monster individual PNG artwork, monster-014.
+Primary request: One cute rounded floating ghost for a children's mobile game. Its single round body combines a soft dark-gray cloud core with ordinary modern Seoul road-equipment housings: broad gray enamel casing pieces, a large completely blank yellow rectangular reflective panel, and one broad navy rectangular panel. One large friendly alert eye and a tiny mouth sit in the core, asymmetrically between the casing pieces. The object is a cohesive round legless creature, not a humanoid.
+Style: original crisp Korean mobile-game hand-painted raster illustration, simple navy contours, rounded cel shading, restrained material highlights, readable silhouette at small game size. Color palette gray, warm yellow and navy.
+Composition: a single centered whole creature fully visible, with generous transparent margin on every side. Front-three-quarter view. No environment or ground shadow.
+Background: genuine transparent RGBA. One individual PNG only.
+Constraints: no arms, legs, feet, walking joints or separate body parts. No real traffic signs, no lettering, no arrows or geometric sign markings, no logos or watermarks. The two reflective panels are completely blank. No ornate fantasy armor, cloud carvings, gold ornament, bells or ceremonial objects.

@@ -1,0 +1,34 @@
+{
+  "id": "monster-148",
+  "status": "complete",
+  "revision": "v01",
+  "files": [
+    {
+      "path": "originals/monster/monster-148/v01/original.png",
+      "width": 1199,
+      "height": 1312,
+      "sha256": "21cd506fb8e367da0b189649a25260cb4a431aa85536e8adcb2c7073e9fad11f",
+      "alphaChannel": true,
+      "hasTransparency": true
+    }
+  ],
+  "thumbnail": "thumbnails/monster-148-v01.png",
+  "source": {
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\geniu\\.codex\\generated_images\\01a11608-621b-7461-9513-27b6d6c5f67d\\exec-907be624-3b76-4165-bf0c-6ab15b915feb.png",
+    "promptPath": "originals/monster/monster-148/v01/prompt.txt",
+    "referenceIds": [
+      "monster-style"
+    ],
+    "createdAt": "2026-10-07T18:22:08.329Z",
+    "inputMode": "new-from-verbal-style",
+    "imageInputsProvided": false,
+    "imageInputs": []
+  },
+  "review": {
+    "userApproval": "pending",
+    "notes": "밝은 배경 알파 합성에서 옆으로 열린 타원형 젤·나방·막·금속·케이블·종이 몸체 확인. 다리·발 없음, 모든 외곽 끝부분이 캔버스 안에 보임. 사용자 승인 대기.",
+    "visualChecked": true,
+    "reviewedAt": "2026-10-07T18:22:38.361Z"
+  }
+}

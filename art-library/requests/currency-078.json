@@ -1,0 +1,15 @@
+{
+  "id": "currency-078",
+  "nameKo": "이계 회수재 · 용기",
+  "category": "currency",
+  "format": "png",
+  "inputMode": "new-from-verbal-style",
+  "styleReferenceIds": [
+    "currency-style"
+  ],
+  "imageInputsProvided": false,
+  "args": {
+    "prompt": "Use case: stylized-concept.\nAsset type: Seoul Hero future currency individual PNG artwork.\nPrimary request: ONE transparent isolated inventory icon for Seoul Hero: a squat hexagonal canister with an offset handle, one broad flat window and a thick rectangular locking cap. Material identity is rust-red alien stone and gunmetal, with asymmetric worn facets, pale cracks and teal embedded residues. Build the silhouette from this physical material rather than recoloring a generic coin or gem. Three-quarter view, upper-left soft lighting, chunky painted edges, simplified large surfaces that read at 32 px, equal clear margin, no floor shadow, backdrop, frame, text, numbers, logos, rarity badge or glow cloud. SINGLE complete object group, not a sheet.\nStyle: original crisp Korean mobile-game hand-painted raster art, strong readable silhouettes, clean navy outlines where appropriate, restrained cel shading and material highlights. Follow the specific subject palette in the brief. Create a new silhouette and object, with no copied reference subject.\nOne distinctive future resource inventory object. Clear material and silhouette at 32px. No coin UI frame, no text or price, no floor shadow. This is artwork only, not a current gameplay currency.\nComposition: single subject fully inside canvas, centered with 8 percent safe padding. No contact sheet or multiple examples.\nBackground: actual transparent RGBA, no opaque backdrop, no fake checkerboard.\nConstraints: no text, logos, watermark, UI chrome, labels or numbers. Preserve the requested anatomy and view.\n",
+    "transparent_background": true
+  }
+}

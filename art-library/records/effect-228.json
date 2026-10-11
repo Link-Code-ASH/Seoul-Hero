@@ -1,0 +1,34 @@
+{
+  "id": "effect-228",
+  "status": "complete",
+  "revision": "v01",
+  "files": [
+    {
+      "path": "originals/effect/effect-228/v01/original.png",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "4720b69a08a28f1389c9fa0b6f2db3afdf499ed6c1be757825da0dcbeb60ceb5",
+      "alphaChannel": true,
+      "hasTransparency": true
+    }
+  ],
+  "thumbnail": "thumbnails/effect-228-v01.png",
+  "source": {
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\geniu\\.codex\\generated_images\\01a10b3b-6dc9-7b13-a092-b8ab3abd33e2\\exec-bece20f3-1612-4cf6-927e-7327e2efc128.png",
+    "promptPath": "originals/effect/effect-228/v01/prompt.txt",
+    "referenceIds": [
+      "effect-style"
+    ],
+    "createdAt": "2026-10-07T17:54:44.628Z",
+    "inputMode": "new-from-verbal-style",
+    "imageInputsProvided": false,
+    "imageInputs": []
+  },
+  "review": {
+    "userApproval": "pending",
+    "notes": "실제 알파 합성본에서 마력 펌프, 온실 안개, 기록 입자와 옥상 바람의 독립 형태·입자·전체 여백을 확인했습니다. 글자나 고정 배경을 포함하지 않습니다.",
+    "visualChecked": true,
+    "reviewedAt": "2026-10-07T17:59:16.340Z"
+  }
+}

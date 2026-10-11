@@ -1,0 +1,34 @@
+{
+  "id": "monster-108",
+  "status": "complete",
+  "revision": "v01",
+  "files": [
+    {
+      "path": "originals/monster/monster-108/v01/original.png",
+      "width": 1235,
+      "height": 1274,
+      "sha256": "a8a20e648a82ed67d4c820910e52b41e965fb08f811dcccc0ee2f4c1a3a78d82",
+      "alphaChannel": true,
+      "hasTransparency": true
+    }
+  ],
+  "thumbnail": "thumbnails/monster-108-v01.png",
+  "source": {
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\geniu\\.codex\\generated_images\\01a11608-621b-7461-9513-27b6d6c5f67d\\exec-f27e844e-68e3-4304-8799-cf81fc7a2401.png",
+    "promptPath": "originals/monster/monster-108/v01/prompt.txt",
+    "referenceIds": [
+      "monster-style"
+    ],
+    "createdAt": "2026-10-07T17:28:08.456Z",
+    "inputMode": "new-from-verbal-style",
+    "imageInputsProvided": false,
+    "imageInputs": []
+  },
+  "review": {
+    "userApproval": "pending",
+    "notes": "밝은 배경 알파 합성본 확인. 102는 둥근 종이 세 잎과 충분한 투명 여백으로 v02 재제작했습니다. 유막·결정·균류·태엽·압축 폐기물의 세 잎 재질과 다리 없는 단일 몸체를 확인했고 모든 윤곽 잘림 없음. 사용자 승인 대기.",
+    "visualChecked": true,
+    "reviewedAt": "2026-10-07T17:29:03.116Z"
+  }
+}

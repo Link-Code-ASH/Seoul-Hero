@@ -1,0 +1,34 @@
+{
+  "id": "effect-060",
+  "status": "complete",
+  "revision": "v01",
+  "files": [
+    {
+      "path": "originals/effect/effect-060/v01/original.png",
+      "width": 1312,
+      "height": 1199,
+      "sha256": "cb4674f5c792beef967efee1588b39ca3c86de96b7c06993fce5d04acaba2e19",
+      "alphaChannel": true,
+      "hasTransparency": true
+    }
+  ],
+  "thumbnail": "thumbnails/effect-060-v01.png",
+  "source": {
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\geniu\\.codex\\generated_images\\01a10b3b-6dc9-7b13-a092-b8ab3abd33e2\\exec-cb6ddd05-aa4f-4efa-ba40-72352e27247c.png",
+    "promptPath": "originals/effect/effect-060/v01/prompt.txt",
+    "referenceIds": [
+      "effect-style"
+    ],
+    "createdAt": "2026-10-07T16:17:35.775Z",
+    "inputMode": "new-from-verbal-style",
+    "imageInputsProvided": false,
+    "imageInputs": []
+  },
+  "review": {
+    "userApproval": "pending",
+    "notes": "실제 alpha 합성에서 외곽과 투명 여백, 서로 다른 형태를 확인했습니다. 시퀀스 062·063은 동일 캔버스의 8프레임 순서와 중심점, 응축·확산·잔광의 변화를 확인했습니다.",
+    "visualChecked": true,
+    "reviewedAt": "2026-10-07T16:20:32.858Z"
+  }
+}

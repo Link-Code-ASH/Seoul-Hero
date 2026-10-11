@@ -1,0 +1,19 @@
+{
+  "id": "character-037",
+  "inputMode": "edit-proportions",
+  "imageInputsProvided": true,
+  "imageInputs": [
+    {
+      "path": "C:\\Users\\geniu\\Documents\\GitHub\\Seoul-Hero\\art-library\\originals\\character\\character-037\\v01\\original.png",
+      "role": "edit-target",
+      "sha256": "b71c149b21445ce7a8a00c865bbd7d9ffb1ae244345304ba86257bd077aba9b0"
+    }
+  ],
+  "args": {
+    "prompt": "Edit only the body proportions of this one original character. Preserve her exact brown high ponytail, olive goggles, big eyes and expression, pale cream-and-olive outdoor rescue jacket, tiny empty hands and footwear identity. Make a round squat SD doll with the head including hair exactly sixty percent of full height. From chin to shoe soles only forty percent of full height. Replace the adult waist and hips with one very short compact boxy costume block. No defined breasts, hourglass waist, bare abdomen, or realistic pelvis. Remove long exposed thighs and knees. Feet and tiny boots sit immediately below the tiny torso; legs scarcely visible. Short little sleeves and mittens attach close to torso. Keep full body visible centered with generous clear space. Only anatomy correction, not a new identity. Transparent background, clean cutout, no backdrop, no text, no weapons, no props held.",
+    "transparent_background": true,
+    "referenced_image_paths": [
+      "C:\\Users\\geniu\\Documents\\GitHub\\Seoul-Hero\\art-library\\originals\\character\\character-037\\v01\\original.png"
+    ]
+  }
+}

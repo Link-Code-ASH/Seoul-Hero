@@ -1,0 +1,34 @@
+{
+  "id": "facility-050",
+  "status": "complete",
+  "revision": "v01",
+  "files": [
+    {
+      "path": "originals/facility/facility-050/v01/original.png",
+      "width": 1312,
+      "height": 1199,
+      "sha256": "58a43f1899be7969251e13a427d7cac9c526b80af64a7857606bb93cabf51148",
+      "alphaChannel": true,
+      "hasTransparency": true
+    }
+  ],
+  "thumbnail": "thumbnails/facility-050-v01.png",
+  "source": {
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\geniu\\.codex\\generated_images\\01a116ba-0a91-7172-a5c2-28dde8e57760\\exec-8b425d3a-b1a4-41af-95fa-6be222849641.png",
+    "promptPath": "originals/facility/facility-050/v01/prompt.txt",
+    "referenceIds": [
+      "facility-style"
+    ],
+    "createdAt": "2026-10-07T16:57:11.328Z",
+    "inputMode": "new-from-verbal-style",
+    "imageInputsProvided": false,
+    "imageInputs": []
+  },
+  "review": {
+    "userApproval": "pending",
+    "notes": "원본 및 밝은/어두운 alpha 합성 확인. 시설 049 상단은 확대 합성으로 구조 잘림이 없음을 확인. 투명 경계 정상.",
+    "visualChecked": true,
+    "reviewedAt": "2026-10-07T16:58:31.154Z"
+  }
+}

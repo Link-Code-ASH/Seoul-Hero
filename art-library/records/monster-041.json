@@ -1,0 +1,34 @@
+{
+  "id": "monster-041",
+  "status": "complete",
+  "revision": "v01",
+  "files": [
+    {
+      "path": "originals/monster/monster-041/v01/original.png",
+      "width": 1374,
+      "height": 1145,
+      "sha256": "42a3786330f5e3965db58f86d0cd2627a3690413415a49752eb65c6b5d6759e7",
+      "alphaChannel": true,
+      "hasTransparency": true
+    }
+  ],
+  "thumbnail": "thumbnails/monster-041-v01.png",
+  "source": {
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\geniu\\.codex\\generated_images\\01a11608-621b-7461-9513-27b6d6c5f67d\\exec-9114aec3-a2b1-4d23-921c-1b063da9b191.png",
+    "promptPath": "originals/monster/monster-041/v01/prompt.txt",
+    "referenceIds": [
+      "monster-style"
+    ],
+    "createdAt": "2026-10-07T16:02:51.330Z",
+    "inputMode": "new-from-verbal-style",
+    "imageInputsProvided": false,
+    "imageInputs": []
+  },
+  "review": {
+    "userApproval": "pending",
+    "notes": "Alpha-composited visual review: complete legless silhouette, no edge clipping or opaque backdrop; individual material and face are readable.",
+    "visualChecked": true,
+    "reviewedAt": "2026-10-07T16:03:45.417Z"
+  }
+}

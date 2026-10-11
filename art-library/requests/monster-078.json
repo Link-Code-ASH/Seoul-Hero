@@ -1,0 +1,12 @@
+{
+  "id": "monster-078",
+  "inputMode": "new-from-verbal-style",
+  "styleReferenceIds": [
+    "monster-style"
+  ],
+  "imageInputsProvided": false,
+  "args": {
+    "prompt": "Use case: stylized-concept.\nAsset type: monster-078, individual game PNG.\nOne compact cute floating mechanical creature made from modern road-equipment housings. Thick open spiral body curled into a loose coil with an empty central hole, a broad rounded head at the outer end and a smooth taper inside. Plain gray painted metal plates cover a continuous soft navy flexible cable core. Several broad completely blank yellow rectangular reflectors are recessed into the plates. Shallow screws and navy rubber seams show ordinary industrial construction. Two small amber oval sensors sit in a dark horizontal slit on the broad head; no humanoid anatomy.\nOriginal Korean mobile-game hand-painted raster art, clean navy contours, rounded cel shading, restrained industrial highlights. Gray, navy and warm yellow palette. Full centered silhouette with at least 8 percent transparent margin, front-three-quarter view. Genuine transparent RGBA, no ground or shadow, one PNG.\nNo limbs, arms, legs, feet or walking joints. No signs, text, arrows, markings, emblems or logos. No gold ornaments, fantasy armor, carved clouds or porcelain. Every reflector remains a blank plain rectangle.",
+    "transparent_background": true
+  }
+}

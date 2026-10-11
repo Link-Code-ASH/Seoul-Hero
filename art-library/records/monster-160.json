@@ -1,0 +1,34 @@
+{
+  "id": "monster-160",
+  "status": "complete",
+  "revision": "v01",
+  "files": [
+    {
+      "path": "originals/monster/monster-160/v01/original.png",
+      "width": 1239,
+      "height": 1269,
+      "sha256": "a34add3ecbb6e94c2ce3a0fdee5bb5dc456bfff6e927ab90202e8935b8aca041",
+      "alphaChannel": true,
+      "hasTransparency": true
+    }
+  ],
+  "thumbnail": "thumbnails/monster-160-v01.png",
+  "source": {
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\geniu\\.codex\\generated_images\\01a11608-621b-7461-9513-27b6d6c5f67d\\exec-1b191f28-e279-402d-994a-2c6333dd0bad.png",
+    "promptPath": "originals/monster/monster-160/v01/prompt.txt",
+    "referenceIds": [
+      "monster-style"
+    ],
+    "createdAt": "2026-10-07T18:34:49.673Z",
+    "inputMode": "new-from-verbal-style",
+    "imageInputsProvided": false,
+    "imageInputs": []
+  },
+  "review": {
+    "userApproval": "pending",
+    "notes": "밝은 배경 알파 합성에서 폐기물·현대 도로 하우징·얼음·게이트의 타원형 단일 몸체를 확인. 다리·발·보행 관절 없음, 모든 외곽 끝부분과 파편이 캔버스 안에 보임. 사용자 승인 대기.",
+    "visualChecked": true,
+    "reviewedAt": "2026-10-07T18:35:31.305Z"
+  }
+}

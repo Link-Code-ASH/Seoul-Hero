@@ -1,0 +1,34 @@
+{
+  "id": "currency-068",
+  "status": "complete",
+  "revision": "v01",
+  "files": [
+    {
+      "path": "originals/currency/currency-068/v01/original.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "4c024b49baac7fc02b66bf0dd83ce891a96bf8666c0679c1518697ac4328e4c8",
+      "alphaChannel": true,
+      "hasTransparency": true
+    }
+  ],
+  "thumbnail": "thumbnails/currency-068-v01.png",
+  "source": {
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\geniu\\.codex\\generated_images\\01a116ba-0a91-7172-a5c2-28dde8e57760\\exec-395b29f0-2fe9-4c14-9995-b30c1c1128d5.png",
+    "promptPath": "originals/currency/currency-068/v01/prompt.txt",
+    "referenceIds": [
+      "currency-style"
+    ],
+    "createdAt": "2026-10-07T18:07:10.654Z",
+    "inputMode": "new-from-verbal-style",
+    "imageInputsProvided": false,
+    "imageInputs": []
+  },
+  "review": {
+    "userApproval": "pending",
+    "notes": "원본과 밝은·어두운 배경 alpha 합성을 확인했습니다. 관측 돔과 생체 외관, 결정 코일·판·캡슐, 의복·향로·심장 축복이 구분되며 배경이 투명하고 외곽 구조가 온전합니다.",
+    "visualChecked": true,
+    "reviewedAt": "2026-10-07T18:07:37.511Z"
+  }
+}

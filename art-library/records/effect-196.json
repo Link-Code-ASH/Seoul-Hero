@@ -1,0 +1,34 @@
+{
+  "id": "effect-196",
+  "status": "complete",
+  "revision": "v01",
+  "files": [
+    {
+      "path": "originals/effect/effect-196/v01/original.png",
+      "width": 1265,
+      "height": 1243,
+      "sha256": "7fbc5f2ee4a175be5b5f201d01a472ca44f921022e2b51c8a30b2e3db0a5453c",
+      "alphaChannel": true,
+      "hasTransparency": true
+    }
+  ],
+  "thumbnail": "thumbnails/effect-196-v01.png",
+  "source": {
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\geniu\\.codex\\generated_images\\01a10b3b-6dc9-7b13-a092-b8ab3abd33e2\\exec-a4844ea3-9fbf-4888-bd7a-d2e0bfc38b6a.png",
+    "promptPath": "originals/effect/effect-196/v01/prompt.txt",
+    "referenceIds": [
+      "effect-style"
+    ],
+    "createdAt": "2026-10-07T17:39:30.789Z",
+    "inputMode": "new-from-verbal-style",
+    "imageInputsProvided": false,
+    "imageInputs": []
+  },
+  "review": {
+    "userApproval": "pending",
+    "notes": "금빛 파편·궤적·잔광과 청록 보호막 타격·링·붕괴의 실제 알파 합성본을 확인했습니다. 전체 형태가 남아 있고 글자나 불필요한 배경이 없습니다.",
+    "visualChecked": true,
+    "reviewedAt": "2026-10-07T17:41:35.570Z"
+  }
+}

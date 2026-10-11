@@ -1,0 +1,33 @@
+{
+  "id": "staff-006",
+  "status": "needs-revision",
+  "revision": "v01",
+  "files": [
+    {
+      "path": "originals/staff/staff-006/v01/original.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "22c82242899e29702f209c86f197590193bd5bad2d3175ed6a71b25b7a4551d1",
+      "alphaChannel": true,
+      "hasTransparency": true
+    }
+  ],
+  "thumbnail": "thumbnails/staff-006-v01.png",
+  "source": {
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\geniu\\.codex\\generated_images\\01a11608-40cd-79c1-89ac-8db49a82cb9c\\exec-7b90fbc2-f753-4f82-97e4-bc8e46f5c2a7.png",
+    "promptPath": "originals/staff/staff-006/v01/prompt.txt",
+    "referenceIds": [
+      "staff-style"
+    ],
+    "createdAt": "2026-10-07T15:15:11.474Z",
+    "inputMode": "new-from-verbal-style",
+    "imageInputsProvided": false
+  },
+  "review": {
+    "userApproval": "pending",
+    "notes": "직접 검토: 짧은 팔다리와 빈손은 맞으나 배경에 불투명 갈색 조명판이 남아 재생성 필요.",
+    "visualChecked": true,
+    "reviewedAt": "2026-10-07T15:15:41.602Z"
+  }
+}

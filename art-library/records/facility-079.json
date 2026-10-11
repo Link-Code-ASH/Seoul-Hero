@@ -1,0 +1,34 @@
+{
+  "id": "facility-079",
+  "status": "complete",
+  "revision": "v02",
+  "files": [
+    {
+      "path": "originals/facility/facility-079/v02/original.png",
+      "width": 1774,
+      "height": 887,
+      "sha256": "4e2fd058c221ad0d852b0eb28fdf10c597324275dc32685c4a4836919d44c28c",
+      "alphaChannel": true,
+      "hasTransparency": true
+    }
+  ],
+  "thumbnail": "thumbnails/facility-079-v02.png",
+  "source": {
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\geniu\\.codex\\generated_images\\01a116ba-0a91-7172-a5c2-28dde8e57760\\exec-a5e2ba7c-c178-4f6c-8973-0f8f5f9c47ee.png",
+    "promptPath": "originals/facility/facility-079/v02/prompt.txt",
+    "referenceIds": [
+      "facility-style"
+    ],
+    "createdAt": "2026-10-07T18:53:51.468Z",
+    "inputMode": "new-from-verbal-style",
+    "imageInputsProvided": false,
+    "imageInputs": []
+  },
+  "review": {
+    "userApproval": "pending",
+    "notes": "v02 원본과 밝은·어두운 alpha 합성을 확인했습니다. 좌우 모서리 장식 및 균열·배관만 남긴 희소 overlay이며 중앙과 하단 직원 영역은 투명합니다. 전체 방으로 생성된 v01을 개정 이력으로 보존했습니다.",
+    "visualChecked": true,
+    "reviewedAt": "2026-10-07T18:54:38.403Z"
+  }
+}

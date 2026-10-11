@@ -1,0 +1,8 @@
+Use case: stylized-concept.
+Asset type: Seoul Hero future blessing individual PNG artwork.
+Primary request: One isolated blessing emblem depicting a thick six-lobed snow crystal with unusually wide blunt arms and three missing inner wedges. Theme: nature symbolism; material transitions are visible as thick clean planes, not ornate writing. Contemporary Seoul gate-magic treatment, carved ivory, worn navy metal and a restrained small mint or warm ember core where useful. Crisp readable negative space, compact balanced silhouette, soft hand-painted game shading. No circular UI badge added around the symbol, no decorative card frame, readable text, letters, human face portrait or background. Transparent PNG, front or shallow three-quarter icon view.
+Style: original crisp Korean mobile-game hand-painted raster art, strong readable silhouettes, clean navy outlines where appropriate, restrained cel shading and material highlights. Follow the specific subject palette in the brief. Create a new silhouette and object, with no copied reference subject.
+One Korean folklore blessing artifact or protection emblem. Strong readable silhouette at 48px, polished material detail. No text, no icon frame, no floor shadow.
+Composition: single subject fully inside canvas, centered with 8 percent safe padding. No contact sheet or multiple examples.
+Background: actual transparent RGBA, no opaque backdrop, no fake checkerboard.
+Constraints: no text, logos, watermark, UI chrome, labels or numbers. Preserve the requested anatomy and view.

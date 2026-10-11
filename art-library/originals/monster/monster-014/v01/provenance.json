@@ -1,0 +1,33 @@
+{
+  "id": "monster-014",
+  "status": "needs-revision",
+  "revision": "v01",
+  "files": [
+    {
+      "path": "originals/monster/monster-014/v01/original.png",
+      "width": 1230,
+      "height": 1278,
+      "sha256": "59e01b25b87f2af95b27e4c6058d4b24233b451144a4b76bab9e3fef6d363fc9",
+      "alphaChannel": true,
+      "hasTransparency": true
+    }
+  ],
+  "thumbnail": "thumbnails/monster-014-v01.png",
+  "source": {
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\geniu\\.codex\\generated_images\\01a11608-621b-7461-9513-27b6d6c5f67d\\exec-d7745342-8be2-4500-b22e-73f57a02fbee.png",
+    "promptPath": "originals/monster/monster-014/v01/prompt.txt",
+    "referenceIds": [
+      "monster-style"
+    ],
+    "createdAt": "2026-10-07T15:22:06.392Z",
+    "inputMode": "new-from-verbal-style",
+    "imageInputsProvided": false,
+    "imageInputs": []
+  },
+  "review": {
+    "userApproval": "pending",
+    "notes": "Visual review: legless body and transparent edges are correct, but the enamel panels read as ornate fantasy armor rather than blank modern traffic panels. Regenerate with plain industrial enamel blocks and remove cloud ornaments.",
+    "visualChecked": true
+  }
+}

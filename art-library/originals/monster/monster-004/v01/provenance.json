@@ -1,0 +1,30 @@
+{
+  "id": "monster-004",
+  "status": "needs-revision",
+  "revision": "v01",
+  "files": [
+    {
+      "path": "originals/monster/monster-004/v01/original.png",
+      "width": 1230,
+      "height": 1278,
+      "sha256": "a8ebb6974a231cfe1a970d4101ba2f1a72433a06bf628644f0fa5b084dc637c0",
+      "alphaChannel": true,
+      "hasTransparency": true
+    }
+  ],
+  "thumbnail": "thumbnails/monster-004-v01.png",
+  "source": {
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\geniu\\.codex\\generated_images\\01a11608-621b-7461-9513-27b6d6c5f67d\\exec-37c55c0f-f815-4ff8-88b7-b45433c35dee.png",
+    "promptPath": "originals/monster/monster-004/v01/prompt.txt",
+    "referenceIds": [
+      "monster-style"
+    ],
+    "createdAt": "2026-10-07T15:09:30.768Z"
+  },
+  "review": {
+    "userApproval": "pending",
+    "notes": "Visual review: anatomy is legless and unclipped, but the style reference horned ring armor and cyan core were copied too strongly. Requested independent material design is not clear enough; regenerate without image reference.",
+    "visualChecked": true
+  }
+}

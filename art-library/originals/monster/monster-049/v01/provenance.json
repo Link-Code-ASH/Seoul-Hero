@@ -1,0 +1,34 @@
+{
+  "id": "monster-049",
+  "status": "complete",
+  "revision": "v01",
+  "files": [
+    {
+      "path": "originals/monster/monster-049/v01/original.png",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "3f808548918fec8b95134f08ecc949c28ba37aa43725ff5a76d1d494370e4bbc",
+      "alphaChannel": true,
+      "hasTransparency": true
+    }
+  ],
+  "thumbnail": "thumbnails/monster-049-v01.png",
+  "source": {
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\geniu\\.codex\\generated_images\\01a11608-621b-7461-9513-27b6d6c5f67d\\exec-b2354bd3-4175-4b94-a409-04f7f376b443.png",
+    "promptPath": "originals/monster/monster-049/v01/prompt.txt",
+    "referenceIds": [
+      "monster-style"
+    ],
+    "createdAt": "2026-10-07T16:17:05.759Z",
+    "inputMode": "new-from-verbal-style",
+    "imageInputsProvided": false,
+    "imageInputs": []
+  },
+  "review": {
+    "userApproval": "pending",
+    "notes": "Alpha-composited visual review: opaque-looking native backdrop is alpha-zero RGB; actual PNG cutout is clean, full legless low-wide silhouette and material details verified.",
+    "visualChecked": true,
+    "reviewedAt": "2026-10-07T16:17:50.443Z"
+  }
+}

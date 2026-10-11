@@ -1,0 +1,33 @@
+{
+  "id": "map-058",
+  "status": "complete",
+  "revision": "v01",
+  "files": [
+    {
+      "path": "originals/map/map-058/v01/original.png",
+      "width": 1881,
+      "height": 836,
+      "sha256": "a14f7e73da9e095a03f49659212f6965046f3af9b476ff82d045c306c0df28b8",
+      "alphaChannel": false,
+      "hasTransparency": false
+    }
+  ],
+  "thumbnail": "thumbnails/map-058-v01.png",
+  "source": {
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\geniu\\.codex\\generated_images\\01a11608-621b-7461-9513-27b6d6c5f67d\\exec-7624adb4-178f-40d9-ad95-cd6ca8fb0c16.png",
+    "promptPath": "originals/map/map-058/v01/prompt.txt",
+    "referenceIds": [
+      "map-style"
+    ],
+    "createdAt": "2026-10-07T18:34:50.397Z",
+    "inputMode": "new-from-verbal-style",
+    "imageInputsProvided": false,
+    "imageInputs": []
+  },
+  "review": {
+    "userApproval": "pending",
+    "notes": "",
+    "visualChecked": true
+  }
+}

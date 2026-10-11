@@ -1,0 +1,34 @@
+{
+  "id": "effect-140",
+  "status": "complete",
+  "revision": "v01",
+  "files": [
+    {
+      "path": "originals/effect/effect-140/v01/original.png",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "f43a46ffc7d28b76e6ec8a1fc3f24db65a3ebfd1180a262ec82803d098b60f6d",
+      "alphaChannel": true,
+      "hasTransparency": true
+    }
+  ],
+  "thumbnail": "thumbnails/effect-140-v01.png",
+  "source": {
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\geniu\\.codex\\generated_images\\01a10b3b-6dc9-7b13-a092-b8ab3abd33e2\\exec-300f3523-7091-4031-90de-01e595c6acdc.png",
+    "promptPath": "originals/effect/effect-140/v01/prompt.txt",
+    "referenceIds": [
+      "effect-style"
+    ],
+    "createdAt": "2026-10-07T17:06:02.287Z",
+    "inputMode": "new-from-verbal-style",
+    "imageInputsProvided": false,
+    "imageInputs": []
+  },
+  "review": {
+    "userApproval": "pending",
+    "notes": "알파 합성에서 철편·청색 금색 매듭 계열의 획득 후광, 해금 파편과 궤적의 독립 형태, 외곽, 투명도 확인.",
+    "visualChecked": true,
+    "reviewedAt": "2026-10-07T17:07:16.797Z"
+  }
+}

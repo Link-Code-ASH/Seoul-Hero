@@ -1,0 +1,14 @@
+import fs from 'node:fs/promises';
+const root=new URL('../',import.meta.url);
+const file=new URL('briefs/core.json',root);
+const briefs=JSON.parse(await fs.readFile(file,'utf8'));
+const brief=briefs.find(item=>item.id==='monster-118');
+await fs.writeFile(new URL('failures/monster-118-original-brief.json',root),JSON.stringify(brief,null,2)+'\n',{flag:'wx'});
+brief.nameKo='접경 두루마리 뭉치';
+brief.tags=['future-candidate','legless','paper-spirit','accordion-body','ambush'];
+brief.descriptionKo='접지 종이령 계열의 짧고 둥근 아코디언 종이 몸체입니다. 말린 종이 끝과 두꺼운 주름으로 다른 종이령과 구분하며 공용 부유 모션을 권장합니다.';
+brief.visualBrief='A single cute round paper creature for a colorful Korean mobile game. Its compact body is an accordion-folded cylinder made from thick blank ivory paper, with five broad vertical pleats. The top has a short tightly rolled paper curl; the lower edge is rounded and closed. Two simple round dark eye cutouts sit on the central front fold, with one small curved mouth crease. A narrow mint paper binding connects the folds around the middle. Soft warm paper material, navy painted contour, readable compact silhouette. No separate limbs, legs, feet, hands, writing, symbols or props. Entire subject centered with generous transparent padding.';
+await fs.writeFile(file,JSON.stringify(briefs,null,2)+'\n');
+const prompt=brief.visualBrief+' Front three-quarter view, crisp hand-painted raster illustration with soft cel shading. One complete isolated subject in a square PNG, actual transparent RGBA background, no floor shadow, background, UI, caption, logo or watermark. No contact sheet. This is an original folded-paper design.';
+await fs.writeFile(new URL('prompts/monster-118.txt',root),prompt+'\n');
+console.log(JSON.stringify({id:brief.id,nameKo:brief.nameKo,previousBriefPreserved:true}));

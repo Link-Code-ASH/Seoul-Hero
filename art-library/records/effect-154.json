@@ -1,0 +1,34 @@
+{
+  "id": "effect-154",
+  "status": "complete",
+  "revision": "v01",
+  "files": [
+    {
+      "path": "originals/effect/effect-154/v01/original.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "bb6f9ee3ed5f4aa3c0f53493beb5f649bdbc10bd343d32ccb155e93766e0ca94",
+      "alphaChannel": true,
+      "hasTransparency": true
+    }
+  ],
+  "thumbnail": "thumbnails/effect-154-v01.png",
+  "source": {
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\geniu\\.codex\\generated_images\\01a10b3b-6dc9-7b13-a092-b8ab3abd33e2\\exec-57dd9d09-50d3-4a83-a6f9-c274dd8de458.png",
+    "promptPath": "originals/effect/effect-154/v01/prompt.txt",
+    "referenceIds": [
+      "effect-style"
+    ],
+    "createdAt": "2026-10-07T17:14:11.380Z",
+    "inputMode": "new-from-verbal-style",
+    "imageInputsProvided": false,
+    "imageInputs": []
+  },
+  "review": {
+    "userApproval": "pending",
+    "notes": "알파 합성에서 물결·기포·유리 파편·황금 조각의 획득/해금 효과, 무문자와 외곽 보존 확인.",
+    "visualChecked": true,
+    "reviewedAt": "2026-10-07T17:17:24.280Z"
+  }
+}

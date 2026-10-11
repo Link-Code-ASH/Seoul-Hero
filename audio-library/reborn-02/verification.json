@@ -1,0 +1,7 @@
+{
+  "problems": [],
+  "verified_files": 117,
+  "critical_alias_identical": true,
+  "report": "qa/audio-signal.json",
+  "method": "complete PCM scan, source hashes, fixed metadata; no listening claim"
+}

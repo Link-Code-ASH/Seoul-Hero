@@ -1,0 +1,34 @@
+{
+  "id": "staff-007",
+  "status": "needs-revision",
+  "revision": "v01",
+  "files": [
+    {
+      "path": "originals/staff/staff-007/v01/original.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "20626e6e2d9290b82f466283636315924c609df5c09513dc3a3979fa42c38e18",
+      "alphaChannel": true,
+      "hasTransparency": true
+    }
+  ],
+  "thumbnail": "thumbnails/staff-007-v01.png",
+  "source": {
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\geniu\\.codex\\generated_images\\01a11608-40cd-79c1-89ac-8db49a82cb9c\\exec-8dd2726a-306a-4f2b-9d21-a510cd1a4cbc.png",
+    "promptPath": "originals/staff/staff-007/v01/prompt.txt",
+    "referenceIds": [
+      "staff-style"
+    ],
+    "createdAt": "2026-10-07T15:20:25.769Z",
+    "inputMode": "new-from-verbal-style",
+    "imageInputsProvided": false,
+    "imageInputs": []
+  },
+  "review": {
+    "userApproval": "pending",
+    "notes": "직접 검토: 빈손과 전신은 맞으나 흰 조명 배경이 남아 수리 필요.",
+    "visualChecked": true,
+    "reviewedAt": "2026-10-07T15:20:27.540Z"
+  }
+}

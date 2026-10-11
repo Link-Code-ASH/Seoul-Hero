@@ -1,0 +1,19 @@
+{
+  "id": "staff-051",
+  "inputMode": "edit-proportions",
+  "imageInputsProvided": true,
+  "imageInputs": [
+    {
+      "path": "C:\\Users\\geniu\\Documents\\GitHub\\Seoul-Hero\\art-library\\originals\\staff\\staff-051\\v01\\original.png",
+      "role": "edit-target",
+      "sha256": "9689167cb963a925e851fbbf353f98e5d3a930b2b85b0ec177b5fc754386219c"
+    }
+  ],
+  "args": {
+    "prompt": "Edit only the body anatomy of this exact original character. Preserve her exact long brown side braid and swept hair, small gold clover hairpin, bright brown eyes and expression, ivory cardigan over cream ribbed shirt, charcoal tailored shorts and opaque dark tights, small black buckle boots, gold-trim lanyard. Replace adult anatomy with a round squat SD doll. Head including hair exactly sixty percent of full height; chin to shoe soles only forty percent. One very short compact boxy costume torso, with no defined breasts, no hourglass waist, no realistic pelvis. No long thighs, no visible knees or long shins. Tiny boots sit immediately below the tiny compact torso; legs scarcely visible. Tiny empty mitten hands close to torso, extremely short arms. Keep identity, face and clothing materials. Outfit must be adapted to doll anatomy. Full body centered with generous clear space. Transparent background, clean cutout, no backdrop, no text, no held props or weapons.",
+    "transparent_background": true,
+    "referenced_image_paths": [
+      "C:\\Users\\geniu\\Documents\\GitHub\\Seoul-Hero\\art-library\\originals\\staff\\staff-051\\v01\\original.png"
+    ]
+  }
+}

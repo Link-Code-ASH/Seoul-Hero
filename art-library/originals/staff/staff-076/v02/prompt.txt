@@ -1,0 +1,7 @@
+Use case: precise-object-edit.
+Asset type: Seoul Hero individual transparent PNG correction.
+Input image is the exact existing EDIT TARGET, not merely a style reference.
+Keep the same design, palette and phase order. Repair the clipped tips and shrink the ENTIRE intended effect including rays, glow and particles to a compact central footprint with ample transparent space. Every tip must be fully visible. Do not add a background or change the motif.
+One complete isolated subject, centered, all tips inside canvas and at least fifteen percent transparent margin on all sides.
+Preserve this exact empty-handed SD guild worker, face, headband, hair bun, apron costume and pose. Shrink and reposition the entire silhouette with at least 15 percent transparent margin on every side, especially above all stray hair curls. Reconstruct the complete top hair curl inside the canvas. Keep an extremely large head, tiny torso and very short arms and legs. Do not add a background, text, ground shadow, props or held items.
+Output: real transparent PNG. No text, logo, watermark, matte color or simulated transparency.

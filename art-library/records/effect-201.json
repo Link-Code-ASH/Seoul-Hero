@@ -1,0 +1,133 @@
+{
+  "id": "effect-201",
+  "status": "complete",
+  "revision": "v01",
+  "files": [
+    {
+      "path": "originals/effect/effect-201/v01/source-sheet.png",
+      "width": 1774,
+      "height": 887,
+      "sha256": "86eb587c2ce3d568b03b3e9634f95fe899677102c0a7e117bc627f379b6c985e",
+      "alphaChannel": true,
+      "hasTransparency": true
+    },
+    {
+      "path": "originals/effect/effect-201/v01/frame-01.png",
+      "width": 444,
+      "height": 444,
+      "sha256": "ed608f335c65193387cfe407b5de28a1d725b09b2547f23195e511e2a02cf1d1",
+      "alphaChannel": true,
+      "hasTransparency": true
+    },
+    {
+      "path": "originals/effect/effect-201/v01/frame-02.png",
+      "width": 444,
+      "height": 444,
+      "sha256": "944d2048c14917d9f6b33f8b5374a3e384bee1121299e1dd8b159c1d26be70cf",
+      "alphaChannel": true,
+      "hasTransparency": true
+    },
+    {
+      "path": "originals/effect/effect-201/v01/frame-03.png",
+      "width": 444,
+      "height": 444,
+      "sha256": "4eb872dc88595c875f019b16305dc39f14a12209cd06df70011a47ff3d81efe5",
+      "alphaChannel": true,
+      "hasTransparency": true
+    },
+    {
+      "path": "originals/effect/effect-201/v01/frame-04.png",
+      "width": 444,
+      "height": 444,
+      "sha256": "33dcf3a4afae11c4cec4ac9f68912443f9433a38266e2e2ae272372949083cc8",
+      "alphaChannel": true,
+      "hasTransparency": true
+    },
+    {
+      "path": "originals/effect/effect-201/v01/frame-05.png",
+      "width": 444,
+      "height": 444,
+      "sha256": "71d924f85ab7100c343b08cdb69f06b0a82de16de1b133dcdbb714182f905098",
+      "alphaChannel": true,
+      "hasTransparency": true
+    },
+    {
+      "path": "originals/effect/effect-201/v01/frame-06.png",
+      "width": 444,
+      "height": 444,
+      "sha256": "305434f25824d3bbaff9d8efd3533bf7027d6782b56ab58e016a229b280c456a",
+      "alphaChannel": true,
+      "hasTransparency": true
+    },
+    {
+      "path": "originals/effect/effect-201/v01/frame-07.png",
+      "width": 444,
+      "height": 444,
+      "sha256": "a0c9b92c2bf8410a90f6bd8358aab097e2add834934684297ce9783dc852856e",
+      "alphaChannel": true,
+      "hasTransparency": true
+    },
+    {
+      "path": "originals/effect/effect-201/v01/frame-08.png",
+      "width": 444,
+      "height": 444,
+      "sha256": "c642d778315877f6530624efcc2da709a608d9e0370deacd3692c4e0d789cd16",
+      "alphaChannel": true,
+      "hasTransparency": true
+    },
+    {
+      "path": "originals/effect/effect-201/v01/sprite-sheet.png",
+      "width": 1776,
+      "height": 888,
+      "sha256": "58dffe0137fce91a75d3fe151b264c1231e365c46c7d12b69c293005a52437bf",
+      "alphaChannel": true,
+      "hasTransparency": true,
+      "derived": true
+    }
+  ],
+  "thumbnail": "thumbnails/effect-201-v01.png",
+  "source": {
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\geniu\\.codex\\generated_images\\01a10b3b-6dc9-7b13-a092-b8ab3abd33e2\\exec-aee2d5ef-2a48-4177-b92f-88537450aca3.png",
+    "promptPath": "originals/effect/effect-201/v01/prompt.txt",
+    "referenceIds": [
+      "effect-style"
+    ],
+    "createdAt": "2026-10-07T15:14:24.712Z",
+    "inputMode": "new-from-verbal-style",
+    "imageInputsProvided": false
+  },
+  "review": {
+    "userApproval": "pending",
+    "notes": "Inspected all eight steam phase frames with centered paired curls and coherent dissipation; primary shapes remain within their cells.",
+    "visualChecked": true,
+    "reviewedAt": "2026-10-07T15:19:47.290Z"
+  },
+  "sequence": {
+    "framePaths": [
+      "originals/effect/effect-201/v01/frame-01.png",
+      "originals/effect/effect-201/v01/frame-02.png",
+      "originals/effect/effect-201/v01/frame-03.png",
+      "originals/effect/effect-201/v01/frame-04.png",
+      "originals/effect/effect-201/v01/frame-05.png",
+      "originals/effect/effect-201/v01/frame-06.png",
+      "originals/effect/effect-201/v01/frame-07.png",
+      "originals/effect/effect-201/v01/frame-08.png"
+    ],
+    "fps": 12,
+    "frameCount": 8,
+    "aligned": true,
+    "sheetPath": "originals/effect/effect-201/v01/sprite-sheet.png",
+    "grid": [
+      4,
+      2
+    ],
+    "frameSize": [
+      444,
+      444
+    ],
+    "sourceSheetPreserved": true,
+    "extraction": "rounded equal grid boundaries, transparent right/bottom padding only, source unmodified",
+    "sourceSheetPath": "originals/effect/effect-201/v01/source-sheet.png"
+  }
+}

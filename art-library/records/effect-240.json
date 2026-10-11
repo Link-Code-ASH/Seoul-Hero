@@ -1,0 +1,34 @@
+{
+  "id": "effect-240",
+  "status": "complete",
+  "revision": "v01",
+  "files": [
+    {
+      "path": "originals/effect/effect-240/v01/original.png",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "9e48735425202b28f3dc128995f3d65ee53d12f8b7caa500b213b4c706668a40",
+      "alphaChannel": true,
+      "hasTransparency": true
+    }
+  ],
+  "thumbnail": "thumbnails/effect-240-v01.png",
+  "source": {
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\geniu\\.codex\\generated_images\\01a10b3b-6dc9-7b13-a092-b8ab3abd33e2\\exec-d7a1ef84-55e4-4a35-b209-018463102440.png",
+    "promptPath": "originals/effect/effect-240/v01/prompt.txt",
+    "referenceIds": [
+      "effect-style"
+    ],
+    "createdAt": "2026-10-07T18:02:36.219Z",
+    "inputMode": "new-from-verbal-style",
+    "imageInputsProvided": false,
+    "imageInputs": []
+  },
+  "review": {
+    "userApproval": "pending",
+    "notes": "Inspected actual-alpha composites: distinct water mist paired flow, crystal swirl, stream trails, droplets, completed plume; no text, opaque backdrop or cropped tips.",
+    "visualChecked": true,
+    "reviewedAt": "2026-10-07T18:04:28.445Z"
+  }
+}

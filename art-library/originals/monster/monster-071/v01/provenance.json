@@ -1,0 +1,34 @@
+{
+  "id": "monster-071",
+  "status": "complete",
+  "revision": "v01",
+  "files": [
+    {
+      "path": "originals/monster/monster-071/v01/original.png",
+      "width": 1238,
+      "height": 1271,
+      "sha256": "fe2f4aeba2f232603008d17edf6cab15591322766bfffe7a922ca2049819fd14",
+      "alphaChannel": true,
+      "hasTransparency": true
+    }
+  ],
+  "thumbnail": "thumbnails/monster-071-v01.png",
+  "source": {
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\geniu\\.codex\\generated_images\\01a11608-621b-7461-9513-27b6d6c5f67d\\exec-25d22570-6a44-4316-80a2-a98971d5e98e.png",
+    "promptPath": "originals/monster/monster-071/v01/prompt.txt",
+    "referenceIds": [
+      "monster-style"
+    ],
+    "createdAt": "2026-10-07T16:45:04.947Z",
+    "inputMode": "new-from-verbal-style",
+    "imageInputsProvided": false,
+    "imageInputs": []
+  },
+  "review": {
+    "userApproval": "pending",
+    "notes": "Alpha-composited visual review: complete spiral silhouettes and material identity confirmed, no legs, no opaque background, all tips within canvas.",
+    "visualChecked": true,
+    "reviewedAt": "2026-10-07T16:46:09.134Z"
+  }
+}

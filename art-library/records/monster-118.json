@@ -1,0 +1,34 @@
+{
+  "id": "monster-118",
+  "status": "complete",
+  "revision": "v02",
+  "files": [
+    {
+      "path": "originals/monster/monster-118/v02/original.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "ed3014ce2f86829dbcd6ba76da41c35e0ff10e599fef41d1bb7703ccd9f22713",
+      "alphaChannel": true,
+      "hasTransparency": true
+    }
+  ],
+  "thumbnail": "thumbnails/monster-118-v02.png",
+  "source": {
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\geniu\\.codex\\generated_images\\01a10b3b-6dc9-7b13-a092-b8ab3abd33e2\\exec-d9fb4a86-0fe4-45e4-bf4b-4064e5d20b9a.png",
+    "promptPath": "originals/monster/monster-118/v02/prompt.txt",
+    "referenceIds": [
+      "monster-style"
+    ],
+    "createdAt": "2026-10-07T18:10:58.538Z",
+    "inputMode": "new-from-verbal-style",
+    "imageInputsProvided": false,
+    "imageInputs": []
+  },
+  "review": {
+    "userApproval": "pending",
+    "notes": "Original folded-paper accordion body inspected on actual-alpha composite: compact legless round silhouette, rolled paper crest, no text, feet or ground shadow; generous canvas padding.",
+    "visualChecked": true,
+    "reviewedAt": "2026-10-07T18:15:50.426Z"
+  }
+}

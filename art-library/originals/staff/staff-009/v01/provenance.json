@@ -1,0 +1,34 @@
+{
+  "id": "staff-009",
+  "status": "needs-revision",
+  "revision": "v01",
+  "files": [
+    {
+      "path": "originals/staff/staff-009/v01/original.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "9ca0bbec28316ad3aff34de0524262bb0657e4db3e2474a854dabad1380b446e",
+      "alphaChannel": true,
+      "hasTransparency": true
+    }
+  ],
+  "thumbnail": "thumbnails/staff-009-v01.png",
+  "source": {
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\geniu\\.codex\\generated_images\\01a11608-40cd-79c1-89ac-8db49a82cb9c\\exec-66a3cb58-520d-4d3e-bf74-55a9baf7c218.png",
+    "promptPath": "originals/staff/staff-009/v01/prompt.txt",
+    "referenceIds": [
+      "staff-style"
+    ],
+    "createdAt": "2026-10-07T15:30:54.083Z",
+    "inputMode": "new-from-verbal-style",
+    "imageInputsProvided": false,
+    "imageInputs": []
+  },
+  "review": {
+    "userApproval": "pending",
+    "notes": "직접 검토: 불투명 조명 배경 및 길게 노출된 허벅지와 종아리. 머리 약 60%와 아주 짧은 팔다리 컷아웃 수리 필요.",
+    "visualChecked": true,
+    "reviewedAt": "2026-10-07T15:30:55.732Z"
+  }
+}

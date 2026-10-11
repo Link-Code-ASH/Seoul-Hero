@@ -1,0 +1,25 @@
+{
+  "purpose": "actual-alpha visual review derivative; excluded from design count",
+  "entries": [
+    {
+      "id": "weapon-117",
+      "source": "originals/weapon/weapon-117/v01/original.png",
+      "revision": "v01"
+    },
+    {
+      "id": "weapon-118",
+      "source": "originals/weapon/weapon-118/v01/original.png",
+      "revision": "v01"
+    },
+    {
+      "id": "weapon-119",
+      "source": "originals/weapon/weapon-119/v01/original.png",
+      "revision": "v01"
+    },
+    {
+      "id": "weapon-120",
+      "source": "originals/weapon/weapon-120/v01/original.png",
+      "revision": "v01"
+    }
+  ]
+}

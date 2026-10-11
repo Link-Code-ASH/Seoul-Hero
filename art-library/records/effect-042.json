@@ -1,0 +1,34 @@
+{
+  "id": "effect-042",
+  "status": "complete",
+  "revision": "v01",
+  "files": [
+    {
+      "path": "originals/effect/effect-042/v01/original.png",
+      "width": 1223,
+      "height": 1286,
+      "sha256": "f43b6cc247933a728807738771bc8a9c7b40c3c2d8de3569feba39ea8a99a279",
+      "alphaChannel": true,
+      "hasTransparency": true
+    }
+  ],
+  "thumbnail": "thumbnails/effect-042-v01.png",
+  "source": {
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\geniu\\.codex\\generated_images\\01a10b3b-6dc9-7b13-a092-b8ab3abd33e2\\exec-f7361515-867b-465b-a7f0-bb7c0cf73119.png",
+    "promptPath": "originals/effect/effect-042/v01/prompt.txt",
+    "referenceIds": [
+      "effect-style"
+    ],
+    "createdAt": "2026-10-07T16:03:14.302Z",
+    "inputMode": "new-from-verbal-style",
+    "imageInputsProvided": false,
+    "imageInputs": []
+  },
+  "review": {
+    "userApproval": "pending",
+    "notes": "생성 원본과 실제 alpha 합성에서 목문·잎 문양 효과의 독립 형태, 전체 외곽선과 투명 배경을 확인했습니다.",
+    "visualChecked": true,
+    "reviewedAt": "2026-10-07T16:05:42.909Z"
+  }
+}

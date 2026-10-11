@@ -1,0 +1,39 @@
+{
+  "id": "staff-051",
+  "status": "complete",
+  "revision": "v02",
+  "files": [
+    {
+      "path": "originals/staff/staff-051/v02/original.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "10c963c9049618b1c2da1eca1f936345e04eeb340008704994ce1c4b9b119cca",
+      "alphaChannel": true,
+      "hasTransparency": true
+    }
+  ],
+  "thumbnail": "thumbnails/staff-051-v02.png",
+  "source": {
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\geniu\\.codex\\generated_images\\01a11608-40cd-79c1-89ac-8db49a82cb9c\\exec-684ee07a-f042-48ce-b04a-07fe84466388.png",
+    "promptPath": "originals/staff/staff-051/v02/prompt.txt",
+    "referenceIds": [
+      "staff-style"
+    ],
+    "createdAt": "2026-10-07T17:58:06.906Z",
+    "inputMode": "edit-proportions",
+    "imageInputsProvided": true,
+    "imageInputs": [
+      {
+        "path": "C:\\Users\\geniu\\Documents\\GitHub\\Seoul-Hero\\art-library\\originals\\staff\\staff-051\\v01\\original.png",
+        "role": "edit-target",
+        "sha256": "9689167cb963a925e851fbbf353f98e5d3a930b2b85b0ec177b5fc754386219c"
+      }
+    ]
+  },
+  "review": {
+    "userApproval": "pending",
+    "notes": "",
+    "visualChecked": true
+  }
+}

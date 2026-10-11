@@ -1,0 +1,45 @@
+{
+  "purpose": "actual-alpha visual review derivative; excluded from design count",
+  "entries": [
+    {
+      "id": "weapon-101",
+      "source": "originals/weapon/weapon-101/v01/original.png",
+      "revision": "v01"
+    },
+    {
+      "id": "weapon-102",
+      "source": "originals/weapon/weapon-102/v01/original.png",
+      "revision": "v01"
+    },
+    {
+      "id": "weapon-103",
+      "source": "originals/weapon/weapon-103/v01/original.png",
+      "revision": "v01"
+    },
+    {
+      "id": "weapon-104",
+      "source": "originals/weapon/weapon-104/v01/original.png",
+      "revision": "v01"
+    },
+    {
+      "id": "weapon-105",
+      "source": "originals/weapon/weapon-105/v01/original.png",
+      "revision": "v01"
+    },
+    {
+      "id": "weapon-106",
+      "source": "originals/weapon/weapon-106/v01/original.png",
+      "revision": "v01"
+    },
+    {
+      "id": "weapon-107",
+      "source": "originals/weapon/weapon-107/v01/original.png",
+      "revision": "v01"
+    },
+    {
+      "id": "weapon-108",
+      "source": "originals/weapon/weapon-108/v01/original.png",
+      "revision": "v01"
+    }
+  ]
+}

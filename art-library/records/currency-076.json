@@ -1,0 +1,34 @@
+{
+  "id": "currency-076",
+  "status": "complete",
+  "revision": "v01",
+  "files": [
+    {
+      "path": "originals/currency/currency-076/v01/original.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "13da180974da28a16e572eb7b5ffe411428cc031e65ce548175e893a672bcced",
+      "alphaChannel": true,
+      "hasTransparency": true
+    }
+  ],
+  "thumbnail": "thumbnails/currency-076-v01.png",
+  "source": {
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\geniu\\.codex\\generated_images\\01a116ba-0a91-7172-a5c2-28dde8e57760\\exec-b1581636-b62a-4646-aa67-2ae4aaf57ebb.png",
+    "promptPath": "originals/currency/currency-076/v01/prompt.txt",
+    "referenceIds": [
+      "currency-style"
+    ],
+    "createdAt": "2026-10-07T18:32:49.619Z",
+    "inputMode": "new-from-verbal-style",
+    "imageInputsProvided": false,
+    "imageInputs": []
+  },
+  "review": {
+    "userApproval": "pending",
+    "notes": "원본과 밝은·어두운 배경 alpha 합성을 확인했습니다. 공사 비계의 개방 공간, 낡은 유물의 판·캡슐·파편, 결속·새싹·도깨비 축복의 독립 실루엣이 온전하며 배경이 투명합니다.",
+    "visualChecked": true,
+    "reviewedAt": "2026-10-07T18:33:31.970Z"
+  }
+}

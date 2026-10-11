@@ -1,0 +1,8 @@
+Use case: stylized-concept.
+Asset type: Seoul Hero future staff individual PNG artwork.
+Primary request: A friendly young male Seoul guild floor-layout coordinator, very large rounded head around 60 percent of the entire height. Smooth dark bowl-cut hair, wide clear eyes, a tiny square ivory collar and a compact navy double-button vest over an extremely short torso. The arms and legs are tiny and stubby; both small empty hands are visible at his sides and his tiny feet sit close together. A plain small rectangular shoulder seam suggests office duty without paperwork or readable badges. Three-quarter front relaxed neutral pose, warm polished hand-painted SD style, transparent background, no prop, text, UI, weapon, long limbs or body-part rig.
+Style: match the supplied approved reference for crisp Korean mobile-game hand-painted raster art, strong silhouettes, clean navy outlines where appropriate, restrained teal/lilac/gold highlights. The reference is style guidance, not a subject to copy.
+One full-body Korean guild employee. Match reference SD proportion: head about 60 percent of height, tiny torso, extremely short limbs. BOTH HANDS EMPTY, relaxed idle stance. No handheld tool, no floor shadow, no rig parts.
+Composition: single subject fully inside canvas, centered with 8 percent safe padding. No contact sheet or multiple examples.
+Background: actual transparent RGBA, no opaque backdrop, no fake checkerboard.
+Constraints: no text, logos, watermark, UI chrome, labels or numbers. Preserve the requested anatomy and view.

@@ -1,0 +1,8 @@
+Use case: stylized-concept.
+Asset type: Seoul Hero future character individual PNG artwork.
+Primary request: A full-body super-deformed Seoul awakener: a cheerful man with a round curly fringe, a wide fabric headband and a short square work apron over a tiny jacket. Wardrobe language: compact Seoul market clothing with apron or work-vest shapes, practical textile folds and no held wares. Head occupies about 60 percent of the total height; the torso is tiny and compact, arms and legs are extremely short, small soft hands are visible and completely empty. Large expressive eyes, warm readable face, three-quarter front view, relaxed neutral pose, feet close together. Single clean illustrated body silhouette with soft painterly shading, transparent background. No weapons, handheld props, floating equipment, text, UI, realistic long limbs, segmented rig or attack pose.
+Style: match the supplied approved reference for crisp Korean mobile-game hand-painted raster art, strong silhouettes, clean navy outlines where appropriate, restrained teal/lilac/gold highlights. The reference is style guidance, not a subject to copy.
+One full-body Korean awakened human. Match reference SD proportion: head about 60 percent of total height, tiny torso, extremely short arms and legs, BOTH HANDS EMPTY relaxed at sides. Front three-quarter idle stance, face and full shoes visible. No floating weapon, no floor shadow, no rig parts.
+Composition: single subject fully inside canvas, centered with 8 percent safe padding. No contact sheet or multiple examples.
+Background: actual transparent RGBA, no opaque backdrop, no fake checkerboard.
+Constraints: no text, logos, watermark, UI chrome, labels or numbers. Preserve the requested anatomy and view.

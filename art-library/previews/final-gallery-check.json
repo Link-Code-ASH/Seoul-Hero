@@ -1,0 +1,103 @@
+{
+  "artifactOnly": true,
+  "gameLoaded": false,
+  "viewport": [
+    915,
+    412
+  ],
+  "catalogCounts": {
+    "plannedTarget": 1000,
+    "briefs": 1000,
+    "complete": 1000,
+    "generated": 1000,
+    "visuallyChecked": 1000,
+    "userApproved": 0,
+    "pending": 0,
+    "recipes": 80,
+    "readyRecipes": 80,
+    "byCategory": {
+      "weapon": 120,
+      "character": 80,
+      "monster": 160,
+      "blessing": 100,
+      "staff": 80,
+      "map": 60,
+      "effect": 240,
+      "facility": 80,
+      "currency": 80
+    },
+    "byBatch": [
+      {
+        "batch": 1,
+        "target": 100,
+        "planned": 100,
+        "complete": 100
+      },
+      {
+        "batch": 2,
+        "target": 100,
+        "planned": 100,
+        "complete": 100
+      },
+      {
+        "batch": 3,
+        "target": 100,
+        "planned": 100,
+        "complete": 100
+      },
+      {
+        "batch": 4,
+        "target": 100,
+        "planned": 100,
+        "complete": 100
+      },
+      {
+        "batch": 5,
+        "target": 100,
+        "planned": 100,
+        "complete": 100
+      },
+      {
+        "batch": 6,
+        "target": 100,
+        "planned": 100,
+        "complete": 100
+      },
+      {
+        "batch": 7,
+        "target": 100,
+        "planned": 100,
+        "complete": 100
+      },
+      {
+        "batch": 8,
+        "target": 100,
+        "planned": 100,
+        "complete": 100
+      },
+      {
+        "batch": 9,
+        "target": 100,
+        "planned": 100,
+        "complete": 100
+      },
+      {
+        "batch": 10,
+        "target": 100,
+        "planned": 100,
+        "complete": 100
+      }
+    ]
+  },
+  "errors": [],
+  "dimensions": {
+    "viewport": [
+      915,
+      412
+    ],
+    "documentWidth": 915,
+    "documentHeight": 412,
+    "canvasCount": 1
+  },
+  "capturedAt": "2026-10-07T19:01:10.126Z"
+}

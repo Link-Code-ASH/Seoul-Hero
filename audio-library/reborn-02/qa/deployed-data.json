@@ -1,0 +1,13 @@
+{
+  "scope": "fixed WAV/settings, original/BGM/source/Godot hashes, identity coverage, PCM imports and unchanged numerical/save/art content",
+  "files": 117,
+  "cues": 117,
+  "originals": 67,
+  "bgm": 6,
+  "identities": {
+    "monsters": 47,
+    "items": 55
+  },
+  "problems": [],
+  "gameplay_device_full_tests": "not performed"
+}

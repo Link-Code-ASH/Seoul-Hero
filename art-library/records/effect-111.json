@@ -1,0 +1,34 @@
+{
+  "id": "effect-111",
+  "status": "complete",
+  "revision": "v01",
+  "files": [
+    {
+      "path": "originals/effect/effect-111/v01/original.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "9eab11ff068a5b8da58afe78b30663f9c282cd1ddeb10caed5af9008f7faae1a",
+      "alphaChannel": true,
+      "hasTransparency": true
+    }
+  ],
+  "thumbnail": "thumbnails/effect-111-v01.png",
+  "source": {
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\geniu\\.codex\\generated_images\\01a10b3b-6dc9-7b13-a092-b8ab3abd33e2\\exec-799bd63b-2b26-4b7f-8a82-96ff73224536.png",
+    "promptPath": "originals/effect/effect-111/v01/prompt.txt",
+    "referenceIds": [
+      "effect-style"
+    ],
+    "createdAt": "2026-10-07T16:46:33.505Z",
+    "inputMode": "new-from-verbal-style",
+    "imageInputsProvided": false,
+    "imageInputs": []
+  },
+  "review": {
+    "userApproval": "pending",
+    "notes": "원본과 실제 알파 합성 시안에서 형태 구분, 여백, 투명 배경, 글자 없음 확인.",
+    "visualChecked": true,
+    "reviewedAt": "2026-10-07T16:49:54.035Z"
+  }
+}

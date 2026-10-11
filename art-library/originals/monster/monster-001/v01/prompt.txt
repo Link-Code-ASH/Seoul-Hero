@@ -1,0 +1,8 @@
+Use case: stylized-concept.
+Asset type: Seoul Hero future monster individual PNG artwork.
+Primary request: A cute menacing single-bodied gate slime with a squat pear-shaped translucent coral mass, an oversized upper dome and a fully rounded underside. One off-center glassy eye sits in a deep hollow chamber; a small curved mouth seam and two trapped broken gate fragments are visible through thick gelatinous folds. No horned humanoid head and no other props. The broad soft pear silhouette must read immediately at tiny game size. One isolated hand-painted PNG on transparent background, front-three-quarter view, no legs, feet, knees, arms, ground base, environment or separate body-part rig. Designed only for the existing whole-body hop.
+Style: match the supplied approved reference for crisp Korean mobile-game hand-painted raster art, strong silhouettes, clean navy outlines where appropriate, restrained teal/lilac/gold highlights. The reference is style guidance, not a subject to copy.
+One cute threatening legless monster. Absolutely NO LEGS, NO FEET, NO WALKING JOINTS, NO HUMAN ARMS. Single cohesive body, full silhouette visible, no floor shadow or ground plane.
+Composition: single subject fully inside canvas, centered with 8 percent safe padding. No contact sheet or multiple examples.
+Background: actual transparent RGBA, no opaque backdrop, no fake checkerboard.
+Constraints: no text, logos, watermark, UI chrome, labels or numbers. Preserve the requested anatomy and view.

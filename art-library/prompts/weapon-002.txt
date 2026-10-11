@@ -1,0 +1,8 @@
+Use case: stylized-concept.
+Asset type: Seoul Hero future weapon individual PNG artwork.
+Primary request: A compact palm-size rectangular mana pistol, deliberately unlike a sword: flat navy receiver with a long open top slide, a chunky vertical ivory magazine block and a crescent-shaped trigger guard. A tiny transparent firing chamber sits above the short blunt barrel; one visible spring and a single ceramic rail explain its action. Use a low horizontal silhouette angled slightly upward, restrained copper wear marks and teal inner light. Isolated polished hand-painted SD equipment icon, no real gun branding, no bullets in flight, no text, transparent background, no hand or person.
+Style: match the supplied approved reference for crisp Korean mobile-game hand-painted raster art, strong silhouettes, clean navy outlines where appropriate, restrained teal/lilac/gold highlights. The reference is style guidance, not a subject to copy.
+One standalone equipment icon, full object, no hand or character. Distinct readable silhouette at 48px. No floor or cast shadow.
+Composition: single subject fully inside canvas, centered with 8 percent safe padding. No contact sheet or multiple examples.
+Background: actual transparent RGBA, no opaque backdrop, no fake checkerboard.
+Constraints: no text, logos, watermark, UI chrome, labels or numbers. Preserve the requested anatomy and view.

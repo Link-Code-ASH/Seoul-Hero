@@ -1,0 +1,31 @@
+{
+  "id": "effect-013",
+  "status": "complete",
+  "revision": "v01",
+  "files": [
+    {
+      "path": "originals/effect/effect-013/v01/original.png",
+      "width": 1374,
+      "height": 1145,
+      "sha256": "cad1778a6c4e956dde9f0bee8070eb569b07f26baa26dd15397301649bb4a946",
+      "alphaChannel": true,
+      "hasTransparency": true
+    }
+  ],
+  "thumbnail": "thumbnails/effect-013-v01.png",
+  "source": {
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\geniu\\.codex\\generated_images\\01a10b3b-6dc9-7b13-a092-b8ab3abd33e2\\exec-c1016c17-a7b4-4390-97d4-9c6679743468.png",
+    "promptPath": "originals/effect/effect-013/v01/prompt.txt",
+    "referenceIds": [
+      "effect-style"
+    ],
+    "createdAt": "2026-10-07T14:55:44.264Z"
+  },
+  "review": {
+    "userApproval": "pending",
+    "notes": "Visually inspected isolated black-gold feather vortex, clean transparent silhouette, no baked UI or text.",
+    "visualChecked": true,
+    "reviewedAt": "2026-10-07T14:56:49.826Z"
+  }
+}

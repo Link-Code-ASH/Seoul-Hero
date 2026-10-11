@@ -1,0 +1,15 @@
+{
+  "ids": [
+    "monster-157",
+    "monster-158",
+    "monster-159",
+    "monster-160"
+  ],
+  "columns": 3,
+  "cellSize": [
+    384,
+    384
+  ],
+  "derivedForReview": true,
+  "countsAsNewDesign": false
+}

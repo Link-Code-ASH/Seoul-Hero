@@ -1,0 +1,33 @@
+{
+  "id": "weapon-041",
+  "status": "complete",
+  "revision": "v01",
+  "files": [
+    {
+      "path": "originals/weapon/weapon-041/v01/original.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "5ed6ef0d5ca9c6ad91fd85c5103c4b0ee706a8694cba3b039231bf1071ee6fd0",
+      "alphaChannel": true,
+      "hasTransparency": true
+    }
+  ],
+  "thumbnail": "thumbnails/weapon-041-v01.png",
+  "source": {
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\geniu\\.codex\\generated_images\\01a11608-40cd-79c1-89ac-8db49a82cb9c\\exec-4dc7c5f5-f31b-43d6-965b-e11b52d2cabc.png",
+    "promptPath": "originals/weapon/weapon-041/v01/prompt.txt",
+    "referenceIds": [
+      "weapon-style"
+    ],
+    "createdAt": "2026-10-07T17:01:17.505Z",
+    "inputMode": "new-from-verbal-style",
+    "imageInputsProvided": false,
+    "imageInputs": []
+  },
+  "review": {
+    "userApproval": "pending",
+    "notes": "",
+    "visualChecked": true
+  }
+}

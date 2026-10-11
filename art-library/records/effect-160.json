@@ -1,0 +1,34 @@
+{
+  "id": "effect-160",
+  "status": "complete",
+  "revision": "v01",
+  "files": [
+    {
+      "path": "originals/effect/effect-160/v01/original.png",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "ed4ca3c29cb13a7e6026fe5556c795f018e5f7caae0052366499d3044e43619d",
+      "alphaChannel": true,
+      "hasTransparency": true
+    }
+  ],
+  "thumbnail": "thumbnails/effect-160-v01.png",
+  "source": {
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\geniu\\.codex\\generated_images\\01a10b3b-6dc9-7b13-a092-b8ab3abd33e2\\exec-8ea970a0-a26b-47bb-893c-f939dd577597.png",
+    "promptPath": "originals/effect/effect-160/v01/prompt.txt",
+    "referenceIds": [
+      "effect-style"
+    ],
+    "createdAt": "2026-10-07T17:17:30.257Z",
+    "inputMode": "new-from-verbal-style",
+    "imageInputsProvided": false,
+    "imageInputs": []
+  },
+  "review": {
+    "userApproval": "pending",
+    "notes": "실제 알파 합성에서 획득/해금 4종의 전체 형태와 충돌 연속 8프레임의 순서·동일 캔버스·중심 정렬 확인.",
+    "visualChecked": true,
+    "reviewedAt": "2026-10-07T17:20:03.099Z"
+  }
+}

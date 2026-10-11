@@ -1,0 +1,33 @@
+{
+  "id": "character-035",
+  "status": "complete",
+  "revision": "v01",
+  "files": [
+    {
+      "path": "originals/character/character-035/v01/original.png",
+      "width": 1145,
+      "height": 1374,
+      "sha256": "d913abc848254b34986f5be42a725504c71a2ce5d3056f1463db1950de59960b",
+      "alphaChannel": true,
+      "hasTransparency": true
+    }
+  ],
+  "thumbnail": "thumbnails/character-035-v01.png",
+  "source": {
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\geniu\\.codex\\generated_images\\01a11608-40cd-79c1-89ac-8db49a82cb9c\\exec-072fc9ce-6b7c-4196-8305-fbd8be9e52a2.png",
+    "promptPath": "originals/character/character-035/v01/prompt.txt",
+    "referenceIds": [
+      "character-style"
+    ],
+    "createdAt": "2026-10-07T17:13:51.037Z",
+    "inputMode": "new-from-verbal-style",
+    "imageInputsProvided": false,
+    "imageInputs": []
+  },
+  "review": {
+    "userApproval": "pending",
+    "notes": "",
+    "visualChecked": true
+  }
+}

@@ -1,0 +1,7 @@
+Use case: precise-object-edit.
+Asset type: Seoul Hero eight-frame animation source sheet correction.
+Input image is the exact existing EDIT TARGET, not merely a style reference.
+Keep the same design, palette and phase order. Repair the clipped tips and shrink the ENTIRE intended effect including rays, glow and particles to a compact central footprint with ample transparent space. Every tip must be fully visible. Do not add a background or change the motif.
+Preserve EXACTLY FOUR COLUMNS by TWO ROWS, eight equal cells. Fixed center pivot in every cell. Reconstruct any clipped beam tips before shrinking. EACH complete frame must fit inside the CENTRAL FIFTY PERCENT of its cell, leaving at least a quarter-cell transparent border on all four sides. Keep continuous shape evolution, no cell borders, labels or rearrangement.
+Keep all eight impact ring poses, order, gray material and pale gold light. Reconstruct every outward spike completely. Each frame silhouette must stay inside its central 50 percent, with 25 percent clear alpha padding on all four sides. Especially frame 4 top and frame 5 left must be entirely inside their own equal grid cells. No cropped or edge-touching rays.
+Output: real transparent PNG. No text, logo, watermark, matte color or simulated transparency.

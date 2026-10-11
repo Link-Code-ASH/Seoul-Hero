@@ -1,0 +1,47 @@
+{
+  "tool": "built-in image_gen",
+  "transparent_background": true,
+  "style": "Isolated hand-painted 2.5D inventory icon; navy #243448, ivory #EDF2F4, teal #267F75; chunky readable silhouette; no text/frame/background",
+  "assets": [
+    {
+      "id": "guildCoin",
+      "subject": "A small stack of brass guild operating coins, navy enamel centers with a simple building silhouette embossed, no text",
+      "source": "C:\\Users\\geniu\\.codex\\generated_images\\01a10b3b-6dc9-7b13-a092-b8ab3abd33e2\\exec-5ba2d975-0baf-44a0-a807-c93328be6855.png"
+    },
+    {
+      "id": "guildMaterials",
+      "subject": "A strapped bundle of blue-gray refined magic metal ingots with a subtle cyan seam, no text",
+      "source": "C:\\Users\\geniu\\.codex\\generated_images\\01a10b3b-6dc9-7b13-a092-b8ab3abd33e2\\exec-dfe79c44-1dc9-44dd-a8e5-ae7fac4d5af9.png"
+    },
+    {
+      "id": "guildResearchData",
+      "subject": "A tidy navy research binder with a pale paper data sheet and cyan diagram marks, no readable text",
+      "source": "C:\\Users\\geniu\\.codex\\generated_images\\01a10b3b-6dc9-7b13-a092-b8ab3abd33e2\\exec-e7e05237-9270-4944-ab5d-de9c5510e5d8.png"
+    },
+    {
+      "id": "guildSpeedupTicket",
+      "subject": "A single ivory and orange time acceleration coupon with a clear small hourglass symbol, no lettering",
+      "source": "C:\\Users\\geniu\\.codex\\generated_images\\01a10b3b-6dc9-7b13-a092-b8ab3abd33e2\\exec-037ebd9b-3f5f-4761-9a1d-d16b4a2d5896.png"
+    },
+    {
+      "id": "guildConstructionParts",
+      "subject": "A compact bundle of silver structural angle brackets and bolts with warm orange fastening strap, no lettering",
+      "source": "C:\\Users\\geniu\\.codex\\generated_images\\01a10b3b-6dc9-7b13-a092-b8ab3abd33e2\\exec-865b695a-53c7-4503-8af0-1eabbef739c0.png"
+    },
+    {
+      "id": "guildElectronicParts",
+      "subject": "A chunky teal electronic circuit module with gold contacts and small navy components, no lettering",
+      "source": "C:\\Users\\geniu\\.codex\\generated_images\\01a10b3b-6dc9-7b13-a092-b8ab3abd33e2\\exec-29377bd1-3910-4afb-834a-39e6652259fc.png"
+    },
+    {
+      "id": "guildManaCatalysts",
+      "subject": "A short glass laboratory jar containing glowing violet crystal powder with a silver cap, no lettering",
+      "source": "C:\\Users\\geniu\\.codex\\generated_images\\01a10b3b-6dc9-7b13-a092-b8ab3abd33e2\\exec-e6ce5d14-1483-43c6-98cf-b9c6c103367c.png"
+    },
+    {
+      "id": "guildBioReagents",
+      "subject": "Two compact medical ampoules filled with lime green reagent in a light ivory holder, no lettering",
+      "source": "C:\\Users\\geniu\\.codex\\generated_images\\01a10b3b-6dc9-7b13-a092-b8ab3abd33e2\\exec-3bcc2fbc-d915-41a8-bca7-6a14fb1178a3.png"
+    }
+  ]
+}

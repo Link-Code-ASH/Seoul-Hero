@@ -1,0 +1,12 @@
+{
+  "id": "monster-142",
+  "inputMode": "new-from-verbal-style",
+  "styleReferenceIds": [
+    "monster-style"
+  ],
+  "imageInputsProvided": false,
+  "args": {
+    "prompt": "Use case: stylized-concept.\nAsset type: Seoul Hero future monster individual PNG artwork.\nPrimary request: A cute but threatening Seoul gate monster with a shallow bowl-shaped shell carrying a smaller floating core inside it, surrounded by four short thick raised rim segments. Anatomical material: a shallow rounded road-equipment bowl housing made of modern matte gray and navy enamel panels enclosing a flexible navy shadow creature, four plain raised housing panels carrying large blank yellow rectangular reflectors and small visible screw heads; one amber sensor-eye core inside. Material should read as modern industrial road hardware, with no golden ornamental armor, crown, carving or elaborate decoration. No real road signs, text or graphic symbols. Face: one large bright eye in the floating core. Single cohesive body silhouette, no legs, feet, knees, humanoid torso, walking joints or articulated limb rig. Front-three-quarter view, restrained inner magic light, thick readable edge and soft painterly shading. A few small material details must explain its theme rather than recolor another monster. Transparent background, no environment, text, props in hands, or ground pedestal. Designed for one shared float motion applied to the entire PNG.\nStyle: original crisp Korean mobile-game hand-painted raster art, strong readable silhouettes, clean navy outlines where appropriate, restrained cel shading and material highlights. Follow the specific subject palette in the brief. Create a new silhouette and object, with no copied reference subject.\nOne cute threatening legless monster. Absolutely NO LEGS, NO FEET, NO WALKING JOINTS, NO HUMAN ARMS. Single cohesive body, full silhouette visible, no floor shadow or ground plane.\nComposition: single subject fully inside canvas, centered with 8 percent safe padding. No contact sheet or multiple examples.\nBackground: actual transparent RGBA, no opaque backdrop, no fake checkerboard.\nConstraints: no text, logos, watermark, UI chrome, labels or numbers. Preserve the requested anatomy and view.\n",
+    "transparent_background": true
+  }
+}

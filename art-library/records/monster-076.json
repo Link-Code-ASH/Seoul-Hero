@@ -1,0 +1,34 @@
+{
+  "id": "monster-076",
+  "status": "complete",
+  "revision": "v01",
+  "files": [
+    {
+      "path": "originals/monster/monster-076/v01/original.png",
+      "width": 1312,
+      "height": 1199,
+      "sha256": "21317d9607adfff96ecb27bd02ed20c7765643c74792d8f84d8f60269582f901",
+      "alphaChannel": true,
+      "hasTransparency": true
+    }
+  ],
+  "thumbnail": "thumbnails/monster-076-v01.png",
+  "source": {
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\geniu\\.codex\\generated_images\\01a11608-621b-7461-9513-27b6d6c5f67d\\exec-2043cbdf-7f0f-48b2-aaae-f100448b2194.png",
+    "promptPath": "originals/monster/monster-076/v01/prompt.txt",
+    "referenceIds": [
+      "monster-style"
+    ],
+    "createdAt": "2026-10-07T16:52:45.474Z",
+    "inputMode": "new-from-verbal-style",
+    "imageInputsProvided": false,
+    "imageInputs": []
+  },
+  "review": {
+    "userApproval": "pending",
+    "notes": "Alpha-composited visual review: whole legless silhouette and material features verified, transparent holes and surroundings, no canvas-edge clipping.",
+    "visualChecked": true,
+    "reviewedAt": "2026-10-07T16:54:01.181Z"
+  }
+}

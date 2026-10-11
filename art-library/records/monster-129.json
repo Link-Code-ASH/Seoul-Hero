@@ -1,0 +1,34 @@
+{
+  "id": "monster-129",
+  "status": "complete",
+  "revision": "v01",
+  "files": [
+    {
+      "path": "originals/monster/monster-129/v01/original.png",
+      "width": 1240,
+      "height": 1269,
+      "sha256": "dd1dd60cce2b372c9cc092423b026ce89d17fad4e6ee8dc5d4d7de3b94d5c1fd",
+      "alphaChannel": true,
+      "hasTransparency": true
+    }
+  ],
+  "thumbnail": "thumbnails/monster-129-v01.png",
+  "source": {
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\geniu\\.codex\\generated_images\\01a11608-621b-7461-9513-27b6d6c5f67d\\exec-cd63be9d-8f90-4ee9-b450-7b0dde4822ca.png",
+    "promptPath": "originals/monster/monster-129/v01/prompt.txt",
+    "referenceIds": [
+      "monster-style"
+    ],
+    "createdAt": "2026-10-07T17:58:27.445Z",
+    "inputMode": "new-from-verbal-style",
+    "imageInputsProvided": false,
+    "imageInputs": []
+  },
+  "review": {
+    "userApproval": "pending",
+    "notes": "밝은 배경 알파 합성 검토: 다리·발 없는 얼음/게이트/젤/나방/막/금속 몸체와 외곽 전체를 확인. 캔버스 잘림 없음. 사용자 승인 대기.",
+    "visualChecked": true,
+    "reviewedAt": "2026-10-07T18:02:09.036Z"
+  }
+}

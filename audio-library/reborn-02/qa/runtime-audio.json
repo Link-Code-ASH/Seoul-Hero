@@ -1,0 +1,1573 @@
+{
+	"checks": [
+		{
+			"detail": null,
+			"name": "synthetic_no_read_flags",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "profile_writes_blocked",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "initial_audio_disabled",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "compile_main.gd",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "compile_run.gd",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "compile_attacks.gd",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "compile_simulation.gd",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "compile_shop.gd",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "compile_enemy_brain.gd",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "compile_lobby_screen.gd",
+			"passed": true
+		},
+		{
+			"detail": {
+				"count": 117,
+				"invalid": []
+			},
+			"name": "fixed_single_wav_formats",
+			"passed": true
+		},
+		{
+			"detail": [],
+			"name": "content_identity_coverage",
+			"passed": true
+		},
+		{
+			"detail": [],
+			"name": "all_hit_and_item_routes",
+			"passed": true
+		},
+		{
+			"detail": [
+				{
+					"gain": 0.14,
+					"group": "combat",
+					"id": "hit_manaSword_soft",
+					"pan": 0.0,
+					"pitch": 1.0,
+					"url": "res://assets/audio/sfx/reborn-02/hit_manaSword_soft/01.wav"
+				},
+				{
+					"gain": 0.14,
+					"group": "combat",
+					"id": "hit_manaSword_soft",
+					"pan": 0.0,
+					"pitch": 1.0,
+					"url": "res://assets/audio/sfx/reborn-02/hit_manaSword_soft/01.wav"
+				},
+				{
+					"gain": 0.14,
+					"group": "combat",
+					"id": "hit_manaSword_soft",
+					"pan": 0.0,
+					"pitch": 1.0,
+					"url": "res://assets/audio/sfx/reborn-02/hit_manaSword_soft/01.wav"
+				},
+				{
+					"gain": 0.14,
+					"group": "combat",
+					"id": "hit_manaSword_soft",
+					"pan": 0.0,
+					"pitch": 1.0,
+					"url": "res://assets/audio/sfx/reborn-02/hit_manaSword_soft/01.wav"
+				},
+				{
+					"gain": 0.14,
+					"group": "combat",
+					"id": "hit_manaSword_soft",
+					"pan": 0.0,
+					"pitch": 1.0,
+					"url": "res://assets/audio/sfx/reborn-02/hit_manaSword_soft/01.wav"
+				},
+				{
+					"gain": 0.14,
+					"group": "combat",
+					"id": "hit_manaSword_soft",
+					"pan": 0.0,
+					"pitch": 1.0,
+					"url": "res://assets/audio/sfx/reborn-02/hit_manaSword_soft/01.wav"
+				},
+				{
+					"gain": 0.14,
+					"group": "combat",
+					"id": "hit_manaSword_soft",
+					"pan": 0.0,
+					"pitch": 1.0,
+					"url": "res://assets/audio/sfx/reborn-02/hit_manaSword_soft/01.wav"
+				},
+				{
+					"gain": 0.14,
+					"group": "combat",
+					"id": "hit_manaSword_soft",
+					"pan": 0.0,
+					"pitch": 1.0,
+					"url": "res://assets/audio/sfx/reborn-02/hit_manaSword_soft/01.wav"
+				},
+				{
+					"gain": 0.14,
+					"group": "combat",
+					"id": "hit_manaSword_soft",
+					"pan": 0.0,
+					"pitch": 1.0,
+					"url": "res://assets/audio/sfx/reborn-02/hit_manaSword_soft/01.wav"
+				},
+				{
+					"gain": 0.14,
+					"group": "combat",
+					"id": "hit_manaSword_soft",
+					"pan": 0.0,
+					"pitch": 1.0,
+					"url": "res://assets/audio/sfx/reborn-02/hit_manaSword_soft/01.wav"
+				}
+			],
+			"name": "ten_hits_interleaved_normal_critical_identical",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "weapon_and_material_distinguish",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "unknown_fixed_fallback",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "sustained_field_silent",
+			"passed": true
+		},
+		{
+			"detail": {
+				"events": 60,
+				"repeatsPerEvent": 10
+			},
+			"name": "ten_repeats_per_drop_grade_and_item",
+			"passed": true
+		},
+		{
+			"detail": [
+				{
+					"centerPlayer": true,
+					"gain": 0.140000015021148,
+					"pitch": 1.0,
+					"url": "res://assets/audio/sfx/reborn-02/hit_manaSword_soft/01.wav"
+				},
+				{
+					"centerPlayer": true,
+					"gain": 0.140000015021148,
+					"pitch": 1.0,
+					"url": "res://assets/audio/sfx/reborn-02/hit_manaSword_soft/01.wav"
+				},
+				{
+					"centerPlayer": true,
+					"gain": 0.140000015021148,
+					"pitch": 1.0,
+					"url": "res://assets/audio/sfx/reborn-02/hit_manaSword_soft/01.wav"
+				},
+				{
+					"centerPlayer": true,
+					"gain": 0.140000015021148,
+					"pitch": 1.0,
+					"url": "res://assets/audio/sfx/reborn-02/hit_manaSword_soft/01.wav"
+				},
+				{
+					"centerPlayer": true,
+					"gain": 0.140000015021148,
+					"pitch": 1.0,
+					"url": "res://assets/audio/sfx/reborn-02/hit_manaSword_soft/01.wav"
+				},
+				{
+					"centerPlayer": true,
+					"gain": 0.140000015021148,
+					"pitch": 1.0,
+					"url": "res://assets/audio/sfx/reborn-02/hit_manaSword_soft/01.wav"
+				},
+				{
+					"centerPlayer": true,
+					"gain": 0.140000015021148,
+					"pitch": 1.0,
+					"url": "res://assets/audio/sfx/reborn-02/hit_manaSword_soft/01.wav"
+				},
+				{
+					"centerPlayer": true,
+					"gain": 0.140000015021148,
+					"pitch": 1.0,
+					"url": "res://assets/audio/sfx/reborn-02/hit_manaSword_soft/01.wav"
+				},
+				{
+					"centerPlayer": true,
+					"gain": 0.140000015021148,
+					"pitch": 1.0,
+					"url": "res://assets/audio/sfx/reborn-02/hit_manaSword_soft/01.wav"
+				},
+				{
+					"centerPlayer": true,
+					"gain": 0.140000015021148,
+					"pitch": 1.0,
+					"url": "res://assets/audio/sfx/reborn-02/hit_manaSword_soft/01.wav"
+				}
+			],
+			"name": "actual_voice_fixed_source_pitch_gain_center",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "busy_mix_keeps_individual_gain",
+			"passed": true
+		},
+		{
+			"detail": {
+				"maximum": 16,
+				"normalMaximum": 12
+			},
+			"name": "voice_budget_16_normal_12",
+			"passed": true
+		},
+		{
+			"detail": [
+				{
+					"count": 1,
+					"voices": 1
+				},
+				{
+					"count": 2,
+					"voices": 1
+				},
+				{
+					"count": 2,
+					"voices": 0
+				}
+			],
+			"name": "chain_two_hops",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "pause_and_combat_dt",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "cleanup_cancels_delayed",
+			"passed": true
+		},
+		{
+			"detail": [
+				{
+					"context": {
+						"stage": "purchase",
+						"weaponId": "manaBolt"
+					},
+					"id": "weaponPurchase"
+				}
+			],
+			"name": "hit_emit_once_and_keep_critical_visual_event",
+			"passed": true
+		},
+		{
+			"detail": [
+				{
+					"context": {
+						"stage": "purchase",
+						"weaponId": "manaBolt"
+					},
+					"id": "weaponPurchase"
+				}
+			],
+			"name": "death_monster_emit_once",
+			"passed": true
+		},
+		{
+			"detail": [
+				{
+					"context": {
+						"stage": "purchase",
+						"weaponId": "manaBolt"
+					},
+					"id": "weaponPurchase"
+				}
+			],
+			"name": "drop_type_grade_emit_once",
+			"passed": true
+		},
+		{
+			"detail": [
+				{
+					"context": {
+						"stage": "purchase",
+						"weaponId": "manaBolt"
+					},
+					"id": "weaponPurchase"
+				}
+			],
+			"name": "item_id_purchase_emit_once",
+			"passed": true
+		},
+		{
+			"detail": [
+				{
+					"context": {
+						"stage": "purchase",
+						"weaponId": "manaBolt"
+					},
+					"id": "weaponPurchase"
+				}
+			],
+			"name": "weapon_id_purchase_emit_once",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "legacy_bridge_suppresses_semantic_duplicates",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "office_stereo_loop",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "existing_bgm_mute",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "existing_gain_buses",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "focus_loss_clears_voices_pending",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "focus_returns_only_environment",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "environment_stops_outside_lobby",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "music_never_started",
+			"passed": true
+		}
+	],
+	"errors": [],
+	"passed": true,
+	"scope": "synthetic audio-only Dummy output; no player file reads/writes, music playback, or full gameplay",
+	"unverified": [
+		"physical speaker listening",
+		"device playback",
+		"full gameplay and performance"
+	],
+	"wavFiles": [
+		{
+			"bits16": true,
+			"cue": "purchase",
+			"length": 0.46,
+			"loaded": true,
+			"rate": 48000,
+			"sha256": "f84f3b65d039f9b4bbb86adbecce7b23e2f3c6664a51131149732f495ac5096e",
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-02/purchase/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "reroll",
+			"length": 0.35,
+			"loaded": true,
+			"rate": 48000,
+			"sha256": "40e5d0cbb0183f8dd0fdb403cb81a669ac7b3ad64e4f968af13af53fc1b04f6a",
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-02/reroll/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "lock",
+			"length": 0.25,
+			"loaded": true,
+			"rate": 48000,
+			"sha256": "72fe6a9c1e69f79c339391a9a3f68cdcedbe29658ec5bfafdf324da8c08e45ba",
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-02/lock/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "weaponPurchase",
+			"length": 0.76,
+			"loaded": true,
+			"rate": 48000,
+			"sha256": "1c2a916d85faf2712747edd6ccfb955f6a9f32475f56f3df39c58108984fa615",
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-02/weaponPurchase/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "branchChoice",
+			"length": 1.1,
+			"loaded": true,
+			"rate": 48000,
+			"sha256": "fe13d74afb9c97f168318910af4f01f92ed6394050a8033a75d53a1ab48c30f5",
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-02/branchChoice/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "eliteSpawned",
+			"length": 0.88,
+			"loaded": true,
+			"rate": 48000,
+			"sha256": "47226bba71bd6daf19de8d72f848b76d4a4849c0f99226428f69b3f0801c1262",
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-02/eliteSpawned/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "waveStarted",
+			"length": 0.65,
+			"loaded": true,
+			"rate": 48000,
+			"sha256": "0fa482ade7cf63add8f3f5e7284e0ed620cf5b33844554ad8175fd901a3dfb48",
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-02/waveStarted/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "waveCompleted",
+			"length": 0.98,
+			"loaded": true,
+			"rate": 48000,
+			"sha256": "0277acc4bfc27598e44a1d4f8e065c8f735ee34aea212cbfbc06241ea0730139",
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-02/waveCompleted/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "waveCountdownTick",
+			"length": 0.17,
+			"loaded": true,
+			"rate": 48000,
+			"sha256": "bbb67ecef42e0fec63ac82bd930fccb2a9a2543dfb9bb9b543a9cbe4dd460e32",
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-02/waveCountdownTick/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "slashAttack",
+			"length": 0.34,
+			"loaded": true,
+			"rate": 48000,
+			"sha256": "ce4c898f491f8ad94caddd9133760a83a8e9a245262a01ab3825f3e87035e5bf",
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-02/slashAttack/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "orbitAttack",
+			"length": 0.19,
+			"loaded": true,
+			"rate": 48000,
+			"sha256": "3ca4f054e1c3a17e76ffcb3f25ef1763eaf263b322e13ef20317b7aab0e5e274",
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-02/orbitAttack/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "chainAttack",
+			"length": 0.34,
+			"loaded": true,
+			"rate": 48000,
+			"sha256": "b140dd61eb2f37d9acd681e8773b31867b184b39b4e8299b5b68bf0e0ab054e0",
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-02/chainAttack/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "bombardAttack",
+			"length": 0.7,
+			"loaded": true,
+			"rate": 48000,
+			"sha256": "95e166af340bf6e35192fd028370e7de9099e0ac17ca2f82e84f4b932d6bb4b9",
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-02/bombardAttack/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "piercingAttack",
+			"length": 0.28,
+			"loaded": true,
+			"rate": 48000,
+			"sha256": "72baa9163ef366f32b2ed774e4aec181bc7c76c9b10507f4a33d187ba0733be7",
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-02/piercingAttack/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "turretFired",
+			"length": 0.17,
+			"loaded": true,
+			"rate": 48000,
+			"sha256": "a57e02b68723686f3ff012e304a2e076ef47bf663cf80903b7032197be6ce554",
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-02/turretFired/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "minePlaced",
+			"length": 0.31,
+			"loaded": true,
+			"rate": 48000,
+			"sha256": "e96416b9a6f33438c3e9d5113c207f9805992dd3be96c412e631c96848b10a06",
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-02/minePlaced/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "mineExploded",
+			"length": 0.52,
+			"loaded": true,
+			"rate": 48000,
+			"sha256": "9bf09c83045219387e94d51a5f508a097fc60bc37d441f2215fddf9d2350c01e",
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-02/mineExploded/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "fieldActivated",
+			"length": 0.78,
+			"loaded": true,
+			"rate": 48000,
+			"sha256": "4048a13f39d0d4baec5e55300d027079c7ccafbf522b3deaaecdc5eca6a1fe2f",
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-02/fieldActivated/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "weaponFired",
+			"length": 0.24,
+			"loaded": true,
+			"rate": 48000,
+			"sha256": "b01066680edf11bc1f39c9c64e0ec37c85b134aa41694746b4d022bdb703a844",
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-02/weaponFired/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "enemyHit",
+			"length": 0.31,
+			"loaded": true,
+			"rate": 48000,
+			"sha256": "9633137daba9aa0fad9ca919e4549d7ef82804f057dbe6b1ebcea8a00492684c",
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-02/enemyHit/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "enemyKilled",
+			"length": 0.3,
+			"loaded": true,
+			"rate": 48000,
+			"sha256": "f5ddc093a1b849366cb6b3f0c08f771183723ef13360a1abfb1c332e2cdfffd7",
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-02/enemyKilled/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "magicStoneCollected",
+			"length": 0.2,
+			"loaded": true,
+			"rate": 48000,
+			"sha256": "a8636d5a6cab2ba38d28387cf69a1e2254fbb5018a5e3b19906ab4adeded8729",
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-02/magicStoneCollected/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "walletSweep",
+			"length": 0.49,
+			"loaded": true,
+			"rate": 48000,
+			"sha256": "a13eee3313f1027c4000353a5a85c8745535c7d08106ff788adadf7b9f7666f2",
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-02/walletSweep/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "buttonClick",
+			"length": 0.145,
+			"loaded": true,
+			"rate": 48000,
+			"sha256": "bea273bd5650056232c4fecdd760a2a5da2feb18cd1d0bedc4ffd8e2cf54fb97",
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-02/buttonClick/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "supplyLatch",
+			"length": 0.48,
+			"loaded": true,
+			"rate": 48000,
+			"sha256": "7d428e9e737fa4b3f258a7e003f92c393187ed3be8baf529f4fdb68ab8cd4464",
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-02/supplyLatch/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "supplyFanfare",
+			"length": 1.35,
+			"loaded": true,
+			"rate": 48000,
+			"sha256": "562818b0d177dbac229ad60a02143fe657d476e129d45680a77871e902e3b312",
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-02/supplyFanfare/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "playerHit",
+			"length": 0.29,
+			"loaded": true,
+			"rate": 48000,
+			"sha256": "fb29cda954a11a56355d853439cb942bd34cbf90506fb4ebf7bae02c07bc8499",
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-02/playerHit/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "bossSpawned",
+			"length": 1.22,
+			"loaded": true,
+			"rate": 48000,
+			"sha256": "5afaad91b339c88bac8fe58a6b0da31d86c7bcd10b1fd074ea12e2afc36e030f",
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-02/bossSpawned/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "stageClear",
+			"length": 1.7,
+			"loaded": true,
+			"rate": 48000,
+			"sha256": "38a3afa26ac9f182fc2c9276eb6009f33d8bfe5fc4a6efc91c66504036dbd3f1",
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-02/stageClear/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "gameOver",
+			"length": 1.02,
+			"loaded": true,
+			"rate": 48000,
+			"sha256": "60e053443a01f68895f4392275bb83b51bab09a07c2e36aa2bece40b3c4f55b3",
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-02/gameOver/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "shotgunAttack",
+			"length": 0.34,
+			"loaded": true,
+			"rate": 48000,
+			"sha256": "3336b7910d2934b87cebc1e62ca78e6959e98aec7c55a945a73610cd2cd71634",
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-02/shotgunAttack/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "bombardLaunch",
+			"length": 0.31,
+			"loaded": true,
+			"rate": 48000,
+			"sha256": "5337b3b872ae56b295e6e4aa917332381a560a3ff97210b669bd1970681448b4",
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-02/bombardLaunch/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "chainHop",
+			"length": 0.14,
+			"loaded": true,
+			"rate": 48000,
+			"sha256": "615a0c5d7637d9fcc8b88ac26e62930e46cbf4f04b84f5bcdeca52938653e9de",
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-02/chainHop/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "enemyProjectile",
+			"length": 0.25,
+			"loaded": true,
+			"rate": 48000,
+			"sha256": "eca9ededdeee03829cb019ae465e0254f6f63fcba586085adc7d5b2df966c6a4",
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-02/enemyProjectile/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "enemyCharge",
+			"length": 0.56,
+			"loaded": true,
+			"rate": 48000,
+			"sha256": "3d1fa27c21b8820202a2ccbff915b83641ca33bf721e99e73bc2dbb9ae4fc62d",
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-02/enemyCharge/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "enemySupport",
+			"length": 0.66,
+			"loaded": true,
+			"rate": 48000,
+			"sha256": "8dd9adbf87c37428132365d59dcebaa8c0731471edfa3056e57f0cd5389cf45c",
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-02/enemySupport/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "enemyDetonate",
+			"length": 0.57,
+			"loaded": true,
+			"rate": 48000,
+			"sha256": "7bf42873fbc916e52c9c6f560a25d67ddffab2cde82a2dd331e2efec5115a1e2",
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-02/enemyDetonate/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "bossAttack",
+			"length": 0.73,
+			"loaded": true,
+			"rate": 48000,
+			"sha256": "107c899b73647acb03dda806d431fc393968c3d00d3b47f4c87fd950c6de8174",
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-02/bossAttack/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "lobbyRain",
+			"length": 16.0,
+			"loaded": true,
+			"rate": 48000,
+			"sha256": "0669000f36b68da8d8e7426dfdb995f51f9afd30e1d26d25cfc5c91968ea3493",
+			"stereo": true,
+			"url": "res://assets/audio/sfx/reborn-02/lobbyRain/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "lobbyWind",
+			"length": 16.0,
+			"loaded": true,
+			"rate": 48000,
+			"sha256": "f895e8a02769a3b98c40bc503abe1d49ffe55b4170d2dbe780eadace2db9e5aa",
+			"stereo": true,
+			"url": "res://assets/audio/sfx/reborn-02/lobbyWind/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "lobbyGate",
+			"length": 16.0,
+			"loaded": true,
+			"rate": 48000,
+			"sha256": "70a66deef4505f24c61392475bc1be3cef46b4da969996dbb3207cbc86210870",
+			"stereo": true,
+			"url": "res://assets/audio/sfx/reborn-02/lobbyGate/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "lobbyWinter",
+			"length": 16.0,
+			"loaded": true,
+			"rate": 48000,
+			"sha256": "39ccbe9d8c617b5fbf246eb37f044a11ab1fed097d49d116104a0bbd3ff42f0e",
+			"stereo": true,
+			"url": "res://assets/audio/sfx/reborn-02/lobbyWinter/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "lobbyRoof",
+			"length": 16.0,
+			"loaded": true,
+			"rate": 48000,
+			"sha256": "b778476b7e0e7da9812a8c787dca7d471dce85380ea5cf27ba560d7e5aa001a4",
+			"stereo": true,
+			"url": "res://assets/audio/sfx/reborn-02/lobbyRoof/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "hit_manaSword_soft",
+			"length": 0.32,
+			"loaded": true,
+			"rate": 48000,
+			"sha256": "8aaeda5dca118e3a311f4f772256884d120d4aae7f3d2388faa68ce5576669d7",
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-02/hit_manaSword_soft/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "hit_manaSword_metal",
+			"length": 0.32,
+			"loaded": true,
+			"rate": 48000,
+			"sha256": "7f13b2c3471cf532ebd2ef67c8c2313ac29f2d07e598ef78f8474aa26c4420c8",
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-02/hit_manaSword_metal/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "hit_manaSword_stone",
+			"length": 0.32,
+			"loaded": true,
+			"rate": 48000,
+			"sha256": "9ed6d5e18ff131dc85c355cf755eea9adec69cfc0adc026df486b86c02e70d62",
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-02/hit_manaSword_stone/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "hit_manaSword_crystal",
+			"length": 0.32,
+			"loaded": true,
+			"rate": 48000,
+			"sha256": "55442e98f7c60ea6b55d69682ab244956b2f73afeb62187d9eb68568fe653795",
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-02/hit_manaSword_crystal/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "hit_manaSword_energy",
+			"length": 0.32,
+			"loaded": true,
+			"rate": 48000,
+			"sha256": "8fea1446cc434d1a2501e66a38b41afe50733d8e8044c9895792462776a3737e",
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-02/hit_manaSword_energy/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "hit_manaSword_paper",
+			"length": 0.32,
+			"loaded": true,
+			"rate": 48000,
+			"sha256": "035d10cfb67bb156b8a811cb92fb004b3aae92ee8bcafb7f467ff56a9253042c",
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-02/hit_manaSword_paper/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "hit_guardianDaggers_soft",
+			"length": 0.32,
+			"loaded": true,
+			"rate": 48000,
+			"sha256": "b270c4520e13882c34837555fede80bf8774d2db6e9560552e372a06eb4ed870",
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-02/hit_guardianDaggers_soft/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "hit_guardianDaggers_metal",
+			"length": 0.32,
+			"loaded": true,
+			"rate": 48000,
+			"sha256": "50ab6bbedd161b591cb3392bd80a58e897ea21b1ccb086f99169cc4489539398",
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-02/hit_guardianDaggers_metal/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "hit_guardianDaggers_stone",
+			"length": 0.32,
+			"loaded": true,
+			"rate": 48000,
+			"sha256": "1107ec1a3339dd94a872d0b244924b51d770f4d3d0a669af0b0a698ae302f9dd",
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-02/hit_guardianDaggers_stone/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "hit_guardianDaggers_crystal",
+			"length": 0.32,
+			"loaded": true,
+			"rate": 48000,
+			"sha256": "db72018010f3838bb5accfa9bf412a09582c6f0a08ecf17e4e64317733c1af1e",
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-02/hit_guardianDaggers_crystal/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "hit_guardianDaggers_energy",
+			"length": 0.32,
+			"loaded": true,
+			"rate": 48000,
+			"sha256": "bf4fa4e5acded30757952c8f78ccd2320d77f172b42ffc89da064216f71356bd",
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-02/hit_guardianDaggers_energy/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "hit_guardianDaggers_paper",
+			"length": 0.32,
+			"loaded": true,
+			"rate": 48000,
+			"sha256": "86da547b97a40c0e623d289028915e1a4916b7f9e2c32f7cb5ed275d39f43cad",
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-02/hit_guardianDaggers_paper/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "hit_piercingShot_soft",
+			"length": 0.32,
+			"loaded": true,
+			"rate": 48000,
+			"sha256": "0fd8458e5dbfe428bfe1d3d47cbdde095ce19f8ed2e417b66b831774772d2f71",
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-02/hit_piercingShot_soft/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "hit_piercingShot_metal",
+			"length": 0.32,
+			"loaded": true,
+			"rate": 48000,
+			"sha256": "788f9367eca6fab0707637e0f5405aee3c88d5de7920dd528d7fd52bd5c34b1b",
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-02/hit_piercingShot_metal/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "hit_piercingShot_stone",
+			"length": 0.32,
+			"loaded": true,
+			"rate": 48000,
+			"sha256": "04bfa294dbb9bc776889900e24bdf0044712bd02d451ccd67b5b69fc965872c3",
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-02/hit_piercingShot_stone/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "hit_piercingShot_crystal",
+			"length": 0.32,
+			"loaded": true,
+			"rate": 48000,
+			"sha256": "c123eddd7d8e906e2d4e7a52fef31ae8ed49d98fb2b742e040f4954983f2ee2d",
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-02/hit_piercingShot_crystal/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "hit_piercingShot_energy",
+			"length": 0.32,
+			"loaded": true,
+			"rate": 48000,
+			"sha256": "3b3efdca47c47257b995c91d2e5d05bd74c1107c8c62a109d086580d35c2c4ae",
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-02/hit_piercingShot_energy/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "hit_piercingShot_paper",
+			"length": 0.32,
+			"loaded": true,
+			"rate": 48000,
+			"sha256": "077bf322759fbe15b48e704850a04a98b31959c06438569b0d89de1d68e81cf1",
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-02/hit_piercingShot_paper/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "hit_chainLightning_soft",
+			"length": 0.32,
+			"loaded": true,
+			"rate": 48000,
+			"sha256": "ae68a85358a55c0efde33b25d155709bf223c66ef3bd46d16e45cfdf41958ddc",
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-02/hit_chainLightning_soft/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "hit_chainLightning_metal",
+			"length": 0.32,
+			"loaded": true,
+			"rate": 48000,
+			"sha256": "7a2c0a9e441ab8b888b9968bf2f1504d8fd8f4c2983d16bed9f07b82dd169007",
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-02/hit_chainLightning_metal/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "hit_chainLightning_stone",
+			"length": 0.32,
+			"loaded": true,
+			"rate": 48000,
+			"sha256": "e4fb65d136ee3b4f6e196a591938c3bfda13090b5f3555da2aeb396d87e31501",
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-02/hit_chainLightning_stone/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "hit_chainLightning_crystal",
+			"length": 0.32,
+			"loaded": true,
+			"rate": 48000,
+			"sha256": "06d6a194b5cef77b844726d7d18bd2aabb1b07b1a6ea2f6d950ad514266ac812",
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-02/hit_chainLightning_crystal/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "hit_chainLightning_energy",
+			"length": 0.32,
+			"loaded": true,
+			"rate": 48000,
+			"sha256": "b347de35f0b5349ddbe6107995da11836160934fe5152f226637666bbe121da3",
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-02/hit_chainLightning_energy/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "hit_chainLightning_paper",
+			"length": 0.32,
+			"loaded": true,
+			"rate": 48000,
+			"sha256": "54acb0c3b65409bf57ad77ce9a52efc428e15851acdbee67db35b319e61c5d11",
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-02/hit_chainLightning_paper/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "hit_manaBombard_soft",
+			"length": 0.43,
+			"loaded": true,
+			"rate": 48000,
+			"sha256": "ee92d2904037d5b4ccc88792563d897c2978645131fc7e7995fdbbc74ea1414b",
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-02/hit_manaBombard_soft/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "hit_manaBombard_metal",
+			"length": 0.43,
+			"loaded": true,
+			"rate": 48000,
+			"sha256": "70aba42c42c9089aa8fb0e2372bc29b674dda03f7b76e21ef4e9b09a0b9dac62",
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-02/hit_manaBombard_metal/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "hit_manaBombard_stone",
+			"length": 0.43,
+			"loaded": true,
+			"rate": 48000,
+			"sha256": "5d6234c5f73ca4b57520de1d94b96875888b432bb0aa2259414e3369f3afab4d",
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-02/hit_manaBombard_stone/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "hit_manaBombard_crystal",
+			"length": 0.43,
+			"loaded": true,
+			"rate": 48000,
+			"sha256": "c9a6bececd0ad44853e375821715e2fca2e44ec9cdefb11e8d9bf896915f9f1d",
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-02/hit_manaBombard_crystal/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "hit_manaBombard_energy",
+			"length": 0.43,
+			"loaded": true,
+			"rate": 48000,
+			"sha256": "afec58d46cf4c7b038eb30659282517bfeba1763db3c962a8e39e14aead8bc5a",
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-02/hit_manaBombard_energy/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "hit_manaBombard_paper",
+			"length": 0.43,
+			"loaded": true,
+			"rate": 48000,
+			"sha256": "168605864a9cb7a7dbbd520ccbaedc217770ac0fe586a0e6bc5e3cfc924a3144",
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-02/hit_manaBombard_paper/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "hit_manaBolt_soft",
+			"length": 0.32,
+			"loaded": true,
+			"rate": 48000,
+			"sha256": "390820b8bec71d2f7cee77ef0e7a11f4d7de9fe4df432ea86d3f9b354cfaf03f",
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-02/hit_manaBolt_soft/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "hit_manaBolt_metal",
+			"length": 0.32,
+			"loaded": true,
+			"rate": 48000,
+			"sha256": "2f1e1cdba69b354cf8e7a20d0534f4bf789c0aa743895d3cd259343ad36cf789",
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-02/hit_manaBolt_metal/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "hit_manaBolt_stone",
+			"length": 0.32,
+			"loaded": true,
+			"rate": 48000,
+			"sha256": "db2d5cadd1c723e58355c3e8cb361051adbd558dd1d4f2cd06be7dc9dabdec3e",
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-02/hit_manaBolt_stone/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "hit_manaBolt_crystal",
+			"length": 0.32,
+			"loaded": true,
+			"rate": 48000,
+			"sha256": "e2fd0477d05ca050b2a9a464c9da3b9b7fa06cb733100a46913771fb3ff6f866",
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-02/hit_manaBolt_crystal/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "hit_manaBolt_energy",
+			"length": 0.32,
+			"loaded": true,
+			"rate": 48000,
+			"sha256": "387ed9f476760eab51ae73aa7e896fb4f189e7a7d9c224a8fe061f3bb07aac9a",
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-02/hit_manaBolt_energy/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "hit_manaBolt_paper",
+			"length": 0.32,
+			"loaded": true,
+			"rate": 48000,
+			"sha256": "fe20720f938f86df716d69fbcabd834b220603f668da21e057bc178912cabca1",
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-02/hit_manaBolt_paper/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "hit_manaShotgun_soft",
+			"length": 0.43,
+			"loaded": true,
+			"rate": 48000,
+			"sha256": "683fcf90312113a20d0464f9bac440858e32a27d07ef992b4340947cfd85b18e",
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-02/hit_manaShotgun_soft/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "hit_manaShotgun_metal",
+			"length": 0.43,
+			"loaded": true,
+			"rate": 48000,
+			"sha256": "b28f207f06d37af552ae4db5682bb7f1d08ab59a330b191f5702792160b3befb",
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-02/hit_manaShotgun_metal/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "hit_manaShotgun_stone",
+			"length": 0.43,
+			"loaded": true,
+			"rate": 48000,
+			"sha256": "9eb9df001b19ab3f5341b21711f10d59aac59279d2a51a077ae26d44b142da5b",
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-02/hit_manaShotgun_stone/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "hit_manaShotgun_crystal",
+			"length": 0.43,
+			"loaded": true,
+			"rate": 48000,
+			"sha256": "ed3c671a8edace6e6aa21bd5bb9d85736c8697a6ac8d554014a5cefd8469b615",
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-02/hit_manaShotgun_crystal/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "hit_manaShotgun_energy",
+			"length": 0.43,
+			"loaded": true,
+			"rate": 48000,
+			"sha256": "709859de1a9303273b24596f4d750c3fa3a5212c839fbd7bd26ba1f677f0cb3c",
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-02/hit_manaShotgun_energy/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "hit_manaShotgun_paper",
+			"length": 0.43,
+			"loaded": true,
+			"rate": 48000,
+			"sha256": "f10c2600daf65486036532579af46edc98344aa6db9c0494c995f5cf5cb78e05",
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-02/hit_manaShotgun_paper/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "hit_autoTurret_soft",
+			"length": 0.32,
+			"loaded": true,
+			"rate": 48000,
+			"sha256": "220fa7a01ca4926c92c66d94c28f05dd239c0ea2408289f83c973067412ab637",
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-02/hit_autoTurret_soft/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "hit_autoTurret_metal",
+			"length": 0.32,
+			"loaded": true,
+			"rate": 48000,
+			"sha256": "9a297399e99b6d02c1bbc900c1c1a2281b0f5864ee299e57d0256cdd097a611b",
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-02/hit_autoTurret_metal/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "hit_autoTurret_stone",
+			"length": 0.32,
+			"loaded": true,
+			"rate": 48000,
+			"sha256": "f238537bf4f8bdb78c9aecfe4a0087c1e7099503dec8dd56aedd475e82e600e2",
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-02/hit_autoTurret_stone/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "hit_autoTurret_crystal",
+			"length": 0.32,
+			"loaded": true,
+			"rate": 48000,
+			"sha256": "6fb5db7f6d60e03256f9f6428dc6ab7594ce497cdb37b305f42ef05bc3db9d5f",
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-02/hit_autoTurret_crystal/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "hit_autoTurret_energy",
+			"length": 0.32,
+			"loaded": true,
+			"rate": 48000,
+			"sha256": "b8f40a61515f6fad215d6387d2d5138909c7cf3a29261d0187c65cc7d126e865",
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-02/hit_autoTurret_energy/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "hit_autoTurret_paper",
+			"length": 0.32,
+			"loaded": true,
+			"rate": 48000,
+			"sha256": "bf218d5b2d3186680988ad2c0c9182dbb9120f90d4d6b3584187a68090a508ed",
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-02/hit_autoTurret_paper/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "hit_mineLayer_soft",
+			"length": 0.43,
+			"loaded": true,
+			"rate": 48000,
+			"sha256": "678002e6e7e0ee4307d9346e6f4c7621348f359adda4dddcd73f12c401697fce",
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-02/hit_mineLayer_soft/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "hit_mineLayer_metal",
+			"length": 0.43,
+			"loaded": true,
+			"rate": 48000,
+			"sha256": "8e490c41937cfa0965c2e9bdef2365b2a89251983b3110dd38b7ce5ac011044d",
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-02/hit_mineLayer_metal/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "hit_mineLayer_stone",
+			"length": 0.43,
+			"loaded": true,
+			"rate": 48000,
+			"sha256": "d1eb9b075f0e7c8b6e43d6b644050a435c90105f58a48896082b2ec3f261b34f",
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-02/hit_mineLayer_stone/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "hit_mineLayer_crystal",
+			"length": 0.43,
+			"loaded": true,
+			"rate": 48000,
+			"sha256": "8c5a622335a2151fd66afd3769a1c8932d8909f3044127c9e499a01ebf565a47",
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-02/hit_mineLayer_crystal/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "hit_mineLayer_energy",
+			"length": 0.43,
+			"loaded": true,
+			"rate": 48000,
+			"sha256": "0c1e4ae899928ac070e2e7f982700dd044345d88a0fd5603c32307a6d3643d2a",
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-02/hit_mineLayer_energy/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "hit_mineLayer_paper",
+			"length": 0.43,
+			"loaded": true,
+			"rate": 48000,
+			"sha256": "78ff5de7dc467ae0933c8f8fa31819a4536844ad2eabba22fae1e5fa2cb9313a",
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-02/hit_mineLayer_paper/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "death_soft",
+			"length": 0.48,
+			"loaded": true,
+			"rate": 48000,
+			"sha256": "ffe276cf0a2354c786c576b0ddf6d8a3aeb1e6b1aa686b6b21e0b395721ffb50",
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-02/death_soft/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "death_metal",
+			"length": 0.48,
+			"loaded": true,
+			"rate": 48000,
+			"sha256": "540a3f916dc45ff26ca1ab51ea6552a7ed09680e62567f02555ecc33684fcf5e",
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-02/death_metal/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "death_stone",
+			"length": 0.48,
+			"loaded": true,
+			"rate": 48000,
+			"sha256": "b23b396ae0fa7e24ecd72521c7f0cd7ade6ab6b21527afa3d364be19aff81e29",
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-02/death_stone/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "death_crystal",
+			"length": 0.48,
+			"loaded": true,
+			"rate": 48000,
+			"sha256": "9075a2c59bab4706e0f09989db9e80afe6b8923c9612087ea5504882b361f86e",
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-02/death_crystal/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "death_energy",
+			"length": 0.48,
+			"loaded": true,
+			"rate": 48000,
+			"sha256": "9277492459444d2c403574a41737101ef2807e74b64ce3524d2e75d0d3f7e865",
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-02/death_energy/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "death_paper",
+			"length": 0.48,
+			"loaded": true,
+			"rate": 48000,
+			"sha256": "0a5d429398d1e52b284df05091ea9e130304e1b098d9f1bca737260e1112fd7a",
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-02/death_paper/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "pickup_magicStone",
+			"length": 0.25,
+			"loaded": true,
+			"rate": 48000,
+			"sha256": "d6cfa0774910ecbf7c6c2c6f02686bda03693a3cfce2a4cce8aba9e4fa1d2046",
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-02/pickup_magicStone/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "pickup_associationCoin",
+			"length": 0.31,
+			"loaded": true,
+			"rate": 48000,
+			"sha256": "e13ada945774a1570e0191b449423a0952584bc5fc84d2364e4305923468f9a4",
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-02/pickup_associationCoin/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "pickup_revival_low",
+			"length": 0.47,
+			"loaded": true,
+			"rate": 48000,
+			"sha256": "a4f22eef095a7699e6890439f4545635f329dfbf92d6d02102e4c3822f220dbd",
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-02/pickup_revival_low/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "pickup_revival_mid",
+			"length": 0.56,
+			"loaded": true,
+			"rate": 48000,
+			"sha256": "27de008d1893f6badcdb23c2a42e4ebdfa9d1d20d07be3989ca03bfadbf412d3",
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-02/pickup_revival_mid/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "pickup_revival_high",
+			"length": 0.64,
+			"loaded": true,
+			"rate": 48000,
+			"sha256": "62e4b8b8e58f792e6d8295295fe1370d0b47d5e42060f6baf819369ea8241b55",
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-02/pickup_revival_high/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "item_consumable",
+			"length": 0.44,
+			"loaded": true,
+			"rate": 48000,
+			"sha256": "021534efc26cfb21828b6e6231707313493cebe070e0d9336ecdd7e3b4b279dd",
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-02/item_consumable/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "item_cloth",
+			"length": 0.44,
+			"loaded": true,
+			"rate": 48000,
+			"sha256": "2337260643b0e5e86296ff4faf5ba2e057fabe12710df8b858ad504a403ba761",
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-02/item_cloth/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "item_optic",
+			"length": 0.44,
+			"loaded": true,
+			"rate": 48000,
+			"sha256": "d2b2d1b342ddd04d43e66526ac171d53001e4d327a5de2dee6d3385c173900d6",
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-02/item_optic/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "item_paper",
+			"length": 0.44,
+			"loaded": true,
+			"rate": 48000,
+			"sha256": "47f2c192e2e5c445bb2ac2812aa2aa0ab22c7ed2142ede4843c68c88b1c41a66",
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-02/item_paper/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "item_metal",
+			"length": 0.44,
+			"loaded": true,
+			"rate": 48000,
+			"sha256": "475a8736191f96c4a8073c684545c72592657206a9193dad8ca95b68433efbe7",
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-02/item_metal/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "item_arcane",
+			"length": 0.44,
+			"loaded": true,
+			"rate": 48000,
+			"sha256": "8b3b26600bfcf1cf98fa4a827a37c47e8f149546501963584707ddbbdfddfe43",
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-02/item_arcane/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "item_circuitry",
+			"length": 0.44,
+			"loaded": true,
+			"rate": 48000,
+			"sha256": "b025384137f195fe2faca2935be0fe03fcb00e1a0174381c2fb1856a944215de",
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-02/item_circuitry/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "officeDay",
+			"length": 16.0,
+			"loaded": true,
+			"rate": 48000,
+			"sha256": "cee52340a2c7ee263f8656463112d0c9c9fe91b33db956baa12ddeceb4bf0af7",
+			"stereo": true,
+			"url": "res://assets/audio/sfx/reborn-02/officeDay/01.wav"
+		},
+		{
+			"bits16": true,
+			"cue": "critical",
+			"length": 0.31,
+			"loaded": true,
+			"rate": 48000,
+			"sha256": "9633137daba9aa0fad9ca919e4549d7ef82804f057dbe6b1ebcea8a00492684c",
+			"stereo": false,
+			"url": "res://assets/audio/sfx/reborn-02/critical/01.wav"
+		}
+	]
+}

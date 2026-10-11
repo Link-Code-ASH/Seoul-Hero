@@ -1,0 +1,34 @@
+{
+  "id": "monster-151",
+  "status": "complete",
+  "revision": "v01",
+  "files": [
+    {
+      "path": "originals/monster/monster-151/v01/original.png",
+      "width": 1159,
+      "height": 1356,
+      "sha256": "f594b092050a391283b3b9d4398c9ca50ed19e3b9259a6996537a0041fe0848b",
+      "alphaChannel": true,
+      "hasTransparency": true
+    }
+  ],
+  "thumbnail": "thumbnails/monster-151-v01.png",
+  "source": {
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\geniu\\.codex\\generated_images\\01a11608-621b-7461-9513-27b6d6c5f67d\\exec-1c3ecfc7-ecf4-46ba-9b2d-73dd073c522d.png",
+    "promptPath": "originals/monster/monster-151/v01/prompt.txt",
+    "referenceIds": [
+      "monster-style"
+    ],
+    "createdAt": "2026-10-07T18:28:31.783Z",
+    "inputMode": "new-from-verbal-style",
+    "imageInputsProvided": false,
+    "imageInputs": []
+  },
+  "review": {
+    "userApproval": "pending",
+    "notes": "밝은 배경 알파 합성에서 옆 개구부와 둥근 밑면을 가진 석재·연기·유체·결정·균사·기계 재질 확인. 다리·발 없음, 파편 및 상단 끝이 모두 캔버스 안에 보임. 사용자 승인 대기.",
+    "visualChecked": true,
+    "reviewedAt": "2026-10-07T18:29:10.117Z"
+  }
+}

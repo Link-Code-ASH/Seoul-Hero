@@ -1,0 +1,15 @@
+{
+  "id": "facility-050",
+  "nameKo": "게이트 안테나",
+  "category": "facility",
+  "format": "png",
+  "inputMode": "new-from-verbal-style",
+  "styleReferenceIds": [
+    "facility-style"
+  ],
+  "imageInputsProvided": false,
+  "args": {
+    "prompt": "Use case: stylized-concept.\nAsset type: Seoul Hero future facility individual PNG artwork.\nPrimary request: ONE Seoul Hero facility illustration. A single isolated three-quarter front-view machine: two thick silver half-rings raised from a small navy pedestal and offset purple receiver disc. Keep the broad low base stable, controls blank, no detached background scenery. Match the chunky SD urban-fantasy environment language: bold clean outlines, simple painted materials, pale ivory and navy structure with restrained teal/purple/orange indicators. No characters, baked labels, logos, UI frames, buttons or floor shadows on equipment. Clearly separate major silhouettes and retain generous safe margins. Real transparent background and one isolated complete object.\nStyle: original crisp Korean mobile-game hand-painted raster art, strong readable silhouettes, clean navy outlines where appropriate, restrained cel shading and material highlights. Follow the specific subject palette in the brief. Create a new silhouette and object, with no copied reference subject.\nModern Seoul guild facility artwork. For rooms use orthographic FRONTAL SIDE CUTAWAY, approximately 2:1, consistent horizontal floor height, clear foreground floor for separately overlaid SD employees. No people, HUD, text, buttons or isometric room view. Equipment is a separate transparent cutout, exterior and state follow the supplied subject.\nComposition: single subject fully inside canvas, centered with 8 percent safe padding. No contact sheet or multiple examples.\nBackground: actual transparent RGBA, no opaque backdrop, no fake checkerboard.\nConstraints: no text, logos, watermark, UI chrome, labels or numbers. Preserve the requested anatomy and view.\n",
+    "transparent_background": true
+  }
+}

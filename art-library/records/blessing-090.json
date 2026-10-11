@@ -1,0 +1,34 @@
+{
+  "id": "blessing-090",
+  "status": "complete",
+  "revision": "v01",
+  "files": [
+    {
+      "path": "originals/blessing/blessing-090/v01/original.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "104f90c62b20db4f370ebcc32f26d9e0b75cf0c0ec716675467a490d4f2b6e7a",
+      "alphaChannel": true,
+      "hasTransparency": true
+    }
+  ],
+  "thumbnail": "thumbnails/blessing-090-v01.png",
+  "source": {
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\geniu\\.codex\\generated_images\\01a11608-40cd-79c1-89ac-8db49a82cb9c\\exec-6655d646-5785-4a9d-8d65-5eabde2b43d8.png",
+    "promptPath": "originals/blessing/blessing-090/v01/prompt.txt",
+    "referenceIds": [
+      "blessing-style"
+    ],
+    "createdAt": "2026-10-07T18:58:36.606Z",
+    "inputMode": "new-from-verbal-style",
+    "imageInputsProvided": false,
+    "imageInputs": []
+  },
+  "review": {
+    "userApproval": "pending",
+    "notes": "실제 알파의 밝은 합성본과 48 px 밝은/남색 축소본을 직접 검토. 물방울 보호체·부채와 세 불씨·대면 거울 조각·열린 팔각 결계·교차 황도 실루엣이 구분되고 주요 피사체와 장식 잘림 없음. 글자·카드틀 없음.",
+    "visualChecked": true,
+    "reviewedAt": "2026-10-07T18:58:42.163Z"
+  }
+}

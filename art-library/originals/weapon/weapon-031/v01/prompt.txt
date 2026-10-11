@@ -1,0 +1,8 @@
+Use case: stylized-concept.
+Asset type: Seoul Hero future weapon individual PNG artwork.
+Primary request: A compact padded gauntlet shell enclosing a circular mechanical press and visible screw tracks. Standalone close-range equipment icons, never attached to or held by character sprites. Distinct functional joints, restrained mint gate accents, worn ivory and navy industrial finish. Isolated polished hand-painted game icon, bold readable silhouette, orthographic three-quarter object view, clean edge, transparent background, no text, no UI frame, no human, no giant light bloom.
+Style: original crisp Korean mobile-game hand-painted raster art, strong readable silhouettes, clean navy outlines where appropriate, restrained cel shading and material highlights. Follow the specific subject palette in the brief. Create a new silhouette and object, with no copied reference subject.
+One standalone equipment icon, full object, no hand or character. Distinct readable silhouette at 48px. No floor or cast shadow.
+Composition: single subject fully inside canvas, centered with 8 percent safe padding. No contact sheet or multiple examples.
+Background: actual transparent RGBA, no opaque backdrop, no fake checkerboard.
+Constraints: no text, logos, watermark, UI chrome, labels or numbers. Preserve the requested anatomy and view.

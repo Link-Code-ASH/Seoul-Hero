@@ -1,0 +1,42 @@
+[
+  {
+    "id": "guildCoin",
+    "prompt": "Create one isolated inventory resource icon for Seoul Hero, a modern Seoul urban fantasy 2D game. A small stack of brass guild operating coins, navy enamel centers with a simple building silhouette embossed, no text. Consistent hand-painted 2.5D collectible item artwork, cute chunky silhouette, polished but restrained materials, crisp dark navy outline, soft warm lighting, subtle highlights, highly legible at 28px. Center the object with generous transparent padding, square composition, true transparent background, no floor, no background, no frame, no UI, no cast shadow beyond the object, no words, no numerals, no watermark. Use the palette navy #243448, ivory #EDF2F4, teal #267F75, muted steel and gold accents. Render a single item only. Save prompt identity: guildCoin",
+    "transparent_background": true
+  },
+  {
+    "id": "guildMaterials",
+    "prompt": "Create one isolated inventory resource icon for Seoul Hero, a modern Seoul urban fantasy 2D game. A strapped bundle of blue-gray refined magic metal ingots with a subtle cyan seam, no text. Consistent hand-painted 2.5D collectible item artwork, cute chunky silhouette, polished but restrained materials, crisp dark navy outline, soft warm lighting, subtle highlights, highly legible at 28px. Center the object with generous transparent padding, square composition, true transparent background, no floor, no background, no frame, no UI, no cast shadow beyond the object, no words, no numerals, no watermark. Use the palette navy #243448, ivory #EDF2F4, teal #267F75, muted steel and gold accents. Render a single item only. Save prompt identity: guildMaterials",
+    "transparent_background": true
+  },
+  {
+    "id": "guildResearchData",
+    "prompt": "Create one isolated inventory resource icon for Seoul Hero, a modern Seoul urban fantasy 2D game. A tidy navy research binder with a pale paper data sheet and cyan diagram marks, no readable text. Consistent hand-painted 2.5D collectible item artwork, cute chunky silhouette, polished but restrained materials, crisp dark navy outline, soft warm lighting, subtle highlights, highly legible at 28px. Center the object with generous transparent padding, square composition, true transparent background, no floor, no background, no frame, no UI, no cast shadow beyond the object, no words, no numerals, no watermark. Use the palette navy #243448, ivory #EDF2F4, teal #267F75, muted steel and gold accents. Render a single item only. Save prompt identity: guildResearchData",
+    "transparent_background": true
+  },
+  {
+    "id": "guildSpeedupTicket",
+    "prompt": "Create one isolated inventory resource icon for Seoul Hero, a modern Seoul urban fantasy 2D game. A single ivory and orange time acceleration coupon with a clear small hourglass symbol, no lettering. Consistent hand-painted 2.5D collectible item artwork, cute chunky silhouette, polished but restrained materials, crisp dark navy outline, soft warm lighting, subtle highlights, highly legible at 28px. Center the object with generous transparent padding, square composition, true transparent background, no floor, no background, no frame, no UI, no cast shadow beyond the object, no words, no numerals, no watermark. Use the palette navy #243448, ivory #EDF2F4, teal #267F75, muted steel and gold accents. Render a single item only. Save prompt identity: guildSpeedupTicket",
+    "transparent_background": true
+  },
+  {
+    "id": "guildConstructionParts",
+    "prompt": "Create one isolated inventory resource icon for Seoul Hero, a modern Seoul urban fantasy 2D game. A compact bundle of silver structural angle brackets and bolts with warm orange fastening strap, no lettering. Consistent hand-painted 2.5D collectible item artwork, cute chunky silhouette, polished but restrained materials, crisp dark navy outline, soft warm lighting, subtle highlights, highly legible at 28px. Center the object with generous transparent padding, square composition, true transparent background, no floor, no background, no frame, no UI, no cast shadow beyond the object, no words, no numerals, no watermark. Use the palette navy #243448, ivory #EDF2F4, teal #267F75, muted steel and gold accents. Render a single item only. Save prompt identity: guildConstructionParts",
+    "transparent_background": true
+  },
+  {
+    "id": "guildElectronicParts",
+    "prompt": "Create one isolated inventory resource icon for Seoul Hero, a modern Seoul urban fantasy 2D game. A chunky teal electronic circuit module with gold contacts and small navy components, no lettering. Consistent hand-painted 2.5D collectible item artwork, cute chunky silhouette, polished but restrained materials, crisp dark navy outline, soft warm lighting, subtle highlights, highly legible at 28px. Center the object with generous transparent padding, square composition, true transparent background, no floor, no background, no frame, no UI, no cast shadow beyond the object, no words, no numerals, no watermark. Use the palette navy #243448, ivory #EDF2F4, teal #267F75, muted steel and gold accents. Render a single item only. Save prompt identity: guildElectronicParts",
+    "transparent_background": true
+  },
+  {
+    "id": "guildManaCatalysts",
+    "prompt": "Create one isolated inventory resource icon for Seoul Hero, a modern Seoul urban fantasy 2D game. A short glass laboratory jar containing glowing violet crystal powder with a silver cap, no lettering. Consistent hand-painted 2.5D collectible item artwork, cute chunky silhouette, polished but restrained materials, crisp dark navy outline, soft warm lighting, subtle highlights, highly legible at 28px. Center the object with generous transparent padding, square composition, true transparent background, no floor, no background, no frame, no UI, no cast shadow beyond the object, no words, no numerals, no watermark. Use the palette navy #243448, ivory #EDF2F4, teal #267F75, muted steel and gold accents. Render a single item only. Save prompt identity: guildManaCatalysts",
+    "transparent_background": true
+  },
+  {
+    "id": "guildBioReagents",
+    "prompt": "Create one isolated inventory resource icon for Seoul Hero, a modern Seoul urban fantasy 2D game. Two compact medical ampoules filled with lime green reagent in a light ivory holder, no lettering. Consistent hand-painted 2.5D collectible item artwork, cute chunky silhouette, polished but restrained materials, crisp dark navy outline, soft warm lighting, subtle highlights, highly legible at 28px. Center the object with generous transparent padding, square composition, true transparent background, no floor, no background, no frame, no UI, no cast shadow beyond the object, no words, no numerals, no watermark. Use the palette navy #243448, ivory #EDF2F4, teal #267F75, muted steel and gold accents. Render a single item only. Save prompt identity: guildBioReagents",
+    "transparent_background": true
+  }
+]

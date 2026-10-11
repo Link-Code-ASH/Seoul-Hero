@@ -1,0 +1,15 @@
+{
+  "id": "effect-028",
+  "nameKo": "청룡 흐름 · 쐐기 폭발",
+  "category": "effect",
+  "format": "png",
+  "inputMode": "new-from-verbal-style",
+  "styleReferenceIds": [
+    "effect-style"
+  ],
+  "imageInputsProvided": false,
+  "args": {
+    "prompt": "Use case: stylized-concept.\nAsset type: Seoul Hero future effect individual PNG artwork.\nPrimary request: ONE reusable transparent 2D raster effect for Seoul Hero, an eight-point asymmetric burst with broad short blades and two detached large fragments. Design language: two teal dragon-whisker ribbons wrapped around a pearl-white droplet. Thick readable silhouette, limited cel-painted texture, clean alpha, no background, ground shadow, frame, letters, numbers, interface, character or item illustration. Keep the origin registered at the same central anchor and include safe margin. This asset is an isolated burst layer, not a complete screen. Show the fully readable peak phase as a SINGLE PNG; animate later through position, scale, rotation and opacity. Do not generate a contact sheet or motion trail made of repeated full copies.\nStyle: original crisp Korean mobile-game hand-painted raster art, strong readable silhouettes, clean navy outlines where appropriate, restrained cel shading and material highlights. Follow the specific subject palette in the brief. Create a new silhouette and object, with no copied reference subject.\nReusable raster VFX artwork ONLY, no UI screenshot, icon, background or object being upgraded. Preserve colored translucent luminous edges, clean real alpha, not a black or checkerboard rectangle. No letters, numbers, labels, borders or floor shadow.\nComposition: single subject fully inside canvas, centered with 8 percent safe padding. No contact sheet or multiple examples.\nBackground: actual transparent RGBA, no opaque backdrop, no fake checkerboard.\nConstraints: no text, logos, watermark, UI chrome, labels or numbers. Preserve the requested anatomy and view.\n",
+    "transparent_background": true
+  }
+}

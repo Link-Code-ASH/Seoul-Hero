@@ -1,0 +1,59 @@
+{
+  "tool": "built-in image_gen",
+  "date": "2026-10-01",
+  "purpose": "Shared empty-handed SD humans; Song style, identity-preserving redesign",
+  "assets": [
+    {
+      "id": "kang",
+      "file": "kang_sd_01.png",
+      "identity": "godot/assets/visuals/actors/kang/portrait.png",
+      "subject": "Kang Taehoon: adult male with short spiky dark brown hair, confident brown eyes, olive military hooded jacket with charcoal tactical vest and tiny cyan chevron shoulder patch, black fingerless mitten gloves, charcoal short pants and little olive boots. Empty hands. No gun.",
+      "prompt": "Use case: stylized-concept. Asset type: ONE transparent PNG whole-body SD game sprite for Seoul Hero. Image 1 is the EXACT style/proportion reference (Song SD). Image 2 is identity/color reference only; replace its tall anatomy entirely. Match Image 1's cute big head (60% total height), tiny compact body, extremely short stubby arms and legs, rounded bold dark outline, simple clean two-tone cel shading, readable large eyes, slight front three-quarter view from above. A single relaxed idle battle doll, facing slightly right. Full body centered with equal margin; two tiny shoes level at bottom; BOTH EMPTY hands visible beside hips, short sleeves seamlessly attached, no floor shadow. Same proportions and visual fidelity as Song. Simplify straps/accessories so silhouette reads at 45px. No weapons, held props, long limbs, walking pose, background, text, logo, frame, glow haze, multiple views, sprite sheet. Real transparent background.\nSubject: Kang Taehoon: adult male with short spiky dark brown hair, confident brown eyes, olive military hooded jacket with charcoal tactical vest and tiny cyan chevron shoulder patch, black fingerless mitten gloves, charcoal short pants and little olive boots. Empty hands. No gun.",
+      "generatedSource": "C:/Users/geniu/.codex/generated_images/01a0f2b0-afe6-7281-8ba3-48d0d8354159/exec-91ac9c89-7dcb-4743-ae75-8def6b9a1e03.png",
+      "referenced_image_paths": [
+        "C:/Users/geniu/Documents/GitHub/Seoul-Hero/assets/characters-sd/song_sd_01.png",
+        "C:/Users/geniu/Documents/GitHub/Seoul-Hero/godot/assets/visuals/actors/kang/portrait.png"
+      ],
+      "transparent_background": true
+    },
+    {
+      "id": "park",
+      "file": "park_sd_01.png",
+      "identity": "godot/assets/content-2026/parkDojun-portrait-01.png",
+      "subject": "Park Dojun: sturdy middle-aged male rescue chief, salt-and-pepper tousled hair, short gray beard, calm amber brown eyes, saffron yellow/orange rescue jacket with small silver reflective bands, black undershirt, navy tiny pants, black tiny work boots, orange diamond chest charm. Both empty hands out of pockets.",
+      "prompt": "Use case: stylized-concept. Asset type: ONE transparent PNG whole-body SD game sprite for Seoul Hero. Image 1 is the EXACT style/proportion reference (Song SD). Image 2 is identity/color reference only; replace its tall anatomy entirely. Match Image 1's cute big head (60% total height), tiny compact body, extremely short stubby arms and legs, rounded bold dark outline, simple clean two-tone cel shading, readable large eyes, slight front three-quarter view from above. A single relaxed idle battle doll, facing slightly right. Full body centered with equal margin; two tiny shoes level at bottom; BOTH EMPTY hands visible beside hips, short sleeves seamlessly attached, no floor shadow. Same proportions and visual fidelity as Song. Simplify straps/accessories so silhouette reads at 45px. No weapons, held props, long limbs, walking pose, background, text, logo, frame, glow haze, multiple views, sprite sheet. Real transparent background.\nSubject: Park Dojun: sturdy middle-aged male rescue chief, salt-and-pepper tousled hair, short gray beard, calm amber brown eyes, saffron yellow/orange rescue jacket with small silver reflective bands, black undershirt, navy tiny pants, black tiny work boots, orange diamond chest charm. Both empty hands out of pockets.",
+      "generatedSource": "C:/Users/geniu/.codex/generated_images/01a0f2b0-afe6-7281-8ba3-48d0d8354159/exec-3aca3d15-5072-4339-b257-ece00b37f2b0.png",
+      "referenced_image_paths": [
+        "C:/Users/geniu/Documents/GitHub/Seoul-Hero/assets/characters-sd/song_sd_01.png",
+        "C:/Users/geniu/Documents/GitHub/Seoul-Hero/godot/assets/content-2026/parkDojun-portrait-01.png"
+      ],
+      "transparent_background": true
+    },
+    {
+      "id": "yoon",
+      "file": "yoon_sd_01.png",
+      "identity": "godot/assets/content-2026/yoonHarin-portrait-01.png",
+      "subject": "Yoon Harin: young woman courier, chin-length charcoal bob with a tiny side braid, teal eyes, small silver diamond earring, plum-purple hood jacket with cyan inner hood/trim, black shirt and tiny pants, tiny cyan-trimmed sneakers, tiny black fingerless gloves. No exposed midriff, no long legs, both empty hands visible.",
+      "prompt": "Use case: stylized-concept. Asset type: ONE transparent PNG whole-body SD game sprite for Seoul Hero. Image 1 is the EXACT style/proportion reference (Song SD). Image 2 is identity/color reference only; replace its tall anatomy entirely. Match Image 1's cute big head (60% total height), tiny compact body, extremely short stubby arms and legs, rounded bold dark outline, simple clean two-tone cel shading, readable large eyes, slight front three-quarter view from above. A single relaxed idle battle doll, facing slightly right. Full body centered with equal margin; two tiny shoes level at bottom; BOTH EMPTY hands visible beside hips, short sleeves seamlessly attached, no floor shadow. Same proportions and visual fidelity as Song. Simplify straps/accessories so silhouette reads at 45px. No weapons, held props, long limbs, walking pose, background, text, logo, frame, glow haze, multiple views, sprite sheet. Real transparent background.\nSubject: Yoon Harin: young woman courier, chin-length charcoal bob with a tiny side braid, teal eyes, small silver diamond earring, plum-purple hood jacket with cyan inner hood/trim, black shirt and tiny pants, tiny cyan-trimmed sneakers, tiny black fingerless gloves. No exposed midriff, no long legs, both empty hands visible.",
+      "generatedSource": "C:/Users/geniu/.codex/generated_images/01a0f2b0-afe6-7281-8ba3-48d0d8354159/exec-a2adff6a-632a-48fb-82b0-8921921cb076.png",
+      "referenced_image_paths": [
+        "C:/Users/geniu/Documents/GitHub/Seoul-Hero/assets/characters-sd/song_sd_01.png",
+        "C:/Users/geniu/Documents/GitHub/Seoul-Hero/godot/assets/content-2026/yoonHarin-portrait-01.png"
+      ],
+      "transparent_background": true
+    },
+    {
+      "id": "han_seoa",
+      "file": "han_seoa_sd_01.png",
+      "identity": "assets/guild/guild_operator_han_seoa_illustration_01.png",
+      "subject": "Han Seoa: friendly female guild coordinator, fluffy chestnut chin-length bob, little orange flower hairclip, warm amber eyes, headset microphone, pale blue short bomber jacket over ivory shirt, small navy skirt with opaque charcoal leggings and tiny navy/gold sneakers, simple little ID badge. BOTH empty hands visible. Remove pogo stick/spring and all held equipment.",
+      "prompt": "Use case: stylized-concept. Asset type: ONE transparent PNG whole-body SD game sprite for Seoul Hero. Image 1 is the EXACT style/proportion reference (Song SD). Image 2 is identity/color reference only; replace its tall anatomy entirely. Match Image 1's cute big head (60% total height), tiny compact body, extremely short stubby arms and legs, rounded bold dark outline, simple clean two-tone cel shading, readable large eyes, slight front three-quarter view from above. A single relaxed idle battle doll, facing slightly right. Full body centered with equal margin; two tiny shoes level at bottom; BOTH EMPTY hands visible beside hips, short sleeves seamlessly attached, no floor shadow. Same proportions and visual fidelity as Song. Simplify straps/accessories so silhouette reads at 45px. No weapons, held props, long limbs, walking pose, background, text, logo, frame, glow haze, multiple views, sprite sheet. Real transparent background.\nSubject: Han Seoa: friendly female guild coordinator, fluffy chestnut chin-length bob, little orange flower hairclip, warm amber eyes, headset microphone, pale blue short bomber jacket over ivory shirt, small navy skirt with opaque charcoal leggings and tiny navy/gold sneakers, simple little ID badge. BOTH empty hands visible. Remove pogo stick/spring and all held equipment.",
+      "generatedSource": "C:/Users/geniu/.codex/generated_images/01a0f2b0-afe6-7281-8ba3-48d0d8354159/exec-e8885d6a-3625-44df-9d66-942f605d3f95.png",
+      "referenced_image_paths": [
+        "C:/Users/geniu/Documents/GitHub/Seoul-Hero/assets/characters-sd/song_sd_01.png",
+        "C:/Users/geniu/Documents/GitHub/Seoul-Hero/assets/guild/guild_operator_han_seoa_illustration_01.png"
+      ],
+      "transparent_background": true
+    }
+  ]
+}

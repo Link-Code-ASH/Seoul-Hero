@@ -1,0 +1,40 @@
+{
+  "id": "character-006",
+  "status": "complete",
+  "revision": "v03",
+  "files": [
+    {
+      "path": "originals/character/character-006/v03/original.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "d13f0fc0bdd9af454ded4e83cda0f7b03089da4031d0aaa157daa7238142b702",
+      "alphaChannel": true,
+      "hasTransparency": true
+    }
+  ],
+  "thumbnail": "thumbnails/character-006-v03.png",
+  "source": {
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\geniu\\.codex\\generated_images\\01a11608-40cd-79c1-89ac-8db49a82cb9c\\exec-ac6d7062-e74e-478b-998b-48f70649f566.png",
+    "promptPath": "originals/character/character-006/v03/prompt.txt",
+    "referenceIds": [
+      "character-style"
+    ],
+    "createdAt": "2026-10-07T15:24:00.738Z",
+    "inputMode": "edit-background",
+    "imageInputsProvided": true,
+    "imageInputs": [
+      {
+        "path": "originals/character/character-006/v02/original.png",
+        "role": "edit-target",
+        "sha256": "8f3cf45341214ab7c958bd504106fe0fb05bbec86a4e9914548edc82498f2cfa"
+      }
+    ]
+  },
+  "review": {
+    "userApproval": "pending",
+    "notes": "실제 RGBA와 밝은 배경 합성 미리보기에서 투명 컷아웃·전체 실루엣·빈손 SD 또는 독립 무기를 확인했습니다. 투명 픽셀의 잔여 RGB는 배경으로 표시되지 않습니다.",
+    "visualChecked": true,
+    "reviewedAt": "2026-10-07T15:35:45.772Z"
+  }
+}

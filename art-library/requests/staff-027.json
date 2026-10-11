@@ -1,0 +1,15 @@
+{
+  "id": "staff-027",
+  "nameKo": "합성 공정정제사",
+  "category": "staff",
+  "format": "png",
+  "inputMode": "new-from-verbal-style",
+  "styleReferenceIds": [
+    "staff-style"
+  ],
+  "imageInputsProvided": false,
+  "args": {
+    "prompt": "Use case: stylized-concept.\nAsset type: Seoul Hero future staff individual PNG artwork.\nANATOMY PRIORITY: exactly tiny squat SD body, the head including hair is 60 percent of the total subject height. The body from chin to shoe soles occupies only 40 percent. Very small mittens for the empty hands close against the short torso. Feet sit directly below the tiny torso. No visible long thigh, no long shin, no realistic knee anatomy. Tiny squat boots and scarcely visible legs. Cartoon SD face, no realistic adult anatomy. Preserve this proportion before costume detail.\nPrimary request: A full-body super-deformed Seoul guild staff member: an older woman with a silver low bun, small round safety glasses and a squat double-layer smock. Occupational clothing: very short cleanroom or clinical forging clothing with broad soft seals and tiny closed ampoule cases on the belt. Huge readable head about 60 percent of total height, a tiny compact torso, extremely short arms and legs, large expressive eyes and clearly visible empty small hands. Relaxed friendly three-quarter front neutral pose, tiny feet close together. Distinct hair, headwear and jacket contour, one clean hand-painted PNG, transparent background. No held paperwork, tools, weapons, official logos, text, UI frame, realistic limbs or individual attack rig.\nStyle: original crisp Korean mobile-game hand-painted raster art, strong readable silhouettes, clean navy outlines where appropriate, restrained cel shading and material highlights. Follow the specific subject palette in the brief. Create a new silhouette and object, with no copied reference subject.\nOne full-body Korean guild employee. Match reference SD proportion: head about 60 percent of height, tiny torso, extremely short limbs. BOTH HANDS EMPTY, relaxed idle stance. No handheld tool, no floor shadow, no rig parts.\nComposition: single subject fully inside canvas, centered with 8 percent safe padding. No contact sheet or multiple examples.\nBackground: actual transparent RGBA, no opaque backdrop, no fake checkerboard.\nConstraints: no text, logos, watermark, UI chrome, labels or numbers. Preserve the requested anatomy and view.\n",
+    "transparent_background": true
+  }
+}

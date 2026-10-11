@@ -1,0 +1,34 @@
+{
+  "id": "monster-026",
+  "status": "complete",
+  "revision": "v01",
+  "files": [
+    {
+      "path": "originals/monster/monster-026/v01/original.png",
+      "width": 1233,
+      "height": 1275,
+      "sha256": "98d01d99deb9d55bd56576bb2084a2e75af18bb7d06918c0c142d2eb098980b6",
+      "alphaChannel": true,
+      "hasTransparency": true
+    }
+  ],
+  "thumbnail": "thumbnails/monster-026-v01.png",
+  "source": {
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\geniu\\.codex\\generated_images\\01a11608-621b-7461-9513-27b6d6c5f67d\\exec-5245fc8c-89cb-4428-af26-8967fa74f36c.png",
+    "promptPath": "originals/monster/monster-026/v01/prompt.txt",
+    "referenceIds": [
+      "monster-style"
+    ],
+    "createdAt": "2026-10-07T15:46:17.288Z",
+    "inputMode": "new-from-verbal-style",
+    "imageInputsProvided": false,
+    "imageInputs": []
+  },
+  "review": {
+    "userApproval": "pending",
+    "notes": "Original and derived alpha-composited review confirm a coherent legless crescent, readable material identity, no opaque background and no clipped contour. Alpha edge-pixel count is 0.",
+    "visualChecked": true,
+    "reviewedAt": "2026-10-07T15:47:33.836Z"
+  }
+}

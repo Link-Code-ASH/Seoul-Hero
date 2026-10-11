@@ -1,0 +1,19 @@
+{
+  "id": "effect-083",
+  "inputMode": "edit-framing",
+  "imageInputsProvided": true,
+  "imageInputs": [
+    {
+      "path": "originals/effect/effect-083/v01/original.png",
+      "role": "edit-target",
+      "sha256": "d48f6b54dbbab1ded43ecfe0921858d30589d6c5fd5e9c5bfa96f2c8da9433c5"
+    }
+  ],
+  "args": {
+    "prompt": "Use case: precise-object-edit.\nAsset type: Seoul Hero individual transparent PNG correction.\nInput image is the exact existing EDIT TARGET, not merely a style reference.\nKeep the same design, palette and phase order. Repair the clipped tips and shrink the ENTIRE intended effect including rays, glow and particles to a compact central footprint with ample transparent space. Every tip must be fully visible. Do not add a background or change the motif.\nOne complete isolated subject, centered, all tips inside canvas and at least fifteen percent transparent margin on all sides.\n\nOutput: real transparent PNG. No text, logo, watermark, matte color or simulated transparency.",
+    "transparent_background": true,
+    "referenced_image_paths": [
+      "C:\\Users\\geniu\\Documents\\GitHub\\Seoul-Hero\\art-library\\originals\\effect\\effect-083\\v01\\original.png"
+    ]
+  }
+}

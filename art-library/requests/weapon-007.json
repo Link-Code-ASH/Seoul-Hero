@@ -1,0 +1,19 @@
+{
+  "id": "weapon-007",
+  "inputMode": "edit-background",
+  "imageInputsProvided": true,
+  "imageInputs": [
+    {
+      "path": "originals/weapon/weapon-007/v01/original.png",
+      "role": "edit-target",
+      "sha256": "6cb09c801a31c6bf7f028aec1296878701c337cfa3d5b4fed14d7c11b5f9d329"
+    }
+  ],
+  "args": {
+    "prompt": "Use case: background-extraction.\nAsset type: Seoul Hero individual transparent PNG correction.\nInput image is the exact existing EDIT TARGET, not merely a style reference.\nChange ONLY the background: remove every opaque gray, brown, black, white or colored backdrop and all background lighting panels. Keep only the intended character, weapon or illustrated subject. Use genuine transparent RGBA outside the subject, including all holes and gaps. Do not add a replacement background, checkerboard, shadow or vignette. Preserve subject identity, pose, face, costume, geometry, palette, linework and details exactly.\nOne complete isolated subject, centered, all tips inside canvas and at least fifteen percent transparent margin on all sides.\n\nOutput: real transparent PNG. No text, logo, watermark, matte color or simulated transparency.",
+    "transparent_background": true,
+    "referenced_image_paths": [
+      "C:\\Users\\geniu\\Documents\\GitHub\\Seoul-Hero\\art-library\\originals\\weapon\\weapon-007\\v01\\original.png"
+    ]
+  }
+}

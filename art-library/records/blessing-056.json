@@ -1,0 +1,34 @@
+{
+  "id": "blessing-056",
+  "status": "complete",
+  "revision": "v01",
+  "files": [
+    {
+      "path": "originals/blessing/blessing-056/v01/original.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "a8a382a26ae9cebcf1cea0251a9543b1afbccdd7e64d43262e7d8b2dbea0c611",
+      "alphaChannel": true,
+      "hasTransparency": true
+    }
+  ],
+  "thumbnail": "thumbnails/blessing-056-v01.png",
+  "source": {
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\geniu\\.codex\\generated_images\\01a116ba-0a91-7172-a5c2-28dde8e57760\\exec-ba734a37-0d22-46b8-af6e-5c18245dcbe9.png",
+    "promptPath": "originals/blessing/blessing-056/v01/prompt.txt",
+    "referenceIds": [
+      "blessing-style"
+    ],
+    "createdAt": "2026-10-07T17:37:33.080Z",
+    "inputMode": "new-from-verbal-style",
+    "imageInputsProvided": false,
+    "imageInputs": []
+  },
+  "review": {
+    "userApproval": "pending",
+    "notes": "원본과 실제 alpha 밝은/어두운 합성 검토 완료. 장비별 구조·아이콘별 실루엣과 투명 경계 정상.",
+    "visualChecked": true,
+    "reviewedAt": "2026-10-07T17:38:08.254Z"
+  }
+}

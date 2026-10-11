@@ -1,0 +1,34 @@
+{
+  "id": "monster-133",
+  "status": "complete",
+  "revision": "v01",
+  "files": [
+    {
+      "path": "originals/monster/monster-133/v01/original.png",
+      "width": 1239,
+      "height": 1269,
+      "sha256": "79cf461c709586d6274218d75f208f994a9dea29a46f582ded3372b2cd796331",
+      "alphaChannel": true,
+      "hasTransparency": true
+    }
+  ],
+  "thumbnail": "thumbnails/monster-133-v01.png",
+  "source": {
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\geniu\\.codex\\generated_images\\01a11608-621b-7461-9513-27b6d6c5f67d\\exec-aa16e579-5980-4f6c-adf5-8879ca510beb.png",
+    "promptPath": "originals/monster/monster-133/v01/prompt.txt",
+    "referenceIds": [
+      "monster-style"
+    ],
+    "createdAt": "2026-10-07T18:07:45.206Z",
+    "inputMode": "new-from-verbal-style",
+    "imageInputsProvided": false,
+    "imageInputs": []
+  },
+  "review": {
+    "userApproval": "pending",
+    "notes": "밝은 배경 알파 합성에서 케이블·종이·석재·연기·유체·결정의 그릇형 몸체를 확인. 다리·발 없음, 전체 윤곽 잘림 없음. 사용자 승인 대기.",
+    "visualChecked": true,
+    "reviewedAt": "2026-10-07T18:08:14.409Z"
+  }
+}

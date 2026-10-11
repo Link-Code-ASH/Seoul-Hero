@@ -1,0 +1,40 @@
+{
+  "id": "effect-213",
+  "status": "complete",
+  "revision": "v02",
+  "files": [
+    {
+      "path": "originals/effect/effect-213/v02/original.png",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "c1c3e489cfb72f176276491c140faef71b8aeabb61e6c2ea66f3c5577df5c36b",
+      "alphaChannel": true,
+      "hasTransparency": true
+    }
+  ],
+  "thumbnail": "thumbnails/effect-213-v02.png",
+  "source": {
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\geniu\\.codex\\generated_images\\01a10b3b-6dc9-7b13-a092-b8ab3abd33e2\\exec-3ef24b04-6d56-4aef-ba47-a2251e66b28e.png",
+    "promptPath": "originals/effect/effect-213/v02/prompt.txt",
+    "referenceIds": [
+      "effect-style"
+    ],
+    "createdAt": "2026-10-07T18:03:17.169Z",
+    "inputMode": "edit-redesign",
+    "imageInputsProvided": true,
+    "imageInputs": [
+      {
+        "path": "originals/effect/effect-213/v01/original.png",
+        "role": "edit-target",
+        "sha256": "2cb426be00fbbf20659c57b407a6caa6deffc7a3d8a6a4ab0bef3760131619c3"
+      }
+    ]
+  },
+  "review": {
+    "userApproval": "pending",
+    "notes": "Revised welding motif inspected on actual transparent-alpha composite: blue-white welding contact, copper sparks, curved smoke, clear padding, no text or frame.",
+    "visualChecked": true,
+    "reviewedAt": "2026-10-07T18:03:48.323Z"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "id": "blessing-073",
+  "status": "complete",
+  "revision": "v01",
+  "files": [
+    {
+      "path": "originals/blessing/blessing-073/v01/original.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "da14337e479fe68a427cb27e791698b4dc0636f4da2f95103603d62c1ff09eac",
+      "alphaChannel": true,
+      "hasTransparency": true
+    }
+  ],
+  "thumbnail": "thumbnails/blessing-073-v01.png",
+  "source": {
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\geniu\\.codex\\generated_images\\01a116ba-0a91-7172-a5c2-28dde8e57760\\exec-f35853b0-559d-45cd-8395-1579de546980.png",
+    "promptPath": "originals/blessing/blessing-073/v01/prompt.txt",
+    "referenceIds": [
+      "blessing-style"
+    ],
+    "createdAt": "2026-10-07T18:15:51.784Z",
+    "inputMode": "new-from-verbal-style",
+    "imageInputsProvided": false,
+    "imageInputs": []
+  },
+  "review": {
+    "userApproval": "pending",
+    "notes": "원본과 밝은·어두운 배경 alpha 합성을 확인했습니다. 공방과 중앙 본부 외관은 구조·재질이 구분되고, 결정 재화와 병풍·별·산 축복의 실루엣이 온전합니다. 배경은 실제 투명입니다.",
+    "visualChecked": true,
+    "reviewedAt": "2026-10-07T18:16:35.005Z"
+  }
+}

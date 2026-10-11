@@ -1,0 +1,8 @@
+Use case: stylized-concept.
+Asset type: Seoul Hero future map individual PNG artwork.
+Primary request: A wide 20:9 top-down Euljiro-inspired repair-yard arena with a distinctly geometric industrial layout. A very large unobstructed concrete rectangle, two broad perpendicular repair seams and one offset circular drain create an angular crossing pattern. Tiny blank roll-up shutters, capped ventilation boxes and workshop doors are cropped at the extreme border only, contrasting the stream terrace without introducing collision walls. Worn warm-gray concrete patches, soft copper work-light pools and muted navy shadows; all playable ground remains one flat traversable plane. One opaque hand-painted background filling every edge, no horizon, isometric cutaway, text, logos, actors, UI, vehicles in the center, giant portal or repeating tile grid.
+Style: match the supplied approved reference for crisp Korean mobile-game hand-painted raster art, strong silhouettes, clean navy outlines where appropriate, restrained teal/lilac/gold highlights. The reference is style guidance, not a subject to copy.
+A wide 20:9 orthographic TOP-DOWN Seoul arena environment illustration. Reference only for camera and painterly rendering, create a different place. Readable wide continuous walkable center with detail mainly at edges. No characters, HUD, labels, gibberish signage, perspective skyline or screenshot frame.
+Composition: single subject fully inside canvas, centered with 8 percent safe padding. No contact sheet or multiple examples.
+Background: complete illustrated environment filling the image.
+Constraints: no text, logos, watermark, UI chrome, labels or numbers. Preserve the requested anatomy and view.

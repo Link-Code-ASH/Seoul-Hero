@@ -1,0 +1,34 @@
+{
+  "id": "staff-031",
+  "status": "needs-revision",
+  "revision": "v01",
+  "files": [
+    {
+      "path": "originals/staff/staff-031/v01/original.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "50869a471b66e9dfccc686ce2b26dd8f8a48ee43c069496c75977414110ce361",
+      "alphaChannel": true,
+      "hasTransparency": true
+    }
+  ],
+  "thumbnail": "thumbnails/staff-031-v01.png",
+  "source": {
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\geniu\\.codex\\generated_images\\01a11608-40cd-79c1-89ac-8db49a82cb9c\\exec-f5f76416-ad00-4f8a-a8ff-1d9febafbfa4.png",
+    "promptPath": "originals/staff/staff-031/v01/prompt.txt",
+    "referenceIds": [
+      "staff-style"
+    ],
+    "createdAt": "2026-10-07T17:00:34.828Z",
+    "inputMode": "new-from-verbal-style",
+    "imageInputsProvided": false,
+    "imageInputs": []
+  },
+  "review": {
+    "userApproval": "pending",
+    "notes": "Transparent cutout is clean. Shorten long hips and visible thighs to tiny SD legs, retaining the head, empty hands and scarf uniform.",
+    "visualChecked": true,
+    "reviewedAt": "2026-10-07T17:00:36.481Z"
+  }
+}

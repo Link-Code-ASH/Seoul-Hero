@@ -1,0 +1,19 @@
+{
+  "id": "monster-113",
+  "revision": "v01",
+  "dimensions": [
+    1230,
+    1278
+  ],
+  "alphaThreshold": 32,
+  "margins": [
+    62,
+    72,
+    56,
+    72
+  ],
+  "edgePixels": 0,
+  "preview": "previews/alpha/monster-113-v01-light.png",
+  "derivedForReview": true,
+  "countsAsNewDesign": false
+}

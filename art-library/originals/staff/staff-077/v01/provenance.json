@@ -1,0 +1,34 @@
+{
+  "id": "staff-077",
+  "status": "needs-revision",
+  "revision": "v01",
+  "files": [
+    {
+      "path": "originals/staff/staff-077/v01/original.png",
+      "width": 1222,
+      "height": 1287,
+      "sha256": "b23d08a586dc7440b5b4d0c55cd30c08ac72bedf05524563412c0f65783f8650",
+      "alphaChannel": true,
+      "hasTransparency": true
+    }
+  ],
+  "thumbnail": "thumbnails/staff-077-v01.png",
+  "source": {
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\geniu\\.codex\\generated_images\\01a10b3b-6dc9-7b13-a092-b8ab3abd33e2\\exec-c02ab2ee-9739-49d3-9c5a-79dda8a3a493.png",
+    "promptPath": "originals/staff/staff-077/v01/prompt.txt",
+    "referenceIds": [
+      "staff-style"
+    ],
+    "createdAt": "2026-10-07T18:37:01.328Z",
+    "inputMode": "new-from-verbal-style",
+    "imageInputsProvided": false,
+    "imageInputs": []
+  },
+  "review": {
+    "userApproval": "pending",
+    "notes": "머리 위 곡선이 캔버스 상단에 너무 가까움. 동일 SD 외형을 유지하고 투명 여백을 확보함.",
+    "visualChecked": true,
+    "reviewedAt": "2026-10-07T18:46:08.910Z"
+  }
+}

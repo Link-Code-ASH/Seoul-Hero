@@ -1,0 +1,8 @@
+Use case: stylized-concept.
+Asset type: Seoul Hero future map individual PNG artwork.
+Primary request: A full-width 20:9 top-down Seoul-inspired stream maintenance terrace, not a replica of a real map. A broad horizontal pale stone service floor occupies the entire central arena, with three long parallel maintenance seams and one offset circular drain. A narrow quiet water strip, low retaining edge and two tiny bridge fragments appear only along the upper and far side margins; they never block or bisect the open playable floor. All central ground is flat, continuous and freely traversable. Cool wet stone with restrained warm evening service-light reflections and sparse navy edge shadows, hand-painted contemporary Korean urban background, opaque to every image edge. No horizon, perspective corridor, player, enemies, UI, lettering, logos, giant portal, high central props or tiled repetition.
+Style: match the supplied approved reference for crisp Korean mobile-game hand-painted raster art, strong silhouettes, clean navy outlines where appropriate, restrained teal/lilac/gold highlights. The reference is style guidance, not a subject to copy.
+A wide 20:9 orthographic TOP-DOWN Seoul arena environment illustration. Reference only for camera and painterly rendering, create a different place. Readable wide continuous walkable center with detail mainly at edges. No characters, HUD, labels, gibberish signage, perspective skyline or screenshot frame.
+Composition: single subject fully inside canvas, centered with 8 percent safe padding. No contact sheet or multiple examples.
+Background: complete illustrated environment filling the image.
+Constraints: no text, logos, watermark, UI chrome, labels or numbers. Preserve the requested anatomy and view.

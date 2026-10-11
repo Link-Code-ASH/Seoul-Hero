@@ -1,0 +1,19 @@
+{
+  "id": "staff-076",
+  "inputMode": "edit-framing",
+  "imageInputsProvided": true,
+  "imageInputs": [
+    {
+      "path": "originals/staff/staff-076/v01/original.png",
+      "role": "edit-target",
+      "sha256": "0b1e54398642347e1347bb0764f5af69dadcd5dcbe2e83eae15816d442760479"
+    }
+  ],
+  "args": {
+    "prompt": "Use case: precise-object-edit.\nAsset type: Seoul Hero individual transparent PNG correction.\nInput image is the exact existing EDIT TARGET, not merely a style reference.\nKeep the same design, palette and phase order. Repair the clipped tips and shrink the ENTIRE intended effect including rays, glow and particles to a compact central footprint with ample transparent space. Every tip must be fully visible. Do not add a background or change the motif.\nOne complete isolated subject, centered, all tips inside canvas and at least fifteen percent transparent margin on all sides.\nPreserve this exact empty-handed SD guild worker, face, headband, hair bun, apron costume and pose. Shrink and reposition the entire silhouette with at least 15 percent transparent margin on every side, especially above all stray hair curls. Reconstruct the complete top hair curl inside the canvas. Keep an extremely large head, tiny torso and very short arms and legs. Do not add a background, text, ground shadow, props or held items.\nOutput: real transparent PNG. No text, logo, watermark, matte color or simulated transparency.",
+    "transparent_background": true,
+    "referenced_image_paths": [
+      "C:\\Users\\geniu\\Documents\\GitHub\\Seoul-Hero\\art-library\\originals\\staff\\staff-076\\v01\\original.png"
+    ]
+  }
+}

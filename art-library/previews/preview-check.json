@@ -1,0 +1,19 @@
+{
+  "artifactOnly": true,
+  "gameLoaded": false,
+  "viewport": [
+    915,
+    412
+  ],
+  "errors": [],
+  "dimensions": {
+    "viewport": [
+      915,
+      412
+    ],
+    "documentWidth": 915,
+    "documentHeight": 412,
+    "canvasCount": 1
+  },
+  "capturedAt": "2026-10-07T14:59:13.263Z"
+}

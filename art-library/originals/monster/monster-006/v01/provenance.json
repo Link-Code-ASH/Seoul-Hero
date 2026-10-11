@@ -1,0 +1,30 @@
+{
+  "id": "monster-006",
+  "status": "complete",
+  "revision": "v01",
+  "files": [
+    {
+      "path": "originals/monster/monster-006/v01/original.png",
+      "width": 1230,
+      "height": 1278,
+      "sha256": "3dea6bc336a1a64f7a0fab6215ac6b31521026028de2b213156aa496a909c157",
+      "alphaChannel": true,
+      "hasTransparency": true
+    }
+  ],
+  "thumbnail": "thumbnails/monster-006-v01.png",
+  "source": {
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\geniu\\.codex\\generated_images\\01a11608-621b-7461-9513-27b6d6c5f67d\\exec-544f318f-6c33-4ac0-9047-232c9e58d9cc.png",
+    "promptPath": "originals/monster/monster-006/v01/prompt.txt",
+    "referenceIds": [
+      "monster-style"
+    ],
+    "createdAt": "2026-10-07T15:09:34.866Z"
+  },
+  "review": {
+    "userApproval": "pending",
+    "notes": "",
+    "visualChecked": true
+  }
+}

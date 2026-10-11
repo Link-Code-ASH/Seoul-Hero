@@ -1,0 +1,34 @@
+{
+  "id": "effect-016",
+  "status": "complete",
+  "revision": "v01",
+  "files": [
+    {
+      "path": "originals/effect/effect-016/v01/original.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "707b24f3abf4928cde0306028eb9639d203ab941593bdb6813277b1a2462aca7",
+      "alphaChannel": true,
+      "hasTransparency": true
+    }
+  ],
+  "thumbnail": "thumbnails/effect-016-v01.png",
+  "source": {
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\geniu\\.codex\\generated_images\\01a10b3b-6dc9-7b13-a092-b8ab3abd33e2\\exec-71bea691-f1cd-4851-9480-d9a9b4350842.png",
+    "promptPath": "originals/effect/effect-016/v01/prompt.txt",
+    "referenceIds": [
+      "effect-style"
+    ],
+    "createdAt": "2026-10-07T15:38:26.887Z",
+    "inputMode": "new-from-verbal-style",
+    "imageInputsProvided": false,
+    "imageInputs": []
+  },
+  "review": {
+    "userApproval": "pending",
+    "notes": "밝은 배경 합성에서 깃결 고리·폭발·리본의 독립 실루엣, 전체 외곽선과 투명 배경을 확인했습니다.",
+    "visualChecked": true,
+    "reviewedAt": "2026-10-07T15:45:04.779Z"
+  }
+}

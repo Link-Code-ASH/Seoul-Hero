@@ -1,0 +1,34 @@
+{
+  "id": "effect-038",
+  "status": "complete",
+  "revision": "v01",
+  "files": [
+    {
+      "path": "originals/effect/effect-038/v01/original.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "6d00f216314b9ef9634f416ede83f9c77e95a0f03e155c10d2a944c98aabe280",
+      "alphaChannel": true,
+      "hasTransparency": true
+    }
+  ],
+  "thumbnail": "thumbnails/effect-038-v01.png",
+  "source": {
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\geniu\\.codex\\generated_images\\01a10b3b-6dc9-7b13-a092-b8ab3abd33e2\\exec-50f3c3f3-0547-4199-8a74-87a866bffc16.png",
+    "promptPath": "originals/effect/effect-038/v01/prompt.txt",
+    "referenceIds": [
+      "effect-style"
+    ],
+    "createdAt": "2026-10-07T15:55:19.427Z",
+    "inputMode": "new-from-verbal-style",
+    "imageInputsProvided": false,
+    "imageInputs": []
+  },
+  "review": {
+    "userApproval": "pending",
+    "notes": "생성 원본과 실제 alpha 합성에서 구름·목문 소재의 서로 다른 효과 형태와 잘림 없는 전체 실루엣을 확인했습니다.",
+    "visualChecked": true,
+    "reviewedAt": "2026-10-07T16:02:38.294Z"
+  }
+}
