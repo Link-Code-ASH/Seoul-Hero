@@ -1,0 +1,34 @@
+{
+  "id": "blessing-032",
+  "status": "complete",
+  "revision": "v01",
+  "files": [
+    {
+      "path": "originals/blessing/blessing-032/v01/original.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "77142cfe6afbef5cfff85709f354b111915a9a3d8b226c6084dfcb6c17cd1320",
+      "alphaChannel": true,
+      "hasTransparency": true
+    }
+  ],
+  "thumbnail": "thumbnails/blessing-032-v01.png",
+  "source": {
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\geniu\\.codex\\generated_images\\01a116ba-0a91-7172-a5c2-28dde8e57760\\exec-f046fce6-82ad-45c9-848a-bc8f60684856.png",
+    "promptPath": "originals/blessing/blessing-032/v01/prompt.txt",
+    "referenceIds": [
+      "blessing-style"
+    ],
+    "createdAt": "2026-10-07T16:40:06.519Z",
+    "inputMode": "new-from-verbal-style",
+    "imageInputsProvided": false,
+    "imageInputs": []
+  },
+  "review": {
+    "userApproval": "pending",
+    "notes": "원본 외형 및 밝은/어두운 실제 alpha 합성 확인. 시설 설비·재화·축복 실루엣과 투명 경계 정상.",
+    "visualChecked": true,
+    "reviewedAt": "2026-10-07T16:40:21.126Z"
+  }
+}

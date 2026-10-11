@@ -1,0 +1,33 @@
+{
+  "id": "effect-014",
+  "status": "complete",
+  "revision": "v01",
+  "files": [
+    {
+      "path": "originals/effect/effect-014/v01/original.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "9ed3f9063c33bc21bc39203225d0e2f6940b19527acdb31e2fd78ab38f1df4ad",
+      "alphaChannel": true,
+      "hasTransparency": true
+    }
+  ],
+  "thumbnail": "thumbnails/effect-014-v01.png",
+  "source": {
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\geniu\\.codex\\generated_images\\01a10b3b-6dc9-7b13-a092-b8ab3abd33e2\\exec-fbf3f8c5-df6a-4a6c-8265-8bfeeddbb7b6.png",
+    "promptPath": "originals/effect/effect-014/v01/prompt.txt",
+    "referenceIds": [
+      "effect-style"
+    ],
+    "createdAt": "2026-10-07T15:13:06.626Z",
+    "inputMode": "new-from-verbal-style",
+    "imageInputsProvided": false
+  },
+  "review": {
+    "userApproval": "pending",
+    "notes": "Verified true transparency (72 percent fully transparent pixels), full feather-light pillar is inside canvas and no opaque background; luminous halo is translucent artwork.",
+    "visualChecked": true,
+    "reviewedAt": "2026-10-07T15:19:47.151Z"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "id": "facility-077",
+  "status": "complete",
+  "revision": "v02",
+  "files": [
+    {
+      "path": "originals/facility/facility-077/v02/original.png",
+      "width": 1774,
+      "height": 887,
+      "sha256": "0f2a20e17786b9f21ae2e647d0fc42da3764781107a7a2472258113869f16227",
+      "alphaChannel": true,
+      "hasTransparency": true
+    }
+  ],
+  "thumbnail": "thumbnails/facility-077-v02.png",
+  "source": {
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\geniu\\.codex\\generated_images\\01a116ba-0a91-7172-a5c2-28dde8e57760\\exec-4855d363-7b8c-477d-83e4-5c27c40aed7d.png",
+    "promptPath": "originals/facility/facility-077/v02/prompt.txt",
+    "referenceIds": [
+      "facility-style"
+    ],
+    "createdAt": "2026-10-07T18:48:13.244Z",
+    "inputMode": "new-from-verbal-style",
+    "imageInputsProvided": false,
+    "imageInputs": []
+  },
+  "review": {
+    "userApproval": "pending",
+    "notes": "v02 원본과 밝은·어두운 alpha 합성을 확인했습니다. 기존 방을 가리는 벽·바닥을 제거한 노즐 3개와 상단의 반투명 증기 overlay이며 하단 직원 영역은 비었습니다. v01은 보존했습니다.",
+    "visualChecked": true,
+    "reviewedAt": "2026-10-07T18:50:10.933Z"
+  }
+}

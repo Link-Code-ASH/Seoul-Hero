@@ -1,0 +1,34 @@
+{
+  "id": "effect-097",
+  "status": "complete",
+  "revision": "v01",
+  "files": [
+    {
+      "path": "originals/effect/effect-097/v01/original.png",
+      "width": 1774,
+      "height": 887,
+      "sha256": "cc12817c2cb2595138a173a662469989982b8703a6841f682b869f97ad5ff0dc",
+      "alphaChannel": true,
+      "hasTransparency": true
+    }
+  ],
+  "thumbnail": "thumbnails/effect-097-v01.png",
+  "source": {
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\geniu\\.codex\\generated_images\\01a10b3b-6dc9-7b13-a092-b8ab3abd33e2\\exec-7cea4f32-0a35-42ff-850d-0b9bcb327015.png",
+    "promptPath": "originals/effect/effect-097/v01/prompt.txt",
+    "referenceIds": [
+      "effect-style"
+    ],
+    "createdAt": "2026-10-07T16:38:21.823Z",
+    "inputMode": "new-from-verbal-style",
+    "imageInputsProvided": false,
+    "imageInputs": []
+  },
+  "review": {
+    "userApproval": "pending",
+    "notes": "원본과 실제 alpha 합성에서 균열·상승 빛살·연무·원호·파편의 완전한 외곽, 여백과 서로 다른 구조를 확인했습니다.",
+    "visualChecked": true,
+    "reviewedAt": "2026-10-07T16:41:11.312Z"
+  }
+}

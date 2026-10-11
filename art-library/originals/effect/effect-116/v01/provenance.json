@@ -1,0 +1,34 @@
+{
+  "id": "effect-116",
+  "status": "complete",
+  "revision": "v01",
+  "files": [
+    {
+      "path": "originals/effect/effect-116/v01/original.png",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "9f863c4d9d86dff515b5a07244de220775c0fbea290ccde784e1a284c55b15cd",
+      "alphaChannel": true,
+      "hasTransparency": true
+    }
+  ],
+  "thumbnail": "thumbnails/effect-116-v01.png",
+  "source": {
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\geniu\\.codex\\generated_images\\01a10b3b-6dc9-7b13-a092-b8ab3abd33e2\\exec-1a4c68ba-94a4-4d5c-9e9e-e379b948debb.png",
+    "promptPath": "originals/effect/effect-116/v01/prompt.txt",
+    "referenceIds": [
+      "effect-style"
+    ],
+    "createdAt": "2026-10-07T16:50:19.820Z",
+    "inputMode": "new-from-verbal-style",
+    "imageInputsProvided": false,
+    "imageInputs": []
+  },
+  "review": {
+    "userApproval": "pending",
+    "notes": "실제 알파 합성에서 고리·연결 연무·분출·화염·후광·파편 형태와 여백, 글자 없음 확인.",
+    "visualChecked": true,
+    "reviewedAt": "2026-10-07T16:50:48.178Z"
+  }
+}

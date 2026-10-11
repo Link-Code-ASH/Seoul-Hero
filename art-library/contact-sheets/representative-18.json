@@ -1,0 +1,136 @@
+{
+  "rows": 3,
+  "columns": 6,
+  "cells": [
+    {
+      "id": "weapon-001",
+      "row": 0,
+      "column": 0,
+      "nameKo": "접이식 균열검"
+    },
+    {
+      "id": "weapon-002",
+      "row": 0,
+      "column": 1,
+      "nameKo": "납작 제압권총"
+    },
+    {
+      "id": "character-001",
+      "row": 0,
+      "column": 2,
+      "nameKo": "차현우"
+    },
+    {
+      "id": "character-002",
+      "row": 0,
+      "column": 3,
+      "nameKo": "임서진"
+    },
+    {
+      "id": "monster-001",
+      "row": 0,
+      "column": 4,
+      "nameKo": "균열 단핵 방울"
+    },
+    {
+      "id": "monster-002",
+      "row": 0,
+      "column": 5,
+      "nameKo": "점등 단핵 방울"
+    },
+    {
+      "id": "blessing-001",
+      "row": 1,
+      "column": 0,
+      "nameKo": "천부 삼점 맹세"
+    },
+    {
+      "id": "blessing-002",
+      "row": 1,
+      "column": 1,
+      "nameKo": "천문 초승 극점"
+    },
+    {
+      "id": "staff-001",
+      "row": 1,
+      "column": 2,
+      "nameKo": "층계 배치관리사"
+    },
+    {
+      "id": "staff-002",
+      "row": 1,
+      "column": 3,
+      "nameKo": "균열 분광연구원"
+    },
+    {
+      "id": "map-001",
+      "row": 1,
+      "column": 4,
+      "nameKo": "청계천 수변 하천 정비마당"
+    },
+    {
+      "id": "map-002",
+      "row": 1,
+      "column": 5,
+      "nameKo": "을지로 정비골목 넓은 공구마당"
+    },
+    {
+      "id": "effect-001",
+      "row": 2,
+      "column": 0,
+      "nameKo": "천부 결속 · 응축 핵"
+    },
+    {
+      "id": "effect-013",
+      "row": 2,
+      "column": 1,
+      "nameKo": "삼족오 깃결 · 응축 핵"
+    },
+    {
+      "id": "facility-001",
+      "row": 2,
+      "column": 2,
+      "nameKo": "작전 운영실 · 초기형"
+    },
+    {
+      "id": "facility-002",
+      "row": 2,
+      "column": 3,
+      "nameKo": "마력 제련기"
+    },
+    {
+      "id": "currency-001",
+      "row": 2,
+      "column": 4,
+      "nameKo": "차세대 건축재 · 괴"
+    },
+    {
+      "id": "currency-002",
+      "row": 2,
+      "column": 5,
+      "nameKo": "차세대 건축재 · 권선"
+    }
+  ],
+  "included": [
+    "weapon-001",
+    "weapon-002",
+    "character-001",
+    "character-002",
+    "monster-001",
+    "monster-002",
+    "blessing-001",
+    "blessing-002",
+    "staff-001",
+    "staff-002",
+    "map-001",
+    "map-002",
+    "effect-001",
+    "effect-013",
+    "facility-001",
+    "facility-002",
+    "currency-001",
+    "currency-002"
+  ],
+  "missing": [],
+  "countsAsNewDesign": false
+}

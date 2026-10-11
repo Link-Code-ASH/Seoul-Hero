@@ -1,0 +1,13 @@
+import fs from 'node:fs/promises';
+const root=new URL('../',import.meta.url);
+const file=new URL('briefs/additional.json',root);
+const entries=JSON.parse(await fs.readFile(file,'utf8'));
+const entry=entries.find(item=>item.id==='facility-073');
+const before='an empty ivory 2:1 front cutaway shell with navy rear service sockets and a completely clear front walking strip';
+const after='an entirely empty ivory 2:1 frontal room interior with only navy rear service sockets, simple bare walls and a completely clear foreground floor. The painted rear wall, side walls, ceiling and floor fill the entire rectangular image edge to edge; there is no space outside the room and no isolated outer frame. No checkerboard pattern, cutout backdrop, shelves, cabinets, tools, workbench, tanks or loose equipment';
+entry.visualBrief=entry.visualBrief.replace(before,after);
+await fs.writeFile(file,JSON.stringify(entries,null,2)+'\n','utf8');
+const promptFile=new URL('prompts/facility-073.txt',root);
+const prompt=await fs.readFile(promptFile,'utf8');
+await fs.writeFile(promptFile,prompt.replace(before,after)+'\nEntire canvas is an opaque rectangular painted room interior. Do not depict a transparency checkerboard or an isolated cutout. Keep this EMPTY room bare, with no workbench, stocked shelves, cabinets, tanks, boxes or tools.\n','utf8');
+console.log('Revised facility-073 empty room brief and next-request prompt; previous original and provenance preserved.');

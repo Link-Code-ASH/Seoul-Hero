@@ -1,0 +1,12 @@
+{
+  "id": "monster-046",
+  "status": "failed",
+  "imageGenerated": false,
+  "error": "image generation failed: http 400 Bad Request: Some(\"{\\n  \\\"error\\\": {\\n    \\\"message\\\": \\\"Your request was rejected by the safety system. If you believe this is an error, contact us at help.openai.com and include the request ID 0addef25-636d-4b5f-87f6-8fb1f3c2c097.\\\",\\n    \\\"type\\\": \\\"image_generation_user_error\\\",\\n    \\\"param\\\": null,\\n    \\\"code\\\": \\\"moderation_blocked\\\",\\n    \\\"moderation_details\\\": {\\n      \\\"moderation_stage\\\": \\\"output\\\",\\n      \\\"categories\\\": [\\n        \\\"other\\\"\\n      ]\\n    }\\n  }\\n}\")",
+  "requestId": "0addef25-636d-4b5f-87f6-8fb1f3c2c097",
+  "moderationStage": "output",
+  "categories": [
+    "other"
+  ],
+  "prompt": "Use case: stylized-concept.\nAsset type: Seoul Hero future monster individual PNG artwork, monster-046.\nPrimary request: One cute round floating road-equipment ghost for a children's mobile game. Two unequal fused globes form ONE body: a larger dark gray smoky globe has a calm large eye, the smaller globe has a closed eye. There is a deep notch between the globes and a smooth wide curved underside. Broad flat gray modern metal equipment housings and completely blank yellow rectangular reflective panels cover parts of the body. Add one plain navy rectangular enamel panel. These are ordinary industrial casings with visible screws and shallow edges, not porcelain or armor. A few very short folded fins belong to the casing; no limb-like pieces.\nStyle: crisp original Korean mobile-game hand-painted raster illustration; clean navy outline, rounded cel shading, gray and navy palette with warm yellow reflective accents. Simple readable silhouette.\nComposition: single centered whole creature fully inside canvas with generous transparent margins. Front-three-quarter view. No scenery, floor or shadow.\nBackground: genuine transparent RGBA, one individual PNG.\nConstraints: no arms, legs, feet, joints, humanoid torso. The panels are absolutely blank: no real road signs, lettering, arrows, sign marks, logos, gate icons or symbols. No ornate ceramic decoration, cloud carvings, gold trim, bells or ceremonial objects."
+}

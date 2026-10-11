@@ -1,0 +1,34 @@
+{
+  "id": "effect-089",
+  "status": "complete",
+  "revision": "v01",
+  "files": [
+    {
+      "path": "originals/effect/effect-089/v01/original.png",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "293487eeb1994c68960ff85603d1a6623815df0531ca5b39c051bf972db0028d",
+      "alphaChannel": true,
+      "hasTransparency": true
+    }
+  ],
+  "thumbnail": "thumbnails/effect-089-v01.png",
+  "source": {
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\geniu\\.codex\\generated_images\\01a10b3b-6dc9-7b13-a092-b8ab3abd33e2\\exec-1c56202b-b225-4102-adfb-5e7f72bd8529.png",
+    "promptPath": "originals/effect/effect-089/v01/prompt.txt",
+    "referenceIds": [
+      "effect-style"
+    ],
+    "createdAt": "2026-10-07T16:31:20.089Z",
+    "inputMode": "new-from-verbal-style",
+    "imageInputsProvided": false,
+    "imageInputs": []
+  },
+  "review": {
+    "userApproval": "pending",
+    "notes": "실제 alpha 합성에서 전체 외곽·여백·투명 배경·글자 없음과 모양 차이를 확인했습니다.",
+    "visualChecked": true,
+    "reviewedAt": "2026-10-07T16:32:54.384Z"
+  }
+}

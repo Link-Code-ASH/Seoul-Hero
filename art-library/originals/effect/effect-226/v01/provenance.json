@@ -1,0 +1,34 @@
+{
+  "id": "effect-226",
+  "status": "complete",
+  "revision": "v01",
+  "files": [
+    {
+      "path": "originals/effect/effect-226/v01/original.png",
+      "width": 1774,
+      "height": 887,
+      "sha256": "25888fcdbe02a7d7ca12dc41f04e6fc9679d38a018f5fb46bc62dce6086d5a77",
+      "alphaChannel": true,
+      "hasTransparency": true
+    }
+  ],
+  "thumbnail": "thumbnails/effect-226-v01.png",
+  "source": {
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\geniu\\.codex\\generated_images\\01a10b3b-6dc9-7b13-a092-b8ab3abd33e2\\exec-c27ea97c-cf3f-44ad-b6b5-291bd0509747.png",
+    "promptPath": "originals/effect/effect-226/v01/prompt.txt",
+    "referenceIds": [
+      "effect-style"
+    ],
+    "createdAt": "2026-10-07T17:54:40.498Z",
+    "inputMode": "new-from-verbal-style",
+    "imageInputsProvided": false,
+    "imageInputs": []
+  },
+  "review": {
+    "userApproval": "pending",
+    "notes": "Actual-alpha light background composite inspected: both dust tips are intact; native transparent RGB did not represent clipping.",
+    "visualChecked": true,
+    "reviewedAt": "2026-10-07T18:03:36.694Z"
+  }
+}

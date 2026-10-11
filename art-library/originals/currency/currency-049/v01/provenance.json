@@ -1,0 +1,34 @@
+{
+  "id": "currency-049",
+  "status": "complete",
+  "revision": "v01",
+  "files": [
+    {
+      "path": "originals/currency/currency-049/v01/original.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "9352ed3b3a05f2c97e09b2802c3e796ce275bf6c8dcaed2ab38ce86980e1166d",
+      "alphaChannel": true,
+      "hasTransparency": true
+    }
+  ],
+  "thumbnail": "thumbnails/currency-049-v01.png",
+  "source": {
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\geniu\\.codex\\generated_images\\01a116ba-0a91-7172-a5c2-28dde8e57760\\exec-1a0c41ff-ee01-4845-b27d-94adb5929459.png",
+    "promptPath": "originals/currency/currency-049/v01/prompt.txt",
+    "referenceIds": [
+      "currency-style"
+    ],
+    "createdAt": "2026-10-07T17:23:03.375Z",
+    "inputMode": "new-from-verbal-style",
+    "imageInputsProvided": false,
+    "imageInputs": []
+  },
+  "review": {
+    "userApproval": "pending",
+    "notes": "개별 원본과 실제 alpha 밝은/어두운 합성 확인. 장비 구조와 각 아이콘 실루엣·외곽 완결성 정상.",
+    "visualChecked": true,
+    "reviewedAt": "2026-10-07T17:23:37.090Z"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "id": "facility-066",
+  "status": "complete",
+  "revision": "v01",
+  "files": [
+    {
+      "path": "originals/facility/facility-066/v01/original.png",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "a851c17d9b3f2b418d572950a299a63a48dac58a37e6802e8e17f788f0d8e439",
+      "alphaChannel": true,
+      "hasTransparency": true
+    }
+  ],
+  "thumbnail": "thumbnails/facility-066-v01.png",
+  "source": {
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\geniu\\.codex\\generated_images\\01a116ba-0a91-7172-a5c2-28dde8e57760\\exec-fa8f28c4-2a29-43b3-bc60-f73abf7616f2.png",
+    "promptPath": "originals/facility/facility-066/v01/prompt.txt",
+    "referenceIds": [
+      "facility-style"
+    ],
+    "createdAt": "2026-10-07T18:00:57.000Z",
+    "inputMode": "new-from-verbal-style",
+    "imageInputsProvided": false,
+    "imageInputs": []
+  },
+  "review": {
+    "userApproval": "pending",
+    "notes": "원본과 밝은·어두운 배경 alpha 합성을 확인했습니다. 연구 타워와 물류 외관의 구조 차이, 의식 재료와 탐사 결정의 재질 차이, 산·궤도·삼엽 축복 실루엣이 식별됩니다. 외곽 형태가 온전하며 배경은 투명합니다.",
+    "visualChecked": true,
+    "reviewedAt": "2026-10-07T18:01:31.177Z"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "id": "effect-217",
+  "status": "complete",
+  "revision": "v01",
+  "files": [
+    {
+      "path": "originals/effect/effect-217/v01/original.png",
+      "width": 1774,
+      "height": 887,
+      "sha256": "fd1ca5cbd1aaeb0f6037b34f278d14fa383c38a752be92a0f70cedebb9015a4a",
+      "alphaChannel": true,
+      "hasTransparency": true
+    }
+  ],
+  "thumbnail": "thumbnails/effect-217-v01.png",
+  "source": {
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\geniu\\.codex\\generated_images\\01a10b3b-6dc9-7b13-a092-b8ab3abd33e2\\exec-89391076-5e41-42ab-a33f-2b063d0f087a.png",
+    "promptPath": "originals/effect/effect-217/v01/prompt.txt",
+    "referenceIds": [
+      "effect-style"
+    ],
+    "createdAt": "2026-10-07T17:48:23.448Z",
+    "inputMode": "new-from-verbal-style",
+    "imageInputsProvided": false,
+    "imageInputs": []
+  },
+  "review": {
+    "userApproval": "pending",
+    "notes": "실제 알파 합성본에서 공방 증기, 연구 신호, 회수 먼지와 마력 흐름의 전체 윤곽을 확인했습니다. 연속 효과는 8장 동일 캔버스의 생성·확산·소멸 순서와 중심 배치를 유지합니다.",
+    "visualChecked": true,
+    "reviewedAt": "2026-10-07T17:54:05.820Z"
+  }
+}

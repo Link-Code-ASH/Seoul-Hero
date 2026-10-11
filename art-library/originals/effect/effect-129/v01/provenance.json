@@ -1,0 +1,34 @@
+{
+  "id": "effect-129",
+  "status": "complete",
+  "revision": "v01",
+  "files": [
+    {
+      "path": "originals/effect/effect-129/v01/original.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "2c377101027238976a5ca5893ddab675acd9012fa3000177119f5e523895acb3",
+      "alphaChannel": true,
+      "hasTransparency": true
+    }
+  ],
+  "thumbnail": "thumbnails/effect-129-v01.png",
+  "source": {
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\geniu\\.codex\\generated_images\\01a10b3b-6dc9-7b13-a092-b8ab3abd33e2\\exec-b62e30e5-d90b-4f6a-86df-7e9bc7d0d902.png",
+    "promptPath": "originals/effect/effect-129/v01/prompt.txt",
+    "referenceIds": [
+      "effect-style"
+    ],
+    "createdAt": "2026-10-07T16:58:15.143Z",
+    "inputMode": "new-from-verbal-style",
+    "imageInputsProvided": false,
+    "imageInputs": []
+  },
+  "review": {
+    "userApproval": "pending",
+    "notes": "실제 알파 합성에서 대나무 결속·해제·후광·수집 궤적과 청동 획득 효과의 형태, 전체 여백, 무문자 확인.",
+    "visualChecked": true,
+    "reviewedAt": "2026-10-07T17:02:01.176Z"
+  }
+}

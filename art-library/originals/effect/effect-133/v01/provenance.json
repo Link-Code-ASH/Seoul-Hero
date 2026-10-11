@@ -1,0 +1,34 @@
+{
+  "id": "effect-133",
+  "status": "complete",
+  "revision": "v01",
+  "files": [
+    {
+      "path": "originals/effect/effect-133/v01/original.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "cf8b520ba9b4cacd35fdf9e23d535e425db2c859fb6418b9a0ebc74958894d6f",
+      "alphaChannel": true,
+      "hasTransparency": true
+    }
+  ],
+  "thumbnail": "thumbnails/effect-133-v01.png",
+  "source": {
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\geniu\\.codex\\generated_images\\01a10b3b-6dc9-7b13-a092-b8ab3abd33e2\\exec-0da253b2-8853-40ac-be97-b8878db1f74c.png",
+    "promptPath": "originals/effect/effect-133/v01/prompt.txt",
+    "referenceIds": [
+      "effect-style"
+    ],
+    "createdAt": "2026-10-07T17:02:01.405Z",
+    "inputMode": "new-from-verbal-style",
+    "imageInputsProvided": false,
+    "imageInputs": []
+  },
+  "review": {
+    "userApproval": "pending",
+    "notes": "알파 합성으로 청동 종·철편 소재의 파편, 후광, 수집 궤적, 해금 인장의 형태와 전체 외곽, 투명 배경 확인.",
+    "visualChecked": true,
+    "reviewedAt": "2026-10-07T17:06:00.029Z"
+  }
+}

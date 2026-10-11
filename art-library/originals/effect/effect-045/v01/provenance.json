@@ -1,0 +1,34 @@
+{
+  "id": "effect-045",
+  "status": "complete",
+  "revision": "v01",
+  "files": [
+    {
+      "path": "originals/effect/effect-045/v01/original.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "346945d9288d45684467bddff3921c2fb69099a0c5e147be2444d9779875e76f",
+      "alphaChannel": true,
+      "hasTransparency": true
+    }
+  ],
+  "thumbnail": "thumbnails/effect-045-v01.png",
+  "source": {
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\geniu\\.codex\\generated_images\\01a10b3b-6dc9-7b13-a092-b8ab3abd33e2\\exec-a09c1f92-7a72-4b87-b6ba-77f0d921f04c.png",
+    "promptPath": "originals/effect/effect-045/v01/prompt.txt",
+    "referenceIds": [
+      "effect-style"
+    ],
+    "createdAt": "2026-10-07T16:07:09.962Z",
+    "inputMode": "new-from-verbal-style",
+    "imageInputsProvided": false,
+    "imageInputs": []
+  },
+  "review": {
+    "userApproval": "pending",
+    "notes": "원본과 실제 alpha 합성에서 분절 고리·폭발·잎 궤적·태극 응축·상승 기둥의 전체 형태 및 투명 배경을 확인했습니다.",
+    "visualChecked": true,
+    "reviewedAt": "2026-10-07T16:09:59.314Z"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "id": "effect-001",
+  "revision": "v01",
+  "status": "superseded",
+  "files": [
+    {
+      "path": "originals/effect/effect-001/v01/source-sheet.png",
+      "width": 1774,
+      "height": 887,
+      "sha256": "7465bfb1ca71067807a3b5f3ad470978938d056aabca28ba36bf855c595df6c5",
+      "alphaChannel": true,
+      "hasTransparency": true
+    }
+  ],
+  "source": {
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\geniu\\.codex\\generated_images\\01a10b3b-6dc9-7b13-a092-b8ab3abd33e2\\exec-793b1956-d454-40e8-a994-636c420209ff.png",
+    "promptPath": "originals/effect/effect-001/v01/prompt.txt",
+    "referenceIds": [
+      "effect-style"
+    ],
+    "createdAt": "2026-10-07T14:51:24.010Z"
+  },
+  "provenanceReconstruction": {
+    "from": "v02/provenance.json",
+    "verifiedBy": "identical original PNG SHA-256",
+    "reason": "Initial extraction stopped before metadata was saved; source and prompt were already preserved."
+  },
+  "review": {
+    "userApproval": "pending",
+    "visualChecked": false,
+    "notes": "Initial source retained; v03 is the reviewed current version."
+  }
+}

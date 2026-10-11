@@ -1,0 +1,34 @@
+{
+  "id": "effect-191",
+  "status": "complete",
+  "revision": "v01",
+  "files": [
+    {
+      "path": "originals/effect/effect-191/v01/original.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "30439b65707d6737c0f2b331e188386296abeb61f666d7f5aa2919562053225d",
+      "alphaChannel": true,
+      "hasTransparency": true
+    }
+  ],
+  "thumbnail": "thumbnails/effect-191-v01.png",
+  "source": {
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\geniu\\.codex\\generated_images\\01a10b3b-6dc9-7b13-a092-b8ab3abd33e2\\exec-02940395-9f2b-4c4b-a0e4-822840a691fe.png",
+    "promptPath": "originals/effect/effect-191/v01/prompt.txt",
+    "referenceIds": [
+      "effect-style"
+    ],
+    "createdAt": "2026-10-07T17:35:33.356Z",
+    "inputMode": "new-from-verbal-style",
+    "imageInputsProvided": false,
+    "imageInputs": []
+  },
+  "review": {
+    "userApproval": "pending",
+    "notes": "실제 알파 합성본에서 마력 결속·파편·궤적·연무와 금빛 적중·링의 실루엣, 투명 배경, 전체 윤곽을 확인했습니다.",
+    "visualChecked": true,
+    "reviewedAt": "2026-10-07T17:37:02.323Z"
+  }
+}

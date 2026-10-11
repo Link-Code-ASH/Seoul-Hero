@@ -1,0 +1,25 @@
+{
+  "id": "monster-118",
+  "category": "monster",
+  "nameKo": "접경 주름 가면",
+  "family": "접지 종이령",
+  "tags": [
+    "future-candidate",
+    "legless",
+    "paper-spirit",
+    "ambush"
+  ],
+  "descriptionKo": "접지 종이령 계열에서 주름 가면 몸체 구조를 갖춘 독립 몬스터 디자인 후보입니다. 분열·기습·예고 역할을 구분하기 위한 외형안이며 실제 AI·수치·웨이브는 아직 구현되지 않았습니다.",
+  "visualBrief": "A cute but threatening Seoul gate monster with a single broad kite-shaped body with a folded top crest, rounded lower point and two inward-curling side flaps. Anatomical material: folded ivory paper sheets forming an animated body, thick clean crease edges, blank unmarked surfaces and two inkless cutout eyes. Face: two deep asymmetrical eye windows above a little smiling seam. Single cohesive body silhouette, no legs, feet, knees, humanoid torso, walking joints or articulated limb rig. Front-three-quarter view, restrained inner magic light, thick readable edge and soft painterly shading. A few small material details must explain its theme rather than recolor another monster. Transparent background, no environment, text, props in hands, or ground pedestal. Designed for one shared float motion applied to the entire PNG.",
+  "useKo": "향후 분열·기습·예고 계열 적 후보를 검토하기 위한 제작안입니다. 현재 게임에 추가되지 않았고 공격·소환·보상 규칙은 별도 승인과 데이터 설계가 필요합니다.",
+  "motion": "float",
+  "aspectRatio": [
+    1,
+    1
+  ],
+  "transparent": true,
+  "format": "png",
+  "referenceIds": [
+    "monster-style"
+  ]
+}

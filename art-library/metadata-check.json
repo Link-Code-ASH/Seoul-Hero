@@ -1,0 +1,367 @@
+{
+  "checkedAt": "2026-10-07T18:59:20.751Z",
+  "scope": "독립 라이브러리의 수량·원본 중복·경로·해시·해상도 기록·투명도 기록·프레임 및 레시피 메타데이터 확인. 게임 테스트·플레이·성능 확인을 포함하지 않습니다.",
+  "ok": true,
+  "assets": 1000,
+  "independentOriginalHashes": 1000,
+  "complete": 1000,
+  "byCategory": {
+    "effect": 240,
+    "facility": 80,
+    "currency": 80,
+    "weapon": 120,
+    "character": 80,
+    "monster": 160,
+    "blessing": 100,
+    "staff": 80,
+    "map": 60
+  },
+  "sequences": [
+    {
+      "id": "effect-001",
+      "frameCount": 8,
+      "canvas": "444x444",
+      "fps": 12,
+      "aligned": true
+    },
+    {
+      "id": "effect-002",
+      "frameCount": 8,
+      "canvas": "444x444",
+      "fps": 12,
+      "aligned": true
+    },
+    {
+      "id": "effect-003",
+      "frameCount": 8,
+      "canvas": "444x444",
+      "fps": 12,
+      "aligned": true
+    },
+    {
+      "id": "effect-004",
+      "frameCount": 8,
+      "canvas": "444x444",
+      "fps": 12,
+      "aligned": true
+    },
+    {
+      "id": "effect-005",
+      "frameCount": 8,
+      "canvas": "444x444",
+      "fps": 12,
+      "aligned": true
+    },
+    {
+      "id": "effect-006",
+      "frameCount": 8,
+      "canvas": "444x444",
+      "fps": 12,
+      "aligned": true
+    },
+    {
+      "id": "effect-007",
+      "frameCount": 8,
+      "canvas": "444x444",
+      "fps": 12,
+      "aligned": true
+    },
+    {
+      "id": "effect-008",
+      "frameCount": 8,
+      "canvas": "444x444",
+      "fps": 12,
+      "aligned": true
+    },
+    {
+      "id": "effect-009",
+      "frameCount": 8,
+      "canvas": "444x444",
+      "fps": 12,
+      "aligned": true
+    },
+    {
+      "id": "effect-010",
+      "frameCount": 8,
+      "canvas": "444x444",
+      "fps": 12,
+      "aligned": true
+    },
+    {
+      "id": "effect-011",
+      "frameCount": 8,
+      "canvas": "444x444",
+      "fps": 12,
+      "aligned": true
+    },
+    {
+      "id": "effect-012",
+      "frameCount": 8,
+      "canvas": "444x444",
+      "fps": 12,
+      "aligned": true
+    },
+    {
+      "id": "effect-061",
+      "frameCount": 8,
+      "canvas": "444x444",
+      "fps": 12,
+      "aligned": true
+    },
+    {
+      "id": "effect-062",
+      "frameCount": 8,
+      "canvas": "444x444",
+      "fps": 12,
+      "aligned": true
+    },
+    {
+      "id": "effect-063",
+      "frameCount": 8,
+      "canvas": "444x444",
+      "fps": 12,
+      "aligned": true
+    },
+    {
+      "id": "effect-064",
+      "frameCount": 8,
+      "canvas": "444x444",
+      "fps": 12,
+      "aligned": true
+    },
+    {
+      "id": "effect-065",
+      "frameCount": 8,
+      "canvas": "444x444",
+      "fps": 12,
+      "aligned": true
+    },
+    {
+      "id": "effect-066",
+      "frameCount": 8,
+      "canvas": "444x444",
+      "fps": 12,
+      "aligned": true
+    },
+    {
+      "id": "effect-067",
+      "frameCount": 8,
+      "canvas": "444x444",
+      "fps": 12,
+      "aligned": true
+    },
+    {
+      "id": "effect-068",
+      "frameCount": 8,
+      "canvas": "444x444",
+      "fps": 12,
+      "aligned": true
+    },
+    {
+      "id": "effect-069",
+      "frameCount": 8,
+      "canvas": "444x444",
+      "fps": 12,
+      "aligned": true
+    },
+    {
+      "id": "effect-070",
+      "frameCount": 8,
+      "canvas": "444x444",
+      "fps": 12,
+      "aligned": true
+    },
+    {
+      "id": "effect-071",
+      "frameCount": 8,
+      "canvas": "444x444",
+      "fps": 12,
+      "aligned": true
+    },
+    {
+      "id": "effect-072",
+      "frameCount": 8,
+      "canvas": "444x444",
+      "fps": 12,
+      "aligned": true
+    },
+    {
+      "id": "effect-073",
+      "frameCount": 8,
+      "canvas": "444x444",
+      "fps": 12,
+      "aligned": true
+    },
+    {
+      "id": "effect-074",
+      "frameCount": 8,
+      "canvas": "444x444",
+      "fps": 12,
+      "aligned": true
+    },
+    {
+      "id": "effect-075",
+      "frameCount": 8,
+      "canvas": "444x444",
+      "fps": 12,
+      "aligned": true
+    },
+    {
+      "id": "effect-076",
+      "frameCount": 8,
+      "canvas": "444x444",
+      "fps": 12,
+      "aligned": true
+    },
+    {
+      "id": "effect-161",
+      "frameCount": 8,
+      "canvas": "444x444",
+      "fps": 12,
+      "aligned": true
+    },
+    {
+      "id": "effect-162",
+      "frameCount": 8,
+      "canvas": "444x444",
+      "fps": 12,
+      "aligned": true
+    },
+    {
+      "id": "effect-163",
+      "frameCount": 8,
+      "canvas": "444x444",
+      "fps": 12,
+      "aligned": true
+    },
+    {
+      "id": "effect-164",
+      "frameCount": 8,
+      "canvas": "444x444",
+      "fps": 12,
+      "aligned": true
+    },
+    {
+      "id": "effect-165",
+      "frameCount": 8,
+      "canvas": "444x444",
+      "fps": 12,
+      "aligned": true
+    },
+    {
+      "id": "effect-166",
+      "frameCount": 8,
+      "canvas": "444x444",
+      "fps": 12,
+      "aligned": true
+    },
+    {
+      "id": "effect-167",
+      "frameCount": 8,
+      "canvas": "444x444",
+      "fps": 12,
+      "aligned": true
+    },
+    {
+      "id": "effect-168",
+      "frameCount": 8,
+      "canvas": "444x444",
+      "fps": 12,
+      "aligned": true
+    },
+    {
+      "id": "effect-169",
+      "frameCount": 8,
+      "canvas": "444x444",
+      "fps": 12,
+      "aligned": true
+    },
+    {
+      "id": "effect-170",
+      "frameCount": 8,
+      "canvas": "444x444",
+      "fps": 12,
+      "aligned": true
+    },
+    {
+      "id": "effect-171",
+      "frameCount": 8,
+      "canvas": "444x444",
+      "fps": 12,
+      "aligned": true
+    },
+    {
+      "id": "effect-172",
+      "frameCount": 8,
+      "canvas": "444x444",
+      "fps": 12,
+      "aligned": true
+    },
+    {
+      "id": "effect-201",
+      "frameCount": 8,
+      "canvas": "444x444",
+      "fps": 12,
+      "aligned": true
+    },
+    {
+      "id": "effect-202",
+      "frameCount": 8,
+      "canvas": "444x444",
+      "fps": 12,
+      "aligned": true
+    },
+    {
+      "id": "effect-203",
+      "frameCount": 8,
+      "canvas": "444x444",
+      "fps": 12,
+      "aligned": true
+    },
+    {
+      "id": "effect-204",
+      "frameCount": 8,
+      "canvas": "444x444",
+      "fps": 12,
+      "aligned": true
+    },
+    {
+      "id": "effect-205",
+      "frameCount": 8,
+      "canvas": "444x444",
+      "fps": 12,
+      "aligned": true
+    },
+    {
+      "id": "effect-206",
+      "frameCount": 8,
+      "canvas": "444x444",
+      "fps": 12,
+      "aligned": true
+    },
+    {
+      "id": "effect-207",
+      "frameCount": 8,
+      "canvas": "444x444",
+      "fps": 12,
+      "aligned": true
+    },
+    {
+      "id": "effect-208",
+      "frameCount": 8,
+      "canvas": "444x444",
+      "fps": 12,
+      "aligned": true
+    }
+  ],
+  "sequentialFrames": 384,
+  "recipes": 80,
+  "readyRecipes": 80,
+  "recipeFamilies": {
+    "upgrade": 30,
+    "open": 30,
+    "acquire": 10,
+    "facility": 10
+  },
+  "errors": []
+}

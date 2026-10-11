@@ -1,0 +1,33 @@
+{
+  "id": "character-006",
+  "status": "needs-revision",
+  "revision": "v01",
+  "files": [
+    {
+      "path": "originals/character/character-006/v01/original.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "086645001b6f7a8d936722489d8b05ffb17e9744dcbc1779410a203c37275a93",
+      "alphaChannel": true,
+      "hasTransparency": true
+    }
+  ],
+  "thumbnail": "thumbnails/character-006-v01.png",
+  "source": {
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\geniu\\.codex\\generated_images\\01a11608-40cd-79c1-89ac-8db49a82cb9c\\exec-70c9965b-086a-427c-8991-92354b0eef33.png",
+    "promptPath": "originals/character/character-006/v01/prompt.txt",
+    "referenceIds": [
+      "character-style"
+    ],
+    "createdAt": "2026-10-07T15:15:07.429Z",
+    "inputMode": "new-from-verbal-style",
+    "imageInputsProvided": false
+  },
+  "review": {
+    "userApproval": "pending",
+    "notes": "직접 검토: 전신 비율과 빈손은 맞으나 배경에 불투명 갈색 조명판이 남아 재생성 필요.",
+    "visualChecked": true,
+    "reviewedAt": "2026-10-07T15:15:39.877Z"
+  }
+}

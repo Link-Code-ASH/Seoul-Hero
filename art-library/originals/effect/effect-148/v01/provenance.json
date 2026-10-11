@@ -1,0 +1,34 @@
+{
+  "id": "effect-148",
+  "status": "complete",
+  "revision": "v01",
+  "files": [
+    {
+      "path": "originals/effect/effect-148/v01/original.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "2e61b5abcb53903c03626856e2f271025c21412c40684bc1947b94d66da73144",
+      "alphaChannel": true,
+      "hasTransparency": true
+    }
+  ],
+  "thumbnail": "thumbnails/effect-148-v01.png",
+  "source": {
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\geniu\\.codex\\generated_images\\01a10b3b-6dc9-7b13-a092-b8ab3abd33e2\\exec-a0a90f72-66b8-4749-a653-f8b8c313d512.png",
+    "promptPath": "originals/effect/effect-148/v01/prompt.txt",
+    "referenceIds": [
+      "effect-style"
+    ],
+    "createdAt": "2026-10-07T17:10:04.334Z",
+    "inputMode": "new-from-verbal-style",
+    "imageInputsProvided": false,
+    "imageInputs": []
+  },
+  "review": {
+    "userApproval": "pending",
+    "notes": "실제 알파 합성에서 매듭·청록 지도문양 계열의 획득 궤적, 인장, 파편, 후광과 캔버스 안 전체 형태 확인.",
+    "visualChecked": true,
+    "reviewedAt": "2026-10-07T17:10:39.001Z"
+  }
+}

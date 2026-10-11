@@ -1,0 +1,121 @@
+{
+  "id": "effect-001",
+  "status": "needs-revision",
+  "revision": "v02",
+  "files": [
+    {
+      "path": "originals/effect/effect-001/v02/source-sheet.png",
+      "width": 1774,
+      "height": 887,
+      "sha256": "7465bfb1ca71067807a3b5f3ad470978938d056aabca28ba36bf855c595df6c5",
+      "alphaChannel": true,
+      "hasTransparency": true
+    },
+    {
+      "path": "originals/effect/effect-001/v02/frame-01.png",
+      "width": 444,
+      "height": 444,
+      "sha256": "11b59c4afe82c1fdca6cdda7871311a797d109e5f7d883197ea09bf6ecf51e9a",
+      "alphaChannel": true,
+      "hasTransparency": true
+    },
+    {
+      "path": "originals/effect/effect-001/v02/frame-02.png",
+      "width": 444,
+      "height": 444,
+      "sha256": "fc790613fb319dd0e432eafe25b253076038082595cadd61cd9fd821e9bcde6b",
+      "alphaChannel": true,
+      "hasTransparency": true
+    },
+    {
+      "path": "originals/effect/effect-001/v02/frame-03.png",
+      "width": 444,
+      "height": 444,
+      "sha256": "ea5ff12370dd112a4312b4ab182b50695d5245da7919897bcf6b6ae9dc5a5529",
+      "alphaChannel": true,
+      "hasTransparency": true
+    },
+    {
+      "path": "originals/effect/effect-001/v02/frame-04.png",
+      "width": 444,
+      "height": 444,
+      "sha256": "49f3c6f43fb447bf0e3eba382b46a3cc3ef8124959a6cae42b05117425c847a2",
+      "alphaChannel": true,
+      "hasTransparency": true
+    },
+    {
+      "path": "originals/effect/effect-001/v02/frame-05.png",
+      "width": 444,
+      "height": 444,
+      "sha256": "00d21d1cfe94c2216e0d47e252ff8cbf122968f3d643b7fcbaee7e2f86f55b7e",
+      "alphaChannel": true,
+      "hasTransparency": true
+    },
+    {
+      "path": "originals/effect/effect-001/v02/frame-06.png",
+      "width": 444,
+      "height": 444,
+      "sha256": "f3945c84ed530bfd344df20819e737d4a5624aa9d9bcf585afc4eb6cf9b7ba80",
+      "alphaChannel": true,
+      "hasTransparency": true
+    },
+    {
+      "path": "originals/effect/effect-001/v02/frame-07.png",
+      "width": 444,
+      "height": 444,
+      "sha256": "b48ce6709cf2784e01d7f7e5082540f2ba893fb5c8921ea0e4ea1ca01ef2d025",
+      "alphaChannel": true,
+      "hasTransparency": true
+    },
+    {
+      "path": "originals/effect/effect-001/v02/frame-08.png",
+      "width": 444,
+      "height": 444,
+      "sha256": "596db03f481c3ff5b5db74678c680e3c368ecb631d2535e77861b02993a27558",
+      "alphaChannel": true,
+      "hasTransparency": true
+    }
+  ],
+  "thumbnail": "thumbnails/effect-001-v02.png",
+  "source": {
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\geniu\\.codex\\generated_images\\01a10b3b-6dc9-7b13-a092-b8ab3abd33e2\\exec-793b1956-d454-40e8-a994-636c420209ff.png",
+    "promptPath": "originals/effect/effect-001/v02/prompt.txt",
+    "referenceIds": [
+      "effect-style"
+    ],
+    "createdAt": "2026-10-07T14:51:24.010Z"
+  },
+  "review": {
+    "userApproval": "pending",
+    "notes": "Peak frame touches top and side cell boundaries; regenerate with more safe padding before marking complete.",
+    "visualChecked": true,
+    "reviewedAt": "2026-10-07T14:51:24.087Z"
+  },
+  "sequence": {
+    "framePaths": [
+      "originals/effect/effect-001/v02/frame-01.png",
+      "originals/effect/effect-001/v02/frame-02.png",
+      "originals/effect/effect-001/v02/frame-03.png",
+      "originals/effect/effect-001/v02/frame-04.png",
+      "originals/effect/effect-001/v02/frame-05.png",
+      "originals/effect/effect-001/v02/frame-06.png",
+      "originals/effect/effect-001/v02/frame-07.png",
+      "originals/effect/effect-001/v02/frame-08.png"
+    ],
+    "fps": 12,
+    "frameCount": 8,
+    "aligned": false,
+    "sheetPath": "originals/effect/effect-001/v02/source-sheet.png",
+    "grid": [
+      4,
+      2
+    ],
+    "frameSize": [
+      444,
+      444
+    ],
+    "sourceSheetPreserved": true,
+    "extraction": "rounded equal grid boundaries, transparent right/bottom padding only, source unmodified"
+  }
+}

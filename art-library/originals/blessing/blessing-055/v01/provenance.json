@@ -1,0 +1,34 @@
+{
+  "id": "blessing-055",
+  "status": "complete",
+  "revision": "v01",
+  "files": [
+    {
+      "path": "originals/blessing/blessing-055/v01/original.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "b2cd0682402a0b6e8f22802fc433ee8e544aaa47d214fdb38fb2008f160adcea",
+      "alphaChannel": true,
+      "hasTransparency": true
+    }
+  ],
+  "thumbnail": "thumbnails/blessing-055-v01.png",
+  "source": {
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\geniu\\.codex\\generated_images\\01a116ba-0a91-7172-a5c2-28dde8e57760\\exec-62ff6ef1-fb75-47ae-958b-aaf2a4827643.png",
+    "promptPath": "originals/blessing/blessing-055/v01/prompt.txt",
+    "referenceIds": [
+      "blessing-style"
+    ],
+    "createdAt": "2026-10-07T17:30:18.015Z",
+    "inputMode": "new-from-verbal-style",
+    "imageInputsProvided": false,
+    "imageInputs": []
+  },
+  "review": {
+    "userApproval": "pending",
+    "notes": "개별 원본과 밝은/어두운 실제 alpha 합성 확인. 독립 설비·에너지 재료·축복 외곽과 실루엣 정상.",
+    "visualChecked": true,
+    "reviewedAt": "2026-10-07T17:30:42.615Z"
+  }
+}

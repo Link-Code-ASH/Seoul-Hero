@@ -1,0 +1,34 @@
+{
+  "id": "facility-080",
+  "status": "needs-revision",
+  "revision": "v01",
+  "files": [
+    {
+      "path": "originals/facility/facility-080/v01/original.png",
+      "width": 1774,
+      "height": 887,
+      "sha256": "ab62c157f581d7f7d612c6501088b324865b0eb1be02ff98ace9a016309af90c",
+      "alphaChannel": true,
+      "hasTransparency": true
+    }
+  ],
+  "thumbnail": "thumbnails/facility-080-v01.png",
+  "source": {
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\geniu\\.codex\\generated_images\\01a116ba-0a91-7172-a5c2-28dde8e57760\\exec-cc2ab7ad-0fa7-472c-a0e8-132c68d8f306.png",
+    "promptPath": "originals/facility/facility-080/v01/prompt.txt",
+    "referenceIds": [
+      "facility-style"
+    ],
+    "createdAt": "2026-10-07T18:48:19.783Z",
+    "inputMode": "new-from-verbal-style",
+    "imageInputsProvided": false,
+    "imageInputs": []
+  },
+  "review": {
+    "userApproval": "pending",
+    "notes": "원본과 alpha 합성본을 확인했습니다. 상태 overlay에 전체 방·벽·바닥·중앙 장비가 추가되어 기존 시설을 가립니다. v01을 보존하고 좌우 모서리 장식 또는 균열·배관만 있는 희소 overlay로 v02를 제작합니다.",
+    "visualChecked": true,
+    "reviewedAt": "2026-10-07T18:50:14.646Z"
+  }
+}

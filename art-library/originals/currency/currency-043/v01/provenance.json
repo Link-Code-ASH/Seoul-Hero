@@ -1,0 +1,34 @@
+{
+  "id": "currency-043",
+  "status": "complete",
+  "revision": "v01",
+  "files": [
+    {
+      "path": "originals/currency/currency-043/v01/original.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "f39d7dbe1a90cfd81a4a08d129228eaa451e7da0de2f73a5391b43c98a1789a1",
+      "alphaChannel": true,
+      "hasTransparency": true
+    }
+  ],
+  "thumbnail": "thumbnails/currency-043-v01.png",
+  "source": {
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\geniu\\.codex\\generated_images\\01a116ba-0a91-7172-a5c2-28dde8e57760\\exec-e89ee5d8-5c73-4498-b2c3-0edcf2f2c374.png",
+    "promptPath": "originals/currency/currency-043/v01/prompt.txt",
+    "referenceIds": [
+      "currency-style"
+    ],
+    "createdAt": "2026-10-07T17:09:02.509Z",
+    "inputMode": "new-from-verbal-style",
+    "imageInputsProvided": false,
+    "imageInputs": []
+  },
+  "review": {
+    "userApproval": "pending",
+    "notes": "개별 원본 및 밝은/어두운 alpha 합성 검토. 시설 장비·기록 재료·축복의 다른 실루엣, 투명 경계와 전체 형태 정상.",
+    "visualChecked": true,
+    "reviewedAt": "2026-10-07T17:09:38.860Z"
+  }
+}

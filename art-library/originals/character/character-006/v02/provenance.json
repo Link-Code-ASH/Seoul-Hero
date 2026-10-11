@@ -1,0 +1,33 @@
+{
+  "id": "character-006",
+  "status": "needs-revision",
+  "revision": "v02",
+  "files": [
+    {
+      "path": "originals/character/character-006/v02/original.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "8f3cf45341214ab7c958bd504106fe0fb05bbec86a4e9914548edc82498f2cfa",
+      "alphaChannel": true,
+      "hasTransparency": true
+    }
+  ],
+  "thumbnail": "thumbnails/character-006-v02.png",
+  "source": {
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\geniu\\.codex\\generated_images\\01a11608-40cd-79c1-89ac-8db49a82cb9c\\exec-327eb85c-73e6-4133-990e-f80206d185a5.png",
+    "promptPath": "originals/character/character-006/v02/prompt.txt",
+    "referenceIds": [
+      "character-style"
+    ],
+    "createdAt": "2026-10-07T15:18:22.240Z",
+    "inputMode": "new-from-verbal-style",
+    "imageInputsProvided": false
+  },
+  "review": {
+    "userApproval": "pending",
+    "notes": "직접 검토: 제작 대상 외형은 구분되지만 불투명 조명 배경이 남음. 실제 투명 배경으로 수리 필요.",
+    "visualChecked": true,
+    "reviewedAt": "2026-10-07T15:18:23.881Z"
+  }
+}

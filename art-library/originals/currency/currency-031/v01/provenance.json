@@ -1,0 +1,34 @@
+{
+  "id": "currency-031",
+  "status": "complete",
+  "revision": "v01",
+  "files": [
+    {
+      "path": "originals/currency/currency-031/v01/original.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "6d9bc07975ee84955fd0252bbf262676a0ffba73e1afa4bab84b038393f7c756",
+      "alphaChannel": true,
+      "hasTransparency": true
+    }
+  ],
+  "thumbnail": "thumbnails/currency-031-v01.png",
+  "source": {
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\geniu\\.codex\\generated_images\\01a116ba-0a91-7172-a5c2-28dde8e57760\\exec-bad481b2-babb-4936-97b6-30d910d4760e.png",
+    "promptPath": "originals/currency/currency-031/v01/prompt.txt",
+    "referenceIds": [
+      "currency-style"
+    ],
+    "createdAt": "2026-10-07T16:36:36.622Z",
+    "inputMode": "new-from-verbal-style",
+    "imageInputsProvided": false,
+    "imageInputs": []
+  },
+  "review": {
+    "userApproval": "pending",
+    "notes": "원본 외형과 밝은/어두운 바탕의 실제 alpha 합성 확인: 실루엣과 투명 경계 정상.",
+    "visualChecked": true,
+    "reviewedAt": "2026-10-07T16:36:53.442Z"
+  }
+}

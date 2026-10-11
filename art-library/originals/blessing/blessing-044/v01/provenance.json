@@ -1,0 +1,34 @@
+{
+  "id": "blessing-044",
+  "status": "complete",
+  "revision": "v01",
+  "files": [
+    {
+      "path": "originals/blessing/blessing-044/v01/original.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "6c7a58334606ad81524092cdca39f771653d21d2c5e72f742a5e44ec5dff0ccd",
+      "alphaChannel": true,
+      "hasTransparency": true
+    }
+  ],
+  "thumbnail": "thumbnails/blessing-044-v01.png",
+  "source": {
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\geniu\\.codex\\generated_images\\01a116ba-0a91-7172-a5c2-28dde8e57760\\exec-fd9a7cc9-1cd9-43e1-8d13-59122e7daf3a.png",
+    "promptPath": "originals/blessing/blessing-044/v01/prompt.txt",
+    "referenceIds": [
+      "blessing-style"
+    ],
+    "createdAt": "2026-10-07T17:09:06.343Z",
+    "inputMode": "new-from-verbal-style",
+    "imageInputsProvided": false,
+    "imageInputs": []
+  },
+  "review": {
+    "userApproval": "pending",
+    "notes": "개별 원본 및 밝은/어두운 alpha 합성 검토. 시설 장비·기록 재료·축복의 다른 실루엣, 투명 경계와 전체 형태 정상.",
+    "visualChecked": true,
+    "reviewedAt": "2026-10-07T17:09:38.867Z"
+  }
+}

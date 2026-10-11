@@ -29,3 +29,10 @@ audio-library/reborn-01/comparisons/
 audio-library/reborn-01/mixes/
 audio-library/reborn-01/sounds/
 audio-library/reborn-01/rollback/files/
+
+# Reborn-02 listening renders; recipes, manifests and installed WAVs are retained.
+audio-library/reborn-02/source-previews/
+audio-library/reborn-02/comparisons/
+audio-library/reborn-02/mixes/
+audio-library/reborn-02/sounds/
+audio-library/reborn-02/rollback/files/

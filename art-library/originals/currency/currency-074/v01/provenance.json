@@ -1,0 +1,34 @@
+{
+  "id": "currency-074",
+  "status": "complete",
+  "revision": "v01",
+  "files": [
+    {
+      "path": "originals/currency/currency-074/v01/original.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "de85f5d631a8ab6b7e5ebcc1fea4354b5424d25d4378c6219677b87b4e5e537a",
+      "alphaChannel": true,
+      "hasTransparency": true
+    }
+  ],
+  "thumbnail": "thumbnails/currency-074-v01.png",
+  "source": {
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\geniu\\.codex\\generated_images\\01a116ba-0a91-7172-a5c2-28dde8e57760\\exec-3a334ce6-7302-481f-8b64-a98f8d76bfa7.png",
+    "promptPath": "originals/currency/currency-074/v01/prompt.txt",
+    "referenceIds": [
+      "currency-style"
+    ],
+    "createdAt": "2026-10-07T18:25:01.328Z",
+    "inputMode": "new-from-verbal-style",
+    "imageInputsProvided": false,
+    "imageInputs": []
+  },
+  "review": {
+    "userApproval": "pending",
+    "notes": "원본과 밝은·어두운 배경 alpha 합성을 확인했습니다. 통신 외관, 광학 기록 증표 매체, 낡은 이계 유물의 재질과 축복 문양이 구분되며 외곽 형태가 온전하고 배경이 투명합니다.",
+    "visualChecked": true,
+    "reviewedAt": "2026-10-07T18:25:31.616Z"
+  }
+}

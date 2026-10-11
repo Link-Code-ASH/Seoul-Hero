@@ -1,0 +1,13 @@
+{
+  "id": "monster-118",
+  "status": "failed",
+  "imageGenerated": false,
+  "error": "image generation failed: http 400 Bad Request: Some(\"{\\n  \\\"error\\\": {\\n    \\\"message\\\": \\\"Your request was rejected by the safety system. If you believe this is an error, contact us at help.openai.com and include the request ID 1c76dd3c-1624-4e2e-9b99-2905cd30c1e5.\\\",\\n    \\\"type\\\": \\\"image_generation_user_error\\\",\\n    \\\"param\\\": null,\\n    \\\"code\\\": \\\"moderation_blocked\\\",\\n    \\\"moderation_details\\\": {\\n      \\\"moderation_stage\\\": \\\"output\\\",\\n      \\\"categories\\\": [\\n        \\\"other\\\"\\n      ]\\n    }\\n  }\\n}\")",
+  "requestId": "1c76dd3c-1624-4e2e-9b99-2905cd30c1e5",
+  "prompt": "Create one original cute floating creature made entirely from blank unmarked ivory folded paper for a children's mobile game. A single compact rounded kite-shaped paper body, broad folded top crest, two short inward-curled side folds integrated into the same paper mass, and a blunt rounded lower tip. Two asymmetrical dark cutout eye windows and a tiny friendly curved mouth crease. Thick clean creases and soft warm paper shading, crisp navy contour, hand-painted Korean mobile-game illustration. No legs, feet, human arms, humanoid torso, symbols, writing, logo, weapon, pedestal, floor shadow or environment. Entire creature centered and fully inside the canvas with generous twelve percent transparent padding on every side. Single isolated PNG artwork on actual transparent RGBA background, no opaque backdrop or checkerboard. No contact sheet, UI, captions or watermark.",
+  "args": {
+    "prompt": "Create one original cute floating creature made entirely from blank unmarked ivory folded paper for a children's mobile game. A single compact rounded kite-shaped paper body, broad folded top crest, two short inward-curled side folds integrated into the same paper mass, and a blunt rounded lower tip. Two asymmetrical dark cutout eye windows and a tiny friendly curved mouth crease. Thick clean creases and soft warm paper shading, crisp navy contour, hand-painted Korean mobile-game illustration. No legs, feet, human arms, humanoid torso, symbols, writing, logo, weapon, pedestal, floor shadow or environment. Entire creature centered and fully inside the canvas with generous twelve percent transparent padding on every side. Single isolated PNG artwork on actual transparent RGBA background, no opaque backdrop or checkerboard. No contact sheet, UI, captions or watermark.",
+    "transparent_background": true
+  },
+  "createdAt": "2026-10-07T17:50:40.560Z"
+}

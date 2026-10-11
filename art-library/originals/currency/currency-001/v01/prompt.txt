@@ -1,0 +1,8 @@
+Use case: stylized-concept.
+Asset type: Seoul Hero future currency individual PNG artwork.
+Primary request: ONE transparent isolated inventory icon for Seoul Hero: a single asymmetrical trapezoid block with one deeply notched corner and a short stepped underside. Material identity is blue-gray load-bearing alloy, with rivets, broad bolted edges and a restrained amber enamel insert. Build the silhouette from this physical material rather than recoloring a generic coin or gem. Three-quarter view, upper-left soft lighting, chunky painted edges, simplified large surfaces that read at 32 px, equal clear margin, no floor shadow, backdrop, frame, text, numbers, logos, rarity badge or glow cloud. SINGLE complete object group, not a sheet.
+Style: match the supplied approved reference for crisp Korean mobile-game hand-painted raster art, strong silhouettes, clean navy outlines where appropriate, restrained teal/lilac/gold highlights. The reference is style guidance, not a subject to copy.
+One distinctive future resource inventory object. Clear material and silhouette at 32px. No coin UI frame, no text or price, no floor shadow. This is artwork only, not a current gameplay currency.
+Composition: single subject fully inside canvas, centered with 8 percent safe padding. No contact sheet or multiple examples.
+Background: actual transparent RGBA, no opaque backdrop, no fake checkerboard.
+Constraints: no text, logos, watermark, UI chrome, labels or numbers. Preserve the requested anatomy and view.

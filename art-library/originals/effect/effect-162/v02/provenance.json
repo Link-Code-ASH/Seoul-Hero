@@ -1,0 +1,140 @@
+{
+  "id": "effect-162",
+  "status": "complete",
+  "revision": "v02",
+  "files": [
+    {
+      "path": "originals/effect/effect-162/v02/source-sheet.png",
+      "width": 1774,
+      "height": 887,
+      "sha256": "cd4f4881e0e0bbbb0bd1aeb3d31ac88f2608d1f8105cdae1d7ef204ace8065a2",
+      "alphaChannel": true,
+      "hasTransparency": true
+    },
+    {
+      "path": "originals/effect/effect-162/v02/frame-01.png",
+      "width": 444,
+      "height": 444,
+      "sha256": "89d04b6a591d2c0ea5e8745f1dd74f24f6cd0823589069a95bf5624a67a9655b",
+      "alphaChannel": true,
+      "hasTransparency": true
+    },
+    {
+      "path": "originals/effect/effect-162/v02/frame-02.png",
+      "width": 444,
+      "height": 444,
+      "sha256": "4a28f52e38515bdfb7b36eeb64b56da3ad8e8b730e6b927ade668bbb498ba59f",
+      "alphaChannel": true,
+      "hasTransparency": true
+    },
+    {
+      "path": "originals/effect/effect-162/v02/frame-03.png",
+      "width": 444,
+      "height": 444,
+      "sha256": "c04ff8415db8a3774f279dd62de7acb7d26873e4ac2f0473f500859cee599cb3",
+      "alphaChannel": true,
+      "hasTransparency": true
+    },
+    {
+      "path": "originals/effect/effect-162/v02/frame-04.png",
+      "width": 444,
+      "height": 444,
+      "sha256": "e6581bcf1f0abcfbae185193f4ce53d00fb81c3558cb7492c6e7dd3e19045a23",
+      "alphaChannel": true,
+      "hasTransparency": true
+    },
+    {
+      "path": "originals/effect/effect-162/v02/frame-05.png",
+      "width": 444,
+      "height": 444,
+      "sha256": "cdafab08496a2228337c10dc77270cbfc6dcd06d8339b2482647537fa64cf7eb",
+      "alphaChannel": true,
+      "hasTransparency": true
+    },
+    {
+      "path": "originals/effect/effect-162/v02/frame-06.png",
+      "width": 444,
+      "height": 444,
+      "sha256": "0b1f485224914ed751e0625903704bfc4a44ce22d36111ef2a840cd5a2f77edc",
+      "alphaChannel": true,
+      "hasTransparency": true
+    },
+    {
+      "path": "originals/effect/effect-162/v02/frame-07.png",
+      "width": 444,
+      "height": 444,
+      "sha256": "8c95fd0a73b2195cc6c4a0582e9252eb9ca765533fc76dc6114910d8940c4dae",
+      "alphaChannel": true,
+      "hasTransparency": true
+    },
+    {
+      "path": "originals/effect/effect-162/v02/frame-08.png",
+      "width": 444,
+      "height": 444,
+      "sha256": "d9d3073a3868eada6b993c9bc44f4700481b2ae5d6c268f0a9ef8b1e19d82373",
+      "alphaChannel": true,
+      "hasTransparency": true
+    },
+    {
+      "path": "originals/effect/effect-162/v02/sprite-sheet.png",
+      "width": 1776,
+      "height": 888,
+      "sha256": "b6f8e522fa758def47a965dbd8edd3ad0d44d4843f337706b96f48abf556c8c8",
+      "alphaChannel": true,
+      "hasTransparency": true,
+      "derived": true
+    }
+  ],
+  "thumbnail": "thumbnails/effect-162-v02.png",
+  "source": {
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\geniu\\.codex\\generated_images\\01a10b3b-6dc9-7b13-a092-b8ab3abd33e2\\exec-43f4ed48-88ac-4980-bd0a-f53ba1a31814.png",
+    "promptPath": "originals/effect/effect-162/v02/prompt.txt",
+    "referenceIds": [
+      "effect-style"
+    ],
+    "createdAt": "2026-10-07T17:23:52.375Z",
+    "inputMode": "edit-framing",
+    "imageInputsProvided": true,
+    "imageInputs": [
+      {
+        "path": "originals/effect/effect-162/v01/source-sheet.png",
+        "role": "edit-target",
+        "sha256": "bc1a7c37e107a6a1ef3d6fda5a851ce66412ada771169dde0acff921a65a7cd9"
+      }
+    ]
+  },
+  "review": {
+    "userApproval": "pending",
+    "notes": "실제 알파 합성 원화와 8프레임을 확인했습니다. 수정된 162의 섬광과 163~168의 윤곽이 캔버스 안에 있으며, 동일 프레임 크기와 순서를 유지합니다.",
+    "visualChecked": true,
+    "reviewedAt": "2026-10-07T17:31:41.222Z"
+  },
+  "sequence": {
+    "framePaths": [
+      "originals/effect/effect-162/v02/frame-01.png",
+      "originals/effect/effect-162/v02/frame-02.png",
+      "originals/effect/effect-162/v02/frame-03.png",
+      "originals/effect/effect-162/v02/frame-04.png",
+      "originals/effect/effect-162/v02/frame-05.png",
+      "originals/effect/effect-162/v02/frame-06.png",
+      "originals/effect/effect-162/v02/frame-07.png",
+      "originals/effect/effect-162/v02/frame-08.png"
+    ],
+    "fps": 12,
+    "frameCount": 8,
+    "aligned": true,
+    "sheetPath": "originals/effect/effect-162/v02/sprite-sheet.png",
+    "grid": [
+      4,
+      2
+    ],
+    "frameSize": [
+      444,
+      444
+    ],
+    "sourceSheetPreserved": true,
+    "extraction": "rounded equal grid boundaries, transparent right/bottom padding only, source unmodified",
+    "sourceSheetPath": "originals/effect/effect-162/v02/source-sheet.png"
+  }
+}

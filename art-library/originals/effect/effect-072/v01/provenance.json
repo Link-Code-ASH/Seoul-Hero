@@ -1,0 +1,133 @@
+{
+  "id": "effect-072",
+  "status": "complete",
+  "revision": "v01",
+  "files": [
+    {
+      "path": "originals/effect/effect-072/v01/source-sheet.png",
+      "width": 1774,
+      "height": 887,
+      "sha256": "4b1285268c3fa7d3cdffad3edfbba82c089234ce4b947fbfa3bc8945fd3a4931",
+      "alphaChannel": true,
+      "hasTransparency": true
+    },
+    {
+      "path": "originals/effect/effect-072/v01/frame-01.png",
+      "width": 444,
+      "height": 444,
+      "sha256": "4c328a0717ce385408ed12953cae3e264fc266bfc3d9fe866357050ad192529a",
+      "alphaChannel": true,
+      "hasTransparency": true
+    },
+    {
+      "path": "originals/effect/effect-072/v01/frame-02.png",
+      "width": 444,
+      "height": 444,
+      "sha256": "1baaaca07d4be16ff4bad12a73f9aa6e0a6536cdfd690a194d647f598d0e497a",
+      "alphaChannel": true,
+      "hasTransparency": true
+    },
+    {
+      "path": "originals/effect/effect-072/v01/frame-03.png",
+      "width": 444,
+      "height": 444,
+      "sha256": "360fc24569a1305bdbbac952db91963118a177e1bf536dc5863372a367ebc7d7",
+      "alphaChannel": true,
+      "hasTransparency": true
+    },
+    {
+      "path": "originals/effect/effect-072/v01/frame-04.png",
+      "width": 444,
+      "height": 444,
+      "sha256": "0da6ddf9c8c3ca6b622fbde018630ddcab9a544062266d8f5f8679ec12e95648",
+      "alphaChannel": true,
+      "hasTransparency": true
+    },
+    {
+      "path": "originals/effect/effect-072/v01/frame-05.png",
+      "width": 444,
+      "height": 444,
+      "sha256": "0b61c7b6a90da53c1024855bf1bc4e7b60b84fc4a95ef572e157d0489c11e64c",
+      "alphaChannel": true,
+      "hasTransparency": true
+    },
+    {
+      "path": "originals/effect/effect-072/v01/frame-06.png",
+      "width": 444,
+      "height": 444,
+      "sha256": "beefbbcde049cad9a4ba8d376b687ad5c93cb93c83aa41bbf8d70753a030a0bd",
+      "alphaChannel": true,
+      "hasTransparency": true
+    },
+    {
+      "path": "originals/effect/effect-072/v01/frame-07.png",
+      "width": 444,
+      "height": 444,
+      "sha256": "8eb24dd680e4e94b822d6d9729c530fb4256057a2d5c32d8412013610fc90cf3",
+      "alphaChannel": true,
+      "hasTransparency": true
+    },
+    {
+      "path": "originals/effect/effect-072/v01/frame-08.png",
+      "width": 444,
+      "height": 444,
+      "sha256": "5bf8eab5f0feeac77f330d154a1fbc488aa3b62e9282d1ada80994b2e85e7fab",
+      "alphaChannel": true,
+      "hasTransparency": true
+    },
+    {
+      "path": "originals/effect/effect-072/v01/sprite-sheet.png",
+      "width": 1776,
+      "height": 888,
+      "sha256": "68ece4df54b434bb10ef4f84b4904ec83e7d52688a31474e853836ae63d56a9c",
+      "alphaChannel": true,
+      "hasTransparency": true,
+      "derived": true
+    }
+  ],
+  "thumbnail": "thumbnails/effect-072-v01.png",
+  "source": {
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\geniu\\.codex\\generated_images\\01a10b3b-6dc9-7b13-a092-b8ab3abd33e2\\exec-bc09d3cf-23a3-4d8a-9070-585ac1bdbf04.png",
+    "promptPath": "originals/effect/effect-072/v01/prompt.txt",
+    "referenceIds": [
+      "effect-style"
+    ],
+    "createdAt": "2026-10-07T15:11:28.282Z",
+    "inputMode": "new-from-verbal-style",
+    "imageInputsProvided": false
+  },
+  "review": {
+    "userApproval": "pending",
+    "notes": "Inspected eight folded light frames: coherent unfolding and fade, fixed centers, full primary shapes inside each cell. Soft halo has a broad footprint; preview uses 256px normalization.",
+    "visualChecked": true,
+    "reviewedAt": "2026-10-07T15:14:24.316Z"
+  },
+  "sequence": {
+    "framePaths": [
+      "originals/effect/effect-072/v01/frame-01.png",
+      "originals/effect/effect-072/v01/frame-02.png",
+      "originals/effect/effect-072/v01/frame-03.png",
+      "originals/effect/effect-072/v01/frame-04.png",
+      "originals/effect/effect-072/v01/frame-05.png",
+      "originals/effect/effect-072/v01/frame-06.png",
+      "originals/effect/effect-072/v01/frame-07.png",
+      "originals/effect/effect-072/v01/frame-08.png"
+    ],
+    "fps": 12,
+    "frameCount": 8,
+    "aligned": true,
+    "sheetPath": "originals/effect/effect-072/v01/sprite-sheet.png",
+    "grid": [
+      4,
+      2
+    ],
+    "frameSize": [
+      444,
+      444
+    ],
+    "sourceSheetPreserved": true,
+    "extraction": "rounded equal grid boundaries, transparent right/bottom padding only, source unmodified",
+    "sourceSheetPath": "originals/effect/effect-072/v01/source-sheet.png"
+  }
+}

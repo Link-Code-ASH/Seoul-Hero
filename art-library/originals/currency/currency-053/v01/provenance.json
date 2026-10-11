@@ -1,0 +1,34 @@
+{
+  "id": "currency-053",
+  "status": "complete",
+  "revision": "v01",
+  "files": [
+    {
+      "path": "originals/currency/currency-053/v01/original.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "d3d44db4ee55112c6182624133868d7ec2397a5c32b13dc0255d35a64d428900",
+      "alphaChannel": true,
+      "hasTransparency": true
+    }
+  ],
+  "thumbnail": "thumbnails/currency-053-v01.png",
+  "source": {
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\geniu\\.codex\\generated_images\\01a116ba-0a91-7172-a5c2-28dde8e57760\\exec-fc410286-c17f-49ed-9c8b-58691b2105ee.png",
+    "promptPath": "originals/currency/currency-053/v01/prompt.txt",
+    "referenceIds": [
+      "currency-style"
+    ],
+    "createdAt": "2026-10-07T17:30:12.550Z",
+    "inputMode": "new-from-verbal-style",
+    "imageInputsProvided": false,
+    "imageInputs": []
+  },
+  "review": {
+    "userApproval": "pending",
+    "notes": "개별 원본과 밝은/어두운 실제 alpha 합성 확인. 독립 설비·에너지 재료·축복 외곽과 실루엣 정상.",
+    "visualChecked": true,
+    "reviewedAt": "2026-10-07T17:30:42.606Z"
+  }
+}

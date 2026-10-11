@@ -1,0 +1,13 @@
+import fs from 'node:fs/promises';
+const root=new URL('../',import.meta.url);
+const file=new URL('briefs/additional.json',root);
+const entries=JSON.parse(await fs.readFile(file,'utf8'));
+const entry=entries.find(item=>item.id==='facility-077');
+const before='an open 2:1 transparent overlay of three ivory rear-wall disinfectant nozzles, lime containment strips and clear upper vapor';
+const after='a sparse OPEN 2:1 transparent state overlay consisting ONLY of three small ivory disinfectant nozzle heads on one narrow navy horizontal crossbar in the upper third, two short lime containment strips at the left and right upper corners, and wispy translucent vapor confined to the upper quarter. At least the bottom 70 percent and most central space remain empty transparent pixels. No booth, room, rear wall, floor, platform, large side pillars, enclosing frame or full-width panel; no architecture behind the nozzle heads';
+entry.visualBrief=entry.visualBrief.replace(before,after);
+await fs.writeFile(file,JSON.stringify(entries,null,2)+'\n','utf8');
+const promptFile=new URL('prompts/facility-077.txt',root);
+const prompt=await fs.readFile(promptFile,'utf8');
+await fs.writeFile(promptFile,prompt.replace(before,after)+'\nThis is a sparse transparent overlay of suspended nozzle heads and small strips only. Do not draw a room, rear wall, booth, floor, architecture, large support frame or any backdrop. Keep the bottom 70 percent entirely transparent.\n','utf8');
+console.log('Revised facility-077 next-request overlay; original v01 and provenance preserved.');

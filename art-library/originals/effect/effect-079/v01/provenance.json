@@ -1,0 +1,34 @@
+{
+  "id": "effect-079",
+  "status": "complete",
+  "revision": "v01",
+  "files": [
+    {
+      "path": "originals/effect/effect-079/v01/original.png",
+      "width": 1774,
+      "height": 887,
+      "sha256": "62f1e3706c0990600094d76dbb744e0dc857759eb7957bae5e1ffe381602f5d7",
+      "alphaChannel": true,
+      "hasTransparency": true
+    }
+  ],
+  "thumbnail": "thumbnails/effect-079-v01.png",
+  "source": {
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\geniu\\.codex\\generated_images\\01a10b3b-6dc9-7b13-a092-b8ab3abd33e2\\exec-a93bc304-102e-45dc-93c1-42e76da74e7d.png",
+    "promptPath": "originals/effect/effect-079/v01/prompt.txt",
+    "referenceIds": [
+      "effect-style"
+    ],
+    "createdAt": "2026-10-07T16:27:20.710Z",
+    "inputMode": "new-from-verbal-style",
+    "imageInputsProvided": false,
+    "imageInputs": []
+  },
+  "review": {
+    "userApproval": "pending",
+    "notes": "실제 원본과 alpha 합성에서 실루엣·여백·형태 차이를 확인했습니다. 연속 프레임은 8장 순서·같은 캔버스와 기준점·형태 변화 및 잔광 단계가 읽힙니다.",
+    "visualChecked": true,
+    "reviewedAt": "2026-10-07T16:31:08.737Z"
+  }
+}

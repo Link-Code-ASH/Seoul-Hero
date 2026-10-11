@@ -1,0 +1,34 @@
+{
+  "id": "character-031",
+  "status": "needs-revision",
+  "revision": "v01",
+  "files": [
+    {
+      "path": "originals/character/character-031/v01/original.png",
+      "width": 1145,
+      "height": 1374,
+      "sha256": "f8bdfe29899bea861328e2a84fc542156a7bee6e23b56b2385d707665c09ae33",
+      "alphaChannel": true,
+      "hasTransparency": true
+    }
+  ],
+  "thumbnail": "thumbnails/character-031-v01.png",
+  "source": {
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\geniu\\.codex\\generated_images\\01a11608-40cd-79c1-89ac-8db49a82cb9c\\exec-4c0955a6-58bd-4fcf-9d25-ad8b4ac87e9d.png",
+    "promptPath": "originals/character/character-031/v01/prompt.txt",
+    "referenceIds": [
+      "character-style"
+    ],
+    "createdAt": "2026-10-07T16:52:35.198Z",
+    "inputMode": "new-from-verbal-style",
+    "imageInputsProvided": false,
+    "imageInputs": []
+  },
+  "review": {
+    "userApproval": "pending",
+    "notes": "Head is SD sized, but torso and visible thighs remain too adult and elongated. Preserve identity and costume; shorten body and limbs in a later image edit.",
+    "visualChecked": true,
+    "reviewedAt": "2026-10-07T16:52:36.938Z"
+  }
+}

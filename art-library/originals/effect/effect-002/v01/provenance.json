@@ -1,0 +1,133 @@
+{
+  "id": "effect-002",
+  "status": "needs-revision",
+  "revision": "v01",
+  "files": [
+    {
+      "path": "originals/effect/effect-002/v01/source-sheet.png",
+      "width": 1774,
+      "height": 887,
+      "sha256": "450108d56c03db4549ca20234b882c964368dbdc59877733fc4193f10118e978",
+      "alphaChannel": true,
+      "hasTransparency": true
+    },
+    {
+      "path": "originals/effect/effect-002/v01/frame-01.png",
+      "width": 444,
+      "height": 444,
+      "sha256": "6ad11c7e92f7ad3c7f3ca4c92928be19c8da3485292bf6726dcc4de70cbaf786",
+      "alphaChannel": true,
+      "hasTransparency": true
+    },
+    {
+      "path": "originals/effect/effect-002/v01/frame-02.png",
+      "width": 444,
+      "height": 444,
+      "sha256": "d35d03554f8294920a4a2f629f5654d630471f10cd1f4707d492262a8c84b35a",
+      "alphaChannel": true,
+      "hasTransparency": true
+    },
+    {
+      "path": "originals/effect/effect-002/v01/frame-03.png",
+      "width": 444,
+      "height": 444,
+      "sha256": "5816106ca8dd9b95c4859001f5a80b9551414a59c81808f5c167ca5c44ecb3b0",
+      "alphaChannel": true,
+      "hasTransparency": true
+    },
+    {
+      "path": "originals/effect/effect-002/v01/frame-04.png",
+      "width": 444,
+      "height": 444,
+      "sha256": "70832eb3416448316de41b124ef03a216ce006a8734e97ca1763f33c223fd4ec",
+      "alphaChannel": true,
+      "hasTransparency": true
+    },
+    {
+      "path": "originals/effect/effect-002/v01/frame-05.png",
+      "width": 444,
+      "height": 444,
+      "sha256": "9212e3f5a2b2bbf3f1bd440401c309607830082b7c30395f5c23ce351cfe1ce2",
+      "alphaChannel": true,
+      "hasTransparency": true
+    },
+    {
+      "path": "originals/effect/effect-002/v01/frame-06.png",
+      "width": 444,
+      "height": 444,
+      "sha256": "4e59be80624b1c96f80748678377923a69df8673742f68df819f5bc16b4c5de6",
+      "alphaChannel": true,
+      "hasTransparency": true
+    },
+    {
+      "path": "originals/effect/effect-002/v01/frame-07.png",
+      "width": 444,
+      "height": 444,
+      "sha256": "0177bdfa4d8ec5053b0f1e32d71f2beefbb0df5936519359fc18b7fd06b91e7c",
+      "alphaChannel": true,
+      "hasTransparency": true
+    },
+    {
+      "path": "originals/effect/effect-002/v01/frame-08.png",
+      "width": 444,
+      "height": 444,
+      "sha256": "7db115e348772fa72f8b0c67f1e3608e906822b07e70806ba511fe8d983215ee",
+      "alphaChannel": true,
+      "hasTransparency": true
+    },
+    {
+      "path": "originals/effect/effect-002/v01/sprite-sheet.png",
+      "width": 1776,
+      "height": 888,
+      "sha256": "c5b49f3f082d94f5657b0eaaa492217f49c036008ff1cc050080db40dc46148c",
+      "alphaChannel": true,
+      "hasTransparency": true,
+      "derived": true
+    }
+  ],
+  "thumbnail": "thumbnails/effect-002-v01.png",
+  "source": {
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\geniu\\.codex\\generated_images\\01a10b3b-6dc9-7b13-a092-b8ab3abd33e2\\exec-d8fdcf9f-b149-45a2-873d-397c8f40a08f.png",
+    "promptPath": "originals/effect/effect-002/v01/prompt.txt",
+    "referenceIds": [
+      "effect-style"
+    ],
+    "createdAt": "2026-10-07T15:12:26.441Z",
+    "inputMode": "new-from-verbal-style",
+    "imageInputsProvided": false
+  },
+  "review": {
+    "userApproval": "pending",
+    "notes": "Several vertical beam frames touch or cross their cell top/bottom boundaries; shrink full beam shape and keep consistent centered registration.",
+    "visualChecked": true,
+    "reviewedAt": "2026-10-07T15:14:24.251Z"
+  },
+  "sequence": {
+    "framePaths": [
+      "originals/effect/effect-002/v01/frame-01.png",
+      "originals/effect/effect-002/v01/frame-02.png",
+      "originals/effect/effect-002/v01/frame-03.png",
+      "originals/effect/effect-002/v01/frame-04.png",
+      "originals/effect/effect-002/v01/frame-05.png",
+      "originals/effect/effect-002/v01/frame-06.png",
+      "originals/effect/effect-002/v01/frame-07.png",
+      "originals/effect/effect-002/v01/frame-08.png"
+    ],
+    "fps": 12,
+    "frameCount": 8,
+    "aligned": false,
+    "sheetPath": "originals/effect/effect-002/v01/sprite-sheet.png",
+    "grid": [
+      4,
+      2
+    ],
+    "frameSize": [
+      444,
+      444
+    ],
+    "sourceSheetPreserved": true,
+    "extraction": "rounded equal grid boundaries, transparent right/bottom padding only, source unmodified",
+    "sourceSheetPath": "originals/effect/effect-002/v01/source-sheet.png"
+  }
+}
