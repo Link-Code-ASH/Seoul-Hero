@@ -1,3 +1,4 @@
+import { characters } from '../data/characters';
 import type { RevivalStoneGrade } from '../data/revivalStones';
 import type { GuildFacilityId } from '../data/guild';
 
@@ -52,7 +53,7 @@ export function createDefaultMeta(): MetaState {
     wallet: { associationCoins: 0, supplyTickets: 0, revivalStones: emptyRevivalStones() }, association: { upgrades: {} },
     guild: { avatarCharacterId: 'awakener', facilityLevels: { training: 0, recovery: 0, supply: 0 } },
     gateProgression: { highestUnlockedDepth: 1, characters: {} },
-    characters: { awakener: { unlocked: true, fragments: 0, breakthrough: 0 }, kangTaehoon: { unlocked: true, fragments: 0, breakthrough: 0 }, parkDojun: { unlocked: true, fragments: 0, breakthrough: 0 }, yoonHarin: { unlocked: true, fragments: 0, breakthrough: 0 } },
+    characters: Object.fromEntries(Object.keys(characters).map(id => [id, { unlocked: true, fragments: 0, breakthrough: 0 }])),
     sharedWeapons: { manaBolt: { unlocked: true, fragments: 0, level: 0 }, manaShotgun: { unlocked: true, fragments: 0, level: 0 } }, blessings: {},
     weeklyGate: { weekKey: '', ruleId: '', remainingRuleIds: [] },
     supply: { boxes: {} }, offlineReward: { lastExitAt: '', lastClaimedAt: '', pendingRewards: emptyOfflineRewards() },

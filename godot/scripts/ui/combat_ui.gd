@@ -1,6 +1,8 @@
 class_name HeroCombatUI
 extends RefCounted
 
+const PAUSE_ART := "res://assets/ui/pause-glass-01/"
+
 static func hud(run: HeroRun, pause: Callable) -> Control:
 	var root := HeroImageSkin.root()
 	# Plate-free HUD: thick health bar, stone and wallet on its right, weapons below.
@@ -17,9 +19,9 @@ static func hud(run: HeroRun, pause: Callable) -> Control:
 	stone.name = "StoneIcon"
 	var money := _hud_text(root,"0",Rect2(246,8,52,26),"number",18)
 	money.name = "Currency"
-	var icon := HeroUI.fixed_art(root,Content.trimmed_texture("wallet"),Rect2(302,13,16,16))
+	var icon := HeroUI.fixed_art(root,Content.trimmed_texture("wallet"),Rect2(297,8,26,26))
 	icon.name = "WalletIcon"; icon.modulate = Color(0.90,0.98,1.0)
-	var wallet := _hud_text(root,"0",Rect2(322,8,52,26),"number",18)
+	var wallet := _hud_text(root,"0",Rect2(328,8,52,26),"number",18)
 	wallet.name = "Wallet"
 	var weapons := Control.new(); weapons.name = "HudWeapons"; weapons.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	root.add_child(weapons); HeroUI.place(weapons,Rect2(16,38,162,32))
@@ -140,19 +142,36 @@ static func details_popup(root: Control, description: String, title: String) -> 
 
 static func pause_menu(run: HeroRun, resume: Callable, quit: Callable) -> Control:
 	var root := HeroImageSkin.root()
-	var blocker := ColorRect.new(); blocker.color = Color(0.04,0.08,0.13,0.42)
+	root.name = "PauseMenu"
+	var blocker := ColorRect.new(); blocker.color = Color(15.0/255,25.0/255,42.0/255,0.48)
 	blocker.mouse_filter = Control.MOUSE_FILTER_STOP; blocker.add_to_group("input_blocker")
 	root.add_child(blocker); blocker.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
-	var panel := HeroImageSkin.material(root,"ops/popup",Rect2(294,81,327,250))
+	var panel := Control.new(); panel.name = "PausePanel"
 	panel.mouse_filter = Control.MOUSE_FILTER_STOP
-	HeroImageSkin.text(panel,"일시정지",Rect2(34,28,259,34),"brand",24,"ink",HORIZONTAL_ALIGNMENT_CENTER)
-	HeroImageSkin.text(panel,"%s · %d층" % [run.map.name,run.setup.depth],Rect2(23,78,281,27),"body",14,"muted",HORIZONTAL_ALIGNMENT_CENTER)
-	HeroImageSkin.text(panel,"%d / %d 웨이브" % [run.wave,int(run.map.totalWaves)],Rect2(23,109,281,27),"control",16,"ink",HORIZONTAL_ALIGNMENT_CENTER)
-	HeroImageSkin.image_button(panel,"계속하기",Rect2(31,145,265,44),resume,"ops/primary",16)
-	var exit_button := HeroImageSkin.image_button(panel,"출동 종료",Rect2(31,193,265,44),quit,"ops/secondary",16)
-	for state in ["font_color","font_hover_color","font_pressed_color","font_focus_color"]:
-		exit_button.add_theme_color_override(state,HeroImageSkin.color("danger"))
+	blocker.add_child(panel); HeroUI.place(panel,Rect2(252,52,410,308))
+	HeroDesk.art(panel,PAUSE_ART+"pause-panel.png",Rect2(0,0,410,308))
+	HeroDesk.text(panel,"일시정지",Rect2(30,24,230,34),"brand",26,"#243448")
+	HeroDesk.text(panel,"PAUSED",Rect2(307,32,73,20),"tag",16,"#c64f5f",HORIZONTAL_ALIGNMENT_RIGHT)
+	HeroDesk.nine(panel,HeroDesk.UNIFIED+"glass_row.png",Rect2(28,74,354,66),Vector4(24,24,24,24),0.25)
+	HeroDesk.text(panel,str(run.map.name),Rect2(46,87,200,22),"heading",16,"#243448")
+	HeroDesk.text(panel,"%d층" % run.setup.depth,Rect2(46,110,200,18),"body",14,"#657787")
+	HeroDesk.text(panel,"%d / %d" % [run.wave,int(run.map.totalWaves)],Rect2(266,80,98,32),"number",26,"#243448",HORIZONTAL_ALIGNMENT_RIGHT)
+	HeroDesk.text(panel,"웨이브",Rect2(266,113,98,17),"body",12,"#657787",HORIZONTAL_ALIGNMENT_RIGHT)
+	_pause_button(panel,"계속하기",Rect2(28,160,354,48),resume,PAUSE_ART+"continue-button.png",Color.WHITE).name = "PauseResume"
+	_pause_button(panel,"출동 종료",Rect2(28,217,354,44),quit,HeroDesk.UNIFIED+"glass_button.png",Color("c64f5f")).name = "PauseExit"
 	return root
+
+static func _pause_button(parent: Node, caption: String, rect: Rect2, action: Callable, path: String, ink: Color) -> Button:
+	var key := HeroImageSkin.image_button(parent,caption,rect,action,"plain",16)
+	key.add_theme_font_override("font",HeroDesk.font("control"))
+	for state in ["font_color","font_hover_color","font_pressed_color","font_focus_color"]:
+		key.add_theme_color_override(state,ink)
+	var surface := HeroDesk.nine(key,path,Rect2(Vector2.ZERO,rect.size),Vector4(72,20,72,20),0.25)
+	surface.show_behind_parent = true
+	key.draw.connect(func():
+		surface.self_modulate = Color(0.92,0.92,0.92) if key.is_pressed() else Color(1.04,1.04,1.04) if key.is_hovered() or key.has_focus() else Color.WHITE
+	)
+	return key
 
 static func revival(run: HeroRun, revive: Callable, die: Callable) -> Control:
 	var root := HeroImageSkin.root()

@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>서울 히어로 · 시민 SD 캐릭터 원화 비교</title>
+  <style>
+    :root { color-scheme: light; --paper: #f1f3f6; --ink: #1c2639; --muted: #546176; --line: #d3dbe6; --accent: #245ba0; --art-height: 240px; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font: 16px/1.55 system-ui, -apple-system, "Segoe UI", "Malgun Gothic", sans-serif; }
+    header, main, footer { width: min(1320px, 100%); margin-inline: auto; padding: 24px; }
+    header { padding-bottom: 16px; }
+    h1 { margin: 0 0 10px; font-size: clamp(23px, 3vw, 32px); line-height: 1.3; letter-spacing: -.025em; }
+    p { margin: 8px 0; }
+    .eyebrow { font-size: 13px; color: var(--muted); margin-bottom: 7px; }
+    .intro { max-width: 920px; color: var(--muted); }
+    a { color: var(--accent); text-underline-offset: 3px; }
+    a:hover { color: #173d6c; }
+    a:focus-visible, select:focus-visible, button:focus-visible { outline: 3px solid #ebaf38; outline-offset: 4px; }
+    .scope { display: inline-block; padding: 5px 10px; margin-top: 8px; background: #e1e9f6; border-radius: 5px; color: #294363; font-size: 14px; }
+    .toolbar-shell { position: sticky; top: 0; z-index: 3; background: #f1f3f6f2; border-block: 1px solid var(--line); backdrop-filter: blur(8px); }
+    .toolbar { width: min(1320px, 100%); margin-inline: auto; padding: 12px 24px; display: flex; flex-wrap: wrap; gap: 12px 20px; align-items: center; }
+    .control { display: flex; gap: 8px; align-items: center; font-size: 14px; }
+    select, button { font: inherit; color: var(--ink); background: white; border: 1px solid #acb9ca; border-radius: 5px; min-height: 40px; padding: 6px 10px; }
+    button { cursor: pointer; }
+    .count { margin-left: auto; color: var(--muted); font-size: 14px; font-variant-numeric: tabular-nums; }
+    main { padding-top: 18px; }
+    .checks { font-size: 14px; color: var(--muted); margin-bottom: 18px; }
+    .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr)); gap: 18px; align-items: start; }
+    .card { min-width: 0; background: white; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
+    .card.reference { border-color: #7a99bf; }
+    .card-head { padding: 14px 16px 9px; }
+    .card-title { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 10px; margin: 0; font-size: 20px; }
+    .age { color: var(--muted); font-size: 14px; font-weight: 400; }
+    .occupation { font-size: 14px; margin: 3px 0 0; color: var(--muted); }
+    .tag { display: inline-block; margin-top: 7px; color: #294d79; font-size: 12px; padding: 1px 6px; border: 1px solid #c1d1e6; border-radius: 4px; }
+    .art { position: relative; display: flex; align-items: center; justify-content: center; height: max(128px, calc(var(--art-height) + 42px)); padding: 16px; overflow: hidden; border-block: 1px solid var(--line); }
+    .background-light .art { background: #f7f1e5; }
+    .background-dark .art { background: #172337; }
+    .background-check .art { background-color: #eef0f4; background-image: conic-gradient(#d5dae3 25%, transparent 0 50%, #d5dae3 0 75%, transparent 0); background-size: 20px 20px; }
+    .viewport { position: relative; overflow: hidden; flex: none; }
+    .sprite { position: absolute; display: block; max-width: none; }
+    .missing { max-width: 210px; text-align: center; font-size: 13px; color: #536077; background: #ffffffd9; padding: 12px; border-radius: 5px; }
+    .card-body { padding: 12px 16px 16px; }
+    .details { min-height: 45px; font-size: 13px; color: var(--muted); margin: 0 0 9px; }
+    .links { display: flex; flex-wrap: wrap; gap: 8px 16px; font-size: 14px; }
+    .load-state { margin-top: 9px; font-size: 12px; color: var(--muted); }
+    footer { padding-top: 6px; padding-bottom: 30px; font-size: 13px; color: var(--muted); }
+    footer p { max-width: 920px; }
+    noscript { display: block; padding: 20px; background: #fff0bf; }
+    @media (max-width: 600px) { header, main, footer { padding-inline: 16px; } .toolbar { padding-inline: 16px; gap: 10px; } .count { margin-left: 0; width: 100%; } }
+  </style>
+</head>
+<body class="background-check">
+  <header>
+    <p class="eyebrow">서울 히어로 · 원화 비교 갤러리 · 2026-10-12</p>
+    <h1>송진우 기준, 서울 시민 SD 캐릭터 10명</h1>
+    <p class="intro">같은 크기로 머리·복장·시선을 비교합니다. 송진우와 같은 약한 회전각, 정면에 가까운 부드러운 3/4, 넓게 보이는 양눈과 살짝 아래를 보는 동공을 확인하세요. 강한 옆얼굴과 오른쪽 끝으로 몰린 홍채는 피합니다.</p>
+    <p class="scope">방향 수정본 v02 10명 승인 · 이름·배경·고유 능력과 게임 연결 · 신규 10명 기본 해금</p>
+    <p class="intro"><a href="PLAN.md">승인 계획서</a> · <a href="../../../assets/characters-sd/CHARACTER_GUIDE.md">캐릭터 제작 방법</a> · <a href="../../../assets/characters-sd/seoul-civilians-01/catalog.json">인물 목록</a> · <a href="../../../assets/characters-sd/seoul-civilians-01/provenance.json">생성 출처</a></p>
+  </header>
+  <div class="toolbar-shell">
+    <div class="toolbar" aria-label="원화 비교 설정">
+      <label class="control" for="background">배경
+        <select id="background"><option value="check">체크 · 투명도</option><option value="light">밝음</option><option value="dark">어두움</option></select>
+      </label>
+      <label class="control" for="size">전신 높이
+        <select id="size"><option value="45">45px · 전투 크기</option><option value="120">120px · 중간</option><option value="240" selected>240px · 상세</option></select>
+      </label>
+      <button id="reload" type="button">이미지 다시 불러오기</button>
+      <span class="count" id="count" role="status" aria-live="polite">원화 불러오는 중</span>
+    </div>
+  </div>
+  <main>
+    <p class="checks">확인 기준: 송진우와 같은 약한 각도 · 넓게 보이는 양눈 · 살짝 아래를 보는 동공 · 안경·모자의 눈 가림 · 큰 머리와 짧은 팔다리 · 두 빈손과 두 신발 · 투명 가장자리</p>
+    <noscript>이미지 크기와 배경 전환에는 JavaScript가 필요합니다. <a href="../../../assets/characters-sd/seoul-civilians-01/catalog.json">인물 목록</a>에서 원본 파일명을 확인할 수 있습니다.</noscript>
+    <div class="gallery" id="gallery"></div>
+  </main>
+  <footer>
+    <p>파일을 직접 열어도 동작하는 원화 비교 갤러리입니다. PNG를 갱신한 뒤 페이지를 새로고침하거나 ‘이미지 다시 불러오기’를 누르면 표시됩니다. 신규 10명은 기존 저장에서도 바로 선택할 수 있습니다. 플레이어 13명과 길드 한서아 1명이 같은 공용 SD 모션을 사용하며 게임 플레이와 밸런스 QA는 사용자가 담당합니다.</p>
+    <p>송진우와 수정본 10명 모두 알파 값 16 이상인 전신 영역을 측정해 같은 높이로 표시합니다. 원본 PNG 링크에서 전체 캔버스와 실제 알파를 확인할 수 있습니다. 이전 원화는 <a href="../../../assets/characters-sd/seoul-civilians-01/revisions/v01/">revisions/v01/</a>에 보존되어 있습니다. 갤러리는 이미지 파일을 변경하지 않습니다.</p>
+  </footer>
+  <script>
+    // Keep the manifest inline so this gallery can be opened with file:// without fetch/CORS.
+    const assetRoot = '../../../assets/characters-sd/';
+    const batchRoot = assetRoot + 'seoul-civilians-01/';
+    const characters = [
+      { id: 'song', name: '송진우', age: null, occupation: '기준 원화 · 기존 플레이어', file: assetRoot + 'song_sd_01.png', prompt: assetRoot + 'provenance.json', reference: true, detail: '큰 머리, 작은 몸통, 굵은 외곽선과 단순한 셀 채색의 기준.', bounds: [246,72,757,1149,1216,1294] },
+      { id: 'lee_somin', name: '이소민', age: 24, occupation: '편의점 야간 근무자', detail: '높은 번 · 둥근 안경 · 라임 조끼. 피곤해도 주변 변화를 먼저 알아챔.', bounds: [301,60,689,1174,1215,1295] },
+      { id: 'jung_minseok', name: '정민석', age: 35, occupation: '중소기업 경리 담당', detail: '반듯한 가르마 · 모래색 니트 조끼 · 와인색 넥타이. 꼼꼼한 성격과 건조한 유머.', bounds: [250,112,741,1094,1216,1293] },
+      { id: 'oh_jieun', name: '오지은', age: 38, occupation: '지하철 차량 정비 기사', detail: '크림 안전모 · 낮은 머리 매듭 · 청남색 정비복. 작은 이상도 놓치지 않는 집중형.', bounds: [261,92,721,1124,1216,1294] },
+      { id: 'moon_taeo', name: '문태오', age: 29, occupation: '동네 제빵사', detail: '낮은 둥근 모자 · 곱슬 앞머리 · 코코아 허리 앞치마. 손이 빠르고 솔직함.', bounds: [225,107,805,1100,1216,1293] },
+      { id: 'kim_migyeong', name: '김미경', age: 54, occupation: '시장 반찬가게 운영자', detail: '짧은 둥근 파마 · 초록 머리띠 · 산호색 가슴 앞치마. 시원시원하고 정이 많음.', bounds: [245,101,784,1121,1216,1294] },
+      { id: 'bae_seongho', name: '배성호', age: 47, occupation: '주택가 택배 기사', detail: '벽돌색 챙 모자와 조끼 · 회청색 폴로셔츠. 낙천적이지만 약속에 엄격함.', bounds: [237,97,782,1123,1216,1294] },
+      { id: 'cha_yujun', name: '차유준', age: 22, occupation: '건축학과 대학생', detail: '검정 비니 · 밝은 갈색 앞머리 · 라벤더 재킷. 주변 구조를 유심히 관찰함.', bounds: [293,105,689,1103,1216,1293] },
+      { id: 'baek_nari', name: '백나리', age: 31, occupation: '미용실 디자이너', detail: '로즈브라운 비대칭 픽시컷 · 먹색 살롱 튜닉. 자신감 있고 단호함.', bounds: [248,63,771,1157,1216,1294] },
+      { id: 'im_gicheol', name: '임기철', age: 58, occupation: '아파트 관리 기사', detail: '회백색 옆머리 · 짧은 콧수염 · 청록 지퍼 카디건. 느긋하고 세심함.', bounds: [260,110,704,1101,1216,1293] },
+      { id: 'seo_hyejin', name: '서혜진', age: 43, occupation: '공공도서관 사서', detail: '낮은 반묶음 · 사각 안경 · 버건디 카디건. 온화하지만 결정은 분명함.', bounds: [264,125,735,1079,1216,1293] }
+    ];
+    const cards = [];
+    let artworkHeight = 240;
+    const gallery = document.getElementById('gallery');
+
+    function node(tag, className, content) {
+      const element = document.createElement(tag);
+      if (className) element.className = className;
+      if (content !== undefined) element.textContent = content;
+      return element;
+    }
+    function updateCount() {
+      const loaded = cards.filter(card => card.loaded).length;
+      const newLoaded = cards.filter(card => card.loaded && !card.character.reference).length;
+      document.getElementById('count').textContent = `불러온 신규 원화 ${newLoaded}/10 · 기준 포함 ${loaded}/11`;
+    }
+    function resize(card) {
+      if (!card.loaded) return;
+      const image = card.image;
+      const bounds = card.character.bounds || [0,0,image.naturalWidth,image.naturalHeight,image.naturalWidth,image.naturalHeight];
+      const [x,y,width,height,canvasWidth,canvasHeight] = bounds;
+      const scale = artworkHeight / height;
+      card.viewport.style.width = `${width * scale}px`;
+      card.viewport.style.height = `${height * scale}px`;
+      image.style.width = `${canvasWidth * scale}px`;
+      image.style.height = `${canvasHeight * scale}px`;
+      image.style.left = `${-x * scale}px`;
+      image.style.top = `${-y * scale}px`;
+    }
+    characters.forEach((character, index) => {
+      character.file ||= batchRoot + character.id + '_sd_01.png';
+      character.prompt ||= batchRoot + 'prompts/' + character.id + '-v02.txt';
+      const article = node('article', 'card' + (character.reference ? ' reference' : ''));
+      const head = node('div', 'card-head');
+      const title = node('h2', 'card-title', character.name);
+      title.append(node('span', 'age', character.age ? `${character.age}세` : '스타일 기준'));
+      head.append(title, node('p', 'occupation', character.occupation), node('span', 'tag', character.reference ? '기준' : String(index).padStart(2,'0') + ' · 신규 원화'));
+      const art = node('div', 'art');
+      const viewport = node('div', 'viewport');
+      viewport.hidden = true;
+      const image = node('img', 'sprite');
+      image.alt = `${character.name} 빈손 SD 전신 원화`;
+      const missing = node('div', 'missing', '원화 파일을 불러오는 중');
+      viewport.append(image);
+      art.append(viewport, missing);
+      const body = node('div', 'card-body');
+      const links = node('div', 'links');
+      const full = node('a', '', '전체 PNG');
+      full.href = character.file;
+      full.target = '_blank';
+      full.rel = 'noopener';
+      const prompt = node('a', '', character.reference ? '프롬프트·출처' : '생성 프롬프트');
+      prompt.href = character.prompt;
+      prompt.target = '_blank';
+      prompt.rel = 'noopener';
+      links.append(full, prompt);
+      const state = node('div', 'load-state', '파일 확인 중');
+      body.append(node('p', 'details', character.detail), links, state);
+      article.append(head, art, body);
+      gallery.append(article);
+      const card = { character, image, viewport, missing, state, loaded: false };
+      cards.push(card);
+      image.addEventListener('load', () => {
+        card.loaded = true;
+        viewport.hidden = false;
+        missing.hidden = true;
+        state.textContent = character.reference ? '기존 기준 원화 불러옴' : '방향 수정본 v02 불러옴 · 플레이어 기본 해금';
+        resize(card);
+        updateCount();
+      });
+      image.addEventListener('error', () => {
+        card.loaded = false;
+        viewport.hidden = true;
+        missing.hidden = false;
+        missing.textContent = '아직 원화 파일이 없습니다. 저장 후 다시 불러오세요.';
+        state.textContent = '파일 대기';
+        updateCount();
+      });
+      image.src = character.file;
+    });
+    document.getElementById('background').addEventListener('change', event => { document.body.className = 'background-' + event.target.value; });
+    document.getElementById('size').addEventListener('change', event => {
+      artworkHeight = Number(event.target.value);
+      document.documentElement.style.setProperty('--art-height', artworkHeight + 'px');
+      cards.forEach(resize);
+    });
+    document.getElementById('reload').addEventListener('click', () => {
+      const refresh = Date.now();
+      cards.forEach(card => { card.image.src = card.character.file + '?refresh=' + refresh; });
+    });
+  </script>
+</body>
+</html>

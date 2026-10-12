@@ -96,6 +96,8 @@ copyAsset(path.join(root, 'assets/ui/inventory-transparent-provenance.json'));
 copyAsset(path.join(root, 'assets/content-2026/provenance.json'));
 copyAsset(path.join(root, 'assets/characters-sd/provenance.json'));
 copyAsset(path.join(root, 'assets/characters-sd/provenance-02.json'));
+copyAsset(path.join(root, 'assets/characters-sd/seoul-civilians-01/provenance.json'));
+copyAsset(path.join(root, 'assets/characters-sd/seoul-civilians-01/catalog.json'));
 copyAsset(path.join(root, 'assets/monsters-sd/provenance.json'));
 copyAsset(path.join(root, 'assets/monsters-sd/provenance-02.json'));
 copyAsset(path.join(root, 'assets/monsters-library/provenance.json'));

@@ -95,11 +95,16 @@ func _draw() -> void:
 	if run.phase == "postWave":
 		draw_set_transform_matrix(Transform2D.IDENTITY)
 		var t: float = clampf(run.post_elapsed/0.8,0,1)
-		for pickup in run.wallet_flights:
-			var point := to_screen(pickup.pos).lerp(wallet_target,1.0-pow(1.0-t,3))
-			var texture := Content.trimmed_texture("magicStone")
-			var size := Vector2(15,19)*STONE_VISUAL_SCALE
-			if texture: draw_texture_rect(texture,Rect2(point-size*0.5,size),false,Color(1,1,1,1-t*0.4))
+		# Accelerate into the icon and collapse to a pinprick before disappearing inside it.
+		var travel := pow(t,1.8)
+		var absorption := smoothstep(0.12,1.0,travel)
+		var size := Vector2(15,19)*STONE_VISUAL_SCALE*lerpf(1.0,0.06,absorption)
+		var alpha := 1.0-smoothstep(0.9,1.0,travel)
+		var texture := Content.trimmed_texture("magicStone")
+		if texture and alpha > 0.0:
+			for pickup in run.wallet_flights:
+				var point := to_screen(pickup.pos).lerp(wallet_target,travel)
+				draw_texture_rect(texture,Rect2(point-size*0.5,size),false,Color(1,1,1,alpha))
 	draw_set_transform(Vector2.ZERO)
 
 # 협회 코인 / 생환석 on the ground: same contact shadow as stones, a little larger.

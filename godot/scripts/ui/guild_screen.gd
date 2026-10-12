@@ -128,7 +128,7 @@ func _add_avatar(actor: String, pos: Vector2, working: bool, phase: float) -> vo
 	avatars.append({"node":node,"base":pos,"working":working,"phase":phase})
 
 func _staff_actor(index: int) -> String:
-	return ["hanSeoa","awakener","kangTaehoon","parkDojun","yoonHarin"][index%5]
+	return ["hanSeoa","awakener","kangTaehoon","parkDojun"][index%4]
 
 func _facility_at(slot: int) -> String:
 	for id in meta.guild.facilities:

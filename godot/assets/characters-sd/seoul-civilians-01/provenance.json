@@ -1,0 +1,379 @@
+{
+  "tool": "built-in image_gen",
+  "date": "2026-10-12",
+  "purpose": "10 distinct everyday Seoul SD people; direction corrected to Song's subtle near-frontal angle",
+  "feedback": "User requested less side-facing than v01; all ten corrected with Song and their own v01 as references",
+  "runtimeConnected": false,
+  "assets": [
+    {
+      "id": "lee_somin",
+      "name": "이소민",
+      "file": "lee_somin_sd_01.png",
+      "revision": "v02",
+      "generatedSource": "C:/Users/geniu/.codex/generated_images/01a12da7-b148-71f1-bab1-8194e7fcffa1/exec-2a47c9ae-cddb-4111-be78-b2f890e15f1c.png",
+      "promptFile": "prompts/lee_somin-v02.txt",
+      "prompt": "Use case: precise-object-edit. Reorient ONE existing SD character, genuine transparent background.\nImage 1 (Song Jinwoo) is the EXACT camera angle, head yaw, body pose direction and EYE DIRECTION reference. Image 2 is the EDIT TARGET whose identity, hair, outfit, colors, shading, SD proportions and accessories must be preserved.\nThe current target turns its face and pupils TOO FAR SIDEWAYS. Correct the target to MATCH SONG'S ACTUAL SUBTLE ANGLE precisely: face is almost FRONT VIEW with only a gentle turn to image right and a slight lowered chin; both eyes are broadly visible, with only a small perspective difference. Torso is similarly almost front-facing with a mild right turn. Gaze is directed gently forward and slightly downward, as Song's gaze, not dragged to the right edges of the eyes. Do not exaggerate the diagonal/southeast angle. No pronounced profile nose, no narrow far eye, no eyes peering far right, no camera eye contact.\nKeep the entire person and their unique approved contemporary clothes, same enormous head (60% total), tiny torso, extremely short arms/legs, both empty hands and two separated little shoes. Preserve clean rounded dark outlines and simple cel-shading. Change the orientation of head/body/gaze only as needed to copy Song's subtler pose, not the person's identity or style. Subject: Lee Somin, a Korean woman age 24 working the night shift at a Sinchon convenience store while studying. Alert despite mildly sleepy eyelids; calm focused brown eyes directed down-right, closed small mouth. Black hair in a small high round bun with two simple loose fringe chunks; thin round glasses with entirely clear lenses and visible directional pupils. Lime-green SHORT work vest over ivory T-shirt, tiny black pants, two little white sneakers. One small blank rectangular badge, absolutely no writing. Palette lime/ivory/charcoal. No held items; no headset.\nOutput one complete centered full-body sprite with clean real transparent alpha, no shadow, text, floor or extra objects. Image 1 direction must win over any interpretation of down-right words.",
+      "referenced_image_paths": [
+        "C:/Users/geniu/OneDrive/문서/GitHub/Seoul-Hero/assets/characters-sd/song_sd_01.png",
+        "C:/Users/geniu/OneDrive/문서/GitHub/Seoul-Hero/assets/characters-sd/seoul-civilians-01/revisions/v01/lee_somin_sd_01.png"
+      ],
+      "referenceRoles": {
+        "image1": "EXACT Song camera/head/body/gaze direction; style/proportion reference",
+        "image2": "existing character edit target; preserve identity/clothes/colors"
+      },
+      "transparent_background": true,
+      "visualReview": {
+        "status": "reviewed corrected generated output",
+        "notes": "Less side-facing, pupils shifted toward gentle downward gaze, identity and compact empty-handed SD retained"
+      },
+      "userApproval": {
+        "concept": "approved 2026-10-12",
+        "correctedArtwork": "provided for user review",
+        "runtimeConnection": "not requested"
+      },
+      "history": [
+        {
+          "revision": "v01",
+          "file": "revisions/v01/lee_somin_sd_01.png",
+          "generatedSource": "C:/Users/geniu/.codex/generated_images/01a12da7-b148-71f1-bab1-8194e7fcffa1/exec-cb15be9e-edf4-4c9e-9c18-6e1b8ab16c76.png",
+          "promptFile": "prompts/lee_somin.txt",
+          "status": "superseded",
+          "reason": "User found direction too side-facing compared with Song"
+        }
+      ]
+    },
+    {
+      "id": "jung_minseok",
+      "name": "정민석",
+      "file": "jung_minseok_sd_01.png",
+      "revision": "v02",
+      "generatedSource": "C:/Users/geniu/.codex/generated_images/01a12da7-b148-71f1-bab1-8194e7fcffa1/exec-1bd5574a-b446-4f6a-98da-e33928932947.png",
+      "promptFile": "prompts/jung_minseok-v02.txt",
+      "prompt": "Use case: precise-object-edit. Reorient ONE existing SD character, genuine transparent background.\nImage 1 (Song Jinwoo) is the EXACT camera angle, head yaw, body pose direction and EYE DIRECTION reference. Image 2 is the EDIT TARGET whose identity, hair, outfit, colors, shading, SD proportions and accessories must be preserved.\nThe current target turns its face and pupils TOO FAR SIDEWAYS. Correct the target to MATCH SONG'S ACTUAL SUBTLE ANGLE precisely: face is almost FRONT VIEW with only a gentle turn to image right and a slight lowered chin; both eyes are broadly visible, with only a small perspective difference. Torso is similarly almost front-facing with a mild right turn. Gaze is directed gently forward and slightly downward, as Song's gaze, not dragged to the right edges of the eyes. Do not exaggerate the diagonal/southeast angle. No pronounced profile nose, no narrow far eye, no eyes peering far right, no camera eye contact.\nKeep the entire person and their unique approved contemporary clothes, same enormous head (60% total), tiny torso, extremely short arms/legs, both empty hands and two separated little shoes. Preserve clean rounded dark outlines and simple cel-shading. Change the orientation of head/body/gaze only as needed to copy Song's subtler pose, not the person's identity or style. Subject: Jung Minseok, a Korean man age 35, Euljiro small-company accounting clerk after month-end work. Meticulous with dry humor; thin eyebrows, calm focused brown eyes down-right, one corner of his CLOSED mouth slightly raised. Smooth neat black 7:3 side-part showing forehead, compact rounded hair silhouette, no wild spikes, no glasses. Bright ivory shirt, SHORT sand-beige knitted V-neck vest, slightly loose wine-red tie, tiny charcoal trousers and two tiny brown dress shoes. Palette sand/wine/charcoal. Extremely short SD legs, not a tall office adult. No briefcase, calculator, pen or phone.\nOutput one complete centered full-body sprite with clean real transparent alpha, no shadow, text, floor or extra objects. Image 1 direction must win over any interpretation of down-right words.",
+      "referenced_image_paths": [
+        "C:/Users/geniu/OneDrive/문서/GitHub/Seoul-Hero/assets/characters-sd/song_sd_01.png",
+        "C:/Users/geniu/OneDrive/문서/GitHub/Seoul-Hero/assets/characters-sd/seoul-civilians-01/revisions/v01/jung_minseok_sd_01.png"
+      ],
+      "referenceRoles": {
+        "image1": "EXACT Song camera/head/body/gaze direction; style/proportion reference",
+        "image2": "existing character edit target; preserve identity/clothes/colors"
+      },
+      "transparent_background": true,
+      "visualReview": {
+        "status": "reviewed corrected generated output",
+        "notes": "Less side-facing, pupils shifted toward gentle downward gaze, identity and compact empty-handed SD retained"
+      },
+      "userApproval": {
+        "concept": "approved 2026-10-12",
+        "correctedArtwork": "provided for user review",
+        "runtimeConnection": "not requested"
+      },
+      "history": [
+        {
+          "revision": "v01",
+          "file": "revisions/v01/jung_minseok_sd_01.png",
+          "generatedSource": "C:/Users/geniu/.codex/generated_images/01a12da7-b148-71f1-bab1-8194e7fcffa1/exec-c2c1553e-62e3-40e8-886e-05ba53bbd135.png",
+          "promptFile": "prompts/jung_minseok.txt",
+          "status": "superseded",
+          "reason": "User found direction too side-facing compared with Song"
+        }
+      ]
+    },
+    {
+      "id": "oh_jieun",
+      "name": "오지은",
+      "file": "oh_jieun_sd_01.png",
+      "revision": "v02",
+      "generatedSource": "C:/Users/geniu/.codex/generated_images/01a12da7-b148-71f1-bab1-8194e7fcffa1/exec-be3399e3-0fc4-4843-a93d-e84c26533d42.png",
+      "promptFile": "prompts/oh_jieun-v02.txt",
+      "prompt": "Use case: precise-object-edit. Reorient ONE existing SD character, genuine transparent background.\nImage 1 (Song Jinwoo) is the EXACT camera angle, head yaw, body pose direction and EYE DIRECTION reference. Image 2 is the EDIT TARGET whose identity, hair, outfit, colors, shading, SD proportions and accessories must be preserved.\nThe current target turns its face and pupils TOO FAR SIDEWAYS. Correct the target to MATCH SONG'S ACTUAL SUBTLE ANGLE precisely: face is almost FRONT VIEW with only a gentle turn to image right and a slight lowered chin; both eyes are broadly visible, with only a small perspective difference. Torso is similarly almost front-facing with a mild right turn. Gaze is directed gently forward and slightly downward, as Song's gaze, not dragged to the right edges of the eyes. Do not exaggerate the diagonal/southeast angle. No pronounced profile nose, no narrow far eye, no eyes peering far right, no camera eye contact.\nKeep the entire person and their unique approved contemporary clothes, same enormous head (60% total), tiny torso, extremely short arms/legs, both empty hands and two separated little shoes. Preserve clean rounded dark outlines and simple cel-shading. Change the orientation of head/body/gaze only as needed to copy Song's subtler pose, not the person's identity or style. Subject: Oh Jieun, a Korean woman age 38, Seoul subway vehicle maintenance technician before the first train. Straight eyebrows, observant focused brown eyes directed down-right, determined CLOSED little mouth. Cream rounded safety hardhat with LOW small brim ABOVE visible eyes, dark brown hair in compact low knot visible behind her neck, two simple short side hair chunks. SHORT blue-navy maintenance coverall with only two light-gray reflective bands, tiny distinct black work boots; no tactical pockets or straps. Palette blue-navy/cream/gray. Both empty hands visible without tools. No orange rescue jacket, beard, wrench or weapon.\nOutput one complete centered full-body sprite with clean real transparent alpha, no shadow, text, floor or extra objects. Image 1 direction must win over any interpretation of down-right words.",
+      "referenced_image_paths": [
+        "C:/Users/geniu/OneDrive/문서/GitHub/Seoul-Hero/assets/characters-sd/song_sd_01.png",
+        "C:/Users/geniu/OneDrive/문서/GitHub/Seoul-Hero/assets/characters-sd/seoul-civilians-01/revisions/v01/oh_jieun_sd_01.png"
+      ],
+      "referenceRoles": {
+        "image1": "EXACT Song camera/head/body/gaze direction; style/proportion reference",
+        "image2": "existing character edit target; preserve identity/clothes/colors"
+      },
+      "transparent_background": true,
+      "visualReview": {
+        "status": "reviewed corrected generated output",
+        "notes": "Less side-facing, pupils shifted toward gentle downward gaze, identity and compact empty-handed SD retained"
+      },
+      "userApproval": {
+        "concept": "approved 2026-10-12",
+        "correctedArtwork": "provided for user review",
+        "runtimeConnection": "not requested"
+      },
+      "history": [
+        {
+          "revision": "v01",
+          "file": "revisions/v01/oh_jieun_sd_01.png",
+          "generatedSource": "C:/Users/geniu/.codex/generated_images/01a12da7-b148-71f1-bab1-8194e7fcffa1/exec-b2c1f7da-920d-4667-ace7-e22ee8262faa.png",
+          "promptFile": "prompts/oh_jieun.txt",
+          "status": "superseded",
+          "reason": "User found direction too side-facing compared with Song"
+        }
+      ]
+    },
+    {
+      "id": "moon_taeo",
+      "name": "문태오",
+      "file": "moon_taeo_sd_01.png",
+      "revision": "v02",
+      "generatedSource": "C:/Users/geniu/.codex/generated_images/01a12da7-b148-71f1-bab1-8194e7fcffa1/exec-e66bd301-4810-450d-909b-3f4e2902dc93.png",
+      "promptFile": "prompts/moon_taeo-v02.txt",
+      "prompt": "Use case: precise-object-edit. Reorient ONE existing SD character, genuine transparent background.\nImage 1 (Song Jinwoo) is the EXACT camera angle, head yaw, body pose direction and EYE DIRECTION reference. Image 2 is the EDIT TARGET whose identity, hair, outfit, colors, shading, SD proportions and accessories must be preserved.\nThe current target turns its face and pupils TOO FAR SIDEWAYS. Correct the target to MATCH SONG'S ACTUAL SUBTLE ANGLE precisely: face is almost FRONT VIEW with only a gentle turn to image right and a slight lowered chin; both eyes are broadly visible, with only a small perspective difference. Torso is similarly almost front-facing with a mild right turn. Gaze is directed gently forward and slightly downward, as Song's gaze, not dragged to the right edges of the eyes. Do not exaggerate the diagonal/southeast angle. No pronounced profile nose, no narrow far eye, no eyes peering far right, no camera eye contact.\nKeep the entire person and their unique approved contemporary clothes, same enormous head (60% total), tiny torso, extremely short arms/legs, both empty hands and two separated little shoes. Preserve clean rounded dark outlines and simple cel-shading. Change the orientation of head/body/gaze only as needed to copy Song's subtler pose, not the person's identity or style. Subject: Moon Taeo, a Korean man age 29, a Seongsu neighborhood baker who starts before dawn. Relaxed eyebrows, warm brown eyes focused down-right, restrained confident CLOSED small smile. Low rounded ivory baker cap, a few chestnut curly fringe chunks below it, eyes completely visible. Ivory SHORT baker work shirt with simple buttons, cocoa-brown SHORT waist apron from waist to hips only, tiny dark pants and two tiny cream work shoes. Palette ivory/cocoa/chestnut. Compact cute head60% body, apron never makes legs longer or hides feet. No bread, tray, flour cloud or utensils.\nOutput one complete centered full-body sprite with clean real transparent alpha, no shadow, text, floor or extra objects. Image 1 direction must win over any interpretation of down-right words.",
+      "referenced_image_paths": [
+        "C:/Users/geniu/OneDrive/문서/GitHub/Seoul-Hero/assets/characters-sd/song_sd_01.png",
+        "C:/Users/geniu/OneDrive/문서/GitHub/Seoul-Hero/assets/characters-sd/seoul-civilians-01/revisions/v01/moon_taeo_sd_01.png"
+      ],
+      "referenceRoles": {
+        "image1": "EXACT Song camera/head/body/gaze direction; style/proportion reference",
+        "image2": "existing character edit target; preserve identity/clothes/colors"
+      },
+      "transparent_background": true,
+      "visualReview": {
+        "status": "reviewed corrected generated output",
+        "notes": "Less side-facing, pupils shifted toward gentle downward gaze, identity and compact empty-handed SD retained"
+      },
+      "userApproval": {
+        "concept": "approved 2026-10-12",
+        "correctedArtwork": "provided for user review",
+        "runtimeConnection": "not requested"
+      },
+      "history": [
+        {
+          "revision": "v01",
+          "file": "revisions/v01/moon_taeo_sd_01.png",
+          "generatedSource": "C:/Users/geniu/.codex/generated_images/01a12da7-b148-71f1-bab1-8194e7fcffa1/exec-fe9f5527-f3cb-4af7-abd8-00dd85139f24.png",
+          "promptFile": "prompts/moon_taeo.txt",
+          "status": "superseded",
+          "reason": "User found direction too side-facing compared with Song"
+        }
+      ]
+    },
+    {
+      "id": "kim_migyeong",
+      "name": "김미경",
+      "file": "kim_migyeong_sd_01.png",
+      "revision": "v02",
+      "generatedSource": "C:/Users/geniu/.codex/generated_images/01a12da7-b148-71f1-bab1-8194e7fcffa1/exec-9666d3db-44df-4879-ab22-b1e8a80b3ca2.png",
+      "promptFile": "prompts/kim_migyeong-v02.txt",
+      "prompt": "Use case: precise-object-edit. Reorient ONE existing SD character, genuine transparent background.\nImage 1 (Song Jinwoo) is the EXACT camera angle, head yaw, body pose direction and EYE DIRECTION reference. Image 2 is the EDIT TARGET whose identity, hair, outfit, colors, shading, SD proportions and accessories must be preserved.\nThe current target turns its face and pupils TOO FAR SIDEWAYS. Correct the target to MATCH SONG'S ACTUAL SUBTLE ANGLE precisely: face is almost FRONT VIEW with only a gentle turn to image right and a slight lowered chin; both eyes are broadly visible, with only a small perspective difference. Torso is similarly almost front-facing with a mild right turn. Gaze is directed gently forward and slightly downward, as Song's gaze, not dragged to the right edges of the eyes. Do not exaggerate the diagonal/southeast angle. No pronounced profile nose, no narrow far eye, no eyes peering far right, no camera eye contact.\nKeep the entire person and their unique approved contemporary clothes, same enormous head (60% total), tiny torso, extremely short arms/legs, both empty hands and two separated little shoes. Preserve clean rounded dark outlines and simple cel-shading. Change the orientation of head/body/gaze only as needed to copy Song's subtler pose, not the person's identity or style. Subject: Kim Migyeong, a Korean woman age 54 running a Mangwon Market side-dish shop. Outspoken and considerate, rounded mature cheeks, gentle lifted mouth corners, clear brown eyes down-right; age shown with restrained facial lines, not exaggerated old age. SHORT round permed dark hair with a few gray chunks, low dark-green fabric headband above eyes. Coral-pink square BIB apron with prominent broad chest rectangle over cream blouse; apron ends at hips, tiny charcoal pants and two tiny comfortable dark-green shoes visible. Palette coral/cream/dark-green. Big round perm is her identifying silhouette. No food, shopping basket, cookware or pattern/text on apron.\nOutput one complete centered full-body sprite with clean real transparent alpha, no shadow, text, floor or extra objects. Image 1 direction must win over any interpretation of down-right words.",
+      "referenced_image_paths": [
+        "C:/Users/geniu/OneDrive/문서/GitHub/Seoul-Hero/assets/characters-sd/song_sd_01.png",
+        "C:/Users/geniu/OneDrive/문서/GitHub/Seoul-Hero/assets/characters-sd/seoul-civilians-01/revisions/v01/kim_migyeong_sd_01.png"
+      ],
+      "referenceRoles": {
+        "image1": "EXACT Song camera/head/body/gaze direction; style/proportion reference",
+        "image2": "existing character edit target; preserve identity/clothes/colors"
+      },
+      "transparent_background": true,
+      "visualReview": {
+        "status": "reviewed corrected generated output",
+        "notes": "Less side-facing, pupils shifted toward gentle downward gaze, identity and compact empty-handed SD retained"
+      },
+      "userApproval": {
+        "concept": "approved 2026-10-12",
+        "correctedArtwork": "provided for user review",
+        "runtimeConnection": "not requested"
+      },
+      "history": [
+        {
+          "revision": "v01",
+          "file": "revisions/v01/kim_migyeong_sd_01.png",
+          "generatedSource": "C:/Users/geniu/.codex/generated_images/01a12da7-b148-71f1-bab1-8194e7fcffa1/exec-2ff09c78-e98f-4ae7-8aa4-6f0f6e06336f.png",
+          "promptFile": "prompts/kim_migyeong.txt",
+          "status": "superseded",
+          "reason": "User found direction too side-facing compared with Song"
+        }
+      ]
+    },
+    {
+      "id": "bae_seongho",
+      "name": "배성호",
+      "file": "bae_seongho_sd_01.png",
+      "revision": "v02",
+      "generatedSource": "C:/Users/geniu/.codex/generated_images/01a12da7-b148-71f1-bab1-8194e7fcffa1/exec-ab31115a-a7cc-4dc8-a63d-d517a91251f7.png",
+      "promptFile": "prompts/bae_seongho-v02.txt",
+      "prompt": "Use case: precise-object-edit. Reorient ONE existing SD character, genuine transparent background.\nImage 1 (Song Jinwoo) is the EXACT camera angle, head yaw, body pose direction and EYE DIRECTION reference. Image 2 is the EDIT TARGET whose identity, hair, outfit, colors, shading, SD proportions and accessories must be preserved.\nThe current target turns its face and pupils TOO FAR SIDEWAYS. Correct the target to MATCH SONG'S ACTUAL SUBTLE ANGLE precisely: face is almost FRONT VIEW with only a gentle turn to image right and a slight lowered chin; both eyes are broadly visible, with only a small perspective difference. Torso is similarly almost front-facing with a mild right turn. Gaze is directed gently forward and slightly downward, as Song's gaze, not dragged to the right edges of the eyes. Do not exaggerate the diagonal/southeast angle. No pronounced profile nose, no narrow far eye, no eyes peering far right, no camera eye contact.\nKeep the entire person and their unique approved contemporary clothes, same enormous head (60% total), tiny torso, extremely short arms/legs, both empty hands and two separated little shoes. Preserve clean rounded dark outlines and simple cel-shading. Change the orientation of head/body/gaze only as needed to copy Song's subtler pose, not the person's identity or style. Subject: Bae Seongho, a Korean man age 47, parcel driver familiar with Guro neighborhood streets. Optimistic but punctual, broad eyebrows, calm small CLOSED smile, lightly sun-tanned warm skin, brown eyes aimed down-right. Short black hair under faded brick-red baseball cap with short brim ABOVE visible eyes, compact rounded hat silhouette. Brick-red SHORT open work vest over blue-gray polo shirt, tiny dark charcoal trousers, two tiny gray sneakers. Palette brick-red/blue-gray/charcoal. Everyday civilian delivery uniform, no purple hood, no magical jewelry/tactical straps. Both hands empty, absolutely no parcel, bag, phone or truck.\nOutput one complete centered full-body sprite with clean real transparent alpha, no shadow, text, floor or extra objects. Image 1 direction must win over any interpretation of down-right words.",
+      "referenced_image_paths": [
+        "C:/Users/geniu/OneDrive/문서/GitHub/Seoul-Hero/assets/characters-sd/song_sd_01.png",
+        "C:/Users/geniu/OneDrive/문서/GitHub/Seoul-Hero/assets/characters-sd/seoul-civilians-01/revisions/v01/bae_seongho_sd_01.png"
+      ],
+      "referenceRoles": {
+        "image1": "EXACT Song camera/head/body/gaze direction; style/proportion reference",
+        "image2": "existing character edit target; preserve identity/clothes/colors"
+      },
+      "transparent_background": true,
+      "visualReview": {
+        "status": "reviewed corrected generated output",
+        "notes": "Less side-facing, pupils shifted toward gentle downward gaze, identity and compact empty-handed SD retained"
+      },
+      "userApproval": {
+        "concept": "approved 2026-10-12",
+        "correctedArtwork": "provided for user review",
+        "runtimeConnection": "not requested"
+      },
+      "history": [
+        {
+          "revision": "v01",
+          "file": "revisions/v01/bae_seongho_sd_01.png",
+          "generatedSource": "C:/Users/geniu/.codex/generated_images/01a12da7-b148-71f1-bab1-8194e7fcffa1/exec-1975eed5-93ac-4a53-aa7d-dc6a1c909765.png",
+          "promptFile": "prompts/bae_seongho.txt",
+          "status": "superseded",
+          "reason": "User found direction too side-facing compared with Song"
+        }
+      ]
+    },
+    {
+      "id": "cha_yujun",
+      "name": "차유준",
+      "file": "cha_yujun_sd_01.png",
+      "revision": "v02",
+      "generatedSource": "C:/Users/geniu/.codex/generated_images/01a12da7-b148-71f1-bab1-8194e7fcffa1/exec-ad03ab91-602d-4b1b-8a53-2c457c3ca974.png",
+      "promptFile": "prompts/cha_yujun-v02.txt",
+      "prompt": "Use case: precise-object-edit. Reorient ONE existing SD character, genuine transparent background.\nImage 1 (Song Jinwoo) is the EXACT camera angle, head yaw, body pose direction and EYE DIRECTION reference. Image 2 is the EDIT TARGET whose identity, hair, outfit, colors, shading, SD proportions and accessories must be preserved.\nThe current target turns its face and pupils TOO FAR SIDEWAYS. Correct the target to MATCH SONG'S ACTUAL SUBTLE ANGLE precisely: face is almost FRONT VIEW with only a gentle turn to image right and a slight lowered chin; both eyes are broadly visible, with only a small perspective difference. Torso is similarly almost front-facing with a mild right turn. Gaze is directed gently forward and slightly downward, as Song's gaze, not dragged to the right edges of the eyes. Do not exaggerate the diagonal/southeast angle. No pronounced profile nose, no narrow far eye, no eyes peering far right, no camera eye contact.\nKeep the entire person and their unique approved contemporary clothes, same enormous head (60% total), tiny torso, extremely short arms/legs, both empty hands and two separated little shoes. Preserve clean rounded dark outlines and simple cel-shading. Change the orientation of head/body/gaze only as needed to copy Song's subtler pose, not the person's identity or style. Subject: Cha Yujun, a Korean man age 22, Seoul architecture student after a night in the studio. Curious slightly lifted eyebrows, interested brown eyes aimed down-right, focused little CLOSED mouth. Flat black knit beanie with asymmetric light-brown fringe below it; beanie stops above eyes. One compact headphone set around neck, not held. Lavender SHORT roomy varsity jacket with simple cream sleeve blocks, cream T-shirt, tiny wide charcoal trousers and two little white sneakers. Palette lavender/cream/black. Cute very short SD body despite loose jacket; no hoodie, tactical straps, blueprint, laptop, pen or school logo.\nOutput one complete centered full-body sprite with clean real transparent alpha, no shadow, text, floor or extra objects. Image 1 direction must win over any interpretation of down-right words.",
+      "referenced_image_paths": [
+        "C:/Users/geniu/OneDrive/문서/GitHub/Seoul-Hero/assets/characters-sd/song_sd_01.png",
+        "C:/Users/geniu/OneDrive/문서/GitHub/Seoul-Hero/assets/characters-sd/seoul-civilians-01/revisions/v01/cha_yujun_sd_01.png"
+      ],
+      "referenceRoles": {
+        "image1": "EXACT Song camera/head/body/gaze direction; style/proportion reference",
+        "image2": "existing character edit target; preserve identity/clothes/colors"
+      },
+      "transparent_background": true,
+      "visualReview": {
+        "status": "reviewed corrected generated output",
+        "notes": "Less side-facing, pupils shifted toward gentle downward gaze, identity and compact empty-handed SD retained"
+      },
+      "userApproval": {
+        "concept": "approved 2026-10-12",
+        "correctedArtwork": "provided for user review",
+        "runtimeConnection": "not requested"
+      },
+      "history": [
+        {
+          "revision": "v01",
+          "file": "revisions/v01/cha_yujun_sd_01.png",
+          "generatedSource": "C:/Users/geniu/.codex/generated_images/01a12da7-b148-71f1-bab1-8194e7fcffa1/exec-49f97b3f-d0a3-4d01-b5ac-bd0d4c9a2cec.png",
+          "promptFile": "prompts/cha_yujun.txt",
+          "status": "superseded",
+          "reason": "User found direction too side-facing compared with Song"
+        }
+      ]
+    },
+    {
+      "id": "baek_nari",
+      "name": "백나리",
+      "file": "baek_nari_sd_01.png",
+      "revision": "v02",
+      "generatedSource": "C:/Users/geniu/.codex/generated_images/01a12da7-b148-71f1-bab1-8194e7fcffa1/exec-76961737-42a9-45db-88c4-8509961f614e.png",
+      "promptFile": "prompts/baek_nari-v02.txt",
+      "prompt": "Use case: precise-object-edit. Reorient ONE existing SD character, genuine transparent background.\nImage 1 (Song Jinwoo) is the EXACT camera angle, head yaw, body pose direction and EYE DIRECTION reference. Image 2 is the EDIT TARGET whose identity, hair, outfit, colors, shading, SD proportions and accessories must be preserved.\nThe current target turns its face and pupils TOO FAR SIDEWAYS. Correct the target to MATCH SONG'S ACTUAL SUBTLE ANGLE precisely: face is almost FRONT VIEW with only a gentle turn to image right and a slight lowered chin; both eyes are broadly visible, with only a small perspective difference. Torso is similarly almost front-facing with a mild right turn. Gaze is directed gently forward and slightly downward, as Song's gaze, not dragged to the right edges of the eyes. Do not exaggerate the diagonal/southeast angle. No pronounced profile nose, no narrow far eye, no eyes peering far right, no camera eye contact.\nKeep the entire person and their unique approved contemporary clothes, same enormous head (60% total), tiny torso, extremely short arms/legs, both empty hands and two separated little shoes. Preserve clean rounded dark outlines and simple cel-shading. Change the orientation of head/body/gaze only as needed to copy Song's subtler pose, not the person's identity or style. Subject: Baek Nari, a Korean woman age 31, a confident Yeonnam salon stylist. Fine arched eyebrows, assertive small CLOSED smile, clear dark-brown eyes focused down-right. Strong asymmetrical PIXIE CUT: short on one side and a long geometric fringe chunk on the other; muted rose-brown hair, eyes not obscured. One tiny silver ear cuff. Charcoal SHORT salon tunic with broad pale-lilac neckline and a simple pale-lilac waist color plane, tiny black trousers and two little black loafers. Palette charcoal/lilac/rose-brown. No apron, long robe, exposed midriff, scissors, comb, hair dryer or floating tools.\nOutput one complete centered full-body sprite with clean real transparent alpha, no shadow, text, floor or extra objects. Image 1 direction must win over any interpretation of down-right words.",
+      "referenced_image_paths": [
+        "C:/Users/geniu/OneDrive/문서/GitHub/Seoul-Hero/assets/characters-sd/song_sd_01.png",
+        "C:/Users/geniu/OneDrive/문서/GitHub/Seoul-Hero/assets/characters-sd/seoul-civilians-01/revisions/v01/baek_nari_sd_01.png"
+      ],
+      "referenceRoles": {
+        "image1": "EXACT Song camera/head/body/gaze direction; style/proportion reference",
+        "image2": "existing character edit target; preserve identity/clothes/colors"
+      },
+      "transparent_background": true,
+      "visualReview": {
+        "status": "reviewed corrected generated output",
+        "notes": "Less side-facing, pupils shifted toward gentle downward gaze, identity and compact empty-handed SD retained"
+      },
+      "userApproval": {
+        "concept": "approved 2026-10-12",
+        "correctedArtwork": "provided for user review",
+        "runtimeConnection": "not requested"
+      },
+      "history": [
+        {
+          "revision": "v01",
+          "file": "revisions/v01/baek_nari_sd_01.png",
+          "generatedSource": "C:/Users/geniu/.codex/generated_images/01a12da7-b148-71f1-bab1-8194e7fcffa1/exec-15aa23f2-8ac2-4b81-94e5-bf7751d513fa.png",
+          "promptFile": "prompts/baek_nari.txt",
+          "status": "superseded",
+          "reason": "User found direction too side-facing compared with Song"
+        }
+      ]
+    },
+    {
+      "id": "im_gicheol",
+      "name": "임기철",
+      "file": "im_gicheol_sd_01.png",
+      "revision": "v02",
+      "generatedSource": "C:/Users/geniu/.codex/generated_images/01a12da7-b148-71f1-bab1-8194e7fcffa1/exec-2cb58fc9-17aa-4d2a-8a56-c5421bc88462.png",
+      "promptFile": "prompts/im_gicheol-v02.txt",
+      "prompt": "Use case: precise-object-edit. Reorient ONE existing SD character, genuine transparent background.\nImage 1 (Song Jinwoo) is the EXACT camera angle, head yaw, body pose direction and EYE DIRECTION reference. Image 2 is the EDIT TARGET whose identity, hair, outfit, colors, shading, SD proportions and accessories must be preserved.\nThe current target turns its face and pupils TOO FAR SIDEWAYS. Correct the target to MATCH SONG'S ACTUAL SUBTLE ANGLE precisely: face is almost FRONT VIEW with only a gentle turn to image right and a slight lowered chin; both eyes are broadly visible, with only a small perspective difference. Torso is similarly almost front-facing with a mild right turn. Gaze is directed gently forward and slightly downward, as Song's gaze, not dragged to the right edges of the eyes. Do not exaggerate the diagonal/southeast angle. No pronounced profile nose, no narrow far eye, no eyes peering far right, no camera eye contact.\nKeep the entire person and their unique approved contemporary clothes, same enormous head (60% total), tiny torso, extremely short arms/legs, both empty hands and two separated little shoes. Preserve clean rounded dark outlines and simple cel-shading. Change the orientation of head/body/gaze only as needed to copy Song's subtler pose, not the person's identity or style. Subject: Im Gicheol, a Korean man age 58, maintenance caretaker in an older Seoul apartment complex. Patient meticulous face, gently lowered brows, few fine eye-corner lines, short neat gray MOUSTACHE only, no full beard; warm clear brown eyes directed down-right, gentle CLOSED mouth. Very short dark-gray top hair with WHITE bands at both sides, LOW compact head-hair silhouette. Dark-teal SHORT zip-front work cardigan with low upright collar and clearly simple center zipper over navy polo shirt; tiny black pants, two little work shoes. Palette dark-teal/navy/gray-white. No hardhat, rescue coat, tool belt, wrench or handheld object. Maintain the same tiny SD body as Song.\nOutput one complete centered full-body sprite with clean real transparent alpha, no shadow, text, floor or extra objects. Image 1 direction must win over any interpretation of down-right words.",
+      "referenced_image_paths": [
+        "C:/Users/geniu/OneDrive/문서/GitHub/Seoul-Hero/assets/characters-sd/song_sd_01.png",
+        "C:/Users/geniu/OneDrive/문서/GitHub/Seoul-Hero/assets/characters-sd/seoul-civilians-01/revisions/v01/im_gicheol_sd_01.png"
+      ],
+      "referenceRoles": {
+        "image1": "EXACT Song camera/head/body/gaze direction; style/proportion reference",
+        "image2": "existing character edit target; preserve identity/clothes/colors"
+      },
+      "transparent_background": true,
+      "visualReview": {
+        "status": "reviewed corrected generated output",
+        "notes": "Less side-facing, pupils shifted toward gentle downward gaze, identity and compact empty-handed SD retained"
+      },
+      "userApproval": {
+        "concept": "approved 2026-10-12",
+        "correctedArtwork": "provided for user review",
+        "runtimeConnection": "not requested"
+      },
+      "history": [
+        {
+          "revision": "v01",
+          "file": "revisions/v01/im_gicheol_sd_01.png",
+          "generatedSource": "C:/Users/geniu/.codex/generated_images/01a12da7-b148-71f1-bab1-8194e7fcffa1/exec-c062a1af-3ed9-4ba1-993b-cbe60ccffbed.png",
+          "promptFile": "prompts/im_gicheol.txt",
+          "status": "superseded",
+          "reason": "User found direction too side-facing compared with Song"
+        }
+      ]
+    },
+    {
+      "id": "seo_hyejin",
+      "name": "서혜진",
+      "file": "seo_hyejin_sd_01.png",
+      "revision": "v02",
+      "generatedSource": "C:/Users/geniu/.codex/generated_images/01a12da7-b148-71f1-bab1-8194e7fcffa1/exec-ab94e54b-141f-41a1-9269-f3d9813f0962.png",
+      "promptFile": "prompts/seo_hyejin-v02.txt",
+      "prompt": "Use case: precise-object-edit. Reorient ONE existing SD character, genuine transparent background.\nImage 1 (Song Jinwoo) is the EXACT camera angle, head yaw, body pose direction and EYE DIRECTION reference. Image 2 is the EDIT TARGET whose identity, hair, outfit, colors, shading, SD proportions and accessories must be preserved.\nThe current target turns its face and pupils TOO FAR SIDEWAYS. Correct the target to MATCH SONG'S ACTUAL SUBTLE ANGLE precisely: face is almost FRONT VIEW with only a gentle turn to image right and a slight lowered chin; both eyes are broadly visible, with only a small perspective difference. Torso is similarly almost front-facing with a mild right turn. Gaze is directed gently forward and slightly downward, as Song's gaze, not dragged to the right edges of the eyes. Do not exaggerate the diagonal/southeast angle. No pronounced profile nose, no narrow far eye, no eyes peering far right, no camera eye contact.\nKeep the entire person and their unique approved contemporary clothes, same enormous head (60% total), tiny torso, extremely short arms/legs, both empty hands and two separated little shoes. Preserve clean rounded dark outlines and simple cel-shading. Change the orientation of head/body/gaze only as needed to copy Song's subtler pose, not the person's identity or style. Subject: Seo Hyejin, a Korean woman age 43, Jongno public-library librarian. Patient and quietly decisive, smooth gentle eyebrows, restrained kind CLOSED smile; brown pupils clearly looking down-right behind thin RECTANGULAR glasses with entirely clear lenses. Neat straight dark-brown hair in LOW half-up style, two orderly side-hair blocks beside ears, no fluffy bob, flower or headset. Burgundy SHORT soft V-neck cardigan with two simple buttons over cream shirt with tiny collar, tiny charcoal trousers, two little chestnut flats. Palette burgundy/cream/dark-brown. Extremely short SD limbs and readable directional eyes. No book, tote, pen, name text or magical accessories.\nOutput one complete centered full-body sprite with clean real transparent alpha, no shadow, text, floor or extra objects. Image 1 direction must win over any interpretation of down-right words.",
+      "referenced_image_paths": [
+        "C:/Users/geniu/OneDrive/문서/GitHub/Seoul-Hero/assets/characters-sd/song_sd_01.png",
+        "C:/Users/geniu/OneDrive/문서/GitHub/Seoul-Hero/assets/characters-sd/seoul-civilians-01/revisions/v01/seo_hyejin_sd_01.png"
+      ],
+      "referenceRoles": {
+        "image1": "EXACT Song camera/head/body/gaze direction; style/proportion reference",
+        "image2": "existing character edit target; preserve identity/clothes/colors"
+      },
+      "transparent_background": true,
+      "visualReview": {
+        "status": "reviewed corrected generated output",
+        "notes": "Less side-facing, pupils shifted toward gentle downward gaze, identity and compact empty-handed SD retained"
+      },
+      "userApproval": {
+        "concept": "approved 2026-10-12",
+        "correctedArtwork": "provided for user review",
+        "runtimeConnection": "not requested"
+      },
+      "history": [
+        {
+          "revision": "v01",
+          "file": "revisions/v01/seo_hyejin_sd_01.png",
+          "generatedSource": "C:/Users/geniu/.codex/generated_images/01a12da7-b148-71f1-bab1-8194e7fcffa1/exec-a8470603-1d9e-4855-839f-19e62fad8481.png",
+          "promptFile": "prompts/seo_hyejin.txt",
+          "status": "superseded",
+          "reason": "User found direction too side-facing compared with Song"
+        }
+      ]
+    }
+  ]
+}

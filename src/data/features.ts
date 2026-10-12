@@ -21,7 +21,10 @@ export const GAME_FEATURES = {
  */
 export const GAME_DRAWS = {
   costs: { character: 400, weapon: 200, blessing: 200 },
-  starter: { characters: ['awakener'], weapons: ['manaSword', 'manaBolt', 'guardianDaggers'] },
+  starter: {
+    characters: ['awakener', 'leeSomin', 'jungMinseok', 'ohJieun', 'moonTaeo', 'kimMigyeong', 'baeSeongho', 'chaYujun', 'baekNari', 'imGicheol', 'seoHyejin'],
+    weapons: ['manaSword', 'manaBolt', 'guardianDaggers'],
+  },
 } as const;
 
 /**

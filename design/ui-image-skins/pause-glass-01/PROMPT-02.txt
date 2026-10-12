@@ -1,0 +1,7 @@
+Use case: precise-object-edit.
+Asset type: raster PNG button surface for the Seoul Hero pause dialog.
+Edit target: input image 1, the existing textless navy glass button. Change ONLY its color and brightness.
+Primary request: the user finds the almost-black fill too dark and wants a slightly brighter, lighter-feeling button. Keep its straight-on long parallelogram geometry, exact silhouette, slanted end angles, thin cool bevel, inset proportions, smooth glass material and transparent outside. Keep the entire button filling the canvas like the source; do not add margins.
+Color: brighten the fill from near-black navy to a calm medium-light slate blue / blue-gray, about #718DA8 at the softly lit upper area and #526E8A in the central and lower area. Make it clearly brighter than the input while keeping enough color depth for white native button text. Subtle pale icy-blue upper reflection, no black area. No saturated electric blue, no teal, no purple, no coral or red on this button. The coral accents remain elsewhere in the UI.
+Constraints: Preserve the input canvas aspect ratio 512:160 (16:5) and shape closely. One button only. True transparent outside the silhouette. Do not draw words, letters, numbers, symbols, icons, internal panels, new highlights, extra outline, glow, shadows, textures or decorative marks. All typography will be native text placed later.
+Keep existing source geometry and material; this is a restrained color-only edit.

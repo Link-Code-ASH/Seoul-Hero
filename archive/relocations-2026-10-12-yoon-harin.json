@@ -1,0 +1,24 @@
+{
+  "date": "2026-10-12",
+  "reason": "사용자 삭제 요청: 윤하린의 캐릭터 개성이 약함. 현행 캐릭터 및 런타임 이미지에서 제외하고 원본 PNG, Godot 사본과 import 설정을 보존한다. 혼합 생성 출처 provenance-02.json은 원래 위치에 유지한다.",
+  "entries": [
+    {
+      "original": "assets/characters-sd/yoon_sd_01.png",
+      "archive": "archive/retired-art/characters-sd/yoon-harin-2026-10-12/source/yoon_sd_01.png",
+      "bytes": 868110,
+      "sha256": "591acb02b953b4763e01fc8c137af10146db24ed5c3ae5d5047c4f2a50ef0309"
+    },
+    {
+      "original": "godot/assets/characters-sd/yoon_sd_01.png",
+      "archive": "archive/retired-art/characters-sd/yoon-harin-2026-10-12/godot/yoon_sd_01.png",
+      "bytes": 868110,
+      "sha256": "591acb02b953b4763e01fc8c137af10146db24ed5c3ae5d5047c4f2a50ef0309"
+    },
+    {
+      "original": "godot/assets/characters-sd/yoon_sd_01.png.import",
+      "archive": "archive/retired-art/characters-sd/yoon-harin-2026-10-12/godot/yoon_sd_01.png.import",
+      "bytes": 954,
+      "sha256": "8853731d85a4aef13348cf5f539059e10e68e913c0dcbeb95e777c8213ebced0"
+    }
+  ]
+}

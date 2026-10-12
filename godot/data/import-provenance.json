@@ -199,12 +199,48 @@
       "sha256": "eb92e8533afa1872038b83b28f890d6370ae73a7f80e7a5ba2859b0edce6833c"
     },
     {
-      "source": "assets/characters-sd/yoon_sd_01.png",
-      "sha256": "591acb02b953b4763e01fc8c137af10146db24ed5c3ae5d5047c4f2a50ef0309"
-    },
-    {
       "source": "assets/characters-sd/han_seoa_sd_01.png",
       "sha256": "a0362bfdcff74e1eebdcac50836336713d9e07e7be93f7acead5c8562f4c8087"
+    },
+    {
+      "source": "assets/characters-sd/seoul-civilians-01/lee_somin_sd_01.png",
+      "sha256": "09524eaedc51f6994bc7cc679f5a4838f18bbb74669115402608f70d2c0004a9"
+    },
+    {
+      "source": "assets/characters-sd/seoul-civilians-01/jung_minseok_sd_01.png",
+      "sha256": "87945c0b81abee4128078137141a5d6695c33fc165c2f341a5cf296d49f581eb"
+    },
+    {
+      "source": "assets/characters-sd/seoul-civilians-01/oh_jieun_sd_01.png",
+      "sha256": "4fce00aa1d8e2bbd8058ec691d6d26579105f36a8505a0207258e04cbf8edc16"
+    },
+    {
+      "source": "assets/characters-sd/seoul-civilians-01/moon_taeo_sd_01.png",
+      "sha256": "90fae5654800c4812be5fe24fba187201aa7fe9889e382d5238a2af300ac2e5f"
+    },
+    {
+      "source": "assets/characters-sd/seoul-civilians-01/kim_migyeong_sd_01.png",
+      "sha256": "1340b232d0848efba869a03855360970ede727776e8d4b12975ade3812153410"
+    },
+    {
+      "source": "assets/characters-sd/seoul-civilians-01/bae_seongho_sd_01.png",
+      "sha256": "2fac76717b8d9861c1fb6be84915ef012d9e3c863d83c37e7b7ef023dc7af7c7"
+    },
+    {
+      "source": "assets/characters-sd/seoul-civilians-01/cha_yujun_sd_01.png",
+      "sha256": "5a5fdcadde2ba0cdab53dbd0ea292662b425bfc8de7eabb4ca0d07a51fd0a7c6"
+    },
+    {
+      "source": "assets/characters-sd/seoul-civilians-01/baek_nari_sd_01.png",
+      "sha256": "4e074f359258178c4a548979421d49c3fe5a7926c94de29c1fd516263453ca6b"
+    },
+    {
+      "source": "assets/characters-sd/seoul-civilians-01/im_gicheol_sd_01.png",
+      "sha256": "5949c0305dbb8ede26fdbb8563d1b3efa10c88a822f6ff09b564c4cec7418967"
+    },
+    {
+      "source": "assets/characters-sd/seoul-civilians-01/seo_hyejin_sd_01.png",
+      "sha256": "3e8d916aed4fc5adf1b12ddde38ecfe62e6526e6da9f1f9a54bb34ff6bd07ace"
     },
     {
       "source": "assets/monsters-sd/crawler_sd_01.png",
@@ -955,186 +991,6 @@
       "sha256": "6e9d6241d161dc1d1221a62140e2b17a61250c16faaf89b67f02f534b532f2df"
     },
     {
-      "source": "assets/ui/inventory-transparent-provenance.json",
-      "sha256": "752640243239b182ed67b55ef0c3dda2b392340e091b1815fa66809a7ddef32f"
-    },
-    {
-      "source": "assets/content-2026/provenance.json",
-      "sha256": "4e247f61c4478089a98776946c682bc3bcf9b9e183627434df14dc7a888e8a37"
-    },
-    {
-      "source": "assets/characters-sd/provenance.json",
-      "sha256": "54a3cd7495f13ed373343402a7d1f5be05193509fcb1657c4ad8b210c3c469b9"
-    },
-    {
-      "source": "assets/characters-sd/provenance-02.json",
-      "sha256": "97788c844d4c64f60b464e8059a9adbd8cd473c4759749abefc131fd64e579df"
-    },
-    {
-      "source": "assets/monsters-sd/provenance.json",
-      "sha256": "4aafe278688873171ff798604e47f1899653071dde5c1d71f06b6c796b36c3df"
-    },
-    {
-      "source": "assets/monsters-sd/provenance-02.json",
-      "sha256": "cad0bf3a9df9952666cf2c04d36b8185c840d2a4de87aef26577e9f648d0e474"
-    },
-    {
-      "source": "assets/monsters-library/provenance.json",
-      "sha256": "db6db475e1cacfbb9c0ad389cc16d07c35788acdda648f2ca984ff57636df637"
-    },
-    {
-      "source": "assets/lobby-sd/provenance.json",
-      "sha256": "d318229895355f668adca725ea5878f2427f3b83c91f7dc7fc9421bfcc769fc9"
-    },
-    {
-      "source": "assets/environment-sd/provenance.json",
-      "sha256": "a406e2a425eeb4955763213a2c9d2c0836d55f481338cd100b76935d17a771b0"
-    },
-    {
-      "source": "assets/environment-sd/provenance-03.json",
-      "sha256": "b9b4e6bf01a3200a09f930a69efa38b9fc362e7ba24be4c36c2014a97b1bf7fe"
-    },
-    {
-      "source": "assets/visuals/structures/provenance.json",
-      "sha256": "65fcbc21a24020244df6524380d8d8322a8e94f22c079e214b788a898bac9cbe"
-    },
-    {
-      "source": "assets/ui/urban-operation/provenance.json",
-      "sha256": "32e9dc8738141f4ea13f8e940091f9cf99870f03387ae45332b0b0a42edfbb9b"
-    },
-    {
-      "source": "assets/ui/image-skin/provenance.json",
-      "sha256": "c1025e577be6c49c1668a194a817152dfcb8131b1c4a159bd8f36e7ac7a7a3c9"
-    },
-    {
-      "source": "assets/ui/image-skin/operations-standard-01/provenance.json",
-      "sha256": "9d55342c3b6562fd0348a9efbe4599a40b5ef6d5652c02cc9b4546c82a49ed4d"
-    },
-    {
-      "source": "assets/ui/image-skin/operations-standard-01/source-prompts.json",
-      "sha256": "e6b2c33e2442c7c9994e6429fce204d84dd2e9e8b6f370bc9a1c027786ba972d"
-    },
-    {
-      "source": "assets/ui/image-skin/operations-light-controls-02/provenance.json",
-      "sha256": "1f142cb94f85d8e545cbcbdce5b0ee962526de78086e748d78604c541e4ad95d"
-    },
-    {
-      "source": "assets/ui/image-skin/operations-light-controls-02/source-prompts.json",
-      "sha256": "fa471e19fb4b3269fd521c1f58238d6d4e7f02a830a3450bbe593c7b938a865d"
-    },
-    {
-      "source": "assets/ui/image-skin/runtime/provenance.json",
-      "sha256": "1ce41f35341f5f18e68c9a0f641372260450ea1cdd92de0accf3e861dd432d06"
-    },
-    {
-      "source": "assets/ui/image-skin/seoul-support/provenance.json",
-      "sha256": "8d9a282e64003f03cebaf4409d4445471158047bd3080d4e471f9fb9f18a8158"
-    },
-    {
-      "source": "assets/ui/image-skin/seoul-support/source-prompts.json",
-      "sha256": "ccfcbbcf68dbaeb0feef3ba3cdeda12d1a8eadbf6ad6dfb12aa7bd19cecdd1ca"
-    },
-    {
-      "source": "assets/ui/image-skin/seoul-support/approved-preview-manifest.json",
-      "sha256": "3336f4987a4f9d05e293fd60e821f24da5d9e4cda0c27597e49a3e3216e88f22"
-    },
-    {
-      "source": "assets/ui/guild-management/rooms.png",
-      "sha256": "29598ba155cecf3de27ae74bd657c95c1266bcceb56c1e3717fa40f4828d2179"
-    },
-    {
-      "source": "assets/ui/guild-management/room-states.png",
-      "sha256": "903e2b2b4ceb36117ff0ae3c1ac8504ea66e3d699144010486da03ddf7e0341f"
-    },
-    {
-      "source": "assets/ui/guild-management/provenance.json",
-      "sha256": "c3997139f93a48f3e7e820ee2b2e340fa8f17b2ab396d738c8011b7ee9ab3302"
-    },
-    {
-      "source": "assets/ui/guild-walk/structure.png",
-      "sha256": "5d8f66e859572bef54597245a7586ee99dd3876d892de50df148d9fe945af44e"
-    },
-    {
-      "source": "assets/ui/guild-walk/structure.json",
-      "sha256": "493c1a8ca00acc3e35115b5a19e8b0dbf4906674364e630c18f762f6cdc1659f"
-    },
-    {
-      "source": "assets/ui/guild-walk/provenance.json",
-      "sha256": "ca53d4271c4a67c17a516d107494fd438807fc9220394bb0d82e73eff6bd921a"
-    },
-    {
-      "source": "assets/ui/fonts/BMJUA.ttf",
-      "sha256": "e8e6aa8b1b662c7bf0d7f136f29e822e0985176458a6e5d0ba08afc4a5c901a9"
-    },
-    {
-      "source": "assets/ui/fonts/Paperlogy-4Regular.ttf",
-      "sha256": "05e1021e3de620dddc97875342e2be1a94c5f8e9b9f792bd16c4c1d0085343b3"
-    },
-    {
-      "source": "assets/ui/fonts/Paperlogy-8ExtraBold.ttf",
-      "sha256": "fb0324f8ac057e50f4f4632331617e347bfe5a04184f7b0db514be682fb6b25c"
-    },
-    {
-      "source": "assets/ui/fonts/KMU80HaeongSans.ttf",
-      "sha256": "df9f536e641de9637041ce763c653b02ccd21f336246a2e30700c9d25f5e90f5"
-    },
-    {
-      "source": "assets/ui/fonts/BarlowCondensed-SemiBold.ttf",
-      "sha256": "0d6fc1596f18256209e2deeb99aed78c499e4c6393ac1e3da416c9b0b7492a64"
-    },
-    {
-      "source": "assets/ui/fonts/BarlowCondensed-Bold.ttf",
-      "sha256": "db43b7915c132d4e4ec6d7512f5d3c229f1f4440d94e3c5f8cb9912d3aec11b9"
-    },
-    {
-      "source": "assets/ui/fonts/SOURCES.md",
-      "sha256": "237049cbe2c61b952ab1a3163832c91f54f94283050985aa0fc245749a58b417"
-    },
-    {
-      "source": "assets/ui/fonts/BarlowCondensed-OFL.txt",
-      "sha256": "186d750eb496a4c17a76385f82be6aea2ac1cf2de074a811d63786cf374ea73f"
-    },
-    {
-      "source": "assets/ui/fonts/OFL.txt",
-      "sha256": "82e9c8a4b203261f10ddba1296422d64914ff3d4b7bd8a12896d03f0f088d70a"
-    },
-    {
-      "source": "assets/ui/fonts/font-import-provenance.json",
-      "sha256": "c36f70c72001522f001c7469af722b1576baabdbbcf95721478c503c5a853ce0"
-    },
-    {
-      "source": "design/ui-premium-v5/assets/lobby-rain.png",
-      "sha256": "57d9e878d19bc4c4a013556ceb22be78534635ac365e1a8c9c6bf7ca482f93c3"
-    },
-    {
-      "source": "design/ui-premium-v5/assets/lobby-wind.png",
-      "sha256": "e660da5715cd0fd0737af78fbb75ed789a388e5850c4efe65bf354b4d74c644c"
-    },
-    {
-      "source": "design/ui-premium-v5/assets/lobby-energy.png",
-      "sha256": "9671037be1e6f3be21d32de873d2f6c41a3031b33664041771557b3064c816ab"
-    },
-    {
-      "source": "design/ui-premium-v5/assets/lobby-checkpoint.png",
-      "sha256": "de9898a53183ec8d14076c100a0e23a701c667ec0feb69456ce9e3ad4b2ec177"
-    },
-    {
-      "source": "design/ui-premium-v5/assets/lobby-rooftop.png",
-      "sha256": "dd3f3f006b8d12546b587eee7ea5fdad8154b96eb9f55b8729289c221419d473"
-    },
-    {
-      "source": "design/ui-premium-v5/assets/generated-v5.json",
-      "sha256": "0c45cf68c67e79901cca4171906b669a55c43c1253b0b58ec0aab77677d8541b"
-    },
-    {
-      "source": "design/ui-premium-v5/assets/generated-v4.json",
-      "sha256": "32e00b35ded5a4300dc348d90396ba34d2b4ff70607d9ef6286ee576382e0b42"
-    },
-    {
-      "source": "design/ui-premium-v5/assets/provenance.json",
-      "sha256": "d6c7ac938afbe967e9b27efdf7260863a00ca7ce8f7095e0fb6d0e7a036030d1"
-    },
-    {
       "source": "assets/audio/sfx/reborn-02/purchase/01.wav",
       "sha256": "f84f3b65d039f9b4bbb86adbecce7b23e2f3c6664a51131149732f495ac5096e"
     },
@@ -1629,7 +1485,194 @@
     {
       "source": "assets/audio/sfx/reborn-02/provenance.json",
       "sha256": "2404bb51a132f3de73e849174b1e72789e6a1230f7b533cd6fad92b4418c4c30"
+    },
+    {
+      "source": "assets/ui/inventory-transparent-provenance.json",
+      "sha256": "752640243239b182ed67b55ef0c3dda2b392340e091b1815fa66809a7ddef32f"
+    },
+    {
+      "source": "assets/content-2026/provenance.json",
+      "sha256": "4e247f61c4478089a98776946c682bc3bcf9b9e183627434df14dc7a888e8a37"
+    },
+    {
+      "source": "assets/characters-sd/provenance.json",
+      "sha256": "54a3cd7495f13ed373343402a7d1f5be05193509fcb1657c4ad8b210c3c469b9"
+    },
+    {
+      "source": "assets/characters-sd/provenance-02.json",
+      "sha256": "97788c844d4c64f60b464e8059a9adbd8cd473c4759749abefc131fd64e579df"
+    },
+    {
+      "source": "assets/characters-sd/seoul-civilians-01/provenance.json",
+      "sha256": "dd1abfc68ec198c04cd11cc0966e3c4a34e2d7b04e7ef9a5e839c718c838e5fd"
+    },
+    {
+      "source": "assets/characters-sd/seoul-civilians-01/catalog.json",
+      "sha256": "ee086e3a1d56fe712a14b49d1e76d199ada4ec3b74a547b72463254223513863"
+    },
+    {
+      "source": "assets/monsters-sd/provenance.json",
+      "sha256": "4aafe278688873171ff798604e47f1899653071dde5c1d71f06b6c796b36c3df"
+    },
+    {
+      "source": "assets/monsters-sd/provenance-02.json",
+      "sha256": "cad0bf3a9df9952666cf2c04d36b8185c840d2a4de87aef26577e9f648d0e474"
+    },
+    {
+      "source": "assets/monsters-library/provenance.json",
+      "sha256": "db6db475e1cacfbb9c0ad389cc16d07c35788acdda648f2ca984ff57636df637"
+    },
+    {
+      "source": "assets/lobby-sd/provenance.json",
+      "sha256": "d318229895355f668adca725ea5878f2427f3b83c91f7dc7fc9421bfcc769fc9"
+    },
+    {
+      "source": "assets/environment-sd/provenance.json",
+      "sha256": "a406e2a425eeb4955763213a2c9d2c0836d55f481338cd100b76935d17a771b0"
+    },
+    {
+      "source": "assets/environment-sd/provenance-03.json",
+      "sha256": "b9b4e6bf01a3200a09f930a69efa38b9fc362e7ba24be4c36c2014a97b1bf7fe"
+    },
+    {
+      "source": "assets/visuals/structures/provenance.json",
+      "sha256": "65fcbc21a24020244df6524380d8d8322a8e94f22c079e214b788a898bac9cbe"
+    },
+    {
+      "source": "assets/ui/urban-operation/provenance.json",
+      "sha256": "32e9dc8738141f4ea13f8e940091f9cf99870f03387ae45332b0b0a42edfbb9b"
+    },
+    {
+      "source": "assets/ui/image-skin/provenance.json",
+      "sha256": "c1025e577be6c49c1668a194a817152dfcb8131b1c4a159bd8f36e7ac7a7a3c9"
+    },
+    {
+      "source": "assets/ui/image-skin/operations-standard-01/provenance.json",
+      "sha256": "9d55342c3b6562fd0348a9efbe4599a40b5ef6d5652c02cc9b4546c82a49ed4d"
+    },
+    {
+      "source": "assets/ui/image-skin/operations-standard-01/source-prompts.json",
+      "sha256": "e6b2c33e2442c7c9994e6429fce204d84dd2e9e8b6f370bc9a1c027786ba972d"
+    },
+    {
+      "source": "assets/ui/image-skin/operations-light-controls-02/provenance.json",
+      "sha256": "1f142cb94f85d8e545cbcbdce5b0ee962526de78086e748d78604c541e4ad95d"
+    },
+    {
+      "source": "assets/ui/image-skin/operations-light-controls-02/source-prompts.json",
+      "sha256": "fa471e19fb4b3269fd521c1f58238d6d4e7f02a830a3450bbe593c7b938a865d"
+    },
+    {
+      "source": "assets/ui/image-skin/runtime/provenance.json",
+      "sha256": "1ce41f35341f5f18e68c9a0f641372260450ea1cdd92de0accf3e861dd432d06"
+    },
+    {
+      "source": "assets/ui/image-skin/seoul-support/provenance.json",
+      "sha256": "8d9a282e64003f03cebaf4409d4445471158047bd3080d4e471f9fb9f18a8158"
+    },
+    {
+      "source": "assets/ui/image-skin/seoul-support/source-prompts.json",
+      "sha256": "ccfcbbcf68dbaeb0feef3ba3cdeda12d1a8eadbf6ad6dfb12aa7bd19cecdd1ca"
+    },
+    {
+      "source": "assets/ui/image-skin/seoul-support/approved-preview-manifest.json",
+      "sha256": "3336f4987a4f9d05e293fd60e821f24da5d9e4cda0c27597e49a3e3216e88f22"
+    },
+    {
+      "source": "assets/ui/guild-management/rooms.png",
+      "sha256": "29598ba155cecf3de27ae74bd657c95c1266bcceb56c1e3717fa40f4828d2179"
+    },
+    {
+      "source": "assets/ui/guild-management/room-states.png",
+      "sha256": "903e2b2b4ceb36117ff0ae3c1ac8504ea66e3d699144010486da03ddf7e0341f"
+    },
+    {
+      "source": "assets/ui/guild-management/provenance.json",
+      "sha256": "c3997139f93a48f3e7e820ee2b2e340fa8f17b2ab396d738c8011b7ee9ab3302"
+    },
+    {
+      "source": "assets/ui/guild-walk/structure.png",
+      "sha256": "5d8f66e859572bef54597245a7586ee99dd3876d892de50df148d9fe945af44e"
+    },
+    {
+      "source": "assets/ui/guild-walk/structure.json",
+      "sha256": "493c1a8ca00acc3e35115b5a19e8b0dbf4906674364e630c18f762f6cdc1659f"
+    },
+    {
+      "source": "assets/ui/guild-walk/provenance.json",
+      "sha256": "ca53d4271c4a67c17a516d107494fd438807fc9220394bb0d82e73eff6bd921a"
+    },
+    {
+      "source": "assets/ui/fonts/BMJUA.ttf",
+      "sha256": "e8e6aa8b1b662c7bf0d7f136f29e822e0985176458a6e5d0ba08afc4a5c901a9"
+    },
+    {
+      "source": "assets/ui/fonts/Paperlogy-4Regular.ttf",
+      "sha256": "05e1021e3de620dddc97875342e2be1a94c5f8e9b9f792bd16c4c1d0085343b3"
+    },
+    {
+      "source": "assets/ui/fonts/Paperlogy-8ExtraBold.ttf",
+      "sha256": "fb0324f8ac057e50f4f4632331617e347bfe5a04184f7b0db514be682fb6b25c"
+    },
+    {
+      "source": "assets/ui/fonts/KMU80HaeongSans.ttf",
+      "sha256": "df9f536e641de9637041ce763c653b02ccd21f336246a2e30700c9d25f5e90f5"
+    },
+    {
+      "source": "assets/ui/fonts/BarlowCondensed-SemiBold.ttf",
+      "sha256": "0d6fc1596f18256209e2deeb99aed78c499e4c6393ac1e3da416c9b0b7492a64"
+    },
+    {
+      "source": "assets/ui/fonts/BarlowCondensed-Bold.ttf",
+      "sha256": "db43b7915c132d4e4ec6d7512f5d3c229f1f4440d94e3c5f8cb9912d3aec11b9"
+    },
+    {
+      "source": "assets/ui/fonts/SOURCES.md",
+      "sha256": "237049cbe2c61b952ab1a3163832c91f54f94283050985aa0fc245749a58b417"
+    },
+    {
+      "source": "assets/ui/fonts/BarlowCondensed-OFL.txt",
+      "sha256": "186d750eb496a4c17a76385f82be6aea2ac1cf2de074a811d63786cf374ea73f"
+    },
+    {
+      "source": "assets/ui/fonts/OFL.txt",
+      "sha256": "82e9c8a4b203261f10ddba1296422d64914ff3d4b7bd8a12896d03f0f088d70a"
+    },
+    {
+      "source": "assets/ui/fonts/font-import-provenance.json",
+      "sha256": "c36f70c72001522f001c7469af722b1576baabdbbcf95721478c503c5a853ce0"
+    },
+    {
+      "source": "design/ui-premium-v5/assets/lobby-rain.png",
+      "sha256": "57d9e878d19bc4c4a013556ceb22be78534635ac365e1a8c9c6bf7ca482f93c3"
+    },
+    {
+      "source": "design/ui-premium-v5/assets/lobby-wind.png",
+      "sha256": "e660da5715cd0fd0737af78fbb75ed789a388e5850c4efe65bf354b4d74c644c"
+    },
+    {
+      "source": "design/ui-premium-v5/assets/lobby-energy.png",
+      "sha256": "9671037be1e6f3be21d32de873d2f6c41a3031b33664041771557b3064c816ab"
+    },
+    {
+      "source": "design/ui-premium-v5/assets/lobby-checkpoint.png",
+      "sha256": "de9898a53183ec8d14076c100a0e23a701c667ec0feb69456ce9e3ad4b2ec177"
+    },
+    {
+      "source": "design/ui-premium-v5/assets/lobby-rooftop.png",
+      "sha256": "dd3f3f006b8d12546b587eee7ea5fdad8154b96eb9f55b8729289c221419d473"
+    },
+    {
+      "source": "design/ui-premium-v5/assets/generated-v5.json",
+      "sha256": "0c45cf68c67e79901cca4171906b669a55c43c1253b0b58ec0aab77677d8541b"
+    },
+    {
+      "source": "design/ui-premium-v5/assets/generated-v4.json",
+      "sha256": "32e00b35ded5a4300dc348d90396ba34d2b4ff70607d9ef6286ee576382e0b42"
+    },
+    {
+      "source": "design/ui-premium-v5/assets/provenance.json",
+      "sha256": "d6c7ac938afbe967e9b27efdf7260863a00ca7ce8f7095e0fb6d0e7a036030d1"
     }
-  ],
-  "audioRevision": "reborn-02"
+  ]
 }

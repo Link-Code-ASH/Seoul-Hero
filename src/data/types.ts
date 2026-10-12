@@ -5,7 +5,7 @@ export interface Visual {
 export interface Character {
   id: string; name: string; description: string; background: string; personality: string;
   baseStats: PlayerStats; radius: number; signatureWeaponId?: string; portraitSprite?: import('./images').ImageId; visual: Visual;
-  trait?: { name: string; description: string; weaponDamageBonus: number; weaponFamily?: 'firearm' };
+  trait?: { name: string; description: string; weaponDamageBonus: number; weaponFamily?: 'firearm'; weaponCapability?: WeaponCapability };
 }
 export interface CharacterStatAdjustment { stat: StatKey; operation: 'add' | 'multiply'; value: number }
 export interface StageBalanceModifiers {

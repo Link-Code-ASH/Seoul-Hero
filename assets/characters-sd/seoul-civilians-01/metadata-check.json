@@ -1,0 +1,140 @@
+{
+  "count": 10,
+  "uniqueFiles": 10,
+  "allTransparent": true,
+  "allSourceMatch": true,
+  "allPromptsExist": true,
+  "allV01Preserved": true,
+  "files": [
+    {
+      "id": "lee_somin",
+      "width": 1215,
+      "height": 1295,
+      "sha256": "09524eaedc51f6994bc7cc679f5a4838f18bbb74669115402608f70d2c0004a9",
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sourceMatch": true,
+      "promptExists": true,
+      "v01Preserved": true
+    },
+    {
+      "id": "jung_minseok",
+      "width": 1216,
+      "height": 1293,
+      "sha256": "87945c0b81abee4128078137141a5d6695c33fc165c2f341a5cf296d49f581eb",
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sourceMatch": true,
+      "promptExists": true,
+      "v01Preserved": true
+    },
+    {
+      "id": "oh_jieun",
+      "width": 1216,
+      "height": 1294,
+      "sha256": "4fce00aa1d8e2bbd8058ec691d6d26579105f36a8505a0207258e04cbf8edc16",
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sourceMatch": true,
+      "promptExists": true,
+      "v01Preserved": true
+    },
+    {
+      "id": "moon_taeo",
+      "width": 1216,
+      "height": 1293,
+      "sha256": "90fae5654800c4812be5fe24fba187201aa7fe9889e382d5238a2af300ac2e5f",
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sourceMatch": true,
+      "promptExists": true,
+      "v01Preserved": true
+    },
+    {
+      "id": "kim_migyeong",
+      "width": 1216,
+      "height": 1294,
+      "sha256": "1340b232d0848efba869a03855360970ede727776e8d4b12975ade3812153410",
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sourceMatch": true,
+      "promptExists": true,
+      "v01Preserved": true
+    },
+    {
+      "id": "bae_seongho",
+      "width": 1216,
+      "height": 1294,
+      "sha256": "2fac76717b8d9861c1fb6be84915ef012d9e3c863d83c37e7b7ef023dc7af7c7",
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sourceMatch": true,
+      "promptExists": true,
+      "v01Preserved": true
+    },
+    {
+      "id": "cha_yujun",
+      "width": 1216,
+      "height": 1293,
+      "sha256": "5a5fdcadde2ba0cdab53dbd0ea292662b425bfc8de7eabb4ca0d07a51fd0a7c6",
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sourceMatch": true,
+      "promptExists": true,
+      "v01Preserved": true
+    },
+    {
+      "id": "baek_nari",
+      "width": 1216,
+      "height": 1294,
+      "sha256": "4e074f359258178c4a548979421d49c3fe5a7926c94de29c1fd516263453ca6b",
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sourceMatch": true,
+      "promptExists": true,
+      "v01Preserved": true
+    },
+    {
+      "id": "im_gicheol",
+      "width": 1216,
+      "height": 1293,
+      "sha256": "5949c0305dbb8ede26fdbb8563d1b3efa10c88a822f6ff09b564c4cec7418967",
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sourceMatch": true,
+      "promptExists": true,
+      "v01Preserved": true
+    },
+    {
+      "id": "seo_hyejin",
+      "width": 1216,
+      "height": 1293,
+      "sha256": "3e8d916aed4fc5adf1b12ddde38ecfe62e6526e6da9f1f9a54bb34ff6bd07ace",
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sourceMatch": true,
+      "promptExists": true,
+      "v01Preserved": true
+    }
+  ]
+}

@@ -13,6 +13,7 @@ var _preset: Dictionary = {}
 var _labels: Array = []
 var _rows: Array = []
 var _pages: Array = []
+var _human_pages := 0
 var _page := 0
 var _page_button: Button
 var _motion := "move"
@@ -31,7 +32,8 @@ func _ready() -> void:
 	for id in Content.data.characters:
 		humans.append(["characters",id,Content.data.characters[id].name,108.0])
 	if Content.visuals.get("npcs",{}).has("hanSeoa"): humans.append(["npcs","hanSeoa","한서아",108.0])
-	_pages.append(humans)
+	for offset in range(0,humans.size(),5): _pages.append(humans.slice(offset,offset+5))
+	_human_pages = _pages.size()
 	var monsters: Array = []
 	for id in Content.data.enemies:
 		var data: Dictionary = Content.data.enemies[id]
@@ -69,7 +71,7 @@ func _show_page(index: int) -> void:
 	_actors.clear(); _states.clear(); _rows = _pages[index]
 	for effect in _effects: effect.queue_free()
 	_effects.clear(); _motion = "move"
-	_page_button.text = "인간형 · %d종  →" % _rows.size() if index == 0 else "몬스터 · %d / %d  →" % [index,_pages.size()-1]
+	_page_button.text = "인간형 · %d / %d  →" % [index+1,_human_pages] if index < _human_pages else "몬스터 · %d / %d  →" % [index-_human_pages+1,_pages.size()-_human_pages]
 	for i in range(5):
 		_labels[i].text = _rows[i][2] if i < _rows.size() else ""
 	for i in range(_rows.size()):

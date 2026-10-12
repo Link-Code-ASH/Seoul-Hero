@@ -393,7 +393,7 @@ func _sync_employees(guild: Dictionary) -> void:
 		var slot := _facility_slot("office" if activity in ["","away"] else activity)
 		var goal := _slot_point(slot)+Vector2((index%3-1)*43.0,0)
 		if not _npcs.has(id):
-			var actor: String = ["hanSeoa","awakener","kangTaehoon","parkDojun","yoonHarin"][index%5]
+			var actor: String = ["hanSeoa","awakener","kangTaehoon","parkDojun"][index%4]
 			var origin := Vector2(GATE_X,FLOOR_Y[0]) if activity=="away" else _slot_point(0)
 			_npcs[id] = {"node":_new_avatar(actor),"pos":origin,"floor":0,"facing":1.0,"route":[],"activity":"unset","slot":-1,"phase":float(index)*1.73,"away":activity=="away","wander_at":0.0}
 		var npc: Dictionary = _npcs[id]

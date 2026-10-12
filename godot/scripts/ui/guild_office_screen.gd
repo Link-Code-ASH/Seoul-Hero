@@ -289,7 +289,7 @@ func _build_cards(box: Node) -> void:
 	if shown==0: HeroGuildPanelKit.tiles(box,["지을 수 있는 시설을 모두 지었어요"])
 
 # Same actor order as the people walking in the HQ rooms.
-const PORTRAITS := ["hanSeoaSD","songJinwooSD","kangTaehoonSD","parkDojunSD","yoonHarinSD"]
+const PORTRAITS := ["hanSeoaSD","songJinwooSD","kangTaehoonSD","parkDojunSD"]
 
 static func portrait_for(index: int) -> Texture2D:
 	return Content.trimmed_texture(str(PORTRAITS[posmod(index,PORTRAITS.size())]))

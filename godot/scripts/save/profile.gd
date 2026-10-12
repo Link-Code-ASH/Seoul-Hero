@@ -134,8 +134,10 @@ func _valid_stones(value: Variant) -> bool:
 
 func _migrate(value: Variant) -> Dictionary:
 	if not value is Dictionary or not value.get("meta") is Dictionary: return {}
-	if not HeroGuildState.number(value.get("formatVersion"),1,FORMAT_VERSION,true) or not _valid_meta(value.meta,int(value.formatVersion) < FORMAT_VERSION): return {}
+	if not HeroGuildState.number(value.get("formatVersion"),1,FORMAT_VERSION,true): return {}
 	var migrated: Dictionary = value.duplicate(true)
+	_retire_character(migrated.meta)
+	if not _valid_meta(migrated.meta,int(migrated.formatVersion) < FORMAT_VERSION): return {}
 	var version := int(migrated.formatVersion)
 	while version < FORMAT_VERSION:
 		if version == 1:
@@ -155,6 +157,28 @@ func _migrate(value: Variant) -> Dictionary:
 		else: return {}
 	migrated.formatVersion = version
 	return migrated if _valid(migrated) else {}
+
+func _retire_character(value: Dictionary) -> void:
+	# Retired content must not invalidate the rest of an existing profile.
+	if value.get("characters") is Dictionary: value.characters.erase("yoonHarin")
+	var gate: Variant = value.get("gateProgression")
+	if gate is Dictionary and gate.get("characters") is Dictionary: gate.characters.erase("yoonHarin")
+	var offline: Variant = value.get("offlineReward")
+	if offline is Dictionary: _retire_character_rewards(offline.get("pendingRewards"))
+	var guild: Variant = value.get("guild")
+	if not guild is Dictionary: return
+	if guild.get("avatarCharacterId") == "yoonHarin": guild.avatarCharacterId = "awakener"
+	if guild.get("productionTargets") is Dictionary and guild.productionTargets.get("characterId") == "yoonHarin": guild.productionTargets.characterId = "awakener"
+	if guild.get("characterAffixes") is Dictionary: guild.characterAffixes.erase("yoonHarin")
+	if guild.get("pendingAffix") is Dictionary and guild.pendingAffix.get("characterId") == "yoonHarin": guild.pendingAffix = {}
+	_retire_character_rewards(guild.get("productionCarry"))
+	_retire_character_rewards(guild.get("pendingRewards"))
+	if guild.get("jobs") is Array:
+		for job in guild.jobs:
+			if job is Dictionary: _retire_character_rewards(job.get("rewards"))
+
+func _retire_character_rewards(value: Variant) -> void:
+	if value is Dictionary and value.get("characterFragments") is Dictionary: value.characterFragments.erase("yoonHarin")
 
 func _migrate_economy(value: Dictionary) -> void:
 	var guild: Dictionary = value.guild
@@ -231,6 +255,8 @@ func restore_run() -> HeroRun:
 	if payload.is_empty(): return null
 	var state: Dictionary = _decode(payload.state)
 	if meta.statistics.get("lastRun",{}).get("runId","") == state.run_id: return null
+	# Keep checkpoint inventory, health and earned rewards; only replace its actor.
+	if state.get("setup") is Dictionary and state.setup.get("character") == "yoonHarin": state.setup.character = "awakener"
 	if not state.has("setup") or not Content.data.characters.has(state.setup.get("character", "")) or not Content.data.maps.has(state.setup.get("map", "")) or not Content.data.weapons.has(state.setup.get("weapon", "")): return null
 	if state.get("phase", "") not in ["waveActive","postWave","shop","paused","revivalChoice"]: return null
 	var run := HeroRun.new(Content.data, state.setup, meta)

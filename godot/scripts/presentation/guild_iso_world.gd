@@ -17,7 +17,7 @@ const TOP := 4.0
 const ART_SIZE := Vector2(512,448)
 const FLOOR_CENTER := Vector2(256,308)
 const HALF := Vector2(200,100)
-const STAFF_ACTORS := ["hanSeoa","awakener","kangTaehoon","parkDojun","yoonHarin"]
+const STAFF_ACTORS := ["hanSeoa","awakener","kangTaehoon","parkDojun"]
 const FACILITY_NAMES := {
 	"office":"운영실", "research":"연구실", "expedition":"탐험부", "production":"생산실",
 	"recovery":"회복실", "workshop":"장비공방", "revival":"생환석 제조실", "analysis":"분석실"

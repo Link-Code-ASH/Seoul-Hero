@@ -1,0 +1,162 @@
+{
+  "approval": {
+    "date": "2026-10-12",
+    "scope": "10 concepts and v02 artwork approved; game integration with names, backgrounds and unique abilities authorized"
+  },
+  "reference": {
+    "path": "assets/characters-sd/song_sd_01.png",
+    "role": "style, proportions and EXACT subtle camera/head/body/gaze direction"
+  },
+  "tool": "built-in image_gen",
+  "transparent_background": true,
+  "runtime": {
+    "connected": true,
+    "revision": "v02",
+    "definitions": "src/data/characters/index.ts",
+    "images": "src/data/images.ts",
+    "visualProfiles": "godot/data/visuals/actors.json",
+    "newCharactersInitiallyUnlocked": true
+  },
+  "characters": [
+    {
+      "id": "lee_somin",
+      "characterId": "leeSomin",
+      "imageId": "leeSominSD",
+      "name": "이소민",
+      "age": 24,
+      "gender": "female",
+      "occupation": "편의점 야간 근무자",
+      "file": "lee_somin_sd_01.png",
+      "status": "complete",
+      "subject": "Lee Somin, a Korean woman age 24 working the night shift at a Sinchon convenience store while studying. Alert despite mildly sleepy eyelids; calm focused brown eyes directed down-right, closed small mouth. Black hair in a small high round bun with two simple loose fringe chunks; thin round glasses with entirely clear lenses and visible directional pupils. Lime-green SHORT work vest over ivory T-shirt, tiny black pants, two little white sneakers. One small blank rectangular badge, absolutely no writing. Palette lime/ivory/charcoal. No held items; no headset.",
+      "promptFile": "prompts/lee_somin-v02.txt",
+      "revision": "v02"
+    },
+    {
+      "id": "jung_minseok",
+      "characterId": "jungMinseok",
+      "imageId": "jungMinseokSD",
+      "name": "정민석",
+      "age": 35,
+      "gender": "male",
+      "occupation": "중소기업 경리 담당",
+      "file": "jung_minseok_sd_01.png",
+      "status": "complete",
+      "subject": "Jung Minseok, a Korean man age 35, Euljiro small-company accounting clerk after month-end work. Meticulous with dry humor; thin eyebrows, calm focused brown eyes down-right, one corner of his CLOSED mouth slightly raised. Smooth neat black 7:3 side-part showing forehead, compact rounded hair silhouette, no wild spikes, no glasses. Bright ivory shirt, SHORT sand-beige knitted V-neck vest, slightly loose wine-red tie, tiny charcoal trousers and two tiny brown dress shoes. Palette sand/wine/charcoal. Extremely short SD legs, not a tall office adult. No briefcase, calculator, pen or phone.",
+      "promptFile": "prompts/jung_minseok-v02.txt",
+      "revision": "v02"
+    },
+    {
+      "id": "oh_jieun",
+      "characterId": "ohJieun",
+      "imageId": "ohJieunSD",
+      "name": "오지은",
+      "age": 38,
+      "gender": "female",
+      "occupation": "지하철 차량 정비 기사",
+      "file": "oh_jieun_sd_01.png",
+      "status": "complete",
+      "subject": "Oh Jieun, a Korean woman age 38, Seoul subway vehicle maintenance technician before the first train. Straight eyebrows, observant focused brown eyes directed down-right, determined CLOSED little mouth. Cream rounded safety hardhat with LOW small brim ABOVE visible eyes, dark brown hair in compact low knot visible behind her neck, two simple short side hair chunks. SHORT blue-navy maintenance coverall with only two light-gray reflective bands, tiny distinct black work boots; no tactical pockets or straps. Palette blue-navy/cream/gray. Both empty hands visible without tools. No orange rescue jacket, beard, wrench or weapon.",
+      "promptFile": "prompts/oh_jieun-v02.txt",
+      "revision": "v02"
+    },
+    {
+      "id": "moon_taeo",
+      "characterId": "moonTaeo",
+      "imageId": "moonTaeoSD",
+      "name": "문태오",
+      "age": 29,
+      "gender": "male",
+      "occupation": "동네 제빵사",
+      "file": "moon_taeo_sd_01.png",
+      "status": "complete",
+      "subject": "Moon Taeo, a Korean man age 29, a Seongsu neighborhood baker who starts before dawn. Relaxed eyebrows, warm brown eyes focused down-right, restrained confident CLOSED small smile. Low rounded ivory baker cap, a few chestnut curly fringe chunks below it, eyes completely visible. Ivory SHORT baker work shirt with simple buttons, cocoa-brown SHORT waist apron from waist to hips only, tiny dark pants and two tiny cream work shoes. Palette ivory/cocoa/chestnut. Compact cute head60% body, apron never makes legs longer or hides feet. No bread, tray, flour cloud or utensils.",
+      "promptFile": "prompts/moon_taeo-v02.txt",
+      "revision": "v02"
+    },
+    {
+      "id": "kim_migyeong",
+      "characterId": "kimMigyeong",
+      "imageId": "kimMigyeongSD",
+      "name": "김미경",
+      "age": 54,
+      "gender": "female",
+      "occupation": "시장 반찬가게 운영자",
+      "file": "kim_migyeong_sd_01.png",
+      "status": "complete",
+      "subject": "Kim Migyeong, a Korean woman age 54 running a Mangwon Market side-dish shop. Outspoken and considerate, rounded mature cheeks, gentle lifted mouth corners, clear brown eyes down-right; age shown with restrained facial lines, not exaggerated old age. SHORT round permed dark hair with a few gray chunks, low dark-green fabric headband above eyes. Coral-pink square BIB apron with prominent broad chest rectangle over cream blouse; apron ends at hips, tiny charcoal pants and two tiny comfortable dark-green shoes visible. Palette coral/cream/dark-green. Big round perm is her identifying silhouette. No food, shopping basket, cookware or pattern/text on apron.",
+      "promptFile": "prompts/kim_migyeong-v02.txt",
+      "revision": "v02"
+    },
+    {
+      "id": "bae_seongho",
+      "characterId": "baeSeongho",
+      "imageId": "baeSeonghoSD",
+      "name": "배성호",
+      "age": 47,
+      "gender": "male",
+      "occupation": "주택가 택배 기사",
+      "file": "bae_seongho_sd_01.png",
+      "status": "complete",
+      "subject": "Bae Seongho, a Korean man age 47, parcel driver familiar with Guro neighborhood streets. Optimistic but punctual, broad eyebrows, calm small CLOSED smile, lightly sun-tanned warm skin, brown eyes aimed down-right. Short black hair under faded brick-red baseball cap with short brim ABOVE visible eyes, compact rounded hat silhouette. Brick-red SHORT open work vest over blue-gray polo shirt, tiny dark charcoal trousers, two tiny gray sneakers. Palette brick-red/blue-gray/charcoal. Everyday civilian delivery uniform, no purple hood, no magical jewelry/tactical straps. Both hands empty, absolutely no parcel, bag, phone or truck.",
+      "promptFile": "prompts/bae_seongho-v02.txt",
+      "revision": "v02"
+    },
+    {
+      "id": "cha_yujun",
+      "characterId": "chaYujun",
+      "imageId": "chaYujunSD",
+      "name": "차유준",
+      "age": 22,
+      "gender": "male",
+      "occupation": "건축학과 대학생",
+      "file": "cha_yujun_sd_01.png",
+      "status": "complete",
+      "subject": "Cha Yujun, a Korean man age 22, Seoul architecture student after a night in the studio. Curious slightly lifted eyebrows, interested brown eyes aimed down-right, focused little CLOSED mouth. Flat black knit beanie with asymmetric light-brown fringe below it; beanie stops above eyes. One compact headphone set around neck, not held. Lavender SHORT roomy varsity jacket with simple cream sleeve blocks, cream T-shirt, tiny wide charcoal trousers and two little white sneakers. Palette lavender/cream/black. Cute very short SD body despite loose jacket; no hoodie, tactical straps, blueprint, laptop, pen or school logo.",
+      "promptFile": "prompts/cha_yujun-v02.txt",
+      "revision": "v02"
+    },
+    {
+      "id": "baek_nari",
+      "characterId": "baekNari",
+      "imageId": "baekNariSD",
+      "name": "백나리",
+      "age": 31,
+      "gender": "female",
+      "occupation": "미용실 디자이너",
+      "file": "baek_nari_sd_01.png",
+      "status": "complete",
+      "subject": "Baek Nari, a Korean woman age 31, a confident Yeonnam salon stylist. Fine arched eyebrows, assertive small CLOSED smile, clear dark-brown eyes focused down-right. Strong asymmetrical PIXIE CUT: short on one side and a long geometric fringe chunk on the other; muted rose-brown hair, eyes not obscured. One tiny silver ear cuff. Charcoal SHORT salon tunic with broad pale-lilac neckline and a simple pale-lilac waist color plane, tiny black trousers and two little black loafers. Palette charcoal/lilac/rose-brown. No apron, long robe, exposed midriff, scissors, comb, hair dryer or floating tools.",
+      "promptFile": "prompts/baek_nari-v02.txt",
+      "revision": "v02"
+    },
+    {
+      "id": "im_gicheol",
+      "characterId": "imGicheol",
+      "imageId": "imGicheolSD",
+      "name": "임기철",
+      "age": 58,
+      "gender": "male",
+      "occupation": "아파트 관리 기사",
+      "file": "im_gicheol_sd_01.png",
+      "status": "complete",
+      "subject": "Im Gicheol, a Korean man age 58, maintenance caretaker in an older Seoul apartment complex. Patient meticulous face, gently lowered brows, few fine eye-corner lines, short neat gray MOUSTACHE only, no full beard; warm clear brown eyes directed down-right, gentle CLOSED mouth. Very short dark-gray top hair with WHITE bands at both sides, LOW compact head-hair silhouette. Dark-teal SHORT zip-front work cardigan with low upright collar and clearly simple center zipper over navy polo shirt; tiny black pants, two little work shoes. Palette dark-teal/navy/gray-white. No hardhat, rescue coat, tool belt, wrench or handheld object. Maintain the same tiny SD body as Song.",
+      "promptFile": "prompts/im_gicheol-v02.txt",
+      "revision": "v02"
+    },
+    {
+      "id": "seo_hyejin",
+      "characterId": "seoHyejin",
+      "imageId": "seoHyejinSD",
+      "name": "서혜진",
+      "age": 43,
+      "gender": "female",
+      "occupation": "공공도서관 사서",
+      "file": "seo_hyejin_sd_01.png",
+      "status": "complete",
+      "subject": "Seo Hyejin, a Korean woman age 43, Jongno public-library librarian. Patient and quietly decisive, smooth gentle eyebrows, restrained kind CLOSED smile; brown pupils clearly looking down-right behind thin RECTANGULAR glasses with entirely clear lenses. Neat straight dark-brown hair in LOW half-up style, two orderly side-hair blocks beside ears, no fluffy bob, flower or headset. Burgundy SHORT soft V-neck cardigan with two simple buttons over cream shirt with tiny collar, tiny charcoal trousers, two little chestnut flats. Palette burgundy/cream/dark-brown. Extremely short SD limbs and readable directional eyes. No book, tote, pen, name text or magical accessories.",
+      "promptFile": "prompts/seo_hyejin-v02.txt",
+      "revision": "v02"
+    }
+  ]
+}

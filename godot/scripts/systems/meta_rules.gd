@@ -8,8 +8,10 @@ static func initialize(data: Dictionary, meta: Dictionary) -> void:
 	if not meta.guild.has("facilities"): meta.guild = HeroGuildState.create(data,0.0)
 	if not meta.gateProgression.has("firstClears"): meta.gateProgression.firstClears = {}
 	_initialize_offline(meta)
+	# Added starter characters become usable on existing profiles without replacing progress.
 	for id in data.characters:
 		if not meta.characters.has(id): meta.characters[id] = {"unlocked":id in data.draws.starter.characters,"fragments":0,"breakthrough":0}
+		elif id in data.draws.starter.characters: meta.characters[id].unlocked = true
 	for id in data.weapons:
 		if not meta.sharedWeapons.has(id): meta.sharedWeapons[id] = {"unlocked":id in data.draws.starter.weapons,"fragments":0,"level":0}
 	for id in data.blessings:

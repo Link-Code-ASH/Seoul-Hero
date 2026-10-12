@@ -84,7 +84,7 @@ func _preview() -> void:
 	HeroUI.image(opening_box,Content.trimmed_texture("supplyOpeningBurst"),200,52)
 	screens["supply-opening"] = opening
 	if stress:
-		for id in ["parkDojun","yoonHarin"]:
+		for id in ["parkDojun"]:
 			var character_draft := draft.duplicate(); character_draft.character = id; character_draft.characterPage = 1
 			screens["character-"+id] = HeroGateScreen.build(character_draft,2,noop,noop,noop)
 		var item_ids: Array = Content.data.items.keys()

@@ -32,6 +32,8 @@ export class RunSnapshotStore {
       const run = snapshot.state;
       const spawn = snapshot.spawn;
       if (!record(run) || !record(spawn) || !record(run.player)) return null;
+      // Keep an in-progress run usable after retiring this character.
+      if (run.characterId === 'yoonHarin') run.characterId = 'awakener';
       if (typeof run.characterId !== 'string' || !Object.hasOwn(characters, run.characterId) ||
           typeof run.mapId !== 'string' || !Object.hasOwn(maps, run.mapId) ||
           typeof run.startingWeaponId !== 'string' || !Object.hasOwn(weapons, run.startingWeaponId)) return null;

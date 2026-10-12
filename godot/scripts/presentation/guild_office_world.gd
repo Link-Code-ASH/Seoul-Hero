@@ -2,7 +2,7 @@ class_name HeroGuildOfficeWorld
 extends Node2D
 
 # Approved front-view room art and stable inhabitants. UI owns clipping, scroll and taps.
-const STAFF_ACTORS := ["hanSeoa","awakener","kangTaehoon","parkDojun","yoonHarin"]
+const STAFF_ACTORS := ["hanSeoa","awakener","kangTaehoon","parkDojun"]
 const COLUMNS := 3
 const LEFT := 24.0
 const GAP := 8.0

@@ -147,54 +147,255 @@
       },
       "source": "park_sd_01.png"
     },
-    "yoonHarin": {
+    "leeSomin": {
       "rig": "sd",
       "height": 98,
       "displayScale": 0.8,
-      "sprite": "res://assets/characters-sd/yoon_sd_01.png",
-      "portrait": "res://assets/characters-sd/yoon_sd_01.png",
-      "region": [
-        237,
-        93,
-        798,
-        1118
+      "sprite": "res://assets/characters-sd/seoul-civilians-01/lee_somin_sd_01.png",
+      "portrait": "res://assets/characters-sd/seoul-civilians-01/lee_somin_sd_01.png",
+      "region": [301,60,689,1174],
+      "shadow": [54, 14],
+      "feetTop": 0.852,
+      "footLift": 0.035,
+      "footStride": 0.05,
+      "legSplit": 0.475,
+      "handMotion": 0.016,
+      "handRegions": [
+        [0.128,0.719,0.187,0.124],
+        [0.678,0.723,0.145,0.117]
       ],
-      "shadow": [
-        54,
-        14
+      "bounce": 2.2,
+      "cadence": 2.2,
+      "sockets": {
+        "impact": [0, -0.45],
+        "muzzle": [0, -0.45]
+      },
+      "source": "seoul-civilians-01/lee_somin_sd_01.png"
+    },
+    "jungMinseok": {
+      "rig": "sd",
+      "height": 98,
+      "displayScale": 0.8,
+      "sprite": "res://assets/characters-sd/seoul-civilians-01/jung_minseok_sd_01.png",
+      "portrait": "res://assets/characters-sd/seoul-civilians-01/jung_minseok_sd_01.png",
+      "region": [250,112,741,1094],
+      "shadow": [54, 14],
+      "feetTop": 0.847,
+      "footLift": 0.035,
+      "footStride": 0.05,
+      "legSplit": 0.503,
+      "handMotion": 0.016,
+      "handRegions": [
+        [0.19,0.756,0.171,0.1],
+        [0.683,0.763,0.116,0.089]
       ],
-      "feetTop": 0.888,
+      "bounce": 2.2,
+      "cadence": 2.2,
+      "sockets": {
+        "impact": [0, -0.45],
+        "muzzle": [0, -0.45]
+      },
+      "source": "seoul-civilians-01/jung_minseok_sd_01.png"
+    },
+    "ohJieun": {
+      "rig": "sd",
+      "height": 98,
+      "displayScale": 0.8,
+      "sprite": "res://assets/characters-sd/seoul-civilians-01/oh_jieun_sd_01.png",
+      "portrait": "res://assets/characters-sd/seoul-civilians-01/oh_jieun_sd_01.png",
+      "region": [261,92,721,1124],
+      "shadow": [54, 14],
+      "feetTop": 0.822,
+      "footLift": 0.035,
+      "footStride": 0.05,
+      "legSplit": 0.508,
+      "handMotion": 0.016,
+      "handRegions": [
+        [0.173,0.755,0.172,0.095],
+        [0.682,0.764,0.133,0.085]
+      ],
+      "bounce": 2.2,
+      "cadence": 2.2,
+      "sockets": {
+        "impact": [0, -0.45],
+        "muzzle": [0, -0.45]
+      },
+      "source": "seoul-civilians-01/oh_jieun_sd_01.png"
+    },
+    "moonTaeo": {
+      "rig": "sd",
+      "height": 98,
+      "displayScale": 0.8,
+      "sprite": "res://assets/characters-sd/seoul-civilians-01/moon_taeo_sd_01.png",
+      "portrait": "res://assets/characters-sd/seoul-civilians-01/moon_taeo_sd_01.png",
+      "region": [225,107,805,1100],
+      "shadow": [54, 14],
+      "feetTop": 0.857,
+      "footLift": 0.035,
+      "footStride": 0.05,
+      "legSplit": 0.506,
+      "handMotion": 0.016,
+      "handRegions": [
+        [0.204,0.731,0.168,0.122],
+        [0.663,0.725,0.122,0.114]
+      ],
+      "bounce": 2.2,
+      "cadence": 2.2,
+      "sockets": {
+        "impact": [0, -0.45],
+        "muzzle": [0, -0.45]
+      },
+      "source": "seoul-civilians-01/moon_taeo_sd_01.png"
+    },
+    "kimMigyeong": {
+      "rig": "sd",
+      "height": 98,
+      "displayScale": 0.8,
+      "sprite": "res://assets/characters-sd/seoul-civilians-01/kim_migyeong_sd_01.png",
+      "portrait": "res://assets/characters-sd/seoul-civilians-01/kim_migyeong_sd_01.png",
+      "region": [245,101,784,1121],
+      "shadow": [54, 14],
+      "feetTop": 0.855,
+      "footLift": 0.035,
+      "footStride": 0.05,
+      "legSplit": 0.493,
+      "handMotion": 0.016,
+      "handRegions": [
+        [0.193,0.755,0.17,0.093],
+        [0.679,0.736,0.116,0.091]
+      ],
+      "bounce": 2.2,
+      "cadence": 2.2,
+      "sockets": {
+        "impact": [0, -0.45],
+        "muzzle": [0, -0.45]
+      },
+      "source": "seoul-civilians-01/kim_migyeong_sd_01.png"
+    },
+    "baeSeongho": {
+      "rig": "sd",
+      "height": 98,
+      "displayScale": 0.8,
+      "sprite": "res://assets/characters-sd/seoul-civilians-01/bae_seongho_sd_01.png",
+      "portrait": "res://assets/characters-sd/seoul-civilians-01/bae_seongho_sd_01.png",
+      "region": [237,97,782,1123],
+      "shadow": [54, 14],
+      "feetTop": 0.839,
+      "footLift": 0.035,
+      "footStride": 0.05,
+      "legSplit": 0.5,
+      "handMotion": 0.016,
+      "handRegions": [
+        [0.151,0.688,0.174,0.136],
+        [0.694,0.694,0.127,0.121]
+      ],
+      "bounce": 2.2,
+      "cadence": 2.2,
+      "sockets": {
+        "impact": [0, -0.45],
+        "muzzle": [0, -0.45]
+      },
+      "source": "seoul-civilians-01/bae_seongho_sd_01.png"
+    },
+    "chaYujun": {
+      "rig": "sd",
+      "height": 98,
+      "displayScale": 0.8,
+      "sprite": "res://assets/characters-sd/seoul-civilians-01/cha_yujun_sd_01.png",
+      "portrait": "res://assets/characters-sd/seoul-civilians-01/cha_yujun_sd_01.png",
+      "region": [293,105,689,1103],
+      "shadow": [54, 14],
+      "feetTop": 0.877,
+      "footLift": 0.035,
+      "footStride": 0.05,
+      "legSplit": 0.47,
+      "handMotion": 0.016,
+      "handRegions": [
+        [0.125,0.758,0.168,0.091],
+        [0.671,0.763,0.138,0.087]
+      ],
+      "bounce": 2.2,
+      "cadence": 2.2,
+      "sockets": {
+        "impact": [0, -0.45],
+        "muzzle": [0, -0.45]
+      },
+      "source": "seoul-civilians-01/cha_yujun_sd_01.png"
+    },
+    "baekNari": {
+      "rig": "sd",
+      "height": 98,
+      "displayScale": 0.8,
+      "sprite": "res://assets/characters-sd/seoul-civilians-01/baek_nari_sd_01.png",
+      "portrait": "res://assets/characters-sd/seoul-civilians-01/baek_nari_sd_01.png",
+      "region": [248,63,771,1157],
+      "shadow": [54, 14],
+      "feetTop": 0.841,
       "footLift": 0.035,
       "footStride": 0.05,
       "legSplit": 0.492,
       "handMotion": 0.016,
       "handRegions": [
-        [
-          0.2,
-          0.73,
-          0.17,
-          0.17
-        ],
-        [
-          0.68,
-          0.73,
-          0.16,
-          0.17
-        ]
+        [0.182,0.686,0.18,0.15],
+        [0.651,0.697,0.14,0.135]
       ],
       "bounce": 2.2,
       "cadence": 2.2,
       "sockets": {
-        "impact": [
-          0,
-          -0.45
-        ],
-        "muzzle": [
-          0,
-          -0.45
-        ]
+        "impact": [0, -0.45],
+        "muzzle": [0, -0.45]
       },
-      "source": "yoon_sd_01.png"
+      "source": "seoul-civilians-01/baek_nari_sd_01.png"
+    },
+    "imGicheol": {
+      "rig": "sd",
+      "height": 98,
+      "displayScale": 0.8,
+      "sprite": "res://assets/characters-sd/seoul-civilians-01/im_gicheol_sd_01.png",
+      "portrait": "res://assets/characters-sd/seoul-civilians-01/im_gicheol_sd_01.png",
+      "region": [260,110,704,1101],
+      "shadow": [54, 14],
+      "feetTop": 0.844,
+      "footLift": 0.035,
+      "footStride": 0.05,
+      "legSplit": 0.52,
+      "handMotion": 0.016,
+      "handRegions": [
+        [0.166,0.755,0.178,0.1],
+        [0.702,0.763,0.134,0.09]
+      ],
+      "bounce": 2.2,
+      "cadence": 2.2,
+      "sockets": {
+        "impact": [0, -0.45],
+        "muzzle": [0, -0.45]
+      },
+      "source": "seoul-civilians-01/im_gicheol_sd_01.png"
+    },
+    "seoHyejin": {
+      "rig": "sd",
+      "height": 98,
+      "displayScale": 0.8,
+      "sprite": "res://assets/characters-sd/seoul-civilians-01/seo_hyejin_sd_01.png",
+      "portrait": "res://assets/characters-sd/seoul-civilians-01/seo_hyejin_sd_01.png",
+      "region": [264,125,735,1079],
+      "shadow": [54, 14],
+      "feetTop": 0.857,
+      "footLift": 0.035,
+      "footStride": 0.05,
+      "legSplit": 0.493,
+      "handMotion": 0.016,
+      "handRegions": [
+        [0.196,0.758,0.161,0.101],
+        [0.664,0.753,0.131,0.096]
+      ],
+      "bounce": 2.2,
+      "cadence": 2.2,
+      "sockets": {
+        "impact": [0, -0.45],
+        "muzzle": [0, -0.45]
+      },
+      "source": "seoul-civilians-01/seo_hyejin_sd_01.png"
     }
   },
   "enemies": {
