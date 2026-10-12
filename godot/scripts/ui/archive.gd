@@ -450,16 +450,19 @@ static func _details(root: Control, view: Dictionary, definition: Dictionary) ->
 			text = definition.description if page == 0 else definition.penaltyLabel if page == 1 else definition.benefitLabel
 			footer = "패널티와 베네핏은 함께 자동 적용 · 일요일 05:00 갱신"
 		"blessings":
-			heading = ["단군의 축복","단계당 효과","출동 전 편성"][page]
+			heading = ["단군의 축복","단계당 효과" if Content.enabled("blessingLevels") else "적용 효과","출동 전 편성"][page]
 			if page == 0: text = definition.description
 			elif page == 1:
 				for modifier in definition.modifiers: text += _modifier(modifier) + "\n"
+				if definition.has("weaponDamageBonus"): text += "%s 무기 피해 +%s%%\n" % [HeroGateScreen.primary_family([definition.get("weaponCapability","STRUCTURE")]),number(float(definition.weaponDamageBonus)*100.0)]
 				if definition.has("structureLimitAtLevel"): text += "%d단계 설치물 한도 +1" % definition.structureLimitAtLevel
-			else:
+			elif Content.enabled("blessingLevels"):
 				var costs: Array = Content.data.growth.blessingCosts
 				var steps: Array = costs.slice(1).map(func(cost): return str(int(cost)))
 				text = "%d조각으로 해금\n성장 비용  %s\n최대 %d단계\n해금한 축복 1개만 Run에 적용" % [int(costs[0])," / ".join(steps),costs.size()]
-			footer = "성장 단계는 보유 조각을 사용해 올립니다."
+			else:
+				text = "협회에서 미해금 축복을 추첨해 계승\n해금한 축복 1개를 출동 전에 선택\n1단계 효과로 고정 적용"
+			footer = "성장 단계는 보유 조각을 사용해 올립니다." if Content.enabled("blessingLevels") else "축복은 계정 공용 · 출동마다 선택 가능"
 	_copy(content,heading,15,INK)
 	_copy(content,text.strip_edges(),14,BODY_INK)
 	if not footer.is_empty(): _copy(content,footer,12,ACCENT_INK)

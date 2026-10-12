@@ -53,10 +53,11 @@ static func update(run: HeroRun, dt: float, grid: HeroSpatial) -> void:
 					enemy.timer = rules.supportInterval
 			"summoner":
 				if distance > rules.rangedDistance: move(run, enemy, run.player.pos, dt)
-				# A summon rule keeps casting while few of its own minions live; without one the lifetime cap applies.
+				# Authored summon rules bound both living children and the parent's total children.
 				var rule: Dictionary = definition.get("summon",{})
 				var room := int(rules.maxSummonsPerEnemy) - int(enemy.summons)
 				if not rule.is_empty(): room = int(rule.alive) - run.enemies.filter(func(other): return other.get("parent",-1) == enemy.id and other.hp > 0).size()
+				if rule.has("total"): room = mini(room,int(rule.total) - int(enemy.summons))
 				if enemy.timer <= 0 and distance < rules.rangedDistance * 1.5 and room > 0:
 					run.audio_action("supportOrSummonCast", _audio_details(run, enemy, "cast"))
 					_visual_action(run,enemy,"supportCast","cast",rules.summonOffset,0.0,enemy.pos,"summon")

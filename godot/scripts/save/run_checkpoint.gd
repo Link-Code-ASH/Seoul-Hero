@@ -1,7 +1,7 @@
 class_name HeroRunCheckpoint
 extends RefCounted
 
-const VERSION := 4
+const VERSION := 5
 
 static func is_future(value: Variant) -> bool:
 	return value is Dictionary and (value.get("version") is int or value.get("version") is float) and int(value.version) > VERSION
@@ -25,7 +25,17 @@ static func migrate(value: Variant) -> Dictionary:
 			# A legacy file gets the same identity each time until it is rewritten.
 			result.state["run_id"] = JSON.stringify(value).sha256_text()
 			version = 4
+		elif version == 4:
+			# Do not grant today's association permit to a run already in progress.
+			result.state["revivals_used"] = 0
+			result.state["free_rerolls_remaining"] = 0
+			version = 5
 	result.version = version
+	for key in ["revivals_used","free_rerolls_remaining"]:
+		var count: Variant = result.state.get(key)
+		if not (count is int or count is float) or not is_finite(float(count)): return {}
+		if float(count) < 0 or float(count) > 1 or float(count) != floorf(float(count)): return {}
+		result.state[key] = int(count)
 	if not result.state.get("run_id") is String or result.state.run_id.length() not in [32,64] or not result.state.run_id.is_valid_hex_number(false): return {}
 	if not HeroGuildSupport.valid(Content.data,result.state.get("guild_support")): return {}
 	var runtime: Variant = result.state.get("item_state",{})

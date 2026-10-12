@@ -5,14 +5,17 @@ import type { Wave } from './types';
 export const GATE_CONFIG = {
   firstClearReward: 100,
   failureRewardPerCompletedWave: 1,
-  hpPerDepth: 0.06,
-  damagePerDepth: 0.035,
-  spawnPerDepth: 0.02,
+  hpPerDepth: 0.03,
+  hpStepEveryDepth: 5,
+  hpStepMultiplier: 1.08,
+  damagePerDepth: 0.025,
+  spawnPerDepth: 0.01,
   speedPerDepth: 0.001,
-  speedMultiplierCap: 1.1,
-  spawnMultiplierCap: 3,
+  speedMultiplierCap: 1.06,
+  spawnMultiplierCap: 1.35,
   eliteChancePerDepth: 0.002,
-  eliteChanceCap: 0.25,
+  eliteChanceCap: 0.12,
+  eliteModifierCycle: ['FAST', 'ARMORED', 'BERSERK', 'CURSED_AURA'] as readonly EliteModifierId[],
 } as const;
 
 export interface GateMilestone {
@@ -23,11 +26,8 @@ export interface GateMilestone {
   spawnMultiplier?: number;
 }
 
-/** Ten-depth difficulty beats are cumulative. The cast of a map never changes with depth. */
-export const GATE_MILESTONES: readonly GateMilestone[] = [
-  { depth: 10, eliteModifiers: ['ARMORED'], featuredEliteModifiers: ['CURSED_AURA'], spawnMultiplier: 1.08 },
-  { depth: 20, eliteModifiers: ['BERSERK', 'REGENERATING'], spawnMultiplier: 1.08 },
-];
+/** The repeating five-depth HP beat and ordinary elite cycle live in GATE_CONFIG; no cumulative modifiers. */
+export const GATE_MILESTONES: readonly GateMilestone[] = [];
 export interface EnemyDifficulty {
   hp: number;
   damage: number;
@@ -41,16 +41,16 @@ export interface EnemyDifficulty {
 export function gateDifficulty(depth: number): EnemyDifficulty {
   const d = Math.max(1, Math.floor(depth));
   const offset = d - 1;
-  const milestones = GATE_MILESTONES.filter(entry => entry.depth <= d);
-  const milestoneSpawn = milestones.reduce((value, entry) => value * (entry.spawnMultiplier ?? 1), 1);
+  const block = Math.floor(d / GATE_CONFIG.hpStepEveryDepth);
+  const eliteModifier = GATE_CONFIG.eliteModifierCycle[Math.max(0, block - 1) % GATE_CONFIG.eliteModifierCycle.length]!;
   return {
-    hp: 1 + offset * GATE_CONFIG.hpPerDepth,
+    hp: (1 + offset * GATE_CONFIG.hpPerDepth) * GATE_CONFIG.hpStepMultiplier ** block,
     damage: 1 + offset * GATE_CONFIG.damagePerDepth,
     speed: Math.min(GATE_CONFIG.speedMultiplierCap, 1 + offset * GATE_CONFIG.speedPerDepth),
-    spawn: Math.min(GATE_CONFIG.spawnMultiplierCap, (1 + offset * GATE_CONFIG.spawnPerDepth) * milestoneSpawn),
+    spawn: Math.min(GATE_CONFIG.spawnMultiplierCap, 1 + offset * GATE_CONFIG.spawnPerDepth),
     reward: 1,
     eliteChance: Math.min(GATE_CONFIG.eliteChanceCap, offset * GATE_CONFIG.eliteChancePerDepth),
-    eliteModifiers: [...new Set(milestones.flatMap(entry => entry.eliteModifiers ?? []))],
+    eliteModifiers: [eliteModifier],
   };
 }
 
@@ -59,7 +59,7 @@ const WEEK_SECONDS = 604_800;
 export const weekNumber = (unixSeconds: number): number => Math.floor((unixSeconds - 244_800) / WEEK_SECONDS);
 
 /**
- * One weekly monster for every map: it leads the listed Waves with `share` of the Wave weight
+ * One weekly monster for every map: it leads the listed Waves with its `shares` entry of the Wave weight
  * and the authored slots shrink to fit. The pool is a shuffle bag: every pool.length weeks each
  * monster comes up once in a random order, and no monster comes up two weeks in a row.
  *
@@ -74,6 +74,7 @@ export const WEEKLY_MONSTER = {
   reserve: ['swarm', 'ironBoar', 'chainWarden', 'sentinel', 'paperCrane', 'tileTortoise', 'fenceSerpent', 'riverEel', 'lampDrop', 'borderDrop'],
   waves: [3, 6, 9, 12, 15, 18],
   share: 0.35,
+  shares: { lampFirefly: 0.35, summoner: 0.10, splitter: 0.10 },
 } as const;
 
 /** The pool in the order one bag deals it. */
@@ -108,21 +109,19 @@ export function weeklyMonster(week: number, pool: readonly string[] = WEEKLY_MON
 export const runElite = (pool: readonly string[] | undefined, roll: number): string | undefined =>
   pool?.length ? pool[Math.min(pool.length - 1, Math.floor(roll * pool.length))] : undefined;
 
-/** Wave as one Run plays it: the weekly lead, the Run's elite body and the depth's elite modifiers. */
+/** Wave as one Run plays it: the weekly lead and the Run's fixed elite body. */
 export function resolveGateWave(wave: Wave, depth: number, run: { week?: number; eliteId?: string } = {}): Wave {
-  const milestones = GATE_MILESTONES.filter(entry => entry.depth <= depth);
   let enemies = [...wave.enemies];
   const weekly = run.week === undefined || !WEEKLY_MONSTER.enabled ? undefined : weeklyMonster(run.week);
   if (weekly && (WEEKLY_MONSTER.waves as readonly number[]).includes(wave.waveNumber) && !enemies.some(entry => entry.enemyId === weekly)) {
     const total = enemies.reduce((sum, entry) => sum + entry.weight, 0);
-    enemies = [{ enemyId: weekly, weight: total * WEEKLY_MONSTER.share }, ...enemies.map(entry => ({ ...entry, weight: entry.weight * (1 - WEEKLY_MONSTER.share) }))];
+    const share = (WEEKLY_MONSTER.shares as Readonly<Record<string, number>>)[weekly] ?? WEEKLY_MONSTER.share;
+    enemies = [{ enemyId: weekly, weight: total * share }, ...enemies.map(entry => ({ ...entry, weight: entry.weight * (1 - share) }))];
   }
-  const featuredModifiers = milestones.flatMap(entry => entry.featuredEliteModifiers ?? []);
   const elites = wave.elites?.filter(elite => (elite.minDepth ?? 1) <= depth).map(elite => {
     if (!elite.featured) return elite;
     const enemyId = run.eliteId ?? elite.enemyId, body = enemyDefinitions[enemyId];
-    return { ...elite, enemyId, hpMultiplier: elite.hp && body ? elite.hp / body.maxHp : elite.hpMultiplier,
-      modifiers: [...new Set([...(elite.modifiers ?? []), ...featuredModifiers])] };
+    return { ...elite, enemyId, hpMultiplier: elite.hp && body ? elite.hp / body.maxHp : elite.hpMultiplier };
   });
   return { ...wave, enemies, ...(elites ? { elites } : {}) };
 }

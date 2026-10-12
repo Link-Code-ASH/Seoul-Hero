@@ -5,7 +5,7 @@ import crypto from 'node:crypto';
 import { fileURLToPath } from 'node:url';
 import ts from 'typescript';
 
-// Evaluate the existing authored TS data, including generated Lv.10 progressions.
+// Evaluate the existing authored TS data, including explicit Lv.1–10 progressions.
 // No browser runtime, game state, secrets or local saves are copied.
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const target = path.join(root, 'godot');
@@ -156,7 +156,7 @@ const content = {
   growth: use('data/economy','ECONOMY_GROWTH'), offline: use('data/economy','ECONOMY_OFFLINE'), supply: use('data/economy','ECONOMY_SUPPLY'), daily: use('data/economy','ECONOMY_DAILY'), region: use('data/economy','ECONOMY_REGION'),
   guildManagement: use('data/guildManagement','GUILD_MANAGEMENT_DATA'), features: use('data/features','GAME_FEATURES'), draws: use('data/features','GAME_DRAWS'), runLoot: use('data/features','GAME_RUN_LOOT'),
   upgrades: use('data/economy','ECONOMY_UPGRADES'), guildRoom: use('data/guild','GUILD_ROOM'), guildFacilities: use('data/guild','guildFacilities'), guildPoints: use('data/guild','guildPoints'),
-  guildFootprints: use('data/guild','guildCafeFootprints'), revivalStones: use('data/revivalStones','REVIVAL_STONES'),
+  guildFootprints: use('data/guild','guildCafeFootprints'), revivalStones: use('data/revivalStones','REVIVAL_STONES'), revivalConfig: use('data/revivalStones','REVIVAL_CONFIG'),
   defaultMeta: use('state/MetaState','createDefaultMeta')(), images, weaponArt, premiumUI, sfx, bgm, audioConfig, audioConnections,
 };
 fs.mkdirSync(path.join(target, 'data'), { recursive: true });

@@ -75,7 +75,10 @@ func update(run: HeroRun, dt: float) -> void:
 			"bombard":
 				for i in range(int(stats.projectileCount)):
 					var position: Vector2 = target.pos + Vector2.from_angle(randf() * TAU) * i * 18.0
-					run.pending.append({"kind":"bombard","pos":origin,"target":position,"stats":stats,"context":attack,"remaining":run.data.weaponConfig.bombardVisualDuration + stats.explosionDelay + i * 0.08,"duration":run.data.weaponConfig.bombardVisualDuration + stats.explosionDelay + i * 0.08})
+					for repeat_index in range(int(stats.repeatCount)):
+						var delay: float = run.data.weaponConfig.bombardVisualDuration + stats.explosionDelay + i * 0.08 + repeat_index * stats.repeatInterval
+						# One cast shares its healing budget across every delayed impact.
+						run.pending.append({"kind":"bombard","pos":origin,"target":position,"stats":stats,"context":attack,"remaining":delay,"duration":delay})
 				run.audio_weapon(slot.id, "launch", {"attackId":attack.contextId})
 				run.event.emit("bombardAttack")
 	_process_pending(run, dt)
@@ -182,12 +185,13 @@ func _orbit(run: HeroRun, slot: Dictionary, stats: Dictionary) -> void:
 		slot.cooldown = stats.cooldown
 		slot["orbitContext"] = context(run, stats, slot.id)
 	var count := int(stats.projectileCount)
+	var hit_radius: float = run.data.weaponConfig.orbitHitRadius * stats.areaScale
 	for i in range(count):
 		var angle: float = run.combat_time * run.data.weaponConfig.orbitAngularSpeed + i * TAU / count
 		var position: Vector2 = run.player.pos + Vector2.from_angle(angle) * stats.range
-		for enemy in grid.nearby(position, run.data.weaponConfig.orbitHitRadius + 80.0):
+		for enemy in grid.nearby(position, hit_radius + 80.0):
 			var key := str(i) + ":" + str(enemy.id)
-			if enemy.pos.distance_to(position) <= run.data.weaponConfig.orbitHitRadius + enemy.radius and run.combat_time - slot.orbitHits.get(key, -999.0) >= stats.cooldown:
+			if enemy.pos.distance_to(position) <= hit_radius + enemy.radius and run.combat_time - slot.orbitHits.get(key, -999.0) >= stats.cooldown:
 				hit(run, enemy, stats.damage, slot.orbitContext,{"stage":"contact","angle":angle,"sourcePosition":position,"orbitIndex":i})
 				slot.orbitHits[key] = run.combat_time
 				run.audio_weapon(slot.id, "contact", {"attackId":slot.orbitContext.contextId})
@@ -223,10 +227,13 @@ func _place(run: HeroRun, slot: Dictionary, definition: Dictionary, stats: Dicti
 func _structures(run: HeroRun, dt: float) -> void:
 	var kept: Array = []
 	for entity in run.structures:
-		var slot: Dictionary = run.owned.filter(func(weapon): return weapon.id == entity.weapon)[0]
+		var owned: Array = run.owned.filter(func(weapon): return weapon.id == entity.weapon)
+		if owned.is_empty(): continue
+		var slot: Dictionary = owned[0]
 		var definition: Dictionary = run.data.weapons[entity.weapon]
 		var stats := run.weapon_stats(slot)
 		entity.cooldown -= dt; entity.age += dt
+		if entity.age >= stats.duration: continue
 		var remove := false
 		if entity.cooldown <= 0:
 			if definition.structure.kind == "turret":
@@ -250,8 +257,10 @@ func _structures(run: HeroRun, dt: float) -> void:
 # 협회 코인과 생환석: rolled per kill, kept for the account even when the run is lost.
 static func _drop_loot(run: HeroRun, enemy: Dictionary) -> void:
 	var rules: Dictionary = run.data.get("runLoot",{})
-	if rules.is_empty(): return
-	var tier := "boss" if enemy.get("boss",false) else "elite" if enemy.get("elite",false) else "normal"
+	# Legacy checkpoints identify descendants by parent/generation instead of the new marker.
+	if rules.is_empty() or enemy.get("summoned",false) or int(enemy.get("parent",0)) > 0 or int(enemy.get("generation",0)) > 0: return
+	# Randomly modified ordinary monsters keep the ordinary account reward tier.
+	var tier := "boss" if enemy.get("boss",false) else "elite" if enemy.get("featured",false) else "normal"
 	var coin: Dictionary = rules.coin[tier]
 	var drops: Array = []
 	if randf() < float(coin.chance): drops.append({"type":"coin","amount":int(coin.amount)})

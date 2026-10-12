@@ -34,7 +34,7 @@ export const metaUpgrades: Record<string, MetaUpgrade> = {
   fortune:{id:'fortune',name:'행운 훈련',description:'기본 Luck +2',maxLevel:5,baseCost:40,costGrowth:1.7,effect:{type:'stat',stat:'luck',operation:'add',value:2}},
   circuit:{id:'circuit',name:'흡혈 회로 취급 허가',description:'전설 아이템 흡혈 회로 상점 해금',maxLevel:1,baseCost:120,costGrowth:1,effect:{type:'unlock',target:'item',contentId:'bloodCircuit'}},
   reroll: {
-    id: 'reroll', name: '두 번째 기회', description: '한 판에 한 번 강화 후보 다시 뽑기 해금',
+    id: 'reroll', name: '두 번째 기회', description: '출동당 한 번, 무기 또는 아이템 진열을 무료로 다시 뽑습니다. 무료 사용은 유료 리롤 가격을 올리지 않습니다.',
     maxLevel: 1, baseCost: 80, costGrowth: 1,
     effect: { type: 'unlock', target: 'feature', contentId: 'reroll' },
   },

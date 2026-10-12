@@ -48,6 +48,8 @@ var item_stock: Array = []
 var weapon_stock: Array = []
 var item_rerolls := 0
 var weapon_rerolls := 0
+var free_rerolls_remaining := 0
+var revivals_used := 0
 var post_elapsed := 0.0
 var wallet_flights: Array = []
 var available_weapons: Array = []
@@ -76,11 +78,16 @@ func _init(content: Dictionary, selection: Dictionary, meta: Dictionary) -> void
 	if not data.enemies.has(str(setup.get("elite",""))): setup["elite"] = HeroRoster.draw_elite(map)
 	guild_support = HeroGuildSupport.snapshot(data,meta) if bool(data.get("features",{}).get("guild",true)) else HeroGuildSupport.empty()
 	base_modifiers = HeroMeta.modifiers(data, meta, setup)
+	free_rerolls_remaining = int(data.shop.freeRerollsPerRun) if "reroll" in meta.account.unlockedFeatureIds else 0
 	recalculate()
 	player = {"pos":Vector2.ZERO,"hp":stats.maxHp,"invulnerability":0.0,"facing":1.0,"moving":false}
 	difficulty = HeroStats.difficulty(data, int(setup.depth), map, setup.weekly)
 	owned = [{"id":setup.weapon,"level":1,"branch":"","cooldown":0.0}]
 	telemetry = HeroTelemetry.create()
+	telemetry["balanceVersionAtStart"] = str(data.balance.version)
+	telemetry["associationUpgradesAtStart"] = meta.association.upgrades.duplicate(true)
+	telemetry["startingStats"] = stats.duplicate(true)
+	telemetry["resumedCheckpoint"] = false
 	for id in data.weapons:
 		var weapon: Dictionary = data.weapons[id]
 		if weapon.get("signatureOwnerId", setup.character) != setup.character: continue
@@ -100,7 +107,8 @@ func recalculate() -> void:
 	if player != null and not player.is_empty(): player.hp = minf(stats.maxHp, player.hp / old_max * stats.maxHp)
 
 func weapon_stats(slot: Dictionary) -> Dictionary:
-	var resolved := HeroStats.resolve_weapon(data.weapons[slot.id], slot, stats, item_effects, data.weaponConfig, character.get("trait", {}))
+	var blessing: Dictionary = data.blessings.get(setup.get("blessing",""),{}) if int(setup.get("blessingLevel",0)) > 0 else {}
+	var resolved := HeroStats.resolve_weapon(data.weapons[slot.id], slot, stats, item_effects, data.weaponConfig, character.get("trait", {}), blessing)
 	resolved.damage = roundf(resolved.damage*guild_support.weaponDamageMultipliers.get(slot.id,1.0))
 	return resolved
 

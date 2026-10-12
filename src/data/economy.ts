@@ -33,7 +33,7 @@ export interface EconomyUpgrade {
 }
 function statUpgrade(id: string, name: string, stat: StatKey, value: number, major = false, softCap?: number, operation: 'add' | 'multiply' = 'add'): EconomyUpgrade {
   return { id, name, description: '협회 코인으로 영구 강화합니다. 같은 능력치를 강화할수록 비용이 고정량씩 증가합니다.',
-    maxLevel: 0, baseCost: major ? 100 : 50, costStep: major ? 20 : 10,
+    maxLevel: 0, baseCost: major ? 30 : 20, costStep: major ? 6 : 4,
     effect: { type: 'stat', stat, operation, value }, ...(softCap === undefined ? {} : { softCap }) };
 }
 function unlock(id: 'circuit' | 'reroll'): EconomyUpgrade {
@@ -42,25 +42,25 @@ function unlock(id: 'circuit' | 'reroll'): EconomyUpgrade {
     baseCost: existing.baseCost, costStep: 0, effect: existing.effect };
 }
 export const ECONOMY_UPGRADES: Record<string, EconomyUpgrade> = {
-  vitality: statUpgrade('vitality', '기초 체력', 'maxHp', 1),
-  armor: statUpgrade('armor', '방어 단련', 'armor', 0.2),
-  hpRegeneration: statUpgrade('hpRegeneration', '재생 훈련', 'hpRegeneration', 0.01),
-  power: statUpgrade('power', '마력 단련', 'damage', 0.003, true),
-  meleeDamage: statUpgrade('meleeDamage', '근접 숙련', 'meleeDamage', 0.004),
-  rangedDamage: statUpgrade('rangedDamage', '원거리 숙련', 'rangedDamage', 0.004),
-  attackSpeed: statUpgrade('attackSpeed', '공격 속도 훈련', 'attackSpeed', 0.002, true, 0.5),
-  criticalChance: statUpgrade('criticalChance', '치명타 훈련', 'criticalChance', 0.0005, true, 0.2),
-  criticalDamage: statUpgrade('criticalDamage', '급소 타격', 'criticalDamage', 0.004),
-  dodge: statUpgrade('dodge', '회피 훈련', 'dodge', 0.0003, true, 0.15),
-  lifesteal: statUpgrade('lifesteal', '생명 회수', 'lifesteal', 0.0001, true, 0.05),
-  range: statUpgrade('range', '사거리 훈련', 'range', 0.003),
-  area: statUpgrade('area', '마력 확장', 'area', 0.003),
-  duration: statUpgrade('duration', '마력 지속', 'duration', 0.003),
-  projectileSpeed: statUpgrade('projectileSpeed', '투사체 가속', 'projectileSpeed', 0.005),
-  mobility: statUpgrade('mobility', '가벼운 발걸음', 'moveSpeed', 0.002, true, 0.3, 'multiply'),
-  currencyGain: statUpgrade('currencyGain', '마력석 회수 훈련', 'currencyGain', 0.002, true, 0.5),
-  pickupRange: statUpgrade('pickupRange', '획득 반경 확장', 'pickupRange', 0.5),
-  fortune: statUpgrade('fortune', '행운 훈련', 'luck', 0.1, false, 30),
+  vitality: statUpgrade('vitality', '기초 체력', 'maxHp', 3),
+  armor: statUpgrade('armor', '방어 단련', 'armor', 2.5),
+  hpRegeneration: statUpgrade('hpRegeneration', '재생 훈련', 'hpRegeneration', 0.08),
+  power: statUpgrade('power', '마력 단련', 'damage', 0.03, true),
+  meleeDamage: statUpgrade('meleeDamage', '근접 숙련', 'meleeDamage', 0.035),
+  rangedDamage: statUpgrade('rangedDamage', '원거리 숙련', 'rangedDamage', 0.035),
+  attackSpeed: statUpgrade('attackSpeed', '공격 속도 훈련', 'attackSpeed', 0.03, true, 3),
+  criticalChance: statUpgrade('criticalChance', '치명타 훈련', 'criticalChance', 0.012, true, 0.65),
+  criticalDamage: statUpgrade('criticalDamage', '급소 타격', 'criticalDamage', 0.08),
+  dodge: statUpgrade('dodge', '회피 훈련', 'dodge', 0.03, true, 0.5),
+  lifesteal: statUpgrade('lifesteal', '생명 회수', 'lifesteal', 0.003, true, 0.12),
+  range: statUpgrade('range', '사거리 훈련', 'range', 0.03, false, 1.5),
+  area: statUpgrade('area', '마력 확장', 'area', 0.025, false, 1.5),
+  duration: statUpgrade('duration', '마력 지속', 'duration', 0.04, false, 2),
+  projectileSpeed: statUpgrade('projectileSpeed', '투사체 가속', 'projectileSpeed', 0.05, false, 2),
+  mobility: statUpgrade('mobility', '가벼운 발걸음', 'moveSpeed', 0.015, true, 0.5, 'multiply'),
+  currencyGain: statUpgrade('currencyGain', '마력석 회수 훈련', 'currencyGain', 0.03, true, 1.5),
+  pickupRange: statUpgrade('pickupRange', '획득 반경 확장', 'pickupRange', 5, false, 200),
+  fortune: statUpgrade('fortune', '행운 훈련', 'luck', 2, false, 100),
   // 자동 포탑은 협회 허가 대신 무기 조각으로 해금한다.
   circuit: unlock('circuit'), reroll: unlock('reroll'),
 };

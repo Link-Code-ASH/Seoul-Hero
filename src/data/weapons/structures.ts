@@ -1,22 +1,58 @@
 import { weaponShopCardText } from '../shopCardText';
+import { weaponBranches } from './branches';
 import type { Weapon } from '../types';
-import { expandWeaponProgression } from './progression';
-export const structureWeapons: Record<string, Weapon> = {};
-const definitions = [
-  { id: 'autoTurret', name: '자동 포탑', kind: 'turret' as const, capabilities: ['STRUCTURE','TURRET','RANGED','PROJECTILE','CAN_CRIT','HAS_RANGE'] as Weapon['capabilities'], damage: 16, cooldown: 0.82, range: 312, duration: 12, maxCount: 2, placementInterval: 6, radius: 0, color: 0x70dfff },
-  { id: 'mineLayer', name: '마력 지뢰', kind: 'mine' as const, capabilities: ['STRUCTURE','TRAP','MINE','AREA','EXPLOSIVE'] as Weapon['capabilities'], damage: 68, cooldown: 2.1, range: 1, duration: 20, maxCount: 6, placementInterval: 2.1, radius: 110, color: 0xffbd65 },
-  { id: 'manaField', name: '마력장 발생기', kind: 'aura' as const, capabilities: ['STRUCTURE','AURA','AREA','DURATION'] as Weapon['capabilities'], damage: 12, cooldown: 0.85, range: 1, duration: 7, maxCount: 2, placementInterval: 6, radius: 130, color: 0xb99bff },
-];
-for (const d of definitions) structureWeapons[d.id] = expandWeaponProgression({
-  id: d.id, name: d.name, shopCardText: weaponShopCardText[d.id]!, description: d.kind === 'turret' ? '고정 위치에서 자동 조준 발사' : d.kind === 'mine' ? '적 접촉으로 폭발하는 지뢰 설치' : '고정된 마력장에서 주기적으로 범위 피해',
-  targeting: 'nearest', behavior: 'structure', capabilities: d.capabilities, maxLevel: 6, branchAtLevel: 3,
-  structure: { kind: d.kind, maxCount: d.maxCount, placementInterval: d.placementInterval, triggerRadius: 30, sprite: d.kind === 'turret' ? 'turret' : d.kind === 'mine' ? 'mine' : 'field' },
-  base: { damage: d.damage, cooldown: d.cooldown, range: d.range, duration: d.duration, projectileCount: 1, projectileSpeed: 600, penetration: 0, projectileRadius: 6, blastRadius: d.radius },
-  levels: [{damage:d.damage*1.18},{},{damage:d.damage*1.35},{damage:d.damage*1.55},{damage:d.damage*1.75}],
-  branches: [
-    {id:'A',name:d.kind === 'turret' ? '다중 발사' : '광역 강화',description:d.kind === 'turret' ? '동시 발사 탄 수 증가' : '피해 영역 확대',levels:d.kind === 'turret' ? [{projectileCount:2},{},{},{projectileCount:2,damage:d.damage*1.65}] : [{blastRadius:d.radius*1.25},{},{},{blastRadius:d.radius*1.5,damage:d.damage*1.65}]},
-    {id:'B',name:'고속 작동',description:'공격 또는 지뢰 설치 주기 단축',levels:[{cooldown:d.cooldown*0.78},{},{},{cooldown:d.cooldown*0.6,damage:d.damage*1.65}]},
-  ], visual:{sprite:d.kind === 'turret' ? 'turretBolt' : undefined,color:d.color,shape:d.kind === 'mine' ? 'diamond' : 'hexagon'},
-});
 
-structureWeapons.autoTurret!.requiresUnlock=true;
+const definitions: Record<string, Omit<Weapon, 'branches' | 'shopCardText'>> = {
+  autoTurret: {
+    id: "autoTurret",
+    name: "자동 포탑",
+    description: "고정 위치에서 자동 조준 발사",
+    targeting: "nearest",
+    behavior: "structure",
+    capabilities: ["STRUCTURE", "TURRET", "RANGED", "PROJECTILE", "CAN_CRIT", "HAS_RANGE"],
+    maxLevel: 10,
+    branchAtLevel: 5,
+    structure: { kind: "turret", maxCount: 2, placementInterval: 6, triggerRadius: 30, sprite: "turret" },
+    base: { damage: 16, cooldown: 0.82, range: 312, duration: 12, projectileCount: 1, projectileSpeed: 600, penetration: 0, projectileRadius: 6, blastRadius: 0 },
+    visual: { sprite: "turretBolt", color: 7397375, shape: "hexagon" },
+    requiresUnlock: true,
+    // Lv.2–4 common growth; Lv.5–10 use the selected branch below.
+    levels: [{ damage: 17.6 }, { damage: 19.2 }, { damage: 20.8 }, {}, {}, {}, {}, {}, {}],
+  },
+  mineLayer: {
+    id: "mineLayer",
+    name: "마력 지뢰",
+    description: "적 접촉으로 폭발하는 지뢰 설치",
+    targeting: "nearest",
+    behavior: "structure",
+    capabilities: ["STRUCTURE", "TRAP", "MINE", "AREA", "EXPLOSIVE"],
+    maxLevel: 10,
+    branchAtLevel: 5,
+    structure: { kind: "mine", maxCount: 6, placementInterval: 2.1, triggerRadius: 30, sprite: "mine" },
+    base: { damage: 68, cooldown: 2.1, range: 1, duration: 20, projectileCount: 1, projectileSpeed: 600, penetration: 0, projectileRadius: 6, blastRadius: 110 },
+    visual: { color: 16760165, shape: "diamond" },
+    // Lv.2–4 common growth; Lv.5–10 use the selected branch below.
+    levels: [{ damage: 74.8 }, { damage: 81.6 }, { damage: 88.4 }, {}, {}, {}, {}, {}, {}],
+  },
+  manaField: {
+    id: "manaField",
+    name: "마력장 발생기",
+    description: "고정된 마력장에서 주기적으로 범위 피해",
+    targeting: "nearest",
+    behavior: "structure",
+    capabilities: ["STRUCTURE", "AURA", "AREA", "DURATION"],
+    maxLevel: 10,
+    branchAtLevel: 5,
+    structure: { kind: "aura", maxCount: 2, placementInterval: 6, triggerRadius: 30, sprite: "field" },
+    base: { damage: 12, cooldown: 0.85, range: 1, duration: 12, projectileCount: 1, projectileSpeed: 600, penetration: 0, projectileRadius: 6, blastRadius: 130 },
+    visual: { color: 12164095, shape: "hexagon" },
+    // Lv.2–4 common growth; Lv.5–10 use the selected branch below.
+    levels: [{ damage: 13.2 }, { damage: 14.4 }, { damage: 15.6 }, {}, {}, {}, {}, {}, {}],
+  },
+};
+
+export const structureWeapons: Record<string, Weapon> = Object.fromEntries(
+  Object.entries(definitions).map(([id, definition]) => [id, {
+    ...definition, shopCardText: weaponShopCardText[id]!, branches: weaponBranches[id]!,
+  }]),
+);

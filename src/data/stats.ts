@@ -8,7 +8,7 @@ export const DEFAULT_STATS = {
 export type StatKey = keyof typeof DEFAULT_STATS;
 export type PlayerStats = Record<StatKey, number>;
 export const STAT_RULES = {
-  armorScale: 100, dodgeCap: 0.75, lifestealRateCap: 0.5,
+  armorScale: 100, dodgeCap: 0.6, lifestealRateCap: 0.5,
   lifestealPerAttack: 5, lifestealMaxHpFraction: 0.05,
   minimumAttackSpeed: 0.1, maximumAttackSpeed: 10, minimumAttackInterval: 0.05,
   maximumStat: 1000000,

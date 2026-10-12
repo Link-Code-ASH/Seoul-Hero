@@ -1,6 +1,7 @@
 import type { Rarity } from './items';
 export const SHOP_CONFIG={
   itemSlots:4, weaponSlots:4,
+  freeRerollsPerRun:1,
   itemRerollBase:5, itemRerollStep:1,
   weaponRerollBase:6, weaponRerollStep:2,
   weaponPrices:{newWeapon:36,newStructure:44,upgrade:{2:18,3:23,4:29,5:36,6:43,7:48,8:55,9:62,10:69} as Record<number,number>},

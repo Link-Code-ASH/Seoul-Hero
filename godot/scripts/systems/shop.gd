@@ -135,15 +135,20 @@ static func choose_branch(run: HeroRun, branch_id: String) -> bool:
 	return false
 
 static func reroll_cost(run: HeroRun, weapon: bool) -> int:
+	if run.free_rerolls_remaining > 0: return 0
 	return int(run.data.shop.weaponRerollBase + run.weapon_rerolls * run.data.shop.weaponRerollStep) if weapon else int(run.data.shop.itemRerollBase + run.item_rerolls * run.data.shop.itemRerollStep)
 
 static func reroll(run: HeroRun, weapon: bool) -> bool:
 	if run.phase != "shop" or not run.pending_branch.is_empty() or run.currency < reroll_cost(run, weapon): return false
 	var stock: Array = run.weapon_stock if weapon else run.item_stock
-	if stock.all(func(slot): return slot.locked): return false
-	run.currency -= reroll_cost(run, weapon)
-	run.telemetry.spent += reroll_cost(run,weapon)
-	if weapon: run.weapon_rerolls += 1
+	if stock.all(func(slot): return slot.locked or slot.get("free",false)): return false
+	var cost := reroll_cost(run,weapon)
+	run.currency -= cost
+	run.telemetry.spent += cost
+	if run.free_rerolls_remaining > 0:
+		run.free_rerolls_remaining -= 1
+		run.telemetry["freeRerollsUsed"] = int(run.telemetry.get("freeRerollsUsed",0)) + 1
+	elif weapon: run.weapon_rerolls += 1
 	else: run.item_rerolls += 1
 	refresh(run, weapon)
 	run.event.emit("reroll")

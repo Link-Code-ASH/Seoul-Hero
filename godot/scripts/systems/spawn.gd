@@ -70,6 +70,8 @@ static func spawn(run: HeroRun, definition_id: String, boss: bool = false, hp_mu
 	var hp: float = definition.maxHp * bonus.hp * run.difficulty.hp * minf(curse.maxIntensity, 1.0 + run.stats.curse * curse.hpPerPoint)
 	var speed: float = definition.moveSpeed * (0.65 if definition_id == "swarm" else run.data.enemyMoveScale) * bonus.speed * run.difficulty.speed * minf(curse.maxIntensity, 1.0 + run.stats.curse * curse.speedPerPoint)
 	var enemy := {"id":run.next_id(),"definition":definition_id,"pos":edge_position(run) if position == Vector2.INF else position,"hp":hp,"maxHp":hp,"radius":definition.radius * bonus.size,"speed":speed,"damage":definition.contactDamage * bonus.damage * run.difficulty.damage * minf(curse.maxIntensity,1.0 + run.stats.curse * curse.damagePerPoint),"reward":definition.magicStoneDrop * bonus.reward * run.difficulty.reward * (run.data.enemyRules.summonedRewardMultiplier if summoned else 1.0),"boss":boss,"elite":not boss and (not mods.is_empty() or hp_multiplier > 1.0),"armor":bonus.armor,"baseArmor":bonus.armor,"regeneration":bonus.regeneration,"aura":bonus.aura,"auraTimer":run.data.enemyRules.auraInterval,"action":"move","timer":0.0,"age":0.0,"aim":Vector2.ZERO,"pattern":0,"repeats":0,"summons":0,"flash":0.0,"alpha":1.0,"facing":1.0,"rewardEligible":true}
+	# Persist child provenance so summons never inherit ordinary account-loot rolls.
+	enemy["summoned"] = summoned
 	enemy.reward *= float(HeroFeaturedElites.surge(run).get("rewardMultiplier",1.0))
 	run.enemies.append(enemy)
 	if boss: run.event.emit("bossSpawned")

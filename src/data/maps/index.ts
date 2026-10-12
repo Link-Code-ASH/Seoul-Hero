@@ -36,14 +36,13 @@ const seoulRoster: readonly WaveRoster[] = [
 // Every Run draws one of these for all its elite Waves; the first is the fallback body.
 const seoulElitePool = ['charger', 'haetaeHead'];
 
-// hp is the depth-1 max HP of each elite, whichever body the Run drew: Wave 7 is about
-// 30% of the gatekeeper, Wave 14 keeps the former 1550 total across its pair.
+// hp is the depth-1 max HP of each elite, whichever body the Run drew.
 const featuredElite = (at: number, hp: number): NonNullable<Wave['elites']>[number] =>
   ({ at, enemyId: seoulElitePool[0]!, hpMultiplier: 1, hp, rewardMultiplier: 1, featured: true });
 const seoulFeaturedElites: FeaturedElites = {
-  7: [featuredElite(10, 1560)],
-  14: [featuredElite(8, 775), featuredElite(14, 775)],
-  20: [featuredElite(10, 1000), featuredElite(18, 1000)],
+  7: [featuredElite(10, 1200)],
+  14: [featuredElite(8, 1000), featuredElite(14, 1000)],
+  20: [featuredElite(10, 1200), featuredElite(18, 1200)],
 };
 
 const seoulSurges: Surges = {

@@ -93,8 +93,8 @@
       "personality": "말수가 적고 단단하다. 남의 장비부터 챙겨 주며, 위험할수록 차분하게 다음 수를 고른다.",
       "trait": {
         "name": "구조반장의 버팀목",
-        "description": "모든 무기 피해 +8%",
-        "weaponDamageBonus": 0.08
+        "description": "모든 무기 피해 +5%",
+        "weaponDamageBonus": 0.05
       },
       "baseStats": {
         "damage": 1,
@@ -422,7 +422,7 @@
       "personality": "자기 기준이 분명하고 말을 돌리지 않는다. 자신 있게 판단하되 상대에게 필요한 결과를 끝까지 책임진다.",
       "trait": {
         "name": "정밀한 손끝",
-        "description": "치명타 확률 +8%p, 치명타 피해 배율 1.5→1.7배, 최대 HP -8",
+        "description": "치명타 확률 +10%p, 치명타 피해 배율 1.5→1.8배, 최대 HP -8",
         "weaponDamageBonus": 0
       },
       "baseStats": {
@@ -430,8 +430,8 @@
         "attackSpeed": 1,
         "meleeDamage": 1,
         "rangedDamage": 1,
-        "criticalChance": 0.08,
-        "criticalDamage": 1.7,
+        "criticalChance": 0.1,
+        "criticalDamage": 1.8,
         "range": 1,
         "area": 1,
         "duration": 1,
@@ -563,54 +563,28 @@
         "cooldown": 1,
         "range": 140
       },
-      "levels": [
-        {
-          "projectileCount": 1,
-          "projectileSpeed": 1,
-          "duration": 0.25,
-          "penetration": 0,
-          "projectileRadius": 8,
-          "damage": 48.5,
-          "cooldown": 1,
-          "range": 140
-        },
-        {
-          "damage": 55
-        },
-        {
-          "damage": 55,
-          "range": 165
-        },
-        {
-          "range": 165
-        },
-        {
-          "range": 165,
-          "damage": 72,
-          "cooldown": 0.85
-        },
-        {
-          "damage": 72,
-          "cooldown": 0.85
-        },
-        {
-          "range": 190
-        },
-        {
-          "range": 190,
-          "damage": 100,
-          "cooldown": 0.7
-        },
-        {
-          "damage": 85,
-          "cooldown": 0.7
-        }
-      ],
       "visual": {
         "color": 10024418,
         "shape": "triangle"
       },
       "targeting": "nearest",
+      "levels": [
+        {
+          "damage": 46.2
+        },
+        {
+          "damage": 50.4
+        },
+        {
+          "damage": 54.6
+        },
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ],
       "shopCardText": {
         "summary": "가까운 적을 향한\n넓은 부채꼴 베기",
         "penalty": ""
@@ -622,31 +596,34 @@
           "description": "90°의 넓은 검격. 사거리와 위력이 성장합니다.",
           "levels": [
             {
-              "attackAngle": 1.5707963267948966,
-              "range": 180,
-              "damage": 58
+              "attackAngle": 1.570796327,
+              "damage": 60.06,
+              "range": 180
             },
             {
-              "attackAngle": 1.5707963267948966,
-              "range": 180,
-              "damage": 63
+              "cooldown": 0.952,
+              "damage": 66.848,
+              "range": 189
             },
             {
-              "damage": 68
+              "cooldown": 0.904,
+              "damage": 73.636,
+              "range": 198
             },
             {
-              "range": 210,
-              "cooldown": 0.82
+              "cooldown": 0.856,
+              "damage": 80.424,
+              "range": 207
             },
             {
-              "range": 217.5,
-              "cooldown": 0.79,
-              "damage": 94
+              "cooldown": 0.808,
+              "damage": 87.212,
+              "range": 216
             },
             {
-              "damage": 79.89999999999999,
-              "range": 225,
-              "cooldown": 0.76
+              "cooldown": 0.76,
+              "damage": 94,
+              "range": 225
             }
           ]
         },
@@ -656,33 +633,31 @@
           "description": "60° 범위를 빠르게 연속으로 베어냅니다.",
           "levels": [
             {
-              "repeatCount": 2,
-              "repeatInterval": 0.14,
+              "attackAngle": 1.047197551,
+              "damage": 34,
               "range": 135,
-              "attackAngle": 1.0471975511965976,
-              "damage": 34
-            },
-            {
               "repeatCount": 2,
-              "repeatInterval": 0.14,
-              "range": 135,
-              "attackAngle": 1.0471975511965976,
-              "damage": 36.5
+              "repeatInterval": 0.14
             },
             {
-              "damage": 39
+              "cooldown": 0.928,
+              "damage": 36.8
             },
             {
-              "cooldown": 0.7
+              "cooldown": 0.856,
+              "damage": 39.6
             },
             {
-              "cooldown": 0.6699999999999999,
+              "cooldown": 0.784,
+              "damage": 42.4
+            },
+            {
+              "cooldown": 0.712,
+              "damage": 45.2
+            },
+            {
+              "cooldown": 0.64,
               "damage": 48
-            },
-            {
-              "repeatCount": 2,
-              "damage": 40.8,
-              "cooldown": 0.64
             }
           ]
         }
@@ -712,52 +687,29 @@
         "cooldown": 0.35,
         "range": 90
       },
-      "levels": [
-        {
-          "projectileCount": 3,
-          "projectileSpeed": 1,
-          "duration": 0.25,
-          "penetration": 0,
-          "projectileRadius": 8,
-          "damage": 21,
-          "cooldown": 0.35,
-          "range": 90
-        },
-        {
-          "damage": 24
-        },
-        {
-          "damage": 24
-        },
-        {
-          "projectileCount": 4
-        },
-        {
-          "projectileCount": 4,
-          "damage": 32
-        },
-        {
-          "damage": 32
-        },
-        {
-          "projectileCount": 5
-        },
-        {
-          "projectileCount": 5,
-          "damage": 42,
-          "cooldown": 0.28
-        },
-        {
-          "damage": 35.699999999999996,
-          "cooldown": 0.28
-        }
-      ],
       "visual": {
         "sprite": "guardianShuriken",
         "color": 11918847,
         "shape": "diamond"
       },
       "targeting": "nearest",
+      "levels": [
+        {
+          "damage": 19.8
+        },
+        {
+          "damage": 21.6
+        },
+        {
+          "damage": 23.4
+        },
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ],
       "shopCardText": {
         "summary": "몸 주위 회전 공격\n근접 적 견제",
         "penalty": ""
@@ -769,27 +721,29 @@
           "description": "회전 표창 증가. 최종 6개.",
           "levels": [
             {
-              "projectileCount": 5,
-              "damage": 24
+              "damage": 24,
+              "projectileCount": 5
             },
             {
-              "projectileCount": 5,
-              "damage": 25.5
+              "cooldown": 0.34,
+              "damage": 25.2
             },
             {
-              "damage": 27
+              "cooldown": 0.33,
+              "damage": 26.4
             },
             {
-              "cooldown": 0.32
+              "cooldown": 0.32,
+              "damage": 27.6,
+              "projectileCount": 6
             },
             {
               "cooldown": 0.31,
-              "damage": 30
+              "damage": 28.8
             },
             {
-              "projectileCount": 6,
-              "damage": 25.5,
-              "cooldown": 0.3
+              "cooldown": 0.3,
+              "damage": 30
             }
           ]
         },
@@ -799,30 +753,33 @@
           "description": "표창 3개를 유지하고 크기·피해 확대.",
           "levels": [
             {
-              "projectileCount": 3,
               "areaMultiplier": 1.45,
               "damage": 36
             },
             {
-              "projectileCount": 3,
-              "areaMultiplier": 1.45,
-              "damage": 40
+              "areaMultiplier": 1.54,
+              "cooldown": 0.344,
+              "damage": 40.4
             },
             {
-              "damage": 44
+              "areaMultiplier": 1.63,
+              "cooldown": 0.338,
+              "damage": 44.8
             },
             {
-              "areaMultiplier": 1.7
+              "areaMultiplier": 1.72,
+              "cooldown": 0.332,
+              "damage": 49.2
             },
             {
-              "areaMultiplier": 1.7999999999999998,
-              "damage": 58,
-              "cooldown": 0.32
+              "areaMultiplier": 1.81,
+              "cooldown": 0.326,
+              "damage": 53.6
             },
             {
               "areaMultiplier": 1.9,
-              "damage": 49.3,
-              "cooldown": 0.32
+              "cooldown": 0.32,
+              "damage": 58
             }
           ]
         }
@@ -854,50 +811,29 @@
         "cooldown": 1.1,
         "range": 600
       },
-      "levels": [
-        {
-          "projectileCount": 1,
-          "projectileSpeed": 900,
-          "duration": 1.3,
-          "penetration": 3,
-          "projectileRadius": 5,
-          "damage": 35,
-          "cooldown": 1.1,
-          "range": 600
-        },
-        {
-          "damage": 40
-        },
-        {
-          "damage": 40
-        },
-        {
-          "penetration": 5
-        },
-        {
-          "penetration": 5
-        },
-        {
-          "projectileCount": 2
-        },
-        {
-          "damage": 58
-        },
-        {
-          "damage": 68,
-          "cooldown": 0.85
-        },
-        {
-          "damage": 66.3,
-          "cooldown": 0.85
-        }
-      ],
       "visual": {
         "sprite": "piercingFx",
         "color": 16420012,
         "shape": "triangle"
       },
       "targeting": "nearest",
+      "levels": [
+        {
+          "damage": 33
+        },
+        {
+          "damage": 36
+        },
+        {
+          "damage": 39
+        },
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ],
       "shopCardText": {
         "summary": "여러 적을 관통하는\n고속 장거리 탄",
         "penalty": ""
@@ -909,35 +845,39 @@
           "description": "한 발의 폭과 관통 수 증가.",
           "levels": [
             {
-              "projectileCount": 1,
+              "damage": 45,
               "penetration": 6,
-              "projectileRadius": 9,
-              "damage": 45
+              "projectileRadius": 9
             },
             {
-              "projectileCount": 1,
-              "penetration": 6,
-              "projectileRadius": 9,
-              "damage": 49.5
+              "cooldown": 1.044,
+              "damage": 51.6,
+              "penetration": 7,
+              "projectileRadius": 10.4
             },
             {
-              "damage": 54
+              "cooldown": 0.988,
+              "damage": 58.2,
+              "penetration": 8,
+              "projectileRadius": 11.8
             },
             {
-              "penetration": 9,
-              "projectileRadius": 13
+              "cooldown": 0.932,
+              "damage": 64.8,
+              "penetration": 10,
+              "projectileRadius": 13.2
             },
             {
-              "penetration": 9,
-              "projectileRadius": 14.5,
+              "cooldown": 0.876,
+              "damage": 71.4,
+              "penetration": 11,
+              "projectileRadius": 14.6
+            },
+            {
+              "cooldown": 0.82,
               "damage": 78,
-              "cooldown": 0.82
-            },
-            {
               "penetration": 12,
-              "damage": 66.3,
-              "projectileRadius": 16,
-              "cooldown": 0.82
+              "projectileRadius": 16
             }
           ]
         },
@@ -947,30 +887,29 @@
           "description": "관통은 3회, 여러 방향으로 동시 발사.",
           "levels": [
             {
-              "projectileCount": 2,
-              "penetration": 3,
-              "damage": 34
+              "damage": 34,
+              "projectileCount": 2
             },
             {
-              "projectileCount": 2,
-              "penetration": 3,
-              "damage": 37
+              "cooldown": 1.048,
+              "damage": 37.2
             },
             {
-              "damage": 40
+              "cooldown": 0.996,
+              "damage": 40.4
             },
             {
+              "cooldown": 0.944,
+              "damage": 43.6,
               "projectileCount": 3
             },
             {
-              "projectileCount": 3,
-              "damage": 50,
-              "cooldown": 0.84
+              "cooldown": 0.892,
+              "damage": 46.8
             },
             {
-              "projectileCount": 3,
-              "damage": 42.5,
-              "cooldown": 0.84
+              "cooldown": 0.84,
+              "damage": 50
             }
           ]
         }
@@ -1000,51 +939,28 @@
         "cooldown": 1.4,
         "range": 300
       },
-      "levels": [
-        {
-          "projectileCount": 3,
-          "projectileSpeed": 1,
-          "duration": 0.25,
-          "penetration": 0,
-          "projectileRadius": 8,
-          "damage": 31,
-          "cooldown": 1.4,
-          "range": 300
-        },
-        {
-          "damage": 35
-        },
-        {
-          "damage": 35
-        },
-        {
-          "projectileCount": 4
-        },
-        {
-          "projectileCount": 4,
-          "cooldown": 1.15
-        },
-        {
-          "cooldown": 1.15
-        },
-        {
-          "damage": 48,
-          "projectileCount": 5
-        },
-        {
-          "damage": 56.5,
-          "projectileCount": 5
-        },
-        {
-          "damage": 55.25,
-          "projectileCount": 6
-        }
-      ],
       "visual": {
         "color": 10411007,
         "shape": "circle"
       },
       "targeting": "nearest",
+      "levels": [
+        {
+          "damage": 29.7
+        },
+        {
+          "damage": 32.4
+        },
+        {
+          "damage": 35.1
+        },
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ],
       "shopCardText": {
         "summary": "적 사이로 이어지는\n연쇄 번개",
         "penalty": ""
@@ -1056,28 +972,30 @@
           "description": "많은 적을 연결. 최종 7개 대상.",
           "levels": [
             {
-              "projectileCount": 5,
-              "damage": 31
+              "damage": 31,
+              "projectileCount": 5
             },
             {
-              "projectileCount": 5,
-              "damage": 32.5
+              "cooldown": 1.33,
+              "damage": 33.2
             },
             {
-              "projectileCount": 6,
-              "damage": 34
+              "cooldown": 1.26,
+              "damage": 35.4,
+              "projectileCount": 6
             },
             {
-              "cooldown": 1.15
+              "cooldown": 1.19,
+              "damage": 37.6
             },
             {
-              "cooldown": 1.1,
+              "cooldown": 1.12,
+              "damage": 39.8,
+              "projectileCount": 7
+            },
+            {
+              "cooldown": 1.05,
               "damage": 42
-            },
-            {
-              "projectileCount": 7,
-              "damage": 35.699999999999996,
-              "cooldown": 1.05
             }
           ]
         },
@@ -1087,26 +1005,28 @@
           "description": "대상을 2개로 제한하고 강한 타격.",
           "levels": [
             {
-              "projectileCount": 2,
-              "damage": 58
+              "damage": 58,
+              "projectileCount": 2
             },
             {
-              "projectileCount": 2,
-              "damage": 65
+              "cooldown": 1.312,
+              "damage": 68
             },
             {
-              "damage": 72
+              "cooldown": 1.224,
+              "damage": 78
             },
             {
-              "cooldown": 1.05
+              "cooldown": 1.136,
+              "damage": 88
             },
             {
-              "cooldown": 1.005,
+              "cooldown": 1.048,
+              "damage": 98
+            },
+            {
+              "cooldown": 0.96,
               "damage": 108
-            },
-            {
-              "damage": 91.8,
-              "cooldown": 0.96
             }
           ]
         }
@@ -1138,51 +1058,28 @@
         "explosionDelay": 0.9,
         "range": 372
       },
-      "levels": [
-        {
-          "projectileCount": 1,
-          "projectileSpeed": 1,
-          "duration": 0.45,
-          "penetration": 0,
-          "projectileRadius": 8,
-          "damage": 75,
-          "cooldown": 2.3,
-          "explosionDelay": 0.9,
-          "range": 372
-        },
-        {
-          "damage": 85
-        },
-        {
-          "damage": 85,
-          "cooldown": 2
-        },
-        {
-          "cooldown": 2
-        },
-        {
-          "cooldown": 2,
-          "damage": 110
-        },
-        {
-          "damage": 110
-        },
-        {
-          "cooldown": 1.6
-        },
-        {
-          "cooldown": 1.6,
-          "damage": 150
-        },
-        {
-          "damage": 127.5
-        }
-      ],
       "visual": {
         "color": 16038009,
         "shape": "hexagon"
       },
       "targeting": "nearest",
+      "levels": [
+        {
+          "damage": 71.5
+        },
+        {
+          "damage": 78
+        },
+        {
+          "damage": 84.5
+        },
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ],
       "shopCardText": {
         "summary": "적 위치에 폭발하는\n광역 폭격",
         "penalty": ""
@@ -1195,30 +1092,34 @@
           "levels": [
             {
               "blastRadius": 155,
-              "repeatCount": 1,
-              "damage": 82
+              "cooldown": 2,
+              "damage": 82,
+              "repeatCount": 1
             },
             {
-              "blastRadius": 155,
-              "repeatCount": 1,
-              "damage": 90
+              "blastRadius": 167,
+              "cooldown": 1.92,
+              "damage": 92
             },
             {
-              "damage": 98
+              "blastRadius": 179,
+              "cooldown": 1.84,
+              "damage": 102
             },
             {
-              "blastRadius": 190,
-              "cooldown": 1.8
+              "blastRadius": 191,
+              "cooldown": 1.76,
+              "damage": 112
             },
             {
-              "blastRadius": 202.5,
-              "cooldown": 1.7000000000000002,
-              "damage": 132
+              "blastRadius": 203,
+              "cooldown": 1.68,
+              "damage": 122
             },
             {
               "blastRadius": 215,
-              "damage": 112.2,
-              "cooldown": 1.6
+              "cooldown": 1.6,
+              "damage": 132
             }
           ]
         },
@@ -1229,32 +1130,31 @@
           "levels": [
             {
               "blastRadius": 78,
+              "cooldown": 2,
+              "damage": 40.413043478,
               "repeatCount": 2,
-              "repeatInterval": 0.2,
-              "damage": 40
+              "repeatInterval": 0.2
             },
             {
-              "blastRadius": 78,
-              "repeatCount": 2,
-              "repeatInterval": 0.2,
-              "damage": 42
+              "cooldown": 1.924,
+              "damage": 42.330434783
             },
             {
-              "damage": 44
+              "cooldown": 1.848,
+              "damage": 44.247826087
             },
             {
-              "repeatCount": 3,
-              "cooldown": 1.8
+              "cooldown": 1.772,
+              "damage": 46.165217391,
+              "repeatCount": 3
             },
             {
-              "repeatCount": 3,
-              "cooldown": 1.71,
+              "cooldown": 1.696,
+              "damage": 48.082608696
+            },
+            {
+              "cooldown": 1.62,
               "damage": 50
-            },
-            {
-              "repeatCount": 3,
-              "damage": 42.5,
-              "cooldown": 1.62
             }
           ]
         }
@@ -1286,55 +1186,28 @@
         "penetration": 0,
         "projectileRadius": 6
       },
-      "levels": [
-        {
-          "damage": 25,
-          "cooldown": 0.65,
-          "projectileCount": 1,
-          "projectileSpeed": 590,
-          "range": 420,
-          "duration": 1.5,
-          "penetration": 0,
-          "projectileRadius": 6
-        },
-        {
-          "damage": 28,
-          "projectileSpeed": 620
-        },
-        {
-          "damage": 31.5,
-          "projectileSpeed": 620
-        },
-        {
-          "damage": 35,
-          "penetration": 1
-        },
-        {
-          "damage": 39.5,
-          "penetration": 1
-        },
-        {
-          "damage": 44,
-          "projectileCount": 2
-        },
-        {
-          "damage": 56,
-          "cooldown": 0.5
-        },
-        {
-          "damage": 64,
-          "cooldown": 0.5
-        },
-        {
-          "damage": 61.199999999999996,
-          "penetration": 2
-        }
-      ],
       "visual": {
         "sprite": "manaBolt",
         "color": 16179104,
         "shape": "circle"
       },
+      "levels": [
+        {
+          "damage": 24.2
+        },
+        {
+          "damage": 26.4
+        },
+        {
+          "damage": 28.6
+        },
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ],
       "shopCardText": {
         "summary": "가까운 적을 노리는\n마력 투사체",
         "penalty": ""
@@ -1346,30 +1219,30 @@
           "description": "넓게 퍼지는 여러 마력탄. 최종 3발.",
           "levels": [
             {
+              "damage": 32,
               "projectileCount": 2,
-              "penetration": 0,
-              "damage": 32
+              "projectileSpeed": 620
             },
             {
-              "projectileCount": 2,
-              "penetration": 0,
-              "damage": 34
+              "cooldown": 0.632,
+              "damage": 33.6
             },
             {
-              "damage": 36
+              "cooldown": 0.614,
+              "damage": 35.2
             },
             {
-              "projectileCount": 3,
-              "cooldown": 0.6
+              "cooldown": 0.596,
+              "damage": 36.8,
+              "projectileCount": 3
             },
             {
-              "projectileCount": 3,
-              "cooldown": 0.5800000000000001,
+              "cooldown": 0.578,
+              "damage": 38.4
+            },
+            {
+              "cooldown": 0.56,
               "damage": 40
-            },
-            {
-              "damage": 34,
-              "cooldown": 0.56
             }
           ]
         },
@@ -1379,34 +1252,44 @@
           "description": "한 발로 긴 적 대열을 관통. 최종 8회 관통.",
           "levels": [
             {
-              "projectileCount": 1,
+              "damage": 42,
               "penetration": 3,
-              "damage": 42
+              "projectileSpeed": 620
             },
             {
-              "projectileCount": 1,
-              "penetration": 3,
-              "damage": 46,
-              "projectileSpeed": 720
+              "cooldown": 0.636,
+              "damage": 48,
+              "penetration": 4,
+              "projectileRadius": 6.6,
+              "projectileSpeed": 640
             },
             {
-              "damage": 50,
-              "projectileSpeed": 720
+              "cooldown": 0.622,
+              "damage": 54,
+              "penetration": 5,
+              "projectileRadius": 7.2,
+              "projectileSpeed": 660
             },
             {
-              "penetration": 6
-            },
-            {
+              "cooldown": 0.608,
+              "damage": 60,
               "penetration": 6,
-              "damage": 72,
-              "cooldown": 0.58,
-              "projectileRadius": 9
+              "projectileRadius": 7.8,
+              "projectileSpeed": 680
             },
             {
-              "penetration": 8,
-              "damage": 61.199999999999996,
+              "cooldown": 0.594,
+              "damage": 66,
+              "penetration": 7,
+              "projectileRadius": 8.4,
+              "projectileSpeed": 700
+            },
+            {
               "cooldown": 0.58,
-              "projectileRadius": 9
+              "damage": 72,
+              "penetration": 8,
+              "projectileRadius": 9,
+              "projectileSpeed": 720
             }
           ]
         }
@@ -1439,42 +1322,28 @@
         "projectileRadius": 4.5,
         "spreadAngle": 0.72
       },
-      "levels": [
-        {
-          "damage": 12
-        },
-        {
-          "cooldown": 1.43
-        },
-        {
-          "range": 220,
-          "projectileSpeed": 680
-        },
-        {
-          "damage": 13
-        },
-        {
-          "damage": 14
-        },
-        {
-          "cooldown": 1.3
-        },
-        {
-          "damage": 15
-        },
-        {
-          "range": 230
-        },
-        {
-          "damage": 16,
-          "cooldown": 1.2
-        }
-      ],
       "visual": {
         "sprite": "manaShotgunPellet",
         "color": 10280689,
         "shape": "circle"
       },
+      "levels": [
+        {
+          "damage": 12.1
+        },
+        {
+          "damage": 13.2
+        },
+        {
+          "damage": 14.3
+        },
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ],
       "shopCardText": {
         "summary": "근거리 다중 산탄\n넓게 퍼지는 공격",
         "penalty": ""
@@ -1486,25 +1355,44 @@
           "description": "더 넓은 부채꼴에 많은 산탄을 퍼뜨려 다수의 적을 제압한다.",
           "levels": [
             {
+              "cooldown": 1.43,
+              "damage": 10.711380952,
               "projectileCount": 7,
-              "spreadAngle": 0.98,
-              "damage": 10
+              "projectileSpeed": 680,
+              "range": 220,
+              "spreadAngle": 0.98
             },
             {
-              "damage": 11
+              "cooldown": 1.384,
+              "damage": 10.969104762,
+              "range": 222,
+              "spreadAngle": 1
             },
             {
-              "projectileCount": 8
+              "cooldown": 1.338,
+              "damage": 11.226828571,
+              "projectileCount": 8,
+              "range": 224,
+              "spreadAngle": 1.02
             },
             {
-              "damage": 12
+              "cooldown": 1.292,
+              "damage": 11.484552381,
+              "range": 226,
+              "spreadAngle": 1.04
             },
             {
-              "spreadAngle": 1.08
-            },
-            {
+              "cooldown": 1.246,
+              "damage": 11.74227619,
               "projectileCount": 9,
-              "damage": 12
+              "range": 228,
+              "spreadAngle": 1.06
+            },
+            {
+              "cooldown": 1.2,
+              "damage": 12,
+              "range": 230,
+              "spreadAngle": 1.08
             }
           ]
         },
@@ -1514,26 +1402,43 @@
           "description": "좁은 각도의 강한 산탄이 적을 뚫고 뒤의 적에게도 닿는다.",
           "levels": [
             {
-              "projectileCount": 5,
-              "spreadAngle": 0.32,
+              "cooldown": 1.43,
+              "damage": 15,
               "penetration": 1,
-              "damage": 15
+              "projectileSpeed": 680,
+              "range": 220,
+              "spreadAngle": 0.32
             },
             {
-              "damage": 16
+              "cooldown": 1.392,
+              "damage": 16,
+              "range": 222,
+              "spreadAngle": 0.308
             },
             {
-              "spreadAngle": 0.26
+              "cooldown": 1.354,
+              "damage": 17,
+              "range": 224,
+              "spreadAngle": 0.296
             },
             {
-              "damage": 18
+              "cooldown": 1.316,
+              "damage": 18,
+              "penetration": 2,
+              "range": 226,
+              "spreadAngle": 0.284
             },
             {
-              "cooldown": 1.24
+              "cooldown": 1.278,
+              "damage": 19,
+              "range": 228,
+              "spreadAngle": 0.272
             },
             {
+              "cooldown": 1.24,
               "damage": 20,
-              "penetration": 2
+              "range": 230,
+              "spreadAngle": 0.26
             }
           ]
         }
@@ -1542,10 +1447,6 @@
     "autoTurret": {
       "id": "autoTurret",
       "name": "자동 포탑",
-      "shopCardText": {
-        "summary": "고정 위치 설치\n자동 조준 사격",
-        "penalty": ""
-      },
       "description": "고정 위치에서 자동 조준 발사",
       "targeting": "nearest",
       "behavior": "structure",
@@ -1577,41 +1478,33 @@
         "projectileRadius": 6,
         "blastRadius": 0
       },
+      "visual": {
+        "sprite": "turretBolt",
+        "color": 7397375,
+        "shape": "hexagon"
+      },
+      "requiresUnlock": true,
       "levels": [
         {
-          "damage": 17.439999999999998,
-          "cooldown": 0.82,
-          "range": 312,
-          "duration": 12,
-          "projectileCount": 1,
-          "projectileSpeed": 600,
-          "penetration": 0,
-          "projectileRadius": 6,
-          "blastRadius": 0
+          "damage": 17.6
         },
         {
-          "damage": 18.88
+          "damage": 19.2
         },
         {
-          "damage": 18.88
+          "damage": 20.8
         },
         {},
-        {
-          "damage": 21.6
-        },
-        {
-          "damage": 21.6
-        },
-        {
-          "damage": 24.8
-        },
-        {
-          "damage": 26.4
-        },
-        {
-          "damage": 23.8
-        }
+        {},
+        {},
+        {},
+        {},
+        {}
       ],
+      "shopCardText": {
+        "summary": "고정 위치 설치\n자동 조준 사격",
+        "penalty": ""
+      },
       "branches": [
         {
           "id": "A",
@@ -1619,19 +1512,23 @@
           "description": "동시 발사 탄 수 증가",
           "levels": [
             {
+              "damage": 18.88,
               "projectileCount": 2
             },
             {
-              "projectileCount": 2
+              "damage": 20.384
             },
-            {},
-            {},
+            {
+              "damage": 21.888
+            },
+            {
+              "damage": 23.392
+            },
+            {
+              "damage": 24.896
+            },
             {
               "damage": 26.4
-            },
-            {
-              "projectileCount": 2,
-              "damage": 22.439999999999998
             }
           ]
         },
@@ -1641,38 +1538,36 @@
           "description": "공격 또는 지뢰 설치 주기 단축",
           "levels": [
             {
-              "cooldown": 0.6396
+              "cooldown": 0.6396,
+              "damage": 18.88
             },
             {
-              "cooldown": 0.6396
-            },
-            {},
-            {},
-            {
-              "damage": 26.4,
-              "cooldown": 0.49199999999999994
+              "cooldown": 0.61008,
+              "damage": 20.384
             },
             {
-              "cooldown": 0.49199999999999994,
-              "damage": 22.439999999999998
+              "cooldown": 0.58056,
+              "damage": 21.888
+            },
+            {
+              "cooldown": 0.55104,
+              "damage": 23.392
+            },
+            {
+              "cooldown": 0.52152,
+              "damage": 24.896
+            },
+            {
+              "cooldown": 0.492,
+              "damage": 26.4
             }
           ]
         }
-      ],
-      "visual": {
-        "sprite": "turretBolt",
-        "color": 7397375,
-        "shape": "hexagon"
-      },
-      "requiresUnlock": true
+      ]
     },
     "mineLayer": {
       "id": "mineLayer",
       "name": "마력 지뢰",
-      "shopCardText": {
-        "summary": "적 접촉 시 폭발\n지뢰 설치",
-        "penalty": ""
-      },
       "description": "적 접촉으로 폭발하는 지뢰 설치",
       "targeting": "nearest",
       "behavior": "structure",
@@ -1703,41 +1598,31 @@
         "projectileRadius": 6,
         "blastRadius": 110
       },
+      "visual": {
+        "color": 16760165,
+        "shape": "diamond"
+      },
       "levels": [
         {
-          "damage": 74.12,
-          "cooldown": 2.1,
-          "range": 1,
-          "duration": 20,
-          "projectileCount": 1,
-          "projectileSpeed": 600,
-          "penetration": 0,
-          "projectileRadius": 6,
-          "blastRadius": 110
+          "damage": 74.8
         },
         {
-          "damage": 80.24
+          "damage": 81.6
         },
         {
-          "damage": 80.24
+          "damage": 88.4
         },
         {},
-        {
-          "damage": 91.80000000000001
-        },
-        {
-          "damage": 91.80000000000001
-        },
-        {
-          "damage": 105.4
-        },
-        {
-          "damage": 112.2
-        },
-        {
-          "damage": 101.14999999999999
-        }
+        {},
+        {},
+        {},
+        {},
+        {}
       ],
+      "shopCardText": {
+        "summary": "적 접촉 시 폭발\n지뢰 설치",
+        "penalty": ""
+      },
       "branches": [
         {
           "id": "A",
@@ -1745,20 +1630,28 @@
           "description": "피해 영역 확대",
           "levels": [
             {
-              "blastRadius": 137.5
+              "blastRadius": 137.5,
+              "damage": 97.24
             },
             {
-              "blastRadius": 137.5
+              "blastRadius": 143,
+              "damage": 100.232
             },
-            {},
-            {},
             {
-              "damage": 112.19999999999999,
-              "blastRadius": 165
+              "blastRadius": 148.5,
+              "damage": 103.224
+            },
+            {
+              "blastRadius": 154,
+              "damage": 106.216
+            },
+            {
+              "blastRadius": 159.5,
+              "damage": 109.208
             },
             {
               "blastRadius": 165,
-              "damage": 95.36999999999999
+              "damage": 112.2
             }
           ]
         },
@@ -1768,36 +1661,36 @@
           "description": "공격 또는 지뢰 설치 주기 단축",
           "levels": [
             {
-              "cooldown": 1.6380000000000001
+              "cooldown": 1.638,
+              "damage": 80.24
             },
             {
-              "cooldown": 1.6380000000000001
+              "cooldown": 1.5624,
+              "damage": 86.632
             },
-            {},
-            {},
             {
-              "damage": 112.19999999999999,
-              "cooldown": 1.26
+              "cooldown": 1.4868,
+              "damage": 93.024
+            },
+            {
+              "cooldown": 1.4112,
+              "damage": 99.416
+            },
+            {
+              "cooldown": 1.3356,
+              "damage": 105.808
             },
             {
               "cooldown": 1.26,
-              "damage": 95.36999999999999
+              "damage": 112.2
             }
           ]
         }
-      ],
-      "visual": {
-        "color": 16760165,
-        "shape": "diamond"
-      }
+      ]
     },
     "manaField": {
       "id": "manaField",
       "name": "마력장 발생기",
-      "shopCardText": {
-        "summary": "고정 마력장 설치\n주기적 범위 피해",
-        "penalty": ""
-      },
       "description": "고정된 마력장에서 주기적으로 범위 피해",
       "targeting": "nearest",
       "behavior": "structure",
@@ -1820,48 +1713,38 @@
         "damage": 12,
         "cooldown": 0.85,
         "range": 1,
-        "duration": 7,
+        "duration": 12,
         "projectileCount": 1,
         "projectileSpeed": 600,
         "penetration": 0,
         "projectileRadius": 6,
         "blastRadius": 130
       },
+      "visual": {
+        "color": 12164095,
+        "shape": "hexagon"
+      },
       "levels": [
         {
-          "damage": 13.08,
-          "cooldown": 0.85,
-          "range": 1,
-          "duration": 7,
-          "projectileCount": 1,
-          "projectileSpeed": 600,
-          "penetration": 0,
-          "projectileRadius": 6,
-          "blastRadius": 130
+          "damage": 13.2
         },
         {
-          "damage": 14.16
+          "damage": 14.4
         },
         {
-          "damage": 14.16
+          "damage": 15.6
         },
         {},
-        {
-          "damage": 16.200000000000003
-        },
-        {
-          "damage": 16.200000000000003
-        },
-        {
-          "damage": 18.6
-        },
-        {
-          "damage": 19.8
-        },
-        {
-          "damage": 17.849999999999998
-        }
+        {},
+        {},
+        {},
+        {},
+        {}
       ],
+      "shopCardText": {
+        "summary": "고정 마력장 설치\n주기적 범위 피해",
+        "penalty": ""
+      },
       "branches": [
         {
           "id": "A",
@@ -1869,20 +1752,28 @@
           "description": "피해 영역 확대",
           "levels": [
             {
-              "blastRadius": 162.5
+              "blastRadius": 162.5,
+              "damage": 17.16
             },
             {
-              "blastRadius": 162.5
+              "blastRadius": 169,
+              "damage": 17.688
             },
-            {},
-            {},
             {
-              "damage": 19.799999999999997,
-              "blastRadius": 195
+              "blastRadius": 175.5,
+              "damage": 18.216
+            },
+            {
+              "blastRadius": 182,
+              "damage": 18.744
+            },
+            {
+              "blastRadius": 188.5,
+              "damage": 19.272
             },
             {
               "blastRadius": 195,
-              "damage": 16.83
+              "damage": 19.8
             }
           ]
         },
@@ -1892,28 +1783,32 @@
           "description": "공격 또는 지뢰 설치 주기 단축",
           "levels": [
             {
-              "cooldown": 0.663
+              "cooldown": 0.663,
+              "damage": 14.16
             },
             {
-              "cooldown": 0.663
+              "cooldown": 0.6324,
+              "damage": 15.288
             },
-            {},
-            {},
             {
-              "damage": 19.799999999999997,
-              "cooldown": 0.51
+              "cooldown": 0.6018,
+              "damage": 16.416
+            },
+            {
+              "cooldown": 0.5712,
+              "damage": 17.544
+            },
+            {
+              "cooldown": 0.5406,
+              "damage": 18.672
             },
             {
               "cooldown": 0.51,
-              "damage": 16.83
+              "damage": 19.8
             }
           ]
         }
-      ],
-      "visual": {
-        "color": 12164095,
-        "shape": "hexagon"
-      }
+      ]
     }
   },
   "enemies": {
@@ -2185,14 +2080,14 @@
       }
     },
     "lampFirefly": {
-      "magicStoneDrop": 1.6632,
+      "magicStoneDrop": 1.2474,
       "tags": [
         "NORMAL"
       ],
       "id": "lampFirefly",
       "name": "가로등 반딧불",
       "description": "가로등 전구를 품고 날아드는 반딧불. 가까이 붙으면 전구가 1초 동안 번쩍이다 터지므로 폭발 범위 밖으로 벗어나야 합니다.",
-      "maxHp": 30,
+      "maxHp": 40,
       "moveSpeed": 88,
       "contactDamage": 16,
       "radius": 17,
@@ -2350,14 +2245,14 @@
       }
     },
     "splitter": {
-      "magicStoneDrop": 1.6632,
+      "magicStoneDrop": 1.2474,
       "tags": [
         "NORMAL"
       ],
       "id": "splitter",
       "name": "분열 점액",
       "description": "두 핵을 품고 통통 뛰는 녹색 슬라임. 쓰러지면 작은 점액 둘로 갈라지고, 갈라진 점액은 한 번 더 둘로 나뉩니다.",
-      "maxHp": 75,
+      "maxHp": 44,
       "moveSpeed": 55,
       "contactDamage": 9,
       "radius": 23,
@@ -2366,10 +2261,10 @@
       "split": {
         "count": 2,
         "generations": 2,
-        "hp": 0.45,
+        "hp": 0.35,
         "size": 0.74,
         "damage": 0.75,
-        "reward": 0.4
+        "reward": 0.15
       },
       "visual": {
         "sprite": "splitterSD",
@@ -2399,23 +2294,24 @@
       }
     },
     "summoner": {
-      "magicStoneDrop": 3.3264,
+      "magicStoneDrop": 1.2474,
       "tags": [
         "NORMAL"
       ],
       "id": "summoner",
       "name": "틈새 소환사",
-      "description": "소용돌이 몸을 띄운 유령. 거리를 두고 균열을 열어 몇 초마다 작은 군집 벌레를 불러냅니다.",
-      "maxHp": 85,
+      "description": "소용돌이 몸을 띄운 유령. 거리를 두고 5초마다 군집 벌레를 부릅니다. 한 번에 두 마리까지 머물며 총 세 마리를 소환합니다.",
+      "maxHp": 60,
       "moveSpeed": 36,
       "contactDamage": 6,
       "radius": 22,
       "behavior": "summoner",
       "childId": "swarm",
       "summon": {
-        "interval": 4,
+        "interval": 5,
         "count": 1,
-        "alive": 3
+        "alive": 2,
+        "total": 3
       },
       "visual": {
         "sprite": "summonerSD",
@@ -2472,7 +2368,7 @@
       "id": "gatekeeper",
       "name": "게이트 파수꾼",
       "description": "거대한 갑주 고리 안에 마력 핵을 띄운 대형 보스. 멈추지 않고 플레이어 주위를 맴돌며 회전하는 탄막을 거듭 흩뿌립니다.",
-      "maxHp": 5200,
+      "maxHp": 6000,
       "moveSpeed": 75,
       "contactDamage": 25,
       "radius": 48,
@@ -2672,14 +2568,14 @@
       }
     },
     "riftTrefoil": {
-      "magicStoneDrop": 1.8295,
+      "magicStoneDrop": 1.3721,
       "tags": [
         "NORMAL"
       ],
       "id": "riftTrefoil",
       "name": "균열 삼엽 포옹체",
       "description": "균열빛이 번진 흐린 점액 몸. 세 잎이 서로를 끌어안고 있다가 쓰러지면 작은 개체로 흩어집니다.",
-      "maxHp": 86,
+      "maxHp": 51,
       "moveSpeed": 55,
       "contactDamage": 10,
       "radius": 23,
@@ -2688,10 +2584,10 @@
       "split": {
         "count": 2,
         "generations": 2,
-        "hp": 0.45,
+        "hp": 0.35,
         "size": 0.74,
         "damage": 0.75,
-        "reward": 0.4
+        "reward": 0.15
       },
       "visual": {
         "sprite": "riftTrefoilLib",
@@ -2721,23 +2617,24 @@
       }
     },
     "riftNest": {
-      "magicStoneDrop": 3.659,
+      "magicStoneDrop": 1.3721,
       "tags": [
         "NORMAL"
       ],
       "id": "riftNest",
       "name": "균열 둥지 품핵",
       "description": "균열빛이 번진 흐린 점액 몸. 둥지 속 핵에서 군집 벌레를 계속 불러냅니다.",
-      "maxHp": 98,
+      "maxHp": 69,
       "moveSpeed": 36,
       "contactDamage": 6,
       "radius": 22,
       "behavior": "summoner",
       "childId": "swarm",
       "summon": {
-        "interval": 4,
+        "interval": 5,
         "count": 1,
-        "alive": 3
+        "alive": 2,
+        "total": 3
       },
       "visual": {
         "sprite": "riftNestLib",
@@ -2927,14 +2824,14 @@
       }
     },
     "glassTrefoil": {
-      "magicStoneDrop": 1.9958,
+      "magicStoneDrop": 1.4969,
       "tags": [
         "NORMAL"
       ],
       "id": "glassTrefoil",
       "name": "유리 삼엽 포옹체",
       "description": "속이 비치는 유리질 해파리 몸. 세 잎이 서로를 끌어안고 있다가 쓰러지면 작은 개체로 흩어집니다.",
-      "maxHp": 98,
+      "maxHp": 57,
       "moveSpeed": 55,
       "contactDamage": 10,
       "radius": 23,
@@ -2943,10 +2840,10 @@
       "split": {
         "count": 2,
         "generations": 2,
-        "hp": 0.45,
+        "hp": 0.35,
         "size": 0.74,
         "damage": 0.75,
-        "reward": 0.4
+        "reward": 0.15
       },
       "visual": {
         "sprite": "glassTrefoilLib",
@@ -2976,23 +2873,24 @@
       }
     },
     "glassNest": {
-      "magicStoneDrop": 3.9917,
+      "magicStoneDrop": 1.4969,
       "tags": [
         "NORMAL"
       ],
       "id": "glassNest",
       "name": "유리 둥지 품핵",
       "description": "속이 비치는 유리질 해파리 몸. 둥지 속 핵에서 군집 벌레를 계속 불러냅니다.",
-      "maxHp": 111,
+      "maxHp": 78,
       "moveSpeed": 36,
       "contactDamage": 7,
       "radius": 22,
       "behavior": "summoner",
       "childId": "swarm",
       "summon": {
-        "interval": 4,
+        "interval": 5,
         "count": 1,
-        "alive": 3
+        "alive": 2,
+        "total": 3
       },
       "visual": {
         "sprite": "glassNestLib",
@@ -3214,14 +3112,14 @@
       "name": "재생 붕대",
       "rarity": "COMMON",
       "shopCardText": {
-        "summary": "초당 HP +0.12",
+        "summary": "초당 HP +0.18",
         "penalty": ""
       },
       "basePrice": 16,
-      "description": "초당 체력 회복 +0.12 증가",
+      "description": "초당 체력 회복 +0.18 증가",
       "shopText": {
         "effects": [
-          "초당회복 +0.12"
+          "초당회복 +0.18"
         ],
         "penalties": []
       },
@@ -3229,7 +3127,7 @@
         {
           "stat": "hpRegeneration",
           "operation": "add",
-          "value": 0.12
+          "value": 0.18
         }
       ],
       "specialEffects": [],
@@ -3532,14 +3430,14 @@
       "name": "정밀 안경",
       "rarity": "UNCOMMON",
       "shopCardText": {
-        "summary": "치명확률 +4%",
+        "summary": "치명확률 +6%",
         "penalty": ""
       },
       "basePrice": 28,
-      "description": "치명타 확률 +4% 증가",
+      "description": "치명타 확률 +6% 증가",
       "shopText": {
         "effects": [
-          "치명확률 +4%"
+          "치명확률 +6%"
         ],
         "penalties": []
       },
@@ -3547,7 +3445,7 @@
         {
           "stat": "criticalChance",
           "operation": "add",
-          "value": 0.04
+          "value": 0.06
         }
       ],
       "specialEffects": [],
@@ -3563,14 +3461,14 @@
       "name": "예리한 숫돌",
       "rarity": "UNCOMMON",
       "shopCardText": {
-        "summary": "치명피해 +18%",
+        "summary": "치명피해 +25%",
         "penalty": ""
       },
       "basePrice": 27,
-      "description": "치명타 피해량 +18% 증가",
+      "description": "치명타 피해량 +25% 증가",
       "shopText": {
         "effects": [
-          "치명피해 +18%"
+          "치명피해 +25%"
         ],
         "penalties": []
       },
@@ -3578,7 +3476,7 @@
         {
           "stat": "criticalDamage",
           "operation": "add",
-          "value": 0.18
+          "value": 0.25
         }
       ],
       "specialEffects": [],
@@ -3625,14 +3523,14 @@
       "name": "헌터 혈액팩",
       "rarity": "UNCOMMON",
       "shopCardText": {
-        "summary": "흡혈 +2%",
+        "summary": "흡혈 +1%",
         "penalty": ""
       },
       "basePrice": 31,
-      "description": "흡혈 +2% 증가",
+      "description": "흡혈 +1% 증가",
       "shopText": {
         "effects": [
-          "흡혈 +2%"
+          "흡혈 +1%"
         ],
         "penalties": []
       },
@@ -3640,7 +3538,7 @@
         {
           "stat": "lifesteal",
           "operation": "add",
-          "value": 0.02
+          "value": 0.01
         }
       ],
       "specialEffects": [],
@@ -3788,17 +3686,17 @@
       "rarity": "EPIC",
       "shopCardText": {
         "summary": "투사체속도 +5%\n투사체 공격 수 +1",
-        "penalty": "공격속도 -8%"
+        "penalty": "공격속도 -12%"
       },
       "basePrice": 68,
-      "description": "투사체 속도 +5% 증가 · 공격 속도 -8% 감소 · PROJECTILE 공격 수 +1 증가",
+      "description": "투사체 속도 +5% 증가 · 공격 속도 -12% 감소 · PROJECTILE 공격 수 +1 증가",
       "shopText": {
         "effects": [
           "투사체속도 +5%",
           "투사체 공격 수 +1"
         ],
         "penalties": [
-          "공격속도 -8%"
+          "공격속도 -12%"
         ]
       },
       "statModifiers": [
@@ -3809,7 +3707,7 @@
         },
         {
           "stat": "attackSpeed",
-          "value": -0.08,
+          "value": -0.12,
           "operation": "add"
         }
       ],
@@ -3957,14 +3855,14 @@
       "name": "흡혈 회로",
       "rarity": "LEGENDARY",
       "shopCardText": {
-        "summary": "흡혈 +4%\n설치물 흡혈 허용",
+        "summary": "흡혈 +2%\n설치물 흡혈 허용",
         "penalty": "최대 HP -12"
       },
       "basePrice": 94,
-      "description": "흡혈 +4% 증가 · 최대 체력 -12 감소 · 설치물 공격 흡혈 허용",
+      "description": "흡혈 +2% 증가 · 최대 체력 -12 감소 · 설치물 공격 흡혈 허용",
       "shopText": {
         "effects": [
-          "흡혈 +4%",
+          "흡혈 +2%",
           "설치물 공격도 흡혈"
         ],
         "penalties": [
@@ -3975,7 +3873,7 @@
         {
           "stat": "lifesteal",
           "operation": "add",
-          "value": 0.04
+          "value": 0.02
         },
         {
           "stat": "maxHp",
@@ -4552,23 +4450,23 @@
       "rarity": "UNCOMMON",
       "shopCardText": {
         "summary": "이동 중\n공격속도 +22%",
-        "penalty": "방어력 -3"
+        "penalty": "최대 HP -12"
       },
       "basePrice": 35,
-      "description": "이동 중 공격 속도 +22%. 멈추면 해제. · 방어력 -3 감소",
+      "description": "이동 중 공격 속도 +22%. 멈추면 해제. · 최대 체력 -12 감소",
       "shopText": {
         "effects": [
           "이동 중 공격속도 +22%",
           "멈추면 해제"
         ],
         "penalties": [
-          "방어력 -3"
+          "최대HP -12"
         ]
       },
       "statModifiers": [
         {
-          "stat": "armor",
-          "value": -3,
+          "stat": "maxHp",
+          "value": -12,
           "operation": "add"
         }
       ],
@@ -4639,23 +4537,23 @@
       "rarity": "UNCOMMON",
       "shopCardText": {
         "summary": "HP 가득 찬 적\n첫 피해 +65%",
-        "penalty": "치명확률 -2%"
+        "penalty": "공격속도 -6%"
       },
       "basePrice": 36,
-      "description": "체력이 가득 찬 적에게 첫 적중 피해 +65%. · 치명타 확률 -2% 감소",
+      "description": "체력이 가득 찬 적에게 첫 적중 피해 +65%. · 공격 속도 -6% 감소",
       "shopText": {
         "effects": [
           "최대HP 적 첫 적중",
           "피해 +65%"
         ],
         "penalties": [
-          "치명확률 -2%"
+          "공격속도 -6%"
         ]
       },
       "statModifiers": [
         {
-          "stat": "criticalChance",
-          "value": -0.02,
+          "stat": "attackSpeed",
+          "value": -0.06,
           "operation": "add"
         }
       ],
@@ -4756,23 +4654,23 @@
       "rarity": "RARE",
       "shopCardText": {
         "summary": "거리 250 이상\n피해 +45%",
-        "penalty": "방어력 -4"
+        "penalty": "최대 HP -12"
       },
       "basePrice": 47,
-      "description": "거리 250 이상의 적에게 피해 +45%. · 방어력 -4 감소",
+      "description": "거리 250 이상의 적에게 피해 +45%. · 최대 체력 -12 감소",
       "shopText": {
         "effects": [
           "거리 250 이상 적",
           "피해 +45%"
         ],
         "penalties": [
-          "방어력 -4"
+          "최대HP -12"
         ]
       },
       "statModifiers": [
         {
-          "stat": "armor",
-          "value": -4,
+          "stat": "maxHp",
+          "value": -12,
           "operation": "add"
         }
       ],
@@ -4797,15 +4695,15 @@
       "name": "새벽 보온병",
       "rarity": "UNCOMMON",
       "shopCardText": {
-        "summary": "웨이브 첫 8초\n초당 HP +2",
+        "summary": "웨이브 첫 20초\n초당 HP +1",
         "penalty": "공격속도 -8%"
       },
       "basePrice": 35,
-      "description": "각 웨이브 첫 8초 동안 초당 체력 2 회복. · 공격 속도 -8% 감소",
+      "description": "각 웨이브 첫 20초 동안 초당 체력 1 회복. · 공격 속도 -8% 감소",
       "shopText": {
         "effects": [
-          "웨이브 첫 8초",
-          "초당 HP +2"
+          "웨이브 첫 20초",
+          "초당 HP +1"
         ],
         "penalties": [
           "공격속도 -8%"
@@ -4823,8 +4721,8 @@
           "type": "conditionalStat",
           "condition": "dawn",
           "stat": "hpRegeneration",
-          "value": 2,
-          "threshold": 8
+          "value": 1,
+          "threshold": 20
         }
       ],
       "maxStacks": 1,
@@ -5293,7 +5191,7 @@
               "at": 10,
               "enemyId": "charger",
               "hpMultiplier": 1,
-              "hp": 1560,
+              "hp": 1200,
               "rewardMultiplier": 1,
               "featured": true
             }
@@ -5484,7 +5382,7 @@
               "at": 8,
               "enemyId": "charger",
               "hpMultiplier": 1,
-              "hp": 775,
+              "hp": 1000,
               "rewardMultiplier": 1,
               "featured": true
             },
@@ -5492,7 +5390,7 @@
               "at": 14,
               "enemyId": "charger",
               "hpMultiplier": 1,
-              "hp": 775,
+              "hp": 1000,
               "rewardMultiplier": 1,
               "featured": true
             }
@@ -5670,7 +5568,7 @@
               "at": 10,
               "enemyId": "charger",
               "hpMultiplier": 1,
-              "hp": 1000,
+              "hp": 1200,
               "rewardMultiplier": 1,
               "featured": true
             },
@@ -5678,7 +5576,7 @@
               "at": 18,
               "enemyId": "charger",
               "hpMultiplier": 1,
-              "hp": 1000,
+              "hp": 1200,
               "rewardMultiplier": 1,
               "featured": true
             }
@@ -5714,7 +5612,7 @@
   },
   "statRules": {
     "armorScale": 100,
-    "dodgeCap": 0.75,
+    "dodgeCap": 0.6,
     "lifestealRateCap": 0.5,
     "lifestealPerAttack": 5,
     "lifestealMaxHpFraction": 0.05,
@@ -5726,6 +5624,7 @@
   "shop": {
     "itemSlots": 4,
     "weaponSlots": 4,
+    "freeRerollsPerRun": 1,
     "itemRerollBase": 5,
     "itemRerollStep": 1,
     "weaponRerollBase": 6,
@@ -5811,7 +5710,7 @@
     }
   },
   "balance": {
-    "version": "2026.09-gwanghwamun-depth1-v4",
+    "version": "2026.10-gwanghwamun-balance-v1",
     "baseline": {
       "characterId": "awakener",
       "mapId": "seoul",
@@ -5838,14 +5737,22 @@
   "gate": {
     "firstClearReward": 100,
     "failureRewardPerCompletedWave": 1,
-    "hpPerDepth": 0.06,
-    "damagePerDepth": 0.035,
-    "spawnPerDepth": 0.02,
+    "hpPerDepth": 0.03,
+    "hpStepEveryDepth": 5,
+    "hpStepMultiplier": 1.08,
+    "damagePerDepth": 0.025,
+    "spawnPerDepth": 0.01,
     "speedPerDepth": 0.001,
-    "speedMultiplierCap": 1.1,
-    "spawnMultiplierCap": 3,
+    "speedMultiplierCap": 1.06,
+    "spawnMultiplierCap": 1.35,
     "eliteChancePerDepth": 0.002,
-    "eliteChanceCap": 0.25,
+    "eliteChanceCap": 0.12,
+    "eliteModifierCycle": [
+      "FAST",
+      "ARMORED",
+      "BERSERK",
+      "CURSED_AURA"
+    ],
     "rewardPerDepth": 10,
     "repeatRewardFraction": 0.2,
     "deathRewardFraction": 0.05,
@@ -5858,26 +5765,7 @@
     "clearPartsBase": 2,
     "clearPartsDepthStep": 5
   },
-  "milestones": [
-    {
-      "depth": 10,
-      "eliteModifiers": [
-        "ARMORED"
-      ],
-      "featuredEliteModifiers": [
-        "CURSED_AURA"
-      ],
-      "spawnMultiplier": 1.08
-    },
-    {
-      "depth": 20,
-      "eliteModifiers": [
-        "BERSERK",
-        "REGENERATING"
-      ],
-      "spawnMultiplier": 1.08
-    }
-  ],
+  "milestones": [],
   "weeklyMonster": {
     "enabled": true,
     "pool": [
@@ -5905,7 +5793,12 @@
       15,
       18
     ],
-    "share": 0.35
+    "share": 0.35,
+    "shares": {
+      "lampFirefly": 0.35,
+      "summoner": 0.1,
+      "splitter": 0.1
+    }
   },
   "elites": {
     "GIANT": {
@@ -6598,16 +6491,16 @@
         "glow": "#6f91a5",
         "surface": "#18232b"
       },
-      "penaltyLabel": "적 최대 체력 +20%",
-      "benefitLabel": "모든 피해 +12%",
+      "penaltyLabel": "적 최대 체력 +16%",
+      "benefitLabel": "모든 피해 +8%",
       "penalty": {
-        "enemyHp": 1.2
+        "enemyHp": 1.16
       },
       "benefit": [
         {
           "stat": "damage",
           "operation": "multiply",
-          "value": 1.12
+          "value": 1.08
         }
       ]
     },
@@ -6622,16 +6515,16 @@
         "glow": "#77b7c4",
         "surface": "#251d22"
       },
-      "penaltyLabel": "적 공격력 +18%",
-      "benefitLabel": "방어력 +12",
+      "penaltyLabel": "적 공격력 +12%",
+      "benefitLabel": "방어력 +6",
       "penalty": {
-        "enemyDamage": 1.18
+        "enemyDamage": 1.12
       },
       "benefit": [
         {
           "stat": "armor",
           "operation": "add",
-          "value": 12
+          "value": 6
         }
       ]
     },
@@ -6646,23 +6539,23 @@
         "glow": "#62b8ae",
         "surface": "#20231b"
       },
-      "penaltyLabel": "적 생성 밀도 +25%",
-      "benefitLabel": "획득 범위 +30%",
+      "penaltyLabel": "적 생성 밀도 +10%",
+      "benefitLabel": "획득 범위 +20%",
       "penalty": {
-        "spawn": 1.25
+        "spawn": 1.1
       },
       "benefit": [
         {
           "stat": "pickupRange",
           "operation": "multiply",
-          "value": 1.3
+          "value": 1.2
         }
       ]
     },
     "pursuit": {
       "id": "pursuit",
       "name": "추격 본능",
-      "description": "추격 개체가 빨라지는 대신 각성자의 기동력이 상승합니다.",
+      "description": "빠르고 강해진 추격 개체에 맞서 각성자의 기동력이 상승합니다.",
       "icon": "»",
       "image": "weeklyPursuit",
       "palette": {
@@ -6670,23 +6563,24 @@
         "glow": "#b07a50",
         "surface": "#15232c"
       },
-      "penaltyLabel": "적 이동 속도 +8%",
-      "benefitLabel": "이동 속도 +8%",
+      "penaltyLabel": "적 이동 속도 +6% · 공격력 +4%",
+      "benefitLabel": "이동 속도 +4%",
       "penalty": {
-        "enemySpeed": 1.08
+        "enemySpeed": 1.06,
+        "enemyDamage": 1.04
       },
       "benefit": [
         {
           "stat": "moveSpeed",
           "operation": "multiply",
-          "value": 1.08
+          "value": 1.04
         }
       ]
     },
     "elite": {
       "id": "elite",
       "name": "정예 공명",
-      "description": "정예 개체가 자주 나타나며 전장의 행운도 함께 요동칩니다.",
+      "description": "질겨진 개체와 잦은 정예 출현에 전장의 행운도 함께 요동칩니다.",
       "icon": "♜",
       "image": "weeklyElite",
       "palette": {
@@ -6694,16 +6588,17 @@
         "glow": "#8e76c5",
         "surface": "#201d2d"
       },
-      "penaltyLabel": "엘리트 확률 +8%p",
-      "benefitLabel": "행운 +18",
+      "penaltyLabel": "적 체력 +4% · 엘리트 확률 +4%p",
+      "benefitLabel": "행운 +10",
       "penalty": {
-        "eliteChance": 0.08
+        "enemyHp": 1.04,
+        "eliteChance": 0.04
       },
       "benefit": [
         {
           "stat": "luck",
           "operation": "add",
-          "value": 18
+          "value": 10
         }
       ]
     },
@@ -6718,17 +6613,17 @@
         "glow": "#6fae8f",
         "surface": "#1c2420"
       },
-      "penaltyLabel": "적 체력 +12% · 공격력 +8%",
-      "benefitLabel": "최대 체력 +15%",
+      "penaltyLabel": "적 체력 +10% · 공격력 +6%",
+      "benefitLabel": "최대 체력 +10%",
       "penalty": {
-        "enemyHp": 1.12,
-        "enemyDamage": 1.08
+        "enemyHp": 1.1,
+        "enemyDamage": 1.06
       },
       "benefit": [
         {
           "stat": "maxHp",
           "operation": "multiply",
-          "value": 1.15
+          "value": 1.1
         }
       ]
     },
@@ -6743,17 +6638,17 @@
         "glow": "#706fc5",
         "surface": "#161d31"
       },
-      "penaltyLabel": "생성 밀도 +15% · 이동 속도 +4%",
-      "benefitLabel": "공격 속도 +10%",
+      "penaltyLabel": "생성 밀도 +10% · 이동 속도 +3%",
+      "benefitLabel": "공격 속도 +5%",
       "penalty": {
-        "spawn": 1.15,
-        "enemySpeed": 1.04
+        "spawn": 1.1,
+        "enemySpeed": 1.03
       },
       "benefit": [
         {
           "stat": "attackSpeed",
           "operation": "multiply",
-          "value": 1.1
+          "value": 1.05
         }
       ]
     }
@@ -6762,7 +6657,7 @@
     "cheonbuOath": {
       "id": "cheonbuOath",
       "name": "천부인의 맹세",
-      "description": "세 인장의 마력이 모든 공격을 증폭합니다.",
+      "description": "세 인장의 마력으로 모든 피해 +8%.",
       "icon": "✦",
       "image": "blessingCheonbuOath",
       "category": "attack",
@@ -6770,14 +6665,14 @@
         {
           "stat": "damage",
           "operation": "multiply",
-          "value": 1.04
+          "value": 1.08
         }
       ]
     },
     "unyieldingJangseung": {
       "id": "unyieldingJangseung",
       "name": "불굴의 장승",
-      "description": "수호의 결계가 생명력과 방어를 단단히 세웁니다.",
+      "description": "수호의 결계로 최대 HP +8%, 방어력 +4.",
       "icon": "⬟",
       "image": "blessingUnyieldingJangseung",
       "category": "defense",
@@ -6785,19 +6680,19 @@
         {
           "stat": "maxHp",
           "operation": "multiply",
-          "value": 1.04
+          "value": 1.08
         },
         {
           "stat": "armor",
           "operation": "add",
-          "value": 2
+          "value": 4
         }
       ]
     },
     "samjogoWing": {
       "id": "samjogoWing",
       "name": "삼족오의 날개",
-      "description": "태양의 깃이 이동과 공격의 흐름을 가볍게 만듭니다.",
+      "description": "태양의 깃으로 이동 속도 +5%, 공격 속도 +6%.",
       "icon": "≋",
       "image": "blessingSamjogoWing",
       "category": "speed",
@@ -6805,19 +6700,19 @@
         {
           "stat": "moveSpeed",
           "operation": "multiply",
-          "value": 1.025
+          "value": 1.05
         },
         {
           "stat": "attackSpeed",
           "operation": "multiply",
-          "value": 1.02
+          "value": 1.06
         }
       ]
     },
     "whiteTigerEye": {
       "id": "whiteTigerEye",
       "name": "백호의 눈",
-      "description": "흔들림 없는 시선이 치명적인 빈틈을 포착합니다.",
+      "description": "흔들림 없는 시선으로 치명타 확률 +6%p, 치명타 피해 배율 +0.20.",
       "icon": "◉",
       "image": "blessingWhiteTigerEye",
       "category": "critical",
@@ -6825,35 +6720,30 @@
         {
           "stat": "criticalChance",
           "operation": "add",
-          "value": 0.025
+          "value": 0.06
         },
         {
           "stat": "criticalDamage",
           "operation": "add",
-          "value": 0.08
+          "value": 0.2
         }
       ]
     },
     "goblinForge": {
       "id": "goblinForge",
       "name": "도깨비 대장간",
-      "description": "도깨비불이 설치 무기의 출력과 설치 한도를 끌어올립니다.",
+      "description": "도깨비불로 설치물 무기 피해 +15%.",
       "icon": "♜",
       "image": "blessingGoblinForge",
       "category": "structure",
-      "modifiers": [
-        {
-          "stat": "duration",
-          "operation": "multiply",
-          "value": 1.04
-        }
-      ],
-      "structureLimitAtLevel": 3
+      "modifiers": [],
+      "weaponDamageBonus": 0.15,
+      "weaponCapability": "STRUCTURE"
     },
     "harvestKnot": {
       "id": "harvestKnot",
       "name": "풍요의 매듭",
-      "description": "전장의 마력석이 더 넓고 풍성하게 모입니다.",
+      "description": "풍요의 매듭으로 마력석 획득량 +8%, 획득 범위 +15%.",
       "icon": "∞",
       "image": "blessingHarvestKnot",
       "category": "recovery",
@@ -6861,19 +6751,19 @@
         {
           "stat": "currencyGain",
           "operation": "multiply",
-          "value": 1.035
+          "value": 1.08
         },
         {
           "stat": "pickupRange",
           "operation": "multiply",
-          "value": 1.06
+          "value": 1.15
         }
       ]
     },
     "reverseScale": {
       "id": "reverseScale",
       "name": "역린의 계약",
-      "description": "저주를 받아들이고 그 위험만큼 공격력을 얻습니다.",
+      "description": "저주 +6을 받아들이는 대신 모든 피해 +20%.",
       "icon": "◇",
       "image": "blessingReverseScale",
       "category": "risk",
@@ -6881,12 +6771,12 @@
         {
           "stat": "curse",
           "operation": "add",
-          "value": 2
+          "value": 6
         },
         {
           "stat": "damage",
           "operation": "multiply",
-          "value": 1.04
+          "value": 1.2
         }
       ]
     }
@@ -9680,13 +9570,13 @@
       "name": "기초 체력",
       "description": "협회 코인으로 영구 강화합니다. 같은 능력치를 강화할수록 비용이 고정량씩 증가합니다.",
       "maxLevel": 0,
-      "baseCost": 50,
-      "costStep": 10,
+      "baseCost": 20,
+      "costStep": 4,
       "effect": {
         "type": "stat",
         "stat": "maxHp",
         "operation": "add",
-        "value": 1
+        "value": 3
       }
     },
     "armor": {
@@ -9694,13 +9584,13 @@
       "name": "방어 단련",
       "description": "협회 코인으로 영구 강화합니다. 같은 능력치를 강화할수록 비용이 고정량씩 증가합니다.",
       "maxLevel": 0,
-      "baseCost": 50,
-      "costStep": 10,
+      "baseCost": 20,
+      "costStep": 4,
       "effect": {
         "type": "stat",
         "stat": "armor",
         "operation": "add",
-        "value": 0.2
+        "value": 2.5
       }
     },
     "hpRegeneration": {
@@ -9708,13 +9598,13 @@
       "name": "재생 훈련",
       "description": "협회 코인으로 영구 강화합니다. 같은 능력치를 강화할수록 비용이 고정량씩 증가합니다.",
       "maxLevel": 0,
-      "baseCost": 50,
-      "costStep": 10,
+      "baseCost": 20,
+      "costStep": 4,
       "effect": {
         "type": "stat",
         "stat": "hpRegeneration",
         "operation": "add",
-        "value": 0.01
+        "value": 0.08
       }
     },
     "power": {
@@ -9722,13 +9612,13 @@
       "name": "마력 단련",
       "description": "협회 코인으로 영구 강화합니다. 같은 능력치를 강화할수록 비용이 고정량씩 증가합니다.",
       "maxLevel": 0,
-      "baseCost": 100,
-      "costStep": 20,
+      "baseCost": 30,
+      "costStep": 6,
       "effect": {
         "type": "stat",
         "stat": "damage",
         "operation": "add",
-        "value": 0.003
+        "value": 0.03
       }
     },
     "meleeDamage": {
@@ -9736,13 +9626,13 @@
       "name": "근접 숙련",
       "description": "협회 코인으로 영구 강화합니다. 같은 능력치를 강화할수록 비용이 고정량씩 증가합니다.",
       "maxLevel": 0,
-      "baseCost": 50,
-      "costStep": 10,
+      "baseCost": 20,
+      "costStep": 4,
       "effect": {
         "type": "stat",
         "stat": "meleeDamage",
         "operation": "add",
-        "value": 0.004
+        "value": 0.035
       }
     },
     "rangedDamage": {
@@ -9750,13 +9640,13 @@
       "name": "원거리 숙련",
       "description": "협회 코인으로 영구 강화합니다. 같은 능력치를 강화할수록 비용이 고정량씩 증가합니다.",
       "maxLevel": 0,
-      "baseCost": 50,
-      "costStep": 10,
+      "baseCost": 20,
+      "costStep": 4,
       "effect": {
         "type": "stat",
         "stat": "rangedDamage",
         "operation": "add",
-        "value": 0.004
+        "value": 0.035
       }
     },
     "attackSpeed": {
@@ -9764,43 +9654,43 @@
       "name": "공격 속도 훈련",
       "description": "협회 코인으로 영구 강화합니다. 같은 능력치를 강화할수록 비용이 고정량씩 증가합니다.",
       "maxLevel": 0,
-      "baseCost": 100,
-      "costStep": 20,
+      "baseCost": 30,
+      "costStep": 6,
       "effect": {
         "type": "stat",
         "stat": "attackSpeed",
         "operation": "add",
-        "value": 0.002
+        "value": 0.03
       },
-      "softCap": 0.5
+      "softCap": 3
     },
     "criticalChance": {
       "id": "criticalChance",
       "name": "치명타 훈련",
       "description": "협회 코인으로 영구 강화합니다. 같은 능력치를 강화할수록 비용이 고정량씩 증가합니다.",
       "maxLevel": 0,
-      "baseCost": 100,
-      "costStep": 20,
+      "baseCost": 30,
+      "costStep": 6,
       "effect": {
         "type": "stat",
         "stat": "criticalChance",
         "operation": "add",
-        "value": 0.0005
+        "value": 0.012
       },
-      "softCap": 0.2
+      "softCap": 0.65
     },
     "criticalDamage": {
       "id": "criticalDamage",
       "name": "급소 타격",
       "description": "협회 코인으로 영구 강화합니다. 같은 능력치를 강화할수록 비용이 고정량씩 증가합니다.",
       "maxLevel": 0,
-      "baseCost": 50,
-      "costStep": 10,
+      "baseCost": 20,
+      "costStep": 4,
       "effect": {
         "type": "stat",
         "stat": "criticalDamage",
         "operation": "add",
-        "value": 0.004
+        "value": 0.08
       }
     },
     "dodge": {
@@ -9808,145 +9698,150 @@
       "name": "회피 훈련",
       "description": "협회 코인으로 영구 강화합니다. 같은 능력치를 강화할수록 비용이 고정량씩 증가합니다.",
       "maxLevel": 0,
-      "baseCost": 100,
-      "costStep": 20,
+      "baseCost": 30,
+      "costStep": 6,
       "effect": {
         "type": "stat",
         "stat": "dodge",
         "operation": "add",
-        "value": 0.0003
+        "value": 0.03
       },
-      "softCap": 0.15
+      "softCap": 0.5
     },
     "lifesteal": {
       "id": "lifesteal",
       "name": "생명 회수",
       "description": "협회 코인으로 영구 강화합니다. 같은 능력치를 강화할수록 비용이 고정량씩 증가합니다.",
       "maxLevel": 0,
-      "baseCost": 100,
-      "costStep": 20,
+      "baseCost": 30,
+      "costStep": 6,
       "effect": {
         "type": "stat",
         "stat": "lifesteal",
         "operation": "add",
-        "value": 0.0001
+        "value": 0.003
       },
-      "softCap": 0.05
+      "softCap": 0.12
     },
     "range": {
       "id": "range",
       "name": "사거리 훈련",
       "description": "협회 코인으로 영구 강화합니다. 같은 능력치를 강화할수록 비용이 고정량씩 증가합니다.",
       "maxLevel": 0,
-      "baseCost": 50,
-      "costStep": 10,
+      "baseCost": 20,
+      "costStep": 4,
       "effect": {
         "type": "stat",
         "stat": "range",
         "operation": "add",
-        "value": 0.003
-      }
+        "value": 0.03
+      },
+      "softCap": 1.5
     },
     "area": {
       "id": "area",
       "name": "마력 확장",
       "description": "협회 코인으로 영구 강화합니다. 같은 능력치를 강화할수록 비용이 고정량씩 증가합니다.",
       "maxLevel": 0,
-      "baseCost": 50,
-      "costStep": 10,
+      "baseCost": 20,
+      "costStep": 4,
       "effect": {
         "type": "stat",
         "stat": "area",
         "operation": "add",
-        "value": 0.003
-      }
+        "value": 0.025
+      },
+      "softCap": 1.5
     },
     "duration": {
       "id": "duration",
       "name": "마력 지속",
       "description": "협회 코인으로 영구 강화합니다. 같은 능력치를 강화할수록 비용이 고정량씩 증가합니다.",
       "maxLevel": 0,
-      "baseCost": 50,
-      "costStep": 10,
+      "baseCost": 20,
+      "costStep": 4,
       "effect": {
         "type": "stat",
         "stat": "duration",
         "operation": "add",
-        "value": 0.003
-      }
+        "value": 0.04
+      },
+      "softCap": 2
     },
     "projectileSpeed": {
       "id": "projectileSpeed",
       "name": "투사체 가속",
       "description": "협회 코인으로 영구 강화합니다. 같은 능력치를 강화할수록 비용이 고정량씩 증가합니다.",
       "maxLevel": 0,
-      "baseCost": 50,
-      "costStep": 10,
+      "baseCost": 20,
+      "costStep": 4,
       "effect": {
         "type": "stat",
         "stat": "projectileSpeed",
         "operation": "add",
-        "value": 0.005
-      }
+        "value": 0.05
+      },
+      "softCap": 2
     },
     "mobility": {
       "id": "mobility",
       "name": "가벼운 발걸음",
       "description": "협회 코인으로 영구 강화합니다. 같은 능력치를 강화할수록 비용이 고정량씩 증가합니다.",
       "maxLevel": 0,
-      "baseCost": 100,
-      "costStep": 20,
+      "baseCost": 30,
+      "costStep": 6,
       "effect": {
         "type": "stat",
         "stat": "moveSpeed",
         "operation": "multiply",
-        "value": 0.002
+        "value": 0.015
       },
-      "softCap": 0.3
+      "softCap": 0.5
     },
     "currencyGain": {
       "id": "currencyGain",
       "name": "마력석 회수 훈련",
       "description": "협회 코인으로 영구 강화합니다. 같은 능력치를 강화할수록 비용이 고정량씩 증가합니다.",
       "maxLevel": 0,
-      "baseCost": 100,
-      "costStep": 20,
+      "baseCost": 30,
+      "costStep": 6,
       "effect": {
         "type": "stat",
         "stat": "currencyGain",
         "operation": "add",
-        "value": 0.002
+        "value": 0.03
       },
-      "softCap": 0.5
+      "softCap": 1.5
     },
     "pickupRange": {
       "id": "pickupRange",
       "name": "획득 반경 확장",
       "description": "협회 코인으로 영구 강화합니다. 같은 능력치를 강화할수록 비용이 고정량씩 증가합니다.",
       "maxLevel": 0,
-      "baseCost": 50,
-      "costStep": 10,
+      "baseCost": 20,
+      "costStep": 4,
       "effect": {
         "type": "stat",
         "stat": "pickupRange",
         "operation": "add",
-        "value": 0.5
-      }
+        "value": 5
+      },
+      "softCap": 200
     },
     "fortune": {
       "id": "fortune",
       "name": "행운 훈련",
       "description": "협회 코인으로 영구 강화합니다. 같은 능력치를 강화할수록 비용이 고정량씩 증가합니다.",
       "maxLevel": 0,
-      "baseCost": 50,
-      "costStep": 10,
+      "baseCost": 20,
+      "costStep": 4,
       "effect": {
         "type": "stat",
         "stat": "luck",
         "operation": "add",
-        "value": 0.1
+        "value": 2
       },
-      "softCap": 30
+      "softCap": 100
     },
     "circuit": {
       "id": "circuit",
@@ -9964,7 +9859,7 @@
     "reroll": {
       "id": "reroll",
       "name": "두 번째 기회",
-      "description": "한 판에 한 번 강화 후보 다시 뽑기 해금",
+      "description": "출동당 한 번, 무기 또는 아이템 진열을 무료로 다시 뽑습니다. 무료 사용은 유료 리롤 가격을 올리지 않습니다.",
       "maxLevel": 1,
       "baseCost": 80,
       "costStep": 0,
@@ -10166,6 +10061,10 @@
       "healthFraction": 1,
       "image": "revivalStoneHigh"
     }
+  },
+  "revivalConfig": {
+    "invulnerabilitySeconds": 2.5,
+    "maxPerRun": 1
   },
   "defaultMeta": {
     "account": {

@@ -175,13 +175,13 @@ static func _pause_button(parent: Node, caption: String, rect: Rect2, action: Ca
 
 static func revival(run: HeroRun, revive: Callable, die: Callable) -> Control:
 	var root := HeroImageSkin.root()
-	var box := popup(root,"생환석",630,300)
+	var box := popup(root,"생환석 · 출동당 1회",630,300)
 	var choices := HeroUI.row(box)
 	for grade in Content.data.revivalStones:
 		var stone: Dictionary = Content.data.revivalStones[grade]
 		var count: int = Profile.meta.wallet.revivalStones[grade]
 		var choice := HeroUI.choice(choices,"%s · %d\n%d%% 회복" % [stone.name,count,roundi(stone.healthFraction * 100)],Content.trimmed_texture(stone.image),false,func(): revive.call(grade),"ceramic",145)
-		choice.disabled = count <= 0
+		choice.disabled = count <= 0 or run.revivals_used >= int(Content.data.revivalConfig.maxPerRun)
 	HeroUI.danger(HeroImageSkin.image_button(box,"생환 포기",Rect2(0,0,140,44),die,"ops/secondary",16)).size_flags_horizontal = Control.SIZE_SHRINK_CENTER
 	return root
 

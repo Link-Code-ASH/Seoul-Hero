@@ -46,6 +46,13 @@ static func result(run: HeroRun) -> Dictionary:
 		summary.merge({"id":slot.id,"level":slot.level,"branchId":slot.branch})
 		weapons.append(summary)
 	record.weapons = weapons; record.waves = record.waves.values()
+	record["balanceVersionAtStart"] = record.get("balanceVersionAtStart","legacy")
+	record["associationUpgradesAtStart"] = record.get("associationUpgradesAtStart",null)
+	record["startingStats"] = record.get("startingStats",null)
+	record["resumedCheckpoint"] = bool(record.get("resumedCheckpoint",false))
+	record["weeklyMonsterId"] = run._weekly
+	record["revivalsUsed"] = run.revivals_used
+	record["freeRerollsUsed"] = int(record.get("freeRerollsUsed",0))
 	record.merge({"id":str(Time.get_unix_time_from_system()),"recordedAt":Time.get_datetime_string_from_system(true),"balanceVersion":run.data.balance.version,"characterId":run.setup.character,"startingWeaponId":run.setup.weapon,"mapId":run.setup.map,"gateDepth":run.setup.depth,"weeklyTraitId":run.setup.weekly,"blessingId":run.setup.blessing,"outcome":run.phase,"reachedWave":run.wave,"combatSeconds":run.combat_time,"kills":run.kills,"magicStoneEarned":run.collected,"magicStoneSpent":record.spent,"walletRemaining":run.wallet,"itemRerolls":run.item_rerolls,"weaponRerolls":run.weapon_rerolls,"items":run.items,"averageFps":record.fpsTotal / maxi(1,int(record.fpsSamples))},true)
 	record.erase("fpsTotal"); record.erase("fpsSamples")
 	return record

@@ -46,7 +46,7 @@ static func lead(data: Dictionary, entries: Array, wave: int, monster: String) -
 	var rule: Dictionary = data.get("weeklyMonster",{})
 	if monster.is_empty() or not rule.get("waves",[]).any(func(number): return int(number) == wave): return
 	if entries.any(func(entry): return entry.enemyId == monster): return
-	var share := float(rule.share)
+	var share := float(rule.get("shares",{}).get(monster,rule.share))
 	var total := 0.0
 	for entry in entries:
 		total += float(entry.weight)

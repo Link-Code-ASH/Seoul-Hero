@@ -21,8 +21,8 @@ export interface EnemyDefinition {
   /** 땅울림 (behavior 'tank') overrides; omitted values use ENEMY_RULES. repeats: hop + blast count per attack. */
   quake?: { radius?: number; warning?: number; cooldown?: number; repeats?: number; repeatDelay?: number };
   childId?: string; bossPatterns?: BossPattern[];
-  /** 소환 (behavior 'summoner') in Godot: `count` childId minions every `interval` seconds while fewer than `alive` of its own are living. */
-  summon?: { interval: number; count: number; alive: number };
+  /** 소환 in Godot: `count` children every `interval` seconds, bounded by living `alive` and optional lifetime `total`. */
+  summon?: { interval: number; count: number; alive: number; total?: number };
   /** 분열 (behavior 'splitter') in Godot: dies into `count` smaller copies of itself, `generations` times over; each factor applies per generation. */
   split?: { count: number; generations: number; hp: number; size: number; damage: number; reward: number };
 }

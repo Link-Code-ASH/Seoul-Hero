@@ -89,7 +89,7 @@ func _render() -> void:
 				"shop": _mount(HeroCombatUI.shop(run,shop_weapon,_shop_tab,_shop_refresh,func(): simulation.next_wave(),_pause))
 				"paused": _mount(HeroCombatUI.pause_menu(run,func(): run.resume(),_abandon))
 				"revivalChoice":
-					if Content.enabled("revivalStones"): _mount(HeroCombatUI.revival(run,_revive,_die))
+					if Content.enabled("revivalStones") and run.revivals_used < int(Content.data.revivalConfig.maxPerRun): _mount(HeroCombatUI.revival(run,_revive,_die))
 					else: _die.call_deferred()
 				"stageClear","gameOver":
 					_mount(HeroCombatUI.result(run,func(): go("lobby")))
@@ -234,11 +234,17 @@ func _die() -> void:
 	run.phase = "gameOver"; run.phase_changed.emit(); Sound.cue("gameOver")
 
 func _revive(grade: String) -> void:
-	if run.phase != "revivalChoice" or Profile.meta.wallet.revivalStones.get(grade,0) <= 0: return
-	Profile.meta.wallet.revivalStones[grade] -= 1; Profile.save()
+	if run.phase != "revivalChoice" or not Content.enabled("revivalStones") or run.revivals_used >= int(Content.data.revivalConfig.maxPerRun): return
+	if not Content.data.revivalStones.has(grade) or Profile.meta.wallet.revivalStones.get(grade,0) <= 0: return
+	Profile.meta.wallet.revivalStones[grade] -= 1
+	if not Profile.save():
+		Profile.meta.wallet.revivalStones[grade] += 1
+		return
+	run.revivals_used += 1
 	run.player.hp = run.stats.maxHp * Content.data.revivalStones[grade].healthFraction
-	run.player.invulnerability = 2.5; run.phase = "waveActive"; run.phase_changed.emit()
+	run.player.invulnerability = float(Content.data.revivalConfig.invulnerabilitySeconds); run.phase = "waveActive"
 	Profile.save_run(run)
+	run.phase_changed.emit()
 	Sound.cue("branchChoice")
 
 func _shop_tab(weapon: bool) -> void: shop_weapon = weapon; _refresh()

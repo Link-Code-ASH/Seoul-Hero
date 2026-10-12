@@ -72,9 +72,9 @@ static func _header(root: Control, run: HeroRun, tab: bool, set_tab: Callable, r
 	reroll.name = "ShopReroll"
 	var reroll_icon := HeroUI.fixed_art(reroll,HeroUI.icon_texture("reroll"),Rect2(17,10,24,24))
 	reroll_icon.self_modulate = Color(INK)
-	_icon_number(reroll,Content.trimmed_texture("magicStone"),str(reroll_cost),Vector2(89,22),16,18,INK)
+	_icon_number(reroll,Content.trimmed_texture("magicStone"),"무료" if run.free_rerolls_remaining > 0 else str(reroll_cost),Vector2(89,22),16,18,INK)
 	var stock: Array = run.weapon_stock if tab else run.item_stock
-	reroll.disabled = blocked or run.currency < reroll_cost or stock.all(func(slot): return slot.get("locked",false))
+	reroll.disabled = blocked or run.currency < reroll_cost or stock.all(func(slot): return slot.get("locked",false) or slot.get("free",false))
 	var pause_button := HeroImageSkin.button(root,"",Rect2(813,22,44,44),pause,"plain")
 	pause_button.name = "ShopPause"
 	var pause_icon := HeroUI.fixed_art(pause_button,HeroImageSkin.source_texture("enamel/pause_icon"),Rect2(12,10,20,24))

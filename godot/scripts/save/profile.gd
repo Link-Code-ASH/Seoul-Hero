@@ -239,7 +239,7 @@ func save() -> bool:
 func save_run(run: HeroRun) -> void:
 	if not writable or run.settled: return
 	var state := {}
-	for key in ["run_id","guild_support","setup","phase","previous_phase","wave","elapsed","combat_time","currency","wallet","collected","kills","sequence","player","stats","modifiers","base_modifiers","item_effects","item_state","difficulty","owned","items","enemies","pickups","loot_pickups","loot","bullets","hostile","hazards","structures","pending","pending_branch","item_stock","weapon_stock","item_rerolls","weapon_rerolls","available_weapons","available_items","spawn_state","telemetry"]:
+	for key in ["run_id","guild_support","setup","phase","previous_phase","wave","elapsed","combat_time","currency","wallet","collected","kills","sequence","player","stats","modifiers","base_modifiers","item_effects","item_state","difficulty","owned","items","enemies","pickups","loot_pickups","loot","bullets","hostile","hazards","structures","pending","pending_branch","item_stock","weapon_stock","item_rerolls","weapon_rerolls","free_rerolls_remaining","revivals_used","available_weapons","available_items","spawn_state","telemetry"]:
 		state[key] = _encode(run.get(key))
 	# Enemy VFX identity is transient. Keep the checkpoint's existing bullet shape.
 	for bullet: Dictionary in state.hostile: bullet.erase("visualId")
@@ -261,6 +261,7 @@ func restore_run() -> HeroRun:
 	if state.get("phase", "") not in ["waveActive","postWave","shop","paused","revivalChoice"]: return null
 	var run := HeroRun.new(Content.data, state.setup, meta)
 	for key in state: run.set(key, state[key])
+	run.telemetry["resumedCheckpoint"] = true
 	for bullet: Dictionary in run.hostile: bullet["visualId"] = run.next_visual_id()
 	if run.phase == "postWave":
 		# Recovered stones are already in the wallet; never sweep or pay twice.

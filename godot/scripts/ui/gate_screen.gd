@@ -376,7 +376,7 @@ static func _selection_detail(root: Control, rect: Rect2, kind: String, id: Stri
 				_copy(detail,"축복을 해금하면 이 목록에서 선택할 수 있습니다.","body",14,HeroDesk.BODY)
 			else:
 				var definition: Dictionary = Content.data.blessings[id]
-				var level := int(Profile.meta.blessings.get(id,{}).get("level",0))
+				var level := HeroMeta.blessing_level(Content.data,Profile.meta.blessings.get(id,{}))
 				_copy(detail,str(definition.description),"body",14,HeroDesk.BODY)
 				if definition.modifiers.size() > 1:
 					_copy(detail,"추가 적용 효과" if level > 0 else "해금 시 추가 효과","heading",16,HeroDesk.INK)
@@ -404,12 +404,15 @@ static func _profile_core(kind: String, id: String) -> Array:
 		"blessing":
 			if id.is_empty(): return [{"text":"축복을 적용하지 않고 출동합니다.","role":"body","size":14,"color":HeroDesk.BODY}]
 			var definition: Dictionary = Content.data.blessings[id]
-			var level := int(Profile.meta.blessings.get(id,{}).get("level",0))
-			var result: Array = [{"text":"보유 레벨 · Lv.%d" % level,"role":"body","size":13,"color":HeroDesk.ACCENT if level > 0 else HeroDesk.MUTED}]
+			var level := HeroMeta.blessing_level(Content.data,Profile.meta.blessings.get(id,{}))
+			var status := "보유 레벨 · Lv.%d" % level if Content.enabled("blessingLevels") else ("해금 완료" if level > 0 else "미해금")
+			var result: Array = [{"text":status,"role":"body","size":13,"color":HeroDesk.ACCENT if level > 0 else HeroDesk.MUTED}]
 			if level == 0:
 				result.append({"text":"해금 시 Lv.1 효과","role":"body","size":14,"color":HeroDesk.MUTED})
 			if not definition.modifiers.is_empty():
 				result.append({"text":_modifier_text(definition.modifiers[0],maxi(1,level)),"role":"body","size":14,"color":HeroDesk.BODY})
+			if definition.has("weaponDamageBonus"):
+				result.append({"text":"%s 무기 피해 +%s%%" % [primary_family([definition.get("weaponCapability","STRUCTURE")]),_number(float(definition.weaponDamageBonus)*100.0)],"role":"body","size":14,"color":HeroDesk.BODY})
 			return result
 	return []
 
